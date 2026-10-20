@@ -100,6 +100,12 @@ def _client_for(keys: tuple[str, ...]):
     return MultiKeyGroq([Groq(api_key=k, max_retries=2) for k in keys])
 
 
+def token_budget() -> int:
+    """Groq free-tier tokens per day summed over every configured key (quota is per account)."""
+    per_key = int(os.environ.get("GROQ_TOKENS_PER_DAY", "200000"))
+    return per_key * max(1, len(api_keys()))
+
+
 def get_client():
     """One shared client per key set, so a key that is spent for the day is remembered across calls."""
     return _client_for(tuple(api_keys()))

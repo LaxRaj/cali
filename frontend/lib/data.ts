@@ -90,13 +90,19 @@ export type Funnel = {
   valid: number;
 };
 
+export type RunStatus = "passed" | "failed" | "quota";
+
 export type RunSummary = {
   run_id: string;
   started_at: string;
   duration_s: number;
   passed: boolean;
+  /** Absent on runs recorded before the backend wrote it; see runState() in lib/metrics.ts. */
+  status?: RunStatus;
   funnel: Funnel;
   tokens: number;
+  /** Tokens/day across all Groq keys when the run was recorded; absent on older runs. */
+  token_budget?: number;
   sources: Record<string, number>;
   failures: string[];
 };
@@ -157,7 +163,7 @@ export type RunDetail = RunSummary & {
   errors: string[];
 };
 
-export const TOKEN_BUDGET = 200_000; // Groq free tier, tokens per day
+export { TOKEN_BUDGET } from "./constants";
 
 // The backend workflow commits these files; the frontend reads them at build time (no API, no DB).
 const DATA_DIR =

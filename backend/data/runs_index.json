@@ -20,7 +20,8 @@
         "hn": 62,
         "web": 24
       },
-      "failures": []
+      "failures": [],
+      "status": "passed"
     },
     {
       "run_id": "20261020T110815Z",
@@ -45,7 +46,8 @@
       "failures": [
         "only 2 valid startups (< 3)",
         "only 1 discovery sources produced valid startups (< 2)"
-      ]
+      ],
+      "status": "failed"
     },
     {
       "run_id": "20261020T172115Z",
@@ -67,7 +69,8 @@
         "rss": 71,
         "web": 18
       },
-      "failures": []
+      "failures": [],
+      "status": "passed"
     },
     {
       "run_id": "20261020T181651Z",
@@ -95,7 +98,8 @@
         "only 0 valid startups (< 3)",
         "validity rate 0% (< 50%)",
         "only 0 discovery sources produced valid startups (< 2)"
-      ]
+      ],
+      "status": "quota"
     },
     {
       "run_id": "20261020T184141Z",
@@ -123,7 +127,8 @@
         "only 0 valid startups (< 3)",
         "validity rate 0% (< 50%)",
         "only 0 discovery sources produced valid startups (< 2)"
-      ]
+      ],
+      "status": "quota"
     },
     {
       "run_id": "20261020T193545Z",
@@ -151,7 +156,8 @@
         "only 0 valid startups (< 3)",
         "validity rate 0% (< 50%)",
         "only 0 discovery sources produced valid startups (< 2)"
-      ]
+      ],
+      "status": "quota"
     },
     {
       "run_id": "20261020T194209Z",
@@ -175,7 +181,8 @@
         "web": 24,
         "edgar": 2
       },
-      "failures": []
+      "failures": [],
+      "status": "passed"
     },
     {
       "run_id": "20261020T203526Z",
@@ -199,7 +206,8 @@
         "web": 30,
         "edgar": 5
       },
-      "failures": []
+      "failures": [],
+      "status": "passed"
     },
     {
       "run_id": "20261020T212403Z",
@@ -223,7 +231,8 @@
         "web": 30,
         "edgar": 4
       },
-      "failures": []
+      "failures": [],
+      "status": "passed"
     }
   ]
 }

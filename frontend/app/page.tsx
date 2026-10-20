@@ -5,30 +5,43 @@ import { AsciiBar } from "@/components/charts/ascii-bar";
 import { Funnel } from "@/components/charts/funnel";
 import { RunCalendar } from "@/components/charts/run-calendar";
 import { Sparkline } from "@/components/charts/sparkline";
+import { DailyTokenMeter } from "@/components/runs/daily-token-meter";
+import { FreshnessIndicator } from "@/components/runs/freshness-indicator";
+import { QuotaBanner } from "@/components/runs/quota-banner";
 import { Led } from "@/components/ui/led";
 import { Panel } from "@/components/ui/panel";
 import { RetroLink } from "@/components/ui/retro-button";
 import { Stat } from "@/components/ui/stat";
 import { StartupCard } from "@/components/startup-card";
-import {
-  readGraph,
-  readIndex,
-  readProfiles,
-  readRun,
-  TOKEN_BUDGET,
-} from "@/lib/data";
+import { readGraph, readIndex, readProfiles, readRun } from "@/lib/data";
 import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
+import {
+  dailyBudget,
+  dailyTokens,
+  dailyTotals,
+  dayKey,
+  latestFindings,
+  latestRun,
+  passRate as computePassRate,
+  runState,
+  runsOnDay,
+} from "@/lib/metrics";
 
 export default function OverviewPage() {
   const runs = readIndex();
   const profiles = readProfiles();
   const graph = readGraph();
-  const latest = runs.at(-1);
+  const latest = latestRun(runs);
+  const state = latest ? runState(latest) : undefined;
   const detail = latest ? readRun(latest.run_id) : null;
   const recent = runs.slice(-30);
-  const passRate = recent.length
-    ? Math.round((recent.filter((r) => r.passed).length / recent.length) * 100)
-    : 0;
+  const rate = computePassRate(runs, 30);
+  // "Today" is the UTC day of the newest run (the Groq quota resets at 00:00 UTC): every run of it counts.
+  const today = latest ? dayKey(latest.started_at) : "";
+  const todayRuns = runsOnDay(runs, today);
+  const todayTokens = dailyTokens(runs, today);
+  const budget = dailyBudget(runs, today);
+  const days = dailyTotals(runs).slice(-14);
   const people = graph.nodes.filter((n) => n.type === "person").length;
   const topNodes = graph.nodes.slice(0, 6);
   const scored = profiles.filter((p) => p.score !== undefined);
@@ -82,13 +95,21 @@ export default function OverviewPage() {
         {latest ? (
           <div className="flex items-center gap-2 border-2 border-zinc-900 bg-white px-3 py-1.5 text-xs dark:border-emerald-400/60 dark:bg-black">
             <Led
-              state={latest.passed ? "ok" : "fail"}
-              label={latest.passed ? "passed" : "failed"}
+              state={
+                state === "passed" ? "ok" : state === "quota" ? "warn" : "fail"
+              }
+              label={state ?? "unknown"}
             />
             <span>
-              SYSTEM {latest.passed ? "NOMINAL" : "LAST RUN FAILED"} ·{" "}
-              {fmtDateTime(latest.started_at)}
+              SYSTEM{" "}
+              {state === "passed"
+                ? "NOMINAL"
+                : state === "quota"
+                  ? "QUOTA REACHED"
+                  : "LAST RUN FAILED"}{" "}
+              · {fmtDateTime(latest.started_at)}
             </span>
+            <FreshnessIndicator latestAt={latest.started_at} />
           </div>
         ) : null}
       </header>
@@ -125,8 +146,8 @@ export default function OverviewPage() {
             />
             <Stat
               label="Pass rate"
-              value={`${passRate}%`}
-              sub={`last ${recent.length} runs`}
+              value={rate.pct === null ? "—" : `${rate.pct}%`}
+              sub={`last ${recent.length} runs${rate.skipped ? ` · ${rate.skipped} quota-limited, not counted` : ""}`}
               tone="amber"
             />
             <Stat
@@ -137,11 +158,13 @@ export default function OverviewPage() {
             />
             <Stat
               label="Tokens today"
-              value={fmtTokens(latest.tokens)}
-              sub={`${Math.round((latest.tokens / TOKEN_BUDGET) * 100)}% of ${fmtTokens(TOKEN_BUDGET)} free tier`}
-              tone={latest.tokens / TOKEN_BUDGET > 0.8 ? "rose" : "emerald"}
+              value={fmtTokens(todayTokens)}
+              sub={`${todayRuns.length} runs · ${Math.round((todayTokens / budget) * 100)}% of ${fmtTokens(budget)}`}
+              tone={todayTokens / budget > 0.8 ? "rose" : "emerald"}
             />
           </div>
+
+          <QuotaBanner state={state} />
 
           <div className="grid gap-6 lg:grid-cols-2">
             <Panel
@@ -205,22 +228,30 @@ export default function OverviewPage() {
             <Panel
               title="Token burn"
               tone="amber"
-              right={<span>budget {fmtTokens(TOKEN_BUDGET)}/day</span>}
+              right={<span>budget {fmtTokens(budget)}/day</span>}
             >
-              <div className="text-amber-700 dark:text-amber-300">
+              <DailyTokenMeter runs={todayRuns} budget={budget} />
+              <div className="mt-3 text-amber-700 dark:text-amber-300">
                 <Sparkline
-                  values={recent.map((r) => r.tokens)}
-                  reference={TOKEN_BUDGET}
-                  max={TOKEN_BUDGET}
-                  label="Tokens used per run, with the daily free-tier budget as a dashed line"
+                  values={days.map((d) => d.tokens)}
+                  reference={budget}
+                  max={budget}
+                  label="Total tokens used per day (UTC), with the daily budget as a dashed line"
                 />
+                <p className="text-[11px] text-zinc-600 dark:text-zinc-400">
+                  last {days.length} days · all runs of a day added together
+                </p>
               </div>
             </Panel>
 
             <Panel
               title="Sources"
               tone="rose"
-              right={<span>candidates, latest run</span>}
+              right={
+                <span>
+                  candidates, latest run{state === "quota" && " (partial)"}
+                </span>
+              }
             >
               <div className="space-y-1">
                 {Object.entries(latest.sources).map(([s, v]) => (
@@ -398,7 +429,7 @@ export default function OverviewPage() {
               </RetroLink>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
-              {profiles.slice(0, 4).map((p) => (
+              {latestFindings(profiles, 4).map((p) => (
                 <StartupCard key={p.slug} p={p} />
               ))}
             </div>
