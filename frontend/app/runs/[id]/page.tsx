@@ -6,8 +6,9 @@ import { StageTimeline } from "@/components/charts/stage-timeline";
 import { Led } from "@/components/ui/led";
 import { Panel } from "@/components/ui/panel";
 import { Stat } from "@/components/ui/stat";
-import { readIndex, readRun, TOKEN_BUDGET } from "@/lib/data";
+import { readIndex, readRun } from "@/lib/data";
 import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
+import { dailyBudget, dailyTokens, dayKey, runState } from "@/lib/metrics";
 
 export function generateStaticParams() {
   const runs = readIndex();
@@ -18,6 +19,11 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
   const { id } = await params;
   const run = readRun(id);
   if (!run) notFound();
+  const state = runState(run);
+  const index = readIndex();
+  const day = dayKey(run.started_at);
+  const budget = dailyBudget(index, day);
+  const dayTotal = dailyTokens(index, day);
   const maxSrc = Math.max(
     ...Object.values(run.source_health).map((s) => s.candidates),
     1,
@@ -32,8 +38,8 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
       </p>
       <header className="flex flex-wrap items-center gap-3">
         <Led
-          state={run.passed ? "ok" : "fail"}
-          label={run.passed ? "passed" : "failed"}
+          state={state === "passed" ? "ok" : state === "quota" ? "warn" : "fail"}
+          label={state}
         />
         <h1 className="glow font-display text-4xl uppercase tracking-wider">
           Run {run.run_id}
@@ -46,14 +52,14 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         <Stat
           label="Result"
-          value={run.passed ? "PASS" : "FAIL"}
-          tone={run.passed ? "emerald" : "rose"}
+          value={state === "passed" ? "PASS" : state === "quota" ? "QUOTA" : "FAIL"}
+          tone={state === "passed" ? "emerald" : state === "quota" ? "amber" : "rose"}
         />
         <Stat label="Duration" value={fmtDuration(run.duration_s)} tone="sky" />
         <Stat
           label="Tokens"
           value={fmtTokens(run.tokens)}
-          sub={`${run.usage.calls ?? 0} LLM calls · ${Math.round((run.tokens / TOKEN_BUDGET) * 100)}% of budget`}
+          sub={`${run.usage.calls ?? 0} LLM calls · day total ${fmtTokens(dayTotal)} (${Math.round((dayTotal / budget) * 100)}% of ${fmtTokens(budget)})`}
           tone="amber"
         />
         <Stat

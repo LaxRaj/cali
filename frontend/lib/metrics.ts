@@ -5,8 +5,8 @@
 //  - "tokens today" is the SUM over every run that started on that day
 //  - a run is passed | failed | quota; quota (Groq limit hit) is not a quality failure
 
-import { TOKEN_BUDGET } from "./data";
-import type { Profile, RunStatus, RunSummary } from "./data";
+import { TOKEN_BUDGET } from "./constants";
+import type { Profile, RunStatus, RunSummary } from "./data"; // types only: data.ts is server-only
 
 /** The scout runs daily; anything older than a day plus slack means the data is stale. */
 export const STALE_AFTER_HOURS = 26;
@@ -110,7 +110,7 @@ export function topFindings(profiles: Profile[], n: number): Profile[] {
 }
 
 export function dataFreshness(
-  latest: RunSummary | undefined,
+  latest: Pick<RunSummary, "started_at"> | undefined,
   now: Date,
 ): { ageHours: number; stale: boolean } {
   if (!latest) return { ageHours: Infinity, stale: true };

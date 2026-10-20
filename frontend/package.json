@@ -9,7 +9,7 @@
     "lint": "eslint",
     "test": "vitest run",
     "check:data": "tsx scripts/check-dashboard.ts",
-    "verify": "tsc --noEmit && eslint && vitest run && npm run check:data && next build",
+    "verify": "next typegen && tsc --noEmit && eslint && vitest run && npm run check:data && next build",
     "dev:demo": "CALI_DEMO=1 next dev",
     "build:demo": "CALI_DEMO=1 next build"
   },

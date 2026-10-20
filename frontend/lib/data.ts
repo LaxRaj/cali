@@ -163,7 +163,7 @@ export type RunDetail = RunSummary & {
   errors: string[];
 };
 
-export const TOKEN_BUDGET = 200_000; // Groq free tier, tokens per day
+export { TOKEN_BUDGET } from "./constants";
 
 // The backend workflow commits these files; the frontend reads them at build time (no API, no DB).
 const DATA_DIR =
