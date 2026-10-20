@@ -1,140 +1,785 @@
 {
-  "generated_at": "2026-10-20T08:07:00+00:00",
+  "generated_at": "2026-10-20T17:26:50+00:00",
   "findings": [
     {
-      "company_name": "Maali",
-      "core_product": "Maili builds a desktop personal‑finance app that categorises bank transactions, visualises spending and provides AI‑driven analysis, all running locally on the user's computer.",
+      "company_name": "Tako",
+      "core_product": "An AI search engine that builds interactive, up‑to‑date knowledge cards from authoritative structured data.",
       "tech_stack": [
-        "SimpleFIN"
+        "AI search engine",
+        "knowledge graph",
+        "structured data integration",
+        "Vercel"
       ],
-      "likely_bottleneck": "Fast, accurate search and retrieval over a user's growing transaction history for the on‑device AI analyst",
-      "value_prop_pitch": "Hi Maali team, I can add a high‑performance semantic search layer built with Next.js and vector embeddings so your AI analyst can instantly retrieve relevant transactions from a user's history. This will improve response times and enable more accurate insights while keeping all data private on the client.",
+      "likely_bottleneck": "Scaling semantic search over a massive knowledge graph while delivering fast, interactive UI for data‑heavy knowledge cards.",
+      "value_prop_pitch": "I can help Tako boost its search relevance and speed by building a Next.js front‑end that queries a vector‑based semantic index of your knowledge graph, delivering instant, context‑aware results. This will also let you render interactive knowledge cards with server‑side rendering and incremental static regeneration, reducing latency and simplifying UI development.",
       "is_relevant": true,
-      "funding_stage": "",
-      "source_url": "https://maali.app/",
-      "discovered_at": "2026-10-20T08:04:20+00:00",
-      "source": "hn",
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Theo",
-      "core_product": "An AI‑powered site builder that automatically creates and updates SEO‑optimized websites for small businesses.",
-      "tech_stack": [],
-      "likely_bottleneck": "Ensuring generated content ranks well and stays relevant across diverse search queries at scale.",
-      "value_prop_pitch": "I can help Theo improve its content relevance by building a Next.js front‑end that queries a vector‑based semantic search index of your generated articles, ensuring each page ranks for the most relevant queries. This will also let you serve personalized, SEO‑optimized content instantly while reducing the load on your current generation pipeline.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "source_url": "https://www.ycombinator.com/launches/W36-theo-the-site-builder-and-engine-that-gets-your-business-found",
-      "discovered_at": "2026-10-20T08:04:20+00:00",
-      "source": "yc",
+      "funding_stage": "seed",
+      "funding_amount": "$5.75M",
+      "hq": "San Francisco, USA",
+      "website": "http://trytako.com",
+      "source_url": "https://www.einpresswire.com/article/752294158/ai-search-startup-tako-raises-5-75-million-seed",
+      "discovered_at": "2026-10-20T17:21:46+00:00",
+      "source": "web",
+      "score": 81,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "http://trytako.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/TakoViz",
+          "linkedin": "https://www.linkedin.com/company/takoviz",
+          "github": "https://github.com/TakoData"
+        },
+        "contact_page": "https://tako.com/contact",
+        "pages_crawled": [
+          "https://tako.com/",
+          "https://tako.com/team",
+          "https://tako.com/contact",
+          "https://tako.com/about/"
+        ],
+        "enriched_at": "2026-10-20T17:24:16+00:00",
+        "status": "ok"
+      },
       "people": [
         {
-          "name": "Miles Pines",
-          "role": "founder",
-          "org": "",
-          "evidence": "Miles Pines is a solo founder with a Harvard CS degree."
+          "name": "Alex Rosenberg",
+          "role": "co-founder and CEO",
+          "org": "Tako",
+          "evidence": "Alex Rosenberg, co-founder and CEO of Tako",
+          "linkedin": "https://www.linkedin.com/in/alexrosenberg",
+          "twitter": "https://x.com/alexrrosenberg",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Bobby Abbott",
+          "role": "co-founder",
+          "org": "Tako",
+          "evidence": "Co-founded by Alex Rosenberg, former Amazon leader, and Bobby Abbott, Tako",
+          "linkedin": "https://www.linkedin.com/in/robert-m-abbott",
+          "twitter": "https://x.com/ttobbaybbob",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Kevin Hartz",
+          "role": "Co-Founder and General Partner",
+          "org": "A*",
+          "evidence": "Kevin Hartz, Co-Founder and General Partner at A*",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ramtin Naimi",
+          "role": "partner at Abstract Ventures",
+          "org": "Abstract Ventures",
+          "evidence": "seed funding round led by Kevin Hartz at A* and Ramtin Naimi at Abstract Ventures",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Stanley Druckenmiller",
+          "role": "American investor and philanthropist",
+          "org": "Tako",
+          "evidence": "Stanley Druckenmiller\nAmerican investor and philanthropist",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Kevin Warsh",
+          "role": "Former Member of the Board of Governors, U.S. Federal Reserve",
+          "org": "Tako",
+          "evidence": "Kevin Warsh\nFormer Member of the Board of Governors, U.S. Federal Reserve",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Chase Coleman",
+          "role": "Founder, Tiger Global Management",
+          "org": "Tako",
+          "evidence": "Chase Coleman\nFounder, Tiger Global Management",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Gokul Rajaram",
+          "role": "ex Doordash exec, seed investor in Airtable, Faire, Vercel, Figma",
+          "org": "Tako",
+          "evidence": "Gokul Rajaram\nex Doordash exec, seed investor in Airtable, Faire, Vercel, Figma",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Scott Belsky",
+          "role": "Founder, A24 Labs",
+          "org": "Tako",
+          "evidence": "Scott Belsky\nFounder, A24 Labs",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Stan Chudnovsky",
+          "role": "Former VP of Messaging, Meta",
+          "org": "Tako",
+          "evidence": "Stan Chudnovsky\nFormer VP of Messaging, Meta",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Javi Olivan",
+          "role": "COO, Meta",
+          "org": "Tako",
+          "evidence": "Javi Olivan\nCOO, Meta",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Guillermo Rauch",
+          "role": "CEO, Vercel",
+          "org": "Tako",
+          "evidence": "Guillermo Rauch\nCEO, Vercel",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "GC Lionetti",
+          "role": "CCO, OpenAI",
+          "org": "Tako",
+          "evidence": "GC Lionetti\nCCO, OpenAI",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "George Sivulka",
+          "role": "CEO, Hebbia",
+          "org": "Tako",
+          "evidence": "George Sivulka\nCEO, Hebbia",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Aravind Srinivas",
+          "role": "CEO, Perplexity",
+          "org": "Tako",
+          "evidence": "Aravind Srinivas\nCEO, Perplexity",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Johnny Ho",
+          "role": "CSO, Perplexity",
+          "org": "Tako",
+          "evidence": "Johnny Ho\nCSO, Perplexity",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Naval Ravikant",
+          "role": "Founder, AngelList",
+          "org": "Tako",
+          "evidence": "Naval Ravikant\nFounder, AngelList",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Diogo Monica",
+          "role": "General Partner at Haun Ventures, Co-founder of Anchorage Digital",
+          "org": "Tako",
+          "evidence": "Diogo Monica\nGeneral Partner at Haun Ventures, Co-founder of Anchorage Digital",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Nathan McCauley",
+          "role": "CEO, Anchorage Digital",
+          "org": "Tako",
+          "evidence": "Nathan McCauley\nCEO, Anchorage Digital",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Miles Pines",
+          "src": "Alex Rosenberg",
           "rel": "founded",
-          "dst": "Theo",
-          "evidence": "Miles Pines is a solo founder with a Harvard CS degree."
+          "dst": "Tako",
+          "evidence": "Alex Rosenberg\nCEO & Co-founder"
         },
         {
-          "src": "Miles Pines",
-          "rel": "cofounded",
-          "dst": "Endgrate",
-          "evidence": "Before Theo, he co‑founded Endgrate and bootstrapped it to $100k+ a year in revenue."
+          "src": "Bobby Abbott",
+          "rel": "founded",
+          "dst": "Tako",
+          "evidence": "Bobby Abbott\nCTO & Co-founder"
         },
         {
-          "src": "Miles Pines",
-          "rel": "works_at",
-          "dst": "Citadel Securities",
-          "evidence": "Previously, he worked on low‑latency software at Citadel Securities."
+          "src": "Abstract Ventures",
+          "rel": "invested_in",
+          "dst": "Tako",
+          "evidence": "https://www.abstractvc.com/"
+        },
+        {
+          "src": "A*",
+          "rel": "invested_in",
+          "dst": "Tako",
+          "evidence": "https://www.a-star.co/"
+        },
+        {
+          "src": "Outset Capital",
+          "rel": "invested_in",
+          "dst": "Tako",
+          "evidence": "https://www.outsetcapital.com/"
+        },
+        {
+          "src": "Liquid2",
+          "rel": "invested_in",
+          "dst": "Tako",
+          "evidence": "https://www.liquid2.vc/"
+        },
+        {
+          "src": "Stanley Druckenmiller",
+          "rel": "invested_in",
+          "dst": "Tako",
+          "evidence": "Stanley Druckenmiller\nAmerican investor and philanthropist"
+        },
+        {
+          "src": "Kevin Warsh",
+          "rel": "invested_in",
+          "dst": "Tako",
+          "evidence": "Kevin Warsh\nFormer Member of the Board of Governors, U.S. Federal Reserve"
+        },
+        {
+          "src": "Chase Coleman",
+          "rel": "invested_in",
+          "dst": "Tako",
+          "evidence": "Chase Coleman\nFounder, Tiger Global Management"
         }
       ]
     },
     {
-      "company_name": "CedarDB",
-      "core_product": "A database engine that handles both transactional (OLTP) and analytical (OLAP) workloads with PostgreSQL compatibility.",
+      "company_name": "Respan",
+      "core_product": "An open‑source Rust AI gateway built around plugins that lets developers assemble LLM infrastructure with interchangeable providers, protocols, modalities and features.",
       "tech_stack": [
-        "PostgreSQL",
-        "SQL",
-        "on‑premise",
-        "cloud"
+        "Rust",
+        "LiteLLM (Python)",
+        "OpenAI API",
+        "Anthropic API",
+        "Google Gemini API",
+        "WebSocket",
+        "HTTP"
       ],
-      "likely_bottleneck": "Optimizing query performance and efficient retrieval across mixed transactional and analytical workloads.",
-      "value_prop_pitch": "I can build a Next.js based query UI that leverages vector semantic search to translate natural‑language questions into optimized SQL for both OLTP and OLAP workloads, reducing latency and improving relevance. This layer would let CedarDB’s customers get fast, accurate answers without rewriting their applications, freeing your engineering team to focus on core performance improvements.",
+      "likely_bottleneck": "Creating a searchable, user‑friendly marketplace for plugins and quickly surfacing the right provider or feature for developers.",
+      "value_prop_pitch": "I can build a Next.js‑based developer portal that indexes all Respan plugins with vector embeddings, enabling instant semantic search and recommendation of the right plugin for any use‑case. This will let your users discover and integrate new providers or features in seconds, reducing the time spent manually browsing code and improving adoption.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "source_url": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
-      "discovered_at": "2026-10-20T08:04:20+00:00",
-      "source": "rss",
+      "funding_stage": "pre-seed",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.respan.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50167583",
+      "discovered_at": "2026-10-20T17:21:46+00:00",
+      "source": "launch_hn",
+      "score": 80,
+      "gaps": [
+        "location",
+        "funding amount",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.respan.ai",
+        "emails": [
+          {
+            "value": "team@respan.ai",
+            "kind": "general",
+            "source_url": "https://www.respan.ai/"
+          },
+          {
+            "value": "support@respan.ai",
+            "kind": "support",
+            "source_url": "https://www.respan.ai/contact"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/RespanAI",
+          "linkedin": "https://www.linkedin.com/company/respan-ai",
+          "github": "https://github.com/respanai"
+        },
+        "contact_page": "https://www.respan.ai/contact",
+        "pages_crawled": [
+          "https://www.respan.ai/",
+          "https://www.respan.ai/about",
+          "https://www.respan.ai/contact"
+        ],
+        "enriched_at": "2026-10-20T17:25:27+00:00",
+        "status": "ok"
+      },
       "people": [
         {
-          "name": "Moritz Sichert",
-          "role": "co‑founder and CEO",
-          "org": "CedarDB",
-          "evidence": "its co‑founder and CEO Moritz Sichert told TechCrunch."
+          "name": "Andy",
+          "role": "founder",
+          "org": "Respan",
+          "evidence": "Hey HN, this is Andy from Respan (https://www.respan.ai).",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
         },
         {
-          "name": "Lukas Vogel",
-          "role": "co‑founder",
-          "org": "CedarDB",
-          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+          "name": "Andy Li",
+          "role": "Co-founder, CEO",
+          "org": "Respan",
+          "evidence": "Andy Li-> Co-founder, CEO",
+          "linkedin": "https://www.linkedin.com/in/hanheli/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/hanheli/",
+          "link_source": ""
         },
         {
-          "name": "Philipp Fent",
-          "role": "co‑founder",
-          "org": "CedarDB",
-          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+          "name": "Raymond Huang",
+          "role": "Co-founder, CTO",
+          "org": "Respan",
+          "evidence": "Raymond Huang-> Co-founder, CTO",
+          "linkedin": "https://www.linkedin.com/in/yunrui-huang/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/yunrui-huang/",
+          "link_source": ""
         },
         {
-          "name": "Dominik Durner",
-          "role": "co‑founder",
-          "org": "CedarDB",
-          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+          "name": "Hendrix Liu",
+          "role": "Co-founder, Head of Sales",
+          "org": "Respan",
+          "evidence": "Hendrix Liu-> Co-founder, Head of Sales",
+          "linkedin": "https://www.linkedin.com/in/hendrix-liu-7a015822b/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/hendrix-liu-7a015822b/",
+          "link_source": ""
         },
         {
-          "name": "Christian Winter",
-          "role": "co‑founder",
-          "org": "CedarDB",
-          "evidence": "co‑founder Christian Winter detailed key priorities the team set after leaving academia"
+          "name": "Frank Chen",
+          "role": "Head of DevRel",
+          "org": "Respan",
+          "evidence": "Frank Chen-> Head of DevRel",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://fran3c.com/",
+          "link_source": ""
+        },
+        {
+          "name": "Michael Mao",
+          "role": "Founding Engineer",
+          "org": "Respan",
+          "evidence": "Michael Mao-> Founding Engineer",
+          "linkedin": "https://www.linkedin.com/in/michael-mao-776000255/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/michael-mao-776000255/",
+          "link_source": ""
+        },
+        {
+          "name": "Ruifeng Zhang",
+          "role": "Founding Engineer",
+          "org": "Respan",
+          "evidence": "Ruifeng Zhang-> Founding Engineer",
+          "linkedin": "https://www.linkedin.com/in/ruifeng-zhang/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/ruifeng-zhang/",
+          "link_source": ""
+        },
+        {
+          "name": "Leo Yu",
+          "role": "Product Engineer",
+          "org": "Respan",
+          "evidence": "Leo Yu-> Product Engineer",
+          "linkedin": "https://www.linkedin.com/in/ruiqingyu0237/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/ruiqingyu0237/",
+          "link_source": ""
+        },
+        {
+          "name": "Yuyang Liu",
+          "role": "Integrations Engineer",
+          "org": "Respan",
+          "evidence": "Yuyang Liu-> Integrations Engineer",
+          "linkedin": "https://www.linkedin.com/in/yuyang-liu-6791811aa/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/yuyang-liu-6791811aa/",
+          "link_source": ""
+        },
+        {
+          "name": "Taro Ma",
+          "role": "GTM",
+          "org": "Respan",
+          "evidence": "Taro Ma-> GTM",
+          "linkedin": "https://www.linkedin.com/in/zongyuma/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.linkedin.com/in/zongyuma/",
+          "link_source": ""
+        },
+        {
+          "name": "Zach Bratun-Glennon",
+          "role": "General Partner, Gradient",
+          "org": "Respan",
+          "evidence": "Zach Bratun-Glennon-> General Partner, Gradient",
+          "linkedin": "https://www.gradient.com/team/zach-bratun-glennon/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.gradient.com/team/zach-bratun-glennon/",
+          "link_source": ""
+        },
+        {
+          "name": "Denise Teng",
+          "role": "Partner, Gradient",
+          "org": "Respan",
+          "evidence": "Denise Teng-> Partner, Gradient",
+          "linkedin": "https://www.gradient.com/team/denise-teng/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.gradient.com/team/denise-teng/",
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Moritz Sichert",
-          "rel": "cofounded",
-          "dst": "CedarDB",
-          "evidence": "its co‑founder and CEO Moritz Sichert told TechCrunch."
+          "src": "Andy",
+          "rel": "founded",
+          "dst": "Respan",
+          "evidence": "Hey HN, this is Andy from Respan (https://www.respan.ai)."
         },
         {
-          "src": "Lukas Vogel",
-          "rel": "cofounded",
-          "dst": "CedarDB",
-          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+          "src": "Y Combinator",
+          "rel": "backed_by",
+          "dst": "Respan",
+          "evidence": "Respan (YC W24)"
+        }
+      ]
+    },
+    {
+      "company_name": "ObsessionDB",
+      "core_product": "A real‑time data warehouse built for AI agents that ingests, processes and queries massive agent‑generated data streams instantly.",
+      "tech_stack": [
+        "ClickHouse",
+        "object storage",
+        "stateless compute"
+      ],
+      "likely_bottleneck": "Providing low‑latency, cost‑effective semantic search and retrieval over huge, continuously growing unstructured agent transcripts.",
+      "value_prop_pitch": "I can build a Next.js front‑end that surfaces agent‑generated data with low‑latency vector search, and add a semantic retrieval layer on top of your ClickHouse store using embeddings, cutting query latency and cost. This lets your customers query massive transcript logs in real time without building the retrieval infrastructure themselves.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://obsessiondb.com",
+      "source_url": "https://www.ycombinator.com/launches/VpG-obsessiondb-a-real-time-data-warehouse-built-for-agents",
+      "discovered_at": "2026-10-20T17:21:46+00:00",
+      "source": "yc",
+      "score": 45,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://obsessiondb.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/obsessiondb"
+        },
+        "contact_page": "https://obsessiondb.com/contact",
+        "pages_crawled": [
+          "https://obsessiondb.com/",
+          "https://obsessiondb.com/about",
+          "https://obsessiondb.com/contact",
+          "https://obsessiondb.com/team"
+        ],
+        "enriched_at": "2026-10-20T17:25:46+00:00",
+        "status": "ok"
+      },
+      "people": [
+        {
+          "name": "Marc",
+          "role": "co‑founder",
+          "org": "ObsessionDB",
+          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
         },
         {
-          "src": "Philipp Fent",
+          "name": "Rafael Aviles",
+          "role": "co‑founder",
+          "org": "ObsessionDB",
+          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Marc",
           "rel": "cofounded",
-          "dst": "CedarDB",
-          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+          "dst": "ObsessionDB",
+          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB."
         },
         {
-          "src": "Dominik Durner",
+          "src": "Rafael Aviles",
           "rel": "cofounded",
-          "dst": "CedarDB",
-          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+          "dst": "ObsessionDB",
+          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB."
+        }
+      ]
+    },
+    {
+      "company_name": "Consus",
+      "core_product": "An LLM gateway that enforces ITAR, FedRAMP, and CUI compliance for AI model inference across multiple government clouds.",
+      "tech_stack": [
+        "OpenAI-compatible API endpoint",
+        "AWS GovCloud",
+        "Azure Government",
+        "Google Cloud",
+        "FedRAMP",
+        "ITAR compliance"
+      ],
+      "likely_bottleneck": "Building and maintaining a fast, searchable compliance policy engine and model catalog that can retrieve the right model and its restrictions across multiple GovCloud providers.",
+      "value_prop_pitch": "I can build a Next.js based compliance portal that lets your engineers instantly search and filter model availability and policy rules using vector semantic search, cutting down the time spent manually mapping models to GovClouds. This will give you sub‑second retrieval of relevant compliance metadata and a modern UI, freeing your team to focus on security rather than building a custom search layer.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://consus.io",
+      "source_url": "https://news.ycombinator.com/item?id=50073471",
+      "discovered_at": "2026-10-20T17:21:46+00:00",
+      "source": "launch_hn",
+      "score": 71,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "email"
+      ],
+      "contact": {
+        "website": "https://consus.io",
+        "emails": [],
+        "phones": [
+          {
+            "value": "+12522047012",
+            "kind": "main",
+            "source_url": "https://consus.io/"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/consusindustries",
+          "twitter": "https://x.com/OfficialConsus",
+          "github": "https://github.com/consusindustries"
+        },
+        "contact_page": "",
+        "pages_crawled": [
+          "https://consus.io/",
+          "https://consus.io/company"
+        ],
+        "enriched_at": "2026-10-20T17:26:12+00:00",
+        "status": "ok"
+      },
+      "people": [
+        {
+          "name": "Eric",
+          "role": "founder",
+          "org": "Consus",
+          "evidence": "Hey Hacker News! I'm Eric, the founder of Consus.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
         },
         {
-          "src": "Christian Winter",
-          "rel": "cofounded",
-          "dst": "CedarDB",
-          "evidence": "co‑founder Christian Winter detailed key priorities the team set after leaving academia"
+          "name": "Eric Magliarditi",
+          "role": "Founder & CEO",
+          "org": "Consus",
+          "evidence": "Founder & CEO\n## Eric Magliarditi",
+          "linkedin": "https://www.linkedin.com/in/ericmagliarditi/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Eric",
+          "rel": "founded",
+          "dst": "Consus",
+          "evidence": "Hey Hacker News! I'm Eric, the founder of Consus."
+        },
+        {
+          "src": "Eric",
+          "rel": "previously_at",
+          "dst": "SpaceX",
+          "evidence": "I launched national security payloads at SpaceX"
+        },
+        {
+          "src": "Eric Magliarditi",
+          "rel": "founded",
+          "dst": "Consus",
+          "evidence": "Founder & CEO\n## Eric Magliarditi"
+        },
+        {
+          "src": "Eric Magliarditi",
+          "rel": "previously_at",
+          "dst": "SpaceX",
+          "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion."
+        },
+        {
+          "src": "Eric Magliarditi",
+          "rel": "previously_at",
+          "dst": "Castelion",
+          "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion."
+        },
+        {
+          "src": "Y Combinator",
+          "rel": "backed_by",
+          "dst": "Consus",
+          "evidence": "Backed by Y Combinator"
+        }
+      ]
+    },
+    {
+      "company_name": "Probe",
+      "core_product": "Probe is a unified platform that provides agent‑native research tools for AI/ML teams to run experiments, manage compute, and share context.",
+      "tech_stack": [],
+      "likely_bottleneck": "building a seamless search and retrieval layer for experiment data and research context",
+      "value_prop_pitch": "I can build a fast, searchable dashboard for Probe using Next.js that indexes all experiment metadata and research documents with vector embeddings, giving your team instant semantic search across past runs. This will let agents and researchers retrieve relevant context in milliseconds, reducing coordination overhead and speeding up experiment iteration.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.useprobe.ai",
+      "source_url": "https://www.ycombinator.com/launches/W7t-probe-the-agent-native-research-stack",
+      "discovered_at": "2026-10-20T17:21:46+00:00",
+      "source": "yc",
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.useprobe.ai",
+        "emails": [
+          {
+            "value": "founders@prbe.ai",
+            "kind": "person",
+            "source_url": "https://www.useprobe.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://www.useprobe.ai/contact",
+        "pages_crawled": [
+          "https://www.useprobe.ai/",
+          "https://www.useprobe.ai/about",
+          "https://www.useprobe.ai/contact",
+          "https://www.useprobe.ai/team"
+        ],
+        "enriched_at": "2026-10-20T17:26:50+00:00",
+        "status": "ok"
+      },
+      "people": [
+        {
+          "name": "Ashwarye Yadav",
+          "role": "Founder",
+          "org": "Probe",
+          "evidence": "**Ashwarye Yadav**",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Ashwarye Yadav",
+          "rel": "founded",
+          "dst": "Probe",
+          "evidence": "**Ashwarye Yadav**"
         }
       ]
     }

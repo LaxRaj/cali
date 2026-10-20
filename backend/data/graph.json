@@ -1,52 +1,216 @@
 {
   "nodes": [
     {
+      "id": "tako",
+      "label": "Tako",
+      "type": "startup",
+      "degree": 9,
+      "website": "http://trytako.com",
+      "score": 81
+    },
+    {
       "id": "cedardb",
       "label": "CedarDB",
       "type": "startup",
-      "degree": 5
+      "degree": 5,
+      "website": "",
+      "score": 0
+    },
+    {
+      "id": "consus",
+      "label": "Consus",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://consus.io",
+      "score": 71
     },
     {
       "id": "miles pines",
       "label": "Miles Pines",
       "type": "person",
-      "degree": 3
+      "degree": 3,
+      "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "eric magliarditi",
+      "label": "Eric Magliarditi",
+      "type": "person",
+      "degree": 3,
+      "role": "Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ericmagliarditi/"
+      }
+    },
+    {
+      "id": "respan",
+      "label": "Respan",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://www.respan.ai",
+      "score": 80
+    },
+    {
+      "id": "obsessiondb",
+      "label": "ObsessionDB",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://obsessiondb.com",
+      "score": 45
+    },
+    {
+      "id": "eric",
+      "label": "Eric",
+      "type": "person",
+      "degree": 2,
+      "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "y combinator",
+      "label": "Y Combinator",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "spacex",
+      "label": "SpaceX",
+      "type": "org",
+      "degree": 2
     },
     {
       "id": "theo",
       "label": "Theo",
       "type": "startup",
-      "degree": 1
+      "degree": 1,
+      "website": "",
+      "score": 0
+    },
+    {
+      "id": "probe",
+      "label": "Probe",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://www.useprobe.ai",
+      "score": 44
     },
     {
       "id": "moritz sichert",
       "label": "Moritz Sichert",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co‑founder and CEO",
+      "links": {}
     },
     {
       "id": "lukas vogel",
       "label": "Lukas Vogel",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {}
     },
     {
       "id": "philipp fent",
       "label": "Philipp Fent",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {}
     },
     {
       "id": "dominik durner",
       "label": "Dominik Durner",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {}
     },
     {
       "id": "christian winter",
       "label": "Christian Winter",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {}
+    },
+    {
+      "id": "alex rosenberg",
+      "label": "Alex Rosenberg",
+      "type": "person",
+      "degree": 1,
+      "role": "co-founder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/alexrosenberg",
+        "twitter": "https://x.com/alexrrosenberg"
+      }
+    },
+    {
+      "id": "bobby abbott",
+      "label": "Bobby Abbott",
+      "type": "person",
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/robert-m-abbott",
+        "twitter": "https://x.com/ttobbaybbob"
+      }
+    },
+    {
+      "id": "stanley druckenmiller",
+      "label": "Stanley Druckenmiller",
+      "type": "person",
+      "degree": 1,
+      "role": "American investor and philanthropist",
+      "links": {}
+    },
+    {
+      "id": "kevin warsh",
+      "label": "Kevin Warsh",
+      "type": "person",
+      "degree": 1,
+      "role": "Former Member of the Board of Governors, U.S. Federal Reserve",
+      "links": {}
+    },
+    {
+      "id": "chase coleman",
+      "label": "Chase Coleman",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder, Tiger Global Management",
+      "links": {}
+    },
+    {
+      "id": "andy",
+      "label": "Andy",
+      "type": "person",
+      "degree": 1,
+      "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "marc",
+      "label": "Marc",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {}
+    },
+    {
+      "id": "rafael aviles",
+      "label": "Rafael Aviles",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {}
+    },
+    {
+      "id": "ashwarye yadav",
+      "label": "Ashwarye Yadav",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
     },
     {
       "id": "endgrate",
@@ -61,10 +225,274 @@
       "degree": 1
     },
     {
+      "id": "abstract ventures",
+      "label": "Abstract Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "a*",
+      "label": "A*",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "outset capital",
+      "label": "Outset Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "liquid2",
+      "label": "Liquid2",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "castelion",
+      "label": "Castelion",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "maali",
       "label": "Maali",
       "type": "startup",
-      "degree": 0
+      "degree": 0,
+      "website": "",
+      "score": 0
+    },
+    {
+      "id": "kevin hartz",
+      "label": "Kevin Hartz",
+      "type": "person",
+      "degree": 0,
+      "role": "Co-Founder and General Partner",
+      "links": {}
+    },
+    {
+      "id": "ramtin naimi",
+      "label": "Ramtin Naimi",
+      "type": "person",
+      "degree": 0,
+      "role": "partner at Abstract Ventures",
+      "links": {}
+    },
+    {
+      "id": "gokul rajaram",
+      "label": "Gokul Rajaram",
+      "type": "person",
+      "degree": 0,
+      "role": "ex Doordash exec, seed investor in Airtable, Faire, Vercel, Figma",
+      "links": {}
+    },
+    {
+      "id": "scott belsky",
+      "label": "Scott Belsky",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder, A24 Labs",
+      "links": {}
+    },
+    {
+      "id": "stan chudnovsky",
+      "label": "Stan Chudnovsky",
+      "type": "person",
+      "degree": 0,
+      "role": "Former VP of Messaging, Meta",
+      "links": {}
+    },
+    {
+      "id": "javi olivan",
+      "label": "Javi Olivan",
+      "type": "person",
+      "degree": 0,
+      "role": "COO, Meta",
+      "links": {}
+    },
+    {
+      "id": "guillermo rauch",
+      "label": "Guillermo Rauch",
+      "type": "person",
+      "degree": 0,
+      "role": "CEO, Vercel",
+      "links": {}
+    },
+    {
+      "id": "gc lionetti",
+      "label": "GC Lionetti",
+      "type": "person",
+      "degree": 0,
+      "role": "CCO, OpenAI",
+      "links": {}
+    },
+    {
+      "id": "george sivulka",
+      "label": "George Sivulka",
+      "type": "person",
+      "degree": 0,
+      "role": "CEO, Hebbia",
+      "links": {}
+    },
+    {
+      "id": "aravind srinivas",
+      "label": "Aravind Srinivas",
+      "type": "person",
+      "degree": 0,
+      "role": "CEO, Perplexity",
+      "links": {}
+    },
+    {
+      "id": "johnny ho",
+      "label": "Johnny Ho",
+      "type": "person",
+      "degree": 0,
+      "role": "CSO, Perplexity",
+      "links": {}
+    },
+    {
+      "id": "naval ravikant",
+      "label": "Naval Ravikant",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder, AngelList",
+      "links": {}
+    },
+    {
+      "id": "diogo monica",
+      "label": "Diogo Monica",
+      "type": "person",
+      "degree": 0,
+      "role": "General Partner at Haun Ventures, Co-founder of Anchorage Digital",
+      "links": {}
+    },
+    {
+      "id": "nathan mccauley",
+      "label": "Nathan McCauley",
+      "type": "person",
+      "degree": 0,
+      "role": "CEO, Anchorage Digital",
+      "links": {}
+    },
+    {
+      "id": "andy li",
+      "label": "Andy Li",
+      "type": "person",
+      "degree": 0,
+      "role": "Co-founder, CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/hanheli/",
+        "homepage": "https://www.linkedin.com/in/hanheli/"
+      }
+    },
+    {
+      "id": "raymond huang",
+      "label": "Raymond Huang",
+      "type": "person",
+      "degree": 0,
+      "role": "Co-founder, CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/yunrui-huang/",
+        "homepage": "https://www.linkedin.com/in/yunrui-huang/"
+      }
+    },
+    {
+      "id": "hendrix liu",
+      "label": "Hendrix Liu",
+      "type": "person",
+      "degree": 0,
+      "role": "Co-founder, Head of Sales",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/hendrix-liu-7a015822b/",
+        "homepage": "https://www.linkedin.com/in/hendrix-liu-7a015822b/"
+      }
+    },
+    {
+      "id": "frank chen",
+      "label": "Frank Chen",
+      "type": "person",
+      "degree": 0,
+      "role": "Head of DevRel",
+      "links": {
+        "homepage": "https://fran3c.com/"
+      }
+    },
+    {
+      "id": "michael mao",
+      "label": "Michael Mao",
+      "type": "person",
+      "degree": 0,
+      "role": "Founding Engineer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/michael-mao-776000255/",
+        "homepage": "https://www.linkedin.com/in/michael-mao-776000255/"
+      }
+    },
+    {
+      "id": "ruifeng zhang",
+      "label": "Ruifeng Zhang",
+      "type": "person",
+      "degree": 0,
+      "role": "Founding Engineer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ruifeng-zhang/",
+        "homepage": "https://www.linkedin.com/in/ruifeng-zhang/"
+      }
+    },
+    {
+      "id": "leo yu",
+      "label": "Leo Yu",
+      "type": "person",
+      "degree": 0,
+      "role": "Product Engineer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ruiqingyu0237/",
+        "homepage": "https://www.linkedin.com/in/ruiqingyu0237/"
+      }
+    },
+    {
+      "id": "yuyang liu",
+      "label": "Yuyang Liu",
+      "type": "person",
+      "degree": 0,
+      "role": "Integrations Engineer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/yuyang-liu-6791811aa/",
+        "homepage": "https://www.linkedin.com/in/yuyang-liu-6791811aa/"
+      }
+    },
+    {
+      "id": "taro ma",
+      "label": "Taro Ma",
+      "type": "person",
+      "degree": 0,
+      "role": "GTM",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/zongyuma/",
+        "homepage": "https://www.linkedin.com/in/zongyuma/"
+      }
+    },
+    {
+      "id": "zach bratun-glennon",
+      "label": "Zach Bratun-Glennon",
+      "type": "person",
+      "degree": 0,
+      "role": "General Partner, Gradient",
+      "links": {
+        "linkedin": "https://www.gradient.com/team/zach-bratun-glennon/",
+        "homepage": "https://www.gradient.com/team/zach-bratun-glennon/"
+      }
+    },
+    {
+      "id": "denise teng",
+      "label": "Denise Teng",
+      "type": "person",
+      "degree": 0,
+      "role": "Partner, Gradient",
+      "links": {
+        "linkedin": "https://www.gradient.com/team/denise-teng/",
+        "homepage": "https://www.gradient.com/team/denise-teng/"
+      }
     }
   ],
   "edges": [
@@ -115,6 +543,126 @@
       "target": "cedardb",
       "rel": "cofounded",
       "evidence": "co‑founder Christian Winter detailed key priorities the team set after leaving academia"
+    },
+    {
+      "source": "alex rosenberg",
+      "target": "tako",
+      "rel": "founded",
+      "evidence": "Alex Rosenberg\nCEO & Co-founder"
+    },
+    {
+      "source": "bobby abbott",
+      "target": "tako",
+      "rel": "founded",
+      "evidence": "Bobby Abbott\nCTO & Co-founder"
+    },
+    {
+      "source": "abstract ventures",
+      "target": "tako",
+      "rel": "invested_in",
+      "evidence": "https://www.abstractvc.com/"
+    },
+    {
+      "source": "a*",
+      "target": "tako",
+      "rel": "invested_in",
+      "evidence": "https://www.a-star.co/"
+    },
+    {
+      "source": "outset capital",
+      "target": "tako",
+      "rel": "invested_in",
+      "evidence": "https://www.outsetcapital.com/"
+    },
+    {
+      "source": "liquid2",
+      "target": "tako",
+      "rel": "invested_in",
+      "evidence": "https://www.liquid2.vc/"
+    },
+    {
+      "source": "stanley druckenmiller",
+      "target": "tako",
+      "rel": "invested_in",
+      "evidence": "Stanley Druckenmiller\nAmerican investor and philanthropist"
+    },
+    {
+      "source": "kevin warsh",
+      "target": "tako",
+      "rel": "invested_in",
+      "evidence": "Kevin Warsh\nFormer Member of the Board of Governors, U.S. Federal Reserve"
+    },
+    {
+      "source": "chase coleman",
+      "target": "tako",
+      "rel": "invested_in",
+      "evidence": "Chase Coleman\nFounder, Tiger Global Management"
+    },
+    {
+      "source": "andy",
+      "target": "respan",
+      "rel": "founded",
+      "evidence": "Hey HN, this is Andy from Respan (https://www.respan.ai)."
+    },
+    {
+      "source": "y combinator",
+      "target": "respan",
+      "rel": "backed_by",
+      "evidence": "Respan (YC W24)"
+    },
+    {
+      "source": "marc",
+      "target": "obsessiondb",
+      "rel": "cofounded",
+      "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB."
+    },
+    {
+      "source": "rafael aviles",
+      "target": "obsessiondb",
+      "rel": "cofounded",
+      "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB."
+    },
+    {
+      "source": "eric",
+      "target": "consus",
+      "rel": "founded",
+      "evidence": "Hey Hacker News! I'm Eric, the founder of Consus."
+    },
+    {
+      "source": "eric",
+      "target": "spacex",
+      "rel": "previously_at",
+      "evidence": "I launched national security payloads at SpaceX"
+    },
+    {
+      "source": "eric magliarditi",
+      "target": "consus",
+      "rel": "founded",
+      "evidence": "Founder & CEO\n## Eric Magliarditi"
+    },
+    {
+      "source": "eric magliarditi",
+      "target": "spacex",
+      "rel": "previously_at",
+      "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion."
+    },
+    {
+      "source": "eric magliarditi",
+      "target": "castelion",
+      "rel": "previously_at",
+      "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion."
+    },
+    {
+      "source": "y combinator",
+      "target": "consus",
+      "rel": "backed_by",
+      "evidence": "Backed by Y Combinator"
+    },
+    {
+      "source": "ashwarye yadav",
+      "target": "probe",
+      "rel": "founded",
+      "evidence": "**Ashwarye Yadav**"
     }
   ]
 }

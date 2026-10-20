@@ -1,24 +1,30 @@
 {
-  "generated_at": "2026-10-20T11:09:57+00:00",
-  "candidates": 112,
-  "crawled": 4,
-  "extracted": 3,
-  "relevant": 2,
-  "valid": 2,
+  "generated_at": "2026-10-20T17:26:50+00:00",
+  "candidates": 168,
+  "crawled": 6,
+  "extracted": 5,
+  "relevant": 5,
+  "valid": 5,
   "sources": {
-    "hn": 2
+    "web": 1,
+    "launch_hn": 2,
+    "yc": 2
   },
-  "people": 0,
-  "edges": 0,
+  "people": 36,
+  "edges": 20,
   "dropped_ungrounded": 1,
+  "quota_exhausted": false,
+  "enriched": 5,
+  "with_website": 5,
+  "with_email": 2,
+  "with_phone": 1,
+  "people_linked": 13,
+  "avg_score": 64.2,
   "issues": {
     "extraction error": 1,
-    "not a relevant startup page": 1
+    "warn: empty tech_stack": 1
   },
-  "failures": [
-    "only 2 valid startups (< 3)",
-    "only 1 discovery sources produced valid startups (< 2)"
-  ],
-  "passed": false,
+  "failures": [],
+  "passed": true,
   "validity_rate": 1.0
 }

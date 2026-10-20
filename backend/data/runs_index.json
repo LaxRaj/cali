@@ -46,6 +46,28 @@
         "only 2 valid startups (< 3)",
         "only 1 discovery sources produced valid startups (< 2)"
       ]
+    },
+    {
+      "run_id": "20261020T172115Z",
+      "started_at": "2026-10-20T17:21:15+00:00",
+      "duration_s": 336.3,
+      "passed": true,
+      "funnel": {
+        "candidates": 168,
+        "selected": 6,
+        "crawled": 6,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 47707,
+      "sources": {
+        "yc": 12,
+        "hn": 67,
+        "rss": 71,
+        "web": 18
+      },
+      "failures": []
     }
   ]
 }
