@@ -107,7 +107,7 @@ def to_candidate(form: dict, filing_url: str, updated: str = "") -> Candidate:
         url=filing_url,
         title=f"{form['issuer']} raises {_money(form['sold'] or form['offering'])} (SEC Form D)",
         snippet=f"{where}; {form['industry']}; {form['investors']} investors; {len(form['people'])} named officers/directors",
-        source="edgar", published_at=updated, content="\n".join(lines),
+        source="edgar", published_at=updated, content="\n".join(lines), company=form["issuer"],
     )
 
 
@@ -135,3 +135,36 @@ def fetch(client: httpx.Client | None = None, max_filings: int = MAX_FILINGS) ->
             out.append(to_candidate(form, e["folder"] + "/", e["updated"]))
         time.sleep(0.15)
     return out
+
+
+MAX_SITE_CHARS = 6000
+
+
+async def materialize(cand: Candidate, search_fn=None, fetch_fn=None) -> str | None:
+    """Turn a Form D candidate into extractable content, or None if we can't tell what the company does.
+
+    A filing names the company, officers and amount raised but says nothing about the product, so we find the
+    filer's own website, read its homepage, and append it to the filing facts. The homepage must actually mention
+    the company (guards against another company with a similar name). Returns the combined Markdown.
+    """
+    from enrich import company_token, fetch_pages, fold, is_company_host, host_of, origin_of, resolve_website
+
+    fetch_fn = fetch_fn or fetch_pages
+    website = resolve_website(cand.company, "", cand.url, "edgar", cand.content, search_fn)
+    if not website:
+        return None
+    try:
+        pages = await fetch_fn([website + "/"])
+    except Exception:
+        return None
+    if not pages:
+        return None
+    home = pages[0]
+    final = origin_of(home.url) if is_company_host(host_of(home.url)) else website
+    token = company_token(cand.company)
+    squashed = re.sub(r"[^a-z0-9]", "", fold(home.markdown))  # "Reservoir Co" / "reservoir-co" both match "reservoirco"
+    if not home.markdown.strip() or (token and token not in squashed):
+        return None
+    return (
+        f"{cand.content}\n\n## {cand.company} website\n\nWebsite: {final}\n\n{home.markdown.strip()[:MAX_SITE_CHARS]}"
+    )

@@ -11,6 +11,7 @@ class Candidate:
     source: str  # hn | rss | yc | web
     published_at: str = ""
     content: str = ""  # page text already in hand (e.g. Launch HN posts); skips the crawl
+    company: str = ""  # entity name when the source knows it (SEC filer, hiring company)
     triage: float = 0.0  # 0-10 "worth crawling" score assigned by discovery.triage.select
 
 

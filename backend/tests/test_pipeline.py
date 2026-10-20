@@ -167,3 +167,28 @@ async def test_gate_skips_extraction_for_non_startup_pages_and_logs_training_row
     rows = [json.loads(line) for line in (tmp_path / "decisions.jsonl").read_text().splitlines()]
     assert {(r["title"], r["outcome"]) for r in rows} == {("Real raises seed", "accepted"), ("10 best tools", "gated")}
     assert rows[0]["run_id"] == run["run_id"] and rows[0]["triage"] in (8.0, 4.5)
+
+
+async def test_edgar_candidates_get_the_company_website_added_before_extraction_or_are_dropped(monkeypatch, tmp_path):
+    setup(monkeypatch, [make_extraction("Nocturnal")], ["edgar"])
+    good = Candidate("https://www.sec.gov/Archives/a/", "Nocturnal raises $1.85M (SEC Form D)", "s", "edgar", content="FILING FACTS", company="Nocturnal Inc.")
+    lost = Candidate("https://www.sec.gov/Archives/b/", "Ghost raises $1M (SEC Form D)", "s", "edgar", content="FILING FACTS", company="Ghost LLC")
+
+    async def fake_discover():
+        return [good, lost]
+
+    async def fake_materialize(cand, search_fn=None, fetch_fn=None):
+        return "FILING FACTS\n\nWebsite: https://nocturnal.ai\n\nNocturnal builds things." if cand.company == "Nocturnal Inc." else None
+
+    seen_md = []
+    it = iter([make_extraction("Nocturnal")])
+    monkeypatch.setattr(pipeline, "discover", fake_discover)
+    monkeypatch.setattr(pipeline.edgar, "materialize", fake_materialize)
+    monkeypatch.setattr(pipeline, "extract", lambda md: seen_md.append(md) or next(it))
+    await pipeline.run(tmp_path)
+
+    assert len(seen_md) == 1 and "Nocturnal builds things." in seen_md[0]  # the extractor saw the website text
+    run = json.loads(next((tmp_path / "runs").glob("*.json")).read_text())
+    assert [(r["source"], r["reasons"]) for r in run["rejections"]] == [("edgar", ["no company website found"])]
+    rows = [json.loads(line) for line in (tmp_path / "decisions.jsonl").read_text().splitlines()]
+    assert {(r["title"][:5], r["outcome"]) for r in rows} == {("Noctu", "accepted"), ("Ghost", "no_website")}

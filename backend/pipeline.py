@@ -193,7 +193,17 @@ async def run(data_dir: Path) -> RunReport:
             st["notes"] = [f"crawl caps by source: {caps}", f"decider: {decider.name}"]
 
         with log.stage("crawl") as st:
-            inline = [Page(c.url, c.content) for c in chosen if c.content]  # e.g. Launch HN: already in hand
+            inline = []  # candidates whose text we already have (Launch HN, hiring posts, SEC filings)
+            for c in (c for c in chosen if c.content):
+                content = c.content
+                if c.source == "edgar":  # a filing has no product description: add the company's own homepage
+                    content = await edgar.materialize(c, search_fn=search_fn)
+                    if content is None:
+                        print(f"edgar: no website found for {c.company}; skipping", file=sys.stderr)
+                        log.rejection(c.url, c.source, ["no company website found"])
+                        log.candidate(c.url, c.source, c.title, c.snippet, c.triage, "no_website")
+                        continue
+                inline.append(Page(c.url, content))
             crawled = await scrape_urls([c.url for c in chosen if not c.content])
             order = {normalize_url(c.url): i for i, c in enumerate(chosen)}  # best-ranked first
             pages = sorted(inline + crawled, key=lambda p: order.get(normalize_url(p.url), 99))

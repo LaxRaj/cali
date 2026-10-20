@@ -159,3 +159,61 @@ def test_hiring_skips_large_established_employers():
     assert hiring.to_candidate(boiler, "2") is None
     startup = hiring.parse_post('Tiny AI | Founding ML Engineer | Remote<p><a href="https://jobs.lever.co/tinyai">apply</a> seed-stage, 6 people')
     assert hiring.to_candidate(startup, "3") is not None  # ATS links (lever/greenhouse) are fine
+
+
+# --- Form D: add the company's own website so the extractor can see what it builds ------------------------------
+
+
+async def test_materialize_combines_filing_facts_with_the_companys_homepage():
+    from enrich import Fetched
+
+    cand = edgar.to_candidate(edgar.parse_form_d(FORM_D), "https://www.sec.gov/Archives/x/", "2026-10-20")
+    assert cand.company == "Nocturnal Inc."
+    searched, fetched = [], []
+
+    def search(q):
+        searched.append(q)
+        return [{"href": "https://www.sec.gov/other"}, {"href": "https://www.nocturnal.ai/", "title": "Nocturnal"}]
+
+    async def fetch(urls):
+        fetched.extend(urls)
+        return [Fetched("https://www.nocturnal.ai/", "<html/>", "# Nocturnal\n\nNocturnal builds night-vision analytics for warehouses.")]
+
+    content = await edgar.materialize(cand, search_fn=search, fetch_fn=fetch)
+    assert searched == ['"Nocturnal Inc." official website'] and fetched == ["https://www.nocturnal.ai/"]
+    assert "Abhinandan Jain — Executive Officer, Director" in content  # filing facts kept (grounding for people)
+    assert "Website: https://www.nocturnal.ai" in content and "night-vision analytics for warehouses" in content  # the product
+
+
+async def test_materialize_gives_up_without_a_matching_website():
+    from enrich import Fetched
+
+    cand = edgar.to_candidate(edgar.parse_form_d(FORM_D), "https://www.sec.gov/Archives/x/")
+
+    async def fetch_ok(urls):
+        return [Fetched("https://www.nocturnal.ai/", "<html/>", "A totally different company about gardening.")]
+
+    async def fetch_none(urls):
+        return []
+
+    async def fetch_boom(urls):
+        raise RuntimeError("timeout")
+
+    site = lambda q: [{"href": "https://www.nocturnal.ai/"}]  # noqa: E731
+    assert await edgar.materialize(cand, search_fn=lambda q: [], fetch_fn=fetch_ok) is None  # no website found
+    assert await edgar.materialize(cand, search_fn=site, fetch_fn=fetch_ok) is None  # homepage doesn't mention the company
+    assert await edgar.materialize(cand, search_fn=site, fetch_fn=fetch_none) is None  # crawl failed
+    assert await edgar.materialize(cand, search_fn=site, fetch_fn=fetch_boom) is None  # never raises into the pipeline
+
+
+async def test_materialize_matches_company_names_written_with_spaces_or_hyphens():
+    from enrich import Fetched
+
+    form = edgar.parse_form_d(FORM_D.replace("Nocturnal Inc.", "ReservoirCo, Inc."))
+    cand = edgar.to_candidate(form, "https://www.sec.gov/Archives/r/")
+
+    async def fetch(urls):
+        return [Fetched("https://reservoir-co.com/", "<html/>", "# Reservoir Co\n\nWe build reservoir monitoring software.")]
+
+    out = await edgar.materialize(cand, search_fn=lambda q: [{"href": "https://reservoir-co.com/"}], fetch_fn=fetch)
+    assert out and "reservoir monitoring software" in out
