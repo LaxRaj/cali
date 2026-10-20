@@ -82,6 +82,7 @@ async def scrape_urls(urls: list[str], max_tokens: int = MAX_TOKENS) -> list[Pag
         results = await crawler.arun_many(urls, config=config)
         for res in results:
             if not res.success or not res.markdown:
+                print(f"scrape failed {res.url}: {res.error_message}", file=sys.stderr)
                 continue
             md = clean_markdown(res.markdown.fit_markdown or res.markdown.raw_markdown)
             if md:
