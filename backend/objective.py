@@ -1,3 +1,5 @@
+import os
+
 """The scout's goal. Everything downstream (planner, triage, extractor) reads this."""
 
 OBJECTIVE = """Find early-stage tech startups (pre-seed to Series A, recently launched or funded),
@@ -17,3 +19,7 @@ PER_SOURCE_CAP = 5  # keep one source from crowding out the others
 MIN_VALID_STARTUPS = 3
 MIN_VALIDITY_RATE = 0.5  # of pages the LLM called relevant, share passing validation
 MIN_SOURCES = 2  # distinct discovery sources among valid startups
+
+# Triage floor (0-10, local decider). In our logs every valid startup scored >= 7.7 while 4 of 10 rejected pages
+# scored 5.6-6.9, so crawling + extracting anything below ~6.5 mostly buys rejections. CALI_MIN_TRIAGE overrides.
+MIN_TRIAGE = float(os.environ.get("CALI_MIN_TRIAGE", "6.5"))

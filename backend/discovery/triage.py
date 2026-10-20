@@ -6,7 +6,7 @@ from collections import defaultdict
 
 from discovery import Candidate, normalize_url
 from llm import chat_json
-from objective import MAX_CRAWLS, OBJECTIVE, PER_SOURCE_CAP
+from objective import MAX_CRAWLS, MIN_TRIAGE, OBJECTIVE, PER_SOURCE_CAP
 
 BLOCKED_HOSTS = {
     "youtube.com", "youtu.be", "twitter.com", "x.com", "linkedin.com", "reddit.com",
@@ -92,7 +92,7 @@ def select(
     cands: list[Candidate],
     seen: set[str],
     client=None,
-    min_score: int = 4,
+    min_score: float | None = None,
     caps: dict[str, int] | None = None,
     decider=None,
     refine_llm: bool = os.environ.get("CALI_REFINE") == "1",
@@ -102,6 +102,8 @@ def select(
     With a `decider` (the default in the pipeline) scoring is local and free; the LLM only breaks ties on
     borderline items. Without one, the LLM scores a shortlist (the original behaviour).
     """
+    if min_score is None:  # the local decider is calibrated on a 0-10 scale where startups score >= ~7.7
+        min_score = MIN_TRIAGE if decider is not None else 4
     if decider is not None:
         cands = shortlist(heuristic_filter(cands, seen), DECIDER_SHORTLIST)
         scores = decider_scores(cands, decider, client, refine_llm)

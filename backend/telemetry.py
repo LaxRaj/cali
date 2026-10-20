@@ -78,9 +78,9 @@ class RunLog:
     def rejection(self, url: str, source: str, reasons: list[str]) -> None:
         self.rejections.append({"url": url, "source": source, "reasons": reasons})
 
-    def candidate(self, url: str, source: str, title: str, snippet: str, triage: float, outcome: str, score: int | None = None) -> None:
+    def candidate(self, url: str, source: str, title: str, snippet: str, triage: float, outcome: str, score: int | None = None, gate_p: float | None = None) -> None:
         self.candidate_log.append({"url": url, "source": source, "title": title, "snippet": snippet[:160],
-                                   "triage": triage, "outcome": outcome, "score": score})
+                                   "triage": triage, "outcome": outcome, "score": score, "gate_p": gate_p})
 
     def accept(self, company: str, url: str, source: str, people: int, edges: int) -> None:
         self.accepted.append({"company": company, "url": url, "source": source, "people": people, "edges": edges})
