@@ -55,3 +55,35 @@ def test_upsert_replaces_existing_company(db_dir):
 
 def test_search_empty_db_returns_nothing(db_dir):
     assert search("anything", db_dir=db_dir) == []
+
+
+def test_people_edges_and_seen_urls(db_dir):
+    from memory import mark_seen, neighbors, search_people, seen_urls, upsert_edges, upsert_people
+    from models import Edge, Person
+
+    upsert_people(
+        [
+            Person(name="Jane Roe", role="CEO and co-founder", org="DocuMind", evidence="e"),
+            Person(name="Bob Lee", role="General partner, venture capital investor", org="Seed Fund", evidence="e"),
+            Person(name="Sam Ng", role="game engine programmer", org="PixelForge", evidence="e"),
+        ],
+        db_dir=db_dir,
+    )
+    assert search_people("venture capital investor", k=1, db_dir=db_dir)[0].name == "Bob Lee"
+
+    upsert_edges(
+        [
+            Edge(src="Jane Roe", rel="founded", dst="DocuMind", evidence="e"),
+            Edge(src="Seed Fund", rel="invested_in", dst="DocuMind", evidence="e"),
+            Edge(src="Sam Ng", rel="works_at", dst="PixelForge", evidence="e"),
+        ],
+        db_dir=db_dir,
+    )
+    upsert_edges([Edge(src="Jane Roe", rel="founded", dst="DocuMind", evidence="e2")], db_dir=db_dir)  # upsert
+    links = neighbors("documind", db_dir=db_dir)
+    assert {(e.src, e.rel) for e in links} == {("Jane Roe", "founded"), ("Seed Fund", "invested_in")}
+
+    assert seen_urls(db_dir) == set()
+    mark_seen(["a.com/x", "b.com/y"], db_dir=db_dir)
+    mark_seen(["a.com/x"], db_dir=db_dir)
+    assert seen_urls(db_dir) == {"a.com/x", "b.com/y"}

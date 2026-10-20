@@ -1,35 +1,50 @@
-"""Turn scraped Markdown into a structured StartupProfile via Groq."""
+"""Turn scraped Markdown into a structured Extraction (startup + people + edges) via Groq."""
 
 import json
-import os
 
 from groq import Groq
 
-from models import StartupProfile
+from llm import MODEL, get_client
+from models import Extraction
+from objective import OBJECTIVE
 
-# Groq no longer serves any Llama 70B model; gpt-oss-120b is the closest large model available.
-MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
-MAX_CHARS = 24_000
+MAX_CHARS = 14_000  # ~3.5k tokens: bounds Groq free-tier usage
 
 SYSTEM_PROMPT = f"""You analyze web pages about tech startups (launch posts, Show HN, funding news).
-Return ONLY a JSON object matching this JSON schema:
-{json.dumps(StartupProfile.model_json_schema())}
+Overall goal of the research: {OBJECTIVE}
 
-Field rules:
-- company_name: the startup's name.
+Return ONLY a JSON object matching this JSON schema:
+{json.dumps(Extraction.model_json_schema())}
+
+startup fields:
+- company_name: the startup's name; "" if the page is not about one specific startup.
 - core_product: one sentence on what it builds.
 - tech_stack: technologies explicitly mentioned or strongly implied; [] if none.
 - likely_bottleneck: deduce the engineering bottleneck this company most likely faces,
   based on its tech stack and product (e.g. search quality, data-heavy UI, retrieval over unstructured data).
 - value_prop_pitch: EXACTLY two sentences, written from a freelance engineer to the company,
   showing how they can remove that bottleneck using Next.js and vector semantic search.
-- is_relevant: true only if the page is about a specific early-stage tech startup and a
-  Next.js + semantic search engagement plausibly fits; otherwise false (still fill all fields).
-Do not invent facts that the page does not support."""
+- funding_stage: e.g. "pre-seed", "seed", "Series A", or "" if unknown.
+- is_relevant: true ONLY if the page is about ONE specific real early-stage tech startup with a product:
+  a launch, a funding announcement, or a founder story about that company. False for: how-to guides,
+  listicles, market reports, big-company news, personal side projects/demos, and a company's own
+  marketing or SEO blog content that is not about its launch, funding or founders.
+  This is about WHAT THE PAGE IS, not whether the startup suits the research goal.
+  When false, still fill every field (use "" where unknown).
+- Leave source_url and discovered_at as "".
+
+people: founders, key engineers, investors and advisors named on the page. Extract people and edges
+thoroughly whenever the page names them, regardless of is_relevant.
+- evidence MUST be a short verbatim quote (copy it exactly, character for character, one contiguous
+  span, NO ellipses) from the page that supports the person and role.
+edges: relationships between named entities, rel one of founded, cofounded, works_at, invested_in, advises,
+backed_by, competitor_of. src and dst are names (person or company/fund). evidence MUST be a verbatim quote
+from the page (one contiguous span, NO ellipses) containing the relationship.
+Never invent people or relationships that the page does not state."""
 
 
-def extract_profile(markdown: str, client: Groq | None = None) -> StartupProfile:
-    client = client or Groq()  # reads GROQ_API_KEY
+def extract(markdown: str, client: Groq | None = None) -> Extraction:
+    client = client or get_client()
     completion = client.chat.completions.create(
         model=MODEL,
         temperature=0,
@@ -39,4 +54,4 @@ def extract_profile(markdown: str, client: Groq | None = None) -> StartupProfile
             {"role": "user", "content": markdown[:MAX_CHARS]},
         ],
     )
-    return StartupProfile.model_validate_json(completion.choices[0].message.content)
+    return Extraction.model_validate_json(completion.choices[0].message.content)

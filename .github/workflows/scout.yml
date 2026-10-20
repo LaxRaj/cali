@@ -45,7 +45,10 @@ jobs:
       - name: Install Chromium for crawl4ai
         run: uv run playwright install --with-deps chromium
 
-      - name: Run scout (scrape -> extract -> update vector store -> daily brief)
+      - name: Offline tests (validators, discovery, quality gates)
+        run: uv run pytest -q
+
+      - name: Run scout (discover -> extract -> quality gates -> store -> daily brief)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CRAWL4AI_NO_CLOUD_NOTICE: "1"
@@ -56,7 +59,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add backend/data/startups.lance backend/data/daily_brief.json
+          git add backend/data
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else

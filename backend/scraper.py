@@ -49,10 +49,11 @@ def truncate_tokens(text: str, max_tokens: int = MAX_TOKENS) -> str:
 BACKENDS = ["duckduckgo", "brave", "yahoo", "mojeek", "startpage"]
 
 
-def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 3) -> list[str]:
+def search_results(query: str = QUERY, n: int = TOP_N, attempts: int = 3) -> list[dict]:
     """Search DuckDuckGo first, then fall back to other engines.
 
-    DDG intermittently returns nothing and blocks datacenter IPs (e.g. CI runners).
+    DDG intermittently returns nothing and blocks datacenter IPs (e.g. CI runners), and
+    sometimes returns a single blank result. Returns dicts with title/href/body.
     """
     for attempt in range(attempts):
         for backend in BACKENDS:
@@ -61,14 +62,17 @@ def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 3) -> list[s
             except Exception as e:
                 print(f"search[{backend}] failed: {e}", file=sys.stderr)
                 continue
-            urls = [r.get("href", "") for r in results]
-            urls = [u for u in urls if u.startswith("http")][:n]
-            if urls:
-                print(f"search[{backend}]: {len(urls)} urls", file=sys.stderr)
-                return urls
+            usable = [r for r in results if r.get("href", "").startswith("http")][:n]
+            if usable:
+                print(f"search[{backend}]: {len(usable)} urls", file=sys.stderr)
+                return usable
             print(f"search[{backend}]: no usable results ({results!r:.200})", file=sys.stderr)
         time.sleep(2**attempt)
     return []
+
+
+def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 3) -> list[str]:
+    return [r["href"] for r in search_results(query, n, attempts)]
 
 
 async def scrape_urls(urls: list[str], max_tokens: int = MAX_TOKENS) -> list[Page]:

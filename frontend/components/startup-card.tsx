@@ -55,6 +55,43 @@ export function StartupCard({ f }: { f: Finding }) {
         </ul>
       )}
 
+      {f.people && f.people.length > 0 && (
+        <section className="mt-4" aria-label="People">
+          <h3 className="text-xs font-medium uppercase tracking-wide text-zinc-500">
+            People
+          </h3>
+          <ul className="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+            {f.people.map((p) => (
+              <li key={`${p.name}|${p.org}`}>
+                <span className="font-medium text-zinc-900 dark:text-zinc-100">
+                  {p.name}
+                </span>
+                {p.role && <span className="text-zinc-500"> · {p.role}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {f.edges && f.edges.length > 0 && (
+        <section className="mt-4" aria-label="Connections">
+          <h3 className="text-xs font-medium uppercase tracking-wide text-zinc-500">
+            Connections
+          </h3>
+          <ul className="mt-1.5 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+            {f.edges.map((e) => (
+              <li key={`${e.src}|${e.rel}|${e.dst}`} title={e.evidence}>
+                {e.src}{" "}
+                <span className="font-mono text-xs text-emerald-600 dark:text-emerald-400">
+                  {e.rel.replace("_", " ")}
+                </span>{" "}
+                {e.dst}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <dl className="mt-4 space-y-4 text-sm">
         {f.likely_bottleneck.trim() && (
           <div>
