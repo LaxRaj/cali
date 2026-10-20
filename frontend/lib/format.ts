@@ -4,7 +4,9 @@ export function fmtDuration(s: number): string {
 }
 
 export function fmtTokens(n: number): string {
-  return n >= 1000 ? `${(n / 1000).toFixed(n >= 100_000 ? 0 : 1)}k` : String(n);
+  if (n < 1000) return String(n);
+  const k = Math.round(n / 100) / 10; // round first so 99,999 reads "100k", not "100.0k"
+  return `${k.toFixed(k >= 100 ? 0 : 1)}k`;
 }
 
 export function fmtDate(iso: string): string {
