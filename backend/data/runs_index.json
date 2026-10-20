@@ -68,6 +68,34 @@
         "web": 18
       },
       "failures": []
+    },
+    {
+      "run_id": "20261020T181651Z",
+      "started_at": "2026-10-20T18:16:51+00:00",
+      "duration_s": 53.0,
+      "passed": false,
+      "funnel": {
+        "candidates": 303,
+        "selected": 12,
+        "crawled": 11,
+        "extracted": 0,
+        "relevant": 0,
+        "valid": 0
+      },
+      "tokens": 857,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 67,
+        "rss": 71,
+        "web": 30,
+        "edgar": 3
+      },
+      "failures": [
+        "only 0 valid startups (< 3)",
+        "validity rate 0% (< 50%)",
+        "only 0 discovery sources produced valid startups (< 2)"
+      ]
     }
   ]
 }
