@@ -132,6 +132,8 @@ class RunReport:
     issues: dict[str, int] = field(default_factory=dict)
     failures: list[str] = field(default_factory=list)
     passed: bool = False
+    deferred_urls: list[str] = field(default_factory=list)  # pages left unextracted by the early stop
+    skipped: str = ""  # why the run did no work (e.g. Groq quota spent)
 
     @property
     def validity_rate(self) -> float:
