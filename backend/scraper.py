@@ -61,10 +61,12 @@ def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 3) -> list[s
             except Exception as e:
                 print(f"search[{backend}] failed: {e}", file=sys.stderr)
                 continue
-            if results:
-                print(f"search[{backend}]: {len(results)} results", file=sys.stderr)
-                return [r["href"] for r in results][:n]
-            print(f"search[{backend}]: no results", file=sys.stderr)
+            urls = [r.get("href", "") for r in results]
+            urls = [u for u in urls if u.startswith("http")][:n]
+            if urls:
+                print(f"search[{backend}]: {len(urls)} urls", file=sys.stderr)
+                return urls
+            print(f"search[{backend}]: no usable results ({results!r:.200})", file=sys.stderr)
         time.sleep(2**attempt)
     return []
 
