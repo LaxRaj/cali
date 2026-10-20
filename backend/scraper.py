@@ -2,6 +2,7 @@
 
 import asyncio
 import re
+import time
 from dataclasses import dataclass
 
 import tiktoken
@@ -44,9 +45,18 @@ def truncate_tokens(text: str, max_tokens: int = MAX_TOKENS) -> str:
     return _ENC.decode(tokens[:max_tokens])
 
 
-def search_urls(query: str = QUERY, n: int = TOP_N) -> list[str]:
-    results = DDGS().text(query, max_results=n)
-    return [r["href"] for r in results][:n]
+def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 4) -> list[str]:
+    """DuckDuckGo intermittently returns nothing or rate-limits; retry with backoff."""
+    for attempt in range(attempts):
+        try:
+            results = DDGS().text(query, max_results=n)
+            if results:
+                return [r["href"] for r in results][:n]
+        except Exception:
+            if attempt == attempts - 1:
+                raise
+        time.sleep(2**attempt)
+    return []
 
 
 async def scrape_urls(urls: list[str], max_tokens: int = MAX_TOKENS) -> list[Page]:
