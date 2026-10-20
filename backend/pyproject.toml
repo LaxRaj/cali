@@ -7,7 +7,10 @@ dependencies = [
     "ddgs>=9.16.0",
     "duckduckgo-search>=8.1.1",
     "groq>=1.7.0",
+    "lancedb>=0.40.0",
+    "pandas>=3.0.6",
     "pydantic>=2.14.1",
+    "sentence-transformers>=6.1.0",
 ]
 
 [dependency-groups]
