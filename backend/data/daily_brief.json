@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-10-20T08:07:00+00:00",
+  "findings": [
+    {
+      "company_name": "Maali",
+      "core_product": "Maili builds a desktop personal‑finance app that categorises bank transactions, visualises spending and provides AI‑driven analysis, all running locally on the user's computer.",
+      "tech_stack": [
+        "SimpleFIN"
+      ],
+      "likely_bottleneck": "Fast, accurate search and retrieval over a user's growing transaction history for the on‑device AI analyst",
+      "value_prop_pitch": "Hi Maali team, I can add a high‑performance semantic search layer built with Next.js and vector embeddings so your AI analyst can instantly retrieve relevant transactions from a user's history. This will improve response times and enable more accurate insights while keeping all data private on the client.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "source_url": "https://maali.app/",
+      "discovered_at": "2026-10-20T08:04:20+00:00",
+      "source": "hn",
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Theo",
+      "core_product": "An AI‑powered site builder that automatically creates and updates SEO‑optimized websites for small businesses.",
+      "tech_stack": [],
+      "likely_bottleneck": "Ensuring generated content ranks well and stays relevant across diverse search queries at scale.",
+      "value_prop_pitch": "I can help Theo improve its content relevance by building a Next.js front‑end that queries a vector‑based semantic search index of your generated articles, ensuring each page ranks for the most relevant queries. This will also let you serve personalized, SEO‑optimized content instantly while reducing the load on your current generation pipeline.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "source_url": "https://www.ycombinator.com/launches/W36-theo-the-site-builder-and-engine-that-gets-your-business-found",
+      "discovered_at": "2026-10-20T08:04:20+00:00",
+      "source": "yc",
+      "people": [
+        {
+          "name": "Miles Pines",
+          "role": "founder",
+          "org": "",
+          "evidence": "Miles Pines is a solo founder with a Harvard CS degree."
+        }
+      ],
+      "edges": [
+        {
+          "src": "Miles Pines",
+          "rel": "founded",
+          "dst": "Theo",
+          "evidence": "Miles Pines is a solo founder with a Harvard CS degree."
+        },
+        {
+          "src": "Miles Pines",
+          "rel": "cofounded",
+          "dst": "Endgrate",
+          "evidence": "Before Theo, he co‑founded Endgrate and bootstrapped it to $100k+ a year in revenue."
+        },
+        {
+          "src": "Miles Pines",
+          "rel": "works_at",
+          "dst": "Citadel Securities",
+          "evidence": "Previously, he worked on low‑latency software at Citadel Securities."
+        }
+      ]
+    },
+    {
+      "company_name": "CedarDB",
+      "core_product": "A database engine that handles both transactional (OLTP) and analytical (OLAP) workloads with PostgreSQL compatibility.",
+      "tech_stack": [
+        "PostgreSQL",
+        "SQL",
+        "on‑premise",
+        "cloud"
+      ],
+      "likely_bottleneck": "Optimizing query performance and efficient retrieval across mixed transactional and analytical workloads.",
+      "value_prop_pitch": "I can build a Next.js based query UI that leverages vector semantic search to translate natural‑language questions into optimized SQL for both OLTP and OLAP workloads, reducing latency and improving relevance. This layer would let CedarDB’s customers get fast, accurate answers without rewriting their applications, freeing your engineering team to focus on core performance improvements.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "source_url": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
+      "discovered_at": "2026-10-20T08:04:20+00:00",
+      "source": "rss",
+      "people": [
+        {
+          "name": "Moritz Sichert",
+          "role": "co‑founder and CEO",
+          "org": "CedarDB",
+          "evidence": "its co‑founder and CEO Moritz Sichert told TechCrunch."
+        },
+        {
+          "name": "Lukas Vogel",
+          "role": "co‑founder",
+          "org": "CedarDB",
+          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+        },
+        {
+          "name": "Philipp Fent",
+          "role": "co‑founder",
+          "org": "CedarDB",
+          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+        },
+        {
+          "name": "Dominik Durner",
+          "role": "co‑founder",
+          "org": "CedarDB",
+          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+        },
+        {
+          "name": "Christian Winter",
+          "role": "co‑founder",
+          "org": "CedarDB",
+          "evidence": "co‑founder Christian Winter detailed key priorities the team set after leaving academia"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Moritz Sichert",
+          "rel": "cofounded",
+          "dst": "CedarDB",
+          "evidence": "its co‑founder and CEO Moritz Sichert told TechCrunch."
+        },
+        {
+          "src": "Lukas Vogel",
+          "rel": "cofounded",
+          "dst": "CedarDB",
+          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+        },
+        {
+          "src": "Philipp Fent",
+          "rel": "cofounded",
+          "dst": "CedarDB",
+          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+        },
+        {
+          "src": "Dominik Durner",
+          "rel": "cofounded",
+          "dst": "CedarDB",
+          "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+        },
+        {
+          "src": "Christian Winter",
+          "rel": "cofounded",
+          "dst": "CedarDB",
+          "evidence": "co‑founder Christian Winter detailed key priorities the team set after leaving academia"
+        }
+      ]
+    }
+  ]
+}

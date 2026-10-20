@@ -1,0 +1,120 @@
+{
+  "nodes": [
+    {
+      "id": "cedardb",
+      "label": "CedarDB",
+      "type": "startup",
+      "degree": 5
+    },
+    {
+      "id": "miles pines",
+      "label": "Miles Pines",
+      "type": "person",
+      "degree": 3
+    },
+    {
+      "id": "theo",
+      "label": "Theo",
+      "type": "startup",
+      "degree": 1
+    },
+    {
+      "id": "moritz sichert",
+      "label": "Moritz Sichert",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "lukas vogel",
+      "label": "Lukas Vogel",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "philipp fent",
+      "label": "Philipp Fent",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "dominik durner",
+      "label": "Dominik Durner",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "christian winter",
+      "label": "Christian Winter",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "endgrate",
+      "label": "Endgrate",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "citadel securities",
+      "label": "Citadel Securities",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "maali",
+      "label": "Maali",
+      "type": "startup",
+      "degree": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "miles pines",
+      "target": "theo",
+      "rel": "founded",
+      "evidence": "Miles Pines is a solo founder with a Harvard CS degree."
+    },
+    {
+      "source": "miles pines",
+      "target": "endgrate",
+      "rel": "cofounded",
+      "evidence": "Before Theo, he co‑founded Endgrate and bootstrapped it to $100k+ a year in revenue."
+    },
+    {
+      "source": "miles pines",
+      "target": "citadel securities",
+      "rel": "works_at",
+      "evidence": "Previously, he worked on low‑latency software at Citadel Securities."
+    },
+    {
+      "source": "moritz sichert",
+      "target": "cedardb",
+      "rel": "cofounded",
+      "evidence": "its co‑founder and CEO Moritz Sichert told TechCrunch."
+    },
+    {
+      "source": "lukas vogel",
+      "target": "cedardb",
+      "rel": "cofounded",
+      "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+    },
+    {
+      "source": "philipp fent",
+      "target": "cedardb",
+      "rel": "cofounded",
+      "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+    },
+    {
+      "source": "dominik durner",
+      "target": "cedardb",
+      "rel": "cofounded",
+      "evidence": "Pictured from left to right: CedarDB founders Moritz Sichert, Lukas Vogel, Philipp Fent, Dominik Durner, and Christian Winter."
+    },
+    {
+      "source": "christian winter",
+      "target": "cedardb",
+      "rel": "cofounded",
+      "evidence": "co‑founder Christian Winter detailed key priorities the team set after leaving academia"
+    }
+  ]
+}
