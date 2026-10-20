@@ -2,6 +2,7 @@
 
 import asyncio
 import re
+import sys
 import time
 from dataclasses import dataclass
 
@@ -45,16 +46,25 @@ def truncate_tokens(text: str, max_tokens: int = MAX_TOKENS) -> str:
     return _ENC.decode(tokens[:max_tokens])
 
 
-def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 4) -> list[str]:
-    """DuckDuckGo intermittently returns nothing or rate-limits; retry with backoff."""
+BACKENDS = ["duckduckgo", "brave", "yahoo", "mojeek", "startpage"]
+
+
+def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 3) -> list[str]:
+    """Search DuckDuckGo first, then fall back to other engines.
+
+    DDG intermittently returns nothing and blocks datacenter IPs (e.g. CI runners).
+    """
     for attempt in range(attempts):
-        try:
-            results = DDGS().text(query, max_results=n)
+        for backend in BACKENDS:
+            try:
+                results = DDGS().text(query, max_results=n, backend=backend)
+            except Exception as e:
+                print(f"search[{backend}] failed: {e}", file=sys.stderr)
+                continue
             if results:
+                print(f"search[{backend}]: {len(results)} results", file=sys.stderr)
                 return [r["href"] for r in results][:n]
-        except Exception:
-            if attempt == attempts - 1:
-                raise
+            print(f"search[{backend}]: no results", file=sys.stderr)
         time.sleep(2**attempt)
     return []
 
