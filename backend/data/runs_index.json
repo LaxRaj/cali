@@ -176,6 +176,30 @@
         "edgar": 2
       },
       "failures": []
+    },
+    {
+      "run_id": "20261020T203526Z",
+      "started_at": "2026-10-20T20:35:26+00:00",
+      "duration_s": 310.5,
+      "passed": true,
+      "funnel": {
+        "candidates": 305,
+        "selected": 12,
+        "crawled": 12,
+        "extracted": 11,
+        "relevant": 8,
+        "valid": 7
+      },
+      "tokens": 45684,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 67,
+        "rss": 71,
+        "web": 30,
+        "edgar": 5
+      },
+      "failures": []
     }
   ]
 }

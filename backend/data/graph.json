@@ -1,6 +1,14 @@
 {
   "nodes": [
     {
+      "id": "plinto",
+      "label": "Plinto",
+      "type": "startup",
+      "degree": 13,
+      "website": "https://plinto.ai",
+      "score": 90
+    },
+    {
       "id": "tako",
       "label": "Tako",
       "type": "startup",
@@ -14,6 +22,14 @@
       "type": "startup",
       "degree": 9,
       "website": "https://lightsprint.ai",
+      "score": 73
+    },
+    {
+      "id": "solid",
+      "label": "Solid",
+      "type": "startup",
+      "degree": 9,
+      "website": "https://www.getsolid.ai",
       "score": 73
     },
     {
@@ -63,6 +79,12 @@
       "links": {}
     },
     {
+      "id": "y combinator",
+      "label": "Y Combinator",
+      "type": "org",
+      "degree": 4
+    },
+    {
       "id": "consus",
       "label": "Consus",
       "type": "startup",
@@ -85,6 +107,22 @@
       "degree": 3,
       "website": "https://laminar.sh",
       "score": 80
+    },
+    {
+      "id": "atlis health, llc",
+      "label": "Atlis Health, LLC",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://www.atlis.health",
+      "score": 66
+    },
+    {
+      "id": "jooba",
+      "label": "Jooba",
+      "type": "startup",
+      "degree": 3,
+      "website": "",
+      "score": 43
     },
     {
       "id": "eric magliarditi",
@@ -133,10 +171,32 @@
       "links": {}
     },
     {
-      "id": "y combinator",
-      "label": "Y Combinator",
-      "type": "org",
-      "degree": 3
+      "id": "peakon",
+      "label": "Peakon",
+      "type": "person",
+      "degree": 3,
+      "role": "former employer",
+      "links": {}
+    },
+    {
+      "id": "nermina suljevic",
+      "label": "Nermina Suljevic",
+      "type": "person",
+      "degree": 3,
+      "role": "Co-founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/nermina-ostojic"
+      }
+    },
+    {
+      "id": "jakob nielsen",
+      "label": "Jakob Nielsen",
+      "type": "person",
+      "degree": 3,
+      "role": "Co-founder & CDO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jakob-nielsen-42269a175"
+      }
     },
     {
       "id": "yudai matsuoka",
@@ -167,6 +227,14 @@
       "degree": 2,
       "website": "https://www.asakana.co",
       "score": 55
+    },
+    {
+      "id": "voygr",
+      "label": "VOYGR",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://voygr.tech",
+      "score": 58
     },
     {
       "id": "eric",
@@ -213,6 +281,40 @@
       }
     },
     {
+      "id": "sebastian rehnby",
+      "label": "Sebastian Rehnby",
+      "type": "person",
+      "degree": 2,
+      "role": "co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sebastianrehnby"
+      }
+    },
+    {
+      "id": "andreas garnæs",
+      "label": "Andreas Garnæs",
+      "type": "person",
+      "degree": 2,
+      "role": "CTO",
+      "links": {}
+    },
+    {
+      "id": "yoni leitersdorf",
+      "label": "Yoni Leitersdorf",
+      "type": "person",
+      "degree": 2,
+      "role": "CEO & Co-Founder",
+      "links": {}
+    },
+    {
+      "id": "tal segalov",
+      "label": "Tal Segalov",
+      "type": "person",
+      "degree": 2,
+      "role": "CTO & Co-Founder",
+      "links": {}
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -241,6 +343,22 @@
       "degree": 1,
       "website": "https://www.agent37.com",
       "score": 47
+    },
+    {
+      "id": "veeza ai",
+      "label": "Veeza AI",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://www.veeza.ai",
+      "score": 47
+    },
+    {
+      "id": "paradedb",
+      "label": "ParadeDB",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://www.paradedb.com",
+      "score": 63
     },
     {
       "id": "alex rosenberg",
@@ -582,6 +700,166 @@
       "type": "person",
       "degree": 1,
       "role": "cofounder",
+      "links": {}
+    },
+    {
+      "id": "people ventures",
+      "label": "People Ventures",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "emblem",
+      "label": "Emblem",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "jorge rodrigues",
+      "label": "Jorge Rodrigues",
+      "type": "person",
+      "degree": 1,
+      "role": "Senior Fullstack Engineer",
+      "links": {}
+    },
+    {
+      "id": "albert fernández de la peña",
+      "label": "Albert Fernández de la Peña",
+      "type": "person",
+      "degree": 1,
+      "role": "Staff Engineer",
+      "links": {}
+    },
+    {
+      "id": "martin slota",
+      "label": "Martin Slota",
+      "type": "person",
+      "degree": 1,
+      "role": "Staff Engineer",
+      "links": {}
+    },
+    {
+      "id": "cornelius erichsen bæk",
+      "label": "Cornelius Erichsen Bæk",
+      "type": "person",
+      "degree": 1,
+      "role": "Associate Implementation Specialist",
+      "links": {}
+    },
+    {
+      "id": "a16z speedrun",
+      "label": "a16z speedrun",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "scribble ventures",
+      "label": "Scribble Ventures",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "genius ventures",
+      "label": "Genius Ventures",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "team8",
+      "label": "Team8",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "signalfire",
+      "label": "SignalFire",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "tali hirsh",
+      "label": "Tali Hirsh",
+      "type": "person",
+      "degree": 1,
+      "role": "VP of Product",
+      "links": {}
+    },
+    {
+      "id": "alon ashkenaz",
+      "label": "Alon Ashkenaz",
+      "type": "person",
+      "degree": 1,
+      "role": "VP of Engineering",
+      "links": {}
+    },
+    {
+      "id": "maya bercovitch",
+      "label": "Maya Bercovitch",
+      "type": "person",
+      "degree": 1,
+      "role": "VP of Research",
+      "links": {}
+    },
+    {
+      "id": "brian schroeder",
+      "label": "Brian Schroeder",
+      "type": "person",
+      "degree": 1,
+      "role": "Executive Officer",
+      "links": {}
+    },
+    {
+      "id": "jamie scarcelli",
+      "label": "Jamie Scarcelli",
+      "type": "person",
+      "degree": 1,
+      "role": "Executive Officer",
+      "links": {}
+    },
+    {
+      "id": "brendan haffey",
+      "label": "Brendan Haffey",
+      "type": "person",
+      "degree": 1,
+      "role": "Executive Officer",
+      "links": {}
+    },
+    {
+      "id": "aly moursy",
+      "label": "Aly Moursy",
+      "type": "person",
+      "degree": 1,
+      "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "vlad baskakov",
+      "label": "Vlad Baskakov",
+      "type": "person",
+      "degree": 1,
+      "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "yarik",
+      "label": "Yarik",
+      "type": "person",
+      "degree": 1,
+      "role": "founder",
       "links": {}
     },
     {
@@ -1601,6 +1879,216 @@
       "target": "google",
       "rel": "previously_at",
       "evidence": "Ben spent 8 years at Google as a senior AI research engineer on Project Mariner and Gemini."
+    },
+    {
+      "source": "jakob nielsen",
+      "target": "plinto",
+      "rel": "founded",
+      "evidence": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby"
+    },
+    {
+      "source": "nermina suljevic",
+      "target": "plinto",
+      "rel": "founded",
+      "evidence": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby"
+    },
+    {
+      "source": "sebastian rehnby",
+      "target": "plinto",
+      "rel": "founded",
+      "evidence": "Plinto was founded in early 2025 by Nermina Suljevic, Nielsen, and Sebastian Rehnby"
+    },
+    {
+      "source": "andreas garnæs",
+      "target": "plinto",
+      "rel": "works_at",
+      "evidence": "CTO Andreas Garnæs is also an alumnus of Peakon"
+    },
+    {
+      "source": "people ventures",
+      "target": "plinto",
+      "rel": "invested_in",
+      "evidence": "The round was led by People Ventures and Emblem"
+    },
+    {
+      "source": "emblem",
+      "target": "plinto",
+      "rel": "invested_in",
+      "evidence": "The round was led by People Ventures and Emblem"
+    },
+    {
+      "source": "jakob nielsen",
+      "target": "peakon",
+      "rel": "previously_at",
+      "evidence": "who previously worked for Peakon, the employee engagement platform acquired by US‑based Workday in 2021"
+    },
+    {
+      "source": "nermina suljevic",
+      "target": "peakon",
+      "rel": "previously_at",
+      "evidence": "who previously worked for Peakon, the employee engagement platform acquired by US‑based Workday in 2021"
+    },
+    {
+      "source": "andreas garnæs",
+      "target": "peakon",
+      "rel": "previously_at",
+      "evidence": "CTO Andreas Garnæs is also an alumnus of Peakon"
+    },
+    {
+      "source": "nermina suljevic",
+      "target": "plinto",
+      "rel": "cofounded",
+      "evidence": "Co-founder & CEO"
+    },
+    {
+      "source": "jakob nielsen",
+      "target": "plinto",
+      "rel": "cofounded",
+      "evidence": "Co-founder & CDO"
+    },
+    {
+      "source": "sebastian rehnby",
+      "target": "plinto",
+      "rel": "cofounded",
+      "evidence": "Co-founder & CPO"
+    },
+    {
+      "source": "jorge rodrigues",
+      "target": "plinto",
+      "rel": "works_at",
+      "evidence": "Senior Fullstack Engineer"
+    },
+    {
+      "source": "albert fernández de la peña",
+      "target": "plinto",
+      "rel": "works_at",
+      "evidence": "Staff Engineer"
+    },
+    {
+      "source": "martin slota",
+      "target": "plinto",
+      "rel": "works_at",
+      "evidence": "Staff Engineer"
+    },
+    {
+      "source": "cornelius erichsen bæk",
+      "target": "plinto",
+      "rel": "works_at",
+      "evidence": "Associate Implementation Specialist"
+    },
+    {
+      "source": "team8",
+      "target": "solid",
+      "rel": "invested_in",
+      "evidence": "has raised US$20 million in a seed funding round led by Team8 and SignalFire."
+    },
+    {
+      "source": "signalfire",
+      "target": "solid",
+      "rel": "invested_in",
+      "evidence": "has raised US$20 million in a seed funding round led by Team8 and SignalFire."
+    },
+    {
+      "source": "yoni leitersdorf",
+      "target": "solid",
+      "rel": "cofounded",
+      "evidence": "CEO & Co-Founder\nYoni Leitersdorf"
+    },
+    {
+      "source": "tal segalov",
+      "target": "solid",
+      "rel": "cofounded",
+      "evidence": "CTO & Co-Founder\nTal Segalov"
+    },
+    {
+      "source": "yoni leitersdorf",
+      "target": "solid",
+      "rel": "works_at",
+      "evidence": "CEO & Co-Founder\nYoni Leitersdorf"
+    },
+    {
+      "source": "tal segalov",
+      "target": "solid",
+      "rel": "works_at",
+      "evidence": "CTO & Co-Founder\nTal Segalov"
+    },
+    {
+      "source": "tali hirsh",
+      "target": "solid",
+      "rel": "works_at",
+      "evidence": "VP of Product\nTali Hirsh"
+    },
+    {
+      "source": "alon ashkenaz",
+      "target": "solid",
+      "rel": "works_at",
+      "evidence": "VP of Engineering\nAlon Ashkenaz"
+    },
+    {
+      "source": "maya bercovitch",
+      "target": "solid",
+      "rel": "works_at",
+      "evidence": "VP of Research\nMaya Bercovitch"
+    },
+    {
+      "source": "brian schroeder",
+      "target": "atlis health, llc",
+      "rel": "works_at",
+      "evidence": "Brian Schroeder — Executive Officer"
+    },
+    {
+      "source": "jamie scarcelli",
+      "target": "atlis health, llc",
+      "rel": "works_at",
+      "evidence": "Jamie Scarcelli — Executive Officer"
+    },
+    {
+      "source": "brendan haffey",
+      "target": "atlis health, llc",
+      "rel": "works_at",
+      "evidence": "Brendan Haffey — Executive Officer"
+    },
+    {
+      "source": "aly moursy",
+      "target": "veeza ai",
+      "rel": "founded",
+      "evidence": "Aly Moursy"
+    },
+    {
+      "source": "vlad baskakov",
+      "target": "voygr",
+      "rel": "founded",
+      "evidence": "Vlad and Yarik, founders of VOYGR"
+    },
+    {
+      "source": "yarik",
+      "target": "voygr",
+      "rel": "founded",
+      "evidence": "Vlad and Yarik, founders of VOYGR"
+    },
+    {
+      "source": "paradedb",
+      "target": "y combinator",
+      "rel": "backed_by",
+      "evidence": "ParadeDB (YC S23"
+    },
+    {
+      "source": "a16z speedrun",
+      "target": "jooba",
+      "rel": "invested_in",
+      "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
+    },
+    {
+      "source": "scribble ventures",
+      "target": "jooba",
+      "rel": "invested_in",
+      "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
+    },
+    {
+      "source": "genius ventures",
+      "target": "jooba",
+      "rel": "invested_in",
+      "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
     }
   ]
 }
