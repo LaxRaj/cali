@@ -27,7 +27,7 @@ from export import export_all
 from extractor import extract, extract_people
 from memory import DB_DIR, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
 from models import Contact
-from quality import RunReport, check_extraction, evaluate_run
+from quality import RunReport, check_extraction, evaluate_run, tidy
 from rating import rate
 from scraper import Page, scrape_urls, search_results
 
@@ -141,7 +141,7 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
                 else p
                 for p in kept.people
             ]
-            accepted.append((kept.model_copy(update={"people": people}), source, page.markdown))
+            accepted.append((tidy(kept.model_copy(update={"people": people})), source, page.markdown))
             if log:
                 log.accept(ex.startup.company_name, page.url, source, len(people), len(kept.edges))
                 log.candidate(page.url, source, title, snippet, triage, "accepted")

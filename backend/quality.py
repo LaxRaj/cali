@@ -79,6 +79,39 @@ def filter_people(people: list[Person], markdown: str) -> list[Person]:
     ]
 
 
+ORG_WORDS = re.compile(
+    r"\b(ventures?|capital|partners|fund|funds|labs|holdings|inc|llc|ltd|gmbh|corp|group|studio|speedrun|combinator|angels?)\b", re.I)
+NOT_PERSON_ROLE = re.compile(r"employer|company|\bfirm\b|\bvc\b|fund\b|organi[sz]ation", re.I)
+FOUNDER_REL = {"founded", "cofounded"}
+
+
+def is_org_like(p: Person) -> bool:
+    """Funds, companies and past employers the LLM listed as 'people' (they belong in edges only)."""
+    if NOT_PERSON_ROLE.search(p.role or "") or ORG_WORDS.search(p.name):
+        return True
+    return bool(re.search(r"investor", p.role or "", re.I)) and len(p.name.split()) < 2
+
+
+def tidy(ex: Extraction) -> Extraction:
+    """Deterministic cleanup of the connection graph: real people only, one edge per fact.
+    cofounded supersedes founded; founding a company supersedes works_at for the same pair."""
+    people = [p for p in ex.people if not is_org_like(p)]
+    key = lambda e: (e.src.strip().lower(), e.dst.strip().lower())  # noqa: E731
+    rels: dict[tuple[str, str], set[str]] = {}
+    for e in ex.edges:
+        rels.setdefault(key(e), set()).add(e.rel)
+    edges, seen = [], set()
+    for e in ex.edges:
+        r = rels[key(e)]
+        if (e.rel == "founded" and "cofounded" in r) or (e.rel == "works_at" and r & FOUNDER_REL):
+            continue
+        if (key(e), e.rel) in seen:
+            continue
+        seen.add((key(e), e.rel))
+        edges.append(e)
+    return ex.model_copy(update={"people": people, "edges": edges})
+
+
 def filter_edges(edges: list[Edge], markdown: str) -> list[Edge]:
     return [
         e for e in edges

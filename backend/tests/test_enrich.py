@@ -183,10 +183,10 @@ async def test_people_search_budget_is_respected():
         seen.append(q)
         return []
 
-    budget = [2]
+    budget = [1]
     await enrich_startup(ex, "rss", "no site", search_fn=search, search_budget=budget)
     profile_searches = [q for q in seen if "site:" in q]  # (the first query resolves the website)
-    assert len(profile_searches) == 2 and budget == [0]  # CEO has 3 missing platforms but only 2 searches allowed
+    assert len(profile_searches) == 1 and budget == [0]  # one LinkedIn query per leader; never beyond the budget
 
 
 async def test_redirected_site_is_canonicalised_so_contacts_and_website_agree():
