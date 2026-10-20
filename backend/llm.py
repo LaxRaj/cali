@@ -2,7 +2,9 @@
 
 import json
 import os
+from datetime import datetime, timedelta, timezone
 from functools import lru_cache
+from pathlib import Path
 
 from groq import Groq
 
@@ -15,19 +17,42 @@ SIMPLE_MODEL = os.environ.get("GROQ_MODEL_SIMPLE", "")  # optional cheaper model
 
 
 USAGE = {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "calls": 0}
+USAGE_BY: dict[str, dict[str, int]] = {}  # the same counters per call site (plan / triage / extract / team)
 
 
 def reset_usage() -> None:
     for k in USAGE:
         USAGE[k] = 0
+    USAGE_BY.clear()
 
 
-def record_usage(completion) -> None:
+def record_usage(completion, purpose: str = "") -> None:
     """Accumulate Groq token usage (tolerates fakes without a usage field)."""
     usage = getattr(completion, "usage", None)
-    USAGE["calls"] += 1
-    for k in ("prompt_tokens", "completion_tokens", "total_tokens"):
-        USAGE[k] += int(getattr(usage, k, 0) or 0)
+    buckets = [USAGE] + ([USAGE_BY.setdefault(purpose, dict.fromkeys(USAGE, 0))] if purpose else [])
+    for b in buckets:
+        b["calls"] += 1
+        for k in ("prompt_tokens", "completion_tokens", "total_tokens"):
+            b[k] += int(getattr(usage, k, 0) or 0)
+
+
+QUOTA_FILE = "quota.json"
+
+
+def quota_blocked(data_dir) -> bool:
+    """True while a previous run recorded that every Groq key is spent for the day (resets 00:00 UTC)."""
+    if os.environ.get("CALI_IGNORE_QUOTA") == "1":
+        return False
+    try:
+        until = json.loads((Path(data_dir) / QUOTA_FILE).read_text())["exhausted_until"]
+        return datetime.now(timezone.utc) < datetime.fromisoformat(until)
+    except (OSError, ValueError, KeyError):
+        return False
+
+
+def mark_quota_exhausted(data_dir) -> None:
+    tomorrow = (datetime.now(timezone.utc) + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    (Path(data_dir) / QUOTA_FILE).write_text(json.dumps({"exhausted_until": tomorrow.isoformat(timespec="seconds")}))
 
 
 class _Completions:
@@ -71,8 +96,8 @@ def api_keys() -> list[str]:
 @lru_cache(maxsize=4)
 def _client_for(keys: tuple[str, ...]):
     if len(keys) <= 1:
-        return Groq(max_retries=5)  # the SDK backs off on 429s; reads GROQ_API_KEY
-    return MultiKeyGroq([Groq(api_key=k, max_retries=5) for k in keys])
+        return Groq(max_retries=2)  # the SDK backs off on 429s; reads GROQ_API_KEY
+    return MultiKeyGroq([Groq(api_key=k, max_retries=2) for k in keys])
 
 
 def get_client():
@@ -86,7 +111,7 @@ def route_extraction(markdown: str) -> list[str]:
     return list(dict.fromkeys(([SIMPLE_MODEL] if simple else []) + MODEL_CHAIN))
 
 
-def complete(client, messages: list[dict], models: list[str] | None = None):
+def complete(client, messages: list[dict], models: list[str] | None = None, purpose: str = ""):
     """chat.completions.create with JSON mode; on a daily-quota 429 try the next model in the chain."""
     chain = models or MODEL_CHAIN
     last: Exception | None = None
@@ -95,7 +120,7 @@ def complete(client, messages: list[dict], models: list[str] | None = None):
             completion = client.chat.completions.create(
                 model=model, temperature=0, response_format={"type": "json_object"}, messages=messages
             )
-            record_usage(completion)
+            record_usage(completion, purpose)
             return completion
         except Exception as e:
             last = e
@@ -104,9 +129,9 @@ def complete(client, messages: list[dict], models: list[str] | None = None):
     raise last  # pragma: no cover
 
 
-def chat_json(system: str, user: str, client: Groq | None = None) -> dict:
+def chat_json(system: str, user: str, client: Groq | None = None, purpose: str = "") -> dict:
     client = client or get_client()
-    completion = complete(client, [{"role": "system", "content": system}, {"role": "user", "content": user}])
+    completion = complete(client, [{"role": "system", "content": system}, {"role": "user", "content": user}], purpose=purpose)
     return json.loads(completion.choices[0].message.content)
 
 

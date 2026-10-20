@@ -1,5 +1,6 @@
 """Filter candidates before the (expensive) crawl + extraction stages."""
 
+import os
 import re
 from collections import defaultdict
 
@@ -61,7 +62,7 @@ def shortlist(cands: list[Candidate], n: int = LLM_SHORTLIST) -> list[Candidate]
 
 def llm_scores(cands: list[Candidate], client=None) -> dict[int, int]:
     lines = "\n".join(f"{i}. [{c.source}] {c.title[:110]} — {c.snippet[:90]}" for i, c in enumerate(cands))
-    data = chat_json(SYSTEM, lines, client)
+    data = chat_json(SYSTEM, lines, client, purpose="triage")
     return {int(s["i"]): int(s["score"]) for s in data.get("scores", [])}
 
 
@@ -69,7 +70,7 @@ DECIDER_SHORTLIST = 150  # local decisions are ~free, so we can look at far more
 BORDER_LO, BORDER_HI, REFINE_MAX = 3.5, 6.5, 20  # only genuinely uncertain items get an LLM second opinion
 
 
-def decider_scores(cands: list[Candidate], decider, client=None, refine: bool = True) -> dict[int, float]:
+def decider_scores(cands: list[Candidate], decider, client=None, refine: bool = False) -> dict[int, float]:
     """Score with the decision layer (local/Jev); optionally let the LLM re-score a few borderline items."""
     from decide.decisions import triage_scores
 
@@ -94,7 +95,7 @@ def select(
     min_score: int = 4,
     caps: dict[str, int] | None = None,
     decider=None,
-    refine_llm: bool = True,
+    refine_llm: bool = os.environ.get("CALI_REFINE") == "1",
 ) -> list[Candidate]:
     """Dedupe, drop junk/seen, score, then take the best with a per-source cap.
 

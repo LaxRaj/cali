@@ -24,7 +24,7 @@ from enrich_github import enrich_people_github
 from decide.training import append_decisions
 from train_decider import train
 from export import export_all
-from extractor import extract
+from extractor import extract, extract_people
 from memory import DB_DIR, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
 from models import Contact
 from quality import RunReport, check_extraction, evaluate_run
@@ -35,6 +35,7 @@ MAX_PEOPLE_SEARCHES = 12  # public-search lookups for founders' profile links, p
 BACKFILL_LIMIT = 3  # older stored startups re-enriched per run
 AVG_EXTRACTION_TOKENS = 4500  # for the 'tokens saved' estimate when a page is gated
 MAX_GITHUB_LOOKUPS = 30  # public profile API calls per run
+TARGET_VALID = 8  # stop extracting once this many startups passed validation
 MAX_TEAM_LLM = 6  # About/Team page extraction calls (Groq tokens), per run
 
 
@@ -91,6 +92,9 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     accepted = []
     for page in pages:
+        if report.valid >= TARGET_VALID:  # enough good startups for today: the tail would only burn tokens
+            report.deferred_urls.append(normalize_url(page.url))
+            continue
         if report.quota_exhausted:
             if log:
                 log.rejection(page.url, by_url.get(normalize_url(page.url), Candidate("", "", "", "unknown")).source, ["extraction error"])
@@ -159,7 +163,7 @@ async def enrich_all(accepted, log) -> list[EnrichResult]:
     for ex, source, md in accepted:
         try:
             res = await enrich_startup(
-                ex, source, md, search_fn=search_fn, extract_fn=extract,
+                ex, source, md, search_fn=search_fn, extract_fn=extract_people,
                 search_budget=search_budget, team_budget=team_budget, github_fn=github_fn,
             )
         except Exception as e:
@@ -172,6 +176,10 @@ async def enrich_all(accepted, log) -> list[EnrichResult]:
 
 
 async def run(data_dir: Path) -> RunReport:
+    if llm.quota_blocked(data_dir):  # every Groq key is spent until 00:00 UTC: crawling now would be wasted work
+        print("Groq daily quota is spent (data/quota.json); skipping this run. CALI_IGNORE_QUOTA=1 overrides.")
+        return RunReport(skipped="groq quota exhausted")
+    os.environ["CALI_DATA_DIR"] = str(data_dir)  # caches (extractions, plan) live beside the data
     log = telemetry.RunLog()
     llm.reset_usage()
     report = RunReport()
@@ -259,6 +267,10 @@ async def run(data_dir: Path) -> RunReport:
             json.dumps({"generated_at": now, **report.to_dict()}, indent=2)
         )
 
+        if not report.passed and report.extracted and not report.quota_exhausted:
+            # paid-for pages: never re-crawl them tomorrow (their extractions are cached too)
+            mark_seen([u for u in (normalize_url(p.url) for p in pages) if u not in report.deferred_urls], db_dir=data_dir)
+
         if report.passed:
             with log.stage("store") as st:
                 findings = []
@@ -281,7 +293,7 @@ async def run(data_dir: Path) -> RunReport:
                             "people": [p.model_dump() for p in people], "edges": [e.model_dump() for e in edges],
                         }
                     )
-                mark_seen([normalize_url(c.url) for c in chosen], db_dir=data_dir)
+                mark_seen([u for u in (normalize_url(c.url) for c in chosen) if u not in report.deferred_urls], db_dir=data_dir)
                 (data_dir / "daily_brief.json").write_text(
                     json.dumps({"generated_at": now, "findings": findings}, indent=2, ensure_ascii=False)
                 )
@@ -316,7 +328,9 @@ async def run(data_dir: Path) -> RunReport:
             train(data_dir)  # cheap; returns None until there are enough labelled rows
         except Exception as e:
             log.error(f"decider training skipped: {e}")
-        log.usage = dict(llm.USAGE)
+        if report.quota_exhausted:
+            llm.mark_quota_exhausted(data_dir)
+        log.usage = {**llm.USAGE, "by_purpose": {k: dict(v) for k, v in llm.USAGE_BY.items()}}
         log.quality = report.to_dict()
         log.passed, log.failures = report.passed, report.failures
         log.write(data_dir)  # always: failed runs are exactly what the dashboard must show
@@ -330,6 +344,8 @@ if __name__ == "__main__":
     args.data_dir.mkdir(parents=True, exist_ok=True)
     rep = asyncio.run(run(args.data_dir))
     print(json.dumps(rep.to_dict(), indent=2))
+    if rep.skipped:
+        sys.exit(0)
     if not rep.passed:
         print("QUALITY GATES FAILED: " + "; ".join(rep.failures), file=sys.stderr)
         sys.exit(1)
