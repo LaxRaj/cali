@@ -152,6 +152,30 @@
         "validity rate 0% (< 50%)",
         "only 0 discovery sources produced valid startups (< 2)"
       ]
+    },
+    {
+      "run_id": "20261020T194209Z",
+      "started_at": "2026-10-20T19:42:09+00:00",
+      "duration_s": 512.1,
+      "passed": true,
+      "funnel": {
+        "candidates": 296,
+        "selected": 12,
+        "crawled": 12,
+        "extracted": 12,
+        "relevant": 11,
+        "valid": 9
+      },
+      "tokens": 75557,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 67,
+        "rss": 71,
+        "web": 24,
+        "edgar": 2
+      },
+      "failures": []
     }
   ]
 }

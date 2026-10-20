@@ -1,253 +1,63 @@
 {
-  "generated_at": "2026-10-20T17:26:50+00:00",
+  "generated_at": "2026-10-20T19:50:39+00:00",
   "findings": [
     {
-      "company_name": "Tako",
-      "core_product": "An AI search engine that builds interactive, up‑to‑date knowledge cards from authoritative structured data.",
+      "company_name": "Coherence Quantum",
+      "core_product": "Coherence Quantum builds an integrated cryogenic signalling and control platform for scaling quantum computers.",
       "tech_stack": [
-        "AI search engine",
-        "knowledge graph",
-        "structured data integration",
-        "Vercel"
+        "cryogenic signalling",
+        "control technology",
+        "dilution refrigerators"
       ],
-      "likely_bottleneck": "Scaling semantic search over a massive knowledge graph while delivering fast, interactive UI for data‑heavy knowledge cards.",
-      "value_prop_pitch": "I can help Tako boost its search relevance and speed by building a Next.js front‑end that queries a vector‑based semantic index of your knowledge graph, delivering instant, context‑aware results. This will also let you render interactive knowledge cards with server‑side rendering and incremental static regeneration, reducing latency and simplifying UI development.",
+      "likely_bottleneck": "maintaining signal integrity and scaling control infrastructure in cryogenic environments while minimizing wiring and cooling complexity",
+      "value_prop_pitch": "I can build a real‑time dashboard with Next.js that visualizes your cryogenic signal‑conditioning data and uses vector semantic search to instantly retrieve relevant calibration logs and device histories. This will let your engineers diagnose wiring and cooling issues faster, reducing the time spent manually sifting through experimental records.",
       "is_relevant": true,
       "funding_stage": "seed",
-      "funding_amount": "$5.75M",
-      "hq": "San Francisco, USA",
-      "website": "http://trytako.com",
-      "source_url": "https://www.einpresswire.com/article/752294158/ai-search-startup-tako-raises-5-75-million-seed",
-      "discovered_at": "2026-10-20T17:21:46+00:00",
-      "source": "web",
+      "funding_amount": "€2.78M",
+      "hq": "Espoo, Finland",
+      "website": "https://www.coherencequantum.tech",
+      "source_url": "https://tech.eu/2026/10/20/coherence-quantum-raises-eur278m-to-tackle-quantum-computer-scaling-challenges/",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "rss",
       "score": 81,
       "gaps": [
         "email",
         "phone"
       ],
       "contact": {
-        "website": "http://trytako.com",
+        "website": "https://www.coherencequantum.tech",
         "emails": [],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/TakoViz",
-          "linkedin": "https://www.linkedin.com/company/takoviz",
-          "github": "https://github.com/TakoData"
+          "linkedin": "https://www.linkedin.com/company/coherence-quantum"
         },
-        "contact_page": "https://tako.com/contact",
+        "contact_page": "https://www.coherencequantum.tech/contact",
         "pages_crawled": [
-          "https://tako.com/",
-          "https://tako.com/team",
-          "https://tako.com/contact",
-          "https://tako.com/about/"
+          "https://www.coherencequantum.tech/",
+          "https://www.coherencequantum.tech/about",
+          "https://www.coherencequantum.tech/team",
+          "https://www.coherencequantum.tech/contact"
         ],
-        "enriched_at": "2026-10-20T17:24:16+00:00",
+        "enriched_at": "2026-10-20T19:48:18+00:00",
         "status": "ok"
       },
       "people": [
         {
-          "name": "Alex Rosenberg",
-          "role": "co-founder and CEO",
-          "org": "Tako",
-          "evidence": "Alex Rosenberg, co-founder and CEO of Tako",
-          "linkedin": "https://www.linkedin.com/in/alexrosenberg",
-          "twitter": "https://x.com/alexrrosenberg",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Bobby Abbott",
-          "role": "co-founder",
-          "org": "Tako",
-          "evidence": "Co-founded by Alex Rosenberg, former Amazon leader, and Bobby Abbott, Tako",
-          "linkedin": "https://www.linkedin.com/in/robert-m-abbott",
-          "twitter": "https://x.com/ttobbaybbob",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Kevin Hartz",
-          "role": "Co-Founder and General Partner",
-          "org": "A*",
-          "evidence": "Kevin Hartz, Co-Founder and General Partner at A*",
-          "linkedin": "",
+          "name": "Aashish Sah",
+          "role": "CEO and co-founder",
+          "org": "Coherence Quantum",
+          "evidence": "Aashish Sah, CEO and co-founder of Coherence Quantum, explained that scaling quantum computers requires not only increasing the number of qubits but also developing the infrastructure needed to support them.",
+          "linkedin": "https://www.linkedin.com/in/aashish-sah-76b4048a/",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://tech.eu/2026/10/20/coherence-quantum-raises-eur278m-to-tackle-quantum-computer-scaling-challenges/"
         },
         {
-          "name": "Ramtin Naimi",
-          "role": "partner at Abstract Ventures",
-          "org": "Abstract Ventures",
-          "evidence": "seed funding round led by Kevin Hartz at A* and Ramtin Naimi at Abstract Ventures",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Stanley Druckenmiller",
-          "role": "American investor and philanthropist",
-          "org": "Tako",
-          "evidence": "Stanley Druckenmiller\nAmerican investor and philanthropist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Kevin Warsh",
-          "role": "Former Member of the Board of Governors, U.S. Federal Reserve",
-          "org": "Tako",
-          "evidence": "Kevin Warsh\nFormer Member of the Board of Governors, U.S. Federal Reserve",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Chase Coleman",
-          "role": "Founder, Tiger Global Management",
-          "org": "Tako",
-          "evidence": "Chase Coleman\nFounder, Tiger Global Management",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Gokul Rajaram",
-          "role": "ex Doordash exec, seed investor in Airtable, Faire, Vercel, Figma",
-          "org": "Tako",
-          "evidence": "Gokul Rajaram\nex Doordash exec, seed investor in Airtable, Faire, Vercel, Figma",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Scott Belsky",
-          "role": "Founder, A24 Labs",
-          "org": "Tako",
-          "evidence": "Scott Belsky\nFounder, A24 Labs",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Stan Chudnovsky",
-          "role": "Former VP of Messaging, Meta",
-          "org": "Tako",
-          "evidence": "Stan Chudnovsky\nFormer VP of Messaging, Meta",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Javi Olivan",
-          "role": "COO, Meta",
-          "org": "Tako",
-          "evidence": "Javi Olivan\nCOO, Meta",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Guillermo Rauch",
-          "role": "CEO, Vercel",
-          "org": "Tako",
-          "evidence": "Guillermo Rauch\nCEO, Vercel",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "GC Lionetti",
-          "role": "CCO, OpenAI",
-          "org": "Tako",
-          "evidence": "GC Lionetti\nCCO, OpenAI",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "George Sivulka",
-          "role": "CEO, Hebbia",
-          "org": "Tako",
-          "evidence": "George Sivulka\nCEO, Hebbia",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Aravind Srinivas",
-          "role": "CEO, Perplexity",
-          "org": "Tako",
-          "evidence": "Aravind Srinivas\nCEO, Perplexity",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Johnny Ho",
-          "role": "CSO, Perplexity",
-          "org": "Tako",
-          "evidence": "Johnny Ho\nCSO, Perplexity",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Naval Ravikant",
-          "role": "Founder, AngelList",
-          "org": "Tako",
-          "evidence": "Naval Ravikant\nFounder, AngelList",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Diogo Monica",
-          "role": "General Partner at Haun Ventures, Co-founder of Anchorage Digital",
-          "org": "Tako",
-          "evidence": "Diogo Monica\nGeneral Partner at Haun Ventures, Co-founder of Anchorage Digital",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Nathan McCauley",
-          "role": "CEO, Anchorage Digital",
-          "org": "Tako",
-          "evidence": "Nathan McCauley\nCEO, Anchorage Digital",
+          "name": "Mårten Mickos",
+          "role": "Investor",
+          "org": "",
+          "evidence": "The round was led by Lifeline Ventures, with participation from technology entrepreneur Mårten Mickos.",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -257,124 +67,345 @@
       ],
       "edges": [
         {
-          "src": "Alex Rosenberg",
-          "rel": "founded",
-          "dst": "Tako",
-          "evidence": "Alex Rosenberg\nCEO & Co-founder"
+          "src": "Aashish Sah",
+          "rel": "cofounded",
+          "dst": "Coherence Quantum",
+          "evidence": "Aashish Sah, CEO and co-founder of Coherence Quantum, explained that scaling quantum computers requires not only increasing the number of qubits but also developing the infrastructure needed to support them."
         },
         {
-          "src": "Bobby Abbott",
-          "rel": "founded",
-          "dst": "Tako",
-          "evidence": "Bobby Abbott\nCTO & Co-founder"
-        },
-        {
-          "src": "Abstract Ventures",
+          "src": "Lifeline Ventures",
           "rel": "invested_in",
-          "dst": "Tako",
-          "evidence": "https://www.abstractvc.com/"
+          "dst": "Coherence Quantum",
+          "evidence": "The round was led by Lifeline Ventures, with participation from technology entrepreneur Mårten Mickos."
         },
         {
-          "src": "A*",
+          "src": "Mårten Mickos",
           "rel": "invested_in",
-          "dst": "Tako",
-          "evidence": "https://www.a-star.co/"
-        },
-        {
-          "src": "Outset Capital",
-          "rel": "invested_in",
-          "dst": "Tako",
-          "evidence": "https://www.outsetcapital.com/"
-        },
-        {
-          "src": "Liquid2",
-          "rel": "invested_in",
-          "dst": "Tako",
-          "evidence": "https://www.liquid2.vc/"
-        },
-        {
-          "src": "Stanley Druckenmiller",
-          "rel": "invested_in",
-          "dst": "Tako",
-          "evidence": "Stanley Druckenmiller\nAmerican investor and philanthropist"
-        },
-        {
-          "src": "Kevin Warsh",
-          "rel": "invested_in",
-          "dst": "Tako",
-          "evidence": "Kevin Warsh\nFormer Member of the Board of Governors, U.S. Federal Reserve"
-        },
-        {
-          "src": "Chase Coleman",
-          "rel": "invested_in",
-          "dst": "Tako",
-          "evidence": "Chase Coleman\nFounder, Tiger Global Management"
+          "dst": "Coherence Quantum",
+          "evidence": "The round was led by Lifeline Ventures, with participation from technology entrepreneur Mårten Mickos."
         }
       ]
     },
     {
-      "company_name": "Respan",
-      "core_product": "An open‑source Rust AI gateway built around plugins that lets developers assemble LLM infrastructure with interchangeable providers, protocols, modalities and features.",
+      "company_name": "Vessla",
+      "core_product": "An AI‑powered platform that automates property‑management workflows by using AI agents to retrieve information, apply operating rules and execute tasks across existing business systems.",
       "tech_stack": [
-        "Rust",
-        "LiteLLM (Python)",
-        "OpenAI API",
-        "Anthropic API",
-        "Google Gemini API",
-        "WebSocket",
-        "HTTP"
+        "AI",
+        "LLM",
+        "system integrations"
       ],
-      "likely_bottleneck": "Creating a searchable, user‑friendly marketplace for plugins and quickly surfacing the right provider or feature for developers.",
-      "value_prop_pitch": "I can build a Next.js‑based developer portal that indexes all Respan plugins with vector embeddings, enabling instant semantic search and recommendation of the right plugin for any use‑case. This will let your users discover and integrate new providers or features in seconds, reducing the time spent manually browsing code and improving adoption.",
+      "likely_bottleneck": "Retrieving and semantically searching relevant data across many disparate property‑management systems to feed the AI agents at scale.",
+      "value_prop_pitch": "I can build a fast, searchable UI with Next.js that surfaces property data from all your existing systems in real time, and power it with a vector‑based semantic search layer to let your AI agents find the right information instantly. This will cut integration latency and improve the accuracy of automated workflows, letting Vessla scale its agentic operating system without costly custom connectors.",
       "is_relevant": true,
       "funding_stage": "pre-seed",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.respan.ai",
-      "source_url": "https://news.ycombinator.com/item?id=50167583",
-      "discovered_at": "2026-10-20T17:21:46+00:00",
-      "source": "launch_hn",
-      "score": 80,
+      "funding_amount": "$3.3M",
+      "hq": "Stockholm, Sweden",
+      "website": "https://vessla.ai",
+      "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "rss",
+      "score": 81,
       "gaps": [
-        "location",
-        "funding amount",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.respan.ai",
+        "website": "https://vessla.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/vesslaai"
+        },
+        "contact_page": "https://vessla.ai/contact",
+        "pages_crawled": [
+          "https://vessla.ai/",
+          "https://vessla.ai/contact",
+          "https://vessla.ai/team",
+          "https://vessla.ai/about"
+        ],
+        "enriched_at": "2026-10-20T19:48:49+00:00",
+        "status": "ok"
+      },
+      "people": [
+        {
+          "name": "Orman Gazvini",
+          "role": "CEO",
+          "org": "Vessla",
+          "evidence": "Orman Gazvini, CEO of Vessla, commented:",
+          "linkedin": "https://www.linkedin.com/in/ormangazvini/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/"
+        },
+        {
+          "name": "Kasper Janehag",
+          "role": "CTO",
+          "org": "Vessla",
+          "evidence": "According to Kasper Janehag, CTO of Vessla, deploying AI in complex business environments requires deep system integrations, access to relevant information and rigorous evaluation.",
+          "linkedin": "https://www.linkedin.com/in/kasperjanehag/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/"
+        },
+        {
+          "name": "Lukas Saari",
+          "role": "Founder",
+          "org": "Vessla",
+          "evidence": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Fredrik Hjelm",
+          "role": "Founder",
+          "org": "Vessla",
+          "evidence": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Seedcamp",
+          "rel": "invested_in",
+          "dst": "Vessla",
+          "evidence": "Stockholm-based AI startup Vessla has emerged from stealth with a $3.3 million pre-seed funding round led by Seedcamp."
+        },
+        {
+          "src": "Inception Fund",
+          "rel": "invested_in",
+          "dst": "Vessla",
+          "evidence": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors."
+        },
+        {
+          "src": "Tiny VC",
+          "rel": "invested_in",
+          "dst": "Vessla",
+          "evidence": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors."
+        },
+        {
+          "src": "Orman Gazvini",
+          "rel": "works_at",
+          "dst": "Vessla",
+          "evidence": "Orman Gazvini, CEO of Vessla, commented:"
+        },
+        {
+          "src": "Kasper Janehag",
+          "rel": "works_at",
+          "dst": "Vessla",
+          "evidence": "According to Kasper Janehag, CTO of Vessla, deploying AI in complex business environments requires deep system integrations, access to relevant information and rigorous evaluation."
+        },
+        {
+          "src": "Lukas Saari",
+          "rel": "founded",
+          "dst": "Vessla",
+          "evidence": "Other participants included Inception Fund, Tiny VC, operators from Lovable and OpenAI, founders Lukas Saari (Tandem Health) and Fredrik Hjelm (Voi, Pit), and several angel investors."
+        }
+      ]
+    },
+    {
+      "company_name": "SereneDB",
+      "core_product": "A unified database engine that fuses search, analytics, and PostgreSQL capabilities.",
+      "tech_stack": [
+        "PostgreSQL"
+      ],
+      "likely_bottleneck": "delivering fast, relevant search results and real‑time analytics over large, unstructured data sets.",
+      "value_prop_pitch": "I can help you build a fast, scalable search UI with Next.js that leverages vector embeddings to deliver instant, semantically relevant results over your unified PostgreSQL engine. By integrating a vector‑based retrieval layer, you’ll improve query relevance and reduce latency for real‑time analytics without rewriting your core database.",
+      "is_relevant": true,
+      "funding_stage": "pre-seed",
+      "funding_amount": "$2.1M",
+      "hq": "Berlin, Germany",
+      "website": "https://serenedb.com",
+      "source_url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "web",
+      "score": 73,
+      "gaps": [
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://serenedb.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/serenedb"
+        },
+        "contact_page": "",
+        "pages_crawled": [
+          "https://serenedb.com/",
+          "https://serenedb.com/about"
+        ],
+        "enriched_at": "2026-10-20T19:49:31+00:00",
+        "status": "ok"
+      },
+      "people": [
+        {
+          "name": "Alexander Malandin",
+          "role": "CEO",
+          "org": "SereneDB",
+          "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Andrey Abramov",
+          "role": "CTO",
+          "org": "SereneDB",
+          "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Entourage",
+          "role": "Investor",
+          "org": "",
+          "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF).",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "High-Tech Gruenderfonds (HTGF)",
+          "role": "Investor",
+          "org": "",
+          "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF).",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Valerii Mironov",
+          "role": "Software Engineer",
+          "org": "SereneDB",
+          "evidence": "Software Engineer\nValerii Mironov",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Alexander Malandin",
+          "rel": "founded",
+          "dst": "SereneDB",
+          "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov"
+        },
+        {
+          "src": "Andrey Abramov",
+          "rel": "founded",
+          "dst": "SereneDB",
+          "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov"
+        },
+        {
+          "src": "Entourage",
+          "rel": "invested_in",
+          "dst": "SereneDB",
+          "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF)."
+        },
+        {
+          "src": "High-Tech Gruenderfonds (HTGF)",
+          "rel": "invested_in",
+          "dst": "SereneDB",
+          "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF)."
+        },
+        {
+          "src": "Alexander Malandin",
+          "rel": "works_at",
+          "dst": "SereneDB",
+          "evidence": "CEO\nAlexander Malandin"
+        },
+        {
+          "src": "Andrey Abramov",
+          "rel": "works_at",
+          "dst": "SereneDB",
+          "evidence": "CTO\nAndrey Abramov"
+        },
+        {
+          "src": "Valerii Mironov",
+          "rel": "works_at",
+          "dst": "SereneDB",
+          "evidence": "Software Engineer\nValerii Mironov"
+        }
+      ]
+    },
+    {
+      "company_name": "QuiverAI",
+      "core_product": "QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
+      "tech_stack": [
+        "SVG",
+        "large language models",
+        "multimodal AI",
+        "API",
+        "web UI"
+      ],
+      "likely_bottleneck": "search and retrieval of generated SVG assets at scale, affecting discoverability and latency",
+      "value_prop_pitch": "I can build a fast, scalable Next.js front‑end that lets designers instantly search and retrieve generated SVG assets using vector‑based semantic embeddings, ensuring relevant results even across millions of designs. Coupled with a lightweight retrieval service, this will eliminate latency and improve the discoverability of your visual code outputs.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$8.3M",
+      "hq": "",
+      "website": "https://quiver.ai",
+      "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "web",
+      "score": 83,
+      "gaps": [
+        "location",
+        "people profiles",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://quiver.ai",
         "emails": [
           {
-            "value": "team@respan.ai",
-            "kind": "general",
-            "source_url": "https://www.respan.ai/"
-          },
-          {
-            "value": "support@respan.ai",
+            "value": "support@quiver.ai",
             "kind": "support",
-            "source_url": "https://www.respan.ai/contact"
+            "source_url": "https://quiver.ai/contact"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/RespanAI",
-          "linkedin": "https://www.linkedin.com/company/respan-ai",
-          "github": "https://github.com/respanai"
+          "twitter": "https://x.com/quiverai",
+          "github": "https://github.com/quiverai",
+          "linkedin": "https://www.linkedin.com/company/quiver-ai"
         },
-        "contact_page": "https://www.respan.ai/contact",
+        "contact_page": "https://quiver.ai/contact",
         "pages_crawled": [
-          "https://www.respan.ai/",
-          "https://www.respan.ai/about",
-          "https://www.respan.ai/contact"
+          "https://quiver.ai/",
+          "https://quiver.ai/about",
+          "https://quiver.ai/contact"
         ],
-        "enriched_at": "2026-10-20T17:25:27+00:00",
+        "enriched_at": "2026-10-20T19:49:38+00:00",
         "status": "ok"
       },
       "people": [
         {
-          "name": "Andy",
-          "role": "founder",
-          "org": "Respan",
-          "evidence": "Hey HN, this is Andy from Respan (https://www.respan.ai).",
+          "name": "a16z",
+          "role": "lead investor",
+          "org": "",
+          "evidence": "seed round led by a16z",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -382,161 +413,505 @@
           "link_source": ""
         },
         {
-          "name": "Andy Li",
-          "role": "Co-founder, CEO",
-          "org": "Respan",
-          "evidence": "Andy Li-> Co-founder, CEO",
-          "linkedin": "https://www.linkedin.com/in/hanheli/",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.linkedin.com/in/hanheli/",
-          "link_source": ""
-        },
-        {
-          "name": "Raymond Huang",
-          "role": "Co-founder, CTO",
-          "org": "Respan",
-          "evidence": "Raymond Huang-> Co-founder, CTO",
-          "linkedin": "https://www.linkedin.com/in/yunrui-huang/",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.linkedin.com/in/yunrui-huang/",
-          "link_source": ""
-        },
-        {
-          "name": "Hendrix Liu",
-          "role": "Co-founder, Head of Sales",
-          "org": "Respan",
-          "evidence": "Hendrix Liu-> Co-founder, Head of Sales",
-          "linkedin": "https://www.linkedin.com/in/hendrix-liu-7a015822b/",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.linkedin.com/in/hendrix-liu-7a015822b/",
-          "link_source": ""
-        },
-        {
-          "name": "Frank Chen",
-          "role": "Head of DevRel",
-          "org": "Respan",
-          "evidence": "Frank Chen-> Head of DevRel",
+          "name": "Yoko Li",
+          "role": "investor",
+          "org": "",
+          "evidence": "support from Yoko Li, Guido Appenzeller, and Martin Casado",
           "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://fran3c.com/",
+          "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Michael Mao",
-          "role": "Founding Engineer",
-          "org": "Respan",
-          "evidence": "Michael Mao-> Founding Engineer",
-          "linkedin": "https://www.linkedin.com/in/michael-mao-776000255/",
+          "name": "Guido Appenzeller",
+          "role": "investor",
+          "org": "",
+          "evidence": "support from Yoko Li, Guido Appenzeller, and Martin Casado",
+          "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://www.linkedin.com/in/michael-mao-776000255/",
+          "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Ruifeng Zhang",
-          "role": "Founding Engineer",
-          "org": "Respan",
-          "evidence": "Ruifeng Zhang-> Founding Engineer",
-          "linkedin": "https://www.linkedin.com/in/ruifeng-zhang/",
+          "name": "Martin Casado",
+          "role": "investor",
+          "org": "",
+          "evidence": "support from Yoko Li, Guido Appenzeller, and Martin Casado",
+          "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://www.linkedin.com/in/ruifeng-zhang/",
+          "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Leo Yu",
-          "role": "Product Engineer",
-          "org": "Respan",
-          "evidence": "Leo Yu-> Product Engineer",
-          "linkedin": "https://www.linkedin.com/in/ruiqingyu0237/",
+          "name": "K Fund",
+          "role": "investor",
+          "org": "",
+          "evidence": "participation from K Fund, JME, and Mission",
+          "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://www.linkedin.com/in/ruiqingyu0237/",
+          "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Yuyang Liu",
-          "role": "Integrations Engineer",
-          "org": "Respan",
-          "evidence": "Yuyang Liu-> Integrations Engineer",
-          "linkedin": "https://www.linkedin.com/in/yuyang-liu-6791811aa/",
+          "name": "JME",
+          "role": "investor",
+          "org": "",
+          "evidence": "participation from K Fund, JME, and Mission",
+          "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://www.linkedin.com/in/yuyang-liu-6791811aa/",
+          "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Taro Ma",
-          "role": "GTM",
-          "org": "Respan",
-          "evidence": "Taro Ma-> GTM",
-          "linkedin": "https://www.linkedin.com/in/zongyuma/",
+          "name": "Mission",
+          "role": "investor",
+          "org": "",
+          "evidence": "participation from K Fund, JME, and Mission",
+          "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://www.linkedin.com/in/zongyuma/",
+          "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Zach Bratun-Glennon",
-          "role": "General Partner, Gradient",
-          "org": "Respan",
-          "evidence": "Zach Bratun-Glennon-> General Partner, Gradient",
-          "linkedin": "https://www.gradient.com/team/zach-bratun-glennon/",
+          "name": "Eric Zacariason",
+          "role": "(Cursor)",
+          "org": "",
+          "evidence": "Eric Zacariason (Cursor)",
+          "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://www.gradient.com/team/zach-bratun-glennon/",
+          "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Denise Teng",
-          "role": "Partner, Gradient",
-          "org": "Respan",
-          "evidence": "Denise Teng-> Partner, Gradient",
-          "linkedin": "https://www.gradient.com/team/denise-teng/",
+          "name": "Didac Lee",
+          "role": "(Galdana Ventures)",
+          "org": "Galdana Ventures",
+          "evidence": "Didac Lee (Galdana Ventures)",
+          "linkedin": "",
           "twitter": "",
           "github": "",
-          "homepage": "https://www.gradient.com/team/denise-teng/",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Jiaqiang Ye Zu",
+          "role": "(Theker)",
+          "org": "Theker",
+          "evidence": "Jiaqiang Ye Zu and Carla Gomez (Theker)",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Carla Gomez",
+          "role": "(Theker)",
+          "org": "Theker",
+          "evidence": "Jiaqiang Ye Zu and Carla Gomez (Theker)",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Linda Tong",
+          "role": "CEO, Webflow",
+          "org": "Webflow",
+          "evidence": "Linda Tong\nCEO, Webflow",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Amjad Masad",
+          "role": "CEO, Replit",
+          "org": "Replit",
+          "evidence": "Amjad Masad\nCEO, Replit",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Michele Catasta",
+          "role": "Head of AI, Replit",
+          "org": "Replit",
+          "evidence": "Michele Catasta\nHead of AI, Replit",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Eric Zakariasson",
+          "role": "Cursor",
+          "org": "Cursor",
+          "evidence": "Eric Zakariasson\nCursor",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Juanjo Mostazo",
+          "role": "K Fund",
+          "org": "K Fund",
+          "evidence": "Juanjo Mostazo\nK Fund",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Adrian Mato",
+          "role": "Design Director, GitHub",
+          "org": "GitHub",
+          "evidence": "Adrian Mato\nDesign Director, GitHub",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Andrew Pouliot",
+          "role": "Formerly Figma",
+          "org": "QuiverAI",
+          "evidence": "Andrew Pouliot\nFormerly Figma",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Guli Moreno",
+          "role": "Capchase",
+          "org": "Capchase",
+          "evidence": "Guli Moreno\nCapchase",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Sabrina Hahn",
+          "role": "Angel Investor",
+          "org": "QuiverAI",
+          "evidence": "Sabrina Hahn\nAngel Investor",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Guillermo Flor",
+          "role": "The VC Corner",
+          "org": "The VC Corner",
+          "evidence": "Guillermo Flor\nThe VC Corner",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ruben Dominquez",
+          "role": "The VC Corner",
+          "org": "The VC Corner",
+          "evidence": "Ruben Dominquez\nThe VC Corner",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
           "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Andy",
-          "rel": "founded",
-          "dst": "Respan",
-          "evidence": "Hey HN, this is Andy from Respan (https://www.respan.ai)."
+          "src": "Linda Tong",
+          "rel": "backed_by",
+          "dst": "Quiver AI",
+          "evidence": "Linda Tong\nCEO, Webflow"
         },
         {
-          "src": "Y Combinator",
+          "src": "Amjad Masad",
           "rel": "backed_by",
-          "dst": "Respan",
-          "evidence": "Respan (YC W24)"
+          "dst": "Quiver AI",
+          "evidence": "Amjad Masad\nCEO, Replit"
+        },
+        {
+          "src": "Michele Catasta",
+          "rel": "backed_by",
+          "dst": "Quiver AI",
+          "evidence": "Michele Catasta\nHead of AI, Replit"
+        },
+        {
+          "src": "Eric Zakariasson",
+          "rel": "backed_by",
+          "dst": "Quiver AI",
+          "evidence": "Eric Zakariasson\nCursor"
+        },
+        {
+          "src": "Didac Lee",
+          "rel": "backed_by",
+          "dst": "Quiver AI",
+          "evidence": "Didac Lee\nGaldana Ventures"
+        },
+        {
+          "src": "Jiaqiang Ye Zu",
+          "rel": "backed_by",
+          "dst": "Quiver AI",
+          "evidence": "Jiaqiang Ye Zu\nTheker"
+        },
+        {
+          "src": "Carla Gomez",
+          "rel": "backed_by",
+          "dst": "Quiver AI",
+          "evidence": "Carla Gomez\nTheker"
+        },
+        {
+          "src": "Juanjo Mostazo",
+          "rel": "backed_by",
+          "dst": "Quiver AI",
+          "evidence": "Juanjo Mostazo\nK Fund"
         }
       ]
     },
     {
-      "company_name": "ObsessionDB",
-      "core_product": "A real‑time data warehouse built for AI agents that ingests, processes and queries massive agent‑generated data streams instantly.",
-      "tech_stack": [
-        "ClickHouse",
-        "object storage",
-        "stateless compute"
+      "company_name": "Lightsprint",
+      "core_product": "Lightsprint provides a cloud‑based interface that lets non‑engineers plan, test, and preview code changes directly within a company’s existing codebase while keeping engineering teams in control.",
+      "tech_stack": [],
+      "likely_bottleneck": "searching and retrieving relevant code snippets quickly across large codebases for real‑time preview",
+      "value_prop_pitch": "I can help Lightsprint improve its code‑search and preview experience by building a Next.js front‑end that queries a vector‑based semantic index of your repository, delivering instant, relevant code snippets as engineers type. This reduces latency and improves accuracy of code discovery, letting non‑engineers collaborate faster without overloading your backend.",
+      "is_relevant": true,
+      "funding_stage": "Seed",
+      "funding_amount": "$6.1M",
+      "hq": "San Francisco",
+      "website": "https://lightsprint.ai",
+      "source_url": "https://www.thesaasnews.com/news/lightsprint-raises-6-1m-seed/",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "web",
+      "score": 73,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "email",
+        "phone"
       ],
-      "likely_bottleneck": "Providing low‑latency, cost‑effective semantic search and retrieval over huge, continuously growing unstructured agent transcripts.",
-      "value_prop_pitch": "I can build a Next.js front‑end that surfaces agent‑generated data with low‑latency vector search, and add a semantic retrieval layer on top of your ClickHouse store using embeddings, cutting query latency and cost. This lets your customers query massive transcript logs in real time without building the retrieval infrastructure themselves.",
+      "contact": {
+        "website": "https://lightsprint.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/lightsprintai",
+          "linkedin": "https://www.linkedin.com/company/lightsprint",
+          "github": "https://github.com/SprintsAI"
+        },
+        "contact_page": "https://lightsprint.ai/contact",
+        "pages_crawled": [
+          "https://lightsprint.ai/",
+          "https://lightsprint.ai/contact",
+          "https://lightsprint.ai/about",
+          "https://lightsprint.ai/team"
+        ],
+        "enriched_at": "2026-10-20T19:49:53+00:00",
+        "status": "ok"
+      },
+      "people": [
+        {
+          "name": "Benjamin Ong",
+          "role": "founder",
+          "org": "Lightsprint",
+          "evidence": "Founded in 2026 by Benjamin Ong, Benedict Chan, and Heng Hong Lee",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Benedict Chan",
+          "role": "founder",
+          "org": "Lightsprint",
+          "evidence": "Founded in 2026 by Benjamin Ong, Benedict Chan, and Heng Hong Lee",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Heng Hong Lee",
+          "role": "founder",
+          "org": "Lightsprint",
+          "evidence": "Founded in 2026 by Benjamin Ong, Benedict Chan, and Heng Hong Lee",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "645 Ventures",
+          "role": "lead investor",
+          "org": "",
+          "evidence": "The round was led by 645 Ventures",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "January Capital",
+          "role": "investor",
+          "org": "",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Rebel Fund",
+          "role": "investor",
+          "org": "",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Fjor",
+          "role": "investor",
+          "org": "",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Sterling Road",
+          "role": "investor",
+          "org": "",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Kaz Nejatian",
+          "role": "angel investor",
+          "org": "",
+          "evidence": "angel investors including Kaz Nejatian",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Benjamin Ong",
+          "rel": "founded",
+          "dst": "Lightsprint",
+          "evidence": "Founded in 2026 by Benjamin Ong, Benedict Chan, and Heng Hong Lee"
+        },
+        {
+          "src": "Benedict Chan",
+          "rel": "founded",
+          "dst": "Lightsprint",
+          "evidence": "Founded in 2026 by Benjamin Ong, Benedict Chan, and Heng Hong Lee"
+        },
+        {
+          "src": "Heng Hong Lee",
+          "rel": "founded",
+          "dst": "Lightsprint",
+          "evidence": "Founded in 2026 by Benjamin Ong, Benedict Chan, and Heng Hong Lee"
+        },
+        {
+          "src": "645 Ventures",
+          "rel": "invested_in",
+          "dst": "Lightsprint",
+          "evidence": "The round was led by 645 Ventures"
+        },
+        {
+          "src": "January Capital",
+          "rel": "invested_in",
+          "dst": "Lightsprint",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian"
+        },
+        {
+          "src": "Rebel Fund",
+          "rel": "invested_in",
+          "dst": "Lightsprint",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian"
+        },
+        {
+          "src": "Fjor",
+          "rel": "invested_in",
+          "dst": "Lightsprint",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian"
+        },
+        {
+          "src": "Sterling Road",
+          "rel": "invested_in",
+          "dst": "Lightsprint",
+          "evidence": "participation from January Capital, Rebel Fund, Fjor, Sterling Road, and angel investors including Kaz Nejatian"
+        },
+        {
+          "src": "Kaz Nejatian",
+          "rel": "invested_in",
+          "dst": "Lightsprint",
+          "evidence": "angel investors including Kaz Nejatian"
+        }
+      ]
+    },
+    {
+      "company_name": "Agent37",
+      "core_product": "Low-cost sandboxes for running AI agents.",
+      "tech_stack": [
+        "gVisor",
+        "Hetzner",
+        "OVH"
+      ],
+      "likely_bottleneck": "Efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.",
+      "value_prop_pitch": "I can build a Next.js dashboard that indexes all sandbox execution logs with a vector store, enabling instant semantic search across agents’ outputs and configurations. This lets your users quickly find relevant sandbox runs and debug issues without manually sifting through raw logs, improving developer productivity.",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://obsessiondb.com",
-      "source_url": "https://www.ycombinator.com/launches/VpG-obsessiondb-a-real-time-data-warehouse-built-for-agents",
-      "discovered_at": "2026-10-20T17:21:46+00:00",
-      "source": "yc",
-      "score": 45,
+      "website": "https://www.agent37.com",
+      "source_url": "https://news.ycombinator.com/item?id=50059096",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "launch_hn",
+      "score": 47,
       "gaps": [
         "funding stage",
         "location",
@@ -547,39 +922,26 @@
         "phone"
       ],
       "contact": {
-        "website": "https://obsessiondb.com",
+        "website": "https://www.agent37.com",
         "emails": [],
         "phones": [],
-        "socials": {
-          "twitter": "https://x.com/obsessiondb"
-        },
-        "contact_page": "https://obsessiondb.com/contact",
+        "socials": {},
+        "contact_page": "https://www.agent37.com/contact",
         "pages_crawled": [
-          "https://obsessiondb.com/",
-          "https://obsessiondb.com/about",
-          "https://obsessiondb.com/contact",
-          "https://obsessiondb.com/team"
+          "https://www.agent37.com/",
+          "https://www.agent37.com/about",
+          "https://www.agent37.com/contact",
+          "https://www.agent37.com/team"
         ],
-        "enriched_at": "2026-10-20T17:25:46+00:00",
+        "enriched_at": "2026-10-20T19:50:26+00:00",
         "status": "ok"
       },
       "people": [
         {
-          "name": "Marc",
-          "role": "co‑founder",
-          "org": "ObsessionDB",
-          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Rafael Aviles",
-          "role": "co‑founder",
-          "org": "ObsessionDB",
-          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB.",
+          "name": "Vishnu",
+          "role": "Founder",
+          "org": "Agent37",
+          "evidence": "Hey HN, I’m Vishnu from Agent37",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -589,88 +951,210 @@
       ],
       "edges": [
         {
-          "src": "Marc",
-          "rel": "cofounded",
-          "dst": "ObsessionDB",
-          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB."
+          "src": "Vishnu",
+          "rel": "works_at",
+          "dst": "Agent37",
+          "evidence": "Hey HN, I’m Vishnu from Agent37"
         },
         {
-          "src": "Rafael Aviles",
-          "rel": "cofounded",
-          "dst": "ObsessionDB",
-          "evidence": "Hi YC, we are Marc, Rafael, and Marc - co-founders of ObsessionDB."
+          "src": "Vishnu",
+          "rel": "previously_at",
+          "dst": "Amazon",
+          "evidence": "I was previously a Senior Software Engineer at Amazon"
+        },
+        {
+          "src": "Vishnu",
+          "rel": "previously_at",
+          "dst": "Quantcast",
+          "evidence": "and an Engineering Manager at Quantcast"
         }
       ]
     },
     {
-      "company_name": "Consus",
-      "core_product": "An LLM gateway that enforces ITAR, FedRAMP, and CUI compliance for AI model inference across multiple government clouds.",
+      "company_name": "Laminar",
+      "core_product": "Open-source observability platform that uses an RL‑trained model to analyze AI agent traces and surface errors.",
       "tech_stack": [
-        "OpenAI-compatible API endpoint",
-        "AWS GovCloud",
-        "Azure Government",
-        "Google Cloud",
-        "FedRAMP",
-        "ITAR compliance"
+        "RL‑trained model",
+        "custom SQL query engine",
+        "open-source model",
+        "Apache 2.0 license"
       ],
-      "likely_bottleneck": "Building and maintaining a fast, searchable compliance policy engine and model catalog that can retrieve the right model and its restrictions across multiple GovCloud providers.",
-      "value_prop_pitch": "I can build a Next.js based compliance portal that lets your engineers instantly search and filter model availability and policy rules using vector semantic search, cutting down the time spent manually mapping models to GovClouds. This will give you sub‑second retrieval of relevant compliance metadata and a modern UI, freeing your team to focus on security rather than building a custom search layer.",
+      "likely_bottleneck": "Scaling high‑quality search and retrieval over massive, compressed agent trace data.",
+      "value_prop_pitch": "I can help you build a fast, scalable Next.js UI that lets engineers query and explore agent traces instantly, while integrating a vector‑semantic search layer to retrieve relevant spans across compressed traces. This will cut down the latency of your Signal engine and let you surface errors in real‑time without costly custom indexing.",
+      "is_relevant": true,
+      "funding_stage": "pre-seed",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://laminar.sh",
+      "source_url": "https://news.ycombinator.com/item?id=50154029",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "launch_hn",
+      "score": 80,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://laminar.sh",
+        "emails": [
+          {
+            "value": "founders@lmnr.ai",
+            "kind": "person",
+            "source_url": "https://laminar.sh/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/lmnr-ai"
+        },
+        "contact_page": "https://laminar.sh/contact",
+        "pages_crawled": [
+          "https://laminar.sh/",
+          "https://laminar.sh/about",
+          "https://laminar.sh/contact",
+          "https://laminar.sh/team"
+        ],
+        "enriched_at": "2026-10-20T19:50:32+00:00",
+        "status": "ok"
+      },
+      "people": [
+        {
+          "name": "Robert",
+          "role": "cofounder",
+          "org": "Laminar",
+          "evidence": "Hi HN, we’re Robert and Din from Laminar",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Din",
+          "role": "cofounder",
+          "org": "Laminar",
+          "evidence": "Hi HN, we’re Robert and Din from Laminar",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Robert",
+          "rel": "cofounded",
+          "dst": "Laminar",
+          "evidence": "Hi HN, we’re Robert and Din from Laminar"
+        },
+        {
+          "src": "Din",
+          "rel": "cofounded",
+          "dst": "Laminar",
+          "evidence": "Hi HN, we’re Robert and Din from Laminar"
+        },
+        {
+          "src": "Laminar",
+          "rel": "backed_by",
+          "dst": "Y Combinator",
+          "evidence": "Laminar (YC S24)"
+        }
+      ]
+    },
+    {
+      "company_name": "Kairos Health",
+      "core_product": "Kairos Health provides an AI-powered front desk that automates patient outreach, call handling, and insurance verification for dental practices.",
+      "tech_stack": [
+        "AI",
+        "AWS"
+      ],
+      "likely_bottleneck": "search quality and retrieval over unstructured patient data for personalized outreach and scheduling",
+      "value_prop_pitch": "I can help Kairos Health boost its patient outreach by building a Next.js portal that leverages vector‑based semantic search to instantly retrieve the most relevant patient records and insurance details. This will improve call personalization and scheduling accuracy while letting your team focus on care rather than data plumbing.",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://consus.io",
-      "source_url": "https://news.ycombinator.com/item?id=50073471",
-      "discovered_at": "2026-10-20T17:21:46+00:00",
-      "source": "launch_hn",
+      "website": "https://kairoshealthai.com",
+      "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
+      "source": "yc",
       "score": 71,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
-        "email"
+        "investors"
       ],
       "contact": {
-        "website": "https://consus.io",
-        "emails": [],
+        "website": "https://kairoshealthai.com",
+        "emails": [
+          {
+            "value": "contact@kairoshealthai.com",
+            "kind": "general",
+            "source_url": "https://kairoshealthai.com/"
+          }
+        ],
         "phones": [
           {
-            "value": "+12522047012",
+            "value": "+12814656628",
             "kind": "main",
-            "source_url": "https://consus.io/"
+            "source_url": "https://kairoshealthai.com/"
           }
         ],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/consusindustries",
-          "twitter": "https://x.com/OfficialConsus",
-          "github": "https://github.com/consusindustries"
+          "linkedin": "https://www.linkedin.com/company/kairoshealth"
         },
         "contact_page": "",
         "pages_crawled": [
-          "https://consus.io/",
-          "https://consus.io/company"
+          "https://kairoshealthai.com/",
+          "https://kairoshealthai.com/about"
         ],
-        "enriched_at": "2026-10-20T17:26:12+00:00",
+        "enriched_at": "2026-10-20T19:50:35+00:00",
         "status": "ok"
       },
       "people": [
         {
-          "name": "Eric",
-          "role": "founder",
-          "org": "Consus",
-          "evidence": "Hey Hacker News! I'm Eric, the founder of Consus.",
-          "linkedin": "",
+          "name": "Adhira Tippur",
+          "role": "cofounder",
+          "org": "",
+          "evidence": "Adhira Tippur grew up helping out at her mother's dental practices, which inspired the idea for Kairos Health.",
+          "linkedin": "https://www.linkedin.com/in/adhira-tippur",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://kairoshealthai.com/about"
         },
         {
-          "name": "Eric Magliarditi",
-          "role": "Founder & CEO",
-          "org": "Consus",
-          "evidence": "Founder & CEO\n## Eric Magliarditi",
-          "linkedin": "https://www.linkedin.com/in/ericmagliarditi/",
+          "name": "Sanjana Kavula",
+          "role": "cofounder",
+          "org": "",
+          "evidence": "Sanjana Kavula studied computational neuroscience at Rice University.",
+          "linkedin": "https://www.linkedin.com/in/sanjana-kavula-710384236",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://kairoshealthai.com/about"
+        },
+        {
+          "name": "Aditya Jain",
+          "role": "cofounder",
+          "org": "",
+          "evidence": "Aditya Jain studied computer science at Georgia Tech.",
+          "linkedin": "https://www.linkedin.com/in/aditya-jain27",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://kairoshealthai.com/about"
+        },
+        {
+          "name": "Tanush Chintala",
+          "role": "cofounder",
+          "org": "",
+          "evidence": "Tanush Chintala studied computer science at Georgia Tech as a Stamps President’s Scholar.",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
@@ -679,107 +1163,158 @@
       ],
       "edges": [
         {
-          "src": "Eric",
-          "rel": "founded",
-          "dst": "Consus",
-          "evidence": "Hey Hacker News! I'm Eric, the founder of Consus."
+          "src": "Adhira Tippur",
+          "rel": "works_at",
+          "dst": "Kairos Health",
+          "evidence": "Adhira Tippur grew up helping out at her mother's dental practices, which inspired the idea for Kairos Health."
         },
         {
-          "src": "Eric",
+          "src": "Sanjana Kavula",
+          "rel": "works_at",
+          "dst": "Kairos Health",
+          "evidence": "Sanjana Kavula studied computational neuroscience at Rice University."
+        },
+        {
+          "src": "Aditya Jain",
+          "rel": "works_at",
+          "dst": "Kairos Health",
+          "evidence": "Aditya Jain studied computer science at Georgia Tech."
+        },
+        {
+          "src": "Tanush Chintala",
+          "rel": "works_at",
+          "dst": "Kairos Health",
+          "evidence": "Tanush Chintala studied computer science at Georgia Tech as a Stamps President’s Scholar."
+        },
+        {
+          "src": "Adhira Tippur",
           "rel": "previously_at",
-          "dst": "SpaceX",
-          "evidence": "I launched national security payloads at SpaceX"
+          "dst": "ClearView Healthcare Partners",
+          "evidence": "She previously worked at ClearView Healthcare Partners, a life sciences consulting firm"
         },
         {
-          "src": "Eric Magliarditi",
-          "rel": "founded",
-          "dst": "Consus",
-          "evidence": "Founder & CEO\n## Eric Magliarditi"
-        },
-        {
-          "src": "Eric Magliarditi",
+          "src": "Adhira Tippur",
           "rel": "previously_at",
-          "dst": "SpaceX",
-          "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion."
+          "dst": "The Collectiv",
+          "evidence": "and The Collectiv, a venture capital firm."
         },
         {
-          "src": "Eric Magliarditi",
+          "src": "Sanjana Kavula",
           "rel": "previously_at",
-          "dst": "Castelion",
-          "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion."
+          "dst": "Blueprint Medicines",
+          "evidence": "She previously worked at Blueprint Medicines at Sanofi"
         },
         {
-          "src": "Y Combinator",
-          "rel": "backed_by",
-          "dst": "Consus",
-          "evidence": "Backed by Y Combinator"
+          "src": "Sanjana Kavula",
+          "rel": "previously_at",
+          "dst": "Icahn School of Medicine",
+          "evidence": "and developed AI models at the Icahn School of Medicine."
+        },
+        {
+          "src": "Aditya Jain",
+          "rel": "previously_at",
+          "dst": "New York Stock Exchange",
+          "evidence": "He previously worked at the New York Stock Exchange, building large-scale data pipelines for financial trading."
+        },
+        {
+          "src": "Tanush Chintala",
+          "rel": "previously_at",
+          "dst": "AWS GuardDuty",
+          "evidence": "He built developer infrastructure at AWS GuardDuty"
+        },
+        {
+          "src": "Tanush Chintala",
+          "rel": "previously_at",
+          "dst": "Nimbus Health",
+          "evidence": "and developed AI-powered call routing systems at Nimbus Health."
         }
       ]
     },
     {
-      "company_name": "Probe",
-      "core_product": "Probe is a unified platform that provides agent‑native research tools for AI/ML teams to run experiments, manage compute, and share context.",
-      "tech_stack": [],
-      "likely_bottleneck": "building a seamless search and retrieval layer for experiment data and research context",
-      "value_prop_pitch": "I can build a fast, searchable dashboard for Probe using Next.js that indexes all experiment metadata and research documents with vector embeddings, giving your team instant semantic search across past runs. This will let agents and researchers retrieve relevant context in milliseconds, reducing coordination overhead and speeding up experiment iteration.",
+      "company_name": "Asakana",
+      "core_product": "Automates sales and back‑office data entry for food distributors by extracting orders, returns, and other messages from texts, calls, PDFs and handwritten notes and feeding them into existing ERP systems.",
+      "tech_stack": [
+        "AI",
+        "NLP",
+        "machine learning",
+        "OCR"
+      ],
+      "likely_bottleneck": "Accurate semantic extraction and retrieval over messy, multilingual unstructured messages at scale.",
+      "value_prop_pitch": "I can help Asakana boost its extraction accuracy and speed by building a Next.js front‑end that streams OCR‑processed documents into a vector‑based semantic search layer, letting you instantly match messy orders to catalog items. This reduces the manual validation step and lets your reps focus on selling while you scale to more distributors without hiring extra data engineers.",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
-      "hq": "",
-      "website": "https://www.useprobe.ai",
-      "source_url": "https://www.ycombinator.com/launches/W7t-probe-the-agent-native-research-stack",
-      "discovered_at": "2026-10-20T17:21:46+00:00",
+      "hq": "San Francisco, US",
+      "website": "https://www.asakana.co",
+      "source_url": "https://www.ycombinator.com/launches/VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors",
+      "discovered_at": "2026-10-20T19:42:46+00:00",
       "source": "yc",
-      "score": 44,
+      "score": 55,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
-        "tech stack",
-        "people profiles",
         "investors",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.useprobe.ai",
-        "emails": [
-          {
-            "value": "founders@prbe.ai",
-            "kind": "person",
-            "source_url": "https://www.useprobe.ai/"
-          }
-        ],
+        "website": "https://www.asakana.co",
+        "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "https://www.useprobe.ai/contact",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/asakana"
+        },
+        "contact_page": "",
         "pages_crawled": [
-          "https://www.useprobe.ai/",
-          "https://www.useprobe.ai/about",
-          "https://www.useprobe.ai/contact",
-          "https://www.useprobe.ai/team"
+          "https://www.asakana.co/",
+          "https://www.asakana.co/about"
         ],
-        "enriched_at": "2026-10-20T17:26:50+00:00",
+        "enriched_at": "2026-10-20T19:50:39+00:00",
         "status": "ok"
       },
       "people": [
         {
-          "name": "Ashwarye Yadav",
-          "role": "Founder",
-          "org": "Probe",
-          "evidence": "**Ashwarye Yadav**",
-          "linkedin": "",
+          "name": "Benjamin Solis-Cohen",
+          "role": "cofounder",
+          "org": "Asakana",
+          "evidence": "Ben spent 8 years at Google as a senior AI research engineer on Project Mariner and Gemini.",
+          "linkedin": "https://www.linkedin.com/in/bsoliscohen",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://www.asakana.co/about"
         }
       ],
       "edges": [
         {
-          "src": "Ashwarye Yadav",
-          "rel": "founded",
-          "dst": "Probe",
-          "evidence": "**Ashwarye Yadav**"
+          "src": "Yudai Matsuoka",
+          "rel": "cofounded",
+          "dst": "Asakana",
+          "evidence": "We're Yudai and Ben."
+        },
+        {
+          "src": "Benjamin Solis-Cohen",
+          "rel": "cofounded",
+          "dst": "Asakana",
+          "evidence": "We're Yudai and Ben."
+        },
+        {
+          "src": "Yudai Matsuoka",
+          "rel": "previously_at",
+          "dst": "Mitsubishi Corporation",
+          "evidence": "Yudai was a fisherman and a seafood distributor (Mitsubishi Corporation)"
+        },
+        {
+          "src": "Yudai Matsuoka",
+          "rel": "previously_at",
+          "dst": "McKinsey",
+          "evidence": "then at McKinsey transformed companies that still ran on it"
+        },
+        {
+          "src": "Benjamin Solis-Cohen",
+          "rel": "previously_at",
+          "dst": "Google",
+          "evidence": "Ben spent 8 years at Google as a senior AI research engineer on Project Mariner and Gemini."
         }
       ]
     }

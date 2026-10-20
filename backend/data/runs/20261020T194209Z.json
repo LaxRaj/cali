@@ -1,0 +1,467 @@
+{
+  "run_id": "20261020T194209Z",
+  "started_at": "2026-10-20T19:42:09+00:00",
+  "duration_s": 512.1,
+  "passed": true,
+  "funnel": {
+    "candidates": 296,
+    "selected": 12,
+    "crawled": 12,
+    "extracted": 12,
+    "relevant": 11,
+    "valid": 9
+  },
+  "tokens": 75557,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 67,
+    "rss": 71,
+    "web": 24,
+    "edgar": 2
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed semantic search startup funding announcement March 2024",
+      "Series A retrieval AI startup founder interview April 2024",
+      "seed round vector database startup investor a16z news",
+      "AI-powered developer tooling startup raises seed round Lightspeed",
+      "RAG platform launch Y Combinator March 2024"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG",
+      "vector database",
+      "developer tooling",
+      "next.js AI"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 8,
+        "accepted": 3,
+        "score_sum": 150,
+        "yield": 0.375,
+        "avg_score": 50.0
+      },
+      "yc": {
+        "crawled": 3,
+        "accepted": 3,
+        "score_sum": 139,
+        "yield": 1.0,
+        "avg_score": 46.3
+      },
+      "rss": {
+        "crawled": 3,
+        "accepted": 1,
+        "score_sum": 50,
+        "yield": 0.333,
+        "avg_score": 50.0
+      },
+      "web": {
+        "crawled": 1,
+        "accepted": 1,
+        "score_sum": 81,
+        "yield": 1.0,
+        "avg_score": 81.0
+      },
+      "launch_hn": {
+        "crawled": 2,
+        "accepted": 2,
+        "score_sum": 151,
+        "yield": 1.0,
+        "avg_score": 75.5
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 3,
+      "rss": 2,
+      "web": 3,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 162,
+    "fallbacks": 0,
+    "avg_latency_ms": 90.5,
+    "jev_input_tokens": 77589,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-20T19:42:09+00:00",
+      "offset_s": 0.0,
+      "duration_s": 11.72,
+      "status": "ok",
+      "counts": {
+        "candidates": 296,
+        "src_hn": 63,
+        "src_launch_hn": 4,
+        "src_rss": 71,
+        "src_yc": 12,
+        "src_web": 24,
+        "src_edgar": 2,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-20T19:42:21+00:00",
+      "offset_s": 11.72,
+      "duration_s": 15.62,
+      "status": "ok",
+      "counts": {
+        "in": 296,
+        "selected": 12
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 3, 'rss': 2, 'web': 3, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-20T19:42:36+00:00",
+      "offset_s": 27.33,
+      "duration_s": 9.34,
+      "status": "ok",
+      "counts": {
+        "requested": 12,
+        "crawled": 12
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-20T19:42:46+00:00",
+      "offset_s": 36.68,
+      "duration_s": 328.86,
+      "status": "ok",
+      "counts": {
+        "extracted": 12,
+        "relevant": 11,
+        "valid": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-10-20T19:48:15+00:00",
+      "offset_s": 365.53,
+      "duration_s": 144.0,
+      "status": "ok",
+      "counts": {
+        "startups": 9,
+        "websites": 9,
+        "emails": 3,
+        "phones": 1
+      },
+      "notes": [
+        "team page: +0 people, +0 edges",
+        "team page: +0 people, +0 edges",
+        "team page: +1 people, +3 edges",
+        "team page: +11 people, +8 edges",
+        "team page: +0 people, +0 edges",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-20T19:50:39+00:00",
+      "offset_s": 509.53,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 71
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-10-20T19:50:39+00:00",
+      "offset_s": 509.53,
+      "duration_s": 2.31,
+      "status": "ok",
+      "counts": {
+        "startups": 9,
+        "people": 50,
+        "edges": 55
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-10-20T19:50:41+00:00",
+      "offset_s": 511.84,
+      "duration_s": 0.03,
+      "status": "ok",
+      "counts": {
+        "startups": 0,
+        "emails": 0
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.54,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.08,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 67,
+      "seconds": 1.96,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 71,
+      "seconds": 6.46,
+      "error": ""
+    },
+    "web": {
+      "candidates": 24,
+      "seconds": 10.13,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 2,
+      "seconds": 10.2,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 46757,
+    "completion_tokens": 28800,
+    "total_tokens": 75557,
+    "calls": 20
+  },
+  "quality": {
+    "candidates": 296,
+    "crawled": 12,
+    "extracted": 12,
+    "relevant": 11,
+    "valid": 9,
+    "sources": {
+      "rss": 2,
+      "web": 3,
+      "launch_hn": 2,
+      "yc": 2
+    },
+    "people": 50,
+    "edges": 55,
+    "dropped_ungrounded": 4,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 9,
+    "with_website": 9,
+    "with_email": 3,
+    "with_phone": 1,
+    "people_linked": 7,
+    "avg_score": 71.6,
+    "issues": {
+      "warn: empty tech_stack": 3,
+      "missing core_product": 2,
+      "missing likely_bottleneck": 2,
+      "not a relevant startup page": 1
+    },
+    "failures": [],
+    "passed": true,
+    "validity_rate": 0.818
+  },
+  "accepted": [
+    {
+      "company": "Coherence Quantum",
+      "url": "https://tech.eu/2026/10/20/coherence-quantum-raises-eur278m-to-tackle-quantum-computer-scaling-challenges/",
+      "source": "rss",
+      "people": 2,
+      "edges": 3,
+      "score": 81,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "https://www.coherencequantum.tech",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Vessla",
+      "url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/",
+      "source": "rss",
+      "people": 4,
+      "edges": 6,
+      "score": 81,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "https://vessla.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "SereneDB",
+      "url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/",
+      "source": "web",
+      "people": 4,
+      "edges": 4,
+      "score": 73,
+      "gaps": [
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "https://serenedb.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "QuiverAI",
+      "url": "https://quiver.ai/blog/announcing-our-seed-round",
+      "source": "web",
+      "people": 11,
+      "edges": 0,
+      "score": 83,
+      "gaps": [
+        "location",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://quiver.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Lightsprint",
+      "url": "https://www.thesaasnews.com/news/lightsprint-raises-6-1m-seed/",
+      "source": "web",
+      "people": 9,
+      "edges": 9,
+      "score": 73,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "https://lightsprint.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Agent37",
+      "url": "https://news.ycombinator.com/item?id=50059096",
+      "source": "launch_hn",
+      "people": 1,
+      "edges": 3,
+      "score": 47,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.agent37.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Laminar",
+      "url": "https://news.ycombinator.com/item?id=50154029",
+      "source": "launch_hn",
+      "people": 2,
+      "edges": 3,
+      "score": 80,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://laminar.sh",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Kairos Health",
+      "url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+      "source": "yc",
+      "people": 4,
+      "edges": 11,
+      "score": 71,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "investors"
+      ],
+      "website": "https://kairoshealthai.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Asakana",
+      "url": "https://www.ycombinator.com/launches/VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors",
+      "source": "yc",
+      "people": 1,
+      "edges": 5,
+      "score": 55,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.asakana.co",
+      "emails": 0,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2073572/000207357226000001/",
+      "source": "edgar",
+      "reasons": [
+        "missing core_product",
+        "warn: empty tech_stack",
+        "missing likely_bottleneck"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2131317/000213131726000002/",
+      "source": "edgar",
+      "reasons": [
+        "missing core_product",
+        "warn: empty tech_stack",
+        "missing likely_bottleneck"
+      ]
+    },
+    {
+      "url": "https://superset.sh/careers",
+      "source": "hiring",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": []
+}
