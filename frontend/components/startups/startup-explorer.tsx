@@ -7,14 +7,15 @@ import { RetroButton } from "@/components/ui/retro-button";
 import { RockerSwitch } from "@/components/ui/rocker-switch";
 import type { Profile } from "@/lib/data";
 
-type Sort = "newest" | "connected" | "name";
+type Sort = "score" | "newest" | "connected" | "name";
 
 export function StartupExplorer({ profiles }: { profiles: Profile[] }) {
   const [query, setQuery] = useState("");
   const [stage, setStage] = useState<string | null>(null);
   const [tag, setTag] = useState<string | null>(null);
   const [linkedOnly, setLinkedOnly] = useState(false);
-  const [sort, setSort] = useState<Sort>("newest");
+  const [sort, setSort] = useState<Sort>("score");
+  const [emailOnly, setEmailOnly] = useState(false);
 
   const stages = useMemo(
     () =>
@@ -40,6 +41,7 @@ export function StartupExplorer({ profiles }: { profiles: Profile[] }) {
       .filter((p) => !stage || p.funding_stage === stage)
       .filter((p) => !tag || p.tech_stack.includes(tag))
       .filter((p) => !linkedOnly || p.edges.length > 0)
+      .filter((p) => !emailOnly || (p.contact?.emails?.length ?? 0) > 0)
       .filter(
         (p) =>
           !q ||
@@ -57,11 +59,13 @@ export function StartupExplorer({ profiles }: { profiles: Profile[] }) {
       .sort((a, b) =>
         sort === "name"
           ? a.company_name.localeCompare(b.company_name)
-          : sort === "connected"
-            ? b.edges.length - a.edges.length
-            : b.discovered_at.localeCompare(a.discovered_at),
+          : sort === "score"
+            ? (b.score ?? 0) - (a.score ?? 0)
+            : sort === "connected"
+              ? b.edges.length - a.edges.length
+              : b.discovered_at.localeCompare(a.discovered_at),
       );
-  }, [profiles, query, stage, tag, linkedOnly, sort]);
+  }, [profiles, query, stage, tag, linkedOnly, emailOnly, sort]);
 
   return (
     <div className="space-y-4">
@@ -115,11 +119,17 @@ export function StartupExplorer({ profiles }: { profiles: Profile[] }) {
             label="Only with connections"
           />
           <span className="text-xs">only with connections</span>
+          <RockerSwitch
+            checked={emailOnly}
+            onChange={setEmailOnly}
+            label="Only with a published email"
+          />
+          <span className="text-xs">only with email</span>
           <span className="flex items-center gap-2">
             <span className="text-xs font-semibold uppercase tracking-widest">
               sort
             </span>
-            {(["newest", "connected", "name"] as Sort[]).map((s) => (
+            {(["score", "newest", "connected", "name"] as Sort[]).map((s) => (
               <RetroButton
                 key={s}
                 tone="amber"

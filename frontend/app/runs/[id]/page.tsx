@@ -118,6 +118,29 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
         </Panel>
       </div>
 
+      {run.feedback?.source_stats &&
+        Object.keys(run.feedback.source_stats).length > 0 && (
+          <Panel
+            title="Crawl budget feedback"
+            tone="amber"
+            right={<span>yield over the last runs → this run&apos;s caps</span>}
+          >
+            <div className="space-y-1">
+              {Object.entries(run.feedback.source_stats).map(([src, st]) => (
+                <AsciiBar
+                  key={src}
+                  label={src}
+                  value={Math.round(st.yield * 100)}
+                  max={100}
+                  width={16}
+                  display={`${st.accepted}/${st.crawled} valid · avg score ${st.avg_score} · cap ${run.feedback?.caps?.[src] ?? "-"}`}
+                  className="text-amber-700 dark:text-amber-300"
+                />
+              ))}
+            </div>
+          </Panel>
+        )}
+
       <Panel title={`Accepted (${run.accepted.length})`} tone="emerald">
         {run.accepted.length === 0 ? (
           <p className="text-xs text-zinc-500">
@@ -126,15 +149,30 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
         ) : (
           <ul className="space-y-1">
             {run.accepted.map((a) => (
-              <li key={a.url} className="flex flex-wrap justify-between gap-2">
-                <span>
-                  <span className="font-semibold">{a.company}</span>{" "}
-                  <span className="text-zinc-500">via {a.source}</span>
-                </span>
-                <span className="text-xs text-zinc-600 dark:text-zinc-400">
-                  {a.people} {a.people === 1 ? "person" : "people"} · {a.edges}{" "}
-                  {a.edges === 1 ? "connection" : "connections"}
-                </span>
+              <li
+                key={a.url}
+                className="space-y-0.5 border-b border-zinc-900/15 pb-1 dark:border-emerald-400/15"
+              >
+                <div className="flex flex-wrap justify-between gap-2">
+                  <span>
+                    <span className="font-semibold">{a.company}</span>{" "}
+                    <span className="text-zinc-500">via {a.source}</span>
+                  </span>
+                  <span className="text-xs text-zinc-600 dark:text-zinc-400">
+                    {a.score !== undefined && (
+                      <span className="font-semibold">score {a.score} · </span>
+                    )}
+                    {a.people} {a.people === 1 ? "person" : "people"} ·{" "}
+                    {a.edges} {a.edges === 1 ? "connection" : "connections"}
+                    {a.emails !== undefined &&
+                      ` · ${a.emails} email · ${a.phones ?? 0} phone`}
+                  </span>
+                </div>
+                {a.gaps && a.gaps.length > 0 && (
+                  <p className="text-xs text-amber-700 dark:text-amber-300">
+                    missing: {a.gaps.join(", ")}
+                  </p>
+                )}
               </li>
             ))}
           </ul>

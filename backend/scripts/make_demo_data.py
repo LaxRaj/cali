@@ -16,7 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from export import export_all  # noqa: E402
 from memory import upsert_edges, upsert_people, upsert_profile  # noqa: E402
-from models import Edge, Person, StartupProfile  # noqa: E402
+from models import Contact, ContactItem, Edge, Person, StartupProfile  # noqa: E402
+from rating import rate  # noqa: E402
 
 OUT = Path(__file__).resolve().parents[2] / "frontend" / "demo-data"
 rng = random.Random(7)
@@ -44,18 +45,35 @@ def build_db(tmp: Path) -> None:
     day = datetime.now(timezone.utc)
     for i, (name, prod, stack, stage, src, bott, founders, investors) in enumerate(STARTUPS):
         when = (day - timedelta(days=i * 2 + 1)).isoformat(timespec="seconds")
-        upsert_profile(
-            StartupProfile(company_name=name, core_product=prod, tech_stack=stack, likely_bottleneck=bott,
-                           value_prop_pitch=PITCH.format(x=bott.split(" ")[0] + " layer"), is_relevant=True,
-                           funding_stage=stage, source_url=f"https://example.com/{name.lower().replace(' ', '-')}",
-                           discovered_at=when), db_dir=tmp)
-        people = [Person(name=f, role="co-founder", org=name, evidence=f"{f} co-founded {name}") for f in founders]
+        slug = name.lower().replace(" ", "")
+        site = f"https://{slug}.example"  # .example is a reserved TLD: nothing here is a real address
+        has_contact = i % 3 != 2
+        contact = Contact(
+            website=site, status="ok", enriched_at=when, contact_page=f"{site}/contact" if has_contact else "",
+            pages_crawled=[f"{site}/", f"{site}/about"],
+            emails=[ContactItem(value=f"hello@{slug}.example", kind="general", source_url=f"{site}/contact")] if has_contact else [],
+            phones=[ContactItem(value=f"+1202555{1000 + i:04d}", kind="main", source_url=f"{site}/contact")] if i % 2 == 0 else [],
+            socials={"linkedin": f"https://www.linkedin.com/company/{slug}", "twitter": f"https://x.com/{slug}"} if i % 4 != 3 else {},
+        )
+        profile = StartupProfile(company_name=name, core_product=prod, tech_stack=stack, likely_bottleneck=bott,
+                                 value_prop_pitch=PITCH.format(x=bott.split(" ")[0] + " layer"), is_relevant=True,
+                                 funding_stage=stage, funding_amount=f"${2 + i % 5}.{i}M" if i % 3 else "",
+                                 hq=["Berlin, Germany", "Austin, USA", "London, UK", ""][i % 4], website=site,
+                                 source_url=f"https://example.com/{slug}", discovered_at=when)
+        people = [Person(name=f, role="co-founder", org=name, evidence=f"{f} co-founded {name}",
+                         linkedin=f"https://www.linkedin.com/in/{f.lower().replace(' ', '-')}" if j == 0 or i % 2 else "",
+                         github=f"https://github.com/{f.lower().replace(' ', '')}" if i % 5 == 0 else "",
+                         link_source=f"{site}/about")
+                  for j, f in enumerate(founders)]
         edges = [Edge(src=f, rel="cofounded" if len(founders) > 1 else "founded", dst=name,
                       evidence=f"{f} co-founded {name}") for f in founders]
         for inv in investors:
             edges.append(Edge(src=inv, rel="invested_in", dst=name, evidence=f"{inv} led the {stage} round"))
         if i % 4 == 0 and i + 1 < len(STARTUPS):
             edges.append(Edge(src=name, rel="competitor_of", dst=STARTUPS[i + 1][0], evidence=f"{name} competes with {STARTUPS[i + 1][0]}"))
+        rt = rate(profile, people, edges, contact)
+        upsert_profile(profile, db_dir=tmp, extras={"score": rt.score, "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
+                                                    "contact_json": contact.model_dump_json()})
         upsert_people(people, db_dir=tmp)
         upsert_edges(edges, db_dir=tmp)
 
@@ -80,6 +98,7 @@ def make_runs(out: Path) -> None:
         stage_defs = [("discover", 38, {"candidates": cands}), ("triage", 6, {"in": cands, "selected": selected}),
                       ("crawl", 41, {"requested": selected, "crawled": crawled}),
                       ("extract", 95, {"extracted": extracted, "relevant": relevant, "valid": valid}),
+                      ("enrich", 38, {"startups": valid, "websites": valid, "emails": max(0, valid - 1), "phones": valid // 2}),
                       ("gates", 0.1, {"passed": int(passed)})]
         if passed:
             stage_defs.append(("store", 9, {"startups": valid}))
@@ -96,13 +115,23 @@ def make_runs(out: Path) -> None:
                   if quota_fail else [])
         run_id = start.strftime("%Y%m%dT%H%M%SZ")
         accepted = [{"company": s[0], "url": f"https://example.com/{s[0].lower()}", "source": s[4], "people": len(s[6]),
-                     "edges": len(s[6]) + len(s[7])} for s in rng.sample(STARTUPS, min(valid, len(STARTUPS)))] if valid else []
+                     "edges": len(s[6]) + len(s[7]), "score": rng.randint(45, 95),
+                     "gaps": rng.sample(["email", "phone", "investors", "people profiles", "location"], rng.randint(0, 3)),
+                     "website": f"https://{s[0].lower().replace(' ', '')}.example", "emails": rng.randint(0, 2), "phones": rng.randint(0, 1)}
+                    for s in rng.sample(STARTUPS, min(valid, len(STARTUPS)))] if valid else []
+        stats = {s: {"crawled": rng.randint(4, 30), "accepted": 0, "yield": 0.0, "avg_score": 0.0} for s in SOURCES + ["launch_hn"]}
+        for s_, st in stats.items():
+            st["accepted"] = rng.randint(0, st["crawled"] // 2)
+            st["yield"] = round(st["accepted"] / st["crawled"], 3)
+            st["avg_score"] = round(rng.uniform(40, 85), 1) if st["accepted"] else 0.0
+        caps = {s_: max(2, min(7, round(12 * (st["yield"] + 0.15) / 1.6))) for s_, st in stats.items()}
         run = {
             "run_id": run_id, "started_at": start.isoformat(timespec="seconds"), "duration_s": round(off, 1),
             "passed": passed, "failures": failures, "tokens": tokens,
             "funnel": {"candidates": cands, "selected": selected, "crawled": crawled, "extracted": extracted,
                        "relevant": relevant, "valid": valid},
             "sources": src_counts,
+            "feedback": {"source_stats": stats, "caps": caps},
             "plan": {"web_queries": ["seed round semantic search startup", "Series A RAG platform launch"],
                      "hn_keywords": ["RAG", "vector search", "developer tools"]},
             "stages": stages,
@@ -114,7 +143,9 @@ def make_runs(out: Path) -> None:
             "quality": {"candidates": cands, "crawled": crawled, "extracted": extracted, "relevant": relevant,
                         "valid": valid, "passed": passed, "failures": failures,
                         "validity_rate": round(valid / relevant, 3) if relevant else 0,
-                        "dropped_ungrounded": rng.randint(0, 9)},
+                        "dropped_ungrounded": rng.randint(0, 9),
+                        "enriched": valid, "with_website": valid, "with_email": max(0, valid - 1),
+                        "with_phone": valid // 2, "people_linked": valid, "avg_score": round(rng.uniform(55, 80), 1)},
             "accepted": accepted,
             "rejections": [{"url": f"https://example.com/junk{n}", "source": rng.choice(SOURCES),
                             "reasons": [rng.choice(["not a relevant startup page", "missing core_product"])]}

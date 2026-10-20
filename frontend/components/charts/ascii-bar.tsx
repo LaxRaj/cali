@@ -18,7 +18,7 @@ export function AsciiBar({
 }) {
   return (
     <div className="flex items-center gap-2 whitespace-pre">
-      <span className="w-16 shrink-0 truncate uppercase">{label}</span>
+      <span className="w-24 shrink-0 truncate uppercase">{label}</span>
       <span
         role="img"
         aria-label={`${label}: ${display ?? value} of ${max}`}

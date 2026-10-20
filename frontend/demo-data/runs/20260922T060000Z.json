@@ -1,23 +1,64 @@
 {
   "run_id": "20260922T060000Z",
   "started_at": "2026-09-22T06:00:00+00:00",
-  "duration_s": 180.6,
+  "duration_s": 237.6,
   "passed": true,
   "failures": [],
-  "tokens": 87533,
+  "tokens": 59506,
   "funnel": {
-    "candidates": 93,
-    "selected": 8,
-    "crawled": 6,
-    "extracted": 6,
+    "candidates": 91,
+    "selected": 10,
+    "crawled": 8,
+    "extracted": 7,
     "relevant": 4,
-    "valid": 4
+    "valid": 3
   },
   "sources": {
-    "hn": 47,
-    "rss": 38,
-    "yc": 31,
-    "web": 53
+    "hn": 57,
+    "rss": 9,
+    "yc": 21,
+    "web": 34
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 21,
+        "accepted": 8,
+        "yield": 0.381,
+        "avg_score": 52.5
+      },
+      "rss": {
+        "crawled": 12,
+        "accepted": 3,
+        "yield": 0.25,
+        "avg_score": 84.4
+      },
+      "yc": {
+        "crawled": 8,
+        "accepted": 3,
+        "yield": 0.375,
+        "avg_score": 83.1
+      },
+      "web": {
+        "crawled": 30,
+        "accepted": 4,
+        "yield": 0.133,
+        "avg_score": 43.7
+      },
+      "launch_hn": {
+        "crawled": 17,
+        "accepted": 2,
+        "yield": 0.118,
+        "avg_score": 50.4
+      }
+    },
+    "caps": {
+      "hn": 4,
+      "rss": 3,
+      "yc": 4,
+      "web": 2,
+      "launch_hn": 2
+    }
   },
   "plan": {
     "web_queries": [
@@ -35,55 +76,69 @@
       "name": "discover",
       "started_at": "2026-09-22T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 34.96,
+      "duration_s": 45.14,
       "status": "ok",
       "counts": {
-        "candidates": 93
+        "candidates": 91
       },
       "notes": []
     },
     {
       "name": "triage",
-      "started_at": "2026-09-22T06:00:34+00:00",
-      "offset_s": 34.96,
-      "duration_s": 6.66,
+      "started_at": "2026-09-22T06:00:45+00:00",
+      "offset_s": 45.14,
+      "duration_s": 4.47,
       "status": "ok",
       "counts": {
-        "in": 93,
-        "selected": 8
+        "in": 91,
+        "selected": 10
       },
       "notes": []
     },
     {
       "name": "crawl",
-      "started_at": "2026-09-22T06:00:41+00:00",
-      "offset_s": 41.62,
-      "duration_s": 41.71,
+      "started_at": "2026-09-22T06:00:49+00:00",
+      "offset_s": 49.61,
+      "duration_s": 49.68,
       "status": "ok",
       "counts": {
-        "requested": 8,
-        "crawled": 6
+        "requested": 10,
+        "crawled": 8
       },
       "notes": []
     },
     {
       "name": "extract",
-      "started_at": "2026-09-22T06:01:23+00:00",
-      "offset_s": 83.33,
-      "duration_s": 86.43,
+      "started_at": "2026-09-22T06:01:39+00:00",
+      "offset_s": 99.29,
+      "duration_s": 87.09,
       "status": "ok",
       "counts": {
-        "extracted": 6,
+        "extracted": 7,
         "relevant": 4,
-        "valid": 4
+        "valid": 3
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-09-22T06:03:06+00:00",
+      "offset_s": 186.38,
+      "duration_s": 41.97,
+      "status": "ok",
+      "counts": {
+        "startups": 3,
+        "websites": 3,
+        "emails": 2,
+        "phones": 1
       },
       "notes": []
     },
     {
       "name": "gates",
-      "started_at": "2026-09-22T06:02:49+00:00",
-      "offset_s": 169.76,
-      "duration_s": 0.13,
+      "started_at": "2026-09-22T06:03:48+00:00",
+      "offset_s": 228.35,
+      "duration_s": 0.12,
       "status": "ok",
       "counts": {
         "passed": 1
@@ -92,89 +147,113 @@
     },
     {
       "name": "store",
-      "started_at": "2026-09-22T06:02:49+00:00",
-      "offset_s": 169.89,
-      "duration_s": 10.7,
+      "started_at": "2026-09-22T06:03:48+00:00",
+      "offset_s": 228.47,
+      "duration_s": 9.11,
       "status": "ok",
       "counts": {
-        "startups": 4
+        "startups": 3
       },
       "notes": []
     }
   ],
   "source_health": {
     "hn": {
-      "candidates": 47,
-      "seconds": 5.11,
+      "candidates": 57,
+      "seconds": 2.71,
       "error": ""
     },
     "rss": {
-      "candidates": 38,
-      "seconds": 7.98,
+      "candidates": 9,
+      "seconds": 4.78,
       "error": ""
     },
     "yc": {
-      "candidates": 31,
-      "seconds": 6.78,
+      "candidates": 21,
+      "seconds": 5.63,
       "error": ""
     },
     "web": {
-      "candidates": 53,
-      "seconds": 3.16,
+      "candidates": 34,
+      "seconds": 2.95,
       "error": ""
     }
   },
   "usage": {
-    "prompt_tokens": 78779,
-    "completion_tokens": 8753,
-    "total_tokens": 87533,
-    "calls": 10
+    "prompt_tokens": 53555,
+    "completion_tokens": 5950,
+    "total_tokens": 59506,
+    "calls": 12
   },
   "quality": {
-    "candidates": 93,
-    "crawled": 6,
-    "extracted": 6,
+    "candidates": 91,
+    "crawled": 8,
+    "extracted": 7,
     "relevant": 4,
-    "valid": 4,
+    "valid": 3,
     "passed": true,
     "failures": [],
-    "validity_rate": 1.0,
-    "dropped_ungrounded": 1
+    "validity_rate": 0.75,
+    "dropped_ungrounded": 0,
+    "enriched": 3,
+    "with_website": 3,
+    "with_email": 2,
+    "with_phone": 1,
+    "people_linked": 3,
+    "avg_score": 58.6
   },
   "accepted": [
     {
-      "company": "Tidepool Labs",
-      "url": "https://example.com/tidepool labs",
-      "source": "yc",
-      "people": 1,
-      "edges": 2
-    },
-    {
-      "company": "Vectorly",
-      "url": "https://example.com/vectorly",
+      "company": "Pocket Atlas",
+      "url": "https://example.com/pocket atlas",
       "source": "web",
       "people": 1,
-      "edges": 3
+      "edges": 1,
+      "score": 46,
+      "gaps": [
+        "investors",
+        "phone",
+        "location"
+      ],
+      "website": "https://pocketatlas.example",
+      "emails": 0,
+      "phones": 1
     },
     {
-      "company": "Gridline",
-      "url": "https://example.com/gridline",
+      "company": "Quillbase",
+      "url": "https://example.com/quillbase",
+      "source": "web",
+      "people": 1,
+      "edges": 1,
+      "score": 48,
+      "gaps": [
+        "investors"
+      ],
+      "website": "https://quillbase.example",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Fernwood",
+      "url": "https://example.com/fernwood",
       "source": "rss",
-      "people": 2,
-      "edges": 3
-    },
-    {
-      "company": "Corvid",
-      "url": "https://example.com/corvid",
-      "source": "hn",
-      "people": 2,
-      "edges": 4
+      "people": 1,
+      "edges": 2,
+      "score": 70,
+      "gaps": [
+        "people profiles",
+        "email",
+        "location"
+      ],
+      "website": "https://fernwood.example",
+      "emails": 1,
+      "phones": 1
     }
   ],
   "rejections": [
     {
       "url": "https://example.com/junk0",
-      "source": "hn",
+      "source": "yc",
       "reasons": [
         "missing core_product"
       ]
@@ -182,6 +261,13 @@
     {
       "url": "https://example.com/junk1",
       "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk2",
+      "source": "web",
       "reasons": [
         "missing core_product"
       ]

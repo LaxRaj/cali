@@ -1,26 +1,67 @@
 {
   "run_id": "20261005T060000Z",
   "started_at": "2026-10-05T06:00:00+00:00",
-  "duration_s": 174.8,
+  "duration_s": 215.0,
   "passed": false,
   "failures": [
     "only 1 valid startups (< 3)",
     "only 1 discovery sources produced valid startups (< 2)"
   ],
-  "tokens": 71413,
+  "tokens": 63697,
   "funnel": {
-    "candidates": 102,
-    "selected": 9,
-    "crawled": 8,
-    "extracted": 7,
-    "relevant": 5,
+    "candidates": 119,
+    "selected": 11,
+    "crawled": 10,
+    "extracted": 9,
+    "relevant": 6,
     "valid": 1
   },
   "sources": {
-    "hn": 6,
-    "rss": 4,
-    "yc": 5,
-    "web": 50
+    "hn": 35,
+    "rss": 15,
+    "yc": 4,
+    "web": 55
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 16,
+        "accepted": 1,
+        "yield": 0.062,
+        "avg_score": 69.2
+      },
+      "rss": {
+        "crawled": 28,
+        "accepted": 7,
+        "yield": 0.25,
+        "avg_score": 64.9
+      },
+      "yc": {
+        "crawled": 9,
+        "accepted": 2,
+        "yield": 0.222,
+        "avg_score": 47.2
+      },
+      "web": {
+        "crawled": 11,
+        "accepted": 3,
+        "yield": 0.273,
+        "avg_score": 79.8
+      },
+      "launch_hn": {
+        "crawled": 17,
+        "accepted": 1,
+        "yield": 0.059,
+        "avg_score": 51.9
+      }
+    },
+    "caps": {
+      "hn": 2,
+      "rss": 3,
+      "yc": 3,
+      "web": 3,
+      "launch_hn": 2
+    }
   },
   "plan": {
     "web_queries": [
@@ -38,55 +79,69 @@
       "name": "discover",
       "started_at": "2026-10-05T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 40.05,
+      "duration_s": 51.37,
       "status": "ok",
       "counts": {
-        "candidates": 102
+        "candidates": 119
       },
       "notes": []
     },
     {
       "name": "triage",
-      "started_at": "2026-10-05T06:00:40+00:00",
-      "offset_s": 40.05,
-      "duration_s": 8.31,
+      "started_at": "2026-10-05T06:00:51+00:00",
+      "offset_s": 51.37,
+      "duration_s": 5.47,
       "status": "ok",
       "counts": {
-        "in": 102,
-        "selected": 9
+        "in": 119,
+        "selected": 11
       },
       "notes": []
     },
     {
       "name": "crawl",
-      "started_at": "2026-10-05T06:00:48+00:00",
-      "offset_s": 48.36,
-      "duration_s": 43.46,
+      "started_at": "2026-10-05T06:00:56+00:00",
+      "offset_s": 56.84,
+      "duration_s": 48.56,
       "status": "ok",
       "counts": {
-        "requested": 9,
-        "crawled": 8
+        "requested": 11,
+        "crawled": 10
       },
       "notes": []
     },
     {
       "name": "extract",
-      "started_at": "2026-10-05T06:01:31+00:00",
-      "offset_s": 91.82,
-      "duration_s": 82.84,
+      "started_at": "2026-10-05T06:01:45+00:00",
+      "offset_s": 105.4,
+      "duration_s": 76.56,
       "status": "ok",
       "counts": {
-        "extracted": 7,
-        "relevant": 5,
+        "extracted": 9,
+        "relevant": 6,
         "valid": 1
       },
       "notes": []
     },
     {
+      "name": "enrich",
+      "started_at": "2026-10-05T06:03:01+00:00",
+      "offset_s": 181.96,
+      "duration_s": 32.88,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "websites": 1,
+        "emails": 0,
+        "phones": 0
+      },
+      "notes": []
+    },
+    {
       "name": "gates",
-      "started_at": "2026-10-05T06:02:54+00:00",
-      "offset_s": 174.66,
-      "duration_s": 0.1,
+      "started_at": "2026-10-05T06:03:34+00:00",
+      "offset_s": 214.84,
+      "duration_s": 0.13,
       "status": "ok",
       "counts": {
         "passed": 0
@@ -98,66 +153,84 @@
   ],
   "source_health": {
     "hn": {
-      "candidates": 6,
-      "seconds": 7.52,
+      "candidates": 35,
+      "seconds": 1.49,
       "error": ""
     },
     "rss": {
-      "candidates": 4,
-      "seconds": 4.34,
+      "candidates": 15,
+      "seconds": 1.59,
       "error": ""
     },
     "yc": {
-      "candidates": 5,
-      "seconds": 4.86,
+      "candidates": 4,
+      "seconds": 4.89,
       "error": ""
     },
     "web": {
-      "candidates": 50,
-      "seconds": 7.64,
+      "candidates": 55,
+      "seconds": 6.62,
       "error": ""
     }
   },
   "usage": {
-    "prompt_tokens": 64271,
-    "completion_tokens": 7141,
-    "total_tokens": 71413,
-    "calls": 11
+    "prompt_tokens": 57327,
+    "completion_tokens": 6369,
+    "total_tokens": 63697,
+    "calls": 13
   },
   "quality": {
-    "candidates": 102,
-    "crawled": 8,
-    "extracted": 7,
-    "relevant": 5,
+    "candidates": 119,
+    "crawled": 10,
+    "extracted": 9,
+    "relevant": 6,
     "valid": 1,
     "passed": false,
     "failures": [
       "only 1 valid startups (< 3)",
       "only 1 discovery sources produced valid startups (< 2)"
     ],
-    "validity_rate": 0.2,
-    "dropped_ungrounded": 6
+    "validity_rate": 0.167,
+    "dropped_ungrounded": 7,
+    "enriched": 1,
+    "with_website": 1,
+    "with_email": 0,
+    "with_phone": 0,
+    "people_linked": 1,
+    "avg_score": 59.3
   },
   "accepted": [
     {
-      "company": "Hearth",
-      "url": "https://example.com/hearth",
+      "company": "Basalt",
+      "url": "https://example.com/basalt",
       "source": "yc",
-      "people": 1,
-      "edges": 2
+      "people": 2,
+      "edges": 3,
+      "score": 68,
+      "gaps": [],
+      "website": "https://basalt.example",
+      "emails": 2,
+      "phones": 0
     }
   ],
   "rejections": [
     {
       "url": "https://example.com/junk0",
-      "source": "yc",
+      "source": "rss",
+      "reasons": [
+        "missing core_product"
+      ]
+    },
+    {
+      "url": "https://example.com/junk1",
+      "source": "web",
       "reasons": [
         "not a relevant startup page"
       ]
     },
     {
-      "url": "https://example.com/junk1",
-      "source": "rss",
+      "url": "https://example.com/junk2",
+      "source": "hn",
       "reasons": [
         "missing core_product"
       ]

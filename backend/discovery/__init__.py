@@ -10,6 +10,7 @@ class Candidate:
     snippet: str
     source: str  # hn | rss | yc | web
     published_at: str = ""
+    content: str = ""  # page text already in hand (e.g. Launch HN posts); skips the crawl
 
 
 _TRACKING = {"fbclid", "gclid", "ref", "source"}

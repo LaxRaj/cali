@@ -61,9 +61,20 @@ def validate_profile(p: StartupProfile) -> list[str]:
     return issues
 
 
+LINK_FIELDS = ("linkedin", "twitter", "github", "homepage")
+
+
+def _ground_links(p: Person, markdown: str) -> Person:
+    """Profile URLs are only kept if the URL literally appears on the page (LLMs invent plausible ones)."""
+    md = markdown.lower()
+    bad = {f: "" for f in LINK_FIELDS if getattr(p, f) and getattr(p, f).lower().rstrip("/") not in md}
+    return p.model_copy(update=bad) if bad else p
+
+
 def filter_people(people: list[Person], markdown: str) -> list[Person]:
     return [
-        x for x in people
+        _ground_links(x, markdown)
+        for x in people
         if not is_placeholder(x.name) and grounded(x.evidence, markdown) and _norm(x.name) in _norm(markdown)
     ]
 
@@ -110,6 +121,13 @@ class RunReport:
     people: int = 0
     edges: int = 0
     dropped_ungrounded: int = 0
+    quota_exhausted: bool = False  # Groq daily token limit hit mid-run
+    enriched: int = 0  # accepted startups that went through enrichment
+    with_website: int = 0
+    with_email: int = 0
+    with_phone: int = 0
+    people_linked: int = 0  # people with at least one public profile link
+    avg_score: float = 0.0
     issues: dict[str, int] = field(default_factory=dict)
     failures: list[str] = field(default_factory=list)
     passed: bool = False

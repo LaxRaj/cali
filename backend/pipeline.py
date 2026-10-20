@@ -1,8 +1,9 @@
-"""Daily scout: plan -> discover -> triage -> crawl -> extract -> quality gates -> store -> export."""
+"""Daily scout: plan -> discover -> triage -> crawl -> extract -> enrich -> rate -> gates -> store -> export."""
 
 import argparse
 import asyncio
 import json
+import os
 import sys
 import time
 from collections import Counter
@@ -12,13 +13,29 @@ from pathlib import Path
 import llm
 import telemetry
 from discovery import Candidate, hn, normalize_url, rss, web, yc
+from discovery.feedback import allocate, source_stats
 from discovery.planner import make_plan
 from discovery.triage import select
+from enrich import EnrichResult, enrich_startup
 from export import export_all
 from extractor import extract
 from memory import DB_DIR, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
+from models import Contact
 from quality import RunReport, check_extraction, evaluate_run
-from scraper import scrape_urls
+from rating import rate
+from scraper import Page, scrape_urls, search_results
+
+MAX_PEOPLE_SEARCHES = 12  # public-search lookups for founders' profile links, per run
+MAX_TEAM_LLM = 6  # About/Team page extraction calls (Groq tokens), per run
+
+
+def enrichment_enabled() -> bool:
+    return os.environ.get("CALI_ENRICH", "1") != "0"
+
+
+def search_fn(query: str) -> list[dict]:
+    time.sleep(1)  # be gentle with the search engines
+    return search_results(query, 5, attempts=1)
 
 
 async def discover() -> list[Candidate]:
@@ -54,11 +71,15 @@ async def discover() -> list[Candidate]:
 
 
 def process(pages, by_url: dict[str, Candidate], report: RunReport):
-    """Extract + validate every page. Returns (accepted extractions, their sources)."""
+    """Extract + validate every page. Returns [(extraction, source, markdown)] for accepted startups."""
     log = telemetry.current()
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     accepted = []
     for page in pages:
+        if report.quota_exhausted:
+            if log:
+                log.rejection(page.url, by_url.get(normalize_url(page.url), Candidate("", "", "", "unknown")).source, ["extraction error"])
+            continue
         cand = by_url.get(normalize_url(page.url))
         source = cand.source if cand else "unknown"
         try:
@@ -66,6 +87,8 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
         except Exception as e:
             print(f"extract failed {page.url}: {e}", file=sys.stderr)
             report.issues["extraction error"] = report.issues.get("extraction error", 0) + 1
+            if llm.quota_exhausted(e):
+                report.quota_exhausted = True  # stop spending time on a dead quota; the rest are skipped
             if log:
                 log.error(f"extract failed {page.url}: {e}")
                 log.rejection(page.url, source, ["extraction error"])
@@ -80,12 +103,17 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
         if checked.accepted:
             report.valid += 1
             report.sources[source] = report.sources.get(source, 0) + 1
-            report.people += len(checked.extraction.people)
-            report.edges += len(checked.extraction.edges)
-            accepted.append((checked.extraction, source))
+            kept = checked.extraction
+            # links the LLM read off this very page (already grounded by quality.filter_people)
+            people = [
+                p.model_copy(update={"link_source": page.url})
+                if (p.linkedin or p.twitter or p.github or p.homepage) and not p.link_source
+                else p
+                for p in kept.people
+            ]
+            accepted.append((kept.model_copy(update={"people": people}), source, page.markdown))
             if log:
-                log.accept(ex.startup.company_name, page.url, source,
-                           len(checked.extraction.people), len(checked.extraction.edges))
+                log.accept(ex.startup.company_name, page.url, source, len(people), len(kept.edges))
         for issue in checked.issues:
             report.issues[issue] = report.issues.get(issue, 0) + 1
         if not checked.accepted:
@@ -93,6 +121,25 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
             if log:
                 log.rejection(page.url, source, checked.issues)
     return accepted
+
+
+async def enrich_all(accepted, log) -> list[EnrichResult]:
+    """Contacts, socials, team page and people links for each accepted startup (never fatal)."""
+    results = []
+    search_budget, team_budget = [MAX_PEOPLE_SEARCHES], [MAX_TEAM_LLM]
+    for ex, source, md in accepted:
+        try:
+            res = await enrich_startup(
+                ex, source, md, search_fn=search_fn, extract_fn=extract,
+                search_budget=search_budget, team_budget=team_budget,
+            )
+        except Exception as e:
+            log.error(f"enrich failed {ex.startup.company_name}: {e}")
+            res = EnrichResult(ex, Contact(status="crawl_failed"), [f"error: {e}"])
+        results.append(res)
+        print(f"enriched {ex.startup.company_name}: {res.contact.status}, "
+              f"{len(res.contact.emails)} emails, {len(res.contact.phones)} phones; {res.notes}")
+    return results
 
 
 async def run(data_dir: Path) -> RunReport:
@@ -106,12 +153,19 @@ async def run(data_dir: Path) -> RunReport:
             st["counts"] = {"candidates": len(cands), **{f"src_{k}": v for k, v in Counter(c.source for c in cands).items()}}
 
         with log.stage("triage") as st:
-            chosen = select(cands, seen_urls(data_dir))
+            stats = source_stats(data_dir)
+            caps = allocate(stats, sorted({c.source for c in cands}))
+            log.feedback = {"source_stats": stats, "caps": caps}
+            chosen = select(cands, seen_urls(data_dir), caps=caps)
             by_url = {normalize_url(c.url): c for c in chosen}
             st["counts"] = {"in": len(cands), "selected": len(chosen)}
+            st["notes"] = [f"crawl caps by source: {caps}"]
 
         with log.stage("crawl") as st:
-            pages = await scrape_urls([c.url for c in chosen])
+            inline = [Page(c.url, c.content) for c in chosen if c.content]  # e.g. Launch HN: already in hand
+            crawled = await scrape_urls([c.url for c in chosen if not c.content])
+            order = {normalize_url(c.url): i for i, c in enumerate(chosen)}  # best-ranked first
+            pages = sorted(inline + crawled, key=lambda p: order.get(normalize_url(p.url), 99))
             report.crawled = len(pages)
             st["counts"] = {"requested": len(chosen), "crawled": len(pages)}
             print(f"selected {len(chosen)}, crawled {len(pages)}")
@@ -120,9 +174,39 @@ async def run(data_dir: Path) -> RunReport:
             accepted = process(pages, by_url, report)
             st["counts"] = {"extracted": report.extracted, "relevant": report.relevant, "valid": report.valid}
 
+        # Enrich + rate only startups that passed validation (cheap, and avoids crawling junk sites).
+        results: list[EnrichResult] = []
+        if enrichment_enabled() and accepted and not report.quota_exhausted:
+            with log.stage("enrich") as st:
+                results = await enrich_all(accepted, log)
+                st["counts"] = {
+                    "startups": len(results),
+                    "websites": sum(1 for r in results if r.contact.website),
+                    "emails": sum(len(r.contact.emails) for r in results),
+                    "phones": sum(len(r.contact.phones) for r in results),
+                }
+                st["notes"] = [n for r in results for n in r.notes][:10]
+        else:
+            results = [EnrichResult(ex, Contact(status="disabled"), []) for ex, _, _ in accepted]
+
+        ratings = [rate(r.extraction.startup, r.extraction.people, r.extraction.edges, r.contact) for r in results]
+        for a, r, rt in zip(log.accepted, results, ratings):
+            a.update(score=rt.score, gaps=rt.gaps, website=r.contact.website,
+                     emails=len(r.contact.emails), phones=len(r.contact.phones))
+        report.enriched = sum(1 for r in results if r.contact.status == "ok")
+        report.with_website = sum(1 for r in results if r.contact.website)
+        report.with_email = sum(1 for r in results if r.contact.emails)
+        report.with_phone = sum(1 for r in results if r.contact.phones)
+        report.people = sum(len(r.extraction.people) for r in results)
+        report.edges = sum(len(r.extraction.edges) for r in results)
+        report.people_linked = sum(
+            1 for r in results for p in r.extraction.people if p.linkedin or p.twitter or p.github
+        )
+        report.avg_score = round(sum(rt.score for rt in ratings) / len(ratings), 1) if ratings else 0.0
+
         with log.stage("gates") as st:
             evaluate_run(report)
-            st["counts"] = {"passed": int(report.passed)}
+            st["counts"] = {"passed": int(report.passed), "avg_score": int(report.avg_score)}
             st["notes"] = report.failures
 
         now = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -132,25 +216,32 @@ async def run(data_dir: Path) -> RunReport:
 
         if report.passed:
             with log.stage("store") as st:
-                for ex, _ in accepted:
-                    upsert_profile(ex.startup, db_dir=data_dir)
-                    upsert_people(ex.people, db_dir=data_dir)
-                    upsert_edges(ex.edges, db_dir=data_dir)
+                findings = []
+                for (ex, source, _), res, rt in zip(accepted, results, ratings):
+                    s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
+                    upsert_profile(
+                        s, db_dir=data_dir,
+                        extras={
+                            "score": rt.score,
+                            "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
+                            "contact_json": res.contact.model_dump_json(),
+                        },
+                    )
+                    upsert_people(people, db_dir=data_dir)
+                    upsert_edges(edges, db_dir=data_dir)
+                    findings.append(
+                        {
+                            **s.model_dump(), "source": source, "score": rt.score, "gaps": rt.gaps,
+                            "contact": res.contact.model_dump(),
+                            "people": [p.model_dump() for p in people], "edges": [e.model_dump() for e in edges],
+                        }
+                    )
                 mark_seen([normalize_url(c.url) for c in chosen], db_dir=data_dir)
-                findings = [
-                    {
-                        **ex.startup.model_dump(),
-                        "source": source,
-                        "people": [p.model_dump() for p in ex.people],
-                        "edges": [e.model_dump() for e in ex.edges],
-                    }
-                    for ex, source in accepted
-                ]
                 (data_dir / "daily_brief.json").write_text(
                     json.dumps({"generated_at": now, "findings": findings}, indent=2, ensure_ascii=False)
                 )
                 export_all(data_dir)
-                st["counts"] = {"startups": len(accepted), "people": report.people, "edges": report.edges}
+                st["counts"] = {"startups": len(findings), "people": report.people, "edges": report.edges}
         return report
     finally:
         log.funnel = {

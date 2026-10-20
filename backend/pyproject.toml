@@ -3,6 +3,7 @@ name = "cali-backend"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.15.0",
     "crawl4ai>=0.9.5",
     "ddgs>=9.16.0",
     "duckduckgo-search>=8.1.1",
@@ -11,6 +12,7 @@ dependencies = [
     "httpx>=0.28.1",
     "lancedb>=0.40.0",
     "pandas>=3.0.6",
+    "phonenumbers>=9.0.41",
     "pydantic>=2.14.1",
     "sentence-transformers>=6.1.0",
 ]

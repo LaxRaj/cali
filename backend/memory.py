@@ -38,6 +38,17 @@ def connect(db_dir: str | Path = DB_DIR) -> lancedb.DBConnection:
     return lancedb.connect(str(db_dir))
 
 
+_SQL_DEFAULT = {str: "cast('' as string)", bool: "cast(false as boolean)", int: "cast(0 as bigint)", float: "cast(0 as double)"}
+
+
+def _ensure_columns(tbl, row: dict) -> None:
+    """Schema evolution: add columns that newer code writes but an older table lacks (existing rows get defaults)."""
+    have = set(tbl.schema.names)
+    missing = {k: _SQL_DEFAULT[type(v)] for k, v in row.items() if k not in have and type(v) in _SQL_DEFAULT}
+    if missing:
+        tbl.add_columns(missing)
+
+
 def _upsert(table: str, key: str, rows: list[dict], db_dir) -> None:
     """Insert rows, replacing existing rows that share the same `key` value."""
     if not rows:
@@ -46,8 +57,10 @@ def _upsert(table: str, key: str, rows: list[dict], db_dir) -> None:
     if table not in db.list_tables().tables:
         db.create_table(table, data=rows)
         return
+    tbl = db.open_table(table)
+    _ensure_columns(tbl, rows[0])
     (
-        db.open_table(table)
+        tbl
         .merge_insert(key)
         .when_matched_update_all()
         .when_not_matched_insert_all()
@@ -62,9 +75,13 @@ def _rows(table: str, db_dir) -> list[dict]:
     return db.open_table(table).to_arrow().to_pylist()
 
 
-def upsert_profile(profile: StartupProfile, db_dir: str | Path = DB_DIR) -> None:
-    """Insert the profile, or replace the existing row with the same company_name."""
-    _upsert(TABLE, "company_name", [{**profile.model_dump(), "vector": embed(profile_text(profile))}], db_dir)
+def upsert_profile(profile: StartupProfile, db_dir: str | Path = DB_DIR, extras: dict | None = None) -> None:
+    """Insert the profile, or replace the existing row with the same company_name.
+
+    `extras` are additional flat columns (score, score_json, contact_json) kept beside the profile fields.
+    """
+    row = {**profile.model_dump(), **(extras or {}), "vector": embed(profile_text(profile))}
+    _upsert(TABLE, "company_name", [row], db_dir)
 
 
 def upsert_people(people: list[Person], db_dir: str | Path = DB_DIR) -> None:
@@ -86,7 +103,7 @@ def search(query: str, k: int = 3, db_dir: str | Path = DB_DIR) -> list[StartupP
     if TABLE not in db.list_tables().tables:
         return []
     rows = db.open_table(TABLE).search(embed(query)).limit(k).to_list()
-    return [StartupProfile(**{f: r[f] for f in StartupProfile.model_fields}) for r in rows]
+    return [StartupProfile(**{f: r[f] for f in StartupProfile.model_fields if f in r}) for r in rows]
 
 
 def search_people(query: str, k: int = 3, db_dir: str | Path = DB_DIR) -> list[Person]:
@@ -94,7 +111,7 @@ def search_people(query: str, k: int = 3, db_dir: str | Path = DB_DIR) -> list[P
     if PEOPLE not in db.list_tables().tables:
         return []
     rows = db.open_table(PEOPLE).search(embed(query)).limit(k).to_list()
-    return [Person(**{f: r[f] for f in Person.model_fields}) for r in rows]
+    return [Person(**{f: r.get(f, "") for f in Person.model_fields}) for r in rows]
 
 
 def neighbors(entity: str, db_dir: str | Path = DB_DIR) -> list[Edge]:

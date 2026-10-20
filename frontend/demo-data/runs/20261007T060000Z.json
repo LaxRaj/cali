@@ -1,23 +1,64 @@
 {
   "run_id": "20261007T060000Z",
   "started_at": "2026-10-07T06:00:00+00:00",
-  "duration_s": 202.9,
+  "duration_s": 242.0,
   "passed": true,
   "failures": [],
-  "tokens": 86106,
+  "tokens": 90916,
   "funnel": {
-    "candidates": 83,
+    "candidates": 109,
     "selected": 10,
     "crawled": 10,
     "extracted": 10,
-    "relevant": 6,
-    "valid": 6
+    "relevant": 5,
+    "valid": 4
   },
   "sources": {
-    "hn": 21,
-    "rss": 36,
-    "yc": 45,
-    "web": 16
+    "hn": 34,
+    "rss": 8,
+    "yc": 30,
+    "web": 10
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 22,
+        "accepted": 2,
+        "yield": 0.091,
+        "avg_score": 40.7
+      },
+      "rss": {
+        "crawled": 15,
+        "accepted": 2,
+        "yield": 0.133,
+        "avg_score": 68.8
+      },
+      "yc": {
+        "crawled": 18,
+        "accepted": 6,
+        "yield": 0.333,
+        "avg_score": 44.0
+      },
+      "web": {
+        "crawled": 28,
+        "accepted": 9,
+        "yield": 0.321,
+        "avg_score": 81.7
+      },
+      "launch_hn": {
+        "crawled": 9,
+        "accepted": 4,
+        "yield": 0.444,
+        "avg_score": 47.7
+      }
+    },
+    "caps": {
+      "hn": 2,
+      "rss": 2,
+      "yc": 4,
+      "web": 4,
+      "launch_hn": 4
+    }
   },
   "plan": {
     "web_queries": [
@@ -35,30 +76,30 @@
       "name": "discover",
       "started_at": "2026-10-07T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 33.2,
+      "duration_s": 47.77,
       "status": "ok",
       "counts": {
-        "candidates": 83
+        "candidates": 109
       },
       "notes": []
     },
     {
       "name": "triage",
-      "started_at": "2026-10-07T06:00:33+00:00",
-      "offset_s": 33.2,
-      "duration_s": 7.46,
+      "started_at": "2026-10-07T06:00:47+00:00",
+      "offset_s": 47.77,
+      "duration_s": 6.99,
       "status": "ok",
       "counts": {
-        "in": 83,
+        "in": 109,
         "selected": 10
       },
       "notes": []
     },
     {
       "name": "crawl",
-      "started_at": "2026-10-07T06:00:40+00:00",
-      "offset_s": 40.66,
-      "duration_s": 31.31,
+      "started_at": "2026-10-07T06:00:54+00:00",
+      "offset_s": 54.76,
+      "duration_s": 33.14,
       "status": "ok",
       "counts": {
         "requested": 10,
@@ -68,22 +109,36 @@
     },
     {
       "name": "extract",
-      "started_at": "2026-10-07T06:01:11+00:00",
-      "offset_s": 71.97,
-      "duration_s": 120.83,
+      "started_at": "2026-10-07T06:01:27+00:00",
+      "offset_s": 87.9,
+      "duration_s": 102.01,
       "status": "ok",
       "counts": {
         "extracted": 10,
-        "relevant": 6,
-        "valid": 6
+        "relevant": 5,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-10-07T06:03:09+00:00",
+      "offset_s": 189.91,
+      "duration_s": 43.97,
+      "status": "ok",
+      "counts": {
+        "startups": 4,
+        "websites": 4,
+        "emails": 3,
+        "phones": 2
       },
       "notes": []
     },
     {
       "name": "gates",
-      "started_at": "2026-10-07T06:03:12+00:00",
-      "offset_s": 192.8,
-      "duration_s": 0.08,
+      "started_at": "2026-10-07T06:03:53+00:00",
+      "offset_s": 233.88,
+      "duration_s": 0.1,
       "status": "ok",
       "counts": {
         "passed": 1
@@ -92,119 +147,137 @@
     },
     {
       "name": "store",
-      "started_at": "2026-10-07T06:03:12+00:00",
-      "offset_s": 192.88,
-      "duration_s": 10.0,
+      "started_at": "2026-10-07T06:03:53+00:00",
+      "offset_s": 233.98,
+      "duration_s": 8.01,
       "status": "ok",
       "counts": {
-        "startups": 6
+        "startups": 4
       },
       "notes": []
     }
   ],
   "source_health": {
     "hn": {
-      "candidates": 21,
-      "seconds": 5.6,
+      "candidates": 34,
+      "seconds": 3.65,
       "error": ""
     },
     "rss": {
-      "candidates": 36,
-      "seconds": 5.14,
+      "candidates": 8,
+      "seconds": 2.13,
       "error": ""
     },
     "yc": {
-      "candidates": 45,
-      "seconds": 6.95,
+      "candidates": 30,
+      "seconds": 2.21,
       "error": ""
     },
     "web": {
-      "candidates": 16,
-      "seconds": 6.19,
+      "candidates": 10,
+      "seconds": 1.35,
       "error": "No results found."
     }
   },
   "usage": {
-    "prompt_tokens": 77495,
-    "completion_tokens": 8610,
-    "total_tokens": 86106,
+    "prompt_tokens": 81824,
+    "completion_tokens": 9091,
+    "total_tokens": 90916,
     "calls": 12
   },
   "quality": {
-    "candidates": 83,
+    "candidates": 109,
     "crawled": 10,
     "extracted": 10,
-    "relevant": 6,
-    "valid": 6,
+    "relevant": 5,
+    "valid": 4,
     "passed": true,
     "failures": [],
-    "validity_rate": 1.0,
-    "dropped_ungrounded": 9
+    "validity_rate": 0.8,
+    "dropped_ungrounded": 6,
+    "enriched": 4,
+    "with_website": 4,
+    "with_email": 3,
+    "with_phone": 2,
+    "people_linked": 4,
+    "avg_score": 67.3
   },
   "accepted": [
-    {
-      "company": "Quillbase",
-      "url": "https://example.com/quillbase",
-      "source": "web",
-      "people": 1,
-      "edges": 1
-    },
-    {
-      "company": "Lumen Index",
-      "url": "https://example.com/lumen index",
-      "source": "rss",
-      "people": 2,
-      "edges": 3
-    },
     {
       "company": "Corvid",
       "url": "https://example.com/corvid",
       "source": "hn",
       "people": 2,
-      "edges": 4
-    },
-    {
-      "company": "Gridline",
-      "url": "https://example.com/gridline",
-      "source": "rss",
-      "people": 2,
-      "edges": 3
-    },
-    {
-      "company": "Tidepool Labs",
-      "url": "https://example.com/tidepool labs",
-      "source": "yc",
-      "people": 1,
-      "edges": 2
+      "edges": 4,
+      "score": 48,
+      "gaps": [
+        "location",
+        "investors"
+      ],
+      "website": "https://corvid.example",
+      "emails": 1,
+      "phones": 1
     },
     {
       "company": "Hearth",
       "url": "https://example.com/hearth",
       "source": "yc",
       "people": 1,
-      "edges": 2
+      "edges": 2,
+      "score": 46,
+      "gaps": [
+        "phone",
+        "people profiles"
+      ],
+      "website": "https://hearth.example",
+      "emails": 2,
+      "phones": 1
+    },
+    {
+      "company": "Pocket Atlas",
+      "url": "https://example.com/pocket atlas",
+      "source": "web",
+      "people": 1,
+      "edges": 1,
+      "score": 58,
+      "gaps": [],
+      "website": "https://pocketatlas.example",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Quillbase",
+      "url": "https://example.com/quillbase",
+      "source": "web",
+      "people": 1,
+      "edges": 1,
+      "score": 72,
+      "gaps": [],
+      "website": "https://quillbase.example",
+      "emails": 0,
+      "phones": 1
     }
   ],
   "rejections": [
     {
       "url": "https://example.com/junk0",
-      "source": "web",
+      "source": "rss",
       "reasons": [
         "missing core_product"
       ]
     },
     {
       "url": "https://example.com/junk1",
-      "source": "web",
+      "source": "rss",
       "reasons": [
         "not a relevant startup page"
       ]
     },
     {
       "url": "https://example.com/junk2",
-      "source": "yc",
+      "source": "web",
       "reasons": [
-        "not a relevant startup page"
+        "missing core_product"
       ]
     },
     {
@@ -212,6 +285,13 @@
       "source": "hn",
       "reasons": [
         "missing core_product"
+      ]
+    },
+    {
+      "url": "https://example.com/junk4",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
       ]
     }
   ],

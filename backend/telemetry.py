@@ -34,6 +34,7 @@ class RunLog:
         self.rejections: list[dict] = []
         self.accepted: list[dict] = []
         self.plan: dict = {}
+        self.feedback: dict = {}
         self.funnel: dict[str, int] = {}
         self.usage: dict[str, int] = {}
         self.quality: dict = {}
@@ -95,6 +96,7 @@ class RunLog:
         return {
             **self.summary(),
             "plan": self.plan,
+            "feedback": self.feedback,
             "stages": self.stages,
             "source_health": self.sources,
             "usage": self.usage,

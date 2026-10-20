@@ -64,3 +64,22 @@ def test_empty_db_exports_empty_structures(tmp_path):
     export_all(tmp_path / "empty")
     assert json.loads((tmp_path / "empty" / "profiles.json").read_text()) == []
     assert json.loads((tmp_path / "empty" / "graph.json").read_text()) == {"nodes": [], "edges": []}
+
+
+def test_profiles_expose_score_contact_gaps_and_person_links_sorted_by_score(tmp_path):
+    import json as _json
+
+    d = tmp_path / "db2"
+    upsert_profile(prof("Low"), db_dir=d, extras={"score": 30, "score_json": _json.dumps({"parts": {"fit": 30}, "gaps": ["email"]}), "contact_json": "{}"})
+    contact = {"website": "https://hi.io", "emails": [{"value": "hi@hi.io", "kind": "general", "source_url": "https://hi.io/"}], "phones": [], "socials": {}}
+    upsert_profile(prof("High"), db_dir=d, extras={"score": 90, "score_json": _json.dumps({"parts": {"fit": 25}, "gaps": []}), "contact_json": _json.dumps(contact)})
+    upsert_people([Person(name="Jane Roe", role="CEO", org="High", evidence="e", linkedin="https://www.linkedin.com/in/jane-roe", link_source="https://hi.io/team")], db_dir=d)
+
+    profiles = build_profiles(d)
+    assert [p["company_name"] for p in profiles] == ["High", "Low"]  # best lead first
+    high = profiles[0]
+    assert high["score"] == 90 and high["contact"]["emails"][0]["value"] == "hi@hi.io" and high["gaps"] == []
+    assert high["people"][0]["linkedin"].endswith("jane-roe") and high["people"][0]["link_source"] == "https://hi.io/team"
+    assert profiles[1]["gaps"] == ["email"] and "contact_json" not in high
+    node = {n["id"]: n for n in build_graph(d)["nodes"]}["jane roe"]
+    assert node["links"] == {"linkedin": "https://www.linkedin.com/in/jane-roe"}

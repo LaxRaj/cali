@@ -4,6 +4,8 @@ import json
 import re
 from pathlib import Path
 
+PERSON_FIELDS = ("name", "role", "org", "evidence", "linkedin", "twitter", "github", "homepage", "link_source")
+
 from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows
 
 
@@ -15,6 +17,13 @@ def _key(name: str) -> str:
     return name.strip().lower()
 
 
+def _loads(raw) -> dict:
+    try:
+        return json.loads(raw) if raw else {}
+    except ValueError:
+        return {}
+
+
 def build_profiles(db_dir) -> list[dict]:
     people = _rows(PEOPLE, db_dir)
     edges = _rows(EDGES, db_dir)
@@ -22,12 +31,19 @@ def build_profiles(db_dir) -> list[dict]:
     for r in _rows(TABLE, db_dir):
         name = r["company_name"]
         k = _key(name)
+        row = {f: r[f] for f in r if f not in ("vector", "contact_json", "score_json")}
+        contact = _loads(r.get("contact_json"))
+        breakdown = _loads(r.get("score_json"))
         out.append(
             {
-                **{f: r[f] for f in r if f != "vector"},
+                **row,
                 "slug": slugify(name),
+                "score": r.get("score", 0),
+                "score_parts": breakdown.get("parts", {}),
+                "gaps": breakdown.get("gaps", []),
+                "contact": contact,
                 "people": [
-                    {f: p[f] for f in ("name", "role", "org", "evidence")}
+                    {f: p.get(f, "") for f in PERSON_FIELDS}
                     for p in people
                     if _key(p["org"]) == k
                 ],
@@ -38,23 +54,24 @@ def build_profiles(db_dir) -> list[dict]:
                 ],
             }
         )
-    return sorted(out, key=lambda p: p.get("discovered_at", ""), reverse=True)
+    return sorted(out, key=lambda p: (p["score"], p.get("discovered_at", "")), reverse=True)
 
 
 def build_graph(db_dir) -> dict:
     """Nodes are startups / people / orgs (investors etc.); edges are the typed, evidenced links."""
     nodes: dict[str, dict] = {}
 
-    def add(name: str, kind: str):
+    def add(name: str, kind: str, **extra):
         k = _key(name)
         if k and k not in nodes:
-            nodes[k] = {"id": k, "label": name.strip(), "type": kind, "degree": 0}
+            nodes[k] = {"id": k, "label": name.strip(), "type": kind, "degree": 0, **extra}
         return k
 
     for r in _rows(TABLE, db_dir):
-        add(r["company_name"], "startup")
+        add(r["company_name"], "startup", website=r.get("website", ""), score=r.get("score", 0))
     for p in _rows(PEOPLE, db_dir):
-        add(p["name"], "person")
+        links = {f: p.get(f, "") for f in ("linkedin", "twitter", "github", "homepage") if p.get(f, "")}
+        add(p["name"], "person", role=p.get("role", ""), links=links)
 
     edges = []
     for e in _rows(EDGES, db_dir):

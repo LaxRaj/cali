@@ -25,7 +25,7 @@ def heuristic_filter(cands: list[Candidate], seen: set[str]) -> list[Candidate]:
         host = key.split("/")[0]
         if key in seen or key in keys:
             continue
-        if any(host == h or host.endswith("." + h) for h in BLOCKED_HOSTS):
+        if c.source != "launch_hn" and any(host == h or host.endswith("." + h) for h in BLOCKED_HOSTS):
             continue
         if JUNK_TITLE.search(c.title):
             continue
@@ -43,15 +43,33 @@ big-company news, personal projects and hobby demos score 0-3. Output ONLY JSON:
 {{"scores": [{{"i": 0, "score": 7}}, ...]}}"""
 
 
+LLM_SHORTLIST = 60  # Groq free tier allows ~8k tokens/minute; one scoring call must stay well below that
+
+
+def shortlist(cands: list[Candidate], n: int = LLM_SHORTLIST) -> list[Candidate]:
+    """Round-robin across sources (keeping each source's own order) so no feed crowds out the rest."""
+    by_src: dict[str, list[Candidate]] = defaultdict(list)
+    for c in cands:
+        by_src[c.source].append(c)
+    out: list[Candidate] = []
+    while len(out) < n and any(by_src.values()):
+        for src in list(by_src):
+            if by_src[src] and len(out) < n:
+                out.append(by_src[src].pop(0))
+    return out
+
+
 def llm_scores(cands: list[Candidate], client=None) -> dict[int, int]:
-    lines = "\n".join(f"{i}. [{c.source}] {c.title} — {c.snippet[:160]}" for i, c in enumerate(cands))
+    lines = "\n".join(f"{i}. [{c.source}] {c.title[:110]} — {c.snippet[:90]}" for i, c in enumerate(cands))
     data = chat_json(SYSTEM, lines, client)
     return {int(s["i"]): int(s["score"]) for s in data.get("scores", [])}
 
 
-def select(cands: list[Candidate], seen: set[str], client=None, min_score: int = 4) -> list[Candidate]:
+def select(
+    cands: list[Candidate], seen: set[str], client=None, min_score: int = 4, caps: dict[str, int] | None = None
+) -> list[Candidate]:
     """Dedupe, drop junk/seen, LLM-score, then take the best with a per-source cap."""
-    cands = heuristic_filter(cands, seen)
+    cands = shortlist(heuristic_filter(cands, seen))
     try:
         scores = llm_scores(cands, client)
     except Exception as e:
@@ -64,7 +82,7 @@ def select(cands: list[Candidate], seen: set[str], client=None, min_score: int =
     per_source: dict[str, int] = defaultdict(int)
     chosen = []
     for _, c in ranked:
-        if per_source[c.source] >= PER_SOURCE_CAP:
+        if per_source[c.source] >= (caps or {}).get(c.source, PER_SOURCE_CAP):
             continue
         per_source[c.source] += 1
         chosen.append(c)

@@ -1,5 +1,116 @@
 [
   {
+    "company_name": "Corvid",
+    "core_product": "Developer knowledge graph for codebases",
+    "tech_stack": [
+      "TypeScript",
+      "Neo4j"
+    ],
+    "likely_bottleneck": "graph queries over big repos",
+    "value_prop_pitch": "Your graph layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "funding_amount": "$6.4M",
+    "hq": "Berlin, Germany",
+    "website": "https://corvid.example",
+    "source_url": "https://example.com/corvid",
+    "discovered_at": "2026-10-11T08:31:36+00:00",
+    "score": 95,
+    "slug": "corvid",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 20,
+      "connections": 15,
+      "contact": 20
+    },
+    "gaps": [],
+    "contact": {
+      "website": "https://corvid.example",
+      "emails": [
+        {
+          "value": "hello@corvid.example",
+          "kind": "general",
+          "source_url": "https://corvid.example/contact"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+12025551004",
+          "kind": "main",
+          "source_url": "https://corvid.example/contact"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/corvid",
+        "twitter": "https://x.com/corvid"
+      },
+      "contact_page": "https://corvid.example/contact",
+      "pages_crawled": [
+        "https://corvid.example/",
+        "https://corvid.example/about"
+      ],
+      "enriched_at": "2026-10-11T08:31:36+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Ana Lopes",
+        "role": "co-founder",
+        "org": "Corvid",
+        "evidence": "Ana Lopes co-founded Corvid",
+        "linkedin": "https://www.linkedin.com/in/ana-lopes",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://corvid.example/about"
+      },
+      {
+        "name": "Kai Winter",
+        "role": "co-founder",
+        "org": "Corvid",
+        "evidence": "Kai Winter co-founded Corvid",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://corvid.example/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Ana Lopes",
+        "rel": "cofounded",
+        "dst": "Corvid",
+        "evidence": "Ana Lopes co-founded Corvid"
+      },
+      {
+        "src": "Kai Winter",
+        "rel": "cofounded",
+        "dst": "Corvid",
+        "evidence": "Kai Winter co-founded Corvid"
+      },
+      {
+        "src": "Open Seed Fund",
+        "rel": "invested_in",
+        "dst": "Corvid",
+        "evidence": "Open Seed Fund led the seed round"
+      },
+      {
+        "src": "Northwind Ventures",
+        "rel": "invested_in",
+        "dst": "Corvid",
+        "evidence": "Northwind Ventures led the seed round"
+      },
+      {
+        "src": "Corvid",
+        "rel": "competitor_of",
+        "dst": "Fernwood",
+        "evidence": "Corvid competes with Fernwood"
+      }
+    ]
+  },
+  {
     "company_name": "Lumen Index",
     "core_product": "Semantic search for legal contracts",
     "tech_stack": [
@@ -11,21 +122,73 @@
     "value_prop_pitch": "Your keyword layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
     "is_relevant": true,
     "funding_stage": "seed",
-    "source_url": "https://example.com/lumen-index",
-    "discovered_at": "2026-10-19T03:06:24+00:00",
+    "funding_amount": "",
+    "hq": "Berlin, Germany",
+    "website": "https://lumenindex.example",
+    "source_url": "https://example.com/lumenindex",
+    "discovered_at": "2026-10-19T08:31:36+00:00",
+    "score": 92,
     "slug": "lumen-index",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 20
+    },
+    "gaps": [
+      "funding amount"
+    ],
+    "contact": {
+      "website": "https://lumenindex.example",
+      "emails": [
+        {
+          "value": "hello@lumenindex.example",
+          "kind": "general",
+          "source_url": "https://lumenindex.example/contact"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+12025551000",
+          "kind": "main",
+          "source_url": "https://lumenindex.example/contact"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/lumenindex",
+        "twitter": "https://x.com/lumenindex"
+      },
+      "contact_page": "https://lumenindex.example/contact",
+      "pages_crawled": [
+        "https://lumenindex.example/",
+        "https://lumenindex.example/about"
+      ],
+      "enriched_at": "2026-10-19T08:31:36+00:00",
+      "status": "ok"
+    },
     "people": [
       {
         "name": "Maya Okafor",
         "role": "co-founder",
         "org": "Lumen Index",
-        "evidence": "Maya Okafor co-founded Lumen Index"
+        "evidence": "Maya Okafor co-founded Lumen Index",
+        "linkedin": "https://www.linkedin.com/in/maya-okafor",
+        "twitter": "",
+        "github": "https://github.com/mayaokafor",
+        "homepage": "",
+        "link_source": "https://lumenindex.example/about"
       },
       {
         "name": "Theo Brandt",
         "role": "co-founder",
         "org": "Lumen Index",
-        "evidence": "Theo Brandt co-founded Lumen Index"
+        "evidence": "Theo Brandt co-founded Lumen Index",
+        "linkedin": "",
+        "twitter": "",
+        "github": "https://github.com/theobrandt",
+        "homepage": "",
+        "link_source": "https://lumenindex.example/about"
       }
     ],
     "edges": [
@@ -67,15 +230,56 @@
     "value_prop_pitch": "Your multi-tenant layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
     "is_relevant": true,
     "funding_stage": "Series A",
+    "funding_amount": "$3.1M",
+    "hq": "Austin, USA",
+    "website": "https://vectorly.example",
     "source_url": "https://example.com/vectorly",
-    "discovered_at": "2026-10-17T03:06:24+00:00",
+    "discovered_at": "2026-10-17T08:31:36+00:00",
+    "score": 86,
     "slug": "vectorly",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 16
+    },
+    "gaps": [
+      "phone"
+    ],
+    "contact": {
+      "website": "https://vectorly.example",
+      "emails": [
+        {
+          "value": "hello@vectorly.example",
+          "kind": "general",
+          "source_url": "https://vectorly.example/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/vectorly",
+        "twitter": "https://x.com/vectorly"
+      },
+      "contact_page": "https://vectorly.example/contact",
+      "pages_crawled": [
+        "https://vectorly.example/",
+        "https://vectorly.example/about"
+      ],
+      "enriched_at": "2026-10-17T08:31:36+00:00",
+      "status": "ok"
+    },
     "people": [
       {
         "name": "Priya Raman",
         "role": "co-founder",
         "org": "Vectorly",
-        "evidence": "Priya Raman co-founded Vectorly"
+        "evidence": "Priya Raman co-founded Vectorly",
+        "linkedin": "https://www.linkedin.com/in/priya-raman",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://vectorly.example/about"
       }
     ],
     "edges": [
@@ -106,323 +310,6 @@
     ]
   },
   {
-    "company_name": "Paperplane AI",
-    "core_product": "RAG assistant over company docs",
-    "tech_stack": [
-      "Python",
-      "LangChain",
-      "Pinecone"
-    ],
-    "likely_bottleneck": "retrieval quality on messy PDFs",
-    "value_prop_pitch": "Your retrieval layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
-    "is_relevant": true,
-    "funding_stage": "pre-seed",
-    "source_url": "https://example.com/paperplane-ai",
-    "discovered_at": "2026-10-15T03:06:24+00:00",
-    "slug": "paperplane-ai",
-    "people": [
-      {
-        "name": "Sam Idris",
-        "role": "co-founder",
-        "org": "Paperplane AI",
-        "evidence": "Sam Idris co-founded Paperplane AI"
-      },
-      {
-        "name": "Lena Fischer",
-        "role": "co-founder",
-        "org": "Paperplane AI",
-        "evidence": "Lena Fischer co-founded Paperplane AI"
-      }
-    ],
-    "edges": [
-      {
-        "src": "Sam Idris",
-        "rel": "cofounded",
-        "dst": "Paperplane AI",
-        "evidence": "Sam Idris co-founded Paperplane AI"
-      },
-      {
-        "src": "Lena Fischer",
-        "rel": "cofounded",
-        "dst": "Paperplane AI",
-        "evidence": "Lena Fischer co-founded Paperplane AI"
-      },
-      {
-        "src": "Open Seed Fund",
-        "rel": "invested_in",
-        "dst": "Paperplane AI",
-        "evidence": "Open Seed Fund led the pre-seed round"
-      }
-    ]
-  },
-  {
-    "company_name": "Tidepool Labs",
-    "core_product": "Observability for ML pipelines",
-    "tech_stack": [
-      "Go",
-      "ClickHouse",
-      "Next.js"
-    ],
-    "likely_bottleneck": "slow trace search UI",
-    "value_prop_pitch": "Your slow layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
-    "is_relevant": true,
-    "funding_stage": "seed",
-    "source_url": "https://example.com/tidepool-labs",
-    "discovered_at": "2026-10-13T03:06:24+00:00",
-    "slug": "tidepool-labs",
-    "people": [
-      {
-        "name": "Jon Abara",
-        "role": "co-founder",
-        "org": "Tidepool Labs",
-        "evidence": "Jon Abara co-founded Tidepool Labs"
-      }
-    ],
-    "edges": [
-      {
-        "src": "Jon Abara",
-        "rel": "founded",
-        "dst": "Tidepool Labs",
-        "evidence": "Jon Abara co-founded Tidepool Labs"
-      },
-      {
-        "src": "Harbor Capital",
-        "rel": "invested_in",
-        "dst": "Tidepool Labs",
-        "evidence": "Harbor Capital led the seed round"
-      }
-    ]
-  },
-  {
-    "company_name": "Corvid",
-    "core_product": "Developer knowledge graph for codebases",
-    "tech_stack": [
-      "TypeScript",
-      "Neo4j"
-    ],
-    "likely_bottleneck": "graph queries over big repos",
-    "value_prop_pitch": "Your graph layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
-    "is_relevant": true,
-    "funding_stage": "seed",
-    "source_url": "https://example.com/corvid",
-    "discovered_at": "2026-10-11T03:06:24+00:00",
-    "slug": "corvid",
-    "people": [
-      {
-        "name": "Ana Lopes",
-        "role": "co-founder",
-        "org": "Corvid",
-        "evidence": "Ana Lopes co-founded Corvid"
-      },
-      {
-        "name": "Kai Winter",
-        "role": "co-founder",
-        "org": "Corvid",
-        "evidence": "Kai Winter co-founded Corvid"
-      }
-    ],
-    "edges": [
-      {
-        "src": "Ana Lopes",
-        "rel": "cofounded",
-        "dst": "Corvid",
-        "evidence": "Ana Lopes co-founded Corvid"
-      },
-      {
-        "src": "Kai Winter",
-        "rel": "cofounded",
-        "dst": "Corvid",
-        "evidence": "Kai Winter co-founded Corvid"
-      },
-      {
-        "src": "Open Seed Fund",
-        "rel": "invested_in",
-        "dst": "Corvid",
-        "evidence": "Open Seed Fund led the seed round"
-      },
-      {
-        "src": "Northwind Ventures",
-        "rel": "invested_in",
-        "dst": "Corvid",
-        "evidence": "Northwind Ventures led the seed round"
-      },
-      {
-        "src": "Corvid",
-        "rel": "competitor_of",
-        "dst": "Fernwood",
-        "evidence": "Corvid competes with Fernwood"
-      }
-    ]
-  },
-  {
-    "company_name": "Fernwood",
-    "core_product": "Clinical trial matching engine",
-    "tech_stack": [
-      "Python",
-      "FastAPI",
-      "Elasticsearch"
-    ],
-    "likely_bottleneck": "matching free-text eligibility",
-    "value_prop_pitch": "Your matching layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
-    "is_relevant": true,
-    "funding_stage": "Series A",
-    "source_url": "https://example.com/fernwood",
-    "discovered_at": "2026-10-09T03:06:24+00:00",
-    "slug": "fernwood",
-    "people": [
-      {
-        "name": "Dr. Nia Hassan",
-        "role": "co-founder",
-        "org": "Fernwood",
-        "evidence": "Dr. Nia Hassan co-founded Fernwood"
-      }
-    ],
-    "edges": [
-      {
-        "src": "Corvid",
-        "rel": "competitor_of",
-        "dst": "Fernwood",
-        "evidence": "Corvid competes with Fernwood"
-      },
-      {
-        "src": "Dr. Nia Hassan",
-        "rel": "founded",
-        "dst": "Fernwood",
-        "evidence": "Dr. Nia Hassan co-founded Fernwood"
-      },
-      {
-        "src": "Meridian Bio Partners",
-        "rel": "invested_in",
-        "dst": "Fernwood",
-        "evidence": "Meridian Bio Partners led the Series A round"
-      }
-    ]
-  },
-  {
-    "company_name": "Quillbase",
-    "core_product": "Support-ticket triage with embeddings",
-    "tech_stack": [
-      "Python",
-      "Redis",
-      "React"
-    ],
-    "likely_bottleneck": "duplicate ticket detection",
-    "value_prop_pitch": "Your duplicate layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
-    "is_relevant": true,
-    "funding_stage": "pre-seed",
-    "source_url": "https://example.com/quillbase",
-    "discovered_at": "2026-10-07T03:06:24+00:00",
-    "slug": "quillbase",
-    "people": [
-      {
-        "name": "Omar Beck",
-        "role": "co-founder",
-        "org": "Quillbase",
-        "evidence": "Omar Beck co-founded Quillbase"
-      }
-    ],
-    "edges": [
-      {
-        "src": "Omar Beck",
-        "rel": "founded",
-        "dst": "Quillbase",
-        "evidence": "Omar Beck co-founded Quillbase"
-      }
-    ]
-  },
-  {
-    "company_name": "Basalt",
-    "core_product": "Open-source feature store",
-    "tech_stack": [
-      "Rust",
-      "Arrow"
-    ],
-    "likely_bottleneck": "online/offline sync",
-    "value_prop_pitch": "Your online/offline layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
-    "is_relevant": true,
-    "funding_stage": "seed",
-    "source_url": "https://example.com/basalt",
-    "discovered_at": "2026-10-05T03:06:24+00:00",
-    "slug": "basalt",
-    "people": [
-      {
-        "name": "Iris Moreau",
-        "role": "co-founder",
-        "org": "Basalt",
-        "evidence": "Iris Moreau co-founded Basalt"
-      },
-      {
-        "name": "Dev Patel",
-        "role": "co-founder",
-        "org": "Basalt",
-        "evidence": "Dev Patel co-founded Basalt"
-      }
-    ],
-    "edges": [
-      {
-        "src": "Iris Moreau",
-        "rel": "cofounded",
-        "dst": "Basalt",
-        "evidence": "Iris Moreau co-founded Basalt"
-      },
-      {
-        "src": "Dev Patel",
-        "rel": "cofounded",
-        "dst": "Basalt",
-        "evidence": "Dev Patel co-founded Basalt"
-      },
-      {
-        "src": "Harbor Capital",
-        "rel": "invested_in",
-        "dst": "Basalt",
-        "evidence": "Harbor Capital led the seed round"
-      }
-    ]
-  },
-  {
-    "company_name": "Nimbus Notes",
-    "core_product": "AI notebook with cross-note recall",
-    "tech_stack": [
-      "TypeScript",
-      "SQLite"
-    ],
-    "likely_bottleneck": "semantic recall at scale",
-    "value_prop_pitch": "Your semantic layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
-    "is_relevant": true,
-    "funding_stage": "pre-seed",
-    "source_url": "https://example.com/nimbus-notes",
-    "discovered_at": "2026-10-03T03:06:24+00:00",
-    "slug": "nimbus-notes",
-    "people": [
-      {
-        "name": "Zoe Tanaka",
-        "role": "co-founder",
-        "org": "Nimbus Notes",
-        "evidence": "Zoe Tanaka co-founded Nimbus Notes"
-      }
-    ],
-    "edges": [
-      {
-        "src": "Zoe Tanaka",
-        "rel": "founded",
-        "dst": "Nimbus Notes",
-        "evidence": "Zoe Tanaka co-founded Nimbus Notes"
-      },
-      {
-        "src": "Open Seed Fund",
-        "rel": "invested_in",
-        "dst": "Nimbus Notes",
-        "evidence": "Open Seed Fund led the pre-seed round"
-      },
-      {
-        "src": "Nimbus Notes",
-        "rel": "competitor_of",
-        "dst": "Gridline",
-        "evidence": "Nimbus Notes competes with Gridline"
-      }
-    ]
-  },
-  {
     "company_name": "Gridline",
     "core_product": "Geospatial search for logistics",
     "tech_stack": [
@@ -434,21 +321,68 @@
     "value_prop_pitch": "Your map layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
     "is_relevant": true,
     "funding_stage": "seed",
+    "funding_amount": "",
+    "hq": "Austin, USA",
+    "website": "https://gridline.example",
     "source_url": "https://example.com/gridline",
-    "discovered_at": "2026-10-01T03:06:24+00:00",
+    "discovered_at": "2026-10-01T08:31:36+00:00",
+    "score": 83,
     "slug": "gridline",
+    "score_parts": {
+      "fit": 20,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 16
+    },
+    "gaps": [
+      "funding amount",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://gridline.example",
+      "emails": [
+        {
+          "value": "hello@gridline.example",
+          "kind": "general",
+          "source_url": "https://gridline.example/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/gridline",
+        "twitter": "https://x.com/gridline"
+      },
+      "contact_page": "https://gridline.example/contact",
+      "pages_crawled": [
+        "https://gridline.example/",
+        "https://gridline.example/about"
+      ],
+      "enriched_at": "2026-10-01T08:31:36+00:00",
+      "status": "ok"
+    },
     "people": [
       {
         "name": "Marco Ruiz",
         "role": "co-founder",
         "org": "Gridline",
-        "evidence": "Marco Ruiz co-founded Gridline"
+        "evidence": "Marco Ruiz co-founded Gridline",
+        "linkedin": "https://www.linkedin.com/in/marco-ruiz",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://gridline.example/about"
       },
       {
         "name": "Ines Duarte",
         "role": "co-founder",
         "org": "Gridline",
-        "evidence": "Ines Duarte co-founded Gridline"
+        "evidence": "Ines Duarte co-founded Gridline",
+        "linkedin": "https://www.linkedin.com/in/ines-duarte",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://gridline.example/about"
       }
     ],
     "edges": [
@@ -479,6 +413,195 @@
     ]
   },
   {
+    "company_name": "Paperplane AI",
+    "core_product": "RAG assistant over company docs",
+    "tech_stack": [
+      "Python",
+      "LangChain",
+      "Pinecone"
+    ],
+    "likely_bottleneck": "retrieval quality on messy PDFs",
+    "value_prop_pitch": "Your retrieval layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "funding_amount": "$4.2M",
+    "hq": "London, UK",
+    "website": "https://paperplaneai.example",
+    "source_url": "https://example.com/paperplaneai",
+    "discovered_at": "2026-10-15T08:31:36+00:00",
+    "score": 82,
+    "slug": "paperplane-ai",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 20,
+      "connections": 15,
+      "contact": 7
+    },
+    "gaps": [
+      "email"
+    ],
+    "contact": {
+      "website": "https://paperplaneai.example",
+      "emails": [],
+      "phones": [
+        {
+          "value": "+12025551002",
+          "kind": "main",
+          "source_url": "https://paperplaneai.example/contact"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/paperplaneai",
+        "twitter": "https://x.com/paperplaneai"
+      },
+      "contact_page": "",
+      "pages_crawled": [
+        "https://paperplaneai.example/",
+        "https://paperplaneai.example/about"
+      ],
+      "enriched_at": "2026-10-15T08:31:36+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Sam Idris",
+        "role": "co-founder",
+        "org": "Paperplane AI",
+        "evidence": "Sam Idris co-founded Paperplane AI",
+        "linkedin": "https://www.linkedin.com/in/sam-idris",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://paperplaneai.example/about"
+      },
+      {
+        "name": "Lena Fischer",
+        "role": "co-founder",
+        "org": "Paperplane AI",
+        "evidence": "Lena Fischer co-founded Paperplane AI",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://paperplaneai.example/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Sam Idris",
+        "rel": "cofounded",
+        "dst": "Paperplane AI",
+        "evidence": "Sam Idris co-founded Paperplane AI"
+      },
+      {
+        "src": "Lena Fischer",
+        "rel": "cofounded",
+        "dst": "Paperplane AI",
+        "evidence": "Lena Fischer co-founded Paperplane AI"
+      },
+      {
+        "src": "Open Seed Fund",
+        "rel": "invested_in",
+        "dst": "Paperplane AI",
+        "evidence": "Open Seed Fund led the pre-seed round"
+      }
+    ]
+  },
+  {
+    "company_name": "Basalt",
+    "core_product": "Open-source feature store",
+    "tech_stack": [
+      "Rust",
+      "Arrow"
+    ],
+    "likely_bottleneck": "online/offline sync",
+    "value_prop_pitch": "Your online/offline layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "funding_amount": "$4.7M",
+    "hq": "",
+    "website": "https://basalt.example",
+    "source_url": "https://example.com/basalt",
+    "discovered_at": "2026-10-05T08:31:36+00:00",
+    "score": 80,
+    "slug": "basalt",
+    "score_parts": {
+      "fit": 20,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 13
+    },
+    "gaps": [
+      "location",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://basalt.example",
+      "emails": [
+        {
+          "value": "hello@basalt.example",
+          "kind": "general",
+          "source_url": "https://basalt.example/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {},
+      "contact_page": "https://basalt.example/contact",
+      "pages_crawled": [
+        "https://basalt.example/",
+        "https://basalt.example/about"
+      ],
+      "enriched_at": "2026-10-05T08:31:36+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Iris Moreau",
+        "role": "co-founder",
+        "org": "Basalt",
+        "evidence": "Iris Moreau co-founded Basalt",
+        "linkedin": "https://www.linkedin.com/in/iris-moreau",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://basalt.example/about"
+      },
+      {
+        "name": "Dev Patel",
+        "role": "co-founder",
+        "org": "Basalt",
+        "evidence": "Dev Patel co-founded Basalt",
+        "linkedin": "https://www.linkedin.com/in/dev-patel",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://basalt.example/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Iris Moreau",
+        "rel": "cofounded",
+        "dst": "Basalt",
+        "evidence": "Iris Moreau co-founded Basalt"
+      },
+      {
+        "src": "Dev Patel",
+        "rel": "cofounded",
+        "dst": "Basalt",
+        "evidence": "Dev Patel co-founded Basalt"
+      },
+      {
+        "src": "Harbor Capital",
+        "rel": "invested_in",
+        "dst": "Basalt",
+        "evidence": "Harbor Capital led the seed round"
+      }
+    ]
+  },
+  {
     "company_name": "Hearth",
     "core_product": "Voice agent for home services",
     "tech_stack": [
@@ -489,15 +612,60 @@
     "value_prop_pitch": "Your call layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
     "is_relevant": true,
     "funding_stage": "seed",
+    "funding_amount": "$2.10M",
+    "hq": "London, UK",
+    "website": "https://hearth.example",
     "source_url": "https://example.com/hearth",
-    "discovered_at": "2026-09-29T03:06:24+00:00",
+    "discovered_at": "2026-09-29T08:31:36+00:00",
+    "score": 80,
     "slug": "hearth",
+    "score_parts": {
+      "fit": 20,
+      "identity": 15,
+      "people": 15,
+      "connections": 10,
+      "contact": 20
+    },
+    "gaps": [],
+    "contact": {
+      "website": "https://hearth.example",
+      "emails": [
+        {
+          "value": "hello@hearth.example",
+          "kind": "general",
+          "source_url": "https://hearth.example/contact"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+12025551010",
+          "kind": "main",
+          "source_url": "https://hearth.example/contact"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/hearth",
+        "twitter": "https://x.com/hearth"
+      },
+      "contact_page": "https://hearth.example/contact",
+      "pages_crawled": [
+        "https://hearth.example/",
+        "https://hearth.example/about"
+      ],
+      "enriched_at": "2026-09-29T08:31:36+00:00",
+      "status": "ok"
+    },
     "people": [
       {
         "name": "Bea Nowak",
         "role": "co-founder",
         "org": "Hearth",
-        "evidence": "Bea Nowak co-founded Hearth"
+        "evidence": "Bea Nowak co-founded Hearth",
+        "linkedin": "https://www.linkedin.com/in/bea-nowak",
+        "twitter": "",
+        "github": "https://github.com/beanowak",
+        "homepage": "",
+        "link_source": "https://hearth.example/about"
       }
     ],
     "edges": [
@@ -516,6 +684,328 @@
     ]
   },
   {
+    "company_name": "Nimbus Notes",
+    "core_product": "AI notebook with cross-note recall",
+    "tech_stack": [
+      "TypeScript",
+      "SQLite"
+    ],
+    "likely_bottleneck": "semantic recall at scale",
+    "value_prop_pitch": "Your semantic layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "funding_amount": "$5.8M",
+    "hq": "Berlin, Germany",
+    "website": "https://nimbusnotes.example",
+    "source_url": "https://example.com/nimbusnotes",
+    "discovered_at": "2026-10-03T08:31:36+00:00",
+    "score": 77,
+    "slug": "nimbus-notes",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 7
+    },
+    "gaps": [
+      "email"
+    ],
+    "contact": {
+      "website": "https://nimbusnotes.example",
+      "emails": [],
+      "phones": [
+        {
+          "value": "+12025551008",
+          "kind": "main",
+          "source_url": "https://nimbusnotes.example/contact"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/nimbusnotes",
+        "twitter": "https://x.com/nimbusnotes"
+      },
+      "contact_page": "",
+      "pages_crawled": [
+        "https://nimbusnotes.example/",
+        "https://nimbusnotes.example/about"
+      ],
+      "enriched_at": "2026-10-03T08:31:36+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Zoe Tanaka",
+        "role": "co-founder",
+        "org": "Nimbus Notes",
+        "evidence": "Zoe Tanaka co-founded Nimbus Notes",
+        "linkedin": "https://www.linkedin.com/in/zoe-tanaka",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://nimbusnotes.example/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Zoe Tanaka",
+        "rel": "founded",
+        "dst": "Nimbus Notes",
+        "evidence": "Zoe Tanaka co-founded Nimbus Notes"
+      },
+      {
+        "src": "Open Seed Fund",
+        "rel": "invested_in",
+        "dst": "Nimbus Notes",
+        "evidence": "Open Seed Fund led the pre-seed round"
+      },
+      {
+        "src": "Nimbus Notes",
+        "rel": "competitor_of",
+        "dst": "Gridline",
+        "evidence": "Nimbus Notes competes with Gridline"
+      }
+    ]
+  },
+  {
+    "company_name": "Quillbase",
+    "core_product": "Support-ticket triage with embeddings",
+    "tech_stack": [
+      "Python",
+      "Redis",
+      "React"
+    ],
+    "likely_bottleneck": "duplicate ticket detection",
+    "value_prop_pitch": "Your duplicate layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "funding_amount": "",
+    "hq": "London, UK",
+    "website": "https://quillbase.example",
+    "source_url": "https://example.com/quillbase",
+    "discovered_at": "2026-10-07T08:31:36+00:00",
+    "score": 72,
+    "slug": "quillbase",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 15,
+      "connections": 0,
+      "contact": 20
+    },
+    "gaps": [
+      "funding amount",
+      "investors"
+    ],
+    "contact": {
+      "website": "https://quillbase.example",
+      "emails": [
+        {
+          "value": "hello@quillbase.example",
+          "kind": "general",
+          "source_url": "https://quillbase.example/contact"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+12025551006",
+          "kind": "main",
+          "source_url": "https://quillbase.example/contact"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/quillbase",
+        "twitter": "https://x.com/quillbase"
+      },
+      "contact_page": "https://quillbase.example/contact",
+      "pages_crawled": [
+        "https://quillbase.example/",
+        "https://quillbase.example/about"
+      ],
+      "enriched_at": "2026-10-07T08:31:36+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Omar Beck",
+        "role": "co-founder",
+        "org": "Quillbase",
+        "evidence": "Omar Beck co-founded Quillbase",
+        "linkedin": "https://www.linkedin.com/in/omar-beck",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://quillbase.example/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Omar Beck",
+        "rel": "founded",
+        "dst": "Quillbase",
+        "evidence": "Omar Beck co-founded Quillbase"
+      }
+    ]
+  },
+  {
+    "company_name": "Tidepool Labs",
+    "core_product": "Observability for ML pipelines",
+    "tech_stack": [
+      "Go",
+      "ClickHouse",
+      "Next.js"
+    ],
+    "likely_bottleneck": "slow trace search UI",
+    "value_prop_pitch": "Your slow layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://tidepoollabs.example",
+    "source_url": "https://example.com/tidepoollabs",
+    "discovered_at": "2026-10-13T08:31:36+00:00",
+    "score": 67,
+    "slug": "tidepool-labs",
+    "score_parts": {
+      "fit": 20,
+      "identity": 9,
+      "people": 15,
+      "connections": 10,
+      "contact": 13
+    },
+    "gaps": [
+      "location",
+      "funding amount",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://tidepoollabs.example",
+      "emails": [
+        {
+          "value": "hello@tidepoollabs.example",
+          "kind": "general",
+          "source_url": "https://tidepoollabs.example/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {},
+      "contact_page": "https://tidepoollabs.example/contact",
+      "pages_crawled": [
+        "https://tidepoollabs.example/",
+        "https://tidepoollabs.example/about"
+      ],
+      "enriched_at": "2026-10-13T08:31:36+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Jon Abara",
+        "role": "co-founder",
+        "org": "Tidepool Labs",
+        "evidence": "Jon Abara co-founded Tidepool Labs",
+        "linkedin": "https://www.linkedin.com/in/jon-abara",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://tidepoollabs.example/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Jon Abara",
+        "rel": "founded",
+        "dst": "Tidepool Labs",
+        "evidence": "Jon Abara co-founded Tidepool Labs"
+      },
+      {
+        "src": "Harbor Capital",
+        "rel": "invested_in",
+        "dst": "Tidepool Labs",
+        "evidence": "Harbor Capital led the seed round"
+      }
+    ]
+  },
+  {
+    "company_name": "Fernwood",
+    "core_product": "Clinical trial matching engine",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "Elasticsearch"
+    ],
+    "likely_bottleneck": "matching free-text eligibility",
+    "value_prop_pitch": "Your matching layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+    "is_relevant": true,
+    "funding_stage": "Series A",
+    "funding_amount": "$2.5M",
+    "hq": "Austin, USA",
+    "website": "https://fernwood.example",
+    "source_url": "https://example.com/fernwood",
+    "discovered_at": "2026-10-09T08:31:36+00:00",
+    "score": 63,
+    "slug": "fernwood",
+    "score_parts": {
+      "fit": 20,
+      "identity": 15,
+      "people": 15,
+      "connections": 10,
+      "contact": 3
+    },
+    "gaps": [
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://fernwood.example",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/fernwood",
+        "twitter": "https://x.com/fernwood"
+      },
+      "contact_page": "",
+      "pages_crawled": [
+        "https://fernwood.example/",
+        "https://fernwood.example/about"
+      ],
+      "enriched_at": "2026-10-09T08:31:36+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Dr. Nia Hassan",
+        "role": "co-founder",
+        "org": "Fernwood",
+        "evidence": "Dr. Nia Hassan co-founded Fernwood",
+        "linkedin": "https://www.linkedin.com/in/dr.-nia-hassan",
+        "twitter": "",
+        "github": "https://github.com/dr.niahassan",
+        "homepage": "",
+        "link_source": "https://fernwood.example/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Corvid",
+        "rel": "competitor_of",
+        "dst": "Fernwood",
+        "evidence": "Corvid competes with Fernwood"
+      },
+      {
+        "src": "Dr. Nia Hassan",
+        "rel": "founded",
+        "dst": "Fernwood",
+        "evidence": "Dr. Nia Hassan co-founded Fernwood"
+      },
+      {
+        "src": "Meridian Bio Partners",
+        "rel": "invested_in",
+        "dst": "Fernwood",
+        "evidence": "Meridian Bio Partners led the Series A round"
+      }
+    ]
+  },
+  {
     "company_name": "Pocket Atlas",
     "core_product": "Travel itinerary RAG",
     "tech_stack": [
@@ -526,15 +1016,50 @@
     "value_prop_pitch": "Your grounding layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
     "is_relevant": true,
     "funding_stage": "pre-seed",
-    "source_url": "https://example.com/pocket-atlas",
-    "discovered_at": "2026-09-27T03:06:24+00:00",
+    "funding_amount": "$3.11M",
+    "hq": "",
+    "website": "https://pocketatlas.example",
+    "source_url": "https://example.com/pocketatlas",
+    "discovered_at": "2026-09-27T08:31:36+00:00",
+    "score": 47,
     "slug": "pocket-atlas",
+    "score_parts": {
+      "fit": 20,
+      "identity": 12,
+      "people": 15,
+      "connections": 0,
+      "contact": 0
+    },
+    "gaps": [
+      "location",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://pocketatlas.example",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "pages_crawled": [
+        "https://pocketatlas.example/",
+        "https://pocketatlas.example/about"
+      ],
+      "enriched_at": "2026-09-27T08:31:36+00:00",
+      "status": "ok"
+    },
     "people": [
       {
         "name": "Ravi Menon",
         "role": "co-founder",
         "org": "Pocket Atlas",
-        "evidence": "Ravi Menon co-founded Pocket Atlas"
+        "evidence": "Ravi Menon co-founded Pocket Atlas",
+        "linkedin": "https://www.linkedin.com/in/ravi-menon",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://pocketatlas.example/about"
       }
     ],
     "edges": [

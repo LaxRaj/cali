@@ -87,3 +87,31 @@ def test_people_edges_and_seen_urls(db_dir):
     mark_seen(["a.com/x", "b.com/y"], db_dir=db_dir)
     mark_seen(["a.com/x"], db_dir=db_dir)
     assert seen_urls(db_dir) == {"a.com/x", "b.com/y"}
+
+
+def test_old_tables_gain_new_columns_without_losing_rows(db_dir):
+    """Data committed by an older version of the scout must keep working when new fields appear."""
+    import lancedb
+
+    from memory import embed, upsert_people, upsert_profile
+    from models import Person
+
+    db_dir.mkdir()
+    db = lancedb.connect(str(db_dir))
+    db.create_table("startups", data=[{
+        "company_name": "OldCo", "core_product": "Legacy search", "tech_stack": ["Go"], "likely_bottleneck": "b",
+        "value_prop_pitch": "One. Two.", "is_relevant": True, "funding_stage": "seed", "source_url": "u",
+        "discovered_at": "2026-10-19", "vector": embed("Legacy search Tech stack: Go"),
+    }])
+    db.create_table("people", data=[{"name": "Old Person", "role": "CEO", "org": "OldCo", "evidence": "e",
+                                      "key": "old person|oldco", "vector": embed("Old Person, CEO at OldCo")}])
+
+    upsert_profile(PROFILES[0], db_dir=db_dir, extras={"score": 77, "score_json": '{"parts": {}, "gaps": []}', "contact_json": "{}"})
+    upsert_people([Person(name="New Person", role="CTO", org="DocuMind", evidence="e", linkedin="https://www.linkedin.com/in/new-person")], db_dir=db_dir)
+
+    rows = {r["company_name"]: r for r in db.open_table("startups").to_arrow().to_pylist()}
+    assert rows["OldCo"]["score"] == 0 and rows["OldCo"]["website"] == ""  # old row got defaults
+    assert rows["DocuMind"]["score"] == 77
+    people = {r["name"]: r for r in db.open_table("people").to_arrow().to_pylist()}
+    assert people["Old Person"]["linkedin"] == "" and people["New Person"]["linkedin"].endswith("new-person")
+    assert search("AI RAG integration", k=1, db_dir=db_dir)[0].company_name == "DocuMind"

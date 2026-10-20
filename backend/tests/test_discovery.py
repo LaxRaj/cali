@@ -100,3 +100,34 @@ def test_select_caps_per_source(monkeypatch):
 def test_select_survives_llm_failure():
     cands = [cand("https://a.com"), cand("https://b.com")]
     assert len(select(cands, set(), FakeClient(error=RuntimeError("down")))) == 2
+
+
+def test_launch_hn_posts_become_inline_candidates_without_crawling():
+    payload = {"hits": [
+        {"objectID": "1", "title": "Launch HN: Laminar (YC S24) – agent observability", "points": 55,
+         "story_text": "Hi HN, we&#x27;re Robert and Din from Laminar (<a href=\"https://laminar.sh\">https://laminar.sh</a>).<p>We build X.",
+         "created_at": "2026-10-19"},
+        {"objectID": "2", "title": "Launch HN: No text", "story_text": ""},
+        {"objectID": "3", "title": "Show HN: not a launch", "story_text": "hello"},
+    ]}
+    cands = hn.parse_launch(payload)
+    assert [c.url for c in cands] == ["https://news.ycombinator.com/item?id=1"]
+    c = cands[0]
+    assert c.source == "launch_hn" and c.content.startswith("# Launch HN: Laminar")
+    assert "[https://laminar.sh](https://laminar.sh)" in c.content and "we're Robert and Din" in c.content
+
+
+def test_shortlist_round_robins_sources_and_caps():
+    from discovery.triage import shortlist
+
+    cands = [cand(f"https://a{i}.com", source="rss") for i in range(10)] + [cand(f"https://b{i}.com", source="hn") for i in range(2)]
+    out = shortlist(cands, n=5)
+    assert [c.source for c in out] == ["rss", "hn", "rss", "hn", "rss"]  # the small source isn't crowded out
+    assert len(shortlist(cands, n=100)) == 12
+
+
+def test_select_honours_per_source_caps_from_feedback():
+    cands = [cand(f"https://r{i}.com", source="rss") for i in range(4)] + [cand(f"https://h{i}.com", source="hn") for i in range(4)]
+    client = FakeClient({"scores": [{"i": i, "score": 8} for i in range(8)]})
+    picked = select(cands, set(), client, caps={"rss": 3, "hn": 1})
+    assert sorted(c.source for c in picked) == ["hn", "rss", "rss", "rss"]

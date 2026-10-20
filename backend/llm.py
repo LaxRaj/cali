@@ -39,3 +39,8 @@ def chat_json(system: str, user: str, client: Groq | None = None) -> dict:
     )
     record_usage(completion)
     return json.loads(completion.choices[0].message.content)
+
+
+def quota_exhausted(error: Exception) -> bool:
+    """True for Groq's daily-token (TPD) 429: retrying or continuing the run is pointless."""
+    return "tokens per day" in str(error).lower() or "(TPD)" in str(error)

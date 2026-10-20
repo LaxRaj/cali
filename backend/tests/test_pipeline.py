@@ -18,6 +18,7 @@ def make_extraction(name, relevant=True, quote="Founded by Jane Roe"):
 
 
 def setup(monkeypatch, extractions, sources):
+    monkeypatch.setenv("CALI_ENRICH", "0")  # no network in unit tests
     cands = [Candidate(f"https://{i}.com", "t", "s", sources[i]) for i in range(len(extractions))]
 
     async def fake_discover():
@@ -28,7 +29,7 @@ def setup(monkeypatch, extractions, sources):
 
     it = iter(extractions)
     monkeypatch.setattr(pipeline, "discover", fake_discover)
-    monkeypatch.setattr(pipeline, "select", lambda c, seen: c)
+    monkeypatch.setattr(pipeline, "select", lambda c, seen, caps=None: c)
     monkeypatch.setattr(pipeline, "scrape_urls", fake_scrape)
     monkeypatch.setattr(pipeline, "extract", lambda md: next(it))
     monkeypatch.setattr(pipeline, "upsert_profile", lambda *a, **k: None)
@@ -76,3 +77,62 @@ async def test_hallucinated_evidence_is_counted_and_dropped(monkeypatch, tmp_pat
 
     assert report.valid == 3 and report.people == 0 and report.edges == 0
     assert report.dropped_ungrounded == 6
+
+
+async def test_quota_exhaustion_stops_extracting_and_is_recorded(monkeypatch, tmp_path):
+    setup(monkeypatch, [], [])
+    cands = [Candidate(f"https://{i}.com", "t", "s", "hn") for i in range(5)]
+
+    async def fake_discover():
+        return cands
+
+    calls = []
+
+    def boom(md):
+        calls.append(1)
+        raise RuntimeError("Error code: 429 - Rate limit reached ... on tokens per day (TPD): Limit 200000")
+
+    monkeypatch.setattr(pipeline, "discover", fake_discover)
+    monkeypatch.setattr(pipeline, "extract", boom)
+    report = await pipeline.run(tmp_path)
+
+    assert len(calls) == 1  # first 429 (daily limit) ends extraction; no point hammering a dead quota
+    assert report.quota_exhausted and not report.passed
+    run = json.loads(next((tmp_path / "runs").glob("*.json")).read_text())
+    assert len(run["rejections"]) == 5 and run["quality"]["quota_exhausted"] is True
+
+
+async def test_inline_content_skips_crawl_and_enrichment_scores_and_exports_contacts(monkeypatch, tmp_path):
+    from models import Contact, ContactItem
+
+    exs = [make_extraction(f"Co{i}") for i in range(4)]
+    setup(monkeypatch, exs, ["hn", "rss", "yc", "launch_hn"])
+    monkeypatch.setenv("CALI_ENRICH", "1")
+    crawled = []
+
+    async def fake_discover():
+        return [Candidate("https://0.com", "t", "s", "hn"), Candidate("https://1.com", "t", "s", "rss"),
+                Candidate("https://2.com", "t", "s", "yc"),
+                Candidate("https://news.ycombinator.com/item?id=9", "Launch HN: Co3", "s", "launch_hn", content="Founded by Jane Roe. We build.")]
+
+    async def fake_scrape(urls):
+        crawled.extend(urls)
+        return [Page(u, "Acme page. Founded by Jane Roe in 2025.") for u in urls]
+
+    async def fake_enrich(ex, source, md, **kw):
+        c = Contact(website=f"https://{ex.startup.company_name.lower()}.io", status="ok",
+                    emails=[ContactItem(value=f"hi@{ex.startup.company_name.lower()}.io", kind="general", source_url="u")])
+        return pipeline.EnrichResult(ex, c, ["ok"])
+
+    monkeypatch.setattr(pipeline, "discover", fake_discover)
+    monkeypatch.setattr(pipeline, "scrape_urls", fake_scrape)
+    monkeypatch.setattr(pipeline, "enrich_startup", fake_enrich)
+    report = await pipeline.run(tmp_path)
+
+    assert "https://news.ycombinator.com/item?id=9" not in crawled  # content was inline
+    assert report.passed and report.valid == 4 and report.with_email == 4 and report.with_website == 4 and report.avg_score > 0
+    brief = json.loads((tmp_path / "daily_brief.json").read_text())
+    f = brief["findings"][0]
+    assert f["contact"]["emails"][0]["value"].startswith("hi@") and "email" not in f["gaps"] and f["score"] > 0
+    run = json.loads(next((tmp_path / "runs").glob("*.json")).read_text())
+    assert "enrich" in [s["name"] for s in run["stages"]] and all("score" in a for a in run["accepted"])

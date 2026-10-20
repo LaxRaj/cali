@@ -31,6 +31,38 @@ export default function OverviewPage() {
     : 0;
   const people = graph.nodes.filter((n) => n.type === "person").length;
   const topNodes = graph.nodes.slice(0, 6);
+  const scored = profiles.filter((p) => p.score !== undefined);
+  const avgScore = scored.length
+    ? Math.round(scored.reduce((t, p) => t + (p.score ?? 0), 0) / scored.length)
+    : 0;
+  const pct = (n: number) =>
+    profiles.length ? Math.round((n / profiles.length) * 100) : 0;
+  const completeness = [
+    ["website", profiles.filter((p) => p.website).length],
+    [
+      "email",
+      profiles.filter((p) => (p.contact?.emails?.length ?? 0) > 0).length,
+    ],
+    [
+      "phone",
+      profiles.filter((p) => (p.contact?.phones?.length ?? 0) > 0).length,
+    ],
+    ["people", profiles.filter((p) => p.people.length > 0).length],
+    [
+      "profiles",
+      profiles.filter((p) =>
+        p.people.some((x) => x.linkedin || x.twitter || x.github),
+      ).length,
+    ],
+    [
+      "investors",
+      profiles.filter((p) =>
+        p.edges.some((e) => e.rel === "invested_in" || e.rel === "backed_by"),
+      ).length,
+    ],
+  ] as const;
+  const stats = detail?.feedback?.source_stats ?? {};
+  const caps = detail?.feedback?.caps ?? {};
   const srcMax = Math.max(...Object.values(latest?.sources ?? { x: 1 }), 1);
 
   return (
@@ -67,7 +99,7 @@ export default function OverviewPage() {
         </Panel>
       ) : (
         <>
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
             <Stat
               label="Startups"
               value={profiles.length}
@@ -91,6 +123,12 @@ export default function OverviewPage() {
               value={`${passRate}%`}
               sub={`last ${recent.length} runs`}
               tone="amber"
+            />
+            <Stat
+              label="Avg lead score"
+              value={avgScore}
+              sub={`${profiles.filter((p) => (p.score ?? 0) >= 75).length} leads ready (75+)`}
+              tone="violet"
             />
             <Stat
               label="Tokens today"
@@ -188,6 +226,54 @@ export default function OverviewPage() {
                     max={srcMax}
                     width={22}
                     className="text-rose-700 dark:text-rose-300"
+                  />
+                ))}
+              </div>
+            </Panel>
+            <Panel
+              title="Hit rate by source"
+              tone="amber"
+              right={<span>valid ÷ crawled · crawl cap</span>}
+            >
+              {Object.keys(stats).length ? (
+                <div className="space-y-1">
+                  {Object.entries(stats).map(([src, st]) => (
+                    <AsciiBar
+                      key={src}
+                      label={src}
+                      value={Math.round(st.yield * 100)}
+                      max={100}
+                      width={16}
+                      display={`${st.accepted}/${st.crawled} · cap ${caps[src] ?? "-"}`}
+                      className="text-amber-700 dark:text-amber-300"
+                    />
+                  ))}
+                </div>
+              ) : (
+                <p className="text-xs text-zinc-500">
+                  builds up after a few runs
+                </p>
+              )}
+              <p className="mt-2 text-xs text-zinc-600 dark:text-zinc-400">
+                Sources that pay off get more of the next run&apos;s crawl
+                budget.
+              </p>
+            </Panel>
+            <Panel
+              title="Lead completeness"
+              tone="violet"
+              right={<span>{profiles.length} leads</span>}
+            >
+              <div className="space-y-1">
+                {completeness.map(([label, n]) => (
+                  <AsciiBar
+                    key={label}
+                    label={label}
+                    value={pct(n)}
+                    max={100}
+                    width={16}
+                    display={`${pct(n)}%`}
+                    className="text-violet-700 dark:text-violet-300"
                   />
                 ))}
               </div>

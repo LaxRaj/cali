@@ -4,25 +4,33 @@
       "id": "corvid",
       "label": "Corvid",
       "type": "startup",
-      "degree": 5
+      "degree": 5,
+      "website": "https://corvid.example",
+      "score": 95
     },
     {
       "id": "lumen index",
       "label": "Lumen Index",
       "type": "startup",
-      "degree": 4
+      "degree": 4,
+      "website": "https://lumenindex.example",
+      "score": 92
     },
     {
       "id": "vectorly",
       "label": "Vectorly",
       "type": "startup",
-      "degree": 4
+      "degree": 4,
+      "website": "https://vectorly.example",
+      "score": 86
     },
     {
       "id": "gridline",
       "label": "Gridline",
       "type": "startup",
-      "degree": 4
+      "degree": 4,
+      "website": "https://gridline.example",
+      "score": 83
     },
     {
       "id": "northwind ventures",
@@ -34,25 +42,33 @@
       "id": "paperplane ai",
       "label": "Paperplane AI",
       "type": "startup",
-      "degree": 3
+      "degree": 3,
+      "website": "https://paperplaneai.example",
+      "score": 82
     },
     {
       "id": "fernwood",
       "label": "Fernwood",
       "type": "startup",
-      "degree": 3
+      "degree": 3,
+      "website": "https://fernwood.example",
+      "score": 63
     },
     {
       "id": "basalt",
       "label": "Basalt",
       "type": "startup",
-      "degree": 3
+      "degree": 3,
+      "website": "https://basalt.example",
+      "score": 80
     },
     {
       "id": "nimbus notes",
       "label": "Nimbus Notes",
       "type": "startup",
-      "degree": 3
+      "degree": 3,
+      "website": "https://nimbusnotes.example",
+      "score": 77
     },
     {
       "id": "harbor capital",
@@ -70,13 +86,17 @@
       "id": "tidepool labs",
       "label": "Tidepool Labs",
       "type": "startup",
-      "degree": 2
+      "degree": 2,
+      "website": "https://tidepoollabs.example",
+      "score": 67
     },
     {
       "id": "hearth",
       "label": "Hearth",
       "type": "startup",
-      "degree": 2
+      "degree": 2,
+      "website": "https://hearth.example",
+      "score": 80
     },
     {
       "id": "meridian bio partners",
@@ -88,115 +108,186 @@
       "id": "quillbase",
       "label": "Quillbase",
       "type": "startup",
-      "degree": 1
+      "degree": 1,
+      "website": "https://quillbase.example",
+      "score": 72
     },
     {
       "id": "pocket atlas",
       "label": "Pocket Atlas",
       "type": "startup",
-      "degree": 1
+      "degree": 1,
+      "website": "https://pocketatlas.example",
+      "score": 47
     },
     {
       "id": "maya okafor",
       "label": "Maya Okafor",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/maya-okafor",
+        "github": "https://github.com/mayaokafor"
+      }
     },
     {
       "id": "theo brandt",
       "label": "Theo Brandt",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "github": "https://github.com/theobrandt"
+      }
     },
     {
       "id": "priya raman",
       "label": "Priya Raman",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/priya-raman"
+      }
     },
     {
       "id": "sam idris",
       "label": "Sam Idris",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sam-idris"
+      }
     },
     {
       "id": "lena fischer",
       "label": "Lena Fischer",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {}
     },
     {
       "id": "jon abara",
       "label": "Jon Abara",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jon-abara"
+      }
     },
     {
       "id": "ana lopes",
       "label": "Ana Lopes",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ana-lopes"
+      }
     },
     {
       "id": "kai winter",
       "label": "Kai Winter",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {}
     },
     {
       "id": "dr. nia hassan",
       "label": "Dr. Nia Hassan",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dr.-nia-hassan",
+        "github": "https://github.com/dr.niahassan"
+      }
     },
     {
       "id": "omar beck",
       "label": "Omar Beck",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/omar-beck"
+      }
     },
     {
       "id": "iris moreau",
       "label": "Iris Moreau",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/iris-moreau"
+      }
     },
     {
       "id": "dev patel",
       "label": "Dev Patel",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dev-patel"
+      }
     },
     {
       "id": "zoe tanaka",
       "label": "Zoe Tanaka",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/zoe-tanaka"
+      }
     },
     {
       "id": "marco ruiz",
       "label": "Marco Ruiz",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/marco-ruiz"
+      }
     },
     {
       "id": "ines duarte",
       "label": "Ines Duarte",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ines-duarte"
+      }
     },
     {
       "id": "bea nowak",
       "label": "Bea Nowak",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/bea-nowak",
+        "github": "https://github.com/beanowak"
+      }
     },
     {
       "id": "ravi menon",
       "label": "Ravi Menon",
       "type": "person",
-      "degree": 1
+      "degree": 1,
+      "role": "co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ravi-menon"
+      }
     }
   ],
   "edges": [

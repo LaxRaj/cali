@@ -6,6 +6,21 @@ export type Person = {
   role: string;
   org: string;
   evidence: string;
+  linkedin?: string;
+  twitter?: string;
+  github?: string;
+  homepage?: string;
+  link_source?: string;
+};
+
+export type ContactItem = { value: string; kind: string; source_url: string };
+export type Contact = {
+  website?: string;
+  emails?: ContactItem[];
+  phones?: ContactItem[];
+  socials?: Record<string, string>;
+  contact_page?: string;
+  status?: string;
 };
 export type Edge = { src: string; rel: string; dst: string; evidence: string };
 
@@ -18,8 +33,15 @@ export type Profile = {
   value_prop_pitch: string;
   is_relevant: boolean;
   funding_stage?: string;
+  funding_amount?: string;
+  hq?: string;
+  website?: string;
   source_url: string;
   discovered_at: string;
+  score?: number;
+  score_parts?: Record<string, number>;
+  gaps?: string[];
+  contact?: Contact;
   people: Person[];
   edges: Edge[];
 };
@@ -29,6 +51,10 @@ export type GraphNode = {
   label: string;
   type: "startup" | "person" | "org";
   degree: number;
+  website?: string;
+  score?: number;
+  role?: string;
+  links?: Record<string, string>;
 };
 export type GraphEdge = {
   source: string;
@@ -82,12 +108,24 @@ export type RunDetail = RunSummary & {
     calls?: number;
   };
   quality: Record<string, unknown>;
+  feedback?: {
+    source_stats?: Record<
+      string,
+      { crawled: number; accepted: number; yield: number; avg_score: number }
+    >;
+    caps?: Record<string, number>;
+  };
   accepted: {
     company: string;
     url: string;
     source: string;
     people: number;
     edges: number;
+    score?: number;
+    gaps?: string[];
+    website?: string;
+    emails?: number;
+    phones?: number;
   }[];
   rejections: { url: string; source: string; reasons: string[] }[];
   errors: string[];
