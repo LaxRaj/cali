@@ -132,12 +132,24 @@ def fetch(client: httpx.Client | None = None, max_filings: int = MAX_FILINGS) ->
             continue
         form = parse_form_d(x.text)
         if form and form["recent"]:
-            out.append(to_candidate(form, e["folder"] + "/", e["updated"]))
+            out.append((form, to_candidate(form, e["folder"] + "/", e["updated"])))
         time.sleep(0.15)
-    return out
+    return dedupe([c for _, c in out], {id(c): f for f, c in out})
+
+
+def dedupe(cands: list[Candidate], forms: dict[int, dict]) -> list[Candidate]:
+    """A company often files several Form Ds (rounds, amendments); keep the one with the most raised."""
+    best: dict[str, Candidate] = {}
+    for c in cands:
+        key = c.company.strip().lower()
+        amount = lambda x: forms[id(x)]["sold"] or forms[id(x)]["offering"]  # noqa: E731
+        if key not in best or amount(c) > amount(best[key]):
+            best[key] = c
+    return list(best.values())
 
 
 MAX_SITE_CHARS = 6000
+MIN_SITE_PROSE = 150  # chars of real prose on the homepage; placeholder/under-construction pages have none
 
 
 async def materialize(cand: Candidate, search_fn=None, fetch_fn=None) -> str | None:
@@ -162,6 +174,10 @@ async def materialize(cand: Candidate, search_fn=None, fetch_fn=None) -> str | N
     home = pages[0]
     final = origin_of(home.url) if is_company_host(host_of(home.url)) else website
     token = company_token(cand.company)
+    from decide.decisions import article_text
+
+    if len(article_text(home.markdown, 400)) < MIN_SITE_PROSE:
+        return None  # nothing for the extractor to read: skip before spending LLM tokens
     squashed = re.sub(r"[^a-z0-9]", "", fold(home.markdown))  # "Reservoir Co" / "reservoir-co" both match "reservoirco"
     if not home.markdown.strip() or (token and token not in squashed):
         return None

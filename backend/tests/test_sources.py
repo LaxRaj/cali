@@ -177,7 +177,7 @@ async def test_materialize_combines_filing_facts_with_the_companys_homepage():
 
     async def fetch(urls):
         fetched.extend(urls)
-        return [Fetched("https://www.nocturnal.ai/", "<html/>", "# Nocturnal\n\nNocturnal builds night-vision analytics for warehouses.")]
+        return [Fetched("https://www.nocturnal.ai/", "<html/>", "# Nocturnal\n\nNocturnal builds night-vision analytics for warehouses. Our cameras and software help operations teams see what is happening on the floor overnight, flag safety issues, and reduce shrinkage across distribution centers.")]
 
     content = await edgar.materialize(cand, search_fn=search, fetch_fn=fetch)
     assert searched == ['"Nocturnal Inc." official website'] and fetched == ["https://www.nocturnal.ai/"]
@@ -213,7 +213,26 @@ async def test_materialize_matches_company_names_written_with_spaces_or_hyphens(
     cand = edgar.to_candidate(form, "https://www.sec.gov/Archives/r/")
 
     async def fetch(urls):
-        return [Fetched("https://reservoir-co.com/", "<html/>", "# Reservoir Co\n\nWe build reservoir monitoring software.")]
+        return [Fetched("https://reservoir-co.com/", "<html/>", "# Reservoir Co\n\nWe build reservoir monitoring software that helps water utilities track levels, predict shortages, and plan releases across dozens of reservoirs and treatment sites.")]
 
     out = await edgar.materialize(cand, search_fn=lambda q: [{"href": "https://reservoir-co.com/"}], fetch_fn=fetch)
     assert out and "reservoir monitoring software" in out
+
+
+async def test_materialize_skips_placeholder_homepages_without_any_prose():
+    from enrich import Fetched
+
+    cand = edgar.to_candidate(edgar.parse_form_d(FORM_D), "https://www.sec.gov/Archives/x/")
+
+    async def placeholder(urls):  # a real case: a website-builder stub page for a stealth company
+        return [Fetched("https://www.nocturnal.ai/", "<html/>", "top of page\n\nLog In\n\n© 2025 by Nocturnal Inc. All rights reserved.\n\nbottom of page")]
+
+    assert await edgar.materialize(cand, search_fn=lambda q: [{"href": "https://www.nocturnal.ai/"}], fetch_fn=placeholder) is None
+
+
+def test_duplicate_filings_keep_the_largest_round():
+    small = FORM_D.replace("<totalAmountSold>1850000</totalAmountSold>", "<totalAmountSold>1000</totalAmountSold>")
+    forms = [edgar.parse_form_d(small), edgar.parse_form_d(FORM_D), edgar.parse_form_d(FORM_D.replace("Nocturnal Inc.", "Other Corp"))]
+    cands = [edgar.to_candidate(f, f"https://www.sec.gov/{i}/") for i, f in enumerate(forms)]
+    kept = edgar.dedupe(cands, {id(c): f for c, f in zip(cands, forms)})
+    assert sorted(c.url for c in kept) == ["https://www.sec.gov/1/", "https://www.sec.gov/2/"]  # the $1.85M filing, not the $1K one
