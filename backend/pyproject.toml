@@ -6,6 +6,8 @@ dependencies = [
     "crawl4ai>=0.9.5",
     "ddgs>=9.16.0",
     "duckduckgo-search>=8.1.1",
+    "groq>=1.7.0",
+    "pydantic>=2.14.1",
 ]
 
 [dependency-groups]
