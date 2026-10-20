@@ -1,0 +1,205 @@
+{
+  "run_id": "20261004T060000Z",
+  "started_at": "2026-10-04T06:00:00+00:00",
+  "duration_s": 171.4,
+  "passed": true,
+  "failures": [],
+  "tokens": 96578,
+  "funnel": {
+    "candidates": 73,
+    "selected": 9,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 4,
+    "valid": 4
+  },
+  "sources": {
+    "hn": 9,
+    "rss": 55,
+    "yc": 20,
+    "web": 9
+  },
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup",
+      "Series A RAG platform launch"
+    ],
+    "hn_keywords": [
+      "RAG",
+      "vector search",
+      "developer tools"
+    ]
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-04T06:00:00+00:00",
+      "offset_s": 0.0,
+      "duration_s": 42.78,
+      "status": "ok",
+      "counts": {
+        "candidates": 73
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-04T06:00:42+00:00",
+      "offset_s": 42.78,
+      "duration_s": 5.13,
+      "status": "ok",
+      "counts": {
+        "in": 73,
+        "selected": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-04T06:00:47+00:00",
+      "offset_s": 47.91,
+      "duration_s": 36.29,
+      "status": "ok",
+      "counts": {
+        "requested": 9,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-04T06:01:24+00:00",
+      "offset_s": 84.2,
+      "duration_s": 74.59,
+      "status": "ok",
+      "counts": {
+        "extracted": 8,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-04T06:02:38+00:00",
+      "offset_s": 158.79,
+      "duration_s": 0.07,
+      "status": "ok",
+      "counts": {
+        "passed": 1
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-10-04T06:02:38+00:00",
+      "offset_s": 158.86,
+      "duration_s": 12.56,
+      "status": "ok",
+      "counts": {
+        "startups": 4
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "hn": {
+      "candidates": 9,
+      "seconds": 1.15,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 55,
+      "seconds": 6.62,
+      "error": ""
+    },
+    "yc": {
+      "candidates": 20,
+      "seconds": 8.49,
+      "error": ""
+    },
+    "web": {
+      "candidates": 9,
+      "seconds": 8.75,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 86920,
+    "completion_tokens": 9657,
+    "total_tokens": 96578,
+    "calls": 11
+  },
+  "quality": {
+    "candidates": 73,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 4,
+    "valid": 4,
+    "passed": true,
+    "failures": [],
+    "validity_rate": 1.0,
+    "dropped_ungrounded": 4
+  },
+  "accepted": [
+    {
+      "company": "Quillbase",
+      "url": "https://example.com/quillbase",
+      "source": "web",
+      "people": 1,
+      "edges": 1
+    },
+    {
+      "company": "Corvid",
+      "url": "https://example.com/corvid",
+      "source": "hn",
+      "people": 2,
+      "edges": 4
+    },
+    {
+      "company": "Gridline",
+      "url": "https://example.com/gridline",
+      "source": "rss",
+      "people": 2,
+      "edges": 3
+    },
+    {
+      "company": "Paperplane AI",
+      "url": "https://example.com/paperplane ai",
+      "source": "hn",
+      "people": 2,
+      "edges": 3
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://example.com/junk0",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk1",
+      "source": "rss",
+      "reasons": [
+        "missing core_product"
+      ]
+    },
+    {
+      "url": "https://example.com/junk2",
+      "source": "yc",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk3",
+      "source": "yc",
+      "reasons": [
+        "missing core_product"
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -49,12 +49,15 @@ jobs:
         run: uv run pytest -q
 
       - name: Run scout (discover -> extract -> quality gates -> store -> daily brief)
+        id: scout
+        continue-on-error: true # still commit the run log below, so failed runs are visible on the dashboard
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CRAWL4AI_NO_CLOUD_NOTICE: "1"
         run: uv run python pipeline.py
 
       - name: Commit results to main
+        if: always() && steps.scout.conclusion != 'skipped'
         working-directory: .
         run: |
           git config user.name "github-actions[bot]"
@@ -67,3 +70,7 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+
+      - name: Fail the job if the scout failed its quality gates
+        if: steps.scout.outcome == 'failure'
+        run: exit 1

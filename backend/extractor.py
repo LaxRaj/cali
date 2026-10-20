@@ -4,7 +4,7 @@ import json
 
 from groq import Groq
 
-from llm import MODEL, get_client
+from llm import MODEL, get_client, record_usage
 from models import Extraction
 from objective import OBJECTIVE
 
@@ -54,4 +54,5 @@ def extract(markdown: str, client: Groq | None = None) -> Extraction:
             {"role": "user", "content": markdown[:MAX_CHARS]},
         ],
     )
+    record_usage(completion)
     return Extraction.model_validate_json(completion.choices[0].message.content)

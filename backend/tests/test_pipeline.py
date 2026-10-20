@@ -42,6 +42,11 @@ async def test_good_run_passes_and_exports_people_and_edges(monkeypatch, tmp_pat
     report = await pipeline.run(tmp_path)
 
     assert report.passed and report.valid == 4 and report.people == 4 and report.edges == 4
+    run = json.loads(next((tmp_path / "runs").glob("*.json")).read_text())
+    assert [s["name"] for s in run["stages"]] == ["discover", "triage", "crawl", "extract", "gates", "store"]
+    assert run["funnel"] == {"candidates": 4, "selected": 4, "crawled": 4, "extracted": 4, "relevant": 4, "valid": 4}
+    assert len(run["accepted"]) == 4 and run["passed"] is True
+    assert (tmp_path / "graph.json").exists() and (tmp_path / "profiles.json").exists()
     brief = json.loads((tmp_path / "daily_brief.json").read_text())
     assert len(brief["findings"]) == 4
     assert brief["findings"][0]["people"][0]["name"] == "Jane Roe"
@@ -55,7 +60,12 @@ async def test_junk_run_fails_gates_and_writes_no_data(monkeypatch, tmp_path):
     report = await pipeline.run(tmp_path)
 
     assert not report.passed and report.valid == 0
-    assert not (tmp_path / "daily_brief.json").exists()  # nothing for CI to commit
+    assert not (tmp_path / "daily_brief.json").exists()  # no bad data for CI to commit
+    # ...but the failed run itself is logged so the dashboard can show it
+    run = json.loads(next((tmp_path / "runs").glob("*.json")).read_text())
+    assert run["passed"] is False and run["failures"] and len(run["rejections"]) == 5
+    assert [s["name"] for s in run["stages"]][-1] == "gates"
+    assert len(json.loads((tmp_path / "runs_index.json").read_text())["runs"]) == 1
     assert json.loads((tmp_path / "quality_report.json").read_text())["failures"]
 
 

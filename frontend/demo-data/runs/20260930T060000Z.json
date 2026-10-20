@@ -1,0 +1,219 @@
+{
+  "run_id": "20260930T060000Z",
+  "started_at": "2026-09-30T06:00:00+00:00",
+  "duration_s": 228.2,
+  "passed": true,
+  "failures": [],
+  "tokens": 58991,
+  "funnel": {
+    "candidates": 118,
+    "selected": 12,
+    "crawled": 11,
+    "extracted": 10,
+    "relevant": 6,
+    "valid": 6
+  },
+  "sources": {
+    "hn": 51,
+    "rss": 26,
+    "yc": 33,
+    "web": 46
+  },
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup",
+      "Series A RAG platform launch"
+    ],
+    "hn_keywords": [
+      "RAG",
+      "vector search",
+      "developer tools"
+    ]
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-09-30T06:00:00+00:00",
+      "offset_s": 0.0,
+      "duration_s": 42.12,
+      "status": "ok",
+      "counts": {
+        "candidates": 118
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-09-30T06:00:42+00:00",
+      "offset_s": 42.12,
+      "duration_s": 8.0,
+      "status": "ok",
+      "counts": {
+        "in": 118,
+        "selected": 12
+      },
+      "notes": []
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-09-30T06:00:50+00:00",
+      "offset_s": 50.12,
+      "duration_s": 40.77,
+      "status": "ok",
+      "counts": {
+        "requested": 12,
+        "crawled": 11
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-09-30T06:01:30+00:00",
+      "offset_s": 90.89,
+      "duration_s": 127.53,
+      "status": "ok",
+      "counts": {
+        "extracted": 10,
+        "relevant": 6,
+        "valid": 6
+      },
+      "notes": []
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-09-30T06:03:38+00:00",
+      "offset_s": 218.42,
+      "duration_s": 0.11,
+      "status": "ok",
+      "counts": {
+        "passed": 1
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-09-30T06:03:38+00:00",
+      "offset_s": 218.53,
+      "duration_s": 9.65,
+      "status": "ok",
+      "counts": {
+        "startups": 6
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "hn": {
+      "candidates": 51,
+      "seconds": 0.83,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 26,
+      "seconds": 7.35,
+      "error": ""
+    },
+    "yc": {
+      "candidates": 33,
+      "seconds": 2.21,
+      "error": ""
+    },
+    "web": {
+      "candidates": 46,
+      "seconds": 4.68,
+      "error": "No results found."
+    }
+  },
+  "usage": {
+    "prompt_tokens": 53091,
+    "completion_tokens": 5899,
+    "total_tokens": 58991,
+    "calls": 14
+  },
+  "quality": {
+    "candidates": 118,
+    "crawled": 11,
+    "extracted": 10,
+    "relevant": 6,
+    "valid": 6,
+    "passed": true,
+    "failures": [],
+    "validity_rate": 1.0,
+    "dropped_ungrounded": 1
+  },
+  "accepted": [
+    {
+      "company": "Nimbus Notes",
+      "url": "https://example.com/nimbus notes",
+      "source": "hn",
+      "people": 1,
+      "edges": 2
+    },
+    {
+      "company": "Pocket Atlas",
+      "url": "https://example.com/pocket atlas",
+      "source": "web",
+      "people": 1,
+      "edges": 1
+    },
+    {
+      "company": "Lumen Index",
+      "url": "https://example.com/lumen index",
+      "source": "rss",
+      "people": 2,
+      "edges": 3
+    },
+    {
+      "company": "Basalt",
+      "url": "https://example.com/basalt",
+      "source": "yc",
+      "people": 2,
+      "edges": 3
+    },
+    {
+      "company": "Paperplane AI",
+      "url": "https://example.com/paperplane ai",
+      "source": "hn",
+      "people": 2,
+      "edges": 3
+    },
+    {
+      "company": "Corvid",
+      "url": "https://example.com/corvid",
+      "source": "hn",
+      "people": 2,
+      "edges": 4
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://example.com/junk0",
+      "source": "hn",
+      "reasons": [
+        "missing core_product"
+      ]
+    },
+    {
+      "url": "https://example.com/junk1",
+      "source": "web",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk2",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk3",
+      "source": "rss",
+      "reasons": [
+        "missing core_product"
+      ]
+    }
+  ],
+  "errors": []
+}

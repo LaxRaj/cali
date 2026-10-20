@@ -1,0 +1,179 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { AsciiBar } from "@/components/charts/ascii-bar";
+import { Funnel } from "@/components/charts/funnel";
+import { StageTimeline } from "@/components/charts/stage-timeline";
+import { Led } from "@/components/ui/led";
+import { Panel } from "@/components/ui/panel";
+import { Stat } from "@/components/ui/stat";
+import { readIndex, readRun, TOKEN_BUDGET } from "@/lib/data";
+import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
+
+export function generateStaticParams() {
+  const runs = readIndex();
+  return runs.length ? runs.map((r) => ({ id: r.run_id })) : [{ id: "none" }];
+}
+
+export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
+  const { id } = await params;
+  const run = readRun(id);
+  if (!run) notFound();
+  const maxSrc = Math.max(
+    ...Object.values(run.source_health).map((s) => s.candidates),
+    1,
+  );
+
+  return (
+    <div className="space-y-6">
+      <p className="text-xs">
+        <Link href="/runs" className="underline">
+          ← runs
+        </Link>
+      </p>
+      <header className="flex flex-wrap items-center gap-3">
+        <Led
+          state={run.passed ? "ok" : "fail"}
+          label={run.passed ? "passed" : "failed"}
+        />
+        <h1 className="glow font-display text-4xl uppercase tracking-wider">
+          Run {run.run_id}
+        </h1>
+        <span className="text-xs text-zinc-600 dark:text-zinc-400">
+          {fmtDateTime(run.started_at)}
+        </span>
+      </header>
+
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <Stat
+          label="Result"
+          value={run.passed ? "PASS" : "FAIL"}
+          tone={run.passed ? "emerald" : "rose"}
+        />
+        <Stat label="Duration" value={fmtDuration(run.duration_s)} tone="sky" />
+        <Stat
+          label="Tokens"
+          value={fmtTokens(run.tokens)}
+          sub={`${run.usage.calls ?? 0} LLM calls · ${Math.round((run.tokens / TOKEN_BUDGET) * 100)}% of budget`}
+          tone="amber"
+        />
+        <Stat
+          label="Valid startups"
+          value={run.funnel.valid}
+          sub={`${run.accepted.reduce((s, a) => s + a.people, 0)} people`}
+          tone="violet"
+        />
+      </div>
+
+      {run.failures.length > 0 && (
+        <Panel title="Quality gates failed" tone="rose">
+          <ul className="list-disc space-y-1 pl-5">
+            {run.failures.map((f) => (
+              <li key={f}>{f}</li>
+            ))}
+          </ul>
+        </Panel>
+      )}
+
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Panel title="Stage timeline" tone="sky">
+          <StageTimeline stages={run.stages} />
+        </Panel>
+        <Panel title="Funnel" tone="emerald">
+          <Funnel funnel={run.funnel} />
+        </Panel>
+        <Panel title="Source health" tone="rose">
+          <ul className="space-y-1.5">
+            {Object.entries(run.source_health).map(([name, s]) => (
+              <li key={name}>
+                <AsciiBar
+                  label={name}
+                  value={s.candidates}
+                  max={maxSrc}
+                  width={18}
+                  display={`${s.candidates} · ${s.seconds}s`}
+                  className="text-rose-700 dark:text-rose-300"
+                />
+                {s.error && (
+                  <p className="pl-[4.5rem] text-xs text-rose-700 dark:text-rose-300">
+                    ⚠ {s.error}
+                  </p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </Panel>
+        <Panel title="Planner output" tone="violet">
+          <p className="mb-1 text-[11px] uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
+            web queries
+          </p>
+          <ul className="mb-3 space-y-0.5">
+            {(run.plan.web_queries ?? []).map((q) => (
+              <li key={q}>› {q}</li>
+            ))}
+          </ul>
+          <p className="mb-1 text-[11px] uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
+            hacker news keywords
+          </p>
+          <p>{(run.plan.hn_keywords ?? []).join(" · ") || "—"}</p>
+        </Panel>
+      </div>
+
+      <Panel title={`Accepted (${run.accepted.length})`} tone="emerald">
+        {run.accepted.length === 0 ? (
+          <p className="text-xs text-zinc-500">
+            nothing was accepted in this run
+          </p>
+        ) : (
+          <ul className="space-y-1">
+            {run.accepted.map((a) => (
+              <li key={a.url} className="flex flex-wrap justify-between gap-2">
+                <span>
+                  <span className="font-semibold">{a.company}</span>{" "}
+                  <span className="text-zinc-500">via {a.source}</span>
+                </span>
+                <span className="text-xs text-zinc-600 dark:text-zinc-400">
+                  {a.people} {a.people === 1 ? "person" : "people"} · {a.edges}{" "}
+                  {a.edges === 1 ? "connection" : "connections"}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </Panel>
+
+      <Panel title={`Rejected (${run.rejections.length})`} tone="amber">
+        {run.rejections.length === 0 ? (
+          <p className="text-xs text-zinc-500">no rejections</p>
+        ) : (
+          <ul className="space-y-1 text-xs">
+            {run.rejections.map((r, i) => (
+              <li key={i} className="flex flex-wrap justify-between gap-2">
+                <a
+                  href={r.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="max-w-[28rem] truncate underline"
+                >
+                  {r.url}
+                </a>
+                <span>
+                  [{r.source}] {r.reasons.join(", ")}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </Panel>
+
+      <Panel title={`Error log (${run.errors.length})`} tone="rose">
+        {run.errors.length === 0 ? (
+          <p className="text-xs text-zinc-500">no errors</p>
+        ) : (
+          <pre className="max-h-72 overflow-auto whitespace-pre-wrap bg-white/70 p-2 text-xs dark:bg-black/60">
+            {run.errors.join("\n")}
+          </pre>
+        )}
+      </Panel>
+    </div>
+  );
+}

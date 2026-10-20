@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-10-19T03:06:24+00:00",
+  "findings": [
+    {
+      "company_name": "Lumen Index",
+      "core_product": "Semantic search for legal contracts",
+      "tech_stack": [
+        "Python",
+        "Postgres",
+        "React"
+      ],
+      "likely_bottleneck": "keyword search misses clauses",
+      "value_prop_pitch": "Your keyword layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "source_url": "https://example.com/lumen-index",
+      "discovered_at": "2026-10-19T03:06:24+00:00",
+      "slug": "lumen-index",
+      "people": [
+        {
+          "name": "Maya Okafor",
+          "role": "co-founder",
+          "org": "Lumen Index",
+          "evidence": "Maya Okafor co-founded Lumen Index"
+        },
+        {
+          "name": "Theo Brandt",
+          "role": "co-founder",
+          "org": "Lumen Index",
+          "evidence": "Theo Brandt co-founded Lumen Index"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Maya Okafor",
+          "rel": "cofounded",
+          "dst": "Lumen Index",
+          "evidence": "Maya Okafor co-founded Lumen Index"
+        },
+        {
+          "src": "Theo Brandt",
+          "rel": "cofounded",
+          "dst": "Lumen Index",
+          "evidence": "Theo Brandt co-founded Lumen Index"
+        },
+        {
+          "src": "Northwind Ventures",
+          "rel": "invested_in",
+          "dst": "Lumen Index",
+          "evidence": "Northwind Ventures led the seed round"
+        },
+        {
+          "src": "Lumen Index",
+          "rel": "competitor_of",
+          "dst": "Vectorly",
+          "evidence": "Lumen Index competes with Vectorly"
+        }
+      ]
+    },
+    {
+      "company_name": "Vectorly",
+      "core_product": "Managed vector database for agents",
+      "tech_stack": [
+        "Rust",
+        "gRPC",
+        "Kubernetes"
+      ],
+      "likely_bottleneck": "multi-tenant index latency",
+      "value_prop_pitch": "Your multi-tenant layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+      "is_relevant": true,
+      "funding_stage": "Series A",
+      "source_url": "https://example.com/vectorly",
+      "discovered_at": "2026-10-17T03:06:24+00:00",
+      "slug": "vectorly",
+      "people": [
+        {
+          "name": "Priya Raman",
+          "role": "co-founder",
+          "org": "Vectorly",
+          "evidence": "Priya Raman co-founded Vectorly"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Lumen Index",
+          "rel": "competitor_of",
+          "dst": "Vectorly",
+          "evidence": "Lumen Index competes with Vectorly"
+        },
+        {
+          "src": "Priya Raman",
+          "rel": "founded",
+          "dst": "Vectorly",
+          "evidence": "Priya Raman co-founded Vectorly"
+        },
+        {
+          "src": "Harbor Capital",
+          "rel": "invested_in",
+          "dst": "Vectorly",
+          "evidence": "Harbor Capital led the Series A round"
+        },
+        {
+          "src": "Northwind Ventures",
+          "rel": "invested_in",
+          "dst": "Vectorly",
+          "evidence": "Northwind Ventures led the Series A round"
+        }
+      ]
+    },
+    {
+      "company_name": "Paperplane AI",
+      "core_product": "RAG assistant over company docs",
+      "tech_stack": [
+        "Python",
+        "LangChain",
+        "Pinecone"
+      ],
+      "likely_bottleneck": "retrieval quality on messy PDFs",
+      "value_prop_pitch": "Your retrieval layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+      "is_relevant": true,
+      "funding_stage": "pre-seed",
+      "source_url": "https://example.com/paperplane-ai",
+      "discovered_at": "2026-10-15T03:06:24+00:00",
+      "slug": "paperplane-ai",
+      "people": [
+        {
+          "name": "Sam Idris",
+          "role": "co-founder",
+          "org": "Paperplane AI",
+          "evidence": "Sam Idris co-founded Paperplane AI"
+        },
+        {
+          "name": "Lena Fischer",
+          "role": "co-founder",
+          "org": "Paperplane AI",
+          "evidence": "Lena Fischer co-founded Paperplane AI"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Sam Idris",
+          "rel": "cofounded",
+          "dst": "Paperplane AI",
+          "evidence": "Sam Idris co-founded Paperplane AI"
+        },
+        {
+          "src": "Lena Fischer",
+          "rel": "cofounded",
+          "dst": "Paperplane AI",
+          "evidence": "Lena Fischer co-founded Paperplane AI"
+        },
+        {
+          "src": "Open Seed Fund",
+          "rel": "invested_in",
+          "dst": "Paperplane AI",
+          "evidence": "Open Seed Fund led the pre-seed round"
+        }
+      ]
+    },
+    {
+      "company_name": "Tidepool Labs",
+      "core_product": "Observability for ML pipelines",
+      "tech_stack": [
+        "Go",
+        "ClickHouse",
+        "Next.js"
+      ],
+      "likely_bottleneck": "slow trace search UI",
+      "value_prop_pitch": "Your slow layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "source_url": "https://example.com/tidepool-labs",
+      "discovered_at": "2026-10-13T03:06:24+00:00",
+      "slug": "tidepool-labs",
+      "people": [
+        {
+          "name": "Jon Abara",
+          "role": "co-founder",
+          "org": "Tidepool Labs",
+          "evidence": "Jon Abara co-founded Tidepool Labs"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Jon Abara",
+          "rel": "founded",
+          "dst": "Tidepool Labs",
+          "evidence": "Jon Abara co-founded Tidepool Labs"
+        },
+        {
+          "src": "Harbor Capital",
+          "rel": "invested_in",
+          "dst": "Tidepool Labs",
+          "evidence": "Harbor Capital led the seed round"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "run_id": "20260921T060000Z",
+  "started_at": "2026-09-21T06:00:00+00:00",
+  "duration_s": 148.5,
+  "passed": true,
+  "failures": [],
+  "tokens": 78965,
+  "funnel": {
+    "candidates": 90,
+    "selected": 9,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 4,
+    "valid": 4
+  },
+  "sources": {
+    "hn": 41,
+    "rss": 7,
+    "yc": 36,
+    "web": 17
+  },
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup",
+      "Series A RAG platform launch"
+    ],
+    "hn_keywords": [
+      "RAG",
+      "vector search",
+      "developer tools"
+    ]
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-09-21T06:00:00+00:00",
+      "offset_s": 0.0,
+      "duration_s": 27.6,
+      "status": "ok",
+      "counts": {
+        "candidates": 90
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-09-21T06:00:27+00:00",
+      "offset_s": 27.6,
+      "duration_s": 6.02,
+      "status": "ok",
+      "counts": {
+        "in": 90,
+        "selected": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-09-21T06:00:33+00:00",
+      "offset_s": 33.62,
+      "duration_s": 30.7,
+      "status": "ok",
+      "counts": {
+        "requested": 9,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-09-21T06:01:04+00:00",
+      "offset_s": 64.32,
+      "duration_s": 72.53,
+      "status": "ok",
+      "counts": {
+        "extracted": 8,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-09-21T06:02:16+00:00",
+      "offset_s": 136.85,
+      "duration_s": 0.1,
+      "status": "ok",
+      "counts": {
+        "passed": 1
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-09-21T06:02:16+00:00",
+      "offset_s": 136.95,
+      "duration_s": 11.51,
+      "status": "ok",
+      "counts": {
+        "startups": 4
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "hn": {
+      "candidates": 41,
+      "seconds": 5.53,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 7,
+      "seconds": 4.05,
+      "error": ""
+    },
+    "yc": {
+      "candidates": 36,
+      "seconds": 8.81,
+      "error": ""
+    },
+    "web": {
+      "candidates": 17,
+      "seconds": 1.18,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 71068,
+    "completion_tokens": 7896,
+    "total_tokens": 78965,
+    "calls": 11
+  },
+  "quality": {
+    "candidates": 90,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 4,
+    "valid": 4,
+    "passed": true,
+    "failures": [],
+    "validity_rate": 1.0,
+    "dropped_ungrounded": 2
+  },
+  "accepted": [
+    {
+      "company": "Vectorly",
+      "url": "https://example.com/vectorly",
+      "source": "web",
+      "people": 1,
+      "edges": 3
+    },
+    {
+      "company": "Tidepool Labs",
+      "url": "https://example.com/tidepool labs",
+      "source": "yc",
+      "people": 1,
+      "edges": 2
+    },
+    {
+      "company": "Gridline",
+      "url": "https://example.com/gridline",
+      "source": "rss",
+      "people": 2,
+      "edges": 3
+    },
+    {
+      "company": "Lumen Index",
+      "url": "https://example.com/lumen index",
+      "source": "rss",
+      "people": 2,
+      "edges": 3
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://example.com/junk0",
+      "source": "yc",
+      "reasons": [
+        "missing core_product"
+      ]
+    },
+    {
+      "url": "https://example.com/junk1",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk2",
+      "source": "yc",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk3",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": []
+}

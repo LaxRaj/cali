@@ -1,0 +1,679 @@
+{
+  "runs": [
+    {
+      "run_id": "20260921T060000Z",
+      "started_at": "2026-09-21T06:00:00+00:00",
+      "duration_s": 148.5,
+      "passed": true,
+      "funnel": {
+        "candidates": 90,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 8,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 78965,
+      "sources": {
+        "hn": 41,
+        "rss": 7,
+        "yc": 36,
+        "web": 17
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260922T060000Z",
+      "started_at": "2026-09-22T06:00:00+00:00",
+      "duration_s": 180.6,
+      "passed": true,
+      "funnel": {
+        "candidates": 93,
+        "selected": 8,
+        "crawled": 6,
+        "extracted": 6,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 87533,
+      "sources": {
+        "hn": 47,
+        "rss": 38,
+        "yc": 31,
+        "web": 53
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260923T060000Z",
+      "started_at": "2026-09-23T06:00:00+00:00",
+      "duration_s": 199.1,
+      "passed": true,
+      "funnel": {
+        "candidates": 79,
+        "selected": 11,
+        "crawled": 10,
+        "extracted": 10,
+        "relevant": 7,
+        "valid": 7
+      },
+      "tokens": 105106,
+      "sources": {
+        "hn": 39,
+        "rss": 40,
+        "yc": 54,
+        "web": 60
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260924T060000Z",
+      "started_at": "2026-09-24T06:00:00+00:00",
+      "duration_s": 159.1,
+      "passed": true,
+      "funnel": {
+        "candidates": 101,
+        "selected": 8,
+        "crawled": 8,
+        "extracted": 7,
+        "relevant": 3,
+        "valid": 3
+      },
+      "tokens": 81076,
+      "sources": {
+        "hn": 29,
+        "rss": 59,
+        "yc": 35,
+        "web": 9
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260925T060000Z",
+      "started_at": "2026-09-25T06:00:00+00:00",
+      "duration_s": 218.1,
+      "passed": true,
+      "funnel": {
+        "candidates": 79,
+        "selected": 11,
+        "crawled": 9,
+        "extracted": 8,
+        "relevant": 5,
+        "valid": 4
+      },
+      "tokens": 117462,
+      "sources": {
+        "hn": 12,
+        "rss": 48,
+        "yc": 58,
+        "web": 36
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260926T060000Z",
+      "started_at": "2026-09-26T06:00:00+00:00",
+      "duration_s": 180.5,
+      "passed": true,
+      "funnel": {
+        "candidates": 76,
+        "selected": 8,
+        "crawled": 6,
+        "extracted": 6,
+        "relevant": 3,
+        "valid": 3
+      },
+      "tokens": 95221,
+      "sources": {
+        "hn": 5,
+        "rss": 8,
+        "yc": 59,
+        "web": 17
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260927T060000Z",
+      "started_at": "2026-09-27T06:00:00+00:00",
+      "duration_s": 204.5,
+      "passed": true,
+      "funnel": {
+        "candidates": 114,
+        "selected": 12,
+        "crawled": 12,
+        "extracted": 11,
+        "relevant": 8,
+        "valid": 8
+      },
+      "tokens": 100625,
+      "sources": {
+        "hn": 58,
+        "rss": 20,
+        "yc": 37,
+        "web": 27
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260928T060000Z",
+      "started_at": "2026-09-28T06:00:00+00:00",
+      "duration_s": 222.4,
+      "passed": false,
+      "funnel": {
+        "candidates": 84,
+        "selected": 8,
+        "crawled": 8,
+        "extracted": 1,
+        "relevant": 1,
+        "valid": 1
+      },
+      "tokens": 172133,
+      "sources": {
+        "hn": 17,
+        "rss": 34,
+        "yc": 43,
+        "web": 43
+      },
+      "failures": [
+        "only 1 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
+    },
+    {
+      "run_id": "20260929T060000Z",
+      "started_at": "2026-09-29T06:00:00+00:00",
+      "duration_s": 179.3,
+      "passed": true,
+      "funnel": {
+        "candidates": 97,
+        "selected": 10,
+        "crawled": 10,
+        "extracted": 9,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 102500,
+      "sources": {
+        "hn": 14,
+        "rss": 14,
+        "yc": 12,
+        "web": 5
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20260930T060000Z",
+      "started_at": "2026-09-30T06:00:00+00:00",
+      "duration_s": 228.2,
+      "passed": true,
+      "funnel": {
+        "candidates": 118,
+        "selected": 12,
+        "crawled": 11,
+        "extracted": 10,
+        "relevant": 6,
+        "valid": 6
+      },
+      "tokens": 58991,
+      "sources": {
+        "hn": 51,
+        "rss": 26,
+        "yc": 33,
+        "web": 46
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261001T060000Z",
+      "started_at": "2026-10-01T06:00:00+00:00",
+      "duration_s": 203.3,
+      "passed": true,
+      "funnel": {
+        "candidates": 72,
+        "selected": 8,
+        "crawled": 6,
+        "extracted": 5,
+        "relevant": 3,
+        "valid": 3
+      },
+      "tokens": 84048,
+      "sources": {
+        "hn": 24,
+        "rss": 43,
+        "yc": 36,
+        "web": 42
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261002T060000Z",
+      "started_at": "2026-10-02T06:00:00+00:00",
+      "duration_s": 172.2,
+      "passed": true,
+      "funnel": {
+        "candidates": 74,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 8,
+        "relevant": 4,
+        "valid": 3
+      },
+      "tokens": 106376,
+      "sources": {
+        "hn": 11,
+        "rss": 53,
+        "yc": 13,
+        "web": 49
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261003T060000Z",
+      "started_at": "2026-10-03T06:00:00+00:00",
+      "duration_s": 227.7,
+      "passed": true,
+      "funnel": {
+        "candidates": 71,
+        "selected": 10,
+        "crawled": 8,
+        "extracted": 7,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 80188,
+      "sources": {
+        "hn": 25,
+        "rss": 37,
+        "yc": 43,
+        "web": 22
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261004T060000Z",
+      "started_at": "2026-10-04T06:00:00+00:00",
+      "duration_s": 171.4,
+      "passed": true,
+      "funnel": {
+        "candidates": 73,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 8,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 96578,
+      "sources": {
+        "hn": 9,
+        "rss": 55,
+        "yc": 20,
+        "web": 9
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261005T060000Z",
+      "started_at": "2026-10-05T06:00:00+00:00",
+      "duration_s": 174.8,
+      "passed": false,
+      "funnel": {
+        "candidates": 102,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 7,
+        "relevant": 5,
+        "valid": 1
+      },
+      "tokens": 71413,
+      "sources": {
+        "hn": 6,
+        "rss": 4,
+        "yc": 5,
+        "web": 50
+      },
+      "failures": [
+        "only 1 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
+    },
+    {
+      "run_id": "20261006T060000Z",
+      "started_at": "2026-10-06T06:00:00+00:00",
+      "duration_s": 202.5,
+      "passed": true,
+      "funnel": {
+        "candidates": 82,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 7,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 55934,
+      "sources": {
+        "hn": 8,
+        "rss": 44,
+        "yc": 51,
+        "web": 60
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261007T060000Z",
+      "started_at": "2026-10-07T06:00:00+00:00",
+      "duration_s": 202.9,
+      "passed": true,
+      "funnel": {
+        "candidates": 83,
+        "selected": 10,
+        "crawled": 10,
+        "extracted": 10,
+        "relevant": 6,
+        "valid": 6
+      },
+      "tokens": 86106,
+      "sources": {
+        "hn": 21,
+        "rss": 36,
+        "yc": 45,
+        "web": 16
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261008T060000Z",
+      "started_at": "2026-10-08T06:00:00+00:00",
+      "duration_s": 207.5,
+      "passed": true,
+      "funnel": {
+        "candidates": 116,
+        "selected": 12,
+        "crawled": 12,
+        "extracted": 12,
+        "relevant": 8,
+        "valid": 8
+      },
+      "tokens": 60576,
+      "sources": {
+        "hn": 5,
+        "rss": 6,
+        "yc": 12,
+        "web": 44
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261009T060000Z",
+      "started_at": "2026-10-09T06:00:00+00:00",
+      "duration_s": 164.7,
+      "passed": false,
+      "funnel": {
+        "candidates": 124,
+        "selected": 11,
+        "crawled": 11,
+        "extracted": 10,
+        "relevant": 7,
+        "valid": 1
+      },
+      "tokens": 73829,
+      "sources": {
+        "hn": 53,
+        "rss": 6,
+        "yc": 43,
+        "web": 44
+      },
+      "failures": [
+        "only 1 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
+    },
+    {
+      "run_id": "20261010T060000Z",
+      "started_at": "2026-10-10T06:00:00+00:00",
+      "duration_s": 237.0,
+      "passed": true,
+      "funnel": {
+        "candidates": 99,
+        "selected": 8,
+        "crawled": 6,
+        "extracted": 6,
+        "relevant": 3,
+        "valid": 3
+      },
+      "tokens": 116358,
+      "sources": {
+        "hn": 34,
+        "rss": 5,
+        "yc": 22,
+        "web": 33
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261011T060000Z",
+      "started_at": "2026-10-11T06:00:00+00:00",
+      "duration_s": 172.4,
+      "passed": true,
+      "funnel": {
+        "candidates": 95,
+        "selected": 8,
+        "crawled": 8,
+        "extracted": 8,
+        "relevant": 6,
+        "valid": 5
+      },
+      "tokens": 81569,
+      "sources": {
+        "hn": 23,
+        "rss": 50,
+        "yc": 13,
+        "web": 30
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261012T060000Z",
+      "started_at": "2026-10-12T06:00:00+00:00",
+      "duration_s": 188.7,
+      "passed": false,
+      "funnel": {
+        "candidates": 76,
+        "selected": 8,
+        "crawled": 6,
+        "extracted": 1,
+        "relevant": 1,
+        "valid": 1
+      },
+      "tokens": 159759,
+      "sources": {
+        "hn": 19,
+        "rss": 21,
+        "yc": 31,
+        "web": 36
+      },
+      "failures": [
+        "only 1 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
+    },
+    {
+      "run_id": "20261013T060000Z",
+      "started_at": "2026-10-13T06:00:00+00:00",
+      "duration_s": 205.8,
+      "passed": true,
+      "funnel": {
+        "candidates": 73,
+        "selected": 11,
+        "crawled": 10,
+        "extracted": 10,
+        "relevant": 6,
+        "valid": 5
+      },
+      "tokens": 86822,
+      "sources": {
+        "hn": 7,
+        "rss": 39,
+        "yc": 12,
+        "web": 14
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261014T060000Z",
+      "started_at": "2026-10-14T06:00:00+00:00",
+      "duration_s": 198.9,
+      "passed": true,
+      "funnel": {
+        "candidates": 75,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 8,
+        "relevant": 4,
+        "valid": 3
+      },
+      "tokens": 71931,
+      "sources": {
+        "hn": 55,
+        "rss": 40,
+        "yc": 16,
+        "web": 60
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261015T060000Z",
+      "started_at": "2026-10-15T06:00:00+00:00",
+      "duration_s": 228.9,
+      "passed": true,
+      "funnel": {
+        "candidates": 124,
+        "selected": 8,
+        "crawled": 8,
+        "extracted": 8,
+        "relevant": 5,
+        "valid": 4
+      },
+      "tokens": 118457,
+      "sources": {
+        "hn": 41,
+        "rss": 35,
+        "yc": 4,
+        "web": 8
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261016T060000Z",
+      "started_at": "2026-10-16T06:00:00+00:00",
+      "duration_s": 167.2,
+      "passed": true,
+      "funnel": {
+        "candidates": 111,
+        "selected": 10,
+        "crawled": 10,
+        "extracted": 9,
+        "relevant": 5,
+        "valid": 4
+      },
+      "tokens": 100782,
+      "sources": {
+        "hn": 52,
+        "rss": 11,
+        "yc": 10,
+        "web": 8
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261017T060000Z",
+      "started_at": "2026-10-17T06:00:00+00:00",
+      "duration_s": 192.5,
+      "passed": true,
+      "funnel": {
+        "candidates": 126,
+        "selected": 11,
+        "crawled": 11,
+        "extracted": 10,
+        "relevant": 5,
+        "valid": 4
+      },
+      "tokens": 115631,
+      "sources": {
+        "hn": 27,
+        "rss": 18,
+        "yc": 35,
+        "web": 6
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261018T060000Z",
+      "started_at": "2026-10-18T06:00:00+00:00",
+      "duration_s": 213.9,
+      "passed": false,
+      "funnel": {
+        "candidates": 129,
+        "selected": 11,
+        "crawled": 11,
+        "extracted": 1,
+        "relevant": 1,
+        "valid": 1
+      },
+      "tokens": 189067,
+      "sources": {
+        "hn": 13,
+        "rss": 30,
+        "yc": 7,
+        "web": 49
+      },
+      "failures": [
+        "only 1 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
+    },
+    {
+      "run_id": "20261019T060000Z",
+      "started_at": "2026-10-19T06:00:00+00:00",
+      "duration_s": 178.3,
+      "passed": true,
+      "funnel": {
+        "candidates": 72,
+        "selected": 10,
+        "crawled": 8,
+        "extracted": 7,
+        "relevant": 5,
+        "valid": 4
+      },
+      "tokens": 83995,
+      "sources": {
+        "hn": 14,
+        "rss": 10,
+        "yc": 4,
+        "web": 9
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261020T060000Z",
+      "started_at": "2026-10-20T06:00:00+00:00",
+      "duration_s": 185.4,
+      "passed": true,
+      "funnel": {
+        "candidates": 110,
+        "selected": 11,
+        "crawled": 11,
+        "extracted": 10,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 85412,
+      "sources": {
+        "hn": 8,
+        "rss": 55,
+        "yc": 7,
+        "web": 20
+      },
+      "failures": []
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "nodes": [
+    {
+      "id": "corvid",
+      "label": "Corvid",
+      "type": "startup",
+      "degree": 5
+    },
+    {
+      "id": "lumen index",
+      "label": "Lumen Index",
+      "type": "startup",
+      "degree": 4
+    },
+    {
+      "id": "vectorly",
+      "label": "Vectorly",
+      "type": "startup",
+      "degree": 4
+    },
+    {
+      "id": "gridline",
+      "label": "Gridline",
+      "type": "startup",
+      "degree": 4
+    },
+    {
+      "id": "northwind ventures",
+      "label": "Northwind Ventures",
+      "type": "org",
+      "degree": 4
+    },
+    {
+      "id": "paperplane ai",
+      "label": "Paperplane AI",
+      "type": "startup",
+      "degree": 3
+    },
+    {
+      "id": "fernwood",
+      "label": "Fernwood",
+      "type": "startup",
+      "degree": 3
+    },
+    {
+      "id": "basalt",
+      "label": "Basalt",
+      "type": "startup",
+      "degree": 3
+    },
+    {
+      "id": "nimbus notes",
+      "label": "Nimbus Notes",
+      "type": "startup",
+      "degree": 3
+    },
+    {
+      "id": "harbor capital",
+      "label": "Harbor Capital",
+      "type": "org",
+      "degree": 3
+    },
+    {
+      "id": "open seed fund",
+      "label": "Open Seed Fund",
+      "type": "org",
+      "degree": 3
+    },
+    {
+      "id": "tidepool labs",
+      "label": "Tidepool Labs",
+      "type": "startup",
+      "degree": 2
+    },
+    {
+      "id": "hearth",
+      "label": "Hearth",
+      "type": "startup",
+      "degree": 2
+    },
+    {
+      "id": "meridian bio partners",
+      "label": "Meridian Bio Partners",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "quillbase",
+      "label": "Quillbase",
+      "type": "startup",
+      "degree": 1
+    },
+    {
+      "id": "pocket atlas",
+      "label": "Pocket Atlas",
+      "type": "startup",
+      "degree": 1
+    },
+    {
+      "id": "maya okafor",
+      "label": "Maya Okafor",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "theo brandt",
+      "label": "Theo Brandt",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "priya raman",
+      "label": "Priya Raman",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "sam idris",
+      "label": "Sam Idris",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "lena fischer",
+      "label": "Lena Fischer",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "jon abara",
+      "label": "Jon Abara",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "ana lopes",
+      "label": "Ana Lopes",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "kai winter",
+      "label": "Kai Winter",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "dr. nia hassan",
+      "label": "Dr. Nia Hassan",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "omar beck",
+      "label": "Omar Beck",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "iris moreau",
+      "label": "Iris Moreau",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "dev patel",
+      "label": "Dev Patel",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "zoe tanaka",
+      "label": "Zoe Tanaka",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "marco ruiz",
+      "label": "Marco Ruiz",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "ines duarte",
+      "label": "Ines Duarte",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "bea nowak",
+      "label": "Bea Nowak",
+      "type": "person",
+      "degree": 1
+    },
+    {
+      "id": "ravi menon",
+      "label": "Ravi Menon",
+      "type": "person",
+      "degree": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "maya okafor",
+      "target": "lumen index",
+      "rel": "cofounded",
+      "evidence": "Maya Okafor co-founded Lumen Index"
+    },
+    {
+      "source": "theo brandt",
+      "target": "lumen index",
+      "rel": "cofounded",
+      "evidence": "Theo Brandt co-founded Lumen Index"
+    },
+    {
+      "source": "northwind ventures",
+      "target": "lumen index",
+      "rel": "invested_in",
+      "evidence": "Northwind Ventures led the seed round"
+    },
+    {
+      "source": "lumen index",
+      "target": "vectorly",
+      "rel": "competitor_of",
+      "evidence": "Lumen Index competes with Vectorly"
+    },
+    {
+      "source": "priya raman",
+      "target": "vectorly",
+      "rel": "founded",
+      "evidence": "Priya Raman co-founded Vectorly"
+    },
+    {
+      "source": "harbor capital",
+      "target": "vectorly",
+      "rel": "invested_in",
+      "evidence": "Harbor Capital led the Series A round"
+    },
+    {
+      "source": "northwind ventures",
+      "target": "vectorly",
+      "rel": "invested_in",
+      "evidence": "Northwind Ventures led the Series A round"
+    },
+    {
+      "source": "sam idris",
+      "target": "paperplane ai",
+      "rel": "cofounded",
+      "evidence": "Sam Idris co-founded Paperplane AI"
+    },
+    {
+      "source": "lena fischer",
+      "target": "paperplane ai",
+      "rel": "cofounded",
+      "evidence": "Lena Fischer co-founded Paperplane AI"
+    },
+    {
+      "source": "open seed fund",
+      "target": "paperplane ai",
+      "rel": "invested_in",
+      "evidence": "Open Seed Fund led the pre-seed round"
+    },
+    {
+      "source": "jon abara",
+      "target": "tidepool labs",
+      "rel": "founded",
+      "evidence": "Jon Abara co-founded Tidepool Labs"
+    },
+    {
+      "source": "harbor capital",
+      "target": "tidepool labs",
+      "rel": "invested_in",
+      "evidence": "Harbor Capital led the seed round"
+    },
+    {
+      "source": "ana lopes",
+      "target": "corvid",
+      "rel": "cofounded",
+      "evidence": "Ana Lopes co-founded Corvid"
+    },
+    {
+      "source": "kai winter",
+      "target": "corvid",
+      "rel": "cofounded",
+      "evidence": "Kai Winter co-founded Corvid"
+    },
+    {
+      "source": "open seed fund",
+      "target": "corvid",
+      "rel": "invested_in",
+      "evidence": "Open Seed Fund led the seed round"
+    },
+    {
+      "source": "northwind ventures",
+      "target": "corvid",
+      "rel": "invested_in",
+      "evidence": "Northwind Ventures led the seed round"
+    },
+    {
+      "source": "corvid",
+      "target": "fernwood",
+      "rel": "competitor_of",
+      "evidence": "Corvid competes with Fernwood"
+    },
+    {
+      "source": "dr. nia hassan",
+      "target": "fernwood",
+      "rel": "founded",
+      "evidence": "Dr. Nia Hassan co-founded Fernwood"
+    },
+    {
+      "source": "meridian bio partners",
+      "target": "fernwood",
+      "rel": "invested_in",
+      "evidence": "Meridian Bio Partners led the Series A round"
+    },
+    {
+      "source": "omar beck",
+      "target": "quillbase",
+      "rel": "founded",
+      "evidence": "Omar Beck co-founded Quillbase"
+    },
+    {
+      "source": "iris moreau",
+      "target": "basalt",
+      "rel": "cofounded",
+      "evidence": "Iris Moreau co-founded Basalt"
+    },
+    {
+      "source": "dev patel",
+      "target": "basalt",
+      "rel": "cofounded",
+      "evidence": "Dev Patel co-founded Basalt"
+    },
+    {
+      "source": "harbor capital",
+      "target": "basalt",
+      "rel": "invested_in",
+      "evidence": "Harbor Capital led the seed round"
+    },
+    {
+      "source": "zoe tanaka",
+      "target": "nimbus notes",
+      "rel": "founded",
+      "evidence": "Zoe Tanaka co-founded Nimbus Notes"
+    },
+    {
+      "source": "open seed fund",
+      "target": "nimbus notes",
+      "rel": "invested_in",
+      "evidence": "Open Seed Fund led the pre-seed round"
+    },
+    {
+      "source": "nimbus notes",
+      "target": "gridline",
+      "rel": "competitor_of",
+      "evidence": "Nimbus Notes competes with Gridline"
+    },
+    {
+      "source": "marco ruiz",
+      "target": "gridline",
+      "rel": "cofounded",
+      "evidence": "Marco Ruiz co-founded Gridline"
+    },
+    {
+      "source": "ines duarte",
+      "target": "gridline",
+      "rel": "cofounded",
+      "evidence": "Ines Duarte co-founded Gridline"
+    },
+    {
+      "source": "meridian bio partners",
+      "target": "gridline",
+      "rel": "invested_in",
+      "evidence": "Meridian Bio Partners led the seed round"
+    },
+    {
+      "source": "bea nowak",
+      "target": "hearth",
+      "rel": "founded",
+      "evidence": "Bea Nowak co-founded Hearth"
+    },
+    {
+      "source": "northwind ventures",
+      "target": "hearth",
+      "rel": "invested_in",
+      "evidence": "Northwind Ventures led the seed round"
+    },
+    {
+      "source": "ravi menon",
+      "target": "pocket atlas",
+      "rel": "founded",
+      "evidence": "Ravi Menon co-founded Pocket Atlas"
+    }
+  ]
+}

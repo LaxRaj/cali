@@ -1,0 +1,191 @@
+{
+  "run_id": "20260926T060000Z",
+  "started_at": "2026-09-26T06:00:00+00:00",
+  "duration_s": 180.5,
+  "passed": true,
+  "failures": [],
+  "tokens": 95221,
+  "funnel": {
+    "candidates": 76,
+    "selected": 8,
+    "crawled": 6,
+    "extracted": 6,
+    "relevant": 3,
+    "valid": 3
+  },
+  "sources": {
+    "hn": 5,
+    "rss": 8,
+    "yc": 59,
+    "web": 17
+  },
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup",
+      "Series A RAG platform launch"
+    ],
+    "hn_keywords": [
+      "RAG",
+      "vector search",
+      "developer tools"
+    ]
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-09-26T06:00:00+00:00",
+      "offset_s": 0.0,
+      "duration_s": 42.93,
+      "status": "ok",
+      "counts": {
+        "candidates": 76
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-09-26T06:00:42+00:00",
+      "offset_s": 42.93,
+      "duration_s": 4.82,
+      "status": "ok",
+      "counts": {
+        "in": 76,
+        "selected": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-09-26T06:00:47+00:00",
+      "offset_s": 47.75,
+      "duration_s": 35.94,
+      "status": "ok",
+      "counts": {
+        "requested": 8,
+        "crawled": 6
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-09-26T06:01:23+00:00",
+      "offset_s": 83.69,
+      "duration_s": 89.6,
+      "status": "ok",
+      "counts": {
+        "extracted": 6,
+        "relevant": 3,
+        "valid": 3
+      },
+      "notes": []
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-09-26T06:02:53+00:00",
+      "offset_s": 173.29,
+      "duration_s": 0.1,
+      "status": "ok",
+      "counts": {
+        "passed": 1
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-09-26T06:02:53+00:00",
+      "offset_s": 173.39,
+      "duration_s": 7.07,
+      "status": "ok",
+      "counts": {
+        "startups": 3
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "hn": {
+      "candidates": 5,
+      "seconds": 4.77,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 8,
+      "seconds": 1.5,
+      "error": ""
+    },
+    "yc": {
+      "candidates": 59,
+      "seconds": 1.64,
+      "error": ""
+    },
+    "web": {
+      "candidates": 17,
+      "seconds": 3.61,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 85698,
+    "completion_tokens": 9522,
+    "total_tokens": 95221,
+    "calls": 10
+  },
+  "quality": {
+    "candidates": 76,
+    "crawled": 6,
+    "extracted": 6,
+    "relevant": 3,
+    "valid": 3,
+    "passed": true,
+    "failures": [],
+    "validity_rate": 1.0,
+    "dropped_ungrounded": 4
+  },
+  "accepted": [
+    {
+      "company": "Basalt",
+      "url": "https://example.com/basalt",
+      "source": "yc",
+      "people": 2,
+      "edges": 3
+    },
+    {
+      "company": "Pocket Atlas",
+      "url": "https://example.com/pocket atlas",
+      "source": "web",
+      "people": 1,
+      "edges": 1
+    },
+    {
+      "company": "Hearth",
+      "url": "https://example.com/hearth",
+      "source": "yc",
+      "people": 1,
+      "edges": 2
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://example.com/junk0",
+      "source": "web",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk1",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://example.com/junk2",
+      "source": "yc",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": []
+}
