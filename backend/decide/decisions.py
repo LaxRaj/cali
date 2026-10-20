@@ -62,7 +62,37 @@ def triage_scores(cands, provider: DecisionProvider | None = None) -> list[float
     return out
 
 
+BOILERPLATE = re.compile(
+    r"cookie|privacy|consent|subscribe|newsletter|sign (in|up)|log ?in|menu|navigation|skip to|©|copyright|all rights reserved|"
+    r"terms of|advertis|follow us|share (this|on)|read more|related (articles|posts)|accept all|preferences",
+    re.I,
+)
+
+
+def article_text(markdown: str, n: int = HEAD_CHARS) -> str:
+    """The first real prose of a page: drops cookie banners, nav menus and other boilerplate lines.
+
+    Crawled pages usually open with consent text and menus, which says nothing about the page's subject (a
+    sharp classifier will rightly answer 'not a startup' for that), so we judge the article body instead.
+    """
+    md = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", markdown)
+    md = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", md)
+    keep: list[str] = []
+    for line in re.split(r"\n+", md):
+        line = re.sub(r"[*_#>`|]+", " ", line)
+        line = re.sub(r"\s+", " ", line).strip()
+        if len(line) >= 60 and not BOILERPLATE.search(line):
+            keep.append(line)
+        if sum(map(len, keep)) >= n:
+            break
+    return " ".join(keep)[:n]
+
+
 def page_head(markdown: str, n: int = HEAD_CHARS) -> str:
+    """Article text when there is any (see article_text), else the raw top of the page."""
+    text = article_text(markdown, n)
+    if text:
+        return text
     md = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", markdown)
     md = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", md)
     return re.sub(r"\s+", " ", md).strip()[:n]
@@ -74,7 +104,12 @@ class Gate:
     p: float
 
 
-def gate_page(markdown: str, provider: DecisionProvider | None = None, threshold: float = GATE_MIN) -> Gate:
-    """Cheap check before spending LLM tokens: does the top of the page look like a startup page?"""
-    p = _provider(provider).decide(page_head(markdown), [STARTUP])["startup"].noul
+def gate_page(markdown: str, provider: DecisionProvider | None = None, threshold: float = GATE_MIN, title: str = "") -> Gate:
+    """Cheap check before spending LLM tokens: does this page look like it is about a startup?
+
+    The state is the headline we already have from discovery (when known) plus the first real paragraphs.
+    """
+    title = _PREFIX.sub("", title).strip()
+    state = f"{title}. {page_head(markdown)}" if title else page_head(markdown)
+    p = _provider(provider).decide(state, [STARTUP])["startup"].noul
     return Gate(p >= threshold, round(p, 3))

@@ -99,7 +99,7 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
         source = cand.source if cand else "unknown"
         title, snippet, triage = (cand.title, cand.snippet, cand.triage) if cand else ("", "", 0.0)
         if gate_enabled():
-            gate = gate_page(page.markdown)
+            gate = gate_page(page.markdown, title=title)
             if not gate.ok:  # looks like a guide/listicle/hobby page: don't spend LLM tokens on it
                 report.gated += 1
                 print(f"gate {page.url}: p={gate.p}", file=sys.stderr)
