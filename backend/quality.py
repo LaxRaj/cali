@@ -121,6 +121,7 @@ class RunReport:
     people: int = 0
     edges: int = 0
     dropped_ungrounded: int = 0
+    gated: int = 0  # pages the decision layer skipped before spending extraction tokens
     quota_exhausted: bool = False  # Groq daily token limit hit mid-run
     enriched: int = 0  # accepted startups that went through enrichment
     with_website: int = 0

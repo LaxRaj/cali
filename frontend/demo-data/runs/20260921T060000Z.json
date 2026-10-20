@@ -1,7 +1,7 @@
 {
   "run_id": "20260921T060000Z",
   "started_at": "2026-09-21T06:00:00+00:00",
-  "duration_s": 182.0,
+  "duration_s": 225.0,
   "passed": true,
   "failures": [],
   "tokens": 78965,
@@ -17,27 +17,29 @@
     "hn": 41,
     "rss": 7,
     "yc": 36,
-    "web": 17
+    "web": 17,
+    "hiring": 6,
+    "edgar": 9
   },
   "feedback": {
     "source_stats": {
       "hn": {
         "crawled": 19,
-        "accepted": 5,
-        "yield": 0.263,
-        "avg_score": 61.0
+        "accepted": 9,
+        "yield": 0.474,
+        "avg_score": 81.6
       },
       "rss": {
         "crawled": 25,
-        "accepted": 7,
-        "yield": 0.28,
-        "avg_score": 56.3
+        "accepted": 5,
+        "yield": 0.2,
+        "avg_score": 53.5
       },
       "yc": {
         "crawled": 21,
-        "accepted": 3,
-        "yield": 0.143,
-        "avg_score": 75.7
+        "accepted": 2,
+        "yield": 0.095,
+        "avg_score": 71.5
       },
       "web": {
         "crawled": 17,
@@ -45,20 +47,43 @@
         "yield": 0.176,
         "avg_score": 43.7
       },
-      "launch_hn": {
+      "hiring": {
         "crawled": 28,
         "accepted": 4,
         "yield": 0.143,
         "avg_score": 63.6
+      },
+      "edgar": {
+        "crawled": 14,
+        "accepted": 5,
+        "yield": 0.357,
+        "avg_score": 72.8
+      },
+      "launch_hn": {
+        "crawled": 18,
+        "accepted": 4,
+        "yield": 0.222,
+        "avg_score": 67.4
       }
     },
     "caps": {
-      "hn": 3,
+      "hn": 5,
       "rss": 3,
       "yc": 2,
       "web": 2,
-      "launch_hn": 2
+      "hiring": 2,
+      "edgar": 4,
+      "launch_hn": 3
     }
+  },
+  "decisions": {
+    "provider": "local",
+    "calls": 99,
+    "fallbacks": 0,
+    "avg_latency_ms": 57.9,
+    "jev_input_tokens": 0,
+    "gated_pages": 3,
+    "tokens_saved_est": 13500
   },
   "plan": {
     "web_queries": [
@@ -76,7 +101,7 @@
       "name": "discover",
       "started_at": "2026-09-21T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 27.6,
+      "duration_s": 38.13,
       "status": "ok",
       "counts": {
         "candidates": 90
@@ -85,9 +110,9 @@
     },
     {
       "name": "triage",
-      "started_at": "2026-09-21T06:00:27+00:00",
-      "offset_s": 27.6,
-      "duration_s": 6.02,
+      "started_at": "2026-09-21T06:00:38+00:00",
+      "offset_s": 38.13,
+      "duration_s": 4.49,
       "status": "ok",
       "counts": {
         "in": 90,
@@ -97,9 +122,9 @@
     },
     {
       "name": "crawl",
-      "started_at": "2026-09-21T06:00:33+00:00",
-      "offset_s": 33.62,
-      "duration_s": 30.7,
+      "started_at": "2026-09-21T06:00:42+00:00",
+      "offset_s": 42.62,
+      "duration_s": 31.3,
       "status": "ok",
       "counts": {
         "requested": 9,
@@ -109,9 +134,9 @@
     },
     {
       "name": "extract",
-      "started_at": "2026-09-21T06:01:04+00:00",
-      "offset_s": 64.32,
-      "duration_s": 72.53,
+      "started_at": "2026-09-21T06:01:13+00:00",
+      "offset_s": 73.92,
+      "duration_s": 94.73,
       "status": "ok",
       "counts": {
         "extracted": 8,
@@ -122,9 +147,9 @@
     },
     {
       "name": "enrich",
-      "started_at": "2026-09-21T06:02:16+00:00",
-      "offset_s": 136.85,
-      "duration_s": 37.89,
+      "started_at": "2026-09-21T06:02:48+00:00",
+      "offset_s": 168.65,
+      "duration_s": 48.59,
       "status": "ok",
       "counts": {
         "startups": 4,
@@ -136,9 +161,9 @@
     },
     {
       "name": "gates",
-      "started_at": "2026-09-21T06:02:54+00:00",
-      "offset_s": 174.74,
-      "duration_s": 0.13,
+      "started_at": "2026-09-21T06:03:37+00:00",
+      "offset_s": 217.24,
+      "duration_s": 0.08,
       "status": "ok",
       "counts": {
         "passed": 1
@@ -147,9 +172,9 @@
     },
     {
       "name": "store",
-      "started_at": "2026-09-21T06:02:54+00:00",
-      "offset_s": 174.87,
-      "duration_s": 7.08,
+      "started_at": "2026-09-21T06:03:37+00:00",
+      "offset_s": 217.32,
+      "duration_s": 7.71,
       "status": "ok",
       "counts": {
         "startups": 4
@@ -160,22 +185,32 @@
   "source_health": {
     "hn": {
       "candidates": 41,
-      "seconds": 7.98,
+      "seconds": 2.15,
       "error": ""
     },
     "rss": {
       "candidates": 7,
-      "seconds": 6.78,
+      "seconds": 3.6,
       "error": ""
     },
     "yc": {
       "candidates": 36,
-      "seconds": 3.16,
+      "seconds": 8.45,
       "error": ""
     },
     "web": {
       "candidates": 17,
-      "seconds": 8.84,
+      "seconds": 4.26,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 6,
+      "seconds": 8.69,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 9,
+      "seconds": 1.44,
       "error": ""
     }
   },
@@ -194,45 +229,27 @@
     "passed": true,
     "failures": [],
     "validity_rate": 1.0,
-    "dropped_ungrounded": 1,
+    "dropped_ungrounded": 8,
     "enriched": 4,
     "with_website": 4,
     "with_email": 3,
     "with_phone": 2,
     "people_linked": 4,
-    "avg_score": 67.8
+    "avg_score": 69.3
   },
   "accepted": [
-    {
-      "company": "Tidepool Labs",
-      "url": "https://example.com/tidepool labs",
-      "source": "yc",
-      "people": 1,
-      "edges": 2,
-      "score": 81,
-      "gaps": [
-        "email",
-        "phone",
-        "location"
-      ],
-      "website": "https://tidepoollabs.example",
-      "emails": 2,
-      "phones": 0
-    },
     {
       "company": "Hearth",
       "url": "https://example.com/hearth",
       "source": "yc",
       "people": 1,
       "edges": 2,
-      "score": 63,
+      "score": 48,
       "gaps": [
-        "phone",
-        "email",
-        "investors"
+        "email"
       ],
       "website": "https://hearth.example",
-      "emails": 1,
+      "emails": 2,
       "phones": 0
     },
     {
@@ -241,12 +258,14 @@
       "source": "rss",
       "people": 2,
       "edges": 3,
-      "score": 51,
+      "score": 63,
       "gaps": [
+        "phone",
+        "email",
         "investors"
       ],
       "website": "https://gridline.example",
-      "emails": 0,
+      "emails": 1,
       "phones": 0
     },
     {
@@ -255,9 +274,23 @@
       "source": "rss",
       "people": 2,
       "edges": 3,
+      "score": 51,
+      "gaps": [
+        "investors"
+      ],
+      "website": "https://lumenindex.example",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Quillbase",
+      "url": "https://example.com/quillbase",
+      "source": "web",
+      "people": 1,
+      "edges": 1,
       "score": 81,
       "gaps": [],
-      "website": "https://lumenindex.example",
+      "website": "https://quillbase.example",
       "emails": 2,
       "phones": 0
     }
@@ -265,28 +298,28 @@
   "rejections": [
     {
       "url": "https://example.com/junk0",
-      "source": "rss",
+      "source": "yc",
       "reasons": [
         "missing core_product"
       ]
     },
     {
       "url": "https://example.com/junk1",
-      "source": "rss",
+      "source": "edgar",
       "reasons": [
         "missing core_product"
       ]
     },
     {
       "url": "https://example.com/junk2",
-      "source": "web",
+      "source": "hiring",
       "reasons": [
-        "not a relevant startup page"
+        "missing core_product"
       ]
     },
     {
       "url": "https://example.com/junk3",
-      "source": "hn",
+      "source": "hiring",
       "reasons": [
         "missing core_product"
       ]

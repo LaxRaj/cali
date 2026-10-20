@@ -4,7 +4,7 @@ import json
 
 from groq import Groq
 
-from llm import MODEL, get_client, record_usage
+from llm import MODEL, complete, get_client, route_extraction
 from models import Extraction
 from objective import OBJECTIVE
 
@@ -52,14 +52,9 @@ page does not state."""
 
 def extract(markdown: str, client: Groq | None = None) -> Extraction:
     client = client or get_client()
-    completion = client.chat.completions.create(
-        model=MODEL,
-        temperature=0,
-        response_format={"type": "json_object"},
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": markdown[:MAX_CHARS]},
-        ],
+    completion = complete(
+        client,
+        [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": markdown[:MAX_CHARS]}],
+        models=route_extraction(markdown),
     )
-    record_usage(completion)
     return Extraction.model_validate_json(completion.choices[0].message.content)

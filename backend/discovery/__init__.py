@@ -11,6 +11,7 @@ class Candidate:
     source: str  # hn | rss | yc | web
     published_at: str = ""
     content: str = ""  # page text already in hand (e.g. Launch HN posts); skips the crawl
+    triage: float = 0.0  # 0-10 "worth crawling" score assigned by discovery.triage.select
 
 
 _TRACKING = {"fbclid", "gclid", "ref", "source"}

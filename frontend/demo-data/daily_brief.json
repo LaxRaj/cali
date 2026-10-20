@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T08:31:36+00:00",
+  "generated_at": "2026-10-11T18:00:52+00:00",
   "findings": [
     {
       "company_name": "Corvid",
@@ -16,7 +16,7 @@
       "hq": "Berlin, Germany",
       "website": "https://corvid.example",
       "source_url": "https://example.com/corvid",
-      "discovered_at": "2026-10-11T08:31:36+00:00",
+      "discovered_at": "2026-10-11T18:00:52+00:00",
       "score": 95,
       "slug": "corvid",
       "score_parts": {
@@ -52,7 +52,7 @@
           "https://corvid.example/",
           "https://corvid.example/about"
         ],
-        "enriched_at": "2026-10-11T08:31:36+00:00",
+        "enriched_at": "2026-10-11T18:00:52+00:00",
         "status": "ok"
       },
       "people": [
@@ -110,7 +110,20 @@
           "dst": "Fernwood",
           "evidence": "Corvid competes with Fernwood"
         }
-      ]
+      ],
+      "outcome": null,
+      "decision": {
+        "action": "contact_now",
+        "urgency": "warm",
+        "priority": 82.0,
+        "reasons": [
+          "lead score 95",
+          "found 9 day(s) ago (warm)",
+          "fresh, strong fit and a published way to reach them"
+        ],
+        "next_step": "Email/call hello@corvid.example with the pitch",
+        "provider": "policy"
+      }
     },
     {
       "company_name": "Lumen Index",
@@ -128,7 +141,7 @@
       "hq": "Berlin, Germany",
       "website": "https://lumenindex.example",
       "source_url": "https://example.com/lumenindex",
-      "discovered_at": "2026-10-19T08:31:36+00:00",
+      "discovered_at": "2026-10-19T18:00:52+00:00",
       "score": 92,
       "slug": "lumen-index",
       "score_parts": {
@@ -166,7 +179,7 @@
           "https://lumenindex.example/",
           "https://lumenindex.example/about"
         ],
-        "enriched_at": "2026-10-19T08:31:36+00:00",
+        "enriched_at": "2026-10-19T18:00:52+00:00",
         "status": "ok"
       },
       "people": [
@@ -218,7 +231,23 @@
           "dst": "Vectorly",
           "evidence": "Lumen Index competes with Vectorly"
         }
-      ]
+      ],
+      "outcome": {
+        "company": "Lumen Index",
+        "status": "replied",
+        "note": "asked for a call next week",
+        "updated": "2026-10-18T18:00:55+00:00"
+      },
+      "decision": {
+        "action": "watch",
+        "urgency": "cold",
+        "priority": 38.1,
+        "reasons": [
+          "you replied on 2026-10-18"
+        ],
+        "next_step": "Continue the conversation",
+        "provider": "policy"
+      }
     },
     {
       "company_name": "Vectorly",
@@ -236,7 +265,7 @@
       "hq": "Austin, USA",
       "website": "https://vectorly.example",
       "source_url": "https://example.com/vectorly",
-      "discovered_at": "2026-10-17T08:31:36+00:00",
+      "discovered_at": "2026-10-17T18:00:52+00:00",
       "score": 86,
       "slug": "vectorly",
       "score_parts": {
@@ -268,7 +297,7 @@
           "https://vectorly.example/",
           "https://vectorly.example/about"
         ],
-        "enriched_at": "2026-10-17T08:31:36+00:00",
+        "enriched_at": "2026-10-17T18:00:52+00:00",
         "status": "ok"
       },
       "people": [
@@ -309,7 +338,23 @@
           "dst": "Vectorly",
           "evidence": "Northwind Ventures led the Series A round"
         }
-      ]
+      ],
+      "outcome": {
+        "company": "Vectorly",
+        "status": "contacted",
+        "note": "emailed team@; no reply yet",
+        "updated": "2026-10-11T18:00:55+00:00"
+      },
+      "decision": {
+        "action": "follow_up",
+        "urgency": "warm",
+        "priority": 91.6,
+        "reasons": [
+          "you contacted on 2026-10-11"
+        ],
+        "next_step": "Follow up: no reply recorded in over a week",
+        "provider": "policy"
+      }
     },
     {
       "company_name": "Gridline",
@@ -327,7 +372,7 @@
       "hq": "Austin, USA",
       "website": "https://gridline.example",
       "source_url": "https://example.com/gridline",
-      "discovered_at": "2026-10-01T08:31:36+00:00",
+      "discovered_at": "2026-10-01T18:00:52+00:00",
       "score": 83,
       "slug": "gridline",
       "score_parts": {
@@ -360,7 +405,7 @@
           "https://gridline.example/",
           "https://gridline.example/about"
         ],
-        "enriched_at": "2026-10-01T08:31:36+00:00",
+        "enriched_at": "2026-10-01T18:00:52+00:00",
         "status": "ok"
       },
       "people": [
@@ -412,7 +457,20 @@
           "dst": "Gridline",
           "evidence": "Meridian Bio Partners led the seed round"
         }
-      ]
+      ],
+      "outcome": null,
+      "decision": {
+        "action": "contact_now",
+        "urgency": "warm",
+        "priority": 74.8,
+        "reasons": [
+          "lead score 83",
+          "found 19 day(s) ago (warm)",
+          "fresh, strong fit and a published way to reach them"
+        ],
+        "next_step": "Email/call hello@gridline.example with the pitch",
+        "provider": "policy"
+      }
     }
   ]
 }

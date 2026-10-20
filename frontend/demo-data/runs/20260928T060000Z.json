@@ -1,67 +1,92 @@
 {
   "run_id": "20260928T060000Z",
   "started_at": "2026-09-28T06:00:00+00:00",
-  "duration_s": 221.5,
+  "duration_s": 230.0,
   "passed": false,
   "failures": [
     "only 1 valid startups (< 3)",
     "only 1 discovery sources produced valid startups (< 2)"
   ],
-  "tokens": 189241,
+  "tokens": 153975,
   "funnel": {
-    "candidates": 125,
+    "candidates": 109,
     "selected": 12,
-    "crawled": 10,
+    "crawled": 12,
     "extracted": 1,
     "relevant": 1,
     "valid": 1
   },
   "sources": {
-    "hn": 19,
-    "rss": 48,
-    "yc": 22,
-    "web": 6
+    "hn": 35,
+    "rss": 21,
+    "yc": 47,
+    "web": 10,
+    "hiring": 48,
+    "edgar": 17
   },
   "feedback": {
     "source_stats": {
       "hn": {
-        "crawled": 15,
-        "accepted": 1,
-        "yield": 0.067,
-        "avg_score": 61.4
+        "crawled": 18,
+        "accepted": 3,
+        "yield": 0.167,
+        "avg_score": 81.2
       },
       "rss": {
-        "crawled": 9,
-        "accepted": 4,
-        "yield": 0.444,
-        "avg_score": 69.5
+        "crawled": 6,
+        "accepted": 1,
+        "yield": 0.167,
+        "avg_score": 43.4
       },
       "yc": {
-        "crawled": 4,
-        "accepted": 0,
-        "yield": 0.0,
-        "avg_score": 0.0
+        "crawled": 30,
+        "accepted": 2,
+        "yield": 0.067,
+        "avg_score": 46.4
       },
       "web": {
-        "crawled": 14,
-        "accepted": 0,
-        "yield": 0.0,
-        "avg_score": 0.0
+        "crawled": 20,
+        "accepted": 8,
+        "yield": 0.4,
+        "avg_score": 51.8
+      },
+      "hiring": {
+        "crawled": 18,
+        "accepted": 5,
+        "yield": 0.278,
+        "avg_score": 46.0
+      },
+      "edgar": {
+        "crawled": 12,
+        "accepted": 6,
+        "yield": 0.5,
+        "avg_score": 68.4
       },
       "launch_hn": {
         "crawled": 16,
-        "accepted": 1,
-        "yield": 0.062,
-        "avg_score": 51.9
+        "accepted": 4,
+        "yield": 0.25,
+        "avg_score": 79.9
       }
     },
     "caps": {
       "hn": 2,
-      "rss": 4,
+      "rss": 2,
       "yc": 2,
-      "web": 2,
-      "launch_hn": 2
+      "web": 4,
+      "hiring": 3,
+      "edgar": 5,
+      "launch_hn": 3
     }
+  },
+  "decisions": {
+    "provider": "local",
+    "calls": 121,
+    "fallbacks": 0,
+    "avg_latency_ms": 83.1,
+    "jev_input_tokens": 0,
+    "gated_pages": 1,
+    "tokens_saved_est": 4500
   },
   "plan": {
     "web_queries": [
@@ -79,42 +104,42 @@
       "name": "discover",
       "started_at": "2026-09-28T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 38.82,
+      "duration_s": 44.57,
       "status": "ok",
       "counts": {
-        "candidates": 125
+        "candidates": 109
       },
       "notes": []
     },
     {
       "name": "triage",
-      "started_at": "2026-09-28T06:00:38+00:00",
-      "offset_s": 38.82,
-      "duration_s": 4.86,
+      "started_at": "2026-09-28T06:00:44+00:00",
+      "offset_s": 44.57,
+      "duration_s": 5.42,
       "status": "ok",
       "counts": {
-        "in": 125,
+        "in": 109,
         "selected": 12
       },
       "notes": []
     },
     {
       "name": "crawl",
-      "started_at": "2026-09-28T06:00:43+00:00",
-      "offset_s": 43.68,
-      "duration_s": 41.5,
+      "started_at": "2026-09-28T06:00:49+00:00",
+      "offset_s": 49.99,
+      "duration_s": 43.52,
       "status": "ok",
       "counts": {
         "requested": 12,
-        "crawled": 10
+        "crawled": 12
       },
       "notes": []
     },
     {
       "name": "extract",
-      "started_at": "2026-09-28T06:01:25+00:00",
-      "offset_s": 85.18,
-      "duration_s": 84.01,
+      "started_at": "2026-09-28T06:01:33+00:00",
+      "offset_s": 93.51,
+      "duration_s": 97.4,
       "status": "ok",
       "counts": {
         "extracted": 1,
@@ -125,9 +150,9 @@
     },
     {
       "name": "enrich",
-      "started_at": "2026-09-28T06:02:49+00:00",
-      "offset_s": 169.19,
-      "duration_s": 52.18,
+      "started_at": "2026-09-28T06:03:10+00:00",
+      "offset_s": 190.91,
+      "duration_s": 39.0,
       "status": "ok",
       "counts": {
         "startups": 1,
@@ -139,9 +164,9 @@
     },
     {
       "name": "gates",
-      "started_at": "2026-09-28T06:03:41+00:00",
-      "offset_s": 221.37,
-      "duration_s": 0.14,
+      "started_at": "2026-09-28T06:03:49+00:00",
+      "offset_s": 229.91,
+      "duration_s": 0.08,
       "status": "ok",
       "counts": {
         "passed": 0
@@ -153,35 +178,45 @@
   ],
   "source_health": {
     "hn": {
-      "candidates": 19,
-      "seconds": 1.54,
+      "candidates": 35,
+      "seconds": 4.88,
       "error": ""
     },
     "rss": {
-      "candidates": 48,
-      "seconds": 4.08,
+      "candidates": 21,
+      "seconds": 7.98,
       "error": ""
     },
     "yc": {
-      "candidates": 22,
-      "seconds": 1.14,
+      "candidates": 47,
+      "seconds": 4.03,
       "error": ""
     },
     "web": {
-      "candidates": 6,
-      "seconds": 0.98,
+      "candidates": 10,
+      "seconds": 2.1,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 48,
+      "seconds": 8.59,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 17,
+      "seconds": 6.39,
       "error": ""
     }
   },
   "usage": {
-    "prompt_tokens": 170316,
-    "completion_tokens": 18924,
-    "total_tokens": 189241,
+    "prompt_tokens": 138577,
+    "completion_tokens": 15397,
+    "total_tokens": 153975,
     "calls": 14
   },
   "quality": {
-    "candidates": 125,
-    "crawled": 10,
+    "candidates": 109,
+    "crawled": 12,
     "extracted": 1,
     "relevant": 1,
     "valid": 1,
@@ -191,13 +226,13 @@
       "only 1 discovery sources produced valid startups (< 2)"
     ],
     "validity_rate": 1.0,
-    "dropped_ungrounded": 4,
+    "dropped_ungrounded": 6,
     "enriched": 1,
     "with_website": 1,
     "with_email": 0,
     "with_phone": 0,
     "people_linked": 1,
-    "avg_score": 70.7
+    "avg_score": 62.5
   },
   "accepted": [
     {
@@ -206,13 +241,14 @@
       "source": "hn",
       "people": 1,
       "edges": 2,
-      "score": 65,
+      "score": 57,
       "gaps": [
-        "email"
+        "email",
+        "people profiles"
       ],
       "website": "https://nimbusnotes.example",
-      "emails": 1,
-      "phones": 0
+      "emails": 0,
+      "phones": 1
     }
   ],
   "rejections": [],

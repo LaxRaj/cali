@@ -187,3 +187,15 @@ async def test_people_search_budget_is_respected():
     await enrich_startup(ex, "rss", "no site", search_fn=search, search_budget=budget)
     profile_searches = [q for q in seen if "site:" in q]  # (the first query resolves the website)
     assert len(profile_searches) == 2 and budget == [0]  # CEO has 3 missing platforms but only 2 searches allowed
+
+
+async def test_redirected_site_is_canonicalised_so_contacts_and_website_agree():
+    async def fake_fetch(urls):
+        if urls == ["https://trytako.com/"]:
+            return [Fetched("https://tako.com/", HOME, "")]  # trytako.com redirects to tako.com
+        return []
+
+    ex = _ex()
+    ex.startup.website = "https://trytako.com"
+    res = await enrich_startup(ex, "rss", "see https://trytako.com", fetch_fn=fake_fetch)
+    assert res.extraction.startup.website == "https://tako.com" and res.contact.website == "https://tako.com"

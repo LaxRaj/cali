@@ -14,7 +14,7 @@
     "hq": "Berlin, Germany",
     "website": "https://corvid.example",
     "source_url": "https://example.com/corvid",
-    "discovered_at": "2026-10-11T08:31:36+00:00",
+    "discovered_at": "2026-10-11T18:00:52+00:00",
     "score": 95,
     "slug": "corvid",
     "score_parts": {
@@ -50,7 +50,7 @@
         "https://corvid.example/",
         "https://corvid.example/about"
       ],
-      "enriched_at": "2026-10-11T08:31:36+00:00",
+      "enriched_at": "2026-10-11T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -108,7 +108,20 @@
         "dst": "Fernwood",
         "evidence": "Corvid competes with Fernwood"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 82.0,
+      "reasons": [
+        "lead score 95",
+        "found 9 day(s) ago (warm)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call hello@corvid.example with the pitch",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Lumen Index",
@@ -126,7 +139,7 @@
     "hq": "Berlin, Germany",
     "website": "https://lumenindex.example",
     "source_url": "https://example.com/lumenindex",
-    "discovered_at": "2026-10-19T08:31:36+00:00",
+    "discovered_at": "2026-10-19T18:00:52+00:00",
     "score": 92,
     "slug": "lumen-index",
     "score_parts": {
@@ -164,7 +177,7 @@
         "https://lumenindex.example/",
         "https://lumenindex.example/about"
       ],
-      "enriched_at": "2026-10-19T08:31:36+00:00",
+      "enriched_at": "2026-10-19T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -216,7 +229,23 @@
         "dst": "Vectorly",
         "evidence": "Lumen Index competes with Vectorly"
       }
-    ]
+    ],
+    "outcome": {
+      "company": "Lumen Index",
+      "status": "replied",
+      "note": "asked for a call next week",
+      "updated": "2026-10-18T18:00:55+00:00"
+    },
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 38.1,
+      "reasons": [
+        "you replied on 2026-10-18"
+      ],
+      "next_step": "Continue the conversation",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Vectorly",
@@ -234,7 +263,7 @@
     "hq": "Austin, USA",
     "website": "https://vectorly.example",
     "source_url": "https://example.com/vectorly",
-    "discovered_at": "2026-10-17T08:31:36+00:00",
+    "discovered_at": "2026-10-17T18:00:52+00:00",
     "score": 86,
     "slug": "vectorly",
     "score_parts": {
@@ -266,7 +295,7 @@
         "https://vectorly.example/",
         "https://vectorly.example/about"
       ],
-      "enriched_at": "2026-10-17T08:31:36+00:00",
+      "enriched_at": "2026-10-17T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -307,7 +336,23 @@
         "dst": "Vectorly",
         "evidence": "Northwind Ventures led the Series A round"
       }
-    ]
+    ],
+    "outcome": {
+      "company": "Vectorly",
+      "status": "contacted",
+      "note": "emailed team@; no reply yet",
+      "updated": "2026-10-11T18:00:55+00:00"
+    },
+    "decision": {
+      "action": "follow_up",
+      "urgency": "warm",
+      "priority": 91.6,
+      "reasons": [
+        "you contacted on 2026-10-11"
+      ],
+      "next_step": "Follow up: no reply recorded in over a week",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Gridline",
@@ -325,7 +370,7 @@
     "hq": "Austin, USA",
     "website": "https://gridline.example",
     "source_url": "https://example.com/gridline",
-    "discovered_at": "2026-10-01T08:31:36+00:00",
+    "discovered_at": "2026-10-01T18:00:52+00:00",
     "score": 83,
     "slug": "gridline",
     "score_parts": {
@@ -358,7 +403,7 @@
         "https://gridline.example/",
         "https://gridline.example/about"
       ],
-      "enriched_at": "2026-10-01T08:31:36+00:00",
+      "enriched_at": "2026-10-01T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -410,7 +455,20 @@
         "dst": "Gridline",
         "evidence": "Meridian Bio Partners led the seed round"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 74.8,
+      "reasons": [
+        "lead score 83",
+        "found 19 day(s) ago (warm)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call hello@gridline.example with the pitch",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Paperplane AI",
@@ -428,7 +486,7 @@
     "hq": "London, UK",
     "website": "https://paperplaneai.example",
     "source_url": "https://example.com/paperplaneai",
-    "discovered_at": "2026-10-15T08:31:36+00:00",
+    "discovered_at": "2026-10-15T18:00:52+00:00",
     "score": 82,
     "slug": "paperplane-ai",
     "score_parts": {
@@ -460,7 +518,7 @@
         "https://paperplaneai.example/",
         "https://paperplaneai.example/about"
       ],
-      "enriched_at": "2026-10-15T08:31:36+00:00",
+      "enriched_at": "2026-10-15T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -506,7 +564,20 @@
         "dst": "Paperplane AI",
         "evidence": "Open Seed Fund led the pre-seed round"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 89.2,
+      "reasons": [
+        "lead score 82",
+        "found 5 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call +12025551002 with the pitch",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Basalt",
@@ -523,7 +594,7 @@
     "hq": "",
     "website": "https://basalt.example",
     "source_url": "https://example.com/basalt",
-    "discovered_at": "2026-10-05T08:31:36+00:00",
+    "discovered_at": "2026-10-05T18:00:52+00:00",
     "score": 80,
     "slug": "basalt",
     "score_parts": {
@@ -553,7 +624,7 @@
         "https://basalt.example/",
         "https://basalt.example/about"
       ],
-      "enriched_at": "2026-10-05T08:31:36+00:00",
+      "enriched_at": "2026-10-05T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -599,7 +670,20 @@
         "dst": "Basalt",
         "evidence": "Harbor Capital led the seed round"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 73.0,
+      "reasons": [
+        "lead score 80",
+        "found 15 day(s) ago (warm)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call hello@basalt.example with the pitch",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Hearth",
@@ -616,7 +700,7 @@
     "hq": "London, UK",
     "website": "https://hearth.example",
     "source_url": "https://example.com/hearth",
-    "discovered_at": "2026-09-29T08:31:36+00:00",
+    "discovered_at": "2026-09-29T18:00:52+00:00",
     "score": 80,
     "slug": "hearth",
     "score_parts": {
@@ -652,7 +736,7 @@
         "https://hearth.example/",
         "https://hearth.example/about"
       ],
-      "enriched_at": "2026-09-29T08:31:36+00:00",
+      "enriched_at": "2026-09-29T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -681,7 +765,20 @@
         "dst": "Hearth",
         "evidence": "Northwind Ventures led the seed round"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 58.0,
+      "reasons": [
+        "lead score 80",
+        "found 21 day(s) ago (cold)",
+        "good fit but the news is old"
+      ],
+      "next_step": "Revisit when there is fresh news",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Nimbus Notes",
@@ -698,7 +795,7 @@
     "hq": "Berlin, Germany",
     "website": "https://nimbusnotes.example",
     "source_url": "https://example.com/nimbusnotes",
-    "discovered_at": "2026-10-03T08:31:36+00:00",
+    "discovered_at": "2026-10-03T18:00:52+00:00",
     "score": 77,
     "slug": "nimbus-notes",
     "score_parts": {
@@ -730,7 +827,7 @@
         "https://nimbusnotes.example/",
         "https://nimbusnotes.example/about"
       ],
-      "enriched_at": "2026-10-03T08:31:36+00:00",
+      "enriched_at": "2026-10-03T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -765,7 +862,20 @@
         "dst": "Gridline",
         "evidence": "Nimbus Notes competes with Gridline"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 71.2,
+      "reasons": [
+        "lead score 77",
+        "found 17 day(s) ago (warm)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call +12025551008 with the pitch",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Quillbase",
@@ -783,7 +893,7 @@
     "hq": "London, UK",
     "website": "https://quillbase.example",
     "source_url": "https://example.com/quillbase",
-    "discovered_at": "2026-10-07T08:31:36+00:00",
+    "discovered_at": "2026-10-07T18:00:52+00:00",
     "score": 72,
     "slug": "quillbase",
     "score_parts": {
@@ -822,7 +932,7 @@
         "https://quillbase.example/",
         "https://quillbase.example/about"
       ],
-      "enriched_at": "2026-10-07T08:31:36+00:00",
+      "enriched_at": "2026-10-07T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -845,7 +955,20 @@
         "dst": "Quillbase",
         "evidence": "Omar Beck co-founded Quillbase"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 68.2,
+      "reasons": [
+        "lead score 72",
+        "found 13 day(s) ago (warm)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call hello@quillbase.example with the pitch",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Tidepool Labs",
@@ -863,7 +986,7 @@
     "hq": "",
     "website": "https://tidepoollabs.example",
     "source_url": "https://example.com/tidepoollabs",
-    "discovered_at": "2026-10-13T08:31:36+00:00",
+    "discovered_at": "2026-10-13T18:00:52+00:00",
     "score": 67,
     "slug": "tidepool-labs",
     "score_parts": {
@@ -894,7 +1017,7 @@
         "https://tidepoollabs.example/",
         "https://tidepoollabs.example/about"
       ],
-      "enriched_at": "2026-10-13T08:31:36+00:00",
+      "enriched_at": "2026-10-13T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -923,7 +1046,20 @@
         "dst": "Tidepool Labs",
         "evidence": "Harbor Capital led the seed round"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 65.2,
+      "reasons": [
+        "lead score 67",
+        "found 7 day(s) ago (warm)",
+        "good fit and reachable"
+      ],
+      "next_step": "Reach Jon Abara via hello@tidepoollabs.example",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Fernwood",
@@ -941,7 +1077,7 @@
     "hq": "Austin, USA",
     "website": "https://fernwood.example",
     "source_url": "https://example.com/fernwood",
-    "discovered_at": "2026-10-09T08:31:36+00:00",
+    "discovered_at": "2026-10-09T18:00:52+00:00",
     "score": 63,
     "slug": "fernwood",
     "score_parts": {
@@ -968,7 +1104,7 @@
         "https://fernwood.example/",
         "https://fernwood.example/about"
       ],
-      "enriched_at": "2026-10-09T08:31:36+00:00",
+      "enriched_at": "2026-10-09T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -1003,7 +1139,23 @@
         "dst": "Fernwood",
         "evidence": "Meridian Bio Partners led the Series A round"
       }
-    ]
+    ],
+    "outcome": {
+      "company": "Fernwood",
+      "status": "passed",
+      "note": "healthcare, not our focus",
+      "updated": "2026-10-15T18:00:55+00:00"
+    },
+    "decision": {
+      "action": "skip",
+      "urgency": "cold",
+      "priority": 11.6,
+      "reasons": [
+        "you marked this 'passed'"
+      ],
+      "next_step": "No action needed",
+      "provider": "policy"
+    }
   },
   {
     "company_name": "Pocket Atlas",
@@ -1020,7 +1172,7 @@
     "hq": "",
     "website": "https://pocketatlas.example",
     "source_url": "https://example.com/pocketatlas",
-    "discovered_at": "2026-09-27T08:31:36+00:00",
+    "discovered_at": "2026-09-27T18:00:52+00:00",
     "score": 47,
     "slug": "pocket-atlas",
     "score_parts": {
@@ -1046,7 +1198,7 @@
         "https://pocketatlas.example/",
         "https://pocketatlas.example/about"
       ],
-      "enriched_at": "2026-09-27T08:31:36+00:00",
+      "enriched_at": "2026-09-27T18:00:52+00:00",
       "status": "ok"
     },
     "people": [
@@ -1069,6 +1221,19 @@
         "dst": "Pocket Atlas",
         "evidence": "Ravi Menon co-founded Pocket Atlas"
       }
-    ]
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 33.2,
+      "reasons": [
+        "lead score 47",
+        "found 23 day(s) ago (cold)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    }
   }
 ]

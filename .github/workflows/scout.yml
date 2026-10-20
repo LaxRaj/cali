@@ -54,6 +54,11 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           CRAWL4AI_NO_CLOUD_NOTICE: "1"
+          # Optional. Empty = feature off: SEC Form D needs a contact email in its User-Agent; Jev is opt-in and paid.
+          CALI_CONTACT_EMAIL: ${{ secrets.CALI_CONTACT_EMAIL }}
+          CALI_DECIDER: ${{ vars.CALI_DECIDER || 'local' }}
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: uv run python pipeline.py
 
       - name: Commit results to main

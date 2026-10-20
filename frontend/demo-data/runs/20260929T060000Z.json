@@ -1,64 +1,89 @@
 {
   "run_id": "20260929T060000Z",
   "started_at": "2026-09-29T06:00:00+00:00",
-  "duration_s": 249.9,
+  "duration_s": 243.5,
   "passed": true,
   "failures": [],
-  "tokens": 105089,
+  "tokens": 55114,
   "funnel": {
-    "candidates": 75,
-    "selected": 12,
+    "candidates": 79,
+    "selected": 11,
     "crawled": 10,
-    "extracted": 10,
-    "relevant": 6,
-    "valid": 5
+    "extracted": 9,
+    "relevant": 5,
+    "valid": 4
   },
   "sources": {
     "hn": 24,
-    "rss": 50,
-    "yc": 35,
-    "web": 13
+    "rss": 52,
+    "yc": 25,
+    "web": 57,
+    "hiring": 29,
+    "edgar": 11
   },
   "feedback": {
     "source_stats": {
       "hn": {
-        "crawled": 12,
-        "accepted": 5,
-        "yield": 0.417,
-        "avg_score": 74.0
+        "crawled": 27,
+        "accepted": 13,
+        "yield": 0.481,
+        "avg_score": 52.9
       },
       "rss": {
-        "crawled": 29,
-        "accepted": 3,
-        "yield": 0.103,
-        "avg_score": 73.3
+        "crawled": 17,
+        "accepted": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
       },
       "yc": {
-        "crawled": 6,
-        "accepted": 3,
-        "yield": 0.5,
-        "avg_score": 62.2
+        "crawled": 18,
+        "accepted": 8,
+        "yield": 0.444,
+        "avg_score": 45.7
       },
       "web": {
-        "crawled": 12,
-        "accepted": 3,
+        "crawled": 23,
+        "accepted": 7,
+        "yield": 0.304,
+        "avg_score": 58.7
+      },
+      "hiring": {
+        "crawled": 28,
+        "accepted": 4,
+        "yield": 0.143,
+        "avg_score": 53.4
+      },
+      "edgar": {
+        "crawled": 8,
+        "accepted": 2,
         "yield": 0.25,
-        "avg_score": 43.5
+        "avg_score": 58.3
       },
       "launch_hn": {
-        "crawled": 11,
-        "accepted": 5,
-        "yield": 0.455,
-        "avg_score": 52.9
+        "crawled": 24,
+        "accepted": 3,
+        "yield": 0.125,
+        "avg_score": 53.5
       }
     },
     "caps": {
-      "hn": 4,
+      "hn": 5,
       "rss": 2,
-      "yc": 5,
+      "yc": 4,
       "web": 3,
-      "launch_hn": 5
+      "hiring": 2,
+      "edgar": 3,
+      "launch_hn": 2
     }
+  },
+  "decisions": {
+    "provider": "local",
+    "calls": 90,
+    "fallbacks": 0,
+    "avg_latency_ms": 77.3,
+    "jev_input_tokens": 0,
+    "gated_pages": 3,
+    "tokens_saved_est": 13500
   },
   "plan": {
     "web_queries": [
@@ -76,69 +101,69 @@
       "name": "discover",
       "started_at": "2026-09-29T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 34.16,
+      "duration_s": 51.6,
       "status": "ok",
       "counts": {
-        "candidates": 75
+        "candidates": 79
       },
       "notes": []
     },
     {
       "name": "triage",
-      "started_at": "2026-09-29T06:00:34+00:00",
-      "offset_s": 34.16,
-      "duration_s": 6.8,
+      "started_at": "2026-09-29T06:00:51+00:00",
+      "offset_s": 51.6,
+      "duration_s": 5.02,
       "status": "ok",
       "counts": {
-        "in": 75,
-        "selected": 12
+        "in": 79,
+        "selected": 11
       },
       "notes": []
     },
     {
       "name": "crawl",
-      "started_at": "2026-09-29T06:00:40+00:00",
-      "offset_s": 40.96,
-      "duration_s": 32.85,
+      "started_at": "2026-09-29T06:00:56+00:00",
+      "offset_s": 56.62,
+      "duration_s": 29.04,
       "status": "ok",
       "counts": {
-        "requested": 12,
+        "requested": 11,
         "crawled": 10
       },
       "notes": []
     },
     {
       "name": "extract",
-      "started_at": "2026-09-29T06:01:13+00:00",
-      "offset_s": 73.81,
-      "duration_s": 121.35,
+      "started_at": "2026-09-29T06:01:25+00:00",
+      "offset_s": 85.66,
+      "duration_s": 115.7,
       "status": "ok",
       "counts": {
-        "extracted": 10,
-        "relevant": 6,
-        "valid": 5
+        "extracted": 9,
+        "relevant": 5,
+        "valid": 4
       },
       "notes": []
     },
     {
       "name": "enrich",
-      "started_at": "2026-09-29T06:03:15+00:00",
-      "offset_s": 195.16,
-      "duration_s": 45.62,
+      "started_at": "2026-09-29T06:03:21+00:00",
+      "offset_s": 201.36,
+      "duration_s": 33.34,
       "status": "ok",
       "counts": {
-        "startups": 5,
-        "websites": 5,
-        "emails": 4,
+        "startups": 4,
+        "websites": 4,
+        "emails": 3,
         "phones": 2
       },
       "notes": []
     },
     {
       "name": "gates",
-      "started_at": "2026-09-29T06:04:00+00:00",
-      "offset_s": 240.78,
-      "duration_s": 0.11,
+      "started_at": "2026-09-29T06:03:54+00:00",
+      "offset_s": 234.7,
+      "duration_s": 0.07,
       "status": "ok",
       "counts": {
         "passed": 1
@@ -147,12 +172,12 @@
     },
     {
       "name": "store",
-      "started_at": "2026-09-29T06:04:00+00:00",
-      "offset_s": 240.89,
-      "duration_s": 9.0,
+      "started_at": "2026-09-29T06:03:54+00:00",
+      "offset_s": 234.77,
+      "duration_s": 8.76,
       "status": "ok",
       "counts": {
-        "startups": 5
+        "startups": 4
       },
       "notes": []
     }
@@ -160,145 +185,148 @@
   "source_health": {
     "hn": {
       "candidates": 24,
-      "seconds": 1.18,
+      "seconds": 1.78,
       "error": ""
     },
     "rss": {
-      "candidates": 50,
-      "seconds": 5.99,
+      "candidates": 52,
+      "seconds": 6.07,
       "error": ""
     },
     "yc": {
-      "candidates": 35,
-      "seconds": 2.43,
+      "candidates": 25,
+      "seconds": 1.42,
       "error": ""
     },
     "web": {
-      "candidates": 13,
-      "seconds": 5.72,
+      "candidates": 57,
+      "seconds": 4.9,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 29,
+      "seconds": 7.46,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 11,
+      "seconds": 5.31,
       "error": ""
     }
   },
   "usage": {
-    "prompt_tokens": 94580,
-    "completion_tokens": 10508,
-    "total_tokens": 105089,
-    "calls": 14
+    "prompt_tokens": 49602,
+    "completion_tokens": 5511,
+    "total_tokens": 55114,
+    "calls": 13
   },
   "quality": {
-    "candidates": 75,
+    "candidates": 79,
     "crawled": 10,
-    "extracted": 10,
-    "relevant": 6,
-    "valid": 5,
+    "extracted": 9,
+    "relevant": 5,
+    "valid": 4,
     "passed": true,
     "failures": [],
-    "validity_rate": 0.833,
-    "dropped_ungrounded": 5,
-    "enriched": 5,
-    "with_website": 5,
-    "with_email": 4,
+    "validity_rate": 0.8,
+    "dropped_ungrounded": 7,
+    "enriched": 4,
+    "with_website": 4,
+    "with_email": 3,
     "with_phone": 2,
-    "people_linked": 5,
-    "avg_score": 61.3
+    "people_linked": 4,
+    "avg_score": 77.7
   },
   "accepted": [
     {
-      "company": "Pocket Atlas",
-      "url": "https://example.com/pocket atlas",
-      "source": "web",
-      "people": 1,
-      "edges": 1,
-      "score": 88,
+      "company": "Gridline",
+      "url": "https://example.com/gridline",
+      "source": "rss",
+      "people": 2,
+      "edges": 3,
+      "score": 93,
       "gaps": [
-        "email"
+        "email",
+        "investors"
       ],
-      "website": "https://pocketatlas.example",
+      "website": "https://gridline.example",
       "emails": 0,
       "phones": 0
     },
     {
-      "company": "Nimbus Notes",
-      "url": "https://example.com/nimbus notes",
-      "source": "hn",
+      "company": "Vectorly",
+      "url": "https://example.com/vectorly",
+      "source": "web",
+      "people": 1,
+      "edges": 3,
+      "score": 87,
+      "gaps": [
+        "phone",
+        "location"
+      ],
+      "website": "https://vectorly.example",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Fernwood",
+      "url": "https://example.com/fernwood",
+      "source": "rss",
       "people": 1,
       "edges": 2,
-      "score": 53,
+      "score": 77,
       "gaps": [
-        "email",
-        "people profiles"
+        "phone",
+        "investors"
       ],
-      "website": "https://nimbusnotes.example",
+      "website": "https://fernwood.example",
       "emails": 1,
       "phones": 0
     },
     {
-      "company": "Paperplane AI",
-      "url": "https://example.com/paperplane ai",
-      "source": "hn",
-      "people": 2,
-      "edges": 3,
-      "score": 85,
-      "gaps": [],
-      "website": "https://paperplaneai.example",
-      "emails": 2,
-      "phones": 0
-    },
-    {
-      "company": "Hearth",
-      "url": "https://example.com/hearth",
-      "source": "yc",
+      "company": "Quillbase",
+      "url": "https://example.com/quillbase",
+      "source": "web",
       "people": 1,
-      "edges": 2,
-      "score": 76,
+      "edges": 1,
+      "score": 93,
       "gaps": [
-        "email",
-        "people profiles"
+        "location",
+        "phone",
+        "investors"
       ],
-      "website": "https://hearth.example",
+      "website": "https://quillbase.example",
       "emails": 0,
       "phones": 0
-    },
-    {
-      "company": "Lumen Index",
-      "url": "https://example.com/lumen index",
-      "source": "rss",
-      "people": 2,
-      "edges": 3,
-      "score": 87,
-      "gaps": [],
-      "website": "https://lumenindex.example",
-      "emails": 2,
-      "phones": 1
     }
   ],
   "rejections": [
     {
       "url": "https://example.com/junk0",
-      "source": "yc",
+      "source": "web",
       "reasons": [
-        "not a relevant startup page"
+        "missing core_product"
       ]
     },
     {
       "url": "https://example.com/junk1",
-      "source": "hn",
+      "source": "rss",
       "reasons": [
-        "missing core_product"
+        "not a relevant startup page"
       ]
     },
     {
       "url": "https://example.com/junk2",
-      "source": "hn",
+      "source": "rss",
       "reasons": [
-        "missing core_product"
+        "not a relevant startup page"
       ]
     },
     {
       "url": "https://example.com/junk3",
-      "source": "yc",
+      "source": "rss",
       "reasons": [
-        "not a relevant startup page"
+        "missing core_product"
       ]
     }
   ],

@@ -1,6 +1,7 @@
 import json
 
 import pipeline
+from decide.decisions import Gate
 from discovery import Candidate
 from models import Edge, Extraction, Person, StartupProfile
 from scraper import Page
@@ -19,6 +20,7 @@ def make_extraction(name, relevant=True, quote="Founded by Jane Roe"):
 
 def setup(monkeypatch, extractions, sources):
     monkeypatch.setenv("CALI_ENRICH", "0")  # no network in unit tests
+    monkeypatch.setattr(pipeline, "gate_page", lambda md, *a, **k: Gate(True, 1.0))  # fake pages aren't real prose
     cands = [Candidate(f"https://{i}.com", "t", "s", sources[i]) for i in range(len(extractions))]
 
     async def fake_discover():
@@ -29,7 +31,7 @@ def setup(monkeypatch, extractions, sources):
 
     it = iter(extractions)
     monkeypatch.setattr(pipeline, "discover", fake_discover)
-    monkeypatch.setattr(pipeline, "select", lambda c, seen, caps=None: c)
+    monkeypatch.setattr(pipeline, "select", lambda c, seen, caps=None, **kw: c)
     monkeypatch.setattr(pipeline, "scrape_urls", fake_scrape)
     monkeypatch.setattr(pipeline, "extract", lambda md: next(it))
     monkeypatch.setattr(pipeline, "upsert_profile", lambda *a, **k: None)
@@ -136,3 +138,32 @@ async def test_inline_content_skips_crawl_and_enrichment_scores_and_exports_cont
     assert f["contact"]["emails"][0]["value"].startswith("hi@") and "email" not in f["gaps"] and f["score"] > 0
     run = json.loads(next((tmp_path / "runs").glob("*.json")).read_text())
     assert "enrich" in [s["name"] for s in run["stages"]] and all("score" in a for a in run["accepted"])
+
+
+async def test_gate_skips_extraction_for_non_startup_pages_and_logs_training_rows(monkeypatch, tmp_path):
+    exs = [make_extraction("Real")]
+    setup(monkeypatch, exs, ["rss"])
+    cands = [Candidate("https://real.com", "Real raises seed", "s", "rss", triage=8.0),
+             Candidate("https://guide.com", "10 best tools", "s", "web", triage=4.5)]
+
+    async def fake_discover():
+        return cands
+
+    async def fake_scrape(urls):
+        return [Page(u, "Acme page. Founded by Jane Roe in 2025.") for u in urls]
+
+    extracted = []
+    it = iter(exs)
+    monkeypatch.setattr(pipeline, "discover", fake_discover)
+    monkeypatch.setattr(pipeline, "scrape_urls", fake_scrape)
+    monkeypatch.setattr(pipeline, "extract", lambda md: extracted.append(md) or next(it))
+    monkeypatch.setattr(pipeline, "gate_page", lambda md, *a, **k: Gate(True, 0.9) if len(extracted) == 0 else Gate(False, 0.1))
+    report = await pipeline.run(tmp_path)
+
+    assert len(extracted) == 1 and report.gated == 1 and report.valid == 1  # the second page never reached the LLM
+    run = json.loads(next((tmp_path / "runs").glob("*.json")).read_text())
+    assert run["decisions"]["gated_pages"] == 1 and run["decisions"]["tokens_saved_est"] == 4500
+    assert run["decisions"]["provider"] == "local" and "avg_latency_ms" in run["decisions"]
+    rows = [json.loads(line) for line in (tmp_path / "decisions.jsonl").read_text().splitlines()]
+    assert {(r["title"], r["outcome"]) for r in rows} == {("Real raises seed", "accepted"), ("10 best tools", "gated")}
+    assert rows[0]["run_id"] == run["run_id"] and rows[0]["triage"] in (8.0, 4.5)

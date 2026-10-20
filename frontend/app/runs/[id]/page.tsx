@@ -141,6 +141,26 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
           </Panel>
         )}
 
+      {run.decisions && (
+        <Panel
+          title="Decision engine"
+          tone="sky"
+          right={<span>{run.decisions.provider}</span>}
+        >
+          <p className="text-xs">
+            {run.decisions.calls} decisions at {run.decisions.avg_latency_ms} ms
+            each · {run.decisions.gated_pages} page
+            {run.decisions.gated_pages === 1 ? "" : "s"} skipped before
+            extraction (~{fmtTokens(run.decisions.tokens_saved_est)} LLM tokens
+            saved)
+            {run.decisions.fallbacks > 0 &&
+              ` · ${run.decisions.fallbacks} fell back to the local decider`}
+            {run.decisions.jev_input_tokens > 0 &&
+              ` · Jev input tokens: ${run.decisions.jev_input_tokens}`}
+          </p>
+        </Panel>
+      )}
+
       <Panel title={`Accepted (${run.accepted.length})`} tone="emerald">
         {run.accepted.length === 0 ? (
           <p className="text-xs text-zinc-500">

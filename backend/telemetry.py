@@ -35,6 +35,8 @@ class RunLog:
         self.accepted: list[dict] = []
         self.plan: dict = {}
         self.feedback: dict = {}
+        self.decisions: dict = {}  # decision-engine stats (provider, calls, latency, gated pages, tokens saved)
+        self.candidate_log: list[dict] = []  # per-candidate features + outcome: training data for the decider
         self.funnel: dict[str, int] = {}
         self.usage: dict[str, int] = {}
         self.quality: dict = {}
@@ -76,6 +78,10 @@ class RunLog:
     def rejection(self, url: str, source: str, reasons: list[str]) -> None:
         self.rejections.append({"url": url, "source": source, "reasons": reasons})
 
+    def candidate(self, url: str, source: str, title: str, snippet: str, triage: float, outcome: str, score: int | None = None) -> None:
+        self.candidate_log.append({"url": url, "source": source, "title": title, "snippet": snippet[:160],
+                                   "triage": triage, "outcome": outcome, "score": score})
+
     def accept(self, company: str, url: str, source: str, people: int, edges: int) -> None:
         self.accepted.append({"company": company, "url": url, "source": source, "people": people, "edges": edges})
 
@@ -97,6 +103,7 @@ class RunLog:
             **self.summary(),
             "plan": self.plan,
             "feedback": self.feedback,
+            "decisions": self.decisions,
             "stages": self.stages,
             "source_health": self.sources,
             "usage": self.usage,

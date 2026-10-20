@@ -1,15 +1,15 @@
 {
   "run_id": "20261012T060000Z",
   "started_at": "2026-10-12T06:00:00+00:00",
-  "duration_s": 209.9,
+  "duration_s": 216.1,
   "passed": false,
   "failures": [
     "only 1 valid startups (< 3)",
     "only 1 discovery sources produced valid startups (< 2)"
   ],
-  "tokens": 184774,
+  "tokens": 166545,
   "funnel": {
-    "candidates": 128,
+    "candidates": 116,
     "selected": 12,
     "crawled": 11,
     "extracted": 1,
@@ -17,51 +17,76 @@
     "valid": 1
   },
   "sources": {
-    "hn": 48,
-    "rss": 4,
-    "yc": 58,
-    "web": 5
+    "hn": 21,
+    "rss": 28,
+    "yc": 29,
+    "web": 7,
+    "hiring": 4,
+    "edgar": 8
   },
   "feedback": {
     "source_stats": {
       "hn": {
-        "crawled": 7,
-        "accepted": 1,
-        "yield": 0.143,
-        "avg_score": 71.5
-      },
-      "rss": {
-        "crawled": 7,
-        "accepted": 0,
-        "yield": 0.0,
-        "avg_score": 0.0
-      },
-      "yc": {
-        "crawled": 23,
-        "accepted": 0,
-        "yield": 0.0,
-        "avg_score": 0.0
-      },
-      "web": {
         "crawled": 9,
         "accepted": 1,
         "yield": 0.111,
-        "avg_score": 71.2
+        "avg_score": 61.1
+      },
+      "rss": {
+        "crawled": 8,
+        "accepted": 4,
+        "yield": 0.5,
+        "avg_score": 72.4
+      },
+      "yc": {
+        "crawled": 28,
+        "accepted": 13,
+        "yield": 0.464,
+        "avg_score": 83.4
+      },
+      "web": {
+        "crawled": 6,
+        "accepted": 2,
+        "yield": 0.333,
+        "avg_score": 70.0
+      },
+      "hiring": {
+        "crawled": 29,
+        "accepted": 13,
+        "yield": 0.448,
+        "avg_score": 76.8
+      },
+      "edgar": {
+        "crawled": 29,
+        "accepted": 13,
+        "yield": 0.448,
+        "avg_score": 58.6
       },
       "launch_hn": {
-        "crawled": 15,
-        "accepted": 0,
-        "yield": 0.0,
-        "avg_score": 0.0
+        "crawled": 24,
+        "accepted": 4,
+        "yield": 0.167,
+        "avg_score": 74.2
       }
     },
     "caps": {
       "hn": 2,
-      "rss": 2,
-      "yc": 2,
-      "web": 2,
+      "rss": 5,
+      "yc": 5,
+      "web": 4,
+      "hiring": 4,
+      "edgar": 4,
       "launch_hn": 2
     }
+  },
+  "decisions": {
+    "provider": "local",
+    "calls": 128,
+    "fallbacks": 0,
+    "avg_latency_ms": 81.0,
+    "jev_input_tokens": 0,
+    "gated_pages": 3,
+    "tokens_saved_est": 13500
   },
   "plan": {
     "web_queries": [
@@ -79,30 +104,30 @@
       "name": "discover",
       "started_at": "2026-10-12T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 38.23,
+      "duration_s": 37.73,
       "status": "ok",
       "counts": {
-        "candidates": 128
+        "candidates": 116
       },
       "notes": []
     },
     {
       "name": "triage",
-      "started_at": "2026-10-12T06:00:38+00:00",
-      "offset_s": 38.23,
-      "duration_s": 7.24,
+      "started_at": "2026-10-12T06:00:37+00:00",
+      "offset_s": 37.73,
+      "duration_s": 5.97,
       "status": "ok",
       "counts": {
-        "in": 128,
+        "in": 116,
         "selected": 12
       },
       "notes": []
     },
     {
       "name": "crawl",
-      "started_at": "2026-10-12T06:00:45+00:00",
-      "offset_s": 45.47,
-      "duration_s": 45.07,
+      "started_at": "2026-10-12T06:00:43+00:00",
+      "offset_s": 43.7,
+      "duration_s": 48.74,
       "status": "ok",
       "counts": {
         "requested": 12,
@@ -112,9 +137,9 @@
     },
     {
       "name": "extract",
-      "started_at": "2026-10-12T06:01:30+00:00",
-      "offset_s": 90.54,
-      "duration_s": 86.97,
+      "started_at": "2026-10-12T06:01:32+00:00",
+      "offset_s": 92.44,
+      "duration_s": 89.92,
       "status": "ok",
       "counts": {
         "extracted": 1,
@@ -125,9 +150,9 @@
     },
     {
       "name": "enrich",
-      "started_at": "2026-10-12T06:02:57+00:00",
-      "offset_s": 177.51,
-      "duration_s": 32.24,
+      "started_at": "2026-10-12T06:03:02+00:00",
+      "offset_s": 182.36,
+      "duration_s": 33.65,
       "status": "ok",
       "counts": {
         "startups": 1,
@@ -139,9 +164,9 @@
     },
     {
       "name": "gates",
-      "started_at": "2026-10-12T06:03:29+00:00",
-      "offset_s": 209.75,
-      "duration_s": 0.11,
+      "started_at": "2026-10-12T06:03:36+00:00",
+      "offset_s": 216.01,
+      "duration_s": 0.09,
       "status": "ok",
       "counts": {
         "passed": 0
@@ -153,34 +178,44 @@
   ],
   "source_health": {
     "hn": {
-      "candidates": 48,
-      "seconds": 6.52,
+      "candidates": 21,
+      "seconds": 3.71,
       "error": ""
     },
     "rss": {
-      "candidates": 4,
-      "seconds": 6.84,
+      "candidates": 28,
+      "seconds": 7.78,
       "error": ""
     },
     "yc": {
-      "candidates": 58,
-      "seconds": 1.34,
+      "candidates": 29,
+      "seconds": 2.99,
       "error": ""
     },
     "web": {
-      "candidates": 5,
-      "seconds": 5.64,
+      "candidates": 7,
+      "seconds": 3.88,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 4,
+      "seconds": 2.88,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 8,
+      "seconds": 4.29,
       "error": ""
     }
   },
   "usage": {
-    "prompt_tokens": 166296,
-    "completion_tokens": 18477,
-    "total_tokens": 184774,
+    "prompt_tokens": 149890,
+    "completion_tokens": 16654,
+    "total_tokens": 166545,
     "calls": 14
   },
   "quality": {
-    "candidates": 128,
+    "candidates": 116,
     "crawled": 11,
     "extracted": 1,
     "relevant": 1,
@@ -191,27 +226,27 @@
       "only 1 discovery sources produced valid startups (< 2)"
     ],
     "validity_rate": 1.0,
-    "dropped_ungrounded": 5,
+    "dropped_ungrounded": 2,
     "enriched": 1,
     "with_website": 1,
     "with_email": 0,
     "with_phone": 0,
     "people_linked": 1,
-    "avg_score": 60.0
+    "avg_score": 67.0
   },
   "accepted": [
     {
-      "company": "Vectorly",
-      "url": "https://example.com/vectorly",
+      "company": "Pocket Atlas",
+      "url": "https://example.com/pocket atlas",
       "source": "web",
       "people": 1,
-      "edges": 3,
-      "score": 81,
+      "edges": 1,
+      "score": 70,
       "gaps": [
-        "phone"
+        "people profiles"
       ],
-      "website": "https://vectorly.example",
-      "emails": 0,
+      "website": "https://pocketatlas.example",
+      "emails": 1,
       "phones": 0
     }
   ],

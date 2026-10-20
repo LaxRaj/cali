@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from export import export_all  # noqa: E402
 from memory import upsert_edges, upsert_people, upsert_profile  # noqa: E402
 from models import Contact, ContactItem, Edge, Person, StartupProfile  # noqa: E402
+from outcomes import mark  # noqa: E402
 from rating import rate  # noqa: E402
 
 OUT = Path(__file__).resolve().parents[2] / "frontend" / "demo-data"
@@ -38,7 +39,7 @@ STARTUPS = [
     ("Hearth", "Voice agent for home services", ["Python", "WebRTC"], "seed", "yc", "call knowledge retrieval", ["Bea Nowak"], ["Northwind Ventures"]),
     ("Pocket Atlas", "Travel itinerary RAG", ["Next.js", "Supabase"], "pre-seed", "web", "grounding answers in sources", ["Ravi Menon"], []),
 ]
-SOURCES = ["hn", "rss", "yc", "web"]
+SOURCES = ["hn", "rss", "yc", "web", "hiring", "edgar"]
 
 
 def build_db(tmp: Path) -> None:
@@ -132,6 +133,9 @@ def make_runs(out: Path) -> None:
                        "relevant": relevant, "valid": valid},
             "sources": src_counts,
             "feedback": {"source_stats": stats, "caps": caps},
+            "decisions": {"provider": "local", "calls": cands + selected, "fallbacks": 0,
+                          "avg_latency_ms": round(rng.uniform(55, 95), 1), "jev_input_tokens": 0,
+                          "gated_pages": (gated := rng.randint(0, 3)), "tokens_saved_est": gated * 4500},
             "plan": {"web_queries": ["seed round semantic search startup", "Series A RAG platform launch"],
                      "hn_keywords": ["RAG", "vector search", "developer tools"]},
             "stages": stages,
@@ -167,9 +171,14 @@ def main() -> None:
     with tempfile.TemporaryDirectory() as t:
         tmp = Path(t)
         build_db(tmp)
+        now = datetime.now(timezone.utc)
+        mark("Vectorly", "contacted", "emailed team@; no reply yet", tmp, now=now - timedelta(days=9))  # -> follow_up
+        mark("Lumen Index", "replied", "asked for a call next week", tmp, now=now - timedelta(days=2))
+        mark("Fernwood", "passed", "healthcare, not our focus", tmp, now=now - timedelta(days=5))
         export_all(tmp)
         shutil.copy(tmp / "profiles.json", OUT / "profiles.json")
         shutil.copy(tmp / "graph.json", OUT / "graph.json")
+        shutil.copy(tmp / "outcomes.json", OUT / "outcomes.json")
     make_runs(OUT)
     profiles = json.loads((OUT / "profiles.json").read_text())
     (OUT / "daily_brief.json").write_text(json.dumps({"generated_at": profiles[0]["discovered_at"], "findings": profiles[:4]}, indent=2))

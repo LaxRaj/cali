@@ -13,6 +13,21 @@ export type Person = {
   link_source?: string;
 };
 
+export type Decision = {
+  action: "contact_now" | "enrich_more" | "watch" | "skip" | "follow_up";
+  urgency: "hot" | "warm" | "cold";
+  priority: number;
+  reasons: string[];
+  next_step: string;
+  provider: string;
+};
+export type Outcome = {
+  company: string;
+  status: string;
+  note: string;
+  updated: string;
+};
+
 export type ContactItem = { value: string; kind: string; source_url: string };
 export type Contact = {
   website?: string;
@@ -42,6 +57,8 @@ export type Profile = {
   score_parts?: Record<string, number>;
   gaps?: string[];
   contact?: Contact;
+  decision?: Decision;
+  outcome?: Outcome | null;
   people: Person[];
   edges: Edge[];
 };
@@ -108,6 +125,15 @@ export type RunDetail = RunSummary & {
     calls?: number;
   };
   quality: Record<string, unknown>;
+  decisions?: {
+    provider: string;
+    calls: number;
+    fallbacks: number;
+    avg_latency_ms: number;
+    jev_input_tokens: number;
+    gated_pages: number;
+    tokens_saved_est: number;
+  };
   feedback?: {
     source_stats?: Record<
       string,

@@ -12,11 +12,17 @@ from pathlib import Path
 
 import llm
 import telemetry
-from discovery import Candidate, hn, normalize_url, rss, web, yc
+from decide.decisions import gate_page
+from decide.registry import STATS as DECIDER_STATS, get_provider, reset_stats
+from discovery import Candidate, edgar, hiring, hn, normalize_url, rss, web, yc
 from discovery.feedback import allocate, source_stats
 from discovery.planner import make_plan
 from discovery.triage import select
+from backfill import backfill
 from enrich import EnrichResult, enrich_startup
+from enrich_github import enrich_people_github
+from decide.training import append_decisions
+from train_decider import train
 from export import export_all
 from extractor import extract
 from memory import DB_DIR, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
@@ -26,11 +32,18 @@ from rating import rate
 from scraper import Page, scrape_urls, search_results
 
 MAX_PEOPLE_SEARCHES = 12  # public-search lookups for founders' profile links, per run
+BACKFILL_LIMIT = 3  # older stored startups re-enriched per run
+AVG_EXTRACTION_TOKENS = 4500  # for the 'tokens saved' estimate when a page is gated
+MAX_GITHUB_LOOKUPS = 30  # public profile API calls per run
 MAX_TEAM_LLM = 6  # About/Team page extraction calls (Groq tokens), per run
 
 
 def enrichment_enabled() -> bool:
     return os.environ.get("CALI_ENRICH", "1") != "0"
+
+
+def gate_enabled() -> bool:
+    return os.environ.get("CALI_GATE", "1") != "0"
 
 
 def search_fn(query: str) -> list[dict]:
@@ -64,6 +77,8 @@ async def discover() -> list[Candidate]:
         guarded("rss", rss.fetch),
         guarded("yc", yc.fetch),
         guarded("web", web.fetch, plan.web_queries),
+        guarded("edgar", edgar.fetch),  # off unless CALI_CONTACT_EMAIL is set (SEC User-Agent policy)
+        guarded("hiring", hiring.fetch),
     )
     cands = [c for r in results for c in r]
     print("candidates per source:", dict(Counter(c.source for c in cands)))
@@ -82,6 +97,16 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
             continue
         cand = by_url.get(normalize_url(page.url))
         source = cand.source if cand else "unknown"
+        title, snippet, triage = (cand.title, cand.snippet, cand.triage) if cand else ("", "", 0.0)
+        if gate_enabled():
+            gate = gate_page(page.markdown)
+            if not gate.ok:  # looks like a guide/listicle/hobby page: don't spend LLM tokens on it
+                report.gated += 1
+                print(f"gate {page.url}: p={gate.p}", file=sys.stderr)
+                if log:
+                    log.rejection(page.url, source, [f"gated: not a startup page (p={gate.p})"])
+                    log.candidate(page.url, source, title, snippet, triage, "gated")
+                continue
         try:
             ex = extract(page.markdown)
         except Exception as e:
@@ -92,6 +117,7 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
             if log:
                 log.error(f"extract failed {page.url}: {e}")
                 log.rejection(page.url, source, ["extraction error"])
+                log.candidate(page.url, source, title, snippet, triage, "error")
             continue
         report.extracted += 1
         ex.startup.source_url = page.url
@@ -114,24 +140,27 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
             accepted.append((kept.model_copy(update={"people": people}), source, page.markdown))
             if log:
                 log.accept(ex.startup.company_name, page.url, source, len(people), len(kept.edges))
+                log.candidate(page.url, source, title, snippet, triage, "accepted")
         for issue in checked.issues:
             report.issues[issue] = report.issues.get(issue, 0) + 1
         if not checked.accepted:
             print(f"reject {page.url}: {checked.issues}", file=sys.stderr)
             if log:
                 log.rejection(page.url, source, checked.issues)
+                log.candidate(page.url, source, title, snippet, triage, "rejected")
     return accepted
 
 
 async def enrich_all(accepted, log) -> list[EnrichResult]:
     """Contacts, socials, team page and people links for each accepted startup (never fatal)."""
     results = []
-    search_budget, team_budget = [MAX_PEOPLE_SEARCHES], [MAX_TEAM_LLM]
+    search_budget, team_budget, gh_budget = [MAX_PEOPLE_SEARCHES], [MAX_TEAM_LLM], [MAX_GITHUB_LOOKUPS]
+    github_fn = lambda people: enrich_people_github(people, budget=gh_budget)  # noqa: E731
     for ex, source, md in accepted:
         try:
             res = await enrich_startup(
                 ex, source, md, search_fn=search_fn, extract_fn=extract,
-                search_budget=search_budget, team_budget=team_budget,
+                search_budget=search_budget, team_budget=team_budget, github_fn=github_fn,
             )
         except Exception as e:
             log.error(f"enrich failed {ex.startup.company_name}: {e}")
@@ -156,10 +185,12 @@ async def run(data_dir: Path) -> RunReport:
             stats = source_stats(data_dir)
             caps = allocate(stats, sorted({c.source for c in cands}))
             log.feedback = {"source_stats": stats, "caps": caps}
-            chosen = select(cands, seen_urls(data_dir), caps=caps)
+            decider = get_provider()
+            reset_stats(decider.name)
+            chosen = select(cands, seen_urls(data_dir), caps=caps, decider=decider)
             by_url = {normalize_url(c.url): c for c in chosen}
             st["counts"] = {"in": len(cands), "selected": len(chosen)}
-            st["notes"] = [f"crawl caps by source: {caps}"]
+            st["notes"] = [f"crawl caps by source: {caps}", f"decider: {decider.name}"]
 
         with log.stage("crawl") as st:
             inline = [Page(c.url, c.content) for c in chosen if c.content]  # e.g. Launch HN: already in hand
@@ -193,6 +224,10 @@ async def run(data_dir: Path) -> RunReport:
         for a, r, rt in zip(log.accepted, results, ratings):
             a.update(score=rt.score, gaps=rt.gaps, website=r.contact.website,
                      emails=len(r.contact.emails), phones=len(r.contact.phones))
+        scores_by_url = {a["url"]: a.get("score") for a in log.accepted}
+        for row in log.candidate_log:
+            if row["outcome"] == "accepted":
+                row["score"] = scores_by_url.get(row["url"])
         report.enriched = sum(1 for r in results if r.contact.status == "ok")
         report.with_website = sum(1 for r in results if r.contact.website)
         report.with_email = sum(1 for r in results if r.contact.emails)
@@ -242,6 +277,13 @@ async def run(data_dir: Path) -> RunReport:
                 )
                 export_all(data_dir)
                 st["counts"] = {"startups": len(findings), "people": report.people, "edges": report.edges}
+
+            # Rows stored before enrichment existed (or whose enrichment failed) get a few attempts per run.
+            if enrichment_enabled() and not report.quota_exhausted:
+                with log.stage("backfill") as st:
+                    done = await backfill(data_dir, limit=BACKFILL_LIMIT, search_fn=search_fn)
+                    st["counts"] = {"startups": len(done), "emails": sum(d["emails"] for d in done)}
+                    st["notes"] = [f"{d['company']}: {d['status']}, score {d['score']}" for d in done]
         return report
     finally:
         log.funnel = {
@@ -252,6 +294,18 @@ async def run(data_dir: Path) -> RunReport:
             "relevant": report.relevant,
             "valid": report.valid,
         }
+        calls = DECIDER_STATS["calls"]
+        log.decisions = {
+            "provider": DECIDER_STATS["provider"], "calls": calls, "fallbacks": DECIDER_STATS["fallbacks"],
+            "avg_latency_ms": round(DECIDER_STATS["latency_ms"] / calls, 1) if calls else 0.0,
+            "jev_input_tokens": DECIDER_STATS["jev_input_tokens"],
+            "gated_pages": report.gated, "tokens_saved_est": report.gated * AVG_EXTRACTION_TOKENS,
+        }
+        append_decisions(data_dir, log.run_id, log.candidate_log)
+        try:
+            train(data_dir)  # cheap; returns None until there are enough labelled rows
+        except Exception as e:
+            log.error(f"decider training skipped: {e}")
         log.usage = dict(llm.USAGE)
         log.quality = report.to_dict()
         log.passed, log.failures = report.passed, report.failures

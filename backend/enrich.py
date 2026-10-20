@@ -43,7 +43,7 @@ NOT_COMPANY_HOSTS = {
     "techcrunch.com", "businesswire.com", "prnewswire.com", "globenewswire.com", "crunchbase.com", "news.crunchbase.com",
     "ycombinator.com", "news.ycombinator.com", "linkedin.com", "twitter.com", "x.com", "github.com", "facebook.com",
     "instagram.com", "youtube.com", "medium.com", "substack.com", "wikipedia.org", "reddit.com", "google.com",
-    "apple.com", "play.google.com", "apps.apple.com", "producthunt.com", "finsmes.com", "eu-startups.com", "tech.eu",
+    "apple.com", "sec.gov", "play.google.com", "apps.apple.com", "producthunt.com", "finsmes.com", "eu-startups.com", "tech.eu",
     "sifted.eu", "betakit.com", "e27.co", "techfundingnews.com", "bloomberg.com", "reuters.com", "forbes.com",
     "venturebeat.com", "theverge.com", "wired.com", "t.co", "bit.ly", "pitchbook.com", "tracxn.com", "angel.co",
     "wellfound.com", "notion.so", "docs.google.com", "calendly.com", "typeform.com", "forms.gle",
@@ -278,7 +278,7 @@ def resolve_website(company: str, llm_website: str, source_url: str, source: str
             u = url[0] or url[1]
             if ok(u) and token in host_of(u).replace("-", ""):
                 return origin_of(u)
-    if source in ("hn", "web") and ok(source_url):  # the page we crawled is the product's own site
+    if source in ("hn", "web", "hiring") and ok(source_url):  # the page we crawled is the product's own site
         return origin_of(source_url)
     if search_fn and token:
         try:
@@ -465,6 +465,7 @@ async def enrich_startup(
     extract_fn=None,
     search_budget: list[int] | None = None,
     team_budget: list[int] | None = None,
+    github_fn=None,
 ) -> EnrichResult:
     """Find the company's site, collect published contacts + socials, read its team page, link people."""
     s = ex.startup
@@ -484,6 +485,8 @@ async def enrich_startup(
     try:
         fetched = await fetch_fn([website + "/"])
         home = parse_page(fetched[0].url, fetched[0].html) if fetched else None
+        if fetched and is_company_host(host_of(fetched[0].url)):
+            website = origin_of(fetched[0].url)  # follow redirects (e.g. a rebrand) so contacts and site agree
         extra = [u for u in pick_pages(website, home) if u != website + "/"]
         if extra:
             fetched += await fetch_fn(extra)
@@ -518,5 +521,10 @@ async def enrich_startup(
             notes.append(f"team extraction failed: {e}")
 
     people = apply_person_links(people, facts, s.company_name, search_fn, search_budget)
+    if github_fn:  # public profile fields people published themselves (blog, X handle)
+        try:
+            people = await asyncio.to_thread(github_fn, people)
+        except Exception as e:
+            notes.append(f"github enrichment failed: {e}")
     new_ex = extraction_with_people(ex.model_copy(update={"startup": s.model_copy(update=updates)}), people, edges)
     return EnrichResult(new_ex, contact, notes)

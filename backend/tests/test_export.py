@@ -83,3 +83,21 @@ def test_profiles_expose_score_contact_gaps_and_person_links_sorted_by_score(tmp
     assert profiles[1]["gaps"] == ["email"] and "contact_json" not in high
     node = {n["id"]: n for n in build_graph(d)["nodes"]}["jane roe"]
     assert node["links"] == {"linkedin": "https://www.linkedin.com/in/jane-roe"}
+
+
+def test_profiles_carry_a_decision_and_your_outcome(tmp_path):
+    import json as _json
+    from datetime import datetime, timedelta, timezone
+
+    from outcomes import mark
+
+    d = tmp_path / "db3"
+    contact = _json.dumps({"emails": [{"value": "hi@a.io", "kind": "general", "source_url": "u"}], "phones": [], "socials": {}})
+    for name in ("Fresh", "Told"):
+        upsert_profile(prof(name), db_dir=d, extras={"score": 85, "score_json": _json.dumps({"parts": {}, "gaps": []}), "contact_json": contact})
+    mark("Told", "passed", "not a fit", d)
+
+    now = datetime(2026, 10, 20, tzinfo=timezone.utc)
+    got = {p["company_name"]: p for p in build_profiles(d, now=now)}
+    assert got["Fresh"]["decision"]["action"] == "contact_now" and got["Fresh"]["outcome"] is None
+    assert got["Told"]["decision"]["action"] == "skip" and got["Told"]["outcome"]["status"] == "passed"

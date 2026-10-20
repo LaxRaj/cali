@@ -2,7 +2,11 @@
 
 import json
 import re
+from datetime import datetime
 from pathlib import Path
+
+from decide.policy import decide_lead
+from outcomes import load_outcomes
 
 PERSON_FIELDS = ("name", "role", "org", "evidence", "linkedin", "twitter", "github", "homepage", "link_source")
 
@@ -24,9 +28,10 @@ def _loads(raw) -> dict:
         return {}
 
 
-def build_profiles(db_dir) -> list[dict]:
+def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     people = _rows(PEOPLE, db_dir)
     edges = _rows(EDGES, db_dir)
+    outcomes = load_outcomes(db_dir)
     out = []
     for r in _rows(TABLE, db_dir):
         name = r["company_name"]
@@ -54,6 +59,10 @@ def build_profiles(db_dir) -> list[dict]:
                 ],
             }
         )
+    for p in out:
+        outcome = outcomes.get(p["company_name"].strip().lower())
+        p["outcome"] = outcome or None
+        p["decision"] = decide_lead(p, outcome, now)
     return sorted(out, key=lambda p: (p["score"], p.get("discovered_at", "")), reverse=True)
 
 
