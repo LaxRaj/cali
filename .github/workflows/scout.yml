@@ -53,6 +53,7 @@ jobs:
         continue-on-error: true # still commit the run log below, so failed runs are visible on the dashboard
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY_2: ${{ secrets.GROQ_API_KEY_2 }}  # second account: its own daily quota, used when the first is spent
           CRAWL4AI_NO_CLOUD_NOTICE: "1"
           # Optional. Empty = feature off: SEC Form D needs a contact email in its User-Agent; Jev is opt-in and paid.
           CALI_CONTACT_EMAIL: ${{ secrets.CALI_CONTACT_EMAIL }}

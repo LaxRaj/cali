@@ -50,3 +50,48 @@ def test_short_pages_try_the_cheap_model_first_only_if_configured(monkeypatch):
     monkeypatch.setattr(llm, "SIMPLE_MODEL", "small")
     assert llm.route_extraction("short") == ["small", "big"]
     assert llm.route_extraction("x" * 5000) == ["big"]
+
+
+# --- multiple Groq keys ---------------------------------------------------------------------------------
+
+
+class KeyClient:
+    def __init__(self, outcome):
+        self.outcome, self.calls = outcome, 0
+        self.chat = SimpleNamespace(completions=SimpleNamespace(create=self._create))
+
+    def _create(self, **kw):
+        self.calls += 1
+        if isinstance(self.outcome, Exception):
+            raise self.outcome
+        msg = SimpleNamespace(content=json.dumps(REPLY))
+        return SimpleNamespace(choices=[SimpleNamespace(message=msg)], usage=None)
+
+
+def test_second_key_takes_over_when_the_first_hits_its_daily_quota_and_stays_active():
+    a, b = KeyClient(TPD), KeyClient("ok")
+    multi = llm.MultiKeyGroq([a, b])
+    assert extract("page", client=multi).startup.company_name == "Acme"
+    assert extract("page", client=multi).startup.company_name == "Acme"
+    assert (a.calls, b.calls) == (1, 2)  # the spent key is not retried on every call
+
+
+def test_other_errors_are_not_masked_by_key_rotation_and_all_keys_spent_raises():
+    with pytest.raises(RuntimeError, match="boom"):
+        llm.MultiKeyGroq([KeyClient(RuntimeError("boom")), KeyClient("ok")]).create(model="m", messages=[])
+    with pytest.raises(RuntimeError, match="TPD"):
+        extract("page", client=llm.MultiKeyGroq([KeyClient(TPD), KeyClient(TPD)]))
+
+
+def test_api_keys_are_read_in_order_and_blank_ones_ignored(monkeypatch):
+    for n in ["GROQ_API_KEY"] + [f"GROQ_API_KEY_{i}" for i in range(2, 10)]:
+        monkeypatch.delenv(n, raising=False)
+    assert llm.api_keys() == []
+    monkeypatch.setenv("GROQ_API_KEY", "k1")
+    monkeypatch.setenv("GROQ_API_KEY_2", "  ")
+    monkeypatch.setenv("GROQ_API_KEY_3", "k3")
+    assert llm.api_keys() == ["k1", "k3"]
+    assert type(llm.get_client()).__name__ == "MultiKeyGroq"
+    assert llm.get_client() is llm.get_client()  # shared, so the 'active key' survives across calls
+    monkeypatch.delenv("GROQ_API_KEY_3")
+    assert type(llm.get_client()).__name__ == "Groq"  # a single key keeps the plain client

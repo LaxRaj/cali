@@ -2,6 +2,7 @@
 
 import json
 import os
+from functools import lru_cache
 
 from groq import Groq
 
@@ -29,8 +30,54 @@ def record_usage(completion) -> None:
         USAGE[k] += int(getattr(usage, k, 0) or 0)
 
 
-def get_client() -> Groq:
-    return Groq(max_retries=5)  # the SDK backs off on 429s; reads GROQ_API_KEY
+class _Completions:
+    def __init__(self, owner: "MultiKeyGroq"):
+        self._owner = owner
+
+    def create(self, **kwargs):
+        return self._owner.create(**kwargs)
+
+
+class MultiKeyGroq:
+    """Several Groq keys behind one client. Quota is per account, so when a key hits its daily token limit
+    (TPD 429) we move to the next key and stay there; any other error is raised as usual."""
+
+    def __init__(self, clients: list):
+        self.clients = clients
+        self.active = 0
+        self.chat = type("Chat", (), {"completions": _Completions(self)})()
+
+    def create(self, **kwargs):
+        last: Exception | None = None
+        for i in range(self.active, len(self.clients)):
+            try:
+                out = self.clients[i].chat.completions.create(**kwargs)
+                self.active = i
+                return out
+            except Exception as e:
+                last = e
+                if not quota_exhausted(e):
+                    raise
+                self.active = i + 1 if i + 1 < len(self.clients) else i  # this key is spent for the day
+        raise last  # pragma: no cover
+
+
+def api_keys() -> list[str]:
+    """GROQ_API_KEY, then GROQ_API_KEY_2, GROQ_API_KEY_3, ... (blank values ignored)."""
+    names = ["GROQ_API_KEY"] + [f"GROQ_API_KEY_{i}" for i in range(2, 10)]
+    return [v for n in names if (v := os.environ.get(n, "").strip())]
+
+
+@lru_cache(maxsize=4)
+def _client_for(keys: tuple[str, ...]):
+    if len(keys) <= 1:
+        return Groq(max_retries=5)  # the SDK backs off on 429s; reads GROQ_API_KEY
+    return MultiKeyGroq([Groq(api_key=k, max_retries=5) for k in keys])
+
+
+def get_client():
+    """One shared client per key set, so a key that is spent for the day is remembered across calls."""
+    return _client_for(tuple(api_keys()))
 
 
 def route_extraction(markdown: str) -> list[str]:
