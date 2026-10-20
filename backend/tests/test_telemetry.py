@@ -67,3 +67,48 @@ def test_llm_usage_accumulates_and_tolerates_missing_usage():
     assert llm.USAGE["total_tokens"] == 15 and llm.USAGE["calls"] == 2
     llm.reset_usage()
     assert llm.USAGE["total_tokens"] == 0
+
+
+def _run(passed, quota=False, budget=0):
+    log = RunLog()
+    log.passed, log.quota_exhausted, log.token_budget = passed, quota, budget
+    log.close()
+    return log
+
+
+def test_summary_status_distinguishes_quota_from_failure():
+    assert _run(True).summary()["status"] == "passed"
+    assert _run(False).summary()["status"] == "failed"
+    assert _run(False, quota=True).summary()["status"] == "quota"
+    assert _run(True, quota=True).summary()["status"] == "passed"  # finished fine despite touching the limit
+
+
+def test_summary_carries_token_budget():
+    assert _run(True, budget=400_000).summary()["token_budget"] == 400_000
+
+
+def test_token_budget_scales_with_keys(monkeypatch):
+    import llm
+
+    for n in ["GROQ_API_KEY"] + [f"GROQ_API_KEY_{i}" for i in range(2, 10)]:
+        monkeypatch.delenv(n, raising=False)
+    assert llm.token_budget() == 200_000
+    monkeypatch.setenv("GROQ_API_KEY", "a")
+    monkeypatch.setenv("GROQ_API_KEY_2", "b")
+    assert llm.token_budget() == 400_000
+
+
+def test_backfill_index_adds_status_from_run_files(tmp_path):
+    (tmp_path / "runs").mkdir()
+    entries = [
+        {"run_id": "a", "passed": True},
+        {"run_id": "b", "passed": False},
+        {"run_id": "c", "passed": False},
+        {"run_id": "d", "passed": False, "status": "failed"},
+    ]
+    (tmp_path / "runs_index.json").write_text(json.dumps({"runs": entries}))
+    (tmp_path / "runs" / "b.json").write_text(json.dumps({"quality": {"quota_exhausted": True}}))
+    (tmp_path / "runs" / "c.json").write_text(json.dumps({"quality": {"quota_exhausted": False}}))
+    assert telemetry.backfill_index(tmp_path) == 3
+    got = {r["run_id"]: r["status"] for r in json.loads((tmp_path / "runs_index.json").read_text())["runs"]}
+    assert got == {"a": "passed", "b": "quota", "c": "failed", "d": "failed"}

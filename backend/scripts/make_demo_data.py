@@ -128,7 +128,8 @@ def make_runs(out: Path) -> None:
         caps = {s_: max(2, min(7, round(12 * (st["yield"] + 0.15) / 1.6))) for s_, st in stats.items()}
         run = {
             "run_id": run_id, "started_at": start.isoformat(timespec="seconds"), "duration_s": round(off, 1),
-            "passed": passed, "failures": failures, "tokens": tokens,
+            "passed": passed, "status": "passed" if passed else ("quota" if quota_fail else "failed"),
+            "failures": failures, "tokens": tokens, "token_budget": 200_000,
             "funnel": {"candidates": cands, "selected": selected, "crawled": crawled, "extracted": extracted,
                        "relevant": relevant, "valid": valid},
             "sources": src_counts,
@@ -157,7 +158,7 @@ def make_runs(out: Path) -> None:
             "errors": errors,
         }
         (out / "runs" / f"{run_id}.json").write_text(json.dumps(run, indent=2))
-        index.append({k: run[k] for k in ("run_id", "started_at", "duration_s", "passed", "funnel", "tokens", "sources", "failures")})
+        index.append({k: run[k] for k in ("run_id", "started_at", "duration_s", "passed", "status", "funnel", "tokens", "token_budget", "sources", "failures")})
     (out / "runs_index.json").write_text(json.dumps({"runs": index}, indent=2))
     latest_ok = next(r for r in reversed(index) if r["passed"])
     q = json.loads((out / "runs" / f"{latest_ok['run_id']}.json").read_text())["quality"]

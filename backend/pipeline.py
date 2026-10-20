@@ -333,6 +333,7 @@ async def run(data_dir: Path) -> RunReport:
         log.usage = {**llm.USAGE, "by_purpose": {k: dict(v) for k, v in llm.USAGE_BY.items()}}
         log.quality = report.to_dict()
         log.passed, log.failures = report.passed, report.failures
+        log.quota_exhausted, log.token_budget = report.quota_exhausted, llm.token_budget()
         log.write(data_dir)  # always: failed runs are exactly what the dashboard must show
         log.close()
 

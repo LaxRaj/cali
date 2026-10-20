@@ -41,6 +41,8 @@ class RunLog:
         self.usage: dict[str, int] = {}
         self.quality: dict = {}
         self.passed = False
+        self.quota_exhausted = False  # a Groq daily token limit ended or blocked this run: not a quality failure
+        self.token_budget = 0  # tokens/day across all configured Groq keys (0 = unknown)
         self.failures: list[str] = []
         self._token = _current.set(self)
 
@@ -85,6 +87,13 @@ class RunLog:
     def accept(self, company: str, url: str, source: str, people: int, edges: int) -> None:
         self.accepted.append({"company": company, "url": url, "source": source, "people": people, "edges": edges})
 
+    @property
+    def status(self) -> str:
+        """passed | failed | quota. A run that did not pass because the Groq quota ran out is `quota`, not `failed`."""
+        if self.passed:
+            return "passed"
+        return "quota" if self.quota_exhausted else "failed"
+
     # --- output ----------------------------------------------------------------------------
     def summary(self) -> dict:
         return {
@@ -92,8 +101,10 @@ class RunLog:
             "started_at": self.started.isoformat(timespec="seconds"),
             "duration_s": round(time.monotonic() - self._t0, 1),
             "passed": self.passed,
+            "status": self.status,
             "funnel": self.funnel,
             "tokens": self.usage.get("total_tokens", 0),
+            "token_budget": self.token_budget,
             "sources": {k: v["candidates"] for k, v in self.sources.items()},
             "failures": self.failures,
         }
@@ -130,3 +141,24 @@ class RunLog:
 
     def close(self) -> None:
         _current.reset(self._token)
+
+
+def backfill_index(data_dir: Path) -> int:
+    """Add `status` to index entries written before that field existed, from each run's own file.
+    Returns how many entries changed."""
+    data_dir = Path(data_dir)
+    index_path = data_dir / INDEX_FILE
+    runs = json.loads(index_path.read_text())["runs"]
+    changed = 0
+    for r in runs:
+        if "status" in r:
+            continue
+        try:
+            detail = json.loads((data_dir / RUNS_DIR / f"{r['run_id']}.json").read_text())
+        except (OSError, ValueError):
+            detail = {}
+        quota = bool((detail.get("quality") or {}).get("quota_exhausted"))
+        r["status"] = "passed" if r.get("passed") else ("quota" if quota else "failed")
+        changed += 1
+    index_path.write_text(json.dumps({"runs": runs}, indent=2))
+    return changed
