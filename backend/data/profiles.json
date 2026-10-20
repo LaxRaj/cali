@@ -234,6 +234,423 @@
     }
   },
   {
+    "company_name": "Molagri",
+    "core_product": "Developing easily updatable pesticides that evolve alongside pest resistance using engineered virus platforms.",
+    "tech_stack": [],
+    "likely_bottleneck": "Efficiently searching and retrieving large protein‑design datasets to accelerate pesticide iteration.",
+    "value_prop_pitch": "Hi Zaky, I can build a fast, searchable interface for your protein‑design data using Next.js that lets scientists instantly find the most relevant sequences. By adding a vector‑based semantic search layer, you’ll cut the time spent digging through datasets and accelerate the design of next‑generation pesticides.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://betakit.com/molagri-raises-5-2-million-usd-seed-round-to-bolster-work-on-pesticides-that-evolve/",
+    "discovered_at": "2026-10-20T21:24:53+00:00",
+    "funding_amount": "$5.2M USD",
+    "hq": "Toronto, Canada",
+    "website": "https://molagri.com",
+    "score": 88,
+    "slug": "molagri",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 16
+    },
+    "gaps": [
+      "tech stack",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://molagri.com",
+      "emails": [
+        {
+          "value": "inquiries@molagri.com",
+          "kind": "general",
+          "source_url": "https://molagri.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/molagri"
+      },
+      "contact_page": "https://molagri.com/contact",
+      "pages_crawled": [
+        "https://molagri.com/",
+        "https://molagri.com/about",
+        "https://molagri.com/contact",
+        "https://molagri.com/team"
+      ],
+      "enriched_at": "2026-10-20T21:27:39+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Zaky Hassan",
+        "role": "Co‑founder & CEO",
+        "org": "Molagri",
+        "evidence": "Molagri co‑founder and CEO Zaky Hassan told BetaKit",
+        "linkedin": "https://lnkd.in/p/gZUNssSe",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://betakit.com/molagri-raises-5-2-million-usd-seed-round-to-bolster-work-on-pesticides-that-evolve/"
+      },
+      {
+        "name": "Min Jin",
+        "role": "Co‑founder",
+        "org": "Molagri",
+        "evidence": "Molagri was founded by Hassan and Min Jin, two PhD candidates from the University of Toronto",
+        "linkedin": "https://www.linkedin.com/in/min-jin-ca",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://molagri.com/"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Zaky Hassan",
+        "rel": "cofounded",
+        "dst": "Molagri",
+        "evidence": "Molagri co‑founder and CEO Zaky Hassan"
+      },
+      {
+        "src": "Min Jin",
+        "rel": "cofounded",
+        "dst": "Molagri",
+        "evidence": "Molagri was founded by Hassan and Min Jin"
+      },
+      {
+        "src": "Convective Capital",
+        "rel": "invested_in",
+        "dst": "Molagri",
+        "evidence": "The seed round was led by Convective Capital"
+      },
+      {
+        "src": "Y Combinator",
+        "rel": "invested_in",
+        "dst": "Molagri",
+        "evidence": "with participation from Y Combinator"
+      },
+      {
+        "src": "Superorganism",
+        "rel": "invested_in",
+        "dst": "Molagri",
+        "evidence": "with participation from ... Superorganism"
+      },
+      {
+        "src": "Robinhood Ventures",
+        "rel": "invested_in",
+        "dst": "Molagri",
+        "evidence": "with participation from ... Robinhood Ventures"
+      },
+      {
+        "src": "Paul Graham",
+        "rel": "invested_in",
+        "dst": "Molagri",
+        "evidence": "Y Combinator co‑founder Paul Graham"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 92.8,
+      "reasons": [
+        "lead score 88",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call inquiries@molagri.com with the pitch",
+      "provider": "policy"
+    }
+  },
+  {
+    "company_name": "Raindrop",
+    "core_product": "A monitoring platform for AI agents that detects and surfaces silent failures in production.",
+    "tech_stack": [],
+    "likely_bottleneck": "scalable real‑time search and retrieval over massive streams of agent event logs to surface failures quickly",
+    "value_prop_pitch": "I can build a Next.js dashboard that indexes your millions of agent event logs with vector embeddings, enabling instant semantic search across failure patterns. This lets your engineers surface hidden issues faster and reduces the time spent building custom monitoring queries.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://www.prnewswire.com/news-releases/raindrop-raises-15-million-to-detect-critical-ai-agent-failures-302628853.html",
+    "discovered_at": "2026-10-20T21:24:53+00:00",
+    "funding_amount": "$15M",
+    "hq": "San Francisco, CA",
+    "website": "https://www.raindrop.farm",
+    "score": 88,
+    "slug": "raindrop",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 16
+    },
+    "gaps": [
+      "tech stack",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://www.raindrop.farm",
+      "emails": [
+        {
+          "value": "help@raindrop.farm",
+          "kind": "support",
+          "source_url": "https://www.raindrop.farm/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "twitter": "https://x.com/RainDropGauge"
+      },
+      "contact_page": "https://www.raindrop.farm/contact",
+      "pages_crawled": [
+        "https://www.raindrop.farm/",
+        "https://www.raindrop.farm/team",
+        "https://www.raindrop.farm/contact",
+        "https://www.raindrop.farm/about"
+      ],
+      "enriched_at": "2026-10-20T21:27:53+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Zubin Koticha",
+        "role": "CEO, Raindrop",
+        "org": "Raindrop",
+        "evidence": "AI agents are more capable than ever. ... said Raindrop CEO Zubin Koticha.",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Ben Hylak",
+        "role": "Co‑founder, Raindrop",
+        "org": "Raindrop",
+        "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba.",
+        "linkedin": "https://www.linkedin.com/in/benhylak",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      },
+      {
+        "name": "Alexis Gauba",
+        "role": "Co‑founder, Raindrop",
+        "org": "Raindrop",
+        "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba.",
+        "linkedin": "https://www.linkedin.com/in/alexisgauba",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Zubin Koticha",
+        "rel": "founded",
+        "dst": "Raindrop",
+        "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba."
+      },
+      {
+        "src": "Ben Hylak",
+        "rel": "founded",
+        "dst": "Raindrop",
+        "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba."
+      },
+      {
+        "src": "Alexis Gauba",
+        "rel": "founded",
+        "dst": "Raindrop",
+        "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba."
+      },
+      {
+        "src": "Lightspeed Venture Partners",
+        "rel": "invested_in",
+        "dst": "Raindrop",
+        "evidence": "seed funding led by Lightspeed Venture Partners."
+      },
+      {
+        "src": "Bucky Moore",
+        "rel": "invested_in",
+        "dst": "Raindrop",
+        "evidence": "We invested in Raindrop because they defined monitoring for AI agents."
+      },
+      {
+        "src": "Figma Ventures",
+        "rel": "invested_in",
+        "dst": "Raindrop",
+        "evidence": "The round includes participation from leading AI companies including Figma Ventures"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 92.8,
+      "reasons": [
+        "lead score 88",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call help@raindrop.farm with the pitch",
+      "provider": "policy"
+    }
+  },
+  {
+    "company_name": "Chariot Claims",
+    "core_product": "A platform that helps consumers pursue claims over privacy violations, hidden fees and hard‑to‑cancel subscriptions by connecting them with law firms and using AI to screen and manage mass‑arbitration cases.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling semantic search and retrieval over large volumes of unstructured claim documents and consumer data.",
+    "value_prop_pitch": "Hi Chariot Claims, I can help you scale your claim intake and AI case‑matching by building a Next.js front‑end that streams consumer data into a vector store for fast semantic search across unstructured documents. This will let your team retrieve relevant evidence and prioritize cases 10‑100× faster while keeping the UI responsive.",
+    "is_relevant": true,
+    "funding_stage": "Series A",
+    "source_url": "https://news.crunchbase.com/ai/legal-tech-chariot-raise-stop-hidden-fees-subscriptions-hang/",
+    "discovered_at": "2026-10-20T21:24:53+00:00",
+    "funding_amount": "$10M",
+    "hq": "New York, USA",
+    "website": "https://www.chariotclaims.com",
+    "score": 87,
+    "slug": "chariot-claims",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 15,
+      "connections": 15,
+      "contact": 20
+    },
+    "gaps": [
+      "tech stack"
+    ],
+    "contact": {
+      "website": "https://www.chariotclaims.com",
+      "emails": [
+        {
+          "value": "support@chariotclaims.com",
+          "kind": "support",
+          "source_url": "https://www.chariotclaims.com/"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+17187501375",
+          "kind": "main",
+          "source_url": "https://www.chariotclaims.com/"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/chariotclaims",
+        "twitter": "https://x.com/chariotclaims"
+      },
+      "contact_page": "https://www.chariotclaims.com/contact",
+      "pages_crawled": [
+        "https://www.chariotclaims.com/",
+        "https://www.chariotclaims.com/team",
+        "https://www.chariotclaims.com/contact",
+        "https://www.chariotclaims.com/aboutus"
+      ],
+      "enriched_at": "2026-10-20T21:29:02+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Zim Hang",
+        "role": "Founder & CEO",
+        "org": "Chariot Claims",
+        "evidence": "Zim Hang, founder and CEO of Chariot Claims.",
+        "linkedin": "https://www.linkedin.com/in/zimhang",
+        "twitter": "",
+        "github": "",
+        "homepage": "https://www.crunchbase.com/person/zim-hang",
+        "link_source": "https://news.crunchbase.com/ai/legal-tech-chariot-raise-stop-hidden-fees-subscriptions-hang/"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Zim Hang",
+        "rel": "founded",
+        "dst": "Chariot Claims",
+        "evidence": "Zim Hang, founder and CEO of Chariot Claims."
+      },
+      {
+        "src": "Silverton Partners",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "has raised $10 million in Series A funding led by Silverton Partners"
+      },
+      {
+        "src": "Indicator Ventures",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "Lightbank",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "Neon Fund",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "ZVC",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "Rosecliff Ventures",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "Alumni Ventures",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "FJ Labs",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "Graph Ventures",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      },
+      {
+        "src": "Vermilion Ventures",
+        "rel": "invested_in",
+        "dst": "Chariot Claims",
+        "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 92.2,
+      "reasons": [
+        "lead score 87",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call support@chariotclaims.com with the pitch",
+      "provider": "policy"
+    }
+  },
+  {
     "company_name": "QuiverAI",
     "core_product": "QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
     "tech_stack": [
@@ -326,6 +743,123 @@
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call support@quiver.ai with the pitch",
+      "provider": "policy"
+    }
+  },
+  {
+    "company_name": "Seltz",
+    "core_product": "Seltz builds an AI‑agent‑focused web search engine that crawls, indexes, and retrieves passages, tables, and images for large language model agents.",
+    "tech_stack": [
+      "web crawler",
+      "search index",
+      "retrieval models",
+      "ranking algorithms",
+      "transformer models",
+      "vector embeddings"
+    ],
+    "likely_bottleneck": "maintaining fast, high‑quality semantic retrieval over billions of pages while keeping sub‑200 ms latency for AI‑agent queries",
+    "value_prop_pitch": "I can help Seltz accelerate its retrieval layer by building a Next.js front‑end that streams vector‑based semantic results directly from your index, cutting latency for agent queries. Combined with a custom embedding pipeline, this lets you serve precise passages, tables, and images at sub‑200 ms scale while simplifying UI integration for enterprise customers.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html",
+    "discovered_at": "2026-10-20T21:24:53+00:00",
+    "funding_amount": "$12.5M",
+    "hq": "San Francisco Bay Area, USA",
+    "website": "https://seltz.ai",
+    "score": 81,
+    "slug": "seltz",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 20,
+      "contact": 6
+    },
+    "gaps": [
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://seltz.ai",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "github": "https://github.com/seltz-ai",
+        "linkedin": "https://www.linkedin.com/company/seltz",
+        "twitter": "https://x.com/seltz_ai"
+      },
+      "contact_page": "https://seltz.ai/contact",
+      "pages_crawled": [
+        "https://seltz.ai/",
+        "https://seltz.ai/team",
+        "https://seltz.ai/contact",
+        "https://seltz.ai/about"
+      ],
+      "enriched_at": "2026-10-20T21:28:34+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Antonio Mallia",
+        "role": "Founder & CEO",
+        "org": "Seltz",
+        "evidence": "Seltz founder and CEO Antonio Mallia",
+        "linkedin": "https://www.linkedin.com/in/antoniomallia",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://seltz.ai/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Antonio Mallia",
+        "rel": "founded",
+        "dst": "Seltz",
+        "evidence": "Seltz founder and CEO Antonio Mallia"
+      },
+      {
+        "src": "Speedinvest",
+        "rel": "invested_in",
+        "dst": "Seltz",
+        "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+      },
+      {
+        "src": "B Capital",
+        "rel": "invested_in",
+        "dst": "Seltz",
+        "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+      },
+      {
+        "src": "Italian Founders Fund",
+        "rel": "invested_in",
+        "dst": "Seltz",
+        "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+      },
+      {
+        "src": "United Ventures",
+        "rel": "invested_in",
+        "dst": "Seltz",
+        "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+      },
+      {
+        "src": "Future Back Ventures",
+        "rel": "invested_in",
+        "dst": "Seltz",
+        "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 83.6,
+      "reasons": [
+        "lead score 81",
+        "found 0 day(s) ago (hot)",
+        "good fit; reachable through a profile"
+      ],
+      "next_step": "Reach Antonio Mallia via LinkedIn/X",
       "provider": "policy"
     }
   },
@@ -2080,6 +2614,71 @@
     }
   },
   {
+    "company_name": "Elman",
+    "core_product": "AI platform that predicts clinical trial and drug development outcomes and quantifies confidence in those predictions.",
+    "tech_stack": [
+      "LLM",
+      "AI"
+    ],
+    "likely_bottleneck": "search quality and efficient retrieval of relevant biomedical evidence for the LLM‑driven prediction pipeline",
+    "value_prop_pitch": "I can build a fast, semantic search layer over your biomedical literature using vector embeddings, letting your LLM instantly retrieve the most relevant evidence for each trial prediction. Combined with a Next.js front‑end, the UI will let researchers explore predictions and confidence scores in real time without latency bottlenecks.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "source_url": "https://elman.ai/preprint",
+    "discovered_at": "2026-10-20T21:24:53+00:00",
+    "funding_amount": "",
+    "hq": "London, UK",
+    "website": "https://elman.ai",
+    "score": 67,
+    "slug": "elman",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 0,
+      "contact": 10
+    },
+    "gaps": [
+      "funding amount",
+      "investors",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://elman.ai",
+      "emails": [
+        {
+          "value": "hello@elman.ai",
+          "kind": "general",
+          "source_url": "https://elman.ai/"
+        }
+      ],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "pages_crawled": [
+        "https://elman.ai/",
+        "https://elman.ai/about/"
+      ],
+      "enriched_at": "2026-10-20T21:28:37+00:00",
+      "status": "ok"
+    },
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 80.2,
+      "reasons": [
+        "lead score 67",
+        "found 0 day(s) ago (hot)",
+        "good fit and reachable"
+      ],
+      "next_step": "Reach a founder via hello@elman.ai",
+      "provider": "policy"
+    }
+  },
+  {
     "company_name": "Atlis Health, LLC",
     "core_product": "A persona‑driven AI platform that helps employees, employers and plan administrators navigate and use employee benefits.",
     "tech_stack": [
@@ -2205,6 +2804,100 @@
     }
   },
   {
+    "company_name": "Adside.ai",
+    "core_product": "Adside.ai builds an AI-native paid ads agency that uses autonomous agents to manage, create, and optimize ad campaigns across platforms.",
+    "tech_stack": [
+      "Claude",
+      "LLM",
+      "API integrations",
+      "AI agents"
+    ],
+    "likely_bottleneck": "Scaling and retrieving performance data across multiple ad platforms for the AI agents.",
+    "value_prop_pitch": "I can build a unified dashboard in Next.js that pulls campaign data from Meta, Google, LinkedIn, Reddit and Twitter via their APIs and indexes it with a vector store for fast semantic search. This lets your AI agents instantly retrieve the most relevant performance insights and creative assets, improving optimization speed and reducing latency in your autonomous ad management workflow.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.ycombinator.com/launches/VrT-adside-ai-ai-native-paid-ads-agency",
+    "discovered_at": "2026-10-20T21:24:53+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.adside.ai",
+    "score": 64,
+    "slug": "adside-ai",
+    "score_parts": {
+      "fit": 15,
+      "identity": 9,
+      "people": 20,
+      "connections": 10,
+      "contact": 10
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "investors",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://www.adside.ai",
+      "emails": [
+        {
+          "value": "support@adside.ai",
+          "kind": "support",
+          "source_url": "https://www.adside.ai/"
+        }
+      ],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "pages_crawled": [
+        "https://www.adside.ai/",
+        "https://www.adside.ai/about"
+      ],
+      "enriched_at": "2026-10-20T21:28:49+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Robin Choy",
+        "role": "Co-founder",
+        "org": "Adside.ai",
+        "evidence": "Robin started his first company in 2016 (HireSweet, AI for recruiting - $4M annual revenue), did YC for the first time in the Winter 2020.",
+        "linkedin": "",
+        "twitter": "https://x.com/ChoyRb",
+        "github": "",
+        "homepage": "https://robinchoy.com/",
+        "link_source": "https://www.ycombinator.com/launches/VrT-adside-ai-ai-native-paid-ads-agency"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Robin Choy",
+        "rel": "founded",
+        "dst": "Adside.ai",
+        "evidence": "We’re best friends and repeat founders, including one company in marketing automation that we built and sold earlier this year."
+      },
+      {
+        "src": "Guillaume Miara",
+        "rel": "cofounded",
+        "dst": "Adside.ai",
+        "evidence": "We’re best friends and repeat founders, including one company in marketing automation that we built and sold earlier this year."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 78.4,
+      "reasons": [
+        "lead score 64",
+        "found 0 day(s) ago (hot)",
+        "good fit and reachable"
+      ],
+      "next_step": "Reach Robin Choy via support@adside.ai",
+      "provider": "policy"
+    }
+  },
+  {
     "company_name": "ParadeDB",
     "core_product": "A Postgres extension that delivers state-of-the-art search in Postgres.",
     "tech_stack": [
@@ -2296,6 +2989,208 @@
         "good fit and reachable"
       ],
       "next_step": "Reach a founder via hello@paradedb.com",
+      "provider": "policy"
+    }
+  },
+  {
+    "company_name": "Axel",
+    "core_product": "An AI travel agent that finds private flight and hotel deals, monitors price drops, and lets users book or delegate to an AI agent.",
+    "tech_stack": [
+      "AI",
+      "flight APIs"
+    ],
+    "likely_bottleneck": "search and retrieval of live flight/hotel pricing and private deals at scale",
+    "value_prop_pitch": "I can build a fast, scalable Next.js front‑end that lets users query millions of flight and hotel offers in real time. By adding a vector‑based semantic search layer over your pricing data, we’ll surface the best private deals instantly and keep the price‑watching engine accurate as inventory changes.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.ycombinator.com/launches/WAo-axel-ai-travel-agent-that-saves-you-money-on-flights-and-hotels",
+    "discovered_at": "2026-10-20T21:24:53+00:00",
+    "funding_amount": "",
+    "hq": "Seattle, US",
+    "website": "https://helloaxel.com",
+    "score": 60,
+    "slug": "axel",
+    "score_parts": {
+      "fit": 15,
+      "identity": 12,
+      "people": 15,
+      "connections": 15,
+      "contact": 3
+    },
+    "gaps": [
+      "funding stage",
+      "funding amount",
+      "people profiles",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://helloaxel.com",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/helloaxel",
+        "twitter": "https://x.com/discoveraxel"
+      },
+      "contact_page": "",
+      "pages_crawled": [
+        "https://helloaxel.com/en",
+        "https://helloaxel.com/en/about"
+      ],
+      "enriched_at": "2026-10-20T21:28:44+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Stephen",
+        "role": "Founder & CEO",
+        "org": "Axel",
+        "evidence": "Founder & CEO",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Stephen Grabowski",
+        "role": "",
+        "org": "Axel",
+        "evidence": "Stephen Grabowski",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Harrison",
+        "role": "Marketing & Operations",
+        "org": "Axel",
+        "evidence": "Marketing & Operations",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Chen-Kai",
+        "role": "AI Engineer",
+        "org": "Axel",
+        "evidence": "AI Engineer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Festus",
+        "role": "Full-Stack Engineer",
+        "org": "Axel",
+        "evidence": "Full-Stack Engineer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Jesus",
+        "role": "Front-End Engineer",
+        "org": "Axel",
+        "evidence": "Front-End Engineer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Aspen",
+        "role": "Product Designer",
+        "org": "Axel",
+        "evidence": "Product Designer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Juliana",
+        "role": "iOS Engineer",
+        "org": "Axel",
+        "evidence": "iOS Engineer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Stephen",
+        "rel": "founded",
+        "dst": "Axel",
+        "evidence": "Founder & CEO"
+      },
+      {
+        "src": "Harrison",
+        "rel": "works_at",
+        "dst": "Axel",
+        "evidence": "Marketing & Operations"
+      },
+      {
+        "src": "Chen-Kai",
+        "rel": "works_at",
+        "dst": "Axel",
+        "evidence": "AI Engineer"
+      },
+      {
+        "src": "Festus",
+        "rel": "works_at",
+        "dst": "Axel",
+        "evidence": "Full-Stack Engineer"
+      },
+      {
+        "src": "Jesus",
+        "rel": "works_at",
+        "dst": "Axel",
+        "evidence": "Front-End Engineer"
+      },
+      {
+        "src": "Aspen",
+        "rel": "works_at",
+        "dst": "Axel",
+        "evidence": "Product Designer"
+      },
+      {
+        "src": "Juliana",
+        "rel": "works_at",
+        "dst": "Axel",
+        "evidence": "iOS Engineer"
+      },
+      {
+        "src": "Axel",
+        "rel": "backed_by",
+        "dst": "YCombinator",
+        "evidence": "Backed by YCombinator"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "enrich_more",
+      "urgency": "warm",
+      "priority": 66.0,
+      "reasons": [
+        "lead score 60",
+        "found 0 day(s) ago (hot)",
+        "fit looks decent but no contact route found"
+      ],
+      "next_step": "Find a contact: funding stage, funding amount, people profiles",
       "provider": "policy"
     }
   },
@@ -2986,7 +3881,7 @@
       "socials": {},
       "contact_page": "",
       "pages_crawled": [],
-      "enriched_at": "2026-10-20T20:40:36+00:00",
+      "enriched_at": "2026-10-20T21:29:10+00:00",
       "status": "no_website"
     },
     "people": [],

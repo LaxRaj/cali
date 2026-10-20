@@ -9,6 +9,14 @@
       "score": 90
     },
     {
+      "id": "chariot claims",
+      "label": "Chariot Claims",
+      "type": "startup",
+      "degree": 11,
+      "website": "https://www.chariotclaims.com",
+      "score": 87
+    },
+    {
       "id": "tako",
       "label": "Tako",
       "type": "startup",
@@ -33,6 +41,14 @@
       "score": 73
     },
     {
+      "id": "axel",
+      "label": "Axel",
+      "type": "startup",
+      "degree": 8,
+      "website": "https://helloaxel.com",
+      "score": 60
+    },
+    {
       "id": "quiver ai",
       "label": "Quiver AI",
       "type": "org",
@@ -47,11 +63,35 @@
       "score": 73
     },
     {
+      "id": "molagri",
+      "label": "Molagri",
+      "type": "startup",
+      "degree": 7,
+      "website": "https://molagri.com",
+      "score": 88
+    },
+    {
       "id": "vessla",
       "label": "Vessla",
       "type": "startup",
       "degree": 6,
       "website": "https://vessla.ai",
+      "score": 81
+    },
+    {
+      "id": "raindrop",
+      "label": "Raindrop",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.raindrop.farm",
+      "score": 88
+    },
+    {
+      "id": "seltz",
+      "label": "Seltz",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://seltz.ai",
       "score": 81
     },
     {
@@ -61,6 +101,20 @@
       "degree": 5,
       "website": "https://cedardb.com",
       "score": 72
+    },
+    {
+      "id": "guillaume miara",
+      "label": "Guillaume Miara",
+      "type": "person",
+      "degree": 5,
+      "role": "Co-founder & CTO",
+      "links": {}
+    },
+    {
+      "id": "y combinator",
+      "label": "Y Combinator",
+      "type": "org",
+      "degree": 5
     },
     {
       "id": "kairos health",
@@ -77,12 +131,6 @@
       "degree": 4,
       "role": "founder",
       "links": {}
-    },
-    {
-      "id": "y combinator",
-      "label": "Y Combinator",
-      "type": "org",
-      "degree": 4
     },
     {
       "id": "consus",
@@ -199,6 +247,16 @@
       }
     },
     {
+      "id": "antonio mallia",
+      "label": "Antonio Mallia",
+      "type": "person",
+      "degree": 3,
+      "role": "Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/antoniomallia"
+      }
+    },
+    {
       "id": "yudai matsuoka",
       "label": "Yudai Matsuoka",
       "type": "org",
@@ -235,6 +293,14 @@
       "degree": 2,
       "website": "https://voygr.tech",
       "score": 58
+    },
+    {
+      "id": "adside.ai",
+      "label": "Adside.ai",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://www.adside.ai",
+      "score": 64
     },
     {
       "id": "eric",
@@ -315,8 +381,43 @@
       "links": {}
     },
     {
+      "id": "robin choy",
+      "label": "Robin Choy",
+      "type": "person",
+      "degree": 2,
+      "role": "Co-founder",
+      "links": {
+        "twitter": "https://x.com/ChoyRb",
+        "homepage": "https://robinchoy.com/"
+      }
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "amazon",
+      "label": "Amazon",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "silverton partners",
+      "label": "Silverton Partners",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "elman bio ltd",
+      "label": "Elman Bio Ltd",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "adside",
+      "label": "Adside",
       "type": "org",
       "degree": 2
     },
@@ -580,14 +681,6 @@
       "type": "person",
       "degree": 1,
       "role": "CEO, Webflow",
-      "links": {}
-    },
-    {
-      "id": "amjad masad",
-      "label": "Amjad Masad",
-      "type": "person",
-      "degree": 1,
-      "role": "CEO, Replit",
       "links": {}
     },
     {
@@ -863,6 +956,167 @@
       "links": {}
     },
     {
+      "id": "zaky hassan",
+      "label": "Zaky Hassan",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CEO",
+      "links": {
+        "linkedin": "https://lnkd.in/p/gZUNssSe"
+      }
+    },
+    {
+      "id": "min jin",
+      "label": "Min Jin",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/min-jin-ca"
+      }
+    },
+    {
+      "id": "paul graham",
+      "label": "Paul Graham",
+      "type": "person",
+      "degree": 1,
+      "role": "Investor",
+      "links": {}
+    },
+    {
+      "id": "mike dodd",
+      "label": "Mike Dodd",
+      "type": "person",
+      "degree": 1,
+      "role": "General Partner",
+      "links": {
+        "homepage": "https://www.crunchbase.com/person/mike-dodd"
+      }
+    },
+    {
+      "id": "amjad masad",
+      "label": "Amjad Masad",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder of Replit (investor)",
+      "links": {}
+    },
+    {
+      "id": "zubin koticha",
+      "label": "Zubin Koticha",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO, Raindrop",
+      "links": {}
+    },
+    {
+      "id": "ben hylak",
+      "label": "Ben Hylak",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder, Raindrop",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/benhylak"
+      }
+    },
+    {
+      "id": "alexis gauba",
+      "label": "Alexis Gauba",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder, Raindrop",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/alexisgauba"
+      }
+    },
+    {
+      "id": "dr. moustafa khedr",
+      "label": "Dr. Moustafa Khedr",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {
+        "linkedin": "https://linkedin.com/in/khedrm"
+      }
+    },
+    {
+      "id": "dr. francesco moramarco",
+      "label": "Dr. Francesco Moramarco",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {
+        "linkedin": "https://linkedin.com/in/fm2g11"
+      }
+    },
+    {
+      "id": "stephen",
+      "label": "Stephen",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder & CEO",
+      "links": {}
+    },
+    {
+      "id": "harrison",
+      "label": "Harrison",
+      "type": "person",
+      "degree": 1,
+      "role": "Marketing & Operations",
+      "links": {}
+    },
+    {
+      "id": "chen-kai",
+      "label": "Chen-Kai",
+      "type": "person",
+      "degree": 1,
+      "role": "AI Engineer",
+      "links": {}
+    },
+    {
+      "id": "festus",
+      "label": "Festus",
+      "type": "person",
+      "degree": 1,
+      "role": "Full-Stack Engineer",
+      "links": {}
+    },
+    {
+      "id": "jesus",
+      "label": "Jesus",
+      "type": "person",
+      "degree": 1,
+      "role": "Front-End Engineer",
+      "links": {}
+    },
+    {
+      "id": "aspen",
+      "label": "Aspen",
+      "type": "person",
+      "degree": 1,
+      "role": "Product Designer",
+      "links": {}
+    },
+    {
+      "id": "juliana",
+      "label": "Juliana",
+      "type": "person",
+      "degree": 1,
+      "role": "iOS Engineer",
+      "links": {}
+    },
+    {
+      "id": "zim hang",
+      "label": "Zim Hang",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/zimhang",
+        "homepage": "https://www.crunchbase.com/person/zim-hang"
+      }
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -935,12 +1189,6 @@
       "degree": 1
     },
     {
-      "id": "amazon",
-      "label": "Amazon",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "quantcast",
       "label": "Quantcast",
       "type": "org",
@@ -1007,6 +1255,156 @@
       "degree": 1
     },
     {
+      "id": "convective capital",
+      "label": "Convective Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "superorganism",
+      "label": "Superorganism",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "robinhood ventures",
+      "label": "Robinhood Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lightspeed venture partners",
+      "label": "Lightspeed Venture Partners",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "bucky moore",
+      "label": "Bucky Moore",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "figma ventures",
+      "label": "Figma Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "pinecone",
+      "label": "Pinecone",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "speedinvest",
+      "label": "Speedinvest",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "b capital",
+      "label": "B Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "italian founders fund",
+      "label": "Italian Founders Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "united ventures",
+      "label": "United Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "future back ventures",
+      "label": "Future Back Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "ycombinator",
+      "label": "YCombinator",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "globality",
+      "label": "Globality",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "oscar health",
+      "label": "Oscar Health",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "defacto",
+      "label": "Defacto",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "indicator ventures",
+      "label": "Indicator Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lightbank",
+      "label": "Lightbank",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "neon fund",
+      "label": "Neon Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "zvc",
+      "label": "ZVC",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "rosecliff ventures",
+      "label": "Rosecliff Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "alumni ventures",
+      "label": "Alumni Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "fj labs",
+      "label": "FJ Labs",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "graph ventures",
+      "label": "Graph Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "vermilion ventures",
+      "label": "Vermilion Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "maali",
       "label": "Maali",
       "type": "startup",
@@ -1021,6 +1419,14 @@
       "degree": 0,
       "website": "https://quiver.ai",
       "score": 83
+    },
+    {
+      "id": "elman",
+      "label": "Elman",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://elman.ai",
+      "score": 67
     },
     {
       "id": "kevin hartz",
@@ -1372,6 +1778,70 @@
       "type": "person",
       "degree": 0,
       "role": "The VC Corner",
+      "links": {}
+    },
+    {
+      "id": "michele castata",
+      "label": "Michele Castata",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder of Replit (investor)",
+      "links": {}
+    },
+    {
+      "id": "walden yan",
+      "label": "Walden Yan",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder of Cognition (investor)",
+      "links": {}
+    },
+    {
+      "id": "koen bok",
+      "label": "Koen Bok",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder of Framer (investor)",
+      "links": {}
+    },
+    {
+      "id": "joen van dijk",
+      "label": "Joen van Dijk",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder of Framer (investor)",
+      "links": {}
+    },
+    {
+      "id": "andrew hsu",
+      "label": "Andrew Hsu",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder of Speak (investor)",
+      "links": {}
+    },
+    {
+      "id": "akshay kothari",
+      "label": "Akshay Kothari",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder of Notion (investor)",
+      "links": {}
+    },
+    {
+      "id": "evan goldschmidt",
+      "label": "Evan Goldschmidt",
+      "type": "person",
+      "degree": 0,
+      "role": "CTO, Tolan",
+      "links": {}
+    },
+    {
+      "id": "stephen grabowski",
+      "label": "Stephen Grabowski",
+      "type": "person",
+      "degree": 0,
+      "role": "",
       "links": {}
     }
   ],
@@ -2071,6 +2541,306 @@
       "target": "y combinator",
       "rel": "backed_by",
       "evidence": "ParadeDB (YC S23"
+    },
+    {
+      "source": "zaky hassan",
+      "target": "molagri",
+      "rel": "cofounded",
+      "evidence": "Molagri co‑founder and CEO Zaky Hassan"
+    },
+    {
+      "source": "min jin",
+      "target": "molagri",
+      "rel": "cofounded",
+      "evidence": "Molagri was founded by Hassan and Min Jin"
+    },
+    {
+      "source": "convective capital",
+      "target": "molagri",
+      "rel": "invested_in",
+      "evidence": "The seed round was led by Convective Capital"
+    },
+    {
+      "source": "y combinator",
+      "target": "molagri",
+      "rel": "invested_in",
+      "evidence": "with participation from Y Combinator"
+    },
+    {
+      "source": "superorganism",
+      "target": "molagri",
+      "rel": "invested_in",
+      "evidence": "with participation from ... Superorganism"
+    },
+    {
+      "source": "robinhood ventures",
+      "target": "molagri",
+      "rel": "invested_in",
+      "evidence": "with participation from ... Robinhood Ventures"
+    },
+    {
+      "source": "paul graham",
+      "target": "molagri",
+      "rel": "invested_in",
+      "evidence": "Y Combinator co‑founder Paul Graham"
+    },
+    {
+      "source": "mike dodd",
+      "target": "silverton partners",
+      "rel": "works_at",
+      "evidence": "Mike Dodd, general partner at Silverton, told Crunchbase News via email"
+    },
+    {
+      "source": "zubin koticha",
+      "target": "raindrop",
+      "rel": "founded",
+      "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba."
+    },
+    {
+      "source": "ben hylak",
+      "target": "raindrop",
+      "rel": "founded",
+      "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba."
+    },
+    {
+      "source": "alexis gauba",
+      "target": "raindrop",
+      "rel": "founded",
+      "evidence": "Raindrop was founded by Ben Hylak, Zubin Koticha and Alexis Gauba."
+    },
+    {
+      "source": "lightspeed venture partners",
+      "target": "raindrop",
+      "rel": "invested_in",
+      "evidence": "seed funding led by Lightspeed Venture Partners."
+    },
+    {
+      "source": "bucky moore",
+      "target": "raindrop",
+      "rel": "invested_in",
+      "evidence": "We invested in Raindrop because they defined monitoring for AI agents."
+    },
+    {
+      "source": "figma ventures",
+      "target": "raindrop",
+      "rel": "invested_in",
+      "evidence": "The round includes participation from leading AI companies including Figma Ventures"
+    },
+    {
+      "source": "antonio mallia",
+      "target": "seltz",
+      "rel": "founded",
+      "evidence": "Seltz founder and CEO Antonio Mallia"
+    },
+    {
+      "source": "antonio mallia",
+      "target": "amazon",
+      "rel": "previously_at",
+      "evidence": "he worked as an applied scientist on Amazon's artificial general intelligence team"
+    },
+    {
+      "source": "antonio mallia",
+      "target": "pinecone",
+      "rel": "previously_at",
+      "evidence": "and as a research scientist at the vector-database company Pinecone"
+    },
+    {
+      "source": "speedinvest",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+    },
+    {
+      "source": "b capital",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+    },
+    {
+      "source": "italian founders fund",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+    },
+    {
+      "source": "united ventures",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+    },
+    {
+      "source": "future back ventures",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company."
+    },
+    {
+      "source": "dr. moustafa khedr",
+      "target": "elman bio ltd",
+      "rel": "cofounded",
+      "evidence": "Co-founder · biology + architecture · [linkedin.com/in/khedrm](https://linkedin.com/in/khedrm)"
+    },
+    {
+      "source": "dr. francesco moramarco",
+      "target": "elman bio ltd",
+      "rel": "cofounded",
+      "evidence": "Co-founder · AI / engineering + architecture · [linkedin.com/in/fm2g11](https://linkedin.com/in/fm2g11)"
+    },
+    {
+      "source": "stephen",
+      "target": "axel",
+      "rel": "founded",
+      "evidence": "Founder & CEO"
+    },
+    {
+      "source": "harrison",
+      "target": "axel",
+      "rel": "works_at",
+      "evidence": "Marketing & Operations"
+    },
+    {
+      "source": "chen-kai",
+      "target": "axel",
+      "rel": "works_at",
+      "evidence": "AI Engineer"
+    },
+    {
+      "source": "festus",
+      "target": "axel",
+      "rel": "works_at",
+      "evidence": "Full-Stack Engineer"
+    },
+    {
+      "source": "jesus",
+      "target": "axel",
+      "rel": "works_at",
+      "evidence": "Front-End Engineer"
+    },
+    {
+      "source": "aspen",
+      "target": "axel",
+      "rel": "works_at",
+      "evidence": "Product Designer"
+    },
+    {
+      "source": "juliana",
+      "target": "axel",
+      "rel": "works_at",
+      "evidence": "iOS Engineer"
+    },
+    {
+      "source": "axel",
+      "target": "ycombinator",
+      "rel": "backed_by",
+      "evidence": "Backed by YCombinator"
+    },
+    {
+      "source": "robin choy",
+      "target": "adside.ai",
+      "rel": "founded",
+      "evidence": "We’re best friends and repeat founders, including one company in marketing automation that we built and sold earlier this year."
+    },
+    {
+      "source": "guillaume miara",
+      "target": "adside.ai",
+      "rel": "cofounded",
+      "evidence": "We’re best friends and repeat founders, including one company in marketing automation that we built and sold earlier this year."
+    },
+    {
+      "source": "guillaume miara",
+      "target": "globality",
+      "rel": "previously_at",
+      "evidence": "Gui has been a software engineer in tech for 13 years (Globality, Staff at Oscar Health, Defacto)."
+    },
+    {
+      "source": "guillaume miara",
+      "target": "oscar health",
+      "rel": "previously_at",
+      "evidence": "Gui has been a software engineer in tech for 13 years (Globality, Staff at Oscar Health, Defacto)."
+    },
+    {
+      "source": "guillaume miara",
+      "target": "defacto",
+      "rel": "previously_at",
+      "evidence": "Gui has been a software engineer in tech for 13 years (Globality, Staff at Oscar Health, Defacto)."
+    },
+    {
+      "source": "robin choy",
+      "target": "adside",
+      "rel": "founded",
+      "evidence": "We are Robin and Guillaume, two French founders"
+    },
+    {
+      "source": "guillaume miara",
+      "target": "adside",
+      "rel": "founded",
+      "evidence": "We are Robin and Guillaume, two French founders"
+    },
+    {
+      "source": "zim hang",
+      "target": "chariot claims",
+      "rel": "founded",
+      "evidence": "Zim Hang, founder and CEO of Chariot Claims."
+    },
+    {
+      "source": "silverton partners",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "has raised $10 million in Series A funding led by Silverton Partners"
+    },
+    {
+      "source": "indicator ventures",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "lightbank",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "neon fund",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "zvc",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "rosecliff ventures",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "alumni ventures",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "fj labs",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "graph ventures",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "vermilion ventures",
+      "target": "chariot claims",
+      "rel": "invested_in",
+      "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
     },
     {
       "source": "a16z speedrun",

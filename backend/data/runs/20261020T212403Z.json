@@ -1,0 +1,458 @@
+{
+  "run_id": "20261020T212403Z",
+  "started_at": "2026-10-20T21:24:03+00:00",
+  "duration_s": 307.5,
+  "passed": true,
+  "funnel": {
+    "candidates": 304,
+    "selected": 10,
+    "crawled": 10,
+    "extracted": 10,
+    "relevant": 7,
+    "valid": 7
+  },
+  "tokens": 47012,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 67,
+    "rss": 71,
+    "web": 30,
+    "edgar": 4
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup founded 2024",
+      "Series A RAG platform launch founder interview",
+      "AI retrieval tool pre\u2011seed funding Lightspeed Ventures",
+      "developer tooling startup vector search seed funding 2024",
+      "knowledge base AI startup Series A investor Andreessen Horowitz"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG",
+      "vector database",
+      "developer tooling",
+      "next.js AI"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 9,
+        "accepted": 3,
+        "score_sum": 150,
+        "yield": 0.333,
+        "avg_score": 50.0
+      },
+      "yc": {
+        "crawled": 7,
+        "accepted": 7,
+        "score_sum": 370,
+        "yield": 1.0,
+        "avg_score": 52.9
+      },
+      "rss": {
+        "crawled": 7,
+        "accepted": 5,
+        "score_sum": 350,
+        "yield": 0.714,
+        "avg_score": 70.0
+      },
+      "web": {
+        "crawled": 7,
+        "accepted": 5,
+        "score_sum": 383,
+        "yield": 0.714,
+        "avg_score": 76.6
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 278,
+        "yield": 1.0,
+        "avg_score": 69.5
+      },
+      "edgar": {
+        "crawled": 4,
+        "accepted": 1,
+        "score_sum": 66,
+        "yield": 0.25,
+        "avg_score": 66.0
+      },
+      "hiring": {
+        "crawled": 3,
+        "accepted": 1,
+        "score_sum": 63,
+        "yield": 0.333,
+        "avg_score": 63.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 3,
+      "rss": 2,
+      "web": 2,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 160,
+    "fallbacks": 0,
+    "avg_latency_ms": 91.7,
+    "jev_input_tokens": 76558,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-20T21:24:03+00:00",
+      "offset_s": 0.0,
+      "duration_s": 24.54,
+      "status": "ok",
+      "counts": {
+        "candidates": 304,
+        "src_hn": 63,
+        "src_launch_hn": 4,
+        "src_rss": 71,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 4,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-20T21:24:28+00:00",
+      "offset_s": 24.54,
+      "duration_s": 13.61,
+      "status": "ok",
+      "counts": {
+        "in": 304,
+        "selected": 10
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 3, 'rss': 2, 'web': 2, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-20T21:24:42+00:00",
+      "offset_s": 38.15,
+      "duration_s": 11.18,
+      "status": "ok",
+      "counts": {
+        "requested": 10,
+        "crawled": 10
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-20T21:24:53+00:00",
+      "offset_s": 49.34,
+      "duration_s": 163.74,
+      "status": "ok",
+      "counts": {
+        "extracted": 10,
+        "relevant": 7,
+        "valid": 7
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-10-20T21:27:37+00:00",
+      "offset_s": 213.08,
+      "duration_s": 75.01,
+      "status": "ok",
+      "counts": {
+        "startups": 7,
+        "websites": 6,
+        "emails": 4,
+        "phones": 0
+      },
+      "notes": [
+        "team page: +0 people, +0 edges",
+        "no website found",
+        "team page: +0 people, +0 edges",
+        "team page: +2 people, +2 edges",
+        "team page: +7 people, +10 edges",
+        "team page: +1 people, +2 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-20T21:28:52+00:00",
+      "offset_s": 288.09,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 72
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-10-20T21:28:52+00:00",
+      "offset_s": 288.09,
+      "duration_s": 2.12,
+      "status": "ok",
+      "counts": {
+        "startups": 7,
+        "people": 29,
+        "edges": 50
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-10-20T21:28:54+00:00",
+      "offset_s": 290.21,
+      "duration_s": 16.68,
+      "status": "ok",
+      "counts": {
+        "startups": 2,
+        "emails": 1
+      },
+      "notes": [
+        "Chariot Claims: ok, score 87",
+        "Jooba: no_website, score 43"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.41,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 0.99,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 67,
+      "seconds": 2.12,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 71,
+      "seconds": 5.22,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 8.38,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 4,
+      "seconds": 24.54,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 30096,
+    "completion_tokens": 16916,
+    "total_tokens": 47012,
+    "calls": 16,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 24574,
+        "completion_tokens": 13852,
+        "total_tokens": 38426,
+        "calls": 11
+      },
+      "team": {
+        "prompt_tokens": 5522,
+        "completion_tokens": 3064,
+        "total_tokens": 8586,
+        "calls": 5
+      }
+    }
+  },
+  "quality": {
+    "candidates": 304,
+    "crawled": 10,
+    "extracted": 10,
+    "relevant": 7,
+    "valid": 7,
+    "sources": {
+      "rss": 2,
+      "web": 2,
+      "hiring": 1,
+      "yc": 2
+    },
+    "people": 29,
+    "edges": 50,
+    "dropped_ungrounded": 2,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 6,
+    "with_website": 6,
+    "with_email": 4,
+    "with_phone": 0,
+    "people_linked": 8,
+    "avg_score": 72.7,
+    "issues": {
+      "warn: empty tech_stack": 3,
+      "not a relevant startup page": 3
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Molagri",
+      "url": "https://betakit.com/molagri-raises-5-2-million-usd-seed-round-to-bolster-work-on-pesticides-that-evolve/",
+      "source": "rss",
+      "people": 3,
+      "edges": 7,
+      "score": 88,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://molagri.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Chariot Claims",
+      "url": "https://news.crunchbase.com/ai/legal-tech-chariot-raise-stop-hidden-fees-subscriptions-hang/",
+      "source": "rss",
+      "people": 2,
+      "edges": 12,
+      "score": 61,
+      "gaps": [
+        "website",
+        "tech stack",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Raindrop",
+      "url": "https://www.prnewswire.com/news-releases/raindrop-raises-15-million-to-detect-critical-ai-agent-failures-302628853.html",
+      "source": "web",
+      "people": 11,
+      "edges": 6,
+      "score": 88,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://www.raindrop.farm",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Seltz",
+      "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html",
+      "source": "web",
+      "people": 1,
+      "edges": 8,
+      "score": 81,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "https://seltz.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Elman",
+      "url": "https://elman.ai/preprint",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 67,
+      "gaps": [
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://elman.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Axel",
+      "url": "https://www.ycombinator.com/launches/WAo-axel-ai-travel-agent-that-saves-you-money-on-flights-and-hotels",
+      "source": "yc",
+      "people": 1,
+      "edges": 0,
+      "score": 60,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "https://helloaxel.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Adside.ai",
+      "url": "https://www.ycombinator.com/launches/VrT-adside-ai-ai-native-paid-ads-agency",
+      "source": "yc",
+      "people": 1,
+      "edges": 5,
+      "score": 64,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.adside.ai",
+      "emails": 1,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://tenki.cloud/",
+      "source": "hiring",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://worklicant.com/",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://github.com/AbdullahAlhariri/penmentor",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": []
+}
