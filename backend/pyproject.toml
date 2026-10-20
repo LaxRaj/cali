@@ -1,0 +1,19 @@
+[project]
+name = "cali-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "crawl4ai>=0.9.5",
+    "ddgs>=9.16.0",
+    "duckduckgo-search>=8.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
