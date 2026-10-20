@@ -1,23 +1,24 @@
 {
-  "generated_at": "2026-10-20T08:07:00+00:00",
-  "candidates": 106,
-  "crawled": 7,
-  "extracted": 7,
-  "relevant": 3,
-  "valid": 3,
+  "generated_at": "2026-10-20T11:09:57+00:00",
+  "candidates": 112,
+  "crawled": 4,
+  "extracted": 3,
+  "relevant": 2,
+  "valid": 2,
   "sources": {
-    "hn": 1,
-    "yc": 1,
-    "rss": 1
+    "hn": 2
   },
-  "people": 6,
-  "edges": 8,
-  "dropped_ungrounded": 0,
+  "people": 0,
+  "edges": 0,
+  "dropped_ungrounded": 1,
   "issues": {
-    "not a relevant startup page": 4,
-    "warn: empty tech_stack": 1
+    "extraction error": 1,
+    "not a relevant startup page": 1
   },
-  "failures": [],
-  "passed": true,
+  "failures": [
+    "only 2 valid startups (< 3)",
+    "only 1 discovery sources produced valid startups (< 2)"
+  ],
+  "passed": false,
   "validity_rate": 1.0
 }

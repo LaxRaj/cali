@@ -1,0 +1,195 @@
+{
+  "run_id": "20261020T110815Z",
+  "started_at": "2026-10-20T11:08:15+00:00",
+  "duration_s": 102.3,
+  "passed": false,
+  "funnel": {
+    "candidates": 112,
+    "selected": 4,
+    "crawled": 4,
+    "extracted": 3,
+    "relevant": 2,
+    "valid": 2
+  },
+  "tokens": 20779,
+  "sources": {
+    "rss": 8,
+    "yc": 12,
+    "hn": 62,
+    "web": 30
+  },
+  "failures": [
+    "only 2 valid startups (< 3)",
+    "only 1 discovery sources produced valid startups (< 2)"
+  ],
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup founded 2024",
+      "Series A RAG platform launch founder interview",
+      "AI retrieval tool pre\u2011seed funding Lightspeed",
+      "developer tooling startup vector search Series A 2024",
+      "knowledge base search startup Series A Andreessen Horowitz"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG",
+      "vector database",
+      "developer tooling",
+      "next.js AI"
+    ]
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-20T11:08:15+00:00",
+      "offset_s": 0.0,
+      "duration_s": 13.39,
+      "status": "ok",
+      "counts": {
+        "candidates": 112,
+        "src_hn": 62,
+        "src_rss": 8,
+        "src_yc": 12,
+        "src_web": 30
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-20T11:08:28+00:00",
+      "offset_s": 13.39,
+      "duration_s": 6.77,
+      "status": "ok",
+      "counts": {
+        "in": 112,
+        "selected": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-20T11:08:35+00:00",
+      "offset_s": 20.16,
+      "duration_s": 4.59,
+      "status": "ok",
+      "counts": {
+        "requested": 4,
+        "crawled": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-20T11:08:40+00:00",
+      "offset_s": 24.75,
+      "duration_s": 77.52,
+      "status": "ok",
+      "counts": {
+        "extracted": 3,
+        "relevant": 2,
+        "valid": 2
+      },
+      "notes": []
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-20T11:09:57+00:00",
+      "offset_s": 102.28,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 0
+      },
+      "notes": [
+        "only 2 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
+    }
+  ],
+  "source_health": {
+    "rss": {
+      "candidates": 8,
+      "seconds": 0.3,
+      "error": ""
+    },
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.42,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 62,
+      "seconds": 1.49,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 11.97,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14913,
+    "completion_tokens": 5866,
+    "total_tokens": 20779,
+    "calls": 5
+  },
+  "quality": {
+    "candidates": 112,
+    "crawled": 4,
+    "extracted": 3,
+    "relevant": 2,
+    "valid": 2,
+    "sources": {
+      "hn": 2
+    },
+    "people": 0,
+    "edges": 0,
+    "dropped_ungrounded": 1,
+    "issues": {
+      "extraction error": 1,
+      "not a relevant startup page": 1
+    },
+    "failures": [
+      "only 2 valid startups (< 3)",
+      "only 1 discovery sources produced valid startups (< 2)"
+    ],
+    "passed": false,
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "ForgeMesh Labs",
+      "url": "https://forgemesh.io/blog/pay-per-crawl-every-stack",
+      "source": "hn",
+      "people": 0,
+      "edges": 0
+    },
+    {
+      "company": "Things To Do API",
+      "url": "https://thingstodoapi.com/",
+      "source": "hn",
+      "people": 0,
+      "edges": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://rstation.ai/",
+      "source": "hn",
+      "reasons": [
+        "extraction error"
+      ]
+    },
+    {
+      "url": "https://github.com/RayenMlayeh/jevcrawl",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [
+    "extract failed https://rstation.ai/: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m5bf9z41exwbn31jnvk60sb3` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 192522, Requested 8070. Please try again in 4m15.744s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type':"
+  ]
+}
