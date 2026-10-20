@@ -99,3 +99,21 @@ def test_run_gates():
     assert any("discovery sources" in f for f in single.failures)
 
     assert not evaluate_run(RunReport()).passed  # empty run never passes
+
+
+def test_tidy_removes_org_people_and_redundant_edges():
+    from models import Edge, Extraction, Person, StartupProfile
+    from quality import tidy
+
+    sp = StartupProfile(company_name="Acme", core_product="p", likely_bottleneck="b", value_prop_pitch="x. y.", is_relevant=True)
+    P = lambda n, r: Person(name=n, role=r, org="Acme", evidence="e")  # noqa: E731
+    E_ = lambda a, r, b: Edge(src=a, rel=r, dst=b, evidence="e")  # noqa: E731
+    ex = Extraction(
+        startup=sp,
+        people=[P("Jane Roe", "co-founder"), P("People Ventures", "investor"), P("Peakon", "former employer"), P("Emblem", "investor")],
+        edges=[E_("Jane Roe", "founded", "Acme"), E_("Jane Roe", "cofounded", "Acme"), E_("Jane Roe", "works_at", "Acme"),
+               E_("People Ventures", "invested_in", "Acme")],
+    )
+    out = tidy(ex)
+    assert [p.name for p in out.people] == ["Jane Roe"]
+    assert [(e.src, e.rel) for e in out.edges] == [("Jane Roe", "cofounded"), ("People Ventures", "invested_in")]

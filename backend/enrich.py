@@ -391,11 +391,11 @@ def merge_edges(base: list[Edge], extra: list[Edge]) -> list[Edge]:
 def apply_person_links(people: list[Person], pages: list[PageFacts], company: str, search_fn=None, budget: list[int] | None = None) -> list[Person]:
     """Attach profile links: first from the company's own pages, then (budgeted) public search for leaders."""
     out = []
-    for p in people:
+    for p in sorted(people, key=lambda x: not re.search(r"found|ceo|cto", x.role or "", re.I)):  # founders get the search budget first
         links = match_person_links(p, pages, company)
         leader = re.search(r"founder|ceo|cto|chief|co-?found|head of|president", p.role or "", re.I)
         if search_fn and leader and budget is not None and budget[0] > 0:
-            missing = tuple(x for x in ("linkedin", "github", "twitter") if x not in links and not getattr(p, x))
+            missing = tuple(x for x in ("linkedin",) if x not in links and not getattr(p, x))  # 1 query per leader
             for plat in missing:
                 if budget[0] <= 0:
                     break
@@ -416,14 +416,14 @@ def team_markdown(pages: list[tuple[str, str]], limit: int = 9000) -> str:
 
 
 def extraction_with_people(ex: Extraction, people: list[Person], edges: list[Edge]) -> Extraction:
-    return ex.model_copy(update={"people": people, "edges": edges})
+    return tidy(ex.model_copy(update={"people": people, "edges": edges}))
 
 
 # --- crawling + orchestration ----------------------------------------------------------------------
 
 import asyncio  # noqa: E402
 
-from quality import filter_edges, filter_people  # noqa: E402
+from quality import filter_edges, filter_people, tidy  # noqa: E402
 
 
 @dataclass
@@ -507,7 +507,7 @@ async def enrich_startup(
 
     # People/connections from the company's own About/Team page (grounded against that page).
     tmd = team_markdown([(f.url, f.markdown) for f in fetched])
-    if tmd and extract_fn and (team_budget is None or team_budget[0] > 0):
+    if tmd and extract_fn and len(tidy(ex).people) < 4 and (team_budget is None or team_budget[0] > 0):  # already rich: save the call
         if team_budget is not None:
             team_budget[0] -= 1
         try:

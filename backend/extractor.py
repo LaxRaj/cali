@@ -48,11 +48,12 @@ startup fields:
   listicles, market reports, big-company news, personal side projects/demos, and a company's own
   marketing or SEO blog content that is not about its launch, funding or founders.
   This is about WHAT THE PAGE IS, not whether the startup suits the research goal.
-  When false, still fill every field (use "" where unknown).
+  When false the page is discarded: return company_name "", every other field empty, and "people": [], "edges": [].
 - Leave source_url and discovered_at as "".
 
-people: founders, key engineers, investors and advisors named on the page. Extract people and edges
-thoroughly whenever the page names them, regardless of is_relevant.
+people: HUMAN founders, key engineers and advisors named on the page, with their title. Do not list funds,
+companies or past employers as people (put investors and previous employers in edges only). Extract people and edges
+thoroughly when is_relevant is true.
 - evidence MUST be a short verbatim quote (copy it exactly, character for character, one contiguous
   span, NO ellipses) from the page that supports the person and role.
 edges: relationships between named entities, rel one of founded, cofounded, works_at, invested_in, advises,
