@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Class-based dark mode: <html class="dark"> forces the dark theme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
