@@ -102,14 +102,16 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
         cand = by_url.get(normalize_url(page.url))
         source = cand.source if cand else "unknown"
         title, snippet, triage = (cand.title, cand.snippet, cand.triage) if cand else ("", "", 0.0)
+        gate_p = None
         if gate_enabled():
             gate = gate_page(page.markdown, title=title)
+            gate_p = gate.p
             if not gate.ok:  # looks like a guide/listicle/hobby page: don't spend LLM tokens on it
                 report.gated += 1
                 print(f"gate {page.url}: p={gate.p}", file=sys.stderr)
                 if log:
                     log.rejection(page.url, source, [f"gated: not a startup page (p={gate.p})"])
-                    log.candidate(page.url, source, title, snippet, triage, "gated")
+                    log.candidate(page.url, source, title, snippet, triage, "gated", gate_p=gate_p)
                 continue
         try:
             ex = extract(page.markdown)
@@ -141,17 +143,17 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
                 else p
                 for p in kept.people
             ]
-            accepted.append((tidy(kept.model_copy(update={"people": people})), source, page.markdown))
+            accepted.append((tidy(kept.model_copy(update={"people": people}), drop_incomplete=False), source, page.markdown))
             if log:
                 log.accept(ex.startup.company_name, page.url, source, len(people), len(kept.edges))
-                log.candidate(page.url, source, title, snippet, triage, "accepted")
+                log.candidate(page.url, source, title, snippet, triage, "accepted", gate_p=gate_p)
         for issue in checked.issues:
             report.issues[issue] = report.issues.get(issue, 0) + 1
         if not checked.accepted:
             print(f"reject {page.url}: {checked.issues}", file=sys.stderr)
             if log:
                 log.rejection(page.url, source, checked.issues)
-                log.candidate(page.url, source, title, snippet, triage, "rejected")
+                log.candidate(page.url, source, title, snippet, triage, "rejected", gate_p=gate_p)
     return accepted
 
 

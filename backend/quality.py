@@ -92,10 +92,42 @@ def is_org_like(p: Person) -> bool:
     return bool(re.search(r"investor", p.role or "", re.I)) and len(p.name.split()) < 2
 
 
-def tidy(ex: Extraction) -> Extraction:
+def _has_link(p: Person) -> bool:
+    return bool(p.linkedin or p.twitter or p.github or p.homepage)
+
+
+def _merge_first_names(people: list[Person], edges: list[Edge]) -> tuple[list[Person], list[Edge]]:
+    """'Stephen' + 'Stephen Grabowski' are one person: keep the full name, fill its blanks, retarget edges."""
+    full = {}
+    for p in people:
+        if len(p.name.split()) > 1:
+            full.setdefault(p.name.split()[0].lower(), []).append(p)
+    rename, drop = {}, set()
+    for i, p in enumerate(people):
+        cands = full.get(p.name.lower()) if len(p.name.split()) == 1 else None
+        if cands and len(cands) == 1:
+            rename[p.name] = cands[0].name
+            drop.add(i)
+            for f in ("role", "org", "linkedin", "twitter", "github", "homepage", "link_source"):
+                if not getattr(cands[0], f) and getattr(p, f):
+                    setattr(cands[0], f, getattr(p, f))
+    people = [p for i, p in enumerate(people) if i not in drop]
+    edges = [e.model_copy(update={"src": rename.get(e.src, e.src), "dst": rename.get(e.dst, e.dst)}) for e in edges]
+    return people, edges
+
+
+def tidy(ex: Extraction, drop_incomplete: bool = True) -> Extraction:
     """Deterministic cleanup of the connection graph: real people only, one edge per fact.
-    cofounded supersedes founded; founding a company supersedes works_at for the same pair."""
-    people = [p for p in ex.people if not is_org_like(p)]
+    cofounded supersedes founded; founding a company supersedes works_at for the same pair.
+    First-name-only entries are merged into a full-name twin; with drop_incomplete (the final pass, after profile
+    links were sought) those still lacking a surname and any profile link are dropped with their edges."""
+    people = [p.model_copy() for p in ex.people if not is_org_like(p)]
+    people, ex_edges = _merge_first_names(people, list(ex.edges))
+    if drop_incomplete:
+        gone = {p.name for p in people if len(p.name.split()) < 2 and not _has_link(p)}
+        people = [p for p in people if p.name not in gone]
+        ex_edges = [e for e in ex_edges if e.src not in gone and e.dst not in gone]
+    ex = ex.model_copy(update={"edges": ex_edges})
     key = lambda e: (e.src.strip().lower(), e.dst.strip().lower())  # noqa: E731
     rels: dict[tuple[str, str], set[str]] = {}
     for e in ex.edges:
