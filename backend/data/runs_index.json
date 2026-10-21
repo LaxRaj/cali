@@ -259,6 +259,35 @@
         "web": 24
       },
       "failures": []
+    },
+    {
+      "run_id": "20261021T045117Z",
+      "started_at": "2026-10-21T04:51:17+00:00",
+      "duration_s": 85.7,
+      "passed": false,
+      "status": "quota",
+      "funnel": {
+        "candidates": 306,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 2,
+        "relevant": 2,
+        "valid": 2
+      },
+      "tokens": 6883,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 67,
+        "web": 30,
+        "rss": 71,
+        "edgar": 6
+      },
+      "failures": [
+        "only 2 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
     }
   ]
 }
