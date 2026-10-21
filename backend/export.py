@@ -7,6 +7,7 @@ from pathlib import Path
 
 from decide.policy import decide_lead
 from draft import build_draft
+from investors import investor_clusters
 from outcomes import load_outcomes
 from paths import find_path, load_known
 from whynow import why_now
@@ -97,7 +98,13 @@ def build_graph(db_dir) -> dict:
         edges.append({"source": s, "target": t, "rel": e["rel"], "evidence": e["evidence"]})
         nodes[s]["degree"] += 1
         nodes[t]["degree"] += 1
-    return {"nodes": sorted(nodes.values(), key=lambda n: -n["degree"]), "edges": edges}
+    startups = [n["label"] for n in nodes.values() if n["type"] == "startup"]
+    raw = [{f: e[f] for f in ("src", "rel", "dst", "evidence")} for e in _rows(EDGES, db_dir)]
+    return {
+        "nodes": sorted(nodes.values(), key=lambda n: -n["degree"]),
+        "edges": edges,
+        "investors": investor_clusters(raw, startups),
+    }
 
 
 def export_all(db_dir=DB_DIR) -> None:

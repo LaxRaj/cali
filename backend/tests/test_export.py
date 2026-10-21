@@ -63,7 +63,7 @@ def test_export_all_writes_both_files(db):
 def test_empty_db_exports_empty_structures(tmp_path):
     export_all(tmp_path / "empty")
     assert json.loads((tmp_path / "empty" / "profiles.json").read_text()) == []
-    assert json.loads((tmp_path / "empty" / "graph.json").read_text()) == {"nodes": [], "edges": []}
+    assert json.loads((tmp_path / "empty" / "graph.json").read_text()) == {"nodes": [], "edges": [], "investors": []}
 
 
 def test_profiles_expose_score_contact_gaps_and_person_links_sorted_by_score(tmp_path):

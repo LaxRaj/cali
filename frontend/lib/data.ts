@@ -88,7 +88,17 @@ export type GraphEdge = {
   rel: string;
   evidence: string;
 };
-export type Graph = { nodes: GraphNode[]; edges: GraphEdge[] };
+export type InvestorCluster = {
+  investor: string;
+  companies: string[];
+  count: number;
+  co_investors: { name: string; shared: number }[];
+};
+export type Graph = {
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+  investors?: InvestorCluster[];
+};
 
 export type Funnel = {
   candidates: number;

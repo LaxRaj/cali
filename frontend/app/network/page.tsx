@@ -37,6 +37,29 @@ export default function NetworkPage() {
             <Stat label="Links" value={graph.edges.length} tone="violet" />
           </div>
           <NetworkGraph graph={graph} />
+          {(graph.investors?.length ?? 0) > 0 && (
+            <Panel title="Investors backing several startups" tone="emerald">
+              <ul className="space-y-2">
+                {graph.investors?.map((inv) => (
+                  <li key={inv.investor}>
+                    <span className="font-semibold">{inv.investor}</span>{" "}
+                    <span className="tabular-nums text-zinc-600 dark:text-zinc-400">
+                      ×{inv.count}
+                    </span>
+                    : {inv.companies.join(", ")}
+                    {inv.co_investors.length > 0 && (
+                      <p className="text-xs text-zinc-600 dark:text-zinc-400">
+                        co-invests with{" "}
+                        {inv.co_investors
+                          .map((c) => `${c.name} (${c.shared})`)
+                          .join(", ")}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </Panel>
+          )}
           <Panel title="Link types" tone="violet">
             <ul className="flex flex-wrap gap-x-6 gap-y-1">
               {rels.map(([rel, n]) => (
