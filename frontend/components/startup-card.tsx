@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Contact, Profile } from "@/lib/data";
 import { fmtDate } from "@/lib/format";
 import { CopyPitchButton } from "./copy-pitch-button";
+import { EmailDraft } from "./email-draft";
 import { PersonLinks } from "./startups/links";
 import { ScoreBadge } from "./startups/score-badge";
 import { TONES } from "./ui/tone";
@@ -123,6 +124,8 @@ export function StartupCard({
             <p>{p.value_prop_pitch}</p>
           </div>
         )}
+
+        {full && p.email_draft && <EmailDraft draft={p.email_draft} />}
 
         {p.why_now && p.why_now.length > 0 && (
           <ul aria-label="Why now" className="space-y-0.5 text-xs">
