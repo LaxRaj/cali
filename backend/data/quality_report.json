@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-10-20T21:28:52+00:00",
-  "candidates": 304,
-  "crawled": 10,
-  "extracted": 10,
-  "relevant": 7,
-  "valid": 7,
+  "generated_at": "2026-10-21T04:52:41+00:00",
+  "candidates": 306,
+  "crawled": 8,
+  "extracted": 2,
+  "relevant": 2,
+  "valid": 2,
   "sources": {
-    "rss": 2,
-    "web": 2,
-    "hiring": 1,
-    "yc": 2
+    "rss": 2
   },
-  "people": 29,
-  "edges": 50,
-  "dropped_ungrounded": 2,
+  "people": 6,
+  "edges": 11,
+  "dropped_ungrounded": 0,
   "gated": 0,
-  "quota_exhausted": false,
-  "enriched": 6,
-  "with_website": 6,
-  "with_email": 4,
+  "quota_exhausted": true,
+  "enriched": 0,
+  "with_website": 0,
+  "with_email": 0,
   "with_phone": 0,
-  "people_linked": 8,
-  "avg_score": 72.7,
+  "people_linked": 6,
+  "avg_score": 73.5,
   "issues": {
-    "warn: empty tech_stack": 3,
-    "not a relevant startup page": 3
+    "warn: empty tech_stack": 1,
+    "extraction error": 1
   },
-  "failures": [],
-  "passed": true,
+  "failures": [
+    "only 2 valid startups (< 3)",
+    "only 1 discovery sources produced valid startups (< 2)"
+  ],
+  "passed": false,
   "deferred_urls": [],
   "skipped": "",
   "validity_rate": 1.0

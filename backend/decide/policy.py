@@ -7,6 +7,8 @@ outcome you recorded. Output: action (contact_now | enrich_more | watch | skip |
 
 from datetime import datetime, timezone
 
+from signals import signal_strength
+
 HOT_DAYS, WARM_DAYS = 7, 21
 FOLLOW_UP_DAYS = 7
 
@@ -23,7 +25,10 @@ def _age_days(iso: str, now: datetime) -> float | None:
 
 def decide_lead(profile: dict, outcome: dict | None = None, now: datetime | None = None) -> dict:
     now = now or datetime.now(timezone.utc)
-    score = int(profile.get("score") or 0)
+    raw_score = int(profile.get("score") or 0)
+    signals = profile.get("signals") or []
+    strength = signal_strength(signals, now)  # 0-10: hiring / founding roles / seeking freelancers / fresh launch
+    score = min(100, raw_score + round(3 * strength))  # thin hiring-post profiles score low on data, not on intent
     contact = profile.get("contact") or {}
     emails = contact.get("emails") or []
     phones = contact.get("phones") or []
@@ -56,7 +61,9 @@ def decide_lead(profile: dict, outcome: dict | None = None, now: datetime | None
         return result("watch", "cold", "Waiting on their reply" if status == "contacted" else "Continue the conversation", weight=0.4)
 
     # 2) Otherwise decide from fit, freshness and reachability.
-    reasons.append(f"lead score {score}")
+    reasons.append(f"lead score {raw_score}")
+    if strength:
+        reasons.append(f"signal strength {strength}/10: " + ", ".join(sorted({s_["type"].replace("_", " ") for s_ in signals})))
     if age is not None:
         reasons.append(f"found {int(age)} day(s) ago ({fresh})")
     if score < 35:

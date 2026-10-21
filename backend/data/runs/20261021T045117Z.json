@@ -1,0 +1,357 @@
+{
+  "run_id": "20261021T045117Z",
+  "started_at": "2026-10-21T04:51:17+00:00",
+  "duration_s": 85.7,
+  "passed": false,
+  "status": "quota",
+  "funnel": {
+    "candidates": 306,
+    "selected": 9,
+    "crawled": 8,
+    "extracted": 2,
+    "relevant": 2,
+    "valid": 2
+  },
+  "tokens": 6883,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 67,
+    "web": 30,
+    "rss": 71,
+    "edgar": 6
+  },
+  "failures": [
+    "only 2 valid startups (< 3)",
+    "only 1 discovery sources produced valid startups (< 2)"
+  ],
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup founded 2024",
+      "Series A RAG platform launch founder interview",
+      "AI retrieval tool pre\u2011seed funding Lightspeed Ventures",
+      "developer tooling startup vector search seed funding 2024",
+      "knowledge base AI startup Series A investor Andreessen Horowitz"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG",
+      "vector database",
+      "developer tooling",
+      "next.js AI"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 11,
+        "accepted": 3,
+        "score_sum": 150,
+        "yield": 0.273,
+        "avg_score": 50.0
+      },
+      "yc": {
+        "crawled": 9,
+        "accepted": 9,
+        "score_sum": 494,
+        "yield": 1.0,
+        "avg_score": 54.9
+      },
+      "rss": {
+        "crawled": 11,
+        "accepted": 9,
+        "score_sum": 674,
+        "yield": 0.818,
+        "avg_score": 74.9
+      },
+      "web": {
+        "crawled": 11,
+        "accepted": 9,
+        "score_sum": 714,
+        "yield": 0.818,
+        "avg_score": 79.3
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 278,
+        "yield": 1.0,
+        "avg_score": 69.5
+      },
+      "edgar": {
+        "crawled": 6,
+        "accepted": 1,
+        "score_sum": 66,
+        "yield": 0.167,
+        "avg_score": 66.0
+      },
+      "hiring": {
+        "crawled": 5,
+        "accepted": 2,
+        "score_sum": 130,
+        "yield": 0.4,
+        "avg_score": 65.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 3,
+      "rss": 2,
+      "web": 2,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 153,
+    "fallbacks": 0,
+    "avg_latency_ms": 134.0,
+    "jev_input_tokens": 72783,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-21T04:51:17+00:00",
+      "offset_s": 0.0,
+      "duration_s": 8.07,
+      "status": "ok",
+      "counts": {
+        "candidates": 306,
+        "src_hn": 63,
+        "src_launch_hn": 4,
+        "src_rss": 71,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 6,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-21T04:51:25+00:00",
+      "offset_s": 8.07,
+      "duration_s": 20.12,
+      "status": "ok",
+      "counts": {
+        "in": 306,
+        "selected": 9
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 3, 'rss': 2, 'web': 2, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-21T04:51:45+00:00",
+      "offset_s": 28.19,
+      "duration_s": 17.24,
+      "status": "ok",
+      "counts": {
+        "requested": 9,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-21T04:52:02+00:00",
+      "offset_s": 45.43,
+      "duration_s": 38.2,
+      "status": "ok",
+      "counts": {
+        "extracted": 2,
+        "relevant": 2,
+        "valid": 2
+      },
+      "notes": []
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-21T04:52:41+00:00",
+      "offset_s": 83.63,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 0,
+        "avg_score": 73
+      },
+      "notes": [
+        "only 2 valid startups (< 3)",
+        "only 1 discovery sources produced valid startups (< 2)"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.55,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 0.96,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 67,
+      "seconds": 1.9,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 5.4,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 71,
+      "seconds": 5.7,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 6,
+      "seconds": 8.07,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 4848,
+    "completion_tokens": 2035,
+    "total_tokens": 6883,
+    "calls": 2,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 4848,
+        "completion_tokens": 2035,
+        "total_tokens": 6883,
+        "calls": 2
+      }
+    }
+  },
+  "quality": {
+    "candidates": 306,
+    "crawled": 8,
+    "extracted": 2,
+    "relevant": 2,
+    "valid": 2,
+    "sources": {
+      "rss": 2
+    },
+    "people": 6,
+    "edges": 11,
+    "dropped_ungrounded": 0,
+    "gated": 0,
+    "quota_exhausted": true,
+    "enriched": 0,
+    "with_website": 0,
+    "with_email": 0,
+    "with_phone": 0,
+    "people_linked": 6,
+    "avg_score": 73.5,
+    "issues": {
+      "warn: empty tech_stack": 1,
+      "extraction error": 1
+    },
+    "failures": [
+      "only 2 valid startups (< 3)",
+      "only 1 discovery sources produced valid startups (< 2)"
+    ],
+    "passed": false,
+    "deferred_urls": [],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Jenz",
+      "url": "https://tech.eu/2026/10/21/jenz-lands-eur540k-four-months-after-hackathon-win-to-streamline-retail-operations/",
+      "source": "rss",
+      "people": 3,
+      "edges": 6,
+      "score": 72,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Plinto",
+      "url": "https://tech.eu/2026/10/20/danish-startup-plinto-raises-eur29m-to-streamline-financial-controls/",
+      "source": "rss",
+      "people": 5,
+      "edges": 5,
+      "score": 75,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2144077/000214407726000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+      "source": "web",
+      "reasons": [
+        "extraction error"
+      ]
+    },
+    {
+      "url": "https://finance.yahoo.com/sectors/technology/articles/exclusive-andreessen-horowitz-backs-deeptune-120000793.html?fr=sycsrp_catchall",
+      "source": "web",
+      "reasons": [
+        "extraction error"
+      ]
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=49961408",
+      "source": "hiring",
+      "reasons": [
+        "extraction error"
+      ]
+    },
+    {
+      "url": "https://joinpond.ai",
+      "source": "hiring",
+      "reasons": [
+        "extraction error"
+      ]
+    },
+    {
+      "url": "https://www.ycombinator.com/launches/W5J-scout-by-fini-an-ai-teammate-for-your-support-team",
+      "source": "yc",
+      "reasons": [
+        "extraction error"
+      ]
+    },
+    {
+      "url": "https://www.ycombinator.com/launches/W49-antropi-robotics-cnc-parts-in-days-from-autnomous-factories",
+      "source": "yc",
+      "reasons": [
+        "extraction error"
+      ]
+    }
+  ],
+  "errors": [
+    "extract failed https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m5bf9cd3epf9ytwbpr8r3nm7` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196683, Requested 3729. Please try again in 2m57.984s. Need mo"
+  ]
+}

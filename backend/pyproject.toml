@@ -17,6 +17,12 @@ dependencies = [
     "sentence-transformers>=6.1.0",
 ]
 
+[project.optional-dependencies]
+gmail = [
+    "google-api-python-client>=2.150.0",
+    "google-auth-oauthlib>=1.2.1",
+]
+
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",

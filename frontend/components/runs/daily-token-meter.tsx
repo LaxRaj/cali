@@ -21,7 +21,7 @@ export function DailyTokenMeter({
   return (
     <div className="space-y-1.5">
       <div className="flex items-baseline gap-2">
-        <span className="glow font-display text-4xl leading-none">
+        <span className="font-display text-4xl leading-none">
           {fmtTokens(total)}
         </span>
         <span className="text-xs text-zinc-600 dark:text-zinc-400">
@@ -29,7 +29,7 @@ export function DailyTokenMeter({
           {over && <strong className="text-rose-600"> · over budget</strong>}
         </span>
       </div>
-      <div className="relative flex h-4 border-2 border-zinc-900 bg-white/60 dark:border-amber-400/60 dark:bg-black/40">
+      <div className="relative flex h-4 border border-zinc-900/25 bg-white/60 dark:border-amber-400/60 dark:bg-black/40">
         {used.map((r, i) => (
           <span
             key={r.run_id}

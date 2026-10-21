@@ -1,5 +1,175 @@
 [
   {
+    "company_name": "Polygrade",
+    "core_product": "AI‑powered platform that automates home warranty claim processing from diagnosis to resolution.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling AI agent integration and data pipelines to handle high‑volume claim workloads.",
+    "value_prop_pitch": "You can accelerate your AI agent integration by building a unified front‑end with Next.js that caches and serves semantic search results instantly. Pair it with a vector‑based knowledge store to let your agents retrieve relevant claim data in milliseconds, eliminating latency bottlenecks.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://betakit.com/toronto-software-startup-ploygrade-emerges-from-stealth-to-build-ai-for-home-warranty-claims/",
+    "discovered_at": "2026-10-21T04:39:48+00:00",
+    "funding_amount": "$6.3M USD",
+    "hq": "Toronto",
+    "website": "https://polygrade.com",
+    "score": 93,
+    "slug": "polygrade",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 20,
+      "contact": 16
+    },
+    "gaps": [
+      "tech stack",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://polygrade.com",
+      "emails": [
+        {
+          "value": "ops@polygrade.com",
+          "kind": "person",
+          "source_url": "https://polygrade.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/polygrade",
+        "twitter": "https://x.com/getpolygrade"
+      },
+      "contact_page": "https://polygrade.com/contact",
+      "pages_crawled": [
+        "https://polygrade.com/",
+        "https://polygrade.com/contact",
+        "https://polygrade.com/team",
+        "https://polygrade.com/about"
+      ],
+      "enriched_at": "2026-10-21T04:40:49+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "David Steckel",
+        "role": "Co‑founder & CEO",
+        "org": "Polygrade",
+        "evidence": "David Steckel, Polygrade’s co‑founder and CEO",
+        "linkedin": "https://www.linkedin.com/in/david-steckel",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://polygrade.com/about"
+      },
+      {
+        "name": "Eui Chung",
+        "role": "Co‑founder & CTO",
+        "org": "Polygrade",
+        "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)",
+        "linkedin": "https://www.linkedin.com/in/echung42",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://polygrade.com/about"
+      },
+      {
+        "name": "Kaustubh Vongole",
+        "role": "Co‑founder & Head of Product",
+        "org": "Polygrade",
+        "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)",
+        "linkedin": "https://www.linkedin.com/in/kvongole",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://polygrade.com/about"
+      }
+    ],
+    "edges": [
+      {
+        "src": "David Steckel",
+        "rel": "founded",
+        "dst": "Polygrade",
+        "evidence": "David Steckel, Polygrade’s co‑founder and CEO"
+      },
+      {
+        "src": "Eui Chung",
+        "rel": "cofounded",
+        "dst": "Polygrade",
+        "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)"
+      },
+      {
+        "src": "Kaustubh Vongole",
+        "rel": "cofounded",
+        "dst": "Polygrade",
+        "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)"
+      },
+      {
+        "src": "American Family Ventures",
+        "rel": "invested_in",
+        "dst": "Polygrade",
+        "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+      },
+      {
+        "src": "Nine Four Ventures",
+        "rel": "invested_in",
+        "dst": "Polygrade",
+        "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+      },
+      {
+        "src": "Hustle Fund",
+        "rel": "invested_in",
+        "dst": "Polygrade",
+        "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+      },
+      {
+        "src": "Room",
+        "rel": "invested_in",
+        "dst": "Polygrade",
+        "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+      },
+      {
+        "src": "Pillar",
+        "rel": "invested_in",
+        "dst": "Polygrade",
+        "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+      },
+      {
+        "src": "Construct Capital",
+        "rel": "invested_in",
+        "dst": "Polygrade",
+        "evidence": "a $3‑million USD cheque from Construct Capital"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 95.8,
+      "reasons": [
+        "lead score 93",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call ops@polygrade.com with the pitch",
+      "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://betakit.com/toronto-software-startup-ploygrade-emerges-from-stealth-to-build-ai-for-home-warranty-claims/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "ops@polygrade.com",
+      "to_source_url": "https://polygrade.com/",
+      "subject": "Polygrade: a thought on Scaling AI agent integration and data pipelines to handle hi",
+      "body": "Hi David,\n\nI came across Polygrade: AI‑powered platform that automates home warranty claim processing from diagnosis to resolution.\nOne thing I noticed: Scaling AI agent integration and data pipelines to handle high‑volume claim workloads.\n\nYou can accelerate your AI agent integration by building a unified front‑end with Next.js that caches and serves semantic search results instantly. Pair it with a vector‑based knowledge store to let your agents retrieve relevant claim data in milliseconds, eliminating latency bottlenecks.\n\nOpen to a quick chat?",
+      "mailto": "mailto:ops%40polygrade.com?subject=Polygrade%3A%20a%20thought%20on%20Scaling%20AI%20agent%20integration%20and%20data%20pipelines%20to%20handle%20hi&body=Hi%20David%2C%0A%0AI%20came%20across%20Polygrade%3A%20AI%E2%80%91powered%20platform%20that%20automates%20home%20warranty%20claim%20processing%20from%20diagnosis%20to%20resolution.%0AOne%20thing%20I%20noticed%3A%20Scaling%20AI%20agent%20integration%20and%20data%20pipelines%20to%20handle%20high%E2%80%91volume%20claim%20workloads.%0A%0AYou%20can%20accelerate%20your%20AI%20agent%20integration%20by%20building%20a%20unified%20front%E2%80%91end%20with%20Next.js%20that%20caches%20and%20serves%20semantic%20search%20results%20instantly.%20Pair%20it%20with%20a%20vector%E2%80%91based%20knowledge%20store%20to%20let%20your%20agents%20retrieve%20relevant%20claim%20data%20in%20milliseconds%2C%20eliminating%20latency%20bottlenecks.%0A%0AOpen%20to%20a%20quick%20chat%3F"
+    }
+  },
+  {
     "company_name": "Plinto",
     "core_product": "Plinto builds AI agents that monitor financial transactions in real time, detect deviations, investigate them and automatically take corrective actions.",
     "tech_stack": [
@@ -231,6 +401,153 @@
       ],
       "next_step": "Email/call hi@plinto.ai with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://www.eu-startups.com/2026/10/copenhagens-plinto-raises-e2-9-million-to-help-finance-teams-catch-and-fix-errors-with-ai-agents/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hi@plinto.ai",
+      "to_source_url": "https://plinto.ai/",
+      "subject": "Plinto: a thought on Real‑time retrieval and contextual search over massive strea",
+      "body": "Hi Sebastian,\n\nI came across Plinto: Plinto builds AI agents that monitor financial transactions in real time, detect deviations, investigate them and automatically take corrective actions.\nOne thing I noticed: Real‑time retrieval and contextual search over massive streams of transaction and document data for accurate anomaly detection.\n\nI can help Plinto improve its real‑time transaction monitoring by building a Next.js dashboard that surfaces flagged anomalies instantly, backed by a vector‑based semantic search over your ERP and banking data. This will let your AI agents retrieve the right context in milliseconds, reducing false positives and speeding up remediation.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hi%40plinto.ai?subject=Plinto%3A%20a%20thought%20on%20Real%E2%80%91time%20retrieval%20and%20contextual%20search%20over%20massive%20strea&body=Hi%20Sebastian%2C%0A%0AI%20came%20across%20Plinto%3A%20Plinto%20builds%20AI%20agents%20that%20monitor%20financial%20transactions%20in%20real%20time%2C%20detect%20deviations%2C%20investigate%20them%20and%20automatically%20take%20corrective%20actions.%0AOne%20thing%20I%20noticed%3A%20Real%E2%80%91time%20retrieval%20and%20contextual%20search%20over%20massive%20streams%20of%20transaction%20and%20document%20data%20for%20accurate%20anomaly%20detection.%0A%0AI%20can%20help%20Plinto%20improve%20its%20real%E2%80%91time%20transaction%20monitoring%20by%20building%20a%20Next.js%20dashboard%20that%20surfaces%20flagged%20anomalies%20instantly%2C%20backed%20by%20a%20vector%E2%80%91based%20semantic%20search%20over%20your%20ERP%20and%20banking%20data.%20This%20will%20let%20your%20AI%20agents%20retrieve%20the%20right%20context%20in%20milliseconds%2C%20reducing%20false%20positives%20and%20speeding%20up%20remediation.%0A%0AOpen%20to%20a%20quick%20chat%3F"
+    }
+  },
+  {
+    "company_name": "Deeptune",
+    "core_product": "Deeptune builds high‑fidelity reinforcement‑learning “training gyms” that simulate real workplace software so AI agents can learn multi‑step tasks.",
+    "tech_stack": [],
+    "likely_bottleneck": "scaling realistic, high‑fidelity simulation environments and efficiently indexing the massive amount of generated interaction data",
+    "value_prop_pitch": "I can integrate a Next.js front‑end with a vector‑semantic search layer to let your engineers instantly query any simulation log or asset, cutting down the time spent hunting for the right scenario. This will let you scale your training gyms faster while keeping the data searchable for rapid iteration.",
+    "is_relevant": true,
+    "funding_stage": "Series A",
+    "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
+    "discovered_at": "2026-10-21T04:39:48+00:00",
+    "funding_amount": "$43 million",
+    "hq": "New York",
+    "website": "https://fortune.com",
+    "score": 89,
+    "slug": "deeptune",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 17
+    },
+    "gaps": [
+      "tech stack"
+    ],
+    "contact": {
+      "website": "https://fortune.com",
+      "emails": [
+        {
+          "value": "nadine.ghosn@fortune.com",
+          "kind": "person",
+          "source_url": "https://fortune.com/about-us/"
+        },
+        {
+          "value": "patrick.reilly@fortune.com",
+          "kind": "person",
+          "source_url": "https://fortune.com/about-us/"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+12026112345",
+          "kind": "main",
+          "source_url": "https://fortune.com/section/leadership/"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/fortune-magazine"
+      },
+      "contact_page": "",
+      "pages_crawled": [
+        "https://fortune.com/",
+        "https://fortune.com/about-us/",
+        "https://fortune.com/section/leadership/"
+      ],
+      "enriched_at": "2026-10-21T04:41:23+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Tim Lupo",
+        "role": "cofounder and CEO",
+        "org": "Deeptune",
+        "evidence": "cofounder and CEO Tim Lupo told Fortune",
+        "linkedin": "https://www.linkedin.com/in/timlup",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Tim Lupo",
+        "rel": "founded",
+        "dst": "Deeptune",
+        "evidence": "cofounder and CEO Tim Lupo told Fortune"
+      },
+      {
+        "src": "Andreessen Horowitz",
+        "rel": "invested_in",
+        "dst": "Deeptune",
+        "evidence": "Andreessen Horowitz led the round"
+      },
+      {
+        "src": "776",
+        "rel": "invested_in",
+        "dst": "Deeptune",
+        "evidence": "joined by 776"
+      },
+      {
+        "src": "Noam Brown",
+        "rel": "invested_in",
+        "dst": "Deeptune",
+        "evidence": "angels including OpenAI researcher Noam Brown"
+      },
+      {
+        "src": "Marco Mascorro",
+        "rel": "invested_in",
+        "dst": "Deeptune",
+        "evidence": "Marco Mascorro, partner at Andreessen Horowitz, told Fortune"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 93.4,
+      "reasons": [
+        "lead score 89",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call nadine.ghosn@fortune.com with the pitch",
+      "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at series a stage",
+        "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "nadine.ghosn@fortune.com",
+      "to_source_url": "https://fortune.com/about-us/",
+      "subject": "Deeptune: a thought on scaling realistic, high‑fidelity simulation environments and",
+      "body": "Hi Tim,\n\nI came across Deeptune: Deeptune builds high‑fidelity reinforcement‑learning “training gyms” that simulate real workplace software so AI agents can learn multi‑step tasks.\nOne thing I noticed: scaling realistic, high‑fidelity simulation environments and efficiently indexing the massive amount of generated interaction data.\n\nI can integrate a Next.js front‑end with a vector‑semantic search layer to let your engineers instantly query any simulation log or asset, cutting down the time spent hunting for the right scenario. This will let you scale your training gyms faster while keeping the data searchable for rapid iteration.\n\nOpen to a quick chat?",
+      "mailto": "mailto:nadine.ghosn%40fortune.com?subject=Deeptune%3A%20a%20thought%20on%20scaling%20realistic%2C%20high%E2%80%91fidelity%20simulation%20environments%20and&body=Hi%20Tim%2C%0A%0AI%20came%20across%20Deeptune%3A%20Deeptune%20builds%20high%E2%80%91fidelity%20reinforcement%E2%80%91learning%20%E2%80%9Ctraining%20gyms%E2%80%9D%20that%20simulate%20real%20workplace%20software%20so%20AI%20agents%20can%20learn%20multi%E2%80%91step%20tasks.%0AOne%20thing%20I%20noticed%3A%20scaling%20realistic%2C%20high%E2%80%91fidelity%20simulation%20environments%20and%20efficiently%20indexing%20the%20massive%20amount%20of%20generated%20interaction%20data.%0A%0AI%20can%20integrate%20a%20Next.js%20front%E2%80%91end%20with%20a%20vector%E2%80%91semantic%20search%20layer%20to%20let%20your%20engineers%20instantly%20query%20any%20simulation%20log%20or%20asset%2C%20cutting%20down%20the%20time%20spent%20hunting%20for%20the%20right%20scenario.%20This%20will%20let%20you%20scale%20your%20training%20gyms%20faster%20while%20keeping%20the%20data%20searchable%20for%20rapid%20iteration.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -362,6 +679,21 @@
       ],
       "next_step": "Email/call inquiries@molagri.com with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://betakit.com/molagri-raises-5-2-million-usd-seed-round-to-bolster-work-on-pesticides-that-evolve/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "inquiries@molagri.com",
+      "to_source_url": "https://molagri.com/",
+      "subject": "Molagri: a thought on Efficiently searching and retrieving large protein‑design da",
+      "body": "Hi Zaky,\n\nI came across Molagri: Developing easily updatable pesticides that evolve alongside pest resistance using engineered virus platforms.\nOne thing I noticed: Efficiently searching and retrieving large protein‑design datasets to accelerate pesticide iteration.\n\nHi Zaky, I can build a fast, searchable interface for your protein‑design data using Next.js that lets scientists instantly find the most relevant sequences. By adding a vector‑based semantic search layer, you’ll cut the time spent digging through datasets and accelerate the design of next‑generation pesticides.\n\nOpen to a quick chat?",
+      "mailto": "mailto:inquiries%40molagri.com?subject=Molagri%3A%20a%20thought%20on%20Efficiently%20searching%20and%20retrieving%20large%20protein%E2%80%91design%20da&body=Hi%20Zaky%2C%0A%0AI%20came%20across%20Molagri%3A%20Developing%20easily%20updatable%20pesticides%20that%20evolve%20alongside%20pest%20resistance%20using%20engineered%20virus%20platforms.%0AOne%20thing%20I%20noticed%3A%20Efficiently%20searching%20and%20retrieving%20large%20protein%E2%80%91design%20datasets%20to%20accelerate%20pesticide%20iteration.%0A%0AHi%20Zaky%2C%20I%20can%20build%20a%20fast%2C%20searchable%20interface%20for%20your%20protein%E2%80%91design%20data%20using%20Next.js%20that%20lets%20scientists%20instantly%20find%20the%20most%20relevant%20sequences.%20By%20adding%20a%20vector%E2%80%91based%20semantic%20search%20layer%2C%20you%E2%80%99ll%20cut%20the%20time%20spent%20digging%20through%20datasets%20and%20accelerate%20the%20design%20of%20next%E2%80%91generation%20pesticides.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -498,6 +830,21 @@
       ],
       "next_step": "Email/call help@raindrop.farm with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://www.prnewswire.com/news-releases/raindrop-raises-15-million-to-detect-critical-ai-agent-failures-302628853.html"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Raindrop: a thought on scalable real‑time search and retrieval over massive streams",
+      "body": "Hi Zubin,\n\nI came across Raindrop: A monitoring platform for AI agents that detects and surfaces silent failures in production.\nOne thing I noticed: scalable real‑time search and retrieval over massive streams of agent event logs to surface failures quickly.\n\nI can build a Next.js dashboard that indexes your millions of agent event logs with vector embeddings, enabling instant semantic search across failure patterns. This lets your engineers surface hidden issues faster and reduces the time spent building custom monitoring queries.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -648,6 +995,21 @@
       ],
       "next_step": "Email/call support@chariotclaims.com with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at series a stage",
+        "source_url": "https://news.crunchbase.com/ai/legal-tech-chariot-raise-stop-hidden-fees-subscriptions-hang/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Chariot Claims: a thought on Scaling semantic search and retrieval over large volumes of ",
+      "body": "Hi Zim,\n\nI came across Chariot Claims: A platform that helps consumers pursue claims over privacy violations, hidden fees and hard‑to‑cancel subscriptions by connecting them with law firms and using AI to screen and manage mass‑arbitration cases.\nOne thing I noticed: Scaling semantic search and retrieval over large volumes of unstructured claim documents and consumer data.\n\nHi Chariot Claims, I can help you scale your claim intake and AI case‑matching by building a Next.js front‑end that streams consumer data into a vector store for fast semantic search across unstructured documents. This will let your team retrieve relevant evidence and prioritize cases 10‑100× faster while keeping the UI responsive.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -744,6 +1106,162 @@
       ],
       "next_step": "Email/call support@quiver.ai with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "QuiverAI: a thought on search and retrieval of generated SVG assets at scale, affec",
+      "body": "Hi QuiverAI team,\n\nI came across QuiverAI: QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.\nOne thing I noticed: search and retrieval of generated SVG assets at scale, affecting discoverability and latency.\n\nI can build a fast, scalable Next.js front‑end that lets designers instantly search and retrieve generated SVG assets using vector‑based semantic embeddings, ensuring relevant results even across millions of designs. Coupled with a lightweight retrieval service, this will eliminate latency and improve the discoverability of your visual code outputs.\n\nOpen to a quick chat?",
+      "mailto": ""
+    }
+  },
+  {
+    "company_name": "Vesta",
+    "core_product": "AI-native software that uses AI agents to automate mortgage loan origination for lenders.",
+    "tech_stack": [
+      "Claude Sonnet 4.5",
+      "AI agents",
+      "cloud"
+    ],
+    "likely_bottleneck": "scaling the orchestration of AI agents while maintaining compliance audit trails",
+    "value_prop_pitch": "I can refactor your agent orchestration UI with Next.js to give you a fast, component‑driven front‑end that scales with your user base. Then I’ll add a vector‑based semantic search layer so your agents can retrieve relevant loan data instantly, eliminating the compliance‑audit latency bottleneck.",
+    "is_relevant": true,
+    "funding_stage": "Series B",
+    "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+    "discovered_at": "2026-10-21T04:39:48+00:00",
+    "funding_amount": "$30M",
+    "hq": "San Francisco, US",
+    "website": "https://www.vesta.com",
+    "score": 82,
+    "slug": "vesta",
+    "score_parts": {
+      "fit": 15,
+      "identity": 15,
+      "people": 20,
+      "connections": 15,
+      "contact": 17
+    },
+    "gaps": [
+      "funding stage"
+    ],
+    "contact": {
+      "website": "https://www.vesta.com",
+      "emails": [
+        {
+          "value": "hello@vesta.com",
+          "kind": "general",
+          "source_url": "https://www.vesta.com/"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+14152160103",
+          "kind": "main",
+          "source_url": "https://www.vesta.com/"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/usevesta"
+      },
+      "contact_page": "",
+      "pages_crawled": [
+        "https://www.vesta.com/",
+        "https://www.vesta.com/about"
+      ],
+      "enriched_at": "2026-10-21T04:40:57+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Mike Yu",
+        "role": "CEO & Co‑founder",
+        "org": "Vesta",
+        "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang. Yu, the company’s CEO, told TechCrunch that now was the perfect time to raise…",
+        "linkedin": "https://www.linkedin.com/in/mikeyu1/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Devon Yang",
+        "role": "Co‑founder",
+        "org": "Vesta",
+        "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang.",
+        "linkedin": "https://www.linkedin.com/in/devon/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Mike Yu",
+        "rel": "founded",
+        "dst": "Vesta",
+        "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang."
+      },
+      {
+        "src": "Devon Yang",
+        "rel": "cofounded",
+        "dst": "Vesta",
+        "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang."
+      },
+      {
+        "src": "Citi Ventures",
+        "rel": "invested_in",
+        "dst": "Vesta",
+        "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+      },
+      {
+        "src": "Andreessen Horowitz",
+        "rel": "invested_in",
+        "dst": "Vesta",
+        "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+      },
+      {
+        "src": "Pennymac",
+        "rel": "invested_in",
+        "dst": "Vesta",
+        "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+      },
+      {
+        "src": "New American Funding",
+        "rel": "invested_in",
+        "dst": "Vesta",
+        "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 89.2,
+      "reasons": [
+        "lead score 82",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call hello@vesta.com with the pitch",
+      "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@vesta.com",
+      "to_source_url": "https://www.vesta.com/",
+      "subject": "Vesta: a thought on scaling the orchestration of AI agents while maintaining com",
+      "body": "Hi Mike,\n\nI came across Vesta: AI-native software that uses AI agents to automate mortgage loan origination for lenders.\nOne thing I noticed: scaling the orchestration of AI agents while maintaining compliance audit trails.\n\nI can refactor your agent orchestration UI with Next.js to give you a fast, component‑driven front‑end that scales with your user base. Then I’ll add a vector‑based semantic search layer so your agents can retrieve relevant loan data instantly, eliminating the compliance‑audit latency bottleneck.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40vesta.com?subject=Vesta%3A%20a%20thought%20on%20scaling%20the%20orchestration%20of%20AI%20agents%20while%20maintaining%20com&body=Hi%20Mike%2C%0A%0AI%20came%20across%20Vesta%3A%20AI-native%20software%20that%20uses%20AI%20agents%20to%20automate%20mortgage%20loan%20origination%20for%20lenders.%0AOne%20thing%20I%20noticed%3A%20scaling%20the%20orchestration%20of%20AI%20agents%20while%20maintaining%20compliance%20audit%20trails.%0A%0AI%20can%20refactor%20your%20agent%20orchestration%20UI%20with%20Next.js%20to%20give%20you%20a%20fast%2C%20component%E2%80%91driven%20front%E2%80%91end%20that%20scales%20with%20your%20user%20base.%20Then%20I%E2%80%99ll%20add%20a%20vector%E2%80%91based%20semantic%20search%20layer%20so%20your%20agents%20can%20retrieve%20relevant%20loan%20data%20instantly%2C%20eliminating%20the%20compliance%E2%80%91audit%20latency%20bottleneck.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -861,6 +1379,21 @@
       ],
       "next_step": "Reach Antonio Mallia via LinkedIn/X",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Seltz: a thought on maintaining fast, high‑quality semantic retrieval over billi",
+      "body": "Hi Antonio,\n\nI came across Seltz: Seltz builds an AI‑agent‑focused web search engine that crawls, indexes, and retrieves passages, tables, and images for large language model agents.\nOne thing I noticed: maintaining fast, high‑quality semantic retrieval over billions of pages while keeping sub‑200 ms latency for AI‑agent queries.\n\nI can help Seltz accelerate its retrieval layer by building a Next.js front‑end that streams vector‑based semantic results directly from your index, cutting latency for agent queries. Combined with a custom embedding pipeline, this lets you serve precise passages, tables, and images at sub‑200 ms scale while simplifying UI integration for enterprise customers.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -955,6 +1488,21 @@
       ],
       "next_step": "Reach Aashish Sah via LinkedIn/X",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://tech.eu/2026/10/20/coherence-quantum-raises-eur278m-to-tackle-quantum-computer-scaling-challenges/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Coherence Quantum: a thought on maintaining signal integrity and scaling control infrastruct",
+      "body": "Hi Aashish,\n\nI came across Coherence Quantum: Coherence Quantum builds an integrated cryogenic signalling and control platform for scaling quantum computers.\nOne thing I noticed: maintaining signal integrity and scaling control infrastructure in cryogenic environments while minimizing wiring and cooling complexity.\n\nI can build a real‑time dashboard with Next.js that visualizes your cryogenic signal‑conditioning data and uses vector semantic search to instantly retrieve relevant calibration logs and device histories. This will let your engineers diagnose wiring and cooling issues faster, reducing the time spent manually sifting through experimental records.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -1100,6 +1648,21 @@
       ],
       "next_step": "Reach Orman Gazvini via LinkedIn/X",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://tech.eu/2026/10/19/vessla-exits-stealth-with-33m-to-bring-ai-agents-to-property-management/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Vessla: a thought on Retrieving and semantically searching relevant data across m",
+      "body": "Hi Orman,\n\nI came across Vessla: An AI‑powered platform that automates property‑management workflows by using AI agents to retrieve information, apply operating rules and execute tasks across existing business systems.\nOne thing I noticed: Retrieving and semantically searching relevant data across many disparate property‑management systems to feed the AI agents at scale.\n\nI can build a fast, searchable UI with Next.js that surfaces property data from all your existing systems in real time, and power it with a vector‑based semantic search layer to let your AI agents find the right information instantly. This will cut integration latency and improve the accuracy of automated workflows, letting Vessla scale its agentic operating system without costly custom connectors.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -1409,6 +1972,21 @@
       ],
       "next_step": "Reach Alex Rosenberg via LinkedIn/X",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://www.einpresswire.com/article/752294158/ai-search-startup-tako-raises-5-75-million-seed"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Tako: a thought on Scaling semantic search over a massive knowledge graph while",
+      "body": "Hi Alex,\n\nI came across Tako: An AI search engine that builds interactive, up‑to‑date knowledge cards from authoritative structured data.\nOne thing I noticed: Scaling semantic search over a massive knowledge graph while delivering fast, interactive UI for data‑heavy knowledge cards.\n\nI can help Tako boost its search relevance and speed by building a Next.js front‑end that queries a vector‑based semantic index of your knowledge graph, delivering instant, context‑aware results. This will also let you render interactive knowledge cards with server‑side rendering and incremental static regeneration, reducing latency and simplifying UI development.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -1523,6 +2101,26 @@
       ],
       "next_step": "Email/call founders@lmnr.ai with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50154029"
+      },
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://news.ycombinator.com/item?id=50154029"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "founders@lmnr.ai",
+      "to_source_url": "https://laminar.sh/",
+      "subject": "Laminar: a thought on Scaling high‑quality search and retrieval over massive, comp",
+      "body": "Hi Robert,\n\nI came across Laminar: Open-source observability platform that uses an RL‑trained model to analyze AI agent traces and surface errors.\nOne thing I noticed: Scaling high‑quality search and retrieval over massive, compressed agent trace data.\n\nI can help you build a fast, scalable Next.js UI that lets engineers query and explore agent traces instantly, while integrating a vector‑semantic search layer to retrieve relevant spans across compressed traces. This will cut down the latency of your Signal engine and let you surface errors in real‑time without costly custom indexing.\n\nOpen to a quick chat?",
+      "mailto": "mailto:founders%40lmnr.ai?subject=Laminar%3A%20a%20thought%20on%20Scaling%20high%E2%80%91quality%20search%20and%20retrieval%20over%20massive%2C%20comp&body=Hi%20Robert%2C%0A%0AI%20came%20across%20Laminar%3A%20Open-source%20observability%20platform%20that%20uses%20an%20RL%E2%80%91trained%20model%20to%20analyze%20AI%20agent%20traces%20and%20surface%20errors.%0AOne%20thing%20I%20noticed%3A%20Scaling%20high%E2%80%91quality%20search%20and%20retrieval%20over%20massive%2C%20compressed%20agent%20trace%20data.%0A%0AI%20can%20help%20you%20build%20a%20fast%2C%20scalable%20Next.js%20UI%20that%20lets%20engineers%20query%20and%20explore%20agent%20traces%20instantly%2C%20while%20integrating%20a%20vector%E2%80%91semantic%20search%20layer%20to%20retrieve%20relevant%20spans%20across%20compressed%20traces.%20This%20will%20cut%20down%20the%20latency%20of%20your%20Signal%20engine%20and%20let%20you%20surface%20errors%20in%20real%E2%80%91time%20without%20costly%20custom%20indexing.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -1749,6 +2347,130 @@
       ],
       "next_step": "Email/call team@respan.ai with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50167583"
+      },
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://news.ycombinator.com/item?id=50167583"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "team@respan.ai",
+      "to_source_url": "https://www.respan.ai/",
+      "subject": "Respan: a thought on Creating a searchable, user‑friendly marketplace for plugins",
+      "body": "Hi Andy,\n\nI came across Respan: An open‑source Rust AI gateway built around plugins that lets developers assemble LLM infrastructure with interchangeable providers, protocols, modalities and features.\nOne thing I noticed: Creating a searchable, user‑friendly marketplace for plugins and quickly surfacing the right provider or feature for developers.\n\nI can build a Next.js‑based developer portal that indexes all Respan plugins with vector embeddings, enabling instant semantic search and recommendation of the right plugin for any use‑case. This will let your users discover and integrate new providers or features in seconds, reducing the time spent manually browsing code and improving adoption.\n\nOpen to a quick chat?",
+      "mailto": "mailto:team%40respan.ai?subject=Respan%3A%20a%20thought%20on%20Creating%20a%20searchable%2C%20user%E2%80%91friendly%20marketplace%20for%20plugins&body=Hi%20Andy%2C%0A%0AI%20came%20across%20Respan%3A%20An%20open%E2%80%91source%20Rust%20AI%20gateway%20built%20around%20plugins%20that%20lets%20developers%20assemble%20LLM%20infrastructure%20with%20interchangeable%20providers%2C%20protocols%2C%20modalities%20and%20features.%0AOne%20thing%20I%20noticed%3A%20Creating%20a%20searchable%2C%20user%E2%80%91friendly%20marketplace%20for%20plugins%20and%20quickly%20surfacing%20the%20right%20provider%20or%20feature%20for%20developers.%0A%0AI%20can%20build%20a%20Next.js%E2%80%91based%20developer%20portal%20that%20indexes%20all%20Respan%20plugins%20with%20vector%20embeddings%2C%20enabling%20instant%20semantic%20search%20and%20recommendation%20of%20the%20right%20plugin%20for%20any%20use%E2%80%91case.%20This%20will%20let%20your%20users%20discover%20and%20integrate%20new%20providers%20or%20features%20in%20seconds%2C%20reducing%20the%20time%20spent%20manually%20browsing%20code%20and%20improving%20adoption.%0A%0AOpen%20to%20a%20quick%20chat%3F"
+    }
+  },
+  {
+    "company_name": "Genspark",
+    "core_product": "An AI‑powered search engine that uses multiple specialized AI agents to generate customized pages for each query.",
+    "tech_stack": [
+      "Meta Llama",
+      "OpenAI GPT",
+      "AI agents"
+    ],
+    "likely_bottleneck": "High inference cost and latency from calling multiple AI models per search query.",
+    "value_prop_pitch": "You can dramatically cut latency and cost by moving the UI to a static Next.js front‑end that caches query results in a vector semantic store, letting you serve pre‑computed answers instantly. This also reduces the number of model calls per query, freeing up your compute budget for more complex agents.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://finance.yahoo.com/news/ai-search-startup-genspark-raises-154925342.html",
+    "discovered_at": "2026-10-21T04:39:48+00:00",
+    "funding_amount": "$60 million",
+    "hq": "Palo Alto, California",
+    "website": "https://finance.yahoo.com",
+    "score": 73,
+    "slug": "genspark",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 10,
+      "connections": 20,
+      "contact": 3
+    },
+    "gaps": [
+      "people profiles",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://finance.yahoo.com",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/yahoo-finance"
+      },
+      "contact_page": "",
+      "pages_crawled": [
+        "https://finance.yahoo.com/",
+        "https://finance.yahoo.com/plus/select-plan/",
+        "https://finance.yahoo.com/?err=404",
+        "https://finance.yahoo.com/?err=404"
+      ],
+      "enriched_at": "2026-10-21T04:41:15+00:00",
+      "status": "ok"
+    },
+    "people": [
+      {
+        "name": "Eric Jing",
+        "role": "CEO",
+        "org": "Genspark",
+        "evidence": "Its CEO Eric Jing led Baidu's AI-powered smartphone and smart speaker Xiaodu unit until last October.",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Eric Jing",
+        "rel": "founded",
+        "dst": "Genspark",
+        "evidence": "Its CEO Eric Jing led Baidu's AI-powered smartphone and smart speaker Xiaodu unit until last October."
+      },
+      {
+        "src": "Lanchi Ventures",
+        "rel": "invested_in",
+        "dst": "Genspark",
+        "evidence": "The funding is led by Singapore-based fund Lanchi Ventures"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "enrich_more",
+      "urgency": "warm",
+      "priority": 73.8,
+      "reasons": [
+        "lead score 73",
+        "found 0 day(s) ago (hot)",
+        "fit looks decent but no contact route found"
+      ],
+      "next_step": "Find a contact: people profiles, email, phone",
+      "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://finance.yahoo.com/news/ai-search-startup-genspark-raises-154925342.html"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Genspark: a thought on High inference cost and latency from calling multiple AI mod",
+      "body": "Hi Eric,\n\nI came across Genspark: An AI‑powered search engine that uses multiple specialized AI agents to generate customized pages for each query.\nOne thing I noticed: High inference cost and latency from calling multiple AI models per search query.\n\nYou can dramatically cut latency and cost by moving the UI to a static Next.js front‑end that caches query results in a vector semantic store, letting you serve pre‑computed answers instantly. This also reduces the number of model calls per query, freeing up your compute budget for more complex agents.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -1943,6 +2665,21 @@
       ],
       "next_step": "Wait for more data",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://www.techinasia.com/news/israeli-ai-startup-solid-nets-20m-seed"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Solid: a thought on Maintaining high‑quality semantic search and data retrieval ",
+      "body": "Hi Yoni,\n\nI came across Solid: A platform that creates a semantic layer to organize and validate enterprise data, providing an AI enablement layer for non‑technical teams.\nOne thing I noticed: Maintaining high‑quality semantic search and data retrieval across large, heterogeneous enterprise datasets.\n\nI can help Solid accelerate its semantic data layer by building a Next.js front‑end that surfaces vector‑based search across your enterprise datasets, ensuring fast, relevant results for non‑technical users. Coupled with a semantic search backend, this removes the manual effort of maintaining and testing models, letting your team focus on higher‑value AI work.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -2080,6 +2817,21 @@
       ],
       "next_step": "Find a contact: people profiles, email, phone",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "SereneDB: a thought on delivering fast, relevant search results and real‑time analy",
+      "body": "Hi Alexander,\n\nI came across SereneDB: A unified database engine that fuses search, analytics, and PostgreSQL capabilities.\nOne thing I noticed: delivering fast, relevant search results and real‑time analytics over large, unstructured data sets.\n\nI can help you build a fast, scalable search UI with Next.js that leverages vector embeddings to deliver instant, semantically relevant results over your unified PostgreSQL engine. By integrating a vector‑based retrieval layer, you’ll improve query relevance and reduce latency for real‑time analytics without rewriting your core database.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -2232,6 +2984,21 @@
       ],
       "next_step": "Wait for more data",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://www.thesaasnews.com/news/lightsprint-raises-6-1m-seed/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Lightsprint: a thought on searching and retrieving relevant code snippets quickly acro",
+      "body": "Hi Benjamin,\n\nI came across Lightsprint: Lightsprint provides a cloud‑based interface that lets non‑engineers plan, test, and preview code changes directly within a company’s existing codebase while keeping engineering teams in control.\nOne thing I noticed: searching and retrieving relevant code snippets quickly across large codebases for real‑time preview.\n\nI can help Lightsprint improve its code‑search and preview experience by building a Next.js front‑end that queries a vector‑based semantic index of your repository, delivering instant, relevant code snippets as engineers type. This reduces latency and improves accuracy of code discovery, letting non‑engineers collaborate faster without overloading your backend.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -2396,6 +3163,21 @@
       ],
       "next_step": "Email/call contact@cedardb.com with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "sales@cedardb.com",
+      "to_source_url": "https://cedardb.com/",
+      "subject": "CedarDB: a thought on Optimizing query performance and efficient retrieval across ",
+      "body": "Hi Moritz,\n\nI came across CedarDB: A database engine that handles both transactional (OLTP) and analytical (OLAP) workloads with PostgreSQL compatibility.\nOne thing I noticed: Optimizing query performance and efficient retrieval across mixed transactional and analytical workloads.\n\nI can build a Next.js based query UI that leverages vector semantic search to translate natural‑language questions into optimized SQL for both OLTP and OLAP workloads, reducing latency and improving relevance. This layer would let CedarDB’s customers get fast, accurate answers without rewriting their applications, freeing your engineering team to focus on core performance improvements.\n\nOpen to a quick chat?",
+      "mailto": "mailto:sales%40cedardb.com?subject=CedarDB%3A%20a%20thought%20on%20Optimizing%20query%20performance%20and%20efficient%20retrieval%20across%20&body=Hi%20Moritz%2C%0A%0AI%20came%20across%20CedarDB%3A%20A%20database%20engine%20that%20handles%20both%20transactional%20%28OLTP%29%20and%20analytical%20%28OLAP%29%20workloads%20with%20PostgreSQL%20compatibility.%0AOne%20thing%20I%20noticed%3A%20Optimizing%20query%20performance%20and%20efficient%20retrieval%20across%20mixed%20transactional%20and%20analytical%20workloads.%0A%0AI%20can%20build%20a%20Next.js%20based%20query%20UI%20that%20leverages%20vector%20semantic%20search%20to%20translate%20natural%E2%80%91language%20questions%20into%20optimized%20SQL%20for%20both%20OLTP%20and%20OLAP%20workloads%2C%20reducing%20latency%20and%20improving%20relevance.%20This%20layer%20would%20let%20CedarDB%E2%80%99s%20customers%20get%20fast%2C%20accurate%20answers%20without%20rewriting%20their%20applications%2C%20freeing%20your%20engineering%20team%20to%20focus%20on%20core%20performance%20improvements.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -2495,6 +3277,15 @@
       ],
       "next_step": "Email/call contact@kairoshealthai.com with the pitch",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "contact@kairoshealthai.com",
+      "to_source_url": "https://kairoshealthai.com/",
+      "subject": "Kairos Health: a thought on search quality and retrieval over unstructured patient data ",
+      "body": "Hi Kairos Health team,\n\nI came across Kairos Health: Kairos Health provides an AI-powered front desk that automates patient outreach, call handling, and insurance verification for dental practices.\nOne thing I noticed: search quality and retrieval over unstructured patient data for personalized outreach and scheduling.\n\nI can help Kairos Health boost its patient outreach by building a Next.js portal that leverages vector‑based semantic search to instantly retrieve the most relevant patient records and insurance details. This will improve call personalization and scheduling accuracy while letting your team focus on care rather than data plumbing.\n\nOpen to a quick chat?",
+      "mailto": "mailto:contact%40kairoshealthai.com?subject=Kairos%20Health%3A%20a%20thought%20on%20search%20quality%20and%20retrieval%20over%20unstructured%20patient%20data%20&body=Hi%20Kairos%20Health%20team%2C%0A%0AI%20came%20across%20Kairos%20Health%3A%20Kairos%20Health%20provides%20an%20AI-powered%20front%20desk%20that%20automates%20patient%20outreach%2C%20call%20handling%2C%20and%20insurance%20verification%20for%20dental%20practices.%0AOne%20thing%20I%20noticed%3A%20search%20quality%20and%20retrieval%20over%20unstructured%20patient%20data%20for%20personalized%20outreach%20and%20scheduling.%0A%0AI%20can%20help%20Kairos%20Health%20boost%20its%20patient%20outreach%20by%20building%20a%20Next.js%20portal%20that%20leverages%20vector%E2%80%91based%20semantic%20search%20to%20instantly%20retrieve%20the%20most%20relevant%20patient%20records%20and%20insurance%20details.%20This%20will%20improve%20call%20personalization%20and%20scheduling%20accuracy%20while%20letting%20your%20team%20focus%20on%20care%20rather%20than%20data%20plumbing.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -2611,6 +3402,21 @@
       ],
       "next_step": "Email/call +12522047012 with the pitch",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50073471"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Consus: a thought on Building and maintaining a fast, searchable compliance polic",
+      "body": "Hi Eric,\n\nI came across Consus: An LLM gateway that enforces ITAR, FedRAMP, and CUI compliance for AI model inference across multiple government clouds.\nOne thing I noticed: Building and maintaining a fast, searchable compliance policy engine and model catalog that can retrieve the right model and its restrictions across multiple GovCloud providers.\n\nI can build a Next.js based compliance portal that lets your engineers instantly search and filter model availability and policy rules using vector semantic search, cutting down the time spent manually mapping models to GovClouds. This will give you sub‑second retrieval of relevant compliance metadata and a modern UI, freeing your team to focus on security rather than building a custom search layer.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -2676,6 +3482,21 @@
       ],
       "next_step": "Reach a founder via hello@elman.ai",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://elman.ai/preprint"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@elman.ai",
+      "to_source_url": "https://elman.ai/",
+      "subject": "Elman: a thought on search quality and efficient retrieval of relevant biomedica",
+      "body": "Hi Elman team,\n\nI came across Elman: AI platform that predicts clinical trial and drug development outcomes and quantifies confidence in those predictions.\nOne thing I noticed: search quality and efficient retrieval of relevant biomedical evidence for the LLM‑driven prediction pipeline.\n\nI can build a fast, semantic search layer over your biomedical literature using vector embeddings, letting your LLM instantly retrieve the most relevant evidence for each trial prediction. Combined with a Next.js front‑end, the UI will let researchers explore predictions and confidence scores in real time without latency bottlenecks.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40elman.ai?subject=Elman%3A%20a%20thought%20on%20search%20quality%20and%20efficient%20retrieval%20of%20relevant%20biomedica&body=Hi%20Elman%20team%2C%0A%0AI%20came%20across%20Elman%3A%20AI%20platform%20that%20predicts%20clinical%20trial%20and%20drug%20development%20outcomes%20and%20quantifies%20confidence%20in%20those%20predictions.%0AOne%20thing%20I%20noticed%3A%20search%20quality%20and%20efficient%20retrieval%20of%20relevant%20biomedical%20evidence%20for%20the%20LLM%E2%80%91driven%20prediction%20pipeline.%0A%0AI%20can%20build%20a%20fast%2C%20semantic%20search%20layer%20over%20your%20biomedical%20literature%20using%20vector%20embeddings%2C%20letting%20your%20LLM%20instantly%20retrieve%20the%20most%20relevant%20evidence%20for%20each%20trial%20prediction.%20Combined%20with%20a%20Next.js%20front%E2%80%91end%2C%20the%20UI%20will%20let%20researchers%20explore%20predictions%20and%20confidence%20scores%20in%20real%20time%20without%20latency%20bottlenecks.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -2801,6 +3622,26 @@
       ],
       "next_step": "Reach Brian Schroeder via mhaffey@atlis.health",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "form_d",
+        "text": "Filed an SEC Form D 0d ago: money just came in",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2159248/000215924826000001/"
+      },
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2159248/000215924826000001/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "mhaffey@atlis.health",
+      "to_source_url": "https://www.atlis.health/",
+      "subject": "Atlis Health, LLC: a thought on search quality and real‑time retrieval of plan data across m",
+      "body": "Hi Atlis Health, LLC team,\n\nI came across Atlis Health, LLC: A persona‑driven AI platform that helps employees, employers and plan administrators navigate and use employee benefits.\nOne thing I noticed: search quality and real‑time retrieval of plan data across many benefit documents.\n\nI can build a fast, scalable front‑end with Next.js that pulls in your benefits knowledge base via a vector‑semantic search layer, delivering instant, context‑aware answers. This will dramatically improve search relevance and reduce the latency that currently limits personalized benefit guidance.\n\nOpen to a quick chat?",
+      "mailto": "mailto:mhaffey%40atlis.health?subject=Atlis%20Health%2C%20LLC%3A%20a%20thought%20on%20search%20quality%20and%20real%E2%80%91time%20retrieval%20of%20plan%20data%20across%20m&body=Hi%20Atlis%20Health%2C%20LLC%20team%2C%0A%0AI%20came%20across%20Atlis%20Health%2C%20LLC%3A%20A%20persona%E2%80%91driven%20AI%20platform%20that%20helps%20employees%2C%20employers%20and%20plan%20administrators%20navigate%20and%20use%20employee%20benefits.%0AOne%20thing%20I%20noticed%3A%20search%20quality%20and%20real%E2%80%91time%20retrieval%20of%20plan%20data%20across%20many%20benefit%20documents.%0A%0AI%20can%20build%20a%20fast%2C%20scalable%20front%E2%80%91end%20with%20Next.js%20that%20pulls%20in%20your%20benefits%20knowledge%20base%20via%20a%20vector%E2%80%91semantic%20search%20layer%2C%20delivering%20instant%2C%20context%E2%80%91aware%20answers.%20This%20will%20dramatically%20improve%20search%20relevance%20and%20reduce%20the%20latency%20that%20currently%20limits%20personalized%20benefit%20guidance.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -2895,6 +3736,15 @@
       ],
       "next_step": "Reach Robin Choy via support@adside.ai",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Adside.ai: a thought on Scaling and retrieving performance data across multiple ad p",
+      "body": "Hi Robin,\n\nI came across Adside.ai: Adside.ai builds an AI-native paid ads agency that uses autonomous agents to manage, create, and optimize ad campaigns across platforms.\nOne thing I noticed: Scaling and retrieving performance data across multiple ad platforms for the AI agents.\n\nI can build a unified dashboard in Next.js that pulls campaign data from Meta, Google, LinkedIn, Reddit and Twitter via their APIs and indexes it with a vector store for fast semantic search. This lets your AI agents instantly retrieve the most relevant performance insights and creative assets, improving optimization speed and reducing latency in your autonomous ad management workflow.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -2990,6 +3840,21 @@
       ],
       "next_step": "Reach a founder via hello@paradedb.com",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at series a stage",
+        "source_url": "https://paradedb.com"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "sales@paradedb.com",
+      "to_source_url": "https://www.paradedb.com/contact",
+      "subject": "ParadeDB: a thought on optimizing search relevance and scaling vector search querie",
+      "body": "Hi ParadeDB team,\n\nI came across ParadeDB: A Postgres extension that delivers state-of-the-art search in Postgres.\nOne thing I noticed: optimizing search relevance and scaling vector search queries within PostgreSQL.\n\nI can help you build a modern, low‑latency search UI with Next.js that surfaces the most relevant results from your PostgreSQL‑based vector index. By integrating semantic vector search on the front‑end, you’ll improve relevance and reduce the engineering effort needed to fine‑tune query performance.\n\nOpen to a quick chat?",
+      "mailto": "mailto:sales%40paradedb.com?subject=ParadeDB%3A%20a%20thought%20on%20optimizing%20search%20relevance%20and%20scaling%20vector%20search%20querie&body=Hi%20ParadeDB%20team%2C%0A%0AI%20came%20across%20ParadeDB%3A%20A%20Postgres%20extension%20that%20delivers%20state-of-the-art%20search%20in%20Postgres.%0AOne%20thing%20I%20noticed%3A%20optimizing%20search%20relevance%20and%20scaling%20vector%20search%20queries%20within%20PostgreSQL.%0A%0AI%20can%20help%20you%20build%20a%20modern%2C%20low%E2%80%91latency%20search%20UI%20with%20Next.js%20that%20surfaces%20the%20most%20relevant%20results%20from%20your%20PostgreSQL%E2%80%91based%20vector%20index.%20By%20integrating%20semantic%20vector%20search%20on%20the%20front%E2%80%91end%2C%20you%E2%80%99ll%20improve%20relevance%20and%20reduce%20the%20engineering%20effort%20needed%20to%20fine%E2%80%91tune%20query%20performance.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -3192,6 +4057,15 @@
       ],
       "next_step": "Find a contact: funding stage, funding amount, people profiles",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Axel: a thought on search and retrieval of live flight/hotel pricing and privat",
+      "body": "Hi Stephen,\n\nI came across Axel: An AI travel agent that finds private flight and hotel deals, monitors price drops, and lets users book or delegate to an AI agent.\nOne thing I noticed: search and retrieval of live flight/hotel pricing and private deals at scale.\n\nI can build a fast, scalable Next.js front‑end that lets users query millions of flight and hotel offers in real time. By adding a vector‑based semantic search layer over your pricing data, we’ll surface the best private deals instantly and keep the price‑watching engine accurate as inventory changes.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -3301,6 +4175,112 @@
       ],
       "next_step": "Reach Vlad Baskakov via founders@voygr.tech",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "founders@voygr.tech",
+      "to_source_url": "https://voygr.tech/",
+      "subject": "VOYGR: a thought on scaling parallel outbound calls while maintaining accurate, ",
+      "body": "Hi Vlad,\n\nI came across VOYGR: PlaceCall API that lets apps and AI agents call businesses in parallel and returns structured outcomes, transcripts, and recordings.\nOne thing I noticed: scaling parallel outbound calls while maintaining accurate, low‑latency transcription and call orchestration.\n\nI can build a Next.js dashboard that visualizes each call, stores transcripts in a vector store and adds semantic search so developers can instantly retrieve relevant call content. This will let you scale parallel calls and improve the accuracy and speed of retrieving past interactions for your AI agents.\n\nOpen to a quick chat?",
+      "mailto": "mailto:founders%40voygr.tech?subject=VOYGR%3A%20a%20thought%20on%20scaling%20parallel%20outbound%20calls%20while%20maintaining%20accurate%2C%20&body=Hi%20Vlad%2C%0A%0AI%20came%20across%20VOYGR%3A%20PlaceCall%20API%20that%20lets%20apps%20and%20AI%20agents%20call%20businesses%20in%20parallel%20and%20returns%20structured%20outcomes%2C%20transcripts%2C%20and%20recordings.%0AOne%20thing%20I%20noticed%3A%20scaling%20parallel%20outbound%20calls%20while%20maintaining%20accurate%2C%20low%E2%80%91latency%20transcription%20and%20call%20orchestration.%0A%0AI%20can%20build%20a%20Next.js%20dashboard%20that%20visualizes%20each%20call%2C%20stores%20transcripts%20in%20a%20vector%20store%20and%20adds%20semantic%20search%20so%20developers%20can%20instantly%20retrieve%20relevant%20call%20content.%20This%20will%20let%20you%20scale%20parallel%20calls%20and%20improve%20the%20accuracy%20and%20speed%20of%20retrieving%20past%20interactions%20for%20your%20AI%20agents.%0A%0AOpen%20to%20a%20quick%20chat%3F"
+    }
+  },
+  {
+    "company_name": "Jooba",
+    "core_product": "AI recruiting platform that uses custom AI agents and human reviewers to help rapidly growing companies hire faster.",
+    "tech_stack": [],
+    "likely_bottleneck": "search and semantic matching of candidate resumes to job requirements",
+    "value_prop_pitch": "I can build a fast, searchable candidate portal with Next.js that surfaces the most relevant resumes instantly. By indexing resumes and job descriptions in a vector database and using semantic search, your AI agents will retrieve perfect matches with higher precision and lower latency.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+    "discovered_at": "2026-10-20T20:36:22+00:00",
+    "funding_amount": "$4M",
+    "hq": "",
+    "website": "https://www.jooba.com",
+    "score": 55,
+    "slug": "jooba",
+    "score_parts": {
+      "fit": 25,
+      "identity": 9,
+      "people": 0,
+      "connections": 15,
+      "contact": 6
+    },
+    "gaps": [
+      "location",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://www.jooba.com",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/joobadotcom"
+      },
+      "contact_page": "https://www.jooba.com/contact",
+      "pages_crawled": [
+        "https://www.jooba.com/",
+        "https://www.jooba.com/team",
+        "https://www.jooba.com/contact",
+        "https://www.jooba.com/about"
+      ],
+      "enriched_at": "2026-10-21T04:41:37+00:00",
+      "status": "ok"
+    },
+    "people": [],
+    "edges": [
+      {
+        "src": "a16z speedrun",
+        "rel": "invested_in",
+        "dst": "Jooba",
+        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
+      },
+      {
+        "src": "Scribble Ventures",
+        "rel": "invested_in",
+        "dst": "Jooba",
+        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
+      },
+      {
+        "src": "Genius Ventures",
+        "rel": "invested_in",
+        "dst": "Jooba",
+        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 63.0,
+      "reasons": [
+        "lead score 55",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Jooba: a thought on search and semantic matching of candidate resumes to job req",
+      "body": "Hi Jooba team,\n\nI came across Jooba: AI recruiting platform that uses custom AI agents and human reviewers to help rapidly growing companies hire faster.\nOne thing I noticed: search and semantic matching of candidate resumes to job requirements.\n\nI can build a fast, searchable candidate portal with Next.js that surfaces the most relevant resumes instantly. By indexing resumes and job descriptions in a vector database and using semantic search, your AI agents will retrieve perfect matches with higher precision and lower latency.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -3391,6 +4371,15 @@
       ],
       "next_step": "Reach Benjamin Solis-Cohen via LinkedIn/X",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Asakana: a thought on Accurate semantic extraction and retrieval over messy, multi",
+      "body": "Hi Benjamin,\n\nI came across Asakana: Automates sales and back‑office data entry for food distributors by extracting orders, returns, and other messages from texts, calls, PDFs and handwritten notes and feeding them into existing ERP systems.\nOne thing I noticed: Accurate semantic extraction and retrieval over messy, multilingual unstructured messages at scale.\n\nI can help Asakana boost its extraction accuracy and speed by building a Next.js front‑end that streams OCR‑processed documents into a vector‑based semantic search layer, letting you instantly match messy orders to catalog items. This reduces the manual validation step and lets your reps focus on selling while you scale to more distributors without hiring extra data engineers.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -3478,6 +4467,15 @@
       ],
       "next_step": "Reach Miles Pines via team@theo.site",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "team@theo.site",
+      "to_source_url": "https://theo.site/",
+      "subject": "Theo: a thought on Ensuring generated content ranks well and stays relevant acr",
+      "body": "Hi Miles,\n\nI came across Theo: An AI‑powered site builder that automatically creates and updates SEO‑optimized websites for small businesses.\nOne thing I noticed: Ensuring generated content ranks well and stays relevant across diverse search queries at scale.\n\nI can help Theo improve its content relevance by building a Next.js front‑end that queries a vector‑based semantic search index of your generated articles, ensuring each page ranks for the most relevant queries. This will also let you serve personalized, SEO‑optimized content instantly while reducing the load on your current generation pipeline.\n\nOpen to a quick chat?",
+      "mailto": "mailto:team%40theo.site?subject=Theo%3A%20a%20thought%20on%20Ensuring%20generated%20content%20ranks%20well%20and%20stays%20relevant%20acr&body=Hi%20Miles%2C%0A%0AI%20came%20across%20Theo%3A%20An%20AI%E2%80%91powered%20site%20builder%20that%20automatically%20creates%20and%20updates%20SEO%E2%80%91optimized%20websites%20for%20small%20businesses.%0AOne%20thing%20I%20noticed%3A%20Ensuring%20generated%20content%20ranks%20well%20and%20stays%20relevant%20across%20diverse%20search%20queries%20at%20scale.%0A%0AI%20can%20help%20Theo%20improve%20its%20content%20relevance%20by%20building%20a%20Next.js%20front%E2%80%91end%20that%20queries%20a%20vector%E2%80%91based%20semantic%20search%20index%20of%20your%20generated%20articles%2C%20ensuring%20each%20page%20ranks%20for%20the%20most%20relevant%20queries.%20This%20will%20also%20let%20you%20serve%20personalized%2C%20SEO%E2%80%91optimized%20content%20instantly%20while%20reducing%20the%20load%20on%20your%20current%20generation%20pipeline.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -3565,6 +4563,15 @@
       ],
       "next_step": "Wait for more data",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "info@veeza.ai",
+      "to_source_url": "https://www.veeza.ai/en",
+      "subject": "Veeza AI: a thought on Keeping visa requirement data up‑to‑date and automating form",
+      "body": "Hi Aly,\n\nI came across Veeza AI: AI tourist visa agent that verifies documents, fills forms and books visa appointments for people with weak passports.\nOne thing I noticed: Keeping visa requirement data up‑to‑date and automating form submission across many heterogeneous government portals.\n\nI can build a Next.js front‑end that lets users instantly search and retrieve the latest visa requirements for any destination using a vector‑based semantic index. Combined with your AI agents, this will keep the data fresh and reduce manual updates, letting Veeza AI scale its form‑filling automation without costly re‑engineering.\n\nOpen to a quick chat?",
+      "mailto": "mailto:info%40veeza.ai?subject=Veeza%20AI%3A%20a%20thought%20on%20Keeping%20visa%20requirement%20data%20up%E2%80%91to%E2%80%91date%20and%20automating%20form&body=Hi%20Aly%2C%0A%0AI%20came%20across%20Veeza%20AI%3A%20AI%20tourist%20visa%20agent%20that%20verifies%20documents%2C%20fills%20forms%20and%20books%20visa%20appointments%20for%20people%20with%20weak%20passports.%0AOne%20thing%20I%20noticed%3A%20Keeping%20visa%20requirement%20data%20up%E2%80%91to%E2%80%91date%20and%20automating%20form%20submission%20across%20many%20heterogeneous%20government%20portals.%0A%0AI%20can%20build%20a%20Next.js%20front%E2%80%91end%20that%20lets%20users%20instantly%20search%20and%20retrieve%20the%20latest%20visa%20requirements%20for%20any%20destination%20using%20a%20vector%E2%80%91based%20semantic%20index.%20Combined%20with%20your%20AI%20agents%2C%20this%20will%20keep%20the%20data%20fresh%20and%20reduce%20manual%20updates%2C%20letting%20Veeza%20AI%20scale%20its%20form%E2%80%91filling%20automation%20without%20costly%20re%E2%80%91engineering.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -3650,6 +4657,21 @@
       ],
       "next_step": "Wait for more data",
       "provider": "policy"
+    },
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50059096"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Agent37: a thought on Efficiently searching and retrieving relevant sandbox execut",
+      "body": "Hi Vishnu,\n\nI came across Agent37: Low-cost sandboxes for running AI agents.\nOne thing I noticed: Efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.\n\nI can build a Next.js dashboard that indexes all sandbox execution logs with a vector store, enabling instant semantic search across agents’ outputs and configurations. This lets your users quickly find relevant sandbox runs and debug issues without manually sifting through raw logs, improving developer productivity.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -3754,6 +4776,15 @@
       ],
       "next_step": "Wait for more data",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "ObsessionDB: a thought on Providing low‑latency, cost‑effective semantic search and re",
+      "body": "Hi Marc,\n\nI came across ObsessionDB: A real‑time data warehouse built for AI agents that ingests, processes and queries massive agent‑generated data streams instantly.\nOne thing I noticed: Providing low‑latency, cost‑effective semantic search and retrieval over huge, continuously growing unstructured agent transcripts.\n\nI can build a Next.js front‑end that surfaces agent‑generated data with low‑latency vector search, and add a semantic retrieval layer on top of your ClickHouse store using embeddings, cutting query latency and cost. This lets your customers query massive transcript logs in real time without building the retrieval infrastructure themselves.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -3841,82 +4872,15 @@
       ],
       "next_step": "Wait for more data",
       "provider": "policy"
-    }
-  },
-  {
-    "company_name": "Jooba",
-    "core_product": "AI recruiting platform that uses custom AI agents and human reviewers to help rapidly growing companies hire faster.",
-    "tech_stack": [],
-    "likely_bottleneck": "search and semantic matching of candidate resumes to job requirements",
-    "value_prop_pitch": "I can build a fast, searchable candidate portal with Next.js that surfaces the most relevant resumes instantly. By indexing resumes and job descriptions in a vector database and using semantic search, your AI agents will retrieve perfect matches with higher precision and lower latency.",
-    "is_relevant": true,
-    "funding_stage": "seed",
-    "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
-    "discovered_at": "2026-10-20T20:36:22+00:00",
-    "funding_amount": "$4M",
-    "hq": "",
-    "website": "",
-    "score": 43,
-    "slug": "jooba",
-    "score_parts": {
-      "fit": 25,
-      "identity": 3,
-      "people": 0,
-      "connections": 15,
-      "contact": 0
     },
-    "gaps": [
-      "website",
-      "location",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "email",
-      "phone"
-    ],
-    "contact": {
-      "website": "",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "pages_crawled": [],
-      "enriched_at": "2026-10-20T21:29:10+00:00",
-      "status": "no_website"
-    },
-    "people": [],
-    "edges": [
-      {
-        "src": "a16z speedrun",
-        "rel": "invested_in",
-        "dst": "Jooba",
-        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
-      },
-      {
-        "src": "Scribble Ventures",
-        "rel": "invested_in",
-        "dst": "Jooba",
-        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
-      },
-      {
-        "src": "Genius Ventures",
-        "rel": "invested_in",
-        "dst": "Jooba",
-        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures."
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 55.8,
-      "reasons": [
-        "lead score 43",
-        "found 0 day(s) ago (hot)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy"
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "founders@prbe.ai",
+      "to_source_url": "https://www.useprobe.ai/",
+      "subject": "Probe: a thought on building a seamless search and retrieval layer for experimen",
+      "body": "Hi Ashwarye,\n\nI came across Probe: Probe is a unified platform that provides agent‑native research tools for AI/ML teams to run experiments, manage compute, and share context.\nOne thing I noticed: building a seamless search and retrieval layer for experiment data and research context.\n\nI can build a fast, searchable dashboard for Probe using Next.js that indexes all experiment metadata and research documents with vector embeddings, giving your team instant semantic search across past runs. This will let agents and researchers retrieve relevant context in milliseconds, reducing coordination overhead and speeding up experiment iteration.\n\nOpen to a quick chat?",
+      "mailto": "mailto:founders%40prbe.ai?subject=Probe%3A%20a%20thought%20on%20building%20a%20seamless%20search%20and%20retrieval%20layer%20for%20experimen&body=Hi%20Ashwarye%2C%0A%0AI%20came%20across%20Probe%3A%20Probe%20is%20a%20unified%20platform%20that%20provides%20agent%E2%80%91native%20research%20tools%20for%20AI/ML%20teams%20to%20run%20experiments%2C%20manage%20compute%2C%20and%20share%20context.%0AOne%20thing%20I%20noticed%3A%20building%20a%20seamless%20search%20and%20retrieval%20layer%20for%20experiment%20data%20and%20research%20context.%0A%0AI%20can%20build%20a%20fast%2C%20searchable%20dashboard%20for%20Probe%20using%20Next.js%20that%20indexes%20all%20experiment%20metadata%20and%20research%20documents%20with%20vector%20embeddings%2C%20giving%20your%20team%20instant%20semantic%20search%20across%20past%20runs.%20This%20will%20let%20agents%20and%20researchers%20retrieve%20relevant%20context%20in%20milliseconds%2C%20reducing%20coordination%20overhead%20and%20speeding%20up%20experiment%20iteration.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -3984,6 +4948,15 @@
       ],
       "next_step": "Skip unless it resurfaces",
       "provider": "policy"
+    },
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Maali: a thought on Fast, accurate search and retrieval over a user's growing tr",
+      "body": "Hi Maali team,\n\nI came across Maali: Maili builds a desktop personal‑finance app that categorises bank transactions, visualises spending and provides AI‑driven analysis, all running locally on the user's computer.\nOne thing I noticed: Fast, accurate search and retrieval over a user's growing transaction history for the on‑device AI analyst.\n\nHi Maali team, I can add a high‑performance semantic search layer built with Next.js and vector embeddings so your AI analyst can instantly retrieve relevant transactions from a user's history. This will improve response times and enable more accurate insights while keeping all data private on the client.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   }
 ]

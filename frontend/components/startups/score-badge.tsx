@@ -10,7 +10,7 @@ export function ScoreBadge({ score }: { score?: number }) {
   return (
     <span
       title="Lead score: fit, identity, people, connections and contact details"
-      className={`inline-flex items-baseline gap-0.5 border-2 border-zinc-900 px-1.5 font-display text-xl leading-6 ${tier}`}
+      className={`inline-flex items-baseline gap-0.5 border border-zinc-900/25 px-1.5 font-display text-xl leading-6 ${tier}`}
     >
       {score}
       <span className="text-[10px] font-sans font-normal opacity-70">/100</span>

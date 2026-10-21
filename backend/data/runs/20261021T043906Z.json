@@ -1,0 +1,397 @@
+{
+  "run_id": "20261021T043906Z",
+  "started_at": "2026-10-21T04:39:06+00:00",
+  "duration_s": 152.1,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 300,
+    "selected": 10,
+    "crawled": 9,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4
+  },
+  "tokens": 18054,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 67,
+    "rss": 71,
+    "edgar": 6,
+    "web": 24
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup founded 2024",
+      "Series A RAG platform launch founder interview",
+      "AI retrieval tool pre\u2011seed funding Lightspeed Ventures",
+      "developer tooling startup vector search seed funding 2024",
+      "knowledge base AI startup Series A investor Andreessen Horowitz"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG",
+      "vector database",
+      "developer tooling",
+      "next.js AI"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 11,
+        "accepted": 3,
+        "score_sum": 150,
+        "yield": 0.273,
+        "avg_score": 50.0
+      },
+      "yc": {
+        "crawled": 9,
+        "accepted": 9,
+        "score_sum": 494,
+        "yield": 1.0,
+        "avg_score": 54.9
+      },
+      "rss": {
+        "crawled": 9,
+        "accepted": 7,
+        "score_sum": 499,
+        "yield": 0.778,
+        "avg_score": 71.3
+      },
+      "web": {
+        "crawled": 9,
+        "accepted": 7,
+        "score_sum": 552,
+        "yield": 0.778,
+        "avg_score": 78.9
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 278,
+        "yield": 1.0,
+        "avg_score": 69.5
+      },
+      "edgar": {
+        "crawled": 4,
+        "accepted": 1,
+        "score_sum": 66,
+        "yield": 0.25,
+        "avg_score": 66.0
+      },
+      "hiring": {
+        "crawled": 5,
+        "accepted": 2,
+        "score_sum": 130,
+        "yield": 0.4,
+        "avg_score": 65.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 3,
+      "rss": 2,
+      "web": 2,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 155,
+    "fallbacks": 0,
+    "avg_latency_ms": 75.1,
+    "jev_input_tokens": 73919,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-21T04:39:06+00:00",
+      "offset_s": 0.0,
+      "duration_s": 9.63,
+      "status": "ok",
+      "counts": {
+        "candidates": 300,
+        "src_hn": 63,
+        "src_launch_hn": 4,
+        "src_rss": 71,
+        "src_yc": 12,
+        "src_web": 24,
+        "src_edgar": 6,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-21T04:39:16+00:00",
+      "offset_s": 9.63,
+      "duration_s": 11.3,
+      "status": "ok",
+      "counts": {
+        "in": 300,
+        "selected": 10
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 3, 'rss': 2, 'web': 2, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-21T04:39:27+00:00",
+      "offset_s": 20.93,
+      "duration_s": 21.39,
+      "status": "ok",
+      "counts": {
+        "requested": 10,
+        "crawled": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-21T04:39:48+00:00",
+      "offset_s": 42.33,
+      "duration_s": 56.79,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-10-21T04:40:45+00:00",
+      "offset_s": 99.12,
+      "duration_s": 40.1,
+      "status": "ok",
+      "counts": {
+        "startups": 4,
+        "websites": 4,
+        "emails": 4,
+        "phones": 2
+      },
+      "notes": [
+        "structured data: 3 people",
+        "structured data: 2 people",
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +0 people, +1 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-21T04:41:25+00:00",
+      "offset_s": 139.22,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 84
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-10-21T04:41:25+00:00",
+      "offset_s": 139.22,
+      "duration_s": 2.04,
+      "status": "ok",
+      "counts": {
+        "startups": 4,
+        "people": 10,
+        "edges": 26
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-10-21T04:41:27+00:00",
+      "offset_s": 141.26,
+      "duration_s": 10.13,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 0
+      },
+      "notes": [
+        "Jooba: ok, score 55"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.45,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.24,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 67,
+      "seconds": 2.06,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 71,
+      "seconds": 4.75,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 6,
+      "seconds": 7.66,
+      "error": ""
+    },
+    "web": {
+      "candidates": 24,
+      "seconds": 9.62,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13220,
+    "completion_tokens": 4834,
+    "total_tokens": 18054,
+    "calls": 7,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 10754,
+        "completion_tokens": 4505,
+        "total_tokens": 15259,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 2466,
+        "completion_tokens": 329,
+        "total_tokens": 2795,
+        "calls": 2
+      }
+    }
+  },
+  "quality": {
+    "candidates": 300,
+    "crawled": 9,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4,
+    "sources": {
+      "rss": 2,
+      "web": 2
+    },
+    "people": 10,
+    "edges": 26,
+    "dropped_ungrounded": 7,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 4,
+    "with_website": 4,
+    "with_email": 3,
+    "with_phone": 2,
+    "people_linked": 6,
+    "avg_score": 84.2,
+    "issues": {
+      "warn: empty tech_stack": 2,
+      "not a relevant startup page": 1
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "joinpond.ai",
+      "news.ycombinator.com/item?id=49961408",
+      "ycombinator.com/launches/W49-antropi-robotics-cnc-parts-in-days-from-autnomous-factories",
+      "ycombinator.com/launches/W5J-scout-by-fini-an-ai-teammate-for-your-support-team"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Polygrade",
+      "url": "https://betakit.com/toronto-software-startup-ploygrade-emerges-from-stealth-to-build-ai-for-home-warranty-claims/",
+      "source": "rss",
+      "people": 4,
+      "edges": 12,
+      "score": 93,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://polygrade.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Vesta",
+      "url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
+      "source": "rss",
+      "people": 2,
+      "edges": 6,
+      "score": 82,
+      "gaps": [
+        "funding stage"
+      ],
+      "website": "https://www.vesta.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Genspark",
+      "url": "https://finance.yahoo.com/news/ai-search-startup-genspark-raises-154925342.html",
+      "source": "web",
+      "people": 1,
+      "edges": 3,
+      "score": 73,
+      "gaps": [
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "https://finance.yahoo.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Deeptune",
+      "url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
+      "source": "web",
+      "people": 3,
+      "edges": 5,
+      "score": 89,
+      "gaps": [
+        "tech stack"
+      ],
+      "website": "https://fortune.com",
+      "emails": 2,
+      "phones": 1
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2137291/000213729126000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2144437/000214443726000001/",
+      "source": "edgar",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": []
+}

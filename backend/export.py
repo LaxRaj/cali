@@ -11,6 +11,7 @@ from draft import build_draft
 from investors import investor_clusters
 from ledger import TABLE as LEDGER
 from outcomes import load_outcomes
+from outreach import load_outbox
 from paths import find_path, load_known
 from whynow import why_now
 
@@ -43,19 +44,25 @@ def _trackbacks(db_dir) -> dict[str, list[dict]]:
     for r in sorted(_rows(LEDGER, db_dir), key=lambda r: r["last_seen"], reverse=True):
         by.setdefault(r["company"], []).append({f: r[f] for f in TRACKBACK_FIELDS})
     return by
+def _loads_list(raw) -> list:
+    try:
+        return json.loads(raw) if raw else []
+    except ValueError:
+        return []
 
 
 def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     people = _rows(PEOPLE, db_dir)
     edges = _rows(EDGES, db_dir)
     outcomes = load_outcomes(db_dir)
+    outbox = load_outbox(db_dir)
     known = load_known(db_dir)
     trackbacks = _trackbacks(db_dir)
     out = []
     for r in _rows(TABLE, db_dir):
         name = r["company_name"]
         k = _key(name)
-        row = {f: r[f] for f in r if f not in ("vector", "contact_json", "score_json")}
+        row = {f: r[f] for f in r if f not in ("vector", "contact_json", "score_json", "signals_json")}
         contact = _loads(r.get("contact_json"))
         breakdown = _loads(r.get("score_json"))
         out.append(
@@ -66,6 +73,7 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
                 "score_parts": breakdown.get("parts", {}),
                 "gaps": breakdown.get("gaps", []),
                 "contact": contact,
+                "signals": _loads_list(r.get("signals_json")),
                 "people": [
                     {f: p.get(f, "") for f in PERSON_FIELDS}
                     for p in people
@@ -86,6 +94,11 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
         p["why_now"] = why_now(p, now)
         p["warm_path"] = find_path(edges, known, p["company_name"])
         p["email_draft"] = build_draft(p, p["warm_path"])
+        p["outreach"] = [
+            {f: i[f] for f in ("kind", "status", "to", "updated")}
+            for i in outbox.values()
+            if i["company"].strip().lower() == _key(p["company_name"])
+        ]
     return sorted(out, key=lambda p: (p["score"], p.get("discovered_at", "")), reverse=True)
 
 

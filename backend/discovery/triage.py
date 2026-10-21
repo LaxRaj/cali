@@ -11,6 +11,8 @@ from objective import MAX_CRAWLS, MIN_TRIAGE, OBJECTIVE, PER_SOURCE_CAP
 BLOCKED_HOSTS = {
     "youtube.com", "youtu.be", "twitter.com", "x.com", "linkedin.com", "reddit.com",
     "facebook.com", "instagram.com", "wikipedia.org", "medium.com", "news.ycombinator.com",
+    # code/package/paper/app-store pages describe a project, not a company: every one we crawled was rejected
+    "github.com", "gitlab.com", "huggingface.co", "arxiv.org", "pypi.org", "npmjs.com", "apps.apple.com", "play.google.com",
 }
 JUNK_TITLE = re.compile(
     r"\b(how to|guide|tips|best \w+ (tools|startups)|top \d+|\d+ (best|ways|tips)|checklist|"

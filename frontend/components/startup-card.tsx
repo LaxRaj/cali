@@ -37,10 +37,10 @@ export function StartupCard({
   const meta = [p.hq, p.funding_amount].filter(Boolean).join(" · ");
 
   return (
-    <article className="border-2 border-zinc-900 bg-white shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-emerald-400/60 dark:bg-black dark:shadow-emerald-400/30">
-      <header className="flex items-start justify-between gap-3 border-b-2 border-zinc-900 px-3 py-2 dark:border-emerald-400/60">
+    <article className="border border-zinc-900/25 bg-white dark:border-emerald-400/60 dark:bg-black">
+      <header className="flex items-start justify-between gap-3 border-b-2 border-zinc-900/25 px-3 py-2 dark:border-emerald-400/60">
         <div className="min-w-0">
-          <h3 className="glow truncate font-display text-2xl leading-none">
+          <h3 className="truncate font-display text-2xl leading-none">
             {full ? (
               p.company_name
             ) : (
@@ -80,7 +80,7 @@ export function StartupCard({
           <ScoreBadge score={p.score} />
           {p.funding_stage && (
             <span
-              className={`border-2 border-zinc-900 px-2 py-0.5 text-[11px] font-semibold uppercase ${tone.panel} ${tone.border}`}
+              className={`border border-zinc-900/25 px-2 py-0.5 text-[11px] font-semibold uppercase ${tone.panel} ${tone.border}`}
             >
               {p.funding_stage}
             </span>
@@ -95,7 +95,7 @@ export function StartupCard({
             {p.tech_stack.map((t) => (
               <li
                 key={t}
-                className="border border-zinc-900 bg-sky-100 px-1.5 text-xs dark:border-sky-400/50 dark:bg-sky-950/50 dark:text-sky-200"
+                className="border border-zinc-900/25 bg-sky-100 px-1.5 text-xs dark:border-sky-400/50 dark:bg-sky-950/50 dark:text-sky-200"
               >
                 {t}
               </li>
@@ -150,7 +150,7 @@ export function StartupCard({
           </div>
         )}
 
-        {full && p.email_draft && <EmailDraft draft={p.email_draft} />}
+        {full && p.email_draft && <EmailDraft draft={p.email_draft} outreach={p.outreach} />}
 
         {p.why_now && p.why_now.length > 0 && (
           <ul aria-label="Why now" className="space-y-0.5 text-xs">
@@ -267,7 +267,7 @@ function ContactBlock({ contact, full }: { contact: Contact; full: boolean }) {
   return (
     <section
       aria-label="Contact"
-      className="space-y-1 border-2 border-dashed border-zinc-900/50 bg-violet-50 p-2 text-xs dark:border-violet-400/40 dark:bg-violet-950/30"
+      className="space-y-1 border border-dashed border-zinc-900/50 bg-violet-50 p-2 text-xs dark:border-violet-400/40 dark:bg-violet-950/30"
     >
       <h4 className="text-[10px] font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
         contact

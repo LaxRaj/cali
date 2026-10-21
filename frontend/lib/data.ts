@@ -35,6 +35,8 @@ export type Contact = {
   phones?: ContactItem[];
   socials?: Record<string, string>;
   contact_page?: string;
+  /** Links on the company's own pages to try or read the product ("use it first"). */
+  product_access?: { label: string; url: string }[];
   status?: string;
 };
 export type Trackback = {
@@ -74,7 +76,10 @@ export type Profile = {
   trackbacks?: Trackback[];
   last_seen?: string;
   warm_path?: { via: string; summary: string; hops: Edge[] } | null;
+  outreach?: { kind: string; status: string; to: string; updated: string }[];
   email_draft?: {
+    intent?: "work_for" | "build_for" | "build_with";
+    intent_reason?: string;
     to: string;
     to_source_url: string;
     subject: string;
@@ -82,6 +87,16 @@ export type Profile = {
     mailto: string;
   };
   why_now?:{ signal: string; text: string; source_url: string }[];
+  /** Hiring / launch / funding signals the scout recorded (backend/signals.py). */
+  signals?: {
+    type: "hiring" | "launch" | "funding" | "seeking_freelancer";
+    source: string;
+    url: string;
+    roles: string[];
+    role_kinds: string[];
+    posted_at: string;
+    seen_at: string;
+  }[];
   contact?: Contact;
   decision?: Decision;
   outcome?: Outcome | null;

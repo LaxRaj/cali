@@ -7,7 +7,14 @@ import { RunStateBadge } from "@/components/runs/run-state-badge";
 import { Panel } from "@/components/ui/panel";
 import { readIndex } from "@/lib/data";
 import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
-import { dailyBudget, dailyTotals, dayKey, runState } from "@/lib/metrics";
+import { RECORDS_START } from "@/lib/constants";
+import {
+  dailyBudget,
+  dailyTotals,
+  dayKey,
+  historyStartsAtRecordCutoff,
+  runState,
+} from "@/lib/metrics";
 
 export const metadata = { title: "Runs — cali" };
 
@@ -18,7 +25,7 @@ export default function RunsPage() {
 
   return (
     <div className="space-y-6">
-      <h1 className="glow font-display text-5xl uppercase tracking-wider">
+      <h1 className="font-display text-6xl">
         Process monitor
       </h1>
       {runs.length === 0 ? (
@@ -65,10 +72,16 @@ export default function RunsPage() {
             tone="violet"
             right={<span>{runs.length} runs</span>}
           >
+            {historyStartsAtRecordCutoff(runs) && (
+              <p className="mb-2 text-xs text-zinc-600 dark:text-zinc-400">
+                Run records start {fmtDateTime(RECORDS_START)}; earlier scout
+                executions were not logged.
+              </p>
+            )}
             <div className="overflow-x-auto">
               <table className="w-full min-w-[40rem] text-left">
                 <thead>
-                  <tr className="border-b-2 border-zinc-900 text-[11px] uppercase tracking-widest dark:border-violet-400/60">
+                  <tr className="border-b-2 border-zinc-900/25 text-[11px] uppercase tracking-widest dark:border-violet-400/60">
                     <th className="py-1 pr-3">Status</th>
                     <th className="pr-3">Started (UTC)</th>
                     <th className="pr-3">Funnel (found → valid)</th>
