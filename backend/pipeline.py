@@ -35,8 +35,9 @@ MAX_PEOPLE_SEARCHES = 12  # public-search lookups for founders' profile links, p
 BACKFILL_LIMIT = 3  # older stored startups re-enriched per run
 AVG_EXTRACTION_TOKENS = 4500  # for the 'tokens saved' estimate when a page is gated
 MAX_GITHUB_LOOKUPS = 30  # public profile API calls per run
-TARGET_VALID = 8  # stop extracting once this many startups passed validation
-MAX_TEAM_LLM = 6  # About/Team page extraction calls (Groq tokens), per run
+TOKEN_BUDGET = int(os.environ.get("CALI_TOKEN_BUDGET", "20000"))  # Groq tokens per run; 0 = unlimited
+TEAM_RESERVE = 2500  # left for the team-page pass (~1.5k per call)
+MAX_TEAM_LLM = 3  # About/Team page extraction calls (Groq tokens), per run
 
 
 def enrichment_enabled() -> bool:
@@ -92,7 +93,8 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     accepted = []
     for page in pages:
-        if report.valid >= TARGET_VALID:  # enough good startups for today: the tail would only burn tokens
+        avg_call = llm.USAGE["total_tokens"] / llm.USAGE["calls"] if llm.USAGE["calls"] else 2500
+        if TOKEN_BUDGET and llm.USAGE["total_tokens"] + avg_call + TEAM_RESERVE >= TOKEN_BUDGET:  # budget spent: defer the tail
             report.deferred_urls.append(normalize_url(page.url))
             continue
         if report.quota_exhausted:
@@ -160,7 +162,8 @@ def process(pages, by_url: dict[str, Candidate], report: RunReport):
 async def enrich_all(accepted, log) -> list[EnrichResult]:
     """Contacts, socials, team page and people links for each accepted startup (never fatal)."""
     results = []
-    search_budget, team_budget, gh_budget = [MAX_PEOPLE_SEARCHES], [MAX_TEAM_LLM], [MAX_GITHUB_LOOKUPS]
+    team_calls = MAX_TEAM_LLM if not TOKEN_BUDGET else max(0, min(MAX_TEAM_LLM, (TOKEN_BUDGET - llm.USAGE["total_tokens"]) // 1500))
+    search_budget, team_budget, gh_budget = [MAX_PEOPLE_SEARCHES], [team_calls], [MAX_GITHUB_LOOKUPS]  # ~1.5k tokens per team call
     github_fn = lambda people: enrich_people_github(people, budget=gh_budget)  # noqa: E731
     for ex, source, md in accepted:
         try:
@@ -303,7 +306,7 @@ async def run(data_dir: Path) -> RunReport:
                 st["counts"] = {"startups": len(findings), "people": report.people, "edges": report.edges}
 
             # Rows stored before enrichment existed (or whose enrichment failed) get a few attempts per run.
-            if enrichment_enabled() and not report.quota_exhausted:
+            if enrichment_enabled() and not report.quota_exhausted and not (TOKEN_BUDGET and llm.USAGE["total_tokens"] + 1500 >= TOKEN_BUDGET):
                 with log.stage("backfill") as st:
                     done = await backfill(data_dir, limit=BACKFILL_LIMIT, search_fn=search_fn)
                     st["counts"] = {"startups": len(done), "emails": sum(d["emails"] for d in done)}
