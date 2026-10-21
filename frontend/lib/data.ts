@@ -56,6 +56,7 @@ export type Profile = {
   score?: number;
   score_parts?: Record<string, number>;
   gaps?: string[];
+  warm_path?: { via: string; summary: string; hops: Edge[] } | null;
   email_draft?: {
     to: string;
     to_source_url: string;

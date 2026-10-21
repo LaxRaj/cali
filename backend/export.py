@@ -8,6 +8,7 @@ from pathlib import Path
 from decide.policy import decide_lead
 from draft import build_draft
 from outcomes import load_outcomes
+from paths import find_path, load_known
 from whynow import why_now
 
 PERSON_FIELDS = ("name", "role", "org", "evidence", "linkedin", "twitter", "github", "homepage", "link_source")
@@ -34,6 +35,7 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     people = _rows(PEOPLE, db_dir)
     edges = _rows(EDGES, db_dir)
     outcomes = load_outcomes(db_dir)
+    known = load_known(db_dir)
     out = []
     for r in _rows(TABLE, db_dir):
         name = r["company_name"]
@@ -66,7 +68,8 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
         p["outcome"] = outcome or None
         p["decision"] = decide_lead(p, outcome, now)
         p["why_now"] = why_now(p, now)
-        p["email_draft"] = build_draft(p)
+        p["warm_path"] = find_path(edges, known, p["company_name"])
+        p["email_draft"] = build_draft(p, p["warm_path"])
     return sorted(out, key=lambda p: (p["score"], p.get("discovered_at", "")), reverse=True)
 
 

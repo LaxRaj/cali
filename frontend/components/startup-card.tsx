@@ -125,6 +125,31 @@ export function StartupCard({
           </div>
         )}
 
+        {p.warm_path && (
+          <div className="text-xs">
+            <span className="font-semibold uppercase tracking-wide text-violet-700 dark:text-violet-300">
+              warm path ›{" "}
+            </span>
+            {p.warm_path.summary}
+            {full && (
+              <ol className="mt-1 space-y-1">
+                {p.warm_path.hops.map((h, i) => (
+                  <li key={i}>
+                    {h.src}{" "}
+                    <span className="font-semibold text-violet-700 dark:text-violet-300">
+                      {h.rel.replace("_", " ")}
+                    </span>{" "}
+                    {h.dst}
+                    <blockquote className="text-zinc-500">
+                      “{h.evidence}”
+                    </blockquote>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
+
         {full && p.email_draft && <EmailDraft draft={p.email_draft} />}
 
         {p.why_now && p.why_now.length > 0 && (
