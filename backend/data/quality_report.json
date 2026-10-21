@@ -1,34 +1,37 @@
 {
-  "generated_at": "2026-10-20T21:28:52+00:00",
-  "candidates": 304,
-  "crawled": 10,
-  "extracted": 10,
-  "relevant": 7,
-  "valid": 7,
+  "generated_at": "2026-10-21T04:41:25+00:00",
+  "candidates": 300,
+  "crawled": 9,
+  "extracted": 5,
+  "relevant": 4,
+  "valid": 4,
   "sources": {
     "rss": 2,
-    "web": 2,
-    "hiring": 1,
-    "yc": 2
+    "web": 2
   },
-  "people": 29,
-  "edges": 50,
-  "dropped_ungrounded": 2,
+  "people": 10,
+  "edges": 26,
+  "dropped_ungrounded": 7,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 6,
-  "with_website": 6,
-  "with_email": 4,
-  "with_phone": 0,
-  "people_linked": 8,
-  "avg_score": 72.7,
+  "enriched": 4,
+  "with_website": 4,
+  "with_email": 3,
+  "with_phone": 2,
+  "people_linked": 6,
+  "avg_score": 84.2,
   "issues": {
-    "warn: empty tech_stack": 3,
-    "not a relevant startup page": 3
+    "warn: empty tech_stack": 2,
+    "not a relevant startup page": 1
   },
   "failures": [],
   "passed": true,
-  "deferred_urls": [],
+  "deferred_urls": [
+    "joinpond.ai",
+    "news.ycombinator.com/item?id=49961408",
+    "ycombinator.com/launches/W49-antropi-robotics-cnc-parts-in-days-from-autnomous-factories",
+    "ycombinator.com/launches/W5J-scout-by-fini-an-ai-teammate-for-your-support-team"
+  ],
   "skipped": "",
   "validity_rate": 1.0
 }

@@ -41,6 +41,14 @@
       "score": 73
     },
     {
+      "id": "polygrade",
+      "label": "Polygrade",
+      "type": "startup",
+      "degree": 9,
+      "website": "https://polygrade.com",
+      "score": 93
+    },
+    {
       "id": "axel",
       "label": "Axel",
       "type": "startup",
@@ -95,12 +103,28 @@
       "score": 81
     },
     {
+      "id": "vesta",
+      "label": "Vesta",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.vesta.com",
+      "score": 82
+    },
+    {
       "id": "cedardb",
       "label": "CedarDB",
       "type": "startup",
       "degree": 5,
       "website": "https://cedardb.com",
       "score": 72
+    },
+    {
+      "id": "deeptune",
+      "label": "Deeptune",
+      "type": "startup",
+      "degree": 5,
+      "website": "https://fortune.com",
+      "score": 89
     },
     {
       "id": "guillaume miara",
@@ -131,6 +155,16 @@
       "degree": 4,
       "role": "founder",
       "links": {}
+    },
+    {
+      "id": "david steckel",
+      "label": "David Steckel",
+      "type": "person",
+      "degree": 4,
+      "role": "Co‑founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/david-steckel"
+      }
     },
     {
       "id": "consus",
@@ -169,8 +203,8 @@
       "label": "Jooba",
       "type": "startup",
       "degree": 3,
-      "website": "",
-      "score": 43
+      "website": "https://www.jooba.com",
+      "score": 55
     },
     {
       "id": "eric magliarditi",
@@ -303,6 +337,14 @@
       "score": 64
     },
     {
+      "id": "genspark",
+      "label": "Genspark",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://finance.yahoo.com",
+      "score": 73
+    },
+    {
       "id": "eric",
       "label": "Eric",
       "type": "person",
@@ -392,6 +434,14 @@
       }
     },
     {
+      "id": "eric jing",
+      "label": "Eric Jing",
+      "type": "person",
+      "degree": 2,
+      "role": "CEO",
+      "links": {}
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -418,6 +468,12 @@
     {
       "id": "adside",
       "label": "Adside",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "andreessen horowitz",
+      "label": "Andreessen Horowitz",
       "type": "org",
       "degree": 2
     },
@@ -1117,6 +1173,72 @@
       }
     },
     {
+      "id": "eui chung",
+      "label": "Eui Chung",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/echung42"
+      }
+    },
+    {
+      "id": "kaustubh vongole",
+      "label": "Kaustubh Vongole",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & Head of Product",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/kvongole"
+      }
+    },
+    {
+      "id": "mike yu",
+      "label": "Mike Yu",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO & Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/mikeyu1/"
+      }
+    },
+    {
+      "id": "devon yang",
+      "label": "Devon Yang",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/devon/"
+      }
+    },
+    {
+      "id": "tim lupo",
+      "label": "Tim Lupo",
+      "type": "person",
+      "degree": 1,
+      "role": "cofounder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/timlup"
+      }
+    },
+    {
+      "id": "marco mascorro",
+      "label": "Marco Mascorro",
+      "type": "person",
+      "degree": 1,
+      "role": "partner",
+      "links": {}
+    },
+    {
+      "id": "noam brown",
+      "label": "Noam Brown",
+      "type": "person",
+      "degree": 1,
+      "role": "OpenAI researcher",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -1401,6 +1523,96 @@
     {
       "id": "vermilion ventures",
       "label": "Vermilion Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "american family ventures",
+      "label": "American Family Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "nine four ventures",
+      "label": "Nine Four Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "hustle fund",
+      "label": "Hustle Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "room",
+      "label": "Room",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "pillar",
+      "label": "Pillar",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "construct capital",
+      "label": "Construct Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "setter",
+      "label": "Setter",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "thumbtack",
+      "label": "Thumbtack",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "sears home services",
+      "label": "Sears Home Services",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "citi ventures",
+      "label": "Citi Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "pennymac",
+      "label": "Pennymac",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "new american funding",
+      "label": "New American Funding",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "baidu",
+      "label": "Baidu",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lanchi ventures",
+      "label": "Lanchi Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "776",
+      "label": "776",
       "type": "org",
       "degree": 1
     },
@@ -1842,6 +2054,14 @@
       "type": "person",
       "degree": 0,
       "role": "",
+      "links": {}
+    },
+    {
+      "id": "rachel holt",
+      "label": "Rachel Holt",
+      "type": "person",
+      "degree": 0,
+      "role": "Co‑founder & Managing Partner",
       "links": {}
     }
   ],
@@ -2841,6 +3061,162 @@
       "target": "chariot claims",
       "rel": "invested_in",
       "evidence": "Indicator Ventures, Lightbank, Neon Fund, ZVC, Rosecliff Ventures, Alumni Ventures, FJ Labs, Graph Ventures and Vermilion Ventures also participated in the financing."
+    },
+    {
+      "source": "david steckel",
+      "target": "polygrade",
+      "rel": "founded",
+      "evidence": "David Steckel, Polygrade’s co‑founder and CEO"
+    },
+    {
+      "source": "eui chung",
+      "target": "polygrade",
+      "rel": "cofounded",
+      "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)"
+    },
+    {
+      "source": "kaustubh vongole",
+      "target": "polygrade",
+      "rel": "cofounded",
+      "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)"
+    },
+    {
+      "source": "american family ventures",
+      "target": "polygrade",
+      "rel": "invested_in",
+      "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+    },
+    {
+      "source": "nine four ventures",
+      "target": "polygrade",
+      "rel": "invested_in",
+      "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+    },
+    {
+      "source": "hustle fund",
+      "target": "polygrade",
+      "rel": "invested_in",
+      "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+    },
+    {
+      "source": "room",
+      "target": "polygrade",
+      "rel": "invested_in",
+      "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+    },
+    {
+      "source": "pillar",
+      "target": "polygrade",
+      "rel": "invested_in",
+      "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+    },
+    {
+      "source": "construct capital",
+      "target": "polygrade",
+      "rel": "invested_in",
+      "evidence": "a $3‑million USD cheque from Construct Capital"
+    },
+    {
+      "source": "david steckel",
+      "target": "setter",
+      "rel": "previously_at",
+      "evidence": "The Polygrade CEO began his career as a custom homebuilder before founding Setter"
+    },
+    {
+      "source": "david steckel",
+      "target": "thumbtack",
+      "rel": "previously_at",
+      "evidence": "Steckel focused on partnerships and innovation at Thumbtack"
+    },
+    {
+      "source": "david steckel",
+      "target": "sears home services",
+      "rel": "previously_at",
+      "evidence": "before joining Sears Home Services"
+    },
+    {
+      "source": "mike yu",
+      "target": "vesta",
+      "rel": "founded",
+      "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang."
+    },
+    {
+      "source": "devon yang",
+      "target": "vesta",
+      "rel": "cofounded",
+      "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang."
+    },
+    {
+      "source": "citi ventures",
+      "target": "vesta",
+      "rel": "invested_in",
+      "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+    },
+    {
+      "source": "andreessen horowitz",
+      "target": "vesta",
+      "rel": "invested_in",
+      "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+    },
+    {
+      "source": "pennymac",
+      "target": "vesta",
+      "rel": "invested_in",
+      "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+    },
+    {
+      "source": "new american funding",
+      "target": "vesta",
+      "rel": "invested_in",
+      "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
+    },
+    {
+      "source": "eric jing",
+      "target": "genspark",
+      "rel": "founded",
+      "evidence": "Its CEO Eric Jing led Baidu's AI-powered smartphone and smart speaker Xiaodu unit until last October."
+    },
+    {
+      "source": "eric jing",
+      "target": "baidu",
+      "rel": "previously_at",
+      "evidence": "Its CEO Eric Jing led Baidu's AI-powered smartphone and smart speaker Xiaodu unit until last October."
+    },
+    {
+      "source": "lanchi ventures",
+      "target": "genspark",
+      "rel": "invested_in",
+      "evidence": "The funding is led by Singapore-based fund Lanchi Ventures"
+    },
+    {
+      "source": "tim lupo",
+      "target": "deeptune",
+      "rel": "founded",
+      "evidence": "cofounder and CEO Tim Lupo told Fortune"
+    },
+    {
+      "source": "andreessen horowitz",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "Andreessen Horowitz led the round"
+    },
+    {
+      "source": "776",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "joined by 776"
+    },
+    {
+      "source": "noam brown",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "angels including OpenAI researcher Noam Brown"
+    },
+    {
+      "source": "marco mascorro",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "Marco Mascorro, partner at Andreessen Horowitz, told Fortune"
     },
     {
       "source": "a16z speedrun",
