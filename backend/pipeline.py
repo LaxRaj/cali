@@ -25,6 +25,7 @@ from decide.training import append_decisions
 from train_decider import train
 from export import export_all
 from extractor import extract, extract_people
+from ledger import observations_for, record as record_observations
 from memory import DB_DIR, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
 from models import Contact
 from quality import RunReport, check_extraction, evaluate_run, tidy
@@ -284,10 +285,12 @@ async def run(data_dir: Path) -> RunReport:
                             "score": rt.score,
                             "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
                             "contact_json": res.contact.model_dump_json(),
+                            "last_seen": now,
                         },
                     )
                     upsert_people(people, db_dir=data_dir)
                     upsert_edges(edges, db_dir=data_dir)
+                    record_observations(observations_for(s, people, edges, res.contact, s.source_url), log.run_id, now, data_dir)
                     findings.append(
                         {
                             **s.model_dump(), "source": source, "score": rt.score, "gaps": rt.gaps,

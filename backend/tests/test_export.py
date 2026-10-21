@@ -101,3 +101,21 @@ def test_profiles_carry_a_decision_and_your_outcome(tmp_path):
     got = {p["company_name"]: p for p in build_profiles(d, now=now)}
     assert got["Fresh"]["decision"]["action"] == "contact_now" and got["Fresh"]["outcome"] is None
     assert got["Told"]["decision"]["action"] == "skip" and got["Told"]["outcome"]["status"] == "passed"
+
+
+def test_profiles_and_graph_edges_carry_ledger_trackbacks(tmp_path):
+    import ledger
+
+    d = tmp_path / "db4"
+    s = prof("Acme")
+    upsert_profile(s, db_dir=d, extras={"score": 80, "score_json": json.dumps({"parts": {}, "gaps": []}), "contact_json": "{}"})
+    edge = Edge(src="Fund", rel="invested_in", dst="Acme", evidence="Fund backed Acme")
+    upsert_edges([edge], db_dir=d)
+    ledger.record(ledger.observations_for(s, [], [edge], None, "https://n.example/a"), "r1", "2026-10-01T00:00:00", d)
+    ledger.record(ledger.observations_for(s, [], [edge], None, "https://n.example/b"), "r2", "2026-10-09T00:00:00", d)
+
+    p = build_profiles(d)[0]
+    assert {t["source_url"] for t in p["trackbacks"] if t["entity_type"] == "edge"} == {"https://n.example/a", "https://n.example/b"}
+    assert p["trackbacks"][0]["last_seen"] == "2026-10-09T00:00:00"  # newest first
+    ge = build_graph(d)["edges"][0]
+    assert [x["source_url"] for x in ge["sources"]] == ["https://n.example/a", "https://n.example/b"]

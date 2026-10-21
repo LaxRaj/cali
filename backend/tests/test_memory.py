@@ -53,6 +53,17 @@ def test_upsert_replaces_existing_company(db_dir):
     assert next(r for r in results if r.company_name == "FleetPulse").core_product == updated.core_product
 
 
+def test_reupsert_keeps_the_earliest_discovered_at(db_dir):
+    from memory import TABLE, _rows
+
+    first = PROFILES[0].model_copy(update={"discovered_at": "2026-10-01T00:00:00+00:00"})
+    upsert_profile(first, db_dir=db_dir)
+    later = first.model_copy(update={"discovered_at": "2026-10-09T00:00:00+00:00"})
+    upsert_profile(later, db_dir=db_dir, extras={"last_seen": "2026-10-09T00:00:00+00:00"})
+    row = next(r for r in _rows(TABLE, db_dir) if r["company_name"] == first.company_name)
+    assert row["discovered_at"] == "2026-10-01T00:00:00+00:00" and row["last_seen"] == "2026-10-09T00:00:00+00:00"
+
+
 def test_search_empty_db_returns_nothing(db_dir):
     assert search("anything", db_dir=db_dir) == []
 

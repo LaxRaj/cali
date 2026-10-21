@@ -5,6 +5,14 @@ import type { Graph } from "@/lib/data";
 import { layoutGraph } from "@/lib/network-layout";
 
 const SIZE = 800;
+
+function srcHost(url: string): string {
+  try {
+    return new URL(url).host.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
 const FILL = {
   startup:
     "fill-emerald-300 stroke-zinc-900 dark:fill-emerald-500 dark:stroke-black",
@@ -194,6 +202,23 @@ export function NetworkGraph({ graph }: { graph: Graph }) {
                     <blockquote className="mt-0.5 text-xs text-zinc-600 dark:text-zinc-400">
                       “{e.evidence}”
                     </blockquote>
+                    {(e.sources ?? []).length > 0 && (
+                      <p className="mt-0.5 text-xs text-zinc-500">
+                        {e.sources?.map((s, i) => (
+                          <span key={s.source_url}>
+                            {i > 0 && " · "}
+                            <a
+                              href={s.source_url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="underline-offset-2 hover:underline"
+                            >
+                              {srcHost(s.source_url)}
+                            </a>
+                          </span>
+                        ))}
+                      </p>
+                    )}
                   </li>
                 );
               })}
