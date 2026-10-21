@@ -6,6 +6,7 @@ import {
   dailyTotals,
   dataFreshness,
   dayKey,
+  historyStartsAtRecordCutoff,
   latestFindings,
   latestRun,
   passRate,
@@ -270,5 +271,21 @@ describe("dataFreshness", () => {
   });
   it("is stale when there is no run at all", () => {
     expect(dataFreshness(undefined, new Date()).stale).toBe(true);
+  });
+});
+
+describe("historyStartsAtRecordCutoff", () => {
+  it("is true when the oldest indexed run is the first one ever recorded", () => {
+    expect(historyStartsAtRecordCutoff(TODAY)).toBe(true);
+  });
+  it("is false when the index reaches back before run records existed (demo data)", () => {
+    const older = run("20260921T060000Z", 1);
+    expect(historyStartsAtRecordCutoff([older, ...TODAY])).toBe(false);
+  });
+  it("is false for an empty index", () => {
+    expect(historyStartsAtRecordCutoff([])).toBe(false);
+  });
+  it("does not depend on array order", () => {
+    expect(historyStartsAtRecordCutoff([...TODAY].reverse())).toBe(true);
   });
 });

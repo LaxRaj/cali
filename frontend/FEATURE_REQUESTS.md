@@ -9,6 +9,8 @@ Found while fixing the token and run-state logic. Ordered by priority. Each item
 - **Proposal:** add a step at the end of `.github/workflows/scout.yml` that triggers the host's deploy hook (a secret URL) after "Commit results to main". For local use, `npm run verify` already warns when the checkout is behind `origin/main`.
 - **Effort:** small (one workflow step, one secret).
 - **Done when:** a scout run's commit is visible on the deployed dashboard within minutes, without manual action.
+- **Already in place:** `npm run dev` runs `check:data --quiet` first and prints a warning when the checkout is behind `origin/main` or the Actions run count is higher than the local run records.
+- **Known gap:** run records start 2026-10-20 03:15 UTC. Five earlier scout executions have no record and cannot be reconstructed; the run log says so.
 
 ### 2. Per-key and per-model quota view
 - **Problem:** the budget is now `200k × keys`, but the dashboard shows one number. Groq's limits are per model per account, and the 429 messages show used/limit exactly (for example "Limit 200000, Used 198484").

@@ -183,7 +183,15 @@ async def enrich_all(accepted, log) -> list[EnrichResult]:
 async def run(data_dir: Path) -> RunReport:
     if llm.quota_blocked(data_dir):  # every Groq key is spent until 00:00 UTC: crawling now would be wasted work
         print("Groq daily quota is spent (data/quota.json); skipping this run. CALI_IGNORE_QUOTA=1 overrides.")
-        return RunReport(skipped="groq quota exhausted")
+        report = RunReport(skipped="groq quota exhausted", quota_exhausted=True)
+        log = telemetry.RunLog()  # no work was done, but the run still happened: show it on the dashboard
+        log.funnel = dict.fromkeys(("candidates", "selected", "crawled", "extracted", "relevant", "valid"), 0)
+        log.failures = ["skipped: Groq daily quota already spent"]
+        log.quality = report.to_dict()
+        log.quota_exhausted, log.token_budget = True, llm.token_budget()
+        log.write(data_dir)
+        log.close()
+        return report
     os.environ["CALI_DATA_DIR"] = str(data_dir)  # caches (extractions, plan) live beside the data
     log = telemetry.RunLog()
     llm.reset_usage()
