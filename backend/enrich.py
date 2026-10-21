@@ -18,7 +18,9 @@ from urllib.parse import urljoin, urlparse
 import phonenumbers
 from bs4 import BeautifulSoup
 
+import ats
 from models import Contact, ContactItem, Edge, Extraction, Person
+from signals import make_signal
 
 # --- constants -------------------------------------------------------------------------------------
 
@@ -345,6 +347,7 @@ def build_contact(origin: str, pages: list[PageFacts], company: str = "") -> Con
                     socials[soc[0]] = soc[2]
     ranked = sorted(emails.values(), key=lambda c: (KIND_ORDER.get(c.kind, 9), c.value))
     return Contact(
+        product_access=product_access(pages, origin),
         website=origin,
         emails=ranked[:MAX_EMAILS],
         phones=list(phones.values())[:MAX_PHONES],
@@ -354,6 +357,53 @@ def build_contact(origin: str, pages: list[PageFacts], company: str = "") -> Con
         enriched_at=datetime.now(timezone.utc).isoformat(timespec="seconds"),
         status="ok",
     )
+
+
+PRODUCT_LINK = re.compile(r"^\s*(sign ?up|get started|try( it| for free| now)?|start (free|building|now)|free trial|demo|playground|docs|documentation|pricing|open app|launch app)\b", re.I)
+
+
+def product_access(pages: list[PageFacts], origin: str, limit: int = 4) -> list[dict[str, str]]:
+    """Links on the company's own pages that let you try or read the product (the 'use it first' step)."""
+    out: dict[str, dict[str, str]] = {}
+    for pg in pages[:2]:
+        for href, text in pg.anchors:
+            label = (text or "").strip()
+            if label and len(label) <= 30 and PRODUCT_LINK.match(label) and href.startswith("http") and not classify_social(href):
+                out.setdefault(href.split("#")[0], {"label": label, "url": href.split("#")[0]})
+    return list(out.values())[:limit]
+
+
+def post_emails(text: str, source_url: str) -> list[ContactItem]:
+    """Addresses a hiring post itself publishes (the company chose to put them there)."""
+    out: dict[str, ContactItem] = {}
+    for a in re.findall(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", text or ""):
+        a = a.lower().strip(".")
+        if _valid_email(a):
+            out.setdefault(a, ContactItem(value=a, kind=classify_email(a), source_url=source_url))
+    return list(out.values())
+
+
+async def open_role_signals(facts: list[PageFacts], jobs_fn, notes: list[str]) -> list[dict]:
+    """Open roles the company itself publishes (its Greenhouse/Lever/Ashby board or JobPosting markup)."""
+    jobs: list[dict] = []
+    source, url = "jobposting_markup", facts[0].url if facts else ""
+    for pg in facts:
+        jobs += ats.jsonld_jobs(pg.jsonld, pg.url)
+    if jobs_fn:
+        board = ats.detect_board([href for pg in facts for href, _ in pg.anchors])
+        if board:
+            try:
+                fetched = await asyncio.to_thread(jobs_fn, *board)
+            except Exception as e:
+                fetched = []
+                notes.append(f"job board failed: {e}")
+            if fetched:
+                jobs, source, url = fetched, board[0], f"https://{ {'greenhouse': 'boards.greenhouse.io', 'lever': 'jobs.lever.co', 'ashby': 'jobs.ashbyhq.com'}[board[0]] }/{board[1]}"
+    if not jobs:
+        return []
+    notes.append(f"{len(jobs)} open roles ({source})")
+    newest = max((j.get("posted_at") or "" for j in jobs), default="")
+    return [make_signal("hiring", source, url, [j["title"] for j in jobs], newest)]
 
 
 def jsonld_people(pages: list[PageFacts], company: str) -> list[Person]:
@@ -474,6 +524,7 @@ class EnrichResult:
     extraction: Extraction
     contact: Contact
     notes: list[str] = field(default_factory=list)
+    signals: list[dict] = field(default_factory=list)  # open-role signals found on the company's own job board
 
 
 async def enrich_startup(
@@ -487,6 +538,7 @@ async def enrich_startup(
     search_budget: list[int] | None = None,
     team_budget: list[int] | None = None,
     github_fn=None,
+    jobs_fn=None,
 ) -> EnrichResult:
     """Find the company's site, collect published contacts + socials, read its team page, link people."""
     s = ex.startup
@@ -557,4 +609,4 @@ async def enrich_startup(
         except Exception as e:
             notes.append(f"github enrichment failed: {e}")
     new_ex = extraction_with_people(ex.model_copy(update={"startup": s.model_copy(update=updates)}), people, edges)
-    return EnrichResult(new_ex, contact, notes)
+    return EnrichResult(new_ex, contact, notes, await open_role_signals(facts, jobs_fn, notes))

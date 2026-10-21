@@ -7,7 +7,14 @@ import { RunStateBadge } from "@/components/runs/run-state-badge";
 import { Panel } from "@/components/ui/panel";
 import { readIndex } from "@/lib/data";
 import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
-import { dailyBudget, dailyTotals, dayKey, runState } from "@/lib/metrics";
+import { RECORDS_START } from "@/lib/constants";
+import {
+  dailyBudget,
+  dailyTotals,
+  dayKey,
+  historyStartsAtRecordCutoff,
+  runState,
+} from "@/lib/metrics";
 
 export const metadata = { title: "Runs — cali" };
 
@@ -65,6 +72,12 @@ export default function RunsPage() {
             tone="violet"
             right={<span>{runs.length} runs</span>}
           >
+            {historyStartsAtRecordCutoff(runs) && (
+              <p className="mb-2 text-xs text-zinc-600 dark:text-zinc-400">
+                Run records start {fmtDateTime(RECORDS_START)}; earlier scout
+                executions were not logged.
+              </p>
+            )}
             <div className="overflow-x-auto">
               <table className="w-full min-w-[40rem] text-left">
                 <thead>

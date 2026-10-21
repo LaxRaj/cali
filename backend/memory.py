@@ -81,6 +81,11 @@ def upsert_profile(profile: StartupProfile, db_dir: str | Path = DB_DIR, extras:
     `extras` are additional flat columns (score, score_json, contact_json) kept beside the profile fields.
     """
     row = {**profile.model_dump(), **(extras or {}), "vector": embed(profile_text(profile))}
+    # a partial update (e.g. a backfill without signals) must not drop columns other stages wrote earlier
+    prev = next((r for r in _rows(TABLE, db_dir) if r["company_name"] == profile.company_name), None)
+    for k, v in (prev or {}).items():
+        if k not in row and k != "vector":
+            row[k] = v
     _upsert(TABLE, "company_name", [row], db_dir)
 
 
