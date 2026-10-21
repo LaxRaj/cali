@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StartupCard } from "@/components/startup-card";
+import { Trackbacks } from "@/components/startups/trackbacks";
 import { readProfiles } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -24,6 +25,7 @@ export default async function StartupPage({
         </Link>
       </p>
       <StartupCard p={profile} full />
+      <Trackbacks rows={profile.trackbacks ?? []} />
     </div>
   );
 }

@@ -50,7 +50,8 @@ def decide_lead(profile: dict, outcome: dict | None = None, now: datetime | None
     # 1) Your own outcome always wins.
     status = (outcome or {}).get("status")
     if status in ("passed", "won", "meeting"):
-        reasons.append(f"you marked this '{status}'")
+        why = (outcome or {}).get("reason", "").replace("_", " ")
+        reasons.append(f"you marked this '{status}'" + (f" ({why})" if why else ""))
         return result("skip", "cold", "No action needed", weight=0.2)
     if status in ("contacted", "replied"):
         since = _age_days((outcome or {}).get("updated", ""), now)

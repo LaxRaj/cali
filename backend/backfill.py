@@ -9,13 +9,15 @@ import argparse
 import asyncio
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import ats
 import llm
 from enrich import EnrichResult, enrich_startup, fetch_pages, host_of, is_company_host
 from export import export_all
-from extractor import extract_people
+from extractor import extract
+from ledger import observations_for, record as record_observations
 from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows, upsert_edges, upsert_people, upsert_profile
 from models import Contact, Edge, Extraction, Person, StartupProfile
 from quality import _norm
@@ -76,6 +78,7 @@ async def backfill(
     people_rows, edge_rows = _rows(PEOPLE, data_dir), _rows(EDGES, data_dir)
     search_budget, team_budget = [6], [limit]
     out = []
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
     for row in rows:
         ex = _extraction_from_rows(row, people_rows, edge_rows)
         src_url = ex.startup.source_url
@@ -103,6 +106,7 @@ async def backfill(
         )
         upsert_people(people, db_dir=data_dir)
         upsert_edges(edges, db_dir=data_dir)
+        record_observations(observations_for(s, people, edges, res.contact, src_url), f"backfill-{stamp[:10]}", stamp, data_dir)
         out.append({
             "company": s.company_name, "score": rt.score, "gaps": rt.gaps, "website": res.contact.website,
             "status": res.contact.status, "emails": len(res.contact.emails), "phones": len(res.contact.phones),
