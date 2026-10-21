@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Contact, Profile } from "@/lib/data";
 import { fmtDate } from "@/lib/format";
 import { CopyPitchButton } from "./copy-pitch-button";
+import { EmailDraft } from "./email-draft";
 import { PersonLinks } from "./startups/links";
 import { ScoreBadge } from "./startups/score-badge";
 import { TONES } from "./ui/tone";
@@ -11,6 +12,15 @@ const STAGE_TONE = {
   seed: "emerald",
   "series a": "violet",
 } as const;
+
+/** Max points per score part; mirrors backend/rating.py. */
+const PART_MAX: Record<string, number> = {
+  fit: 25,
+  identity: 15,
+  people: 20,
+  connections: 20,
+  contact: 20,
+};
 
 export function StartupCard({
   p,
@@ -113,6 +123,64 @@ export function StartupCard({
             </div>
             <p>{p.value_prop_pitch}</p>
           </div>
+        )}
+
+        {p.warm_path && (
+          <div className="text-xs">
+            <span className="font-semibold uppercase tracking-wide text-violet-700 dark:text-violet-300">
+              warm path ›{" "}
+            </span>
+            {p.warm_path.summary}
+            {full && (
+              <ol className="mt-1 space-y-1">
+                {p.warm_path.hops.map((h, i) => (
+                  <li key={i}>
+                    {h.src}{" "}
+                    <span className="font-semibold text-violet-700 dark:text-violet-300">
+                      {h.rel.replace("_", " ")}
+                    </span>{" "}
+                    {h.dst}
+                    <blockquote className="text-zinc-500">
+                      “{h.evidence}”
+                    </blockquote>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
+
+        {full && p.email_draft && <EmailDraft draft={p.email_draft} />}
+
+        {p.why_now && p.why_now.length > 0 && (
+          <ul aria-label="Why now" className="space-y-0.5 text-xs">
+            {p.why_now.map((w) => (
+              <li key={w.signal}>
+                <span className="font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-300">
+                  why now ›{" "}
+                </span>
+                <a
+                  href={w.source_url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline-offset-2 hover:underline"
+                >
+                  {w.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+
+        {p.score_parts && Object.keys(p.score_parts).length > 0 && (
+          <p className="text-xs text-zinc-600 dark:text-zinc-400">
+            <span className="font-semibold uppercase tracking-wide">
+              score ›{" "}
+            </span>
+            {Object.entries(p.score_parts)
+              .map(([k, v]) => `${k} ${v}/${PART_MAX[k] ?? "?"}`)
+              .join(" · ")}
+          </p>
         )}
 
         {p.gaps && p.gaps.length > 0 && (
