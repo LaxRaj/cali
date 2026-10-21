@@ -69,7 +69,7 @@ def _signal(profile: dict) -> str:
 def _intent_lines(intent: str, profile: dict) -> list[str]:
     bottleneck = _clean(profile.get("likely_bottleneck", ""))
     stack = ", ".join((profile.get("tech_stack") or [])[:3])
-    pitch = profile.get("value_prop_pitch", "").strip()
+    pitch = _first_sentence(profile.get("value_prop_pitch", ""))  # one sentence: short cold emails read as human
     if intent == "work_for":
         lines = [f"I'm looking to join a team like yours{f' and work with {stack}' if stack else ''}."]
         if bottleneck:

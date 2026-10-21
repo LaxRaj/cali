@@ -1,14 +1,24 @@
 import { Empty } from "@/components/ascii/art";
 import { QueueView } from "@/components/queue/queue-view";
 import { Panel } from "@/components/ui/panel";
-import { readProfiles } from "@/lib/data";
+import { readOutreachState, readProfiles } from "@/lib/data";
 
 export const metadata = { title: "Queue — cali" };
 
 export default function QueuePage() {
   const profiles = readProfiles();
+  const outreach = readOutreachState();
   return (
     <div className="space-y-6">
+      {outreach?.paused && (
+        <p
+          role="alert"
+          className="border border-rose-600 bg-rose-100 p-3 text-xs font-semibold dark:bg-rose-950/40"
+        >
+          Outreach agent paused: {outreach.reason}. Fix it, then run{" "}
+          <code>uv run python outreach.py resume</code>.
+        </p>
+      )}
       <div>
         <h1 className="font-display text-6xl">
           Action queue
