@@ -49,6 +49,9 @@ If a number on the page differs from the raw one, report the difference to the u
 - **Latest findings** are by `discovered_at` (newest first); "top" findings are by score.
 - Data is **stale** after 26 hours (the scout runs daily). A checkout behind `origin/main` is a warning: newer runs may exist upstream, so `git pull` before judging.
 
+- **Run records start 2026-10-20 03:15 UTC** (`RECORDS_START` in `lib/constants.ts`). Five scout executions before that (01:53-02:44 UTC) left no run log, so the dashboard cannot show them and `check:data` does not count them. Since then every execution gets a record, including ones skipped at the Groq quota pre-flight (status `quota`, 0 tokens).
+- If `check:data` warns that runs are missing or the checkout is behind `origin/main`, `git pull` first; the scout commits to `main`, and the dashboard only knows about runs in the local checkout.
+
 ## Hard rules for this repo
 
 - Frontend reads static JSON only; no live DB, no paid APIs (see `CLAUDE.md`).

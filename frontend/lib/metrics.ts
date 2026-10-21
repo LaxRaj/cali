@@ -5,7 +5,7 @@
 //  - "tokens today" is the SUM over every run that started on that day
 //  - a run is passed | failed | quota; quota (Groq limit hit) is not a quality failure
 
-import { TOKEN_BUDGET } from "./constants";
+import { RECORDS_START, TOKEN_BUDGET } from "./constants";
 import type { Profile, RunStatus, RunSummary } from "./data"; // types only: data.ts is server-only
 
 /** The scout runs daily; anything older than a day plus slack means the data is stale. */
@@ -107,6 +107,13 @@ export function topFindings(profiles: Profile[], n: number): Profile[] {
   return [...profiles]
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
     .slice(0, n);
+}
+
+/** True when the oldest indexed run is the first one ever recorded, so earlier executions have no record. */
+export function historyStartsAtRecordCutoff(runs: RunSummary[]): boolean {
+  if (runs.length === 0) return false;
+  const oldest = Math.min(...runs.map((r) => new Date(r.started_at).getTime()));
+  return oldest >= new Date(RECORDS_START).getTime();
 }
 
 export function dataFreshness(
