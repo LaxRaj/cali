@@ -10,6 +10,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+import ats
 import llm
 import telemetry
 from decide.decisions import gate_page
@@ -17,19 +18,20 @@ from decide.registry import STATS as DECIDER_STATS, get_provider, reset_stats
 from discovery import Candidate, edgar, hiring, hn, normalize_url, rss, web, yc
 from discovery.feedback import allocate, source_stats
 from discovery.planner import make_plan
-from discovery.triage import select
+from discovery.triage import heuristic_filter, select
 from backfill import backfill
-from enrich import EnrichResult, enrich_startup
+from enrich import EnrichResult, enrich_startup, post_emails
 from enrich_github import enrich_people_github
 from decide.training import append_decisions
 from train_decider import train
 from export import export_all
 from extractor import extract, extract_people
-from memory import DB_DIR, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
+from memory import DB_DIR, TABLE, _rows, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
 from models import Contact
 from quality import RunReport, check_extraction, evaluate_run, tidy
 from rating import rate
 from scraper import Page, scrape_urls, search_results
+from signals import hiring_extraction, make_signal, merge_signals, parse_roles
 
 MAX_PEOPLE_SEARCHES = 12  # public-search lookups for founders' profile links, per run
 BACKFILL_LIMIT = 3  # older stored startups re-enriched per run
@@ -37,7 +39,8 @@ AVG_EXTRACTION_TOKENS = 4500  # for the 'tokens saved' estimate when a page is g
 MAX_GITHUB_LOOKUPS = 30  # public profile API calls per run
 TOKEN_BUDGET = int(os.environ.get("CALI_TOKEN_BUDGET", "20000"))  # Groq tokens per run; 0 = unlimited
 TEAM_RESERVE = 2500  # left for the team-page pass (~1.5k per call)
-MAX_TEAM_LLM = 3  # About/Team page extraction calls (Groq tokens), per run
+MAX_TEAM_LLM = 3
+LANE_MAX = 15  # hiring-post leads per run: built without the LLM, so they only cost crawl time  # About/Team page extraction calls (Groq tokens), per run
 
 
 def enrichment_enabled() -> bool:
@@ -169,15 +172,22 @@ async def enrich_all(accepted, log) -> list[EnrichResult]:
         try:
             res = await enrich_startup(
                 ex, source, md, search_fn=search_fn, extract_fn=extract_people,
-                search_budget=search_budget, team_budget=team_budget, github_fn=github_fn,
+                search_budget=search_budget, team_budget=team_budget, github_fn=github_fn, jobs_fn=ats.fetch_jobs,
             )
         except Exception as e:
             log.error(f"enrich failed {ex.startup.company_name}: {e}")
             res = EnrichResult(ex, Contact(status="crawl_failed"), [f"error: {e}"])
         results.append(res)
+        if res.signals:
+            key = ex.startup.company_name.lower()
+            signals_by_company[key] = merge_signals(signals_by_company.get(key, []), res.signals)
         print(f"enriched {ex.startup.company_name}: {res.contact.status}, "
               f"{len(res.contact.emails)} emails, {len(res.contact.phones)} phones; {res.notes}")
     return results
+
+
+signals_by_company: dict[str, list[dict]] = {}  # company(lower) -> signals seen this run
+post_text: dict[str, tuple[str, str]] = {}  # company(lower) -> (hiring post text, its URL): emails the post itself publishes
 
 
 async def run(data_dir: Path) -> RunReport:
@@ -193,6 +203,8 @@ async def run(data_dir: Path) -> RunReport:
         log.close()
         return report
     os.environ["CALI_DATA_DIR"] = str(data_dir)  # caches (extractions, plan) live beside the data
+    signals_by_company.clear()
+    post_text.clear()
     log = telemetry.RunLog()
     llm.reset_usage()
     report = RunReport()
@@ -208,9 +220,11 @@ async def run(data_dir: Path) -> RunReport:
             log.feedback = {"source_stats": stats, "caps": caps}
             decider = get_provider()
             reset_stats(decider.name)
-            chosen = select(cands, seen_urls(data_dir), caps=caps, decider=decider)
+            seen = seen_urls(data_dir)
+            lane = [c for c in heuristic_filter([c for c in cands if c.source == "hiring"], seen) if c.meta][:LANE_MAX]
+            chosen = select([c for c in cands if c.source != "hiring"], seen, caps=caps, decider=decider)
             by_url = {normalize_url(c.url): c for c in chosen}
-            st["counts"] = {"in": len(cands), "selected": len(chosen)}
+            st["counts"] = {"in": len(cands), "selected": len(chosen), "hiring_lane": len(lane)}
             st["notes"] = [f"crawl caps by source: {caps}", f"decider: {decider.name}"]
 
         with log.stage("crawl") as st:
@@ -234,6 +248,25 @@ async def run(data_dir: Path) -> RunReport:
 
         with log.stage("extract") as st:
             accepted = process(pages, by_url, report)
+            now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
+            for c in lane:  # hiring posts: the post is the source of truth, no extraction tokens
+                ex = hiring_extraction(c.company, c.meta["roles"], c.meta["text"], c.meta.get("website", ""))
+                ex.startup.source_url, ex.startup.discovered_at = c.url, now_iso
+                if c.meta.get("website", "").startswith("http") and "ycombinator.com" not in c.meta["website"]:
+                    ex.startup.website = c.meta["website"]
+                accepted.append((ex, "hiring", c.meta["text"]))
+                signals_by_company.setdefault(c.company.lower(), []).append(make_signal(
+                    "hiring", "hn_who_is_hiring", f"https://news.ycombinator.com/item?id={c.meta['item_id']}",
+                    parse_roles(c.meta["roles"]), c.published_at))
+                post_text[c.company.lower()] = (c.meta["text"], f"https://news.ycombinator.com/item?id={c.meta['item_id']}")
+                if log:
+                    log.accept(c.company, c.url, "hiring", 0, 0)
+                    log.candidate(c.url, "hiring", c.title, c.snippet, c.triage, "accepted")
+            for ex, source, _ in accepted:  # launch / funding recency as signals too
+                if source != "hiring":
+                    s_ = ex.startup
+                    signals_by_company.setdefault(s_.company_name.lower(), []).append(make_signal(
+                        "funding" if (s_.funding_amount or source == "edgar") else "launch", source, s_.source_url, [], by_url.get(normalize_url(s_.source_url), Candidate("", "", "", "")).published_at))
             st["counts"] = {"extracted": report.extracted, "relevant": report.relevant, "valid": report.valid}
 
         # Enrich + rate only startups that passed validation (cheap, and avoids crawling junk sites).
@@ -287,14 +320,25 @@ async def run(data_dir: Path) -> RunReport:
         if report.passed:
             with log.stage("store") as st:
                 findings = []
+                stored_signals = {r["company_name"].lower(): r.get("signals_json") for r in _rows(TABLE, data_dir)}
                 for (ex, source, _), res, rt in zip(accepted, results, ratings):
                     s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
+                    key = s.company_name.lower()
+                    if key in post_text:  # emails the hiring post itself publishes, with the post as source
+                        have = {e.value for e in res.contact.emails}
+                        res.contact.emails += [e for e in post_emails(*post_text[key]) if e.value not in have]
+                    try:
+                        before = json.loads(stored_signals.get(key) or "[]")
+                    except ValueError:
+                        before = []
+                    sigs = merge_signals(before, signals_by_company.get(key, []))
                     upsert_profile(
                         s, db_dir=data_dir,
                         extras={
                             "score": rt.score,
                             "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
                             "contact_json": res.contact.model_dump_json(),
+                            "signals_json": json.dumps(sigs),
                         },
                     )
                     upsert_people(people, db_dir=data_dir)
@@ -302,7 +346,7 @@ async def run(data_dir: Path) -> RunReport:
                     findings.append(
                         {
                             **s.model_dump(), "source": source, "score": rt.score, "gaps": rt.gaps,
-                            "contact": res.contact.model_dump(),
+                            "contact": res.contact.model_dump(), "signals": sigs,
                             "people": [p.model_dump() for p in people], "edges": [e.model_dump() for e in edges],
                         }
                     )

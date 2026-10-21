@@ -73,6 +73,7 @@ class Contact(BaseModel):
     phones: list[ContactItem] = Field(default_factory=list)
     socials: dict[str, str] = Field(default_factory=dict)  # linkedin, twitter, github, youtube, ...
     contact_page: str = ""
+    product_access: list[dict[str, str]] = Field(default_factory=list)  # {"label","url"}: where to try/read the product
     pages_crawled: list[str] = Field(default_factory=list)
     enriched_at: str = ""
     status: str = ""  # ok | no_website | crawl_failed | disabled

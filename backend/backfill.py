@@ -11,6 +11,7 @@ import json
 import sys
 from pathlib import Path
 
+import ats
 import llm
 from enrich import EnrichResult, enrich_startup, fetch_pages, host_of, is_company_host
 from export import export_all
@@ -20,8 +21,19 @@ from models import Contact, Edge, Extraction, Person, StartupProfile
 from quality import _norm
 from rating import rate
 from scraper import scrape_urls, search_results
+from signals import merge_signals
 
 DEFAULT_LIMIT = 3
+
+
+def _prev_signals(rows: list[dict], company: str) -> list[dict]:
+    for r in rows:
+        if r["company_name"] == company:
+            try:
+                return json.loads(r.get("signals_json") or "[]")
+            except ValueError:
+                return []
+    return []
 
 
 def needs_enrichment(row: dict) -> bool:
@@ -53,6 +65,7 @@ async def backfill(
     scrape_fn=scrape_urls,
     fetch_fn=fetch_pages,
     extract_fn=extract_people,
+    jobs_fn=ats.fetch_jobs,
 ) -> list[dict]:
     """Enrich up to `limit` stored startups; returns a summary per startup."""
     rows = [r for r in _rows(TABLE, data_dir) if needs_enrichment(r)]
@@ -76,7 +89,7 @@ async def backfill(
         try:
             res = await enrich_startup(
                 ex, source, md, search_fn=search_fn, fetch_fn=fetch_fn, extract_fn=extract_fn,
-                search_budget=search_budget, team_budget=team_budget,
+                search_budget=search_budget, team_budget=team_budget, jobs_fn=jobs_fn,
             )
         except Exception as e:
             res = EnrichResult(ex, Contact(status="crawl_failed"), [f"error: {e}"])
@@ -85,7 +98,8 @@ async def backfill(
         upsert_profile(
             s, db_dir=data_dir,
             extras={"score": rt.score, "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
-                    "contact_json": res.contact.model_dump_json()},
+                    "contact_json": res.contact.model_dump_json(),
+                    "signals_json": json.dumps(merge_signals(_prev_signals(rows, s.company_name), res.signals))},
         )
         upsert_people(people, db_dir=data_dir)
         upsert_edges(edges, db_dir=data_dir)

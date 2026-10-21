@@ -54,6 +54,8 @@ def to_candidate(post: dict, item_id: str, created: str = "") -> Candidate | Non
         url=post["url"] or f"https://news.ycombinator.com/item?id={item_id}",
         title=f"{post['company']} is hiring: {post['roles'][:70]}",
         snippet=post["header"][:160], source="hiring", published_at=created,
+        company=post["company"],
+        meta={"roles": post["roles"], "item_id": item_id, "text": post["text"], "website": post["url"]},
         content=f"# {post['company']} — hiring on Hacker News\n\n{post['text'][:3500]}\n\nSource: https://news.ycombinator.com/item?id={item_id}",
     )
 
