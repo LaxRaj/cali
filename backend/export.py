@@ -31,6 +31,13 @@ def _loads(raw) -> dict:
         return {}
 
 
+def _loads_list(raw) -> list:
+    try:
+        return json.loads(raw) if raw else []
+    except ValueError:
+        return []
+
+
 def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     people = _rows(PEOPLE, db_dir)
     edges = _rows(EDGES, db_dir)
@@ -40,7 +47,7 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     for r in _rows(TABLE, db_dir):
         name = r["company_name"]
         k = _key(name)
-        row = {f: r[f] for f in r if f not in ("vector", "contact_json", "score_json")}
+        row = {f: r[f] for f in r if f not in ("vector", "contact_json", "score_json", "signals_json")}
         contact = _loads(r.get("contact_json"))
         breakdown = _loads(r.get("score_json"))
         out.append(
@@ -51,6 +58,7 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
                 "score_parts": breakdown.get("parts", {}),
                 "gaps": breakdown.get("gaps", []),
                 "contact": contact,
+                "signals": _loads_list(r.get("signals_json")),
                 "people": [
                     {f: p.get(f, "") for f in PERSON_FIELDS}
                     for p in people

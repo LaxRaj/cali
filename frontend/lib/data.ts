@@ -35,6 +35,8 @@ export type Contact = {
   phones?: ContactItem[];
   socials?: Record<string, string>;
   contact_page?: string;
+  /** Links on the company's own pages to try or read the product ("use it first"). */
+  product_access?: { label: string; url: string }[];
   status?: string;
 };
 export type Edge = { src: string; rel: string; dst: string; evidence: string };
@@ -65,6 +67,16 @@ export type Profile = {
     mailto: string;
   };
   why_now?:{ signal: string; text: string; source_url: string }[];
+  /** Hiring / launch / funding signals the scout recorded (backend/signals.py). */
+  signals?: {
+    type: "hiring" | "launch" | "funding" | "seeking_freelancer";
+    source: string;
+    url: string;
+    roles: string[];
+    role_kinds: string[];
+    posted_at: string;
+    seen_at: string;
+  }[];
   contact?: Contact;
   decision?: Decision;
   outcome?: Outcome | null;
