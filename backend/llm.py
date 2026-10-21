@@ -117,6 +117,15 @@ def route_extraction(markdown: str) -> list[str]:
     return list(dict.fromkeys(([SIMPLE_MODEL] if simple else []) + MODEL_CHAIN))
 
 
+REASONING = os.environ.get("GROQ_REASONING", "low")  # "" = provider default
+
+
+def reasoning_kwargs(model: str) -> dict:
+    """gpt-oss models spend hidden reasoning tokens on every call (counted as completion); extraction is
+    mechanical, so ask for the least. Other models don't take the parameter."""
+    return {"extra_body": {"reasoning_effort": REASONING}} if REASONING and "gpt-oss" in model else {}
+
+
 def complete(client, messages: list[dict], models: list[str] | None = None, purpose: str = ""):
     """chat.completions.create with JSON mode; on a daily-quota 429 try the next model in the chain."""
     chain = models or MODEL_CHAIN
@@ -124,7 +133,8 @@ def complete(client, messages: list[dict], models: list[str] | None = None, purp
     for i, model in enumerate(chain):
         try:
             completion = client.chat.completions.create(
-                model=model, temperature=0, response_format={"type": "json_object"}, messages=messages
+                model=model, temperature=0, response_format={"type": "json_object"}, messages=messages,
+                **reasoning_kwargs(model),
             )
             record_usage(completion, purpose)
             return completion

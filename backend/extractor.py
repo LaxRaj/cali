@@ -11,9 +11,8 @@ from groq import Groq
 
 from llm import MODEL, complete, get_client, route_extraction
 from models import Extraction, Relation
-from objective import OBJECTIVE
 
-MAX_CHARS = 14_000  # ~3.5k tokens: bounds Groq free-tier usage
+MAX_CHARS = 9_000  # ~2.2k tokens; launch/funding facts sit at the top of a page
 
 # Compact field list instead of pydantic's full JSON schema (descriptions and $defs cost ~600 tokens per call).
 SCHEMA = (
@@ -25,45 +24,28 @@ SCHEMA = (
     '"edges": [{"src": str, "rel": one of ' + "|".join(get_args(Relation)) + ', "dst": str, "evidence": str}]}'
 )
 
-SYSTEM_PROMPT = f"""You analyze web pages about tech startups (launch posts, Show HN, funding news).
-Overall goal of the research: {OBJECTIVE}
-
-Return ONLY a JSON object matching this JSON schema:
+SYSTEM_PROMPT = f"""Extract a tech startup from a web page (launch, funding, Show HN, founder story). Return ONLY JSON:
 {SCHEMA}
 
-startup fields:
-- company_name: the startup's name; "" if the page is not about one specific startup.
-- core_product: one sentence on what it builds.
-- tech_stack: technologies explicitly mentioned or strongly implied; [] if none.
-- likely_bottleneck: deduce the engineering bottleneck this company most likely faces,
-  based on its tech stack and product (e.g. search quality, data-heavy UI, retrieval over unstructured data).
-- value_prop_pitch: EXACTLY two sentences, written from a freelance engineer to the company,
-  showing how they can remove that bottleneck using Next.js and vector semantic search.
-- funding_stage: e.g. "pre-seed", "seed", "Series A", or "" if unknown. funding_amount: e.g. "$5.75M", or "".
-- hq: headquarters as stated on the page ("Munich, Germany"), or "".
-- website: the COMPANY'S OWN website, only if that URL (or a link to it) appears on the page; never the article's
-  own URL or a social network; "" otherwise.
-- is_relevant: true ONLY if the page is about ONE specific real early-stage tech startup with a product:
-  a launch, a funding announcement, or a founder story about that company. False for: how-to guides,
-  listicles, market reports, big-company news, personal side projects/demos, and a company's own
-  marketing or SEO blog content that is not about its launch, funding or founders.
-  This is about WHAT THE PAGE IS, not whether the startup suits the research goal.
-  When false the page is discarded: return company_name "", every other field empty, and "people": [], "edges": [].
-- Leave source_url and discovered_at as "".
+startup:
+- company_name: the startup; "" if the page is not about one specific startup. core_product: one sentence.
+- tech_stack: technologies stated or strongly implied, else [].
+- likely_bottleneck: the engineering bottleneck this company most likely faces, from its stack and product.
+- value_prop_pitch: EXACTLY two sentences from a freelance engineer to the company on removing that bottleneck
+  with Next.js and vector semantic search.
+- funding_stage ("seed", "Series A"...) and funding_amount ("$5.75M") if stated; hq as stated; else "".
+- website: the company's OWN site, only if that URL appears on the page (never the article URL or a social network).
+- is_relevant: true ONLY if the page is about ONE real early-stage tech startup with a product (launch, funding or
+  founder story). False for how-to guides, listicles, market reports, big-company news, hobby projects/demos and
+  a company's generic marketing/SEO posts. When false return company_name "", all else empty, "people": [], "edges": [].
+- source_url, discovered_at: "".
 
-people: HUMAN founders, key engineers and advisors named on the page, with their title. Do not list funds,
-companies or past employers as people (put investors and previous employers in edges only). Extract people and edges
-thoroughly when is_relevant is true.
-- evidence MUST be a short verbatim quote (copy it exactly, character for character, one contiguous
-  span, NO ellipses) from the page that supports the person and role.
-edges: relationships between named entities, rel one of founded, cofounded, works_at, invested_in, advises,
-backed_by, competitor_of, previously_at (a person's earlier employer), partner_of, customer_of, acquired_by.
-Capture INVESTORS and funds that led or joined a round (invested_in: fund/person -> startup) and founders'
-previous companies (previously_at) whenever stated. src and dst are names (person or company/fund). evidence MUST be a verbatim quote
-from the page (one contiguous span, NO ellipses) containing the relationship.
-For each person, fill linkedin / twitter / github / homepage ONLY with a URL that literally appears on the page
-next to that person (copy it exactly); otherwise leave them "". Never invent people, relationships or URLs that the
-page does not state."""
+people: HUMAN founders, key engineers, investors and advisors named on the page, with title. Funds, companies and
+past employers are NOT people (use edges). evidence = short verbatim quote (one contiguous span, NO ellipses).
+Fill linkedin/twitter/github/homepage ONLY with a URL printed next to that person; else "".
+edges: investors/funds in the round (invested_in: investor -> startup), founders (founded/cofounded), founders'
+earlier companies (previously_at), advises, backed_by, customer_of, etc. src/dst are names; evidence = verbatim quote.
+Never invent people, relationships or URLs."""
 
 
 PEOPLE_PROMPT = f"""You read a company's own About/Team page. Return ONLY a JSON object:
@@ -72,7 +54,7 @@ PEOPLE_PROMPT = f"""You read a company's own About/Team page. Return ONLY a JSON
 List founders, key engineers, investors and advisors named on the page. evidence MUST be a short verbatim quote
 (one contiguous span, NO ellipses) from the page. Fill profile URLs ONLY if they literally appear next to the person.
 Never invent people, relationships or URLs."""
-PEOPLE_MAX_CHARS = 6_000
+PEOPLE_MAX_CHARS = 4_000
 
 _IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)")
 _LOCAL_LINK = re.compile(r"\[([^\]]*)\]\((?:#|/)[^)]*\)")  # relative / anchor links carry no information

@@ -80,7 +80,7 @@ def filter_people(people: list[Person], markdown: str) -> list[Person]:
 
 
 ORG_WORDS = re.compile(
-    r"\b(ventures?|capital|partners|fund|funds|labs|holdings|inc|llc|ltd|gmbh|corp|group|studio|speedrun|combinator|angels?)\b", re.I)
+    r"\b(ventures?|capital|partners|fund|funds|labs|holdings|inc|llc|ltd|gmbh|corp|group|studio|speedrun|combinator|angels?|commons|club|collective|accelerator|foundation|fellowship|network|syndicate|studios?)\b", re.I)
 NOT_PERSON_ROLE = re.compile(r"employer|company|\bfirm\b|\bvc\b|fund\b|organi[sz]ation", re.I)
 FOUNDER_REL = {"founded", "cofounded"}
 

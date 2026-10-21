@@ -356,6 +356,27 @@ def build_contact(origin: str, pages: list[PageFacts], company: str = "") -> Con
     )
 
 
+def jsonld_people(pages: list[PageFacts], company: str) -> list[Person]:
+    """Founders/employees the company declares in its own schema.org markup (no LLM; source page recorded)."""
+    out: dict[str, Person] = {}
+    for pg in pages:
+        for o in pg.jsonld:
+            if o.get("@type") != "Person" and "Person" not in (o.get("@type") if isinstance(o.get("@type"), list) else []):
+                continue
+            name = o.get("name")
+            if not isinstance(name, str) or len(name.split()) < 2 or len(name) > 60:
+                continue
+            links = {}
+            for u in ([o.get("url")] if isinstance(o.get("url"), str) else []) + (o.get("sameAs") if isinstance(o.get("sameAs"), list) else []):
+                soc = classify_social(u) if isinstance(u, str) else None
+                if soc and soc[1] == "user" and soc[0] in ("linkedin", "twitter", "github"):
+                    links.setdefault(soc[0], soc[2])
+            role = o.get("jobTitle") if isinstance(o.get("jobTitle"), str) else ""
+            out.setdefault(fold(name), Person(name=name.strip(), role=role, org=company, evidence="schema.org Person markup",
+                                              link_source=pg.url, **links))
+    return list(out.values())
+
+
 def jsonld_hq(pages: list[PageFacts]) -> str:
     for pg in pages:
         for o in pg.jsonld:
@@ -506,13 +527,22 @@ async def enrich_startup(
         updates["hq"] = hq
 
     # People/connections from the company's own About/Team page (grounded against that page).
+    if declared := jsonld_people(facts, s.company_name):
+        people = merge_people(people, declared)
+        notes.append(f"structured data: {len(declared)} people")
     tmd = team_markdown([(f.url, f.markdown) for f in fetched])
-    if tmd and extract_fn and len(tidy(ex).people) < 4 and (team_budget is None or team_budget[0] > 0):  # already rich: save the call
+    known_leader = any(
+        len(p.name.split()) > 1 and re.search(r"found|ceo|cto|chief", p.role or "", re.I)
+        for p in tidy(extraction_with_people(ex, people, edges)).people
+    )
+    # the LLM team pass pays off only when we lack a named leader or have a thin team (otherwise it returns nothing new)
+    if re.search(r"[A-Z][a-z]+ [A-Z][a-zA-Z'’-]+", tmd) and extract_fn and (not known_leader or len(people) < 3) and (team_budget is None or team_budget[0] > 0):
         if team_budget is not None:
             team_budget[0] -= 1
         try:
             tex = extract_fn(tmd)
             new_people = [p.model_copy(update={"org": p.org or s.company_name, "link_source": ""}) for p in filter_people(tex.people, tmd)]
+            notes.append(f"team llm: {len(tex.people)} people proposed, {len(new_people)} grounded")
             new_edges = filter_edges(tex.edges, tmd)
             before = (len(people), len(edges))
             people, edges = merge_people(people, new_people), merge_edges(edges, new_edges)

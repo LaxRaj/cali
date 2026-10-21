@@ -14,7 +14,7 @@ from pathlib import Path
 import llm
 from enrich import EnrichResult, enrich_startup, fetch_pages, host_of, is_company_host
 from export import export_all
-from extractor import extract
+from extractor import extract_people
 from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows, upsert_edges, upsert_people, upsert_profile
 from models import Contact, Edge, Extraction, Person, StartupProfile
 from quality import _norm
@@ -52,7 +52,7 @@ async def backfill(
     search_fn=None,
     scrape_fn=scrape_urls,
     fetch_fn=fetch_pages,
-    extract_fn=extract,
+    extract_fn=extract_people,
 ) -> list[dict]:
     """Enrich up to `limit` stored startups; returns a summary per startup."""
     rows = [r for r in _rows(TABLE, data_dir) if needs_enrichment(r)]

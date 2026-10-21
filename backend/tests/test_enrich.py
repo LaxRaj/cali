@@ -199,3 +199,13 @@ async def test_redirected_site_is_canonicalised_so_contacts_and_website_agree():
     ex.startup.website = "https://trytako.com"
     res = await enrich_startup(ex, "rss", "see https://trytako.com", fetch_fn=fake_fetch)
     assert res.extraction.startup.website == "https://tako.com" and res.contact.website == "https://tako.com"
+
+
+def test_jsonld_people_reads_declared_persons_only():
+    from enrich import jsonld_people
+
+    html = '<script type="application/ld+json">{"@type":"Organization","founder":{"@type":"Person","name":"Jane Roe","jobTitle":"CEO","sameAs":["https://www.linkedin.com/in/jane-roe"]},"employee":{"@type":"Person","name":"Cher"}}</script>'
+    pg = parse_page("https://acme.io/about", html)
+    out = jsonld_people([pg], "Acme")
+    assert [(p.name, p.role, p.org) for p in out] == [("Jane Roe", "CEO", "Acme")]  # single-token names are skipped
+    assert out[0].linkedin.endswith("/in/jane-roe") and out[0].link_source == "https://acme.io/about"
