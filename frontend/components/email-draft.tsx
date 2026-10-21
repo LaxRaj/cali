@@ -7,7 +7,19 @@ import { RetroButton } from "@/components/ui/retro-button";
 type Draft = NonNullable<Profile["email_draft"]>;
 
 /** First-email draft. Sends nothing: opens the user's mail client (published recipient only) or copies the text. */
-export function EmailDraft({ draft }: { draft: Draft }) {
+const INTENT_LABEL = {
+  work_for: "work for them",
+  build_for: "build for them",
+  build_with: "build with them",
+} as const;
+
+export function EmailDraft({
+  draft,
+  outreach,
+}: {
+  draft: Draft;
+  outreach?: Profile["outreach"];
+}) {
   const [copied, setCopied] = useState(false);
 
   async function copy() {
@@ -28,6 +40,17 @@ export function EmailDraft({ draft }: { draft: Draft }) {
         email draft
         {draft.to ? ` › ${draft.to}` : " › no published address"}
       </summary>
+      {draft.intent && (
+        <p className="mt-2 text-zinc-500">
+          intent: {INTENT_LABEL[draft.intent]}
+          {draft.intent_reason ? ` (${draft.intent_reason})` : ""}
+        </p>
+      )}
+      {outreach && outreach.length > 0 && (
+        <p className="mt-1 font-semibold">
+          {outreach.map((o) => `${o.kind}: ${o.status}`).join(" · ")}
+        </p>
+      )}
       <p className="mt-2 font-semibold">{draft.subject}</p>
       <pre className="mt-1 whitespace-pre-wrap font-sans">{draft.body}</pre>
       {draft.to_source_url && (

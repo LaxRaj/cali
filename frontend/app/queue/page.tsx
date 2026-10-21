@@ -19,7 +19,8 @@ export default function QueuePage() {
             uv run python outcomes.py mark &lt;company&gt;
             contacted|replied|passed
           </code>
-          .
+          . To draft outreach for the &ldquo;Contact now&rdquo; leads, run{" "}
+          <code>uv run python outreach.py queue</code>.
         </p>
       </div>
       {profiles.length === 0 ? (
