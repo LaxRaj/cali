@@ -30,7 +30,7 @@ export function NetworkGraph({ graph }: { graph: Graph }) {
 
   return (
     <div className="grid gap-4 lg:grid-cols-[1fr_20rem]">
-      <div className="border-2 border-zinc-900 bg-white dark:border-emerald-400/60 dark:bg-black">
+      <div className="border border-zinc-900/25 bg-white dark:border-emerald-400/60 dark:bg-black">
         <svg
           viewBox={`0 0 ${SIZE} ${SIZE}`}
           role="group"
@@ -130,7 +130,7 @@ export function NetworkGraph({ graph }: { graph: Graph }) {
             })}
           </g>
         </svg>
-        <ul className="flex flex-wrap gap-4 border-t-2 border-zinc-900 px-3 py-2 text-xs dark:border-emerald-400/60">
+        <ul className="flex flex-wrap gap-4 border-t-2 border-zinc-900/25 px-3 py-2 text-xs dark:border-emerald-400/60">
           <li>■ startup</li>
           <li>● person</li>
           <li>◆ org / investor</li>
@@ -142,14 +142,14 @@ export function NetworkGraph({ graph }: { graph: Graph }) {
 
       <aside
         aria-live="polite"
-        className="border-2 border-zinc-900 bg-violet-100 p-3 dark:border-violet-400/60 dark:bg-violet-950/40"
+        className="border border-zinc-900/25 bg-violet-100 p-3 dark:border-violet-400/60 dark:bg-violet-950/40"
       >
         {sel ? (
           <>
             <p className="text-[10px] uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
               {LABEL[sel.type]}
             </p>
-            <h3 className="glow font-display text-3xl leading-none">
+            <h3 className="font-display text-3xl leading-none">
               {sel.label}
             </h3>
             <p className="mb-2 text-xs text-zinc-600 dark:text-zinc-400">
@@ -172,7 +172,7 @@ export function NetworkGraph({ graph }: { graph: Graph }) {
                 return (
                   <li
                     key={i}
-                    className="border-l-2 border-zinc-900 pl-2 dark:border-violet-400/60"
+                    className="border-l-2 border-zinc-900/25 pl-2 dark:border-violet-400/60"
                   >
                     {e.source === sel.id ? (
                       <>

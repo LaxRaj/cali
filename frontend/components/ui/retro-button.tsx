@@ -2,11 +2,11 @@ import Link from "next/link";
 import type { ComponentProps } from "react";
 import { TONES, type Tone } from "./tone";
 
-/** Chamfered, gilt-edged plaque (see .plaque in globals.css). Works on <button>, <a> and <Link>. */
+/** Flat outlined button (see .btn in globals.css). Works on <button>, <a> and <Link>. */
 export function retroClass(tone: Tone = "amber", pressed = false) {
   const t = TONES[tone];
   return [
-    "plaque font-display text-[11px] font-semibold uppercase tracking-[0.16em]",
+    "btn text-[11px] font-medium uppercase tracking-[0.14em]",
     "text-zinc-900 dark:text-zinc-100",
     t.accent,
     pressed ? "translate-y-px" : "",

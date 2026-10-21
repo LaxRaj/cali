@@ -13,17 +13,17 @@ export function Stat({
 }) {
   const t = TONES[tone];
   return (
-    <div className={`frame px-4 py-3 ${t.accent} ${t.panel}`}>
-      <div className="relative font-display text-[10px] font-semibold uppercase tracking-[0.22em] text-zinc-600 dark:text-zinc-400">
+    <div className={`plate ${t.accent} pt-2 pb-1`}>
+      <div className="text-[10px] font-medium uppercase tracking-[0.18em] text-zinc-600 dark:text-zinc-400">
         {label}
       </div>
       <div
-        className={`glow relative font-hud text-4xl leading-none tabular-nums ${t.text}`}
+        className={`serif mt-1 text-5xl leading-none tabular-nums ${t.text}`}
       >
         {value}
       </div>
       {sub && (
-        <div className="relative mt-1.5 font-fell text-[13px] italic text-zinc-600 dark:text-zinc-400">
+        <div className="mt-2 text-[11px] text-zinc-600 dark:text-zinc-400">
           {sub}
         </div>
       )}

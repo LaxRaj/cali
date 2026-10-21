@@ -49,14 +49,14 @@ export function LampToggle() {
       title={
         dark ? "Turn the lamp on (light mode)" : "Turn the lamp off (dark mode)"
       }
-      className="cursor-pointer leading-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+      className="cursor-pointer leading-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500"
     >
       <pre
         aria-hidden
         className={`ascii select-none text-[10px] leading-[1.05] ${
           dark
-            ? "text-emerald-700"
-            : "text-amber-500 drop-shadow-[0_0_4px_rgb(251_191_36)]"
+            ? "text-zinc-500"
+            : "text-amber-500"
         }`}
       >
         {dark ? OFF : LIT}

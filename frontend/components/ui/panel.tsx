@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { TONES, type Tone } from "./tone";
 
-/** An illuminated plate: gilt double frame, HUD corner brackets, inscription-style title. */
+/** A hairline-ruled section: a thin tone-coloured rule, a serif title, and room to breathe. */
 export function Panel({
   title,
   tone = "emerald",
@@ -17,24 +17,16 @@ export function Panel({
 }) {
   const t = TONES[tone];
   return (
-    <section className={`frame ${t.accent} ${t.panel} ${className}`}>
-      <header className="relative z-[1] flex items-center justify-between gap-3 px-4 pt-3 pb-2">
-        <h2
-          className={`glow font-display text-[15px] font-semibold uppercase leading-none tracking-[0.2em] ${t.text}`}
-        >
-          <span aria-hidden className="ascii mr-2 text-[0.8em] opacity-80">
-            ❧
-          </span>
+    <section className={`plate ${t.accent} ${className}`}>
+      <header className="flex items-baseline justify-between gap-3 pt-2.5 pb-3">
+        <h2 className="serif text-2xl leading-none text-zinc-900 dark:text-zinc-100">
           {title}
         </h2>
-        {right && <div className="text-xs">{right}</div>}
+        {right && (
+          <div className="text-xs text-zinc-600 dark:text-zinc-400">{right}</div>
+        )}
       </header>
-      <div
-        aria-hidden
-        className="rule relative z-[1] mx-4 mb-1"
-        style={{ color: "color-mix(in oklab, var(--accent) 65%, transparent)" }}
-      />
-      <div className="relative z-[1] p-4 pt-3">{children}</div>
+      <div>{children}</div>
     </section>
   );
 }

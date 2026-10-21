@@ -18,7 +18,7 @@ export default function RunsPage() {
 
   return (
     <div className="space-y-6">
-      <h1 className="glow font-display text-5xl uppercase tracking-wider">
+      <h1 className="font-display text-6xl">
         Process monitor
       </h1>
       {runs.length === 0 ? (
@@ -68,7 +68,7 @@ export default function RunsPage() {
             <div className="overflow-x-auto">
               <table className="w-full min-w-[40rem] text-left">
                 <thead>
-                  <tr className="border-b-2 border-zinc-900 text-[11px] uppercase tracking-widest dark:border-violet-400/60">
+                  <tr className="border-b-2 border-zinc-900/25 text-[11px] uppercase tracking-widest dark:border-violet-400/60">
                     <th className="py-1 pr-3">Status</th>
                     <th className="pr-3">Started (UTC)</th>
                     <th className="pr-3">Funnel (found → valid)</th>

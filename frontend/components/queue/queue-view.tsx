@@ -58,7 +58,7 @@ export function QueueView({ profiles }: { profiles: Profile[] }) {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-2 border-2 border-zinc-900 bg-rose-100 p-3 shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-rose-400/60 dark:bg-rose-950/40 dark:shadow-rose-400/30">
+      <div className="flex flex-wrap items-center gap-2 border border-zinc-900/25 bg-rose-100 p-3 dark:border-rose-400/60 dark:bg-rose-950/40 dark:shadow-rose-400/30">
         <span className="text-xs font-semibold uppercase tracking-widest">
           action
         </span>
@@ -106,7 +106,7 @@ export function QueueView({ profiles }: { profiles: Profile[] }) {
             return (
               <li
                 key={p.slug}
-                className="border-2 border-zinc-900 bg-white shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-emerald-400/60 dark:bg-black dark:shadow-emerald-400/30"
+                className="border border-zinc-900/25 bg-white dark:border-emerald-400/60 dark:bg-black"
               >
                 <div className="flex flex-wrap items-start gap-3 p-3">
                   <span
@@ -119,18 +119,18 @@ export function QueueView({ profiles }: { profiles: Profile[] }) {
                     <div className="flex flex-wrap items-center gap-2">
                       <Link
                         href={`/startups/${p.slug}`}
-                        className="glow font-display text-2xl leading-none hover:underline focus-visible:outline-2 focus-visible:outline-emerald-500"
+                        className="font-display text-2xl leading-none hover:underline focus-visible:outline-2 focus-visible:outline-emerald-500"
                       >
                         {p.company_name}
                       </Link>
                       <span
-                        className={`border-2 border-zinc-900 px-1.5 text-[11px] font-semibold uppercase ${URGENCY_STYLE[d.urgency]}`}
+                        className={`border border-zinc-900/25 px-1.5 text-[11px] font-semibold uppercase ${URGENCY_STYLE[d.urgency]}`}
                       >
                         {d.urgency}
                       </span>
                       <ScoreBadge score={p.score} />
                       {p.outcome && (
-                        <span className="border border-dashed border-zinc-900 px-1.5 text-[11px] uppercase dark:border-emerald-400/60">
+                        <span className="border border-dashed border-zinc-900/25 px-1.5 text-[11px] uppercase dark:border-emerald-400/60">
                           you: {p.outcome.status}
                         </span>
                       )}

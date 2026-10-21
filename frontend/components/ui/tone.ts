@@ -1,4 +1,4 @@
-// Each tone is a pigment: emerald=gilt gold, sky=holo lapis, amber=copper, rose=cinnabar, violet=Tyrian
+// Each tone is an ink: emerald=forest, sky=blue, amber=ochre, rose=vermilion, violet=plum
 // (see the palette remap in globals.css). Full class strings so Tailwind can see them.
 export type Tone = "emerald" | "sky" | "amber" | "rose" | "violet";
 
@@ -10,7 +10,7 @@ export const TONES: Record<
     text: string;
     solid: string;
     ring: string;
-    /** Sets --accent for .frame / .plaque (darker on vellum, brighter on lapis night). */
+    /** Sets --accent for .plate / .btn (darker on paper, lighter on charcoal). */
     accent: string;
   }
 > = {

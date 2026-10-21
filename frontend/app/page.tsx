@@ -88,12 +88,12 @@ export default function OverviewPage() {
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <Banner />
-          <p className="cursor mt-3 font-hud text-xs uppercase tracking-[0.22em] text-zinc-600 dark:text-emerald-400/80">
+          <p className="cursor mt-4 text-xs text-zinc-600 dark:text-zinc-400">
             connection &amp; builder dashboard — every process, in one place
           </p>
         </div>
         {latest ? (
-          <div className="frame flex items-center gap-2 bg-white/70 px-4 py-2 font-hud text-xs uppercase tracking-wider dark:bg-black/60">
+          <div className="flex items-center gap-2 border border-zinc-900/20 px-3 py-1.5 text-xs dark:border-zinc-100/20">
             <Led
               state={
                 state === "passed" ? "ok" : state === "quota" ? "warn" : "fail"
@@ -421,7 +421,7 @@ export default function OverviewPage() {
 
           <section aria-label="Latest findings" className="space-y-3">
             <div className="flex items-end justify-between">
-              <h2 className="glow font-display text-3xl uppercase tracking-wider">
+              <h2 className="font-display text-3xl">
                 Latest findings
               </h2>
               <RetroLink href="/startups" tone="emerald">

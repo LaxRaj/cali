@@ -64,7 +64,7 @@ export function Art({
   return (
     <pre
       aria-hidden
-      className={`ascii gilt select-none text-[11px] leading-tight ${className}`}
+      className={`ascii select-none text-[11px] leading-tight text-zinc-600 dark:text-zinc-400 ${className}`}
     >
       {PIECES[name]}
     </pre>
@@ -83,11 +83,11 @@ export function Empty({
   return (
     <div className="flex flex-col items-center gap-4 py-8 text-center">
       <Art name={art} />
-      <p className="glow font-display text-lg font-semibold uppercase tracking-[0.2em]">
+      <p className="serif text-2xl">
         {title}
       </p>
       {children && (
-        <p className="max-w-md font-fell text-base italic leading-snug text-zinc-600 dark:text-zinc-400">
+        <p className="max-w-md text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
           {children}
         </p>
       )}

@@ -10,7 +10,7 @@ export default function QueuePage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="glow font-display text-5xl uppercase tracking-wider">
+        <h1 className="font-display text-6xl">
           Action queue
         </h1>
         <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">

@@ -1,37 +1,20 @@
 import { Art } from "./art";
 
-const ART = ` ██████╗ █████╗ ██╗     ██╗
-██╔════╝██╔══██╗██║     ██║
-██║     ███████║██║     ██║
-██║     ██╔══██║██║     ██║
-╚██████╗██║  ██║███████╗██║
- ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝`;
-
-/** Hero: the Vitruvian scout beside a gilt CALI wordmark and a Latin legend. */
+/** Overview hero: a small engraved Vitruvian beside a large serif title. */
 export function Banner() {
   return (
     <div className="flex items-center gap-6">
       <Art
         name="vitruvian"
-        className="hidden text-[7px] leading-[1.05] opacity-90 md:block lg:text-[8px]"
+        className="hidden !text-[6px] !leading-[1.05] opacity-80 md:block"
       />
-      <div>
-        <pre
-          aria-hidden
-          className="ascii gilt select-none text-[11px] leading-[1.1] sm:text-sm"
-        >
-          {ART}
-        </pre>
-        <p
-          aria-hidden
-          className="mt-2 font-fell text-lg italic tracking-wide text-emerald-800 dark:text-emerald-300/90"
-        >
-          Scrutator novarum societatum
-          <span className="ml-2 font-hud text-[10px] not-italic uppercase tracking-[0.3em] opacity-70">
-            · codex futurum
-          </span>
-        </p>
-      </div>
+      <h1 className="serif text-6xl leading-[0.95] sm:text-7xl">
+        Every lead,
+        <br />
+        <span className="italic text-rose-600 dark:text-rose-400">
+          in one place.
+        </span>
+      </h1>
     </div>
   );
 }
