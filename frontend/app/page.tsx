@@ -88,12 +88,12 @@ export default function OverviewPage() {
       <header className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <Banner />
-          <p className="cursor mt-2 text-xs text-zinc-600 dark:text-emerald-400/80">
+          <p className="cursor mt-3 font-hud text-xs uppercase tracking-[0.22em] text-zinc-600 dark:text-emerald-400/80">
             connection &amp; builder dashboard — every process, in one place
           </p>
         </div>
         {latest ? (
-          <div className="flex items-center gap-2 border-2 border-zinc-900 bg-white px-3 py-1.5 text-xs dark:border-emerald-400/60 dark:bg-black">
+          <div className="frame flex items-center gap-2 bg-white/70 px-4 py-2 font-hud text-xs uppercase tracking-wider dark:bg-black/60">
             <Led
               state={
                 state === "passed" ? "ok" : state === "quota" ? "warn" : "fail"

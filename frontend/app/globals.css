@@ -1,12 +1,107 @@
 @import "tailwindcss";
 
-/* Class-based dark mode: <html class="dark"> is the (default) green-phosphor look. */
+/* Class-based dark mode: <html class="dark"> is the (default) "lapis night" look. */
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --font-sans: var(--font-plex);
-  --font-mono: var(--font-plex);
-  --font-display: var(--font-vt323);
+/*
+ * CODEX FUTURUM — an illuminated manuscript rendered by a HUD.
+ * Rather than touch every page, we re-pigment Tailwind's palette with the dyes of a Renaissance
+ * workshop, so every existing utility (emerald-*, sky-*, ...) resolves to a new material:
+ *   emerald -> gilt gold      sky    -> holo / lapis cyan     amber  -> copper & saffron
+ *   rose    -> cinnabar       violet -> Tyrian purple         zinc   -> sepia ink & vellum
+ */
+@theme static {
+  --font-sans: var(--nf-plex);
+  --font-mono: var(--nf-plex);
+  --font-display: var(--nf-cinzel);
+  --font-fell: var(--nf-fell);
+  --font-hud: var(--nf-hud);
+  --font-fraktur: var(--nf-fraktur);
+
+  --color-white: #fbf3dc;
+  --color-black: #04060e;
+
+  --color-emerald-50: #fdf9e8;
+  --color-emerald-100: #f7ebbb;
+  --color-emerald-200: #efd986;
+  --color-emerald-300: #f0d27a;
+  --color-emerald-400: #dcb349;
+  --color-emerald-500: #b98f2e;
+  --color-emerald-600: #94701f;
+  --color-emerald-700: #6e5316;
+  --color-emerald-800: #4e3a12;
+  --color-emerald-900: #33270f;
+  --color-emerald-950: #17120a;
+
+  --color-sky-50: #eefaff;
+  --color-sky-100: #d4f1fc;
+  --color-sky-200: #a6e3f8;
+  --color-sky-300: #72d3f2;
+  --color-sky-400: #3cbdea;
+  --color-sky-500: #1f9bd2;
+  --color-sky-600: #197aae;
+  --color-sky-700: #195d88;
+  --color-sky-800: #1a4866;
+  --color-sky-900: #163449;
+  --color-sky-950: #07161f;
+
+  --color-amber-50: #fff5ea;
+  --color-amber-100: #ffe4c4;
+  --color-amber-200: #ffc98c;
+  --color-amber-300: #ffad58;
+  --color-amber-400: #f78d2b;
+  --color-amber-500: #d96f14;
+  --color-amber-600: #b55610;
+  --color-amber-700: #8f4311;
+  --color-amber-800: #6b3310;
+  --color-amber-900: #4a240d;
+  --color-amber-950: #1f1107;
+
+  --color-rose-50: #fff1ee;
+  --color-rose-100: #ffdcd5;
+  --color-rose-200: #ffb9ac;
+  --color-rose-300: #ff927f;
+  --color-rose-400: #ff6a53;
+  --color-rose-500: #e9452d;
+  --color-rose-600: #c5351f;
+  --color-rose-700: #9c2b1b;
+  --color-rose-800: #752317;
+  --color-rose-900: #4f1a12;
+  --color-rose-950: #1f0b08;
+
+  --color-violet-50: #f8effc;
+  --color-violet-100: #eedaf8;
+  --color-violet-200: #ddb5f1;
+  --color-violet-300: #c98ce5;
+  --color-violet-400: #b264d6;
+  --color-violet-500: #9546ba;
+  --color-violet-600: #77369b;
+  --color-violet-700: #5c2b79;
+  --color-violet-800: #442159;
+  --color-violet-900: #2f1740;
+  --color-violet-950: #140a1c;
+
+  --color-zinc-50: #fbf6e6;
+  --color-zinc-100: #f3e8c9;
+  --color-zinc-200: #e5d6ab;
+  --color-zinc-300: #cfbc8d;
+  --color-zinc-400: #b3a687;
+  --color-zinc-500: #8d8165;
+  --color-zinc-600: #6d6249;
+  --color-zinc-700: #4e4534;
+  --color-zinc-800: #352d20;
+  --color-zinc-900: #231a0e;
+  --color-zinc-950: #120d06;
+}
+
+:root {
+  --ink: #231a0e;
+  --leaf: #dcb349;
+  --paper: #efe2bd;
+  --mx: 50vw;
+  --my: 30vh;
+  /* Fine-grain engraving noise, reused as an overlay on both themes. */
+  --grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .4  0 0 0 0 .2  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }
 
 html {
@@ -16,7 +111,76 @@ html.dark {
   color-scheme: dark;
 }
 
-/* CRT scanlines + vignette: dark mode only, switchable from the nav (html[data-crt="off"]). */
+::selection {
+  background: #dcb349;
+  color: #120d06;
+}
+
+/* ───────────── atmosphere ───────────── */
+
+body {
+  background-color: #efe2bd;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgb(255 250 225 / 0.9), transparent 70%),
+    radial-gradient(ellipse at 100% 100%, rgb(150 105 40 / 0.28), transparent 55%),
+    radial-gradient(ellipse at 0% 100%, rgb(150 105 40 / 0.22), transparent 50%);
+  background-attachment: fixed;
+  /* Gold crosshair, 24px, hot-spot at centre. */
+  cursor:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='%23b98f2e' stroke-width='1.2'><circle cx='12' cy='12' r='5'/><path d='M12 1v6M12 17v6M1 12h6M17 12h6'/><circle cx='12' cy='12' r='1' fill='%23b98f2e'/></svg>")
+      12 12,
+    auto;
+}
+html.dark body {
+  background-color: #04060e;
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% -8%, rgb(52 82 160 / 0.42), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 100% 0%, rgb(185 143 46 / 0.13), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 0% 100%, rgb(60 189 234 / 0.07), transparent 70%);
+}
+a,
+button,
+[role="switch"],
+summary,
+select,
+label {
+  cursor:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='%23e9452d' stroke-width='1.4'><path d='M12 2l8 10-8 10-8-10z'/><circle cx='12' cy='12' r='1.6' fill='%23e9452d'/></svg>")
+      12 12,
+    pointer;
+}
+
+/* Blueprint grid + grain: fixed, behind everything. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    var(--grain),
+    linear-gradient(rgb(110 83 22 / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(110 83 22 / 0.07) 1px, transparent 1px);
+  background-size:
+    180px 180px,
+    48px 48px,
+    48px 48px;
+  mask-image: radial-gradient(
+    circle 38vmax at var(--mx) var(--my),
+    #000 0%,
+    rgb(0 0 0 / 0.35) 55%,
+    rgb(0 0 0 / 0.18) 100%
+  );
+}
+html.dark body::before {
+  background-image:
+    var(--grain),
+    linear-gradient(rgb(220 179 73 / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(220 179 73 / 0.07) 1px, transparent 1px);
+  mix-blend-mode: screen;
+}
+
+/* CRT scanlines + scan beam + vignette: dark mode only, switchable from the nav (html[data-crt="off"]). */
 html.dark:not([data-crt="off"]) body::after {
   content: "";
   position: fixed;
@@ -24,18 +188,47 @@ html.dark:not([data-crt="off"]) body::after {
   pointer-events: none;
   z-index: 50;
   background:
+    linear-gradient(
+      to bottom,
+      transparent 0,
+      rgb(240 210 122 / 0.05) 49%,
+      rgb(240 210 122 / 0.1) 50%,
+      transparent 51%
+    ),
     repeating-linear-gradient(
       to bottom,
-      rgb(0 0 0 / 0.18) 0,
-      rgb(0 0 0 / 0.18) 1px,
+      rgb(0 0 0 / 0.16) 0,
+      rgb(0 0 0 / 0.16) 1px,
       transparent 1px,
       transparent 3px
     ),
-    radial-gradient(ellipse at center, transparent 60%, rgb(0 0 0 / 0.45) 100%);
+    radial-gradient(ellipse at center, transparent 62%, rgb(0 0 0 / 0.5) 100%);
+  background-size:
+    100% 220px,
+    auto,
+    auto;
+  background-repeat: no-repeat, repeat, no-repeat;
+  animation: beam 9s linear infinite;
+}
+@keyframes beam {
+  from {
+    background-position:
+      0 -220px,
+      0 0,
+      0 0;
+  }
+  to {
+    background-position:
+      0 100vh,
+      0 0,
+      0 0;
+  }
 }
 html.dark:not([data-crt="off"]) .glow {
-  text-shadow: 0 0 6px rgb(52 211 153 / 0.55);
+  text-shadow: 0 0 8px color-mix(in oklab, currentColor 55%, transparent);
 }
+
+/* ───────────── type & ornaments ───────────── */
 
 .cursor::after {
   content: "█";
@@ -47,15 +240,272 @@ html.dark:not([data-crt="off"]) .glow {
     opacity: 0;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .cursor::after {
-    animation: none;
-  }
-}
 
 /* ASCII art: a stack whose block/box-drawing glyphs share one cell width (Plex lacks them). */
 .ascii {
   font-family:
     ui-monospace, "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
   font-variant-ligatures: none;
+}
+
+/* Gold-leaf text: a travelling highlight across a gilt gradient. */
+.gilt {
+  background-image: linear-gradient(
+    100deg,
+    #8c6a1c 0%,
+    #dcb349 22%,
+    #fff1b8 40%,
+    #c99a2e 55%,
+    #f0d27a 72%,
+    #8c6a1c 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 7s ease-in-out infinite alternate;
+}
+html.dark .gilt {
+  filter: drop-shadow(0 0 7px rgb(220 179 73 / 0.35));
+}
+html:not(.dark) .gilt {
+  background-image: linear-gradient(
+    100deg,
+    #5a3f0c 0%,
+    #94701f 30%,
+    #c99a2e 48%,
+    #6e5316 70%,
+    #4e3a12 100%
+  );
+}
+@keyframes shimmer {
+  to {
+    background-position: 100% 0;
+  }
+}
+
+/* Jewel gloss for the status LED (a rotated square with a specular corner). */
+.gem {
+  background-image: radial-gradient(
+    circle at 30% 28%,
+    rgb(255 255 255 / 0.75),
+    transparent 55%
+  );
+}
+
+/* Hairline rule with a lozenge in the middle. */
+.rule {
+  height: 9px;
+  background:
+    linear-gradient(90deg, transparent, currentColor 18%, currentColor 82%, transparent) center / 100% 1px no-repeat;
+  position: relative;
+  color: color-mix(in oklab, var(--color-emerald-500) 70%, transparent);
+}
+.rule::after {
+  content: "◆";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -52%;
+  font-size: 9px;
+  line-height: 1;
+  padding: 0 8px;
+  background: var(--color-white);
+}
+html.dark .rule::after {
+  background: var(--color-black);
+}
+
+/* ───────────── frames: gilt double border + HUD corner brackets ───────────── */
+
+.frame {
+  --accent: var(--color-emerald-700);
+  position: relative;
+  border: 1px solid color-mix(in oklab, var(--accent) 80%, transparent);
+  background-image: var(--grain);
+  background-blend-mode: soft-light;
+}
+html.dark .frame {
+  --accent: var(--color-emerald-400);
+  box-shadow:
+    0 0 28px -12px color-mix(in oklab, var(--accent) 70%, transparent),
+    inset 0 0 40px -22px color-mix(in oklab, var(--accent) 60%, transparent);
+}
+/* inner keyline */
+.frame::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid color-mix(in oklab, var(--accent) 28%, transparent);
+  pointer-events: none;
+}
+/* corner brackets */
+.frame::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--accent), var(--accent)) top left / 16px 2px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) top left / 2px 16px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) top right / 16px 2px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) top right / 2px 16px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) bottom left / 16px 2px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) bottom left / 2px 16px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) bottom right / 16px 2px no-repeat,
+    linear-gradient(var(--accent), var(--accent)) bottom right / 2px 16px no-repeat;
+  transition: inset 0.25s ease;
+}
+.frame:hover::after {
+  inset: -5px;
+}
+
+/* ───────────── plaque buttons: chamfered, gilt-edged ───────────── */
+
+.plaque {
+  --accent: var(--color-amber-700);
+  --fill: var(--color-white);
+  --cut: 9px;
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3rem 0.9rem;
+  background: var(--accent);
+  clip-path: polygon(
+    var(--cut) 0,
+    100% 0,
+    100% calc(100% - var(--cut)),
+    calc(100% - var(--cut)) 100%,
+    0 100%,
+    0 var(--cut)
+  );
+  transition: translate 0.12s ease;
+}
+html.dark .plaque {
+  --fill: var(--color-black);
+}
+/* inner fill: the 1px of accent left showing around it is the "gilt edge" */
+.plaque::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  background: var(--fill);
+  clip-path: polygon(
+    calc(var(--cut) - 1px) 0,
+    100% 0,
+    100% calc(100% - var(--cut) + 1px),
+    calc(100% - var(--cut) + 1px) 100%,
+    0 100%,
+    0 calc(var(--cut) - 1px)
+  );
+  transition: background-color 0.2s ease;
+}
+/* sheen sweep */
+.plaque::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    color-mix(in oklab, var(--accent) 50%, transparent) 50%,
+    transparent 65%
+  );
+  translate: -120% 0;
+  transition: translate 0.55s ease;
+}
+.plaque:hover::after {
+  translate: 120% 0;
+}
+.plaque:hover::before {
+  background: color-mix(in oklab, var(--accent) 16%, var(--fill));
+}
+.plaque:active,
+.plaque[aria-pressed="true"] {
+  translate: 0 1px;
+}
+.plaque[aria-pressed="true"]::before {
+  background: var(--accent);
+}
+.plaque[aria-pressed="true"] {
+  color: var(--color-black);
+}
+html:not(.dark) .plaque[aria-pressed="true"] {
+  color: var(--color-white);
+}
+.plaque:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  clip-path: none;
+}
+/* the drop-shadow lives on a wrapper-free filter so the clip-path doesn't cut it */
+html.dark .plaque:not(:focus-visible) {
+  filter: drop-shadow(0 0 5px color-mix(in oklab, var(--accent) 45%, transparent));
+}
+
+/* ───────────── first-paint "invocation" boot sequence (pure CSS) ───────────── */
+
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background: var(--color-black);
+  color: var(--color-emerald-300);
+  animation: boot-out 0.7s ease 2.6s forwards;
+}
+html:not(.dark) .boot {
+  background: var(--color-white);
+  color: var(--color-emerald-800);
+}
+html[data-booted] .boot {
+  display: none;
+}
+.boot-line {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: type 0.5s steps(34) forwards;
+  animation-delay: calc(var(--i) * 0.38s + 0.15s);
+}
+@keyframes type {
+  to {
+    width: 34ch;
+  }
+}
+@keyframes boot-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ───────────── scrollbars ───────────── */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-emerald-500) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor::after,
+  .gilt,
+  html.dark:not([data-crt="off"]) body::after {
+    animation: none;
+  }
+  .boot {
+    display: none;
+  }
+  .plaque,
+  .plaque::after,
+  .frame::after {
+    transition: none;
+  }
 }
