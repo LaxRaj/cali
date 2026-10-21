@@ -105,6 +105,7 @@ def test_lint_flags_bulk_looking_mail():
     assert outreach.lint({**ok, "company": "VOYGR", "body": ok["body"] + " VOYGR"}) == []  # a company's own name is fine
     assert "over 120 words" in outreach.lint({**ok, "body": ok["body"] + " word" * 130})
     assert "more than one link" in outreach.lint({**ok, "body": ok["body"] + " https://a.io https://b.io"})
+    assert "unfilled [placeholder]" in outreach.lint({**ok, "body": ok["body"] + " [after trying it: one specific observation]"})[0]
     assert "HTML in body" in outreach.lint({**ok, "body": ok["body"] + "<b>hi</b>"})
     assert "too many exclamation marks" in outreach.lint({**ok, "body": ok["body"] + " wow! great!"})
     assert "missing opt-out line" in outreach.lint({**ok, "body": "Hi"})

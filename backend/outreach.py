@@ -274,6 +274,8 @@ def lint(item: dict) -> list[str]:
         problems.append("too many exclamation marks")
     if len(re.findall(r"https?://|www\.", body)) > 1:
         problems.append("more than one link")
+    if re.search(r"\[[^\]]+\]", body):
+        problems.append("unfilled [placeholder] (a human must complete this draft)")
     if re.search(r"<[a-z/][^>]*>", body, re.I):
         problems.append("HTML in body")
     if OPT_OUT not in body and item["kind"] == "first":

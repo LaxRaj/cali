@@ -86,7 +86,6 @@ def _intent_lines(intent: str, profile: dict) -> list[str]:
     return lines + ["", "Open to a quick call to see if there is a fit?"]
 
 
-def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | None = None) -> dict:
 ANGLES = {
     "eng": "I'd like to use {product} and send you one concrete thing I'd build or fix: [after trying it: one specific observation].",
     "founding": "I'd like to use {product} and send you one concrete thing I'd build or fix: [after trying it: one specific observation].",
@@ -115,7 +114,7 @@ def signal_hook(profile: dict) -> tuple[str, str]:
     return (hook + (f" ({s['url']})" if s.get("url") else "") + "." if hook else ""), angle
 
 
-def build_draft(profile: dict, warm_path: dict | None = None) -> dict:
+def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | None = None) -> dict:
     company = profile["company_name"]
     sender = sender if sender is not None else load_sender()
     intent, reason = pick_intent(profile)
