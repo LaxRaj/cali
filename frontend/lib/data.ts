@@ -37,6 +37,21 @@ export type Contact = {
   contact_page?: string;
   status?: string;
 };
+export type Trackback = {
+  entity_type: "startup" | "person" | "edge" | "contact";
+  entity_key: string;
+  field: string;
+  label: string;
+  value: string;
+  source_url: string;
+  evidence: string;
+  run_id: string;
+  first_seen: string;
+  last_seen: string;
+  seen_count: number;
+  confidence: number;
+};
+
 export type Edge = { src: string; rel: string; dst: string; evidence: string };
 
 export type Profile = {
@@ -56,6 +71,8 @@ export type Profile = {
   score?: number;
   score_parts?: Record<string, number>;
   gaps?: string[];
+  trackbacks?: Trackback[];
+  last_seen?: string;
   warm_path?: { via: string; summary: string; hops: Edge[] } | null;
   email_draft?: {
     to: string;
@@ -87,6 +104,12 @@ export type GraphEdge = {
   target: string;
   rel: string;
   evidence: string;
+  sources?: {
+    source_url: string;
+    run_id: string;
+    first_seen: string;
+    last_seen: string;
+  }[];
 };
 export type InvestorCluster = {
   investor: string;

@@ -6,8 +6,10 @@ from datetime import datetime
 from pathlib import Path
 
 from decide.policy import decide_lead
+from entities import canonical_key
 from draft import build_draft
 from investors import investor_clusters
+from ledger import TABLE as LEDGER
 from outcomes import load_outcomes
 from paths import find_path, load_known
 from whynow import why_now
@@ -32,11 +34,23 @@ def _loads(raw) -> dict:
         return {}
 
 
+TRACKBACK_FIELDS = ("entity_type", "entity_key", "field", "label", "value", "source_url", "evidence", "run_id", "first_seen", "last_seen", "seen_count", "confidence")
+
+
+def _trackbacks(db_dir) -> dict[str, list[dict]]:
+    """Ledger facts grouped by canonical company name, most recently seen first."""
+    by: dict[str, list[dict]] = {}
+    for r in sorted(_rows(LEDGER, db_dir), key=lambda r: r["last_seen"], reverse=True):
+        by.setdefault(r["company"], []).append({f: r[f] for f in TRACKBACK_FIELDS})
+    return by
+
+
 def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     people = _rows(PEOPLE, db_dir)
     edges = _rows(EDGES, db_dir)
     outcomes = load_outcomes(db_dir)
     known = load_known(db_dir)
+    trackbacks = _trackbacks(db_dir)
     out = []
     for r in _rows(TABLE, db_dir):
         name = r["company_name"]
@@ -68,6 +82,7 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
         outcome = outcomes.get(p["company_name"].strip().lower())
         p["outcome"] = outcome or None
         p["decision"] = decide_lead(p, outcome, now)
+        p["trackbacks"] = trackbacks.get(canonical_key(p["company_name"]), [])
         p["why_now"] = why_now(p, now)
         p["warm_path"] = find_path(edges, known, p["company_name"])
         p["email_draft"] = build_draft(p, p["warm_path"])
@@ -90,12 +105,18 @@ def build_graph(db_dir) -> dict:
         links = {f: p.get(f, "") for f in ("linkedin", "twitter", "github", "homepage") if p.get(f, "")}
         add(p["name"], "person", role=p.get("role", ""), links=links)
 
+    sources: dict[str, list[dict]] = {}
+    for o in sorted(_rows(LEDGER, db_dir), key=lambda o: o["first_seen"]):
+        if o["entity_type"] == "edge":
+            sources.setdefault(o["entity_key"], []).append({f: o[f] for f in ("source_url", "run_id", "first_seen", "last_seen")})
+
     edges = []
     for e in _rows(EDGES, db_dir):
         s, t = add(e["src"], "org"), add(e["dst"], "org")  # unknown endpoints (funds, companies) are orgs
         if not s or not t or s == t:
             continue
-        edges.append({"source": s, "target": t, "rel": e["rel"], "evidence": e["evidence"]})
+        found = sources.get(f"{canonical_key(e['src'])}|{e['rel']}|{canonical_key(e['dst'])}", [])
+        edges.append({"source": s, "target": t, "rel": e["rel"], "evidence": e["evidence"], "sources": found})
         nodes[s]["degree"] += 1
         nodes[t]["degree"] += 1
     startups = [n["label"] for n in nodes.values() if n["type"] == "startup"]
