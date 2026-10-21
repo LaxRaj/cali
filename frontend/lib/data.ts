@@ -59,7 +59,10 @@ export type Profile = {
   score_parts?: Record<string, number>;
   gaps?: string[];
   warm_path?: { via: string; summary: string; hops: Edge[] } | null;
+  outreach?: { kind: string; status: string; to: string; updated: string }[];
   email_draft?: {
+    intent?: "work_for" | "build_for" | "build_with";
+    intent_reason?: string;
     to: string;
     to_source_url: string;
     subject: string;

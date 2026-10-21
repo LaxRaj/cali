@@ -150,7 +150,7 @@ export function StartupCard({
           </div>
         )}
 
-        {full && p.email_draft && <EmailDraft draft={p.email_draft} />}
+        {full && p.email_draft && <EmailDraft draft={p.email_draft} outreach={p.outreach} />}
 
         {p.why_now && p.why_now.length > 0 && (
           <ul aria-label="Why now" className="space-y-0.5 text-xs">
