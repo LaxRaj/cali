@@ -41,7 +41,7 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
           state={state === "passed" ? "ok" : state === "quota" ? "warn" : "fail"}
           label={state}
         />
-        <h1 className="glow font-display text-4xl uppercase tracking-wider">
+        <h1 className="font-display text-4xl">
           Run {run.run_id}
         </h1>
         <span className="text-xs text-zinc-600 dark:text-zinc-400">

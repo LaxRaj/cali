@@ -69,7 +69,7 @@ export function StartupExplorer({ profiles }: { profiles: Profile[] }) {
 
   return (
     <div className="space-y-4">
-      <div className="space-y-3 border-2 border-zinc-900 bg-sky-100 p-3 shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-sky-400/60 dark:bg-sky-950/40 dark:shadow-sky-400/30">
+      <div className="space-y-3 border border-zinc-900/25 bg-sky-100 p-3 dark:border-sky-400/60 dark:bg-sky-950/40 dark:shadow-sky-400/30">
         <label className="flex items-center gap-2">
           <span className="text-xs font-semibold uppercase tracking-widest">
             search
@@ -79,7 +79,7 @@ export function StartupExplorer({ profiles }: { profiles: Profile[] }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="company, tech, founder…"
-            className="flex-1 border-2 border-zinc-900 bg-white px-2 py-1 placeholder:text-zinc-400 focus-visible:outline-2 focus-visible:outline-emerald-500 dark:border-sky-400/60 dark:bg-black"
+            className="flex-1 border border-zinc-900/25 bg-white px-2 py-1 placeholder:text-zinc-400 focus-visible:outline-2 focus-visible:outline-emerald-500 dark:border-sky-400/60 dark:bg-black"
           />
         </label>
         <div className="flex flex-wrap items-center gap-2">

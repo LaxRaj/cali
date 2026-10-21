@@ -1,12 +1,94 @@
 @import "tailwindcss";
 
-/* Class-based dark mode: <html class="dark"> is the (default) green-phosphor look. */
+/* Class-based dark mode: <html class="dark"> is a calm warm-charcoal variant. Light "paper" is the default. */
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --font-sans: var(--font-plex);
-  --font-mono: var(--font-plex);
-  --font-display: var(--font-vt323);
+/*
+ * EDITORIAL PAPER — warm paper, one ink, one vermilion accent.
+ * Existing utilities are re-pigmented here instead of edited page by page:
+ *   emerald -> forest ink (ok / primary)   sky -> blue ink     amber -> ochre
+ *   rose    -> vermilion (the accent)      violet -> plum      zinc -> warm ink & paper
+ */
+@theme static {
+  --font-sans: var(--nf-mono);
+  --font-mono: var(--nf-mono);
+  --font-display: var(--nf-serif);
+  --font-serif: var(--nf-serif);
+
+  --color-white: #f6f1e7;
+  --color-black: #141210;
+
+  --color-emerald-50: #f1f6f1;
+  --color-emerald-100: #dfeadf;
+  --color-emerald-200: #c3d9c6;
+  --color-emerald-300: #9fc4a8;
+  --color-emerald-400: #6fa883;
+  --color-emerald-500: #4a8863;
+  --color-emerald-600: #376d4e;
+  --color-emerald-700: #2c573f;
+  --color-emerald-800: #234433;
+  --color-emerald-900: #1a3225;
+  --color-emerald-950: #0e1a13;
+
+  --color-sky-50: #eff4f9;
+  --color-sky-100: #dbe7f2;
+  --color-sky-200: #bcd3e8;
+  --color-sky-300: #93b8d9;
+  --color-sky-400: #6797c4;
+  --color-sky-500: #4679ab;
+  --color-sky-600: #356090;
+  --color-sky-700: #2c4c73;
+  --color-sky-800: #243c5a;
+  --color-sky-900: #1a2b42;
+  --color-sky-950: #0d1623;
+
+  --color-amber-50: #fbf5e6;
+  --color-amber-100: #f5e8c6;
+  --color-amber-200: #ecd291;
+  --color-amber-300: #e0b85c;
+  --color-amber-400: #cf9a33;
+  --color-amber-500: #b07c20;
+  --color-amber-600: #8c6118;
+  --color-amber-700: #6c4a14;
+  --color-amber-800: #4f3611;
+  --color-amber-900: #36250c;
+  --color-amber-950: #1a1206;
+
+  --color-rose-50: #fdf0ec;
+  --color-rose-100: #fadcd3;
+  --color-rose-200: #f4b9a8;
+  --color-rose-300: #ec8f78;
+  --color-rose-400: #e2694d;
+  --color-rose-500: #d8432b;
+  --color-rose-600: #b53320;
+  --color-rose-700: #922a1c;
+  --color-rose-800: #6e2117;
+  --color-rose-900: #4a1711;
+  --color-rose-950: #260b08;
+
+  --color-violet-50: #f6f0f5;
+  --color-violet-100: #ebdde9;
+  --color-violet-200: #d8bdd4;
+  --color-violet-300: #c196bb;
+  --color-violet-400: #a6709f;
+  --color-violet-500: #865380;
+  --color-violet-600: #6b4166;
+  --color-violet-700: #53334f;
+  --color-violet-800: #3e2639;
+  --color-violet-900: #2a1a27;
+  --color-violet-950: #150c14;
+
+  --color-zinc-50: #f9f6ef;
+  --color-zinc-100: #f1ece0;
+  --color-zinc-200: #e3dcc9;
+  --color-zinc-300: #cdc4ad;
+  --color-zinc-400: #a79e88;
+  --color-zinc-500: #857d6b;
+  --color-zinc-600: #66604f;
+  --color-zinc-700: #4a453a;
+  --color-zinc-800: #322e26;
+  --color-zinc-900: #1c1915;
+  --color-zinc-950: #100e0b;
 }
 
 html {
@@ -16,25 +98,24 @@ html.dark {
   color-scheme: dark;
 }
 
-/* CRT scanlines + vignette: dark mode only, switchable from the nav (html[data-crt="off"]). */
-html.dark:not([data-crt="off"]) body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 50;
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      rgb(0 0 0 / 0.18) 0,
-      rgb(0 0 0 / 0.18) 1px,
-      transparent 1px,
-      transparent 3px
-    ),
-    radial-gradient(ellipse at center, transparent 60%, rgb(0 0 0 / 0.45) 100%);
+body {
+  background-color: var(--color-white);
 }
-html.dark:not([data-crt="off"]) .glow {
-  text-shadow: 0 0 6px rgb(52 211 153 / 0.55);
+html.dark body {
+  background-color: var(--color-black);
+}
+
+::selection {
+  background: var(--color-rose-500);
+  color: #fff;
+}
+
+/* ───────────── type & ornaments ───────────── */
+
+/* Serif display lines are set large and tight; italics carry captions. */
+.serif {
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
 .cursor::after {
@@ -47,15 +128,64 @@ html.dark:not([data-crt="off"]) .glow {
     opacity: 0;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .cursor::after {
-    animation: none;
-  }
-}
 
 /* ASCII art: a stack whose block/box-drawing glyphs share one cell width (Plex lacks them). */
 .ascii {
   font-family:
     ui-monospace, "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
   font-variant-ligatures: none;
+}
+
+/* ───────────── hairline plate: used by Panel and Stat ───────────── */
+
+.plate {
+  --accent: var(--color-zinc-900);
+  border-top: 1px solid var(--accent);
+  background: transparent;
+}
+html.dark .plate {
+  --accent: var(--color-zinc-300);
+}
+
+/* ───────────── flat buttons ───────────── */
+
+.btn {
+  --accent: var(--color-zinc-900);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--accent);
+  background: transparent;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+html.dark .btn {
+  --accent: var(--color-zinc-300);
+}
+.btn:hover {
+  background: color-mix(in oklab, var(--accent) 10%, transparent);
+}
+.btn:active,
+.btn[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--color-white);
+}
+html.dark .btn:active,
+html.dark .btn[aria-pressed="true"] {
+  color: var(--color-black);
+}
+.btn:focus-visible {
+  outline: 2px solid var(--color-rose-500);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor::after {
+    animation: none;
+  }
+  .btn {
+    transition: none;
+  }
 }

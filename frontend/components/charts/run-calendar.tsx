@@ -13,7 +13,7 @@ export function RunCalendar({ runs }: { runs: RunSummary[] }) {
           <Link
             href={`/runs/${r.run_id}`}
             title={`${fmtDate(r.started_at)} — ${r.passed ? "passed" : "failed"} — ${r.funnel.valid} valid`}
-            className={`block h-5 w-5 border-2 border-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:border-black ${
+            className={`block h-5 w-5 border border-zinc-900/25 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:border-black ${
               r.passed
                 ? "bg-emerald-300 dark:bg-emerald-500"
                 : "bg-rose-300 dark:bg-rose-500"

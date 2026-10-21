@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useSyncExternalStore } from "react";
 import { LampToggle } from "@/components/ascii/lamp-toggle";
+import { UtcClock } from "./hud-effects";
 import { Led } from "./led";
-import { RockerSwitch } from "./rocker-switch";
 
 const LINKS = [
   { href: "/", label: "Overview" },
@@ -15,37 +14,14 @@ const LINKS = [
   { href: "/network", label: "Network" },
 ];
 
-function subscribe(cb: () => void) {
-  const mo = new MutationObserver(cb);
-  mo.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ["data-crt"],
-  });
-  return () => mo.disconnect();
-}
-
 export function Nav({ lastRunPassed }: { lastRunPassed: boolean | null }) {
   const pathname = usePathname();
-  const crt = useSyncExternalStore(
-    subscribe,
-    () => document.documentElement.getAttribute("data-crt") !== "off",
-    () => true,
-  );
-
-  function setCrt(on: boolean) {
-    if (on) document.documentElement.removeAttribute("data-crt");
-    else document.documentElement.setAttribute("data-crt", "off");
-    try {
-      localStorage.setItem("cali-crt", on ? "on" : "off");
-    } catch {}
-  }
-
   return (
-    <header className="border-b-2 border-zinc-900 bg-rose-100 dark:border-emerald-500/60 dark:bg-black">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-2">
+    <header className="sticky top-0 z-40 border-b border-zinc-900/15 bg-white/85 backdrop-blur dark:border-zinc-100/15 dark:bg-black/80">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-8 gap-y-2 px-4 py-3">
         <Link
           href="/"
-          className="glow flex items-center gap-2 font-display text-3xl leading-none tracking-widest"
+          className="flex items-center gap-2.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-500"
         >
           <Led
             state={
@@ -59,9 +35,9 @@ export function Nav({ lastRunPassed }: { lastRunPassed: boolean | null }) {
                   : "Last run failed"
             }
           />
-          cali
+          <span className="serif text-3xl italic leading-none">cali</span>
         </Link>
-        <nav aria-label="Main" className="flex flex-wrap gap-1">
+        <nav aria-label="Main" className="flex flex-wrap gap-x-5 gap-y-1">
           {LINKS.map((l) => {
             const active =
               l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
@@ -70,10 +46,10 @@ export function Nav({ lastRunPassed }: { lastRunPassed: boolean | null }) {
                 key={l.href}
                 href={l.href}
                 aria-current={active ? "page" : undefined}
-                className={`border-2 px-3 py-0.5 text-xs font-semibold uppercase tracking-wide focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 ${
+                className={`border-b py-1 text-xs uppercase tracking-[0.14em] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-rose-500 ${
                   active
-                    ? "border-zinc-900 bg-white shadow-[2px_2px_0_0] shadow-zinc-900 dark:border-emerald-400 dark:bg-emerald-950 dark:shadow-emerald-400/50"
-                    : "border-transparent hover:border-zinc-900/40 dark:hover:border-emerald-400/40"
+                    ? "border-rose-500 text-zinc-900 dark:text-zinc-100"
+                    : "border-transparent text-zinc-600 hover:border-zinc-900/30 hover:text-zinc-900 dark:text-zinc-400 dark:hover:border-zinc-100/30 dark:hover:text-zinc-100"
                 }`}
               >
                 {l.label}
@@ -81,13 +57,9 @@ export function Nav({ lastRunPassed }: { lastRunPassed: boolean | null }) {
             );
           })}
         </nav>
-        <div className="ml-auto flex items-center gap-4">
-          <span className="hidden dark:inline-flex">
-            <RockerSwitch
-              checked={crt}
-              onChange={setCrt}
-              label="CRT scanlines"
-            />
+        <div className="ml-auto flex items-center gap-5">
+          <span className="hidden sm:inline">
+            <UtcClock />
           </span>
           <LampToggle />
         </div>

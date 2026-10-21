@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { TONES, type Tone } from "./tone";
 
+/** A hairline-ruled section: a thin tone-coloured rule, a serif title, and room to breathe. */
 export function Panel({
   title,
   tone = "emerald",
@@ -16,22 +17,16 @@ export function Panel({
 }) {
   const t = TONES[tone];
   return (
-    <section
-      className={`border-2 border-zinc-900 shadow-[4px_4px_0_0] shadow-zinc-900 ${t.panel} ${t.border} ${className}`}
-    >
-      <header
-        className={`flex items-center justify-between gap-3 border-b-2 border-zinc-900 bg-white/70 px-3 py-1 dark:bg-black/50 ${t.border}`}
-      >
-        <h2
-          className={`glow font-display text-xl uppercase leading-none tracking-wider ${t.text}`}
-        >
-          <span aria-hidden>┤ </span>
+    <section className={`plate ${t.accent} ${className}`}>
+      <header className="flex items-baseline justify-between gap-3 pt-2.5 pb-3">
+        <h2 className="serif text-2xl leading-none text-zinc-900 dark:text-zinc-100">
           {title}
-          <span aria-hidden> ├</span>
         </h2>
-        {right && <div className="text-xs">{right}</div>}
+        {right && (
+          <div className="text-xs text-zinc-600 dark:text-zinc-400">{right}</div>
+        )}
       </header>
-      <div className="p-3">{children}</div>
+      <div>{children}</div>
     </section>
   );
 }
