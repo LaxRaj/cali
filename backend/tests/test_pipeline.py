@@ -192,3 +192,28 @@ async def test_edgar_candidates_get_the_company_website_added_before_extraction_
     assert [(r["source"], r["reasons"]) for r in run["rejections"]] == [("edgar", ["no company website found"])]
     rows = [json.loads(line) for line in (tmp_path / "decisions.jsonl").read_text().splitlines()]
     assert {(r["title"][:5], r["outcome"]) for r in rows} == {("Noctu", "accepted"), ("Ghost", "no_website")}
+
+
+async def test_quota_preflight_skip_is_recorded_as_a_quota_run(monkeypatch, tmp_path):
+    from datetime import datetime, timedelta, timezone
+
+    setup(monkeypatch, [], [])
+    monkeypatch.delenv("CALI_IGNORE_QUOTA", raising=False)
+    until = (datetime.now(timezone.utc) + timedelta(hours=3)).isoformat(timespec="seconds")
+    (tmp_path / "quota.json").write_text(json.dumps({"exhausted_until": until}))
+
+    async def no_discovery():
+        raise AssertionError("a quota-blocked run must not start discovery")
+
+    monkeypatch.setattr(pipeline, "discover", no_discovery)
+    report = await pipeline.run(tmp_path)
+
+    assert report.skipped and not report.passed
+    index = json.loads((tmp_path / "runs_index.json").read_text())["runs"]
+    assert len(index) == 1
+    entry = index[0]
+    assert entry["status"] == "quota" and entry["tokens"] == 0 and entry["passed"] is False
+    assert entry["funnel"]["candidates"] == 0 and entry["token_budget"] > 0
+    assert any("quota" in f for f in entry["failures"])
+    run = json.loads((tmp_path / "runs" / f"{entry['run_id']}.json").read_text())
+    assert run["quality"]["quota_exhausted"] is True and run["stages"] == []

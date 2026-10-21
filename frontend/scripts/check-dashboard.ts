@@ -20,6 +20,7 @@ import {
   passRate,
   runState,
 } from "../lib/metrics";
+import { RECORDS_START } from "../lib/constants";
 import type { RunSummary } from "../lib/data";
 
 const demo = process.env.CALI_DEMO === "1";
@@ -156,6 +157,12 @@ if (!demo) {
     "warn",
   );
   try {
+    // Without a fetch the comparison only knows about commits seen last time. Best effort, short timeout.
+    execSync("git fetch --quiet origin main", { cwd: root, stdio: "ignore", timeout: 8000 });
+  } catch {
+    /* offline: fall back to the last fetched ref */
+  }
+  try {
     const behind = Number(
       execSync("git rev-list --count HEAD..origin/main", { cwd: root, stdio: ["ignore", "pipe", "ignore"] })
         .toString()
@@ -170,21 +177,45 @@ if (!demo) {
   } catch {
     report("warn", "checkout vs origin/main", "could not compare (no origin/main ref)");
   }
+  // Every scout execution since run records began should have exactly one indexed run.
+  try {
+    const out = execSync(
+      "gh run list --workflow scout.yml --limit 200 --json createdAt,status",
+      { cwd: root, stdio: ["ignore", "pipe", "ignore"], timeout: 15000 },
+    ).toString();
+    const since = new Date(RECORDS_START).getTime();
+    const executed = (JSON.parse(out) as { createdAt: string; status: string }[]).filter(
+      (w) => w.status === "completed" && new Date(w.createdAt).getTime() >= since,
+    ).length;
+    const recorded = runs.filter((r) => new Date(r.started_at).getTime() >= since).length;
+    check(
+      recorded >= executed,
+      `every scout execution since ${RECORDS_START} has a run record (${recorded} recorded, ${executed} executed)`,
+      `${executed - recorded} execution(s) have no run record here: this checkout may be behind origin/main, or a run died before logging`,
+      "warn",
+    );
+  } catch {
+    /* gh missing or not logged in: skip silently */
+  }
 }
 
 // --- report ---------------------------------------------------------------------------
 const icon = { ok: "✓", warn: "!", error: "✗" } as const;
-console.log(`check:data  ${dataDir}${demo ? "  (demo)" : ""}`);
-for (const r of results) {
-  if (r.level === "ok") console.log(`  ${icon.ok} ${r.name}`);
-  else console.log(`  ${icon[r.level]} ${r.name}${r.detail ? `\n      ${r.detail}` : ""}`);
-}
-console.log(
-  `\nHeadline: ${runs.length} runs, latest ${latest.run_id}; ${today} UTC: ` +
-    `${shown} tokens of ${budget} (${Math.round((shown / budget) * 100)}%), ` +
-    `${pr.passed} passed / ${pr.failed} failed / ${pr.skipped} quota, pass rate ${pr.pct ?? "n/a"}%`,
-);
+const quiet = process.argv.includes("--quiet"); // used by `predev`: say nothing unless something is off
 const errors = results.filter((r) => r.level === "error").length;
 const warns = results.filter((r) => r.level === "warn").length;
-console.log(`${errors} error(s), ${warns} warning(s)`);
+if (!quiet || errors || warns) console.log(`check:data  ${dataDir}${demo ? "  (demo)" : ""}`);
+for (const r of results) {
+  if (r.level === "ok") {
+    if (!quiet) console.log(`  ${icon.ok} ${r.name}`);
+  } else console.log(`  ${icon[r.level]} ${r.name}${r.detail ? `\n      ${r.detail}` : ""}`);
+}
+if (!quiet) {
+  console.log(
+    `\nHeadline: ${runs.length} runs, latest ${latest.run_id}; ${today} UTC: ` +
+      `${shown} tokens of ${budget} (${Math.round((shown / budget) * 100)}%), ` +
+      `${pr.passed} passed / ${pr.failed} failed / ${pr.skipped} quota, pass rate ${pr.pct ?? "n/a"}%`,
+  );
+  console.log(`${errors} error(s), ${warns} warning(s)`);
+}
 process.exit(errors ? 1 : 0);

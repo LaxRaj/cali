@@ -37,4 +37,15 @@ def why_now(profile: dict, now: datetime | None = None) -> list[dict]:
     stage = (profile.get("funding_stage") or "").lower()
     if fresh and stage in EARLY_STAGES:
         out.append({"signal": "early_stage", "text": f"Newly found at {stage} stage", "source_url": url})
+    for sig in profile.get("signals") or []:
+        a = _age_days(sig.get("posted_at") or sig.get("seen_at", ""), now)
+        when = f" ({a}d ago)" if a is not None else ""
+        roles = ", ".join(sig.get("roles", [])[:3])
+        text = {
+            "hiring": f"Hiring{when}: {roles}" if roles else f"Hiring{when}",
+            "seeking_freelancer": f"Looking for freelancers{when}",
+            "launch": f"Launched{when}", "funding": f"Raised money{when}",
+        }.get(sig.get("type", ""), "")
+        if text:
+            out.append({"signal": sig["type"], "text": text, "source_url": sig.get("url", "")})
     return out
