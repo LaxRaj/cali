@@ -16,7 +16,7 @@ import ats
 import llm
 from enrich import EnrichResult, enrich_startup, fetch_pages, host_of, is_company_host
 from export import export_all
-from extractor import extract
+from extractor import extract_people
 from ledger import observations_for, record as record_observations
 from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows, upsert_edges, upsert_people, upsert_profile
 from models import Contact, Edge, Extraction, Person, StartupProfile
