@@ -16,7 +16,7 @@ import ats
 import llm
 from enrich import EnrichResult, enrich_startup, fetch_pages, host_of, is_company_host
 from export import export_all
-from extractor import extract
+from extractor import extract, extract_people
 from ledger import observations_for, record as record_observations
 from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows, upsert_edges, upsert_people, upsert_profile
 from models import Contact, Edge, Extraction, Person, StartupProfile
@@ -101,7 +101,7 @@ async def backfill(
         upsert_profile(
             s, db_dir=data_dir,
             extras={"score": rt.score, "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
-                    "contact_json": res.contact.model_dump_json(),
+                    "contact_json": res.contact.model_dump_json(), "gtm_json": json.dumps(res.gtm),
                     "signals_json": json.dumps(merge_signals(_prev_signals(rows, s.company_name), res.signals))},
         )
         upsert_people(people, db_dir=data_dir)

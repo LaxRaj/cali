@@ -342,6 +342,7 @@ async def run(data_dir: Path) -> RunReport:
                             "contact_json": res.contact.model_dump_json(),
                             "last_seen": now,
                             "signals_json": json.dumps(sigs),
+                            "gtm_json": json.dumps(res.gtm),
                         },
                     )
                     upsert_people(people, db_dir=data_dir)
@@ -350,7 +351,7 @@ async def run(data_dir: Path) -> RunReport:
                     findings.append(
                         {
                             **s.model_dump(), "source": source, "score": rt.score, "gaps": rt.gaps,
-                            "contact": res.contact.model_dump(), "signals": sigs,
+                            "contact": res.contact.model_dump(), "signals": sigs, "gtm": res.gtm,
                             "people": [p.model_dump() for p in people], "edges": [e.model_dump() for e in edges],
                         }
                     )

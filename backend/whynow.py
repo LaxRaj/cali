@@ -48,4 +48,9 @@ def why_now(profile: dict, now: datetime | None = None) -> list[dict]:
         }.get(sig.get("type", ""), "")
         if text:
             out.append({"signal": sig["type"], "text": text, "source_url": sig.get("url", "")})
+    for c in (profile.get("gtm") or {}).get("checks", []):
+        if c.get("name") == "hn_launch" and c.get("band") in ("hot", "warm"):
+            out.append({"signal": "hn_launch", "text": f"Launched on HN: {c['value']}", "source_url": c.get("evidence_url", "")})
+        elif c.get("name") == "webapp_live" and c.get("strength", 0) > 0 and c.get("stage") in ("live_no_pricing", "live_pricing"):
+            out.append({"signal": "live_product", "text": f"Product is live ({c['stage'].replace('_', ' ')})", "source_url": c.get("evidence_url", "")})
     return out

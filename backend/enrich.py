@@ -19,6 +19,7 @@ import phonenumbers
 from bs4 import BeautifulSoup
 
 import ats
+import gtm as gtm_mod
 from models import Contact, ContactItem, Edge, Extraction, Person
 from signals import make_signal
 
@@ -525,6 +526,7 @@ class EnrichResult:
     contact: Contact
     notes: list[str] = field(default_factory=list)
     signals: list[dict] = field(default_factory=list)  # open-role signals found on the company's own job board
+    gtm: dict = field(default_factory=dict)  # go-to-market freshness block (see gtm/)
 
 
 async def enrich_startup(
@@ -539,6 +541,7 @@ async def enrich_startup(
     team_budget: list[int] | None = None,
     github_fn=None,
     jobs_fn=None,
+    hn_fn=None,
 ) -> EnrichResult:
     """Find the company's site, collect published contacts + socials, read its team page, link people."""
     s = ex.startup
@@ -609,4 +612,15 @@ async def enrich_startup(
         except Exception as e:
             notes.append(f"github enrichment failed: {e}")
     new_ex = extraction_with_people(ex.model_copy(update={"startup": s.model_copy(update=updates)}), people, edges)
-    return EnrichResult(new_ex, contact, notes, await open_role_signals(facts, jobs_fn, notes))
+    signals = await open_role_signals(facts, jobs_fn, notes)
+    block: dict = {}
+    if gtm_mod.gtm_enabled():
+        try:
+            block = await asyncio.to_thread(
+                gtm_mod.run_gtm, website, s.company_name, [(f.url, f.html) for f in fetched], contact.socials, people, signals,
+                **({"hn_fn": hn_fn} if hn_fn else {}),
+            )
+            notes.append(f"gtm: {block['score']} ({block['stage']})")
+        except Exception as e:
+            notes.append(f"gtm failed: {e}")
+    return EnrichResult(new_ex, contact, notes, signals, block)
