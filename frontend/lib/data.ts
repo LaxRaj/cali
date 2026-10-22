@@ -39,6 +39,21 @@ export type Contact = {
   product_access?: { label: string; url: string }[];
   status?: string;
 };
+export type Trackback = {
+  entity_type: "startup" | "person" | "edge" | "contact";
+  entity_key: string;
+  field: string;
+  label: string;
+  value: string;
+  source_url: string;
+  evidence: string;
+  run_id: string;
+  first_seen: string;
+  last_seen: string;
+  seen_count: number;
+  confidence: number;
+};
+
 export type Edge = { src: string; rel: string; dst: string; evidence: string };
 
 export type Profile = {
@@ -58,6 +73,8 @@ export type Profile = {
   score?: number;
   score_parts?: Record<string, number>;
   gaps?: string[];
+  trackbacks?: Trackback[];
+  last_seen?: string;
   warm_path?: { via: string; summary: string; hops: Edge[] } | null;
   outreach?: { kind: string; status: string; to: string; updated: string }[];
   email_draft?: {
@@ -102,8 +119,24 @@ export type GraphEdge = {
   target: string;
   rel: string;
   evidence: string;
+  sources?: {
+    source_url: string;
+    run_id: string;
+    first_seen: string;
+    last_seen: string;
+  }[];
 };
-export type Graph = { nodes: GraphNode[]; edges: GraphEdge[] };
+export type InvestorCluster = {
+  investor: string;
+  companies: string[];
+  count: number;
+  co_investors: { name: string; shared: number }[];
+};
+export type Graph = {
+  nodes: GraphNode[];
+  edges: GraphEdge[];
+  investors?: InvestorCluster[];
+};
 
 export type Funnel = {
   candidates: number;

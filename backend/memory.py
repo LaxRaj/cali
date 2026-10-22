@@ -75,11 +75,19 @@ def _rows(table: str, db_dir) -> list[dict]:
     return db.open_table(table).to_arrow().to_pylist()
 
 
+def _first_discovered(company: str, db_dir) -> str:
+    """Earliest discovered_at already stored for this exact company name ("" if new). ISO strings sort chronologically."""
+    return next((r.get("discovered_at", "") for r in _rows(TABLE, db_dir) if r["company_name"] == company), "")
+
+
 def upsert_profile(profile: StartupProfile, db_dir: str | Path = DB_DIR, extras: dict | None = None) -> None:
     """Insert the profile, or replace the existing row with the same company_name.
 
     `extras` are additional flat columns (score, score_json, contact_json) kept beside the profile fields.
     """
+    first = _first_discovered(profile.company_name, db_dir)
+    if first and (not profile.discovered_at or first < profile.discovered_at):
+        profile = profile.model_copy(update={"discovered_at": first})  # re-finding a company must not reset when we found it
     row = {**profile.model_dump(), **(extras or {}), "vector": embed(profile_text(profile))}
     # a partial update (e.g. a backfill without signals) must not drop columns other stages wrote earlier
     prev = next((r for r in _rows(TABLE, db_dir) if r["company_name"] == profile.company_name), None)

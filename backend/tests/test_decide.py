@@ -249,3 +249,14 @@ def test_done_or_waiting_leads_sink_below_actionable_ones(tmp_path):
     mark("Acme", "passed", "", tmp_path, now=NOW)
     done = decide_lead(lead(score=95), load_outcomes(tmp_path)["acme"], NOW)["priority"]
     assert actionable > waiting > done
+
+
+def test_pass_reason_is_stored_validated_and_shown(tmp_path):
+    out = mark("Acme", "passed", "", tmp_path, now=NOW, reason="wrong_stage")
+    assert out["reason"] == "wrong_stage"
+    assert any("wrong stage" in r for r in decide_lead(lead(), load_outcomes(tmp_path)["acme"], NOW)["reasons"])
+    with pytest.raises(ValueError):
+        mark("Acme", "passed", data_dir=tmp_path, reason="because")
+    with pytest.raises(ValueError):
+        mark("Acme", "contacted", data_dir=tmp_path, reason="wrong_stage")
+    assert mark("Acme", "contacted", data_dir=tmp_path, now=NOW)["reason"] == ""
