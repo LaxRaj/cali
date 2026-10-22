@@ -29,7 +29,8 @@ from outcomes import load_outcomes
 
 DB_DIR = Path(__file__).parent / "data"
 OUTBOX, SUPPRESSED, STATE = "outbox.json", "suppressed.json", "outreach_state.json"
-STATUSES = ("queued", "drafted", "sending", "sent", "replied", "bounced", "opted_out", "complaint", "skipped")
+STATUSES = ("queued", "approved", "rejected", "drafted", "sending", "sent", "replied", "bounced", "opted_out", "complaint", "skipped")
+# queued = waiting for YOUR review. Only "approved" items are ever sent (by the Send button or the scheduled run).
 DAILY_CAP = int(os.environ.get("CALI_OUTREACH_DAILY_CAP", "15"))
 DOMAIN_COOLDOWN_DAYS = 30
 FOLLOW_UP_DAYS = 7
@@ -131,8 +132,14 @@ def queue_from_profiles(
     now: datetime | None = None,
     cap: int | None = None,
     sender: dict | None = None,
+    draft_fn=None,
 ) -> list[dict]:
-    """Enqueue drafts for leads the decider says to contact (or follow up). Returns the newly queued items."""
+    """Enqueue drafts for review for leads the decider says to contact (or follow up). Returns the newly queued items.
+
+    `draft_fn(profile) -> draft` builds the email fresh (current template, your sender details, optional Groq
+    polish); without it the profile's exported `email_draft` is used. Drafts you have not touched yet are rebuilt
+    the same way, so template improvements reach them; edited ones are never overwritten.
+    """
     if not enabled():
         return []
     now = now or datetime.now(timezone.utc)
@@ -149,10 +156,21 @@ def queue_from_profiles(
     }
     added: list[dict] = []
     ranked = sorted(profiles, key=lambda p: (p.get("decision") or {}).get("priority", 0), reverse=True)
+    if draft_fn:
+        for p in profiles:
+            old = outbox.get(item_key(p["company_name"], "first"))
+            if old and old["status"] == "queued" and not old.get("edited"):
+                fresh = draft_fn(p)
+                if fresh.get("to") == old["to"]:
+                    old.update(subject=fresh["subject"], body=fresh["body"], intent=fresh.get("intent", ""), intent_reason=fresh.get("intent_reason", ""))
     for p in ranked:
         action = (p.get("decision") or {}).get("action")
-        draft = p.get("email_draft") or {}
-        if action not in ("contact_now", "follow_up") or not draft.get("to") or not draft.get("to_source_url"):
+        if action not in ("contact_now", "follow_up") or (item_key(p["company_name"], "follow_up" if action == "follow_up" else "first") in outbox):
+            continue
+        if queued_today >= cap:
+            break
+        draft = (draft_fn(p) if draft_fn else p.get("email_draft")) or {}
+        if not draft.get("to") or not draft.get("to_source_url"):
             continue
         company, to = p["company_name"], draft["to"]
         if is_suppressed(to, suppressed) or _found_on_publisher(p):
@@ -192,6 +210,10 @@ def queue_from_profiles(
             "score": int(p.get("score") or 0),
             "specific": bool(p.get("likely_bottleneck", "").strip() or p.get("tech_stack")),
             "priority": (p.get("decision") or {}).get("priority", 0),
+            "reasons": list((p.get("decision") or {}).get("reasons") or []),  # shown on the review screen
+            "signals": [s.get("text", "") for s in (p.get("signals") or p.get("why_now") or [])][:3],
+            "edited": False,
+            "history": [],
         }
         recent_domains.add(domain_of(to))
         queued_today += 1
@@ -293,14 +315,113 @@ def gate(item: dict) -> list[str]:
     return problems
 
 
+def update_item(company: str, kind: str, data_dir: Path = DB_DIR, now: datetime | None = None, **fields) -> dict:
+    """Apply edits (subject / body) made by a human. The previous text goes to `history` so it can be undone."""
+    outbox = load_outbox(data_dir)
+    item = outbox[item_key(company, kind)]
+    if item["status"] not in ("queued", "approved"):
+        raise ValueError(f"cannot edit an email that is already {item['status']}")
+    now = now or datetime.now(timezone.utc)
+    changed = {k: v.strip() for k, v in fields.items() if k in ("subject", "body") and v.strip() != item[k]}
+    if changed:
+        item.setdefault("history", []).append({"subject": item["subject"], "body": item["body"], "at": now.isoformat(timespec="seconds"), "note": fields.get("note", "edit")})
+        item.update(changed, edited=True, status="queued", updated=now.isoformat(timespec="seconds"))  # an edit needs a fresh OK
+        save_outbox(outbox, data_dir)
+    return item
+
+
+def undo_edit(company: str, kind: str, data_dir: Path = DB_DIR) -> dict:
+    outbox = load_outbox(data_dir)
+    item = outbox[item_key(company, kind)]
+    if not item.get("history"):
+        raise ValueError("nothing to undo")
+    prev = item["history"].pop()
+    item.update(subject=prev["subject"], body=prev["body"], status="queued")
+    save_outbox(outbox, data_dir)
+    return item
+
+
+def approve(company: str, kind: str, data_dir: Path = DB_DIR, now: datetime | None = None) -> dict:
+    """You looked at this exact text and said yes. Refuses anything that would be rejected at send time."""
+    outbox = load_outbox(data_dir)
+    item = outbox[item_key(company, kind)]
+    if item["status"] != "queued":
+        raise ValueError(f"only emails waiting for review can be approved (this one is {item['status']})")
+    if problems := lint(item):
+        raise ValueError("fix first: " + "; ".join(problems))
+    return set_status(company, kind, "approved", data_dir, now, approved_at=(now or datetime.now(timezone.utc)).isoformat(timespec="seconds"))
+
+
+def reject(company: str, kind: str, data_dir: Path = DB_DIR, now: datetime | None = None, block_domain: bool = False) -> dict:
+    item = set_status(company, kind, "rejected", data_dir, now)
+    if block_domain:
+        suppress(domain_of(item["to"]), data_dir)
+    return item
+
+
+def deliver(item: dict, data_dir: Path, now: datetime, svc, rng: random.Random | None = None, to_override: str = "") -> str:
+    """Send one reviewed email. The 'sending' status is saved BEFORE the API call so a crash can never double-send.
+    With `to_override` it is a rehearsal: sent to that address with [TEST] in the subject, nothing else recorded."""
+    import gmail_sync
+
+    if to_override:
+        gmail_sync.send_item(svc, {**item, "to": to_override, "subject": "[TEST] " + item["subject"], "kind": "first", "gmail_thread_id": ""})
+        return f"test copy sent to {to_override} (nothing recorded)"
+    set_status(item["company"], item["kind"], "sending", data_dir, now)
+    try:
+        sent = gmail_sync.send_item(svc, item)
+    except Exception as e:  # unknown whether Gmail accepted it: stop and let a human check
+        set_paused(True, f"send to {item['to']} failed ({type(e).__name__}); check Gmail Sent, then fix the item", data_dir)
+        raise RuntimeError(f"send failed, agent paused: {e}") from e
+    set_status(item["company"], item["kind"], "sent", data_dir, now, gmail_message_id=sent["id"], gmail_thread_id=sent["threadId"])
+    state = load_state(data_dir)
+    state.update(last_sent=now.isoformat(timespec="seconds"), next_send_at=(now + timedelta(minutes=(rng or random.Random()).uniform(*GAP_MINUTES))).isoformat(timespec="seconds"))
+    save_state(state, data_dir)
+    return f"sent to {item['to']} ({item['company']}, {item['kind']})"
+
+
+def send_now(company: str, kind: str, data_dir: Path = DB_DIR, now: datetime | None = None, svc=None, to_override: str = "") -> str:
+    """The review screen's Send button: you are here, so the window and random gap don't apply, but pause,
+    suppression, lint, signing and the warm-up cap still do. Raises ValueError with the reason when refused."""
+    import gmail_sync
+    from draft import load_sender
+
+    if not enabled():
+        raise ValueError("CALI_OUTREACH=0: outreach is switched off")
+    now = now or datetime.now().astimezone()
+    data_dir = Path(data_dir)
+    outbox = load_outbox(data_dir)
+    item = outbox[item_key(company, kind)]
+    if item["status"] not in ("queued", "approved"):
+        raise ValueError(f"already {item['status']}")
+    if (state := load_state(data_dir))["paused"]:
+        raise ValueError(f"the agent is paused: {state['reason']} (outreach.py resume)")
+    if not load_sender(data_dir)["name"]:
+        raise ValueError("set your name in data/me.json first so the email is signed")
+    if problems := lint(item):
+        raise ValueError("fix first: " + "; ".join(problems))
+    if is_suppressed(item["to"], load_suppressed(data_dir)):
+        raise ValueError(f"{item['to']} is on your never-contact list")
+    if not to_override and sent_today(outbox, now) >= ramp_cap(outbox, now):
+        raise ValueError(f"today's warm-up cap is reached ({ramp_cap(outbox, now)} a day, rising by {RAMP_STEP} each day); it stays approved for later")
+    if to_override:
+        return deliver(item, data_dir, now, svc or gmail_sync.service(), to_override=to_override)
+    if item["status"] == "queued":
+        approve(company, kind, data_dir, now)
+        item = load_outbox(data_dir)[item_key(company, kind)]
+    return deliver(item, data_dir, now, svc or gmail_sync.service())
+
+
 def run(
     data_dir: Path = DB_DIR,
     now: datetime | None = None,
     dry_run: bool = False,
     svc=None,
     rng: random.Random | None = None,
+    draft_fn=None,
 ) -> str:
-    """One scheduler tick: sync replies, queue new leads, then send at most ONE vetted email if timing allows.
+    """One scheduler tick: sync replies, queue new leads for your review, and send at most ONE email you have
+    already APPROVED if timing allows. It never sends anything you have not approved.
 
     Without CALI_OUTREACH_SEND=1 (or with dry_run) nothing is sent: it makes Gmail drafts / reports instead.
     Call it every ~20 minutes from cron; the ramp, window and random gaps decide whether this tick sends.
@@ -327,7 +448,7 @@ def run(
         return f"paused: {state['reason']} (fix it, then: outreach.py resume)"
 
     sender = load_sender(data_dir)
-    queue_from_profiles(_read(data_dir / "profiles.json", []), data_dir, now, sender=sender)
+    queue_from_profiles(_read(data_dir / "profiles.json", []), data_dir, now, sender=sender, draft_fn=draft_fn)
     if not sending and not dry_run:
         return gmail_sync.push(data_dir, svc=svc) + " (CALI_OUTREACH_SEND!=1: drafts only)"
 
@@ -342,26 +463,22 @@ def run(
         return f"today's ramp cap reached ({ramp_cap(outbox, now)})"
 
     suppressed = load_suppressed(data_dir)
-    for item in sorted((i for i in outbox.values() if i["status"] == "queued"), key=lambda i: i.get("priority", 0), reverse=True):
-        problems = lint(item) + gate(item) + (["suppressed"] if is_suppressed(item["to"], suppressed) else [])
+    # Only emails you approved. The text you approved is what goes out; anything that no longer passes the
+    # rules goes back to the review screen instead of being sent.
+    for item in sorted((i for i in outbox.values() if i["status"] == "approved"), key=lambda i: i.get("priority", 0), reverse=True):
+        problems = lint(item) + (["suppressed"] if is_suppressed(item["to"], suppressed) else [])
         if problems:
             if not dry_run:
-                set_status(item["company"], item["kind"], "skipped", data_dir, now, skip_reason="; ".join(problems))
+                set_status(item["company"], item["kind"], "queued", data_dir, now, review_note="; ".join(problems))
             continue
         if dry_run:
             return f"would send to {item['to']} ({item['company']}, {item['kind']}, {item['intent']})"
-        set_status(item["company"], item["kind"], "sending", data_dir, now)  # persisted BEFORE the API call: no double-send
         try:
-            sent = gmail_sync.send_item(svc, item)
-        except Exception as e:  # unknown whether Gmail accepted it: stop and let a human check
-            set_paused(True, f"send to {item['to']} failed ({type(e).__name__}); check Gmail Sent, then fix the item", data_dir)
-            return f"send failed, paused: {e}"
-        set_status(item["company"], item["kind"], "sent", data_dir, now, gmail_message_id=sent["id"], gmail_thread_id=sent["threadId"])
-        state = load_state(data_dir)
-        state.update(last_sent=now.isoformat(timespec="seconds"), next_send_at=(now + timedelta(minutes=rng.uniform(*GAP_MINUTES))).isoformat(timespec="seconds"))
-        save_state(state, data_dir)
-        return f"sent to {item['to']} ({item['company']}, {item['kind']})"
-    return "nothing eligible to send"
+            return deliver(item, data_dir, now, svc, rng)
+        except RuntimeError as e:
+            return str(e)
+    waiting = sum(1 for i in outbox.values() if i["status"] == "queued")
+    return f"nothing approved to send ({waiting} waiting for your review: uv run python review.py)"
 
 
 def status_line(data_dir: Path = DB_DIR, now: datetime | None = None) -> str:
@@ -374,6 +491,23 @@ def status_line(data_dir: Path = DB_DIR, now: datetime | None = None) -> str:
         f"{'PAUSED: ' + state['reason'] if state['paused'] else 'running'} | sending={'on' if send_enabled() else 'off (drafts only)'} | "
         f"today {sent_today(outbox, now)}/{ramp_cap(outbox, now)} | window={'open' if in_send_window(now) else 'closed'} | {counts}"
     )
+
+
+def make_draft_fn(data_dir: Path = DB_DIR, use_llm: bool = True):
+    """Fresh draft per profile: current template + your sender details + (when a Groq key is set) a better opening."""
+    from draft import build_draft, load_sender
+    import draft_llm
+
+    sender, cache = load_sender(data_dir), {}
+    polish = use_llm and draft_llm.available()
+
+    def fn(profile: dict) -> dict:
+        key = profile["company_name"]
+        if key not in cache:
+            cache[key] = build_draft(profile, profile.get("warm_path"), sender, draft_llm.polish(profile) if polish else None)
+        return cache[key]
+
+    return fn
 
 
 def main() -> None:
@@ -399,8 +533,8 @@ def main() -> None:
         from draft import load_sender
 
         profiles = _read(a.data_dir / "profiles.json", [])
-        added = queue_from_profiles(profiles, a.data_dir, sender=load_sender(a.data_dir))
-        print(f"queued {len(added)}" + ("" if enabled() else " (CALI_OUTREACH=0: disabled)"))
+        added = queue_from_profiles(profiles, a.data_dir, sender=load_sender(a.data_dir), draft_fn=make_draft_fn(a.data_dir))
+        print(f"queued {len(added)} for your review" + ("" if enabled() else " (CALI_OUTREACH=0: disabled)") + ("; now run: uv run python review.py" if added else ""))
         for i in added:
             print(f"  {i['company']:<24} {i['kind']:<9} {i['intent']:<11} -> {i['to']}")
     elif a.cmd in ("push", "sync"):
@@ -408,7 +542,7 @@ def main() -> None:
 
         print(getattr(gmail_sync, a.cmd)(a.data_dir))
     elif a.cmd == "run":
-        print(run(a.data_dir, dry_run=a.dry_run))
+        print(run(a.data_dir, dry_run=a.dry_run, draft_fn=make_draft_fn(a.data_dir)))
     elif a.cmd == "pause":
         set_paused(True, a.reason, a.data_dir)
     elif a.cmd == "resume":

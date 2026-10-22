@@ -13,6 +13,13 @@ const INTENT_LABEL = {
   build_with: "build with them",
 } as const;
 
+/** Outbox statuses in plain words; "queued" means nothing is sent until you approve it in the review screen. */
+const STATUS_LABEL: Record<string, string> = {
+  queued: "waiting for your review",
+  approved: "approved, not sent yet",
+  rejected: "rejected",
+};
+
 export function EmailDraft({
   draft,
   outreach,
@@ -48,7 +55,9 @@ export function EmailDraft({
       )}
       {outreach && outreach.length > 0 && (
         <p className="mt-1 font-semibold">
-          {outreach.map((o) => `${o.kind}: ${o.status}`).join(" · ")}
+          {outreach
+            .map((o) => `${o.kind}: ${STATUS_LABEL[o.status] ?? o.status}`)
+            .join(" · ")}
         </p>
       )}
       <p className="mt-2 font-semibold">{draft.subject}</p>
