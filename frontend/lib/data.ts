@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import type { OutreachEvent, OutreachState } from "./outreach";
 
 export type Person = {
   name: string;
@@ -20,11 +21,14 @@ export type Decision = {
   reasons: string[];
   next_step: string;
   provider: string;
+  due?: string;
+  overdue?: boolean;
 };
 export type Outcome = {
   company: string;
   status: string;
   note: string;
+  reason?: string;
   updated: string;
 };
 
@@ -71,6 +75,7 @@ export type Profile = {
   score?: number;
   score_parts?: Record<string, number>;
   gaps?: string[];
+  outreach?: OutreachState & { events: OutreachEvent[] };
   trackbacks?: Trackback[];
   last_seen?: string;
   warm_path?: { via: string; summary: string; hops: Edge[] } | null;
@@ -222,6 +227,8 @@ function readJson<T>(...parts: string[]): T | null {
     return null;
   }
 }
+
+export const dataPath = (...parts: string[]) => path.join(DATA_DIR, ...parts);
 
 export const readMeta = () => readJson<{ demo?: boolean }>("meta.json");
 export const readIndex = (): RunSummary[] =>
