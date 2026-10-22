@@ -242,6 +242,40 @@ def test_your_outcomes_override_the_policy(tmp_path):
         mark("Acme", "maybe", data_dir=tmp_path)
 
 
+def _state(*events):
+    import outreach
+
+    return outreach.fold(list(events), NOW)
+
+
+def _ev(i, type, days_ago, **kw):
+    return {"id": f"e{i}", "company": "Acme", "type": type, "at": (NOW - timedelta(days=days_ago)).isoformat(), **kw}
+
+
+def test_outreach_log_drives_follow_ups_with_a_due_date():
+    waiting = decide_lead(lead(), state=_state(_ev(1, "sent", 2)))
+    assert (waiting["action"], waiting["overdue"]) == ("watch", False) and waiting["due"].startswith("2026-10-25")
+    due = decide_lead(lead(), state=_state(_ev(1, "sent", 8)))
+    assert (due["action"], due["overdue"]) == ("follow_up", True) and "touch 2" in due["next_step"]
+    # 3 sends with no reply: stop nagging
+    done = decide_lead(lead(), state=_state(_ev(1, "sent", 30), _ev(2, "sent", 20), _ev(3, "sent", 10)))
+    assert done["action"] == "watch" and any("3 touches" in r for r in done["reasons"])
+
+
+def test_unanswered_reply_is_hot_and_bounce_needs_a_new_route():
+    reply = decide_lead(lead(), state=_state(_ev(1, "sent", 10), _ev(2, "replied", 5)))
+    assert (reply["action"], reply["urgency"]) == ("follow_up", "hot") and reply["next_step"].startswith("Reply")
+    bounce = decide_lead(lead(), state=_state(_ev(1, "sent", 3, to="hi@acme.io"), _ev(2, "bounced", 3)))
+    assert bounce["action"] == "enrich_more" and any("hi@acme.io" in r for r in bounce["reasons"])
+
+
+def test_snooze_and_pass_reason_come_from_the_log():
+    snoozed = decide_lead(lead(), state=_state(_ev(1, "sent", 9), _ev(2, "snooze", 1, until=(NOW + timedelta(days=5)).isoformat())))
+    assert snoozed["action"] == "watch" and "Snoozed until 2026-10-25" in snoozed["next_step"] and not snoozed["overdue"]
+    passed = decide_lead(lead(), state=_state(_ev(1, "passed", 1, reason="too_big")))
+    assert passed["action"] == "skip" and any("too big" in r for r in passed["reasons"])
+
+
 def test_done_or_waiting_leads_sink_below_actionable_ones(tmp_path):
     actionable = decide_lead(lead(score=60), now=NOW)["priority"]
     mark("Acme", "replied", "", tmp_path, now=NOW - timedelta(days=1))

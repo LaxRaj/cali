@@ -103,6 +103,27 @@ def test_profiles_carry_a_decision_and_your_outcome(tmp_path):
     assert got["Told"]["decision"]["action"] == "skip" and got["Told"]["outcome"]["status"] == "passed"
 
 
+def test_profiles_carry_the_folded_outreach_state_and_timeline(tmp_path):
+    from datetime import datetime, timedelta, timezone
+
+    import outreach
+
+    d = tmp_path / "db5"
+    contact = json.dumps({"emails": [{"value": "hi@a.io", "kind": "general", "source_url": "u"}], "phones": [], "socials": {}})
+    for name in ("Quiet", "Chased"):
+        upsert_profile(prof(name), db_dir=d, extras={"score": 85, "score_json": json.dumps({"parts": {}, "gaps": []}), "contact_json": contact})
+    now = datetime(2026, 10, 20, tzinfo=timezone.utc)
+    outreach.append(outreach.new_event("Chased", "sent", now - timedelta(days=9), subject="Hi", to="hi@a.io", to_source_url="u"), d)
+    outreach.append(outreach.new_event("Chased", "note", now - timedelta(days=8), note="saw their talk"), d)
+
+    got = {p["company_name"]: p for p in build_profiles(d, now=now)}
+    assert got["Quiet"]["outreach"]["status"] == "none" and got["Quiet"]["outreach"]["events"] == []
+    o = got["Chased"]["outreach"]
+    assert (o["status"], o["touches"], o["overdue"]) == ("contacted", 1, True)
+    assert [e["type"] for e in o["events"]] == ["sent", "note"] and o["events"][0]["to_source_url"] == "u"
+    assert got["Chased"]["decision"]["action"] == "follow_up" and got["Chased"]["decision"]["overdue"] is True
+
+
 def test_profiles_and_graph_edges_carry_ledger_trackbacks(tmp_path):
     import ledger
 
