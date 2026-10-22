@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, type ReactNode } from "react";
 import type { Contact, Profile } from "@/lib/data";
 import { fmtDate } from "@/lib/format";
 import { CopyPitchButton } from "./copy-pitch-button";
@@ -26,9 +26,12 @@ const PART_MAX: Record<string, number> = {
 export function StartupCard({
   p,
   full = false,
+  badge,
 }: {
   p: Profile;
   full?: boolean;
+  /** Extra header chip, e.g. where the lead stands in your outreach. */
+  badge?: ReactNode;
 }) {
   const stageKey = (
     p.funding_stage ?? ""
@@ -260,6 +263,7 @@ export function StartupCard({
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1">
           <ScoreBadge score={p.score} />
+          {badge}
           {p.funding_stage && (
             <span
               className={`border-2 border-zinc-900 px-2 py-0.5 text-[11px] font-semibold uppercase ${tone.panel} ${tone.border}`}

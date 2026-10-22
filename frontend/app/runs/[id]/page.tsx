@@ -6,7 +6,7 @@ import { StageTimeline } from "@/components/charts/stage-timeline";
 import { Led } from "@/components/ui/led";
 import { Panel } from "@/components/ui/panel";
 import { Stat } from "@/components/ui/stat";
-import { readIndex, readRun } from "@/lib/data";
+import { readIndex, readProfiles, readRun } from "@/lib/data";
 import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
 import { dailyBudget, dailyTokens, dayKey, runState } from "@/lib/metrics";
 
@@ -21,6 +21,10 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
   if (!run) notFound();
   const state = runState(run);
   const index = readIndex();
+  // Accepted startups link to their dossier when they made it into the store.
+  const slugs = new Map(
+    readProfiles().map((p) => [p.company_name.trim().toLowerCase(), p.slug]),
+  );
   const day = dayKey(run.started_at);
   const budget = dailyBudget(index, day);
   const dayTotal = dailyTokens(index, day);
@@ -181,8 +185,19 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
               >
                 <div className="flex flex-wrap justify-between gap-2">
                   <span>
-                    <span className="font-semibold">{a.company}</span>{" "}
-                    <span className="text-zinc-500">via {a.source}</span>
+                    {slugs.get(a.company.trim().toLowerCase()) ? (
+                      <Link
+                        href={`/startups/${slugs.get(a.company.trim().toLowerCase())}`}
+                        className="font-semibold underline underline-offset-2 hover:no-underline"
+                      >
+                        {a.company}
+                      </Link>
+                    ) : (
+                      <span className="font-semibold">{a.company}</span>
+                    )}{" "}
+                    <span className="text-zinc-600 dark:text-zinc-400">
+                      via {a.source}
+                    </span>
                   </span>
                   <span className="text-xs text-zinc-600 dark:text-zinc-400">
                     {a.score !== undefined && (
