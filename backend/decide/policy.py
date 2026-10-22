@@ -7,8 +7,9 @@ outcome you recorded. Output: action (contact_now | enrich_more | watch | skip |
 
 from datetime import datetime, timezone
 
+from outreach import LEGACY_TYPE, fold
+
 HOT_DAYS, WARM_DAYS = 7, 21
-FOLLOW_UP_DAYS = 7
 
 
 def _age_days(iso: str, now: datetime) -> float | None:
@@ -21,8 +22,21 @@ def _age_days(iso: str, now: datetime) -> float | None:
     return max((now - t).total_seconds() / 86400, 0.0)
 
 
-def decide_lead(profile: dict, outcome: dict | None = None, now: datetime | None = None) -> dict:
+def _state_from_outcome(outcome: dict | None, now: datetime) -> dict:
+    """Outreach state for callers that only have the legacy single-record outcome."""
+    if not outcome:
+        return fold([], now)
+    etype = LEGACY_TYPE.get(outcome.get("status", ""))
+    if not etype:
+        return fold([], now)
+    event = {"id": "legacy", "company": outcome.get("company", ""), "type": etype, "at": outcome.get("updated", ""), "reason": outcome.get("reason", "")}
+    return fold([event], now)
+
+
+def decide_lead(profile: dict, outcome: dict | None = None, now: datetime | None = None, state: dict | None = None) -> dict:
+    """`state` is the folded outreach log (outreach.fold); without it the legacy `outcome` record is used."""
     now = now or datetime.now(timezone.utc)
+    state = state or _state_from_outcome(outcome, now)
     score = int(profile.get("score") or 0)
     contact = profile.get("contact") or {}
     emails = contact.get("emails") or []
@@ -40,20 +54,37 @@ def decide_lead(profile: dict, outcome: dict | None = None, now: datetime | None
     def result(action: str, urgency: str, next_step: str, weight: float = 1.0) -> dict:
         base = score * 0.6 + {"hot": 30, "warm": 15, "cold": 0}[fresh] + (10 if direct else 5 if social_people else 0)
         priority = round(base * weight, 1)  # leads that are done or waiting on someone else sink in the ranking
-        return {"action": action, "urgency": urgency, "priority": priority, "reasons": reasons, "next_step": next_step, "provider": "policy"}
+        return {
+            "action": action, "urgency": urgency, "priority": priority, "reasons": reasons, "next_step": next_step, "provider": "policy",
+            "due": state["next_due"], "overdue": state["overdue"],
+        }
 
-    # 1) Your own outcome always wins.
-    status = (outcome or {}).get("status")
+    # 1) Your own outreach always wins.
+    status = state["status"]
     if status in ("passed", "won", "meeting"):
-        why = (outcome or {}).get("reason", "").replace("_", " ")
+        why = state.get("pass_reason", "").replace("_", " ")
         reasons.append(f"you marked this '{status}'" + (f" ({why})" if why else ""))
         return result("skip", "cold", "No action needed", weight=0.2)
+    if status == "bounced":
+        reasons.append(f"your email to {state['last_to'] or 'them'} bounced")
+        return result("enrich_more", "warm", "Find another published contact route", weight=0.8)
     if status in ("contacted", "replied"):
-        since = _age_days((outcome or {}).get("updated", ""), now)
-        reasons.append(f"you {status} on {(outcome or {}).get('updated', '')[:10]}")
-        if status == "contacted" and since is not None and since >= FOLLOW_UP_DAYS:
-            return result("follow_up", "warm", "Follow up: no reply recorded in over a week")
+        last = state["replied_at"] if status == "replied" and state["replied_at"] > state["last_contact"] else state["last_contact"]
+        reasons.append(f"you {'contacted' if status == 'contacted' else 'heard back'} on {(last or state['last_contact'])[:10]} (touch {state['touches']})")
+        if state["snoozed"]:
+            reasons.append(f"snoozed until {state['next_due'][:10]}")
+            return result("watch", "cold", f"Snoozed until {state['next_due'][:10]}", weight=0.3)
+        if state["overdue"]:
+            if status == "replied":
+                return result("follow_up", "hot", "Reply: they answered and it has been waiting")
+            return result("follow_up", "warm", f"Follow up (touch {state['touches'] + 1}): no reply since {state['last_contact'][:10]}")
+        if state["exhausted"]:
+            reasons.append(f"{state['touches']} touches without a reply")
+            return result("watch", "cold", "No reply after several touches: leave it for now", weight=0.2)
         return result("watch", "cold", "Waiting on their reply" if status == "contacted" else "Continue the conversation", weight=0.4)
+    if state["snoozed"]:
+        reasons.append(f"snoozed until {state['next_due'][:10]}")
+        return result("watch", "cold", f"Snoozed until {state['next_due'][:10]}", weight=0.3)
 
     # 2) Otherwise decide from fit, freshness and reachability.
     reasons.append(f"lead score {score}")

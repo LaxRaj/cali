@@ -18,6 +18,7 @@ from export import export_all  # noqa: E402
 from memory import upsert_edges, upsert_people, upsert_profile  # noqa: E402
 from models import Contact, ContactItem, Edge, Person, StartupProfile  # noqa: E402
 from outcomes import mark  # noqa: E402
+from outreach import append, new_event  # noqa: E402
 from rating import rate  # noqa: E402
 
 OUT = Path(__file__).resolve().parents[2] / "frontend" / "demo-data"
@@ -176,6 +177,26 @@ def main() -> None:
         mark("Vectorly", "contacted", "emailed team@; no reply yet", tmp, now=now - timedelta(days=9))  # -> follow_up
         mark("Lumen Index", "replied", "asked for a call next week", tmp, now=now - timedelta(days=2))
         mark("Fernwood", "passed", "healthcare, not our focus", tmp, now=now - timedelta(days=5))
+        # Richer history through the event log (the three marks above are read as legacy events and merged in).
+        def touch(company: str, kind: str, days_ago: int, **fields) -> None:
+            slug = company.lower().replace(" ", "")
+            if kind == "sent":
+                fields = {"channel": "email", "subject": f"{company}: a thought on your stack", "to": f"team@{slug}.example",
+                          "to_source_url": f"https://{slug}.example/contact", **fields}
+            append(new_event(company, kind, now - timedelta(days=days_ago), **fields), tmp)
+
+        touch("Vectorly", "sent", 16)  # + the legacy 9-day-old 'contacted' = 2 touches, follow-up overdue
+        touch("Lumen Index", "sent", 6)  # + legacy 'replied' 2 days ago = a reply waiting for an answer
+        touch("Paperplane AI", "sent", 3)  # waiting inside the follow-up window
+        for days in (20, 13, 6):
+            touch("Corvid", "sent", days)  # three touches, no reply: stop nagging
+        touch("Tidepool Labs", "sent", 10)
+        touch("Tidepool Labs", "replied", 8)
+        touch("Tidepool Labs", "meeting", 3, note="30 min call booked")
+        touch("Basalt", "sent", 4)
+        touch("Basalt", "bounced", 4)
+        touch("Quillbase", "sent", 9)
+        touch("Quillbase", "snooze", 1, until=(now + timedelta(days=6)).isoformat(timespec="seconds"))
         export_all(tmp)
         shutil.copy(tmp / "profiles.json", OUT / "profiles.json")
         shutil.copy(tmp / "graph.json", OUT / "graph.json")

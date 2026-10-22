@@ -11,6 +11,7 @@ from draft import build_draft
 from investors import investor_clusters
 from ledger import TABLE as LEDGER
 from outcomes import load_outcomes
+from outreach import EVENT_FIELDS, by_company, fold, load_events
 from paths import find_path, load_known
 from whynow import why_now
 
@@ -49,6 +50,7 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     people = _rows(PEOPLE, db_dir)
     edges = _rows(EDGES, db_dir)
     outcomes = load_outcomes(db_dir)
+    events = by_company(load_events(db_dir))
     known = load_known(db_dir)
     trackbacks = _trackbacks(db_dir)
     out = []
@@ -81,7 +83,10 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     for p in out:
         outcome = outcomes.get(p["company_name"].strip().lower())
         p["outcome"] = outcome or None
-        p["decision"] = decide_lead(p, outcome, now)
+        mine = events.get(_key(p["company_name"]), [])
+        state = fold(mine, now)
+        p["outreach"] = {**state, "events": [{f: e[f] for f in EVENT_FIELDS if f in e} for e in sorted(mine, key=lambda e: e["at"])]}
+        p["decision"] = decide_lead(p, outcome, now, state=state)
         p["trackbacks"] = trackbacks.get(canonical_key(p["company_name"]), [])
         p["why_now"] = why_now(p, now)
         p["warm_path"] = find_path(edges, known, p["company_name"])

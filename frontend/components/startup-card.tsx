@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Fragment, type ReactNode } from "react";
 import type { Contact, Profile } from "@/lib/data";
 import { fmtDate } from "@/lib/format";
 import { CopyPitchButton } from "./copy-pitch-button";
@@ -25,9 +26,12 @@ const PART_MAX: Record<string, number> = {
 export function StartupCard({
   p,
   full = false,
+  badge,
 }: {
   p: Profile;
   full?: boolean;
+  /** Extra header chip, e.g. where the lead stands in your outreach. */
+  badge?: ReactNode;
 }) {
   const stageKey = (
     p.funding_stage ?? ""
@@ -35,6 +39,187 @@ export function StartupCard({
   const tone = TONES[STAGE_TONE[stageKey] ?? "amber"];
   const contact = p.contact ?? {};
   const meta = [p.hq, p.funding_amount].filter(Boolean).join(" · ");
+
+  const sections = {
+    product: (
+      <p>{p.core_product}</p>
+    ),
+    tech: (
+      p.tech_stack.length > 0 && (
+        <ul className="flex flex-wrap gap-1.5" aria-label="Tech stack">
+          {p.tech_stack.map((t) => (
+            <li
+              key={t}
+              className="border border-zinc-900 bg-sky-100 px-1.5 text-xs dark:border-sky-400/50 dark:bg-sky-950/50 dark:text-sky-200"
+            >
+              {t}
+            </li>
+          ))}
+        </ul>
+      )
+    ),
+    bottleneck: (
+      p.likely_bottleneck.trim() && (
+        <p className="text-xs">
+          <span className="font-semibold uppercase tracking-wide text-rose-700 dark:text-rose-300">
+            bottleneck ›{" "}
+          </span>
+          {p.likely_bottleneck}
+        </p>
+      )
+    ),
+    contact: (
+      <ContactBlock contact={contact} full={full} />
+    ),
+    pitch: (
+      p.value_prop_pitch.trim() && (
+        <div className="border-l-4 border-emerald-500 bg-emerald-50 p-2 dark:bg-emerald-950/30">
+          <div className="mb-1 flex items-center justify-between gap-2">
+            <span className="text-xs font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
+              pitch
+            </span>
+            <CopyPitchButton pitch={p.value_prop_pitch} />
+          </div>
+          <p>{p.value_prop_pitch}</p>
+        </div>
+      )
+    ),
+    warm: (
+      p.warm_path && (
+        <div className="text-xs">
+          <span className="font-semibold uppercase tracking-wide text-violet-700 dark:text-violet-300">
+            warm path ›{" "}
+          </span>
+          {p.warm_path.summary}
+          {full && (
+            <ol className="mt-1 space-y-1">
+              {p.warm_path.hops.map((h, i) => (
+                <li key={i}>
+                  {h.src}{" "}
+                  <span className="font-semibold text-violet-700 dark:text-violet-300">
+                    {h.rel.replace("_", " ")}
+                  </span>{" "}
+                  {h.dst}
+                  <blockquote className="text-zinc-600 dark:text-zinc-400">
+                    “{h.evidence}”
+                  </blockquote>
+                </li>
+              ))}
+            </ol>
+          )}
+        </div>
+      )
+    ),
+    draft: (
+      full && p.email_draft && <EmailDraft draft={p.email_draft} />
+    ),
+    whynow: (
+      p.why_now && p.why_now.length > 0 && (
+        <ul aria-label="Why now" className="space-y-0.5 text-xs">
+          {p.why_now.map((w) => (
+            <li key={w.signal}>
+              <span className="font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-300">
+                why now ›{" "}
+              </span>
+              <a
+                href={w.source_url}
+                target="_blank"
+                rel="noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                {w.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    ),
+    score: (
+      p.score_parts && Object.keys(p.score_parts).length > 0 && (
+        <p className="text-xs text-zinc-600 dark:text-zinc-400">
+          <span className="font-semibold uppercase tracking-wide">
+            score ›{" "}
+          </span>
+          {Object.entries(p.score_parts)
+            .map(([k, v]) => `${k} ${v}/${PART_MAX[k] ?? "?"}`)
+            .join(" · ")}
+        </p>
+      )
+    ),
+    gaps: (
+      p.gaps && p.gaps.length > 0 && (
+        <p className="text-xs text-zinc-600 dark:text-zinc-400">
+          <span className="font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-300">
+            missing ›{" "}
+          </span>
+          {p.gaps.join(" · ")}
+        </p>
+      )
+    ),
+    people: (
+      full && p.people.length > 0 && (
+        <section aria-label="People">
+          <h4 className="mb-1 text-xs font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
+            people
+          </h4>
+          <ul className="space-y-1.5">
+            {p.people.map((x) => (
+              <li key={x.name}>
+                <span className="font-semibold">{x.name}</span>{" "}
+                <span className="text-zinc-600 dark:text-zinc-400">· {x.role}</span>{" "}
+                <PersonLinks person={x} />
+                <blockquote className="text-xs text-zinc-600 dark:text-zinc-400">
+                  “{x.evidence}”
+                </blockquote>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    ),
+    edges: (
+      full && p.edges.length > 0 && (
+        <section aria-label="Connections">
+          <h4 className="mb-1 text-xs font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
+            connections
+          </h4>
+          <ul className="space-y-1">
+            {p.edges.map((e, i) => (
+              <li key={i}>
+                {e.src}{" "}
+                <span className="font-semibold text-violet-700 dark:text-violet-300">
+                  {e.rel.replace("_", " ")}
+                </span>{" "}
+                {e.dst}
+                <blockquote className="text-xs text-zinc-600 dark:text-zinc-400">
+                  “{e.evidence}”
+                </blockquote>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    ),
+    counts: (
+      !full && (p.people.length > 0 || p.edges.length > 0) && (
+        <p className="flex flex-wrap items-center gap-x-2 text-xs text-zinc-600 dark:text-zinc-400">
+          <span>
+            {p.people.length} {p.people.length === 1 ? "person" : "people"} ·{" "}
+            {p.edges.length}{" "}
+            {p.edges.length === 1 ? "connection" : "connections"}
+          </span>
+          {p.people.slice(0, 3).map((x) => (
+            <PersonLinks key={x.name} person={x} />
+          ))}
+        </p>
+      )
+    ),
+  };
+
+  // Compact cards read as a summary; the dossier leads with who to write to and why now, then the draft.
+  const order: (keyof typeof sections)[] = full
+    ? ["product", "tech", "bottleneck", "whynow", "people", "contact", "draft", "pitch", "warm", "score", "gaps", "edges"]
+    : ["product", "tech", "bottleneck", "contact", "pitch", "warm", "whynow", "score", "gaps", "counts"];
 
   return (
     <article className="border-2 border-zinc-900 bg-white shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-emerald-400/60 dark:bg-black dark:shadow-emerald-400/30">
@@ -52,7 +237,7 @@ export function StartupCard({
               </Link>
             )}
           </h3>
-          <p className="mt-0.5 text-xs text-zinc-500">
+          <p className="mt-0.5 text-xs text-zinc-600 dark:text-zinc-400">
             {p.website ? (
               <a
                 href={p.website}
@@ -71,13 +256,14 @@ export function StartupCard({
             href={p.source_url}
             target="_blank"
             rel="noreferrer"
-            className="text-xs text-zinc-500 underline-offset-2 hover:underline"
+            className="text-xs text-zinc-600 dark:text-zinc-400 underline-offset-2 hover:underline"
           >
             via {safeHost(p.source_url)} · {fmtDate(p.discovered_at)}
           </a>
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1">
           <ScoreBadge score={p.score} />
+          {badge}
           {p.funding_stage && (
             <span
               className={`border-2 border-zinc-900 px-2 py-0.5 text-[11px] font-semibold uppercase ${tone.panel} ${tone.border}`}
@@ -89,161 +275,9 @@ export function StartupCard({
       </header>
 
       <div className="space-y-3 p-3">
-        <p>{p.core_product}</p>
-        {p.tech_stack.length > 0 && (
-          <ul className="flex flex-wrap gap-1.5" aria-label="Tech stack">
-            {p.tech_stack.map((t) => (
-              <li
-                key={t}
-                className="border border-zinc-900 bg-sky-100 px-1.5 text-xs dark:border-sky-400/50 dark:bg-sky-950/50 dark:text-sky-200"
-              >
-                {t}
-              </li>
-            ))}
-          </ul>
-        )}
-        {p.likely_bottleneck.trim() && (
-          <p className="text-xs">
-            <span className="font-semibold uppercase tracking-wide text-rose-700 dark:text-rose-300">
-              bottleneck ›{" "}
-            </span>
-            {p.likely_bottleneck}
-          </p>
-        )}
-
-        <ContactBlock contact={contact} full={full} />
-
-        {p.value_prop_pitch.trim() && (
-          <div className="border-l-4 border-emerald-500 bg-emerald-50 p-2 dark:bg-emerald-950/30">
-            <div className="mb-1 flex items-center justify-between gap-2">
-              <span className="text-[10px] font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
-                pitch
-              </span>
-              <CopyPitchButton pitch={p.value_prop_pitch} />
-            </div>
-            <p>{p.value_prop_pitch}</p>
-          </div>
-        )}
-
-        {p.warm_path && (
-          <div className="text-xs">
-            <span className="font-semibold uppercase tracking-wide text-violet-700 dark:text-violet-300">
-              warm path ›{" "}
-            </span>
-            {p.warm_path.summary}
-            {full && (
-              <ol className="mt-1 space-y-1">
-                {p.warm_path.hops.map((h, i) => (
-                  <li key={i}>
-                    {h.src}{" "}
-                    <span className="font-semibold text-violet-700 dark:text-violet-300">
-                      {h.rel.replace("_", " ")}
-                    </span>{" "}
-                    {h.dst}
-                    <blockquote className="text-zinc-500">
-                      “{h.evidence}”
-                    </blockquote>
-                  </li>
-                ))}
-              </ol>
-            )}
-          </div>
-        )}
-
-        {full && p.email_draft && <EmailDraft draft={p.email_draft} />}
-
-        {p.why_now && p.why_now.length > 0 && (
-          <ul aria-label="Why now" className="space-y-0.5 text-xs">
-            {p.why_now.map((w) => (
-              <li key={w.signal}>
-                <span className="font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-300">
-                  why now ›{" "}
-                </span>
-                <a
-                  href={w.source_url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline-offset-2 hover:underline"
-                >
-                  {w.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
-
-        {p.score_parts && Object.keys(p.score_parts).length > 0 && (
-          <p className="text-xs text-zinc-600 dark:text-zinc-400">
-            <span className="font-semibold uppercase tracking-wide">
-              score ›{" "}
-            </span>
-            {Object.entries(p.score_parts)
-              .map(([k, v]) => `${k} ${v}/${PART_MAX[k] ?? "?"}`)
-              .join(" · ")}
-          </p>
-        )}
-
-        {p.gaps && p.gaps.length > 0 && (
-          <p className="text-xs text-zinc-600 dark:text-zinc-400">
-            <span className="font-semibold uppercase tracking-wide text-amber-700 dark:text-amber-300">
-              missing ›{" "}
-            </span>
-            {p.gaps.join(" · ")}
-          </p>
-        )}
-
-        {full && p.people.length > 0 && (
-          <section aria-label="People">
-            <h4 className="mb-1 text-[10px] font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
-              people
-            </h4>
-            <ul className="space-y-1.5">
-              {p.people.map((x) => (
-                <li key={x.name}>
-                  <span className="font-semibold">{x.name}</span>{" "}
-                  <span className="text-zinc-500">· {x.role}</span>{" "}
-                  <PersonLinks person={x} />
-                  <blockquote className="text-xs text-zinc-500">
-                    “{x.evidence}”
-                  </blockquote>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-        {full && p.edges.length > 0 && (
-          <section aria-label="Connections">
-            <h4 className="mb-1 text-[10px] font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
-              connections
-            </h4>
-            <ul className="space-y-1">
-              {p.edges.map((e, i) => (
-                <li key={i}>
-                  {e.src}{" "}
-                  <span className="font-semibold text-violet-700 dark:text-violet-300">
-                    {e.rel.replace("_", " ")}
-                  </span>{" "}
-                  {e.dst}
-                  <blockquote className="text-xs text-zinc-500">
-                    “{e.evidence}”
-                  </blockquote>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-        {!full && (p.people.length > 0 || p.edges.length > 0) && (
-          <p className="flex flex-wrap items-center gap-x-2 text-xs text-zinc-500">
-            <span>
-              {p.people.length} {p.people.length === 1 ? "person" : "people"} ·{" "}
-              {p.edges.length}{" "}
-              {p.edges.length === 1 ? "connection" : "connections"}
-            </span>
-            {p.people.slice(0, 3).map((x) => (
-              <PersonLinks key={x.name} person={x} />
-            ))}
-          </p>
-        )}
+        {order.map((k) => (
+          <Fragment key={k}>{sections[k]}</Fragment>
+        ))}
       </div>
     </article>
   );
@@ -269,7 +303,7 @@ function ContactBlock({ contact, full }: { contact: Contact; full: boolean }) {
       aria-label="Contact"
       className="space-y-1 border-2 border-dashed border-zinc-900/50 bg-violet-50 p-2 text-xs dark:border-violet-400/40 dark:bg-violet-950/30"
     >
-      <h4 className="text-[10px] font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
+      <h4 className="text-xs font-semibold uppercase tracking-widest text-zinc-600 dark:text-zinc-400">
         contact
       </h4>
       {shownEmails.map((e) => (
@@ -281,13 +315,13 @@ function ContactBlock({ contact, full }: { contact: Contact; full: boolean }) {
           >
             {e.value}
           </a>{" "}
-          <span className="text-zinc-500">{e.kind}</span>
+          <span className="text-zinc-600 dark:text-zinc-400">{e.kind}</span>
           {full && (
             <a
               href={e.source_url}
               target="_blank"
               rel="noreferrer"
-              className="ml-1 text-zinc-500 underline"
+              className="ml-1 text-zinc-600 dark:text-zinc-400 underline"
             >
               source
             </a>
@@ -308,7 +342,7 @@ function ContactBlock({ contact, full }: { contact: Contact; full: boolean }) {
               href={ph.source_url}
               target="_blank"
               rel="noreferrer"
-              className="ml-1 text-zinc-500 underline"
+              className="ml-1 text-zinc-600 dark:text-zinc-400 underline"
             >
               source
             </a>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { Profile } from "@/lib/data";
-import { RetroButton } from "@/components/ui/retro-button";
+import { RetroButton, retroClass } from "@/components/ui/retro-button";
 
 type Draft = NonNullable<Profile["email_draft"]>;
 
@@ -23,7 +23,10 @@ export function EmailDraft({ draft }: { draft: Draft }) {
   }
 
   return (
-    <details className="border border-zinc-900 p-2 text-xs dark:border-emerald-400/50">
+    <details
+      open
+      className="border border-zinc-900 p-2 text-xs dark:border-emerald-400/50"
+    >
       <summary className="cursor-pointer font-semibold uppercase tracking-wide">
         email draft
         {draft.to ? ` › ${draft.to}` : " › no published address"}
@@ -42,11 +45,8 @@ export function EmailDraft({ draft }: { draft: Draft }) {
       )}
       <div className="mt-2 flex gap-2">
         {draft.mailto && (
-          <a
-            href={draft.mailto}
-            className="border-2 border-zinc-900 px-2 py-0.5 font-semibold hover:bg-emerald-100 dark:border-emerald-400/60 dark:hover:bg-emerald-950"
-          >
-            Open in mail
+          <a href={draft.mailto} className={retroClass("emerald")}>
+            ✉ Open in mail
           </a>
         )}
         <RetroButton tone="emerald" onClick={copy}>

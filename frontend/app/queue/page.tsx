@@ -13,13 +13,10 @@ export default function QueuePage() {
         <h1 className="glow font-display text-5xl uppercase tracking-wider">
           Action queue
         </h1>
-        <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">
-          What to do next with each lead and how urgently. Record results with{" "}
-          <code>
-            uv run python outcomes.py mark &lt;company&gt;
-            contacted|replied|passed
-          </code>
-          .
+        <p className="mt-1 text-xs text-zinc-700 dark:text-zinc-300">
+          What to do next with each lead. Log a send, a reply or a pass right
+          here and the lead moves to the right bucket; follow-ups come due 7
+          days after each touch.
         </p>
       </div>
       {profiles.length === 0 ? (

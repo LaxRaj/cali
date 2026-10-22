@@ -12,6 +12,7 @@ import { Led } from "@/components/ui/led";
 import { Panel } from "@/components/ui/panel";
 import { RetroLink } from "@/components/ui/retro-button";
 import { Stat } from "@/components/ui/stat";
+import { OutreachBoard } from "@/components/outreach/outreach-board";
 import { StartupCard } from "@/components/startup-card";
 import { readGraph, readIndex, readProfiles, readRun } from "@/lib/data";
 import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
@@ -75,10 +76,6 @@ export default function OverviewPage() {
     ],
   ] as const;
   const dec = detail?.decisions;
-  const queue = [...profiles]
-    .filter((p) => p.decision && p.decision.action === "contact_now")
-    .sort((a, b) => (b.decision?.priority ?? 0) - (a.decision?.priority ?? 0))
-    .slice(0, 3);
   const stats = detail?.feedback?.source_stats ?? {};
   const caps = detail?.feedback?.caps ?? {};
   const srcMax = Math.max(...Object.values(latest?.sources ?? { x: 1 }), 1);
@@ -89,7 +86,7 @@ export default function OverviewPage() {
         <div>
           <Banner />
           <p className="cursor mt-2 text-xs text-zinc-600 dark:text-emerald-400/80">
-            connection &amp; builder dashboard — every process, in one place
+            outreach cockpit — who to write to today, and what the scout found
           </p>
         </div>
         {latest ? (
@@ -114,6 +111,8 @@ export default function OverviewPage() {
         ) : null}
       </header>
 
+      {profiles.length > 0 && <OutreachBoard profiles={profiles} />}
+
       {!latest ? (
         <Panel title="No runs yet" tone="amber">
           <Empty art="radio" title="Waiting for the first signal">
@@ -125,6 +124,9 @@ export default function OverviewPage() {
         </Panel>
       ) : (
         <>
+          <h2 className="glow font-display text-3xl uppercase tracking-wider">
+            Scout health
+          </h2>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
             <Stat
               label="Startups"
@@ -301,40 +303,6 @@ export default function OverviewPage() {
               ) : (
                 <p className="text-xs text-zinc-500">
                   no decision stats for this run
-                </p>
-              )}
-            </Panel>
-            <Panel
-              title="Action queue"
-              tone="rose"
-              right={
-                <Link href="/queue" className="underline">
-                  all →
-                </Link>
-              }
-            >
-              {queue.length ? (
-                <ul className="space-y-2">
-                  {queue.map((p) => (
-                    <li key={p.slug}>
-                      <Link
-                        href="/queue"
-                        className="font-semibold underline underline-offset-2 hover:no-underline"
-                      >
-                        {p.company_name}
-                      </Link>{" "}
-                      <span className="text-[11px] uppercase text-rose-700 dark:text-rose-300">
-                        {p.decision?.urgency}
-                      </span>
-                      <p className="text-xs text-zinc-600 dark:text-zinc-400">
-                        {p.decision?.next_step}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-xs text-zinc-500">
-                  nothing to contact right now
                 </p>
               )}
             </Panel>

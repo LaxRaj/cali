@@ -14,7 +14,7 @@
     "hq": "Berlin, Germany",
     "website": "https://corvid.example",
     "source_url": "https://example.com/corvid",
-    "discovered_at": "2026-10-11T18:00:52+00:00",
+    "discovered_at": "2026-10-13T20:15:05+00:00",
     "score": 95,
     "slug": "corvid",
     "score_parts": {
@@ -50,7 +50,7 @@
         "https://corvid.example/",
         "https://corvid.example/about"
       ],
-      "enriched_at": "2026-10-11T18:00:52+00:00",
+      "enriched_at": "2026-10-13T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -110,17 +110,79 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "contacted",
+      "touches": 3,
+      "last_contact": "2026-10-16T20:15:09+00:00",
+      "replied_at": "",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": true,
+      "last_to": "team@corvid.example",
+      "last_subject": "Corvid: a thought on your stack",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "c0b4487102d6405e90214214617a8fbb",
+          "company": "Corvid",
+          "type": "sent",
+          "at": "2026-10-02T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Corvid: a thought on your stack",
+          "to": "team@corvid.example",
+          "to_source_url": "https://corvid.example/contact"
+        },
+        {
+          "id": "1b5e698558474ff2ad3aded77fdeede5",
+          "company": "Corvid",
+          "type": "sent",
+          "at": "2026-10-09T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Corvid: a thought on your stack",
+          "to": "team@corvid.example",
+          "to_source_url": "https://corvid.example/contact"
+        },
+        {
+          "id": "7e3a62dc8bcb441094c607310abc8c08",
+          "company": "Corvid",
+          "type": "sent",
+          "at": "2026-10-16T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Corvid: a thought on your stack",
+          "to": "team@corvid.example",
+          "to_source_url": "https://corvid.example/contact"
+        }
+      ]
+    },
     "decision": {
-      "action": "contact_now",
-      "urgency": "warm",
-      "priority": 82.0,
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 16.4,
       "reasons": [
-        "lead score 95",
-        "found 9 day(s) ago (warm)",
-        "fresh, strong fit and a published way to reach them"
+        "you contacted on 2026-10-16 (touch 3)",
+        "3 touches without a reply"
       ],
-      "next_step": "Email/call hello@corvid.example with the pitch",
-      "provider": "policy"
+      "next_step": "No reply after several touches: leave it for now",
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://example.com/corvid"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@corvid.example",
+      "to_source_url": "https://corvid.example/contact",
+      "subject": "Corvid: a thought on graph queries over big repos",
+      "body": "Hi Ana,\n\nI came across Corvid: Developer knowledge graph for codebases.\nOne thing I noticed: graph queries over big repos.\n\nYour graph layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40corvid.example?subject=Corvid%3A%20a%20thought%20on%20graph%20queries%20over%20big%20repos&body=Hi%20Ana%2C%0A%0AI%20came%20across%20Corvid%3A%20Developer%20knowledge%20graph%20for%20codebases.%0AOne%20thing%20I%20noticed%3A%20graph%20queries%20over%20big%20repos.%0A%0AYour%20graph%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -139,7 +201,7 @@
     "hq": "Berlin, Germany",
     "website": "https://lumenindex.example",
     "source_url": "https://example.com/lumenindex",
-    "discovered_at": "2026-10-19T18:00:52+00:00",
+    "discovered_at": "2026-10-21T20:15:05+00:00",
     "score": 92,
     "slug": "lumen-index",
     "score_parts": {
@@ -177,7 +239,7 @@
         "https://lumenindex.example/",
         "https://lumenindex.example/about"
       ],
-      "enriched_at": "2026-10-19T18:00:52+00:00",
+      "enriched_at": "2026-10-21T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -234,17 +296,68 @@
       "company": "Lumen Index",
       "status": "replied",
       "note": "asked for a call next week",
-      "updated": "2026-10-18T18:00:55+00:00"
+      "reason": "",
+      "updated": "2026-10-20T20:15:09+00:00"
+    },
+    "outreach": {
+      "status": "replied",
+      "touches": 1,
+      "last_contact": "2026-10-16T20:15:09+00:00",
+      "replied_at": "2026-10-20T20:15:09+00:00",
+      "next_due": "2026-10-23T20:15:09+00:00",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "team@lumenindex.example",
+      "last_subject": "Lumen Index: a thought on your stack",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "9d86e45e3ec54c6ab217e9b8744ead9b",
+          "company": "Lumen Index",
+          "type": "sent",
+          "at": "2026-10-16T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Lumen Index: a thought on your stack",
+          "to": "team@lumenindex.example",
+          "to_source_url": "https://lumenindex.example/contact"
+        },
+        {
+          "id": "legacy-lumen index-replied",
+          "company": "Lumen Index",
+          "type": "replied",
+          "at": "2026-10-20T20:15:09+00:00",
+          "note": "asked for a call next week"
+        }
+      ]
     },
     "decision": {
       "action": "watch",
       "urgency": "cold",
       "priority": 38.1,
       "reasons": [
-        "you replied on 2026-10-18"
+        "you heard back on 2026-10-20 (touch 1)"
       ],
       "next_step": "Continue the conversation",
-      "provider": "policy"
+      "provider": "policy",
+      "due": "2026-10-23T20:15:09+00:00",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://example.com/lumenindex"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@lumenindex.example",
+      "to_source_url": "https://lumenindex.example/contact",
+      "subject": "Lumen Index: a thought on keyword search misses clauses",
+      "body": "Hi Maya,\n\nI came across Lumen Index: Semantic search for legal contracts.\nOne thing I noticed: keyword search misses clauses.\n\nYour keyword layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40lumenindex.example?subject=Lumen%20Index%3A%20a%20thought%20on%20keyword%20search%20misses%20clauses&body=Hi%20Maya%2C%0A%0AI%20came%20across%20Lumen%20Index%3A%20Semantic%20search%20for%20legal%20contracts.%0AOne%20thing%20I%20noticed%3A%20keyword%20search%20misses%20clauses.%0A%0AYour%20keyword%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -263,7 +376,7 @@
     "hq": "Austin, USA",
     "website": "https://vectorly.example",
     "source_url": "https://example.com/vectorly",
-    "discovered_at": "2026-10-17T18:00:52+00:00",
+    "discovered_at": "2026-10-19T20:15:05+00:00",
     "score": 86,
     "slug": "vectorly",
     "score_parts": {
@@ -295,7 +408,7 @@
         "https://vectorly.example/",
         "https://vectorly.example/about"
       ],
-      "enriched_at": "2026-10-17T18:00:52+00:00",
+      "enriched_at": "2026-10-19T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -341,17 +454,68 @@
       "company": "Vectorly",
       "status": "contacted",
       "note": "emailed team@; no reply yet",
-      "updated": "2026-10-11T18:00:55+00:00"
+      "reason": "",
+      "updated": "2026-10-13T20:15:09+00:00"
+    },
+    "outreach": {
+      "status": "contacted",
+      "touches": 2,
+      "last_contact": "2026-10-13T20:15:09+00:00",
+      "replied_at": "",
+      "next_due": "2026-10-20T20:15:09+00:00",
+      "overdue": true,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "team@vectorly.example",
+      "last_subject": "Vectorly: a thought on your stack",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "8884bc9f60114d24be80dbdd7c661a26",
+          "company": "Vectorly",
+          "type": "sent",
+          "at": "2026-10-06T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Vectorly: a thought on your stack",
+          "to": "team@vectorly.example",
+          "to_source_url": "https://vectorly.example/contact"
+        },
+        {
+          "id": "legacy-vectorly-contacted",
+          "company": "Vectorly",
+          "type": "sent",
+          "at": "2026-10-13T20:15:09+00:00",
+          "note": "emailed team@; no reply yet"
+        }
+      ]
     },
     "decision": {
       "action": "follow_up",
       "urgency": "warm",
       "priority": 91.6,
       "reasons": [
-        "you contacted on 2026-10-11"
+        "you contacted on 2026-10-13 (touch 2)"
       ],
-      "next_step": "Follow up: no reply recorded in over a week",
-      "provider": "policy"
+      "next_step": "Follow up (touch 3): no reply since 2026-10-13",
+      "provider": "policy",
+      "due": "2026-10-20T20:15:09+00:00",
+      "overdue": true
+    },
+    "trackbacks": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at series a stage",
+        "source_url": "https://example.com/vectorly"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@vectorly.example",
+      "to_source_url": "https://vectorly.example/contact",
+      "subject": "Vectorly: a thought on multi-tenant index latency",
+      "body": "Hi Priya,\n\nI came across Vectorly: Managed vector database for agents.\nOne thing I noticed: multi-tenant index latency.\n\nYour multi-tenant layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40vectorly.example?subject=Vectorly%3A%20a%20thought%20on%20multi-tenant%20index%20latency&body=Hi%20Priya%2C%0A%0AI%20came%20across%20Vectorly%3A%20Managed%20vector%20database%20for%20agents.%0AOne%20thing%20I%20noticed%3A%20multi-tenant%20index%20latency.%0A%0AYour%20multi-tenant%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -370,7 +534,7 @@
     "hq": "Austin, USA",
     "website": "https://gridline.example",
     "source_url": "https://example.com/gridline",
-    "discovered_at": "2026-10-01T18:00:52+00:00",
+    "discovered_at": "2026-10-03T20:15:05+00:00",
     "score": 83,
     "slug": "gridline",
     "score_parts": {
@@ -403,7 +567,7 @@
         "https://gridline.example/",
         "https://gridline.example/about"
       ],
-      "enriched_at": "2026-10-01T18:00:52+00:00",
+      "enriched_at": "2026-10-03T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -457,6 +621,20 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "none",
+      "touches": 0,
+      "last_contact": "",
+      "replied_at": "",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "",
+      "last_subject": "",
+      "pass_reason": "",
+      "events": []
+    },
     "decision": {
       "action": "contact_now",
       "urgency": "warm",
@@ -467,7 +645,19 @@
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call hello@gridline.example with the pitch",
-      "provider": "policy"
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@gridline.example",
+      "to_source_url": "https://gridline.example/contact",
+      "subject": "Gridline: a thought on map search latency",
+      "body": "Hi Marco,\n\nI came across Gridline: Geospatial search for logistics.\nOne thing I noticed: map search latency.\n\nYour map layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40gridline.example?subject=Gridline%3A%20a%20thought%20on%20map%20search%20latency&body=Hi%20Marco%2C%0A%0AI%20came%20across%20Gridline%3A%20Geospatial%20search%20for%20logistics.%0AOne%20thing%20I%20noticed%3A%20map%20search%20latency.%0A%0AYour%20map%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -486,7 +676,7 @@
     "hq": "London, UK",
     "website": "https://paperplaneai.example",
     "source_url": "https://example.com/paperplaneai",
-    "discovered_at": "2026-10-15T18:00:52+00:00",
+    "discovered_at": "2026-10-17T20:15:05+00:00",
     "score": 82,
     "slug": "paperplane-ai",
     "score_parts": {
@@ -518,7 +708,7 @@
         "https://paperplaneai.example/",
         "https://paperplaneai.example/about"
       ],
-      "enriched_at": "2026-10-15T18:00:52+00:00",
+      "enriched_at": "2026-10-17T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -566,17 +756,58 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "contacted",
+      "touches": 1,
+      "last_contact": "2026-10-19T20:15:09+00:00",
+      "replied_at": "",
+      "next_due": "2026-10-26T20:15:09+00:00",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "team@paperplaneai.example",
+      "last_subject": "Paperplane AI: a thought on your stack",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "bc41e1d7d0a04db1a5df9b6a5f0f945b",
+          "company": "Paperplane AI",
+          "type": "sent",
+          "at": "2026-10-19T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Paperplane AI: a thought on your stack",
+          "to": "team@paperplaneai.example",
+          "to_source_url": "https://paperplaneai.example/contact"
+        }
+      ]
+    },
     "decision": {
-      "action": "contact_now",
-      "urgency": "hot",
-      "priority": 89.2,
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 35.7,
       "reasons": [
-        "lead score 82",
-        "found 5 day(s) ago (hot)",
-        "fresh, strong fit and a published way to reach them"
+        "you contacted on 2026-10-19 (touch 1)"
       ],
-      "next_step": "Email/call +12025551002 with the pitch",
-      "provider": "policy"
+      "next_step": "Waiting on their reply",
+      "provider": "policy",
+      "due": "2026-10-26T20:15:09+00:00",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://example.com/paperplaneai"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Paperplane AI: a thought on retrieval quality on messy PDFs",
+      "body": "Hi Sam,\n\nI came across Paperplane AI: RAG assistant over company docs.\nOne thing I noticed: retrieval quality on messy PDFs.\n\nYour retrieval layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -594,7 +825,7 @@
     "hq": "",
     "website": "https://basalt.example",
     "source_url": "https://example.com/basalt",
-    "discovered_at": "2026-10-05T18:00:52+00:00",
+    "discovered_at": "2026-10-07T20:15:05+00:00",
     "score": 80,
     "slug": "basalt",
     "score_parts": {
@@ -624,7 +855,7 @@
         "https://basalt.example/",
         "https://basalt.example/about"
       ],
-      "enriched_at": "2026-10-05T18:00:52+00:00",
+      "enriched_at": "2026-10-07T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -672,17 +903,58 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "bounced",
+      "touches": 1,
+      "last_contact": "2026-10-18T20:15:09+00:00",
+      "replied_at": "",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "team@basalt.example",
+      "last_subject": "Basalt: a thought on your stack",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "e5d8e5cb1eed4fda82ba6db0ae507c1e",
+          "company": "Basalt",
+          "type": "sent",
+          "at": "2026-10-18T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Basalt: a thought on your stack",
+          "to": "team@basalt.example",
+          "to_source_url": "https://basalt.example/contact"
+        },
+        {
+          "id": "a3174a6c9c324166afc1248d878db800",
+          "company": "Basalt",
+          "type": "bounced",
+          "at": "2026-10-18T20:15:09+00:00"
+        }
+      ]
+    },
     "decision": {
-      "action": "contact_now",
+      "action": "enrich_more",
       "urgency": "warm",
-      "priority": 73.0,
+      "priority": 58.4,
       "reasons": [
-        "lead score 80",
-        "found 15 day(s) ago (warm)",
-        "fresh, strong fit and a published way to reach them"
+        "your email to team@basalt.example bounced"
       ],
-      "next_step": "Email/call hello@basalt.example with the pitch",
-      "provider": "policy"
+      "next_step": "Find another published contact route",
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@basalt.example",
+      "to_source_url": "https://basalt.example/contact",
+      "subject": "Basalt: a thought on online/offline sync",
+      "body": "Hi Iris,\n\nI came across Basalt: Open-source feature store.\nOne thing I noticed: online/offline sync.\n\nYour online/offline layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40basalt.example?subject=Basalt%3A%20a%20thought%20on%20online/offline%20sync&body=Hi%20Iris%2C%0A%0AI%20came%20across%20Basalt%3A%20Open-source%20feature%20store.%0AOne%20thing%20I%20noticed%3A%20online/offline%20sync.%0A%0AYour%20online/offline%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -700,7 +972,7 @@
     "hq": "London, UK",
     "website": "https://hearth.example",
     "source_url": "https://example.com/hearth",
-    "discovered_at": "2026-09-29T18:00:52+00:00",
+    "discovered_at": "2026-10-01T20:15:05+00:00",
     "score": 80,
     "slug": "hearth",
     "score_parts": {
@@ -736,7 +1008,7 @@
         "https://hearth.example/",
         "https://hearth.example/about"
       ],
-      "enriched_at": "2026-09-29T18:00:52+00:00",
+      "enriched_at": "2026-10-01T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -767,6 +1039,20 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "none",
+      "touches": 0,
+      "last_contact": "",
+      "replied_at": "",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "",
+      "last_subject": "",
+      "pass_reason": "",
+      "events": []
+    },
     "decision": {
       "action": "watch",
       "urgency": "cold",
@@ -777,7 +1063,19 @@
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
-      "provider": "policy"
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@hearth.example",
+      "to_source_url": "https://hearth.example/contact",
+      "subject": "Hearth: a thought on call knowledge retrieval",
+      "body": "Hi Bea,\n\nI came across Hearth: Voice agent for home services.\nOne thing I noticed: call knowledge retrieval.\n\nYour call layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40hearth.example?subject=Hearth%3A%20a%20thought%20on%20call%20knowledge%20retrieval&body=Hi%20Bea%2C%0A%0AI%20came%20across%20Hearth%3A%20Voice%20agent%20for%20home%20services.%0AOne%20thing%20I%20noticed%3A%20call%20knowledge%20retrieval.%0A%0AYour%20call%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -795,7 +1093,7 @@
     "hq": "Berlin, Germany",
     "website": "https://nimbusnotes.example",
     "source_url": "https://example.com/nimbusnotes",
-    "discovered_at": "2026-10-03T18:00:52+00:00",
+    "discovered_at": "2026-10-05T20:15:05+00:00",
     "score": 77,
     "slug": "nimbus-notes",
     "score_parts": {
@@ -827,7 +1125,7 @@
         "https://nimbusnotes.example/",
         "https://nimbusnotes.example/about"
       ],
-      "enriched_at": "2026-10-03T18:00:52+00:00",
+      "enriched_at": "2026-10-05T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -864,6 +1162,20 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "none",
+      "touches": 0,
+      "last_contact": "",
+      "replied_at": "",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "",
+      "last_subject": "",
+      "pass_reason": "",
+      "events": []
+    },
     "decision": {
       "action": "contact_now",
       "urgency": "warm",
@@ -874,7 +1186,19 @@
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call +12025551008 with the pitch",
-      "provider": "policy"
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Nimbus Notes: a thought on semantic recall at scale",
+      "body": "Hi Zoe,\n\nI came across Nimbus Notes: AI notebook with cross-note recall.\nOne thing I noticed: semantic recall at scale.\n\nYour semantic layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -893,7 +1217,7 @@
     "hq": "London, UK",
     "website": "https://quillbase.example",
     "source_url": "https://example.com/quillbase",
-    "discovered_at": "2026-10-07T18:00:52+00:00",
+    "discovered_at": "2026-10-09T20:15:05+00:00",
     "score": 72,
     "slug": "quillbase",
     "score_parts": {
@@ -932,7 +1256,7 @@
         "https://quillbase.example/",
         "https://quillbase.example/about"
       ],
-      "enriched_at": "2026-10-07T18:00:52+00:00",
+      "enriched_at": "2026-10-09T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -957,17 +1281,66 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "contacted",
+      "touches": 1,
+      "last_contact": "2026-10-13T20:15:09+00:00",
+      "replied_at": "",
+      "next_due": "2026-10-28T20:15:09+00:00",
+      "overdue": false,
+      "snoozed": true,
+      "exhausted": false,
+      "last_to": "team@quillbase.example",
+      "last_subject": "Quillbase: a thought on your stack",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "483669b187a74973ad6b696bbc80c779",
+          "company": "Quillbase",
+          "type": "sent",
+          "at": "2026-10-13T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Quillbase: a thought on your stack",
+          "to": "team@quillbase.example",
+          "to_source_url": "https://quillbase.example/contact"
+        },
+        {
+          "id": "5225d83c9cb445fe8280307195af89eb",
+          "company": "Quillbase",
+          "type": "snooze",
+          "at": "2026-10-21T20:15:09+00:00",
+          "until": "2026-10-28T20:15:09+00:00"
+        }
+      ]
+    },
     "decision": {
-      "action": "contact_now",
-      "urgency": "warm",
-      "priority": 68.2,
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 20.5,
       "reasons": [
-        "lead score 72",
-        "found 13 day(s) ago (warm)",
-        "fresh, strong fit and a published way to reach them"
+        "you contacted on 2026-10-13 (touch 1)",
+        "snoozed until 2026-10-28"
       ],
-      "next_step": "Email/call hello@quillbase.example with the pitch",
-      "provider": "policy"
+      "next_step": "Snoozed until 2026-10-28",
+      "provider": "policy",
+      "due": "2026-10-28T20:15:09+00:00",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://example.com/quillbase"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@quillbase.example",
+      "to_source_url": "https://quillbase.example/contact",
+      "subject": "Quillbase: a thought on duplicate ticket detection",
+      "body": "Hi Omar,\n\nI came across Quillbase: Support-ticket triage with embeddings.\nOne thing I noticed: duplicate ticket detection.\n\nYour duplicate layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40quillbase.example?subject=Quillbase%3A%20a%20thought%20on%20duplicate%20ticket%20detection&body=Hi%20Omar%2C%0A%0AI%20came%20across%20Quillbase%3A%20Support-ticket%20triage%20with%20embeddings.%0AOne%20thing%20I%20noticed%3A%20duplicate%20ticket%20detection.%0A%0AYour%20duplicate%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -986,7 +1359,7 @@
     "hq": "",
     "website": "https://tidepoollabs.example",
     "source_url": "https://example.com/tidepoollabs",
-    "discovered_at": "2026-10-13T18:00:52+00:00",
+    "discovered_at": "2026-10-15T20:15:05+00:00",
     "score": 67,
     "slug": "tidepool-labs",
     "score_parts": {
@@ -1017,7 +1390,7 @@
         "https://tidepoollabs.example/",
         "https://tidepoollabs.example/about"
       ],
-      "enriched_at": "2026-10-13T18:00:52+00:00",
+      "enriched_at": "2026-10-15T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -1048,17 +1421,71 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "meeting",
+      "touches": 1,
+      "last_contact": "2026-10-12T20:15:09+00:00",
+      "replied_at": "2026-10-14T20:15:09+00:00",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "team@tidepoollabs.example",
+      "last_subject": "Tidepool Labs: a thought on your stack",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "b3d45a7d18174456bda1ca3580d4e67f",
+          "company": "Tidepool Labs",
+          "type": "sent",
+          "at": "2026-10-12T20:15:09+00:00",
+          "channel": "email",
+          "subject": "Tidepool Labs: a thought on your stack",
+          "to": "team@tidepoollabs.example",
+          "to_source_url": "https://tidepoollabs.example/contact"
+        },
+        {
+          "id": "b5f905aee1f14141a12609084a332659",
+          "company": "Tidepool Labs",
+          "type": "replied",
+          "at": "2026-10-14T20:15:09+00:00"
+        },
+        {
+          "id": "d307455c0c2147ba952292c477391d8d",
+          "company": "Tidepool Labs",
+          "type": "meeting",
+          "at": "2026-10-19T20:15:09+00:00",
+          "note": "30 min call booked"
+        }
+      ]
+    },
     "decision": {
-      "action": "contact_now",
-      "urgency": "warm",
-      "priority": 65.2,
+      "action": "skip",
+      "urgency": "cold",
+      "priority": 13.0,
       "reasons": [
-        "lead score 67",
-        "found 7 day(s) ago (warm)",
-        "good fit and reachable"
+        "you marked this 'meeting'"
       ],
-      "next_step": "Reach Jon Abara via hello@tidepoollabs.example",
-      "provider": "policy"
+      "next_step": "No action needed",
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://example.com/tidepoollabs"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "hello@tidepoollabs.example",
+      "to_source_url": "https://tidepoollabs.example/contact",
+      "subject": "Tidepool Labs: a thought on slow trace search UI",
+      "body": "Hi Jon,\n\nI came across Tidepool Labs: Observability for ML pipelines.\nOne thing I noticed: slow trace search UI.\n\nYour slow layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": "mailto:hello%40tidepoollabs.example?subject=Tidepool%20Labs%3A%20a%20thought%20on%20slow%20trace%20search%20UI&body=Hi%20Jon%2C%0A%0AI%20came%20across%20Tidepool%20Labs%3A%20Observability%20for%20ML%20pipelines.%0AOne%20thing%20I%20noticed%3A%20slow%20trace%20search%20UI.%0A%0AYour%20slow%20layer%20is%20the%20bottleneck%20as%20data%20grows.%20I%20can%20ship%20a%20Next.js%20front%20end%20with%20vector%20semantic%20search%20so%20users%20find%20answers%20instantly.%0A%0AOpen%20to%20a%20quick%20chat%3F"
     }
   },
   {
@@ -1077,7 +1504,7 @@
     "hq": "Austin, USA",
     "website": "https://fernwood.example",
     "source_url": "https://example.com/fernwood",
-    "discovered_at": "2026-10-09T18:00:52+00:00",
+    "discovered_at": "2026-10-11T20:15:05+00:00",
     "score": 63,
     "slug": "fernwood",
     "score_parts": {
@@ -1104,7 +1531,7 @@
         "https://fernwood.example/",
         "https://fernwood.example/about"
       ],
-      "enriched_at": "2026-10-09T18:00:52+00:00",
+      "enriched_at": "2026-10-11T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -1144,7 +1571,30 @@
       "company": "Fernwood",
       "status": "passed",
       "note": "healthcare, not our focus",
-      "updated": "2026-10-15T18:00:55+00:00"
+      "reason": "",
+      "updated": "2026-10-17T20:15:09+00:00"
+    },
+    "outreach": {
+      "status": "passed",
+      "touches": 0,
+      "last_contact": "",
+      "replied_at": "",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "",
+      "last_subject": "",
+      "pass_reason": "",
+      "events": [
+        {
+          "id": "legacy-fernwood-passed",
+          "company": "Fernwood",
+          "type": "passed",
+          "at": "2026-10-17T20:15:09+00:00",
+          "note": "healthcare, not our focus"
+        }
+      ]
     },
     "decision": {
       "action": "skip",
@@ -1154,7 +1604,25 @@
         "you marked this 'passed'"
       ],
       "next_step": "No action needed",
-      "provider": "policy"
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at series a stage",
+        "source_url": "https://example.com/fernwood"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Fernwood: a thought on matching free-text eligibility",
+      "body": "Hi Dr.,\n\nI came across Fernwood: Clinical trial matching engine.\nOne thing I noticed: matching free-text eligibility.\n\nYour matching layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   },
   {
@@ -1172,7 +1640,7 @@
     "hq": "",
     "website": "https://pocketatlas.example",
     "source_url": "https://example.com/pocketatlas",
-    "discovered_at": "2026-09-27T18:00:52+00:00",
+    "discovered_at": "2026-09-29T20:15:05+00:00",
     "score": 47,
     "slug": "pocket-atlas",
     "score_parts": {
@@ -1198,7 +1666,7 @@
         "https://pocketatlas.example/",
         "https://pocketatlas.example/about"
       ],
-      "enriched_at": "2026-09-27T18:00:52+00:00",
+      "enriched_at": "2026-09-29T20:15:05+00:00",
       "status": "ok"
     },
     "people": [
@@ -1223,6 +1691,20 @@
       }
     ],
     "outcome": null,
+    "outreach": {
+      "status": "none",
+      "touches": 0,
+      "last_contact": "",
+      "replied_at": "",
+      "next_due": "",
+      "overdue": false,
+      "snoozed": false,
+      "exhausted": false,
+      "last_to": "",
+      "last_subject": "",
+      "pass_reason": "",
+      "events": []
+    },
     "decision": {
       "action": "watch",
       "urgency": "cold",
@@ -1233,7 +1715,19 @@
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
-      "provider": "policy"
+      "provider": "policy",
+      "due": "",
+      "overdue": false
+    },
+    "trackbacks": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "to": "",
+      "to_source_url": "",
+      "subject": "Pocket Atlas: a thought on grounding answers in sources",
+      "body": "Hi Ravi,\n\nI came across Pocket Atlas: Travel itinerary RAG.\nOne thing I noticed: grounding answers in sources.\n\nYour grounding layer is the bottleneck as data grows. I can ship a Next.js front end with vector semantic search so users find answers instantly.\n\nOpen to a quick chat?",
+      "mailto": ""
     }
   }
 ]

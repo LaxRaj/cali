@@ -1,168 +1,90 @@
 "use client";
 
-import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Empty } from "@/components/ascii/art";
-import { CopyPitchButton } from "@/components/copy-pitch-button";
-import { PersonLinks } from "@/components/startups/links";
-import { ScoreBadge } from "@/components/startups/score-badge";
-import { RetroButton, retroClass } from "@/components/ui/retro-button";
-import type { Decision, Profile } from "@/lib/data";
+import { LeadRow } from "@/components/outreach/lead-row";
+import { RetroButton } from "@/components/ui/retro-button";
+import type { Profile } from "@/lib/data";
+import { useNowMs, useOutreach } from "@/lib/outreach-store";
+import { BUCKETS, type Bucket, bucketFor, sortLeads } from "@/lib/queue";
 
-const ACTIONS: { key: Decision["action"]; label: string }[] = [
-  { key: "contact_now", label: "Contact now" },
-  { key: "follow_up", label: "Follow up" },
-  { key: "enrich_more", label: "Enrich" },
-  { key: "watch", label: "Watch" },
-  { key: "skip", label: "Skip" },
-];
-
-const URGENCY_STYLE = {
-  hot: "bg-rose-300 text-zinc-900 dark:bg-rose-950 dark:text-rose-300 dark:border-rose-400/70",
-  warm: "bg-amber-200 text-zinc-900 dark:bg-amber-950 dark:text-amber-300 dark:border-amber-400/70",
-  cold: "bg-zinc-200 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-400 dark:border-zinc-600",
-} as const;
-
-function mailto(p: Profile) {
-  const email = p.contact?.emails?.[0]?.value;
-  if (!email) return null;
-  const subject = `Quick idea for ${p.company_name}`;
-  return `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(p.value_prop_pitch)}`;
-}
+const EMPTY_COPY: Partial<Record<Bucket, string>> = {
+  due: "Nothing is waiting on you. Nice.",
+  contact_now: "No fresh leads ready to contact. Wait for the next run.",
+  waiting: "You have not written to anyone who is still pending.",
+  done: "No meetings, wins or passes logged yet.",
+};
 
 export function QueueView({ profiles }: { profiles: Profile[] }) {
-  const [action, setAction] = useState<Decision["action"] | null>(
-    "contact_now",
-  );
-  const [hotOnly, setHotOnly] = useState(false);
+  const outreach = useOutreach(profiles);
+  const nowMs = useNowMs();
+  const [query, setQuery] = useState("");
 
-  const counts = useMemo(() => {
-    const c: Record<string, number> = {};
-    profiles.forEach((p) => {
-      const a = p.decision?.action ?? "watch";
-      c[a] = (c[a] ?? 0) + 1;
-    });
-    return c;
-  }, [profiles]);
-
-  const rows = useMemo(
+  const all = useMemo(
     () =>
-      profiles
-        .filter((p) => p.decision && (!action || p.decision.action === action))
-        .filter((p) => !hotOnly || p.decision?.urgency === "hot")
-        .sort(
-          (a, b) => (b.decision?.priority ?? 0) - (a.decision?.priority ?? 0),
-        ),
-    [profiles, action, hotOnly],
+      sortLeads(
+        profiles.map((p) => {
+          const s = outreach.get(p.slug)!.state;
+          return { p, s, bucket: bucketFor(p, s) };
+        }),
+      ),
+    [profiles, outreach],
   );
+  const counts = useMemo(() => {
+    const c: Partial<Record<Bucket, number>> = {};
+    all.forEach((r) => (c[r.bucket] = (c[r.bucket] ?? 0) + 1));
+    return c;
+  }, [all]);
+
+  // Start where the work is: due follow-ups if there are any, otherwise fresh leads.
+  const [picked, setPicked] = useState<Bucket | null>(null);
+  const bucket: Bucket = picked ?? ((counts.due ?? 0) > 0 ? "due" : "contact_now");
+
+  const q = query.trim().toLowerCase();
+  const rows = all
+    .filter((r) => r.bucket === bucket)
+    .filter(
+      (r) =>
+        !q ||
+        [r.p.company_name, r.p.core_product, ...r.p.people.map((x) => x.name)].some((t) => t.toLowerCase().includes(q)),
+    );
+  const current = BUCKETS.find((b) => b.key === bucket)!;
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-2 border-2 border-zinc-900 bg-rose-100 p-3 shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-rose-400/60 dark:bg-rose-950/40 dark:shadow-rose-400/30">
-        <span className="text-xs font-semibold uppercase tracking-widest">
-          action
-        </span>
-        {ACTIONS.map((a) => (
-          <RetroButton
-            key={a.key}
-            tone="rose"
-            pressed={action === a.key}
-            onClick={() => setAction(action === a.key ? null : a.key)}
-          >
-            {a.label} <span className="opacity-60">{counts[a.key] ?? 0}</span>
-          </RetroButton>
-        ))}
-        <RetroButton
-          tone="amber"
-          pressed={hotOnly}
-          onClick={() => setHotOnly(!hotOnly)}
-          className="ml-auto"
-        >
-          hot only
-        </RetroButton>
+      <div className="space-y-2 border-2 border-zinc-900 bg-rose-100 p-3 shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-rose-400/60 dark:bg-rose-950/40 dark:shadow-rose-400/30">
+        <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Queue buckets">
+          {BUCKETS.map((b) => (
+            <RetroButton key={b.key} tone={b.key === "due" ? "rose" : "amber"} pressed={bucket === b.key} onClick={() => setPicked(b.key)}>
+              {b.label} <span className="opacity-70">{counts[b.key] ?? 0}</span>
+            </RetroButton>
+          ))}
+        </div>
+        <label className="flex items-center gap-2 text-xs">
+          <span className="font-semibold uppercase tracking-wide">search</span>
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="company, product or person"
+            className="min-w-0 flex-1 border-2 border-zinc-900 bg-white px-2 py-1 text-sm dark:border-rose-400/60 dark:bg-black"
+          />
+        </label>
       </div>
 
-      <p
-        aria-live="polite"
-        className="text-xs text-zinc-600 dark:text-zinc-400"
-      >
-        {rows.length} lead{rows.length === 1 ? "" : "s"} · ranked by priority
-        (fit + freshness + reachability)
+      <p aria-live="polite" className="text-xs text-zinc-700 dark:text-zinc-300">
+        {rows.length} lead{rows.length === 1 ? "" : "s"} · {current.label.toLowerCase()}: {current.hint}
       </p>
 
       {rows.length === 0 ? (
         <Empty art="radio" title="Queue is clear">
-          Nothing matches this filter. Try another action, or wait for the next
-          run.
+          {q ? "Nothing matches that search in this bucket." : (EMPTY_COPY[bucket] ?? "Nothing here right now.")}
         </Empty>
       ) : (
         <ol className="space-y-3">
-          {rows.map((p, i) => {
-            const d = p.decision!;
-            const href = mailto(p);
-            const leaders = p.people
-              .filter((x) => /founder|ceo|cto|chief/i.test(x.role))
-              .slice(0, 2);
-            return (
-              <li
-                key={p.slug}
-                className="border-2 border-zinc-900 bg-white shadow-[4px_4px_0_0] shadow-zinc-900 dark:border-emerald-400/60 dark:bg-black dark:shadow-emerald-400/30"
-              >
-                <div className="flex flex-wrap items-start gap-3 p-3">
-                  <span
-                    className="font-display text-3xl leading-none text-zinc-400"
-                    aria-label={`rank ${i + 1}`}
-                  >
-                    {i + 1}
-                  </span>
-                  <div className="min-w-0 flex-1 space-y-1">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <Link
-                        href={`/startups/${p.slug}`}
-                        className="glow font-display text-2xl leading-none hover:underline focus-visible:outline-2 focus-visible:outline-emerald-500"
-                      >
-                        {p.company_name}
-                      </Link>
-                      <span
-                        className={`border-2 border-zinc-900 px-1.5 text-[11px] font-semibold uppercase ${URGENCY_STYLE[d.urgency]}`}
-                      >
-                        {d.urgency}
-                      </span>
-                      <ScoreBadge score={p.score} />
-                      {p.outcome && (
-                        <span className="border border-dashed border-zinc-900 px-1.5 text-[11px] uppercase dark:border-emerald-400/60">
-                          you: {p.outcome.status}
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-sm font-semibold">→ {d.next_step}</p>
-                    <p className="text-xs text-zinc-600 dark:text-zinc-400">
-                      {d.reasons.join(" · ")}
-                    </p>
-                    {leaders.length > 0 && (
-                      <p className="flex flex-wrap items-center gap-x-3 text-xs">
-                        {leaders.map((x) => (
-                          <span key={x.name}>
-                            {x.name}{" "}
-                            <span className="text-zinc-500">· {x.role}</span>{" "}
-                            <PersonLinks person={x} />
-                          </span>
-                        ))}
-                      </p>
-                    )}
-                  </div>
-                  <div className="flex shrink-0 flex-col items-stretch gap-2">
-                    {href && (
-                      <a href={href} className={retroClass("emerald")}>
-                        ✉ Email with pitch
-                      </a>
-                    )}
-                    <CopyPitchButton pitch={p.value_prop_pitch} />
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+          {rows.map((r, i) => (
+            <LeadRow key={r.p.slug} p={r.p} s={r.s} bucket={r.bucket} nowMs={nowMs} rank={i + 1} />
+          ))}
         </ol>
       )}
     </div>
