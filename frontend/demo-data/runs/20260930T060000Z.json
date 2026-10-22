@@ -1,89 +1,94 @@
 {
   "run_id": "20260930T060000Z",
   "started_at": "2026-09-30T06:00:00+00:00",
-  "duration_s": 253.0,
-  "passed": true,
-  "failures": [],
-  "tokens": 113146,
+  "duration_s": 230.0,
+  "passed": false,
+  "status": "quota",
+  "failures": [
+    "only 1 valid startups (< 3)",
+    "only 1 discovery sources produced valid startups (< 2)"
+  ],
+  "tokens": 153975,
+  "token_budget": 200000,
   "funnel": {
-    "candidates": 105,
-    "selected": 8,
-    "crawled": 7,
-    "extracted": 7,
-    "relevant": 4,
-    "valid": 4
+    "candidates": 109,
+    "selected": 12,
+    "crawled": 12,
+    "extracted": 1,
+    "relevant": 1,
+    "valid": 1
   },
   "sources": {
-    "hn": 5,
-    "rss": 51,
-    "yc": 59,
-    "web": 30,
-    "hiring": 28,
-    "edgar": 30
+    "hn": 35,
+    "rss": 21,
+    "yc": 47,
+    "web": 10,
+    "hiring": 48,
+    "edgar": 17
   },
   "feedback": {
     "source_stats": {
       "hn": {
-        "crawled": 8,
+        "crawled": 18,
         "accepted": 3,
-        "yield": 0.375,
-        "avg_score": 43.8
+        "yield": 0.167,
+        "avg_score": 81.2
       },
       "rss": {
-        "crawled": 20,
-        "accepted": 0,
-        "yield": 0.0,
-        "avg_score": 0.0
+        "crawled": 6,
+        "accepted": 1,
+        "yield": 0.167,
+        "avg_score": 43.4
       },
       "yc": {
-        "crawled": 25,
-        "accepted": 0,
-        "yield": 0.0,
-        "avg_score": 0.0
+        "crawled": 30,
+        "accepted": 2,
+        "yield": 0.067,
+        "avg_score": 46.4
       },
       "web": {
-        "crawled": 7,
-        "accepted": 1,
-        "yield": 0.143,
-        "avg_score": 50.5
+        "crawled": 20,
+        "accepted": 8,
+        "yield": 0.4,
+        "avg_score": 51.8
       },
       "hiring": {
-        "crawled": 30,
-        "accepted": 1,
-        "yield": 0.033,
-        "avg_score": 69.0
+        "crawled": 18,
+        "accepted": 5,
+        "yield": 0.278,
+        "avg_score": 46.0
       },
       "edgar": {
-        "crawled": 27,
-        "accepted": 4,
-        "yield": 0.148,
-        "avg_score": 83.3
+        "crawled": 12,
+        "accepted": 6,
+        "yield": 0.5,
+        "avg_score": 68.4
       },
       "launch_hn": {
-        "crawled": 26,
-        "accepted": 10,
-        "yield": 0.385,
-        "avg_score": 51.3
+        "crawled": 16,
+        "accepted": 4,
+        "yield": 0.25,
+        "avg_score": 79.9
       }
     },
     "caps": {
-      "hn": 4,
+      "hn": 2,
       "rss": 2,
       "yc": 2,
-      "web": 2,
-      "hiring": 2,
-      "edgar": 2,
-      "launch_hn": 4
+      "web": 4,
+      "hiring": 3,
+      "edgar": 5,
+      "launch_hn": 3
     }
   },
   "decisions": {
     "provider": "local",
-    "calls": 113,
+    "calls": 121,
     "fallbacks": 0,
-    "avg_latency_ms": 80.5,
+    "avg_latency_ms": 83.1,
     "jev_input_tokens": 0,
-    "gated_pages": 0,
-    "tokens_saved_est": 0
+    "gated_pages": 1,
+    "tokens_saved_est": 4500
   },
   "plan": {
     "web_queries": [
@@ -101,228 +106,165 @@
       "name": "discover",
       "started_at": "2026-09-30T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 46.44,
+      "duration_s": 44.57,
       "status": "ok",
       "counts": {
-        "candidates": 105
+        "candidates": 109
       },
       "notes": []
     },
     {
       "name": "triage",
-      "started_at": "2026-09-30T06:00:46+00:00",
-      "offset_s": 46.44,
-      "duration_s": 5.08,
+      "started_at": "2026-09-30T06:00:44+00:00",
+      "offset_s": 44.57,
+      "duration_s": 5.42,
       "status": "ok",
       "counts": {
-        "in": 105,
-        "selected": 8
+        "in": 109,
+        "selected": 12
       },
       "notes": []
     },
     {
       "name": "crawl",
-      "started_at": "2026-09-30T06:00:51+00:00",
-      "offset_s": 51.52,
-      "duration_s": 36.46,
+      "started_at": "2026-09-30T06:00:49+00:00",
+      "offset_s": 49.99,
+      "duration_s": 43.52,
       "status": "ok",
       "counts": {
-        "requested": 8,
-        "crawled": 7
+        "requested": 12,
+        "crawled": 12
       },
       "notes": []
     },
     {
       "name": "extract",
-      "started_at": "2026-09-30T06:01:27+00:00",
-      "offset_s": 87.98,
-      "duration_s": 116.52,
+      "started_at": "2026-09-30T06:01:33+00:00",
+      "offset_s": 93.51,
+      "duration_s": 97.4,
       "status": "ok",
       "counts": {
-        "extracted": 7,
-        "relevant": 4,
-        "valid": 4
+        "extracted": 1,
+        "relevant": 1,
+        "valid": 1
       },
       "notes": []
     },
     {
       "name": "enrich",
-      "started_at": "2026-09-30T06:03:24+00:00",
-      "offset_s": 204.5,
-      "duration_s": 39.85,
+      "started_at": "2026-09-30T06:03:10+00:00",
+      "offset_s": 190.91,
+      "duration_s": 39.0,
       "status": "ok",
       "counts": {
-        "startups": 4,
-        "websites": 4,
-        "emails": 3,
-        "phones": 2
+        "startups": 1,
+        "websites": 1,
+        "emails": 0,
+        "phones": 0
       },
       "notes": []
     },
     {
       "name": "gates",
-      "started_at": "2026-09-30T06:04:04+00:00",
-      "offset_s": 244.35,
-      "duration_s": 0.11,
+      "started_at": "2026-09-30T06:03:49+00:00",
+      "offset_s": 229.91,
+      "duration_s": 0.08,
       "status": "ok",
       "counts": {
-        "passed": 1
+        "passed": 0
       },
-      "notes": []
-    },
-    {
-      "name": "store",
-      "started_at": "2026-09-30T06:04:04+00:00",
-      "offset_s": 244.46,
-      "duration_s": 8.57,
-      "status": "ok",
-      "counts": {
-        "startups": 4
-      },
-      "notes": []
+      "notes": [
+        "only 1 valid startups (< 3)"
+      ]
     }
   ],
   "source_health": {
     "hn": {
-      "candidates": 5,
-      "seconds": 1.62,
+      "candidates": 35,
+      "seconds": 4.88,
       "error": ""
     },
     "rss": {
-      "candidates": 51,
-      "seconds": 3.26,
+      "candidates": 21,
+      "seconds": 7.98,
       "error": ""
     },
     "yc": {
-      "candidates": 59,
-      "seconds": 8.54,
+      "candidates": 47,
+      "seconds": 4.03,
       "error": ""
     },
     "web": {
-      "candidates": 30,
-      "seconds": 2.37,
-      "error": "No results found."
+      "candidates": 10,
+      "seconds": 2.1,
+      "error": ""
     },
     "hiring": {
-      "candidates": 28,
-      "seconds": 2.94,
+      "candidates": 48,
+      "seconds": 8.59,
       "error": ""
     },
     "edgar": {
-      "candidates": 30,
-      "seconds": 7.28,
+      "candidates": 17,
+      "seconds": 6.39,
       "error": ""
     }
   },
   "usage": {
-    "prompt_tokens": 101831,
-    "completion_tokens": 11314,
-    "total_tokens": 113146,
-    "calls": 10
+    "prompt_tokens": 138577,
+    "completion_tokens": 15397,
+    "total_tokens": 153975,
+    "calls": 14
   },
   "quality": {
-    "candidates": 105,
-    "crawled": 7,
-    "extracted": 7,
-    "relevant": 4,
-    "valid": 4,
-    "passed": true,
-    "failures": [],
+    "candidates": 109,
+    "crawled": 12,
+    "extracted": 1,
+    "relevant": 1,
+    "valid": 1,
+    "passed": false,
+    "failures": [
+      "only 1 valid startups (< 3)",
+      "only 1 discovery sources produced valid startups (< 2)"
+    ],
     "validity_rate": 1.0,
-    "dropped_ungrounded": 0,
-    "enriched": 4,
-    "with_website": 4,
-    "with_email": 3,
-    "with_phone": 2,
-    "people_linked": 4,
-    "avg_score": 55.3
+    "dropped_ungrounded": 6,
+    "enriched": 1,
+    "with_website": 1,
+    "with_email": 0,
+    "with_phone": 0,
+    "people_linked": 1,
+    "avg_score": 62.5
   },
   "accepted": [
-    {
-      "company": "Hearth",
-      "url": "https://example.com/hearth",
-      "source": "yc",
-      "people": 1,
-      "edges": 2,
-      "score": 50,
-      "gaps": [
-        "phone",
-        "people profiles"
-      ],
-      "website": "https://hearth.example",
-      "emails": 1,
-      "phones": 1
-    },
     {
       "company": "Nimbus Notes",
       "url": "https://example.com/nimbus notes",
       "source": "hn",
       "people": 1,
       "edges": 2,
-      "score": 72,
+      "score": 57,
       "gaps": [
         "email",
-        "phone"
+        "people profiles"
       ],
       "website": "https://nimbusnotes.example",
       "emails": 0,
       "phones": 1
-    },
-    {
-      "company": "Pocket Atlas",
-      "url": "https://example.com/pocket atlas",
-      "source": "web",
-      "people": 1,
-      "edges": 1,
-      "score": 90,
-      "gaps": [
-        "location",
-        "people profiles",
-        "email"
-      ],
-      "website": "https://pocketatlas.example",
-      "emails": 0,
-      "phones": 1
-    },
-    {
-      "company": "Tidepool Labs",
-      "url": "https://example.com/tidepool labs",
-      "source": "yc",
-      "people": 1,
-      "edges": 2,
-      "score": 78,
-      "gaps": [
-        "people profiles",
-        "phone",
-        "email"
-      ],
-      "website": "https://tidepoollabs.example",
-      "emails": 0,
-      "phones": 0
     }
   ],
-  "rejections": [
-    {
-      "url": "https://example.com/junk0",
-      "source": "yc",
-      "reasons": [
-        "missing core_product"
-      ]
-    },
-    {
-      "url": "https://example.com/junk1",
-      "source": "yc",
-      "reasons": [
-        "missing core_product"
-      ]
-    },
-    {
-      "url": "https://example.com/junk2",
-      "source": "edgar",
-      "reasons": [
-        "not a relevant startup page"
-      ]
-    }
-  ],
-  "errors": []
+  "rejections": [],
+  "errors": [
+    "extract failed https://example.com/p0: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p1: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p2: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p3: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p4: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p5: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p6: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p7: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p8: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p9: Error code: 429 - rate limit (TPD)",
+    "extract failed https://example.com/p10: Error code: 429 - rate limit (TPD)"
+  ]
 }

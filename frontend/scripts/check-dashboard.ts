@@ -21,6 +21,7 @@ import {
   runState,
 } from "../lib/metrics";
 import type { RunSummary } from "../lib/data";
+import { outreachFunnel } from "../lib/outreach-metrics";
 
 const demo = process.env.CALI_DEMO === "1";
 const root = path.join(__dirname, "..");
@@ -137,6 +138,38 @@ check(
 );
 const future = profiles.filter((p) => new Date(p.discovered_at).getTime() > Date.now() + 5 * 60_000);
 check(future.length === 0, "no startup was discovered in the future", future.map((p) => p.slug).join(", "));
+
+// 5b. outreach: recompute from the raw events, then compare with what lib/outreach-metrics.ts reports
+type RawEvent = { id: string; type: string; at: string };
+type RawOutreach = { status: string; touches: number; replied_at: string; last_contact: string; events: RawEvent[] };
+const withOutreach = readJson<{ slug: string; outreach?: RawOutreach }[]>("profiles.json") ?? [];
+const outreachRows = withOutreach.filter((p) => p.outreach);
+const allEvents = outreachRows.flatMap((p) => p.outreach!.events.map((e) => ({ ...e, slug: p.slug })));
+const EVENT_TYPES = new Set(["sent", "replied", "bounced", "meeting", "won", "passed", "note", "snooze"]);
+check(new Set(allEvents.map((e) => e.id)).size === allEvents.length, "outreach event ids are unique");
+check(
+  allEvents.every((e) => EVENT_TYPES.has(e.type) && !Number.isNaN(Date.parse(e.at))),
+  "every outreach event has a known type and a valid time",
+);
+const futureEvents = allEvents.filter((e) => Date.parse(e.at) > Date.now() + 5 * 60_000);
+check(futureEvents.length === 0, "no outreach event is dated in the future", futureEvents.map((e) => e.slug).join(", "));
+const badTouches = outreachRows.filter((p) => p.outreach!.touches !== p.outreach!.events.filter((e) => e.type === "sent").length);
+check(badTouches.length === 0, "touches equals the number of logged sends", badTouches.map((p) => p.slug).join(", "));
+const rawContacted = outreachRows.filter((p) => {
+  const o = p.outreach!;
+  return o.touches > 0 || ["replied", "meeting", "won"].includes(o.status) || o.replied_at !== "";
+}).length;
+const rawReplied = outreachRows.filter((p) => ["replied", "meeting", "won"].includes(p.outreach!.status) || p.outreach!.replied_at !== "").length;
+const funnel = outreachFunnel(outreachRows.map((p) => p.outreach as never));
+check(
+  funnel.contacted === rawContacted && funnel.replied === rawReplied,
+  "outreach funnel matches a recount of the raw events",
+  `funnel ${funnel.contacted}/${funnel.replied} vs raw ${rawContacted}/${rawReplied}`,
+);
+check(
+  funnel.contacted >= funnel.replied && funnel.replied >= funnel.meeting && funnel.meeting >= funnel.won,
+  "outreach funnel never grows (contacted >= replied >= meeting >= won)",
+);
 
 // 7. numbers are sane
 const budget = dailyBudget(runs, dayKey(latest.started_at));

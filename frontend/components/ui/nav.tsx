@@ -10,9 +10,10 @@ import { RockerSwitch } from "./rocker-switch";
 const LINKS = [
   { href: "/", label: "Overview" },
   { href: "/queue", label: "Queue" },
-  { href: "/runs", label: "Runs" },
+  { href: "/outreach", label: "Outreach" },
   { href: "/startups", label: "Startups" },
   { href: "/network", label: "Network" },
+  { href: "/runs", label: "Runs" },
 ];
 
 function subscribe(cb: () => void) {
