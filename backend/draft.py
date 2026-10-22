@@ -69,7 +69,7 @@ def _signal(profile: dict) -> str:
 def _intent_lines(intent: str, profile: dict) -> list[str]:
     bottleneck = _clean(profile.get("likely_bottleneck", ""))
     stack = ", ".join((profile.get("tech_stack") or [])[:3])
-    pitch = profile.get("value_prop_pitch", "").strip()
+    pitch = _first_sentence(profile.get("value_prop_pitch", ""))  # one sentence: short cold emails read as human
     if intent == "work_for":
         lines = [f"I'm looking to join a team like yours{f' and work with {stack}' if stack else ''}."]
         if bottleneck:
@@ -86,7 +86,6 @@ def _intent_lines(intent: str, profile: dict) -> list[str]:
     return lines + ["", "Open to a quick call to see if there is a fit?"]
 
 
-def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | None = None) -> dict:
 ANGLES = {
     "eng": "I'd like to use {product} and send you one concrete thing I'd build or fix: [after trying it: one specific observation].",
     "founding": "I'd like to use {product} and send you one concrete thing I'd build or fix: [after trying it: one specific observation].",
@@ -115,7 +114,7 @@ def signal_hook(profile: dict) -> tuple[str, str]:
     return (hook + (f" ({s['url']})" if s.get("url") else "") + "." if hook else ""), angle
 
 
-def build_draft(profile: dict, warm_path: dict | None = None) -> dict:
+def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | None = None) -> dict:
     company = profile["company_name"]
     sender = sender if sender is not None else load_sender()
     intent, reason = pick_intent(profile)

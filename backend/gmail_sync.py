@@ -1,10 +1,15 @@
-"""Optional, local-only Gmail bridge for outreach.py. Creates DRAFTS (never sends) and reads replies back.
+"""Optional, local-only Gmail bridge for outreach.py: drafts, autonomous sending, and reading replies back.
 
 One-time setup (free, your own Google Cloud project, never committed or run in CI):
   1. Google Cloud console -> enable the Gmail API -> OAuth client ID (Desktop app) -> download the JSON.
   2. Save it as ~/.config/cali/gmail_client.json
-  3. uv sync --extra gmail && uv run python outreach.py push   (first run opens a browser for consent)
-The token lands in ~/.config/cali/gmail_token.json. Scopes: gmail.compose (drafts) and gmail.readonly (replies).
+  3. uv sync --extra gmail && uv run python outreach.py run --dry-run   (first run opens a browser for consent;
+     delete ~/.config/cali/gmail_token.json to re-consent after scopes change)
+The token lands in ~/.config/cali/gmail_token.json. Scopes: gmail.compose, gmail.send, gmail.readonly.
+
+Autonomous sending is OFF until you set CALI_OUTREACH_SEND=1. Schedule it on your own machine only, e.g. crontab:
+  */20 * * * * cd /path/to/cali/backend && CALI_OUTREACH_SEND=1 uv run python outreach.py run >> ~/.config/cali/outreach.log 2>&1
+Each tick sends at most one vetted email, inside the send window, with random gaps and a warm-up ramp.
 """
 
 import base64
@@ -15,8 +20,13 @@ from pathlib import Path
 import outreach
 
 CONFIG_DIR = Path.home() / ".config" / "cali"
-SCOPES = ["https://www.googleapis.com/auth/gmail.compose", "https://www.googleapis.com/auth/gmail.readonly"]
+SCOPES = [
+    "https://www.googleapis.com/auth/gmail.compose",
+    "https://www.googleapis.com/auth/gmail.send",
+    "https://www.googleapis.com/auth/gmail.readonly",
+]
 OPT_OUT_WORDS = re.compile(r"\b(unsubscribe|remove me|stop emailing|do not contact|not interested)\b", re.I)
+COMPLAINT_WORDS = re.compile(r"\b(spam|report(ed)? (you|this)|harass\w*|cease and desist|legal action)\b", re.I)
 BOUNCE_SENDERS = ("mailer-daemon", "postmaster")
 
 
@@ -45,6 +55,8 @@ def classify_thread(messages: list[dict]) -> str | None:
     theirs = [m for m in messages if "SENT" not in m.get("labelIds", [])]
     if any(any(b in m.get("from", "").lower() for b in BOUNCE_SENDERS) for m in theirs):
         return "bounced"
+    if any(COMPLAINT_WORDS.search(m.get("snippet", "")) for m in theirs):
+        return "complaint"
     if any(OPT_OUT_WORDS.search(m.get("snippet", "")) for m in theirs):
         return "opted_out"
     if theirs:
@@ -57,6 +69,31 @@ def _raw(item: dict) -> dict:
     msg["To"], msg["Subject"] = item["to"], item["subject"]
     msg.set_content(item["body"])
     return {"message": {"raw": base64.urlsafe_b64encode(msg.as_bytes()).decode()}}
+
+
+def _header(svc, message_id: str, name: str) -> str:
+    msg = svc.users().messages().get(userId="me", id=message_id, format="metadata", metadataHeaders=[name]).execute()
+    return next((h["value"] for h in msg.get("payload", {}).get("headers", []) if h["name"].lower() == name.lower()), "")
+
+
+def send_item(svc, item: dict) -> dict:
+    """Send one plain-text email from the user's own mailbox. Follow-ups join the first email's thread.
+
+    Deliverability: real mailbox (Google signs SPF/DKIM), no HTML/tracking, List-Unsubscribe, proper threading.
+    Returns the Gmail API response ({"id", "threadId", ...}).
+    """
+    me = svc.users().getProfile(userId="me").execute()["emailAddress"]
+    msg = EmailMessage()
+    msg["To"], msg["From"], msg["Subject"] = item["to"], me, item["subject"]
+    msg["List-Unsubscribe"] = f"<mailto:{me}?subject=unsubscribe>"
+    body = {}
+    if item["kind"] == "follow_up" and item.get("gmail_thread_id"):
+        body["threadId"] = item["gmail_thread_id"]
+        if item.get("reply_to_message_id") and (rfc_id := _header(svc, item["reply_to_message_id"], "Message-Id")):
+            msg["In-Reply-To"] = msg["References"] = rfc_id
+    msg.set_content(item["body"])
+    body["raw"] = base64.urlsafe_b64encode(msg.as_bytes()).decode()
+    return svc.users().messages().send(userId="me", body=body).execute()
 
 
 def push(data_dir: Path = outreach.DB_DIR, svc=None) -> str:
@@ -81,7 +118,7 @@ def sync(data_dir: Path = outreach.DB_DIR, svc=None) -> str:
     svc = svc or service()
     changed = 0
     for item in list(outreach.load_outbox(data_dir).values()):
-        if item["status"] not in ("drafted", "sent") or not item["gmail_thread_id"]:
+        if item["status"] not in ("drafted", "sent") or not item.get("gmail_thread_id"):
             continue
         thread = svc.users().threads().get(userId="me", id=item["gmail_thread_id"], format="metadata", metadataHeaders=["From"]).execute()
         messages = [

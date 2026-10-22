@@ -245,5 +245,10 @@ export const readRun = (id: string) =>
   readJson<RunDetail>("runs", `${id}.json`);
 export const readProfiles = (): Profile[] =>
   readJson<Profile[]>("profiles.json") ?? [];
-export const readGraph = (): Graph =>
+/** Local-only (gitignored): present when the outreach agent runs on this machine. */
+export const readOutreachState = () =>
+  readJson<{ paused: boolean; reason: string; last_sent: string }>(
+    "outreach_state.json",
+  );
+export const readGraph =(): Graph =>
   readJson<Graph>("graph.json") ?? { nodes: [], edges: [] };

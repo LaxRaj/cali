@@ -6,3 +6,8 @@ __pycache__/
 !.env.example
 .eval-data/
 .claude/worktrees/
+# outreach is private to this machine: full email bodies, recipients, sender identity
+backend/data/outbox.json
+backend/data/outreach_state.json
+backend/data/suppressed.json
+backend/data/me.json
