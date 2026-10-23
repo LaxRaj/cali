@@ -6451,8 +6451,10 @@
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-10-23T11:18:53+00:00",
-      "status": "no_website"
+      "enriched_at": "2026-10-23T23:00:30+00:00",
+      "status": "no_website",
+      "attempts": 1,
+      "last_attempt": "2026-10-23T23:00:12+00:00"
     },
     "signals": [
       {
@@ -6546,7 +6548,7 @@
         "evidence": "",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 0.4
       },
@@ -6560,7 +6562,7 @@
         "evidence": "",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 0.4
       },
@@ -6574,7 +6576,7 @@
         "evidence": "",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 0.4
       },
@@ -6588,7 +6590,7 @@
         "evidence": "",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 0.4
       },
@@ -6602,7 +6604,7 @@
         "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 1.0
       },
@@ -6616,7 +6618,7 @@
         "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 0.6
       },
@@ -6630,7 +6632,7 @@
         "evidence": "Jim Hays, who will join Slingshot’s board",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 1.0
       },
@@ -6644,7 +6646,7 @@
         "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 1.0
       },
@@ -6658,7 +6660,7 @@
         "evidence": "Noland is also a Slingshot co‑founder",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 1.0
       },
@@ -6672,7 +6674,7 @@
         "evidence": "Rally Ventures ... co‑led the round",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 1.0
       },
@@ -6686,7 +6688,7 @@
         "evidence": "Skyward Group co‑led the round",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 1.0
       },
@@ -6700,7 +6702,7 @@
         "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
         "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:43+00:00",
+        "last_seen": "2026-10-23T23:00:12+00:00",
         "seen_count": 2,
         "confidence": 1.0
       },
@@ -11548,20 +11550,16 @@
     ],
     "contact": {
       "website": "",
-      "emails": [
-        {
-          "value": "cuppys@indianamicro.com",
-          "kind": "person",
-          "source_url": "https://news.ycombinator.com/item?id=50062997"
-        }
-      ],
+      "emails": [],
       "phones": [],
       "socials": {},
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-10-23T22:43:35+00:00",
-      "status": "no_website"
+      "enriched_at": "2026-10-23T23:00:17+00:00",
+      "status": "no_website",
+      "attempts": 1,
+      "last_attempt": "2026-10-23T23:00:12+00:00"
     },
     "signals": [
       {
@@ -11584,7 +11582,7 @@
     "decision": {
       "action": "skip",
       "urgency": "cold",
-      "priority": 11.6,
+      "priority": 9.6,
       "reasons": [
         "lead score 10",
         "signal strength 6.6/10: hiring",
@@ -11603,10 +11601,10 @@
         "value": "Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.",
         "source_url": "https://news.ycombinator.com/item?id=50062997",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-23T23:00:12+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -11640,11 +11638,11 @@
     "email_draft": {
       "intent": "work_for",
       "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "cuppys@indianamicro.com",
-      "to_source_url": "https://news.ycombinator.com/item?id=50062997",
+      "to": "",
+      "to_source_url": "",
       "subject": "Indiana Microelectronics LLC: a thought on your stack",
       "body": "Hi Indiana Microelectronics LLC team,\n\nI saw you're hiring (RF Engineer) (https://news.ycombinator.com/item?id=50062997).\nI'd like to use Indiana Microelectronics LLC and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Indiana Microelectronics LLC: Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:cuppys%40indianamicro.com?subject=Indiana%20Microelectronics%20LLC%3A%20a%20thought%20on%20your%20stack&body=Hi%20Indiana%20Microelectronics%20LLC%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28RF%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50062997%29.%0AI%27d%20like%20to%20use%20Indiana%20Microelectronics%20LLC%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Indiana%20Microelectronics%20LLC%3A%20Indiana%20Micro%20is%20a%20small%20electronics%20company%20working%20on%20tunable%20RF%20filters%20and%20radio-frequency%20front-end%20%28RFFE%29%20systems%20for%20interference%20mitigation.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "mailto": ""
     },
     "outreach": []
   },
@@ -11685,20 +11683,16 @@
     ],
     "contact": {
       "website": "",
-      "emails": [
-        {
-          "value": "careers@onechronos.com",
-          "kind": "other",
-          "source_url": "https://news.ycombinator.com/item?id=50012248"
-        }
-      ],
+      "emails": [],
       "phones": [],
       "socials": {},
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-10-23T22:44:08+00:00",
-      "status": "no_website"
+      "enriched_at": "2026-10-23T23:00:24+00:00",
+      "status": "no_website",
+      "attempts": 1,
+      "last_attempt": "2026-10-23T23:00:12+00:00"
     },
     "signals": [
       {
@@ -11725,7 +11719,7 @@
     "decision": {
       "action": "skip",
       "urgency": "cold",
-      "priority": 10.9,
+      "priority": 8.9,
       "reasons": [
         "lead score 10",
         "signal strength 4.6/10: hiring",
@@ -11744,10 +11738,10 @@
         "value": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
         "source_url": "https://news.ycombinator.com/item?id=50012248",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "backfill-2026-10-23",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-23T23:00:12+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -11921,11 +11915,11 @@
     "email_draft": {
       "intent": "work_for",
       "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "careers@onechronos.com",
-      "to_source_url": "https://news.ycombinator.com/item?id=50012248",
+      "to": "",
+      "to_source_url": "",
       "subject": "OneChronos: a thought on your stack",
       "body": "Hi OneChronos team,\n\nI saw you're hiring (Engineering Manager, Data Platform (NYC, Hybrid) · Software Engineer) (https://news.ycombinator.com/item?id=50012248).\nI'd like to use OneChronos and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across OneChronos: We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:careers%40onechronos.com?subject=OneChronos%3A%20a%20thought%20on%20your%20stack&body=Hi%20OneChronos%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Engineering%20Manager%2C%20Data%20Platform%20%28NYC%2C%20Hybrid%29%20%C2%B7%20Software%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50012248%29.%0AI%27d%20like%20to%20use%20OneChronos%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20OneChronos%3A%20We%E2%80%99re%20a%20Series%20B%20trading%20technology%20company%20reimagining%20how%20financial%20markets%20match%20buyers%20and%20sellers%20--%20applying%20auction%20theory%20and%20innovative%20technologies%20to%20build%20fairer%2C%20more%20efficient%20trading%20infrastructure.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "mailto": ""
     },
     "outreach": []
   }
