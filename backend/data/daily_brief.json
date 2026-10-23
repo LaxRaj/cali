@@ -1,19 +1,145 @@
 {
-  "generated_at": "2026-10-21T04:41:25+00:00",
+  "generated_at": "2026-10-23T11:18:40+00:00",
   "findings": [
     {
-      "company_name": "Polygrade",
-      "core_product": "AI‑powered platform that automates home warranty claim processing from diagnosis to resolution.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling AI agent integration and data pipelines to handle high‑volume claim workloads.",
-      "value_prop_pitch": "You can accelerate your AI agent integration by building a unified front‑end with Next.js that caches and serves semantic search results instantly. Pair it with a vector‑based knowledge store to let your agents retrieve relevant claim data in milliseconds, eliminating latency bottlenecks.",
+      "company_name": "Slingshot Insurance",
+      "core_product": "A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
+      "tech_stack": [
+        "AI",
+        "cloud",
+        "APIs"
+      ],
+      "likely_bottleneck": "Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
+      "value_prop_pitch": "I can build a Next.js front‑end that surfaces policy data instantly using vector semantic search, cutting down the time your team spends stitching together spreadsheets and emails. This will let your AI engine focus on underwriting while the UI handles complex queries in real time.",
       "is_relevant": true,
       "funding_stage": "seed",
-      "funding_amount": "$6.3M USD",
-      "hq": "Toronto",
-      "website": "https://polygrade.com",
-      "source_url": "https://betakit.com/toronto-software-startup-ploygrade-emerges-from-stealth-to-build-ai-for-home-warranty-claims/",
-      "discovered_at": "2026-10-21T04:39:48+00:00",
+      "funding_amount": "$27 million",
+      "hq": "",
+      "website": "",
+      "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+      "discovered_at": "2026-10-23T11:15:40+00:00",
+      "source": "rss",
+      "score": 66,
+      "gaps": [
+        "website",
+        "location",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-10-23T11:17:00+00:00",
+        "status": "no_website"
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Thu, 22 Oct 2026 13:00:23 +0000",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Ethan Genteman",
+          "role": "co‑founder & CEO",
+          "org": "Slingshot Insurance",
+          "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
+          "linkedin": "https://www.linkedin.com/in/ethan-genteman",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Brock Noland",
+          "role": "co‑founder & CEO of Vertical Insure",
+          "org": "Vertical Insure",
+          "evidence": "Noland is also a Slingshot co‑founder",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Justin Kaufenberg",
+          "role": "Managing Director at Rally Ventures",
+          "org": "Rally Ventures",
+          "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Jim Hays",
+          "role": "board member",
+          "org": "Slingshot Insurance",
+          "evidence": "Jim Hays, who will join Slingshot’s board",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Ethan Genteman",
+          "rel": "founded",
+          "dst": "Slingshot Insurance",
+          "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance"
+        },
+        {
+          "src": "Brock Noland",
+          "rel": "cofounded",
+          "dst": "Slingshot Insurance",
+          "evidence": "Noland is also a Slingshot co‑founder"
+        },
+        {
+          "src": "Rally Ventures",
+          "rel": "invested_in",
+          "dst": "Slingshot Insurance",
+          "evidence": "Rally Ventures ... co‑led the round"
+        },
+        {
+          "src": "Skyward Group",
+          "rel": "invested_in",
+          "dst": "Slingshot Insurance",
+          "evidence": "Skyward Group co‑led the round"
+        },
+        {
+          "src": "Justin Kaufenberg",
+          "rel": "backed_by",
+          "dst": "Slingshot Insurance",
+          "evidence": "Justin Kaufenberg, managing director at Rally Ventures"
+        }
+      ]
+    },
+    {
+      "company_name": "Cygrid",
+      "core_product": "Cygrid offers an identity‑enforcement platform that continuously controls access to confidential data, preventing AI agents and other identities from performing unauthorized actions in real time.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling real‑time, continuous enforcement across a massive, graph‑based identity graph while maintaining low latency.",
+      "value_prop_pitch": "I can build a Next.js front‑end that surfaces real‑time policy decisions instantly to your security team, and back it with a vector‑semantic search layer that instantly matches identity behavior patterns to known threats. This will let you scale continuous enforcement without adding latency, even as the graph of human, non‑human and AI agents grows.",
+      "is_relevant": true,
+      "funding_stage": "pre‑Seed",
+      "funding_amount": "€2.66 million",
+      "hq": "Berlin",
+      "website": "https://www.cygrid.io",
+      "source_url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+      "discovered_at": "2026-10-23T11:15:40+00:00",
       "source": "rss",
       "score": 93,
       "gaps": [
@@ -21,68 +147,96 @@
         "phone"
       ],
       "contact": {
-        "website": "https://polygrade.com",
+        "website": "https://www.cygrid.io",
         "emails": [
           {
-            "value": "ops@polygrade.com",
-            "kind": "person",
-            "source_url": "https://polygrade.com/"
+            "value": "info@cygrid.io",
+            "kind": "general",
+            "source_url": "https://www.cygrid.io/"
+          },
+          {
+            "value": "press@cygrid.io",
+            "kind": "press",
+            "source_url": "https://www.cygrid.io/about/contact"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/polygrade",
-          "twitter": "https://x.com/getpolygrade"
+          "linkedin": "https://www.linkedin.com/company/cygridio",
+          "twitter": "https://x.com/cygridio"
         },
-        "contact_page": "https://polygrade.com/contact",
+        "contact_page": "https://www.cygrid.io/about/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://polygrade.com/",
-          "https://polygrade.com/contact",
-          "https://polygrade.com/team",
-          "https://polygrade.com/about"
+          "https://www.cygrid.io/",
+          "https://www.cygrid.io/about",
+          "https://www.cygrid.io/about/contact",
+          "https://www.cygrid.io/team"
         ],
-        "enriched_at": "2026-10-21T04:40:49+00:00",
+        "enriched_at": "2026-10-23T11:17:04+00:00",
         "status": "ok"
       },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Fri, 23 Oct 2026 07:32:51 +0000",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
       "people": [
         {
-          "name": "David Steckel",
-          "role": "Co‑founder & CEO",
-          "org": "Polygrade",
-          "evidence": "David Steckel, Polygrade’s co‑founder and CEO",
-          "linkedin": "https://www.linkedin.com/in/david-steckel",
+          "name": "Dmitry Kharchenko",
+          "role": "CEO & Co‑founder",
+          "org": "Cygrid",
+          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://polygrade.com/about"
+          "link_source": ""
         },
         {
-          "name": "Eui Chung",
-          "role": "Co‑founder & CTO",
-          "org": "Polygrade",
-          "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)",
-          "linkedin": "https://www.linkedin.com/in/echung42",
+          "name": "Dekel Paz",
+          "role": "Co‑founder",
+          "org": "Cygrid",
+          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz",
+          "linkedin": "https://www.linkedin.com/in/dekelpaz",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://polygrade.com/about"
+          "link_source": "https://www.cygrid.io/about"
         },
         {
-          "name": "Kaustubh Vongole",
-          "role": "Co‑founder & Head of Product",
-          "org": "Polygrade",
-          "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)",
-          "linkedin": "https://www.linkedin.com/in/kvongole",
+          "name": "Boris Gorin",
+          "role": "Angel Investor, VP Product at Zscaler and founder of Canonic Security",
+          "org": "",
+          "evidence": "angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://polygrade.com/about"
+          "link_source": ""
         },
         {
-          "name": "Rachel Holt",
-          "role": "Co‑founder & Managing Partner",
-          "org": "Construct Capital",
-          "evidence": "Construct Capital co‑founder and managing partner Rachel Holt told BetaKit",
+          "name": "Andreas Bermig",
+          "role": "Angel Investor, CEO of bonify",
+          "org": "",
+          "evidence": "angel investors ... Andreas Bermig, CEO of bonify",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Vlad Tropko",
+          "role": "Angel Investor, AmberVale Capital",
+          "org": "",
+          "evidence": "angel investors ... Vlad Tropko of AmberVale Capital",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -92,238 +246,140 @@
       ],
       "edges": [
         {
-          "src": "David Steckel",
+          "src": "Dmitry Kharchenko",
           "rel": "founded",
-          "dst": "Polygrade",
-          "evidence": "David Steckel, Polygrade’s co‑founder and CEO"
+          "dst": "Cygrid",
+          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz"
         },
         {
-          "src": "Eui Chung",
+          "src": "Dekel Paz",
           "rel": "cofounded",
-          "dst": "Polygrade",
-          "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)"
+          "dst": "Cygrid",
+          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz"
         },
         {
-          "src": "Kaustubh Vongole",
-          "rel": "cofounded",
-          "dst": "Polygrade",
-          "evidence": "the three co‑founders (Chung as CTO and Vongole as head of product)"
-        },
-        {
-          "src": "American Family Ventures",
+          "src": "Atlantic",
           "rel": "invested_in",
-          "dst": "Polygrade",
-          "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+          "dst": "Cygrid",
+          "evidence": "The funding round was led by Atlantic, the pan‑European pre‑Seed fund"
         },
         {
-          "src": "Nine Four Ventures",
+          "src": "D11Z",
           "rel": "invested_in",
-          "dst": "Polygrade",
-          "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+          "dst": "Cygrid",
+          "evidence": "with participation from D11Z, the venture arm of the Schwarz Group"
         },
         {
-          "src": "Hustle Fund",
+          "src": "Boris Gorin",
           "rel": "invested_in",
-          "dst": "Polygrade",
-          "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+          "dst": "Cygrid",
+          "evidence": "angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security"
         },
         {
-          "src": "Room",
+          "src": "Andreas Bermig",
           "rel": "invested_in",
-          "dst": "Polygrade",
-          "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+          "dst": "Cygrid",
+          "evidence": "angel investors ... Andreas Bermig, CEO of bonify"
         },
         {
-          "src": "Pillar",
+          "src": "Vlad Tropko",
           "rel": "invested_in",
-          "dst": "Polygrade",
-          "evidence": "seed funding ... from American Family Ventures, Nine Four Ventures, Hustle Fund, Room, and Pillar"
+          "dst": "Cygrid",
+          "evidence": "angel investors ... Vlad Tropko of AmberVale Capital"
         },
         {
-          "src": "Construct Capital",
-          "rel": "invested_in",
-          "dst": "Polygrade",
-          "evidence": "a $3‑million USD cheque from Construct Capital"
-        },
-        {
-          "src": "David Steckel",
+          "src": "Dmitry Kharchenko",
           "rel": "previously_at",
-          "dst": "Setter",
-          "evidence": "The Polygrade CEO began his career as a custom homebuilder before founding Setter"
+          "dst": "Israeli Military Intelligence",
+          "evidence": "both of whom served in the Israeli Military Intelligence"
         },
         {
-          "src": "David Steckel",
+          "src": "Dekel Paz",
           "rel": "previously_at",
-          "dst": "Thumbtack",
-          "evidence": "Steckel focused on partnerships and innovation at Thumbtack"
-        },
-        {
-          "src": "David Steckel",
-          "rel": "previously_at",
-          "dst": "Sears Home Services",
-          "evidence": "before joining Sears Home Services"
+          "dst": "Israeli Military Intelligence",
+          "evidence": "both of whom served in the Israeli Military Intelligence"
         }
       ]
     },
     {
-      "company_name": "Vesta",
-      "core_product": "AI-native software that uses AI agents to automate mortgage loan origination for lenders.",
-      "tech_stack": [
-        "Claude Sonnet 4.5",
-        "AI agents",
-        "cloud"
-      ],
-      "likely_bottleneck": "scaling the orchestration of AI agents while maintaining compliance audit trails",
-      "value_prop_pitch": "I can refactor your agent orchestration UI with Next.js to give you a fast, component‑driven front‑end that scales with your user base. Then I’ll add a vector‑based semantic search layer so your agents can retrieve relevant loan data instantly, eliminating the compliance‑audit latency bottleneck.",
+      "company_name": "Alter",
+      "core_product": "Access control proxy for multi‑user agents that manages downstream credentials, enforces fine‑grained runtime policies and records compliance‑grade audit logs.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling fine‑grained policy enforcement and audit‑log storage across hundreds of integrated providers.",
+      "value_prop_pitch": "You could offload policy evaluation to a Next.js front‑end that queries a vector‑based semantic store, turning complex rule checks into fast similarity searches. This eliminates the need to hand‑craft and scale bespoke policy engines for each provider.",
       "is_relevant": true,
-      "funding_stage": "Series B",
-      "funding_amount": "$30M",
-      "hq": "San Francisco, US",
-      "website": "https://www.vesta.com",
-      "source_url": "https://techcrunch.com/2026/10/08/vesta-raises-30m-as-lenders-adopt-ai-agents/",
-      "discovered_at": "2026-10-21T04:39:48+00:00",
-      "source": "rss",
-      "score": 82,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://alterauth.com",
+      "source_url": "https://news.ycombinator.com/item?id=50176908",
+      "discovered_at": "2026-10-23T11:15:40+00:00",
+      "source": "launch_hn",
+      "score": 54,
       "gaps": [
-        "funding stage"
-      ],
-      "contact": {
-        "website": "https://www.vesta.com",
-        "emails": [
-          {
-            "value": "hello@vesta.com",
-            "kind": "general",
-            "source_url": "https://www.vesta.com/"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+14152160103",
-            "kind": "main",
-            "source_url": "https://www.vesta.com/"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/usevesta"
-        },
-        "contact_page": "",
-        "pages_crawled": [
-          "https://www.vesta.com/",
-          "https://www.vesta.com/about"
-        ],
-        "enriched_at": "2026-10-21T04:40:57+00:00",
-        "status": "ok"
-      },
-      "people": [
-        {
-          "name": "Mike Yu",
-          "role": "CEO & Co‑founder",
-          "org": "Vesta",
-          "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang. Yu, the company’s CEO, told TechCrunch that now was the perfect time to raise…",
-          "linkedin": "https://www.linkedin.com/in/mikeyu1/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Devon Yang",
-          "role": "Co‑founder",
-          "org": "Vesta",
-          "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang.",
-          "linkedin": "https://www.linkedin.com/in/devon/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Mike Yu",
-          "rel": "founded",
-          "dst": "Vesta",
-          "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang."
-        },
-        {
-          "src": "Devon Yang",
-          "rel": "cofounded",
-          "dst": "Vesta",
-          "evidence": "Mike Yu co‑founded the company in 2020 with Devon Yang."
-        },
-        {
-          "src": "Citi Ventures",
-          "rel": "invested_in",
-          "dst": "Vesta",
-          "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
-        },
-        {
-          "src": "Andreessen Horowitz",
-          "rel": "invested_in",
-          "dst": "Vesta",
-          "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
-        },
-        {
-          "src": "Pennymac",
-          "rel": "invested_in",
-          "dst": "Vesta",
-          "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
-        },
-        {
-          "src": "New American Funding",
-          "rel": "invested_in",
-          "dst": "Vesta",
-          "evidence": "Three of the company’s customers, including Pennymac and New American Funding, also invested in the round alongside Citi Ventures and Andreessen Horowitz."
-        }
-      ]
-    },
-    {
-      "company_name": "Genspark",
-      "core_product": "An AI‑powered search engine that uses multiple specialized AI agents to generate customized pages for each query.",
-      "tech_stack": [
-        "Meta Llama",
-        "OpenAI GPT",
-        "AI agents"
-      ],
-      "likely_bottleneck": "High inference cost and latency from calling multiple AI models per search query.",
-      "value_prop_pitch": "You can dramatically cut latency and cost by moving the UI to a static Next.js front‑end that caches query results in a vector semantic store, letting you serve pre‑computed answers instantly. This also reduces the number of model calls per query, freeing up your compute budget for more complex agents.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$60 million",
-      "hq": "Palo Alto, California",
-      "website": "https://finance.yahoo.com",
-      "source_url": "https://finance.yahoo.com/news/ai-search-startup-genspark-raises-154925342.html",
-      "discovered_at": "2026-10-21T04:39:48+00:00",
-      "source": "web",
-      "score": 73,
-      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
         "people profiles",
-        "email",
+        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://finance.yahoo.com",
-        "emails": [],
+        "website": "https://alterauth.com",
+        "emails": [
+          {
+            "value": "founders@alterauth.com",
+            "kind": "person",
+            "source_url": "https://alterauth.com/company/"
+          },
+          {
+            "value": "security@alterauth.com",
+            "kind": "other",
+            "source_url": "https://alterauth.com/"
+          }
+        ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/yahoo-finance"
+          "github": "https://github.com/AlterAIDev",
+          "twitter": "https://x.com/alter_ai_labs",
+          "linkedin": "https://www.linkedin.com/company/alterai-dev"
         },
         "contact_page": "",
-        "pages_crawled": [
-          "https://finance.yahoo.com/",
-          "https://finance.yahoo.com/plus/select-plan/",
-          "https://finance.yahoo.com/?err=404",
-          "https://finance.yahoo.com/?err=404"
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://alterauth.com/pricing"
+          },
+          {
+            "label": "Docs (opens in a new tab)",
+            "url": "https://docs.alterauth.com"
+          }
         ],
-        "enriched_at": "2026-10-21T04:41:15+00:00",
+        "pages_crawled": [
+          "https://alterauth.com/",
+          "https://alterauth.com/company/"
+        ],
+        "enriched_at": "2026-10-23T11:17:17+00:00",
         "status": "ok"
       },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "launch_hn",
+          "url": "https://news.ycombinator.com/item?id=50176908",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-10-21T06:42:12Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
       "people": [
         {
-          "name": "Eric Jing",
-          "role": "CEO",
-          "org": "Genspark",
-          "evidence": "Its CEO Eric Jing led Baidu's AI-powered smartphone and smart speaker Xiaodu unit until last October.",
+          "name": "Srikar Dandamuraju",
+          "role": "Co-Founder & CEO",
+          "org": "Alter Labs",
+          "evidence": "Co-Founder & CEO",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -333,143 +389,1315 @@
       ],
       "edges": [
         {
-          "src": "Eric Jing",
+          "src": "Srikar Dandamuraju",
           "rel": "founded",
-          "dst": "Genspark",
-          "evidence": "Its CEO Eric Jing led Baidu's AI-powered smartphone and smart speaker Xiaodu unit until last October."
+          "dst": "Alter",
+          "evidence": "Hi HN! We’re Srikar and Kevan, founders of Alter – https://alterauth.com/."
         },
         {
-          "src": "Eric Jing",
+          "src": "Srikar Dandamuraju",
           "rel": "previously_at",
-          "dst": "Baidu",
-          "evidence": "Its CEO Eric Jing led Baidu's AI-powered smartphone and smart speaker Xiaodu unit until last October."
+          "dst": "Goldman Sachs",
+          "evidence": "I (Srikar) was working at Goldmans and I saw how prohibitively expensive it was for me as a developer to write my own custom auth."
         },
         {
-          "src": "Lanchi Ventures",
-          "rel": "invested_in",
-          "dst": "Genspark",
-          "evidence": "The funding is led by Singapore-based fund Lanchi Ventures"
+          "src": "Srikar Dandamuraju",
+          "rel": "founded",
+          "dst": "Alter Labs",
+          "evidence": "Co-Founder & CEO"
+        },
+        {
+          "src": "Kevan Dodhia",
+          "rel": "founded",
+          "dst": "Alter Labs",
+          "evidence": "## Founders"
         }
       ]
     },
     {
-      "company_name": "Deeptune",
-      "core_product": "Deeptune builds high‑fidelity reinforcement‑learning “training gyms” that simulate real workplace software so AI agents can learn multi‑step tasks.",
+      "company_name": "Gushwork",
+      "core_product": "An AI‑powered platform that automatically generates search‑optimized content, builds backlinks, and tracks inbound leads to help businesses surface in traditional and AI‑driven search results.",
       "tech_stack": [],
-      "likely_bottleneck": "scaling realistic, high‑fidelity simulation environments and efficiently indexing the massive amount of generated interaction data",
-      "value_prop_pitch": "I can integrate a Next.js front‑end with a vector‑semantic search layer to let your engineers instantly query any simulation log or asset, cutting down the time spent hunting for the right scenario. This will let you scale your training gyms faster while keeping the data searchable for rapid iteration.",
+      "likely_bottleneck": "Scaling the network of AI agents and maintaining high‑quality, up‑to‑date content across hundreds of partner sites.",
+      "value_prop_pitch": "You could wrap the content generation UI in a Next.js front‑end to get instant, SEO‑friendly rendering and a smooth developer experience. Then index each piece with a vector‑based semantic search layer so the AI agents can retrieve the most relevant snippets in milliseconds, eliminating latency as you scale.",
       "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "$43 million",
-      "hq": "New York",
-      "website": "https://fortune.com",
-      "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
-      "discovered_at": "2026-10-21T04:39:48+00:00",
+      "funding_stage": "seed",
+      "funding_amount": "$9M",
+      "hq": "Delaware, USA",
+      "website": "https://www.gushwork.ai",
+      "source_url": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+      "discovered_at": "2026-10-23T11:15:40+00:00",
       "source": "web",
-      "score": 89,
+      "score": 87,
       "gaps": [
-        "tech stack"
+        "tech stack",
+        "people profiles"
       ],
       "contact": {
-        "website": "https://fortune.com",
+        "website": "https://www.gushwork.ai",
         "emails": [
           {
-            "value": "nadine.ghosn@fortune.com",
+            "value": "growth@gushwork.ai",
             "kind": "person",
-            "source_url": "https://fortune.com/about-us/"
-          },
-          {
-            "value": "patrick.reilly@fortune.com",
-            "kind": "person",
-            "source_url": "https://fortune.com/about-us/"
+            "source_url": "https://www.gushwork.ai/"
           }
         ],
         "phones": [
           {
-            "value": "+12026112345",
+            "value": "+18884515522",
             "kind": "main",
-            "source_url": "https://fortune.com/section/leadership/"
+            "source_url": "https://www.gushwork.ai/"
           }
         ],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/fortune-magazine"
+          "linkedin": "https://www.linkedin.com/company/gushwork",
+          "twitter": "https://x.com/gushwork"
         },
-        "contact_page": "",
-        "pages_crawled": [
-          "https://fortune.com/",
-          "https://fortune.com/about-us/",
-          "https://fortune.com/section/leadership/"
+        "contact_page": "https://www.gushwork.ai/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://www.gushwork.ai/pricing"
+          }
         ],
-        "enriched_at": "2026-10-21T04:41:23+00:00",
+        "pages_crawled": [
+          "https://www.gushwork.ai/",
+          "https://www.gushwork.ai/about",
+          "https://www.gushwork.ai/team",
+          "https://www.gushwork.ai/contact"
+        ],
+        "enriched_at": "2026-10-23T11:17:28+00:00",
         "status": "ok"
       },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "web",
+          "url": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
       "people": [
         {
-          "name": "Tim Lupo",
-          "role": "cofounder and CEO",
-          "org": "Deeptune",
-          "evidence": "cofounder and CEO Tim Lupo told Fortune",
-          "linkedin": "https://www.linkedin.com/in/timlup",
+          "name": "Nayrhit Bhattacharya",
+          "role": "Co‑founder & CEO",
+          "org": "Gushwork",
+          "evidence": "Founded in 2023 by Nayrhit Bhattacharya (pictured above, right) and Adithya Venkatesh",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Adithya Venkatesh",
+          "role": "Co‑founder & CTO",
+          "org": "Gushwork",
+          "evidence": "Founded in 2023 by Nayrhit Bhattacharya (pictured above, right) and Adithya Venkatesh (pictured above, left)",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Nayrhit Bhattacharya",
+          "rel": "founded",
+          "dst": "Gushwork",
+          "evidence": "Founded in 2023 by Nayrhit Bhattacharya"
+        },
+        {
+          "src": "Adithya Venkatesh",
+          "rel": "cofounded",
+          "dst": "Gushwork",
+          "evidence": "Founded in 2023 by ... Adithya Venkatesh"
+        },
+        {
+          "src": "Susquehanna International Group",
+          "rel": "invested_in",
+          "dst": "Gushwork",
+          "evidence": "raised $9 million in a seed round led by Susquehanna International Group (SIG)"
+        },
+        {
+          "src": "Lightspeed",
+          "rel": "invested_in",
+          "dst": "Gushwork",
+          "evidence": "raised $9 million in a seed round led by ... Lightspeed"
+        },
+        {
+          "src": "B Capital",
+          "rel": "invested_in",
+          "dst": "Gushwork",
+          "evidence": "participation from B Capital"
+        }
+      ]
+    },
+    {
+      "company_name": "Ignition Benefits",
+      "core_product": "An AI-native benefits broker platform that gives U.S. SMB employers transparency and control over health insurance plans.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling AI-driven analytics on sensitive health data while maintaining compliance and low latency for real‑time decision making.",
+      "value_prop_pitch": "We can build a fast, secure front‑end with Next.js that lets your users explore plan data instantly, and back it with a vector‑based semantic search layer to surface relevant claims and cost drivers in milliseconds. This removes the data‑retrieval bottleneck and lets your AI surface actionable insights without costly round‑trips to the database.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.ignitionbenefits.com",
+      "source_url": "https://www.ycombinator.com/launches/TzC-ignition-the-ai-native-benefits-broker-for-modern-companies",
+      "discovered_at": "2026-10-23T11:15:40+00:00",
+      "source": "yc",
+      "score": 57,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.ignitionbenefits.com",
+        "emails": [
+          {
+            "value": "info@ignitionbenefits.com",
+            "kind": "general",
+            "source_url": "https://www.ignitionbenefits.com/contact-us"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/ignition-benefits",
+          "twitter": "https://x.com/goignition"
+        },
+        "contact_page": "https://www.ignitionbenefits.com/contact-us",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.ignitionbenefits.com/",
+          "https://www.ignitionbenefits.com/contact-us"
+        ],
+        "enriched_at": "2026-10-23T11:17:38+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/TzC-ignition-the-ai-native-benefits-broker-for-modern-companies",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Nick Taranto",
+          "role": "Founder",
+          "org": "Ignition Benefits",
+          "evidence": "Hey YC! It's Nick.",
+          "linkedin": "https://www.linkedin.com/in/nicktaranto",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": "search"
-        },
-        {
-          "name": "Marco Mascorro",
-          "role": "partner",
-          "org": "Andreessen Horowitz",
-          "evidence": "Marco Mascorro, partner at Andreessen Horowitz, told Fortune",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Noam Brown",
-          "role": "OpenAI researcher",
-          "org": "",
-          "evidence": "angels including OpenAI researcher Noam Brown",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Tim Lupo",
+          "src": "Nick Taranto",
           "rel": "founded",
-          "dst": "Deeptune",
-          "evidence": "cofounder and CEO Tim Lupo told Fortune"
+          "dst": "Ignition Benefits",
+          "evidence": "Hey YC! It's Nick."
         },
         {
-          "src": "Andreessen Horowitz",
-          "rel": "invested_in",
-          "dst": "Deeptune",
-          "evidence": "Andreessen Horowitz led the round"
-        },
-        {
-          "src": "776",
-          "rel": "invested_in",
-          "dst": "Deeptune",
-          "evidence": "joined by 776"
-        },
-        {
-          "src": "Noam Brown",
-          "rel": "invested_in",
-          "dst": "Deeptune",
-          "evidence": "angels including OpenAI researcher Noam Brown"
-        },
-        {
-          "src": "Marco Mascorro",
-          "rel": "invested_in",
-          "dst": "Deeptune",
-          "evidence": "Marco Mascorro, partner at Andreessen Horowitz, told Fortune"
+          "src": "Nick Taranto",
+          "rel": "previously_at",
+          "dst": "Plated",
+          "evidence": "I was that founder for five years at Plated as we scaled to over 1,000 employees."
         }
       ]
+    },
+    {
+      "company_name": "Treat Health",
+      "core_product": "Treat Health is building healthcare where the right care takes minutes, not days. You describe your concern in your own words, our smart intake asks the follow-up questions a doctor would ask, and a licensed doctor reviews the whole picture",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "Helsinki, FI",
+      "website": "https://treat.health",
+      "source_url": "https://treat.health/en/careers/full-stack-engineer/",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://treat.health",
+        "emails": [
+          {
+            "value": "customers@treat.health",
+            "kind": "person",
+            "source_url": "https://treat.health/"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://treat.health/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://treat.health/",
+          "https://treat.health/about",
+          "https://treat.health/contact",
+          "https://treat.health/team"
+        ],
+        "enriched_at": "2026-10-23T11:17:42+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50104234",
+          "roles": [
+            "Full-stack Engineer (Elixir, Phoenix LiveView, React)"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-15T14:30:58Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "NeuralFrame",
+      "core_product": "We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://neuralframe.com",
+      "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://neuralframe.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/neuralframe"
+        },
+        "contact_page": "https://neuralframe.com/contact-us/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://neuralframe.com/",
+          "https://neuralframe.com/contact-us/",
+          "https://neuralframe.com/contact-us/"
+        ],
+        "enriched_at": "2026-10-23T11:17:48+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50095921",
+          "roles": [
+            "Senior Backend Engineer",
+            "Medical Data Pipeline (Python + Rust)"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-14T21:53:28Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "exLabora AI",
+      "core_product": "https://exlabora.com/open-roles.html",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://exlabora.com",
+      "source_url": "https://exlabora.com/open-roles.html",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://exlabora.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://exlabora.com/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://exlabora.com/",
+          "https://exlabora.com/about",
+          "https://exlabora.com/team",
+          "https://exlabora.com/contact"
+        ],
+        "enriched_at": "2026-10-23T11:17:51+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50091446",
+          "roles": [
+            "[https:",
+            "exlabora.com",
+            "open-roles.html](https://exlabora.com/open-roles.html)"
+          ],
+          "role_kinds": [
+            "other"
+          ],
+          "posted_at": "2026-10-14T17:28:12Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "GovStar",
+      "core_product": "GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.govstar.us",
+      "source_url": "https://govstar.us",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.govstar.us",
+        "emails": [
+          {
+            "value": "nicholas.hanson@govstar.us",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50090302"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://www.govstar.us/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.govstar.us/",
+          "https://www.govstar.us/about",
+          "https://www.govstar.us/team",
+          "https://www.govstar.us/contact"
+        ],
+        "enriched_at": "2026-10-23T11:17:54+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50090302",
+          "roles": [
+            "[https:",
+            "govstar.us](https://govstar.us)"
+          ],
+          "role_kinds": [
+            "other"
+          ],
+          "posted_at": "2026-10-14T16:26:28Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Sendery",
+      "core_product": "Sendery is a transactional email platform built for teams. We provide developers, designers, and operations with the tools they need to manage their product emails without needing development work.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://sendery.co",
+      "source_url": "https://sendery.co",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://sendery.co",
+        "emails": [
+          {
+            "value": "info@sendery.co",
+            "kind": "general",
+            "source_url": "https://sendery.co/en"
+          },
+          {
+            "value": "jobs@sendery.co",
+            "kind": "other",
+            "source_url": "https://news.ycombinator.com/item?id=50066343"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://sendery.co/en/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://sendery.co/en/pricing"
+          },
+          {
+            "label": "Get started",
+            "url": "https://sendery.co/en/register"
+          }
+        ],
+        "pages_crawled": [
+          "https://sendery.co/en",
+          "https://sendery.co/en/about",
+          "https://sendery.co/en/contact"
+        ],
+        "enriched_at": "2026-10-23T11:17:57+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50066343",
+          "roles": [
+            "iOS Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-13T03:40:30Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Typify.dev",
+      "core_product": "We're Typify, an education company for engineers that teaches functional programming and system design before pairing them with projects & job prospects. We're hiring for two roles: Both mid-senior, Angular + NestJS + Postgres.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://typify.dev",
+      "source_url": "https://typify.dev",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://typify.dev",
+        "emails": [
+          {
+            "value": "galen@typify.dev",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50063001"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/typifydev",
+          "github": "https://github.com/typifydev"
+        },
+        "contact_page": "https://typify.dev/landing/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://typify.dev/landing/pricing"
+          },
+          {
+            "label": "Sign Up",
+            "url": "https://typify.dev/signup"
+          }
+        ],
+        "pages_crawled": [
+          "https://typify.dev/",
+          "https://typify.dev/landing/contact"
+        ],
+        "enriched_at": "2026-10-23T11:18:00+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50063001",
+          "roles": [
+            "AI Application Engineer",
+            "Product Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-12T21:00:23Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Indiana Microelectronics LLC",
+      "core_product": "Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "",
+      "source_url": "https://news.ycombinator.com/item?id=50062997",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 10,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "",
+        "emails": [
+          {
+            "value": "cuppys@indianamicro.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50062997"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-10-23T11:18:04+00:00",
+        "status": "no_website"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50062997",
+          "roles": [
+            "RF Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-12T20:59:57Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "HiO",
+      "core_product": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://hioicecream.com",
+      "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://hioicecream.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://hioicecream.com/contact/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://hioicecream.com/",
+          "https://hioicecream.com/about/",
+          "https://hioicecream.com/contact/"
+        ],
+        "enriched_at": "2026-10-23T11:18:11+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50061040",
+          "roles": [
+            "Growth Marketing Manager"
+          ],
+          "role_kinds": [
+            "sales"
+          ],
+          "posted_at": "2026-10-12T18:51:56Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "StartupHakk",
+      "core_product": "We are hiring military veterans (and transitioning service members) living in Utah or Idaho for a paid, 1-year registered remote apprenticeship program in full-stack web development and applied AI.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://startuphakk.com",
+      "source_url": "https://startuphakk.com/jobs",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://startuphakk.com",
+        "emails": [
+          {
+            "value": "info@startuphakk.com",
+            "kind": "general",
+            "source_url": "https://startuphakk.com/contact-us/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+15202018020",
+            "kind": "main",
+            "source_url": "https://startuphakk.com/contact-us/"
+          }
+        ],
+        "socials": {
+          "twitter": "https://x.com/StartupHakk",
+          "linkedin": "https://www.linkedin.com/company/startup-hakk"
+        },
+        "contact_page": "https://startuphakk.com/contact-us/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://startuphakk.com/",
+          "https://startuphakk.com/contact-us/"
+        ],
+        "enriched_at": "2026-10-23T11:18:17+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50059584",
+          "roles": [
+            "AI Engineer Apprentice"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-12T17:17:48Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "General Intelligence Holdings",
+      "core_product": "I'm Chris, founder of GIH. We're building an AI operating platform for established service businesses, starting with UK accountancy. Our model is to acquire businesses and deploy the software into their daily workflows, measuring its effect",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.generalintelligenceholdings.com",
+      "source_url": "https://www.generalintelligenceholdings.com",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.generalintelligenceholdings.com",
+        "emails": [
+          {
+            "value": "chris@generalintelligencecapital.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50055019"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://www.generalintelligenceholdings.com/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.generalintelligenceholdings.com/",
+          "https://www.generalintelligenceholdings.com/team",
+          "https://www.generalintelligenceholdings.com/contact",
+          "https://www.generalintelligenceholdings.com/about"
+        ],
+        "enriched_at": "2026-10-23T11:18:19+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50055019",
+          "roles": [
+            "[https:"
+          ],
+          "role_kinds": [
+            "other"
+          ],
+          "posted_at": "2026-10-12T11:51:09Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Chronograph",
+      "core_product": "Chronograph was founded to bring next-generation technology to private capital markets. Through our suite of cloud-based analytics and data management solutions, we help many of the world's largest and most sophisticated venture capital, pr",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.greenhouse.com",
+      "source_url": "https://grnh.se/1pm4u2ys7us",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 26,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email"
+      ],
+      "contact": {
+        "website": "https://www.greenhouse.com",
+        "emails": [],
+        "phones": [
+          {
+            "value": "+19177804130",
+            "kind": "main",
+            "source_url": "https://www.greenhouse.com/contact"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/greenhouse-inc-"
+        },
+        "contact_page": "https://www.greenhouse.com/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://www.greenhouse.com/pricing"
+          },
+          {
+            "label": "Sign up for MyGreenhouse",
+            "url": "https://my.greenhouse.io/users/sign_in"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.greenhouse.com/",
+          "https://www.greenhouse.com/company",
+          "https://www.greenhouse.com/contact"
+        ],
+        "enriched_at": "2026-10-23T11:18:24+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50033036",
+          "roles": [
+            "Platform Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-10T13:55:55Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Propel Labs",
+      "core_product": "AI agents have made engineering throughput cheap, so senior judgment is now the scarce asset: what to build, what to gate, what to trust to production. We're looking for an experienced engineer to join our small crew and play a ~70/30 build",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.propellabs.ai",
+      "source_url": "https://propellabs.ai",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.propellabs.ai",
+        "emails": [
+          {
+            "value": "hello@propellabs.ai",
+            "kind": "general",
+            "source_url": "https://www.propellabs.ai/"
+          },
+          {
+            "value": "lisa@propellabs.ai",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50020012"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/gopropellabs"
+        },
+        "contact_page": "https://www.propellabs.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.propellabs.ai/",
+          "https://www.propellabs.ai/contact",
+          "https://www.propellabs.ai/team"
+        ],
+        "enriched_at": "2026-10-23T11:18:28+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50020012",
+          "roles": [
+            "Staff Full-Stack Engineer",
+            "Quality",
+            "Delivery"
+          ],
+          "role_kinds": [
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-10-09T13:12:43Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "SKIES",
+      "core_product": "3% of children are autistic. 30% of them at age 9 remain minimally verbal: a handful of single words, never put together into a sentence. If that evokes something in you beyond the number, read on.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://skieslearn.com",
+      "source_url": "https://skieslearn.com/ndbi/jobs/developer",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 26,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://skieslearn.com",
+        "emails": [
+          {
+            "value": "help@skieslearn.com",
+            "kind": "support",
+            "source_url": "https://skieslearn.com/"
+          },
+          {
+            "value": "julius@skieslearn.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50014023"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://skieslearn.com/",
+          "https://skieslearn.com/content/team"
+        ],
+        "enriched_at": "2026-10-23T11:18:31+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50014023",
+          "roles": [
+            "iOS Developer",
+            "embedded at the UCLA Kasari Lab"
+          ],
+          "role_kinds": [
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-10-08T23:45:00Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "OneChronos",
+      "core_product": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.onechronos.com",
+      "source_url": "https://news.ycombinator.com/item?id=50012248",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://www.onechronos.com",
+        "emails": [
+          {
+            "value": "info@onechronos.com",
+            "kind": "general",
+            "source_url": "https://www.onechronos.com/"
+          },
+          {
+            "value": "abdullah@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "billing_europe@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "compliance_europe@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "fx_sales@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "careers@onechronos.com",
+            "kind": "other",
+            "source_url": "https://news.ycombinator.com/item?id=50012248"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+19173000108",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "+442070788689",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "+3197010258288",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          }
+        ],
+        "socials": {
+          "github": "https://github.com/onechronos"
+        },
+        "contact_page": "https://www.onechronos.com/contact/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.onechronos.com/",
+          "https://www.onechronos.com/about/",
+          "https://www.onechronos.com/contact/"
+        ],
+        "enriched_at": "2026-10-23T11:18:36+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50012248",
+          "roles": [
+            "Engineering Manager",
+            "Data Platform (NYC, Hybrid) · Software Engineer",
+            "Quality",
+            "SDET (Flexible/U.S. Remote)"
+          ],
+          "role_kinds": [
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-10-08T21:04:09Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Ojin",
+      "core_product": "We build AI agents that look and sound human - real face, real voice, real-time conversation. The kind of thing that makes people ask if it's actually live the first time they see it. Getting there means solving latency at a level most infr",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://ojin.ai",
+      "source_url": "https://ojin.ai",
+      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "source": "hiring",
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://ojin.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/ojinai",
+          "linkedin": "https://www.linkedin.com/company/ojininai",
+          "twitter": "https://x.com/Ojin_AI"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://docs.ojin.ai/"
+          },
+          {
+            "label": "Pricing",
+            "url": "https://ojin.ai/pricing"
+          },
+          {
+            "label": "Get Started",
+            "url": "https://api.ojin.ai/v1/auth/login?redirect_path=%2Fdashboard"
+          },
+          {
+            "label": "Try Human Agents",
+            "url": "https://ojin.ai/dashboard/human-agents/library"
+          }
+        ],
+        "pages_crawled": [
+          "https://ojin.ai/",
+          "https://ojin.ai/about-us",
+          "https://ojin.ai/enterprise"
+        ],
+        "enriched_at": "2026-10-23T11:18:40+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50004401",
+          "roles": [
+            "Lead Platform Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-08T11:10:20Z",
+          "seen_at": "2026-10-23T11:16:48+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
     }
   ]
 }
