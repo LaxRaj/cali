@@ -77,3 +77,5 @@ class Contact(BaseModel):
     pages_crawled: list[str] = Field(default_factory=list)
     enriched_at: str = ""
     status: str = ""  # ok | no_website | crawl_failed | disabled
+    attempts: int = 0  # failed enrichment attempts by the backlog stage (capped by backfill.MAX_ATTEMPTS)
+    last_attempt: str = ""  # ISO timestamp of the last backlog attempt

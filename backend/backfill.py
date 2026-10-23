@@ -9,7 +9,7 @@ import argparse
 import asyncio
 import json
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import ats
@@ -26,6 +26,8 @@ from scraper import scrape_urls, search_results
 from signals import merge_signals
 
 DEFAULT_LIMIT = 3
+MAX_ATTEMPTS = 3  # failed tries before a startup is left alone (dead sites must not starve the queue)
+COOLDOWN_DAYS = 3  # wait attempts * this many days between tries
 
 
 def _prev_signals(rows: list[dict], company: str) -> list[dict]:
@@ -38,15 +40,39 @@ def _prev_signals(rows: list[dict], company: str) -> list[dict]:
     return []
 
 
-def needs_enrichment(row: dict) -> bool:
-    """Never enriched, or the last attempt found no website/crawl."""
+def _contact_state(row: dict) -> dict | None:
+    """Parsed contact_json, or None when the row was never enriched (or the JSON is unreadable)."""
     raw = row.get("contact_json") or ""
     if not raw:
-        return True
+        return None
     try:
-        return json.loads(raw).get("status") in ("", "no_website", "crawl_failed")
+        return json.loads(raw)
     except ValueError:
+        return None
+
+
+def attempts_of(row: dict) -> int:
+    return int((_contact_state(row) or {}).get("attempts") or 0)
+
+
+def needs_enrichment(row: dict, now: datetime | None = None) -> bool:
+    """Never enriched, or the last attempt found no website/crawl; bounded by MAX_ATTEMPTS and a growing cooldown."""
+    state = _contact_state(row)
+    if state is None:
         return True
+    if state.get("status") not in ("", "no_website", "crawl_failed"):
+        return False
+    attempts = int(state.get("attempts") or 0)
+    if attempts >= MAX_ATTEMPTS:
+        return False
+    last = state.get("last_attempt") or ""
+    if attempts and last:
+        try:
+            due = datetime.fromisoformat(last) + timedelta(days=COOLDOWN_DAYS * attempts)
+        except ValueError:
+            return True
+        return (now or datetime.now(timezone.utc)) >= due
+    return True
 
 
 def _extraction_from_rows(row: dict, people_rows: list[dict], edge_rows: list[dict]) -> Extraction:
@@ -68,13 +94,15 @@ async def backfill(
     fetch_fn=fetch_pages,
     extract_fn=extract_people,
     jobs_fn=ats.fetch_jobs,
+    github_fn=None,
 ) -> list[dict]:
     """Enrich up to `limit` stored startups; returns a summary per startup."""
     rows = [r for r in _rows(TABLE, data_dir) if needs_enrichment(r)]
     if only:
         wanted = {_norm(o) for o in only}
         rows = [r for r in rows if _norm(r["company_name"]) in wanted]
-    rows = sorted(rows, key=lambda r: r.get("discovered_at", ""), reverse=True)[:limit]
+    rows = sorted(rows, key=lambda r: r.get("discovered_at", ""), reverse=True)
+    rows = sorted(rows, key=attempts_of)[:limit]  # stable: fresh startups before ones that already failed, newest first within each
     people_rows, edge_rows = _rows(PEOPLE, data_dir), _rows(EDGES, data_dir)
     search_budget, team_budget = [6], [limit]
     out = []
@@ -92,10 +120,13 @@ async def backfill(
         try:
             res = await enrich_startup(
                 ex, source, md, search_fn=search_fn, fetch_fn=fetch_fn, extract_fn=extract_fn,
-                search_budget=search_budget, team_budget=team_budget, jobs_fn=jobs_fn,
+                search_budget=search_budget, team_budget=team_budget, jobs_fn=jobs_fn, github_fn=github_fn,
             )
         except Exception as e:
             res = EnrichResult(ex, Contact(status="crawl_failed"), [f"error: {e}"])
+        if res.contact.status != "ok":  # count the failure so the queue moves on after MAX_ATTEMPTS
+            res.contact.attempts = attempts_of(row) + 1
+            res.contact.last_attempt = stamp
         s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
         rt = rate(s, people, edges, res.contact)
         upsert_profile(
