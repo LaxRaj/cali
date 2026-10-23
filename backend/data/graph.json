@@ -1,6 +1,14 @@
 {
   "nodes": [
     {
+      "id": "seltz",
+      "label": "Seltz",
+      "type": "startup",
+      "degree": 21,
+      "website": "https://seltz.ai",
+      "score": 86
+    },
+    {
       "id": "plinto",
       "label": "Plinto",
       "type": "startup",
@@ -103,14 +111,6 @@
       "score": 88
     },
     {
-      "id": "seltz",
-      "label": "Seltz",
-      "type": "startup",
-      "degree": 6,
-      "website": "https://seltz.ai",
-      "score": 81
-    },
-    {
       "id": "vesta",
       "label": "Vesta",
       "type": "startup",
@@ -171,6 +171,14 @@
       "degree": 4,
       "website": "https://kairoshealthai.com",
       "score": 71
+    },
+    {
+      "id": "patabid",
+      "label": "PataBid",
+      "type": "startup",
+      "degree": 4,
+      "website": "https://www.patabid.com",
+      "score": 72
     },
     {
       "id": "miles pines",
@@ -305,22 +313,22 @@
       }
     },
     {
-      "id": "antonio mallia",
-      "label": "Antonio Mallia",
-      "type": "person",
-      "degree": 3,
-      "role": "Founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/antoniomallia"
-      }
-    },
-    {
       "id": "srikar dandamuraju",
       "label": "Srikar Dandamuraju",
       "type": "person",
       "degree": 3,
       "role": "Co-Founder & CEO",
       "links": {}
+    },
+    {
+      "id": "antonio mallia",
+      "label": "Antonio Mallia",
+      "type": "person",
+      "degree": 3,
+      "role": "Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/antoniomallia/"
+      }
     },
     {
       "id": "yudai matsuoka",
@@ -520,12 +528,6 @@
       "degree": 2
     },
     {
-      "id": "b capital",
-      "label": "B Capital",
-      "type": "org",
-      "degree": 2
-    },
-    {
       "id": "elman bio ltd",
       "label": "Elman Bio Ltd",
       "type": "org",
@@ -552,6 +554,12 @@
     {
       "id": "alter labs",
       "label": "Alter Labs",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "b capital",
+      "label": "B Capital",
       "type": "org",
       "degree": 2
     },
@@ -610,6 +618,14 @@
       "degree": 1,
       "website": "https://www.ignitionbenefits.com",
       "score": 57
+    },
+    {
+      "id": "munito ai",
+      "label": "Munito AI",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://munito.ai",
+      "score": 47
     },
     {
       "id": "alex rosenberg",
@@ -1399,6 +1415,124 @@
       }
     },
     {
+      "id": "elias bassani",
+      "label": "Elias Bassani",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/eliasbassani/"
+      }
+    },
+    {
+      "id": "albrey brown",
+      "label": "Albrey Brown",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/albreybrown/"
+      }
+    },
+    {
+      "id": "darrion dumlao",
+      "label": "Darrion Dumlao",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/darrion-dumlao-061b83277/?skipRedirect=true"
+      }
+    },
+    {
+      "id": "lukas gienapp",
+      "label": "Lukas Gienapp",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/lgienapp/?locale=en"
+      }
+    },
+    {
+      "id": "al johri",
+      "label": "Al Johri",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/aljohri/"
+      }
+    },
+    {
+      "id": "irine kokilashvili",
+      "label": "Irine Kokilashvili",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/irine-kokilashvili/"
+      }
+    },
+    {
+      "id": "matteo pietra",
+      "label": "Matteo Pietra",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matteo-pietra-415081198/"
+      }
+    },
+    {
+      "id": "angelo savino",
+      "label": "Angelo Savino",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/angelo-savino-as/?skipRedirect=true"
+      }
+    },
+    {
+      "id": "ferdinand schlatt",
+      "label": "Ferdinand Schlatt",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ferdinand-schlatt/"
+      }
+    },
+    {
+      "id": "hunter schuler",
+      "label": "Hunter Schuler",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/hunter-schuler/"
+      }
+    },
+    {
+      "id": "roberto trani",
+      "label": "Roberto Trani",
+      "type": "person",
+      "degree": 1,
+      "role": "Domain Expert",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/roberto-trani/"
+      }
+    },
+    {
+      "id": "alexey eryshev",
+      "label": "Alexey Eryshev",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -1575,30 +1709,6 @@
     {
       "id": "pinecone",
       "label": "Pinecone",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "speedinvest",
-      "label": "Speedinvest",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "italian founders fund",
-      "label": "Italian Founders Fund",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "united ventures",
-      "label": "United Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "future back ventures",
-      "label": "Future Back Ventures",
       "type": "org",
       "degree": 1
     },
@@ -1825,6 +1935,78 @@
       "degree": 1
     },
     {
+      "id": "graphite ventures",
+      "label": "Graphite Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "sprout fund",
+      "label": "Sprout Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "bluesky equities",
+      "label": "Bluesky Equities",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "inverted ventures",
+      "label": "Inverted Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "speedinvest",
+      "label": "Speedinvest",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "italian founders fund",
+      "label": "Italian Founders Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "united ventures",
+      "label": "United Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "future back ventures",
+      "label": "Future Back Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "futurepresent",
+      "label": "FuturePresent",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "hugging face",
+      "label": "Hugging Face",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "synthesia",
+      "label": "Synthesia",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "databricks",
+      "label": "Databricks",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "maali",
       "label": "Maali",
       "type": "startup",
@@ -1847,6 +2029,14 @@
       "degree": 0,
       "website": "https://elman.ai",
       "score": 67
+    },
+    {
+      "id": "intuitivo",
+      "label": "Intuitivo",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://intuitivo.pt",
+      "score": 43
     },
     {
       "id": "treat health",
@@ -1897,12 +2087,20 @@
       "score": 22
     },
     {
+      "id": "indiana microelectronics llc",
+      "label": "Indiana Microelectronics LLC",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 10
+    },
+    {
       "id": "hio",
       "label": "HiO",
       "type": "startup",
       "degree": 0,
-      "website": "https://hioicecream.com",
-      "score": 19
+      "website": "https://www.shop-hio.de",
+      "score": 36
     },
     {
       "id": "startuphakk",
@@ -1949,8 +2147,8 @@
       "label": "OneChronos",
       "type": "startup",
       "degree": 0,
-      "website": "https://www.onechronos.com",
-      "score": 36
+      "website": "",
+      "score": 10
     },
     {
       "id": "ojin",
@@ -1959,14 +2157,6 @@
       "degree": 0,
       "website": "https://ojin.ai",
       "score": 19
-    },
-    {
-      "id": "indiana microelectronics llc",
-      "label": "Indiana Microelectronics LLC",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
     },
     {
       "id": "kevin hartz",
@@ -2398,6 +2588,14 @@
       "type": "person",
       "degree": 0,
       "role": "board member",
+      "links": {}
+    },
+    {
+      "id": "adrian mitchell",
+      "label": "Adrian Mitchell",
+      "type": "person",
+      "degree": 0,
+      "role": "principal at Graphite Ventures",
       "links": {}
     }
   ],
@@ -3314,58 +3512,9 @@
     },
     {
       "source": "antonio mallia",
-      "target": "seltz",
-      "rel": "founded",
-      "evidence": "Seltz founder and CEO Antonio Mallia",
-      "sources": []
-    },
-    {
-      "source": "antonio mallia",
-      "target": "amazon",
-      "rel": "previously_at",
-      "evidence": "he worked as an applied scientist on Amazon's artificial general intelligence team",
-      "sources": []
-    },
-    {
-      "source": "antonio mallia",
       "target": "pinecone",
       "rel": "previously_at",
       "evidence": "and as a research scientist at the vector-database company Pinecone",
-      "sources": []
-    },
-    {
-      "source": "speedinvest",
-      "target": "seltz",
-      "rel": "invested_in",
-      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company.",
-      "sources": []
-    },
-    {
-      "source": "b capital",
-      "target": "seltz",
-      "rel": "invested_in",
-      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company.",
-      "sources": []
-    },
-    {
-      "source": "italian founders fund",
-      "target": "seltz",
-      "rel": "invested_in",
-      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company.",
-      "sources": []
-    },
-    {
-      "source": "united ventures",
-      "target": "seltz",
-      "rel": "invested_in",
-      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company.",
-      "sources": []
-    },
-    {
-      "source": "future back ventures",
-      "target": "seltz",
-      "rel": "invested_in",
-      "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company.",
       "sources": []
     },
     {
@@ -4116,6 +4265,420 @@
           "last_seen": "2026-10-23T11:18:43+00:00"
         }
       ]
+    },
+    {
+      "source": "graphite ventures",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sprout fund",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bluesky equities",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "inverted ventures",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "antonio mallia",
+      "target": "seltz",
+      "rel": "founded",
+      "evidence": "Seltz founder and CEO Antonio Mallia",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        },
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "antonio mallia",
+      "target": "amazon",
+      "rel": "previously_at",
+      "evidence": "He worked as an applied scientist on Amazon's artificial general intelligence team",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "speedinvest",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "The round was led by the European venture firm Speedinvest",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        },
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "b capital",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "The round was led by ... the global investor B Capital",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        },
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "italian founders fund",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "with participation from the Italian Founders Fund",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        },
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "united ventures",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "with participation from ... United Ventures",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        },
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "future back ventures",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "with participation from ... Future Back Ventures",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        },
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "elias bassani",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Elias Bassani",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "albrey brown",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Albrey Brown",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "darrion dumlao",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Darrion Dumlao",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lukas gienapp",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Lukas Gienapp",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "al johri",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Al Johri",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "irine kokilashvili",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Irine Kokilashvili",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "matteo pietra",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Matteo Pietra",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "angelo savino",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Angelo Savino",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ferdinand schlatt",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Ferdinand Schlatt",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hunter schuler",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Hunter Schuler",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "roberto trani",
+      "target": "seltz",
+      "rel": "works_at",
+      "evidence": "Roberto Trani",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "futurepresent",
+      "target": "seltz",
+      "rel": "invested_in",
+      "evidence": "FuturePresent",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hugging face",
+      "target": "seltz",
+      "rel": "advises",
+      "evidence": "Hugging Face",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "synthesia",
+      "target": "seltz",
+      "rel": "advises",
+      "evidence": "Synthesia",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "databricks",
+      "target": "seltz",
+      "rel": "advises",
+      "evidence": "Databricks",
+      "sources": [
+        {
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alexey eryshev",
+      "target": "munito ai",
+      "rel": "founded",
+      "evidence": "Hi everyone! I'm Alexey, founder of Munito AI.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WJe-munito-ai-open-model-inference-provider-for-europe-private-by-default",
+          "run_id": "20261023T224039Z",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-10-23T22:44:14+00:00"
+        }
+      ]
     }
   ],
   "investors": [
@@ -4190,6 +4753,10 @@
       "co_investors": [
         {
           "name": "Future Back Ventures",
+          "shared": 1
+        },
+        {
+          "name": "FuturePresent",
           "shared": 1
         },
         {

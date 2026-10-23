@@ -1,503 +1,367 @@
 {
-  "generated_at": "2026-10-23T11:18:40+00:00",
+  "generated_at": "2026-10-23T22:44:14+00:00",
   "findings": [
     {
-      "company_name": "Slingshot Insurance",
-      "core_product": "A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
-      "tech_stack": [
-        "AI",
-        "cloud",
-        "APIs"
-      ],
-      "likely_bottleneck": "Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
-      "value_prop_pitch": "I can build a Next.js front‑end that surfaces policy data instantly using vector semantic search, cutting down the time your team spends stitching together spreadsheets and emails. This will let your AI engine focus on underwriting while the UI handles complex queries in real time.",
+      "company_name": "Intuitivo",
+      "core_product": "A digital assessment platform that lets teachers create, schedule, grade tests and use AI to convert PDFs into interactive, auto‑graded exams.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the AI‑powered PDF conversion and real‑time monitoring for thousands of concurrent assessments.",
+      "value_prop_pitch": "I can refactor your front‑end with Next.js to give you server‑side rendering, edge caching and incremental static regeneration, dramatically cutting latency for test delivery. Then I’ll add a vector‑based semantic search layer so teachers can instantly find relevant question banks and auto‑grade results, eliminating the current scaling choke point.",
       "is_relevant": true,
       "funding_stage": "seed",
-      "funding_amount": "$27 million",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-      "discovered_at": "2026-10-23T11:15:40+00:00",
+      "funding_amount": "€1.35 million",
+      "hq": "Portugal",
+      "website": "https://intuitivo.pt",
+      "source_url": "https://www.eu-startups.com/2026/10/portuguese-edtech-intuitivo-raises-e1-35-million-to-ease-teachers-workload-and-expand-into-brazil/",
+      "discovered_at": "2026-10-23T22:41:24+00:00",
       "source": "rss",
-      "score": 66,
+      "score": 43,
       "gaps": [
-        "website",
-        "location",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
         "email",
         "phone"
       ],
       "contact": {
-        "website": "",
+        "website": "https://intuitivo.pt",
         "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-10-23T11:17:00+00:00",
-        "status": "no_website"
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Thu, 22 Oct 2026 13:00:23 +0000",
-          "seen_at": "2026-10-23T11:16:48+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Ethan Genteman",
-          "role": "co‑founder & CEO",
-          "org": "Slingshot Insurance",
-          "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
-          "linkedin": "https://www.linkedin.com/in/ethan-genteman",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Brock Noland",
-          "role": "co‑founder & CEO of Vertical Insure",
-          "org": "Vertical Insure",
-          "evidence": "Noland is also a Slingshot co‑founder",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Justin Kaufenberg",
-          "role": "Managing Director at Rally Ventures",
-          "org": "Rally Ventures",
-          "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Jim Hays",
-          "role": "board member",
-          "org": "Slingshot Insurance",
-          "evidence": "Jim Hays, who will join Slingshot’s board",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Ethan Genteman",
-          "rel": "founded",
-          "dst": "Slingshot Insurance",
-          "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance"
-        },
-        {
-          "src": "Brock Noland",
-          "rel": "cofounded",
-          "dst": "Slingshot Insurance",
-          "evidence": "Noland is also a Slingshot co‑founder"
-        },
-        {
-          "src": "Rally Ventures",
-          "rel": "invested_in",
-          "dst": "Slingshot Insurance",
-          "evidence": "Rally Ventures ... co‑led the round"
-        },
-        {
-          "src": "Skyward Group",
-          "rel": "invested_in",
-          "dst": "Slingshot Insurance",
-          "evidence": "Skyward Group co‑led the round"
-        },
-        {
-          "src": "Justin Kaufenberg",
-          "rel": "backed_by",
-          "dst": "Slingshot Insurance",
-          "evidence": "Justin Kaufenberg, managing director at Rally Ventures"
-        }
-      ]
-    },
-    {
-      "company_name": "Cygrid",
-      "core_product": "Cygrid offers an identity‑enforcement platform that continuously controls access to confidential data, preventing AI agents and other identities from performing unauthorized actions in real time.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling real‑time, continuous enforcement across a massive, graph‑based identity graph while maintaining low latency.",
-      "value_prop_pitch": "I can build a Next.js front‑end that surfaces real‑time policy decisions instantly to your security team, and back it with a vector‑semantic search layer that instantly matches identity behavior patterns to known threats. This will let you scale continuous enforcement without adding latency, even as the graph of human, non‑human and AI agents grows.",
-      "is_relevant": true,
-      "funding_stage": "pre‑Seed",
-      "funding_amount": "€2.66 million",
-      "hq": "Berlin",
-      "website": "https://www.cygrid.io",
-      "source_url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
-      "discovered_at": "2026-10-23T11:15:40+00:00",
-      "source": "rss",
-      "score": 93,
-      "gaps": [
-        "tech stack",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.cygrid.io",
-        "emails": [
-          {
-            "value": "info@cygrid.io",
-            "kind": "general",
-            "source_url": "https://www.cygrid.io/"
-          },
-          {
-            "value": "press@cygrid.io",
-            "kind": "press",
-            "source_url": "https://www.cygrid.io/about/contact"
-          }
-        ],
-        "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/cygridio",
-          "twitter": "https://x.com/cygridio"
+          "linkedin": "https://www.linkedin.com/company/intuitivo-edu"
         },
-        "contact_page": "https://www.cygrid.io/about/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.cygrid.io/",
-          "https://www.cygrid.io/about",
-          "https://www.cygrid.io/about/contact",
-          "https://www.cygrid.io/team"
-        ],
-        "enriched_at": "2026-10-23T11:17:04+00:00",
-        "status": "ok"
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://www.eu-startups.com/2026/10/berlins-cygrid-exits-stealth-with-e2-66-million-to-stop-ai-agents-from-accessing-confidential-company-data/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Fri, 23 Oct 2026 07:32:51 +0000",
-          "seen_at": "2026-10-23T11:16:48+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Dmitry Kharchenko",
-          "role": "CEO & Co‑founder",
-          "org": "Cygrid",
-          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Dekel Paz",
-          "role": "Co‑founder",
-          "org": "Cygrid",
-          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz",
-          "linkedin": "https://www.linkedin.com/in/dekelpaz",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.cygrid.io/about"
-        },
-        {
-          "name": "Boris Gorin",
-          "role": "Angel Investor, VP Product at Zscaler and founder of Canonic Security",
-          "org": "",
-          "evidence": "angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Andreas Bermig",
-          "role": "Angel Investor, CEO of bonify",
-          "org": "",
-          "evidence": "angel investors ... Andreas Bermig, CEO of bonify",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Vlad Tropko",
-          "role": "Angel Investor, AmberVale Capital",
-          "org": "",
-          "evidence": "angel investors ... Vlad Tropko of AmberVale Capital",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Dmitry Kharchenko",
-          "rel": "founded",
-          "dst": "Cygrid",
-          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz"
-        },
-        {
-          "src": "Dekel Paz",
-          "rel": "cofounded",
-          "dst": "Cygrid",
-          "evidence": "Cygrid was founded in January 2026 by Dmitry Kharchenko and Dekel Paz"
-        },
-        {
-          "src": "Atlantic",
-          "rel": "invested_in",
-          "dst": "Cygrid",
-          "evidence": "The funding round was led by Atlantic, the pan‑European pre‑Seed fund"
-        },
-        {
-          "src": "D11Z",
-          "rel": "invested_in",
-          "dst": "Cygrid",
-          "evidence": "with participation from D11Z, the venture arm of the Schwarz Group"
-        },
-        {
-          "src": "Boris Gorin",
-          "rel": "invested_in",
-          "dst": "Cygrid",
-          "evidence": "angel investors including Boris Gorin, VP Product at Zscaler and founder of Canonic Security"
-        },
-        {
-          "src": "Andreas Bermig",
-          "rel": "invested_in",
-          "dst": "Cygrid",
-          "evidence": "angel investors ... Andreas Bermig, CEO of bonify"
-        },
-        {
-          "src": "Vlad Tropko",
-          "rel": "invested_in",
-          "dst": "Cygrid",
-          "evidence": "angel investors ... Vlad Tropko of AmberVale Capital"
-        },
-        {
-          "src": "Dmitry Kharchenko",
-          "rel": "previously_at",
-          "dst": "Israeli Military Intelligence",
-          "evidence": "both of whom served in the Israeli Military Intelligence"
-        },
-        {
-          "src": "Dekel Paz",
-          "rel": "previously_at",
-          "dst": "Israeli Military Intelligence",
-          "evidence": "both of whom served in the Israeli Military Intelligence"
-        }
-      ]
-    },
-    {
-      "company_name": "Alter",
-      "core_product": "Access control proxy for multi‑user agents that manages downstream credentials, enforces fine‑grained runtime policies and records compliance‑grade audit logs.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling fine‑grained policy enforcement and audit‑log storage across hundreds of integrated providers.",
-      "value_prop_pitch": "You could offload policy evaluation to a Next.js front‑end that queries a vector‑based semantic store, turning complex rule checks into fast similarity searches. This eliminates the need to hand‑craft and scale bespoke policy engines for each provider.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://alterauth.com",
-      "source_url": "https://news.ycombinator.com/item?id=50176908",
-      "discovered_at": "2026-10-23T11:15:40+00:00",
-      "source": "launch_hn",
-      "score": 54,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://alterauth.com",
-        "emails": [
-          {
-            "value": "founders@alterauth.com",
-            "kind": "person",
-            "source_url": "https://alterauth.com/company/"
-          },
-          {
-            "value": "security@alterauth.com",
-            "kind": "other",
-            "source_url": "https://alterauth.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "github": "https://github.com/AlterAIDev",
-          "twitter": "https://x.com/alter_ai_labs",
-          "linkedin": "https://www.linkedin.com/company/alterai-dev"
-        },
-        "contact_page": "",
+        "contact_page": "https://intuitivo.pt/contact",
         "product_access": [
           {
-            "label": "Pricing",
-            "url": "https://alterauth.com/pricing"
-          },
-          {
-            "label": "Docs (opens in a new tab)",
-            "url": "https://docs.alterauth.com"
+            "label": "Start free →",
+            "url": "https://auth.intuitivo.pt/register"
           }
         ],
         "pages_crawled": [
-          "https://alterauth.com/",
-          "https://alterauth.com/company/"
+          "https://intuitivo.pt/",
+          "https://intuitivo.pt/about",
+          "https://intuitivo.pt/contact",
+          "https://intuitivo.pt/team"
         ],
-        "enriched_at": "2026-10-23T11:17:17+00:00",
+        "enriched_at": "2026-10-23T22:42:27+00:00",
         "status": "ok"
       },
       "signals": [
         {
-          "type": "launch",
-          "source": "launch_hn",
-          "url": "https://news.ycombinator.com/item?id=50176908",
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/10/portuguese-edtech-intuitivo-raises-e1-35-million-to-ease-teachers-workload-and-expand-into-brazil/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "2026-10-21T06:42:12Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "posted_at": "Fri, 23 Oct 2026 06:25:52 +0000",
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
-      "people": [
-        {
-          "name": "Srikar Dandamuraju",
-          "role": "Co-Founder & CEO",
-          "org": "Alter Labs",
-          "evidence": "Co-Founder & CEO",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Srikar Dandamuraju",
-          "rel": "founded",
-          "dst": "Alter",
-          "evidence": "Hi HN! We’re Srikar and Kevan, founders of Alter – https://alterauth.com/."
-        },
-        {
-          "src": "Srikar Dandamuraju",
-          "rel": "previously_at",
-          "dst": "Goldman Sachs",
-          "evidence": "I (Srikar) was working at Goldmans and I saw how prohibitively expensive it was for me as a developer to write my own custom auth."
-        },
-        {
-          "src": "Srikar Dandamuraju",
-          "rel": "founded",
-          "dst": "Alter Labs",
-          "evidence": "Co-Founder & CEO"
-        },
-        {
-          "src": "Kevan Dodhia",
-          "rel": "founded",
-          "dst": "Alter Labs",
-          "evidence": "## Founders"
-        }
-      ]
+      "people": [],
+      "edges": []
     },
     {
-      "company_name": "Gushwork",
-      "core_product": "An AI‑powered platform that automatically generates search‑optimized content, builds backlinks, and tracks inbound leads to help businesses surface in traditional and AI‑driven search results.",
+      "company_name": "PataBid",
+      "core_product": "AI‑powered construction estimating tool called Quantify",
       "tech_stack": [],
-      "likely_bottleneck": "Scaling the network of AI agents and maintaining high‑quality, up‑to‑date content across hundreds of partner sites.",
-      "value_prop_pitch": "You could wrap the content generation UI in a Next.js front‑end to get instant, SEO‑friendly rendering and a smooth developer experience. Then index each piece with a vector‑based semantic search layer so the AI agents can retrieve the most relevant snippets in milliseconds, eliminating latency as you scale.",
+      "likely_bottleneck": "Scaling AI model training and data pipelines to handle diverse construction drawings",
+      "value_prop_pitch": "You could streamline the front‑end with Next.js to serve fast, SEO‑friendly estimate dashboards, and use a vector semantic search layer to instantly retrieve relevant drawing fragments for the AI. This combo cuts latency and reduces the engineering load of building custom search infrastructure.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$9M",
-      "hq": "Delaware, USA",
-      "website": "https://www.gushwork.ai",
-      "source_url": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
-      "discovered_at": "2026-10-23T11:15:40+00:00",
-      "source": "web",
-      "score": 87,
+      "funding_stage": "pre-seed",
+      "funding_amount": "$2 million",
+      "hq": "Calgary, Canada",
+      "website": "https://www.patabid.com",
+      "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+      "discovered_at": "2026-10-23T22:41:24+00:00",
+      "source": "rss",
+      "score": 72,
       "gaps": [
         "tech stack",
+        "founder",
         "people profiles"
       ],
       "contact": {
-        "website": "https://www.gushwork.ai",
+        "website": "https://www.patabid.com",
         "emails": [
           {
-            "value": "growth@gushwork.ai",
-            "kind": "person",
-            "source_url": "https://www.gushwork.ai/"
+            "value": "info@patabid.com",
+            "kind": "general",
+            "source_url": "https://www.patabid.com/"
           }
         ],
         "phones": [
           {
-            "value": "+18884515522",
+            "value": "+18774728224",
             "kind": "main",
-            "source_url": "https://www.gushwork.ai/"
+            "source_url": "https://www.patabid.com/"
           }
         ],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/gushwork",
-          "twitter": "https://x.com/gushwork"
+          "linkedin": "https://www.linkedin.com/company/patabid"
         },
-        "contact_page": "https://www.gushwork.ai/contact",
+        "contact_page": "https://www.patabid.com/contact",
         "product_access": [
           {
-            "label": "Pricing",
-            "url": "https://www.gushwork.ai/pricing"
+            "label": "Get Started",
+            "url": "https://quantify.patabid.com/u/registration/"
           }
         ],
         "pages_crawled": [
-          "https://www.gushwork.ai/",
-          "https://www.gushwork.ai/about",
-          "https://www.gushwork.ai/team",
-          "https://www.gushwork.ai/contact"
+          "https://www.patabid.com/",
+          "https://www.patabid.com/contact"
         ],
-        "enriched_at": "2026-10-23T11:17:28+00:00",
+        "enriched_at": "2026-10-23T22:42:32+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Wed, 21 Oct 2026 21:25:39 +0000",
+          "seen_at": "2026-10-23T22:42:22+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Adrian Mitchell",
+          "role": "principal at Graphite Ventures",
+          "org": "Graphite Ventures",
+          "evidence": "“PataBid has built something contractors genuinely need,” said Adrian Mitchell, principal at Graphite Ventures, in a statement.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Graphite Ventures",
+          "rel": "invested_in",
+          "dst": "PataBid",
+          "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures"
+        },
+        {
+          "src": "Sprout Fund",
+          "rel": "invested_in",
+          "dst": "PataBid",
+          "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures"
+        },
+        {
+          "src": "Bluesky Equities",
+          "rel": "invested_in",
+          "dst": "PataBid",
+          "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures"
+        },
+        {
+          "src": "Inverted Ventures",
+          "rel": "invested_in",
+          "dst": "PataBid",
+          "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures"
+        }
+      ]
+    },
+    {
+      "company_name": "Seltz",
+      "core_product": "A web‑search engine built for AI agents that returns machine‑ready passages, tables and images instead of human‑focused snippets.",
+      "tech_stack": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Vector DB",
+        "Web crawling"
+      ],
+      "likely_bottleneck": "Scaling the crawler and retrieval pipeline to keep sub‑200 ms latency as query volume grows.",
+      "value_prop_pitch": "We can wrap your retrieval layer in a Next.js front‑end that streams vector‑semantic search results instantly to your agents, eliminating the latency caused by heavy back‑end calls. By indexing passages with a high‑dimensional vector store and exposing them via a lightweight API, you’ll keep response times under 200 ms even at massive scale.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$12.5 million",
+      "hq": "San Francisco Bay Area, USA",
+      "website": "https://seltz.ai",
+      "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+      "discovered_at": "2026-10-23T22:41:24+00:00",
+      "source": "web",
+      "score": 81,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://seltz.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/seltz-ai",
+          "linkedin": "https://www.linkedin.com/company/seltz",
+          "twitter": "https://x.com/seltz_ai"
+        },
+        "contact_page": "https://seltz.ai/contact",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://docs.seltz.ai/"
+          },
+          {
+            "label": "Try the API",
+            "url": "http://console.seltz.ai/"
+          },
+          {
+            "label": "Try Search",
+            "url": "https://console.seltz.ai"
+          }
+        ],
+        "pages_crawled": [
+          "https://seltz.ai/",
+          "https://seltz.ai/team",
+          "https://seltz.ai/about",
+          "https://seltz.ai/contact"
+        ],
+        "enriched_at": "2026-10-23T22:42:38+00:00",
         "status": "ok"
       },
       "signals": [
         {
           "type": "funding",
           "source": "web",
-          "url": "https://techcrunch.com/2026/02/25/gushwork-bets-on-ai-search-for-customer-leads-and-early-results-are-emerging/",
+          "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [
         {
-          "name": "Nayrhit Bhattacharya",
-          "role": "Co‑founder & CEO",
-          "org": "Gushwork",
-          "evidence": "Founded in 2023 by Nayrhit Bhattacharya (pictured above, right) and Adithya Venkatesh",
-          "linkedin": "",
+          "name": "Antonio Mallia",
+          "role": "Founder & CEO",
+          "org": "Seltz",
+          "evidence": "Seltz founder and CEO Antonio Mallia said traditional search engines were designed for people typing short keyword‑based queries",
+          "linkedin": "https://www.linkedin.com/in/antoniomallia/",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Adithya Venkatesh",
-          "role": "Co‑founder & CTO",
-          "org": "Gushwork",
-          "evidence": "Founded in 2023 by Nayrhit Bhattacharya (pictured above, right) and Adithya Venkatesh (pictured above, left)",
-          "linkedin": "",
+          "name": "Elias Bassani",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Elias Bassani",
+          "linkedin": "https://www.linkedin.com/in/eliasbassani/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Albrey Brown",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Albrey Brown",
+          "linkedin": "https://www.linkedin.com/in/albreybrown/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Darrion Dumlao",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Darrion Dumlao",
+          "linkedin": "https://www.linkedin.com/in/darrion-dumlao-061b83277/?skipRedirect=true",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Lukas Gienapp",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Lukas Gienapp",
+          "linkedin": "https://www.linkedin.com/in/lgienapp/?locale=en",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Al Johri",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Al Johri",
+          "linkedin": "https://www.linkedin.com/in/aljohri/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Irine Kokilashvili",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Irine Kokilashvili",
+          "linkedin": "https://www.linkedin.com/in/irine-kokilashvili/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Matteo Pietra",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Matteo Pietra",
+          "linkedin": "https://www.linkedin.com/in/matteo-pietra-415081198/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Angelo Savino",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Angelo Savino",
+          "linkedin": "https://www.linkedin.com/in/angelo-savino-as/?skipRedirect=true",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ferdinand Schlatt",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Ferdinand Schlatt",
+          "linkedin": "https://www.linkedin.com/in/ferdinand-schlatt/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Hunter Schuler",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Hunter Schuler",
+          "linkedin": "https://www.linkedin.com/in/hunter-schuler/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Roberto Trani",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Roberto Trani",
+          "linkedin": "https://www.linkedin.com/in/roberto-trani/",
           "twitter": "",
           "github": "",
           "homepage": "",
@@ -506,119 +370,473 @@
       ],
       "edges": [
         {
-          "src": "Nayrhit Bhattacharya",
+          "src": "Antonio Mallia",
           "rel": "founded",
-          "dst": "Gushwork",
-          "evidence": "Founded in 2023 by Nayrhit Bhattacharya"
+          "dst": "Seltz",
+          "evidence": "Seltz founder and CEO Antonio Mallia said traditional search engines were designed for people typing short keyword‑based queries"
         },
         {
-          "src": "Adithya Venkatesh",
-          "rel": "cofounded",
-          "dst": "Gushwork",
-          "evidence": "Founded in 2023 by ... Adithya Venkatesh"
-        },
-        {
-          "src": "Susquehanna International Group",
+          "src": "Speedinvest",
           "rel": "invested_in",
-          "dst": "Gushwork",
-          "evidence": "raised $9 million in a seed round led by Susquehanna International Group (SIG)"
-        },
-        {
-          "src": "Lightspeed",
-          "rel": "invested_in",
-          "dst": "Gushwork",
-          "evidence": "raised $9 million in a seed round led by ... Lightspeed"
+          "dst": "Seltz",
+          "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
         },
         {
           "src": "B Capital",
           "rel": "invested_in",
-          "dst": "Gushwork",
-          "evidence": "participation from B Capital"
+          "dst": "Seltz",
+          "evidence": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
+        },
+        {
+          "src": "Italian Founders Fund",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+        },
+        {
+          "src": "United Ventures",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+        },
+        {
+          "src": "Future Back Ventures",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
         }
       ]
     },
     {
-      "company_name": "Ignition Benefits",
-      "core_product": "An AI-native benefits broker platform that gives U.S. SMB employers transparency and control over health insurance plans.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling AI-driven analytics on sensitive health data while maintaining compliance and low latency for real‑time decision making.",
-      "value_prop_pitch": "We can build a fast, secure front‑end with Next.js that lets your users explore plan data instantly, and back it with a vector‑based semantic search layer to surface relevant claims and cost drivers in milliseconds. This removes the data‑retrieval bottleneck and lets your AI surface actionable insights without costly round‑trips to the database.",
+      "company_name": "Seltz",
+      "core_product": "A search engine built for AI agents that crawls the web, indexes it, and returns machine‑ready passages, tables and images instead of human‑focused snippets.",
+      "tech_stack": [
+        "web crawler",
+        "search index",
+        "retrieval models",
+        "vector databases",
+        "large language models"
+      ],
+      "likely_bottleneck": "Scaling the crawling and indexing pipeline to keep sub‑200 ms latency while handling hundreds of millions of pages daily.",
+      "value_prop_pitch": "You could offload the heavy lifting of real‑time retrieval to a Next.js front‑end backed by a vector semantic search layer, dramatically cutting latency for AI agents. This lets you focus on refining ranking models while we handle scalable, low‑latency search infrastructure.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$12.5 million",
+      "hq": "San Francisco Bay Area, USA",
+      "website": "https://seltz.ai",
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+      "discovered_at": "2026-10-23T22:41:24+00:00",
+      "source": "web",
+      "score": 86,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://seltz.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/seltz-ai",
+          "linkedin": "https://www.linkedin.com/company/seltz",
+          "twitter": "https://x.com/seltz_ai"
+        },
+        "contact_page": "https://seltz.ai/contact",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://docs.seltz.ai/"
+          },
+          {
+            "label": "Try the API",
+            "url": "http://console.seltz.ai/"
+          },
+          {
+            "label": "Try Search",
+            "url": "https://console.seltz.ai"
+          }
+        ],
+        "pages_crawled": [
+          "https://seltz.ai/",
+          "https://seltz.ai/about",
+          "https://seltz.ai/contact",
+          "https://seltz.ai/team"
+        ],
+        "enriched_at": "2026-10-23T22:42:49+00:00",
+        "status": "ok"
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "web",
+          "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-seltz-startup-rebuilding-search-110000196.html?fr=sycsrp_catchall",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-23T22:42:22+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Antonio Mallia",
+          "role": "Founder & CEO",
+          "org": "Seltz",
+          "evidence": "Seltz founder and CEO Antonio Mallia said traditional search engines were designed for people typing short keyword‑based queries",
+          "linkedin": "https://www.linkedin.com/in/antoniomallia/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Elias Bassani",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Elias Bassani",
+          "linkedin": "https://www.linkedin.com/in/eliasbassani/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Albrey Brown",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Albrey Brown",
+          "linkedin": "https://www.linkedin.com/in/albreybrown/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Darrion Dumlao",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Darrion Dumlao",
+          "linkedin": "https://www.linkedin.com/in/darrion-dumlao-061b83277/?skipRedirect=true",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Lukas Gienapp",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Lukas Gienapp",
+          "linkedin": "https://www.linkedin.com/in/lgienapp/?locale=en",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Al Johri",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Al Johri",
+          "linkedin": "https://www.linkedin.com/in/aljohri/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Irine Kokilashvili",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Irine Kokilashvili",
+          "linkedin": "https://www.linkedin.com/in/irine-kokilashvili/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Matteo Pietra",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Matteo Pietra",
+          "linkedin": "https://www.linkedin.com/in/matteo-pietra-415081198/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Angelo Savino",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Angelo Savino",
+          "linkedin": "https://www.linkedin.com/in/angelo-savino-as/?skipRedirect=true",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ferdinand Schlatt",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Ferdinand Schlatt",
+          "linkedin": "https://www.linkedin.com/in/ferdinand-schlatt/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Hunter Schuler",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Hunter Schuler",
+          "linkedin": "https://www.linkedin.com/in/hunter-schuler/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Roberto Trani",
+          "role": "Domain Expert",
+          "org": "Seltz",
+          "evidence": "Roberto Trani",
+          "linkedin": "https://www.linkedin.com/in/roberto-trani/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Antonio Mallia",
+          "rel": "founded",
+          "dst": "Seltz",
+          "evidence": "Seltz founder and CEO Antonio Mallia"
+        },
+        {
+          "src": "Antonio Mallia",
+          "rel": "previously_at",
+          "dst": "Amazon",
+          "evidence": "He worked as an applied scientist on Amazon's artificial general intelligence team"
+        },
+        {
+          "src": "Speedinvest",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "The round was led by the European venture firm Speedinvest"
+        },
+        {
+          "src": "B Capital",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "The round was led by ... the global investor B Capital"
+        },
+        {
+          "src": "Italian Founders Fund",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "with participation from the Italian Founders Fund"
+        },
+        {
+          "src": "United Ventures",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "with participation from ... United Ventures"
+        },
+        {
+          "src": "Future Back Ventures",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "with participation from ... Future Back Ventures"
+        },
+        {
+          "src": "Elias Bassani",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Elias Bassani"
+        },
+        {
+          "src": "Albrey Brown",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Albrey Brown"
+        },
+        {
+          "src": "Darrion Dumlao",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Darrion Dumlao"
+        },
+        {
+          "src": "Lukas Gienapp",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Lukas Gienapp"
+        },
+        {
+          "src": "Al Johri",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Al Johri"
+        },
+        {
+          "src": "Irine Kokilashvili",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Irine Kokilashvili"
+        },
+        {
+          "src": "Matteo Pietra",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Matteo Pietra"
+        },
+        {
+          "src": "Angelo Savino",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Angelo Savino"
+        },
+        {
+          "src": "Ferdinand Schlatt",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Ferdinand Schlatt"
+        },
+        {
+          "src": "Hunter Schuler",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Hunter Schuler"
+        },
+        {
+          "src": "Roberto Trani",
+          "rel": "works_at",
+          "dst": "Seltz",
+          "evidence": "Roberto Trani"
+        },
+        {
+          "src": "FuturePresent",
+          "rel": "invested_in",
+          "dst": "Seltz",
+          "evidence": "FuturePresent"
+        },
+        {
+          "src": "Hugging Face",
+          "rel": "advises",
+          "dst": "Seltz",
+          "evidence": "Hugging Face"
+        },
+        {
+          "src": "Synthesia",
+          "rel": "advises",
+          "dst": "Seltz",
+          "evidence": "Synthesia"
+        },
+        {
+          "src": "Databricks",
+          "rel": "advises",
+          "dst": "Seltz",
+          "evidence": "Databricks"
+        }
+      ]
+    },
+    {
+      "company_name": "Munito AI",
+      "core_product": "An open-model inference provider for Europe with private‑by‑default APIs compatible with OpenAI and Anthropic SDKs.",
+      "tech_stack": [
+        "OpenAI‑compatible API",
+        "Anthropic‑compatible API",
+        "EU data residency",
+        "GLM",
+        "Qwen",
+        "DeepSeek",
+        "Aleph Alpha",
+        "LightOn",
+        "Gemma"
+      ],
+      "likely_bottleneck": "Scaling low‑latency, high‑throughput inference across multiple open‑source models in a regulated EU environment.",
+      "value_prop_pitch": "I can integrate a Next.js front‑end with a vector‑based semantic search layer to cache frequent queries and pre‑fetch model responses, dramatically reducing latency and compute costs. This approach lets Munito serve more requests per GPU while keeping the private‑by‑default guarantee.",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.ignitionbenefits.com",
-      "source_url": "https://www.ycombinator.com/launches/TzC-ignition-the-ai-native-benefits-broker-for-modern-companies",
-      "discovered_at": "2026-10-23T11:15:40+00:00",
+      "website": "https://munito.ai",
+      "source_url": "https://www.ycombinator.com/launches/WJe-munito-ai-open-model-inference-provider-for-europe-private-by-default",
+      "discovered_at": "2026-10-23T22:41:24+00:00",
       "source": "yc",
-      "score": 57,
+      "score": 47,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
-        "tech stack",
+        "people profiles",
         "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://www.ignitionbenefits.com",
+        "website": "https://munito.ai",
         "emails": [
           {
-            "value": "info@ignitionbenefits.com",
-            "kind": "general",
-            "source_url": "https://www.ignitionbenefits.com/contact-us"
+            "value": "support@munito.ai",
+            "kind": "support",
+            "source_url": "https://munito.ai/"
           }
         ],
         "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/ignition-benefits",
-          "twitter": "https://x.com/goignition"
-        },
-        "contact_page": "https://www.ignitionbenefits.com/contact-us",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.ignitionbenefits.com/",
-          "https://www.ignitionbenefits.com/contact-us"
+        "socials": {},
+        "contact_page": "https://munito.ai/contact",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://docs.munito.ai/"
+          },
+          {
+            "label": "Get started",
+            "url": "https://console.munito.ai/registration"
+          }
         ],
-        "enriched_at": "2026-10-23T11:17:38+00:00",
+        "pages_crawled": [
+          "https://munito.ai/",
+          "https://munito.ai/contact"
+        ],
+        "enriched_at": "2026-10-23T22:43:02+00:00",
         "status": "ok"
       },
       "signals": [
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/TzC-ignition-the-ai-native-benefits-broker-for-modern-companies",
+          "url": "https://www.ycombinator.com/launches/WJe-munito-ai-open-model-inference-provider-for-europe-private-by-default",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [
         {
-          "name": "Nick Taranto",
+          "name": "Alexey Eryshev",
           "role": "Founder",
-          "org": "Ignition Benefits",
-          "evidence": "Hey YC! It's Nick.",
-          "linkedin": "https://www.linkedin.com/in/nicktaranto",
+          "org": "Munito AI",
+          "evidence": "Hi everyone! I'm Alexey, founder of Munito AI.",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "search"
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Nick Taranto",
+          "src": "Alexey Eryshev",
           "rel": "founded",
-          "dst": "Ignition Benefits",
-          "evidence": "Hey YC! It's Nick."
-        },
-        {
-          "src": "Nick Taranto",
-          "rel": "previously_at",
-          "dst": "Plated",
-          "evidence": "I was that founder for five years at Plated as we scaled to over 1,000 employees."
+          "dst": "Munito AI",
+          "evidence": "Hi everyone! I'm Alexey, founder of Munito AI."
         }
       ]
     },
@@ -634,7 +852,7 @@
       "hq": "Helsinki, FI",
       "website": "https://treat.health",
       "source_url": "https://treat.health/en/careers/full-stack-engineer/",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -662,10 +880,10 @@
         "pages_crawled": [
           "https://treat.health/",
           "https://treat.health/about",
-          "https://treat.health/contact",
-          "https://treat.health/team"
+          "https://treat.health/team",
+          "https://treat.health/contact"
         ],
-        "enriched_at": "2026-10-23T11:17:42+00:00",
+        "enriched_at": "2026-10-23T22:43:09+00:00",
         "status": "ok"
       },
       "signals": [
@@ -680,7 +898,7 @@
             "eng"
           ],
           "posted_at": "2026-10-15T14:30:58Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -698,7 +916,7 @@
       "hq": "",
       "website": "https://neuralframe.com",
       "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -726,7 +944,7 @@
           "https://neuralframe.com/contact-us/",
           "https://neuralframe.com/contact-us/"
         ],
-        "enriched_at": "2026-10-23T11:17:48+00:00",
+        "enriched_at": "2026-10-23T22:43:16+00:00",
         "status": "ok"
       },
       "signals": [
@@ -742,7 +960,7 @@
             "eng"
           ],
           "posted_at": "2026-10-14T21:53:28Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -760,7 +978,7 @@
       "hq": "",
       "website": "https://exlabora.com",
       "source_url": "https://exlabora.com/open-roles.html",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -784,10 +1002,10 @@
         "pages_crawled": [
           "https://exlabora.com/",
           "https://exlabora.com/about",
-          "https://exlabora.com/team",
-          "https://exlabora.com/contact"
+          "https://exlabora.com/contact",
+          "https://exlabora.com/team"
         ],
-        "enriched_at": "2026-10-23T11:17:51+00:00",
+        "enriched_at": "2026-10-23T22:43:19+00:00",
         "status": "ok"
       },
       "signals": [
@@ -804,7 +1022,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T17:28:12Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -822,7 +1040,7 @@
       "hq": "",
       "website": "https://www.govstar.us",
       "source_url": "https://govstar.us",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -855,7 +1073,7 @@
           "https://www.govstar.us/team",
           "https://www.govstar.us/contact"
         ],
-        "enriched_at": "2026-10-23T11:17:54+00:00",
+        "enriched_at": "2026-10-23T22:43:23+00:00",
         "status": "ok"
       },
       "signals": [
@@ -871,7 +1089,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T16:26:28Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -889,7 +1107,7 @@
       "hq": "",
       "website": "https://sendery.co",
       "source_url": "https://sendery.co",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -931,10 +1149,10 @@
         ],
         "pages_crawled": [
           "https://sendery.co/en",
-          "https://sendery.co/en/about",
-          "https://sendery.co/en/contact"
+          "https://sendery.co/en/contact",
+          "https://sendery.co/en/about"
         ],
-        "enriched_at": "2026-10-23T11:17:57+00:00",
+        "enriched_at": "2026-10-23T22:43:28+00:00",
         "status": "ok"
       },
       "signals": [
@@ -949,7 +1167,7 @@
             "eng"
           ],
           "posted_at": "2026-10-13T03:40:30Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -967,7 +1185,7 @@
       "hq": "",
       "website": "https://typify.dev",
       "source_url": "https://typify.dev",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -1010,7 +1228,7 @@
           "https://typify.dev/",
           "https://typify.dev/landing/contact"
         ],
-        "enriched_at": "2026-10-23T11:18:00+00:00",
+        "enriched_at": "2026-10-23T22:43:32+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1026,7 +1244,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T21:00:23Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1044,7 +1262,7 @@
       "hq": "",
       "website": "",
       "source_url": "https://news.ycombinator.com/item?id=50062997",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 10,
       "gaps": [
@@ -1073,7 +1291,7 @@
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [],
-        "enriched_at": "2026-10-23T11:18:04+00:00",
+        "enriched_at": "2026-10-23T22:43:35+00:00",
         "status": "no_website"
       },
       "signals": [
@@ -1088,7 +1306,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T20:59:57Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1103,36 +1321,46 @@
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
-      "hq": "",
-      "website": "https://hioicecream.com",
+      "hq": "München, DE",
+      "website": "https://www.shop-hio.de",
       "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
-      "score": 19,
+      "score": 36,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors",
-        "email",
-        "phone"
+        "investors"
       ],
       "contact": {
-        "website": "https://hioicecream.com",
-        "emails": [],
-        "phones": [],
+        "website": "https://www.shop-hio.de",
+        "emails": [
+          {
+            "value": "info@hio-fitting.de",
+            "kind": "general",
+            "source_url": "https://www.shop-hio.de/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+498996030575",
+            "kind": "main",
+            "source_url": "https://www.shop-hio.de/"
+          }
+        ],
         "socials": {},
-        "contact_page": "https://hioicecream.com/contact/",
+        "contact_page": "https://www.shop-hio.de/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://hioicecream.com/",
-          "https://hioicecream.com/about/",
-          "https://hioicecream.com/contact/"
+          "https://www.shop-hio.de/",
+          "https://www.shop-hio.de/about",
+          "https://www.shop-hio.de/contact",
+          "https://www.shop-hio.de/team"
         ],
-        "enriched_at": "2026-10-23T11:18:11+00:00",
+        "enriched_at": "2026-10-23T22:43:42+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1147,7 +1375,7 @@
             "sales"
           ],
           "posted_at": "2026-10-12T18:51:56Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1165,7 +1393,7 @@
       "hq": "",
       "website": "https://startuphakk.com",
       "source_url": "https://startuphakk.com/jobs",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1203,7 +1431,7 @@
           "https://startuphakk.com/",
           "https://startuphakk.com/contact-us/"
         ],
-        "enriched_at": "2026-10-23T11:18:17+00:00",
+        "enriched_at": "2026-10-23T22:43:48+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1218,7 +1446,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T17:17:48Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1236,7 +1464,7 @@
       "hq": "",
       "website": "https://www.generalintelligenceholdings.com",
       "source_url": "https://www.generalintelligenceholdings.com",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1269,7 +1497,7 @@
           "https://www.generalintelligenceholdings.com/contact",
           "https://www.generalintelligenceholdings.com/about"
         ],
-        "enriched_at": "2026-10-23T11:18:19+00:00",
+        "enriched_at": "2026-10-23T22:43:51+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1284,7 +1512,7 @@
             "other"
           ],
           "posted_at": "2026-10-12T11:51:09Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1302,7 +1530,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/1pm4u2ys7us",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1344,7 +1572,7 @@
           "https://www.greenhouse.com/company",
           "https://www.greenhouse.com/contact"
         ],
-        "enriched_at": "2026-10-23T11:18:24+00:00",
+        "enriched_at": "2026-10-23T22:43:57+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1359,7 +1587,7 @@
             "eng"
           ],
           "posted_at": "2026-10-10T13:55:55Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1377,7 +1605,7 @@
       "hq": "",
       "website": "https://www.propellabs.ai",
       "source_url": "https://propellabs.ai",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -1415,7 +1643,7 @@
           "https://www.propellabs.ai/contact",
           "https://www.propellabs.ai/team"
         ],
-        "enriched_at": "2026-10-23T11:18:28+00:00",
+        "enriched_at": "2026-10-23T22:44:01+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1433,7 +1661,7 @@
             "other"
           ],
           "posted_at": "2026-10-09T13:12:43Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1451,7 +1679,7 @@
       "hq": "",
       "website": "https://skieslearn.com",
       "source_url": "https://skieslearn.com/ndbi/jobs/developer",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1486,7 +1714,7 @@
           "https://skieslearn.com/",
           "https://skieslearn.com/content/team"
         ],
-        "enriched_at": "2026-10-23T11:18:31+00:00",
+        "enriched_at": "2026-10-23T22:44:05+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1503,7 +1731,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T23:45:00Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1519,83 +1747,39 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.onechronos.com",
+      "website": "",
       "source_url": "https://news.ycombinator.com/item?id=50012248",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
-      "score": 36,
+      "score": 10,
       "gaps": [
         "funding stage",
+        "website",
         "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors"
+        "investors",
+        "email",
+        "phone"
       ],
       "contact": {
-        "website": "https://www.onechronos.com",
+        "website": "",
         "emails": [
-          {
-            "value": "info@onechronos.com",
-            "kind": "general",
-            "source_url": "https://www.onechronos.com/"
-          },
-          {
-            "value": "abdullah@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "billing_europe@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "compliance_europe@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "fx_sales@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
           {
             "value": "careers@onechronos.com",
             "kind": "other",
             "source_url": "https://news.ycombinator.com/item?id=50012248"
           }
         ],
-        "phones": [
-          {
-            "value": "+19173000108",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "+442070788689",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "+3197010258288",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          }
-        ],
-        "socials": {
-          "github": "https://github.com/onechronos"
-        },
-        "contact_page": "https://www.onechronos.com/contact/",
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
         "product_access": [],
-        "pages_crawled": [
-          "https://www.onechronos.com/",
-          "https://www.onechronos.com/about/",
-          "https://www.onechronos.com/contact/"
-        ],
-        "enriched_at": "2026-10-23T11:18:36+00:00",
-        "status": "ok"
+        "pages_crawled": [],
+        "enriched_at": "2026-10-23T22:44:08+00:00",
+        "status": "no_website"
       },
       "signals": [
         {
@@ -1613,7 +1797,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T21:04:09Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
@@ -1631,7 +1815,7 @@
       "hq": "",
       "website": "https://ojin.ai",
       "source_url": "https://ojin.ai",
-      "discovered_at": "2026-10-23T11:16:48+00:00",
+      "discovered_at": "2026-10-23T22:42:22+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1678,7 +1862,7 @@
           "https://ojin.ai/about-us",
           "https://ojin.ai/enterprise"
         ],
-        "enriched_at": "2026-10-23T11:18:40+00:00",
+        "enriched_at": "2026-10-23T22:44:14+00:00",
         "status": "ok"
       },
       "signals": [
@@ -1693,7 +1877,7 @@
             "eng"
           ],
           "posted_at": "2026-10-08T11:10:20Z",
-          "seen_at": "2026-10-23T11:16:48+00:00"
+          "seen_at": "2026-10-23T22:42:22+00:00"
         }
       ],
       "people": [],
