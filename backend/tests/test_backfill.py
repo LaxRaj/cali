@@ -66,3 +66,39 @@ async def test_backfill_respects_limit_and_only_filter(tmp_path):
     assert [r["company"] for r in await backfill(tmp_path / "db", limit=1, scrape_fn=no_scrape, fetch_fn=no_fetch)] == ["C3"]  # newest first
     only = await backfill(tmp_path / "db", only=["a1"], scrape_fn=no_scrape, fetch_fn=no_fetch)
     assert [r["company"] for r in only] == ["A1"] and only[0]["status"] == "no_website"
+
+
+def _row(status="", attempts=0, last=""):
+    return {"contact_json": json.dumps({"status": status, "attempts": attempts, "last_attempt": last})}
+
+
+def test_needs_enrichment_caps_attempts_and_applies_cooldown():
+    from datetime import datetime, timezone
+    from backfill import MAX_ATTEMPTS
+
+    now = datetime(2026, 10, 23, tzinfo=timezone.utc)
+    assert needs_enrichment(_row("no_website", 1, "2026-10-19T00:00:00+00:00"), now)  # 4 days >= 3-day cooldown
+    assert not needs_enrichment(_row("no_website", 1, "2026-10-22T00:00:00+00:00"), now)  # still cooling down
+    assert not needs_enrichment(_row("crawl_failed", 2, "2026-10-19T00:00:00+00:00"), now)  # 2 attempts => 6 days
+    assert not needs_enrichment(_row("crawl_failed", MAX_ATTEMPTS, "2026-01-01T00:00:00+00:00"), now)  # given up
+    assert not needs_enrichment(_row("ok"), now)
+
+
+async def test_backfill_counts_failed_attempts_and_prefers_fresh_rows(tmp_path):
+    d = tmp_path / "db"
+    upsert_profile(prof("Old", "https://techcrunch.com/old", discovered_at="2026-10-01"), db_dir=d)
+    upsert_profile(prof("New", "https://techcrunch.com/new", discovered_at="2026-10-10"), db_dir=d)
+    upsert_profile(prof("Dead", "https://techcrunch.com/dead", discovered_at="2026-10-20"), db_dir=d,
+                   extras={"score": 1, "score_json": "{}", "contact_json": json.dumps(
+                       {"status": "no_website", "attempts": 1, "last_attempt": "2026-01-01T00:00:00+00:00"})})
+
+    async def no_scrape(urls):
+        return []
+
+    async def no_fetch(urls):
+        return []
+
+    out = await backfill(d, limit=2, scrape_fn=no_scrape, fetch_fn=no_fetch)
+    assert [r["company"] for r in out] == ["New", "Old"]  # zero-attempt rows first, even though Dead is newest
+    rows = {r["company_name"]: json.loads(r["contact_json"]) for r in _rows(TABLE, d)}
+    assert rows["New"]["attempts"] == 1 and rows["New"]["last_attempt"] and rows["Dead"]["attempts"] == 1

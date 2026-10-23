@@ -36,7 +36,7 @@ from scraper import Page, scrape_urls, search_results
 from signals import hiring_extraction, make_signal, merge_signals, parse_roles
 
 MAX_PEOPLE_SEARCHES = 12  # public-search lookups for founders' profile links, per run
-BACKFILL_LIMIT = 3  # older stored startups re-enriched per run
+BACKFILL_LIMIT = 1  # older stored startups re-enriched per scout run; the backlog drains in enrich_run.py
 AVG_EXTRACTION_TOKENS = 4500  # for the 'tokens saved' estimate when a page is gated
 MAX_GITHUB_LOOKUPS = 30  # public profile API calls per run
 TOKEN_BUDGET = int(os.environ.get("CALI_TOKEN_BUDGET", "20000"))  # Groq tokens per run; 0 = unlimited
