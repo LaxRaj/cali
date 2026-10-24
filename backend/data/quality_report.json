@@ -1,34 +1,33 @@
 {
-  "generated_at": "2026-10-23T22:44:14+00:00",
-  "candidates": 260,
-  "crawled": 6,
-  "extracted": 5,
-  "relevant": 5,
-  "valid": 5,
+  "generated_at": "2026-10-24T01:57:30+00:00",
+  "candidates": 266,
+  "crawled": 7,
+  "extracted": 7,
+  "relevant": 6,
+  "valid": 6,
   "sources": {
-    "rss": 2,
-    "web": 2,
-    "yc": 1
+    "rss": 1,
+    "web": 3,
+    "yc": 2
   },
-  "people": 26,
+  "people": 19,
   "edges": 33,
-  "dropped_ungrounded": 13,
+  "dropped_ungrounded": 1,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 18,
-  "with_website": 18,
-  "with_email": 8,
+  "enriched": 19,
+  "with_website": 19,
+  "with_email": 10,
   "with_phone": 4,
-  "people_linked": 24,
-  "avg_score": 34.3,
+  "people_linked": 6,
+  "avg_score": 37.4,
   "issues": {
-    "warn: empty tech_stack": 2
+    "warn: empty tech_stack": 5,
+    "not a relevant startup page": 1
   },
   "failures": [],
   "passed": true,
-  "deferred_urls": [
-    "ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets"
-  ],
+  "deferred_urls": [],
   "skipped": "",
   "validity_rate": 1.0
 }

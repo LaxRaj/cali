@@ -697,6 +697,641 @@
     "outreach": []
   },
   {
+    "company_name": "OSCP",
+    "core_product": "Chip‑based photonic gyroscopes and inertial measurement units (IMUs) that provide high‑accuracy navigation without GPS.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling the silicon‑photonic chip manufacturing process to meet demand while maintaining precision and yield.",
+    "value_prop_pitch": "I can help you build a developer portal with Next.js that lets your hardware team quickly query design docs and test results using vector semantic search, cutting down the time spent hunting for data. This will streamline collaboration across photonics, firmware, and manufacturing, letting you focus on scaling production rather than digging for information.",
+    "is_relevant": true,
+    "funding_stage": "Series A",
+    "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$6 million USD",
+    "hq": "Montréal, Canada",
+    "website": "https://www.oscp.com",
+    "score": 92,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "oscp",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 15,
+      "connections": 20,
+      "contact": 20
+    },
+    "gaps": [
+      "tech stack",
+      "people profiles"
+    ],
+    "contact": {
+      "website": "https://www.oscp.com",
+      "emails": [
+        {
+          "value": "info@oscp.com",
+          "kind": "general",
+          "source_url": "https://www.oscp.com/contact"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+14383836727",
+          "kind": "main",
+          "source_url": "https://www.oscp.com/"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/one-silicon-chip-photonics"
+      },
+      "contact_page": "https://www.oscp.com/contact",
+      "product_access": [
+        {
+          "label": "Documentation",
+          "url": "https://docs.oscp.com/"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.oscp.com/",
+        "https://www.oscp.com/about",
+        "https://www.oscp.com/contact"
+      ],
+      "enriched_at": "2026-10-24T01:55:34+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "rss",
+        "url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "Fri, 02 Oct 2026 20:07:56 +0000",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Kazem Zandi",
+        "role": "CEO",
+        "org": "OSCP",
+        "evidence": "OSCP was founded in 2015 by CEO Kazem Zandi",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "https://www.oscp.com/people/kazem-zandi",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Kazem Zandi",
+        "rel": "founded",
+        "dst": "OSCP",
+        "evidence": "OSCP was founded in 2015 by CEO Kazem Zandi"
+      },
+      {
+        "src": "Alex Lintott",
+        "rel": "works_at",
+        "dst": "OSCP",
+        "evidence": "Alex Lintott, OSCP"
+      },
+      {
+        "src": "New Science Ventures",
+        "rel": "invested_in",
+        "dst": "OSCP",
+        "evidence": "It was led by New Science Ventures"
+      },
+      {
+        "src": "Emerging Ventures",
+        "rel": "invested_in",
+        "dst": "OSCP",
+        "evidence": "support from fellow new American investor Emerging Ventures"
+      },
+      {
+        "src": "2050 Capital",
+        "rel": "invested_in",
+        "dst": "OSCP",
+        "evidence": "existing United Kingdom-based backer 2050 Capital"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 99.4,
+      "reasons": [
+        "lead score 92",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call info@oscp.com with the pitch",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "oscp",
+        "field": "funding_stage",
+        "label": "funding_stage: Series A",
+        "value": "Series A",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "oscp",
+        "field": "funding_amount",
+        "label": "funding_amount: $6 million USD",
+        "value": "$6 million USD",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "oscp",
+        "field": "hq",
+        "label": "hq: Montréal, Canada",
+        "value": "Montréal, Canada",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "oscp",
+        "field": "website",
+        "label": "website: https://www.oscp.com",
+        "value": "https://www.oscp.com",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "oscp",
+        "field": "core_product",
+        "label": "core_product: Chip‑based photonic gyroscopes and inertial measurement units (IMUs) that provide high‑accuracy navigation without GPS.",
+        "value": "Chip‑based photonic gyroscopes and inertial measurement units (IMUs) that provide high‑accuracy navigation without GPS.",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "oscp",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling the silicon‑photonic chip manufacturing process to meet demand while maintaining precision and yield.",
+        "value": "Scaling the silicon‑photonic chip manufacturing process to meet demand while maintaining precision and yield.",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "kazem zandi|oscp",
+        "field": "role",
+        "label": "Kazem Zandi · CEO",
+        "value": "CEO",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "OSCP was founded in 2015 by CEO Kazem Zandi",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "kazem zandi|oscp",
+        "field": "homepage",
+        "label": "Kazem Zandi · homepage",
+        "value": "https://www.oscp.com/people/kazem-zandi",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "OSCP was founded in 2015 by CEO Kazem Zandi",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex lintott|one silicon chip photonics (oscp)",
+        "field": "role",
+        "label": "Alex Lintott · COO / INTERIM DIRECTOR",
+        "value": "COO / INTERIM DIRECTOR",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "COO / INTERIM DIRECTOR: Alex Lintott",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex lintott|one silicon chip photonics (oscp)",
+        "field": "homepage",
+        "label": "Alex Lintott · homepage",
+        "value": "https://www.oscp.com/people/alex-lintott",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "COO / INTERIM DIRECTOR: Alex Lintott",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "somu subramaniam|one silicon chip photonics (oscp)",
+        "field": "role",
+        "label": "Somu Subramaniam · Board Director",
+        "value": "Board Director",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "Board Director: Somu Subramaniam",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "somu subramaniam|one silicon chip photonics (oscp)",
+        "field": "homepage",
+        "label": "Somu Subramaniam · homepage",
+        "value": "https://www.oscp.com/people/somu-subramaniam",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "Board Director: Somu Subramaniam",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "thibaut gravey|one silicon chip photonics (oscp)",
+        "field": "role",
+        "label": "Thibaut Gravey · VP of Product",
+        "value": "VP of Product",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "VP of Product: Thibaut Gravey",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "thibaut gravey|one silicon chip photonics (oscp)",
+        "field": "homepage",
+        "label": "Thibaut Gravey · homepage",
+        "value": "https://www.oscp.com/people/thibaut-gravey",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "VP of Product: Thibaut Gravey",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "paul miyoshi|one silicon chip photonics (oscp)",
+        "field": "role",
+        "label": "Paul Miyoshi · VP of Sales",
+        "value": "VP of Sales",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "VP of Sales: Paul Miyoshi",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "paul miyoshi|one silicon chip photonics (oscp)",
+        "field": "homepage",
+        "label": "Paul Miyoshi · homepage",
+        "value": "https://www.oscp.com/people/paul-miyoshi",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "VP of Sales: Paul Miyoshi",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "cornel chiriac|one silicon chip photonics (oscp)",
+        "field": "role",
+        "label": "Cornel Chiriac · OBSERVER",
+        "value": "OBSERVER",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "OBSERVER: Cornel Chiriac",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "cornel chiriac|one silicon chip photonics (oscp)",
+        "field": "homepage",
+        "label": "Cornel Chiriac · homepage",
+        "value": "https://www.oscp.com/people/cornel-chiriac",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "OBSERVER: Cornel Chiriac",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "kazem zandi|founded|oscp",
+        "field": "founded",
+        "label": "Kazem Zandi founded OSCP",
+        "value": "Kazem Zandi founded OSCP",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "OSCP was founded in 2015 by CEO Kazem Zandi",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alex lintott|works_at|oscp",
+        "field": "works_at",
+        "label": "Alex Lintott works at OSCP",
+        "value": "Alex Lintott works_at OSCP",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "Alex Lintott, OSCP",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "new science ventures|invested_in|oscp",
+        "field": "invested_in",
+        "label": "New Science Ventures invested in OSCP",
+        "value": "New Science Ventures invested_in OSCP",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "It was led by New Science Ventures",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "emerging ventures|invested_in|oscp",
+        "field": "invested_in",
+        "label": "Emerging Ventures invested in OSCP",
+        "value": "Emerging Ventures invested_in OSCP",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "support from fellow new American investor Emerging Ventures",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "2050 capital|invested_in|oscp",
+        "field": "invested_in",
+        "label": "2050 Capital invested in OSCP",
+        "value": "2050 Capital invested_in OSCP",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "existing United Kingdom-based backer 2050 Capital",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "kazem zandi|previously_at|defence r&d canada",
+        "field": "previously_at",
+        "label": "Kazem Zandi previously at Defence R&D Canada",
+        "value": "Kazem Zandi previously_at Defence R&D Canada",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "previously worked as a senior optoelectronics devices engineer with Defence R&D Canada",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "kazem zandi|previously_at|c2mi",
+        "field": "previously_at",
+        "label": "Kazem Zandi previously at C2MI",
+        "value": "Kazem Zandi previously_at C2MI",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "senior process engineer with Québec’s C2MI",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "kazem zandi|founded|one silicon chip photonics (oscp)",
+        "field": "founded",
+        "label": "Kazem Zandi founded One Silicon Chip Photonics (OSCP)",
+        "value": "Kazem Zandi founded One Silicon Chip Photonics (OSCP)",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "Founder and CEO / DIRECTOR: Kazem Zandi",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alex lintott|works_at|one silicon chip photonics (oscp)",
+        "field": "works_at",
+        "label": "Alex Lintott works at One Silicon Chip Photonics (OSCP)",
+        "value": "Alex Lintott works_at One Silicon Chip Photonics (OSCP)",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "COO / INTERIM DIRECTOR: Alex Lintott",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "thibaut gravey|works_at|one silicon chip photonics (oscp)",
+        "field": "works_at",
+        "label": "Thibaut Gravey works at One Silicon Chip Photonics (OSCP)",
+        "value": "Thibaut Gravey works_at One Silicon Chip Photonics (OSCP)",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "VP of Product: Thibaut Gravey",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "paul miyoshi|works_at|one silicon chip photonics (oscp)",
+        "field": "works_at",
+        "label": "Paul Miyoshi works at One Silicon Chip Photonics (OSCP)",
+        "value": "Paul Miyoshi works_at One Silicon Chip Photonics (OSCP)",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "VP of Sales: Paul Miyoshi",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "somu subramaniam|works_at|one silicon chip photonics (oscp)",
+        "field": "works_at",
+        "label": "Somu Subramaniam works at One Silicon Chip Photonics (OSCP)",
+        "value": "Somu Subramaniam works_at One Silicon Chip Photonics (OSCP)",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "Board Director: Somu Subramaniam",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "cornel chiriac|works_at|one silicon chip photonics (oscp)",
+        "field": "works_at",
+        "label": "Cornel Chiriac works at One Silicon Chip Photonics (OSCP)",
+        "value": "Cornel Chiriac works_at One Silicon Chip Photonics (OSCP)",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+        "evidence": "OBSERVER: Cornel Chiriac",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "oscp",
+        "field": "email",
+        "label": "email: info@oscp.com",
+        "value": "info@oscp.com",
+        "source_url": "https://www.oscp.com/contact",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "oscp",
+        "field": "phone",
+        "label": "phone: +14383836727",
+        "value": "+14383836727",
+        "source_url": "https://www.oscp.com/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "oscp",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/one-silicon-chip-photonics",
+        "value": "https://www.linkedin.com/company/one-silicon-chip-photonics",
+        "source_url": "https://www.oscp.com/contact",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at series a stage",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money",
+        "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "info@oscp.com",
+      "to_source_url": "https://www.oscp.com/contact",
+      "subject": "OSCP: a thought on Scaling the silicon‑photonic chip manufacturing process to m",
+      "body": "Hi Kazem,\n\nCongrats on the new funding (https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/).\nI'd like to use OSCP and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across OSCP: Chip‑based photonic gyroscopes and inertial measurement units (IMUs) that provide high‑accuracy navigation without GPS.\nSaw the recent news (newly found at series a stage).\nI'd like to build something with you.\nOne place we could start: Scaling the silicon‑photonic chip manufacturing process to meet demand while maintaining precision and yield.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:info%40oscp.com?subject=OSCP%3A%20a%20thought%20on%20Scaling%20the%20silicon%E2%80%91photonic%20chip%20manufacturing%20process%20to%20m&body=Hi%20Kazem%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/%29.%0AI%27d%20like%20to%20use%20OSCP%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20OSCP%3A%20Chip%E2%80%91based%20photonic%20gyroscopes%20and%20inertial%20measurement%20units%20%28IMUs%29%20that%20provide%20high%E2%80%91accuracy%20navigation%20without%20GPS.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20series%20a%20stage%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Scaling%20the%20silicon%E2%80%91photonic%20chip%20manufacturing%20process%20to%20meet%20demand%20while%20maintaining%20precision%20and%20yield.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Plinto",
     "core_product": "Plinto builds AI agents that monitor financial transactions in real time, detect deviations, investigate them and automatically take corrective actions.",
     "tech_stack": [
@@ -1086,6 +1721,442 @@
       "subject": "Deeptune: a thought on scaling realistic, high‑fidelity simulation environments and",
       "body": "Hi Tim,\n\nI came across Deeptune: Deeptune builds high‑fidelity reinforcement‑learning “training gyms” that simulate real workplace software so AI agents can learn multi‑step tasks.\nSaw the recent news (newly found at series a stage).\nI'd like to build something with you.\nOne place we could start: scaling realistic, high‑fidelity simulation environments and efficiently indexing the massive amount of generated interaction data.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:nadine.ghosn%40fortune.com?subject=Deeptune%3A%20a%20thought%20on%20scaling%20realistic%2C%20high%E2%80%91fidelity%20simulation%20environments%20and&body=Hi%20Tim%2C%0A%0AI%20came%20across%20Deeptune%3A%20Deeptune%20builds%20high%E2%80%91fidelity%20reinforcement%E2%80%91learning%20%E2%80%9Ctraining%20gyms%E2%80%9D%20that%20simulate%20real%20workplace%20software%20so%20AI%20agents%20can%20learn%20multi%E2%80%91step%20tasks.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20series%20a%20stage%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20scaling%20realistic%2C%20high%E2%80%91fidelity%20simulation%20environments%20and%20efficiently%20indexing%20the%20massive%20amount%20of%20generated%20interaction%20data.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Doris Labs",
+    "core_product": "A semantic AI layer for go‑to‑market teams that unifies customer data from CRM, email and documents and powers AI‑driven Sidekick assistants for sales reps.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling real‑time semantic search over heterogeneous, unstructured sales data as the platform grows.",
+    "value_prop_pitch": "Hey Doris Labs, you can eliminate the scaling bottleneck by moving your front‑end to Next.js and using a vector‑based semantic search layer to index all your CRM, email and document data. This will give you instant, typo‑tolerant retrieval and let your AI Sidekicks respond in real time.",
+    "is_relevant": true,
+    "funding_stage": "Pre-seed",
+    "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$600,000",
+    "hq": "London",
+    "website": "https://dorislabs.com",
+    "score": 88,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "doris-labs",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 16
+    },
+    "gaps": [
+      "tech stack",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://dorislabs.com",
+      "emails": [
+        {
+          "value": "jordan@yourcompany.com",
+          "kind": "person",
+          "source_url": "https://dorislabs.com/"
+        },
+        {
+          "value": "priya@spotify.com",
+          "kind": "person",
+          "source_url": "https://dorislabs.com/"
+        },
+        {
+          "value": "tomas@spotify.com",
+          "kind": "person",
+          "source_url": "https://dorislabs.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "twitter": "https://x.com/meetdoris",
+        "linkedin": "https://www.linkedin.com/company/dorislabs"
+      },
+      "contact_page": "https://dorislabs.com/contact",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://dorislabs.com/pricing/"
+        }
+      ],
+      "pages_crawled": [
+        "https://dorislabs.com/",
+        "https://dorislabs.com/about",
+        "https://dorislabs.com/team",
+        "https://dorislabs.com/contact"
+      ],
+      "enriched_at": "2026-10-24T01:56:01+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Hayden Munt",
+        "role": "Founder",
+        "org": "Doris Labs",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "linkedin": "https://www.linkedin.com/in/hayden-munt-571a0a144",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      },
+      {
+        "name": "Frazer Kearl",
+        "role": "Founder",
+        "org": "Doris Labs",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "linkedin": "https://www.linkedin.com/in/frazerkearl",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Hayden Munt",
+        "rel": "founded",
+        "dst": "Doris Labs",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl"
+      },
+      {
+        "src": "Frazer Kearl",
+        "rel": "founded",
+        "dst": "Doris Labs",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl"
+      },
+      {
+        "src": "Fuel Ventures",
+        "rel": "invested_in",
+        "dst": "Doris Labs",
+        "evidence": "The funding round was led by Fuel Ventures"
+      },
+      {
+        "src": "Manchester Angels",
+        "rel": "invested_in",
+        "dst": "Doris Labs",
+        "evidence": "participation from Manchester Angels"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 97.0,
+      "reasons": [
+        "lead score 88",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call jordan@yourcompany.com with the pitch",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "doris labs",
+        "field": "funding_stage",
+        "label": "funding_stage: Pre-seed",
+        "value": "Pre-seed",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "doris labs",
+        "field": "funding_amount",
+        "label": "funding_amount: $600,000",
+        "value": "$600,000",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "doris labs",
+        "field": "hq",
+        "label": "hq: London",
+        "value": "London",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "doris labs",
+        "field": "website",
+        "label": "website: https://dorislabs.com",
+        "value": "https://dorislabs.com",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "doris labs",
+        "field": "core_product",
+        "label": "core_product: A semantic AI layer for go‑to‑market teams that unifies customer data from CRM, email and documents and powers AI‑driven Sidekick assistants for sales reps.",
+        "value": "A semantic AI layer for go‑to‑market teams that unifies customer data from CRM, email and documents and powers AI‑driven Sidekick assistants for sales reps.",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "doris labs",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling real‑time semantic search over heterogeneous, unstructured sales data as the platform grows.",
+        "value": "Scaling real‑time semantic search over heterogeneous, unstructured sales data as the platform grows.",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hayden munt|doris labs",
+        "field": "role",
+        "label": "Hayden Munt · Founder",
+        "value": "Founder",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hayden munt|doris labs",
+        "field": "linkedin",
+        "label": "Hayden Munt · linkedin",
+        "value": "https://www.linkedin.com/in/hayden-munt-571a0a144",
+        "source_url": "search",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "frazer kearl|doris labs",
+        "field": "role",
+        "label": "Frazer Kearl · Founder",
+        "value": "Founder",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "frazer kearl|doris labs",
+        "field": "linkedin",
+        "label": "Frazer Kearl · linkedin",
+        "value": "https://www.linkedin.com/in/frazerkearl",
+        "source_url": "search",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "hayden munt|founded|doris labs",
+        "field": "founded",
+        "label": "Hayden Munt founded Doris Labs",
+        "value": "Hayden Munt founded Doris Labs",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "frazer kearl|founded|doris labs",
+        "field": "founded",
+        "label": "Frazer Kearl founded Doris Labs",
+        "value": "Frazer Kearl founded Doris Labs",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "Founded by Hayden Munt and Frazer Kearl",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "fuel ventures|invested_in|doris labs",
+        "field": "invested_in",
+        "label": "Fuel Ventures invested in Doris Labs",
+        "value": "Fuel Ventures invested_in Doris Labs",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "The funding round was led by Fuel Ventures",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "manchester angels|invested_in|doris labs",
+        "field": "invested_in",
+        "label": "Manchester Angels invested in Doris Labs",
+        "value": "Manchester Angels invested_in Doris Labs",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
+        "evidence": "participation from Manchester Angels",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "doris labs",
+        "field": "email",
+        "label": "email: jordan@yourcompany.com",
+        "value": "jordan@yourcompany.com",
+        "source_url": "https://dorislabs.com/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "doris labs",
+        "field": "email",
+        "label": "email: priya@spotify.com",
+        "value": "priya@spotify.com",
+        "source_url": "https://dorislabs.com/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "doris labs",
+        "field": "email",
+        "label": "email: tomas@spotify.com",
+        "value": "tomas@spotify.com",
+        "source_url": "https://dorislabs.com/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "doris labs",
+        "field": "twitter",
+        "label": "twitter: https://x.com/meetdoris",
+        "value": "https://x.com/meetdoris",
+        "source_url": "https://dorislabs.com/contact",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "doris labs",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/dorislabs",
+        "value": "https://www.linkedin.com/company/dorislabs",
+        "source_url": "https://dorislabs.com/contact",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money (0d ago)",
+        "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "jordan@yourcompany.com",
+      "to_source_url": "https://dorislabs.com/",
+      "subject": "Doris Labs: a thought on Scaling real‑time semantic search over heterogeneous, unstru",
+      "body": "Hi Hayden,\n\nCongrats on the new funding (https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/).\nI'd like to use Doris Labs and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Doris Labs: A semantic AI layer for go‑to‑market teams that unifies customer data from CRM, email and documents and powers AI‑driven Sidekick assistants for sales reps.\nSaw the recent news (newly found at pre-seed stage).\nI'd like to build something with you.\nOne place we could start: Scaling real‑time semantic search over heterogeneous, unstructured sales data as the platform grows.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:jordan%40yourcompany.com?subject=Doris%20Labs%3A%20a%20thought%20on%20Scaling%20real%E2%80%91time%20semantic%20search%20over%20heterogeneous%2C%20unstru&body=Hi%20Hayden%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/%29.%0AI%27d%20like%20to%20use%20Doris%20Labs%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Doris%20Labs%3A%20A%20semantic%20AI%20layer%20for%20go%E2%80%91to%E2%80%91market%20teams%20that%20unifies%20customer%20data%20from%20CRM%2C%20email%20and%20documents%20and%20powers%20AI%E2%80%91driven%20Sidekick%20assistants%20for%20sales%20reps.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20pre-seed%20stage%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Scaling%20real%E2%80%91time%20semantic%20search%20over%20heterogeneous%2C%20unstructured%20sales%20data%20as%20the%20platform%20grows.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -1974,6 +3045,514 @@
       "subject": "Chariot Claims: a thought on Scaling semantic search and retrieval over large volumes of ",
       "body": "Hi Zim,\n\nI came across Chariot Claims: A platform that helps consumers pursue claims over privacy violations, hidden fees and hard‑to‑cancel subscriptions by connecting them with law firms and using AI to screen and manage mass‑arbitration cases.\nSaw the recent news (newly found at series a stage).\nI'd like to build something with you.\nOne place we could start: Scaling semantic search and retrieval over large volumes of unstructured claim documents and consumer data.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Miracly.ai",
+    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+    "tech_stack": [
+      "ChatGPT",
+      "Claude",
+      "Copilot",
+      "LLMs",
+      "vector embeddings"
+    ],
+    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$2M",
+    "hq": "Stockholm",
+    "website": "https://www.miracly.ai",
+    "score": 86,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "miracly-ai",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 16
+    },
+    "gaps": [
+      "people profiles",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://www.miracly.ai",
+      "emails": [
+        {
+          "value": "hello@miracly.ai",
+          "kind": "general",
+          "source_url": "https://www.miracly.ai/contact?__clerk_synced=true"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/miracly",
+        "twitter": "https://x.com/miraclyai"
+      },
+      "contact_page": "https://www.miracly.ai/contact?__clerk_synced=true",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://www.miracly.ai/pricing"
+        },
+        {
+          "label": "Get started",
+          "url": "https://www.miracly.ai/sign-up"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.miracly.ai/?__clerk_synced=true",
+        "https://www.miracly.ai/contact?__clerk_synced=true",
+        "https://www.miracly.ai/about"
+      ],
+      "enriched_at": "2026-10-24T01:56:11+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [
+      {
+        "src": "Beenext Ventures",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Lotus",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Stefan Lindeberg",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Alex Bouaziz",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Thomas Ekman",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Hedda Båverud Olsson",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 95.8,
+      "reasons": [
+        "lead score 86",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call hello@miracly.ai with the pitch",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_stage",
+        "label": "funding_stage: pre-seed",
+        "value": "pre-seed",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_amount",
+        "label": "funding_amount: $2M",
+        "value": "$2M",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "hq",
+        "label": "hq: Stockholm",
+        "value": "Stockholm",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "website",
+        "label": "website: https://www.miracly.ai",
+        "value": "https://www.miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "core_product",
+        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "arvid lithander|miracly",
+        "field": "role",
+        "label": "Arvid Lithander · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "role",
+        "label": "Bjorn Bergstrom · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "shannon cullum|miracly",
+        "field": "role",
+        "label": "Shannon Cullum · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "stefan lindeberg|miracly.ai",
+        "field": "role",
+        "label": "Stefan Lindeberg · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex bouaziz|miracly.ai",
+        "field": "role",
+        "label": "Alex Bouaziz · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "thomas ekman|miracly.ai",
+        "field": "role",
+        "label": "Thomas Ekman · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hedda båverud olsson|miracly.ai",
+        "field": "role",
+        "label": "Hedda Båverud Olsson · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "beenext ventures|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Beenext Ventures invested in Miracly.ai",
+        "value": "Beenext Ventures invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "lotus|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Lotus invested in Miracly.ai",
+        "value": "Lotus invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Stefan Lindeberg invested in Miracly.ai",
+        "value": "Stefan Lindeberg invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alex bouaziz|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Alex Bouaziz invested in Miracly.ai",
+        "value": "Alex Bouaziz invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "thomas ekman|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Thomas Ekman invested in Miracly.ai",
+        "value": "Thomas Ekman invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Hedda Båverud Olsson invested in Miracly.ai",
+        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "arvid lithander|founded|miracly",
+        "field": "founded",
+        "label": "Arvid Lithander founded Miracly",
+        "value": "Arvid Lithander founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "bjorn bergstrom|founded|miracly",
+        "field": "founded",
+        "label": "Bjorn Bergstrom founded Miracly",
+        "value": "Bjorn Bergstrom founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "shannon cullum|founded|miracly",
+        "field": "founded",
+        "label": "Shannon Cullum founded Miracly",
+        "value": "Shannon Cullum founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money (0d ago)",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "hello@miracly.ai",
+      "to_source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
+      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\nI'd like to use Miracly.ai and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.\nSaw the recent news (newly found at pre-seed stage).\nOne thing I noticed: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0AI%27d%20like%20to%20use%20Miracly.ai%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve%20that%20visibility.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20pre-seed%20stage%29.%0AOne%20thing%20I%20noticed%3A%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -7353,6 +8932,268 @@
     "outreach": []
   },
   {
+    "company_name": "Relace",
+    "core_product": "An AI‑powered software platform that helps financial institutions identify relevant regulations, assess obligations, and flag compliance gaps.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple jurisdictions.",
+    "value_prop_pitch": "You could offload the heavy lifting of regulatory text search to a Next.js front‑end backed by a vector‑based semantic search layer, dramatically speeding up query response times. This would let your engineers focus on core compliance logic while we handle scalable, low‑latency retrieval of relevant regulation snippets.",
+    "is_relevant": true,
+    "funding_stage": "Pre-seed",
+    "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$1.6M",
+    "hq": "London",
+    "website": "https://withrelace.com",
+    "score": 58,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "relace",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 0,
+      "connections": 15,
+      "contact": 6
+    },
+    "gaps": [
+      "tech stack",
+      "founder",
+      "people profiles",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://withrelace.com",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/undereview"
+      },
+      "contact_page": "https://withrelace.com/contact",
+      "product_access": [],
+      "pages_crawled": [
+        "https://withrelace.com/",
+        "https://withrelace.com/about",
+        "https://withrelace.com/contact",
+        "https://withrelace.com/team"
+      ],
+      "enriched_at": "2026-10-24T01:56:26+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [
+      {
+        "src": "Boost Capital",
+        "rel": "invested_in",
+        "dst": "Relace",
+        "evidence": "The funding round was led by Boost Capital."
+      },
+      {
+        "src": "Ascension",
+        "rel": "invested_in",
+        "dst": "Relace",
+        "evidence": "Additional participants included Ascension"
+      },
+      {
+        "src": "Koro Capital",
+        "rel": "invested_in",
+        "dst": "Relace",
+        "evidence": "Additional participants included ... Koro Capital"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 69.0,
+      "reasons": [
+        "lead score 58",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "funding_stage",
+        "label": "funding_stage: Pre-seed",
+        "value": "Pre-seed",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "funding_amount",
+        "label": "funding_amount: $1.6M",
+        "value": "$1.6M",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "hq",
+        "label": "hq: London",
+        "value": "London",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "website",
+        "label": "website: https://withrelace.com",
+        "value": "https://withrelace.com",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "core_product",
+        "label": "core_product: An AI‑powered software platform that helps financial institutions identify relevant regulations, assess obligations, and flag compliance gaps.",
+        "value": "An AI‑powered software platform that helps financial institutions identify relevant regulations, assess obligations, and flag compliance gaps.",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple jurisdictions.",
+        "value": "Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple jurisdictions.",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "boost capital|invested_in|relace",
+        "field": "invested_in",
+        "label": "Boost Capital invested in Relace",
+        "value": "Boost Capital invested_in Relace",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "The funding round was led by Boost Capital.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "ascension|invested_in|relace",
+        "field": "invested_in",
+        "label": "Ascension invested in Relace",
+        "value": "Ascension invested_in Relace",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "Additional participants included Ascension",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "koro capital|invested_in|relace",
+        "field": "invested_in",
+        "label": "Koro Capital invested in Relace",
+        "value": "Koro Capital invested_in Relace",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "Additional participants included ... Koro Capital",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "relace",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/undereview",
+        "value": "https://www.linkedin.com/company/undereview",
+        "source_url": "https://withrelace.com/contact",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at pre-seed stage",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money (0d ago)",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Relace: a thought on Scaling the ingestion and real‑time semantic analysis of mas",
+      "body": "Hi Relace team,\n\nCongrats on the new funding (https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/).\nI'd like to use Relace and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Relace: An AI‑powered software platform that helps financial institutions identify relevant regulations, assess obligations, and flag compliance gaps.\nSaw the recent news (newly found at pre-seed stage).\nI'd like to build something with you.\nOne place we could start: Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple jurisdictions.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "VOYGR",
     "core_product": "PlaceCall API that lets apps and AI agents call businesses in parallel and returns structured outcomes, transcripts, and recordings.",
     "tech_stack": [
@@ -7473,6 +9314,315 @@
       "subject": "VOYGR: a thought on scaling parallel outbound calls while maintaining accurate, ",
       "body": "Hi Vlad,\n\nI came across VOYGR: PlaceCall API that lets apps and AI agents call businesses in parallel and returns structured outcomes, transcripts, and recordings.\nOne thing I noticed: scaling parallel outbound calls while maintaining accurate, low‑latency transcription and call orchestration.\n\nI can build a Next.js dashboard that visualizes each call, stores transcripts in a vector store and adds semantic search so developers can instantly retrieve relevant call content.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:founders%40voygr.tech?subject=VOYGR%3A%20a%20thought%20on%20scaling%20parallel%20outbound%20calls%20while%20maintaining%20accurate%2C%20&body=Hi%20Vlad%2C%0A%0AI%20came%20across%20VOYGR%3A%20PlaceCall%20API%20that%20lets%20apps%20and%20AI%20agents%20call%20businesses%20in%20parallel%20and%20returns%20structured%20outcomes%2C%20transcripts%2C%20and%20recordings.%0AOne%20thing%20I%20noticed%3A%20scaling%20parallel%20outbound%20calls%20while%20maintaining%20accurate%2C%20low%E2%80%91latency%20transcription%20and%20call%20orchestration.%0A%0AI%20can%20build%20a%20Next.js%20dashboard%20that%20visualizes%20each%20call%2C%20stores%20transcripts%20in%20a%20vector%20store%20and%20adds%20semantic%20search%20so%20developers%20can%20instantly%20retrieve%20relevant%20call%20content.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Aucert",
+    "core_product": "An autonomous mobile app verification platform that uses AI agents to test apps and report functional, accessibility, design, and policy issues.",
+    "tech_stack": [],
+    "likely_bottleneck": "Efficiently storing, indexing, and retrieving large volumes of test evidence generated by AI agents for fast developer feedback.",
+    "value_prop_pitch": "You could build a Next.js dashboard that surfaces test evidence instantly by querying a vector‑semantic search index, letting engineers find relevant bugs in seconds. This removes the latency of digging through raw logs and scales as your evidence corpus grows.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://aucert.ai",
+    "score": 57,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "aucert",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 20,
+      "connections": 0,
+      "contact": 16
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "investors",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://aucert.ai",
+      "emails": [
+        {
+          "value": "contact@aucert.ai",
+          "kind": "general",
+          "source_url": "https://aucert.ai/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "twitter": "https://x.com/aucert_official",
+        "linkedin": "https://www.linkedin.com/company/aucert"
+      },
+      "contact_page": "https://aucert.ai/contact/",
+      "product_access": [],
+      "pages_crawled": [
+        "https://aucert.ai/",
+        "https://aucert.ai/contact/",
+        "https://aucert.ai/team/"
+      ],
+      "enriched_at": "2026-10-24T01:56:34+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "launch",
+        "source": "yc",
+        "url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Vivek Soneja",
+        "role": "co-founder",
+        "org": "Aucert",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "linkedin": "https://www.linkedin.com/in/viveksoneja/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously"
+      },
+      {
+        "name": "Rajesh Kumar",
+        "role": "co-founder",
+        "org": "Aucert",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "linkedin": "https://www.linkedin.com/in/rajeshkumar05/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Vivek Soneja",
+        "rel": "founded",
+        "dst": "Aucert",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert."
+      },
+      {
+        "src": "Rajesh Kumar",
+        "rel": "founded",
+        "dst": "Aucert",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 77.2,
+      "reasons": [
+        "lead score 57",
+        "signal strength 1.8/10: launch",
+        "found 0 day(s) ago (hot)",
+        "good fit and reachable"
+      ],
+      "next_step": "Reach Vivek Soneja via contact@aucert.ai",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "aucert",
+        "field": "website",
+        "label": "website: https://aucert.ai",
+        "value": "https://aucert.ai",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "aucert",
+        "field": "core_product",
+        "label": "core_product: An autonomous mobile app verification platform that uses AI agents to test apps and report functional, accessibility, design, and policy issues.",
+        "value": "An autonomous mobile app verification platform that uses AI agents to test apps and report functional, accessibility, design, and policy issues.",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "aucert",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Efficiently storing, indexing, and retrieving large volumes of test evidence generated by AI agents for fast developer feedback.",
+        "value": "Efficiently storing, indexing, and retrieving large volumes of test evidence generated by AI agents for fast developer feedback.",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "vivek soneja|aucert",
+        "field": "role",
+        "label": "Vivek Soneja · co-founder",
+        "value": "co-founder",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "vivek soneja|aucert",
+        "field": "linkedin",
+        "label": "Vivek Soneja · linkedin",
+        "value": "https://www.linkedin.com/in/viveksoneja/",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "rajesh kumar|aucert",
+        "field": "role",
+        "label": "Rajesh Kumar · co-founder",
+        "value": "co-founder",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "rajesh kumar|aucert",
+        "field": "linkedin",
+        "label": "Rajesh Kumar · linkedin",
+        "value": "https://www.linkedin.com/in/rajeshkumar05/",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "vivek soneja|founded|aucert",
+        "field": "founded",
+        "label": "Vivek Soneja founded Aucert",
+        "value": "Vivek Soneja founded Aucert",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "rajesh kumar|founded|aucert",
+        "field": "founded",
+        "label": "Rajesh Kumar founded Aucert",
+        "value": "Rajesh Kumar founded Aucert",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+        "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "aucert",
+        "field": "email",
+        "label": "email: contact@aucert.ai",
+        "value": "contact@aucert.ai",
+        "source_url": "https://aucert.ai/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "aucert",
+        "field": "twitter",
+        "label": "twitter: https://x.com/aucert_official",
+        "value": "https://x.com/aucert_official",
+        "source_url": "https://aucert.ai/contact/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "aucert",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/aucert",
+        "value": "https://www.linkedin.com/company/aucert",
+        "source_url": "https://aucert.ai/contact/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "launch",
+        "text": "Launched (0d ago)",
+        "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "contact@aucert.ai",
+      "to_source_url": "https://aucert.ai/",
+      "subject": "Aucert: a thought on Efficiently storing, indexing, and retrieving large volumes ",
+      "body": "Hi Vivek,\n\nCongrats on the launch (https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously).\nI'd like to use Aucert and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Aucert: An autonomous mobile app verification platform that uses AI agents to test apps and report functional, accessibility, design, and policy issues.\nSaw the recent news (launched (0d ago)).\nI'd like to build something with you.\nOne place we could start: Efficiently storing, indexing, and retrieving large volumes of test evidence generated by AI agents for fast developer feedback.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:contact%40aucert.ai?subject=Aucert%3A%20a%20thought%20on%20Efficiently%20storing%2C%20indexing%2C%20and%20retrieving%20large%20volumes%20&body=Hi%20Vivek%2C%0A%0ACongrats%20on%20the%20launch%20%28https%3A//www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously%29.%0AI%27d%20like%20to%20use%20Aucert%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Aucert%3A%20An%20autonomous%20mobile%20app%20verification%20platform%20that%20uses%20AI%20agents%20to%20test%20apps%20and%20report%20functional%2C%20accessibility%2C%20design%2C%20and%20policy%20issues.%0ASaw%20the%20recent%20news%20%28launched%20%280d%20ago%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Efficiently%20storing%2C%20indexing%2C%20and%20retrieving%20large%20volumes%20of%20test%20evidence%20generated%20by%20AI%20agents%20for%20fast%20developer%20feedback.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -8044,6 +10194,342 @@
       "subject": "Theo: a thought on Ensuring generated content ranks well and stays relevant acr",
       "body": "Hi Miles,\n\nI came across Theo: An AI‑powered site builder that automatically creates and updates SEO‑optimized websites for small businesses.\nI'd like to build something with you.\nOne place we could start: Ensuring generated content ranks well and stays relevant across diverse search queries at scale.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:team%40theo.site?subject=Theo%3A%20a%20thought%20on%20Ensuring%20generated%20content%20ranks%20well%20and%20stays%20relevant%20acr&body=Hi%20Miles%2C%0A%0AI%20came%20across%20Theo%3A%20An%20AI%E2%80%91powered%20site%20builder%20that%20automatically%20creates%20and%20updates%20SEO%E2%80%91optimized%20websites%20for%20small%20businesses.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Ensuring%20generated%20content%20ranks%20well%20and%20stays%20relevant%20across%20diverse%20search%20queries%20at%20scale.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "OpEra",
+    "core_product": "An AI decision engine that builds custom optimization models to generate production schedules, warehouse plans, and delivery routes, automatically replanning when conditions change.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling and maintaining complex optimization models across diverse client data sources and real‑time constraints.",
+    "value_prop_pitch": "We can wrap your optimization backend with a Next.js front‑end that lets planners describe changes in plain language and instantly see updated plans. By adding a vector‑based semantic search layer, you’ll let users retrieve relevant historical scenarios and model parameters without writing code, dramatically reducing the engineering effort to support real‑time replanning.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://operatechnologies.com",
+    "score": 54,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "opera",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 20,
+      "connections": 0,
+      "contact": 13
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "investors",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://operatechnologies.com",
+      "emails": [
+        {
+          "value": "founders@operatechnologies.com",
+          "kind": "person",
+          "source_url": "https://operatechnologies.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/opera-yc-f26",
+        "twitter": "https://x.com/OperaYCF26"
+      },
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [
+        "https://operatechnologies.com/",
+        "https://operatechnologies.com/about"
+      ],
+      "enriched_at": "2026-10-24T01:56:28+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "launch",
+        "source": "yc",
+        "url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Bernardo Chalita",
+        "role": "Co‑founder",
+        "org": "OpEra",
+        "evidence": "Bernardo built optimization models at Sanofi and did AI research at BMW",
+        "linkedin": "https://www.linkedin.com/in/bernardo-chalita",
+        "twitter": "https://x.com/bechalita",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Hindy Rossignol",
+        "role": "Co-founder & CEO",
+        "org": "OpEra",
+        "evidence": "schema.org Person markup",
+        "linkedin": "https://www.linkedin.com/in/hindyrossignol",
+        "twitter": "https://x.com/hindyros",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://operatechnologies.com/"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Bernardo Chalita",
+        "rel": "founded",
+        "dst": "OpEra",
+        "evidence": "Hi, we're Hindy and Bernardo... we turned down offers ... to build OpEra."
+      },
+      {
+        "src": "Hindy Rossignol",
+        "rel": "cofounded",
+        "dst": "OpEra",
+        "evidence": "Hi, we're Hindy and Bernardo... we turned down offers ... to build OpEra."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 75.4,
+      "reasons": [
+        "lead score 54",
+        "signal strength 1.8/10: launch",
+        "found 0 day(s) ago (hot)",
+        "good fit and reachable"
+      ],
+      "next_step": "Reach Bernardo Chalita via founders@operatechnologies.com",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "opera",
+        "field": "website",
+        "label": "website: https://operatechnologies.com",
+        "value": "https://operatechnologies.com",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "opera",
+        "field": "core_product",
+        "label": "core_product: An AI decision engine that builds custom optimization models to generate production schedules, warehouse plans, and delivery routes, automatically replanning when conditions change.",
+        "value": "An AI decision engine that builds custom optimization models to generate production schedules, warehouse plans, and delivery routes, automatically replanning when conditions change.",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "opera",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling and maintaining complex optimization models across diverse client data sources and real‑time constraints.",
+        "value": "Scaling and maintaining complex optimization models across diverse client data sources and real‑time constraints.",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bernardo chalita|opera",
+        "field": "role",
+        "label": "Bernardo Chalita · Co‑founder",
+        "value": "Co‑founder",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "Bernardo built optimization models at Sanofi and did AI research at BMW",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bernardo chalita|opera",
+        "field": "linkedin",
+        "label": "Bernardo Chalita · linkedin",
+        "value": "https://www.linkedin.com/in/bernardo-chalita",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "Bernardo built optimization models at Sanofi and did AI research at BMW",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bernardo chalita|opera",
+        "field": "twitter",
+        "label": "Bernardo Chalita · twitter",
+        "value": "https://x.com/bechalita",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "Bernardo built optimization models at Sanofi and did AI research at BMW",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hindy rossignol|opera",
+        "field": "role",
+        "label": "Hindy Rossignol · Co-founder & CEO",
+        "value": "Co-founder & CEO",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "schema.org Person markup",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hindy rossignol|opera",
+        "field": "linkedin",
+        "label": "Hindy Rossignol · linkedin",
+        "value": "https://www.linkedin.com/in/hindyrossignol",
+        "source_url": "https://operatechnologies.com/",
+        "evidence": "schema.org Person markup",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hindy rossignol|opera",
+        "field": "twitter",
+        "label": "Hindy Rossignol · twitter",
+        "value": "https://x.com/hindyros",
+        "source_url": "https://operatechnologies.com/",
+        "evidence": "schema.org Person markup",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "bernardo chalita|founded|opera",
+        "field": "founded",
+        "label": "Bernardo Chalita founded OpEra",
+        "value": "Bernardo Chalita founded OpEra",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "Hi, we're Hindy and Bernardo... we turned down offers ... to build OpEra.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "hindy rossignol|cofounded|opera",
+        "field": "cofounded",
+        "label": "Hindy Rossignol cofounded OpEra",
+        "value": "Hindy Rossignol cofounded OpEra",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
+        "evidence": "Hi, we're Hindy and Bernardo... we turned down offers ... to build OpEra.",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "opera",
+        "field": "email",
+        "label": "email: founders@operatechnologies.com",
+        "value": "founders@operatechnologies.com",
+        "source_url": "https://operatechnologies.com/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "opera",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/opera-yc-f26",
+        "value": "https://www.linkedin.com/company/opera-yc-f26",
+        "source_url": "https://operatechnologies.com",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "opera",
+        "field": "twitter",
+        "label": "twitter: https://x.com/OperaYCF26",
+        "value": "https://x.com/OperaYCF26",
+        "source_url": "https://operatechnologies.com",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "launch",
+        "text": "Launched (0d ago)",
+        "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "founders@operatechnologies.com",
+      "to_source_url": "https://operatechnologies.com/",
+      "subject": "OpEra: a thought on Scaling and maintaining complex optimization models across d",
+      "body": "Hi Bernardo,\n\nCongrats on the launch (https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets).\nI'd like to use OpEra and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across OpEra: An AI decision engine that builds custom optimization models to generate production schedules, warehouse plans, and delivery routes, automatically replanning when conditions change.\nSaw the recent news (launched (0d ago)).\nI'd like to build something with you.\nOne place we could start: Scaling and maintaining complex optimization models across diverse client data sources and real‑time constraints.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:founders%40operatechnologies.com?subject=OpEra%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20complex%20optimization%20models%20across%20d&body=Hi%20Bernardo%2C%0A%0ACongrats%20on%20the%20launch%20%28https%3A//www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets%29.%0AI%27d%20like%20to%20use%20OpEra%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20OpEra%3A%20An%20AI%20decision%20engine%20that%20builds%20custom%20optimization%20models%20to%20generate%20production%20schedules%2C%20warehouse%20plans%2C%20and%20delivery%20routes%2C%20automatically%20replanning%20when%20conditions%20change.%0ASaw%20the%20recent%20news%20%28launched%20%280d%20ago%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Scaling%20and%20maintaining%20complex%20optimization%20models%20across%20diverse%20client%20data%20sources%20and%20real%E2%80%91time%20constraints.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -9215,201 +11701,6 @@
     "outreach": []
   },
   {
-    "company_name": "HiO",
-    "core_product": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-    "discovered_at": "2026-10-23T11:16:48+00:00",
-    "funding_amount": "",
-    "hq": "München, DE",
-    "website": "https://www.shop-hio.de",
-    "score": 36,
-    "last_seen": "2026-10-23T22:44:14+00:00",
-    "slug": "hio",
-    "score_parts": {
-      "fit": 10,
-      "identity": 9,
-      "people": 0,
-      "connections": 0,
-      "contact": 17
-    },
-    "gaps": [
-      "funding stage",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors"
-    ],
-    "contact": {
-      "website": "https://www.shop-hio.de",
-      "emails": [
-        {
-          "value": "info@hio-fitting.de",
-          "kind": "general",
-          "source_url": "https://www.shop-hio.de/"
-        }
-      ],
-      "phones": [
-        {
-          "value": "+498996030575",
-          "kind": "main",
-          "source_url": "https://www.shop-hio.de/"
-        }
-      ],
-      "socials": {},
-      "contact_page": "https://www.shop-hio.de/contact",
-      "product_access": [],
-      "pages_crawled": [
-        "https://www.shop-hio.de/",
-        "https://www.shop-hio.de/about",
-        "https://www.shop-hio.de/contact",
-        "https://www.shop-hio.de/team"
-      ],
-      "enriched_at": "2026-10-23T22:43:42+00:00",
-      "status": "ok"
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50061040",
-        "roles": [
-          "Growth Marketing Manager"
-        ],
-        "role_kinds": [
-          "sales"
-        ],
-        "posted_at": "2026-10-12T18:51:56Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 70.6,
-      "reasons": [
-        "lead score 36",
-        "signal strength 5.1/10: hiring",
-        "found 0 day(s) ago (hot)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy"
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "hio",
-        "field": "core_product",
-        "label": "core_product: HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
-        "value": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
-        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-        "evidence": "",
-        "run_id": "20261023T224039Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "hio",
-        "field": "hq",
-        "label": "hq: München, DE",
-        "value": "München, DE",
-        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-        "evidence": "",
-        "run_id": "20261023T224039Z",
-        "first_seen": "2026-10-23T22:44:14+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "hio",
-        "field": "website",
-        "label": "website: https://www.shop-hio.de",
-        "value": "https://www.shop-hio.de",
-        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-        "evidence": "",
-        "run_id": "20261023T224039Z",
-        "first_seen": "2026-10-23T22:44:14+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "hio",
-        "field": "email",
-        "label": "email: info@hio-fitting.de",
-        "value": "info@hio-fitting.de",
-        "source_url": "https://www.shop-hio.de/",
-        "evidence": "",
-        "run_id": "20261023T224039Z",
-        "first_seen": "2026-10-23T22:44:14+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "hio",
-        "field": "phone",
-        "label": "phone: +498996030575",
-        "value": "+498996030575",
-        "source_url": "https://www.shop-hio.de/",
-        "evidence": "",
-        "run_id": "20261023T224039Z",
-        "first_seen": "2026-10-23T22:44:14+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "hio",
-        "field": "website",
-        "label": "website: https://hioicecream.com",
-        "value": "https://hioicecream.com",
-        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      }
-    ],
-    "why_now": [
-      {
-        "signal": "hiring",
-        "text": "Hiring (11d ago): Growth Marketing Manager",
-        "source_url": "https://news.ycombinator.com/item?id=50061040"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_with",
-      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
-      "to": "info@hio-fitting.de",
-      "to_source_url": "https://www.shop-hio.de/",
-      "subject": "HiO: a thought on your stack",
-      "body": "Hi HiO team,\n\nI saw you're hiring (Growth Marketing Manager) (https://news.ycombinator.com/item?id=50061040).\nI can bring you customer conversations: [one insight about who is struggling with the problem HiO solves].\n\nI came across HiO: HiO is an AI business partner for small business owners.\nSaw the recent news (hiring (11d ago): Growth Marketing Manager).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:info%40hio-fitting.de?subject=HiO%3A%20a%20thought%20on%20your%20stack&body=Hi%20HiO%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Growth%20Marketing%20Manager%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50061040%29.%0AI%20can%20bring%20you%20customer%20conversations%3A%20%5Bone%20insight%20about%20who%20is%20struggling%20with%20the%20problem%20HiO%20solves%5D.%0A%0AI%20came%20across%20HiO%3A%20HiO%20is%20an%20AI%20business%20partner%20for%20small%20business%20owners.%0ASaw%20the%20recent%20news%20%28hiring%20%2811d%20ago%29%3A%20Growth%20Marketing%20Manager%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
-    },
-    "outreach": []
-  },
-  {
     "company_name": "StartupHakk",
     "core_product": "We are hiring military veterans (and transitioning service members) living in Utah or Idaho for a paid, 1-year registered remote apprenticeship program in full-stack web development and applied AI.",
     "tech_stack": [],
@@ -9423,7 +11714,7 @@
     "hq": "",
     "website": "https://startuphakk.com",
     "score": 36,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "startuphakk",
     "score_parts": {
       "fit": 10,
@@ -9467,8 +11758,10 @@
         "https://startuphakk.com/",
         "https://startuphakk.com/contact-us/"
       ],
-      "enriched_at": "2026-10-23T22:43:48+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:57:11+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -9482,7 +11775,7 @@
           "eng"
         ],
         "posted_at": "2026-10-12T17:17:48Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -9510,10 +11803,10 @@
         "value": "https://startuphakk.com",
         "source_url": "https://startuphakk.com/jobs",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -9524,10 +11817,10 @@
         "value": "We are hiring military veterans (and transitioning service members) living in Utah or Idaho for a paid, 1-year registered remote apprenticeship program in full-stack web development and applied AI.",
         "source_url": "https://startuphakk.com/jobs",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -9538,10 +11831,10 @@
         "value": "info@startuphakk.com",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -9552,10 +11845,10 @@
         "value": "+15202018020",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -9566,10 +11859,10 @@
         "value": "https://x.com/StartupHakk",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -9580,10 +11873,10 @@
         "value": "https://www.linkedin.com/company/startup-hakk",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -9702,7 +11995,7 @@
     "hq": "Helsinki, FI",
     "website": "https://treat.health",
     "score": 32,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "treat-health",
     "score_parts": {
       "fit": 10,
@@ -9736,11 +12029,13 @@
       "pages_crawled": [
         "https://treat.health/",
         "https://treat.health/about",
-        "https://treat.health/team",
-        "https://treat.health/contact"
+        "https://treat.health/contact",
+        "https://treat.health/team"
       ],
-      "enriched_at": "2026-10-23T22:43:09+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:56:37+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -9754,7 +12049,7 @@
           "eng"
         ],
         "posted_at": "2026-10-15T14:30:58Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -9782,10 +12077,10 @@
         "value": "Helsinki, FI",
         "source_url": "https://treat.health/en/careers/full-stack-engineer/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -9796,10 +12091,10 @@
         "value": "https://treat.health",
         "source_url": "https://treat.health/en/careers/full-stack-engineer/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -9810,10 +12105,10 @@
         "value": "Treat Health is building healthcare where the right care takes minutes, not days. You describe your concern in your own words, our smart intake asks the follow-up questions a doctor would ask, and a licensed doctor reviews the whole picture",
         "source_url": "https://treat.health/en/careers/full-stack-engineer/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -9824,10 +12119,10 @@
         "value": "customers@treat.health",
         "source_url": "https://treat.health/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -9864,7 +12159,7 @@
     "hq": "",
     "website": "https://www.propellabs.ai",
     "score": 32,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "propel-labs",
     "score_parts": {
       "fit": 10,
@@ -9905,11 +12200,13 @@
       "product_access": [],
       "pages_crawled": [
         "https://www.propellabs.ai/",
-        "https://www.propellabs.ai/contact",
-        "https://www.propellabs.ai/team"
+        "https://www.propellabs.ai/team",
+        "https://www.propellabs.ai/contact"
       ],
-      "enriched_at": "2026-10-23T22:44:01+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:57:21+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -9926,7 +12223,7 @@
           "other"
         ],
         "posted_at": "2026-10-09T13:12:43Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -9954,10 +12251,10 @@
         "value": "https://www.propellabs.ai",
         "source_url": "https://propellabs.ai",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -9968,10 +12265,10 @@
         "value": "AI agents have made engineering throughput cheap, so senior judgment is now the scarce asset: what to build, what to gate, what to trust to production. We're looking for an experienced engineer to join our small crew and play a ~70/30 build",
         "source_url": "https://propellabs.ai",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -9982,10 +12279,10 @@
         "value": "hello@propellabs.ai",
         "source_url": "https://www.propellabs.ai/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -9996,10 +12293,10 @@
         "value": "lisa@propellabs.ai",
         "source_url": "https://news.ycombinator.com/item?id=50020012",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -10010,10 +12307,10 @@
         "value": "https://www.linkedin.com/company/gopropellabs",
         "source_url": "https://www.propellabs.ai/contact",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -10050,7 +12347,7 @@
     "hq": "",
     "website": "https://sendery.co",
     "score": 29,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "sendery",
     "score_parts": {
       "fit": 10,
@@ -10098,11 +12395,13 @@
       ],
       "pages_crawled": [
         "https://sendery.co/en",
-        "https://sendery.co/en/contact",
-        "https://sendery.co/en/about"
+        "https://sendery.co/en/about",
+        "https://sendery.co/en/contact"
       ],
-      "enriched_at": "2026-10-23T22:43:28+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:56:54+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -10116,7 +12415,7 @@
           "eng"
         ],
         "posted_at": "2026-10-13T03:40:30Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -10144,10 +12443,10 @@
         "value": "https://sendery.co",
         "source_url": "https://sendery.co",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10158,10 +12457,10 @@
         "value": "Sendery is a transactional email platform built for teams. We provide developers, designers, and operations with the tools they need to manage their product emails without needing development work.",
         "source_url": "https://sendery.co",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10172,10 +12471,10 @@
         "value": "info@sendery.co",
         "source_url": "https://sendery.co/en",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -10186,10 +12485,10 @@
         "value": "jobs@sendery.co",
         "source_url": "https://news.ycombinator.com/item?id=50066343",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -10213,6 +12512,289 @@
     "outreach": []
   },
   {
+    "company_name": "HiO",
+    "core_product": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+    "discovered_at": "2026-10-23T11:16:48+00:00",
+    "funding_amount": "",
+    "hq": "Buford, US",
+    "website": "https://www.hio.com",
+    "score": 29,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "hio",
+    "score_parts": {
+      "fit": 10,
+      "identity": 9,
+      "people": 0,
+      "connections": 0,
+      "contact": 10
+    },
+    "gaps": [
+      "funding stage",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email"
+    ],
+    "contact": {
+      "website": "https://www.hio.com",
+      "emails": [],
+      "phones": [
+        {
+          "value": "+18008222257",
+          "kind": "main",
+          "source_url": "https://www.hio.com/"
+        },
+        {
+          "value": "+18666495058",
+          "kind": "main",
+          "source_url": "https://www.hio.com/"
+        }
+      ],
+      "socials": {
+        "twitter": "https://x.com/AmericanHIO",
+        "linkedin": "https://www.linkedin.com/company/american-hole-'n-one"
+      },
+      "contact_page": "https://www.hio.com/contact-us",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.hio.com/",
+        "https://www.hio.com/about-us",
+        "https://www.hio.com/contact-us"
+      ],
+      "enriched_at": "2026-10-24T01:57:07+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50061040",
+        "roles": [
+          "Growth Marketing Manager"
+        ],
+        "role_kinds": [
+          "sales"
+        ],
+        "posted_at": "2026-10-12T18:51:56Z",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 66.4,
+      "reasons": [
+        "lead score 29",
+        "signal strength 5.1/10: hiring",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "hio",
+        "field": "core_product",
+        "label": "core_product: HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
+        "value": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
+        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "hio",
+        "field": "hq",
+        "label": "hq: Buford, US",
+        "value": "Buford, US",
+        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "hio",
+        "field": "website",
+        "label": "website: https://www.hio.com",
+        "value": "https://www.hio.com",
+        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "hio",
+        "field": "phone",
+        "label": "phone: +18008222257",
+        "value": "+18008222257",
+        "source_url": "https://www.hio.com/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "hio",
+        "field": "phone",
+        "label": "phone: +18666495058",
+        "value": "+18666495058",
+        "source_url": "https://www.hio.com/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "hio",
+        "field": "twitter",
+        "label": "twitter: https://x.com/AmericanHIO",
+        "value": "https://x.com/AmericanHIO",
+        "source_url": "https://www.hio.com/contact-us",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "hio",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/american-hole-'n-one",
+        "value": "https://www.linkedin.com/company/american-hole-'n-one",
+        "source_url": "https://www.hio.com/contact-us",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "hio",
+        "field": "hq",
+        "label": "hq: München, DE",
+        "value": "München, DE",
+        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+        "evidence": "",
+        "run_id": "20261023T224039Z",
+        "first_seen": "2026-10-23T22:44:14+00:00",
+        "last_seen": "2026-10-23T22:44:14+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "hio",
+        "field": "website",
+        "label": "website: https://www.shop-hio.de",
+        "value": "https://www.shop-hio.de",
+        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+        "evidence": "",
+        "run_id": "20261023T224039Z",
+        "first_seen": "2026-10-23T22:44:14+00:00",
+        "last_seen": "2026-10-23T22:44:14+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "hio",
+        "field": "email",
+        "label": "email: info@hio-fitting.de",
+        "value": "info@hio-fitting.de",
+        "source_url": "https://www.shop-hio.de/",
+        "evidence": "",
+        "run_id": "20261023T224039Z",
+        "first_seen": "2026-10-23T22:44:14+00:00",
+        "last_seen": "2026-10-23T22:44:14+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "hio",
+        "field": "phone",
+        "label": "phone: +498996030575",
+        "value": "+498996030575",
+        "source_url": "https://www.shop-hio.de/",
+        "evidence": "",
+        "run_id": "20261023T224039Z",
+        "first_seen": "2026-10-23T22:44:14+00:00",
+        "last_seen": "2026-10-23T22:44:14+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "hio",
+        "field": "website",
+        "label": "website: https://hioicecream.com",
+        "value": "https://hioicecream.com",
+        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+        "evidence": "",
+        "run_id": "20261023T111503Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-23T11:18:40+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "hiring",
+        "text": "Hiring (11d ago): Growth Marketing Manager",
+        "source_url": "https://news.ycombinator.com/item?id=50061040"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "",
+      "to_source_url": "",
+      "subject": "HiO: a thought on your stack",
+      "body": "Hi HiO team,\n\nI saw you're hiring (Growth Marketing Manager) (https://news.ycombinator.com/item?id=50061040).\nI can bring you customer conversations: [one insight about who is struggling with the problem HiO solves].\n\nI came across HiO: HiO is an AI business partner for small business owners.\nSaw the recent news (hiring (11d ago): Growth Marketing Manager).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Chronograph",
     "core_product": "Chronograph was founded to bring next-generation technology to private capital markets. Through our suite of cloud-based analytics and data management solutions, we help many of the world's largest and most sophisticated venture capital, pr",
     "tech_stack": [],
@@ -10226,7 +12808,7 @@
     "hq": "",
     "website": "https://www.greenhouse.com",
     "score": 26,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "chronograph",
     "score_parts": {
       "fit": 10,
@@ -10274,8 +12856,10 @@
         "https://www.greenhouse.com/company",
         "https://www.greenhouse.com/contact"
       ],
-      "enriched_at": "2026-10-23T22:43:57+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:57:18+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -10289,7 +12873,7 @@
           "eng"
         ],
         "posted_at": "2026-10-10T13:55:55Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -10317,10 +12901,10 @@
         "value": "https://www.greenhouse.com",
         "source_url": "https://grnh.se/1pm4u2ys7us",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10331,10 +12915,10 @@
         "value": "Chronograph was founded to bring next-generation technology to private capital markets. Through our suite of cloud-based analytics and data management solutions, we help many of the world's largest and most sophisticated venture capital, pr",
         "source_url": "https://grnh.se/1pm4u2ys7us",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10345,10 +12929,10 @@
         "value": "+19177804130",
         "source_url": "https://www.greenhouse.com/contact",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -10359,10 +12943,10 @@
         "value": "https://www.linkedin.com/company/greenhouse-inc-",
         "source_url": "https://www.greenhouse.com/contact",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -10399,7 +12983,7 @@
     "hq": "",
     "website": "https://skieslearn.com",
     "score": 26,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "skies",
     "score_parts": {
       "fit": 10,
@@ -10440,8 +13024,10 @@
         "https://skieslearn.com/",
         "https://skieslearn.com/content/team"
       ],
-      "enriched_at": "2026-10-23T22:44:05+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:57:23+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -10457,7 +13043,7 @@
           "other"
         ],
         "posted_at": "2026-10-08T23:45:00Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -10466,10 +13052,10 @@
     "decision": {
       "action": "watch",
       "urgency": "cold",
-      "priority": 67.6,
+      "priority": 62.8,
       "reasons": [
         "lead score 26",
-        "signal strength 6.6/10: hiring",
+        "signal strength 4.0/10: hiring",
         "found 0 day(s) ago (hot)",
         "not enough signal yet"
       ],
@@ -10485,10 +13071,10 @@
         "value": "https://skieslearn.com",
         "source_url": "https://skieslearn.com/ndbi/jobs/developer",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10499,10 +13085,10 @@
         "value": "3% of children are autistic. 30% of them at age 9 remain minimally verbal: a handful of single words, never put together into a sentence. If that evokes something in you beyond the number, read on.",
         "source_url": "https://skieslearn.com/ndbi/jobs/developer",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10513,10 +13099,10 @@
         "value": "help@skieslearn.com",
         "source_url": "https://skieslearn.com/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -10527,17 +13113,17 @@
         "value": "julius@skieslearn.com",
         "source_url": "https://news.ycombinator.com/item?id=50014023",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (14d ago): iOS Developer, embedded at the UCLA Kasari Lab",
+        "text": "Hiring (15d ago): iOS Developer, embedded at the UCLA Kasari Lab",
         "source_url": "https://news.ycombinator.com/item?id=50014023"
       }
     ],
@@ -10548,8 +13134,8 @@
       "to": "julius@skieslearn.com",
       "to_source_url": "https://news.ycombinator.com/item?id=50014023",
       "subject": "SKIES: a thought on your stack",
-      "body": "Hi SKIES team,\n\nI saw you're hiring (iOS Developer, embedded at the UCLA Kasari Lab) (https://news.ycombinator.com/item?id=50014023).\nI'd like to use SKIES and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across SKIES: 3% of children are autistic.\nSaw the recent news (hiring (14d ago): iOS Developer, embedded at the UCLA Kasari Lab).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:julius%40skieslearn.com?subject=SKIES%3A%20a%20thought%20on%20your%20stack&body=Hi%20SKIES%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28iOS%20Developer%2C%20embedded%20at%20the%20UCLA%20Kasari%20Lab%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50014023%29.%0AI%27d%20like%20to%20use%20SKIES%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20SKIES%3A%203%25%20of%20children%20are%20autistic.%0ASaw%20the%20recent%20news%20%28hiring%20%2814d%20ago%29%3A%20iOS%20Developer%2C%20embedded%20at%20the%20UCLA%20Kasari%20Lab%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "body": "Hi SKIES team,\n\nI saw you're hiring (iOS Developer, embedded at the UCLA Kasari Lab) (https://news.ycombinator.com/item?id=50014023).\nI'd like to use SKIES and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across SKIES: 3% of children are autistic.\nSaw the recent news (hiring (15d ago): iOS Developer, embedded at the UCLA Kasari Lab).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:julius%40skieslearn.com?subject=SKIES%3A%20a%20thought%20on%20your%20stack&body=Hi%20SKIES%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28iOS%20Developer%2C%20embedded%20at%20the%20UCLA%20Kasari%20Lab%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50014023%29.%0AI%27d%20like%20to%20use%20SKIES%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20SKIES%3A%203%25%20of%20children%20are%20autistic.%0ASaw%20the%20recent%20news%20%28hiring%20%2815d%20ago%29%3A%20iOS%20Developer%2C%20embedded%20at%20the%20UCLA%20Kasari%20Lab%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -10567,7 +13153,7 @@
     "hq": "",
     "website": "https://neuralframe.com",
     "score": 22,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "neuralframe",
     "score_parts": {
       "fit": 10,
@@ -10601,8 +13187,10 @@
         "https://neuralframe.com/contact-us/",
         "https://neuralframe.com/contact-us/"
       ],
-      "enriched_at": "2026-10-23T22:43:16+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:56:42+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -10617,7 +13205,7 @@
           "eng"
         ],
         "posted_at": "2026-10-14T21:53:28Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -10645,10 +13233,10 @@
         "value": "https://neuralframe.com",
         "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10659,10 +13247,10 @@
         "value": "We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
         "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10673,10 +13261,10 @@
         "value": "https://www.linkedin.com/company/neuralframe",
         "source_url": "https://neuralframe.com/contact-us/",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -10713,7 +13301,7 @@
     "hq": "",
     "website": "https://typify.dev",
     "score": 22,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "typify-dev",
     "score_parts": {
       "fit": 10,
@@ -10762,8 +13350,10 @@
         "https://typify.dev/",
         "https://typify.dev/landing/contact"
       ],
-      "enriched_at": "2026-10-23T22:43:32+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:56:57+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -10778,7 +13368,7 @@
           "eng"
         ],
         "posted_at": "2026-10-12T21:00:23Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -10806,10 +13396,10 @@
         "value": "https://typify.dev",
         "source_url": "https://typify.dev",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10820,10 +13410,10 @@
         "value": "We're Typify, an education company for engineers that teaches functional programming and system design before pairing them with projects & job prospects. We're hiring for two roles: Both mid-senior, Angular + NestJS + Postgres.",
         "source_url": "https://typify.dev",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10834,10 +13424,10 @@
         "value": "galen@typify.dev",
         "source_url": "https://news.ycombinator.com/item?id=50063001",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -10848,10 +13438,10 @@
         "value": "https://www.linkedin.com/company/typifydev",
         "source_url": "https://typify.dev/landing/contact",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -10862,10 +13452,10 @@
         "value": "https://github.com/typifydev",
         "source_url": "https://typify.dev/landing/contact",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -10902,7 +13492,7 @@
     "hq": "",
     "website": "https://exlabora.com",
     "score": 19,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "exlabora-ai",
     "score_parts": {
       "fit": 10,
@@ -10931,12 +13521,14 @@
       "product_access": [],
       "pages_crawled": [
         "https://exlabora.com/",
-        "https://exlabora.com/about",
+        "https://exlabora.com/team",
         "https://exlabora.com/contact",
-        "https://exlabora.com/team"
+        "https://exlabora.com/about"
       ],
-      "enriched_at": "2026-10-23T22:43:19+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:56:46+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -10952,7 +13544,7 @@
           "other"
         ],
         "posted_at": "2026-10-14T17:28:12Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -10980,10 +13572,10 @@
         "value": "https://exlabora.com",
         "source_url": "https://exlabora.com/open-roles.html",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -10994,10 +13586,10 @@
         "value": "https://exlabora.com/open-roles.html",
         "source_url": "https://exlabora.com/open-roles.html",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       }
     ],
@@ -11034,7 +13626,7 @@
     "hq": "",
     "website": "https://www.govstar.us",
     "score": 19,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "govstar",
     "score_parts": {
       "fit": 10,
@@ -11073,8 +13665,10 @@
         "https://www.govstar.us/team",
         "https://www.govstar.us/contact"
       ],
-      "enriched_at": "2026-10-23T22:43:23+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:56:49+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -11089,7 +13683,7 @@
           "other"
         ],
         "posted_at": "2026-10-14T16:26:28Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -11117,10 +13711,10 @@
         "value": "https://www.govstar.us",
         "source_url": "https://govstar.us",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -11131,10 +13725,10 @@
         "value": "GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
         "source_url": "https://govstar.us",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -11145,10 +13739,10 @@
         "value": "nicholas.hanson@govstar.us",
         "source_url": "https://news.ycombinator.com/item?id=50090302",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -11185,7 +13779,7 @@
     "hq": "",
     "website": "https://www.generalintelligenceholdings.com",
     "score": 19,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "general-intelligence-holdings",
     "score_parts": {
       "fit": 10,
@@ -11220,12 +13814,14 @@
       "product_access": [],
       "pages_crawled": [
         "https://www.generalintelligenceholdings.com/",
-        "https://www.generalintelligenceholdings.com/team",
+        "https://www.generalintelligenceholdings.com/about",
         "https://www.generalintelligenceholdings.com/contact",
-        "https://www.generalintelligenceholdings.com/about"
+        "https://www.generalintelligenceholdings.com/team"
       ],
-      "enriched_at": "2026-10-23T22:43:51+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:57:14+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -11239,7 +13835,7 @@
           "other"
         ],
         "posted_at": "2026-10-12T11:51:09Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -11267,10 +13863,10 @@
         "value": "https://www.generalintelligenceholdings.com",
         "source_url": "https://www.generalintelligenceholdings.com",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -11281,10 +13877,10 @@
         "value": "I'm Chris, founder of GIH. We're building an AI operating platform for established service businesses, starting with UK accountancy. Our model is to acquire businesses and deploy the software into their daily workflows, measuring its effect",
         "source_url": "https://www.generalintelligenceholdings.com",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -11295,10 +13891,10 @@
         "value": "chris@generalintelligencecapital.com",
         "source_url": "https://news.ycombinator.com/item?id=50055019",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -11335,7 +13931,7 @@
     "hq": "",
     "website": "https://ojin.ai",
     "score": 19,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "ojin",
     "score_parts": {
       "fit": 10,
@@ -11388,8 +13984,10 @@
         "https://ojin.ai/about-us",
         "https://ojin.ai/enterprise"
       ],
-      "enriched_at": "2026-10-23T22:44:14+00:00",
-      "status": "ok"
+      "enriched_at": "2026-10-24T01:57:30+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -11403,7 +14001,7 @@
           "eng"
         ],
         "posted_at": "2026-10-08T11:10:20Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -11431,10 +14029,10 @@
         "value": "https://ojin.ai",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -11445,10 +14043,10 @@
         "value": "We build AI agents that look and sound human - real face, real voice, real-time conversation. The kind of thing that makes people ask if it's actually live the first time they see it. Getting there means solving latency at a level most infr",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -11459,10 +14057,10 @@
         "value": "https://github.com/ojinai",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -11473,10 +14071,10 @@
         "value": "https://www.linkedin.com/company/ojininai",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -11487,10 +14085,10 @@
         "value": "https://x.com/Ojin_AI",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -11527,7 +14125,7 @@
     "hq": "",
     "website": "",
     "score": 10,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "indiana-microelectronics-llc",
     "score_parts": {
       "fit": 10,
@@ -11550,16 +14148,22 @@
     ],
     "contact": {
       "website": "",
-      "emails": [],
+      "emails": [
+        {
+          "value": "cuppys@indianamicro.com",
+          "kind": "person",
+          "source_url": "https://news.ycombinator.com/item?id=50062997"
+        }
+      ],
       "phones": [],
       "socials": {},
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-10-23T23:00:17+00:00",
+      "enriched_at": "2026-10-24T01:57:01+00:00",
       "status": "no_website",
-      "attempts": 1,
-      "last_attempt": "2026-10-23T23:00:12+00:00"
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -11573,7 +14177,7 @@
           "eng"
         ],
         "posted_at": "2026-10-12T20:59:57Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -11582,7 +14186,7 @@
     "decision": {
       "action": "skip",
       "urgency": "cold",
-      "priority": 9.6,
+      "priority": 11.6,
       "reasons": [
         "lead score 10",
         "signal strength 6.6/10: hiring",
@@ -11601,10 +14205,10 @@
         "value": "Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.",
         "source_url": "https://news.ycombinator.com/item?id=50062997",
         "evidence": "",
-        "run_id": "backfill-2026-10-23",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 4,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 5,
         "confidence": 0.4
       },
       {
@@ -11615,10 +14219,10 @@
         "value": "cuppys@indianamicro.com",
         "source_url": "https://news.ycombinator.com/item?id=50062997",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -11638,11 +14242,11 @@
     "email_draft": {
       "intent": "work_for",
       "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "",
-      "to_source_url": "",
+      "to": "cuppys@indianamicro.com",
+      "to_source_url": "https://news.ycombinator.com/item?id=50062997",
       "subject": "Indiana Microelectronics LLC: a thought on your stack",
       "body": "Hi Indiana Microelectronics LLC team,\n\nI saw you're hiring (RF Engineer) (https://news.ycombinator.com/item?id=50062997).\nI'd like to use Indiana Microelectronics LLC and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Indiana Microelectronics LLC: Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": ""
+      "mailto": "mailto:cuppys%40indianamicro.com?subject=Indiana%20Microelectronics%20LLC%3A%20a%20thought%20on%20your%20stack&body=Hi%20Indiana%20Microelectronics%20LLC%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28RF%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50062997%29.%0AI%27d%20like%20to%20use%20Indiana%20Microelectronics%20LLC%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Indiana%20Microelectronics%20LLC%3A%20Indiana%20Micro%20is%20a%20small%20electronics%20company%20working%20on%20tunable%20RF%20filters%20and%20radio-frequency%20front-end%20%28RFFE%29%20systems%20for%20interference%20mitigation.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -11660,7 +14264,7 @@
     "hq": "",
     "website": "",
     "score": 10,
-    "last_seen": "2026-10-23T22:44:14+00:00",
+    "last_seen": "2026-10-24T01:57:30+00:00",
     "slug": "onechronos",
     "score_parts": {
       "fit": 10,
@@ -11683,16 +14287,22 @@
     ],
     "contact": {
       "website": "",
-      "emails": [],
+      "emails": [
+        {
+          "value": "careers@onechronos.com",
+          "kind": "other",
+          "source_url": "https://news.ycombinator.com/item?id=50012248"
+        }
+      ],
       "phones": [],
       "socials": {},
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-10-23T23:00:24+00:00",
+      "enriched_at": "2026-10-24T01:57:27+00:00",
       "status": "no_website",
-      "attempts": 1,
-      "last_attempt": "2026-10-23T23:00:12+00:00"
+      "attempts": 0,
+      "last_attempt": ""
     },
     "signals": [
       {
@@ -11710,7 +14320,7 @@
           "other"
         ],
         "posted_at": "2026-10-08T21:04:09Z",
-        "seen_at": "2026-10-23T22:42:22+00:00"
+        "seen_at": "2026-10-24T01:55:31+00:00"
       }
     ],
     "people": [],
@@ -11719,7 +14329,7 @@
     "decision": {
       "action": "skip",
       "urgency": "cold",
-      "priority": 8.9,
+      "priority": 10.9,
       "reasons": [
         "lead score 10",
         "signal strength 4.6/10: hiring",
@@ -11738,10 +14348,10 @@
         "value": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
         "source_url": "https://news.ycombinator.com/item?id=50012248",
         "evidence": "",
-        "run_id": "backfill-2026-10-23",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -11752,10 +14362,10 @@
         "value": "careers@onechronos.com",
         "source_url": "https://news.ycombinator.com/item?id=50012248",
         "evidence": "",
-        "run_id": "20261023T224039Z",
+        "run_id": "20261024T015344Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T22:44:14+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       },
       {
@@ -11915,11 +14525,11 @@
     "email_draft": {
       "intent": "work_for",
       "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "",
-      "to_source_url": "",
+      "to": "careers@onechronos.com",
+      "to_source_url": "https://news.ycombinator.com/item?id=50012248",
       "subject": "OneChronos: a thought on your stack",
       "body": "Hi OneChronos team,\n\nI saw you're hiring (Engineering Manager, Data Platform (NYC, Hybrid) · Software Engineer) (https://news.ycombinator.com/item?id=50012248).\nI'd like to use OneChronos and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across OneChronos: We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": ""
+      "mailto": "mailto:careers%40onechronos.com?subject=OneChronos%3A%20a%20thought%20on%20your%20stack&body=Hi%20OneChronos%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Engineering%20Manager%2C%20Data%20Platform%20%28NYC%2C%20Hybrid%29%20%C2%B7%20Software%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50012248%29.%0AI%27d%20like%20to%20use%20OneChronos%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20OneChronos%3A%20We%E2%80%99re%20a%20Series%20B%20trading%20technology%20company%20reimagining%20how%20financial%20markets%20match%20buyers%20and%20sellers%20--%20applying%20auction%20theory%20and%20innovative%20technologies%20to%20build%20fairer%2C%20more%20efficient%20trading%20infrastructure.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   }
