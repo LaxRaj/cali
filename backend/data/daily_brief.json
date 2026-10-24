@@ -1,57 +1,50 @@
 {
-  "generated_at": "2026-10-24T01:57:30+00:00",
+  "generated_at": "2026-10-24T10:37:24+00:00",
   "findings": [
     {
-      "company_name": "OSCP",
-      "core_product": "Chip‑based photonic gyroscopes and inertial measurement units (IMUs) that provide high‑accuracy navigation without GPS.",
+      "company_name": "Rozvelt",
+      "core_product": "Odour‑masking headgear (the Vektr mask) that filters exhaled scent and can protect against inhaled particles for hunters and defence users",
       "tech_stack": [],
-      "likely_bottleneck": "Scaling the silicon‑photonic chip manufacturing process to meet demand while maintaining precision and yield.",
-      "value_prop_pitch": "I can help you build a developer portal with Next.js that lets your hardware team quickly query design docs and test results using vector semantic search, cutting down the time spent hunting for data. This will streamline collaboration across photonics, firmware, and manufacturing, letting you focus on scaling production rather than digging for information.",
+      "likely_bottleneck": "Scaling manufacturing and supply‑chain logistics for hardware production",
+      "value_prop_pitch": "I can help you build a real‑time dashboard with Next.js to monitor production metrics and quickly spot bottlenecks in your manufacturing line. Coupled with a vector‑based semantic search over your sensor logs, you’ll instantly retrieve root‑cause insights and keep the supply chain flowing.",
       "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "$6 million USD",
+      "funding_stage": "seed",
+      "funding_amount": "$3.1 million CAD",
       "hq": "Montréal, Canada",
-      "website": "https://www.oscp.com",
-      "source_url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
-      "discovered_at": "2026-10-24T01:54:29+00:00",
+      "website": "https://www.rozvelt.com",
+      "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+      "discovered_at": "2026-10-24T10:34:23+00:00",
       "source": "rss",
-      "score": 92,
+      "score": 84,
       "gaps": [
-        "tech stack",
-        "people profiles"
+        "tech stack"
       ],
       "contact": {
-        "website": "https://www.oscp.com",
+        "website": "https://www.rozvelt.com",
         "emails": [
           {
-            "value": "info@oscp.com",
+            "value": "info@rozvelt.com",
             "kind": "general",
-            "source_url": "https://www.oscp.com/contact"
+            "source_url": "https://www.rozvelt.com/"
           }
         ],
         "phones": [
           {
-            "value": "+14383836727",
+            "value": "+18337698358",
             "kind": "main",
-            "source_url": "https://www.oscp.com/"
+            "source_url": "https://www.rozvelt.com/"
           }
         ],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/one-silicon-chip-photonics"
+          "linkedin": "https://www.linkedin.com/company/rozvelt"
         },
-        "contact_page": "https://www.oscp.com/contact",
-        "product_access": [
-          {
-            "label": "Documentation",
-            "url": "https://docs.oscp.com/"
-          }
-        ],
+        "contact_page": "",
+        "product_access": [],
         "pages_crawled": [
-          "https://www.oscp.com/",
-          "https://www.oscp.com/about",
-          "https://www.oscp.com/contact"
+          "https://www.rozvelt.com/",
+          "https://www.rozvelt.com/pages/about-us"
         ],
-        "enriched_at": "2026-10-24T01:55:34+00:00",
+        "enriched_at": "2026-10-24T10:35:26+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -60,341 +53,93 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/",
+          "url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Fri, 02 Oct 2026 20:07:56 +0000",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "posted_at": "Mon, 19 Oct 2026 11:00:00 +0000",
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [
         {
-          "name": "Kazem Zandi",
-          "role": "CEO",
-          "org": "OSCP",
-          "evidence": "OSCP was founded in 2015 by CEO Kazem Zandi",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.oscp.com/people/kazem-zandi",
-          "link_source": ""
-        },
-        {
-          "name": "Alex Lintott",
-          "role": "COO / INTERIM DIRECTOR",
-          "org": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "COO / INTERIM DIRECTOR: Alex Lintott",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.oscp.com/people/alex-lintott",
-          "link_source": ""
-        },
-        {
-          "name": "Somu Subramaniam",
-          "role": "Board Director",
-          "org": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "Board Director: Somu Subramaniam",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.oscp.com/people/somu-subramaniam",
-          "link_source": ""
-        },
-        {
-          "name": "Thibaut Gravey",
-          "role": "VP of Product",
-          "org": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "VP of Product: Thibaut Gravey",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.oscp.com/people/thibaut-gravey",
-          "link_source": ""
-        },
-        {
-          "name": "Paul Miyoshi",
-          "role": "VP of Sales",
-          "org": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "VP of Sales: Paul Miyoshi",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.oscp.com/people/paul-miyoshi",
-          "link_source": ""
-        },
-        {
-          "name": "Cornel Chiriac",
-          "role": "OBSERVER",
-          "org": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "OBSERVER: Cornel Chiriac",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "https://www.oscp.com/people/cornel-chiriac",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Kazem Zandi",
-          "rel": "founded",
-          "dst": "OSCP",
-          "evidence": "OSCP was founded in 2015 by CEO Kazem Zandi"
-        },
-        {
-          "src": "Alex Lintott",
-          "rel": "works_at",
-          "dst": "OSCP",
-          "evidence": "Alex Lintott, OSCP"
-        },
-        {
-          "src": "New Science Ventures",
-          "rel": "invested_in",
-          "dst": "OSCP",
-          "evidence": "It was led by New Science Ventures"
-        },
-        {
-          "src": "Emerging Ventures",
-          "rel": "invested_in",
-          "dst": "OSCP",
-          "evidence": "support from fellow new American investor Emerging Ventures"
-        },
-        {
-          "src": "2050 Capital",
-          "rel": "invested_in",
-          "dst": "OSCP",
-          "evidence": "existing United Kingdom-based backer 2050 Capital"
-        },
-        {
-          "src": "Kazem Zandi",
-          "rel": "previously_at",
-          "dst": "Defence R&D Canada",
-          "evidence": "previously worked as a senior optoelectronics devices engineer with Defence R&D Canada"
-        },
-        {
-          "src": "Kazem Zandi",
-          "rel": "previously_at",
-          "dst": "C2MI",
-          "evidence": "senior process engineer with Québec’s C2MI"
-        },
-        {
-          "src": "Kazem Zandi",
-          "rel": "founded",
-          "dst": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "Founder and CEO / DIRECTOR: Kazem Zandi"
-        },
-        {
-          "src": "Alex Lintott",
-          "rel": "works_at",
-          "dst": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "COO / INTERIM DIRECTOR: Alex Lintott"
-        },
-        {
-          "src": "Thibaut Gravey",
-          "rel": "works_at",
-          "dst": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "VP of Product: Thibaut Gravey"
-        },
-        {
-          "src": "Paul Miyoshi",
-          "rel": "works_at",
-          "dst": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "VP of Sales: Paul Miyoshi"
-        },
-        {
-          "src": "Somu Subramaniam",
-          "rel": "works_at",
-          "dst": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "Board Director: Somu Subramaniam"
-        },
-        {
-          "src": "Cornel Chiriac",
-          "rel": "works_at",
-          "dst": "One Silicon Chip Photonics (OSCP)",
-          "evidence": "OBSERVER: Cornel Chiriac"
-        }
-      ]
-    },
-    {
-      "company_name": "Doris Labs",
-      "core_product": "A semantic AI layer for go‑to‑market teams that unifies customer data from CRM, email and documents and powers AI‑driven Sidekick assistants for sales reps.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling real‑time semantic search over heterogeneous, unstructured sales data as the platform grows.",
-      "value_prop_pitch": "Hey Doris Labs, you can eliminate the scaling bottleneck by moving your front‑end to Next.js and using a vector‑based semantic search layer to index all your CRM, email and document data. This will give you instant, typo‑tolerant retrieval and let your AI Sidekicks respond in real time.",
-      "is_relevant": true,
-      "funding_stage": "Pre-seed",
-      "funding_amount": "$600,000",
-      "hq": "London",
-      "website": "https://dorislabs.com",
-      "source_url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
-      "discovered_at": "2026-10-24T01:54:29+00:00",
-      "source": "web",
-      "score": 88,
-      "gaps": [
-        "tech stack",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://dorislabs.com",
-        "emails": [
-          {
-            "value": "jordan@yourcompany.com",
-            "kind": "person",
-            "source_url": "https://dorislabs.com/"
-          },
-          {
-            "value": "priya@spotify.com",
-            "kind": "person",
-            "source_url": "https://dorislabs.com/"
-          },
-          {
-            "value": "tomas@spotify.com",
-            "kind": "person",
-            "source_url": "https://dorislabs.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/meetdoris",
-          "linkedin": "https://www.linkedin.com/company/dorislabs"
-        },
-        "contact_page": "https://dorislabs.com/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://dorislabs.com/pricing/"
-          }
-        ],
-        "pages_crawled": [
-          "https://dorislabs.com/",
-          "https://dorislabs.com/about",
-          "https://dorislabs.com/team",
-          "https://dorislabs.com/contact"
-        ],
-        "enriched_at": "2026-10-24T01:56:01+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "web",
-          "url": "https://www.thesaasnews.com/news/doris-labs-raises-600000-pre-seed/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-10-24T01:55:31+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Hayden Munt",
-          "role": "Founder",
-          "org": "Doris Labs",
-          "evidence": "Founded by Hayden Munt and Frazer Kearl",
-          "linkedin": "https://www.linkedin.com/in/hayden-munt-571a0a144",
+          "name": "Nicholas Monette",
+          "role": "Co‑founder & CEO",
+          "org": "Rozvelt",
+          "evidence": "According to Rozvelt co‑founder and CEO Nicholas Monette, the pivot began when Rozvelt presented at the SHOT Show in Las Vegas",
+          "linkedin": "https://www.linkedin.com/in/nicholasmonette",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": "search"
         },
         {
-          "name": "Frazer Kearl",
-          "role": "Founder",
-          "org": "Doris Labs",
-          "evidence": "Founded by Hayden Munt and Frazer Kearl",
-          "linkedin": "https://www.linkedin.com/in/frazerkearl",
+          "name": "Benoit Robert",
+          "role": "Partner at Evovest (investor)",
+          "org": "Evovest",
+          "evidence": "seed funding ... led by Benoit Robert, a partner at wealth management firm Evovest",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "search"
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Hayden Munt",
+          "src": "Nicholas Monette",
           "rel": "founded",
-          "dst": "Doris Labs",
-          "evidence": "Founded by Hayden Munt and Frazer Kearl"
+          "dst": "Rozvelt",
+          "evidence": "According to Rozvelt co‑founder and CEO Nicholas Monette, the pivot began when Rozvelt presented at the SHOT Show"
         },
         {
-          "src": "Frazer Kearl",
-          "rel": "founded",
-          "dst": "Doris Labs",
-          "evidence": "Founded by Hayden Munt and Frazer Kearl"
-        },
-        {
-          "src": "Fuel Ventures",
+          "src": "Benoit Robert",
           "rel": "invested_in",
-          "dst": "Doris Labs",
-          "evidence": "The funding round was led by Fuel Ventures"
-        },
-        {
-          "src": "Manchester Angels",
-          "rel": "invested_in",
-          "dst": "Doris Labs",
-          "evidence": "participation from Manchester Angels"
+          "dst": "Rozvelt",
+          "evidence": "seed funding ... led by Benoit Robert, a partner at wealth management firm Evovest"
         }
       ]
     },
     {
-      "company_name": "Miracly.ai",
-      "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+      "company_name": "Aerium",
+      "core_product": "A software platform that integrates, cleans, and centralizes industrial manufacturers' data and deploys AI agents and custom machine learning models to monitor operations and automate tasks.",
       "tech_stack": [
-        "ChatGPT",
-        "Claude",
-        "Copilot",
-        "LLMs",
-        "vector embeddings"
+        "AI agents",
+        "machine learning",
+        "data integration"
       ],
-      "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-      "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
+      "likely_bottleneck": "Scaling real‑time data pipelines and model deployment across heterogeneous legacy systems",
+      "value_prop_pitch": "I can build a Next.js front‑end that surfaces your operational data through a vector‑based semantic search layer, letting engineers instantly query any siloed information. This will cut down integration time and let your AI agents act on fresh insights without costly custom pipelines.",
       "is_relevant": true,
-      "funding_stage": "pre-seed",
-      "funding_amount": "$2M",
-      "hq": "Stockholm",
-      "website": "https://www.miracly.ai",
-      "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-      "discovered_at": "2026-10-24T01:54:29+00:00",
-      "source": "web",
-      "score": 86,
+      "funding_stage": "seed",
+      "funding_amount": "$2.5M USD",
+      "hq": "Toronto, Canada",
+      "website": "https://www.aeriumhq.com",
+      "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+      "discovered_at": "2026-10-24T10:34:23+00:00",
+      "source": "rss",
+      "score": 80,
       "gaps": [
         "people profiles",
         "phone"
       ],
       "contact": {
-        "website": "https://www.miracly.ai",
+        "website": "https://www.aeriumhq.com",
         "emails": [
           {
-            "value": "hello@miracly.ai",
-            "kind": "general",
-            "source_url": "https://www.miracly.ai/contact?__clerk_synced=true"
+            "value": "founders@aeriumhq.com",
+            "kind": "person",
+            "source_url": "https://www.aeriumhq.com/"
           }
         ],
         "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/miracly",
-          "twitter": "https://x.com/miraclyai"
-        },
-        "contact_page": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://www.miracly.ai/pricing"
-          },
-          {
-            "label": "Get started",
-            "url": "https://www.miracly.ai/sign-up"
-          }
-        ],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
         "pages_crawled": [
-          "https://www.miracly.ai/?__clerk_synced=true",
-          "https://www.miracly.ai/contact?__clerk_synced=true",
-          "https://www.miracly.ai/about"
+          "https://www.aeriumhq.com/",
+          "https://www.aeriumhq.com/about"
         ],
-        "enriched_at": "2026-10-24T01:56:11+00:00",
+        "enriched_at": "2026-10-24T10:35:38+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -402,20 +147,20 @@
       "signals": [
         {
           "type": "funding",
-          "source": "web",
-          "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "source": "rss",
+          "url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "posted_at": "Fri, 16 Oct 2026 10:00:00 +0000",
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [
         {
-          "name": "Arvid Lithander",
-          "role": "Co-founder",
-          "org": "Miracly",
-          "evidence": "Arvid Lithander\nCo-founder",
+          "name": "Adam Trotman",
+          "role": "Co‑founder & CEO",
+          "org": "Aerium",
+          "evidence": "Aerium co‑founder and CEO Adam Trotman said he and his co‑founder Michael Dawes were exposed to manufacturing...",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -423,65 +168,10 @@
           "link_source": ""
         },
         {
-          "name": "Bjorn Bergstrom",
-          "role": "Co-founder",
-          "org": "Miracly",
-          "evidence": "Bjorn Bergstrom\nCo-founder",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Shannon Cullum",
-          "role": "Co-founder",
-          "org": "Miracly",
-          "evidence": "Shannon Cullum\nCo-founder",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Stefan Lindeberg",
-          "role": "Investor",
-          "org": "",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Alex Bouaziz",
-          "role": "Investor",
-          "org": "",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Thomas Ekman",
-          "role": "Investor",
-          "org": "",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Hedda Båverud Olsson",
-          "role": "Investor",
-          "org": "",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+          "name": "Michael Dawes",
+          "role": "Co‑founder",
+          "org": "Aerium",
+          "evidence": "Aerium co‑founder and CEO Adam Trotman said he and his co‑founder Michael Dawes were exposed to manufacturing...",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -491,99 +181,64 @@
       ],
       "edges": [
         {
-          "src": "Beenext Ventures",
-          "rel": "invested_in",
-          "dst": "Miracly.ai",
-          "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-        },
-        {
-          "src": "Lotus",
-          "rel": "invested_in",
-          "dst": "Miracly.ai",
-          "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-        },
-        {
-          "src": "Stefan Lindeberg",
-          "rel": "invested_in",
-          "dst": "Miracly.ai",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-        },
-        {
-          "src": "Alex Bouaziz",
-          "rel": "invested_in",
-          "dst": "Miracly.ai",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-        },
-        {
-          "src": "Thomas Ekman",
-          "rel": "invested_in",
-          "dst": "Miracly.ai",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-        },
-        {
-          "src": "Hedda Båverud Olsson",
-          "rel": "invested_in",
-          "dst": "Miracly.ai",
-          "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-        },
-        {
-          "src": "Arvid Lithander",
+          "src": "Adam Trotman",
           "rel": "founded",
-          "dst": "Miracly",
-          "evidence": "Arvid Lithander\nCo-founder"
+          "dst": "Aerium",
+          "evidence": "Aerium co‑founder and CEO Adam Trotman said..."
         },
         {
-          "src": "Bjorn Bergstrom",
-          "rel": "founded",
-          "dst": "Miracly",
-          "evidence": "Bjorn Bergstrom\nCo-founder"
+          "src": "Michael Dawes",
+          "rel": "cofounded",
+          "dst": "Aerium",
+          "evidence": "Aerium co‑founder and CEO Adam Trotman said..."
         },
         {
-          "src": "Shannon Cullum",
-          "rel": "founded",
-          "dst": "Miracly",
-          "evidence": "Shannon Cullum\nCo-founder"
+          "src": "Gutter Capital",
+          "rel": "invested_in",
+          "dst": "Aerium",
+          "evidence": "The funding came from New York City’s Gutter Capital..."
         }
       ]
     },
     {
-      "company_name": "Relace",
-      "core_product": "An AI‑powered software platform that helps financial institutions identify relevant regulations, assess obligations, and flag compliance gaps.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple jurisdictions.",
-      "value_prop_pitch": "You could offload the heavy lifting of regulatory text search to a Next.js front‑end backed by a vector‑based semantic search layer, dramatically speeding up query response times. This would let your engineers focus on core compliance logic while we handle scalable, low‑latency retrieval of relevant regulation snippets.",
+      "company_name": "ZeroEntropy",
+      "core_product": "A developer‑first API platform that handles ingestion, indexing, re‑ranking and evaluation of documents to enable fast, accurate retrieval‑augmented generation for AI workflows",
+      "tech_stack": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Elasticsearch",
+        "PyTorch"
+      ],
+      "likely_bottleneck": "scaling low‑latency vector search and re‑ranking across large knowledge bases",
+      "value_prop_pitch": "You could replace your custom search layer with a Next.js front‑end that calls a managed vector semantic search service, cutting latency and operational overhead. This lets your engineers focus on building AI agents instead of tuning indexing pipelines.",
       "is_relevant": true,
-      "funding_stage": "Pre-seed",
-      "funding_amount": "$1.6M",
-      "hq": "London",
-      "website": "https://withrelace.com",
-      "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
-      "discovered_at": "2026-10-24T01:54:29+00:00",
+      "funding_stage": "seed",
+      "funding_amount": "$4.2M",
+      "hq": "San Francisco",
+      "website": "https://dabafinance.com",
+      "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+      "discovered_at": "2026-10-24T10:34:23+00:00",
       "source": "web",
-      "score": 58,
+      "score": 78,
       "gaps": [
-        "tech stack",
-        "founder",
-        "people profiles",
         "email",
         "phone"
       ],
       "contact": {
-        "website": "https://withrelace.com",
+        "website": "https://dabafinance.com",
         "emails": [],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/undereview"
+          "linkedin": "https://www.linkedin.com/company/dabafinance"
         },
-        "contact_page": "https://withrelace.com/contact",
+        "contact_page": "",
         "product_access": [],
         "pages_crawled": [
-          "https://withrelace.com/",
-          "https://withrelace.com/about",
-          "https://withrelace.com/contact",
-          "https://withrelace.com/team"
+          "https://dabafinance.com/en",
+          "https://dabafinance.com/en/about-us"
         ],
-        "enriched_at": "2026-10-24T01:56:26+00:00",
+        "enriched_at": "2026-10-24T10:35:50+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -592,178 +247,297 @@
         {
           "type": "funding",
           "source": "web",
-          "url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+          "url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-24T01:55:31+00:00"
-        }
-      ],
-      "people": [],
-      "edges": [
-        {
-          "src": "Boost Capital",
-          "rel": "invested_in",
-          "dst": "Relace",
-          "evidence": "The funding round was led by Boost Capital."
-        },
-        {
-          "src": "Ascension",
-          "rel": "invested_in",
-          "dst": "Relace",
-          "evidence": "Additional participants included Ascension"
-        },
-        {
-          "src": "Koro Capital",
-          "rel": "invested_in",
-          "dst": "Relace",
-          "evidence": "Additional participants included ... Koro Capital"
-        }
-      ]
-    },
-    {
-      "company_name": "OpEra",
-      "core_product": "An AI decision engine that builds custom optimization models to generate production schedules, warehouse plans, and delivery routes, automatically replanning when conditions change.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling and maintaining complex optimization models across diverse client data sources and real‑time constraints.",
-      "value_prop_pitch": "We can wrap your optimization backend with a Next.js front‑end that lets planners describe changes in plain language and instantly see updated plans. By adding a vector‑based semantic search layer, you’ll let users retrieve relevant historical scenarios and model parameters without writing code, dramatically reducing the engineering effort to support real‑time replanning.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://operatechnologies.com",
-      "source_url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
-      "discovered_at": "2026-10-24T01:54:29+00:00",
-      "source": "yc",
-      "score": 54,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://operatechnologies.com",
-        "emails": [
-          {
-            "value": "founders@operatechnologies.com",
-            "kind": "person",
-            "source_url": "https://operatechnologies.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/opera-yc-f26",
-          "twitter": "https://x.com/OperaYCF26"
-        },
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://operatechnologies.com/",
-          "https://operatechnologies.com/about"
-        ],
-        "enriched_at": "2026-10-24T01:56:28+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/W3c-opera-the-ai-decision-engine-for-factories-warehouses-and-fleets",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [
         {
-          "name": "Bernardo Chalita",
+          "name": "Ghita Houir Alami",
           "role": "Co‑founder",
-          "org": "OpEra",
-          "evidence": "Bernardo built optimization models at Sanofi and did AI research at BMW",
-          "linkedin": "https://www.linkedin.com/in/bernardo-chalita",
-          "twitter": "https://x.com/bechalita",
+          "org": "ZeroEntropy",
+          "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+          "linkedin": "https://www.linkedin.com/in/ghita-houir-alami",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Nicholas Pipitone",
+          "role": "Co‑founder",
+          "org": "ZeroEntropy",
+          "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+          "linkedin": "",
+          "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Hindy Rossignol",
-          "role": "Co-founder & CEO",
-          "org": "OpEra",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/hindyrossignol",
-          "twitter": "https://x.com/hindyros",
+          "name": "Anthony Miclet",
+          "role": "CPO and Co-Founder",
+          "org": "Daba",
+          "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+          "linkedin": "https://www.linkedin.com/in/anthony-miclet/",
+          "twitter": "",
           "github": "",
-          "homepage": "",
-          "link_source": "https://operatechnologies.com/"
+          "homepage": "https://dabafinance.com/en",
+          "link_source": ""
+        },
+        {
+          "name": "Boum III Jr.",
+          "role": "CEO and Co-Founder",
+          "org": "Daba",
+          "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+          "linkedin": "https://www.linkedin.com/in/iamboum3jr/",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://dabafinance.com/en",
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Bernardo Chalita",
+          "src": "Ghita Houir Alami",
           "rel": "founded",
-          "dst": "OpEra",
-          "evidence": "Hi, we're Hindy and Bernardo... we turned down offers ... to build OpEra."
+          "dst": "ZeroEntropy",
+          "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)"
         },
         {
-          "src": "Hindy Rossignol",
-          "rel": "cofounded",
-          "dst": "OpEra",
-          "evidence": "Hi, we're Hindy and Bernardo... we turned down offers ... to build OpEra."
+          "src": "Nicholas Pipitone",
+          "rel": "founded",
+          "dst": "ZeroEntropy",
+          "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)"
+        },
+        {
+          "src": "Initialized Capital",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+        },
+        {
+          "src": "Y Combinator",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+        },
+        {
+          "src": "Transpose Platform",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+        },
+        {
+          "src": "22 Ventures",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+        },
+        {
+          "src": "a16z Scout",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+        },
+        {
+          "src": "Anthony Miclet",
+          "rel": "founded",
+          "dst": "Daba",
+          "evidence": "In 2021, the visionary duo of Anthony Miclet and Boum III Jr. founded Daba"
+        },
+        {
+          "src": "Boum III Jr.",
+          "rel": "founded",
+          "dst": "Daba",
+          "evidence": "In 2021, the visionary duo of Anthony Miclet and Boum III Jr. founded Daba"
         }
       ]
     },
     {
-      "company_name": "Aucert",
-      "core_product": "An autonomous mobile app verification platform that uses AI agents to test apps and report functional, accessibility, design, and policy issues.",
+      "company_name": "Keenable",
+      "core_product": "A search engine built specifically for AI agents that provides a massive web index and API for cheap, low‑latency retrieval.",
       "tech_stack": [],
-      "likely_bottleneck": "Efficiently storing, indexing, and retrieving large volumes of test evidence generated by AI agents for fast developer feedback.",
-      "value_prop_pitch": "You could build a Next.js dashboard that surfaces test evidence instantly by querying a vector‑semantic search index, letting engineers find relevant bugs in seconds. This removes the latency of digging through raw logs and scales as your evidence corpus grows.",
+      "likely_bottleneck": "Scaling low‑latency retrieval over a 100 billion‑document index for many concurrent AI agents.",
+      "value_prop_pitch": "You should move your front‑end to Next.js to get instant static rendering and edge caching, and integrate a vector semantic search layer to speed up query latency across your 100B‑page index. This will let you serve AI agents faster while keeping infrastructure costs low.",
       "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://aucert.ai",
-      "source_url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
-      "discovered_at": "2026-10-24T01:54:29+00:00",
-      "source": "yc",
-      "score": 57,
+      "funding_stage": "seed",
+      "funding_amount": "$26 million",
+      "hq": "San Francisco",
+      "website": "https://ventureburn.com",
+      "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+      "discovered_at": "2026-10-24T10:34:23+00:00",
+      "source": "web",
+      "score": 93,
       "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
         "tech stack",
-        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://aucert.ai",
+        "website": "https://ventureburn.com",
         "emails": [
           {
-            "value": "contact@aucert.ai",
+            "value": "contact@ventureburn.com",
             "kind": "general",
-            "source_url": "https://aucert.ai/"
+            "source_url": "https://ventureburn.com/contact/"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/aucert_official",
-          "linkedin": "https://www.linkedin.com/company/aucert"
+          "twitter": "https://x.com/Ventureburn"
         },
-        "contact_page": "https://aucert.ai/contact/",
+        "contact_page": "https://ventureburn.com/contact/",
         "product_access": [],
         "pages_crawled": [
-          "https://aucert.ai/",
-          "https://aucert.ai/contact/",
-          "https://aucert.ai/team/"
+          "https://ventureburn.com/",
+          "https://ventureburn.com/contact/"
         ],
-        "enriched_at": "2026-10-24T01:56:34+00:00",
+        "enriched_at": "2026-10-24T10:36:02+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "web",
+          "url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-24T10:35:19+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Andrey Styskin",
+          "role": "Founder",
+          "org": "Keenable",
+          "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+          "linkedin": "https://www.linkedin.com/in/andrey-styskin",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Matthias Petri",
+          "role": "Founder",
+          "org": "Keenable",
+          "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+          "linkedin": "https://www.linkedin.com/in/matthias-petri-6b7899394",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Andrey Styskin",
+          "rel": "founded",
+          "dst": "Keenable",
+          "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025."
+        },
+        {
+          "src": "Matthias Petri",
+          "rel": "founded",
+          "dst": "Keenable",
+          "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025."
+        },
+        {
+          "src": "Accel",
+          "rel": "invested_in",
+          "dst": "Keenable",
+          "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining."
+        },
+        {
+          "src": "Conviction Partners",
+          "rel": "invested_in",
+          "dst": "Keenable",
+          "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining."
+        },
+        {
+          "src": "Andrey Styskin",
+          "rel": "previously_at",
+          "dst": "Yandex",
+          "evidence": "Styskin ran searches at Yandex and Amazon."
+        },
+        {
+          "src": "Andrey Styskin",
+          "rel": "previously_at",
+          "dst": "Amazon",
+          "evidence": "Styskin ran searches at Yandex and Amazon."
+        },
+        {
+          "src": "Matthias Petri",
+          "rel": "previously_at",
+          "dst": "Amazon Alexa",
+          "evidence": "Petri built search systems at Amazon Alexa."
+        }
+      ]
+    },
+    {
+      "company_name": "Lamin",
+      "core_product": "An open‑source data management platform (lamindb) that provides lineage, versioning, lakehouse features and a web UI for life‑science AI workflows.",
+      "tech_stack": [
+        "Python",
+        "PostgreSQL",
+        "GitHub"
+      ],
+      "likely_bottleneck": "Scaling complex data lineage queries and UI responsiveness as dataset size grows",
+      "value_prop_pitch": "We can rebuild your UI with Next.js to serve a fast, server‑rendered front‑end that scales to millions of records. Coupled with a vector‑based semantic search layer, you’ll get instant, relevant results across your multimodal data without overloading your backend.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://lamin.ai",
+      "source_url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
+      "discovered_at": "2026-10-24T10:34:23+00:00",
+      "source": "yc",
+      "score": 27,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://lamin.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/lamin-labs",
+          "github": "https://github.com/laminlabs",
+          "twitter": "https://x.com/laminlabs"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://lamin.ai/pricing"
+          },
+          {
+            "label": "Docs",
+            "url": "https://docs.lamin.ai"
+          },
+          {
+            "label": "Sign up",
+            "url": "https://lamin.ai/signup"
+          }
+        ],
+        "pages_crawled": [
+          "https://lamin.ai/",
+          "https://lamin.ai/about"
+        ],
+        "enriched_at": "2026-10-24T10:36:10+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -772,49 +546,104 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously",
+          "url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [
         {
-          "name": "Vivek Soneja",
-          "role": "co-founder",
-          "org": "Aucert",
-          "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
-          "linkedin": "https://www.linkedin.com/in/viveksoneja/",
+          "name": "Alex Wolf",
+          "role": "author",
+          "org": "Lamin",
+          "evidence": "**Alex Wolf**",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously"
-        },
+          "link_source": ""
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Shepherd Robotics",
+      "core_product": "Robots that perform skilled physical tasks such as data‑center commissioning, inspection, and electrical assembly under human supervision.",
+      "tech_stack": [],
+      "likely_bottleneck": "Robust perception and manipulation across highly variable data‑center and manufacturing environments.",
+      "value_prop_pitch": "I can help you build a unified dashboard with Next.js that surfaces real‑time robot telemetry and logs, letting your engineers spot failure patterns instantly. Coupled with a vector‑based semantic search over those logs, you’ll cut debugging time dramatically and keep your robots scaling smoothly.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://shepherdrobotics.ai",
+      "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+      "discovered_at": "2026-10-24T10:34:23+00:00",
+      "source": "yc",
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://shepherdrobotics.ai",
+        "emails": [
+          {
+            "value": "contact@shepherdrobotics.ai",
+            "kind": "general",
+            "source_url": "https://shepherdrobotics.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://shepherdrobotics.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://shepherdrobotics.ai/",
+          "https://shepherdrobotics.ai/contact"
+        ],
+        "enriched_at": "2026-10-24T10:36:13+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
         {
-          "name": "Rajesh Kumar",
-          "role": "co-founder",
-          "org": "Aucert",
-          "evidence": "We are Vivek and Rajesh, co-founders of Aucert.",
-          "linkedin": "https://www.linkedin.com/in/rajeshkumar05/",
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-24T10:35:19+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Kai Ru",
+          "role": "Founder",
+          "org": "Shepherd Robotics",
+          "evidence": "We’re Feifei, David, and Kai, the founders of Shepherd Robotics.",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://www.ycombinator.com/launches/WGP-aucert-ai-agents-that-verify-mobile-apps-autonomously"
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Vivek Soneja",
+          "src": "Kai Ru",
           "rel": "founded",
-          "dst": "Aucert",
-          "evidence": "We are Vivek and Rajesh, co-founders of Aucert."
-        },
-        {
-          "src": "Rajesh Kumar",
-          "rel": "founded",
-          "dst": "Aucert",
-          "evidence": "We are Vivek and Rajesh, co-founders of Aucert."
+          "dst": "Shepherd Robotics",
+          "evidence": "We’re Feifei, David, and Kai, the founders of Shepherd Robotics."
         }
       ]
     },
@@ -830,7 +659,7 @@
       "hq": "Helsinki, FI",
       "website": "https://treat.health",
       "source_url": "https://treat.health/en/careers/full-stack-engineer/",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -858,10 +687,10 @@
         "pages_crawled": [
           "https://treat.health/",
           "https://treat.health/about",
-          "https://treat.health/contact",
-          "https://treat.health/team"
+          "https://treat.health/team",
+          "https://treat.health/contact"
         ],
-        "enriched_at": "2026-10-24T01:56:37+00:00",
+        "enriched_at": "2026-10-24T10:36:25+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -878,7 +707,7 @@
             "eng"
           ],
           "posted_at": "2026-10-15T14:30:58Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -894,11 +723,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://neuralframe.com",
+      "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
       "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
-      "score": 22,
+      "score": 16,
       "gaps": [
         "funding stage",
         "location",
@@ -911,21 +740,15 @@
         "phone"
       ],
       "contact": {
-        "website": "https://neuralframe.com",
+        "website": "",
         "emails": [],
         "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/neuralframe"
-        },
-        "contact_page": "https://neuralframe.com/contact-us/",
+        "socials": {},
+        "contact_page": "",
         "product_access": [],
-        "pages_crawled": [
-          "https://neuralframe.com/",
-          "https://neuralframe.com/contact-us/",
-          "https://neuralframe.com/contact-us/"
-        ],
-        "enriched_at": "2026-10-24T01:56:42+00:00",
-        "status": "ok",
+        "pages_crawled": [],
+        "enriched_at": "2026-10-24T10:36:29+00:00",
+        "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -942,7 +765,7 @@
             "eng"
           ],
           "posted_at": "2026-10-14T21:53:28Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -960,7 +783,7 @@
       "hq": "",
       "website": "https://exlabora.com",
       "source_url": "https://exlabora.com/open-roles.html",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -983,11 +806,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://exlabora.com/",
-          "https://exlabora.com/team",
+          "https://exlabora.com/about",
           "https://exlabora.com/contact",
-          "https://exlabora.com/about"
+          "https://exlabora.com/team"
         ],
-        "enriched_at": "2026-10-24T01:56:46+00:00",
+        "enriched_at": "2026-10-24T10:36:32+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1006,7 +829,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T17:28:12Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1024,7 +847,7 @@
       "hq": "",
       "website": "https://www.govstar.us",
       "source_url": "https://govstar.us",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1054,10 +877,10 @@
         "pages_crawled": [
           "https://www.govstar.us/",
           "https://www.govstar.us/about",
-          "https://www.govstar.us/team",
-          "https://www.govstar.us/contact"
+          "https://www.govstar.us/contact",
+          "https://www.govstar.us/team"
         ],
-        "enriched_at": "2026-10-24T01:56:49+00:00",
+        "enriched_at": "2026-10-24T10:36:35+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1075,7 +898,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T16:26:28Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1093,7 +916,7 @@
       "hq": "",
       "website": "https://sendery.co",
       "source_url": "https://sendery.co",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -1138,7 +961,7 @@
           "https://sendery.co/en/about",
           "https://sendery.co/en/contact"
         ],
-        "enriched_at": "2026-10-24T01:56:54+00:00",
+        "enriched_at": "2026-10-24T10:36:39+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1155,7 +978,7 @@
             "eng"
           ],
           "posted_at": "2026-10-13T03:40:30Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1173,7 +996,7 @@
       "hq": "",
       "website": "https://typify.dev",
       "source_url": "https://typify.dev",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -1216,7 +1039,7 @@
           "https://typify.dev/",
           "https://typify.dev/landing/contact"
         ],
-        "enriched_at": "2026-10-24T01:56:57+00:00",
+        "enriched_at": "2026-10-24T10:36:42+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1234,7 +1057,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T21:00:23Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1252,7 +1075,7 @@
       "hq": "",
       "website": "",
       "source_url": "https://news.ycombinator.com/item?id=50062997",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 10,
       "gaps": [
@@ -1281,7 +1104,7 @@
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [],
-        "enriched_at": "2026-10-24T01:57:01+00:00",
+        "enriched_at": "2026-10-24T10:36:46+00:00",
         "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
@@ -1298,7 +1121,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T20:59:57Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1316,7 +1139,7 @@
       "hq": "Buford, US",
       "website": "https://www.hio.com",
       "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -1354,7 +1177,7 @@
           "https://www.hio.com/about-us",
           "https://www.hio.com/contact-us"
         ],
-        "enriched_at": "2026-10-24T01:57:07+00:00",
+        "enriched_at": "2026-10-24T10:36:53+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1371,7 +1194,7 @@
             "sales"
           ],
           "posted_at": "2026-10-12T18:51:56Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1389,7 +1212,7 @@
       "hq": "",
       "website": "https://startuphakk.com",
       "source_url": "https://startuphakk.com/jobs",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1427,7 +1250,7 @@
           "https://startuphakk.com/",
           "https://startuphakk.com/contact-us/"
         ],
-        "enriched_at": "2026-10-24T01:57:11+00:00",
+        "enriched_at": "2026-10-24T10:37:00+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1444,7 +1267,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T17:17:48Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1462,7 +1285,7 @@
       "hq": "",
       "website": "https://www.generalintelligenceholdings.com",
       "source_url": "https://www.generalintelligenceholdings.com",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1491,11 +1314,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://www.generalintelligenceholdings.com/",
+          "https://www.generalintelligenceholdings.com/team",
           "https://www.generalintelligenceholdings.com/about",
-          "https://www.generalintelligenceholdings.com/contact",
-          "https://www.generalintelligenceholdings.com/team"
+          "https://www.generalintelligenceholdings.com/contact"
         ],
-        "enriched_at": "2026-10-24T01:57:14+00:00",
+        "enriched_at": "2026-10-24T10:37:02+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1512,7 +1335,7 @@
             "other"
           ],
           "posted_at": "2026-10-12T11:51:09Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1530,7 +1353,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/1pm4u2ys7us",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1569,10 +1392,10 @@
         ],
         "pages_crawled": [
           "https://www.greenhouse.com/",
-          "https://www.greenhouse.com/company",
-          "https://www.greenhouse.com/contact"
+          "https://www.greenhouse.com/contact",
+          "https://www.greenhouse.com/company"
         ],
-        "enriched_at": "2026-10-24T01:57:18+00:00",
+        "enriched_at": "2026-10-24T10:37:07+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1589,7 +1412,7 @@
             "eng"
           ],
           "posted_at": "2026-10-10T13:55:55Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1607,7 +1430,7 @@
       "hq": "",
       "website": "https://www.propellabs.ai",
       "source_url": "https://propellabs.ai",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -1642,10 +1465,10 @@
         "product_access": [],
         "pages_crawled": [
           "https://www.propellabs.ai/",
-          "https://www.propellabs.ai/team",
-          "https://www.propellabs.ai/contact"
+          "https://www.propellabs.ai/contact",
+          "https://www.propellabs.ai/team"
         ],
-        "enriched_at": "2026-10-24T01:57:21+00:00",
+        "enriched_at": "2026-10-24T10:37:11+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1665,7 +1488,7 @@
             "other"
           ],
           "posted_at": "2026-10-09T13:12:43Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1683,7 +1506,7 @@
       "hq": "",
       "website": "https://skieslearn.com",
       "source_url": "https://skieslearn.com/ndbi/jobs/developer",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1718,7 +1541,7 @@
           "https://skieslearn.com/",
           "https://skieslearn.com/content/team"
         ],
-        "enriched_at": "2026-10-24T01:57:23+00:00",
+        "enriched_at": "2026-10-24T10:37:14+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1737,7 +1560,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T23:45:00Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1753,39 +1576,83 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "",
+      "website": "https://www.onechronos.com",
       "source_url": "https://news.ycombinator.com/item?id=50012248",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
-      "score": 10,
+      "score": 36,
       "gaps": [
         "funding stage",
-        "website",
         "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors",
-        "email",
-        "phone"
+        "investors"
       ],
       "contact": {
-        "website": "",
+        "website": "https://www.onechronos.com",
         "emails": [
+          {
+            "value": "info@onechronos.com",
+            "kind": "general",
+            "source_url": "https://www.onechronos.com/"
+          },
+          {
+            "value": "abdullah@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "billing_europe@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "compliance_europe@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "fx_sales@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
           {
             "value": "careers@onechronos.com",
             "kind": "other",
             "source_url": "https://news.ycombinator.com/item?id=50012248"
           }
         ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
+        "phones": [
+          {
+            "value": "+19173000108",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "+442070788689",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "+3197010258288",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          }
+        ],
+        "socials": {
+          "github": "https://github.com/onechronos"
+        },
+        "contact_page": "https://www.onechronos.com/contact/",
         "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-10-24T01:57:27+00:00",
-        "status": "no_website",
+        "pages_crawled": [
+          "https://www.onechronos.com/",
+          "https://www.onechronos.com/about/",
+          "https://www.onechronos.com/contact/"
+        ],
+        "enriched_at": "2026-10-24T10:37:20+00:00",
+        "status": "ok",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -1805,7 +1672,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T21:04:09Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],
@@ -1823,7 +1690,7 @@
       "hq": "",
       "website": "https://ojin.ai",
       "source_url": "https://ojin.ai",
-      "discovered_at": "2026-10-24T01:55:31+00:00",
+      "discovered_at": "2026-10-24T10:35:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1870,7 +1737,7 @@
           "https://ojin.ai/about-us",
           "https://ojin.ai/enterprise"
         ],
-        "enriched_at": "2026-10-24T01:57:30+00:00",
+        "enriched_at": "2026-10-24T10:37:24+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1887,7 +1754,7 @@
             "eng"
           ],
           "posted_at": "2026-10-08T11:10:20Z",
-          "seen_at": "2026-10-24T01:55:31+00:00"
+          "seen_at": "2026-10-24T10:35:19+00:00"
         }
       ],
       "people": [],

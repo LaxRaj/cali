@@ -1,5 +1,423 @@
 [
   {
+    "company_name": "Keenable",
+    "core_product": "A search engine built specifically for AI agents that provides a massive web index and API for cheap, low‑latency retrieval.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling low‑latency retrieval over a 100 billion‑document index for many concurrent AI agents.",
+    "value_prop_pitch": "You should move your front‑end to Next.js to get instant static rendering and edge caching, and integrate a vector semantic search layer to speed up query latency across your 100B‑page index. This will let you serve AI agents faster while keeping infrastructure costs low.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+    "discovered_at": "2026-10-24T10:34:23+00:00",
+    "funding_amount": "$26 million",
+    "hq": "San Francisco",
+    "website": "https://ventureburn.com",
+    "score": 93,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "keenable",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 20,
+      "contact": 16
+    },
+    "gaps": [
+      "tech stack",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://ventureburn.com",
+      "emails": [
+        {
+          "value": "contact@ventureburn.com",
+          "kind": "general",
+          "source_url": "https://ventureburn.com/contact/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "twitter": "https://x.com/Ventureburn"
+      },
+      "contact_page": "https://ventureburn.com/contact/",
+      "product_access": [],
+      "pages_crawled": [
+        "https://ventureburn.com/",
+        "https://ventureburn.com/contact/"
+      ],
+      "enriched_at": "2026-10-24T10:36:02+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Andrey Styskin",
+        "role": "Founder",
+        "org": "Keenable",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "linkedin": "https://www.linkedin.com/in/andrey-styskin",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      },
+      {
+        "name": "Matthias Petri",
+        "role": "Founder",
+        "org": "Keenable",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "linkedin": "https://www.linkedin.com/in/matthias-petri-6b7899394",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Andrey Styskin",
+        "rel": "founded",
+        "dst": "Keenable",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025."
+      },
+      {
+        "src": "Matthias Petri",
+        "rel": "founded",
+        "dst": "Keenable",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025."
+      },
+      {
+        "src": "Accel",
+        "rel": "invested_in",
+        "dst": "Keenable",
+        "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining."
+      },
+      {
+        "src": "Conviction Partners",
+        "rel": "invested_in",
+        "dst": "Keenable",
+        "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 100.0,
+      "reasons": [
+        "lead score 93",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call contact@ventureburn.com with the pitch",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "keenable",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "keenable",
+        "field": "funding_amount",
+        "label": "funding_amount: $26 million",
+        "value": "$26 million",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "keenable",
+        "field": "hq",
+        "label": "hq: San Francisco",
+        "value": "San Francisco",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "keenable",
+        "field": "website",
+        "label": "website: https://ventureburn.com",
+        "value": "https://ventureburn.com",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "keenable",
+        "field": "core_product",
+        "label": "core_product: A search engine built specifically for AI agents that provides a massive web index and API for cheap, low‑latency retrieval.",
+        "value": "A search engine built specifically for AI agents that provides a massive web index and API for cheap, low‑latency retrieval.",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "keenable",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling low‑latency retrieval over a 100 billion‑document index for many concurrent AI agents.",
+        "value": "Scaling low‑latency retrieval over a 100 billion‑document index for many concurrent AI agents.",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "andrey styskin|keenable",
+        "field": "role",
+        "label": "Andrey Styskin · Founder",
+        "value": "Founder",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "andrey styskin|keenable",
+        "field": "linkedin",
+        "label": "Andrey Styskin · linkedin",
+        "value": "https://www.linkedin.com/in/andrey-styskin",
+        "source_url": "search",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "matthias petri|keenable",
+        "field": "role",
+        "label": "Matthias Petri · Founder",
+        "value": "Founder",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "matthias petri|keenable",
+        "field": "linkedin",
+        "label": "Matthias Petri · linkedin",
+        "value": "https://www.linkedin.com/in/matthias-petri-6b7899394",
+        "source_url": "search",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "andrey styskin|founded|keenable",
+        "field": "founded",
+        "label": "Andrey Styskin founded Keenable",
+        "value": "Andrey Styskin founded Keenable",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "matthias petri|founded|keenable",
+        "field": "founded",
+        "label": "Matthias Petri founded Keenable",
+        "value": "Matthias Petri founded Keenable",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "accel|invested_in|keenable",
+        "field": "invested_in",
+        "label": "Accel invested in Keenable",
+        "value": "Accel invested_in Keenable",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "conviction partners|invested_in|keenable",
+        "field": "invested_in",
+        "label": "Conviction Partners invested in Keenable",
+        "value": "Conviction Partners invested_in Keenable",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "andrey styskin|previously_at|yandex",
+        "field": "previously_at",
+        "label": "Andrey Styskin previously at Yandex",
+        "value": "Andrey Styskin previously_at Yandex",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Styskin ran searches at Yandex and Amazon.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "andrey styskin|previously_at|amazon",
+        "field": "previously_at",
+        "label": "Andrey Styskin previously at Amazon",
+        "value": "Andrey Styskin previously_at Amazon",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Styskin ran searches at Yandex and Amazon.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "matthias petri|previously_at|amazon alexa",
+        "field": "previously_at",
+        "label": "Matthias Petri previously at Amazon Alexa",
+        "value": "Matthias Petri previously_at Amazon Alexa",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+        "evidence": "Petri built search systems at Amazon Alexa.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "keenable",
+        "field": "email",
+        "label": "email: contact@ventureburn.com",
+        "value": "contact@ventureburn.com",
+        "source_url": "https://ventureburn.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "keenable",
+        "field": "twitter",
+        "label": "twitter: https://x.com/Ventureburn",
+        "value": "https://x.com/Ventureburn",
+        "source_url": "https://ventureburn.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money (0d ago)",
+        "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "contact@ventureburn.com",
+      "to_source_url": "https://ventureburn.com/contact/",
+      "subject": "Keenable: a thought on Scaling low‑latency retrieval over a 100 billion‑document in",
+      "body": "Hi Andrey,\n\nCongrats on the new funding (https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/).\nI'd like to use Keenable and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Keenable: A search engine built specifically for AI agents that provides a massive web index and API for cheap, low‑latency retrieval.\nSaw the recent news (newly found at seed stage).\nI'd like to build something with you.\nOne place we could start: Scaling low‑latency retrieval over a 100 billion‑document index for many concurrent AI agents.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:contact%40ventureburn.com?subject=Keenable%3A%20a%20thought%20on%20Scaling%20low%E2%80%91latency%20retrieval%20over%20a%20100%E2%80%AFbillion%E2%80%91document%20in&body=Hi%20Andrey%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/%29.%0AI%27d%20like%20to%20use%20Keenable%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Keenable%3A%20A%20search%20engine%20built%20specifically%20for%20AI%20agents%20that%20provides%20a%20massive%20web%20index%20and%20API%20for%20cheap%2C%20low%E2%80%91latency%20retrieval.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20seed%20stage%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Scaling%20low%E2%80%91latency%20retrieval%20over%20a%20100%E2%80%AFbillion%E2%80%91document%20index%20for%20many%20concurrent%20AI%20agents.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Cygrid",
     "core_product": "Cygrid offers an identity‑enforcement platform that continuously controls access to confidential data, preventing AI agents and other identities from performing unauthorized actions in real time.",
     "tech_stack": [],
@@ -670,7 +1088,7 @@
       "priority": 95.8,
       "reasons": [
         "lead score 93",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call ops@polygrade.com with the pitch",
@@ -1698,7 +2116,7 @@
       "priority": 93.4,
       "reasons": [
         "lead score 89",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call nadine.ghosn@fortune.com with the pitch",
@@ -5210,6 +5628,336 @@
     "outreach": []
   },
   {
+    "company_name": "Rozvelt",
+    "core_product": "Odour‑masking headgear (the Vektr mask) that filters exhaled scent and can protect against inhaled particles for hunters and defence users",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling manufacturing and supply‑chain logistics for hardware production",
+    "value_prop_pitch": "I can help you build a real‑time dashboard with Next.js to monitor production metrics and quickly spot bottlenecks in your manufacturing line. Coupled with a vector‑based semantic search over your sensor logs, you’ll instantly retrieve root‑cause insights and keep the supply chain flowing.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+    "discovered_at": "2026-10-24T10:34:23+00:00",
+    "funding_amount": "$3.1 million CAD",
+    "hq": "Montréal, Canada",
+    "website": "https://www.rozvelt.com",
+    "score": 84,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "rozvelt",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 10,
+      "contact": 17
+    },
+    "gaps": [
+      "tech stack"
+    ],
+    "contact": {
+      "website": "https://www.rozvelt.com",
+      "emails": [
+        {
+          "value": "info@rozvelt.com",
+          "kind": "general",
+          "source_url": "https://www.rozvelt.com/"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+18337698358",
+          "kind": "main",
+          "source_url": "https://www.rozvelt.com/"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/rozvelt"
+      },
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.rozvelt.com/",
+        "https://www.rozvelt.com/pages/about-us"
+      ],
+      "enriched_at": "2026-10-24T10:35:26+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "rss",
+        "url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "Mon, 19 Oct 2026 11:00:00 +0000",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Nicholas Monette",
+        "role": "Co‑founder & CEO",
+        "org": "Rozvelt",
+        "evidence": "According to Rozvelt co‑founder and CEO Nicholas Monette, the pivot began when Rozvelt presented at the SHOT Show in Las Vegas",
+        "linkedin": "https://www.linkedin.com/in/nicholasmonette",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      }
+    ],
+    "edges": [
+      {
+        "src": "Nicholas Monette",
+        "rel": "founded",
+        "dst": "Rozvelt",
+        "evidence": "According to Rozvelt co‑founder and CEO Nicholas Monette, the pivot began when Rozvelt presented at the SHOT Show"
+      },
+      {
+        "src": "Benoit Robert",
+        "rel": "invested_in",
+        "dst": "Rozvelt",
+        "evidence": "seed funding ... led by Benoit Robert, a partner at wealth management firm Evovest"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 94.6,
+      "reasons": [
+        "lead score 84",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call info@rozvelt.com with the pitch",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "rozvelt",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "rozvelt",
+        "field": "funding_amount",
+        "label": "funding_amount: $3.1 million CAD",
+        "value": "$3.1 million CAD",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "rozvelt",
+        "field": "hq",
+        "label": "hq: Montréal, Canada",
+        "value": "Montréal, Canada",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "rozvelt",
+        "field": "website",
+        "label": "website: https://www.rozvelt.com",
+        "value": "https://www.rozvelt.com",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "rozvelt",
+        "field": "core_product",
+        "label": "core_product: Odour‑masking headgear (the Vektr mask) that filters exhaled scent and can protect against inhaled particles for hunters and defence users",
+        "value": "Odour‑masking headgear (the Vektr mask) that filters exhaled scent and can protect against inhaled particles for hunters and defence users",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "rozvelt",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling manufacturing and supply‑chain logistics for hardware production",
+        "value": "Scaling manufacturing and supply‑chain logistics for hardware production",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "nicholas monette|rozvelt",
+        "field": "role",
+        "label": "Nicholas Monette · Co‑founder & CEO",
+        "value": "Co‑founder & CEO",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "According to Rozvelt co‑founder and CEO Nicholas Monette, the pivot began when Rozvelt presented at the SHOT Show in Las Vegas",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "nicholas monette|rozvelt",
+        "field": "linkedin",
+        "label": "Nicholas Monette · linkedin",
+        "value": "https://www.linkedin.com/in/nicholasmonette",
+        "source_url": "search",
+        "evidence": "According to Rozvelt co‑founder and CEO Nicholas Monette, the pivot began when Rozvelt presented at the SHOT Show in Las Vegas",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "benoit robert|evovest",
+        "field": "role",
+        "label": "Benoit Robert · Partner at Evovest (investor)",
+        "value": "Partner at Evovest (investor)",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "seed funding ... led by Benoit Robert, a partner at wealth management firm Evovest",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "nicholas monette|founded|rozvelt",
+        "field": "founded",
+        "label": "Nicholas Monette founded Rozvelt",
+        "value": "Nicholas Monette founded Rozvelt",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "According to Rozvelt co‑founder and CEO Nicholas Monette, the pivot began when Rozvelt presented at the SHOT Show",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "benoit robert|invested_in|rozvelt",
+        "field": "invested_in",
+        "label": "Benoit Robert invested in Rozvelt",
+        "value": "Benoit Robert invested_in Rozvelt",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/",
+        "evidence": "seed funding ... led by Benoit Robert, a partner at wealth management firm Evovest",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "rozvelt",
+        "field": "email",
+        "label": "email: info@rozvelt.com",
+        "value": "info@rozvelt.com",
+        "source_url": "https://www.rozvelt.com/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "rozvelt",
+        "field": "phone",
+        "label": "phone: +18337698358",
+        "value": "+18337698358",
+        "source_url": "https://www.rozvelt.com/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "rozvelt",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/rozvelt",
+        "value": "https://www.linkedin.com/company/rozvelt",
+        "source_url": "https://www.rozvelt.com",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money",
+        "source_url": "https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "info@rozvelt.com",
+      "to_source_url": "https://www.rozvelt.com/",
+      "subject": "Rozvelt: a thought on Scaling manufacturing and supply‑chain logistics for hardwar",
+      "body": "Hi Nicholas,\n\nCongrats on the new funding (https://betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/).\nI'd like to use Rozvelt and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Rozvelt: Odour‑masking headgear (the Vektr mask) that filters exhaled scent and can protect against inhaled particles for hunters and defence users.\nSaw the recent news (newly found at seed stage).\nI'd like to build something with you.\nOne place we could start: Scaling manufacturing and supply‑chain logistics for hardware production.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:info%40rozvelt.com?subject=Rozvelt%3A%20a%20thought%20on%20Scaling%20manufacturing%20and%20supply%E2%80%91chain%20logistics%20for%20hardwar&body=Hi%20Nicholas%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//betakit.com/rozvelt-built-a-high-tech-mask-for-hunters-defence-buyers-see-something-bigger/%29.%0AI%27d%20like%20to%20use%20Rozvelt%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Rozvelt%3A%20Odour%E2%80%91masking%20headgear%20%28the%20Vektr%20mask%29%20that%20filters%20exhaled%20scent%20and%20can%20protect%20against%20inhaled%20particles%20for%20hunters%20and%20defence%20users.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20seed%20stage%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Scaling%20manufacturing%20and%20supply%E2%80%91chain%20logistics%20for%20hardware%20production.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
     "company_name": "QuiverAI",
     "core_product": "QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
     "tech_stack": [
@@ -5453,7 +6201,7 @@
       "priority": 89.2,
       "reasons": [
         "lead score 82",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call hello@vesta.com with the pitch",
@@ -6085,6 +6833,322 @@
     "outreach": []
   },
   {
+    "company_name": "Aerium",
+    "core_product": "A software platform that integrates, cleans, and centralizes industrial manufacturers' data and deploys AI agents and custom machine learning models to monitor operations and automate tasks.",
+    "tech_stack": [
+      "AI agents",
+      "machine learning",
+      "data integration"
+    ],
+    "likely_bottleneck": "Scaling real‑time data pipelines and model deployment across heterogeneous legacy systems",
+    "value_prop_pitch": "I can build a Next.js front‑end that surfaces your operational data through a vector‑based semantic search layer, letting engineers instantly query any siloed information. This will cut down integration time and let your AI agents act on fresh insights without costly custom pipelines.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+    "discovered_at": "2026-10-24T10:34:23+00:00",
+    "funding_amount": "$2.5M USD",
+    "hq": "Toronto, Canada",
+    "website": "https://www.aeriumhq.com",
+    "score": 80,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "aerium",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 10
+    },
+    "gaps": [
+      "people profiles",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://www.aeriumhq.com",
+      "emails": [
+        {
+          "value": "founders@aeriumhq.com",
+          "kind": "person",
+          "source_url": "https://www.aeriumhq.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.aeriumhq.com/",
+        "https://www.aeriumhq.com/about"
+      ],
+      "enriched_at": "2026-10-24T10:35:38+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "rss",
+        "url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "Fri, 16 Oct 2026 10:00:00 +0000",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Adam Trotman",
+        "role": "Co‑founder & CEO",
+        "org": "Aerium",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said he and his co‑founder Michael Dawes were exposed to manufacturing...",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Michael Dawes",
+        "role": "Co‑founder",
+        "org": "Aerium",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said he and his co‑founder Michael Dawes were exposed to manufacturing...",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Adam Trotman",
+        "rel": "founded",
+        "dst": "Aerium",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said..."
+      },
+      {
+        "src": "Michael Dawes",
+        "rel": "cofounded",
+        "dst": "Aerium",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said..."
+      },
+      {
+        "src": "Gutter Capital",
+        "rel": "invested_in",
+        "dst": "Aerium",
+        "evidence": "The funding came from New York City’s Gutter Capital..."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 92.2,
+      "reasons": [
+        "lead score 80",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call founders@aeriumhq.com with the pitch",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "aerium",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "aerium",
+        "field": "funding_amount",
+        "label": "funding_amount: $2.5M USD",
+        "value": "$2.5M USD",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "aerium",
+        "field": "hq",
+        "label": "hq: Toronto, Canada",
+        "value": "Toronto, Canada",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "aerium",
+        "field": "website",
+        "label": "website: https://www.aeriumhq.com",
+        "value": "https://www.aeriumhq.com",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "aerium",
+        "field": "core_product",
+        "label": "core_product: A software platform that integrates, cleans, and centralizes industrial manufacturers' data and deploys AI agents and custom machine learning models to monitor operations and automate tasks.",
+        "value": "A software platform that integrates, cleans, and centralizes industrial manufacturers' data and deploys AI agents and custom machine learning models to monitor operations and automate tasks.",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "aerium",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling real‑time data pipelines and model deployment across heterogeneous legacy systems",
+        "value": "Scaling real‑time data pipelines and model deployment across heterogeneous legacy systems",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "adam trotman|aerium",
+        "field": "role",
+        "label": "Adam Trotman · Co‑founder & CEO",
+        "value": "Co‑founder & CEO",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said he and his co‑founder Michael Dawes were exposed to manufacturing...",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "michael dawes|aerium",
+        "field": "role",
+        "label": "Michael Dawes · Co‑founder",
+        "value": "Co‑founder",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said he and his co‑founder Michael Dawes were exposed to manufacturing...",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "adam trotman|founded|aerium",
+        "field": "founded",
+        "label": "Adam Trotman founded Aerium",
+        "value": "Adam Trotman founded Aerium",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said...",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "michael dawes|cofounded|aerium",
+        "field": "cofounded",
+        "label": "Michael Dawes cofounded Aerium",
+        "value": "Michael Dawes cofounded Aerium",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "Aerium co‑founder and CEO Adam Trotman said...",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "gutter capital|invested_in|aerium",
+        "field": "invested_in",
+        "label": "Gutter Capital invested in Aerium",
+        "value": "Gutter Capital invested_in Aerium",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/",
+        "evidence": "The funding came from New York City’s Gutter Capital...",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "aerium",
+        "field": "email",
+        "label": "email: founders@aeriumhq.com",
+        "value": "founders@aeriumhq.com",
+        "source_url": "https://www.aeriumhq.com/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money",
+        "source_url": "https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "founders@aeriumhq.com",
+      "to_source_url": "https://www.aeriumhq.com/",
+      "subject": "Aerium: a thought on Scaling real‑time data pipelines and model deployment across",
+      "body": "Hi Adam,\n\nCongrats on the new funding (https://betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/).\nI'd like to use Aerium and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Aerium: A software platform that integrates, cleans, and centralizes industrial manufacturers' data and deploys AI agents and custom machine learning models to monitor operations and automate tasks.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: Scaling real‑time data pipelines and model deployment across heterogeneous legacy systems.\n\nI can build a Next.js front‑end that surfaces your operational data through a vector‑based semantic search layer, letting engineers instantly query any siloed information.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:founders%40aeriumhq.com?subject=Aerium%3A%20a%20thought%20on%20Scaling%20real%E2%80%91time%20data%20pipelines%20and%20model%20deployment%20across&body=Hi%20Adam%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//betakit.com/mckinsey-alumni-raise-2-5-million-usd-to-build-ai-for-industrial-manufacturers/%29.%0AI%27d%20like%20to%20use%20Aerium%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Aerium%3A%20A%20software%20platform%20that%20integrates%2C%20cleans%2C%20and%20centralizes%20industrial%20manufacturers%27%20data%20and%20deploys%20AI%20agents%20and%20custom%20machine%20learning%20models%20to%20monitor%20operations%20and%20automate%20tasks.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20seed%20stage%29.%0AOne%20thing%20I%20noticed%3A%20Scaling%20real%E2%80%91time%20data%20pipelines%20and%20model%20deployment%20across%20heterogeneous%20legacy%20systems.%0A%0AI%20can%20build%20a%20Next.js%20front%E2%80%91end%20that%20surfaces%20your%20operational%20data%20through%20a%20vector%E2%80%91based%20semantic%20search%20layer%2C%20letting%20engineers%20instantly%20query%20any%20siloed%20information.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Laminar",
     "core_product": "Open-source observability platform that uses an RL‑trained model to analyze AI agent traces and surface errors.",
     "tech_stack": [
@@ -6477,6 +7541,526 @@
     "outreach": []
   },
   {
+    "company_name": "ZeroEntropy",
+    "core_product": "A developer‑first API platform that handles ingestion, indexing, re‑ranking and evaluation of documents to enable fast, accurate retrieval‑augmented generation for AI workflows",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Elasticsearch",
+      "PyTorch"
+    ],
+    "likely_bottleneck": "scaling low‑latency vector search and re‑ranking across large knowledge bases",
+    "value_prop_pitch": "You could replace your custom search layer with a Next.js front‑end that calls a managed vector semantic search service, cutting latency and operational overhead. This lets your engineers focus on building AI agents instead of tuning indexing pipelines.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+    "discovered_at": "2026-10-24T10:34:23+00:00",
+    "funding_amount": "$4.2M",
+    "hq": "San Francisco",
+    "website": "https://dabafinance.com",
+    "score": 78,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "zeroentropy",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 20,
+      "connections": 15,
+      "contact": 3
+    },
+    "gaps": [
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://dabafinance.com",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/dabafinance"
+      },
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [
+        "https://dabafinance.com/en",
+        "https://dabafinance.com/en/about-us"
+      ],
+      "enriched_at": "2026-10-24T10:35:50+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Ghita Houir Alami",
+        "role": "Co‑founder",
+        "org": "ZeroEntropy",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+        "linkedin": "https://www.linkedin.com/in/ghita-houir-alami",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      },
+      {
+        "name": "Nicholas Pipitone",
+        "role": "Co‑founder",
+        "org": "ZeroEntropy",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Ghita Houir Alami",
+        "rel": "founded",
+        "dst": "ZeroEntropy",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)"
+      },
+      {
+        "src": "Nicholas Pipitone",
+        "rel": "founded",
+        "dst": "ZeroEntropy",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)"
+      },
+      {
+        "src": "Initialized Capital",
+        "rel": "invested_in",
+        "dst": "ZeroEntropy",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+      },
+      {
+        "src": "Y Combinator",
+        "rel": "invested_in",
+        "dst": "ZeroEntropy",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+      },
+      {
+        "src": "Transpose Platform",
+        "rel": "invested_in",
+        "dst": "ZeroEntropy",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+      },
+      {
+        "src": "22 Ventures",
+        "rel": "invested_in",
+        "dst": "ZeroEntropy",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+      },
+      {
+        "src": "a16z Scout",
+        "rel": "invested_in",
+        "dst": "ZeroEntropy",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 86.0,
+      "reasons": [
+        "lead score 78",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "good fit; reachable through a profile"
+      ],
+      "next_step": "Reach Ghita Houir Alami via LinkedIn/X",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "zeroentropy",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "zeroentropy",
+        "field": "funding_amount",
+        "label": "funding_amount: $4.2M",
+        "value": "$4.2M",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "zeroentropy",
+        "field": "hq",
+        "label": "hq: San Francisco",
+        "value": "San Francisco",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "zeroentropy",
+        "field": "website",
+        "label": "website: https://dabafinance.com",
+        "value": "https://dabafinance.com",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "zeroentropy",
+        "field": "core_product",
+        "label": "core_product: A developer‑first API platform that handles ingestion, indexing, re‑ranking and evaluation of documents to enable fast, accurate retrieval‑augmented generation for AI workflows",
+        "value": "A developer‑first API platform that handles ingestion, indexing, re‑ranking and evaluation of documents to enable fast, accurate retrieval‑augmented generation for AI workflows",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "zeroentropy",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: scaling low‑latency vector search and re‑ranking across large knowledge bases",
+        "value": "scaling low‑latency vector search and re‑ranking across large knowledge bases",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "ghita houir alami|zeroentropy",
+        "field": "role",
+        "label": "Ghita Houir Alami · Co‑founder",
+        "value": "Co‑founder",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "ghita houir alami|zeroentropy",
+        "field": "linkedin",
+        "label": "Ghita Houir Alami · linkedin",
+        "value": "https://www.linkedin.com/in/ghita-houir-alami",
+        "source_url": "search",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "nicholas pipitone|zeroentropy",
+        "field": "role",
+        "label": "Nicholas Pipitone · Co‑founder",
+        "value": "Co‑founder",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "anthony miclet|daba",
+        "field": "role",
+        "label": "Anthony Miclet · CPO and Co-Founder",
+        "value": "CPO and Co-Founder",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "anthony miclet|daba",
+        "field": "linkedin",
+        "label": "Anthony Miclet · linkedin",
+        "value": "https://www.linkedin.com/in/anthony-miclet/",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "anthony miclet|daba",
+        "field": "homepage",
+        "label": "Anthony Miclet · homepage",
+        "value": "https://dabafinance.com/en",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "boum iii jr.|daba",
+        "field": "role",
+        "label": "Boum III Jr. · CEO and Co-Founder",
+        "value": "CEO and Co-Founder",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "boum iii jr.|daba",
+        "field": "linkedin",
+        "label": "Boum III Jr. · linkedin",
+        "value": "https://www.linkedin.com/in/iamboum3jr/",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "boum iii jr.|daba",
+        "field": "homepage",
+        "label": "Boum III Jr. · homepage",
+        "value": "https://dabafinance.com/en",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "ghita houir alami|founded|zeroentropy",
+        "field": "founded",
+        "label": "Ghita Houir Alami founded ZeroEntropy",
+        "value": "Ghita Houir Alami founded ZeroEntropy",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "nicholas pipitone|founded|zeroentropy",
+        "field": "founded",
+        "label": "Nicholas Pipitone founded ZeroEntropy",
+        "value": "Nicholas Pipitone founded ZeroEntropy",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "initialized capital|invested_in|zeroentropy",
+        "field": "invested_in",
+        "label": "Initialized Capital invested in ZeroEntropy",
+        "value": "Initialized Capital invested_in ZeroEntropy",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "y combinator|invested_in|zeroentropy",
+        "field": "invested_in",
+        "label": "Y Combinator invested in ZeroEntropy",
+        "value": "Y Combinator invested_in ZeroEntropy",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "transpose platform|invested_in|zeroentropy",
+        "field": "invested_in",
+        "label": "Transpose Platform invested in ZeroEntropy",
+        "value": "Transpose Platform invested_in ZeroEntropy",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "22 ventures|invested_in|zeroentropy",
+        "field": "invested_in",
+        "label": "22 Ventures invested in ZeroEntropy",
+        "value": "22 Ventures invested_in ZeroEntropy",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "a16z scout|invested_in|zeroentropy",
+        "field": "invested_in",
+        "label": "a16z Scout invested in ZeroEntropy",
+        "value": "a16z Scout invested_in ZeroEntropy",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "anthony miclet|founded|daba",
+        "field": "founded",
+        "label": "Anthony Miclet founded Daba",
+        "value": "Anthony Miclet founded Daba",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "In 2021, the visionary duo of Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "boum iii jr.|founded|daba",
+        "field": "founded",
+        "label": "Boum III Jr. founded Daba",
+        "value": "Boum III Jr. founded Daba",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+        "evidence": "In 2021, the visionary duo of Anthony Miclet and Boum III Jr. founded Daba",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "zeroentropy",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/dabafinance",
+        "value": "https://www.linkedin.com/company/dabafinance",
+        "source_url": "https://dabafinance.com",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money (0d ago)",
+        "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "",
+      "to_source_url": "",
+      "subject": "ZeroEntropy: a thought on scaling low‑latency vector search and re‑ranking across larg",
+      "body": "Hi Ghita,\n\nCongrats on the new funding (https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami).\nI'd like to use ZeroEntropy and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across ZeroEntropy: A developer‑first API platform that handles ingestion, indexing, re‑ranking and evaluation of documents to enable fast, accurate retrieval‑augmented generation for AI workflows.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: scaling low‑latency vector search and re‑ranking across large knowledge bases.\n\nYou could replace your custom search layer with a Next.js front‑end that calls a managed vector semantic search service, cutting latency and operational overhead.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Genspark",
     "core_product": "An AI‑powered search engine that uses multiple specialized AI agents to generate customized pages for each query.",
     "tech_stack": [
@@ -6560,7 +8144,7 @@
       "priority": 73.8,
       "reasons": [
         "lead score 73",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: people profiles, email, phone",
@@ -7626,7 +9210,7 @@
       "priority": 83.2,
       "reasons": [
         "lead score 72",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call contact@cedardb.com with the pitch",
@@ -10177,7 +11761,7 @@
       "priority": 73.0,
       "reasons": [
         "lead score 55",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "good fit and reachable"
       ],
       "next_step": "Reach Miles Pines via team@theo.site",
@@ -10829,7 +12413,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (2d ago)",
+        "text": "Launched (3d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50176908"
       }
     ],
@@ -11394,6 +12978,211 @@
     "outreach": []
   },
   {
+    "company_name": "Shepherd Robotics",
+    "core_product": "Robots that perform skilled physical tasks such as data‑center commissioning, inspection, and electrical assembly under human supervision.",
+    "tech_stack": [],
+    "likely_bottleneck": "Robust perception and manipulation across highly variable data‑center and manufacturing environments.",
+    "value_prop_pitch": "I can help you build a unified dashboard with Next.js that surfaces real‑time robot telemetry and logs, letting your engineers spot failure patterns instantly. Coupled with a vector‑based semantic search over those logs, you’ll cut debugging time dramatically and keep your robots scaling smoothly.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+    "discovered_at": "2026-10-24T10:34:23+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://shepherdrobotics.ai",
+    "score": 44,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "shepherd-robotics",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 10,
+      "connections": 0,
+      "contact": 13
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "people profiles",
+      "investors",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://shepherdrobotics.ai",
+      "emails": [
+        {
+          "value": "contact@shepherdrobotics.ai",
+          "kind": "general",
+          "source_url": "https://shepherdrobotics.ai/"
+        }
+      ],
+      "phones": [],
+      "socials": {},
+      "contact_page": "https://shepherdrobotics.ai/contact",
+      "product_access": [],
+      "pages_crawled": [
+        "https://shepherdrobotics.ai/",
+        "https://shepherdrobotics.ai/contact"
+      ],
+      "enriched_at": "2026-10-24T10:36:13+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "launch",
+        "source": "yc",
+        "url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Kai Ru",
+        "role": "Founder",
+        "org": "Shepherd Robotics",
+        "evidence": "We’re Feifei, David, and Kai, the founders of Shepherd Robotics.",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Kai Ru",
+        "rel": "founded",
+        "dst": "Shepherd Robotics",
+        "evidence": "We’re Feifei, David, and Kai, the founders of Shepherd Robotics."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 69.4,
+      "reasons": [
+        "lead score 44",
+        "signal strength 1.8/10: launch",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "shepherd robotics",
+        "field": "website",
+        "label": "website: https://shepherdrobotics.ai",
+        "value": "https://shepherdrobotics.ai",
+        "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "shepherd robotics",
+        "field": "core_product",
+        "label": "core_product: Robots that perform skilled physical tasks such as data‑center commissioning, inspection, and electrical assembly under human supervision.",
+        "value": "Robots that perform skilled physical tasks such as data‑center commissioning, inspection, and electrical assembly under human supervision.",
+        "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "shepherd robotics",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Robust perception and manipulation across highly variable data‑center and manufacturing environments.",
+        "value": "Robust perception and manipulation across highly variable data‑center and manufacturing environments.",
+        "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "kai ru|shepherd robotics",
+        "field": "role",
+        "label": "Kai Ru · Founder",
+        "value": "Founder",
+        "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+        "evidence": "We’re Feifei, David, and Kai, the founders of Shepherd Robotics.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "kai ru|founded|shepherd robotics",
+        "field": "founded",
+        "label": "Kai Ru founded Shepherd Robotics",
+        "value": "Kai Ru founded Shepherd Robotics",
+        "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing",
+        "evidence": "We’re Feifei, David, and Kai, the founders of Shepherd Robotics.",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "shepherd robotics",
+        "field": "email",
+        "label": "email: contact@shepherdrobotics.ai",
+        "value": "contact@shepherdrobotics.ai",
+        "source_url": "https://shepherdrobotics.ai/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "launch",
+        "text": "Launched (0d ago)",
+        "source_url": "https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "contact@shepherdrobotics.ai",
+      "to_source_url": "https://shepherdrobotics.ai/",
+      "subject": "Shepherd Robotics: a thought on Robust perception and manipulation across highly variable da",
+      "body": "Hi Kai,\n\nCongrats on the launch (https://www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing).\nI'd like to use Shepherd Robotics and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Shepherd Robotics: Robots that perform skilled physical tasks such as data‑center commissioning, inspection, and electrical assembly under human supervision.\nSaw the recent news (launched (0d ago)).\nI'd like to build something with you.\nOne place we could start: Robust perception and manipulation across highly variable data‑center and manufacturing environments.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:contact%40shepherdrobotics.ai?subject=Shepherd%20Robotics%3A%20a%20thought%20on%20Robust%20perception%20and%20manipulation%20across%20highly%20variable%20da&body=Hi%20Kai%2C%0A%0ACongrats%20on%20the%20launch%20%28https%3A//www.ycombinator.com/launches/WJb-shepherd-robotics-robots-for-data-centers-and-advanced-manufacturing%29.%0AI%27d%20like%20to%20use%20Shepherd%20Robotics%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Shepherd%20Robotics%3A%20Robots%20that%20perform%20skilled%20physical%20tasks%20such%20as%20data%E2%80%91center%20commissioning%2C%20inspection%2C%20and%20electrical%20assembly%20under%20human%20supervision.%0ASaw%20the%20recent%20news%20%28launched%20%280d%20ago%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20Robust%20perception%20and%20manipulation%20across%20highly%20variable%20data%E2%80%91center%20and%20manufacturing%20environments.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Probe",
     "core_product": "Probe is a unified platform that provides agent‑native research tools for AI/ML teams to run experiments, manage compute, and share context.",
     "tech_stack": [],
@@ -11714,7 +13503,7 @@
     "hq": "",
     "website": "https://startuphakk.com",
     "score": 36,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "startuphakk",
     "score_parts": {
       "fit": 10,
@@ -11758,7 +13547,7 @@
         "https://startuphakk.com/",
         "https://startuphakk.com/contact-us/"
       ],
-      "enriched_at": "2026-10-24T01:57:11+00:00",
+      "enriched_at": "2026-10-24T10:37:00+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -11775,7 +13564,7 @@
           "eng"
         ],
         "posted_at": "2026-10-12T17:17:48Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -11803,10 +13592,10 @@
         "value": "https://startuphakk.com",
         "source_url": "https://startuphakk.com/jobs",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -11817,10 +13606,10 @@
         "value": "We are hiring military veterans (and transitioning service members) living in Utah or Idaho for a paid, 1-year registered remote apprenticeship program in full-stack web development and applied AI.",
         "source_url": "https://startuphakk.com/jobs",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -11831,10 +13620,10 @@
         "value": "info@startuphakk.com",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -11845,10 +13634,10 @@
         "value": "+15202018020",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -11859,10 +13648,10 @@
         "value": "https://x.com/StartupHakk",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -11873,10 +13662,10 @@
         "value": "https://www.linkedin.com/company/startup-hakk",
         "source_url": "https://startuphakk.com/contact-us/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -11896,6 +13685,333 @@
       "subject": "StartupHakk: a thought on your stack",
       "body": "Hi StartupHakk team,\n\nI saw you're hiring (AI Engineer Apprentice) (https://news.ycombinator.com/item?id=50059584).\nI'd like to use StartupHakk and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across StartupHakk: We are hiring military veterans (and transitioning service members) living in Utah or Idaho for a paid, 1-year registered remote apprenticeship program in full-stack web development and applied AI.\nSaw the recent news (hiring (11d ago): AI Engineer Apprentice).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:info%40startuphakk.com?subject=StartupHakk%3A%20a%20thought%20on%20your%20stack&body=Hi%20StartupHakk%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28AI%20Engineer%20Apprentice%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50059584%29.%0AI%27d%20like%20to%20use%20StartupHakk%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20StartupHakk%3A%20We%20are%20hiring%20military%20veterans%20%28and%20transitioning%20service%20members%29%20living%20in%20Utah%20or%20Idaho%20for%20a%20paid%2C%201-year%20registered%20remote%20apprenticeship%20program%20in%20full-stack%20web%20development%20and%20applied%20AI.%0ASaw%20the%20recent%20news%20%28hiring%20%2811d%20ago%29%3A%20AI%20Engineer%20Apprentice%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "OneChronos",
+    "core_product": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50012248",
+    "discovered_at": "2026-10-23T11:16:48+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.onechronos.com",
+    "score": 36,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "onechronos",
+    "score_parts": {
+      "fit": 10,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 20
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors"
+    ],
+    "contact": {
+      "website": "https://www.onechronos.com",
+      "emails": [
+        {
+          "value": "info@onechronos.com",
+          "kind": "general",
+          "source_url": "https://www.onechronos.com/"
+        },
+        {
+          "value": "abdullah@onechronos.com",
+          "kind": "person",
+          "source_url": "https://www.onechronos.com/contact/"
+        },
+        {
+          "value": "billing_europe@onechronos.com",
+          "kind": "person",
+          "source_url": "https://www.onechronos.com/contact/"
+        },
+        {
+          "value": "compliance_europe@onechronos.com",
+          "kind": "person",
+          "source_url": "https://www.onechronos.com/contact/"
+        },
+        {
+          "value": "fx_sales@onechronos.com",
+          "kind": "person",
+          "source_url": "https://www.onechronos.com/contact/"
+        },
+        {
+          "value": "careers@onechronos.com",
+          "kind": "other",
+          "source_url": "https://news.ycombinator.com/item?id=50012248"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+19173000108",
+          "kind": "main",
+          "source_url": "https://www.onechronos.com/contact/"
+        },
+        {
+          "value": "+442070788689",
+          "kind": "main",
+          "source_url": "https://www.onechronos.com/contact/"
+        },
+        {
+          "value": "+3197010258288",
+          "kind": "main",
+          "source_url": "https://www.onechronos.com/contact/"
+        }
+      ],
+      "socials": {
+        "github": "https://github.com/onechronos"
+      },
+      "contact_page": "https://www.onechronos.com/contact/",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.onechronos.com/",
+        "https://www.onechronos.com/about/",
+        "https://www.onechronos.com/contact/"
+      ],
+      "enriched_at": "2026-10-24T10:37:20+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50012248",
+        "roles": [
+          "Engineering Manager",
+          "Data Platform (NYC, Hybrid) · Software Engineer",
+          "Quality",
+          "SDET (Flexible/U.S. Remote)"
+        ],
+        "role_kinds": [
+          "eng",
+          "other"
+        ],
+        "posted_at": "2026-10-08T21:04:09Z",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 70.0,
+      "reasons": [
+        "lead score 36",
+        "signal strength 4.6/10: hiring",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "onechronos",
+        "field": "website",
+        "label": "website: https://www.onechronos.com",
+        "value": "https://www.onechronos.com",
+        "source_url": "https://news.ycombinator.com/item?id=50012248",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "onechronos",
+        "field": "core_product",
+        "label": "core_product: We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
+        "value": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
+        "source_url": "https://news.ycombinator.com/item?id=50012248",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 5,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "email",
+        "label": "email: info@onechronos.com",
+        "value": "info@onechronos.com",
+        "source_url": "https://www.onechronos.com/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "email",
+        "label": "email: abdullah@onechronos.com",
+        "value": "abdullah@onechronos.com",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "email",
+        "label": "email: billing_europe@onechronos.com",
+        "value": "billing_europe@onechronos.com",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "email",
+        "label": "email: compliance_europe@onechronos.com",
+        "value": "compliance_europe@onechronos.com",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "email",
+        "label": "email: fx_sales@onechronos.com",
+        "value": "fx_sales@onechronos.com",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "email",
+        "label": "email: careers@onechronos.com",
+        "value": "careers@onechronos.com",
+        "source_url": "https://news.ycombinator.com/item?id=50012248",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "phone",
+        "label": "phone: +19173000108",
+        "value": "+19173000108",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "phone",
+        "label": "phone: +442070788689",
+        "value": "+442070788689",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "phone",
+        "label": "phone: +3197010258288",
+        "value": "+3197010258288",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "onechronos",
+        "field": "github",
+        "label": "github: https://github.com/onechronos",
+        "value": "https://github.com/onechronos",
+        "source_url": "https://www.onechronos.com/contact/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50012248"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (15d ago): Engineering Manager, Data Platform (NYC, Hybrid) · Software Engineer, Quality",
+        "source_url": "https://news.ycombinator.com/item?id=50012248"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "careers@onechronos.com",
+      "to_source_url": "https://news.ycombinator.com/item?id=50012248",
+      "subject": "OneChronos: a thought on your stack",
+      "body": "Hi OneChronos team,\n\nI saw you're hiring (Engineering Manager, Data Platform (NYC, Hybrid) · Software Engineer) (https://news.ycombinator.com/item?id=50012248).\nI'd like to use OneChronos and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across OneChronos: We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:careers%40onechronos.com?subject=OneChronos%3A%20a%20thought%20on%20your%20stack&body=Hi%20OneChronos%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Engineering%20Manager%2C%20Data%20Platform%20%28NYC%2C%20Hybrid%29%20%C2%B7%20Software%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50012248%29.%0AI%27d%20like%20to%20use%20OneChronos%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20OneChronos%3A%20We%E2%80%99re%20a%20Series%20B%20trading%20technology%20company%20reimagining%20how%20financial%20markets%20match%20buyers%20and%20sellers%20--%20applying%20auction%20theory%20and%20innovative%20technologies%20to%20build%20fairer%2C%20more%20efficient%20trading%20infrastructure.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -11961,7 +14077,7 @@
       "priority": 12.1,
       "reasons": [
         "lead score 34",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "weak fit or too little data"
       ],
       "next_step": "Skip unless it resurfaces",
@@ -11995,7 +14111,7 @@
     "hq": "Helsinki, FI",
     "website": "https://treat.health",
     "score": 32,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "treat-health",
     "score_parts": {
       "fit": 10,
@@ -12029,10 +14145,10 @@
       "pages_crawled": [
         "https://treat.health/",
         "https://treat.health/about",
-        "https://treat.health/contact",
-        "https://treat.health/team"
+        "https://treat.health/team",
+        "https://treat.health/contact"
       ],
-      "enriched_at": "2026-10-24T01:56:37+00:00",
+      "enriched_at": "2026-10-24T10:36:25+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -12049,7 +14165,7 @@
           "eng"
         ],
         "posted_at": "2026-10-15T14:30:58Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -12077,10 +14193,10 @@
         "value": "Helsinki, FI",
         "source_url": "https://treat.health/en/careers/full-stack-engineer/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12091,10 +14207,10 @@
         "value": "https://treat.health",
         "source_url": "https://treat.health/en/careers/full-stack-engineer/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12105,10 +14221,10 @@
         "value": "Treat Health is building healthcare where the right care takes minutes, not days. You describe your concern in your own words, our smart intake asks the follow-up questions a doctor would ask, and a licensed doctor reviews the whole picture",
         "source_url": "https://treat.health/en/careers/full-stack-engineer/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12119,10 +14235,10 @@
         "value": "customers@treat.health",
         "source_url": "https://treat.health/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -12159,7 +14275,7 @@
     "hq": "",
     "website": "https://www.propellabs.ai",
     "score": 32,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "propel-labs",
     "score_parts": {
       "fit": 10,
@@ -12200,10 +14316,10 @@
       "product_access": [],
       "pages_crawled": [
         "https://www.propellabs.ai/",
-        "https://www.propellabs.ai/team",
-        "https://www.propellabs.ai/contact"
+        "https://www.propellabs.ai/contact",
+        "https://www.propellabs.ai/team"
       ],
-      "enriched_at": "2026-10-24T01:57:21+00:00",
+      "enriched_at": "2026-10-24T10:37:11+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -12223,7 +14339,7 @@
           "other"
         ],
         "posted_at": "2026-10-09T13:12:43Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -12251,10 +14367,10 @@
         "value": "https://www.propellabs.ai",
         "source_url": "https://propellabs.ai",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12265,10 +14381,10 @@
         "value": "AI agents have made engineering throughput cheap, so senior judgment is now the scarce asset: what to build, what to gate, what to trust to production. We're looking for an experienced engineer to join our small crew and play a ~70/30 build",
         "source_url": "https://propellabs.ai",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12279,10 +14395,10 @@
         "value": "hello@propellabs.ai",
         "source_url": "https://www.propellabs.ai/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -12293,10 +14409,10 @@
         "value": "lisa@propellabs.ai",
         "source_url": "https://news.ycombinator.com/item?id=50020012",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -12307,10 +14423,10 @@
         "value": "https://www.linkedin.com/company/gopropellabs",
         "source_url": "https://www.propellabs.ai/contact",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -12347,7 +14463,7 @@
     "hq": "",
     "website": "https://sendery.co",
     "score": 29,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "sendery",
     "score_parts": {
       "fit": 10,
@@ -12398,7 +14514,7 @@
         "https://sendery.co/en/about",
         "https://sendery.co/en/contact"
       ],
-      "enriched_at": "2026-10-24T01:56:54+00:00",
+      "enriched_at": "2026-10-24T10:36:39+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -12415,7 +14531,7 @@
           "eng"
         ],
         "posted_at": "2026-10-13T03:40:30Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -12443,10 +14559,10 @@
         "value": "https://sendery.co",
         "source_url": "https://sendery.co",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12457,10 +14573,10 @@
         "value": "Sendery is a transactional email platform built for teams. We provide developers, designers, and operations with the tools they need to manage their product emails without needing development work.",
         "source_url": "https://sendery.co",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12471,10 +14587,10 @@
         "value": "info@sendery.co",
         "source_url": "https://sendery.co/en",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -12485,17 +14601,17 @@
         "value": "jobs@sendery.co",
         "source_url": "https://news.ycombinator.com/item?id=50066343",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (10d ago): iOS Engineer",
+        "text": "Hiring (11d ago): iOS Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50066343"
       }
     ],
@@ -12506,8 +14622,8 @@
       "to": "jobs@sendery.co",
       "to_source_url": "https://news.ycombinator.com/item?id=50066343",
       "subject": "Sendery: a thought on your stack",
-      "body": "Hi Sendery team,\n\nI saw you're hiring (iOS Engineer) (https://news.ycombinator.com/item?id=50066343).\nI'd like to use Sendery and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Sendery: Sendery is a transactional email platform built for teams.\nSaw the recent news (hiring (10d ago): iOS Engineer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:jobs%40sendery.co?subject=Sendery%3A%20a%20thought%20on%20your%20stack&body=Hi%20Sendery%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28iOS%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50066343%29.%0AI%27d%20like%20to%20use%20Sendery%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Sendery%3A%20Sendery%20is%20a%20transactional%20email%20platform%20built%20for%20teams.%0ASaw%20the%20recent%20news%20%28hiring%20%2810d%20ago%29%3A%20iOS%20Engineer%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "body": "Hi Sendery team,\n\nI saw you're hiring (iOS Engineer) (https://news.ycombinator.com/item?id=50066343).\nI'd like to use Sendery and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Sendery: Sendery is a transactional email platform built for teams.\nSaw the recent news (hiring (11d ago): iOS Engineer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:jobs%40sendery.co?subject=Sendery%3A%20a%20thought%20on%20your%20stack&body=Hi%20Sendery%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28iOS%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50066343%29.%0AI%27d%20like%20to%20use%20Sendery%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Sendery%3A%20Sendery%20is%20a%20transactional%20email%20platform%20built%20for%20teams.%0ASaw%20the%20recent%20news%20%28hiring%20%2811d%20ago%29%3A%20iOS%20Engineer%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -12525,7 +14641,7 @@
     "hq": "Buford, US",
     "website": "https://www.hio.com",
     "score": 29,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "hio",
     "score_parts": {
       "fit": 10,
@@ -12569,7 +14685,7 @@
         "https://www.hio.com/about-us",
         "https://www.hio.com/contact-us"
       ],
-      "enriched_at": "2026-10-24T01:57:07+00:00",
+      "enriched_at": "2026-10-24T10:36:53+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -12586,7 +14702,7 @@
           "sales"
         ],
         "posted_at": "2026-10-12T18:51:56Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -12609,29 +14725,15 @@
       {
         "entity_type": "startup",
         "entity_key": "hio",
-        "field": "core_product",
-        "label": "core_product: HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
-        "value": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
-        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "hio",
         "field": "hq",
         "label": "hq: Buford, US",
         "value": "Buford, US",
         "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -12642,10 +14744,24 @@
         "value": "https://www.hio.com",
         "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "hio",
+        "field": "core_product",
+        "label": "core_product: HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
+        "value": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
+        "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12656,10 +14772,10 @@
         "value": "+18008222257",
         "source_url": "https://www.hio.com/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -12670,10 +14786,10 @@
         "value": "+18666495058",
         "source_url": "https://www.hio.com/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -12684,10 +14800,10 @@
         "value": "https://x.com/AmericanHIO",
         "source_url": "https://www.hio.com/contact-us",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -12698,10 +14814,10 @@
         "value": "https://www.linkedin.com/company/american-hole-'n-one",
         "source_url": "https://www.hio.com/contact-us",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -12795,6 +14911,234 @@
     "outreach": []
   },
   {
+    "company_name": "Lamin",
+    "core_product": "An open‑source data management platform (lamindb) that provides lineage, versioning, lakehouse features and a web UI for life‑science AI workflows.",
+    "tech_stack": [
+      "Python",
+      "PostgreSQL",
+      "GitHub"
+    ],
+    "likely_bottleneck": "Scaling complex data lineage queries and UI responsiveness as dataset size grows",
+    "value_prop_pitch": "We can rebuild your UI with Next.js to serve a fast, server‑rendered front‑end that scales to millions of records. Coupled with a vector‑based semantic search layer, you’ll get instant, relevant results across your multimodal data without overloading your backend.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
+    "discovered_at": "2026-10-24T10:34:23+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://lamin.ai",
+    "score": 27,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "lamin",
+    "score_parts": {
+      "fit": 15,
+      "identity": 9,
+      "people": 0,
+      "connections": 0,
+      "contact": 3
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://lamin.ai",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/lamin-labs",
+        "github": "https://github.com/laminlabs",
+        "twitter": "https://x.com/laminlabs"
+      },
+      "contact_page": "",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://lamin.ai/pricing"
+        },
+        {
+          "label": "Docs",
+          "url": "https://docs.lamin.ai"
+        },
+        {
+          "label": "Sign up",
+          "url": "https://lamin.ai/signup"
+        }
+      ],
+      "pages_crawled": [
+        "https://lamin.ai/",
+        "https://lamin.ai/about"
+      ],
+      "enriched_at": "2026-10-24T10:36:10+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "launch",
+        "source": "yc",
+        "url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Alex Wolf",
+        "role": "author",
+        "org": "Lamin",
+        "evidence": "**Alex Wolf**",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "skip",
+      "urgency": "cold",
+      "priority": 9.8,
+      "reasons": [
+        "lead score 27",
+        "signal strength 1.8/10: launch",
+        "found 0 day(s) ago (hot)",
+        "weak fit or too little data"
+      ],
+      "next_step": "Skip unless it resurfaces",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "lamin",
+        "field": "website",
+        "label": "website: https://lamin.ai",
+        "value": "https://lamin.ai",
+        "source_url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "lamin",
+        "field": "core_product",
+        "label": "core_product: An open‑source data management platform (lamindb) that provides lineage, versioning, lakehouse features and a web UI for life‑science AI workflows.",
+        "value": "An open‑source data management platform (lamindb) that provides lineage, versioning, lakehouse features and a web UI for life‑science AI workflows.",
+        "source_url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "lamin",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling complex data lineage queries and UI responsiveness as dataset size grows",
+        "value": "Scaling complex data lineage queries and UI responsiveness as dataset size grows",
+        "source_url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex wolf|lamin",
+        "field": "role",
+        "label": "Alex Wolf · author",
+        "value": "author",
+        "source_url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science",
+        "evidence": "**Alex Wolf**",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "lamin",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/lamin-labs",
+        "value": "https://www.linkedin.com/company/lamin-labs",
+        "source_url": "https://lamin.ai",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "lamin",
+        "field": "github",
+        "label": "github: https://github.com/laminlabs",
+        "value": "https://github.com/laminlabs",
+        "source_url": "https://lamin.ai",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "lamin",
+        "field": "twitter",
+        "label": "twitter: https://x.com/laminlabs",
+        "value": "https://x.com/laminlabs",
+        "source_url": "https://lamin.ai",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "launch",
+        "text": "Launched (0d ago)",
+        "source_url": "https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Lamin: a thought on Scaling complex data lineage queries and UI responsiveness a",
+      "body": "Hi Lamin team,\n\nCongrats on the launch (https://www.ycombinator.com/launches/WI0-lamin-open-data-platform-for-science).\nI'd like to use Lamin and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Lamin: An open‑source data management platform (lamindb) that provides lineage, versioning, lakehouse features and a web UI for life‑science AI workflows.\nSaw the recent news (launched (0d ago)).\nOne thing I noticed: Scaling complex data lineage queries and UI responsiveness as dataset size grows.\n\nWe can rebuild your UI with Next.js to serve a fast, server‑rendered front‑end that scales to millions of records.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Chronograph",
     "core_product": "Chronograph was founded to bring next-generation technology to private capital markets. Through our suite of cloud-based analytics and data management solutions, we help many of the world's largest and most sophisticated venture capital, pr",
     "tech_stack": [],
@@ -12808,7 +15152,7 @@
     "hq": "",
     "website": "https://www.greenhouse.com",
     "score": 26,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "chronograph",
     "score_parts": {
       "fit": 10,
@@ -12853,10 +15197,10 @@
       ],
       "pages_crawled": [
         "https://www.greenhouse.com/",
-        "https://www.greenhouse.com/company",
-        "https://www.greenhouse.com/contact"
+        "https://www.greenhouse.com/contact",
+        "https://www.greenhouse.com/company"
       ],
-      "enriched_at": "2026-10-24T01:57:18+00:00",
+      "enriched_at": "2026-10-24T10:37:07+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -12873,7 +15217,7 @@
           "eng"
         ],
         "posted_at": "2026-10-10T13:55:55Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -12901,10 +15245,10 @@
         "value": "https://www.greenhouse.com",
         "source_url": "https://grnh.se/1pm4u2ys7us",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12915,10 +15259,10 @@
         "value": "Chronograph was founded to bring next-generation technology to private capital markets. Through our suite of cloud-based analytics and data management solutions, we help many of the world's largest and most sophisticated venture capital, pr",
         "source_url": "https://grnh.se/1pm4u2ys7us",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -12929,10 +15273,10 @@
         "value": "+19177804130",
         "source_url": "https://www.greenhouse.com/contact",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -12943,10 +15287,10 @@
         "value": "https://www.linkedin.com/company/greenhouse-inc-",
         "source_url": "https://www.greenhouse.com/contact",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -12983,7 +15327,7 @@
     "hq": "",
     "website": "https://skieslearn.com",
     "score": 26,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "skies",
     "score_parts": {
       "fit": 10,
@@ -13024,7 +15368,7 @@
         "https://skieslearn.com/",
         "https://skieslearn.com/content/team"
       ],
-      "enriched_at": "2026-10-24T01:57:23+00:00",
+      "enriched_at": "2026-10-24T10:37:14+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -13043,7 +15387,7 @@
           "other"
         ],
         "posted_at": "2026-10-08T23:45:00Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -13071,10 +15415,10 @@
         "value": "https://skieslearn.com",
         "source_url": "https://skieslearn.com/ndbi/jobs/developer",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13085,10 +15429,10 @@
         "value": "3% of children are autistic. 30% of them at age 9 remain minimally verbal: a handful of single words, never put together into a sentence. If that evokes something in you beyond the number, read on.",
         "source_url": "https://skieslearn.com/ndbi/jobs/developer",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13099,10 +15443,10 @@
         "value": "help@skieslearn.com",
         "source_url": "https://skieslearn.com/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -13113,10 +15457,10 @@
         "value": "julius@skieslearn.com",
         "source_url": "https://news.ycombinator.com/item?id=50014023",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -13140,154 +15484,6 @@
     "outreach": []
   },
   {
-    "company_name": "NeuralFrame",
-    "core_product": "We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-    "discovered_at": "2026-10-23T11:16:48+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "https://neuralframe.com",
-    "score": 22,
-    "last_seen": "2026-10-24T01:57:30+00:00",
-    "slug": "neuralframe",
-    "score_parts": {
-      "fit": 10,
-      "identity": 6,
-      "people": 0,
-      "connections": 0,
-      "contact": 6
-    },
-    "gaps": [
-      "funding stage",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "contact": {
-      "website": "https://neuralframe.com",
-      "emails": [],
-      "phones": [],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/neuralframe"
-      },
-      "contact_page": "https://neuralframe.com/contact-us/",
-      "product_access": [],
-      "pages_crawled": [
-        "https://neuralframe.com/",
-        "https://neuralframe.com/contact-us/",
-        "https://neuralframe.com/contact-us/"
-      ],
-      "enriched_at": "2026-10-24T01:56:42+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": ""
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50095921",
-        "roles": [
-          "Senior Backend Engineer",
-          "Medical Data Pipeline (Python + Rust)"
-        ],
-        "role_kinds": [
-          "eng"
-        ],
-        "posted_at": "2026-10-14T21:53:28Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 55.2,
-      "reasons": [
-        "lead score 22",
-        "signal strength 6.6/10: hiring",
-        "found 0 day(s) ago (hot)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy"
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "neuralframe",
-        "field": "website",
-        "label": "website: https://neuralframe.com",
-        "value": "https://neuralframe.com",
-        "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "neuralframe",
-        "field": "core_product",
-        "label": "core_product: We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
-        "value": "We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
-        "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "neuralframe",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/neuralframe",
-        "value": "https://www.linkedin.com/company/neuralframe",
-        "source_url": "https://neuralframe.com/contact-us/",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      }
-    ],
-    "why_now": [
-      {
-        "signal": "hiring",
-        "text": "Hiring (9d ago): Senior Backend Engineer, Medical Data Pipeline (Python + Rust)",
-        "source_url": "https://news.ycombinator.com/item?id=50095921"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_with",
-      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
-      "to": "",
-      "to_source_url": "",
-      "subject": "NeuralFrame: a thought on your stack",
-      "body": "Hi NeuralFrame team,\n\nI saw you're hiring (Senior Backend Engineer, Medical Data Pipeline (Python + Rust)) (https://news.ycombinator.com/item?id=50095921).\nI'd like to use NeuralFrame and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across NeuralFrame: We build software that hospitals, cancer registries and researchers use.\nSaw the recent news (hiring (9d ago): Senior Backend Engineer, Medical Data Pipeline (Python + Rust)).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "Typify.dev",
     "core_product": "We're Typify, an education company for engineers that teaches functional programming and system design before pairing them with projects & job prospects. We're hiring for two roles: Both mid-senior, Angular + NestJS + Postgres.",
     "tech_stack": [],
@@ -13301,7 +15497,7 @@
     "hq": "",
     "website": "https://typify.dev",
     "score": 22,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "typify-dev",
     "score_parts": {
       "fit": 10,
@@ -13350,7 +15546,7 @@
         "https://typify.dev/",
         "https://typify.dev/landing/contact"
       ],
-      "enriched_at": "2026-10-24T01:56:57+00:00",
+      "enriched_at": "2026-10-24T10:36:42+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -13368,7 +15564,7 @@
           "eng"
         ],
         "posted_at": "2026-10-12T21:00:23Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -13396,10 +15592,10 @@
         "value": "https://typify.dev",
         "source_url": "https://typify.dev",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13410,10 +15606,10 @@
         "value": "We're Typify, an education company for engineers that teaches functional programming and system design before pairing them with projects & job prospects. We're hiring for two roles: Both mid-senior, Angular + NestJS + Postgres.",
         "source_url": "https://typify.dev",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13424,10 +15620,10 @@
         "value": "galen@typify.dev",
         "source_url": "https://news.ycombinator.com/item?id=50063001",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -13438,10 +15634,10 @@
         "value": "https://www.linkedin.com/company/typifydev",
         "source_url": "https://typify.dev/landing/contact",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -13452,10 +15648,10 @@
         "value": "https://github.com/typifydev",
         "source_url": "https://typify.dev/landing/contact",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -13492,7 +15688,7 @@
     "hq": "",
     "website": "https://exlabora.com",
     "score": 19,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "exlabora-ai",
     "score_parts": {
       "fit": 10,
@@ -13521,11 +15717,11 @@
       "product_access": [],
       "pages_crawled": [
         "https://exlabora.com/",
-        "https://exlabora.com/team",
+        "https://exlabora.com/about",
         "https://exlabora.com/contact",
-        "https://exlabora.com/about"
+        "https://exlabora.com/team"
       ],
-      "enriched_at": "2026-10-24T01:56:46+00:00",
+      "enriched_at": "2026-10-24T10:36:32+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -13544,7 +15740,7 @@
           "other"
         ],
         "posted_at": "2026-10-14T17:28:12Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -13572,10 +15768,10 @@
         "value": "https://exlabora.com",
         "source_url": "https://exlabora.com/open-roles.html",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13586,10 +15782,10 @@
         "value": "https://exlabora.com/open-roles.html",
         "source_url": "https://exlabora.com/open-roles.html",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       }
     ],
@@ -13626,7 +15822,7 @@
     "hq": "",
     "website": "https://www.govstar.us",
     "score": 19,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "govstar",
     "score_parts": {
       "fit": 10,
@@ -13662,10 +15858,10 @@
       "pages_crawled": [
         "https://www.govstar.us/",
         "https://www.govstar.us/about",
-        "https://www.govstar.us/team",
-        "https://www.govstar.us/contact"
+        "https://www.govstar.us/contact",
+        "https://www.govstar.us/team"
       ],
-      "enriched_at": "2026-10-24T01:56:49+00:00",
+      "enriched_at": "2026-10-24T10:36:35+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -13683,7 +15879,7 @@
           "other"
         ],
         "posted_at": "2026-10-14T16:26:28Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -13711,10 +15907,10 @@
         "value": "https://www.govstar.us",
         "source_url": "https://govstar.us",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13725,10 +15921,10 @@
         "value": "GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
         "source_url": "https://govstar.us",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13739,10 +15935,10 @@
         "value": "nicholas.hanson@govstar.us",
         "source_url": "https://news.ycombinator.com/item?id=50090302",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -13779,7 +15975,7 @@
     "hq": "",
     "website": "https://www.generalintelligenceholdings.com",
     "score": 19,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "general-intelligence-holdings",
     "score_parts": {
       "fit": 10,
@@ -13814,11 +16010,11 @@
       "product_access": [],
       "pages_crawled": [
         "https://www.generalintelligenceholdings.com/",
+        "https://www.generalintelligenceholdings.com/team",
         "https://www.generalintelligenceholdings.com/about",
-        "https://www.generalintelligenceholdings.com/contact",
-        "https://www.generalintelligenceholdings.com/team"
+        "https://www.generalintelligenceholdings.com/contact"
       ],
-      "enriched_at": "2026-10-24T01:57:14+00:00",
+      "enriched_at": "2026-10-24T10:37:02+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -13835,7 +16031,7 @@
           "other"
         ],
         "posted_at": "2026-10-12T11:51:09Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -13863,10 +16059,10 @@
         "value": "https://www.generalintelligenceholdings.com",
         "source_url": "https://www.generalintelligenceholdings.com",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13877,10 +16073,10 @@
         "value": "I'm Chris, founder of GIH. We're building an AI operating platform for established service businesses, starting with UK accountancy. Our model is to acquire businesses and deploy the software into their daily workflows, measuring its effect",
         "source_url": "https://www.generalintelligenceholdings.com",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -13891,10 +16087,10 @@
         "value": "chris@generalintelligencecapital.com",
         "source_url": "https://news.ycombinator.com/item?id=50055019",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -13931,7 +16127,7 @@
     "hq": "",
     "website": "https://ojin.ai",
     "score": 19,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "ojin",
     "score_parts": {
       "fit": 10,
@@ -13984,7 +16180,7 @@
         "https://ojin.ai/about-us",
         "https://ojin.ai/enterprise"
       ],
-      "enriched_at": "2026-10-24T01:57:30+00:00",
+      "enriched_at": "2026-10-24T10:37:24+00:00",
       "status": "ok",
       "attempts": 0,
       "last_attempt": ""
@@ -14001,7 +16197,7 @@
           "eng"
         ],
         "posted_at": "2026-10-08T11:10:20Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -14029,10 +16225,10 @@
         "value": "https://ojin.ai",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -14043,10 +16239,10 @@
         "value": "We build AI agents that look and sound human - real face, real voice, real-time conversation. The kind of thing that makes people ask if it's actually live the first time they see it. Getting there means solving latency at a level most infr",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 0.4
       },
       {
@@ -14057,10 +16253,10 @@
         "value": "https://github.com/ojinai",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -14071,10 +16267,10 @@
         "value": "https://www.linkedin.com/company/ojininai",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       },
       {
@@ -14085,10 +16281,10 @@
         "value": "https://x.com/Ojin_AI",
         "source_url": "https://ojin.ai",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -14112,6 +16308,162 @@
     "outreach": []
   },
   {
+    "company_name": "NeuralFrame",
+    "core_product": "We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+    "discovered_at": "2026-10-23T11:16:48+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+    "score": 16,
+    "last_seen": "2026-10-24T10:37:24+00:00",
+    "slug": "neuralframe",
+    "score_parts": {
+      "fit": 10,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 0
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [],
+      "enriched_at": "2026-10-24T10:36:29+00:00",
+      "status": "no_website",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50095921",
+        "roles": [
+          "Senior Backend Engineer",
+          "Medical Data Pipeline (Python + Rust)"
+        ],
+        "role_kinds": [
+          "eng"
+        ],
+        "posted_at": "2026-10-14T21:53:28Z",
+        "seen_at": "2026-10-24T10:35:19+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 51.6,
+      "reasons": [
+        "lead score 16",
+        "signal strength 6.6/10: hiring",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "neuralframe",
+        "field": "core_product",
+        "label": "core_product: We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
+        "value": "We build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.",
+        "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "neuralframe",
+        "field": "website",
+        "label": "website: https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+        "value": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+        "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+        "evidence": "",
+        "run_id": "20261024T103347Z",
+        "first_seen": "2026-10-24T10:37:24+00:00",
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "neuralframe",
+        "field": "website",
+        "label": "website: https://neuralframe.com",
+        "value": "https://neuralframe.com",
+        "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "neuralframe",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/neuralframe",
+        "value": "https://www.linkedin.com/company/neuralframe",
+        "source_url": "https://neuralframe.com/contact-us/",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "hiring",
+        "text": "Hiring (9d ago): Senior Backend Engineer, Medical Data Pipeline (Python + Rust)",
+        "source_url": "https://news.ycombinator.com/item?id=50095921"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "",
+      "to_source_url": "",
+      "subject": "NeuralFrame: a thought on your stack",
+      "body": "Hi NeuralFrame team,\n\nI saw you're hiring (Senior Backend Engineer, Medical Data Pipeline (Python + Rust)) (https://news.ycombinator.com/item?id=50095921).\nI'd like to use NeuralFrame and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across NeuralFrame: We build software that hospitals, cancer registries and researchers use.\nSaw the recent news (hiring (9d ago): Senior Backend Engineer, Medical Data Pipeline (Python + Rust)).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Indiana Microelectronics LLC",
     "core_product": "Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.",
     "tech_stack": [],
@@ -14125,7 +16477,7 @@
     "hq": "",
     "website": "",
     "score": 10,
-    "last_seen": "2026-10-24T01:57:30+00:00",
+    "last_seen": "2026-10-24T10:37:24+00:00",
     "slug": "indiana-microelectronics-llc",
     "score_parts": {
       "fit": 10,
@@ -14160,7 +16512,7 @@
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-10-24T01:57:01+00:00",
+      "enriched_at": "2026-10-24T10:36:46+00:00",
       "status": "no_website",
       "attempts": 0,
       "last_attempt": ""
@@ -14177,7 +16529,7 @@
           "eng"
         ],
         "posted_at": "2026-10-12T20:59:57Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
+        "seen_at": "2026-10-24T10:35:19+00:00"
       }
     ],
     "people": [],
@@ -14205,10 +16557,10 @@
         "value": "Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.",
         "source_url": "https://news.ycombinator.com/item?id=50062997",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 5,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 6,
         "confidence": 0.4
       },
       {
@@ -14219,10 +16571,10 @@
         "value": "cuppys@indianamicro.com",
         "source_url": "https://news.ycombinator.com/item?id=50062997",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "20261024T103347Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
+        "last_seen": "2026-10-24T10:37:24+00:00",
+        "seen_count": 4,
         "confidence": 1.0
       }
     ],
@@ -14247,289 +16599,6 @@
       "subject": "Indiana Microelectronics LLC: a thought on your stack",
       "body": "Hi Indiana Microelectronics LLC team,\n\nI saw you're hiring (RF Engineer) (https://news.ycombinator.com/item?id=50062997).\nI'd like to use Indiana Microelectronics LLC and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Indiana Microelectronics LLC: Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:cuppys%40indianamicro.com?subject=Indiana%20Microelectronics%20LLC%3A%20a%20thought%20on%20your%20stack&body=Hi%20Indiana%20Microelectronics%20LLC%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28RF%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50062997%29.%0AI%27d%20like%20to%20use%20Indiana%20Microelectronics%20LLC%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Indiana%20Microelectronics%20LLC%3A%20Indiana%20Micro%20is%20a%20small%20electronics%20company%20working%20on%20tunable%20RF%20filters%20and%20radio-frequency%20front-end%20%28RFFE%29%20systems%20for%20interference%20mitigation.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "OneChronos",
-    "core_product": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50012248",
-    "discovered_at": "2026-10-23T11:16:48+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "",
-    "score": 10,
-    "last_seen": "2026-10-24T01:57:30+00:00",
-    "slug": "onechronos",
-    "score_parts": {
-      "fit": 10,
-      "identity": 0,
-      "people": 0,
-      "connections": 0,
-      "contact": 0
-    },
-    "gaps": [
-      "funding stage",
-      "website",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "contact": {
-      "website": "",
-      "emails": [
-        {
-          "value": "careers@onechronos.com",
-          "kind": "other",
-          "source_url": "https://news.ycombinator.com/item?id=50012248"
-        }
-      ],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-10-24T01:57:27+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": ""
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50012248",
-        "roles": [
-          "Engineering Manager",
-          "Data Platform (NYC, Hybrid) · Software Engineer",
-          "Quality",
-          "SDET (Flexible/U.S. Remote)"
-        ],
-        "role_kinds": [
-          "eng",
-          "other"
-        ],
-        "posted_at": "2026-10-08T21:04:09Z",
-        "seen_at": "2026-10-24T01:55:31+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "skip",
-      "urgency": "cold",
-      "priority": 10.9,
-      "reasons": [
-        "lead score 10",
-        "signal strength 4.6/10: hiring",
-        "found 0 day(s) ago (hot)",
-        "weak fit or too little data"
-      ],
-      "next_step": "Skip unless it resurfaces",
-      "provider": "policy"
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "onechronos",
-        "field": "core_product",
-        "label": "core_product: We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
-        "value": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
-        "source_url": "https://news.ycombinator.com/item?id=50012248",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 4,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "email",
-        "label": "email: careers@onechronos.com",
-        "value": "careers@onechronos.com",
-        "source_url": "https://news.ycombinator.com/item?id=50012248",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "onechronos",
-        "field": "website",
-        "label": "website: https://www.onechronos.com",
-        "value": "https://www.onechronos.com",
-        "source_url": "https://news.ycombinator.com/item?id=50012248",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "email",
-        "label": "email: info@onechronos.com",
-        "value": "info@onechronos.com",
-        "source_url": "https://www.onechronos.com/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "email",
-        "label": "email: abdullah@onechronos.com",
-        "value": "abdullah@onechronos.com",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "email",
-        "label": "email: billing_europe@onechronos.com",
-        "value": "billing_europe@onechronos.com",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "email",
-        "label": "email: compliance_europe@onechronos.com",
-        "value": "compliance_europe@onechronos.com",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "email",
-        "label": "email: fx_sales@onechronos.com",
-        "value": "fx_sales@onechronos.com",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "phone",
-        "label": "phone: +19173000108",
-        "value": "+19173000108",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "phone",
-        "label": "phone: +442070788689",
-        "value": "+442070788689",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "phone",
-        "label": "phone: +3197010258288",
-        "value": "+3197010258288",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "onechronos",
-        "field": "github",
-        "label": "github: https://github.com/onechronos",
-        "value": "https://github.com/onechronos",
-        "source_url": "https://www.onechronos.com/contact/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 0d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50012248"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (15d ago): Engineering Manager, Data Platform (NYC, Hybrid) · Software Engineer, Quality",
-        "source_url": "https://news.ycombinator.com/item?id=50012248"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "careers@onechronos.com",
-      "to_source_url": "https://news.ycombinator.com/item?id=50012248",
-      "subject": "OneChronos: a thought on your stack",
-      "body": "Hi OneChronos team,\n\nI saw you're hiring (Engineering Manager, Data Platform (NYC, Hybrid) · Software Engineer) (https://news.ycombinator.com/item?id=50012248).\nI'd like to use OneChronos and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across OneChronos: We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:careers%40onechronos.com?subject=OneChronos%3A%20a%20thought%20on%20your%20stack&body=Hi%20OneChronos%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Engineering%20Manager%2C%20Data%20Platform%20%28NYC%2C%20Hybrid%29%20%C2%B7%20Software%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50012248%29.%0AI%27d%20like%20to%20use%20OneChronos%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20OneChronos%3A%20We%E2%80%99re%20a%20Series%20B%20trading%20technology%20company%20reimagining%20how%20financial%20markets%20match%20buyers%20and%20sellers%20--%20applying%20auction%20theory%20and%20innovative%20technologies%20to%20build%20fairer%2C%20more%20efficient%20trading%20infrastructure.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   }
