@@ -17,6 +17,14 @@
       "score": 90
     },
     {
+      "id": "dropgenie",
+      "label": "DropGenie",
+      "type": "startup",
+      "degree": 13,
+      "website": "",
+      "score": 74
+    },
+    {
       "id": "chariot claims",
       "label": "Chariot Claims",
       "type": "startup",
@@ -65,6 +73,14 @@
       "score": 60
     },
     {
+      "id": "zeroentropy",
+      "label": "ZeroEntropy",
+      "type": "startup",
+      "degree": 8,
+      "website": "https://www.zeroentropy.dev",
+      "score": 88
+    },
+    {
       "id": "quiver ai",
       "label": "Quiver AI",
       "type": "org",
@@ -93,14 +109,6 @@
       "degree": 7,
       "website": "https://www.cygrid.io",
       "score": 93
-    },
-    {
-      "id": "zeroentropy",
-      "label": "ZeroEntropy",
-      "type": "startup",
-      "degree": 7,
-      "website": "https://dabafinance.com",
-      "score": 78
     },
     {
       "id": "vessla",
@@ -185,6 +193,14 @@
       "degree": 5,
       "website": "https://www.oscp.com",
       "score": 92
+    },
+    {
+      "id": "endo",
+      "label": "Endo",
+      "type": "startup",
+      "degree": 5,
+      "website": "https://www.endodeals.com",
+      "score": 85
     },
     {
       "id": "guillaume miara",
@@ -429,6 +445,26 @@
       }
     },
     {
+      "id": "alan ma",
+      "label": "Alan Ma",
+      "type": "person",
+      "degree": 3,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ajma867/"
+      }
+    },
+    {
+      "id": "akshay manglik",
+      "label": "Akshay Manglik",
+      "type": "person",
+      "degree": 3,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/akshay-manglik/"
+      }
+    },
+    {
       "id": "amazon",
       "label": "Amazon",
       "type": "org",
@@ -437,6 +473,12 @@
     {
       "id": "yudai matsuoka",
       "label": "Yudai Matsuoka",
+      "type": "org",
+      "degree": 3
+    },
+    {
+      "id": "mckinsey",
+      "label": "McKinsey",
       "type": "org",
       "degree": 3
     },
@@ -533,6 +575,14 @@
       "degree": 2,
       "website": "https://odin-robotics.com",
       "score": 46
+    },
+    {
+      "id": "pomerado",
+      "label": "Pomerado",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://pomerado.ai",
+      "score": 68
     },
     {
       "id": "eric",
@@ -690,6 +740,32 @@
       }
     },
     {
+      "id": "anges québec",
+      "label": "Anges Québec",
+      "type": "person",
+      "degree": 2,
+      "role": "Investor",
+      "links": {}
+    },
+    {
+      "id": "nicholas pipitone",
+      "label": "Nicholas Pipitone",
+      "type": "person",
+      "degree": 2,
+      "role": "CTO & Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/nicholas-pipitone"
+      }
+    },
+    {
+      "id": "alison hirukawa",
+      "label": "Alison Hirukawa",
+      "type": "person",
+      "degree": 2,
+      "role": "CEO & Co‑founder",
+      "links": {}
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -740,6 +816,18 @@
     {
       "id": "daba",
       "label": "Daba",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "relay ventures",
+      "label": "Relay Ventures",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "scale ai",
+      "label": "Scale AI",
       "type": "org",
       "degree": 2
     },
@@ -1921,24 +2009,6 @@
       "links": {}
     },
     {
-      "id": "ghita houir alami",
-      "label": "Ghita Houir Alami",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/ghita-houir-alami"
-      }
-    },
-    {
-      "id": "nicholas pipitone",
-      "label": "Nicholas Pipitone",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder",
-      "links": {}
-    },
-    {
       "id": "anthony miclet",
       "label": "Anthony Miclet",
       "type": "person",
@@ -2011,6 +2081,90 @@
       "links": {
         "linkedin": "https://linkedin.com/in/samriddhi-simi-s-1240321b5/"
       }
+    },
+    {
+      "id": "skeleton key",
+      "label": "Skeleton Key",
+      "type": "person",
+      "degree": 1,
+      "role": "Lead Investor",
+      "links": {}
+    },
+    {
+      "id": "michael boushy",
+      "label": "Michael Boushy",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO & Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/michaelboushy"
+      }
+    },
+    {
+      "id": "jack lavorato",
+      "label": "Jack Lavorato",
+      "type": "person",
+      "degree": 1,
+      "role": "COO & Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jackalavorto"
+      }
+    },
+    {
+      "id": "anthony baxter",
+      "label": "Anthony Baxter",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & Founding Engineer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/anthonybax"
+      }
+    },
+    {
+      "id": "matteo tanzi",
+      "label": "Matteo Tanzi",
+      "type": "person",
+      "degree": 1,
+      "role": "Senior Product Engineer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matteospencertanzi"
+      }
+    },
+    {
+      "id": "john albright",
+      "label": "John Albright",
+      "type": "person",
+      "degree": 1,
+      "role": "Partner",
+      "links": {}
+    },
+    {
+      "id": "ghita houir alami",
+      "label": "Ghita Houir Alami",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO & Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ghita-houir-alami/en"
+      }
+    },
+    {
+      "id": "hugo sinha",
+      "label": "Hugo Sinha",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/hugo-sinha"
+      }
+    },
+    {
+      "id": "mathieu husser",
+      "label": "Mathieu Husser",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder (former)",
+      "links": {}
     },
     {
       "id": "endgrate",
@@ -2135,12 +2289,6 @@
     {
       "id": "mitsubishi corporation",
       "label": "Mitsubishi Corporation",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "mckinsey",
-      "label": "McKinsey",
       "type": "org",
       "degree": 1
     },
@@ -2565,30 +2713,6 @@
       "degree": 1
     },
     {
-      "id": "initialized capital",
-      "label": "Initialized Capital",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "transpose platform",
-      "label": "Transpose Platform",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "22 ventures",
-      "label": "22 Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "a16z scout",
-      "label": "a16z Scout",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "accel",
       "label": "Accel",
       "type": "org",
@@ -2631,12 +2755,6 @@
       "degree": 1
     },
     {
-      "id": "anges québec",
-      "label": "Anges Québec",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "desjardins",
       "label": "Desjardins",
       "type": "org",
@@ -2657,6 +2775,84 @@
     {
       "id": "tailwind",
       "label": "Tailwind",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "initialized capital",
+      "label": "Initialized Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "transpose platform",
+      "label": "Transpose Platform",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "22 ventures",
+      "label": "22 Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "a16z scout",
+      "label": "a16z Scout",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "mcgill university’s goodman cancer research centre",
+      "label": "McGill University’s Goodman Cancer Research Centre",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "bdc capital’s thrive fund",
+      "label": "BDC Capital’s Thrive Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "merck global health innovation fund",
+      "label": "Merck Global Health Innovation Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "cqdm",
+      "label": "CQDM",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "real ventures",
+      "label": "Real Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "abbvie",
+      "label": "AbbVie",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "ucb pharma",
+      "label": "UCB Pharma",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "danaher",
+      "label": "Danaher",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "sartorius",
+      "label": "Sartorius",
       "type": "org",
       "degree": 1
     },
@@ -2749,6 +2945,14 @@
       "score": 22
     },
     {
+      "id": "indiana microelectronics llc",
+      "label": "Indiana Microelectronics LLC",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 10
+    },
+    {
       "id": "hio",
       "label": "HiO",
       "type": "startup",
@@ -2811,14 +3015,6 @@
       "degree": 0,
       "website": "https://ojin.ai",
       "score": 19
-    },
-    {
-      "id": "indiana microelectronics llc",
-      "label": "Indiana Microelectronics LLC",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
     },
     {
       "id": "kevin hartz",
@@ -3266,6 +3462,14 @@
       "type": "person",
       "degree": 0,
       "role": "author",
+      "links": {}
+    },
+    {
+      "id": "zoe perret",
+      "label": "Zoe Perret",
+      "type": "person",
+      "degree": 0,
+      "role": "Partner",
       "links": {}
     }
   ],
@@ -5883,20 +6087,6 @@
       ]
     },
     {
-      "source": "ghita houir alami",
-      "target": "zeroentropy",
-      "rel": "founded",
-      "evidence": "Founded by Ghita Houir Alami and Nicholas Pipitone, ZeroEntropy builds developer-first infrastructure for retrieval-augmented generation (RAG)",
-      "sources": [
-        {
-          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
       "source": "nicholas pipitone",
       "target": "zeroentropy",
       "rel": "founded",
@@ -5911,63 +6101,7 @@
       ]
     },
     {
-      "source": "initialized capital",
-      "target": "zeroentropy",
-      "rel": "invested_in",
-      "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
-      "sources": [
-        {
-          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
       "source": "y combinator",
-      "target": "zeroentropy",
-      "rel": "invested_in",
-      "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
-      "sources": [
-        {
-          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "transpose platform",
-      "target": "zeroentropy",
-      "rel": "invested_in",
-      "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
-      "sources": [
-        {
-          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "22 ventures",
-      "target": "zeroentropy",
-      "rel": "invested_in",
-      "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
-      "sources": [
-        {
-          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "a16z scout",
       "target": "zeroentropy",
       "rel": "invested_in",
       "evidence": "The round was led by Initialized Capital, with support from Y Combinator, Transpose Platform, 22 Ventures, a16z Scout, and angels from OpenAI, Hugging Face, and Front",
@@ -6315,6 +6449,484 @@
           "last_seen": "2026-10-25T11:01:55+00:00"
         }
       ]
+    },
+    {
+      "source": "michael boushy",
+      "target": "endo",
+      "rel": "founded",
+      "evidence": "Endo co‑founder and CEO Michael Boushy",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jack lavorato",
+      "target": "endo",
+      "rel": "cofounded",
+      "evidence": "Jack Lavorato (Endo’s co‑founder and COO)",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anthony baxter",
+      "target": "endo",
+      "rel": "cofounded",
+      "evidence": "Anthony Baxter, as co‑founder and founding engineer",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "matteo tanzi",
+      "target": "endo",
+      "rel": "works_at",
+      "evidence": "Matteo Tanzi as senior product engineer",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "relay ventures",
+      "target": "endo",
+      "rel": "invested_in",
+      "evidence": "$815,000 CAD in pre‑seed funding led by Toronto’s Relay Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "john albright",
+      "target": "relay ventures",
+      "rel": "works_at",
+      "evidence": "Relay founder and partner John Albright",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ghita houir alami",
+      "target": "zeroentropy",
+      "rel": "founded",
+      "evidence": "co‑founded by CEO Ghita Houir Alami",
+      "sources": [
+        {
+          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+          "run_id": "20261024T103347Z",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-10-24T10:37:24+00:00"
+        },
+        {
+          "source_url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "initialized capital",
+      "target": "zeroentropy",
+      "rel": "invested_in",
+      "evidence": "The round was led by Initialized Capital",
+      "sources": [
+        {
+          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+          "run_id": "20261024T103347Z",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-10-24T10:37:24+00:00"
+        },
+        {
+          "source_url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "transpose platform",
+      "target": "zeroentropy",
+      "rel": "invested_in",
+      "evidence": "participation from ... Transpose Platform",
+      "sources": [
+        {
+          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+          "run_id": "20261024T103347Z",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-10-24T10:37:24+00:00"
+        },
+        {
+          "source_url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "22 ventures",
+      "target": "zeroentropy",
+      "rel": "invested_in",
+      "evidence": "participation from ... 22 Ventures",
+      "sources": [
+        {
+          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+          "run_id": "20261024T103347Z",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-10-24T10:37:24+00:00"
+        },
+        {
+          "source_url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "a16z scout",
+      "target": "zeroentropy",
+      "rel": "invested_in",
+      "evidence": "participation from ... a16z Scout",
+      "sources": [
+        {
+          "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
+          "run_id": "20261024T103347Z",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-10-24T10:37:24+00:00"
+        },
+        {
+          "source_url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nicholas pipitone",
+      "target": "zeroentropy",
+      "rel": "cofounded",
+      "evidence": "CTO Nicholas Pipitone",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alan ma",
+      "target": "pomerado",
+      "rel": "founded",
+      "evidence": "Hi everyone! We’re @Alan Ma and @Akshay Manglik from @Pomerado.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "akshay manglik",
+      "target": "pomerado",
+      "rel": "founded",
+      "evidence": "Hi everyone! We’re @Alan Ma and @Akshay Manglik from @Pomerado.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alan ma",
+      "target": "mckinsey",
+      "rel": "previously_at",
+      "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alan ma",
+      "target": "scale ai",
+      "rel": "previously_at",
+      "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "akshay manglik",
+      "target": "mckinsey",
+      "rel": "previously_at",
+      "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "akshay manglik",
+      "target": "scale ai",
+      "rel": "previously_at",
+      "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+          "run_id": "20261026T123004Z",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alison hirukawa",
+      "target": "dropgenie",
+      "rel": "founded",
+      "evidence": "CEO Alison Hirukawa met her co‑founders...",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hugo sinha",
+      "target": "dropgenie",
+      "rel": "cofounded",
+      "evidence": "met Hugo Sinha... through a McGill‑associated research project",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "mathieu husser",
+      "target": "dropgenie",
+      "rel": "cofounded",
+      "evidence": "Mathieu Husser (who is no longer with the company)",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alison hirukawa",
+      "target": "mcgill university’s goodman cancer research centre",
+      "rel": "previously_at",
+      "evidence": "Hirukawa, who was a postdoctoral fellow at McGill University’s Goodman Cancer Research Centre",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bdc capital’s thrive fund",
+      "target": "dropgenie",
+      "rel": "invested_in",
+      "evidence": "BDC Capital’s Thrive Fund as a new investor for its seed‑plus financing",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "skeleton key",
+      "target": "dropgenie",
+      "rel": "invested_in",
+      "evidence": "Massachusetts‑based Skeleton Key had led that financing",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "merck global health innovation fund",
+      "target": "dropgenie",
+      "rel": "invested_in",
+      "evidence": "alongside Merck Global Health Innovation Fund",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "cqdm",
+      "target": "dropgenie",
+      "rel": "invested_in",
+      "evidence": "alongside ... CQDM",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "real ventures",
+      "target": "dropgenie",
+      "rel": "invested_in",
+      "evidence": "with participation from Montréal’s Real Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anges québec",
+      "target": "dropgenie",
+      "rel": "invested_in",
+      "evidence": "with participation from ... Anges Québec",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "abbvie",
+      "target": "dropgenie",
+      "rel": "customer_of",
+      "evidence": "partnerships with AbbVie, UCB Pharma",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ucb pharma",
+      "target": "dropgenie",
+      "rel": "customer_of",
+      "evidence": "partnerships with AbbVie, UCB Pharma",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "danaher",
+      "target": "dropgenie",
+      "rel": "customer_of",
+      "evidence": "life science instrument companies like Danaher and Sartorius",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sartorius",
+      "target": "dropgenie",
+      "rel": "customer_of",
+      "evidence": "life science instrument companies like Danaher and Sartorius",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "run_id": "backfill-2026-10-26",
+          "first_seen": "2026-10-26T12:33:09+00:00",
+          "last_seen": "2026-10-26T12:33:14+00:00"
+        }
+      ]
     }
   ],
   "investors": [
@@ -6392,6 +7004,44 @@
         },
         {
           "name": "Pennymac",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Anges Québec",
+      "companies": [
+        "Bia Health",
+        "DropGenie"
+      ],
+      "count": 2,
+      "co_investors": [
+        {
+          "name": "BDC Capital’s Thrive Fund",
+          "shared": 1
+        },
+        {
+          "name": "CQDM",
+          "shared": 1
+        },
+        {
+          "name": "Desjardins",
+          "shared": 1
+        },
+        {
+          "name": "Finalta Capital",
+          "shared": 1
+        },
+        {
+          "name": "Merck Global Health Innovation Fund",
+          "shared": 1
+        },
+        {
+          "name": "Real Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Skeleton Key",
           "shared": 1
         }
       ]

@@ -1,32 +1,36 @@
 {
-  "generated_at": "2026-10-25T11:01:55+00:00",
-  "candidates": 263,
-  "crawled": 5,
+  "generated_at": "2026-10-26T12:33:09+00:00",
+  "candidates": 269,
+  "crawled": 7,
   "extracted": 5,
-  "relevant": 5,
-  "valid": 5,
+  "relevant": 4,
+  "valid": 4,
   "sources": {
     "rss": 2,
     "web": 1,
-    "yc": 2
+    "yc": 1
   },
-  "people": 6,
-  "edges": 14,
-  "dropped_ungrounded": 7,
+  "people": 15,
+  "edges": 32,
+  "dropped_ungrounded": 2,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 19,
-  "with_website": 19,
-  "with_email": 11,
+  "enriched": 17,
+  "with_website": 17,
+  "with_email": 10,
   "with_phone": 5,
-  "people_linked": 3,
-  "avg_score": 36.0,
+  "people_linked": 9,
+  "avg_score": 36.7,
   "issues": {
-    "warn: empty tech_stack": 4
+    "not a relevant startup page": 1,
+    "warn: empty tech_stack": 1,
+    "extraction error": 1
   },
   "failures": [],
   "passed": true,
-  "deferred_urls": [],
+  "deferred_urls": [
+    "ycombinator.com/launches/WBc-cesara-ai-agents-that-make-sure-every-healthcare-transaction-is-paid-per-contract"
+  ],
   "skipped": "",
   "validity_rate": 1.0
 }

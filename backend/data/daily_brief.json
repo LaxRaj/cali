@@ -1,266 +1,427 @@
 {
-  "generated_at": "2026-10-25T11:01:55+00:00",
+  "generated_at": "2026-10-26T12:33:09+00:00",
   "findings": [
     {
-      "company_name": "Bird&Be",
-      "core_product": "Subscriptions to fertility and wellness supplements and test kits for reproductive health.",
-      "tech_stack": [],
-      "likely_bottleneck": "Managing inventory and personalized subscription logistics at scale.",
-      "value_prop_pitch": "I can help you streamline your inventory and subscription management by building a real‑time dashboard with Next.js that surfaces personalized product recommendations using vector semantic search. This will reduce latency in order processing and improve customer retention.",
-      "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "$13-million USD",
-      "hq": "Toronto",
-      "website": "https://birdandbe.com",
-      "source_url": "https://betakit.com/birdbe-raises-13-million-usd-series-a-for-fertility-support-platform/",
-      "discovered_at": "2026-10-25T10:59:05+00:00",
-      "source": "rss",
-      "score": 83,
-      "gaps": [
-        "tech stack",
-        "people profiles",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://birdandbe.com",
-        "emails": [
-          {
-            "value": "hello@birdandbe.com",
-            "kind": "general",
-            "source_url": "https://birdandbe.com/pages/contact-us"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/birdandbeco"
-        },
-        "contact_page": "https://birdandbe.com/pages/contact-us",
-        "product_access": [],
-        "pages_crawled": [
-          "https://birdandbe.com/",
-          "https://birdandbe.com/pages/contact-us",
-          "https://birdandbe.com/pages/about-us"
-        ],
-        "enriched_at": "2026-10-25T11:00:08+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://betakit.com/birdbe-raises-13-million-usd-series-a-for-fertility-support-platform/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 22 Sep 2026 19:42:14 +0000",
-          "seen_at": "2026-10-25T10:59:44+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Samantha Diamond",
-          "role": "CEO",
-          "org": "Bird&Be",
-          "evidence": "Bird&Be CEO Samantha Diamond told BetaKit in an email that the round closed in August and included a small amount of secondary issuances.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Breanna Hughes",
-          "role": "Co‑founder",
-          "org": "Bird&Be",
-          "evidence": "Bird&Be was founded in 2019 by tech worker Breanna Hughes and Diamond, who was a public relations specialist.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Samantha Diamond",
-          "rel": "founded",
-          "dst": "Bird&Be",
-          "evidence": "Bird&Be was founded in 2019 by tech worker Breanna Hughes and Diamond"
-        },
-        {
-          "src": "Breanna Hughes",
-          "rel": "founded",
-          "dst": "Bird&Be",
-          "evidence": "Bird&Be was founded in 2019 by tech worker Breanna Hughes and Diamond"
-        },
-        {
-          "src": "BFG Partners",
-          "rel": "invested_in",
-          "dst": "Bird&Be",
-          "evidence": "co-led the round with consumer-focused VC BFG Partners"
-        },
-        {
-          "src": "BAM Ventures",
-          "rel": "invested_in",
-          "dst": "Bird&Be",
-          "evidence": "Supporting were BAM Ventures"
-        }
-      ]
-    },
-    {
-      "company_name": "Bia Health",
-      "core_product": "An AI assistant that helps clinicians decide on diagnostic plans to reduce unnecessary imaging and interventions.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling AI inference and integrating the assistant with diverse electronic health record systems.",
-      "value_prop_pitch": "You can eliminate the scaling bottleneck by building a Next.js front‑end that lazily loads patient context and calls a vector‑based semantic search layer for instant evidence retrieval. This lets the AI assistant serve thousands of clinicians with low latency while keeping the infrastructure simple and cost‑effective.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$2.15 million CAD",
-      "hq": "Québec City, Canada",
-      "website": "https://bia-health.com",
-      "source_url": "https://betakit.com/bia-health-raises-2-15-million-for-ai-to-reduce-unnecessary-medical-interventions/",
-      "discovered_at": "2026-10-25T10:59:05+00:00",
-      "source": "rss",
-      "score": 87,
-      "gaps": [
-        "tech stack"
-      ],
-      "contact": {
-        "website": "https://bia-health.com",
-        "emails": [
-          {
-            "value": "info@bia-health.com",
-            "kind": "general",
-            "source_url": "https://bia-health.com/contact"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+15814432442",
-            "kind": "main",
-            "source_url": "https://bia-health.com/contact"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/biahealth"
-        },
-        "contact_page": "https://bia-health.com/contact",
-        "product_access": [
-          {
-            "label": "Demo",
-            "url": "https://meetings-na3.hubspot.com/anne-sophie?uuid=6ef0b0d9-e7c7-45ec-b580-861a8dd6129f"
-          }
-        ],
-        "pages_crawled": [
-          "https://bia-health.com/",
-          "https://bia-health.com/contact",
-          "https://bia-health.com/about"
-        ],
-        "enriched_at": "2026-10-25T11:00:21+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://betakit.com/bia-health-raises-2-15-million-for-ai-to-reduce-unnecessary-medical-interventions/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Wed, 14 Oct 2026 15:39:54 +0000",
-          "seen_at": "2026-10-25T10:59:44+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Anne‑Sophie Paquet",
-          "role": "CEO and co‑founder",
-          "org": "Bia Health",
-          "evidence": "“Bia aims to reduce unnecessary and low‑value care, which represents an estimated 30 percent of healthcare in Canada, by helping clinicians make the most appropriate decision for each patient,” Bia Health CEO and co‑founder Anne‑Sophie Paquet wrote to BetaKit",
-          "linkedin": "https://www.linkedin.com/in/anne-sophie-paquet-7039a2b0",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://bia-health.com/about"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Anne‑Sophie Paquet",
-          "rel": "founded",
-          "dst": "Bia Health",
-          "evidence": "Bia Health CEO and co‑founder Anne‑Sophie Paquet wrote to BetaKit"
-        },
-        {
-          "src": "Finalta Capital",
-          "rel": "invested_in",
-          "dst": "Bia Health",
-          "evidence": "Finalta Capital provided $1.4 million in debt"
-        },
-        {
-          "src": "Anges Québec",
-          "rel": "invested_in",
-          "dst": "Bia Health",
-          "evidence": "Anges Québec led the equity portion"
-        },
-        {
-          "src": "Desjardins",
-          "rel": "invested_in",
-          "dst": "Bia Health",
-          "evidence": "Desjardins participated through its Startup en résidence program"
-        }
-      ]
-    },
-    {
-      "company_name": "Joinable Labs",
-      "core_product": "RAG in a BOX is an all‑in‑one prototyping toolkit that lets AI builders launch private Retrieval‑Augmented Generation systems up to 50× faster using no‑code templates or APIs.",
+      "company_name": "DropGenie",
+      "core_product": "A microfluidic chip that performs gene editing on tiny droplets, enabling high‑throughput biological screening with 100× less sample and reagent volume.",
       "tech_stack": [
-        "LLM APIs",
-        "retrieval‑augmented generation",
-        "no‑code platform"
+        "digital microfluidics",
+        "microfluidic chip",
+        "automation systems"
       ],
-      "likely_bottleneck": "efficiently indexing and searching massive proprietary document collections with low‑latency vector similarity queries",
-      "value_prop_pitch": "You can eliminate the indexing slowdown by building a Next.js front‑end that talks to a managed vector‑search service, letting you serve semantic results in milliseconds. Coupled with semantic search, your RAG pipeline will scale to billions of chunks without a single bottleneck.",
+      "likely_bottleneck": "Scaling the automated lab workflow software and integrating real‑time data pipelines across the microfluidic hardware.",
+      "value_prop_pitch": "You can replace the custom data‑pipeline glue with a Next.js front‑end that pulls experiment metadata into a vector‑semantic search index, letting scientists instantly query results across thousands of tiny‑drop runs. This eliminates the manual stitching of hardware logs and speeds up downstream analysis for your automation platform.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$2M",
-      "hq": "San Francisco, CA",
-      "website": "https://www.joinable.ai",
-      "source_url": "https://theaiinsider.tech/2025/08/07/joinable-labs-launches-to-accelerate-the-time-to-intelligence-of-private-ai-with-2m-seed-round-and-first-product-rag-in-a-box/",
-      "discovered_at": "2026-10-25T10:59:05+00:00",
-      "source": "web",
-      "score": 63,
+      "funding_stage": "seed-plus",
+      "funding_amount": "$5 million USD",
+      "hq": "Montréal and Boston",
+      "website": "",
+      "source_url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+      "discovered_at": "2026-10-26T12:30:47+00:00",
+      "source": "rss",
+      "score": 74,
       "gaps": [
-        "people profiles",
+        "website",
         "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.joinable.ai",
+        "website": "",
         "emails": [],
         "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-10-26T12:31:42+00:00",
+        "status": "no_website",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://betakit.com/dropgenie-raises-5-million-usd-backed-by-bdc-to-speed-up-biological-discovery/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Mon, 26 Oct 2026 10:00:00 +0000",
+          "seen_at": "2026-10-26T12:31:30+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Alison Hirukawa",
+          "role": "CEO & Co‑founder",
+          "org": "DropGenie",
+          "evidence": "CEO Alison Hirukawa met her co‑founders...",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Hugo Sinha",
+          "role": "Co‑founder",
+          "org": "DropGenie",
+          "evidence": "met Hugo Sinha... through a McGill‑associated research project",
+          "linkedin": "https://www.linkedin.com/in/hugo-sinha",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Mathieu Husser",
+          "role": "Co‑founder (former)",
+          "org": "DropGenie",
+          "evidence": "Mathieu Husser (who is no longer with the company)",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Skeleton Key",
+          "role": "Lead Investor",
+          "org": "Skeleton Key",
+          "evidence": "Massachusetts‑based Skeleton Key had led that financing",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Anges Québec",
+          "role": "Investor",
+          "org": "Anges Québec",
+          "evidence": "with participation from ... Anges Québec",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Alison Hirukawa",
+          "rel": "founded",
+          "dst": "DropGenie",
+          "evidence": "CEO Alison Hirukawa met her co‑founders..."
+        },
+        {
+          "src": "Hugo Sinha",
+          "rel": "cofounded",
+          "dst": "DropGenie",
+          "evidence": "met Hugo Sinha... through a McGill‑associated research project"
+        },
+        {
+          "src": "Mathieu Husser",
+          "rel": "cofounded",
+          "dst": "DropGenie",
+          "evidence": "Mathieu Husser (who is no longer with the company)"
+        },
+        {
+          "src": "Alison Hirukawa",
+          "rel": "previously_at",
+          "dst": "McGill University’s Goodman Cancer Research Centre",
+          "evidence": "Hirukawa, who was a postdoctoral fellow at McGill University’s Goodman Cancer Research Centre"
+        },
+        {
+          "src": "BDC Capital’s Thrive Fund",
+          "rel": "invested_in",
+          "dst": "DropGenie",
+          "evidence": "BDC Capital’s Thrive Fund as a new investor for its seed‑plus financing"
+        },
+        {
+          "src": "Skeleton Key",
+          "rel": "invested_in",
+          "dst": "DropGenie",
+          "evidence": "Massachusetts‑based Skeleton Key had led that financing"
+        },
+        {
+          "src": "Merck Global Health Innovation Fund",
+          "rel": "invested_in",
+          "dst": "DropGenie",
+          "evidence": "alongside Merck Global Health Innovation Fund"
+        },
+        {
+          "src": "CQDM",
+          "rel": "invested_in",
+          "dst": "DropGenie",
+          "evidence": "alongside ... CQDM"
+        },
+        {
+          "src": "Real Ventures",
+          "rel": "invested_in",
+          "dst": "DropGenie",
+          "evidence": "with participation from Montréal’s Real Ventures"
+        },
+        {
+          "src": "Anges Québec",
+          "rel": "invested_in",
+          "dst": "DropGenie",
+          "evidence": "with participation from ... Anges Québec"
+        },
+        {
+          "src": "AbbVie",
+          "rel": "customer_of",
+          "dst": "DropGenie",
+          "evidence": "partnerships with AbbVie, UCB Pharma"
+        },
+        {
+          "src": "UCB Pharma",
+          "rel": "customer_of",
+          "dst": "DropGenie",
+          "evidence": "partnerships with AbbVie, UCB Pharma"
+        },
+        {
+          "src": "Danaher",
+          "rel": "customer_of",
+          "dst": "DropGenie",
+          "evidence": "life science instrument companies like Danaher and Sartorius"
+        },
+        {
+          "src": "Sartorius",
+          "rel": "customer_of",
+          "dst": "DropGenie",
+          "evidence": "life science instrument companies like Danaher and Sartorius"
+        }
+      ]
+    },
+    {
+      "company_name": "Endo",
+      "core_product": "An AI‑powered software platform that centralizes roster management, contract tracking and endorsement valuation for sports agencies.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the proprietary AI valuation engine and keeping the data pipeline performant as agency data grows.",
+      "value_prop_pitch": "We can rebuild your front‑end with Next.js to serve a fast, SEO‑friendly UI while offloading heavy rendering to the edge. Then we’ll add a vector‑based semantic search layer so your valuation engine can retrieve relevant market data in milliseconds, eliminating latency bottlenecks.",
+      "is_relevant": true,
+      "funding_stage": "pre‑seed",
+      "funding_amount": "$815,000 CAD",
+      "hq": "Toronto",
+      "website": "https://www.endodeals.com",
+      "source_url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+      "discovered_at": "2026-10-26T12:30:47+00:00",
+      "source": "rss",
+      "score": 85,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.endodeals.com",
+        "emails": [
+          {
+            "value": "admin@endodeals.com",
+            "kind": "person",
+            "source_url": "https://www.endodeals.com/"
+          }
+        ],
+        "phones": [],
         "socials": {
-          "twitter": "https://x.com/joinableai",
-          "linkedin": "https://www.linkedin.com/company/joinable"
+          "linkedin": "https://www.linkedin.com/company/endodeals"
         },
         "contact_page": "",
         "product_access": [
           {
-            "label": "Docs / API Docs",
-            "url": "https://joinable.gitbook.io/joinable-api-docs"
-          },
-          {
-            "label": "Get started",
-            "url": "https://platform.joinable.ai/start"
+            "label": "Pricing",
+            "url": "https://www.endodeals.com/"
           }
         ],
         "pages_crawled": [
-          "https://www.joinable.ai/",
-          "https://www.joinable.ai/company/"
+          "https://www.endodeals.com/",
+          "https://www.endodeals.com/about"
         ],
-        "enriched_at": "2026-10-25T11:00:24+00:00",
+        "enriched_at": "2026-10-26T12:31:46+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://betakit.com/athlete-led-endo-launches-with-815000-to-modernize-sports-agencies/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Wed, 07 Oct 2026 10:00:00 +0000",
+          "seen_at": "2026-10-26T12:31:30+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Michael Boushy",
+          "role": "CEO & Co‑founder",
+          "org": "Endo",
+          "evidence": "Endo co‑founder and CEO Michael Boushy told BetaKit",
+          "linkedin": "https://www.linkedin.com/in/michaelboushy",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.endodeals.com/about"
+        },
+        {
+          "name": "Jack Lavorato",
+          "role": "COO & Co‑founder",
+          "org": "Endo",
+          "evidence": "Jack Lavorato (Endo’s co‑founder and COO)",
+          "linkedin": "https://www.linkedin.com/in/jackalavorto",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.endodeals.com/about"
+        },
+        {
+          "name": "Anthony Baxter",
+          "role": "Co‑founder & Founding Engineer",
+          "org": "Endo",
+          "evidence": "recruited ... Anthony Baxter, as co‑founder and founding engineer",
+          "linkedin": "https://www.linkedin.com/in/anthonybax",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.endodeals.com/about"
+        },
+        {
+          "name": "Matteo Tanzi",
+          "role": "Senior Product Engineer",
+          "org": "Endo",
+          "evidence": "former BMO developer Matteo Tanzi as senior product engineer",
+          "linkedin": "https://www.linkedin.com/in/matteospencertanzi",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.endodeals.com/about"
+        },
+        {
+          "name": "John Albright",
+          "role": "Partner",
+          "org": "Relay Ventures",
+          "evidence": "Relay founder and partner John Albright told BetaKit",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Michael Boushy",
+          "rel": "founded",
+          "dst": "Endo",
+          "evidence": "Endo co‑founder and CEO Michael Boushy"
+        },
+        {
+          "src": "Jack Lavorato",
+          "rel": "cofounded",
+          "dst": "Endo",
+          "evidence": "Jack Lavorato (Endo’s co‑founder and COO)"
+        },
+        {
+          "src": "Anthony Baxter",
+          "rel": "cofounded",
+          "dst": "Endo",
+          "evidence": "Anthony Baxter, as co‑founder and founding engineer"
+        },
+        {
+          "src": "Matteo Tanzi",
+          "rel": "works_at",
+          "dst": "Endo",
+          "evidence": "Matteo Tanzi as senior product engineer"
+        },
+        {
+          "src": "Relay Ventures",
+          "rel": "invested_in",
+          "dst": "Endo",
+          "evidence": "$815,000 CAD in pre‑seed funding led by Toronto’s Relay Ventures"
+        },
+        {
+          "src": "John Albright",
+          "rel": "works_at",
+          "dst": "Relay Ventures",
+          "evidence": "Relay founder and partner John Albright"
+        }
+      ]
+    },
+    {
+      "company_name": "ZeroEntropy",
+      "core_product": "A developer‑first API that handles ingestion, indexing, re‑ranking and evaluation to provide fast, accurate retrieval‑augmented generation for AI applications.",
+      "tech_stack": [
+        "vector databases",
+        "keyword search",
+        "re‑ranking models",
+        "large language models"
+      ],
+      "likely_bottleneck": "high latency and scaling challenges of vector search during retrieval",
+      "value_prop_pitch": "I can help you build a fast, scalable front‑end with Next.js that caches and pre‑fetches your vector search results, reducing latency for end‑users. Coupled with a semantic search layer built on optimized vector indexes, we’ll eliminate the bottleneck around retrieval speed.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$4.2M",
+      "hq": "San Francisco",
+      "website": "https://www.zeroentropy.dev",
+      "source_url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
+      "discovered_at": "2026-10-26T12:30:47+00:00",
+      "source": "web",
+      "score": 88,
+      "gaps": [
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.zeroentropy.dev",
+        "emails": [
+          {
+            "value": "contact@zeroentropy.dev",
+            "kind": "general",
+            "source_url": "https://www.zeroentropy.dev/"
+          },
+          {
+            "value": "founders@zeroentropy.dev",
+            "kind": "person",
+            "source_url": "https://www.zeroentropy.dev/"
+          },
+          {
+            "value": "careers@zeroentropy.dev",
+            "kind": "other",
+            "source_url": "https://www.zeroentropy.dev/about"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/zeroentropy-ai",
+          "twitter": "https://x.com/ZeroEntropy_AI",
+          "linkedin": "https://www.linkedin.com/company/zeroentropy-inc"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Documentation",
+            "url": "https://docs.zeroentropy.dev/introduction"
+          },
+          {
+            "label": "Pricing",
+            "url": "https://www.zeroentropy.dev/pricing/"
+          },
+          {
+            "label": "Start Now",
+            "url": "https://dashboard.zeroentropy.dev/signup"
+          },
+          {
+            "label": "Try Now",
+            "url": "https://dashboard.zeroentropy.dev"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.zeroentropy.dev/",
+          "https://www.zeroentropy.dev/about",
+          "https://www.zeroentropy.dev/",
+          "https://www.zeroentropy.dev/"
+        ],
+        "enriched_at": "2026-10-26T12:31:51+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -269,19 +430,41 @@
         {
           "type": "funding",
           "source": "web",
-          "url": "https://theaiinsider.tech/2025/08/07/joinable-labs-launches-to-accelerate-the-time-to-intelligence-of-private-ai-with-2m-seed-round-and-first-product-rag-in-a-box/",
+          "url": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [
         {
-          "name": "Brian Shin",
-          "role": "Co-Founder",
-          "org": "Joinable Labs",
-          "evidence": "\"AI Builders need more than models — they need alignment and momentum,\" said Brian Shin, Co-Founder of Joinable Labs",
+          "name": "Ghita Houir Alami",
+          "role": "CEO & Co‑founder",
+          "org": "ZeroEntropy",
+          "evidence": "co‑founded by CEO Ghita Houir Alami",
+          "linkedin": "https://www.linkedin.com/in/ghita-houir-alami/en",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/"
+        },
+        {
+          "name": "Nicholas Pipitone",
+          "role": "CTO & Co‑founder",
+          "org": "ZeroEntropy",
+          "evidence": "CTO Nicholas Pipitone",
+          "linkedin": "https://www.linkedin.com/in/nicholas-pipitone",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techcrunch.com/2025/07/09/moroccan-founder-raises-4-2m-for-her-yc-backed-startup-building-the-next-layer-of-ai-search/"
+        },
+        {
+          "name": "Zoe Perret",
+          "role": "Partner",
+          "org": "Initialized Capital",
+          "evidence": "Zoe Perret, partner at Initialized Capital",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -291,152 +474,107 @@
       ],
       "edges": [
         {
-          "src": "Brian Shin",
+          "src": "Ghita Houir Alami",
           "rel": "founded",
-          "dst": "Joinable Labs",
-          "evidence": "\"AI Builders need more than models — they need alignment and momentum,\" said Brian Shin, Co-Founder of Joinable Labs"
+          "dst": "ZeroEntropy",
+          "evidence": "co‑founded by CEO Ghita Houir Alami"
         },
         {
-          "src": "Accomplice Blockchain",
+          "src": "Nicholas Pipitone",
+          "rel": "cofounded",
+          "dst": "ZeroEntropy",
+          "evidence": "CTO Nicholas Pipitone"
+        },
+        {
+          "src": "Initialized Capital",
           "rel": "invested_in",
-          "dst": "Joinable Labs",
-          "evidence": "Joinable’s launch is supported by $2 million in seed funding from ... top-tier funds such as Accomplice Blockchain"
+          "dst": "ZeroEntropy",
+          "evidence": "The round was led by Initialized Capital"
+        },
+        {
+          "src": "Transpose Platform",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "participation from ... Transpose Platform"
+        },
+        {
+          "src": "22 Ventures",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "participation from ... 22 Ventures"
+        },
+        {
+          "src": "a16z Scout",
+          "rel": "invested_in",
+          "dst": "ZeroEntropy",
+          "evidence": "participation from ... a16z Scout"
         }
       ]
     },
     {
-      "company_name": "Odin Robotics",
-      "core_product": "Robot arms that automate repetitive manual work in existing factories such as machine tending, packing, and palletizing.",
-      "tech_stack": [],
-      "likely_bottleneck": "Integrating perception models with deterministic control to handle highly variable parts in real‑time.",
-      "value_prop_pitch": "You could surface the robot’s sensor data through a Next.js dashboard that lets engineers query past runs with natural language, instantly surfacing edge‑cases that break the deterministic code. A vector‑based semantic search layer would let you retrieve similar failure scenarios across factories, speeding up model retraining and reducing downtime.",
+      "company_name": "Pomerado",
+      "core_product": "Pomerado turns any website into an API/MCP that agents can call in minutes, providing a faster, cheaper, and more reliable alternative to browser‑based automation.",
+      "tech_stack": [
+        "Python",
+        "Node.js",
+        "Claude",
+        "Codex",
+        "GitHub"
+      ],
+      "likely_bottleneck": "building and maintaining deterministic integrations for legacy web portals at scale",
+      "value_prop_pitch": "You can eliminate the integration bottleneck by building a Next.js front‑end that orchestrates site interactions and caches results, while a vector‑based semantic search layer quickly maps user intents to the correct page actions. This reduces latency, cuts dev time, and makes your APIs more reliable without manual upkeep.",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://odin-robotics.com",
-      "source_url": "https://www.ycombinator.com/launches/WJg-odin-robotics-robot-arms-that-do-repetitive-manual-work-in-existing-factories",
-      "discovered_at": "2026-10-25T10:59:05+00:00",
+      "website": "https://pomerado.ai",
+      "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+      "discovered_at": "2026-10-26T12:30:47+00:00",
       "source": "yc",
-      "score": 46,
+      "score": 68,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
-        "tech stack",
-        "investors",
-        "phone"
+        "investors"
       ],
       "contact": {
-        "website": "https://odin-robotics.com",
+        "website": "https://pomerado.ai",
         "emails": [
           {
-            "value": "founders@odin-robotics.com",
+            "value": "founders@pomerado.ai",
             "kind": "person",
-            "source_url": "https://odin-robotics.com/"
+            "source_url": "https://pomerado.ai/"
           }
         ],
-        "phones": [],
+        "phones": [
+          {
+            "value": "+14155550142",
+            "kind": "main",
+            "source_url": "https://pomerado.ai/"
+          }
+        ],
         "socials": {},
         "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://odin-robotics.com/"
-        ],
-        "enriched_at": "2026-10-25T11:00:30+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WJg-odin-robotics-robot-arms-that-do-repetitive-manual-work-in-existing-factories",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-10-25T10:59:44+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Samriddhi Singh",
-          "role": "co‑founder",
-          "org": "Odin Robotics",
-          "evidence": "Samriddhi ... co‑founders at Odin Robotics",
-          "linkedin": "https://linkedin.com/in/samriddhi-simi-s-1240321b5/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.ycombinator.com/launches/WJg-odin-robotics-robot-arms-that-do-repetitive-manual-work-in-existing-factories"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Alper Sametoglu",
-          "rel": "founded",
-          "dst": "Odin Robotics",
-          "evidence": "Alper ... co‑founders at Odin Robotics"
-        },
-        {
-          "src": "Samriddhi Singh",
-          "rel": "founded",
-          "dst": "Odin Robotics",
-          "evidence": "Samriddhi ... co‑founders at Odin Robotics"
-        }
-      ]
-    },
-    {
-      "company_name": "Agent Relay",
-      "core_product": "Real‑time messaging platform that lets coding agents (Claude, Codex, Cursor, Conductor, etc.) communicate directly without human hand‑off",
-      "tech_stack": [],
-      "likely_bottleneck": "scaling low‑latency, secure message routing between many concurrent AI agents",
-      "value_prop_pitch": "You could replace the custom routing layer with a Next.js front‑end that leverages vector semantic search to instantly match agents and route messages, cutting latency dramatically. This also gives you built‑in authentication and observability so you can scale the relay without building a bespoke infra stack.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://agentrelay.com",
-      "source_url": "https://www.ycombinator.com/launches/WI4-agent-relay-let-your-teams-coding-agents-message-each-other",
-      "discovered_at": "2026-10-25T10:59:05+00:00",
-      "source": "yc",
-      "score": 57,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://agentrelay.com",
-        "emails": [
-          {
-            "value": "hello@agentrelay.com",
-            "kind": "general",
-            "source_url": "https://agentrelay.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/agent_relay"
-        },
-        "contact_page": "https://agentrelay.com/contact",
         "product_access": [
           {
-            "label": "Sign up for free",
-            "url": "https://agentrelay.com/cloud/api/auth/google/start?next=%2Fteams%2Fconnect"
+            "label": "Pricing",
+            "url": "https://pomerado.ai/"
+          },
+          {
+            "label": "Sign up",
+            "url": "https://app.pomerado.ai/auth/sign-in?screen=sign-up&returnTo=%2Fhome"
+          },
+          {
+            "label": "Sign up",
+            "url": "https://app.pomerado.ai/auth/sign-in?screen=sign-up&returnTo=%2Fupgrade%3Finterval%3Dmonthly%26checkout%3D1"
           }
         ],
         "pages_crawled": [
-          "https://agentrelay.com/",
-          "https://agentrelay.com/contact",
-          "https://agentrelay.com/about",
-          "https://agentrelay.com/team"
+          "https://pomerado.ai/",
+          "https://pomerado.ai/about"
         ],
-        "enriched_at": "2026-10-25T11:00:37+00:00",
+        "enriched_at": "2026-10-26T12:31:55+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -445,38 +583,73 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WI4-agent-relay-let-your-teams-coding-agents-message-each-other",
+          "url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [
         {
-          "name": "Will Washburn",
+          "name": "Alan Ma",
           "role": "Co‑founder",
-          "org": "Agent Relay",
-          "evidence": "We’re Will and Khaliq.",
-          "linkedin": "https://www.linkedin.com/in/willwashburn",
+          "org": "Pomerado",
+          "evidence": "Hi everyone! We’re @Alan Ma and @Akshay Manglik from @Pomerado.",
+          "linkedin": "https://www.linkedin.com/in/ajma867/",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "search"
+          "link_source": ""
+        },
+        {
+          "name": "Akshay Manglik",
+          "role": "Co‑founder",
+          "org": "Pomerado",
+          "evidence": "Hi everyone! We’re @Alan Ma and @Akshay Manglik from @Pomerado.",
+          "linkedin": "https://www.linkedin.com/in/akshay-manglik/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Will Washburn",
+          "src": "Alan Ma",
           "rel": "founded",
-          "dst": "Agent Relay",
-          "evidence": "We’re Will and Khaliq."
+          "dst": "Pomerado",
+          "evidence": "Hi everyone! We’re @Alan Ma and @Akshay Manglik from @Pomerado."
         },
         {
-          "src": "Will Washburn",
+          "src": "Akshay Manglik",
+          "rel": "founded",
+          "dst": "Pomerado",
+          "evidence": "Hi everyone! We’re @Alan Ma and @Akshay Manglik from @Pomerado."
+        },
+        {
+          "src": "Alan Ma",
           "rel": "previously_at",
-          "dst": "Tailwind",
-          "evidence": "Will spent 14 years building Tailwind to eight-figure ARR"
+          "dst": "McKinsey",
+          "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI"
+        },
+        {
+          "src": "Alan Ma",
+          "rel": "previously_at",
+          "dst": "Scale AI",
+          "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI"
+        },
+        {
+          "src": "Akshay Manglik",
+          "rel": "previously_at",
+          "dst": "McKinsey",
+          "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI"
+        },
+        {
+          "src": "Akshay Manglik",
+          "rel": "previously_at",
+          "dst": "Scale AI",
+          "evidence": "@Alan Ma and I are ex‑McKinsey and ex‑Scale AI"
         }
       ]
     },
@@ -492,7 +665,7 @@
       "hq": "Helsinki, FI",
       "website": "https://treat.health",
       "source_url": "https://treat.health/en/careers/full-stack-engineer/",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -523,7 +696,7 @@
           "https://treat.health/contact",
           "https://treat.health/team"
         ],
-        "enriched_at": "2026-10-25T11:00:44+00:00",
+        "enriched_at": "2026-10-26T12:31:59+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -540,7 +713,7 @@
             "eng"
           ],
           "posted_at": "2026-10-15T14:30:58Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -558,7 +731,7 @@
       "hq": "",
       "website": "https://neuralframe.com",
       "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -586,7 +759,7 @@
           "https://neuralframe.com/contact-us/",
           "https://neuralframe.com/contact-us/"
         ],
-        "enriched_at": "2026-10-25T11:00:52+00:00",
+        "enriched_at": "2026-10-26T12:32:06+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -604,7 +777,7 @@
             "eng"
           ],
           "posted_at": "2026-10-14T21:53:28Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -622,7 +795,7 @@
       "hq": "",
       "website": "https://exlabora.com",
       "source_url": "https://exlabora.com/open-roles.html",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -649,7 +822,7 @@
           "https://exlabora.com/contact",
           "https://exlabora.com/team"
         ],
-        "enriched_at": "2026-10-25T11:00:55+00:00",
+        "enriched_at": "2026-10-26T12:32:10+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -668,7 +841,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T17:28:12Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -686,7 +859,7 @@
       "hq": "",
       "website": "https://www.govstar.us",
       "source_url": "https://govstar.us",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -719,7 +892,7 @@
           "https://www.govstar.us/contact",
           "https://www.govstar.us/team"
         ],
-        "enriched_at": "2026-10-25T11:00:59+00:00",
+        "enriched_at": "2026-10-26T12:32:14+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -737,7 +910,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T16:26:28Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -755,7 +928,7 @@
       "hq": "",
       "website": "https://sendery.co",
       "source_url": "https://sendery.co",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -797,10 +970,10 @@
         ],
         "pages_crawled": [
           "https://sendery.co/en",
-          "https://sendery.co/en/about",
-          "https://sendery.co/en/contact"
+          "https://sendery.co/en/contact",
+          "https://sendery.co/en/about"
         ],
-        "enriched_at": "2026-10-25T11:01:03+00:00",
+        "enriched_at": "2026-10-26T12:32:18+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -817,7 +990,7 @@
             "eng"
           ],
           "posted_at": "2026-10-13T03:40:30Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -835,7 +1008,7 @@
       "hq": "",
       "website": "https://typify.dev",
       "source_url": "https://typify.dev",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -878,7 +1051,7 @@
           "https://typify.dev/",
           "https://typify.dev/landing/contact"
         ],
-        "enriched_at": "2026-10-25T11:01:07+00:00",
+        "enriched_at": "2026-10-26T12:32:21+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -896,7 +1069,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T21:00:23Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -914,7 +1087,7 @@
       "hq": "",
       "website": "",
       "source_url": "https://news.ycombinator.com/item?id=50062997",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 10,
       "gaps": [
@@ -943,7 +1116,7 @@
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [],
-        "enriched_at": "2026-10-25T11:01:09+00:00",
+        "enriched_at": "2026-10-26T12:32:25+00:00",
         "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
@@ -960,7 +1133,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T20:59:57Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -978,7 +1151,7 @@
       "hq": "",
       "website": "https://hiogolf.com",
       "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1018,10 +1191,10 @@
         "product_access": [],
         "pages_crawled": [
           "https://hiogolf.com/",
-          "https://hiogolf.com/about-us",
-          "https://hiogolf.com/contact-us"
+          "https://hiogolf.com/contact-us",
+          "https://hiogolf.com/about-us"
         ],
-        "enriched_at": "2026-10-25T11:01:24+00:00",
+        "enriched_at": "2026-10-26T12:32:36+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1038,7 +1211,7 @@
             "sales"
           ],
           "posted_at": "2026-10-12T18:51:56Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -1056,7 +1229,7 @@
       "hq": "",
       "website": "https://startuphakk.com",
       "source_url": "https://startuphakk.com/jobs",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1094,7 +1267,7 @@
           "https://startuphakk.com/",
           "https://startuphakk.com/contact-us/"
         ],
-        "enriched_at": "2026-10-25T11:01:29+00:00",
+        "enriched_at": "2026-10-26T12:32:41+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1111,7 +1284,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T17:17:48Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -1129,7 +1302,7 @@
       "hq": "",
       "website": "https://www.generalintelligenceholdings.com",
       "source_url": "https://www.generalintelligenceholdings.com",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1158,11 +1331,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://www.generalintelligenceholdings.com/",
+          "https://www.generalintelligenceholdings.com/about",
           "https://www.generalintelligenceholdings.com/team",
-          "https://www.generalintelligenceholdings.com/contact",
-          "https://www.generalintelligenceholdings.com/about"
+          "https://www.generalintelligenceholdings.com/contact"
         ],
-        "enriched_at": "2026-10-25T11:01:32+00:00",
+        "enriched_at": "2026-10-26T12:32:44+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1179,7 +1352,7 @@
             "other"
           ],
           "posted_at": "2026-10-12T11:51:09Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -1197,7 +1370,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/1pm4u2ys7us",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1236,10 +1409,10 @@
         ],
         "pages_crawled": [
           "https://www.greenhouse.com/",
-          "https://www.greenhouse.com/company",
-          "https://www.greenhouse.com/contact"
+          "https://www.greenhouse.com/contact",
+          "https://www.greenhouse.com/company"
         ],
-        "enriched_at": "2026-10-25T11:01:38+00:00",
+        "enriched_at": "2026-10-26T12:32:50+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1256,7 +1429,7 @@
             "eng"
           ],
           "posted_at": "2026-10-10T13:55:55Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -1274,7 +1447,7 @@
       "hq": "",
       "website": "https://www.propellabs.ai",
       "source_url": "https://propellabs.ai",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -1312,7 +1485,7 @@
           "https://www.propellabs.ai/contact",
           "https://www.propellabs.ai/team"
         ],
-        "enriched_at": "2026-10-25T11:01:42+00:00",
+        "enriched_at": "2026-10-26T12:32:54+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1332,7 +1505,7 @@
             "other"
           ],
           "posted_at": "2026-10-09T13:12:43Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -1350,7 +1523,7 @@
       "hq": "",
       "website": "https://skieslearn.com",
       "source_url": "https://skieslearn.com/ndbi/jobs/developer",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1385,7 +1558,7 @@
           "https://skieslearn.com/",
           "https://skieslearn.com/content/team"
         ],
-        "enriched_at": "2026-10-25T11:01:44+00:00",
+        "enriched_at": "2026-10-26T12:32:58+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1404,7 +1577,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T23:45:00Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -1422,7 +1595,7 @@
       "hq": "",
       "website": "https://www.onechronos.com",
       "source_url": "https://news.ycombinator.com/item?id=50012248",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1495,7 +1668,7 @@
           "https://www.onechronos.com/about/",
           "https://www.onechronos.com/contact/"
         ],
-        "enriched_at": "2026-10-25T11:01:50+00:00",
+        "enriched_at": "2026-10-26T12:33:04+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1516,7 +1689,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T21:04:09Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
@@ -1534,7 +1707,7 @@
       "hq": "",
       "website": "https://ojin.ai",
       "source_url": "https://ojin.ai",
-      "discovered_at": "2026-10-25T10:59:44+00:00",
+      "discovered_at": "2026-10-26T12:31:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1578,10 +1751,10 @@
         ],
         "pages_crawled": [
           "https://ojin.ai/",
-          "https://ojin.ai/enterprise",
-          "https://ojin.ai/about-us"
+          "https://ojin.ai/about-us",
+          "https://ojin.ai/enterprise"
         ],
-        "enriched_at": "2026-10-25T11:01:55+00:00",
+        "enriched_at": "2026-10-26T12:33:09+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1598,7 +1771,7 @@
             "eng"
           ],
           "posted_at": "2026-10-08T11:10:20Z",
-          "seen_at": "2026-10-25T10:59:44+00:00"
+          "seen_at": "2026-10-26T12:31:30+00:00"
         }
       ],
       "people": [],
