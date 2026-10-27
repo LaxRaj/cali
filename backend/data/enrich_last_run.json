@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-10-26T15:14:58+00:00",
+  "started_at": "2026-10-27T14:19:52+00:00",
   "skipped": "",
   "startups": [
     {
@@ -26,7 +26,25 @@
       "notes": [
         "no website found"
       ]
+    },
+    {
+      "company": "Slingshot Insurance",
+      "score": 88,
+      "gaps": [
+        "location",
+        "phone"
+      ],
+      "website": "https://www.slingshotinsurance.com",
+      "status": "ok",
+      "emails": 2,
+      "phones": 0,
+      "people": 2,
+      "edges": 5,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
     }
   ],
-  "tokens": 0
+  "tokens": 1345
 }

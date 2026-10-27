@@ -4447,6 +4447,426 @@
     "outreach": []
   },
   {
+    "company_name": "Slingshot Insurance",
+    "core_product": "A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
+    "tech_stack": [
+      "AI",
+      "cloud",
+      "APIs"
+    ],
+    "likely_bottleneck": "Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
+    "value_prop_pitch": "I can build a Next.js front‑end that surfaces policy data instantly using vector semantic search, cutting down the time your team spends stitching together spreadsheets and emails. This will let your AI engine focus on underwriting while the UI handles complex queries in real time.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+    "discovered_at": "2026-10-23T11:15:40+00:00",
+    "funding_amount": "$27 million",
+    "hq": "",
+    "website": "https://www.slingshotinsurance.com",
+    "score": 88,
+    "last_seen": "2026-10-23T11:18:40+00:00",
+    "slug": "slingshot-insurance",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 15,
+      "contact": 16
+    },
+    "gaps": [
+      "location",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://www.slingshotinsurance.com",
+      "emails": [
+        {
+          "value": "hello@slingshotinsurance.com",
+          "kind": "general",
+          "source_url": "https://www.slingshotinsurance.com/"
+        },
+        {
+          "value": "press@slingshotinsurance.com",
+          "kind": "press",
+          "source_url": "https://www.slingshotinsurance.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/slingshot-insurance"
+      },
+      "contact_page": "https://www.slingshotinsurance.com/contact/",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.slingshotinsurance.com/",
+        "https://www.slingshotinsurance.com/contact/",
+        "https://www.slingshotinsurance.com/team/"
+      ],
+      "enriched_at": "2026-10-27T14:20:07+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "rss",
+        "url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "Thu, 22 Oct 2026 13:00:23 +0000",
+        "seen_at": "2026-10-23T11:16:48+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Ethan Genteman",
+        "role": "co‑founder & CEO",
+        "org": "Slingshot Insurance",
+        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
+        "linkedin": "https://www.linkedin.com/in/ethan-genteman",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "search"
+      },
+      {
+        "name": "Jim Hays",
+        "role": "board member",
+        "org": "Slingshot Insurance",
+        "evidence": "Jim Hays, who will join Slingshot’s board",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Ethan Genteman",
+        "rel": "founded",
+        "dst": "Slingshot Insurance",
+        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance"
+      },
+      {
+        "src": "Brock Noland",
+        "rel": "cofounded",
+        "dst": "Slingshot Insurance",
+        "evidence": "Noland is also a Slingshot co‑founder"
+      },
+      {
+        "src": "Rally Ventures",
+        "rel": "invested_in",
+        "dst": "Slingshot Insurance",
+        "evidence": "Rally Ventures ... co‑led the round"
+      },
+      {
+        "src": "Skyward Group",
+        "rel": "invested_in",
+        "dst": "Slingshot Insurance",
+        "evidence": "Skyward Group co‑led the round"
+      },
+      {
+        "src": "Justin Kaufenberg",
+        "rel": "backed_by",
+        "dst": "Slingshot Insurance",
+        "evidence": "Justin Kaufenberg, managing director at Rally Ventures"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "hot",
+      "priority": 97.0,
+      "reasons": [
+        "lead score 88",
+        "signal strength 2.4/10: funding",
+        "found 4 day(s) ago (hot)",
+        "fresh, strong fit and a published way to reach them"
+      ],
+      "next_step": "Email/call hello@slingshotinsurance.com with the pitch",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "slingshot insurance",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "slingshot insurance",
+        "field": "funding_amount",
+        "label": "funding_amount: $27 million",
+        "value": "$27 million",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "slingshot insurance",
+        "field": "core_product",
+        "label": "core_product: A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
+        "value": "A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "slingshot insurance",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
+        "value": "Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "ethan genteman|slingshot insurance",
+        "field": "role",
+        "label": "Ethan Genteman · co‑founder & CEO",
+        "value": "co‑founder & CEO",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "ethan genteman|slingshot insurance",
+        "field": "linkedin",
+        "label": "Ethan Genteman · linkedin",
+        "value": "https://www.linkedin.com/in/ethan-genteman",
+        "source_url": "search",
+        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "jim hays|slingshot insurance",
+        "field": "role",
+        "label": "Jim Hays · board member",
+        "value": "board member",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Jim Hays, who will join Slingshot’s board",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "ethan genteman|founded|slingshot insurance",
+        "field": "founded",
+        "label": "Ethan Genteman founded Slingshot Insurance",
+        "value": "Ethan Genteman founded Slingshot Insurance",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "brock noland|cofounded|slingshot insurance",
+        "field": "cofounded",
+        "label": "Brock Noland cofounded Slingshot Insurance",
+        "value": "Brock Noland cofounded Slingshot Insurance",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Noland is also a Slingshot co‑founder",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "rally ventures|invested_in|slingshot insurance",
+        "field": "invested_in",
+        "label": "Rally Ventures invested in Slingshot Insurance",
+        "value": "Rally Ventures invested_in Slingshot Insurance",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Rally Ventures ... co‑led the round",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "skyward group|invested_in|slingshot insurance",
+        "field": "invested_in",
+        "label": "Skyward Group invested in Slingshot Insurance",
+        "value": "Skyward Group invested_in Slingshot Insurance",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Skyward Group co‑led the round",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "justin kaufenberg|backed_by|slingshot insurance",
+        "field": "backed_by",
+        "label": "Justin Kaufenberg backed by Slingshot Insurance",
+        "value": "Justin Kaufenberg backed_by Slingshot Insurance",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "slingshot insurance",
+        "field": "website",
+        "label": "website: https://www.slingshotinsurance.com",
+        "value": "https://www.slingshotinsurance.com",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-27T14:19:53+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "slingshot insurance",
+        "field": "email",
+        "label": "email: hello@slingshotinsurance.com",
+        "value": "hello@slingshotinsurance.com",
+        "source_url": "https://www.slingshotinsurance.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-27T14:19:53+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "slingshot insurance",
+        "field": "email",
+        "label": "email: press@slingshotinsurance.com",
+        "value": "press@slingshotinsurance.com",
+        "source_url": "https://www.slingshotinsurance.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-27T14:19:53+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "slingshot insurance",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/slingshot-insurance",
+        "value": "https://www.linkedin.com/company/slingshot-insurance",
+        "source_url": "https://www.slingshotinsurance.com/contact/",
+        "evidence": "",
+        "run_id": "backfill-2026-10-27",
+        "first_seen": "2026-10-27T14:19:53+00:00",
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "brock noland|vertical insure",
+        "field": "role",
+        "label": "Brock Noland · co‑founder & CEO of Vertical Insure",
+        "value": "co‑founder & CEO of Vertical Insure",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Noland is also a Slingshot co‑founder",
+        "run_id": "20261023T111503Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-23T11:18:40+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "justin kaufenberg|rally ventures",
+        "field": "role",
+        "label": "Justin Kaufenberg · Managing Director at Rally Ventures",
+        "value": "Managing Director at Rally Ventures",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+        "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
+        "run_id": "20261023T111503Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-10-23T11:18:40+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money",
+        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "hello@slingshotinsurance.com",
+      "to_source_url": "https://www.slingshotinsurance.com/",
+      "subject": "Slingshot Insurance: a thought on Scaling data pipelines and regulatory‑compliance automation ",
+      "body": "Hi Ethan,\n\nCongrats on the new funding (https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/).\nI'd like to use Slingshot Insurance and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Slingshot Insurance: A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: Scaling data pipelines and regulatory‑compliance automation for low‑margin policies.\n\nI can build a Next.js front‑end that surfaces policy data instantly using vector semantic search, cutting down the time your team spends stitching together spreadsheets and emails.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hello%40slingshotinsurance.com?subject=Slingshot%20Insurance%3A%20a%20thought%20on%20Scaling%20data%20pipelines%20and%20regulatory%E2%80%91compliance%20automation%20&body=Hi%20Ethan%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/%29.%0AI%27d%20like%20to%20use%20Slingshot%20Insurance%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Slingshot%20Insurance%3A%20A%20platform%20that%20enables%20vertical%20SaaS%20companies%20to%20offer%20embedded%20insurance%20policies%20using%20AI%E2%80%91driven%20data%20automation.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20seed%20stage%29.%0AOne%20thing%20I%20noticed%3A%20Scaling%20data%20pipelines%20and%20regulatory%E2%80%91compliance%20automation%20for%20low%E2%80%91margin%20policies.%0A%0AI%20can%20build%20a%20Next.js%20front%E2%80%91end%20that%20surfaces%20policy%20data%20instantly%20using%20vector%20semantic%20search%2C%20cutting%20down%20the%20time%20your%20team%20spends%20stitching%20together%20spreadsheets%20and%20emails.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Molagri",
     "core_product": "Developing easily updatable pesticides that evolve alongside pest resistance using engineered virus platforms.",
     "tech_stack": [],
@@ -8420,7 +8840,7 @@
       "reasons": [
         "lead score 85",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call admin@endodeals.com with the pitch",
@@ -11211,7 +11631,7 @@
       "reasons": [
         "lead score 74",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "good fit; reachable through a profile"
       ],
       "next_step": "Reach Alison Hirukawa via LinkedIn/X",
@@ -13462,7 +13882,7 @@
       "reasons": [
         "lead score 68",
         "signal strength 1.8/10: launch",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call founders@pomerado.ai with the pitch",
@@ -13683,7 +14103,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (0d ago)",
+        "text": "Launched (1d ago)",
         "source_url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use"
       }
     ],
@@ -13694,8 +14114,8 @@
       "to": "founders@pomerado.ai",
       "to_source_url": "https://pomerado.ai/",
       "subject": "Pomerado: a thought on building and maintaining deterministic integrations for lega",
-      "body": "Hi Alan,\n\nCongrats on the launch (https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use).\nI'd like to use Pomerado and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Pomerado: Pomerado turns any website into an API/MCP that agents can call in minutes, providing a faster, cheaper, and more reliable alternative to browser‑based automation.\nSaw the recent news (launched (0d ago)).\nOne thing I noticed: building and maintaining deterministic integrations for legacy web portals at scale.\n\nYou can eliminate the integration bottleneck by building a Next.js front‑end that orchestrates site interactions and caches results, while a vector‑based semantic search layer quickly maps user intents to the correct page actions.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:founders%40pomerado.ai?subject=Pomerado%3A%20a%20thought%20on%20building%20and%20maintaining%20deterministic%20integrations%20for%20lega&body=Hi%20Alan%2C%0A%0ACongrats%20on%20the%20launch%20%28https%3A//www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use%29.%0AI%27d%20like%20to%20use%20Pomerado%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Pomerado%3A%20Pomerado%20turns%20any%20website%20into%20an%20API/MCP%20that%20agents%20can%20call%20in%20minutes%2C%20providing%20a%20faster%2C%20cheaper%2C%20and%20more%20reliable%20alternative%20to%20browser%E2%80%91based%20automation.%0ASaw%20the%20recent%20news%20%28launched%20%280d%20ago%29%29.%0AOne%20thing%20I%20noticed%3A%20building%20and%20maintaining%20deterministic%20integrations%20for%20legacy%20web%20portals%20at%20scale.%0A%0AYou%20can%20eliminate%20the%20integration%20bottleneck%20by%20building%20a%20Next.js%20front%E2%80%91end%20that%20orchestrates%20site%20interactions%20and%20caches%20results%2C%20while%20a%20vector%E2%80%91based%20semantic%20search%20layer%20quickly%20maps%20user%20intents%20to%20the%20correct%20page%20actions.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "body": "Hi Alan,\n\nCongrats on the launch (https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use).\nI'd like to use Pomerado and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Pomerado: Pomerado turns any website into an API/MCP that agents can call in minutes, providing a faster, cheaper, and more reliable alternative to browser‑based automation.\nSaw the recent news (launched (1d ago)).\nOne thing I noticed: building and maintaining deterministic integrations for legacy web portals at scale.\n\nYou can eliminate the integration bottleneck by building a Next.js front‑end that orchestrates site interactions and caches results, while a vector‑based semantic search layer quickly maps user intents to the correct page actions.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:founders%40pomerado.ai?subject=Pomerado%3A%20a%20thought%20on%20building%20and%20maintaining%20deterministic%20integrations%20for%20lega&body=Hi%20Alan%2C%0A%0ACongrats%20on%20the%20launch%20%28https%3A//www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use%29.%0AI%27d%20like%20to%20use%20Pomerado%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Pomerado%3A%20Pomerado%20turns%20any%20website%20into%20an%20API/MCP%20that%20agents%20can%20call%20in%20minutes%2C%20providing%20a%20faster%2C%20cheaper%2C%20and%20more%20reliable%20alternative%20to%20browser%E2%80%91based%20automation.%0ASaw%20the%20recent%20news%20%28launched%20%281d%20ago%29%29.%0AOne%20thing%20I%20noticed%3A%20building%20and%20maintaining%20deterministic%20integrations%20for%20legacy%20web%20portals%20at%20scale.%0A%0AYou%20can%20eliminate%20the%20integration%20bottleneck%20by%20building%20a%20Next.js%20front%E2%80%91end%20that%20orchestrates%20site%20interactions%20and%20caches%20results%2C%20while%20a%20vector%E2%80%91based%20semantic%20search%20layer%20quickly%20maps%20user%20intents%20to%20the%20correct%20page%20actions.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -13782,355 +14202,6 @@
       "subject": "Elman: a thought on search quality and efficient retrieval of relevant biomedica",
       "body": "Hi Elman team,\n\nI came across Elman: AI platform that predicts clinical trial and drug development outcomes and quantifies confidence in those predictions.\nSaw the recent news (newly found at pre-seed stage).\nOne thing I noticed: search quality and efficient retrieval of relevant biomedical evidence for the LLM‑driven prediction pipeline.\n\nI can build a fast, semantic search layer over your biomedical literature using vector embeddings, letting your LLM instantly retrieve the most relevant evidence for each trial prediction.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:hello%40elman.ai?subject=Elman%3A%20a%20thought%20on%20search%20quality%20and%20efficient%20retrieval%20of%20relevant%20biomedica&body=Hi%20Elman%20team%2C%0A%0AI%20came%20across%20Elman%3A%20AI%20platform%20that%20predicts%20clinical%20trial%20and%20drug%20development%20outcomes%20and%20quantifies%20confidence%20in%20those%20predictions.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20pre-seed%20stage%29.%0AOne%20thing%20I%20noticed%3A%20search%20quality%20and%20efficient%20retrieval%20of%20relevant%20biomedical%20evidence%20for%20the%20LLM%E2%80%91driven%20prediction%20pipeline.%0A%0AI%20can%20build%20a%20fast%2C%20semantic%20search%20layer%20over%20your%20biomedical%20literature%20using%20vector%20embeddings%2C%20letting%20your%20LLM%20instantly%20retrieve%20the%20most%20relevant%20evidence%20for%20each%20trial%20prediction.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Slingshot Insurance",
-    "core_product": "A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
-    "tech_stack": [
-      "AI",
-      "cloud",
-      "APIs"
-    ],
-    "likely_bottleneck": "Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
-    "value_prop_pitch": "I can build a Next.js front‑end that surfaces policy data instantly using vector semantic search, cutting down the time your team spends stitching together spreadsheets and emails. This will let your AI engine focus on underwriting while the UI handles complex queries in real time.",
-    "is_relevant": true,
-    "funding_stage": "seed",
-    "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-    "discovered_at": "2026-10-23T11:15:40+00:00",
-    "funding_amount": "$27 million",
-    "hq": "",
-    "website": "",
-    "score": 66,
-    "last_seen": "2026-10-23T11:18:40+00:00",
-    "slug": "slingshot-insurance",
-    "score_parts": {
-      "fit": 25,
-      "identity": 6,
-      "people": 20,
-      "connections": 15,
-      "contact": 0
-    },
-    "gaps": [
-      "website",
-      "location",
-      "email",
-      "phone"
-    ],
-    "contact": {
-      "website": "",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-10-23T23:00:30+00:00",
-      "status": "no_website",
-      "attempts": 1,
-      "last_attempt": "2026-10-23T23:00:12+00:00"
-    },
-    "signals": [
-      {
-        "type": "funding",
-        "source": "rss",
-        "url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "roles": [],
-        "role_kinds": [],
-        "posted_at": "Thu, 22 Oct 2026 13:00:23 +0000",
-        "seen_at": "2026-10-23T11:16:48+00:00"
-      }
-    ],
-    "people": [
-      {
-        "name": "Ethan Genteman",
-        "role": "co‑founder & CEO",
-        "org": "Slingshot Insurance",
-        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
-        "linkedin": "https://www.linkedin.com/in/ethan-genteman",
-        "twitter": "",
-        "github": "",
-        "homepage": "",
-        "link_source": "search"
-      },
-      {
-        "name": "Jim Hays",
-        "role": "board member",
-        "org": "Slingshot Insurance",
-        "evidence": "Jim Hays, who will join Slingshot’s board",
-        "linkedin": "",
-        "twitter": "",
-        "github": "",
-        "homepage": "",
-        "link_source": ""
-      }
-    ],
-    "edges": [
-      {
-        "src": "Ethan Genteman",
-        "rel": "founded",
-        "dst": "Slingshot Insurance",
-        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance"
-      },
-      {
-        "src": "Brock Noland",
-        "rel": "cofounded",
-        "dst": "Slingshot Insurance",
-        "evidence": "Noland is also a Slingshot co‑founder"
-      },
-      {
-        "src": "Rally Ventures",
-        "rel": "invested_in",
-        "dst": "Slingshot Insurance",
-        "evidence": "Rally Ventures ... co‑led the round"
-      },
-      {
-        "src": "Skyward Group",
-        "rel": "invested_in",
-        "dst": "Slingshot Insurance",
-        "evidence": "Skyward Group co‑led the round"
-      },
-      {
-        "src": "Justin Kaufenberg",
-        "rel": "backed_by",
-        "dst": "Slingshot Insurance",
-        "evidence": "Justin Kaufenberg, managing director at Rally Ventures"
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "contact_now",
-      "urgency": "warm",
-      "priority": 78.8,
-      "reasons": [
-        "lead score 66",
-        "signal strength 2.4/10: funding",
-        "found 4 day(s) ago (hot)",
-        "good fit; reachable through a profile"
-      ],
-      "next_step": "Reach Ethan Genteman via LinkedIn/X",
-      "provider": "policy"
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "slingshot insurance",
-        "field": "funding_stage",
-        "label": "funding_stage: seed",
-        "value": "seed",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "slingshot insurance",
-        "field": "funding_amount",
-        "label": "funding_amount: $27 million",
-        "value": "$27 million",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "slingshot insurance",
-        "field": "core_product",
-        "label": "core_product: A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
-        "value": "A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "slingshot insurance",
-        "field": "likely_bottleneck",
-        "label": "likely_bottleneck: Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
-        "value": "Scaling data pipelines and regulatory‑compliance automation for low‑margin policies",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "ethan genteman|slingshot insurance",
-        "field": "role",
-        "label": "Ethan Genteman · co‑founder & CEO",
-        "value": "co‑founder & CEO",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "ethan genteman|slingshot insurance",
-        "field": "linkedin",
-        "label": "Ethan Genteman · linkedin",
-        "value": "https://www.linkedin.com/in/ethan-genteman",
-        "source_url": "search",
-        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 0.6
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "jim hays|slingshot insurance",
-        "field": "role",
-        "label": "Jim Hays · board member",
-        "value": "board member",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Jim Hays, who will join Slingshot’s board",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "ethan genteman|founded|slingshot insurance",
-        "field": "founded",
-        "label": "Ethan Genteman founded Slingshot Insurance",
-        "value": "Ethan Genteman founded Slingshot Insurance",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "brock noland|cofounded|slingshot insurance",
-        "field": "cofounded",
-        "label": "Brock Noland cofounded Slingshot Insurance",
-        "value": "Brock Noland cofounded Slingshot Insurance",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Noland is also a Slingshot co‑founder",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "rally ventures|invested_in|slingshot insurance",
-        "field": "invested_in",
-        "label": "Rally Ventures invested in Slingshot Insurance",
-        "value": "Rally Ventures invested_in Slingshot Insurance",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Rally Ventures ... co‑led the round",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "skyward group|invested_in|slingshot insurance",
-        "field": "invested_in",
-        "label": "Skyward Group invested in Slingshot Insurance",
-        "value": "Skyward Group invested_in Slingshot Insurance",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Skyward Group co‑led the round",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "justin kaufenberg|backed_by|slingshot insurance",
-        "field": "backed_by",
-        "label": "Justin Kaufenberg backed by Slingshot Insurance",
-        "value": "Justin Kaufenberg backed_by Slingshot Insurance",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
-        "run_id": "backfill-2026-10-23",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T23:00:12+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "brock noland|vertical insure",
-        "field": "role",
-        "label": "Brock Noland · co‑founder & CEO of Vertical Insure",
-        "value": "co‑founder & CEO of Vertical Insure",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Noland is also a Slingshot co‑founder",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "justin kaufenberg|rally ventures",
-        "field": "role",
-        "label": "Justin Kaufenberg · Managing Director at Rally Ventures",
-        "value": "Managing Director at Rally Ventures",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-        "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "why_now": [
-      {
-        "signal": "early_stage",
-        "text": "Newly found at seed stage",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/"
-      },
-      {
-        "signal": "funding",
-        "text": "Raised money",
-        "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Slingshot Insurance: a thought on Scaling data pipelines and regulatory‑compliance automation ",
-      "body": "Hi Ethan,\n\nCongrats on the new funding (https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/).\nI'd like to use Slingshot Insurance and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Slingshot Insurance: A platform that enables vertical SaaS companies to offer embedded insurance policies using AI‑driven data automation.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: Scaling data pipelines and regulatory‑compliance automation for low‑margin policies.\n\nI can build a Next.js front‑end that surfaces policy data instantly using vector semantic search, cutting down the time your team spends stitching together spreadsheets and emails.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": ""
     },
     "outreach": []
   },
@@ -19801,7 +19872,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (17d ago): Staff Full-Stack Engineer, Quality, Delivery",
+        "text": "Hiring (18d ago): Staff Full-Stack Engineer, Quality, Delivery",
         "source_url": "https://news.ycombinator.com/item?id=50020012"
       }
     ],
@@ -19812,8 +19883,8 @@
       "to": "lisa@propellabs.ai",
       "to_source_url": "https://news.ycombinator.com/item?id=50020012",
       "subject": "Propel Labs: a thought on your stack",
-      "body": "Hi Propel Labs team,\n\nI saw you're hiring (Staff Full-Stack Engineer, Quality) (https://news.ycombinator.com/item?id=50020012).\nI'd like to use Propel Labs and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Propel Labs: AI agents have made engineering throughput cheap, so senior judgment is now the scarce asset: what to build, what to gate, what to trust to production.\nSaw the recent news (hiring (17d ago): Staff Full-Stack Engineer, Quality, Delivery).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:lisa%40propellabs.ai?subject=Propel%20Labs%3A%20a%20thought%20on%20your%20stack&body=Hi%20Propel%20Labs%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Staff%20Full-Stack%20Engineer%2C%20Quality%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50020012%29.%0AI%27d%20like%20to%20use%20Propel%20Labs%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Propel%20Labs%3A%20AI%20agents%20have%20made%20engineering%20throughput%20cheap%2C%20so%20senior%20judgment%20is%20now%20the%20scarce%20asset%3A%20what%20to%20build%2C%20what%20to%20gate%2C%20what%20to%20trust%20to%20production.%0ASaw%20the%20recent%20news%20%28hiring%20%2817d%20ago%29%3A%20Staff%20Full-Stack%20Engineer%2C%20Quality%2C%20Delivery%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "body": "Hi Propel Labs team,\n\nI saw you're hiring (Staff Full-Stack Engineer, Quality) (https://news.ycombinator.com/item?id=50020012).\nI'd like to use Propel Labs and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Propel Labs: AI agents have made engineering throughput cheap, so senior judgment is now the scarce asset: what to build, what to gate, what to trust to production.\nSaw the recent news (hiring (18d ago): Staff Full-Stack Engineer, Quality, Delivery).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:lisa%40propellabs.ai?subject=Propel%20Labs%3A%20a%20thought%20on%20your%20stack&body=Hi%20Propel%20Labs%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Staff%20Full-Stack%20Engineer%2C%20Quality%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50020012%29.%0AI%27d%20like%20to%20use%20Propel%20Labs%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Propel%20Labs%3A%20AI%20agents%20have%20made%20engineering%20throughput%20cheap%2C%20so%20senior%20judgment%20is%20now%20the%20scarce%20asset%3A%20what%20to%20build%2C%20what%20to%20gate%2C%20what%20to%20trust%20to%20production.%0ASaw%20the%20recent%20news%20%28hiring%20%2818d%20ago%29%3A%20Staff%20Full-Stack%20Engineer%2C%20Quality%2C%20Delivery%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -20382,7 +20453,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (16d ago): Platform Engineer",
+        "text": "Hiring (17d ago): Platform Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50033036"
       }
     ],
@@ -20393,7 +20464,7 @@
       "to": "",
       "to_source_url": "",
       "subject": "Chronograph: a thought on your stack",
-      "body": "Hi Chronograph team,\n\nI saw you're hiring (Platform Engineer) (https://news.ycombinator.com/item?id=50033036).\nI'd like to use Chronograph and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Chronograph: Chronograph was founded to bring next-generation technology to private capital markets.\nSaw the recent news (hiring (16d ago): Platform Engineer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "body": "Hi Chronograph team,\n\nI saw you're hiring (Platform Engineer) (https://news.ycombinator.com/item?id=50033036).\nI'd like to use Chronograph and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Chronograph: Chronograph was founded to bring next-generation technology to private capital markets.\nSaw the recent news (hiring (17d ago): Platform Engineer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": ""
     },
     "outreach": []
@@ -21591,22 +21662,16 @@
     ],
     "contact": {
       "website": "",
-      "emails": [
-        {
-          "value": "cuppys@indianamicro.com",
-          "kind": "person",
-          "source_url": "https://news.ycombinator.com/item?id=50062997"
-        }
-      ],
+      "emails": [],
       "phones": [],
       "socials": {},
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-10-27T11:51:40+00:00",
+      "enriched_at": "2026-10-27T14:19:57+00:00",
       "status": "no_website",
-      "attempts": 0,
-      "last_attempt": ""
+      "attempts": 1,
+      "last_attempt": "2026-10-27T14:19:53+00:00"
     },
     "signals": [
       {
@@ -21629,7 +21694,7 @@
     "decision": {
       "action": "skip",
       "urgency": "cold",
-      "priority": 11.6,
+      "priority": 9.6,
       "reasons": [
         "lead score 10",
         "signal strength 6.6/10: hiring",
@@ -21648,10 +21713,10 @@
         "value": "Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.",
         "source_url": "https://news.ycombinator.com/item?id=50062997",
         "evidence": "",
-        "run_id": "20261027T114853Z",
+        "run_id": "backfill-2026-10-27",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-27T11:52:27+00:00",
-        "seen_count": 12,
+        "last_seen": "2026-10-27T14:19:53+00:00",
+        "seen_count": 13,
         "confidence": 0.4
       },
       {
@@ -21685,11 +21750,11 @@
     "email_draft": {
       "intent": "work_for",
       "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "cuppys@indianamicro.com",
-      "to_source_url": "https://news.ycombinator.com/item?id=50062997",
+      "to": "",
+      "to_source_url": "",
       "subject": "Indiana Microelectronics LLC: a thought on your stack",
       "body": "Hi Indiana Microelectronics LLC team,\n\nI saw you're hiring (RF Engineer) (https://news.ycombinator.com/item?id=50062997).\nI'd like to use Indiana Microelectronics LLC and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Indiana Microelectronics LLC: Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.\nSaw the recent news (posted on Hacker News 4d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:cuppys%40indianamicro.com?subject=Indiana%20Microelectronics%20LLC%3A%20a%20thought%20on%20your%20stack&body=Hi%20Indiana%20Microelectronics%20LLC%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28RF%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50062997%29.%0AI%27d%20like%20to%20use%20Indiana%20Microelectronics%20LLC%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Indiana%20Microelectronics%20LLC%3A%20Indiana%20Micro%20is%20a%20small%20electronics%20company%20working%20on%20tunable%20RF%20filters%20and%20radio-frequency%20front-end%20%28RFFE%29%20systems%20for%20interference%20mitigation.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%204d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "mailto": ""
     },
     "outreach": []
   }

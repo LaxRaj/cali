@@ -195,14 +195,6 @@
       "score": 87
     },
     {
-      "id": "slingshot insurance",
-      "label": "Slingshot Insurance",
-      "type": "startup",
-      "degree": 5,
-      "website": "",
-      "score": 66
-    },
-    {
       "id": "oscp",
       "label": "OSCP",
       "type": "startup",
@@ -217,6 +209,14 @@
       "degree": 5,
       "website": "https://www.endodeals.com",
       "score": 85
+    },
+    {
+      "id": "slingshot insurance",
+      "label": "Slingshot Insurance",
+      "type": "startup",
+      "degree": 5,
+      "website": "https://www.slingshotinsurance.com",
+      "score": 88
     },
     {
       "id": "guillaume miara",
@@ -1841,16 +1841,6 @@
       "links": {}
     },
     {
-      "id": "ethan genteman",
-      "label": "Ethan Genteman",
-      "type": "person",
-      "degree": 1,
-      "role": "co‑founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/ethan-genteman"
-      }
-    },
-    {
       "id": "somu subramaniam",
       "label": "Somu Subramaniam",
       "type": "person",
@@ -2267,6 +2257,16 @@
       "degree": 1,
       "role": "Executive Officer",
       "links": {}
+    },
+    {
+      "id": "ethan genteman",
+      "label": "Ethan Genteman",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ethan-genteman"
+      }
     },
     {
       "id": "endgrate",
@@ -2725,18 +2725,6 @@
       "degree": 1
     },
     {
-      "id": "rally ventures",
-      "label": "Rally Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "skyward group",
-      "label": "Skyward Group",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "new science ventures",
       "label": "New Science Ventures",
       "type": "org",
@@ -3001,6 +2989,18 @@
       "degree": 1
     },
     {
+      "id": "rally ventures",
+      "label": "Rally Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "skyward group",
+      "label": "Skyward Group",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "maali",
       "label": "Maali",
       "type": "startup",
@@ -3089,14 +3089,6 @@
       "score": 22
     },
     {
-      "id": "indiana microelectronics llc",
-      "label": "Indiana Microelectronics LLC",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
-    },
-    {
       "id": "hio",
       "label": "HiO",
       "type": "startup",
@@ -3159,6 +3151,14 @@
       "degree": 0,
       "website": "https://ojin.ai",
       "score": 19
+    },
+    {
+      "id": "indiana microelectronics llc",
+      "label": "Indiana Microelectronics LLC",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 10
     },
     {
       "id": "kevin hartz",
@@ -3593,14 +3593,6 @@
       "links": {}
     },
     {
-      "id": "jim hays",
-      "label": "Jim Hays",
-      "type": "person",
-      "degree": 0,
-      "role": "board member",
-      "links": {}
-    },
-    {
       "id": "alex wolf",
       "label": "Alex Wolf",
       "type": "person",
@@ -3622,6 +3614,14 @@
       "type": "person",
       "degree": 0,
       "role": "Partner",
+      "links": {}
+    },
+    {
+      "id": "jim hays",
+      "label": "Jim Hays",
+      "type": "person",
+      "degree": 0,
+      "role": "board member",
       "links": {}
     }
   ],
@@ -5637,76 +5637,6 @@
       ]
     },
     {
-      "source": "ethan genteman",
-      "target": "slingshot insurance",
-      "rel": "founded",
-      "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
-      "sources": [
-        {
-          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-          "run_id": "backfill-2026-10-23",
-          "first_seen": "2026-10-23T11:18:40+00:00",
-          "last_seen": "2026-10-23T23:00:12+00:00"
-        }
-      ]
-    },
-    {
-      "source": "brock noland",
-      "target": "slingshot insurance",
-      "rel": "cofounded",
-      "evidence": "Noland is also a Slingshot co‑founder",
-      "sources": [
-        {
-          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-          "run_id": "backfill-2026-10-23",
-          "first_seen": "2026-10-23T11:18:40+00:00",
-          "last_seen": "2026-10-23T23:00:12+00:00"
-        }
-      ]
-    },
-    {
-      "source": "rally ventures",
-      "target": "slingshot insurance",
-      "rel": "invested_in",
-      "evidence": "Rally Ventures ... co‑led the round",
-      "sources": [
-        {
-          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-          "run_id": "backfill-2026-10-23",
-          "first_seen": "2026-10-23T11:18:40+00:00",
-          "last_seen": "2026-10-23T23:00:12+00:00"
-        }
-      ]
-    },
-    {
-      "source": "skyward group",
-      "target": "slingshot insurance",
-      "rel": "invested_in",
-      "evidence": "Skyward Group co‑led the round",
-      "sources": [
-        {
-          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-          "run_id": "backfill-2026-10-23",
-          "first_seen": "2026-10-23T11:18:40+00:00",
-          "last_seen": "2026-10-23T23:00:12+00:00"
-        }
-      ]
-    },
-    {
-      "source": "justin kaufenberg",
-      "target": "slingshot insurance",
-      "rel": "backed_by",
-      "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
-      "sources": [
-        {
-          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
-          "run_id": "backfill-2026-10-23",
-          "first_seen": "2026-10-23T11:18:40+00:00",
-          "last_seen": "2026-10-23T23:00:12+00:00"
-        }
-      ]
-    },
-    {
       "source": "kazem zandi",
       "target": "oscp",
       "rel": "founded",
@@ -7331,6 +7261,76 @@
           "run_id": "20261027T114853Z",
           "first_seen": "2026-10-27T11:52:27+00:00",
           "last_seen": "2026-10-27T11:52:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ethan genteman",
+      "target": "slingshot insurance",
+      "rel": "founded",
+      "evidence": "Ethan Genteman, co‑founder and CEO of Slingshot Insurance",
+      "sources": [
+        {
+          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+          "run_id": "backfill-2026-10-27",
+          "first_seen": "2026-10-23T11:18:40+00:00",
+          "last_seen": "2026-10-27T14:19:53+00:00"
+        }
+      ]
+    },
+    {
+      "source": "brock noland",
+      "target": "slingshot insurance",
+      "rel": "cofounded",
+      "evidence": "Noland is also a Slingshot co‑founder",
+      "sources": [
+        {
+          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+          "run_id": "backfill-2026-10-27",
+          "first_seen": "2026-10-23T11:18:40+00:00",
+          "last_seen": "2026-10-27T14:19:53+00:00"
+        }
+      ]
+    },
+    {
+      "source": "rally ventures",
+      "target": "slingshot insurance",
+      "rel": "invested_in",
+      "evidence": "Rally Ventures ... co‑led the round",
+      "sources": [
+        {
+          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+          "run_id": "backfill-2026-10-27",
+          "first_seen": "2026-10-23T11:18:40+00:00",
+          "last_seen": "2026-10-27T14:19:53+00:00"
+        }
+      ]
+    },
+    {
+      "source": "skyward group",
+      "target": "slingshot insurance",
+      "rel": "invested_in",
+      "evidence": "Skyward Group co‑led the round",
+      "sources": [
+        {
+          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+          "run_id": "backfill-2026-10-27",
+          "first_seen": "2026-10-23T11:18:40+00:00",
+          "last_seen": "2026-10-27T14:19:53+00:00"
+        }
+      ]
+    },
+    {
+      "source": "justin kaufenberg",
+      "target": "slingshot insurance",
+      "rel": "backed_by",
+      "evidence": "Justin Kaufenberg, managing director at Rally Ventures",
+      "sources": [
+        {
+          "source_url": "https://news.crunchbase.com/fintech-ecommerce/insuretech/startup-slingshot-insurance-seed-funding-genteman/",
+          "run_id": "backfill-2026-10-27",
+          "first_seen": "2026-10-23T11:18:40+00:00",
+          "last_seen": "2026-10-27T14:19:53+00:00"
         }
       ]
     }
