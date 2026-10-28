@@ -1,64 +1,47 @@
 {
-  "generated_at": "2026-10-27T11:52:27+00:00",
+  "generated_at": "2026-10-28T12:26:24+00:00",
   "findings": [
     {
-      "company_name": "Querio",
-      "core_product": "An AI analytics platform that lets data teams define company metrics in GitHub and provides consistent answers across AI tools like Claude, ChatGPT and Slack.",
-      "tech_stack": [
-        "GitHub",
-        "Slack",
-        "Claude",
-        "ChatGPT",
-        "LLMs"
-      ],
-      "likely_bottleneck": "Scaling the synchronization of data definitions and logic across multiple AI tools without manual integration work.",
-      "value_prop_pitch": "I can build a Next.js front‑end that lets your data team edit definitions in a unified UI, while a vector‑based semantic search layer instantly surfaces the right context for any AI query, eliminating mismatched answers. This will let Querio scale its consistency engine without hand‑coding integrations for each new tool.",
+      "company_name": "Daedal Systems",
+      "core_product": "Standardized plasma measurement systems for fusion reactors",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling hardware production and processing large volumes of diagnostic data",
+      "value_prop_pitch": "You could streamline your diagnostic data pipeline with a Next.js front‑end that instantly surfaces relevant measurement insights, and back it with a vector‑based semantic search layer to let engineers query raw plasma data like natural language. This would cut down on custom data‑wrangling effort and let your team focus on hardware innovation rather than building bespoke search tools.",
       "is_relevant": true,
       "funding_stage": "seed",
-      "funding_amount": "€4.48 million ($5 million)",
-      "hq": "London",
-      "website": "https://querio.ai",
-      "source_url": "https://www.eu-startups.com/2026/10/londons-querio-launches-with-e4-48-million-to-help-companies-and-their-data-teams-tackle-conflicting-answers-across-ai-tools/",
-      "discovered_at": "2026-10-27T11:49:35+00:00",
+      "funding_amount": "$4M",
+      "hq": "Toronto, Canada",
+      "website": "https://www.daedalsystems.com",
+      "source_url": "https://betakit.com/ex-general-fusion-employee-raises-4-million-usd-for-fusion-diagnostics-startup-daedal/",
+      "discovered_at": "2026-10-28T12:23:12+00:00",
       "source": "rss",
-      "score": 86,
+      "score": 88,
       "gaps": [
+        "tech stack",
         "phone"
       ],
       "contact": {
-        "website": "https://querio.ai",
+        "website": "https://www.daedalsystems.com",
         "emails": [
           {
-            "value": "hello@querio.ai",
+            "value": "contact@daedalsystems.com",
             "kind": "general",
-            "source_url": "https://querio.ai/"
+            "source_url": "https://www.daedalsystems.com/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/querioai",
-          "twitter": "https://x.com/tryquerio"
+          "linkedin": "https://www.linkedin.com/company/daedal-systems"
         },
-        "contact_page": "https://querio.ai/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://querio.ai/pricing"
-          },
-          {
-            "label": "Get started",
-            "url": "https://auth.querio.ai/signup"
-          },
-          {
-            "label": "Docs",
-            "url": "https://docs.querio.ai/"
-          }
-        ],
+        "contact_page": "https://www.daedalsystems.com/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://querio.ai/",
-          "https://querio.ai/contact"
+          "https://www.daedalsystems.com/",
+          "https://www.daedalsystems.com/about",
+          "https://www.daedalsystems.com/contact",
+          "https://www.daedalsystems.com/team"
         ],
-        "enriched_at": "2026-10-27T11:50:38+00:00",
+        "enriched_at": "2026-10-28T12:24:12+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -67,20 +50,268 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://www.eu-startups.com/2026/10/londons-querio-launches-with-e4-48-million-to-help-companies-and-their-data-teams-tackle-conflicting-answers-across-ai-tools/",
+          "url": "https://betakit.com/ex-general-fusion-employee-raises-4-million-usd-for-fusion-diagnostics-startup-daedal/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Tue, 27 Oct 2026 10:00:27 +0000",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "posted_at": "Tue, 29 Sep 2026 14:00:56 +0000",
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [
         {
-          "name": "Rami Abi Habib",
-          "role": "Co‑founder and CEO",
-          "org": "Querio",
-          "evidence": "Founded in 2024 by Rami Abi Habib (CEO) and Bonilla (CTO), Querio is an AI analytics platform...",
-          "linkedin": "https://www.linkedin.com/in/datarami",
+          "name": "Henry Gould",
+          "role": "Founder & CEO",
+          "org": "Daedal Systems",
+          "evidence": "Daedal founder and CEO Henry Gould said in a statement",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "W. Henry Gould",
+          "role": "Founder and CEO",
+          "org": "Daedal Systems",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/whenrygould",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.daedalsystems.com/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Henry Gould",
+          "rel": "founded",
+          "dst": "Daedal Systems",
+          "evidence": "Daedal founder and CEO Henry Gould said in a statement"
+        },
+        {
+          "src": "OMERS Ventures",
+          "rel": "invested_in",
+          "dst": "Daedal Systems",
+          "evidence": "The round was led by OMERS Ventures"
+        },
+        {
+          "src": "Garage Capital",
+          "rel": "invested_in",
+          "dst": "Daedal Systems",
+          "evidence": "participation from Garage Capital"
+        }
+      ]
+    },
+    {
+      "company_name": "Axya",
+      "core_product": "An AI‑powered procurement platform that plugs into manufacturers’ existing ERP systems to automate sourcing, quoting and supplier communication.",
+      "tech_stack": [
+        "AI",
+        "cloud",
+        "REST APIs",
+        "ERP integrations"
+      ],
+      "likely_bottleneck": "Scaling AI‑driven data processing and real‑time ERP integrations as the supplier network grows.",
+      "value_prop_pitch": "You can eliminate the scaling bottleneck by building a Next.js front‑end that queries a vector‑semantic search layer over your procurement data, delivering instant, context‑aware results to users. This architecture lets you offload heavy AI inference to specialized services while keeping the UI fast and responsive.",
+      "is_relevant": true,
+      "funding_stage": "Series A",
+      "funding_amount": "$17M CAD",
+      "hq": "Montréal, Canada",
+      "website": "https://axya.co",
+      "source_url": "https://betakit.com/axya-closes-17-million-series-a-to-modernize-manufacturing-procurement/",
+      "discovered_at": "2026-10-28T12:23:12+00:00",
+      "source": "rss",
+      "score": 90,
+      "gaps": [
+        "people profiles"
+      ],
+      "contact": {
+        "website": "https://axya.co",
+        "emails": [
+          {
+            "value": "hello@axya.co",
+            "kind": "general",
+            "source_url": "https://axya.co/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+14386008933",
+            "kind": "main",
+            "source_url": "https://axya.co/"
+          },
+          {
+            "value": "+18449962812",
+            "kind": "main",
+            "source_url": "https://axya.co/"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/13073712"
+        },
+        "contact_page": "https://axya.co/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://axya.co/",
+          "https://axya.co/contact",
+          "https://axya.co/about",
+          "https://axya.co/team"
+        ],
+        "enriched_at": "2026-10-28T12:24:31+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://betakit.com/axya-closes-17-million-series-a-to-modernize-manufacturing-procurement/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Thu, 24 Sep 2026 13:30:00 +0000",
+          "seen_at": "2026-10-28T12:24:08+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Félix Bélisle‑Dockrill",
+          "role": "Co‑founder & CEO",
+          "org": "Axya",
+          "evidence": "Axya co‑founder and CEO Félix Bélisle‑Dockrill told BetaKit over email",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Udit Bhatnagar",
+          "role": "Partner, Board Member",
+          "org": "McRock Capital",
+          "evidence": "McRock partner Udit Bhatnagar, who is joining Axya’s board as part of the round",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Félix Bélisle‑Dockrill",
+          "rel": "founded",
+          "dst": "Axya",
+          "evidence": "Axya was founded in 2019 by Bélisle‑Dockrill"
+        },
+        {
+          "src": "Udit Bhatnagar",
+          "rel": "works_at",
+          "dst": "McRock Capital",
+          "evidence": "McRock partner Udit Bhatnagar"
+        },
+        {
+          "src": "McRock Capital",
+          "rel": "invested_in",
+          "dst": "Axya",
+          "evidence": "The equity portion was led by Toronto’s McRock Capital"
+        },
+        {
+          "src": "Yamaha Motor Ventures",
+          "rel": "invested_in",
+          "dst": "Axya",
+          "evidence": "with support from Yamaha Motor Ventures"
+        },
+        {
+          "src": "CIBC Innovation Banking",
+          "rel": "invested_in",
+          "dst": "Axya",
+          "evidence": "$5 million in venture debt from CIBC Innovation Banking"
+        },
+        {
+          "src": "Business Development Bank of Canada’s Industrial Innovation Venture Fund",
+          "rel": "backed_by",
+          "dst": "Axya",
+          "evidence": "existing backers like the Business Development Bank of Canada’s Industrial Innovation Venture Fund"
+        },
+        {
+          "src": "Real Ventures",
+          "rel": "backed_by",
+          "dst": "Axya",
+          "evidence": "Montréal’s Real Ventures"
+        }
+      ]
+    },
+    {
+      "company_name": "GatherHQ",
+      "core_product": "An API that interviews real buyers, builds living market models, and lets AI agents query buyer insights.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the interview collection and real‑time query infrastructure as the number of buyers and enterprise customers grows.",
+      "value_prop_pitch": "You can eliminate the scaling pain by moving the front‑end to a Next.js app that lazily loads interview dashboards and caches results, while a vector‑based semantic search layer indexes buyer responses for instant retrieval. This lets your API serve millions of queries per second with low latency and minimal engineering overhead.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.gatherhq.com",
+      "source_url": "https://www.ycombinator.com/launches/WI6-gatherhq-an-api-for-how-buyers-think-built-for-agents-and-teams",
+      "discovered_at": "2026-10-28T12:23:12+00:00",
+      "source": "yc",
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.gatherhq.com",
+        "emails": [
+          {
+            "value": "support@gatherhq.com",
+            "kind": "support",
+            "source_url": "https://www.gatherhq.com/about"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/gatherhq"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Documentation",
+            "url": "https://www.gatherhq.com/docs"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.gatherhq.com/",
+          "https://www.gatherhq.com/about"
+        ],
+        "enriched_at": "2026-10-28T12:24:38+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/WI6-gatherhq-an-api-for-how-buyers-think-built-for-agents-and-teams",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-28T12:24:08+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Mayank Mehta",
+          "role": "Founder",
+          "org": "GatherHQ",
+          "evidence": "We’re Mayank, Anand, and Jay. We previously built PulseQ&A (acquired by Gartner), and Cooliris (acquired by Yahoo!). Now we’re building GatherHQ",
+          "linkedin": "https://www.linkedin.com/in/mehtam1",
           "twitter": "",
           "github": "",
           "homepage": "",
@@ -89,365 +320,80 @@
       ],
       "edges": [
         {
-          "src": "Rami Abi Habib",
+          "src": "Mayank Mehta",
           "rel": "founded",
-          "dst": "Querio",
-          "evidence": "Founded in 2024 by Rami Abi Habib (CEO) and Bonilla (CTO), Querio..."
-        },
-        {
-          "src": "Javier Bonilla",
-          "rel": "cofounded",
-          "dst": "Querio",
-          "evidence": "Founded in 2024 by Rami Abi Habib (CEO) and Bonilla (CTO), Querio..."
-        },
-        {
-          "src": "BMW i Ventures",
-          "rel": "invested_in",
-          "dst": "Querio",
-          "evidence": "Its investors include BMW i Ventures, which led the company’s Seed financing..."
-        },
-        {
-          "src": "LAUNCH",
-          "rel": "invested_in",
-          "dst": "Querio",
-          "evidence": "...alongside LAUNCH, the fund run by Jason Calacanis..."
-        },
-        {
-          "src": "Haatch Ventures",
-          "rel": "invested_in",
-          "dst": "Querio",
-          "evidence": "...Haatch Ventures..."
-        },
-        {
-          "src": "Forum Ventures",
-          "rel": "invested_in",
-          "dst": "Querio",
-          "evidence": "...Forum Ventures..."
+          "dst": "GatherHQ",
+          "evidence": "We’re Mayank, Anand, and Jay... Now we’re building GatherHQ"
         }
       ]
     },
     {
-      "company_name": "Cortas",
-      "core_product": "An AI‑native property management platform that combines software and property management services under one roof to streamline workflows for large property investors.",
-      "tech_stack": [],
-      "likely_bottleneck": "Integrating AI-driven automation with legacy property data while scaling the platform to serve multiple large investors.",
-      "value_prop_pitch": "We can accelerate your AI‑native platform by building a fast, SEO‑friendly front‑end with Next.js that pulls in property data via server‑side rendering, reducing latency for tenants and owners. Then we’ll add a vector‑based semantic search layer so your agents can instantly retrieve relevant documents and insights across all properties, cutting down manual lookup time.",
-      "is_relevant": true,
-      "funding_stage": "pre-Seed",
-      "funding_amount": "€1.47 million",
-      "hq": "Copenhagen, Denmark",
-      "website": "https://www.cortasfood.com",
-      "source_url": "https://www.eu-startups.com/2026/10/exclusive-copenhagen-based-proptech-cortas-lands-e1-47-million-in-a-pre-seed-round-led-by-psv-tech/",
-      "discovered_at": "2026-10-27T11:49:35+00:00",
-      "source": "rss",
-      "score": 54,
-      "gaps": [
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "contact": {
-        "website": "https://www.cortasfood.com",
-        "emails": [
-          {
-            "value": "info@cortas.net",
-            "kind": "general",
-            "source_url": "https://www.cortasfood.com/contact-us"
-          },
-          {
-            "value": "jhamati@cortas.net",
-            "kind": "person",
-            "source_url": "https://www.cortasfood.com/contact-us"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+9619791343",
-            "kind": "main",
-            "source_url": "https://www.cortasfood.com/contact-us"
-          },
-          {
-            "value": "+9619791341",
-            "kind": "main",
-            "source_url": "https://www.cortasfood.com/contact-us"
-          },
-          {
-            "value": "+96176935093",
-            "kind": "main",
-            "source_url": "https://www.cortasfood.com/contact-us"
-          }
-        ],
-        "socials": {},
-        "contact_page": "https://www.cortasfood.com/contact-us",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.cortasfood.com/",
-          "https://www.cortasfood.com/contact-us"
-        ],
-        "enriched_at": "2026-10-27T11:50:58+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://techfundingnews.com/ex-thylander-investors-cortas-raises-e1-47m-to-build-an-ai-property-manager-in-denmark/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 27 Oct 2026 09:00:00 +0000",
-          "seen_at": "2026-10-27T11:50:34+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Jacques Hamati",
-          "role": "North America Sales",
-          "org": "Cortas Canning & Refrigerating Company",
-          "evidence": "Mr. Jacques Hamati",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": []
-    },
-    {
-      "company_name": "Cortas",
-      "core_product": "AI-native property management software platform that lets institutional investors manage buildings end‑to‑end through a single SaaS solution.",
-      "tech_stack": [],
-      "likely_bottleneck": "scaling AI‑driven workflow automation while keeping data latency low across many properties",
-      "value_prop_pitch": "You could replace the custom AI pipelines with a Next.js front‑end backed by a vector‑semantic search layer to instantly surface relevant tenant queries and documents. This would cut latency, simplify scaling, and let your engineers focus on core property‑logic instead of building search infrastructure.",
-      "is_relevant": true,
-      "funding_stage": "pre‑seed",
-      "funding_amount": "€1.47M",
-      "hq": "Copenhagen, Denmark",
-      "website": "https://cortas.dk",
-      "source_url": "https://techfundingnews.com/ex-thylander-investors-cortas-raises-e1-47m-to-build-an-ai-property-manager-in-denmark/",
-      "discovered_at": "2026-10-27T11:49:35+00:00",
-      "source": "rss",
-      "score": 89,
-      "gaps": [
-        "tech stack"
-      ],
-      "contact": {
-        "website": "https://cortas.dk",
-        "emails": [
-          {
-            "value": "cp@cortas.dk",
-            "kind": "person",
-            "source_url": "https://cortas.dk/about"
-          },
-          {
-            "value": "cp@cortas.dk,fb@cortas.dk",
-            "kind": "person",
-            "source_url": "https://cortas.dk/about"
-          },
-          {
-            "value": "fb@cortas.dk",
-            "kind": "person",
-            "source_url": "https://cortas.dk/about"
-          },
-          {
-            "value": "kontakt@cortas.dk",
-            "kind": "person",
-            "source_url": "https://cortas.dk/"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+4522222768",
-            "kind": "main",
-            "source_url": "https://cortas.dk/"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/cortas-company"
-        },
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://cortas.dk/",
-          "https://cortas.dk/about"
-        ],
-        "enriched_at": "2026-10-27T11:51:02+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://techfundingnews.com/ex-thylander-investors-cortas-raises-e1-47m-to-build-an-ai-property-manager-in-denmark/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 27 Oct 2026 09:00:00 +0000",
-          "seen_at": "2026-10-27T11:50:34+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Christian Pind Schmidt",
-          "role": "Co‑founder & CEO",
-          "org": "Cortas",
-          "evidence": "Christian Pind Schmidt ... founded Cortas at Indiakaj in Copenhagen to fix the bottleneck",
-          "linkedin": "https://www.linkedin.com/in/christianpindschmidt/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/ex-thylander-investors-cortas-raises-e1-47m-to-build-an-ai-property-manager-in-denmark/"
-        },
-        {
-          "name": "Frederik Buchardt",
-          "role": "Co‑founder",
-          "org": "Cortas",
-          "evidence": "Frederik Buchardt ... founded Cortas at Indiakaj in Copenhagen to fix the bottleneck",
-          "linkedin": "https://www.linkedin.com/in/frederik-buchardt-ba06bb1a0/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/ex-thylander-investors-cortas-raises-e1-47m-to-build-an-ai-property-manager-in-denmark/"
-        },
-        {
-          "name": "Christian Dalsgaard",
-          "role": "Investor (lead for PSV Tech)",
-          "org": "",
-          "evidence": "Christian Dalsgaard ... who led the investment for PSV",
-          "linkedin": "https://dk.linkedin.com/in/christian-dalsgaard",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/ex-thylander-investors-cortas-raises-e1-47m-to-build-an-ai-property-manager-in-denmark/"
-        },
-        {
-          "name": "Tore Harritshøj",
-          "role": "Investor",
-          "org": "",
-          "evidence": "Tore Harritshøj, founder of Spirii and a Cortas investor, compared the venture with his own",
-          "linkedin": "https://www.linkedin.com/in/tore-harritshoej/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/ex-thylander-investors-cortas-raises-e1-47m-to-build-an-ai-property-manager-in-denmark/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Christian Pind Schmidt",
-          "rel": "founded",
-          "dst": "Cortas",
-          "evidence": "Christian Pind Schmidt ... founded Cortas at Indiakaj in Copenhagen"
-        },
-        {
-          "src": "Frederik Buchardt",
-          "rel": "cofounded",
-          "dst": "Cortas",
-          "evidence": "Frederik Buchardt ... founded Cortas at Indiakaj in Copenhagen"
-        },
-        {
-          "src": "PSV Tech",
-          "rel": "invested_in",
-          "dst": "Cortas",
-          "evidence": "PSV Tech led the pre‑seed round"
-        },
-        {
-          "src": "JRNY Capital",
-          "rel": "invested_in",
-          "dst": "Cortas",
-          "evidence": "participation from JRNY Capital"
-        },
-        {
-          "src": "Christian Dalsgaard",
-          "rel": "backed_by",
-          "dst": "Cortas",
-          "evidence": "Christian Dalsgaard ... who led the investment for PSV"
-        },
-        {
-          "src": "Tore Harritshøj",
-          "rel": "backed_by",
-          "dst": "Cortas",
-          "evidence": "Tore Harritshøj ... a Cortas investor"
-        }
-      ]
-    },
-    {
-      "company_name": "ZeroEntropy",
-      "core_product": "A developer‑first API that ingests, indexes, re‑ranks and serves vector‑based search results to power retrieval‑augmented generation for AI applications.",
+      "company_name": "Exa",
+      "core_product": "A high‑quality, fast, zero‑retention search API and Websets product built for AI applications",
       "tech_stack": [
-        "vector databases",
-        "keyword search",
-        "re‑ranking models"
+        "GPU cluster"
       ],
-      "likely_bottleneck": "scaling low‑latency vector search and re‑ranking across massive, messy knowledge bases",
-      "value_prop_pitch": "I can help you ship a Next.js front‑end that talks to a scalable vector‑semantic search layer, letting you focus on your core RAG logic. With server‑side rendering and incremental static regeneration you’ll get fast, consistent responses even as your index grows.",
+      "likely_bottleneck": "scaling the large‑scale indexing and retrieval pipeline to handle ever‑growing web data",
+      "value_prop_pitch": "You can eliminate the indexing bottleneck by wrapping your search endpoints in a Next.js layer that pre‑fetches and caches results, while a vector‑based semantic store lets you serve relevant chunks instantly. This lets your AI customers get sub‑450 ms latency even as the corpus grows.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$4.2M",
-      "hq": "San Francisco",
-      "website": "https://www.zeroentropy.dev",
-      "source_url": "https://finance.yahoo.com/news/moroccan-founder-raises-4-2m-130041001.html?fr=sycsrp_catchall",
-      "discovered_at": "2026-10-27T11:49:35+00:00",
+      "funding_stage": "Series B",
+      "funding_amount": "$85M",
+      "hq": "San Francisco, US",
+      "website": "https://exa.ai",
+      "source_url": "https://exa.ai/blog/announcing-series-b",
+      "discovered_at": "2026-10-28T12:23:12+00:00",
       "source": "web",
-      "score": 88,
+      "score": 86,
       "gaps": [
+        "funding stage",
         "phone"
       ],
       "contact": {
-        "website": "https://www.zeroentropy.dev",
+        "website": "https://exa.ai",
         "emails": [
           {
-            "value": "contact@zeroentropy.dev",
+            "value": "hello@exa.ai",
             "kind": "general",
-            "source_url": "https://www.zeroentropy.dev/"
+            "source_url": "https://exa.ai/"
           },
           {
-            "value": "founders@zeroentropy.dev",
-            "kind": "person",
-            "source_url": "https://www.zeroentropy.dev/"
+            "value": "press@exa.ai",
+            "kind": "press",
+            "source_url": "https://exa.ai/contact"
           },
           {
-            "value": "careers@zeroentropy.dev",
-            "kind": "other",
-            "source_url": "https://www.zeroentropy.dev/about"
+            "value": "support@exa.ai",
+            "kind": "support",
+            "source_url": "https://exa.ai/"
           }
         ],
         "phones": [],
         "socials": {
-          "github": "https://github.com/zeroentropy-ai",
-          "twitter": "https://x.com/ZeroEntropy_AI",
-          "linkedin": "https://www.linkedin.com/company/zeroentropy-inc"
+          "twitter": "https://x.com/exaailabs",
+          "linkedin": "https://www.linkedin.com/company/exa-ai",
+          "github": "https://github.com/exa-labs"
         },
-        "contact_page": "",
+        "contact_page": "https://exa.ai/contact",
         "product_access": [
           {
-            "label": "Documentation",
-            "url": "https://docs.zeroentropy.dev/introduction"
+            "label": "Docs",
+            "url": "https://exa.ai/docs"
           },
           {
             "label": "Pricing",
-            "url": "https://www.zeroentropy.dev/pricing/"
+            "url": "https://exa.ai/pricing"
           },
           {
-            "label": "Start Now",
-            "url": "https://dashboard.zeroentropy.dev/signup"
-          },
-          {
-            "label": "Try Now",
-            "url": "https://dashboard.zeroentropy.dev"
+            "label": "Sign up",
+            "url": "https://dashboard.exa.ai"
           }
         ],
         "pages_crawled": [
-          "https://www.zeroentropy.dev/",
-          "https://www.zeroentropy.dev/about",
-          "https://www.zeroentropy.dev/",
-          "https://www.zeroentropy.dev/"
+          "https://exa.ai/",
+          "https://exa.ai/about",
+          "https://exa.ai/contact"
         ],
-        "enriched_at": "2026-10-27T11:51:07+00:00",
+        "enriched_at": "2026-10-28T12:24:48+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -456,166 +402,42 @@
         {
           "type": "funding",
           "source": "web",
-          "url": "https://finance.yahoo.com/news/moroccan-founder-raises-4-2m-130041001.html?fr=sycsrp_catchall",
+          "url": "https://exa.ai/blog/announcing-series-b",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [
         {
-          "name": "Ghita Houir Alami",
+          "name": "Will Bryk",
           "role": "CEO & Co‑founder",
-          "org": "ZeroEntropy",
-          "evidence": "co‑founded by CEO Ghita Houir Alami",
-          "linkedin": "https://www.linkedin.com/in/ghita-houir-alami/en",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://finance.yahoo.com/news/moroccan-founder-raises-4-2m-130041001.html?fr=sycsrp_catchall"
-        },
-        {
-          "name": "Nicolas Pipitone",
-          "role": "CTO & Co‑founder",
-          "org": "ZeroEntropy",
-          "evidence": "co‑founded by ... CTO Nicolas Pipitone",
-          "linkedin": "https://www.linkedin.com/in/nicholas-pipitone",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://finance.yahoo.com/news/moroccan-founder-raises-4-2m-130041001.html?fr=sycsrp_catchall"
-        },
-        {
-          "name": "Zoe Perret",
-          "role": "Partner",
-          "org": "Initialized Capital",
-          "evidence": "\"We've met a lot of teams...\" says Zoe Perret, partner at Initialized Capital",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Ghita Houir Alami",
-          "rel": "cofounded",
-          "dst": "ZeroEntropy",
-          "evidence": "co‑founded by CEO Ghita Houir Alami"
-        },
-        {
-          "src": "Nicolas Pipitone",
-          "rel": "cofounded",
-          "dst": "ZeroEntropy",
-          "evidence": "co‑founded by ... CTO Nicolas Pipitone"
-        },
-        {
-          "src": "Initialized Capital",
-          "rel": "invested_in",
-          "dst": "ZeroEntropy",
-          "evidence": "The round was led by Initialized Capital"
-        },
-        {
-          "src": "Y Combinator",
-          "rel": "invested_in",
-          "dst": "ZeroEntropy",
-          "evidence": "with participation from Y Combinator"
-        },
-        {
-          "src": "Transpose Platform",
-          "rel": "invested_in",
-          "dst": "ZeroEntropy",
-          "evidence": "with participation from ... Transpose Platform"
-        },
-        {
-          "src": "22 Ventures",
-          "rel": "invested_in",
-          "dst": "ZeroEntropy",
-          "evidence": "with participation from ... 22 Ventures"
-        },
-        {
-          "src": "a16z Scout",
-          "rel": "invested_in",
-          "dst": "ZeroEntropy",
-          "evidence": "with participation from ... a16z Scout"
-        }
-      ]
-    },
-    {
-      "company_name": "Photogenik Inc.",
-      "core_product": "A personal photo coaching iOS app that guides users through photo shoots with real‑time visual cues and AI‑curated shot selection.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the backend to process and semantically index large volumes of user‑generated photos for real‑time coaching and recommendation.",
-      "value_prop_pitch": "We can build a Next.js front‑end that streams your photo metadata to a vector‑based semantic search layer, letting you retrieve similar poses instantly. This will offload heavy image matching from your mobile app and let you scale coaching suggestions without rebuilding your iOS codebase.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$10K",
-      "hq": "Newark, DELAWARE",
-      "website": "https://photogenik.app",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/2162052/000216205226000001/",
-      "discovered_at": "2026-10-27T11:49:35+00:00",
-      "source": "edgar",
-      "score": 70,
-      "gaps": [
-        "tech stack",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://photogenik.app",
-        "emails": [
-          {
-            "value": "hello@photogenik.app",
-            "kind": "general",
-            "source_url": "https://photogenik.app/"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://photogenik.app/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://photogenik.app/",
-          "https://photogenik.app/about",
-          "https://photogenik.app/contact",
-          "https://photogenik.app/team"
-        ],
-        "enriched_at": "2026-10-27T11:51:09+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "edgar",
-          "url": "https://www.sec.gov/Archives/edgar/data/2162052/000216205226000001/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-10-26T18:17:23-04:00",
-          "seen_at": "2026-10-27T11:50:34+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Nicole Outkine",
-          "role": "Chief Executive Officer",
-          "org": "Photogenik Inc.",
-          "evidence": "Signed by Nicole Outkine, Chief Executive Officer.",
-          "linkedin": "https://www.linkedin.com/in/niki-victoria-outkine-58889a382",
+          "org": "Exa",
+          "evidence": "CEO & Co‑founder·Sep 3, 2025",
+          "linkedin": "https://www.linkedin.com/in/william-bryk",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": "search"
         },
         {
-          "name": "Abraham Sameer",
-          "role": "Executive Officer",
-          "org": "Photogenik Inc.",
-          "evidence": "- Abraham Sameer — Executive Officer",
+          "name": "Peter Fenton",
+          "role": "Investor",
+          "org": "Benchmark",
+          "evidence": "Peter Fenton from Benchmark will join our board",
           "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Tal Broda",
+          "role": "Advisor",
+          "org": "Exa",
+          "evidence": "Advised by Tal Broda (former VP of Compute, OpenAI)",
+          "linkedin": "https://www.linkedin.com/in/talbroda/",
           "twitter": "",
           "github": "",
           "homepage": "",
@@ -624,16 +446,150 @@
       ],
       "edges": [
         {
-          "src": "Nicole Outkine",
-          "rel": "founded",
-          "dst": "Photogenik Inc.",
-          "evidence": "Signed by Nicole Outkine, Chief Executive Officer."
+          "src": "Benchmark",
+          "rel": "invested_in",
+          "dst": "Exa",
+          "evidence": "The round was led by Benchmark at a $700m valuation"
         },
         {
-          "src": "Abraham Sameer",
+          "src": "Lightspeed",
+          "rel": "invested_in",
+          "dst": "Exa",
+          "evidence": "with participation from Lightspeed"
+        },
+        {
+          "src": "Y Combinator",
+          "rel": "invested_in",
+          "dst": "Exa",
+          "evidence": "with participation from Lightspeed, YCombinator"
+        },
+        {
+          "src": "NVentures",
+          "rel": "invested_in",
+          "dst": "Exa",
+          "evidence": "and NVentures, NVIDIA's venture capital arm"
+        },
+        {
+          "src": "Will Bryk",
+          "rel": "founded",
+          "dst": "Exa",
+          "evidence": "CEO & Co‑founder"
+        },
+        {
+          "src": "Peter Fenton",
+          "rel": "backed_by",
+          "dst": "Exa",
+          "evidence": "Peter Fenton from Benchmark will join our board"
+        },
+        {
+          "src": "Tal Broda",
+          "rel": "advises",
+          "dst": "Exa",
+          "evidence": "Advised by Tal Broda (former VP of Compute, OpenAI)"
+        }
+      ]
+    },
+    {
+      "company_name": "Applied Kinetics",
+      "core_product": "AI-native manufacturing of transformers, switchgear, generators, and cooling systems built to each project’s specifications and delivered to site.",
+      "tech_stack": [],
+      "likely_bottleneck": "Coordinating custom design specifications and production schedules across a distributed manufacturing network.",
+      "value_prop_pitch": "We can streamline your custom manufacturing workflow by building a Next.js portal that lets engineers submit specs and track production in real time. Coupled with a vector semantic search layer, your AI agents will instantly retrieve relevant design docs and past builds, eliminating coordination delays.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://appliedkinetics.ai",
+      "source_url": "https://www.ycombinator.com/launches/WJj-applied-kinetics-ai-native-manufacturing-for-data-center-and-energy-projects",
+      "discovered_at": "2026-10-28T12:23:12+00:00",
+      "source": "yc",
+      "score": 57,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://appliedkinetics.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/applied-kinetics-ai"
+        },
+        "contact_page": "https://appliedkinetics.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://appliedkinetics.ai/",
+          "https://appliedkinetics.ai/contact"
+        ],
+        "enriched_at": "2026-10-28T12:24:54+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/WJj-applied-kinetics-ai-native-manufacturing-for-data-center-and-energy-projects",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-28T12:24:08+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Rohit Naras",
+          "role": "CEO",
+          "org": "Applied Kinetics",
+          "evidence": "Rohit Naras (CEO): Computer Engineering at Georgia Tech. Worked on GPU telemetry at Crusoe.",
+          "linkedin": "https://www.linkedin.com/in/rohitnaras",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Adhik Durga",
+          "role": "CTO",
+          "org": "Applied Kinetics",
+          "evidence": "Adhik Durga (CTO): Computer Engineering at Georgia Tech. Previously built AI agents at IBM.",
+          "linkedin": "https://www.linkedin.com/in/adhikdurga",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Rohit Naras",
+          "rel": "founded",
+          "dst": "Applied Kinetics",
+          "evidence": "Rohit Naras (CEO): Computer Engineering at Georgia Tech."
+        },
+        {
+          "src": "Adhik Durga",
           "rel": "cofounded",
-          "dst": "Photogenik Inc.",
-          "evidence": "- Abraham Sameer — Executive Officer"
+          "dst": "Applied Kinetics",
+          "evidence": "Adhik Durga (CTO): Computer Engineering at Georgia Tech."
+        },
+        {
+          "src": "Rohit Naras",
+          "rel": "previously_at",
+          "dst": "Crusoe",
+          "evidence": "Worked on GPU telemetry at Crusoe."
+        },
+        {
+          "src": "Adhik Durga",
+          "rel": "previously_at",
+          "dst": "IBM",
+          "evidence": "Previously built AI agents at IBM."
         }
       ]
     },
@@ -649,7 +605,7 @@
       "hq": "Helsinki, FI",
       "website": "https://treat.health",
       "source_url": "https://treat.health/en/careers/full-stack-engineer/",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -676,11 +632,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://treat.health/",
-          "https://treat.health/team",
           "https://treat.health/about",
+          "https://treat.health/team",
           "https://treat.health/contact"
         ],
-        "enriched_at": "2026-10-27T11:51:14+00:00",
+        "enriched_at": "2026-10-28T12:25:01+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -697,7 +653,7 @@
             "eng"
           ],
           "posted_at": "2026-10-15T14:30:58Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -713,11 +669,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://neuralframe.com",
+      "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
       "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
-      "score": 22,
+      "score": 16,
       "gaps": [
         "funding stage",
         "location",
@@ -730,21 +686,15 @@
         "phone"
       ],
       "contact": {
-        "website": "https://neuralframe.com",
+        "website": "",
         "emails": [],
         "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/neuralframe"
-        },
-        "contact_page": "https://neuralframe.com/contact-us/",
+        "socials": {},
+        "contact_page": "",
         "product_access": [],
-        "pages_crawled": [
-          "https://neuralframe.com/",
-          "https://neuralframe.com/contact-us/",
-          "https://neuralframe.com/contact-us/"
-        ],
-        "enriched_at": "2026-10-27T11:51:23+00:00",
-        "status": "ok",
+        "pages_crawled": [],
+        "enriched_at": "2026-10-28T12:25:04+00:00",
+        "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -761,7 +711,7 @@
             "eng"
           ],
           "posted_at": "2026-10-14T21:53:28Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -779,7 +729,7 @@
       "hq": "",
       "website": "https://exlabora.com",
       "source_url": "https://exlabora.com/open-roles.html",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -803,10 +753,10 @@
         "pages_crawled": [
           "https://exlabora.com/",
           "https://exlabora.com/about",
-          "https://exlabora.com/team",
-          "https://exlabora.com/contact"
+          "https://exlabora.com/contact",
+          "https://exlabora.com/team"
         ],
-        "enriched_at": "2026-10-27T11:51:26+00:00",
+        "enriched_at": "2026-10-28T12:25:08+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -825,7 +775,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T17:28:12Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -841,9 +791,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.govstar.us",
+      "website": "https://govstar.us",
       "source_url": "https://govstar.us",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -858,7 +808,7 @@
         "phone"
       ],
       "contact": {
-        "website": "https://www.govstar.us",
+        "website": "https://govstar.us",
         "emails": [
           {
             "value": "nicholas.hanson@govstar.us",
@@ -871,12 +821,11 @@
         "contact_page": "https://www.govstar.us/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://www.govstar.us/",
           "https://www.govstar.us/about",
-          "https://www.govstar.us/contact",
-          "https://www.govstar.us/team"
+          "https://www.govstar.us/team",
+          "https://www.govstar.us/contact"
         ],
-        "enriched_at": "2026-10-27T11:51:29+00:00",
+        "enriched_at": "2026-10-28T12:25:30+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -894,7 +843,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T16:26:28Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -912,7 +861,7 @@
       "hq": "",
       "website": "https://sendery.co",
       "source_url": "https://sendery.co",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -954,10 +903,10 @@
         ],
         "pages_crawled": [
           "https://sendery.co/en",
-          "https://sendery.co/en/about",
-          "https://sendery.co/en/contact"
+          "https://sendery.co/en/contact",
+          "https://sendery.co/en/about"
         ],
-        "enriched_at": "2026-10-27T11:51:33+00:00",
+        "enriched_at": "2026-10-28T12:25:35+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -974,7 +923,7 @@
             "eng"
           ],
           "posted_at": "2026-10-13T03:40:30Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -992,7 +941,7 @@
       "hq": "",
       "website": "https://typify.dev",
       "source_url": "https://typify.dev",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -1035,7 +984,7 @@
           "https://typify.dev/",
           "https://typify.dev/landing/contact"
         ],
-        "enriched_at": "2026-10-27T11:51:37+00:00",
+        "enriched_at": "2026-10-28T12:25:38+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1053,7 +1002,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T21:00:23Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1071,7 +1020,7 @@
       "hq": "",
       "website": "",
       "source_url": "https://news.ycombinator.com/item?id=50062997",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 10,
       "gaps": [
@@ -1100,7 +1049,7 @@
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [],
-        "enriched_at": "2026-10-27T11:51:40+00:00",
+        "enriched_at": "2026-10-28T12:25:41+00:00",
         "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
@@ -1117,7 +1066,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T20:59:57Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1132,53 +1081,48 @@
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
-      "hq": "",
-      "website": "https://hiogolf.com",
+      "hq": "Buford, US",
+      "website": "https://www.hio.com",
       "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
-      "score": 36,
+      "score": 29,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors"
+        "investors",
+        "email"
       ],
       "contact": {
-        "website": "https://hiogolf.com",
-        "emails": [
-          {
-            "value": "info@hiogolf.com",
-            "kind": "general",
-            "source_url": "https://hiogolf.com/"
-          },
-          {
-            "value": "chris@hiogolf.com",
-            "kind": "person",
-            "source_url": "https://hiogolf.com/"
-          }
-        ],
+        "website": "https://www.hio.com",
+        "emails": [],
         "phones": [
           {
-            "value": "+447342218689",
+            "value": "+18008222257",
             "kind": "main",
-            "source_url": "https://hiogolf.com/"
+            "source_url": "https://www.hio.com/"
+          },
+          {
+            "value": "+18666495058",
+            "kind": "main",
+            "source_url": "https://www.hio.com/"
           }
         ],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/hio-golf"
+          "twitter": "https://x.com/AmericanHIO",
+          "linkedin": "https://www.linkedin.com/company/american-hole-'n-one"
         },
-        "contact_page": "https://hiogolf.com/contact-us",
+        "contact_page": "https://www.hio.com/contact-us",
         "product_access": [],
         "pages_crawled": [
-          "https://hiogolf.com/",
-          "https://hiogolf.com/about-us",
-          "https://hiogolf.com/contact-us"
+          "https://www.hio.com/",
+          "https://www.hio.com/about-us",
+          "https://www.hio.com/contact-us"
         ],
-        "enriched_at": "2026-10-27T11:51:52+00:00",
+        "enriched_at": "2026-10-28T12:25:49+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1195,7 +1139,7 @@
             "sales"
           ],
           "posted_at": "2026-10-12T18:51:56Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1213,7 +1157,7 @@
       "hq": "",
       "website": "https://startuphakk.com",
       "source_url": "https://startuphakk.com/jobs",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1251,7 +1195,7 @@
           "https://startuphakk.com/",
           "https://startuphakk.com/contact-us/"
         ],
-        "enriched_at": "2026-10-27T11:51:58+00:00",
+        "enriched_at": "2026-10-28T12:25:56+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1268,7 +1212,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T17:17:48Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1286,7 +1230,7 @@
       "hq": "",
       "website": "https://www.generalintelligenceholdings.com",
       "source_url": "https://www.generalintelligenceholdings.com",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1319,7 +1263,7 @@
           "https://www.generalintelligenceholdings.com/contact",
           "https://www.generalintelligenceholdings.com/team"
         ],
-        "enriched_at": "2026-10-27T11:52:01+00:00",
+        "enriched_at": "2026-10-28T12:26:00+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1336,7 +1280,7 @@
             "other"
           ],
           "posted_at": "2026-10-12T11:51:09Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1354,7 +1298,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/1pm4u2ys7us",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1396,7 +1340,7 @@
           "https://www.greenhouse.com/company",
           "https://www.greenhouse.com/contact"
         ],
-        "enriched_at": "2026-10-27T11:52:07+00:00",
+        "enriched_at": "2026-10-28T12:26:06+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1413,7 +1357,7 @@
             "eng"
           ],
           "posted_at": "2026-10-10T13:55:55Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1431,7 +1375,7 @@
       "hq": "",
       "website": "https://www.propellabs.ai",
       "source_url": "https://propellabs.ai",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -1469,7 +1413,7 @@
           "https://www.propellabs.ai/contact",
           "https://www.propellabs.ai/team"
         ],
-        "enriched_at": "2026-10-27T11:52:11+00:00",
+        "enriched_at": "2026-10-28T12:26:10+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1489,7 +1433,7 @@
             "other"
           ],
           "posted_at": "2026-10-09T13:12:43Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1507,7 +1451,7 @@
       "hq": "",
       "website": "https://skieslearn.com",
       "source_url": "https://skieslearn.com/ndbi/jobs/developer",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1542,7 +1486,7 @@
           "https://skieslearn.com/",
           "https://skieslearn.com/content/team"
         ],
-        "enriched_at": "2026-10-27T11:52:16+00:00",
+        "enriched_at": "2026-10-28T12:26:15+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1561,7 +1505,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T23:45:00Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1577,83 +1521,39 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.onechronos.com",
+      "website": "",
       "source_url": "https://news.ycombinator.com/item?id=50012248",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
-      "score": 36,
+      "score": 10,
       "gaps": [
         "funding stage",
+        "website",
         "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors"
+        "investors",
+        "email",
+        "phone"
       ],
       "contact": {
-        "website": "https://www.onechronos.com",
+        "website": "",
         "emails": [
-          {
-            "value": "info@onechronos.com",
-            "kind": "general",
-            "source_url": "https://www.onechronos.com/"
-          },
-          {
-            "value": "abdullah@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "billing_europe@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "compliance_europe@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "fx_sales@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
           {
             "value": "careers@onechronos.com",
             "kind": "other",
             "source_url": "https://news.ycombinator.com/item?id=50012248"
           }
         ],
-        "phones": [
-          {
-            "value": "+19173000108",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "+442070788689",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "+3197010258288",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          }
-        ],
-        "socials": {
-          "github": "https://github.com/onechronos"
-        },
-        "contact_page": "https://www.onechronos.com/contact/",
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
         "product_access": [],
-        "pages_crawled": [
-          "https://www.onechronos.com/",
-          "https://www.onechronos.com/about/",
-          "https://www.onechronos.com/contact/"
-        ],
-        "enriched_at": "2026-10-27T11:52:22+00:00",
-        "status": "ok",
+        "pages_crawled": [],
+        "enriched_at": "2026-10-28T12:26:18+00:00",
+        "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -1673,7 +1573,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T21:04:09Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
@@ -1691,7 +1591,7 @@
       "hq": "",
       "website": "https://ojin.ai",
       "source_url": "https://ojin.ai",
-      "discovered_at": "2026-10-27T11:50:34+00:00",
+      "discovered_at": "2026-10-28T12:24:08+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1738,7 +1638,7 @@
           "https://ojin.ai/about-us",
           "https://ojin.ai/enterprise"
         ],
-        "enriched_at": "2026-10-27T11:52:27+00:00",
+        "enriched_at": "2026-10-28T12:26:24+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1755,7 +1655,7 @@
             "eng"
           ],
           "posted_at": "2026-10-08T11:10:20Z",
-          "seen_at": "2026-10-27T11:50:34+00:00"
+          "seen_at": "2026-10-28T12:24:08+00:00"
         }
       ],
       "people": [],
