@@ -383,6 +383,14 @@
       "score": 88
     },
     {
+      "id": "onechronos",
+      "label": "OneChronos",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://www.onechronos.com",
+      "score": 61
+    },
+    {
       "id": "eric magliarditi",
       "label": "Eric Magliarditi",
       "type": "person",
@@ -2409,6 +2417,32 @@
       }
     },
     {
+      "id": "stephen johnson",
+      "label": "Stephen Johnson",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "kelly littlepage",
+      "label": "Kelly Littlepage",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/klittlepage"
+      }
+    },
+    {
+      "id": "richard suth",
+      "label": "Richard Suth",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -3231,14 +3265,6 @@
       "score": 32
     },
     {
-      "id": "neuralframe",
-      "label": "NeuralFrame",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "score": 16
-    },
-    {
       "id": "exlabora ai",
       "label": "exLabora AI",
       "type": "startup",
@@ -3269,14 +3295,6 @@
       "degree": 0,
       "website": "https://typify.dev",
       "score": 22
-    },
-    {
-      "id": "indiana microelectronics llc",
-      "label": "Indiana Microelectronics LLC",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
     },
     {
       "id": "hio",
@@ -3327,20 +3345,28 @@
       "score": 26
     },
     {
-      "id": "onechronos",
-      "label": "OneChronos",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
-    },
-    {
       "id": "ojin",
       "label": "Ojin",
       "type": "startup",
       "degree": 0,
       "website": "https://ojin.ai",
       "score": 19
+    },
+    {
+      "id": "neuralframe",
+      "label": "NeuralFrame",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://neuralframe.com",
+      "score": 22
+    },
+    {
+      "id": "indiana microelectronics llc",
+      "label": "Indiana Microelectronics LLC",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 10
     },
     {
       "id": "kevin hartz",
@@ -7831,6 +7857,48 @@
           "run_id": "20261028T122235Z",
           "first_seen": "2026-10-28T12:26:24+00:00",
           "last_seen": "2026-10-28T12:26:24+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stephen johnson",
+      "target": "onechronos",
+      "rel": "founded",
+      "evidence": "Co-founders of OneChronos. From left, Stephen Johnson, Kelly Littlepage, and Richard Suth",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50012248",
+          "run_id": "backfill-2026-10-28",
+          "first_seen": "2026-10-28T15:02:00+00:00",
+          "last_seen": "2026-10-28T15:02:00+00:00"
+        }
+      ]
+    },
+    {
+      "source": "kelly littlepage",
+      "target": "onechronos",
+      "rel": "founded",
+      "evidence": "Co-founders of OneChronos. From left, Stephen Johnson, Kelly Littlepage, and Richard Suth",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50012248",
+          "run_id": "backfill-2026-10-28",
+          "first_seen": "2026-10-28T15:02:00+00:00",
+          "last_seen": "2026-10-28T15:02:00+00:00"
+        }
+      ]
+    },
+    {
+      "source": "richard suth",
+      "target": "onechronos",
+      "rel": "founded",
+      "evidence": "Co-founders of OneChronos. From left, Stephen Johnson, Kelly Littlepage, and Richard Suth",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50012248",
+          "run_id": "backfill-2026-10-28",
+          "first_seen": "2026-10-28T15:02:00+00:00",
+          "last_seen": "2026-10-28T15:02:00+00:00"
         }
       ]
     }

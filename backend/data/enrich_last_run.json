@@ -1,7 +1,32 @@
 {
-  "started_at": "2026-10-27T14:19:52+00:00",
+  "started_at": "2026-10-28T15:02:00+00:00",
   "skipped": "",
   "startups": [
+    {
+      "company": "NeuralFrame",
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://neuralframe.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
     {
       "company": "Indiana Microelectronics LLC",
       "score": 10,
@@ -28,23 +53,26 @@
       ]
     },
     {
-      "company": "Slingshot Insurance",
-      "score": 88,
+      "company": "OneChronos",
+      "score": 61,
       "gaps": [
+        "funding stage",
         "location",
-        "phone"
+        "funding amount",
+        "tech stack",
+        "investors"
       ],
-      "website": "https://www.slingshotinsurance.com",
+      "website": "https://www.onechronos.com",
       "status": "ok",
-      "emails": 2,
-      "phones": 0,
-      "people": 2,
-      "edges": 5,
+      "emails": 5,
+      "phones": 3,
+      "people": 3,
+      "edges": 3,
       "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "team llm: 3 people proposed, 3 grounded",
+        "team page: +3 people, +3 edges"
       ]
     }
   ],
-  "tokens": 1345
+  "tokens": 3143
 }
