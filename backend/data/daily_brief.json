@@ -1,399 +1,75 @@
 {
-  "generated_at": "2026-10-28T12:26:24+00:00",
+  "generated_at": "2026-10-29T12:35:09+00:00",
   "findings": [
     {
-      "company_name": "Daedal Systems",
-      "core_product": "Standardized plasma measurement systems for fusion reactors",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling hardware production and processing large volumes of diagnostic data",
-      "value_prop_pitch": "You could streamline your diagnostic data pipeline with a Next.js front‑end that instantly surfaces relevant measurement insights, and back it with a vector‑based semantic search layer to let engineers query raw plasma data like natural language. This would cut down on custom data‑wrangling effort and let your team focus on hardware innovation rather than building bespoke search tools.",
+      "company_name": "VUSE XR",
+      "core_product": "VUSE XR Hub is an enterprise software platform that lets industrial and life‑science companies create, manage and deploy immersive mixed‑reality training content from CAD models and product data.",
+      "tech_stack": [
+        "AI",
+        "Mixed Reality",
+        "WebGL",
+        "Unity",
+        "Meta Quest SDK"
+      ],
+      "likely_bottleneck": "scaling AI‑assisted 3D content generation and real‑time rendering for many concurrent enterprise users",
+      "value_prop_pitch": "I can refactor your content pipeline with Next.js to serve AI‑generated 3D assets via a fast, server‑side rendered front‑end, and add a vector‑semantic search layer so users instantly find the right models and instructions. This will cut latency, reduce server load, and let your engineers focus on training logic instead of custom rendering pipelines.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$4M",
-      "hq": "Toronto, Canada",
-      "website": "https://www.daedalsystems.com",
-      "source_url": "https://betakit.com/ex-general-fusion-employee-raises-4-million-usd-for-fusion-diagnostics-startup-daedal/",
-      "discovered_at": "2026-10-28T12:23:12+00:00",
+      "funding_stage": "pre-Seed",
+      "funding_amount": "€1.2 million",
+      "hq": "Freiburg, Germany",
+      "website": "https://vuse-xr.de",
+      "source_url": "https://www.eu-startups.com/2026/10/exclusive-freiburgs-vuse-xr-raises-e1-2-million-to-bring-ai-powered-mixed-reality-training-to-enterprises/",
+      "discovered_at": "2026-10-29T12:32:52+00:00",
       "source": "rss",
       "score": 88,
       "gaps": [
-        "tech stack",
         "phone"
       ],
       "contact": {
-        "website": "https://www.daedalsystems.com",
+        "website": "https://vuse-xr.de",
         "emails": [
           {
-            "value": "contact@daedalsystems.com",
+            "value": "info@vuse-xr.com",
             "kind": "general",
-            "source_url": "https://www.daedalsystems.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/daedal-systems"
-        },
-        "contact_page": "https://www.daedalsystems.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.daedalsystems.com/",
-          "https://www.daedalsystems.com/about",
-          "https://www.daedalsystems.com/contact",
-          "https://www.daedalsystems.com/team"
-        ],
-        "enriched_at": "2026-10-28T12:24:12+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://betakit.com/ex-general-fusion-employee-raises-4-million-usd-for-fusion-diagnostics-startup-daedal/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 29 Sep 2026 14:00:56 +0000",
-          "seen_at": "2026-10-28T12:24:08+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Henry Gould",
-          "role": "Founder & CEO",
-          "org": "Daedal Systems",
-          "evidence": "Daedal founder and CEO Henry Gould said in a statement",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "W. Henry Gould",
-          "role": "Founder and CEO",
-          "org": "Daedal Systems",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/whenrygould",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.daedalsystems.com/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Henry Gould",
-          "rel": "founded",
-          "dst": "Daedal Systems",
-          "evidence": "Daedal founder and CEO Henry Gould said in a statement"
-        },
-        {
-          "src": "OMERS Ventures",
-          "rel": "invested_in",
-          "dst": "Daedal Systems",
-          "evidence": "The round was led by OMERS Ventures"
-        },
-        {
-          "src": "Garage Capital",
-          "rel": "invested_in",
-          "dst": "Daedal Systems",
-          "evidence": "participation from Garage Capital"
-        }
-      ]
-    },
-    {
-      "company_name": "Axya",
-      "core_product": "An AI‑powered procurement platform that plugs into manufacturers’ existing ERP systems to automate sourcing, quoting and supplier communication.",
-      "tech_stack": [
-        "AI",
-        "cloud",
-        "REST APIs",
-        "ERP integrations"
-      ],
-      "likely_bottleneck": "Scaling AI‑driven data processing and real‑time ERP integrations as the supplier network grows.",
-      "value_prop_pitch": "You can eliminate the scaling bottleneck by building a Next.js front‑end that queries a vector‑semantic search layer over your procurement data, delivering instant, context‑aware results to users. This architecture lets you offload heavy AI inference to specialized services while keeping the UI fast and responsive.",
-      "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "$17M CAD",
-      "hq": "Montréal, Canada",
-      "website": "https://axya.co",
-      "source_url": "https://betakit.com/axya-closes-17-million-series-a-to-modernize-manufacturing-procurement/",
-      "discovered_at": "2026-10-28T12:23:12+00:00",
-      "source": "rss",
-      "score": 90,
-      "gaps": [
-        "people profiles"
-      ],
-      "contact": {
-        "website": "https://axya.co",
-        "emails": [
-          {
-            "value": "hello@axya.co",
-            "kind": "general",
-            "source_url": "https://axya.co/"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+14386008933",
-            "kind": "main",
-            "source_url": "https://axya.co/"
+            "source_url": "https://vuse-xr.de/"
           },
           {
-            "value": "+18449962812",
-            "kind": "main",
-            "source_url": "https://axya.co/"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/13073712"
-        },
-        "contact_page": "https://axya.co/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://axya.co/",
-          "https://axya.co/contact",
-          "https://axya.co/about",
-          "https://axya.co/team"
-        ],
-        "enriched_at": "2026-10-28T12:24:31+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://betakit.com/axya-closes-17-million-series-a-to-modernize-manufacturing-procurement/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Thu, 24 Sep 2026 13:30:00 +0000",
-          "seen_at": "2026-10-28T12:24:08+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Félix Bélisle‑Dockrill",
-          "role": "Co‑founder & CEO",
-          "org": "Axya",
-          "evidence": "Axya co‑founder and CEO Félix Bélisle‑Dockrill told BetaKit over email",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Udit Bhatnagar",
-          "role": "Partner, Board Member",
-          "org": "McRock Capital",
-          "evidence": "McRock partner Udit Bhatnagar, who is joining Axya’s board as part of the round",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Félix Bélisle‑Dockrill",
-          "rel": "founded",
-          "dst": "Axya",
-          "evidence": "Axya was founded in 2019 by Bélisle‑Dockrill"
-        },
-        {
-          "src": "Udit Bhatnagar",
-          "rel": "works_at",
-          "dst": "McRock Capital",
-          "evidence": "McRock partner Udit Bhatnagar"
-        },
-        {
-          "src": "McRock Capital",
-          "rel": "invested_in",
-          "dst": "Axya",
-          "evidence": "The equity portion was led by Toronto’s McRock Capital"
-        },
-        {
-          "src": "Yamaha Motor Ventures",
-          "rel": "invested_in",
-          "dst": "Axya",
-          "evidence": "with support from Yamaha Motor Ventures"
-        },
-        {
-          "src": "CIBC Innovation Banking",
-          "rel": "invested_in",
-          "dst": "Axya",
-          "evidence": "$5 million in venture debt from CIBC Innovation Banking"
-        },
-        {
-          "src": "Business Development Bank of Canada’s Industrial Innovation Venture Fund",
-          "rel": "backed_by",
-          "dst": "Axya",
-          "evidence": "existing backers like the Business Development Bank of Canada’s Industrial Innovation Venture Fund"
-        },
-        {
-          "src": "Real Ventures",
-          "rel": "backed_by",
-          "dst": "Axya",
-          "evidence": "Montréal’s Real Ventures"
-        }
-      ]
-    },
-    {
-      "company_name": "GatherHQ",
-      "core_product": "An API that interviews real buyers, builds living market models, and lets AI agents query buyer insights.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the interview collection and real‑time query infrastructure as the number of buyers and enterprise customers grows.",
-      "value_prop_pitch": "You can eliminate the scaling pain by moving the front‑end to a Next.js app that lazily loads interview dashboards and caches results, while a vector‑based semantic search layer indexes buyer responses for instant retrieval. This lets your API serve millions of queries per second with low latency and minimal engineering overhead.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.gatherhq.com",
-      "source_url": "https://www.ycombinator.com/launches/WI6-gatherhq-an-api-for-how-buyers-think-built-for-agents-and-teams",
-      "discovered_at": "2026-10-28T12:23:12+00:00",
-      "source": "yc",
-      "score": 49,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.gatherhq.com",
-        "emails": [
+            "value": "daniel.kahnfeld@vuse-xr.com",
+            "kind": "person",
+            "source_url": "https://vuse-xr.de/company/"
+          },
           {
-            "value": "support@gatherhq.com",
-            "kind": "support",
-            "source_url": "https://www.gatherhq.com/about"
+            "value": "jan.degner@vuse-xr.com",
+            "kind": "person",
+            "source_url": "https://vuse-xr.de/company/"
+          },
+          {
+            "value": "niclas.matthias@vuse-xr.com",
+            "kind": "person",
+            "source_url": "https://vuse-xr.de/company/"
+          },
+          {
+            "value": "paul.matthias@vuse-xr.com",
+            "kind": "person",
+            "source_url": "https://vuse-xr.de/company/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/gatherhq"
+          "linkedin": "https://www.linkedin.com/company/vuse-xr"
         },
         "contact_page": "",
         "product_access": [
           {
-            "label": "Documentation",
-            "url": "https://www.gatherhq.com/docs"
-          }
-        ],
-        "pages_crawled": [
-          "https://www.gatherhq.com/",
-          "https://www.gatherhq.com/about"
-        ],
-        "enriched_at": "2026-10-28T12:24:38+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WI6-gatherhq-an-api-for-how-buyers-think-built-for-agents-and-teams",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-10-28T12:24:08+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Mayank Mehta",
-          "role": "Founder",
-          "org": "GatherHQ",
-          "evidence": "We’re Mayank, Anand, and Jay. We previously built PulseQ&A (acquired by Gartner), and Cooliris (acquired by Yahoo!). Now we’re building GatherHQ",
-          "linkedin": "https://www.linkedin.com/in/mehtam1",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Mayank Mehta",
-          "rel": "founded",
-          "dst": "GatherHQ",
-          "evidence": "We’re Mayank, Anand, and Jay... Now we’re building GatherHQ"
-        }
-      ]
-    },
-    {
-      "company_name": "Exa",
-      "core_product": "A high‑quality, fast, zero‑retention search API and Websets product built for AI applications",
-      "tech_stack": [
-        "GPU cluster"
-      ],
-      "likely_bottleneck": "scaling the large‑scale indexing and retrieval pipeline to handle ever‑growing web data",
-      "value_prop_pitch": "You can eliminate the indexing bottleneck by wrapping your search endpoints in a Next.js layer that pre‑fetches and caches results, while a vector‑based semantic store lets you serve relevant chunks instantly. This lets your AI customers get sub‑450 ms latency even as the corpus grows.",
-      "is_relevant": true,
-      "funding_stage": "Series B",
-      "funding_amount": "$85M",
-      "hq": "San Francisco, US",
-      "website": "https://exa.ai",
-      "source_url": "https://exa.ai/blog/announcing-series-b",
-      "discovered_at": "2026-10-28T12:23:12+00:00",
-      "source": "web",
-      "score": 86,
-      "gaps": [
-        "funding stage",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://exa.ai",
-        "emails": [
-          {
-            "value": "hello@exa.ai",
-            "kind": "general",
-            "source_url": "https://exa.ai/"
-          },
-          {
-            "value": "press@exa.ai",
-            "kind": "press",
-            "source_url": "https://exa.ai/contact"
-          },
-          {
-            "value": "support@exa.ai",
-            "kind": "support",
-            "source_url": "https://exa.ai/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/exaailabs",
-          "linkedin": "https://www.linkedin.com/company/exa-ai",
-          "github": "https://github.com/exa-labs"
-        },
-        "contact_page": "https://exa.ai/contact",
-        "product_access": [
-          {
-            "label": "Docs",
-            "url": "https://exa.ai/docs"
-          },
-          {
             "label": "Pricing",
-            "url": "https://exa.ai/pricing"
-          },
-          {
-            "label": "Sign up",
-            "url": "https://dashboard.exa.ai"
+            "url": "https://vuse-xr.de/pricing/"
           }
         ],
         "pages_crawled": [
-          "https://exa.ai/",
-          "https://exa.ai/about",
-          "https://exa.ai/contact"
+          "https://vuse-xr.de/",
+          "https://vuse-xr.de/company/"
         ],
-        "enriched_at": "2026-10-28T12:24:48+00:00",
+        "enriched_at": "2026-10-29T12:33:33+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -401,43 +77,43 @@
       "signals": [
         {
           "type": "funding",
-          "source": "web",
-          "url": "https://exa.ai/blog/announcing-series-b",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/10/exclusive-freiburgs-vuse-xr-raises-e1-2-million-to-bring-ai-powered-mixed-reality-training-to-enterprises/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "posted_at": "Thu, 29 Oct 2026 08:01:41 +0000",
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [
         {
-          "name": "Will Bryk",
-          "role": "CEO & Co‑founder",
-          "org": "Exa",
-          "evidence": "CEO & Co‑founder·Sep 3, 2025",
-          "linkedin": "https://www.linkedin.com/in/william-bryk",
+          "name": "Dr. Paul Matthias",
+          "role": "Co‑founder",
+          "org": "VUSE XR",
+          "evidence": "Founded in November 2023 by cousins Niclas Matthias and Dr. Paul Matthias, VUSE XR develops the VUSE XR Hub...",
+          "linkedin": "https://www.linkedin.com/in/dr-paul-matthias-9bab91183",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "search"
+          "link_source": "https://vuse-xr.de/company/"
         },
         {
-          "name": "Peter Fenton",
-          "role": "Investor",
-          "org": "Benchmark",
-          "evidence": "Peter Fenton from Benchmark will join our board",
+          "name": "Jan Hendrik Degner",
+          "role": "Chief Commercial Officer",
+          "org": "VUSE XR",
+          "evidence": "Jan Hendrik Degner, who joins as Chief Commercial Officer, bringing experience from J.P. Morgan and CEWE Group",
+          "linkedin": "https://www.linkedin.com/in/janhdegner",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://vuse-xr.de/company/"
+        },
+        {
+          "name": "Robert Günther",
+          "role": "Vice President of Sales and Service Delivery",
+          "org": "VUSE XR",
+          "evidence": "Robert Günther, whose background includes senior positions at Meta and Unity, takes the role of Vice President of Sales and Service Delivery",
           "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Tal Broda",
-          "role": "Advisor",
-          "org": "Exa",
-          "evidence": "Advised by Tal Broda (former VP of Compute, OpenAI)",
-          "linkedin": "https://www.linkedin.com/in/talbroda/",
           "twitter": "",
           "github": "",
           "homepage": "",
@@ -446,87 +122,78 @@
       ],
       "edges": [
         {
-          "src": "Benchmark",
-          "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "The round was led by Benchmark at a $700m valuation"
-        },
-        {
-          "src": "Lightspeed",
-          "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "with participation from Lightspeed"
-        },
-        {
-          "src": "Y Combinator",
-          "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "with participation from Lightspeed, YCombinator"
-        },
-        {
-          "src": "NVentures",
-          "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "and NVentures, NVIDIA's venture capital arm"
-        },
-        {
-          "src": "Will Bryk",
+          "src": "Niclas Matthias",
           "rel": "founded",
-          "dst": "Exa",
-          "evidence": "CEO & Co‑founder"
+          "dst": "VUSE XR",
+          "evidence": "Founded in November 2023 by cousins Niclas Matthias and Dr. Paul Matthias, VUSE XR..."
         },
         {
-          "src": "Peter Fenton",
-          "rel": "backed_by",
-          "dst": "Exa",
-          "evidence": "Peter Fenton from Benchmark will join our board"
+          "src": "Dr. Paul Matthias",
+          "rel": "cofounded",
+          "dst": "VUSE XR",
+          "evidence": "Founded in November 2023 by cousins Niclas Matthias and Dr. Paul Matthias, VUSE XR..."
         },
         {
-          "src": "Tal Broda",
-          "rel": "advises",
-          "dst": "Exa",
-          "evidence": "Advised by Tal Broda (former VP of Compute, OpenAI)"
+          "src": "IACD",
+          "rel": "invested_in",
+          "dst": "VUSE XR",
+          "evidence": "The round was led by IACD, a Düsseldorf‑based business angel network..."
+        },
+        {
+          "src": "Jan Hendrik Degner",
+          "rel": "works_at",
+          "dst": "VUSE XR",
+          "evidence": "Jan Hendrik Degner, who joins as Chief Commercial Officer..."
+        },
+        {
+          "src": "Robert Günther",
+          "rel": "works_at",
+          "dst": "VUSE XR",
+          "evidence": "Robert Günther... takes the role of Vice President of Sales and Service Delivery"
         }
       ]
     },
     {
-      "company_name": "Applied Kinetics",
-      "core_product": "AI-native manufacturing of transformers, switchgear, generators, and cooling systems built to each project’s specifications and delivered to site.",
+      "company_name": "Faraday",
+      "core_product": "Company-specific AI and infrastructure that run manufacturing workflows end‑to‑end, from the back office to the shop floor.",
       "tech_stack": [],
-      "likely_bottleneck": "Coordinating custom design specifications and production schedules across a distributed manufacturing network.",
-      "value_prop_pitch": "We can streamline your custom manufacturing workflow by building a Next.js portal that lets engineers submit specs and track production in real time. Coupled with a vector semantic search layer, your AI agents will instantly retrieve relevant design docs and past builds, eliminating coordination delays.",
+      "likely_bottleneck": "Integrating disconnected systems, machines, spreadsheets, email, and tribal knowledge into a unified workflow.",
+      "value_prop_pitch": "As a freelance engineer, I can help you unify those fragmented data sources with a Next.js front‑end that surfaces real‑time operational insights. Coupled with vector semantic search, you’ll enable agents to retrieve exactly the right context for each manufacturing step, eliminating the integration bottleneck.",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://appliedkinetics.ai",
-      "source_url": "https://www.ycombinator.com/launches/WJj-applied-kinetics-ai-native-manufacturing-for-data-center-and-energy-projects",
-      "discovered_at": "2026-10-28T12:23:12+00:00",
+      "website": "https://faradaycompute.com",
+      "source_url": "https://www.ycombinator.com/launches/WdH-faraday-company-specific-ai-and-infrastructure-that-run-manufacturing-workflows-end-to-end-from-the-back-office-to-the-shop-floor",
+      "discovered_at": "2026-10-29T12:32:52+00:00",
       "source": "yc",
-      "score": 57,
+      "score": 54,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
         "investors",
-        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://appliedkinetics.ai",
-        "emails": [],
+        "website": "https://faradaycompute.com",
+        "emails": [
+          {
+            "value": "team@faradaycompute.com",
+            "kind": "general",
+            "source_url": "https://faradaycompute.com/contact"
+          }
+        ],
         "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/applied-kinetics-ai"
-        },
-        "contact_page": "https://appliedkinetics.ai/contact",
+        "socials": {},
+        "contact_page": "https://faradaycompute.com/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://appliedkinetics.ai/",
-          "https://appliedkinetics.ai/contact"
+          "https://faradaycompute.com/",
+          "https://faradaycompute.com/contact"
         ],
-        "enriched_at": "2026-10-28T12:24:54+00:00",
+        "enriched_at": "2026-10-29T12:33:39+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -535,61 +202,157 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WJj-applied-kinetics-ai-native-manufacturing-for-data-center-and-energy-projects",
+          "url": "https://www.ycombinator.com/launches/WdH-faraday-company-specific-ai-and-infrastructure-that-run-manufacturing-workflows-end-to-end-from-the-back-office-to-the-shop-floor",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [
         {
-          "name": "Rohit Naras",
-          "role": "CEO",
-          "org": "Applied Kinetics",
-          "evidence": "Rohit Naras (CEO): Computer Engineering at Georgia Tech. Worked on GPU telemetry at Crusoe.",
-          "linkedin": "https://www.linkedin.com/in/rohitnaras",
+          "name": "Datta Kaligotla",
+          "role": "Founder",
+          "org": "Faraday",
+          "evidence": "**Datta Kaligotla**",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "search"
+          "link_source": ""
         },
         {
-          "name": "Adhik Durga",
-          "role": "CTO",
-          "org": "Applied Kinetics",
-          "evidence": "Adhik Durga (CTO): Computer Engineering at Georgia Tech. Previously built AI agents at IBM.",
-          "linkedin": "https://www.linkedin.com/in/adhikdurga",
+          "name": "Oscar Rangel",
+          "role": "Founder",
+          "org": "Faraday",
+          "evidence": "Hi! [Oscar Rangel](https://www.linkedin.com/in/oscar-rangel) and I are building **Faraday**",
+          "linkedin": "https://www.linkedin.com/in/oscar-rangel",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "search"
+          "link_source": "https://www.ycombinator.com/launches/WdH-faraday-company-specific-ai-and-infrastructure-that-run-manufacturing-workflows-end-to-end-from-the-back-office-to-the-shop-floor"
         }
       ],
       "edges": [
         {
-          "src": "Rohit Naras",
+          "src": "Datta Kaligotla",
           "rel": "founded",
-          "dst": "Applied Kinetics",
-          "evidence": "Rohit Naras (CEO): Computer Engineering at Georgia Tech."
+          "dst": "Faraday",
+          "evidence": "**Datta Kaligotla**"
         },
         {
-          "src": "Adhik Durga",
-          "rel": "cofounded",
-          "dst": "Applied Kinetics",
-          "evidence": "Adhik Durga (CTO): Computer Engineering at Georgia Tech."
+          "src": "Oscar Rangel",
+          "rel": "founded",
+          "dst": "Faraday",
+          "evidence": "Hi! [Oscar Rangel](https://www.linkedin.com/in/oscar-rangel) and I are building **Faraday**"
+        }
+      ]
+    },
+    {
+      "company_name": "TrueMile",
+      "core_product": "An AI-native platform that plans loads, sources freight, and dispatches drivers for trucking fleets.",
+      "tech_stack": [
+        "Python",
+        "Machine Learning",
+        "AI",
+        "Mathematical Optimization"
+      ],
+      "likely_bottleneck": "Scaling AI inference and optimization across a growing fleet of trucks.",
+      "value_prop_pitch": "You can offload your planning UI to a fast Next.js front‑end that pulls real‑time optimization results via a vector‑semantic search layer, letting drivers and dispatch see the best loads instantly. This reduces latency and scaling pressure on your core AI models while keeping the data pipeline searchable.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://truemile.ai",
+      "source_url": "https://www.ycombinator.com/launches/Waf-truemile-the-ai-native-trucking-company",
+      "discovered_at": "2026-10-29T12:32:52+00:00",
+      "source": "yc",
+      "score": 64,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://truemile.ai",
+        "emails": [
+          {
+            "value": "harpreet@truemile.ai",
+            "kind": "person",
+            "source_url": "https://truemile.ai/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+14693947061",
+            "kind": "main",
+            "source_url": "https://truemile.ai/"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/truemile"
+        },
+        "contact_page": "https://truemile.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://truemile.ai/",
+          "https://truemile.ai/about",
+          "https://truemile.ai/team",
+          "https://truemile.ai/contact"
+        ],
+        "enriched_at": "2026-10-29T12:33:47+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/Waf-truemile-the-ai-native-trucking-company",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-29T12:33:30+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Harpreet Dhaliwal",
+          "role": "CEO",
+          "org": "TrueMile",
+          "evidence": "Harpreet Dhaliwal (CEO) took over his family's trucking business at 19 and led its turnaround, restructuring debt, upgrading the fleet and returning it to profitability.",
+          "linkedin": "https://www.linkedin.com/in/harpreet-dhaliwal/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.ycombinator.com/launches/Waf-truemile-the-ai-native-trucking-company"
         },
         {
-          "src": "Rohit Naras",
-          "rel": "previously_at",
-          "dst": "Crusoe",
-          "evidence": "Worked on GPU telemetry at Crusoe."
+          "name": "Daniyar Abykhanov",
+          "role": "founding engineer",
+          "org": "TrueMile",
+          "evidence": "Daniyar Abykhanov (founding engineer) built voice agents at Kazakhstan’s largest bank that took over the work of a 225-person call center.",
+          "linkedin": "https://www.linkedin.com/in/daniyarabykhanov/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.ycombinator.com/launches/Waf-truemile-the-ai-native-trucking-company"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Harpreet Dhaliwal",
+          "rel": "founded",
+          "dst": "TrueMile",
+          "evidence": "Harpreet Dhaliwal (CEO) took over his family's trucking business at 19 and led its turnaround, restructuring debt, upgrading the fleet and returning it to profitability."
         },
         {
-          "src": "Adhik Durga",
-          "rel": "previously_at",
-          "dst": "IBM",
-          "evidence": "Previously built AI agents at IBM."
+          "src": "Daniyar Abykhanov",
+          "rel": "founded",
+          "dst": "TrueMile",
+          "evidence": "Daniyar Abykhanov (founding engineer) built voice agents at Kazakhstan’s largest bank that took over the work of a 225-person call center."
         }
       ]
     },
@@ -605,7 +368,7 @@
       "hq": "Helsinki, FI",
       "website": "https://treat.health",
       "source_url": "https://treat.health/en/careers/full-stack-engineer/",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -636,7 +399,7 @@
           "https://treat.health/team",
           "https://treat.health/contact"
         ],
-        "enriched_at": "2026-10-28T12:25:01+00:00",
+        "enriched_at": "2026-10-29T12:33:50+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -653,7 +416,7 @@
             "eng"
           ],
           "posted_at": "2026-10-15T14:30:58Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -669,11 +432,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+      "website": "https://neuralframe.com",
       "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
-      "score": 16,
+      "score": 22,
       "gaps": [
         "funding stage",
         "location",
@@ -686,15 +449,21 @@
         "phone"
       ],
       "contact": {
-        "website": "",
+        "website": "https://neuralframe.com",
         "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/neuralframe"
+        },
+        "contact_page": "https://neuralframe.com/contact-us/",
         "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-10-28T12:25:04+00:00",
-        "status": "no_website",
+        "pages_crawled": [
+          "https://neuralframe.com/",
+          "https://neuralframe.com/contact-us/",
+          "https://neuralframe.com/contact-us/"
+        ],
+        "enriched_at": "2026-10-29T12:33:58+00:00",
+        "status": "ok",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -711,7 +480,7 @@
             "eng"
           ],
           "posted_at": "2026-10-14T21:53:28Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -729,7 +498,7 @@
       "hq": "",
       "website": "https://exlabora.com",
       "source_url": "https://exlabora.com/open-roles.html",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -752,11 +521,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://exlabora.com/",
-          "https://exlabora.com/about",
           "https://exlabora.com/contact",
+          "https://exlabora.com/about",
           "https://exlabora.com/team"
         ],
-        "enriched_at": "2026-10-28T12:25:08+00:00",
+        "enriched_at": "2026-10-29T12:34:03+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -775,7 +544,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T17:28:12Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -791,9 +560,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://govstar.us",
+      "website": "https://www.govstar.us",
       "source_url": "https://govstar.us",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -808,7 +577,7 @@
         "phone"
       ],
       "contact": {
-        "website": "https://govstar.us",
+        "website": "https://www.govstar.us",
         "emails": [
           {
             "value": "nicholas.hanson@govstar.us",
@@ -821,11 +590,12 @@
         "contact_page": "https://www.govstar.us/contact",
         "product_access": [],
         "pages_crawled": [
+          "https://www.govstar.us/",
           "https://www.govstar.us/about",
-          "https://www.govstar.us/team",
-          "https://www.govstar.us/contact"
+          "https://www.govstar.us/contact",
+          "https://www.govstar.us/team"
         ],
-        "enriched_at": "2026-10-28T12:25:30+00:00",
+        "enriched_at": "2026-10-29T12:34:06+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -843,7 +613,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T16:26:28Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -861,7 +631,7 @@
       "hq": "",
       "website": "https://sendery.co",
       "source_url": "https://sendery.co",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -903,10 +673,10 @@
         ],
         "pages_crawled": [
           "https://sendery.co/en",
-          "https://sendery.co/en/contact",
-          "https://sendery.co/en/about"
+          "https://sendery.co/en/about",
+          "https://sendery.co/en/contact"
         ],
-        "enriched_at": "2026-10-28T12:25:35+00:00",
+        "enriched_at": "2026-10-29T12:34:11+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -923,7 +693,7 @@
             "eng"
           ],
           "posted_at": "2026-10-13T03:40:30Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -941,7 +711,7 @@
       "hq": "",
       "website": "https://typify.dev",
       "source_url": "https://typify.dev",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -984,7 +754,7 @@
           "https://typify.dev/",
           "https://typify.dev/landing/contact"
         ],
-        "enriched_at": "2026-10-28T12:25:38+00:00",
+        "enriched_at": "2026-10-29T12:34:15+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1002,71 +772,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T21:00:23Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Indiana Microelectronics LLC",
-      "core_product": "Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50062997",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
-      "source": "hiring",
-      "score": 10,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [
-          {
-            "value": "cuppys@indianamicro.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50062997"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-10-28T12:25:41+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50062997",
-          "roles": [
-            "RF Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-10-12T20:59:57Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1081,48 +787,53 @@
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
-      "hq": "Buford, US",
-      "website": "https://www.hio.com",
+      "hq": "",
+      "website": "https://hiogolf.com",
       "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
-      "score": 29,
+      "score": 36,
       "gaps": [
         "funding stage",
+        "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors",
-        "email"
+        "investors"
       ],
       "contact": {
-        "website": "https://www.hio.com",
-        "emails": [],
-        "phones": [
+        "website": "https://hiogolf.com",
+        "emails": [
           {
-            "value": "+18008222257",
-            "kind": "main",
-            "source_url": "https://www.hio.com/"
+            "value": "info@hiogolf.com",
+            "kind": "general",
+            "source_url": "https://hiogolf.com/"
           },
           {
-            "value": "+18666495058",
+            "value": "chris@hiogolf.com",
+            "kind": "person",
+            "source_url": "https://hiogolf.com/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+447342218689",
             "kind": "main",
-            "source_url": "https://www.hio.com/"
+            "source_url": "https://hiogolf.com/"
           }
         ],
         "socials": {
-          "twitter": "https://x.com/AmericanHIO",
-          "linkedin": "https://www.linkedin.com/company/american-hole-'n-one"
+          "linkedin": "https://www.linkedin.com/company/hio-golf"
         },
-        "contact_page": "https://www.hio.com/contact-us",
+        "contact_page": "https://hiogolf.com/contact-us",
         "product_access": [],
         "pages_crawled": [
-          "https://www.hio.com/",
-          "https://www.hio.com/about-us",
-          "https://www.hio.com/contact-us"
+          "https://hiogolf.com/",
+          "https://hiogolf.com/about-us",
+          "https://hiogolf.com/contact-us"
         ],
-        "enriched_at": "2026-10-28T12:25:49+00:00",
+        "enriched_at": "2026-10-29T12:34:29+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1139,7 +850,7 @@
             "sales"
           ],
           "posted_at": "2026-10-12T18:51:56Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1157,7 +868,7 @@
       "hq": "",
       "website": "https://startuphakk.com",
       "source_url": "https://startuphakk.com/jobs",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1195,7 +906,7 @@
           "https://startuphakk.com/",
           "https://startuphakk.com/contact-us/"
         ],
-        "enriched_at": "2026-10-28T12:25:56+00:00",
+        "enriched_at": "2026-10-29T12:34:35+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1212,7 +923,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T17:17:48Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1230,7 +941,7 @@
       "hq": "",
       "website": "https://www.generalintelligenceholdings.com",
       "source_url": "https://www.generalintelligenceholdings.com",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1259,11 +970,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://www.generalintelligenceholdings.com/",
-          "https://www.generalintelligenceholdings.com/about",
           "https://www.generalintelligenceholdings.com/contact",
+          "https://www.generalintelligenceholdings.com/about",
           "https://www.generalintelligenceholdings.com/team"
         ],
-        "enriched_at": "2026-10-28T12:26:00+00:00",
+        "enriched_at": "2026-10-29T12:34:39+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1280,7 +991,7 @@
             "other"
           ],
           "posted_at": "2026-10-12T11:51:09Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1298,7 +1009,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/1pm4u2ys7us",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1340,7 +1051,7 @@
           "https://www.greenhouse.com/company",
           "https://www.greenhouse.com/contact"
         ],
-        "enriched_at": "2026-10-28T12:26:06+00:00",
+        "enriched_at": "2026-10-29T12:34:46+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1357,7 +1068,7 @@
             "eng"
           ],
           "posted_at": "2026-10-10T13:55:55Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1375,7 +1086,7 @@
       "hq": "",
       "website": "https://www.propellabs.ai",
       "source_url": "https://propellabs.ai",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -1413,7 +1124,7 @@
           "https://www.propellabs.ai/contact",
           "https://www.propellabs.ai/team"
         ],
-        "enriched_at": "2026-10-28T12:26:10+00:00",
+        "enriched_at": "2026-10-29T12:34:49+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1433,7 +1144,7 @@
             "other"
           ],
           "posted_at": "2026-10-09T13:12:43Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1451,7 +1162,7 @@
       "hq": "",
       "website": "https://skieslearn.com",
       "source_url": "https://skieslearn.com/ndbi/jobs/developer",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1486,7 +1197,7 @@
           "https://skieslearn.com/",
           "https://skieslearn.com/content/team"
         ],
-        "enriched_at": "2026-10-28T12:26:15+00:00",
+        "enriched_at": "2026-10-29T12:34:52+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1505,7 +1216,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T23:45:00Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1521,39 +1232,83 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "",
+      "website": "https://www.onechronos.com",
       "source_url": "https://news.ycombinator.com/item?id=50012248",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
-      "score": 10,
+      "score": 36,
       "gaps": [
         "funding stage",
-        "website",
         "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors",
-        "email",
-        "phone"
+        "investors"
       ],
       "contact": {
-        "website": "",
+        "website": "https://www.onechronos.com",
         "emails": [
+          {
+            "value": "info@onechronos.com",
+            "kind": "general",
+            "source_url": "https://www.onechronos.com/"
+          },
+          {
+            "value": "abdullah@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "billing_europe@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "compliance_europe@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "fx_sales@onechronos.com",
+            "kind": "person",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
           {
             "value": "careers@onechronos.com",
             "kind": "other",
             "source_url": "https://news.ycombinator.com/item?id=50012248"
           }
         ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
+        "phones": [
+          {
+            "value": "+19173000108",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "+442070788689",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          },
+          {
+            "value": "+3197010258288",
+            "kind": "main",
+            "source_url": "https://www.onechronos.com/contact/"
+          }
+        ],
+        "socials": {
+          "github": "https://github.com/onechronos"
+        },
+        "contact_page": "https://www.onechronos.com/contact/",
         "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-10-28T12:26:18+00:00",
-        "status": "no_website",
+        "pages_crawled": [
+          "https://www.onechronos.com/",
+          "https://www.onechronos.com/about/",
+          "https://www.onechronos.com/contact/"
+        ],
+        "enriched_at": "2026-10-29T12:34:58+00:00",
+        "status": "ok",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -1573,7 +1328,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T21:04:09Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
@@ -1591,7 +1346,7 @@
       "hq": "",
       "website": "https://ojin.ai",
       "source_url": "https://ojin.ai",
-      "discovered_at": "2026-10-28T12:24:08+00:00",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1638,7 +1393,7 @@
           "https://ojin.ai/about-us",
           "https://ojin.ai/enterprise"
         ],
-        "enriched_at": "2026-10-28T12:26:24+00:00",
+        "enriched_at": "2026-10-29T12:35:03+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1655,7 +1410,75 @@
             "eng"
           ],
           "posted_at": "2026-10-08T11:10:20Z",
-          "seen_at": "2026-10-28T12:24:08+00:00"
+          "seen_at": "2026-10-29T12:33:30+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "ChainSecurity",
+      "core_product": "ChainSecurity is a young and innovative cybersecurity company that operates in the blockchain and cryptocurrency space. Our mission is to make the blockchain space secure and trustworthy for people, companies, and governments alike. We are ",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "Zürich, CH",
+      "website": "https://www.chainsecurity.com",
+      "source_url": "https://chainsecurity.com/",
+      "discovered_at": "2026-10-29T12:33:30+00:00",
+      "source": "hiring",
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.chainsecurity.com",
+        "emails": [
+          {
+            "value": "jobs@chainsecurity.com",
+            "kind": "other",
+            "source_url": "https://news.ycombinator.com/item?id=50003866"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/chain_security",
+          "linkedin": "https://www.linkedin.com/company/chainsecurity"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.chainsecurity.com/",
+          "https://www.chainsecurity.com/about/"
+        ],
+        "enriched_at": "2026-10-29T12:35:09+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50003866",
+          "roles": [
+            "Blockchain Security Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-10-08T09:57:33Z",
+          "seen_at": "2026-10-29T12:33:30+00:00"
         }
       ],
       "people": [],
