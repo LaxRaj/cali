@@ -259,6 +259,14 @@
       "score": 88
     },
     {
+      "id": "ares intelligence",
+      "label": "Ares Intelligence",
+      "type": "startup",
+      "degree": 5,
+      "website": "https://aresintelligence.ai",
+      "score": 75
+    },
+    {
       "id": "guillaume miara",
       "label": "Guillaume Miara",
       "type": "person",
@@ -313,14 +321,6 @@
       "degree": 4,
       "website": "https://bia-health.com",
       "score": 87
-    },
-    {
-      "id": "ares intelligence",
-      "label": "Ares Intelligence",
-      "type": "startup",
-      "degree": 4,
-      "website": "",
-      "score": 61
     },
     {
       "id": "miles pines",
@@ -988,6 +988,12 @@
     {
       "id": "real ventures",
       "label": "Real Ventures",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "creandum",
+      "label": "Creandum",
       "type": "org",
       "degree": 2
     },
@@ -2580,7 +2586,9 @@
       "type": "person",
       "degree": 1,
       "role": "Co‑founder & CEO",
-      "links": {}
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matthewfalconer"
+      }
     },
     {
       "id": "alfie ranstead",
@@ -3437,12 +3445,6 @@
       "degree": 1
     },
     {
-      "id": "creandum",
-      "label": "Creandum",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "lakestar",
       "label": "Lakestar",
       "type": "org",
@@ -3511,14 +3513,6 @@
       "degree": 0,
       "website": "https://treat.health",
       "score": 32
-    },
-    {
-      "id": "neuralframe",
-      "label": "NeuralFrame",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "score": 16
     },
     {
       "id": "exlabora ai",
@@ -3615,6 +3609,14 @@
       "degree": 0,
       "website": "https://www.chainsecurity.com",
       "score": 22
+    },
+    {
+      "id": "neuralframe",
+      "label": "NeuralFrame",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+      "score": 16
     },
     {
       "id": "kevin hartz",
@@ -8506,9 +8508,9 @@
       "sources": [
         {
           "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "20261030T122343Z",
+          "run_id": "backfill-2026-10-30",
           "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
+          "last_seen": "2026-10-30T14:59:32+00:00"
         }
       ]
     },
@@ -8520,9 +8522,9 @@
       "sources": [
         {
           "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "20261030T122343Z",
+          "run_id": "backfill-2026-10-30",
           "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
+          "last_seen": "2026-10-30T14:59:32+00:00"
         }
       ]
     },
@@ -8534,9 +8536,9 @@
       "sources": [
         {
           "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "20261030T122343Z",
+          "run_id": "backfill-2026-10-30",
           "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
+          "last_seen": "2026-10-30T14:59:32+00:00"
         }
       ]
     },
@@ -8548,9 +8550,23 @@
       "sources": [
         {
           "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "20261030T122343Z",
+          "run_id": "backfill-2026-10-30",
           "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
+          "last_seen": "2026-10-30T14:59:32+00:00"
+        }
+      ]
+    },
+    {
+      "source": "creandum",
+      "target": "ares intelligence",
+      "rel": "backed_by",
+      "evidence": "Backed by the investors behind Europe's defining technology companies.\n[Stockholm-based venture fund ...](https://www.creandum.com)",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+          "run_id": "backfill-2026-10-30",
+          "first_seen": "2026-10-30T14:59:32+00:00",
+          "last_seen": "2026-10-30T14:59:32+00:00"
         }
       ]
     }

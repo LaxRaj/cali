@@ -1,6 +1,51 @@
 {
-  "started_at": "2026-10-29T15:08:51+00:00",
+  "started_at": "2026-10-30T14:59:32+00:00",
   "skipped": "",
-  "startups": [],
-  "tokens": 0
+  "startups": [
+    {
+      "company": "Ares Intelligence",
+      "score": 75,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "https://aresintelligence.ai",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 2,
+      "edges": 5,
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 4 people proposed, 3 grounded",
+        "team page: +1 people, +2 edges"
+      ]
+    },
+    {
+      "company": "NeuralFrame",
+      "score": 16,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "no website found"
+      ]
+    }
+  ],
+  "tokens": 1673
 }
