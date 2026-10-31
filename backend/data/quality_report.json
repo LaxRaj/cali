@@ -1,36 +1,35 @@
 {
-  "generated_at": "2026-10-30T12:27:26+00:00",
-  "candidates": 268,
-  "crawled": 9,
-  "extracted": 5,
-  "relevant": 4,
-  "valid": 4,
+  "generated_at": "2026-10-31T11:57:24+00:00",
+  "candidates": 273,
+  "crawled": 8,
+  "extracted": 6,
+  "relevant": 6,
+  "valid": 6,
   "sources": {
     "rss": 3,
-    "launch_hn": 1
+    "edgar": 1,
+    "yc": 1,
+    "web": 1
   },
-  "people": 9,
-  "edges": 17,
+  "people": 13,
+  "edges": 20,
   "dropped_ungrounded": 3,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 17,
-  "with_website": 17,
+  "enriched": 19,
+  "with_website": 19,
   "with_email": 9,
   "with_phone": 4,
-  "people_linked": 1,
-  "avg_score": 33.3,
+  "people_linked": 7,
+  "avg_score": 38.2,
   "issues": {
-    "warn: empty tech_stack": 3,
-    "not a relevant startup page": 1
+    "warn: empty tech_stack": 2
   },
   "failures": [],
   "passed": true,
   "deferred_urls": [
-    "ycombinator.com/launches/WbI-routerplus-better-inference-pricing-latency-and-capacity-for-ai-teams",
-    "ycombinator.com/launches/WTh-viraj-aero-the-gas-turbine-that-powers-and-cools-data-centers",
-    "venturecapitaltracker.com/startup/pinecone",
-    "pidgeon.ai"
+    "ycombinator.com/launches/WfE-axonnic-muscle-sensing-sleeves-for-robot-training",
+    "svpost.com/articles/exa-250m-series-c"
   ],
   "skipped": "",
   "validity_rate": 1.0

@@ -1,54 +1,45 @@
 {
-  "generated_at": "2026-10-30T12:27:26+00:00",
+  "generated_at": "2026-10-31T11:57:24+00:00",
   "findings": [
     {
-      "company_name": "Bleu Robotics",
-      "core_product": "AI models and abductive learning software that let industrial humanoid robots learn new tasks from a handful of operator demonstrations.",
-      "tech_stack": [],
-      "likely_bottleneck": "collecting and labeling enough high‑quality demonstration data to train reliable robot task models",
-      "value_prop_pitch": "I can build a Next.js portal that lets operators upload short video demos and instantly index them with vector semantic search, cutting data preparation time dramatically. This lets your abductive learning pipeline pull the right examples on‑the‑fly, accelerating model updates without massive data pipelines.",
+      "company_name": "Bloomsco",
+      "core_product": "An AI‑powered software platform that lets defence contractors create training materials, simulations and qualification plans for the military.",
+      "tech_stack": [
+        "AI",
+        "LLM",
+        "secure/air‑gapped environments"
+      ],
+      "likely_bottleneck": "Scaling a secure, air‑gapped AI pipeline that can ingest classified manuals and generate reliable training content.",
+      "value_prop_pitch": "You could offload the heavy lifting of secure vector indexing to a Next.js front‑end that talks to a hosted semantic search service, letting your engineers focus on the domain logic. This removes the bottleneck of building and maintaining a custom, classified‑environment search stack while still delivering fast, relevant training content.",
       "is_relevant": true,
-      "funding_stage": "pre-Seed",
-      "funding_amount": "€5 million",
-      "hq": "Paris, France",
-      "website": "https://bleu-robotics.com",
-      "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-      "discovered_at": "2026-10-30T12:24:25+00:00",
+      "funding_stage": "pre-seed",
+      "funding_amount": "$1 million",
+      "hq": "Montréal",
+      "website": "https://bloomsco.com",
+      "source_url": "https://betakit.com/bloomsco-raises-1-million-pre-seed-from-bdc-telegraph-for-military-training-platform/",
+      "discovered_at": "2026-10-31T11:54:24+00:00",
       "source": "rss",
-      "score": 68,
+      "score": 86,
       "gaps": [
-        "tech stack",
-        "founder",
-        "people profiles",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://bleu-robotics.com",
-        "emails": [
-          {
-            "value": "contact@bleu-robotics.com",
-            "kind": "general",
-            "source_url": "https://bleu-robotics.com/"
-          },
-          {
-            "value": "careers@bleu-robotics.com",
-            "kind": "other",
-            "source_url": "https://bleu-robotics.com/"
-          }
-        ],
+        "website": "https://bloomsco.com",
+        "emails": [],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/bleu-robotics"
+          "linkedin": "https://www.linkedin.com/company/bloomsco",
+          "twitter": "https://x.com/bloomsco_co"
         },
-        "contact_page": "https://bleu-robotics.com/contact",
+        "contact_page": "https://bloomsco.com/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://bleu-robotics.com/",
-          "https://bleu-robotics.com/about",
-          "https://bleu-robotics.com/team",
-          "https://bleu-robotics.com/contact"
+          "https://bloomsco.com/",
+          "https://bloomsco.com/about",
+          "https://bloomsco.com/contact"
         ],
-        "enriched_at": "2026-10-30T12:25:44+00:00",
+        "enriched_at": "2026-10-31T11:55:37+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -57,121 +48,500 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "url": "https://betakit.com/bloomsco-raises-1-million-pre-seed-from-bdc-telegraph-for-military-training-platform/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Thu, 29 Oct 2026 12:35:45 +0000",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "posted_at": "Fri, 30 Oct 2026 20:07:04 +0000",
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
-      "people": [],
+      "people": [
+        {
+          "name": "Hugh McGuire",
+          "role": "Co‑founder & CEO",
+          "org": "Bloomsco",
+          "evidence": "Bloomsco co-founder and CEO Hugh McGuire said in an interview with BetaKit",
+          "linkedin": "https://www.linkedin.com/in/hughmcguire",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Hadrien David",
+          "role": "Co‑founder & CTO",
+          "org": "Bloomsco",
+          "evidence": "McGuire founded Bloomsco alongside CTO Hadrien David, who was a founding engineer at healthtech company Dialogue",
+          "linkedin": "https://www.linkedin.com/in/hadriendavid",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Ron Lloyd",
+          "role": "Adviser",
+          "org": "Bloomsco",
+          "evidence": "retired Vice‑Admiral Ron Lloyd ... is now a Bloomsco adviser",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
       "edges": [
         {
-          "src": "Benoît Berkoukchi",
+          "src": "Hugh McGuire",
+          "rel": "founded",
+          "dst": "Bloomsco",
+          "evidence": "Bloomsco co-founder and CEO Hugh McGuire said in an interview with BetaKit"
+        },
+        {
+          "src": "Hadrien David",
           "rel": "cofounded",
-          "dst": "Bleu Robotics",
-          "evidence": "Benoît Berkoukchi , co‑founder of Bleu Robotics, says,"
+          "dst": "Bloomsco",
+          "evidence": "McGuire founded Bloomsco alongside CTO Hadrien David"
         },
         {
-          "src": "Contrarian Ventures",
-          "rel": "invested_in",
-          "dst": "Bleu Robotics",
-          "evidence": "The round was co‑led by Contrarian Ventures and OVNI Capital"
+          "src": "Ron Lloyd",
+          "rel": "advises",
+          "dst": "Bloomsco",
+          "evidence": "retired Vice‑Admiral Ron Lloyd ... is now a Bloomsco adviser"
         },
         {
-          "src": "OVNI Capital",
+          "src": "BDC Capital’s Seed Venture Fund",
           "rel": "invested_in",
-          "dst": "Bleu Robotics",
-          "evidence": "The round was co‑led by Contrarian Ventures and OVNI Capital"
+          "dst": "Bloomsco",
+          "evidence": "Bloomsco ... announced ... a $1‑million pre‑seed equity round from BDC Capital’s Seed Venture Fund"
         },
         {
-          "src": "Kvanted",
+          "src": "Telegraph Ventures",
           "rel": "invested_in",
-          "dst": "Bleu Robotics",
-          "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst"
-        },
-        {
-          "src": "WEPA Ventures",
-          "rel": "invested_in",
-          "dst": "Bleu Robotics",
-          "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst"
-        },
-        {
-          "src": "Motier Ventures",
-          "rel": "invested_in",
-          "dst": "Bleu Robotics",
-          "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst"
-        },
-        {
-          "src": "Charlie Songhurst",
-          "rel": "invested_in",
-          "dst": "Bleu Robotics",
-          "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst"
+          "dst": "Bloomsco",
+          "evidence": "Bloomsco ... announced ... a $1‑million pre‑seed equity round ... and Montréal‑based Telegraph Ventures"
         }
       ]
     },
     {
-      "company_name": "Simantic",
-      "core_product": "A cloud‑hosted firmware simulation platform that lets AI agents test and validate firmware via API, with an AI code reviewer and CI/CD integration.",
-      "tech_stack": [
-        "Rust",
-        "Renode",
-        "QEMU",
-        "Next.js"
+      "company_name": "Talky Labs",
+      "core_product": "AI‑powered platform that learns a company’s historical accounting rules to automate invoice processing, entry suggestion, tax review and bank reconciliation.",
+      "tech_stack": [],
+      "likely_bottleneck": "scaling the AI inference pipeline to handle millions of documents with low latency",
+      "value_prop_pitch": "I can rebuild your front‑end with Next.js to give you a fast, SEO‑friendly UI that pulls real‑time inference results via a lightweight API. Then I’ll add a vector‑based semantic search layer so your models can retrieve the most relevant historical accounting contexts instantly, eliminating latency spikes as you scale.",
+      "is_relevant": true,
+      "funding_stage": "pre‑Seed",
+      "funding_amount": "€1.5 million",
+      "hq": "",
+      "website": "https://usetalky.com",
+      "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+      "discovered_at": "2026-10-31T11:54:24+00:00",
+      "source": "rss",
+      "score": 81,
+      "gaps": [
+        "location",
+        "tech stack",
+        "people profiles"
       ],
-      "likely_bottleneck": "scaling high‑fidelity, low‑latency simulation for many concurrent firmware validation jobs",
-      "value_prop_pitch": "You could offload the heavy simulation workloads to a serverless Next.js front‑end that orchestrates vector‑based semantic search over prior simulation logs to instantly retrieve the most relevant hardware behavior patterns, dramatically cutting down on compute time. This lets you keep the Rust core fast while using modern web tech to scale the validation pipeline without rebuilding the engine.",
+      "contact": {
+        "website": "https://usetalky.com",
+        "emails": [
+          {
+            "value": "producto@talky-lab.com",
+            "kind": "person",
+            "source_url": "https://usetalky.com/about"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+15105600123",
+            "kind": "main",
+            "source_url": "https://usetalky.com/"
+          },
+          {
+            "value": "+15105600124",
+            "kind": "main",
+            "source_url": "https://usetalky.com/"
+          },
+          {
+            "value": "+15105600125",
+            "kind": "main",
+            "source_url": "https://usetalky.com/"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/talkylabs"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://usetalky.com/",
+          "https://usetalky.com/about",
+          "https://usetalky.com/auth",
+          "https://usetalky.com/auth"
+        ],
+        "enriched_at": "2026-10-31T11:55:47+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Fri, 30 Oct 2026 12:50:55 +0000",
+          "seen_at": "2026-10-31T11:55:32+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Sebastián Gunningham",
+          "role": "Angel Investor, CEO of Remitly",
+          "org": "",
+          "evidence": "angel investors Sebastián Gunningham; CEO of Remitly",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Paul Golbaum",
+          "role": "Angel Investor, CEO of Lightbase, former CTO of Seedtag",
+          "org": "",
+          "evidence": "angel investors … Paul Golbaum; CEO of Lightbase and former CTO of Seedtag",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Javier Morenés",
+          "role": "Angel Investor",
+          "org": "",
+          "evidence": "angel investors … Javier Morenés",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Jorge Beamonte",
+          "rel": "founded",
+          "dst": "Talky Labs",
+          "evidence": "Founded in 2025 by Jorge Beamonte; CEO, and Maximilian Letón"
+        },
+        {
+          "src": "Maximilian Letón",
+          "rel": "cofounded",
+          "dst": "Talky Labs",
+          "evidence": "Founded in 2025 by … Maximilian Letón (23); COO"
+        },
+        {
+          "src": "HelloWorld",
+          "rel": "invested_in",
+          "dst": "Talky Labs",
+          "evidence": "participation from venture capital firms HelloWorld"
+        },
+        {
+          "src": "Silence VC",
+          "rel": "invested_in",
+          "dst": "Talky Labs",
+          "evidence": "participation from venture capital firms HelloWorld, Silence VC"
+        },
+        {
+          "src": "Motive Force",
+          "rel": "invested_in",
+          "dst": "Talky Labs",
+          "evidence": "participation from venture capital firms HelloWorld, Silence VC, Motive Force"
+        },
+        {
+          "src": "Aera Capital",
+          "rel": "invested_in",
+          "dst": "Talky Labs",
+          "evidence": "participation from venture capital firms HelloWorld, Silence VC, Motive Force, and Aera Capital"
+        },
+        {
+          "src": "Sebastián Gunningham",
+          "rel": "invested_in",
+          "dst": "Talky Labs",
+          "evidence": "angel investors Sebastián Gunningham; CEO of Remitly"
+        },
+        {
+          "src": "Paul Golbaum",
+          "rel": "invested_in",
+          "dst": "Talky Labs",
+          "evidence": "angel investors … Paul Golbaum; CEO of Lightbase and former CTO of Seedtag"
+        },
+        {
+          "src": "Javier Morenés",
+          "rel": "invested_in",
+          "dst": "Talky Labs",
+          "evidence": "angel investors … Javier Morenés"
+        }
+      ]
+    },
+    {
+      "company_name": "Pixel Systems",
+      "core_product": "A tool that detects AI‑generated and manipulated images, documents and other digital content for fraud prevention.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling AI inference and forensic analysis to handle high‑volume real‑time verification requests.",
+      "value_prop_pitch": "I can integrate a Next.js front‑end with a vector‑based semantic search layer to cache and quickly retrieve similar forensic patterns, dramatically reducing latency. This will let Pixel Systems scale its detection engine without over‑provisioning compute resources.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "€2.7 million",
+      "hq": "Stockholm",
+      "website": "https://pixelsystems.com",
+      "source_url": "https://www.eu-startups.com/2026/10/tool-that-identifies-ai-generated-material-helps-pixel-systems-raise-e2-7-million/",
+      "discovered_at": "2026-10-31T11:54:24+00:00",
+      "source": "rss",
+      "score": 78,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://pixelsystems.com",
+        "emails": [
+          {
+            "value": "sales@pixelsystems.com",
+            "kind": "sales",
+            "source_url": "https://pixelsystems.com/contact"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/pixel-systems-ai",
+          "twitter": "https://x.com/PixelSystemsAI"
+        },
+        "contact_page": "https://pixelsystems.com/contact",
+        "product_access": [
+          {
+            "label": "Documentation",
+            "url": "https://pixelsystems.com/docs"
+          },
+          {
+            "label": "Get started",
+            "url": "https://pixelsystems.com/docs/get-started"
+          }
+        ],
+        "pages_crawled": [
+          "https://pixelsystems.com/",
+          "https://pixelsystems.com/contact",
+          "https://pixelsystems.com/company"
+        ],
+        "enriched_at": "2026-10-31T11:55:58+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/10/tool-that-identifies-ai-generated-material-helps-pixel-systems-raise-e2-7-million/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Thu, 29 Oct 2026 15:10:17 +0000",
+          "seen_at": "2026-10-31T11:55:32+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Robel Efrem",
+          "role": "co‑founder and CEO",
+          "org": "Pixel Systems",
+          "evidence": "Robel Efrem , co‑founder and CEO of Pixel",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Nora Bavey",
+          "role": "General Partner",
+          "org": "Unconventional Ventures",
+          "evidence": "Nora Bavey , General Partner at Unconventional Ventures",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Robel Efrem",
+          "rel": "cofounded",
+          "dst": "Pixel Systems",
+          "evidence": "Robel Efrem , co‑founder and CEO of Pixel"
+        },
+        {
+          "src": "Unconventional Ventures",
+          "rel": "invested_in",
+          "dst": "Pixel Systems",
+          "evidence": "The round was led by Unconventional Ventures"
+        }
+      ]
+    },
+    {
+      "company_name": "GeoForge, Inc.",
+      "core_product": "Site & Asset Intelligence platform that captures aerial and ground-level data to create organized, measurement‑ready records for residential, industrial and builder projects.",
+      "tech_stack": [
+        "Drone hardware",
+        "LiDAR",
+        "RTK GNSS",
+        "Photogrammetry (Pix4D)",
+        "Web platform"
+      ],
+      "likely_bottleneck": "processing and querying massive geospatial datasets in real time",
+      "value_prop_pitch": "We can streamline your geospatial pipeline by building a Next.js front‑end that serves vector‑searchable metadata of your aerial captures, letting your team instantly query condition records. Coupled with semantic search over your imagery embeddings, this removes the bottleneck of manual data retrieval and speeds up decision‑making.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$1.55M",
+      "hq": "Brooksville, FLORIDA",
+      "website": "https://geoforge-us.com",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2160997/000216099726000001/",
+      "discovered_at": "2026-10-31T11:54:24+00:00",
+      "source": "edgar",
+      "score": 77,
+      "gaps": [
+        "investors"
+      ],
+      "contact": {
+        "website": "https://geoforge-us.com",
+        "emails": [
+          {
+            "value": "info@geoforge-us.com",
+            "kind": "general",
+            "source_url": "https://geoforge-us.com/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+13527774077",
+            "kind": "main",
+            "source_url": "https://geoforge-us.com/"
+          }
+        ],
+        "socials": {},
+        "contact_page": "https://geoforge-us.com/contact/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://geoforge-us.com/",
+          "https://geoforge-us.com/contact/",
+          "https://geoforge-us.com/about/"
+        ],
+        "enriched_at": "2026-10-31T11:56:05+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "edgar",
+          "url": "https://www.sec.gov/Archives/edgar/data/2160997/000216099726000001/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-10-30T16:56:23-04:00",
+          "seen_at": "2026-10-31T11:55:32+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Richard Martin",
+          "role": "Executive Officer, Director",
+          "org": "GeoForge, Inc.",
+          "evidence": "Richard Martin — Executive Officer, Director",
+          "linkedin": "https://www.linkedin.com/in/richard-martin-8b3b1641",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Stephen Hohman",
+          "role": "CEO, Executive Officer, Director",
+          "org": "GeoForge, Inc.",
+          "evidence": "Stephen Hohman — Executive Officer, Director",
+          "linkedin": "https://www.linkedin.com/in/stephen-hohman-738a5a34b",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Chris Hibbetts",
+          "role": "Director",
+          "org": "GeoForge, Inc.",
+          "evidence": "Chris Hibbetts — Director",
+          "linkedin": "https://www.linkedin.com/in/chris-hibbetts-bb879720",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Hickory",
+      "core_product": "An AI-native transaction monitoring and case management system that lets compliance teams work directly with AI agents to automate fraud and AML workflows for banks and fintechs.",
+      "tech_stack": [
+        "AI",
+        "agent‑first architecture",
+        "workflow automation"
+      ],
+      "likely_bottleneck": "Integrating real‑time transaction data into the AI‑driven compliance workflow at scale.",
+      "value_prop_pitch": "You could surface each transaction in a Next.js UI that pulls in vector‑based semantic matches from your knowledge base, letting agents instantly see relevant context without manual lookup. That reduces latency and data‑integration overhead, letting your compliance team process queues even faster.",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://simantic.com",
-      "source_url": "https://news.ycombinator.com/item?id=50291116",
-      "discovered_at": "2026-10-30T12:24:25+00:00",
-      "source": "launch_hn",
-      "score": 30,
+      "website": "https://hickory.co",
+      "source_url": "https://www.ycombinator.com/launches/WgV-hickory-ai-native-compliance-operating-system-for-banks-and-fintechs",
+      "discovered_at": "2026-10-31T11:54:24+00:00",
+      "source": "yc",
+      "score": 55,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
-        "founder",
-        "people profiles",
         "investors",
-        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://simantic.com",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/simantic",
-          "github": "https://github.com/simantic-dev"
-        },
-        "contact_page": "https://simantic.com/contact",
-        "product_access": [
+        "website": "https://hickory.co",
+        "emails": [
           {
-            "label": "Pricing",
-            "url": "https://simantic.com/pricing"
-          },
-          {
-            "label": "Docs",
-            "url": "https://simantic.com/docs"
-          },
-          {
-            "label": "Try Cloud Sim",
-            "url": "https://simantic.com/cloud-sim"
-          },
-          {
-            "label": "Try Simantic Bot",
-            "url": "https://simantic.com/dashboard/simantic-bot"
+            "value": "info@hickory.co",
+            "kind": "general",
+            "source_url": "https://hickory.co/contact"
           }
         ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/hickoryco",
+          "twitter": "https://x.com/hickorycompany"
+        },
+        "contact_page": "https://hickory.co/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://simantic.com/",
-          "https://simantic.com/contact"
+          "https://hickory.co/",
+          "https://hickory.co/contact",
+          "https://hickory.co/team"
         ],
-        "enriched_at": "2026-10-30T12:25:47+00:00",
+        "enriched_at": "2026-10-31T11:56:12+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -179,57 +549,97 @@
       "signals": [
         {
           "type": "launch",
-          "source": "launch_hn",
-          "url": "https://news.ycombinator.com/item?id=50291116",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/WgV-hickory-ai-native-compliance-operating-system-for-banks-and-fintechs",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "2026-10-29T15:56:32Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "posted_at": "",
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
-      "people": [],
-      "edges": []
+      "people": [
+        {
+          "name": "Joshua Howland",
+          "role": "Founder",
+          "org": "Hickory",
+          "evidence": "Joshua Howland",
+          "linkedin": "https://www.linkedin.com/in/jkhowland",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Joshua Howland",
+          "rel": "founded",
+          "dst": "Hickory",
+          "evidence": "Joshua Howland"
+        }
+      ]
     },
     {
-      "company_name": "Dream",
-      "core_product": "An AI world‑model platform that automates building design and engineering for the architecture, engineering and construction (AEC) industry.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling massive physics‑aware AI models and ingesting hundreds of millions of square‑feet of building permit data.",
-      "value_prop_pitch": "You can offload the heavy lifting of vector‑based semantic search to a Next.js front‑end that caches embeddings and serves instant similarity results, letting your engineers focus on model fidelity. This removes the data‑retrieval bottleneck and speeds up design iteration across thousands of building projects.",
+      "company_name": "Pinecone",
+      "core_product": "A fully managed vector database for storing and querying high‑dimensional embeddings used in semantic search, recommendation, and retrieval‑augmented generation (RAG) applications.",
+      "tech_stack": [
+        "Go",
+        "Python",
+        "Kubernetes",
+        "gRPC",
+        "AWS"
+      ],
+      "likely_bottleneck": "maintaining low‑latency, high‑throughput similarity search as vector dimensions and dataset size grow",
+      "value_prop_pitch": "You could offload the latency‑critical query layer to a Next.js front‑end that caches recent vector results and pre‑fetches embeddings, dramatically reducing round‑trip time for end users. Coupled with a semantic search layer built on vector embeddings, you’ll eliminate the scaling bottleneck while keeping the developer experience simple.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$17M",
-      "hq": "San Francisco, US",
-      "website": "https://www.dreamhq.com",
-      "source_url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
-      "discovered_at": "2026-10-30T12:24:25+00:00",
-      "source": "rss",
-      "score": 85,
+      "funding_stage": "Series B",
+      "funding_amount": "$100M",
+      "hq": "New York, USA",
+      "website": "https://www.pinecone.io",
+      "source_url": "https://venturecapitaltracker.com/startup/pinecone",
+      "discovered_at": "2026-10-31T11:54:24+00:00",
+      "source": "web",
+      "score": 71,
       "gaps": [
-        "tech stack",
+        "funding stage",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.dreamhq.com",
-        "emails": [
-          {
-            "value": "inspired@dreamhq.com",
-            "kind": "person",
-            "source_url": "https://www.dreamhq.com/"
-          }
-        ],
+        "website": "https://www.pinecone.io",
+        "emails": [],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/dreamhq",
-          "linkedin": "https://www.linkedin.com/company/dreamtechnologies-inc"
+          "twitter": "https://x.com/pinecone",
+          "linkedin": "https://www.linkedin.com/company/pinecone-io",
+          "github": "https://github.com/pinecone-io"
         },
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.dreamhq.com/",
-          "https://www.dreamhq.com/company"
+        "contact_page": "https://www.pinecone.io/contact/",
+        "product_access": [
+          {
+            "label": "Start building",
+            "url": "https://app.pinecone.io/"
+          },
+          {
+            "label": "Documentation",
+            "url": "https://docs.pinecone.io/"
+          },
+          {
+            "label": "Pricing",
+            "url": "https://www.pinecone.io/pricing/"
+          },
+          {
+            "label": "Get Started with Pinecone",
+            "url": "https://docs.pinecone.io/docs/quickstart"
+          }
         ],
-        "enriched_at": "2026-10-30T12:25:56+00:00",
+        "pages_crawled": [
+          "https://www.pinecone.io/",
+          "https://www.pinecone.io/contact/",
+          "https://www.pinecone.io/company/",
+          "https://www.pinecone.io/contact/?contact_form_inquiry_type=Sales"
+        ],
+        "enriched_at": "2026-10-31T11:56:19+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -237,243 +647,45 @@
       "signals": [
         {
           "type": "funding",
-          "source": "rss",
-          "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+          "source": "web",
+          "url": "https://venturecapitaltracker.com/startup/pinecone",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Thu, 29 Oct 2026 16:21:00 +0000",
-          "seen_at": "2026-10-30T12:25:41+00:00"
-        },
-        {
-          "type": "hiring",
-          "source": "ashby",
-          "url": "https://jobs.ashbyhq.com/dreamhq",
-          "roles": [
-            "Senior Full-Stack Engineer",
-            "Full Stack Engineer",
-            "Lead AI / ML Staff Engineer",
-            "Graphics & 3D Systems Engineer",
-            "ML Engineer - Generative AI"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2025-10-16T18:59:42.120+00:00",
-          "seen_at": "2026-10-30T12:26:07+00:00"
+          "posted_at": "",
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [
         {
-          "name": "Andy Elder",
-          "role": "Co‑founder",
-          "org": "Dream",
-          "evidence": "Andy Elder and Arjun Mathur were Stanford roommates who both studied computer science before spending a decade at Palantir.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Arjun Mathur",
-          "role": "Co‑founder",
-          "org": "Dream",
-          "evidence": "Andy Elder and Arjun Mathur were Stanford roommates who both studied computer science before spending a decade at Palantir.",
-          "linkedin": "https://www.linkedin.com/in/imarjunmathur",
+          "name": "Edo Liberty",
+          "role": "Founder",
+          "org": "Pinecone",
+          "evidence": "Founded by Edo Liberty (former Amazon AI research director)",
+          "linkedin": "https://www.linkedin.com/in/edoliberty",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": "search"
-        },
-        {
-          "name": "Lars Johansen",
-          "role": "Founding Lead Engineer",
-          "org": "Dream",
-          "evidence": "schema.org Person markup",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.dreamhq.com/company"
-        },
-        {
-          "name": "Kimberly Tan",
-          "role": "Partner",
-          "org": "Andreessen Horowitz",
-          "evidence": "Kimberly Tan, a partner at Andreessen Horowitz, said that while the firm first invested in Dream over a year ago, when the startup model was just an idea, she has been extremely impressed with their progress.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Jackson Lindsay",
-          "role": "Head of Architecture",
-          "org": "Dream",
-          "evidence": "schema.org Person markup",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.dreamhq.com/company"
-        },
-        {
-          "name": "Derya Gol Gungor",
-          "role": "Head of AI Research",
-          "org": "Dream",
-          "evidence": "schema.org Person markup",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.dreamhq.com/company"
         }
       ],
       "edges": [
         {
-          "src": "Andy Elder",
-          "rel": "cofounded",
-          "dst": "Dream",
-          "evidence": "Andy Elder and Arjun Mathur were Stanford roommates who both studied computer science before spending a decade at Palantir."
+          "src": "Edo Liberty",
+          "rel": "founded",
+          "dst": "Pinecone",
+          "evidence": "Founded by Edo Liberty (former Amazon AI research director)"
         },
         {
-          "src": "Arjun Mathur",
-          "rel": "cofounded",
-          "dst": "Dream",
-          "evidence": "Andy Elder and Arjun Mathur were Stanford roommates who both studied computer science before spending a decade at Palantir."
+          "src": "Edo Liberty",
+          "rel": "previously_at",
+          "dst": "Amazon AI Labs",
+          "evidence": "Edo Liberty ran Amazon's AI Labs before founding Pinecone"
         },
         {
           "src": "Andreessen Horowitz",
           "rel": "invested_in",
-          "dst": "Dream",
-          "evidence": "Dream has emerged from stealth with $17 million in seed funding led by Andreessen Horowitz, alongside other backers, including SV Angel, XYZ, and Zigg Capital."
-        },
-        {
-          "src": "SV Angel",
-          "rel": "invested_in",
-          "dst": "Dream",
-          "evidence": "Dream has emerged from stealth with $17 million in seed funding led by Andreessen Horowitz, alongside other backers, including SV Angel, XYZ, and Zigg Capital."
-        },
-        {
-          "src": "XYZ",
-          "rel": "invested_in",
-          "dst": "Dream",
-          "evidence": "Dream has emerged from stealth with $17 million in seed funding led by Andreessen Horowitz, alongside other backers, including SV Angel, XYZ, and Zigg Capital."
-        },
-        {
-          "src": "Zigg Capital",
-          "rel": "invested_in",
-          "dst": "Dream",
-          "evidence": "Dream has emerged from stealth with $17 million in seed funding led by Andreessen Horowitz, alongside other backers, including SV Angel, XYZ, and Zigg Capital."
-        }
-      ]
-    },
-    {
-      "company_name": "Ares Intelligence",
-      "core_product": "An AI interviewer platform that conducts voice‑based, multilingual employee interviews to deliver evidence‑led AI transformation roadmaps.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling multilingual voice processing while maintaining GDPR and SOC 2 compliance.",
-      "value_prop_pitch": "I can help you build a Next.js front‑end that streams audio to a vector‑semantic search layer, instantly matching employee insights across languages. This will cut latency and simplify compliance by keeping all data indexed in a searchable, privacy‑first vector store.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "€2.6 million",
-      "hq": "London",
-      "website": "",
-      "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-      "discovered_at": "2026-10-30T12:24:25+00:00",
-      "source": "rss",
-      "score": 61,
-      "gaps": [
-        "website",
-        "tech stack",
-        "people profiles",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-10-30T12:26:19+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Fri, 30 Oct 2026 07:03:58 +0000",
-          "seen_at": "2026-10-30T12:25:41+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Matt Falconer",
-          "role": "Co‑founder & CEO",
-          "org": "Ares Intelligence",
-          "evidence": "Founded in 2026 by Matt Falconer and 21-year-old Alfie Ranstead, Ares Intelligence was built to solve a problem the founders encountered...",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Alfie Ranstead",
-          "role": "Co‑founder",
-          "org": "Ares Intelligence",
-          "evidence": "Founded in 2026 by Matt Falconer and 21-year-old Alfie Ranstead, Ares Intelligence was built to solve a problem the founders encountered...",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Richard Keuntje",
-          "role": "Vice President",
-          "org": "Creandum",
-          "evidence": "Enterprise AI today is mostly coding... said Richard Keuntje , Vice President, Creandum.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Matt Falconer",
-          "rel": "founded",
-          "dst": "Ares Intelligence",
-          "evidence": "Founded in 2026 by Matt Falconer and 21-year‑old Alfie Ranstead, Ares Intelligence was built..."
-        },
-        {
-          "src": "Alfie Ranstead",
-          "rel": "cofounded",
-          "dst": "Ares Intelligence",
-          "evidence": "Founded in 2026 by Matt Falconer and 21-year‑old Alfie Ranstead, Ares Intelligence was built..."
-        },
-        {
-          "src": "Creandum",
-          "rel": "invested_in",
-          "dst": "Ares Intelligence",
-          "evidence": "The round was backed by Creandum and Lakestar... said Richard Keuntje , Vice President, Creandum."
-        },
-        {
-          "src": "Lakestar",
-          "rel": "invested_in",
-          "dst": "Ares Intelligence",
-          "evidence": "The round was backed by Creandum and Lakestar... said Enrico Mellis , Venture Partner, Lakestar."
+          "dst": "Pinecone",
+          "evidence": "Andreessen Horowitz led a $100M Series B in April 2023"
         }
       ]
     },
@@ -489,7 +701,7 @@
       "hq": "Helsinki, FI",
       "website": "https://treat.health",
       "source_url": "https://treat.health/en/careers/full-stack-engineer/",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -517,10 +729,10 @@
         "pages_crawled": [
           "https://treat.health/",
           "https://treat.health/about",
-          "https://treat.health/contact",
-          "https://treat.health/team"
+          "https://treat.health/team",
+          "https://treat.health/contact"
         ],
-        "enriched_at": "2026-10-30T12:26:23+00:00",
+        "enriched_at": "2026-10-31T11:56:24+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -537,7 +749,7 @@
             "eng"
           ],
           "posted_at": "2026-10-15T14:30:58Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -555,7 +767,7 @@
       "hq": "",
       "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
       "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 16,
       "gaps": [
@@ -577,7 +789,7 @@
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [],
-        "enriched_at": "2026-10-30T12:26:27+00:00",
+        "enriched_at": "2026-10-31T11:56:27+00:00",
         "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
@@ -595,7 +807,7 @@
             "eng"
           ],
           "posted_at": "2026-10-14T21:53:28Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -613,7 +825,7 @@
       "hq": "",
       "website": "https://exlabora.com",
       "source_url": "https://exlabora.com/open-roles.html",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -637,10 +849,10 @@
         "pages_crawled": [
           "https://exlabora.com/",
           "https://exlabora.com/about",
-          "https://exlabora.com/team",
-          "https://exlabora.com/contact"
+          "https://exlabora.com/contact",
+          "https://exlabora.com/team"
         ],
-        "enriched_at": "2026-10-30T12:26:30+00:00",
+        "enriched_at": "2026-10-31T11:56:30+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -659,7 +871,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T17:28:12Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -677,7 +889,7 @@
       "hq": "",
       "website": "https://www.govstar.us",
       "source_url": "https://govstar.us",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -707,10 +919,10 @@
         "pages_crawled": [
           "https://www.govstar.us/",
           "https://www.govstar.us/about",
-          "https://www.govstar.us/contact",
-          "https://www.govstar.us/team"
+          "https://www.govstar.us/team",
+          "https://www.govstar.us/contact"
         ],
-        "enriched_at": "2026-10-30T12:26:33+00:00",
+        "enriched_at": "2026-10-31T11:56:33+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -728,7 +940,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T16:26:28Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -746,7 +958,7 @@
       "hq": "",
       "website": "https://sendery.co",
       "source_url": "https://sendery.co",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -788,10 +1000,10 @@
         ],
         "pages_crawled": [
           "https://sendery.co/en",
-          "https://sendery.co/en/contact",
-          "https://sendery.co/en/about"
+          "https://sendery.co/en/about",
+          "https://sendery.co/en/contact"
         ],
-        "enriched_at": "2026-10-30T12:26:37+00:00",
+        "enriched_at": "2026-10-31T11:56:37+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -808,7 +1020,7 @@
             "eng"
           ],
           "posted_at": "2026-10-13T03:40:30Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -826,7 +1038,7 @@
       "hq": "",
       "website": "https://typify.dev",
       "source_url": "https://typify.dev",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -869,7 +1081,7 @@
           "https://typify.dev/",
           "https://typify.dev/landing/contact"
         ],
-        "enriched_at": "2026-10-30T12:26:40+00:00",
+        "enriched_at": "2026-10-31T11:56:41+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -887,7 +1099,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T21:00:23Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -903,11 +1115,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.hio-club.com",
+      "website": "https://www.linkedin.com/jobs/view/4468585742/",
       "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
-      "score": 36,
+      "score": 16,
       "gaps": [
         "funding stage",
         "location",
@@ -915,40 +1127,20 @@
         "tech stack",
         "founder",
         "people profiles",
-        "investors"
+        "investors",
+        "email",
+        "phone"
       ],
       "contact": {
-        "website": "https://www.hio-club.com",
-        "emails": [
-          {
-            "value": "info@hio-club.com",
-            "kind": "general",
-            "source_url": "https://www.hio-club.com/"
-          },
-          {
-            "value": "graeme@hio-club.com",
-            "kind": "person",
-            "source_url": "https://www.hio-club.com/"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+447590426732",
-            "kind": "main",
-            "source_url": "https://www.hio-club.com/"
-          }
-        ],
-        "socials": {
-          "twitter": "https://x.com/hioclub"
-        },
-        "contact_page": "https://www.hio-club.com/pages/contact",
+        "website": "",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
         "product_access": [],
-        "pages_crawled": [
-          "https://www.hio-club.com/",
-          "https://www.hio-club.com/pages/contact"
-        ],
-        "enriched_at": "2026-10-30T12:26:47+00:00",
-        "status": "ok",
+        "pages_crawled": [],
+        "enriched_at": "2026-10-31T11:56:44+00:00",
+        "status": "no_website",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -964,7 +1156,7 @@
             "sales"
           ],
           "posted_at": "2026-10-12T18:51:56Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -982,7 +1174,7 @@
       "hq": "",
       "website": "https://startuphakk.com",
       "source_url": "https://startuphakk.com/jobs",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -1020,7 +1212,7 @@
           "https://startuphakk.com/",
           "https://startuphakk.com/contact-us/"
         ],
-        "enriched_at": "2026-10-30T12:26:52+00:00",
+        "enriched_at": "2026-10-31T11:56:49+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1037,7 +1229,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T17:17:48Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -1055,7 +1247,7 @@
       "hq": "",
       "website": "https://www.generalintelligenceholdings.com",
       "source_url": "https://www.generalintelligenceholdings.com",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1088,7 +1280,7 @@
           "https://www.generalintelligenceholdings.com/contact",
           "https://www.generalintelligenceholdings.com/team"
         ],
-        "enriched_at": "2026-10-30T12:26:55+00:00",
+        "enriched_at": "2026-10-31T11:56:52+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1105,7 +1297,7 @@
             "other"
           ],
           "posted_at": "2026-10-12T11:51:09Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -1123,7 +1315,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/1pm4u2ys7us",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1162,10 +1354,10 @@
         ],
         "pages_crawled": [
           "https://www.greenhouse.com/",
-          "https://www.greenhouse.com/company",
-          "https://www.greenhouse.com/contact"
+          "https://www.greenhouse.com/contact",
+          "https://www.greenhouse.com/company"
         ],
-        "enriched_at": "2026-10-30T12:27:01+00:00",
+        "enriched_at": "2026-10-31T11:56:58+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1182,7 +1374,7 @@
             "eng"
           ],
           "posted_at": "2026-10-10T13:55:55Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -1200,7 +1392,7 @@
       "hq": "",
       "website": "https://www.propellabs.ai",
       "source_url": "https://propellabs.ai",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -1238,7 +1430,7 @@
           "https://www.propellabs.ai/contact",
           "https://www.propellabs.ai/team"
         ],
-        "enriched_at": "2026-10-30T12:27:06+00:00",
+        "enriched_at": "2026-10-31T11:57:02+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1258,7 +1450,7 @@
             "other"
           ],
           "posted_at": "2026-10-09T13:12:43Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -1276,7 +1468,7 @@
       "hq": "",
       "website": "https://skieslearn.com",
       "source_url": "https://skieslearn.com/ndbi/jobs/developer",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1311,7 +1503,7 @@
           "https://skieslearn.com/",
           "https://skieslearn.com/content/team"
         ],
-        "enriched_at": "2026-10-30T12:27:10+00:00",
+        "enriched_at": "2026-10-31T11:57:07+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1330,119 +1522,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T23:45:00Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "OneChronos",
-      "core_product": "We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and innovative technologies to build fairer, more efficient trading infrastructure. Our production systems are",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.onechronos.com",
-      "source_url": "https://news.ycombinator.com/item?id=50012248",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
-      "source": "hiring",
-      "score": 36,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "contact": {
-        "website": "https://www.onechronos.com",
-        "emails": [
-          {
-            "value": "info@onechronos.com",
-            "kind": "general",
-            "source_url": "https://www.onechronos.com/"
-          },
-          {
-            "value": "abdullah@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "billing_europe@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "compliance_europe@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "fx_sales@onechronos.com",
-            "kind": "person",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "careers@onechronos.com",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50012248"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+19173000108",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "+442070788689",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          },
-          {
-            "value": "+3197010258288",
-            "kind": "main",
-            "source_url": "https://www.onechronos.com/contact/"
-          }
-        ],
-        "socials": {
-          "github": "https://github.com/onechronos"
-        },
-        "contact_page": "https://www.onechronos.com/contact/",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.onechronos.com/",
-          "https://www.onechronos.com/about/",
-          "https://www.onechronos.com/contact/"
-        ],
-        "enriched_at": "2026-10-30T12:27:16+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50012248",
-          "roles": [
-            "Engineering Manager",
-            "Data Platform (NYC, Hybrid) · Software Engineer",
-            "Quality",
-            "SDET (Flexible/U.S. Remote)"
-          ],
-          "role_kinds": [
-            "eng",
-            "other"
-          ],
-          "posted_at": "2026-10-08T21:04:09Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -1460,7 +1540,7 @@
       "hq": "",
       "website": "https://ojin.ai",
       "source_url": "https://ojin.ai",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1507,7 +1587,7 @@
           "https://ojin.ai/about-us",
           "https://ojin.ai/enterprise"
         ],
-        "enriched_at": "2026-10-30T12:27:21+00:00",
+        "enriched_at": "2026-10-31T11:57:12+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1524,7 +1604,7 @@
             "eng"
           ],
           "posted_at": "2026-10-08T11:10:20Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
@@ -1542,7 +1622,7 @@
       "hq": "Zürich, CH",
       "website": "https://www.chainsecurity.com",
       "source_url": "https://chainsecurity.com/",
-      "discovered_at": "2026-10-30T12:25:41+00:00",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -1575,7 +1655,7 @@
           "https://www.chainsecurity.com/",
           "https://www.chainsecurity.com/about/"
         ],
-        "enriched_at": "2026-10-30T12:27:26+00:00",
+        "enriched_at": "2026-10-31T11:57:16+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1592,7 +1672,96 @@
             "eng"
           ],
           "posted_at": "2026-10-08T09:57:33Z",
-          "seen_at": "2026-10-30T12:25:41+00:00"
+          "seen_at": "2026-10-31T11:55:32+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Buoyant",
+      "core_product": "Buoyant is the company behind Linkerd, the CNCF-graduated service mesh for Kubernetes. We’re a small, fully remote engineering team building a new cloud-native infrastructure product.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.buoyant.io",
+      "source_url": "https://news.ycombinator.com/item?id=49996914",
+      "discovered_at": "2026-10-31T11:55:32+00:00",
+      "source": "hiring",
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.buoyant.io",
+        "emails": [
+          {
+            "value": "scott.deakin@buoyant.io",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=49996914"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/6441722",
+          "twitter": "https://x.com/buoyantio"
+        },
+        "contact_page": "https://www.buoyant.io/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://www.buoyant.io/pricing"
+          },
+          {
+            "label": "Docs",
+            "url": "https://docs.buoyant.io/buoyant-enterprise-linkerd/latest/overview/"
+          },
+          {
+            "label": "Get started for free",
+            "url": "https://enterprise.buoyant.io/"
+          },
+          {
+            "label": "Get started for free",
+            "url": "https://enterprise.buoyant.io"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.buoyant.io/",
+          "https://www.buoyant.io/about-us",
+          "https://www.buoyant.io/contact"
+        ],
+        "enriched_at": "2026-10-31T11:57:24+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=49996914",
+          "roles": [
+            "Senior Software Engineer – Kubernetes",
+            "Distributed Systems"
+          ],
+          "role_kinds": [
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-10-07T18:31:29Z",
+          "seen_at": "2026-10-31T11:55:32+00:00"
         }
       ],
       "people": [],
