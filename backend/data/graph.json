@@ -89,6 +89,14 @@
       "score": 60
     },
     {
+      "id": "exa",
+      "label": "Exa",
+      "type": "startup",
+      "degree": 8,
+      "website": "https://exa.ai",
+      "score": 91
+    },
+    {
       "id": "quiver ai",
       "label": "Quiver AI",
       "type": "org",
@@ -117,14 +125,6 @@
       "degree": 7,
       "website": "https://www.cygrid.io",
       "score": 93
-    },
-    {
-      "id": "exa",
-      "label": "Exa",
-      "type": "startup",
-      "degree": 7,
-      "website": "https://exa.ai",
-      "score": 86
     },
     {
       "id": "bleu robotics",
@@ -339,6 +339,14 @@
       "score": 87
     },
     {
+      "id": "warhound",
+      "label": "Warhound",
+      "type": "startup",
+      "degree": 4,
+      "website": "https://warhound.com",
+      "score": 65
+    },
+    {
       "id": "miles pines",
       "label": "Miles Pines",
       "type": "person",
@@ -451,6 +459,14 @@
       "degree": 3,
       "website": "https://www.pinecone.io",
       "score": 71
+    },
+    {
+      "id": "fleety",
+      "label": "Fleety",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://usefleety.com",
+      "score": 59
     },
     {
       "id": "eric magliarditi",
@@ -964,6 +980,12 @@
     {
       "id": "silverton partners",
       "label": "Silverton Partners",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "lightspeed venture partners",
+      "label": "Lightspeed Venture Partners",
       "type": "org",
       "degree": 2
     },
@@ -2475,16 +2497,6 @@
       }
     },
     {
-      "id": "will bryk",
-      "label": "Will Bryk",
-      "type": "person",
-      "degree": 1,
-      "role": "CEO & Co‑founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/william-bryk"
-      }
-    },
-    {
       "id": "peter fenton",
       "label": "Peter Fenton",
       "type": "person",
@@ -2719,6 +2731,40 @@
       }
     },
     {
+      "id": "palmer luckey",
+      "label": "Palmer Luckey",
+      "type": "person",
+      "degree": 1,
+      "role": "Partner (non‑equity)",
+      "links": {}
+    },
+    {
+      "id": "will bryk",
+      "label": "Will Bryk",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/william-bryk"
+      }
+    },
+    {
+      "id": "ben zhou",
+      "label": "Ben Zhou",
+      "type": "person",
+      "degree": 1,
+      "role": "cofounder",
+      "links": {}
+    },
+    {
+      "id": "alex nelson",
+      "label": "Alex Nelson",
+      "type": "person",
+      "degree": 1,
+      "role": "Operational Manager",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -2865,12 +2911,6 @@
     {
       "id": "robinhood ventures",
       "label": "Robinhood Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lightspeed venture partners",
-      "label": "Lightspeed Venture Partners",
       "type": "org",
       "degree": 1
     },
@@ -3421,12 +3461,6 @@
       "degree": 1
     },
     {
-      "id": "nventures",
-      "label": "NVentures",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "crusoe",
       "label": "Crusoe",
       "type": "org",
@@ -3625,6 +3659,36 @@
       "degree": 1
     },
     {
+      "id": "sequoia",
+      "label": "Sequoia",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "corner ventures",
+      "label": "Corner Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "in-q-tel",
+      "label": "In-Q-Tel",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "nventures",
+      "label": "NVentures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "servicetitan",
+      "label": "ServiceTitan",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "maali",
       "label": "Maali",
       "type": "startup",
@@ -3697,6 +3761,14 @@
       "score": 32
     },
     {
+      "id": "neuralframe",
+      "label": "NeuralFrame",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://neuralframe.com",
+      "score": 22
+    },
+    {
       "id": "exlabora ai",
       "label": "exLabora AI",
       "type": "startup",
@@ -3727,6 +3799,14 @@
       "degree": 0,
       "website": "https://typify.dev",
       "score": 22
+    },
+    {
+      "id": "hio",
+      "label": "HiO",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://hiogolf.com",
+      "score": 36
     },
     {
       "id": "startuphakk",
@@ -3789,24 +3869,8 @@
       "label": "Buoyant",
       "type": "startup",
       "degree": 0,
-      "website": "https://www.buoyant.io",
-      "score": 22
-    },
-    {
-      "id": "neuralframe",
-      "label": "NeuralFrame",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "score": 16
-    },
-    {
-      "id": "hio",
-      "label": "HiO",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://playhiogolf.com",
-      "score": 29
+      "website": "",
+      "score": 10
     },
     {
       "id": "kevin hartz",
@@ -4359,6 +4423,22 @@
       "links": {
         "linkedin": "https://www.linkedin.com/in/chris-hibbetts-bb879720"
       }
+    },
+    {
+      "id": "ben lamm",
+      "label": "Ben Lamm",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder & CEO",
+      "links": {}
+    },
+    {
+      "id": "guru chahal",
+      "label": "Guru Chahal",
+      "type": "person",
+      "degree": 0,
+      "role": "Partner",
+      "links": {}
     }
   ],
   "edges": [
@@ -8057,48 +8137,6 @@
       ]
     },
     {
-      "source": "y combinator",
-      "target": "exa",
-      "rel": "invested_in",
-      "evidence": "with participation from Lightspeed, YCombinator",
-      "sources": [
-        {
-          "source_url": "https://exa.ai/blog/announcing-series-b",
-          "run_id": "20261028T122235Z",
-          "first_seen": "2026-10-28T12:26:24+00:00",
-          "last_seen": "2026-10-28T12:26:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "nventures",
-      "target": "exa",
-      "rel": "invested_in",
-      "evidence": "and NVentures, NVIDIA's venture capital arm",
-      "sources": [
-        {
-          "source_url": "https://exa.ai/blog/announcing-series-b",
-          "run_id": "20261028T122235Z",
-          "first_seen": "2026-10-28T12:26:24+00:00",
-          "last_seen": "2026-10-28T12:26:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "will bryk",
-      "target": "exa",
-      "rel": "founded",
-      "evidence": "CEO & Co‑founder",
-      "sources": [
-        {
-          "source_url": "https://exa.ai/blog/announcing-series-b",
-          "run_id": "20261028T122235Z",
-          "first_seen": "2026-10-28T12:26:24+00:00",
-          "last_seen": "2026-10-28T12:26:24+00:00"
-        }
-      ]
-    },
-    {
       "source": "peter fenton",
       "target": "exa",
       "rel": "backed_by",
@@ -9077,6 +9115,178 @@
           "last_seen": "2026-10-31T11:57:24+00:00"
         }
       ]
+    },
+    {
+      "source": "palmer luckey",
+      "target": "warhound",
+      "rel": "partner_of",
+      "evidence": "Luckey is a partner in the venture but owns no equity in it",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sequoia",
+      "target": "warhound",
+      "rel": "invested_in",
+      "evidence": "backed by $200 million in funding from investors including Sequoia",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "corner ventures",
+      "target": "warhound",
+      "rel": "invested_in",
+      "evidence": "backed by $200 million in funding from investors including … Corner Ventures",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "in-q-tel",
+      "target": "warhound",
+      "rel": "invested_in",
+      "evidence": "backed by $200 million in funding from investors including … In-Q-Tel",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "will bryk",
+      "target": "exa",
+      "rel": "founded",
+      "evidence": "“Soon, AI will search the web more than humans,” said Exa CEO, Will Bryk.",
+      "sources": [
+        {
+          "source_url": "https://exa.ai/blog/announcing-series-b",
+          "run_id": "20261028T122235Z",
+          "first_seen": "2026-10-28T12:26:24+00:00",
+          "last_seen": "2026-10-28T12:26:24+00:00"
+        },
+        {
+          "source_url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nventures",
+      "target": "exa",
+      "rel": "invested_in",
+      "evidence": "with participation from NVentures, NVIDIA’s venture capital arm",
+      "sources": [
+        {
+          "source_url": "https://exa.ai/blog/announcing-series-b",
+          "run_id": "20261028T122235Z",
+          "first_seen": "2026-10-28T12:26:24+00:00",
+          "last_seen": "2026-10-28T12:26:24+00:00"
+        },
+        {
+          "source_url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "y combinator",
+      "target": "exa",
+      "rel": "invested_in",
+      "evidence": "with participation from … Y Combinator",
+      "sources": [
+        {
+          "source_url": "https://exa.ai/blog/announcing-series-b",
+          "run_id": "20261028T122235Z",
+          "first_seen": "2026-10-28T12:26:24+00:00",
+          "last_seen": "2026-10-28T12:26:24+00:00"
+        },
+        {
+          "source_url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lightspeed venture partners",
+      "target": "exa",
+      "rel": "invested_in",
+      "evidence": "Exa, an AI research lab… announced $22M in seed and Series A funding led by Lightspeed Venture Partners",
+      "sources": [
+        {
+          "source_url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ben zhou",
+      "target": "fleety",
+      "rel": "founded",
+      "evidence": "Ben and Ari, cofounders of Fleety",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WhC-fleety-the-ai-dispatcher-for-plumbing-and-hvac-companies",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex nelson",
+      "target": "fleety",
+      "rel": "customer_of",
+      "evidence": "Hear from Alex Nelson, Operational Manager of Panther Services Group",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WhC-fleety-the-ai-dispatcher-for-plumbing-and-hvac-companies",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
+    },
+    {
+      "source": "fleety",
+      "target": "servicetitan",
+      "rel": "partner_of",
+      "evidence": "Fleety plugs into ServiceTitan",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WhC-fleety-the-ai-dispatcher-for-plumbing-and-hvac-companies",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        }
+      ]
     }
   ],
   "investors": [
@@ -9109,6 +9319,10 @@
         },
         {
           "name": "Lightspeed",
+          "shared": 1
+        },
+        {
+          "name": "Lightspeed Venture Partners",
           "shared": 1
         },
         {
@@ -9278,11 +9492,49 @@
           "shared": 1
         },
         {
+          "name": "Lightspeed Venture Partners",
+          "shared": 1
+        },
+        {
           "name": "NVentures",
           "shared": 1
         },
         {
           "name": "Susquehanna International Group",
+          "shared": 1
+        },
+        {
+          "name": "Y Combinator",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Lightspeed Venture Partners",
+      "companies": [
+        "Exa",
+        "Raindrop"
+      ],
+      "count": 2,
+      "co_investors": [
+        {
+          "name": "Benchmark",
+          "shared": 1
+        },
+        {
+          "name": "Bucky Moore",
+          "shared": 1
+        },
+        {
+          "name": "Figma Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Lightspeed",
+          "shared": 1
+        },
+        {
+          "name": "NVentures",
           "shared": 1
         },
         {

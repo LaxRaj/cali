@@ -1,35 +1,34 @@
 {
-  "generated_at": "2026-10-31T11:57:24+00:00",
-  "candidates": 273,
-  "crawled": 8,
+  "generated_at": "2026-11-01T12:57:45+00:00",
+  "candidates": 258,
+  "crawled": 7,
   "extracted": 6,
-  "relevant": 6,
-  "valid": 6,
+  "relevant": 3,
+  "valid": 3,
   "sources": {
-    "rss": 3,
-    "edgar": 1,
-    "yc": 1,
-    "web": 1
+    "rss": 1,
+    "web": 1,
+    "yc": 1
   },
-  "people": 13,
-  "edges": 20,
-  "dropped_ungrounded": 3,
+  "people": 6,
+  "edges": 11,
+  "dropped_ungrounded": 2,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 19,
-  "with_website": 19,
-  "with_email": 9,
-  "with_phone": 4,
-  "people_linked": 7,
-  "avg_score": 38.2,
+  "enriched": 17,
+  "with_website": 17,
+  "with_email": 8,
+  "with_phone": 3,
+  "people_linked": 1,
+  "avg_score": 32.4,
   "issues": {
-    "warn: empty tech_stack": 2
+    "not a relevant startup page": 3,
+    "warn: empty tech_stack": 1
   },
   "failures": [],
   "passed": true,
   "deferred_urls": [
-    "ycombinator.com/launches/WfE-axonnic-muscle-sensing-sleeves-for-robot-training",
-    "svpost.com/articles/exa-250m-series-c"
+    "ycombinator.com/launches/Wf9-the-subvocal-company-talk-without-talking"
   ],
   "skipped": "",
   "validity_rate": 1.0
