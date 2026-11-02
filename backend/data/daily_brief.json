@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-11-01T12:57:45+00:00",
+  "generated_at": "2026-11-02T15:08:02+00:00",
   "findings": [
     {
-      "company_name": "Warhound",
-      "core_product": "Genetically engineered war dogs equipped with Anduril hardware and software for military and emergency response tasks.",
+      "company_name": "Gallium Defense",
+      "core_product": "The GDS-10 X‑band AESA radar provides low‑cost, long‑range drone detection and tracking for civil and military sites.",
       "tech_stack": [
-        "CRISPR",
-        "gene editing",
         "AI",
-        "IoT",
-        "cloud"
+        "embedded computing",
+        "software‑defined radar"
       ],
-      "likely_bottleneck": "Scaling the biotech pipeline and integrating real‑time sensor data from the dogs into a reliable software platform.",
-      "value_prop_pitch": "You could eliminate the data‑integration bottleneck by building a Next.js dashboard that pulls live sensor streams into a unified view, and then use vector semantic search to let handlers query past mission logs instantly. This gives you a fast, scalable UI and powerful retrieval without re‑architecting the underlying hardware stack.",
+      "likely_bottleneck": "Collecting enough real‑world data to train the radar's machine‑learning models for reliable detection.",
+      "value_prop_pitch": "You could streamline your model training pipeline by building a Next.js dashboard that surfaces sensor logs with vector semantic search, letting engineers quickly find edge cases. This reduces the time spent labeling data and accelerates the feedback loop for your AI‑driven radar.",
       "is_relevant": true,
-      "funding_stage": "Series B",
-      "funding_amount": "$200M",
-      "hq": "",
-      "website": "https://warhound.com",
-      "source_url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
-      "discovered_at": "2026-11-01T12:55:03+00:00",
+      "funding_stage": "seed",
+      "funding_amount": "€7.1M",
+      "hq": "Paris, France",
+      "website": "https://gallium-defense.com",
+      "source_url": "https://techfundingnews.com/gallium-defense-7-1m-seed-drone-detection-radar/",
+      "discovered_at": "2026-11-02T15:05:35+00:00",
       "source": "rss",
-      "score": 65,
+      "score": 91,
       "gaps": [
-        "funding stage",
-        "location",
-        "people profiles",
-        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://warhound.com",
-        "emails": [],
+        "website": "https://gallium-defense.com",
+        "emails": [
+          {
+            "value": "contact@gallium-defense.com",
+            "kind": "general",
+            "source_url": "https://gallium-defense.com/"
+          }
+        ],
         "phones": [],
-        "socials": {},
-        "contact_page": "https://warhound.com/contact",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/gallium-defense"
+        },
+        "contact_page": "https://gallium-defense.com/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://warhound.com/",
-          "https://warhound.com/about",
-          "https://warhound.com/contact",
-          "https://warhound.com/team"
+          "https://gallium-defense.com/",
+          "https://gallium-defense.com/contact"
         ],
-        "enriched_at": "2026-11-01T12:56:09+00:00",
+        "enriched_at": "2026-11-02T15:06:22+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -51,19 +51,30 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/",
+          "url": "https://techfundingnews.com/gallium-defense-7-1m-seed-drone-detection-radar/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Thu, 22 Oct 2026 23:15:00 +0000",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "posted_at": "Mon, 02 Nov 2026 09:00:00 +0000",
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [
         {
-          "name": "Ben Lamm",
+          "name": "Eric Fournier",
           "role": "Founder & CEO",
-          "org": "Warhound",
-          "evidence": "Colossal Biosciences’ Ben Lamm and Anduril’s Palmer Luckey had an idea to genetically engineer war dogs…",
+          "org": "Gallium Defense",
+          "evidence": "its founder, Eric Fournier, told Tech Funding News",
+          "linkedin": "https://www.linkedin.com/in/eric-fournier-6ba5b326/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/gallium-defense-7-1m-seed-drone-detection-radar/"
+        },
+        {
+          "name": "Florian Lemoine",
+          "role": "Co‑founder",
+          "org": "Gallium Defense",
+          "evidence": "spent 17 years in defence, waiting for the right moment to set up his own company in April 2026 with Florian Lemoine and Robin Mandel",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -71,10 +82,272 @@
           "link_source": ""
         },
         {
-          "name": "Palmer Luckey",
-          "role": "Partner (non‑equity)",
-          "org": "Warhound",
-          "evidence": "Luckey is a partner in the venture but owns no equity in it, Lamm told TechCrunch.",
+          "name": "Robin Mandel",
+          "role": "Co‑founder",
+          "org": "Gallium Defense",
+          "evidence": "spent 17 years in defence, waiting for the right moment to set up his own company in April 2026 with Florian Lemoine and Robin Mandel",
+          "linkedin": "https://fr.linkedin.com/in/robinmandel/en",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/gallium-defense-7-1m-seed-drone-detection-radar/"
+        },
+        {
+          "name": "Alexander Ribbink",
+          "role": "General Partner at Keen Venture Partners",
+          "org": "Keen Venture Partners",
+          "evidence": "Great defence starts with superior visibility. Gallium Defense has the team... said Alexander Ribbink, general partner at Keen",
+          "linkedin": "https://nl.linkedin.com/in/alexander-ribbink-9a26b120",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/gallium-defense-7-1m-seed-drone-detection-radar/"
+        },
+        {
+          "name": "Alexandre Mordacq",
+          "role": "Partner at 360 Capital",
+          "org": "360 Capital",
+          "evidence": "360 Capital’s partner Alexandre Mordacq noted, “Drones have turned air security...",
+          "linkedin": "https://fr.linkedin.com/in/alexandre-mordacq",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/gallium-defense-7-1m-seed-drone-detection-radar/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Eric Fournier",
+          "rel": "founded",
+          "dst": "Gallium Defense",
+          "evidence": "its founder, Eric Fournier, told Tech Funding News"
+        },
+        {
+          "src": "Florian Lemoine",
+          "rel": "cofounded",
+          "dst": "Gallium Defense",
+          "evidence": "spent 17 years in defence, waiting for the right moment to set up his own company in April 2026 with Florian Lemoine and Robin Mandel"
+        },
+        {
+          "src": "Robin Mandel",
+          "rel": "cofounded",
+          "dst": "Gallium Defense",
+          "evidence": "spent 17 years in defence, waiting for the right moment to set up his own company in April 2026 with Florian Lemoine and Robin Mandel"
+        },
+        {
+          "src": "Keen Venture Partners",
+          "rel": "invested_in",
+          "dst": "Gallium Defense",
+          "evidence": "seed round, led by Keen Venture Partners"
+        },
+        {
+          "src": "360 Capital",
+          "rel": "invested_in",
+          "dst": "Gallium Defense",
+          "evidence": "seed round, led by Keen Venture Partners and 360 Capital"
+        },
+        {
+          "src": "Omnes Capital",
+          "rel": "invested_in",
+          "dst": "Gallium Defense",
+          "evidence": "Omnes Capital and Polytechnique Ventures also participated"
+        },
+        {
+          "src": "Polytechnique Ventures",
+          "rel": "invested_in",
+          "dst": "Gallium Defense",
+          "evidence": "Omnes Capital and Polytechnique Ventures also participated"
+        }
+      ]
+    },
+    {
+      "company_name": "Roleo",
+      "core_product": "A personal AI career agent for technology professionals that discovers relevant opportunities and manages careers without constant searching.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling AI‑driven personalization and real‑time matching across thousands of job opportunities.",
+      "value_prop_pitch": "I can help you accelerate your AI personalization pipeline by building a Next.js front‑end that queries a vector semantic search index for instant, context‑aware job matches. This will reduce latency, improve relevance, and let your engineers focus on core AI models instead of infrastructure.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "€2.9M",
+      "hq": "",
+      "website": "https://lens.roleomassager.com",
+      "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+      "discovered_at": "2026-11-02T15:05:35+00:00",
+      "source": "rss",
+      "score": 69,
+      "gaps": [
+        "location",
+        "tech stack",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://lens.roleomassager.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://lens.roleomassager.com/"
+        ],
+        "enriched_at": "2026-11-02T15:06:28+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Mon, 02 Nov 2026 11:29:40 +0000",
+          "seen_at": "2026-11-02T15:06:19+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Vahur Hansen",
+          "role": "Co‑founder of Roleo",
+          "org": "Roleo",
+          "evidence": "The company was founded by Janer Gorohhov… and Vahur Hansen, a former member of Wise’s early engineering team and co‑founder of startup Membo.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Paul Kleiman",
+          "role": "President and CEO, Massage U, Inc.",
+          "org": "Roleo",
+          "evidence": "schema.org Person markup",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://lens.roleomassager.com/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Vahur Hansen",
+          "rel": "cofounded",
+          "dst": "Roleo",
+          "evidence": "The company was founded by … Vahur Hansen, a former member of Wise’s early engineering team and co‑founder of startup Membo."
+        },
+        {
+          "src": "Practica Capital",
+          "rel": "invested_in",
+          "dst": "Roleo",
+          "evidence": "The round was led by the Baltic venture capital firm Practica Capital…"
+        },
+        {
+          "src": "Inventure",
+          "rel": "invested_in",
+          "dst": "Roleo",
+          "evidence": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure."
+        },
+        {
+          "src": "Janer Gorohhov",
+          "rel": "previously_at",
+          "dst": "Veriff",
+          "evidence": "Janer Gorohhov, co‑founder of identity verification unicorn Veriff."
+        },
+        {
+          "src": "Vahur Hansen",
+          "rel": "previously_at",
+          "dst": "Wise",
+          "evidence": "Vahur Hansen, a former member of Wise’s early engineering team."
+        },
+        {
+          "src": "Vahur Hansen",
+          "rel": "previously_at",
+          "dst": "Membo",
+          "evidence": "Vahur Hansen … co‑founder of startup Membo."
+        }
+      ]
+    },
+    {
+      "company_name": "Marble Cognition",
+      "core_product": "AI coworkers that learn how work is executed inside companies and automate business processes end‑to‑end.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling inference infrastructure and building a robust pipeline to map unstructured workplace processes into structured, searchable representations.",
+      "value_prop_pitch": "I can help you build a Next.js front‑end that surfaces process maps with instant, vector‑based semantic search, letting your engineers retrieve the right workflow context in milliseconds. This will offload a lot of custom indexing work and let your team focus on scaling the AI inference layer.",
+      "is_relevant": true,
+      "funding_stage": "pre-Seed",
+      "funding_amount": "€3.35 million ($3.75 million)",
+      "hq": "Munich",
+      "website": "https://marblecognition.com",
+      "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+      "discovered_at": "2026-11-02T15:05:35+00:00",
+      "source": "rss",
+      "score": 75,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://marblecognition.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/marble-cognition"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://marblecognition.com/",
+          "https://marblecognition.com/conviction/"
+        ],
+        "enriched_at": "2026-11-02T15:06:39+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Mon, 02 Nov 2026 08:00:05 +0000",
+          "seen_at": "2026-11-02T15:06:19+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Felix Rösner",
+          "role": "Founder",
+          "org": "Marble Cognition",
+          "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Christophe Schmit",
+          "role": "Founder",
+          "org": "Marble Cognition",
+          "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit",
+          "linkedin": "https://www.linkedin.com/in/christophe-schmit-6256b6200",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Reshma Sohoni",
+          "role": "General Partner",
+          "org": "Seedcamp",
+          "evidence": "Reshma Sohoni, General Partner at Seedcamp, said, “Seedcamp has a long tradition of backing founders who change how we work...",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -84,95 +357,87 @@
       ],
       "edges": [
         {
-          "src": "Palmer Luckey",
-          "rel": "partner_of",
-          "dst": "Warhound",
-          "evidence": "Luckey is a partner in the venture but owns no equity in it"
+          "src": "Felix Rösner",
+          "rel": "founded",
+          "dst": "Marble Cognition",
+          "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit"
         },
         {
-          "src": "Sequoia",
-          "rel": "invested_in",
-          "dst": "Warhound",
-          "evidence": "backed by $200 million in funding from investors including Sequoia"
+          "src": "Christophe Schmit",
+          "rel": "founded",
+          "dst": "Marble Cognition",
+          "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit"
         },
         {
-          "src": "Corner Ventures",
+          "src": "Heartcore",
           "rel": "invested_in",
-          "dst": "Warhound",
-          "evidence": "backed by $200 million in funding from investors including … Corner Ventures"
+          "dst": "Marble Cognition",
+          "evidence": "the round was co-led by Heartcore and Seedcamp"
         },
         {
-          "src": "In-Q-Tel",
+          "src": "Seedcamp",
           "rel": "invested_in",
-          "dst": "Warhound",
-          "evidence": "backed by $200 million in funding from investors including … In-Q-Tel"
+          "dst": "Marble Cognition",
+          "evidence": "the round was co-led by Heartcore and Seedcamp"
+        },
+        {
+          "src": "Reshma Sohoni",
+          "rel": "backed_by",
+          "dst": "Marble Cognition",
+          "evidence": "Reshma Sohoni, General Partner at Seedcamp, said, “Seedcamp has a long tradition of backing founders who change how we work..."
         }
       ]
     },
     {
-      "company_name": "Exa",
-      "core_product": "An AI‑powered search engine that uses embedding models to deliver semantic search results for AI applications.",
+      "company_name": "Vector",
+      "core_product": "A contact-level advertising platform that uses AI to let B2B marketers target named buyers with intent signals and query campaign performance via natural‑language interfaces.",
       "tech_stack": [
-        "Python",
-        "LLM",
-        "embeddings",
-        "vector search"
+        "LLMs (Claude, ChatGPT)",
+        "AI",
+        "cloud"
       ],
-      "likely_bottleneck": "Scaling the vector‑search infrastructure to handle billions of embeddings with low latency and cost.",
-      "value_prop_pitch": "You can eliminate the scaling pain of vector search by moving to a Next.js front‑end that talks to a managed vector database with built‑in semantic search. This lets you focus on building AI features while we handle indexing, latency and cost.",
+      "likely_bottleneck": "real‑time processing of high‑volume intent signals and seamless integration with large language models",
+      "value_prop_pitch": "I can refactor your data pipeline with a Next.js front‑end backed by a vector‑based semantic search layer, giving marketers instant, AI‑driven answers without latency spikes. This eliminates the scaling choke point you face when marrying real‑time intent streams to LLMs.",
       "is_relevant": true,
-      "funding_stage": "seed and Series A",
-      "funding_amount": "$22M",
-      "hq": "San Francisco, US",
-      "website": "https://exa.ai",
-      "source_url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
-      "discovered_at": "2026-11-01T12:55:03+00:00",
+      "funding_stage": "Series A",
+      "funding_amount": "$10M",
+      "hq": "Boston",
+      "website": "https://www.vector.co",
+      "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
+      "discovered_at": "2026-11-02T15:05:35+00:00",
       "source": "web",
-      "score": 91,
+      "score": 53,
       "gaps": [
+        "founder",
+        "people profiles",
+        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://exa.ai",
+        "website": "https://www.vector.co",
         "emails": [
           {
-            "value": "press@exa.ai",
-            "kind": "press",
-            "source_url": "https://exa.ai/contact"
-          },
-          {
-            "value": "support@exa.ai",
+            "value": "support@vector.co",
             "kind": "support",
-            "source_url": "https://exa.ai/"
+            "source_url": "https://www.vector.co/"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/exaailabs",
-          "linkedin": "https://www.linkedin.com/company/exa-ai",
-          "github": "https://github.com/exa-labs"
+          "linkedin": "https://www.linkedin.com/company/getvector"
         },
-        "contact_page": "https://exa.ai/contact",
+        "contact_page": "",
         "product_access": [
           {
-            "label": "Docs",
-            "url": "https://exa.ai/docs"
-          },
-          {
             "label": "Pricing",
-            "url": "https://exa.ai/pricing"
-          },
-          {
-            "label": "Sign up",
-            "url": "https://dashboard.exa.ai"
+            "url": "https://www.vector.co/pricing"
           }
         ],
         "pages_crawled": [
-          "https://exa.ai/",
-          "https://exa.ai/about",
-          "https://exa.ai/contact"
+          "https://www.vector.co/",
+          "https://www.vector.co/company"
         ],
-        "enriched_at": "2026-11-01T12:56:15+00:00",
+        "enriched_at": "2026-11-02T15:06:46+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -181,167 +446,15 @@
         {
           "type": "funding",
           "source": "web",
-          "url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
+          "url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
-      "people": [
-        {
-          "name": "Will Bryk",
-          "role": "CEO",
-          "org": "Exa",
-          "evidence": "“Soon, AI will search the web more than humans,” said Exa CEO, Will Bryk.",
-          "linkedin": "https://www.linkedin.com/in/william-bryk",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Guru Chahal",
-          "role": "Partner",
-          "org": "Lightspeed Venture Partners",
-          "evidence": "“Exa represents the intersection of an incredible team…,” said Guru Chahal, Partner at Lightspeed.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Will Bryk",
-          "rel": "founded",
-          "dst": "Exa",
-          "evidence": "“Soon, AI will search the web more than humans,” said Exa CEO, Will Bryk."
-        },
-        {
-          "src": "Lightspeed Venture Partners",
-          "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "Exa, an AI research lab… announced $22M in seed and Series A funding led by Lightspeed Venture Partners"
-        },
-        {
-          "src": "NVentures",
-          "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "with participation from NVentures, NVIDIA’s venture capital arm"
-        },
-        {
-          "src": "Y Combinator",
-          "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "with participation from … Y Combinator"
-        }
-      ]
-    },
-    {
-      "company_name": "Fleety",
-      "core_product": "An AI dispatcher that assigns plumbing and HVAC jobs to the best technician and continuously rebuilds the schedule.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the AI scheduling engine while maintaining real‑time integration with ServiceTitan and handling large volumes of job data.",
-      "value_prop_pitch": "I can build a Next.js front‑end that surfaces the dispatcher UI instantly to your technicians, while a vector‑based semantic search layer indexes job histories and technician skills for lightning‑fast matching. This removes the latency bottleneck in your scheduling pipeline and lets you scale the AI dispatcher without rewiring your existing ServiceTitan integration.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://usefleety.com",
-      "source_url": "https://www.ycombinator.com/launches/WhC-fleety-the-ai-dispatcher-for-plumbing-and-hvac-companies",
-      "discovered_at": "2026-11-01T12:55:03+00:00",
-      "source": "yc",
-      "score": 59,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://usefleety.com",
-        "emails": [
-          {
-            "value": "ben@usefleety.com",
-            "kind": "person",
-            "source_url": "https://usefleety.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://usefleety.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://usefleety.com/",
-          "https://usefleety.com/about",
-          "https://usefleety.com/team",
-          "https://usefleety.com/contact"
-        ],
-        "enriched_at": "2026-11-01T12:56:25+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WhC-fleety-the-ai-dispatcher-for-plumbing-and-hvac-companies",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-01T12:56:06+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Ben Zhou",
-          "role": "cofounder",
-          "org": "Fleety",
-          "evidence": "Ben and Ari, cofounders of Fleety",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Alex Nelson",
-          "role": "Operational Manager",
-          "org": "Panther Services Group",
-          "evidence": "Hear from Alex Nelson, Operational Manager of Panther Services Group",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Ben Zhou",
-          "rel": "founded",
-          "dst": "Fleety",
-          "evidence": "Ben and Ari, cofounders of Fleety"
-        },
-        {
-          "src": "Alex Nelson",
-          "rel": "customer_of",
-          "dst": "Fleety",
-          "evidence": "Hear from Alex Nelson, Operational Manager of Panther Services Group"
-        },
-        {
-          "src": "Fleety",
-          "rel": "partner_of",
-          "dst": "ServiceTitan",
-          "evidence": "Fleety plugs into ServiceTitan"
-        }
-      ]
+      "people": [],
+      "edges": []
     },
     {
       "company_name": "Treat Health",
@@ -355,7 +468,7 @@
       "hq": "Helsinki, FI",
       "website": "https://treat.health",
       "source_url": "https://treat.health/en/careers/full-stack-engineer/",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -386,7 +499,7 @@
           "https://treat.health/contact",
           "https://treat.health/team"
         ],
-        "enriched_at": "2026-11-01T12:56:35+00:00",
+        "enriched_at": "2026-11-02T15:06:54+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -403,7 +516,7 @@
             "eng"
           ],
           "posted_at": "2026-10-15T14:30:58Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -421,7 +534,7 @@
       "hq": "",
       "website": "https://neuralframe.com",
       "source_url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -449,7 +562,7 @@
           "https://neuralframe.com/contact-us/",
           "https://neuralframe.com/contact-us/"
         ],
-        "enriched_at": "2026-11-01T12:56:43+00:00",
+        "enriched_at": "2026-11-02T15:07:00+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -467,7 +580,7 @@
             "eng"
           ],
           "posted_at": "2026-10-14T21:53:28Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -485,7 +598,7 @@
       "hq": "",
       "website": "https://exlabora.com",
       "source_url": "https://exlabora.com/open-roles.html",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -512,7 +625,7 @@
           "https://exlabora.com/contact",
           "https://exlabora.com/team"
         ],
-        "enriched_at": "2026-11-01T12:56:47+00:00",
+        "enriched_at": "2026-11-02T15:07:04+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -531,7 +644,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T17:28:12Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -549,7 +662,7 @@
       "hq": "",
       "website": "https://www.govstar.us",
       "source_url": "https://govstar.us",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -578,11 +691,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://www.govstar.us/",
+          "https://www.govstar.us/contact",
           "https://www.govstar.us/about",
-          "https://www.govstar.us/team",
-          "https://www.govstar.us/contact"
+          "https://www.govstar.us/team"
         ],
-        "enriched_at": "2026-11-01T12:56:51+00:00",
+        "enriched_at": "2026-11-02T15:07:08+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -600,7 +713,7 @@
             "other"
           ],
           "posted_at": "2026-10-14T16:26:28Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -618,7 +731,7 @@
       "hq": "",
       "website": "https://sendery.co",
       "source_url": "https://sendery.co",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -660,10 +773,10 @@
         ],
         "pages_crawled": [
           "https://sendery.co/en",
-          "https://sendery.co/en/contact",
-          "https://sendery.co/en/about"
+          "https://sendery.co/en/about",
+          "https://sendery.co/en/contact"
         ],
-        "enriched_at": "2026-11-01T12:56:55+00:00",
+        "enriched_at": "2026-11-02T15:07:12+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -680,7 +793,7 @@
             "eng"
           ],
           "posted_at": "2026-10-13T03:40:30Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -698,7 +811,7 @@
       "hq": "",
       "website": "https://typify.dev",
       "source_url": "https://typify.dev",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -741,7 +854,7 @@
           "https://typify.dev/",
           "https://typify.dev/landing/contact"
         ],
-        "enriched_at": "2026-11-01T12:56:59+00:00",
+        "enriched_at": "2026-11-02T15:07:16+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -759,7 +872,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T21:00:23Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -774,53 +887,48 @@
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
-      "hq": "",
-      "website": "https://hiogolf.com",
+      "hq": "Buford, US",
+      "website": "https://www.hio.com",
       "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
-      "score": 36,
+      "score": 29,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors"
+        "investors",
+        "email"
       ],
       "contact": {
-        "website": "https://hiogolf.com",
-        "emails": [
-          {
-            "value": "info@hiogolf.com",
-            "kind": "general",
-            "source_url": "https://hiogolf.com/"
-          },
-          {
-            "value": "chris@hiogolf.com",
-            "kind": "person",
-            "source_url": "https://hiogolf.com/"
-          }
-        ],
+        "website": "https://www.hio.com",
+        "emails": [],
         "phones": [
           {
-            "value": "+447342218689",
+            "value": "+18008222257",
             "kind": "main",
-            "source_url": "https://hiogolf.com/"
+            "source_url": "https://www.hio.com/"
+          },
+          {
+            "value": "+18666495058",
+            "kind": "main",
+            "source_url": "https://www.hio.com/"
           }
         ],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/hio-golf"
+          "twitter": "https://x.com/AmericanHIO",
+          "linkedin": "https://www.linkedin.com/company/american-hole-'n-one"
         },
-        "contact_page": "https://hiogolf.com/contact-us",
+        "contact_page": "https://www.hio.com/contact-us",
         "product_access": [],
         "pages_crawled": [
-          "https://hiogolf.com/",
-          "https://hiogolf.com/about-us",
-          "https://hiogolf.com/contact-us"
+          "https://www.hio.com/",
+          "https://www.hio.com/about-us",
+          "https://www.hio.com/contact-us"
         ],
-        "enriched_at": "2026-11-01T12:57:11+00:00",
+        "enriched_at": "2026-11-02T15:07:23+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -837,7 +945,7 @@
             "sales"
           ],
           "posted_at": "2026-10-12T18:51:56Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -855,7 +963,7 @@
       "hq": "",
       "website": "https://startuphakk.com",
       "source_url": "https://startuphakk.com/jobs",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 36,
       "gaps": [
@@ -893,7 +1001,7 @@
           "https://startuphakk.com/",
           "https://startuphakk.com/contact-us/"
         ],
-        "enriched_at": "2026-11-01T12:57:15+00:00",
+        "enriched_at": "2026-11-02T15:07:29+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -910,7 +1018,7 @@
             "eng"
           ],
           "posted_at": "2026-10-12T17:17:48Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -928,7 +1036,7 @@
       "hq": "",
       "website": "https://www.generalintelligenceholdings.com",
       "source_url": "https://www.generalintelligenceholdings.com",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -957,11 +1065,11 @@
         "product_access": [],
         "pages_crawled": [
           "https://www.generalintelligenceholdings.com/",
-          "https://www.generalintelligenceholdings.com/contact",
+          "https://www.generalintelligenceholdings.com/about",
           "https://www.generalintelligenceholdings.com/team",
-          "https://www.generalintelligenceholdings.com/about"
+          "https://www.generalintelligenceholdings.com/contact"
         ],
-        "enriched_at": "2026-11-01T12:57:19+00:00",
+        "enriched_at": "2026-11-02T15:07:32+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -978,7 +1086,7 @@
             "other"
           ],
           "posted_at": "2026-10-12T11:51:09Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -996,7 +1104,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/1pm4u2ys7us",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1035,10 +1143,10 @@
         ],
         "pages_crawled": [
           "https://www.greenhouse.com/",
-          "https://www.greenhouse.com/company",
-          "https://www.greenhouse.com/contact"
+          "https://www.greenhouse.com/contact",
+          "https://www.greenhouse.com/company"
         ],
-        "enriched_at": "2026-11-01T12:57:25+00:00",
+        "enriched_at": "2026-11-02T15:07:38+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1055,7 +1163,7 @@
             "eng"
           ],
           "posted_at": "2026-10-10T13:55:55Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -1073,7 +1181,7 @@
       "hq": "",
       "website": "https://www.propellabs.ai",
       "source_url": "https://propellabs.ai",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -1111,7 +1219,7 @@
           "https://www.propellabs.ai/contact",
           "https://www.propellabs.ai/team"
         ],
-        "enriched_at": "2026-11-01T12:57:28+00:00",
+        "enriched_at": "2026-11-02T15:07:42+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1131,7 +1239,7 @@
             "other"
           ],
           "posted_at": "2026-10-09T13:12:43Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -1149,7 +1257,7 @@
       "hq": "",
       "website": "https://skieslearn.com",
       "source_url": "https://skieslearn.com/ndbi/jobs/developer",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -1184,7 +1292,7 @@
           "https://skieslearn.com/",
           "https://skieslearn.com/content/team"
         ],
-        "enriched_at": "2026-11-01T12:57:31+00:00",
+        "enriched_at": "2026-11-02T15:07:46+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1203,7 +1311,7 @@
             "other"
           ],
           "posted_at": "2026-10-08T23:45:00Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -1221,7 +1329,7 @@
       "hq": "",
       "website": "https://ojin.ai",
       "source_url": "https://ojin.ai",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1268,7 +1376,7 @@
           "https://ojin.ai/about-us",
           "https://ojin.ai/enterprise"
         ],
-        "enriched_at": "2026-11-01T12:57:35+00:00",
+        "enriched_at": "2026-11-02T15:07:50+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1285,7 +1393,7 @@
             "eng"
           ],
           "posted_at": "2026-10-08T11:10:20Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -1303,7 +1411,7 @@
       "hq": "Zürich, CH",
       "website": "https://www.chainsecurity.com",
       "source_url": "https://chainsecurity.com/",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -1336,7 +1444,7 @@
           "https://www.chainsecurity.com/",
           "https://www.chainsecurity.com/about/"
         ],
-        "enriched_at": "2026-11-01T12:57:41+00:00",
+        "enriched_at": "2026-11-02T15:07:54+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1353,7 +1461,7 @@
             "eng"
           ],
           "posted_at": "2026-10-08T09:57:33Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
@@ -1369,14 +1477,13 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "",
+      "website": "https://www.buoyant.io",
       "source_url": "https://news.ycombinator.com/item?id=49996914",
-      "discovered_at": "2026-11-01T12:56:06+00:00",
+      "discovered_at": "2026-11-02T15:06:19+00:00",
       "source": "hiring",
-      "score": 10,
+      "score": 22,
       "gaps": [
         "funding stage",
-        "website",
         "location",
         "funding amount",
         "tech stack",
@@ -1387,7 +1494,7 @@
         "phone"
       ],
       "contact": {
-        "website": "",
+        "website": "https://www.buoyant.io",
         "emails": [
           {
             "value": "scott.deakin@buoyant.io",
@@ -1396,12 +1503,36 @@
           }
         ],
         "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-01T12:57:45+00:00",
-        "status": "no_website",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/6441722",
+          "twitter": "https://x.com/buoyantio"
+        },
+        "contact_page": "https://www.buoyant.io/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://www.buoyant.io/pricing"
+          },
+          {
+            "label": "Docs",
+            "url": "https://docs.buoyant.io/buoyant-enterprise-linkerd/latest/overview/"
+          },
+          {
+            "label": "Get started for free",
+            "url": "https://enterprise.buoyant.io/"
+          },
+          {
+            "label": "Get started for free",
+            "url": "https://enterprise.buoyant.io"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.buoyant.io/",
+          "https://www.buoyant.io/contact",
+          "https://www.buoyant.io/about-us"
+        ],
+        "enriched_at": "2026-11-02T15:08:02+00:00",
+        "status": "ok",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -1419,7 +1550,7 @@
             "other"
           ],
           "posted_at": "2026-10-07T18:31:29Z",
-          "seen_at": "2026-11-01T12:56:06+00:00"
+          "seen_at": "2026-11-02T15:06:19+00:00"
         }
       ],
       "people": [],
