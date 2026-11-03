@@ -1,36 +1,38 @@
 {
-  "generated_at": "2026-11-02T15:08:02+00:00",
-  "candidates": 273,
-  "crawled": 9,
-  "extracted": 4,
-  "relevant": 4,
-  "valid": 4,
+  "generated_at": "2026-11-03T13:55:07+00:00",
+  "candidates": 239,
+  "crawled": 11,
+  "extracted": 5,
+  "relevant": 5,
+  "valid": 5,
   "sources": {
+    "launch_hn": 1,
     "rss": 3,
-    "web": 1
+    "yc": 1
   },
-  "people": 10,
-  "edges": 18,
-  "dropped_ungrounded": 11,
+  "people": 37,
+  "edges": 48,
+  "dropped_ungrounded": 0,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 19,
-  "with_website": 19,
+  "enriched": 18,
+  "with_website": 18,
   "with_email": 7,
   "with_phone": 3,
-  "people_linked": 5,
-  "avg_score": 34.8,
+  "people_linked": 7,
+  "avg_score": 35.5,
   "issues": {
     "warn: empty tech_stack": 2
   },
   "failures": [],
   "passed": true,
   "deferred_urls": [
-    "startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+    "sec.gov/Archives/edgar/data/2111552/000211155226000002",
+    "sec.gov/Archives/edgar/data/2130165/000091228226001417",
     "ycombinator.com/launches/WfH-jinko-the-travel-search-booking-api-built-for-agents",
-    "ycombinator.com/launches/Wkq-ryhla-faster-power-grid-connection-for-your-project",
-    "startupintros.com/orgs/exa",
-    "manishrjain.com/egres"
+    "startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+    "siliconangle.com/2026/09/22/web-scraping-startup-firecrawl-closes-75m-investment",
+    "getbema.app"
   ],
   "skipped": "",
   "validity_rate": 1.0

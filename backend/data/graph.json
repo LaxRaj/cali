@@ -1,6 +1,14 @@
 {
   "nodes": [
     {
+      "id": "tumbleweed",
+      "label": "Tumbleweed",
+      "type": "startup",
+      "degree": 29,
+      "website": "https://tumbleweed.com",
+      "score": 88
+    },
+    {
       "id": "seltz",
       "label": "Seltz",
       "type": "startup",
@@ -141,6 +149,14 @@
       "degree": 7,
       "website": "https://gallium-defense.com",
       "score": 91
+    },
+    {
+      "id": "trajectory",
+      "label": "Trajectory",
+      "type": "startup",
+      "degree": 7,
+      "website": "https://www.trajectory.ai",
+      "score": 78
     },
     {
       "id": "y combinator",
@@ -361,6 +377,14 @@
       "degree": 4,
       "website": "https://warhound.com",
       "score": 65
+    },
+    {
+      "id": "viridi",
+      "label": "Viridi",
+      "type": "startup",
+      "degree": 4,
+      "website": "https://viridico2.co.uk",
+      "score": 78
     },
     {
       "id": "miles pines",
@@ -647,6 +671,12 @@
       "degree": 3
     },
     {
+      "id": "marker",
+      "label": "Marker",
+      "type": "org",
+      "degree": 3
+    },
+    {
       "id": "respan",
       "label": "Respan",
       "type": "startup",
@@ -781,6 +811,14 @@
       "degree": 2,
       "website": "https://pixelsystems.com",
       "score": 78
+    },
+    {
+      "id": "momentic",
+      "label": "Momentic",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://momentic.ai",
+      "score": 60
     },
     {
       "id": "eric",
@@ -1100,6 +1138,18 @@
       "degree": 2
     },
     {
+      "id": "sequoia",
+      "label": "Sequoia",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "odyssey ventures",
+      "label": "Odyssey Ventures",
+      "type": "org",
+      "degree": 2
+    },
+    {
       "id": "probe",
       "label": "Probe",
       "type": "startup",
@@ -1194,6 +1244,14 @@
       "degree": 1,
       "website": "https://hickory.co",
       "score": 55
+    },
+    {
+      "id": "the letter company",
+      "label": "The Letter Company",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://letter.dev",
+      "score": 37
     },
     {
       "id": "alex rosenberg",
@@ -2857,6 +2915,317 @@
       "links": {}
     },
     {
+      "id": "jeff an",
+      "label": "Jeff An",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder and CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jeff-an"
+      }
+    },
+    {
+      "id": "wei-wei wu",
+      "label": "Wei-Wei Wu",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/hungweiwu",
+        "twitter": "https://x.com/wuweiweiwu"
+      }
+    },
+    {
+      "id": "ronak malde",
+      "label": "Ronak Malde",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "twitter": "https://x.com/rronak_"
+      }
+    },
+    {
+      "id": "michael elabd",
+      "label": "Michael Elabd",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/michael-elabd"
+      }
+    },
+    {
+      "id": "arjun karanam",
+      "label": "Arjun Karanam",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/arjunkaranam"
+      }
+    },
+    {
+      "id": "julian rothenbuchner",
+      "label": "Julian Rothenbuchner",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO and co‑founder",
+      "links": {}
+    },
+    {
+      "id": "guillaume brault",
+      "label": "Guillaume Brault",
+      "type": "person",
+      "degree": 1,
+      "role": "CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/guillaume-brault"
+      }
+    },
+    {
+      "id": "leonhard goliasch",
+      "label": "Leonhard Goliasch",
+      "type": "person",
+      "degree": 1,
+      "role": "COO",
+      "links": {}
+    },
+    {
+      "id": "lucas cohen",
+      "label": "Lucas Cohen",
+      "type": "person",
+      "degree": 1,
+      "role": "Lead Spacecraft Engineer",
+      "links": {}
+    },
+    {
+      "id": "johanna sturm",
+      "label": "Johanna Sturm",
+      "type": "person",
+      "degree": 1,
+      "role": "Product & Partnerships",
+      "links": {}
+    },
+    {
+      "id": "rui horstink",
+      "label": "Rui Horstink",
+      "type": "person",
+      "degree": 1,
+      "role": "Mechanical Development Engineer",
+      "links": {}
+    },
+    {
+      "id": "sabin ilegitim",
+      "label": "Sabin Ilegitim",
+      "type": "person",
+      "degree": 1,
+      "role": "Mechatronics Integration Engineer",
+      "links": {}
+    },
+    {
+      "id": "thijs van den heuvel",
+      "label": "Thijs van den Heuvel",
+      "type": "person",
+      "degree": 1,
+      "role": "Re-Entry Vehicle Engineer",
+      "links": {}
+    },
+    {
+      "id": "daniil bragin",
+      "label": "Daniil Bragin",
+      "type": "person",
+      "degree": 1,
+      "role": "Embedded Systems Engineer",
+      "links": {}
+    },
+    {
+      "id": "efe uğurlu",
+      "label": "Efe Uğurlu",
+      "type": "person",
+      "degree": 1,
+      "role": "Spacecraft Development Engineer",
+      "links": {}
+    },
+    {
+      "id": "serdar yazıcı",
+      "label": "Serdar Yazıcı",
+      "type": "person",
+      "degree": 1,
+      "role": "Spacecraft Development Engineer",
+      "links": {}
+    },
+    {
+      "id": "james kingsnorth",
+      "label": "James Kingsnorth",
+      "type": "person",
+      "degree": 1,
+      "role": "Payload Scientist",
+      "links": {}
+    },
+    {
+      "id": "marco van eerden",
+      "label": "Marco van Eerden",
+      "type": "person",
+      "degree": 1,
+      "role": "Software Engineer",
+      "links": {}
+    },
+    {
+      "id": "linda maier",
+      "label": "Linda Maier",
+      "type": "person",
+      "degree": 1,
+      "role": "Communication Manager",
+      "links": {}
+    },
+    {
+      "id": "sowndariya dhiyaneeswaran",
+      "label": "Sowndariya Dhiyaneeswaran",
+      "type": "person",
+      "degree": 1,
+      "role": "Recovery Engineer",
+      "links": {}
+    },
+    {
+      "id": "tobias van bemmel",
+      "label": "Tobias van Bemmel",
+      "type": "person",
+      "degree": 1,
+      "role": "Electrical Engineer",
+      "links": {}
+    },
+    {
+      "id": "linda oster",
+      "label": "Linda Oster",
+      "type": "person",
+      "degree": 1,
+      "role": "Payload Systems Engineer",
+      "links": {}
+    },
+    {
+      "id": "arun osman",
+      "label": "Arun Osman",
+      "type": "person",
+      "degree": 1,
+      "role": "Re-Entry Engineer",
+      "links": {}
+    },
+    {
+      "id": "abhishek avadhanam",
+      "label": "Abhishek Avadhanam",
+      "type": "person",
+      "degree": 1,
+      "role": "Recovery Engineer",
+      "links": {}
+    },
+    {
+      "id": "razvan chelaru",
+      "label": "Razvan Chelaru",
+      "type": "person",
+      "degree": 1,
+      "role": "Embedded Software Engineer",
+      "links": {}
+    },
+    {
+      "id": "jai kesav kutti raja",
+      "label": "Jai Kesav Kutti Raja",
+      "type": "person",
+      "degree": 1,
+      "role": "Aerothermal Engineer",
+      "links": {}
+    },
+    {
+      "id": "mikhail maximchuk gusarov",
+      "label": "Mikhail Maximchuk Gusarov",
+      "type": "person",
+      "degree": 1,
+      "role": "Mechanical Engineer",
+      "links": {}
+    },
+    {
+      "id": "tjeerd talsma",
+      "label": "Tjeerd Talsma",
+      "type": "person",
+      "degree": 1,
+      "role": "Mechanical Engineer",
+      "links": {}
+    },
+    {
+      "id": "jan vincent mertelj",
+      "label": "Jan Vincent Mertelj",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief of Staff",
+      "links": {}
+    },
+    {
+      "id": "raffael rott",
+      "label": "Raffael Rott",
+      "type": "person",
+      "degree": 1,
+      "role": "Embedded Software Engineer",
+      "links": {}
+    },
+    {
+      "id": "dr daniel stewart",
+      "label": "Dr Daniel Stewart",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dan-stewart-viridico2"
+      }
+    },
+    {
+      "id": "vivat wongnirund",
+      "label": "Vivat Wongnirund",
+      "type": "person",
+      "degree": 1,
+      "role": "Vice President‑New S‑Curve Business Development of Thaioil",
+      "links": {}
+    },
+    {
+      "id": "ali mitchell",
+      "label": "Ali Mitchell",
+      "type": "person",
+      "degree": 1,
+      "role": "Managing Partner",
+      "links": {}
+    },
+    {
+      "id": "mathew pregasen",
+      "label": "Mathew Pregasen",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
+      "id": "dr. samuel o. ortiz",
+      "label": "Dr. Samuel O. Ortiz",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Clinical Officer",
+      "links": {}
+    },
+    {
+      "id": "dr. erica m. laforte",
+      "label": "Dr. Erica M. LaForte",
+      "type": "person",
+      "degree": 1,
+      "role": "Head of Test Development",
+      "links": {}
+    },
+    {
+      "id": "lucile ackley",
+      "label": "Lucile Ackley",
+      "type": "person",
+      "degree": 1,
+      "role": "VP of Research & Development",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -3745,12 +4114,6 @@
       "degree": 1
     },
     {
-      "id": "sequoia",
-      "label": "Sequoia",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "corner ventures",
       "label": "Corner Ventures",
       "type": "org",
@@ -3837,6 +4200,66 @@
     {
       "id": "heartcore",
       "label": "Heartcore",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "nvidia",
+      "label": "Nvidia",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "bessemer venture partners",
+      "label": "Bessemer Venture Partners",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "bain capital ventures",
+      "label": "Bain Capital Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "pactvc",
+      "label": "PactVC",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "vanagon ventures",
+      "label": "Vanagon Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "prototype capital",
+      "label": "Prototype Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "ewor",
+      "label": "EWOR",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "alphatron impact ventures",
+      "label": "Alphatron Impact Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "top ventures",
+      "label": "TOP Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "thaioil",
+      "label": "Thaioil",
       "type": "org",
       "degree": 1
     },
@@ -4031,6 +4454,126 @@
       "degree": 0,
       "website": "https://www.buoyant.io",
       "score": 22
+    },
+    {
+      "id": "eggai",
+      "label": "EggAI",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.greenhouse.com",
+      "score": 26
+    },
+    {
+      "id": "areo",
+      "label": "AREO",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://goareo.com",
+      "score": 29
+    },
+    {
+      "id": "marker learning",
+      "label": "Marker Learning",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.markerlearning.com",
+      "score": 36
+    },
+    {
+      "id": "proofline",
+      "label": "Proofline",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://proofline.sh",
+      "score": 32
+    },
+    {
+      "id": "encube",
+      "label": "Encube",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.getencube.com",
+      "score": 32
+    },
+    {
+      "id": "perry",
+      "label": "Perry",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://useperry.com",
+      "score": 16
+    },
+    {
+      "id": "modash.io",
+      "label": "Modash.io",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.modash.io",
+      "score": 32
+    },
+    {
+      "id": "opsfleet",
+      "label": "Opsfleet",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.linkedin.com/jobs/view/4478769287/",
+      "score": 16
+    },
+    {
+      "id": "blockrotate",
+      "label": "Blockrotate",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://blockrotate.com",
+      "score": 19
+    },
+    {
+      "id": "odoo",
+      "label": "Odoo",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.odoo.com",
+      "score": 23
+    },
+    {
+      "id": "aloe",
+      "label": "Aloe",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://aloe.inc",
+      "score": 32
+    },
+    {
+      "id": "valis",
+      "label": "VALIS",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://jobs.workable.com",
+      "score": 19
+    },
+    {
+      "id": "ksc trading",
+      "label": "KSC Trading",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 10
+    },
+    {
+      "id": "flow traders",
+      "label": "Flow Traders",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.flowtraders.com",
+      "score": 22
+    },
+    {
+      "id": "reddit",
+      "label": "Reddit",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.greenhouse.com",
+      "score": 26
     },
     {
       "id": "kevin hartz",
@@ -9727,6 +10270,678 @@
           "last_seen": "2026-11-02T15:08:02+00:00"
         }
       ]
+    },
+    {
+      "source": "wei-wei wu",
+      "target": "momentic",
+      "rel": "founded",
+      "evidence": "Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50339913",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jeff an",
+      "target": "momentic",
+      "rel": "founded",
+      "evidence": "Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50339913",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ronak malde",
+      "target": "trajectory",
+      "rel": "founded",
+      "evidence": "Trajectory co‑founder Ronak Malde",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "michael elabd",
+      "target": "trajectory",
+      "rel": "cofounded",
+      "evidence": "co‑founder Michael Elabd",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arjun karanam",
+      "target": "trajectory",
+      "rel": "cofounded",
+      "evidence": "Trajectory’s third co‑founder, Arjun Karanam",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sequoia",
+      "target": "trajectory",
+      "rel": "invested_in",
+      "evidence": "led by Sequoia",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nvidia",
+      "target": "trajectory",
+      "rel": "invested_in",
+      "evidence": "participation from Nvidia",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bessemer venture partners",
+      "target": "trajectory",
+      "rel": "invested_in",
+      "evidence": "participation from ... Bessemer Venture Partners",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bain capital ventures",
+      "target": "trajectory",
+      "rel": "invested_in",
+      "evidence": "participation from ... Bain Capital Ventures",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "julian rothenbuchner",
+      "target": "tumbleweed",
+      "rel": "founded",
+      "evidence": "Julian Rothenbuchner , Tumbleweed CEO and co‑founder",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "pactvc",
+      "target": "tumbleweed",
+      "rel": "invested_in",
+      "evidence": "The round was led by PactVC",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vanagon ventures",
+      "target": "tumbleweed",
+      "rel": "invested_in",
+      "evidence": "with participation from Vanagon Ventures",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "prototype capital",
+      "target": "tumbleweed",
+      "rel": "invested_in",
+      "evidence": "early backer Prototype Capital",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ewor",
+      "target": "tumbleweed",
+      "rel": "invested_in",
+      "evidence": "with participation from ... EWOR",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "leonhard goliasch",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Leonhard Goliasch\nCOO",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "guillaume brault",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Guillaume Brault\nCTO",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lucas cohen",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Lucas Cohen\nLead Spacecraft Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "johanna sturm",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Johanna Sturm\nProduct & Partnerships",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "rui horstink",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Rui Horstink\nMechanical Development Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sabin ilegitim",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Sabin Ilegitim\nMechatronics Integration Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thijs van den heuvel",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Thijs van den Heuvel\nRe-Entry Vehicle Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "daniil bragin",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Daniil Bragin\nEmbedded Systems Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "efe uğurlu",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Efe Uğurlu\nSpacecraft Development Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "serdar yazıcı",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Serdar Yazıcı\nSpacecraft Development Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "james kingsnorth",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "James Kingsnorth\nPayload Scientist",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "marco van eerden",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Marco van Eerden\nSoftware Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "linda maier",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Linda Maier\nCommunication Manager",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sowndariya dhiyaneeswaran",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Sowndariya Dhiyaneeswaran\nRecovery Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "tobias van bemmel",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Tobias van Bemmel\nElectrical Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "linda oster",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Linda Oster\nPayload Systems Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arun osman",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Arun Osman\nRe-Entry Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "abhishek avadhanam",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Abhishek Avadhanam\nRecovery Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "razvan chelaru",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Razvan Chelaru\nEmbedded Software Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jai kesav kutti raja",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Jai Kesav Kutti Raja\nAerothermal Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "mikhail maximchuk gusarov",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Mikhail Maximchuk Gusarov\nMechanical Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "tjeerd talsma",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Tjeerd Talsma\nMechanical Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jan vincent mertelj",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Jan Vincent Mertelj\nChief of Staff",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "raffael rott",
+      "target": "tumbleweed",
+      "rel": "works_at",
+      "evidence": "Raffael Rott\nEmbedded Software Engineer",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr daniel stewart",
+      "target": "viridi",
+      "rel": "founded",
+      "evidence": "A spinout of the School of Chemistry at the University of Southampton, ViridiCO2 was founded in 2020",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "odyssey ventures",
+      "target": "viridi",
+      "rel": "invested_in",
+      "evidence": "The round was led by Odyssey Ventures",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alphatron impact ventures",
+      "target": "viridi",
+      "rel": "invested_in",
+      "evidence": "with co‑investment from Alphatron Impact Ventures",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "top ventures",
+      "target": "viridi",
+      "rel": "invested_in",
+      "evidence": "TOP Ventures, the corporate VC arm of Thaioil, came on board as a strategic investor",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vivat wongnirund",
+      "target": "thaioil",
+      "rel": "works_at",
+      "evidence": "Vice President‑New S‑Curve Business Development of Thaioil",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ali mitchell",
+      "target": "odyssey ventures",
+      "rel": "works_at",
+      "evidence": "Managing Partner, Odyssey Ventures",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "mathew pregasen",
+      "target": "the letter company",
+      "rel": "founded",
+      "evidence": "Mathew Pregasen",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WbJ-letterpress-1-the-world-s-first-coding-agent-harness-and-ide-for-growth-engineering",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. samuel o. ortiz",
+      "target": "marker",
+      "rel": "works_at",
+      "evidence": "Chief Clinical Officer",
+      "sources": [
+        {
+          "source_url": "https://www.markerlearning.com",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. erica m. laforte",
+      "target": "marker",
+      "rel": "works_at",
+      "evidence": "Head of Test Development",
+      "sources": [
+        {
+          "source_url": "https://www.markerlearning.com",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lucile ackley",
+      "target": "marker",
+      "rel": "works_at",
+      "evidence": "VP of Research & Development",
+      "sources": [
+        {
+          "source_url": "https://www.markerlearning.com",
+          "run_id": "20261103T135117Z",
+          "first_seen": "2026-11-03T13:55:07+00:00",
+          "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
     }
   ],
   "investors": [
@@ -10001,6 +11216,36 @@
         },
         {
           "name": "Tiny VC",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Sequoia",
+      "companies": [
+        "Trajectory",
+        "Warhound"
+      ],
+      "count": 2,
+      "co_investors": [
+        {
+          "name": "Bain Capital Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Bessemer Venture Partners",
+          "shared": 1
+        },
+        {
+          "name": "Corner Ventures",
+          "shared": 1
+        },
+        {
+          "name": "In-Q-Tel",
+          "shared": 1
+        },
+        {
+          "name": "Nvidia",
           "shared": 1
         }
       ]
