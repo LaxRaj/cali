@@ -2513,7 +2513,7 @@
       "reasons": [
         "lead score 91",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call contact@gallium-defense.com with the pitch",
@@ -19103,7 +19103,7 @@
       "reasons": [
         "lead score 75",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "good fit; reachable through a profile"
       ],
       "next_step": "Reach Felix Rösner via LinkedIn/X",
@@ -21948,7 +21948,7 @@
       "reasons": [
         "lead score 69",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: location, tech stack, people profiles",
@@ -28237,7 +28237,7 @@
       "reasons": [
         "lead score 53",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "good fit and reachable"
       ],
       "next_step": "Reach a founder via support@vector.co",
@@ -28365,7 +28365,7 @@
       },
       {
         "signal": "funding",
-        "text": "Raised money (0d ago)",
+        "text": "Raised money (1d ago)",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html"
       }
     ],
@@ -31938,6 +31938,192 @@
     "outreach": []
   },
   {
+    "company_name": "KSC Trading",
+    "core_product": "KSC Trading is a proprietary algorithmic trading firm founded in 2020. The company creates software to engage in automated trading in sports and prediction markets. The focus has been on statistical arbitrage and liquidity provision. We are",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50347792",
+    "discovered_at": "2026-11-03T13:53:00+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://ksctrading.com",
+    "score": 32,
+    "last_seen": "2026-11-03T13:55:07+00:00",
+    "slug": "ksc-trading",
+    "score_parts": {
+      "fit": 10,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 16
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://ksctrading.com",
+      "emails": [
+        {
+          "value": "hiring@ksctrading.com",
+          "kind": "person",
+          "source_url": "https://ksctrading.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/ksc-trading-llc"
+      },
+      "contact_page": "https://ksctrading.com/contact",
+      "product_access": [],
+      "pages_crawled": [
+        "https://ksctrading.com/",
+        "https://ksctrading.com/about",
+        "https://ksctrading.com/team",
+        "https://ksctrading.com/contact"
+      ],
+      "enriched_at": "2026-11-03T16:04:27+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50347792",
+        "roles": [
+          "Remote"
+        ],
+        "role_kinds": [
+          "other"
+        ],
+        "posted_at": "2026-11-03T03:45:03Z",
+        "seen_at": "2026-11-03T13:53:00+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 68.2,
+      "reasons": [
+        "lead score 32",
+        "signal strength 5.1/10: hiring",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "ksc trading",
+        "field": "core_product",
+        "label": "core_product: KSC Trading is a proprietary algorithmic trading firm founded in 2020. The company creates software to engage in automated trading in sports and prediction markets. The focus has been on statistical arbitrage and liquidity provision. We are",
+        "value": "KSC Trading is a proprietary algorithmic trading firm founded in 2020. The company creates software to engage in automated trading in sports and prediction markets. The focus has been on statistical arbitrage and liquidity provision. We are",
+        "source_url": "https://news.ycombinator.com/item?id=50347792",
+        "evidence": "",
+        "run_id": "backfill-2026-11-03",
+        "first_seen": "2026-11-03T13:55:07+00:00",
+        "last_seen": "2026-11-03T16:04:07+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "ksc trading",
+        "field": "website",
+        "label": "website: https://ksctrading.com",
+        "value": "https://ksctrading.com",
+        "source_url": "https://news.ycombinator.com/item?id=50347792",
+        "evidence": "",
+        "run_id": "backfill-2026-11-03",
+        "first_seen": "2026-11-03T16:04:07+00:00",
+        "last_seen": "2026-11-03T16:04:07+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "ksc trading",
+        "field": "email",
+        "label": "email: hiring@ksctrading.com",
+        "value": "hiring@ksctrading.com",
+        "source_url": "https://ksctrading.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-03",
+        "first_seen": "2026-11-03T16:04:07+00:00",
+        "last_seen": "2026-11-03T16:04:07+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "ksc trading",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/ksc-trading-llc",
+        "value": "https://www.linkedin.com/company/ksc-trading-llc",
+        "source_url": "https://ksctrading.com/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-03",
+        "first_seen": "2026-11-03T16:04:07+00:00",
+        "last_seen": "2026-11-03T16:04:07+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "ksc trading",
+        "field": "email",
+        "label": "email: hiring@ksctrading.com",
+        "value": "hiring@ksctrading.com",
+        "source_url": "https://news.ycombinator.com/item?id=50347792",
+        "evidence": "",
+        "run_id": "20261103T135117Z",
+        "first_seen": "2026-11-03T13:55:07+00:00",
+        "last_seen": "2026-11-03T13:55:07+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50347792"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (0d ago): Remote",
+        "source_url": "https://news.ycombinator.com/item?id=50347792"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "hiring@ksctrading.com",
+      "to_source_url": "https://ksctrading.com/",
+      "subject": "KSC Trading: a thought on your stack",
+      "body": "Hi KSC Trading team,\n\nI saw you're hiring (Remote) (https://news.ycombinator.com/item?id=50347792).\nI'd like to use KSC Trading and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across KSC Trading: KSC Trading is a proprietary algorithmic trading firm founded in 2020.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hiring%40ksctrading.com?subject=KSC%20Trading%3A%20a%20thought%20on%20your%20stack&body=Hi%20KSC%20Trading%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Remote%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50347792%29.%0AI%27d%20like%20to%20use%20KSC%20Trading%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20KSC%20Trading%3A%20KSC%20Trading%20is%20a%20proprietary%20algorithmic%20trading%20firm%20founded%20in%202020.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Treat Health",
     "core_product": "Treat Health is building healthcare where the right care takes minutes, not days. You describe your concern in your own words, our smart intake asks the follow-up questions a doctor would ask, and a licensed doctor reviews the whole picture",
     "tech_stack": [],
@@ -32085,7 +32271,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (18d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)",
+        "text": "Hiring (19d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)",
         "source_url": "https://news.ycombinator.com/item?id=50104234"
       }
     ],
@@ -32096,8 +32282,8 @@
       "to": "customers@treat.health",
       "to_source_url": "https://treat.health/",
       "subject": "Treat Health: a thought on your stack",
-      "body": "Hi Treat Health team,\n\nI saw you're hiring (Full-stack Engineer (Elixir, Phoenix LiveView, React)) (https://news.ycombinator.com/item?id=50104234).\nI'd like to use Treat Health and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Treat Health: Treat Health is building healthcare where the right care takes minutes, not days.\nSaw the recent news (hiring (18d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:customers%40treat.health?subject=Treat%20Health%3A%20a%20thought%20on%20your%20stack&body=Hi%20Treat%20Health%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50104234%29.%0AI%27d%20like%20to%20use%20Treat%20Health%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Treat%20Health%3A%20Treat%20Health%20is%20building%20healthcare%20where%20the%20right%20care%20takes%20minutes%2C%20not%20days.%0ASaw%20the%20recent%20news%20%28hiring%20%2818d%20ago%29%3A%20Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "body": "Hi Treat Health team,\n\nI saw you're hiring (Full-stack Engineer (Elixir, Phoenix LiveView, React)) (https://news.ycombinator.com/item?id=50104234).\nI'd like to use Treat Health and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Treat Health: Treat Health is building healthcare where the right care takes minutes, not days.\nSaw the recent news (hiring (19d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:customers%40treat.health?subject=Treat%20Health%3A%20a%20thought%20on%20your%20stack&body=Hi%20Treat%20Health%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50104234%29.%0AI%27d%20like%20to%20use%20Treat%20Health%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Treat%20Health%3A%20Treat%20Health%20is%20building%20healthcare%20where%20the%20right%20care%20takes%20minutes%2C%20not%20days.%0ASaw%20the%20recent%20news%20%28hiring%20%2819d%20ago%29%3A%20Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -32470,7 +32656,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (4d ago)",
+        "text": "Launched (5d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50291116"
       }
     ],
@@ -34043,7 +34229,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (23d ago): Platform Engineer",
+        "text": "Hiring (24d ago): Platform Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50033036"
       }
     ],
@@ -34054,7 +34240,7 @@
       "to": "",
       "to_source_url": "",
       "subject": "Chronograph: a thought on your stack",
-      "body": "Hi Chronograph team,\n\nI saw you're hiring (Platform Engineer) (https://news.ycombinator.com/item?id=50033036).\nI'd like to use Chronograph and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Chronograph: Chronograph was founded to bring next-generation technology to private capital markets.\nSaw the recent news (hiring (23d ago): Platform Engineer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "body": "Hi Chronograph team,\n\nI saw you're hiring (Platform Engineer) (https://news.ycombinator.com/item?id=50033036).\nI'd like to use Chronograph and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Chronograph: Chronograph was founded to bring next-generation technology to private capital markets.\nSaw the recent news (hiring (24d ago): Platform Engineer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": ""
     },
     "outreach": []
@@ -36463,23 +36649,17 @@
       "phone"
     ],
     "contact": {
-      "website": "",
-      "emails": [
-        {
-          "value": "hiring@opsfleet.com",
-          "kind": "person",
-          "source_url": "https://news.ycombinator.com/item?id=50349129"
-        }
-      ],
+      "website": "https://opsfleet.site",
+      "emails": [],
       "phones": [],
       "socials": {},
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-11-03T13:54:36+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": ""
+      "enriched_at": "2026-11-03T16:04:18+00:00",
+      "status": "crawl_failed",
+      "attempts": 1,
+      "last_attempt": "2026-11-03T16:04:07+00:00"
     },
     "signals": [
       {
@@ -36502,7 +36682,7 @@
     "decision": {
       "action": "watch",
       "urgency": "cold",
-      "priority": 61.6,
+      "priority": 51.6,
       "reasons": [
         "lead score 16",
         "signal strength 6.6/10: hiring",
@@ -36521,10 +36701,10 @@
         "value": "https://www.linkedin.com/jobs/view/4478769287/",
         "source_url": "https://www.linkedin.com/jobs/view/4478769287/",
         "evidence": "",
-        "run_id": "20261103T135117Z",
+        "run_id": "backfill-2026-11-03",
         "first_seen": "2026-11-03T13:55:07+00:00",
-        "last_seen": "2026-11-03T13:55:07+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-03T16:04:07+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -36535,10 +36715,10 @@
         "value": "Fully remote cloud & AI services company (founded 2015, 70+ engineers, AWS Premier, Google Cloud & Snowflake Partner) with a growing GenAI practice and several active client projects.",
         "source_url": "https://www.linkedin.com/jobs/view/4478769287/",
         "evidence": "",
-        "run_id": "20261103T135117Z",
+        "run_id": "backfill-2026-11-03",
         "first_seen": "2026-11-03T13:55:07+00:00",
-        "last_seen": "2026-11-03T13:55:07+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-03T16:04:07+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -36567,150 +36747,11 @@
     "email_draft": {
       "intent": "build_with",
       "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
-      "to": "hiring@opsfleet.com",
-      "to_source_url": "https://news.ycombinator.com/item?id=50349129",
+      "to": "",
+      "to_source_url": "",
       "subject": "Opsfleet: a thought on your stack",
       "body": "Hi Opsfleet team,\n\nI saw you're hiring (AI Engineer (Agentic / GenAI)) (https://news.ycombinator.com/item?id=50349129).\nI'd like to use Opsfleet and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Opsfleet: Fully remote cloud & AI services company (founded 2015, 70+ engineers, AWS Premier, Google Cloud & Snowflake Partner) with a growing GenAI practice and several active client projects.\nSaw the recent news (hiring (0d ago): AI Engineer (Agentic / GenAI)).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:hiring%40opsfleet.com?subject=Opsfleet%3A%20a%20thought%20on%20your%20stack&body=Hi%20Opsfleet%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28AI%20Engineer%20%28Agentic%20/%20GenAI%29%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50349129%29.%0AI%27d%20like%20to%20use%20Opsfleet%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Opsfleet%3A%20Fully%20remote%20cloud%20%26%20AI%20services%20company%20%28founded%202015%2C%2070%2B%20engineers%2C%20AWS%20Premier%2C%20Google%20Cloud%20%26%20Snowflake%20Partner%29%20with%20a%20growing%20GenAI%20practice%20and%20several%20active%20client%20projects.%0ASaw%20the%20recent%20news%20%28hiring%20%280d%20ago%29%3A%20AI%20Engineer%20%28Agentic%20/%20GenAI%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "KSC Trading",
-    "core_product": "KSC Trading is a proprietary algorithmic trading firm founded in 2020. The company creates software to engage in automated trading in sports and prediction markets. The focus has been on statistical arbitrage and liquidity provision. We are",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50347792",
-    "discovered_at": "2026-11-03T13:53:00+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "",
-    "score": 10,
-    "last_seen": "2026-11-03T13:55:07+00:00",
-    "slug": "ksc-trading",
-    "score_parts": {
-      "fit": 10,
-      "identity": 0,
-      "people": 0,
-      "connections": 0,
-      "contact": 0
-    },
-    "gaps": [
-      "funding stage",
-      "website",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "contact": {
-      "website": "",
-      "emails": [
-        {
-          "value": "hiring@ksctrading.com",
-          "kind": "person",
-          "source_url": "https://news.ycombinator.com/item?id=50347792"
-        }
-      ],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-03T13:54:56+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": ""
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50347792",
-        "roles": [
-          "Remote"
-        ],
-        "role_kinds": [
-          "other"
-        ],
-        "posted_at": "2026-11-03T03:45:03Z",
-        "seen_at": "2026-11-03T13:53:00+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "skip",
-      "urgency": "cold",
-      "priority": 11.0,
-      "reasons": [
-        "lead score 10",
-        "signal strength 5.1/10: hiring",
-        "found 0 day(s) ago (hot)",
-        "weak fit or too little data"
-      ],
-      "next_step": "Skip unless it resurfaces",
-      "provider": "policy"
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "ksc trading",
-        "field": "core_product",
-        "label": "core_product: KSC Trading is a proprietary algorithmic trading firm founded in 2020. The company creates software to engage in automated trading in sports and prediction markets. The focus has been on statistical arbitrage and liquidity provision. We are",
-        "value": "KSC Trading is a proprietary algorithmic trading firm founded in 2020. The company creates software to engage in automated trading in sports and prediction markets. The focus has been on statistical arbitrage and liquidity provision. We are",
-        "source_url": "https://news.ycombinator.com/item?id=50347792",
-        "evidence": "",
-        "run_id": "20261103T135117Z",
-        "first_seen": "2026-11-03T13:55:07+00:00",
-        "last_seen": "2026-11-03T13:55:07+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "ksc trading",
-        "field": "email",
-        "label": "email: hiring@ksctrading.com",
-        "value": "hiring@ksctrading.com",
-        "source_url": "https://news.ycombinator.com/item?id=50347792",
-        "evidence": "",
-        "run_id": "20261103T135117Z",
-        "first_seen": "2026-11-03T13:55:07+00:00",
-        "last_seen": "2026-11-03T13:55:07+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 0d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50347792"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (0d ago): Remote",
-        "source_url": "https://news.ycombinator.com/item?id=50347792"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "hiring@ksctrading.com",
-      "to_source_url": "https://news.ycombinator.com/item?id=50347792",
-      "subject": "KSC Trading: a thought on your stack",
-      "body": "Hi KSC Trading team,\n\nI saw you're hiring (Remote) (https://news.ycombinator.com/item?id=50347792).\nI'd like to use KSC Trading and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across KSC Trading: KSC Trading is a proprietary algorithmic trading firm founded in 2020.\nSaw the recent news (posted on Hacker News 0d ago (hiring or launch)).\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:hiring%40ksctrading.com?subject=KSC%20Trading%3A%20a%20thought%20on%20your%20stack&body=Hi%20KSC%20Trading%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Remote%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50347792%29.%0AI%27d%20like%20to%20use%20KSC%20Trading%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20KSC%20Trading%3A%20KSC%20Trading%20is%20a%20proprietary%20algorithmic%20trading%20firm%20founded%20in%202020.%0ASaw%20the%20recent%20news%20%28posted%20on%20Hacker%20News%200d%20ago%20%28hiring%20or%20launch%29%29.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "mailto": ""
     },
     "outreach": []
   },
