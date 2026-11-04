@@ -2513,7 +2513,7 @@
       "reasons": [
         "lead score 91",
         "signal strength 2.4/10: funding",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "fresh, strong fit and a published way to reach them"
       ],
       "next_step": "Email/call contact@gallium-defense.com with the pitch",
@@ -20519,7 +20519,7 @@
       "reasons": [
         "lead score 75",
         "signal strength 2.4/10: funding",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "good fit; reachable through a profile"
       ],
       "next_step": "Reach Felix Rösner via LinkedIn/X",
@@ -21163,6 +21163,459 @@
       "to_source_url": "",
       "subject": "Ares Intelligence: a thought on Scaling multilingual voice processing while maintaining GDPR",
       "body": "Hi Matt,\n\nCongrats on the new funding (https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/).\nI'd like to use Ares Intelligence and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Ares Intelligence: An AI interviewer platform that conducts voice‑based, multilingual employee interviews to deliver evidence‑led AI transformation roadmaps.\nSaw the recent news (newly found at seed stage).\nI'd like to build something with you.\nOne place we could start: Scaling multilingual voice processing while maintaining GDPR and SOC 2 compliance.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Tallia",
+    "core_product": "An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.",
+    "tech_stack": [
+      "custom retrieval system",
+      "Microsoft Office integration"
+    ],
+    "likely_bottleneck": "Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.",
+    "value_prop_pitch": "We can refactor your retrieval layer with Next.js API routes to parallelize document indexing and serve results instantly. Then we’ll add a vector‑semantic search layer so your AI can pull the most relevant tax authority excerpts in milliseconds, eliminating the latency bottleneck you’re facing.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+    "discovered_at": "2026-11-04T13:59:21+00:00",
+    "funding_amount": "€4 million",
+    "hq": "London",
+    "website": "https://www.tallia.com",
+    "score": 73,
+    "last_seen": "2026-11-04T14:02:27+00:00",
+    "slug": "tallia",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 3
+    },
+    "gaps": [
+      "people profiles",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://www.tallia.com",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "https://www.tallia.com/contact/",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.tallia.com/",
+        "https://www.tallia.com/about-us/",
+        "https://www.tallia.com/contact/"
+      ],
+      "enriched_at": "2026-11-04T16:09:23+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": ""
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "rss",
+        "url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "Tue, 03 Nov 2026 16:10:48 +0000",
+        "seen_at": "2026-11-04T14:00:21+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Jack Mander",
+        "role": "Co‑founder",
+        "org": "Tallia",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Alexander Bartlam",
+        "role": "Co‑founder",
+        "org": "Tallia",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Jack Mander",
+        "rel": "founded",
+        "dst": "Tallia",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam"
+      },
+      {
+        "src": "Alexander Bartlam",
+        "rel": "cofounded",
+        "dst": "Tallia",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam"
+      },
+      {
+        "src": "Outward VC",
+        "rel": "invested_in",
+        "dst": "Tallia",
+        "evidence": "The round was co‑led by Outward VC"
+      },
+      {
+        "src": "Institute of Chartered Accountants in England and Wales (ICAEW)",
+        "rel": "invested_in",
+        "dst": "Tallia",
+        "evidence": "The round was co‑led by ... ICAEW"
+      },
+      {
+        "src": "Portfolio Ventures",
+        "rel": "invested_in",
+        "dst": "Tallia",
+        "evidence": "with participation from Portfolio Ventures"
+      },
+      {
+        "src": "Expedite Capital",
+        "rel": "invested_in",
+        "dst": "Tallia",
+        "evidence": "with participation from ... Expedite Capital"
+      },
+      {
+        "src": "Paul Forster",
+        "rel": "invested_in",
+        "dst": "Tallia",
+        "evidence": "with participation from ... Paul Forster"
+      },
+      {
+        "src": "Angus Miln",
+        "rel": "invested_in",
+        "dst": "Tallia",
+        "evidence": "with participation from ... Angus Miln"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 78.0,
+      "reasons": [
+        "lead score 73",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "tallia",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "tallia",
+        "field": "funding_amount",
+        "label": "funding_amount: €4 million",
+        "value": "€4 million",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "tallia",
+        "field": "hq",
+        "label": "hq: London",
+        "value": "London",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "tallia",
+        "field": "core_product",
+        "label": "core_product: An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.",
+        "value": "An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "tallia",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.",
+        "value": "Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "jack mander|tallia",
+        "field": "role",
+        "label": "Jack Mander · Co‑founder",
+        "value": "Co‑founder",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alexander bartlam|tallia",
+        "field": "role",
+        "label": "Alexander Bartlam · Co‑founder",
+        "value": "Co‑founder",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "jack mander|founded|tallia",
+        "field": "founded",
+        "label": "Jack Mander founded Tallia",
+        "value": "Jack Mander founded Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alexander bartlam|cofounded|tallia",
+        "field": "cofounded",
+        "label": "Alexander Bartlam cofounded Tallia",
+        "value": "Alexander Bartlam cofounded Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "outward vc|invested_in|tallia",
+        "field": "invested_in",
+        "label": "Outward VC invested in Tallia",
+        "value": "Outward VC invested_in Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "The round was co‑led by Outward VC",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "institute of chartered accountants in england and wales (icaew)|invested_in|tallia",
+        "field": "invested_in",
+        "label": "Institute of Chartered Accountants in England and Wales (ICAEW) invested in Tallia",
+        "value": "Institute of Chartered Accountants in England and Wales (ICAEW) invested_in Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "The round was co‑led by ... ICAEW",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "portfolio ventures|invested_in|tallia",
+        "field": "invested_in",
+        "label": "Portfolio Ventures invested in Tallia",
+        "value": "Portfolio Ventures invested_in Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "with participation from Portfolio Ventures",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "expedite capital|invested_in|tallia",
+        "field": "invested_in",
+        "label": "Expedite Capital invested in Tallia",
+        "value": "Expedite Capital invested_in Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "with participation from ... Expedite Capital",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "paul forster|invested_in|tallia",
+        "field": "invested_in",
+        "label": "Paul Forster invested in Tallia",
+        "value": "Paul Forster invested_in Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "with participation from ... Paul Forster",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "angus miln|invested_in|tallia",
+        "field": "invested_in",
+        "label": "Angus Miln invested in Tallia",
+        "value": "Angus Miln invested_in Tallia",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "with participation from ... Angus Miln",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "tallia",
+        "field": "website",
+        "label": "website: https://www.tallia.com",
+        "value": "https://www.tallia.com",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T16:09:08+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "outward vc|tallia",
+        "field": "role",
+        "label": "Outward VC · Investor",
+        "value": "Investor",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "The round was co‑led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
+        "run_id": "20261104T135833Z",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T14:02:27+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "institute of chartered accountants in england and wales (icaew)|tallia",
+        "field": "role",
+        "label": "Institute of Chartered Accountants in England and Wales (ICAEW) · Investor",
+        "value": "Investor",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "The round was co‑led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
+        "run_id": "20261104T135833Z",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T14:02:27+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "paul forster|tallia",
+        "field": "role",
+        "label": "Paul Forster · Angel Investor",
+        "value": "Angel Investor",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
+        "run_id": "20261104T135833Z",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T14:02:27+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "angus miln|tallia",
+        "field": "role",
+        "label": "Angus Miln · Angel Investor",
+        "value": "Angel Investor",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+        "evidence": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
+        "run_id": "20261104T135833Z",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T14:02:27+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at seed stage",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Tallia: a thought on Scaling the custom retrieval pipeline to handle large volume",
+      "body": "Hi Jack,\n\nCongrats on the new funding (https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/).\nI'd like to use Tallia and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Tallia: An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.\n\nWe can refactor your retrieval layer with Next.js API routes to parallelize document indexing and serve results instantly.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": ""
     },
     "outreach": []
@@ -23358,7 +23811,7 @@
       "reasons": [
         "lead score 69",
         "signal strength 2.4/10: funding",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: location, tech stack, people profiles",
@@ -24859,442 +25312,6 @@
       "to_source_url": "",
       "subject": "Warhound: a thought on Scaling the biotech pipeline and integrating real‑time senso",
       "body": "Hi Ben,\n\nCongrats on the new funding (https://techcrunch.com/2026/10/22/ben-lamm-raises-200m-for-warhound-to-engineer-war-dogs-and-arm-them-with-anduril-gear/).\nI'd like to use Warhound and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Warhound: Genetically engineered war dogs equipped with Anduril hardware and software for military and emergency response tasks.\nSaw the recent news (raised money).\nOne thing I noticed: Scaling the biotech pipeline and integrating real‑time sensor data from the dogs into a reliable software platform.\n\nYou could eliminate the data‑integration bottleneck by building a Next.js dashboard that pulls live sensor streams into a unified view, and then use vector semantic search to let handlers query past mission logs instantly.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Tallia",
-    "core_product": "An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.",
-    "tech_stack": [
-      "custom retrieval system",
-      "Microsoft Office integration"
-    ],
-    "likely_bottleneck": "Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.",
-    "value_prop_pitch": "We can refactor your retrieval layer with Next.js API routes to parallelize document indexing and serve results instantly. Then we’ll add a vector‑semantic search layer so your AI can pull the most relevant tax authority excerpts in milliseconds, eliminating the latency bottleneck you’re facing.",
-    "is_relevant": true,
-    "funding_stage": "seed",
-    "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-    "discovered_at": "2026-11-04T13:59:21+00:00",
-    "funding_amount": "€4 million",
-    "hq": "London",
-    "website": "",
-    "score": 64,
-    "last_seen": "2026-11-04T14:02:27+00:00",
-    "slug": "tallia",
-    "score_parts": {
-      "fit": 25,
-      "identity": 9,
-      "people": 15,
-      "connections": 15,
-      "contact": 0
-    },
-    "gaps": [
-      "website",
-      "people profiles",
-      "email",
-      "phone"
-    ],
-    "contact": {
-      "website": "",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-04T14:00:31+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": ""
-    },
-    "signals": [
-      {
-        "type": "funding",
-        "source": "rss",
-        "url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "roles": [],
-        "role_kinds": [],
-        "posted_at": "Tue, 03 Nov 2026 16:10:48 +0000",
-        "seen_at": "2026-11-04T14:00:21+00:00"
-      }
-    ],
-    "people": [
-      {
-        "name": "Jack Mander",
-        "role": "Co‑founder",
-        "org": "Tallia",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-        "linkedin": "",
-        "twitter": "",
-        "github": "",
-        "homepage": "",
-        "link_source": ""
-      },
-      {
-        "name": "Alexander Bartlam",
-        "role": "Co‑founder",
-        "org": "Tallia",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-        "linkedin": "",
-        "twitter": "",
-        "github": "",
-        "homepage": "",
-        "link_source": ""
-      }
-    ],
-    "edges": [
-      {
-        "src": "Jack Mander",
-        "rel": "founded",
-        "dst": "Tallia",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam"
-      },
-      {
-        "src": "Alexander Bartlam",
-        "rel": "cofounded",
-        "dst": "Tallia",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam"
-      },
-      {
-        "src": "Outward VC",
-        "rel": "invested_in",
-        "dst": "Tallia",
-        "evidence": "The round was co‑led by Outward VC"
-      },
-      {
-        "src": "Institute of Chartered Accountants in England and Wales (ICAEW)",
-        "rel": "invested_in",
-        "dst": "Tallia",
-        "evidence": "The round was co‑led by ... ICAEW"
-      },
-      {
-        "src": "Portfolio Ventures",
-        "rel": "invested_in",
-        "dst": "Tallia",
-        "evidence": "with participation from Portfolio Ventures"
-      },
-      {
-        "src": "Expedite Capital",
-        "rel": "invested_in",
-        "dst": "Tallia",
-        "evidence": "with participation from ... Expedite Capital"
-      },
-      {
-        "src": "Paul Forster",
-        "rel": "invested_in",
-        "dst": "Tallia",
-        "evidence": "with participation from ... Paul Forster"
-      },
-      {
-        "src": "Angus Miln",
-        "rel": "invested_in",
-        "dst": "Tallia",
-        "evidence": "with participation from ... Angus Miln"
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "enrich_more",
-      "urgency": "warm",
-      "priority": 72.6,
-      "reasons": [
-        "lead score 64",
-        "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
-        "fit looks decent but no contact route found"
-      ],
-      "next_step": "Find a contact: website, people profiles, email",
-      "provider": "policy"
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "tallia",
-        "field": "funding_stage",
-        "label": "funding_stage: seed",
-        "value": "seed",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "tallia",
-        "field": "funding_amount",
-        "label": "funding_amount: €4 million",
-        "value": "€4 million",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "tallia",
-        "field": "hq",
-        "label": "hq: London",
-        "value": "London",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "tallia",
-        "field": "core_product",
-        "label": "core_product: An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.",
-        "value": "An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "tallia",
-        "field": "likely_bottleneck",
-        "label": "likely_bottleneck: Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.",
-        "value": "Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "jack mander|tallia",
-        "field": "role",
-        "label": "Jack Mander · Co‑founder",
-        "value": "Co‑founder",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "alexander bartlam|tallia",
-        "field": "role",
-        "label": "Alexander Bartlam · Co‑founder",
-        "value": "Co‑founder",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "outward vc|tallia",
-        "field": "role",
-        "label": "Outward VC · Investor",
-        "value": "Investor",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "The round was co‑led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "institute of chartered accountants in england and wales (icaew)|tallia",
-        "field": "role",
-        "label": "Institute of Chartered Accountants in England and Wales (ICAEW) · Investor",
-        "value": "Investor",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "The round was co‑led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "paul forster|tallia",
-        "field": "role",
-        "label": "Paul Forster · Angel Investor",
-        "value": "Angel Investor",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "angus miln|tallia",
-        "field": "role",
-        "label": "Angus Miln · Angel Investor",
-        "value": "Angel Investor",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "jack mander|founded|tallia",
-        "field": "founded",
-        "label": "Jack Mander founded Tallia",
-        "value": "Jack Mander founded Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "alexander bartlam|cofounded|tallia",
-        "field": "cofounded",
-        "label": "Alexander Bartlam cofounded Tallia",
-        "value": "Alexander Bartlam cofounded Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "outward vc|invested_in|tallia",
-        "field": "invested_in",
-        "label": "Outward VC invested in Tallia",
-        "value": "Outward VC invested_in Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "The round was co‑led by Outward VC",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "institute of chartered accountants in england and wales (icaew)|invested_in|tallia",
-        "field": "invested_in",
-        "label": "Institute of Chartered Accountants in England and Wales (ICAEW) invested in Tallia",
-        "value": "Institute of Chartered Accountants in England and Wales (ICAEW) invested_in Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "The round was co‑led by ... ICAEW",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "portfolio ventures|invested_in|tallia",
-        "field": "invested_in",
-        "label": "Portfolio Ventures invested in Tallia",
-        "value": "Portfolio Ventures invested_in Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "with participation from Portfolio Ventures",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "expedite capital|invested_in|tallia",
-        "field": "invested_in",
-        "label": "Expedite Capital invested in Tallia",
-        "value": "Expedite Capital invested_in Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "with participation from ... Expedite Capital",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "paul forster|invested_in|tallia",
-        "field": "invested_in",
-        "label": "Paul Forster invested in Tallia",
-        "value": "Paul Forster invested_in Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "with participation from ... Paul Forster",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "angus miln|invested_in|tallia",
-        "field": "invested_in",
-        "label": "Angus Miln invested in Tallia",
-        "value": "Angus Miln invested_in Tallia",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
-        "evidence": "with participation from ... Angus Miln",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "why_now": [
-      {
-        "signal": "early_stage",
-        "text": "Newly found at seed stage",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/"
-      },
-      {
-        "signal": "funding",
-        "text": "Raised money",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Tallia: a thought on Scaling the custom retrieval pipeline to handle large volume",
-      "body": "Hi Jack,\n\nCongrats on the new funding (https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/).\nI'd like to use Tallia and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Tallia: An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.\n\nWe can refactor your retrieval layer with Next.js API routes to parallelize document indexing and serve results instantly.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": ""
     },
     "outreach": []
@@ -30378,7 +30395,7 @@
       "reasons": [
         "lead score 53",
         "signal strength 2.4/10: funding",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "good fit and reachable"
       ],
       "next_step": "Reach a founder via support@vector.co",
@@ -30506,7 +30523,7 @@
       },
       {
         "signal": "funding",
-        "text": "Raised money (1d ago)",
+        "text": "Raised money (2d ago)",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html"
       }
     ],
@@ -32559,7 +32576,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (0d ago): Forward Deployed Engineer",
+        "text": "Hiring (1d ago): Forward Deployed Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50353641"
       }
     ],
@@ -34029,7 +34046,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (0d ago): Devops Engineer",
+        "text": "Hiring (1d ago): Devops Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50352957"
       }
     ],
@@ -34232,7 +34249,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (0d ago): Founding CTO, Technical Lead",
+        "text": "Hiring (1d ago): Founding CTO, Technical Lead",
         "source_url": "https://news.ycombinator.com/item?id=50352937"
       }
     ],
@@ -34243,8 +34260,8 @@
       "to": "marcelus@theraplug.health",
       "to_source_url": "https://news.ycombinator.com/item?id=50352937",
       "subject": "TheraPlug: a thought on your stack",
-      "body": "Hi TheraPlug team,\n\nI saw you're hiring (Founding CTO, Technical Lead) (https://news.ycombinator.com/item?id=50352937).\nI'd like to use TheraPlug and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across TheraPlug: I’m Marcelus Brice, founder of TheraPlug (https://theraplug.health).\nSaw the recent news (hiring (0d ago): Founding CTO, Technical Lead).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:marcelus%40theraplug.health?subject=TheraPlug%3A%20a%20thought%20on%20your%20stack&body=Hi%20TheraPlug%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Founding%20CTO%2C%20Technical%20Lead%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50352937%29.%0AI%27d%20like%20to%20use%20TheraPlug%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20TheraPlug%3A%20I%E2%80%99m%20Marcelus%20Brice%2C%20founder%20of%20TheraPlug%20%28https%3A//theraplug.health%29.%0ASaw%20the%20recent%20news%20%28hiring%20%280d%20ago%29%3A%20Founding%20CTO%2C%20Technical%20Lead%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "body": "Hi TheraPlug team,\n\nI saw you're hiring (Founding CTO, Technical Lead) (https://news.ycombinator.com/item?id=50352937).\nI'd like to use TheraPlug and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across TheraPlug: I’m Marcelus Brice, founder of TheraPlug (https://theraplug.health).\nSaw the recent news (hiring (1d ago): Founding CTO, Technical Lead).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:marcelus%40theraplug.health?subject=TheraPlug%3A%20a%20thought%20on%20your%20stack&body=Hi%20TheraPlug%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Founding%20CTO%2C%20Technical%20Lead%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50352937%29.%0AI%27d%20like%20to%20use%20TheraPlug%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20TheraPlug%3A%20I%E2%80%99m%20Marcelus%20Brice%2C%20founder%20of%20TheraPlug%20%28https%3A//theraplug.health%29.%0ASaw%20the%20recent%20news%20%28hiring%20%281d%20ago%29%3A%20Founding%20CTO%2C%20Technical%20Lead%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -35399,7 +35416,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (19d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)",
+        "text": "Hiring (20d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)",
         "source_url": "https://news.ycombinator.com/item?id=50104234"
       }
     ],
@@ -35410,8 +35427,8 @@
       "to": "customers@treat.health",
       "to_source_url": "https://treat.health/",
       "subject": "Treat Health: a thought on your stack",
-      "body": "Hi Treat Health team,\n\nI saw you're hiring (Full-stack Engineer (Elixir, Phoenix LiveView, React)) (https://news.ycombinator.com/item?id=50104234).\nI'd like to use Treat Health and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Treat Health: Treat Health is building healthcare where the right care takes minutes, not days.\nSaw the recent news (hiring (19d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:customers%40treat.health?subject=Treat%20Health%3A%20a%20thought%20on%20your%20stack&body=Hi%20Treat%20Health%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50104234%29.%0AI%27d%20like%20to%20use%20Treat%20Health%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Treat%20Health%3A%20Treat%20Health%20is%20building%20healthcare%20where%20the%20right%20care%20takes%20minutes%2C%20not%20days.%0ASaw%20the%20recent%20news%20%28hiring%20%2819d%20ago%29%3A%20Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
+      "body": "Hi Treat Health team,\n\nI saw you're hiring (Full-stack Engineer (Elixir, Phoenix LiveView, React)) (https://news.ycombinator.com/item?id=50104234).\nI'd like to use Treat Health and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Treat Health: Treat Health is building healthcare where the right care takes minutes, not days.\nSaw the recent news (hiring (20d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:customers%40treat.health?subject=Treat%20Health%3A%20a%20thought%20on%20your%20stack&body=Hi%20Treat%20Health%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50104234%29.%0AI%27d%20like%20to%20use%20Treat%20Health%20and%20send%20you%20one%20concrete%20thing%20I%27d%20build%20or%20fix%3A%20%5Bafter%20trying%20it%3A%20one%20specific%20observation%5D.%0A%0AI%20came%20across%20Treat%20Health%3A%20Treat%20Health%20is%20building%20healthcare%20where%20the%20right%20care%20takes%20minutes%2C%20not%20days.%0ASaw%20the%20recent%20news%20%28hiring%20%2820d%20ago%29%3A%20Full-stack%20Engineer%20%28Elixir%2C%20Phoenix%20LiveView%2C%20React%29%29.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up."
     },
     "outreach": []
   },
@@ -36050,7 +36067,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (5d ago)",
+        "text": "Launched (6d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50291116"
       }
     ],
@@ -37741,7 +37758,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (0d ago): OpenBao Consultant, Developer",
+        "text": "Hiring (1d ago): OpenBao Consultant, Developer",
         "source_url": "https://news.ycombinator.com/item?id=50353340"
       }
     ],
@@ -37752,7 +37769,7 @@
       "to": "",
       "to_source_url": "",
       "subject": "ControlPlane: a thought on your stack",
-      "body": "Hi ControlPlane team,\n\nI saw you're hiring (OpenBao Consultant, Developer) (https://news.ycombinator.com/item?id=50353340).\nI'd like to use ControlPlane and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across ControlPlane: ControlPlane is looking to grow our OpenBao group with consultant and Go developer positions!.\nSaw the recent news (hiring (0d ago): OpenBao Consultant, Developer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "body": "Hi ControlPlane team,\n\nI saw you're hiring (OpenBao Consultant, Developer) (https://news.ycombinator.com/item?id=50353340).\nI'd like to use ControlPlane and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across ControlPlane: ControlPlane is looking to grow our OpenBao group with consultant and Go developer positions!.\nSaw the recent news (hiring (1d ago): OpenBao Consultant, Developer).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": ""
     },
     "outreach": []
@@ -40221,7 +40238,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (0d ago): Software Engineer",
+        "text": "Hiring (1d ago): Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50353098"
       }
     ],
@@ -41178,140 +41195,6 @@
     "outreach": []
   },
   {
-    "company_name": "Cocient",
-    "core_product": "Cocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's ",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://work.cocient.com/opportunities",
-    "discovered_at": "2026-11-04T14:00:21+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "https://work.cocient.com/opportunities",
-    "score": 16,
-    "last_seen": "2026-11-04T14:02:27+00:00",
-    "slug": "cocient",
-    "score_parts": {
-      "fit": 10,
-      "identity": 6,
-      "people": 0,
-      "connections": 0,
-      "contact": 0
-    },
-    "gaps": [
-      "funding stage",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "contact": {
-      "website": "https://work.cocient.com",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-04T14:01:11+00:00",
-      "status": "crawl_failed",
-      "attempts": 0,
-      "last_attempt": ""
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50357754",
-        "roles": [
-          "Software Engineers",
-          "Data Scientists",
-          "experts in finance",
-          "medicine",
-          "law",
-          "science",
-          "engineering"
-        ],
-        "role_kinds": [
-          "eng",
-          "other"
-        ],
-        "posted_at": "2026-11-03T20:30:44Z",
-        "seen_at": "2026-11-04T14:00:21+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 53.4,
-      "reasons": [
-        "lead score 16",
-        "signal strength 7.6/10: hiring",
-        "found 0 day(s) ago (hot)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy"
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "cocient",
-        "field": "website",
-        "label": "website: https://work.cocient.com/opportunities",
-        "value": "https://work.cocient.com/opportunities",
-        "source_url": "https://work.cocient.com/opportunities",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "cocient",
-        "field": "core_product",
-        "label": "core_product: Cocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's ",
-        "value": "Cocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's ",
-        "source_url": "https://work.cocient.com/opportunities",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      }
-    ],
-    "why_now": [
-      {
-        "signal": "hiring",
-        "text": "Hiring (0d ago): Software Engineers, Data Scientists, experts in finance",
-        "source_url": "https://news.ycombinator.com/item?id=50357754"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_with",
-      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Cocient: a thought on your stack",
-      "body": "Hi Cocient team,\n\nI saw you're hiring (Software Engineers, Data Scientists) (https://news.ycombinator.com/item?id=50357754).\nI'd like to use Cocient and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Cocient: Cocient is a human data and AI training platform.\nSaw the recent news (hiring (0d ago): Software Engineers, Data Scientists, experts in finance).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "DigiKey",
     "core_product": "How do you help an electrical engineer find the right part among millions of highly technical, nearly identical components?",
     "tech_stack": [],
@@ -41426,7 +41309,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (0d ago): Search Experience Manager",
+        "text": "Hiring (1d ago): Search Experience Manager",
         "source_url": "https://news.ycombinator.com/item?id=50353464"
       }
     ],
@@ -41437,7 +41320,141 @@
       "to": "",
       "to_source_url": "",
       "subject": "DigiKey: a thought on your stack",
-      "body": "Hi DigiKey team,\n\nI saw you're hiring (Search Experience Manager) (https://news.ycombinator.com/item?id=50353464).\nI'd like to use DigiKey and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across DigiKey: How do you help an electrical engineer find the right part among millions of highly technical, nearly identical components?.\nSaw the recent news (hiring (0d ago): Search Experience Manager).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "body": "Hi DigiKey team,\n\nI saw you're hiring (Search Experience Manager) (https://news.ycombinator.com/item?id=50353464).\nI'd like to use DigiKey and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across DigiKey: How do you help an electrical engineer find the right part among millions of highly technical, nearly identical components?.\nSaw the recent news (hiring (1d ago): Search Experience Manager).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Cocient",
+    "core_product": "Cocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's ",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://work.cocient.com/opportunities",
+    "discovered_at": "2026-11-04T14:00:21+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://work.cocient.com/opportunities",
+    "score": 16,
+    "last_seen": "2026-11-04T14:02:27+00:00",
+    "slug": "cocient",
+    "score_parts": {
+      "fit": 10,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 0
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "contact": {
+      "website": "https://work.cocient.com",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [],
+      "enriched_at": "2026-11-04T16:09:10+00:00",
+      "status": "crawl_failed",
+      "attempts": 1,
+      "last_attempt": "2026-11-04T16:09:08+00:00"
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50357754",
+        "roles": [
+          "Software Engineers",
+          "Data Scientists",
+          "experts in finance",
+          "medicine",
+          "law",
+          "science",
+          "engineering"
+        ],
+        "role_kinds": [
+          "eng",
+          "other"
+        ],
+        "posted_at": "2026-11-03T20:30:44Z",
+        "seen_at": "2026-11-04T14:00:21+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 53.4,
+      "reasons": [
+        "lead score 16",
+        "signal strength 7.6/10: hiring",
+        "found 0 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy"
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "cocient",
+        "field": "website",
+        "label": "website: https://work.cocient.com/opportunities",
+        "value": "https://work.cocient.com/opportunities",
+        "source_url": "https://work.cocient.com/opportunities",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "cocient",
+        "field": "core_product",
+        "label": "core_product: Cocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's ",
+        "value": "Cocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's ",
+        "source_url": "https://work.cocient.com/opportunities",
+        "evidence": "",
+        "run_id": "backfill-2026-11-04",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-04T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      }
+    ],
+    "why_now": [
+      {
+        "signal": "hiring",
+        "text": "Hiring (0d ago): Software Engineers, Data Scientists, experts in finance",
+        "source_url": "https://news.ycombinator.com/item?id=50357754"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Cocient: a thought on your stack",
+      "body": "Hi Cocient team,\n\nI saw you're hiring (Software Engineers, Data Scientists) (https://news.ycombinator.com/item?id=50357754).\nI'd like to use Cocient and send you one concrete thing I'd build or fix: [after trying it: one specific observation].\n\nI came across Cocient: Cocient is a human data and AI training platform.\nSaw the recent news (hiring (0d ago): Software Engineers, Data Scientists, experts in finance).\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": ""
     },
     "outreach": []
