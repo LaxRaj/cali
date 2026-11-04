@@ -1,192 +1,709 @@
 {
-  "generated_at": "2026-11-03T13:55:07+00:00",
+  "generated_at": "2026-11-04T14:02:27+00:00",
   "findings": [
     {
-      "company_name": "Momentic",
-      "core_product": "QA agents that autonomously plan, explore, and bug‑bash controls and user flows in web, iOS, Android, and desktop apps to catch bugs.",
+      "company_name": "Tallia",
+      "core_product": "An AI‑powered research and drafting platform for tax and accountancy professionals that retrieves legislation, guidance and case law to generate fully cited first drafts.",
       "tech_stack": [
-        "LLM",
-        "Playwright",
-        "Selenium",
-        "Node.js",
-        "React"
+        "custom retrieval system",
+        "Microsoft Office integration"
       ],
-      "likely_bottleneck": "scaling the orchestration of many concurrent agents and managing the cost of infrastructure for large‑scale bug bashing",
-      "value_prop_pitch": "You can simplify your agent coordination layer by building a Next.js dashboard that stores test results in a vector store for fast semantic lookup, reducing the overhead of managing custom DAG state. Leveraging semantic search lets you retrieve relevant bug patterns instantly, cutting down on compute and speeding up your QA pipeline.",
+      "likely_bottleneck": "Scaling the custom retrieval pipeline to handle large volumes of tax documents while maintaining low latency and citation accuracy.",
+      "value_prop_pitch": "We can refactor your retrieval layer with Next.js API routes to parallelize document indexing and serve results instantly. Then we’ll add a vector‑semantic search layer so your AI can pull the most relevant tax authority excerpts in milliseconds, eliminating the latency bottleneck you’re facing.",
       "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "San Francisco, US",
-      "website": "https://momentic.ai",
-      "source_url": "https://news.ycombinator.com/item?id=50339913",
-      "discovered_at": "2026-11-03T13:52:06+00:00",
-      "source": "launch_hn",
-      "score": 60,
+      "funding_stage": "seed",
+      "funding_amount": "€4 million",
+      "hq": "London",
+      "website": "",
+      "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+      "discovered_at": "2026-11-04T13:59:21+00:00",
+      "source": "rss",
+      "score": 64,
       "gaps": [
-        "funding stage",
-        "funding amount",
-        "investors",
+        "website",
+        "people profiles",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://momentic.ai",
+        "website": "",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-04T14:00:31+00:00",
+        "status": "no_website",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Tue, 03 Nov 2026 16:10:48 +0000",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Jack Mander",
+          "role": "Co‑founder",
+          "org": "Tallia",
+          "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Alexander Bartlam",
+          "role": "Co‑founder",
+          "org": "Tallia",
+          "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Outward VC",
+          "role": "Investor",
+          "org": "",
+          "evidence": "The round was co‑led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Institute of Chartered Accountants in England and Wales (ICAEW)",
+          "role": "Investor",
+          "org": "",
+          "evidence": "The round was co‑led by Outward VC and the Institute of Chartered Accountants in England and Wales (ICAEW)",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Paul Forster",
+          "role": "Angel Investor",
+          "org": "",
+          "evidence": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Angus Miln",
+          "role": "Angel Investor",
+          "org": "",
+          "evidence": "with participation from Portfolio Ventures, Expedite Capital, Paul Forster, Angus Miln and several angel investors",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Jack Mander",
+          "rel": "founded",
+          "dst": "Tallia",
+          "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam"
+        },
+        {
+          "src": "Alexander Bartlam",
+          "rel": "cofounded",
+          "dst": "Tallia",
+          "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam"
+        },
+        {
+          "src": "Outward VC",
+          "rel": "invested_in",
+          "dst": "Tallia",
+          "evidence": "The round was co‑led by Outward VC"
+        },
+        {
+          "src": "Institute of Chartered Accountants in England and Wales (ICAEW)",
+          "rel": "invested_in",
+          "dst": "Tallia",
+          "evidence": "The round was co‑led by ... ICAEW"
+        },
+        {
+          "src": "Portfolio Ventures",
+          "rel": "invested_in",
+          "dst": "Tallia",
+          "evidence": "with participation from Portfolio Ventures"
+        },
+        {
+          "src": "Expedite Capital",
+          "rel": "invested_in",
+          "dst": "Tallia",
+          "evidence": "with participation from ... Expedite Capital"
+        },
+        {
+          "src": "Paul Forster",
+          "rel": "invested_in",
+          "dst": "Tallia",
+          "evidence": "with participation from ... Paul Forster"
+        },
+        {
+          "src": "Angus Miln",
+          "rel": "invested_in",
+          "dst": "Tallia",
+          "evidence": "with participation from ... Angus Miln"
+        }
+      ]
+    },
+    {
+      "company_name": "JawBuddy",
+      "core_product": "A smartphone app that guides patients through personalised physiotherapist‑designed jaw exercises and tracks progress via the smartphone camera.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the computer‑vision analysis and personalised exercise recommendation pipeline for thousands of users.",
+      "value_prop_pitch": "We can replace your custom CV pipeline with a Next.js front‑end that streams video frames to a lightweight vector‑based semantic search engine, instantly matching user movements to the correct exercise template. This eliminates the need for heavyweight on‑device models and lets you scale personalization without rebuilding your entire stack.",
+      "is_relevant": true,
+      "funding_stage": "pre-Seed",
+      "funding_amount": "€818k",
+      "hq": "Leipzig",
+      "website": "https://www.jawbuddy.com",
+      "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+      "discovered_at": "2026-11-04T13:59:21+00:00",
+      "source": "rss",
+      "score": 85,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.jawbuddy.com",
         "emails": [
           {
-            "value": "support@momentic.ai",
-            "kind": "support",
-            "source_url": "https://momentic.ai/about"
+            "value": "info@jawbuddy.com",
+            "kind": "general",
+            "source_url": "https://www.jawbuddy.com/en"
+          },
+          {
+            "value": "jawbuddy-dpo@chino.io",
+            "kind": "person",
+            "source_url": "https://www.jawbuddy.com/en"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/momenticai",
-          "linkedin": "https://www.linkedin.com/company/momentic-ai",
-          "github": "https://github.com/momentic-ai"
+          "linkedin": "https://www.linkedin.com/company/jawbuddy"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Try for free",
+            "url": "https://apps.apple.com/app/apple-store/id6753715586?pt=127123740&mt=8"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.jawbuddy.com/en",
+          "https://www.jawbuddy.com/en/company/about"
+        ],
+        "enriched_at": "2026-11-04T14:00:34+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Wed, 04 Nov 2026 07:24:52 +0000",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Leon Rauch",
+          "role": "co‑founder and CEO",
+          "org": "JawBuddy",
+          "evidence": "\"I suffered from jaw pain myself for years ... That is exactly the gap we close. With this funding, we are now starting the clinical trial and taking the next step towards reimbursement,\" said Leon Rauch , co‑founder and CEO of JawBuddy.",
+          "linkedin": "https://www.linkedin.com/in/leon-rauch-bb2687195",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Moritz Scherer",
+          "role": "co‑founder, physiotherapist",
+          "org": "JawBuddy",
+          "evidence": "The company states that it guides patients ... all exercises are evidence‑based, created by Scherer, a physiotherapist and M.Sc. and PhD candidate in Health Technologies...",
+          "linkedin": "https://www.linkedin.com/in/moritz-scherer-081384223",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Benjamín Cádiz de Gracia",
+          "role": "co‑founder",
+          "org": "JawBuddy",
+          "evidence": "Founded in 2025 by Leon Rauch, Moritz Scherer and Benjamín Cádiz de Gracia...",
+          "linkedin": "https://www.linkedin.com/in/benjamin-cadiz-de-gracia",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Christian Wolf",
+          "role": "CMO & Co-Founder",
+          "org": "JawBuddy",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/christian-wolf-08227519b",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.jawbuddy.com/en"
+        },
+        {
+          "name": "Luisa Wasilewski",
+          "role": "Pool Captain at HALBZEIT",
+          "org": "HALBZEIT",
+          "evidence": "\"We invest where a large, underserved market... JawBuddy brings all of that...\" said Luisa Wasilewski , Pool Captain at HALBZEIT.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Dr. Siegfried Marquardt",
+          "role": "investor",
+          "org": "",
+          "evidence": "The round was also backed by Dr. Siegfried Marquardt, a specialist in aesthetic and functional dentistry...",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Dr. Guido Sigron",
+          "role": "investor",
+          "org": "",
+          "evidence": "The round was also backed by ... oral and maxillofacial surgeon Dr. Guido Sigron.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Christophe Barriolade",
+          "role": "business angel",
+          "org": "",
+          "evidence": "business angels Christophe Barriolade, Aldrich Huang, Jens Kosche, and Marc Scheidegger also participated.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Aldrich Huang",
+          "role": "business angel",
+          "org": "",
+          "evidence": "business angels Christophe Barriolade, Aldrich Huang, Jens Kosche, and Marc Scheidegger also participated.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Jens Kosche",
+          "role": "business angel",
+          "org": "",
+          "evidence": "business angels Christophe Barriolade, Aldrich Huang, Jens Kosche, and Marc Scheidegger also participated.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Marc Scheidegger",
+          "role": "business angel",
+          "org": "",
+          "evidence": "business angels Christophe Barriolade, Aldrich Huang, Jens Kosche, and Marc Scheidegger also participated.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Leon Rauch",
+          "rel": "founded",
+          "dst": "JawBuddy",
+          "evidence": "Founded in 2025 by Leon Rauch, Moritz Scherer and Benjamín Cádiz de Gracia..."
+        },
+        {
+          "src": "Moritz Scherer",
+          "rel": "founded",
+          "dst": "JawBuddy",
+          "evidence": "Founded in 2025 by Leon Rauch, Moritz Scherer and Benjamín Cádiz de Gracia..."
+        },
+        {
+          "src": "Benjamín Cádiz de Gracia",
+          "rel": "founded",
+          "dst": "JawBuddy",
+          "evidence": "Founded in 2025 by Leon Rauch, Moritz Scherer and Benjamín Cádiz de Gracia..."
+        },
+        {
+          "src": "HALBZEIT",
+          "rel": "invested_in",
+          "dst": "JawBuddy",
+          "evidence": "pre‑Seed round led by healthcare platform HALBZEIT."
+        },
+        {
+          "src": "Dr. Siegfried Marquardt",
+          "rel": "invested_in",
+          "dst": "JawBuddy",
+          "evidence": "The round was also backed by Dr. Siegfried Marquardt..."
+        },
+        {
+          "src": "Dr. Guido Sigron",
+          "rel": "invested_in",
+          "dst": "JawBuddy",
+          "evidence": "The round was also backed by ... Dr. Guido Sigron."
+        },
+        {
+          "src": "Christophe Barriolade",
+          "rel": "invested_in",
+          "dst": "JawBuddy",
+          "evidence": "business angels Christophe Barriolade ... also participated."
+        },
+        {
+          "src": "Aldrich Huang",
+          "rel": "invested_in",
+          "dst": "JawBuddy",
+          "evidence": "business angels ... Aldrich Huang ... also participated."
+        },
+        {
+          "src": "Jens Kosche",
+          "rel": "invested_in",
+          "dst": "JawBuddy",
+          "evidence": "business angels ... Jens Kosche ... also participated."
+        },
+        {
+          "src": "Marc Scheidegger",
+          "rel": "invested_in",
+          "dst": "JawBuddy",
+          "evidence": "business angels ... Marc Scheidegger also participated."
+        }
+      ]
+    },
+    {
+      "company_name": "Crediflow AI",
+      "core_product": "Crediflow AI’s flagship product, FlowSpread, automates financial spreading by extracting income statements, balance sheet data, and cash flow figures directly from PDFs, tax returns, and bank statements, eliminating manual data entry.",
+      "tech_stack": [],
+      "likely_bottleneck": "scaling the AI‑driven document extraction and data‑validation pipeline to handle high‑volume loan applications",
+      "value_prop_pitch": "I can help you build a Next.js front‑end that surfaces extracted financial data instantly, while a vector‑based semantic search layer lets your credit analysts query any document in seconds. This will cut down the time spent on manual data reconciliation and let your engineers focus on expanding the core AI models.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "€1.8 million",
+      "hq": "Manchester, UK",
+      "website": "https://www.crediflow.ai",
+      "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+      "discovered_at": "2026-11-04T13:59:21+00:00",
+      "source": "rss",
+      "score": 60,
+      "gaps": [
+        "funding stage",
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.crediflow.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/CrediflowAI",
+          "linkedin": "https://www.linkedin.com/company/crediflowai"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.crediflow.ai/",
+          "https://www.crediflow.ai/about"
+        ],
+        "enriched_at": "2026-11-04T14:00:39+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Wed, 04 Nov 2026 06:35:05 +0000",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Drey Kenfack",
+          "role": "CEO & Founder",
+          "org": "Crediflow AI",
+          "evidence": "Crediflow AI was founded in 2024 by Drey Kenfack",
+          "linkedin": "https://www.linkedin.com/in/dreykenfack",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Drey Kenfack",
+          "rel": "founded",
+          "dst": "Crediflow AI",
+          "evidence": "Crediflow AI was founded in 2024 by Drey Kenfack"
+        },
+        {
+          "src": "NPIF II – PXN Equity Finance",
+          "rel": "invested_in",
+          "dst": "Crediflow AI",
+          "evidence": "The funding was led by NPIF II – PXN Equity Finance"
+        },
+        {
+          "src": "Haatch",
+          "rel": "invested_in",
+          "dst": "Crediflow AI",
+          "evidence": "The round also saw participation from early-stage venture firm Haatch"
+        }
+      ]
+    },
+    {
+      "company_name": "Exa",
+      "core_product": "An AI‑focused search engine offered via a developer API and large‑scale dataset product called Websets.",
+      "tech_stack": [
+        "GPU clusters",
+        "custom search engine",
+        "vector search"
+      ],
+      "likely_bottleneck": "scaling its indexing infrastructure to handle higher query volume while keeping sub‑450 ms latency",
+      "value_prop_pitch": "We can wrap your search API in a Next.js front‑end that batches queries and caches results, dramatically reducing request overhead. Then we add a vector‑based semantic layer so you serve richer, context‑aware answers without over‑loading your back‑end.",
+      "is_relevant": true,
+      "funding_stage": "Series B",
+      "funding_amount": "$85M",
+      "hq": "San Francisco, US",
+      "website": "https://exa.ai",
+      "source_url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+      "discovered_at": "2026-11-04T13:59:21+00:00",
+      "source": "web",
+      "score": 76,
+      "gaps": [
+        "funding stage",
+        "people profiles",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://exa.ai",
+        "emails": [
+          {
+            "value": "press@exa.ai",
+            "kind": "press",
+            "source_url": "https://exa.ai/contact"
+          },
+          {
+            "value": "support@exa.ai",
+            "kind": "support",
+            "source_url": "https://exa.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/exaailabs",
+          "linkedin": "https://www.linkedin.com/company/exa-ai",
+          "github": "https://github.com/exa-labs"
+        },
+        "contact_page": "https://exa.ai/contact",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://exa.ai/docs"
+          },
+          {
+            "label": "Pricing",
+            "url": "https://exa.ai/pricing"
+          },
+          {
+            "label": "Sign up",
+            "url": "https://dashboard.exa.ai"
+          }
+        ],
+        "pages_crawled": [
+          "https://exa.ai/",
+          "https://exa.ai/contact",
+          "https://exa.ai/about"
+        ],
+        "enriched_at": "2026-11-04T14:00:46+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "web",
+          "url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Will Bryk",
+          "role": "Founder",
+          "org": "Exa",
+          "evidence": "founder Will Bryk calls \"stage two\" of the company's development",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Peter Fenton",
+          "role": "Board member",
+          "org": "Benchmark",
+          "evidence": "Peter Fenton from Benchmark, who has taken seven companies public, will join Exa's board",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Will Bryk",
+          "rel": "founded",
+          "dst": "Exa",
+          "evidence": "founder Will Bryk calls \"stage two\" of the company's development"
+        },
+        {
+          "src": "Benchmark",
+          "rel": "invested_in",
+          "dst": "Exa",
+          "evidence": "Series B funding round led by Benchmark"
+        },
+        {
+          "src": "Lightspeed",
+          "rel": "invested_in",
+          "dst": "Exa",
+          "evidence": "participation from Lightspeed"
+        },
+        {
+          "src": "Peter Fenton",
+          "rel": "works_at",
+          "dst": "Benchmark",
+          "evidence": "Peter Fenton from Benchmark"
+        }
+      ]
+    },
+    {
+      "company_name": "Nimble",
+      "core_product": "AI‑agent platform that searches the web in real time, validates results and returns structured tables that can be queried like a database.",
+      "tech_stack": [
+        "Python",
+        "AWS",
+        "Kubernetes",
+        "Snowflake",
+        "Databricks",
+        "Microsoft Azure"
+      ],
+      "likely_bottleneck": "scaling real‑time web crawling and validation while keeping latency low for enterprise workloads",
+      "value_prop_pitch": "You could wrap your crawling layer in a Next.js API that streams results into a vector store, letting you cache and semantically rank pages on the fly. Then a single semantic search endpoint would let your agents retrieve validated, context‑aware snippets without rebuilding the whole pipeline each time.",
+      "is_relevant": true,
+      "funding_stage": "Series B",
+      "funding_amount": "$47M",
+      "hq": "New York",
+      "website": "https://www.nimbleway.com",
+      "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+      "discovered_at": "2026-11-04T13:59:21+00:00",
+      "source": "web",
+      "score": 78,
+      "gaps": [
+        "funding stage",
+        "people profiles",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.nimbleway.com",
+        "emails": [
+          {
+            "value": "hello@nimbleway.com",
+            "kind": "general",
+            "source_url": "https://www.nimbleway.com/"
+          },
+          {
+            "value": "support@nimbleway.com",
+            "kind": "support",
+            "source_url": "https://www.nimbleway.com/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/nimbledata",
+          "twitter": "https://x.com/nimble_search"
         },
         "contact_page": "",
         "product_access": [
           {
             "label": "Pricing",
-            "url": "https://momentic.ai/pricing"
-          },
-          {
-            "label": "Try for free",
-            "url": "https://app.momentic.ai/signup"
+            "url": "https://www.nimbleway.com/pricing"
           },
           {
             "label": "Docs",
-            "url": "https://momentic.ai/docs"
+            "url": "https://docs.nimbleway.com/home"
           },
           {
-            "label": "Try for free",
-            "url": "https://app.momentic.ai/mo"
-          }
-        ],
-        "pages_crawled": [
-          "https://momentic.ai/",
-          "https://momentic.ai/about"
-        ],
-        "enriched_at": "2026-11-03T13:53:03+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "launch_hn",
-          "url": "https://news.ycombinator.com/item?id=50339913",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-02T17:05:25Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        },
-        {
-          "type": "hiring",
-          "source": "ashby",
-          "url": "https://jobs.ashbyhq.com/momentic",
-          "roles": [
-            "Solutions Engineer",
-            "Head of Growth",
-            "AI Engineer",
-            "Account Executive, Enterprise",
-            "Customer Success Engineer"
-          ],
-          "role_kinds": [
-            "customer",
-            "sales",
-            "eng"
-          ],
-          "posted_at": "2026-11-02T21:35:04.533+00:00",
-          "seen_at": "2026-11-03T13:53:11+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Jeff An",
-          "role": "Co-founder and CTO",
-          "org": "Momentic",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/jeff-an",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://momentic.ai/"
-        },
-        {
-          "name": "Wei-Wei Wu",
-          "role": "Co-founder and CEO",
-          "org": "Momentic",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/hungweiwu",
-          "twitter": "https://x.com/wuweiweiwu",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://momentic.ai/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Wei-Wei Wu",
-          "rel": "founded",
-          "dst": "Momentic",
-          "evidence": "Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic"
-        },
-        {
-          "src": "Jeff An",
-          "rel": "founded",
-          "dst": "Momentic",
-          "evidence": "Hey HN, we’re Wei-Wei and Jeff. We’re building Momentic"
-        }
-      ]
-    },
-    {
-      "company_name": "Trajectory",
-      "core_product": "A platform that automates continual learning to let non‑technical users fine‑tune open‑source AI models with feedback loops",
-      "tech_stack": [
-        "Python",
-        "PyTorch",
-        "Kubernetes",
-        "AWS"
-      ],
-      "likely_bottleneck": "Scaling the continual‑learning pipeline and managing feedback data efficiently",
-      "value_prop_pitch": "I can rebuild your feedback ingestion layer with Next.js to give you a fast, developer‑friendly UI and add a vector‑semantic search layer to instantly surface the most relevant training examples. This will cut your data‑pipeline latency and let your engineers focus on model improvements instead of plumbing.",
-      "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "$45M",
-      "hq": "",
-      "website": "https://www.trajectory.ai",
-      "source_url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-      "discovered_at": "2026-11-03T13:52:06+00:00",
-      "source": "rss",
-      "score": 78,
-      "gaps": [
-        "location",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.trajectory.ai",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/trajectory-ai",
-          "twitter": "https://x.com/trajectorylabs"
-        },
-        "contact_page": "https://www.trajectory.ai/contact",
-        "product_access": [
+            "label": "Sign Up",
+            "url": "https://online.nimbleway.com/signup"
+          },
           {
-            "label": "Docs",
-            "url": "https://docs.trajectory.ai/introduction"
+            "label": "Pricing Intelligence",
+            "url": "https://www.nimbleway.com/use-cases/competitive-pricing"
           }
         ],
         "pages_crawled": [
-          "https://www.trajectory.ai/",
-          "https://www.trajectory.ai/about",
-          "https://www.trajectory.ai/team",
-          "https://www.trajectory.ai/contact"
+          "https://www.nimbleway.com/",
+          "https://www.nimbleway.com/about-us"
         ],
-        "enriched_at": "2026-11-03T13:53:15+00:00",
+        "enriched_at": "2026-11-04T14:00:55+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -194,818 +711,31 @@
       "signals": [
         {
           "type": "funding",
-          "source": "rss",
-          "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Mon, 02 Nov 2026 23:13:53 +0000",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        },
-        {
-          "type": "hiring",
-          "source": "ashby",
-          "url": "https://jobs.ashbyhq.com/trajectory",
-          "roles": [
-            "Member of Technical Staff - Research",
-            "Member of Technical Staff - Design Eng",
-            "Member of Technical Staff - Generalist",
-            "Member of Business Staff",
-            "Member of Technical Staff - ML Infra",
-            "Founding Recruiter"
-          ],
-          "role_kinds": [
-            "customer",
-            "design",
-            "other",
-            "eng",
-            "founding"
-          ],
-          "posted_at": "2026-10-06T22:53:37.591+00:00",
-          "seen_at": "2026-11-03T13:53:22+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Ronak Malde",
-          "role": "Co‑founder",
-          "org": "Trajectory",
-          "evidence": "Trajectory co‑founder Ronak Malde compared foundational models to a very smart PhD student",
-          "linkedin": "",
-          "twitter": "https://x.com/rronak_",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/"
-        },
-        {
-          "name": "Michael Elabd",
-          "role": "Co‑founder",
-          "org": "Trajectory",
-          "evidence": "co‑founder Michael Elabd argues that keeping humans involved in the training process makes Trajectory’s approach safer",
-          "linkedin": "https://www.linkedin.com/in/michael-elabd",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Arjun Karanam",
-          "role": "Co‑founder",
-          "org": "Trajectory",
-          "evidence": "Trajectory’s third co‑founder, Arjun Karanam, previously worked on generative foundation models at Apple",
-          "linkedin": "https://www.linkedin.com/in/arjunkaranam",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Ronak Malde",
-          "rel": "founded",
-          "dst": "Trajectory",
-          "evidence": "Trajectory co‑founder Ronak Malde"
-        },
-        {
-          "src": "Michael Elabd",
-          "rel": "cofounded",
-          "dst": "Trajectory",
-          "evidence": "co‑founder Michael Elabd"
-        },
-        {
-          "src": "Arjun Karanam",
-          "rel": "cofounded",
-          "dst": "Trajectory",
-          "evidence": "Trajectory’s third co‑founder, Arjun Karanam"
-        },
-        {
-          "src": "Sequoia",
-          "rel": "invested_in",
-          "dst": "Trajectory",
-          "evidence": "led by Sequoia"
-        },
-        {
-          "src": "Nvidia",
-          "rel": "invested_in",
-          "dst": "Trajectory",
-          "evidence": "participation from Nvidia"
-        },
-        {
-          "src": "Bessemer Venture Partners",
-          "rel": "invested_in",
-          "dst": "Trajectory",
-          "evidence": "participation from ... Bessemer Venture Partners"
-        },
-        {
-          "src": "Bain Capital Ventures",
-          "rel": "invested_in",
-          "dst": "Trajectory",
-          "evidence": "participation from ... Bain Capital Ventures"
-        }
-      ]
-    },
-    {
-      "company_name": "Tumbleweed",
-      "core_product": "Modular payload containers (Pods) that provide power, data and certification for experiments in orbit, launched and returned by the Oasis spacecraft platform.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the end‑to‑end data ingestion, processing and analytics pipeline for thousands of microgravity experiment payloads.",
-      "value_prop_pitch": "I can build a Next.js front‑end that lets you query experiment data with instant, semantic relevance using vector search, so your scientists get the right results without building custom UI components. Then I’ll integrate a scalable vector database that indexes all telemetry streams, eliminating the data‑pipeline bottleneck you’re facing today.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "€6.9 million",
-      "hq": "Vienna, Austria",
-      "website": "https://tumbleweed.com",
-      "source_url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
-      "discovered_at": "2026-11-03T13:52:06+00:00",
-      "source": "rss",
-      "score": 88,
-      "gaps": [
-        "tech stack",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://tumbleweed.com",
-        "emails": [
-          {
-            "value": "fly@tumbleweed.com",
-            "kind": "person",
-            "source_url": "https://tumbleweed.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/tumbleweed-microgravity"
-        },
-        "contact_page": "https://tumbleweed.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://tumbleweed.com/",
-          "https://tumbleweed.com/about",
-          "https://tumbleweed.com/contact"
-        ],
-        "enriched_at": "2026-11-03T13:53:26+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://www.eu-startups.com/2026/11/following-austrias-first-commercial-satellite-launch-tumbleweed-raises-e6-9-million-to-accelerate-space-missions/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 03 Nov 2026 09:35:35 +0000",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Julian Rothenbuchner",
-          "role": "CEO and co‑founder",
-          "org": "Tumbleweed",
-          "evidence": "Julian Rothenbuchner , Tumbleweed CEO and co‑founder",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Guillaume Brault",
-          "role": "CTO",
-          "org": "Tumbleweed",
-          "evidence": "Guillaume Brault\nCTO",
-          "linkedin": "https://www.linkedin.com/in/guillaume-brault",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Leonhard Goliasch",
-          "role": "COO",
-          "org": "Tumbleweed",
-          "evidence": "Leonhard Goliasch\nCOO",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Lucas Cohen",
-          "role": "Lead Spacecraft Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Lucas Cohen\nLead Spacecraft Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Johanna Sturm",
-          "role": "Product & Partnerships",
-          "org": "Tumbleweed",
-          "evidence": "Johanna Sturm\nProduct & Partnerships",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Rui Horstink",
-          "role": "Mechanical Development Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Rui Horstink\nMechanical Development Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Sabin Ilegitim",
-          "role": "Mechatronics Integration Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Sabin Ilegitim\nMechatronics Integration Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Thijs van den Heuvel",
-          "role": "Re-Entry Vehicle Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Thijs van den Heuvel\nRe-Entry Vehicle Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Daniil Bragin",
-          "role": "Embedded Systems Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Daniil Bragin\nEmbedded Systems Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Efe Uğurlu",
-          "role": "Spacecraft Development Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Efe Uğurlu\nSpacecraft Development Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Serdar Yazıcı",
-          "role": "Spacecraft Development Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Serdar Yazıcı\nSpacecraft Development Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "James Kingsnorth",
-          "role": "Payload Scientist",
-          "org": "Tumbleweed",
-          "evidence": "James Kingsnorth\nPayload Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Marco van Eerden",
-          "role": "Software Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Marco van Eerden\nSoftware Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Linda Maier",
-          "role": "Communication Manager",
-          "org": "Tumbleweed",
-          "evidence": "Linda Maier\nCommunication Manager",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Sowndariya Dhiyaneeswaran",
-          "role": "Recovery Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Sowndariya Dhiyaneeswaran\nRecovery Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Tobias van Bemmel",
-          "role": "Electrical Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Tobias van Bemmel\nElectrical Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Linda Oster",
-          "role": "Payload Systems Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Linda Oster\nPayload Systems Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Arun Osman",
-          "role": "Re-Entry Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Arun Osman\nRe-Entry Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Abhishek Avadhanam",
-          "role": "Recovery Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Abhishek Avadhanam\nRecovery Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Razvan Chelaru",
-          "role": "Embedded Software Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Razvan Chelaru\nEmbedded Software Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Jai Kesav Kutti Raja",
-          "role": "Aerothermal Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Jai Kesav Kutti Raja\nAerothermal Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Mikhail Maximchuk Gusarov",
-          "role": "Mechanical Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Mikhail Maximchuk Gusarov\nMechanical Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Tjeerd Talsma",
-          "role": "Mechanical Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Tjeerd Talsma\nMechanical Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Jan Vincent Mertelj",
-          "role": "Chief of Staff",
-          "org": "Tumbleweed",
-          "evidence": "Jan Vincent Mertelj\nChief of Staff",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Raffael Rott",
-          "role": "Embedded Software Engineer",
-          "org": "Tumbleweed",
-          "evidence": "Raffael Rott\nEmbedded Software Engineer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Julian Rothenbuchner",
-          "rel": "founded",
-          "dst": "Tumbleweed",
-          "evidence": "Julian Rothenbuchner , Tumbleweed CEO and co‑founder"
-        },
-        {
-          "src": "PactVC",
-          "rel": "invested_in",
-          "dst": "Tumbleweed",
-          "evidence": "The round was led by PactVC"
-        },
-        {
-          "src": "Vanagon Ventures",
-          "rel": "invested_in",
-          "dst": "Tumbleweed",
-          "evidence": "with participation from Vanagon Ventures"
-        },
-        {
-          "src": "Prototype Capital",
-          "rel": "invested_in",
-          "dst": "Tumbleweed",
-          "evidence": "early backer Prototype Capital"
-        },
-        {
-          "src": "EWOR",
-          "rel": "invested_in",
-          "dst": "Tumbleweed",
-          "evidence": "with participation from ... EWOR"
-        },
-        {
-          "src": "Leonhard Goliasch",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Leonhard Goliasch\nCOO"
-        },
-        {
-          "src": "Guillaume Brault",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Guillaume Brault\nCTO"
-        },
-        {
-          "src": "Lucas Cohen",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Lucas Cohen\nLead Spacecraft Engineer"
-        },
-        {
-          "src": "Johanna Sturm",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Johanna Sturm\nProduct & Partnerships"
-        },
-        {
-          "src": "Rui Horstink",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Rui Horstink\nMechanical Development Engineer"
-        },
-        {
-          "src": "Sabin Ilegitim",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Sabin Ilegitim\nMechatronics Integration Engineer"
-        },
-        {
-          "src": "Thijs van den Heuvel",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Thijs van den Heuvel\nRe-Entry Vehicle Engineer"
-        },
-        {
-          "src": "Daniil Bragin",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Daniil Bragin\nEmbedded Systems Engineer"
-        },
-        {
-          "src": "Efe Uğurlu",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Efe Uğurlu\nSpacecraft Development Engineer"
-        },
-        {
-          "src": "Serdar Yazıcı",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Serdar Yazıcı\nSpacecraft Development Engineer"
-        },
-        {
-          "src": "James Kingsnorth",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "James Kingsnorth\nPayload Scientist"
-        },
-        {
-          "src": "Marco van Eerden",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Marco van Eerden\nSoftware Engineer"
-        },
-        {
-          "src": "Linda Maier",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Linda Maier\nCommunication Manager"
-        },
-        {
-          "src": "Sowndariya Dhiyaneeswaran",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Sowndariya Dhiyaneeswaran\nRecovery Engineer"
-        },
-        {
-          "src": "Tobias van Bemmel",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Tobias van Bemmel\nElectrical Engineer"
-        },
-        {
-          "src": "Linda Oster",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Linda Oster\nPayload Systems Engineer"
-        },
-        {
-          "src": "Arun Osman",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Arun Osman\nRe-Entry Engineer"
-        },
-        {
-          "src": "Abhishek Avadhanam",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Abhishek Avadhanam\nRecovery Engineer"
-        },
-        {
-          "src": "Razvan Chelaru",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Razvan Chelaru\nEmbedded Software Engineer"
-        },
-        {
-          "src": "Jai Kesav Kutti Raja",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Jai Kesav Kutti Raja\nAerothermal Engineer"
-        },
-        {
-          "src": "Mikhail Maximchuk Gusarov",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Mikhail Maximchuk Gusarov\nMechanical Engineer"
-        },
-        {
-          "src": "Tjeerd Talsma",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Tjeerd Talsma\nMechanical Engineer"
-        },
-        {
-          "src": "Jan Vincent Mertelj",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Jan Vincent Mertelj\nChief of Staff"
-        },
-        {
-          "src": "Raffael Rott",
-          "rel": "works_at",
-          "dst": "Tumbleweed",
-          "evidence": "Raffael Rott\nEmbedded Software Engineer"
-        }
-      ]
-    },
-    {
-      "company_name": "Viridi",
-      "core_product": "A catalyst platform that converts captured CO₂ waste into CO₂‑based surfactants and other chemical ingredients for everyday products.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the catalyst manufacturing process and integrating it into existing industrial production lines.",
-      "value_prop_pitch": "I can build a Next.js dashboard that lets your engineers monitor catalyst performance in real time, reducing the time spent on manual data collection. Coupled with a vector‑based semantic search over your process logs, you’ll instantly surface the root causes of scale‑up failures.",
-      "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "€2.6 million",
-      "hq": "Southampton, UK",
-      "website": "https://viridico2.co.uk",
-      "source_url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
-      "discovered_at": "2026-11-03T13:52:06+00:00",
-      "source": "rss",
-      "score": 78,
-      "gaps": [
-        "tech stack",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://viridico2.co.uk",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/viridico2"
-        },
-        "contact_page": "https://viridico2.co.uk/contact-us/",
-        "product_access": [],
-        "pages_crawled": [
-          "https://viridico2.co.uk/",
-          "https://viridico2.co.uk/contact-us/",
-          "https://viridico2.co.uk/about-us/"
-        ],
-        "enriched_at": "2026-11-03T13:53:44+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://www.eu-startups.com/2026/11/turning-pollution-into-everyday-products-southamptons-virdi-raises-e2-6-million-to-transform-waste/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 03 Nov 2026 12:35:55 +0000",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Dr Daniel Stewart",
-          "role": "CEO",
-          "org": "Viridi",
-          "evidence": "Dr Daniel Stewart , CEO of Viridi, says:",
-          "linkedin": "https://www.linkedin.com/in/dan-stewart-viridico2",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Vivat Wongnirund",
-          "role": "Vice President‑New S‑Curve Business Development of Thaioil",
-          "org": "Thaioil",
-          "evidence": "Vivat Wongnirund, Vice President‑New S‑Curve Business Development of Thaioil, adds:",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Ali Mitchell",
-          "role": "Managing Partner",
-          "org": "Odyssey Ventures",
-          "evidence": "Ali Mitchell, Managing Partner, Odyssey Ventures, said:",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Dr Daniel Stewart",
-          "rel": "founded",
-          "dst": "Viridi",
-          "evidence": "A spinout of the School of Chemistry at the University of Southampton, ViridiCO2 was founded in 2020"
-        },
-        {
-          "src": "Odyssey Ventures",
-          "rel": "invested_in",
-          "dst": "Viridi",
-          "evidence": "The round was led by Odyssey Ventures"
-        },
-        {
-          "src": "Alphatron Impact Ventures",
-          "rel": "invested_in",
-          "dst": "Viridi",
-          "evidence": "with co‑investment from Alphatron Impact Ventures"
-        },
-        {
-          "src": "TOP Ventures",
-          "rel": "invested_in",
-          "dst": "Viridi",
-          "evidence": "TOP Ventures, the corporate VC arm of Thaioil, came on board as a strategic investor"
-        },
-        {
-          "src": "Vivat Wongnirund",
-          "rel": "works_at",
-          "dst": "Thaioil",
-          "evidence": "Vice President‑New S‑Curve Business Development of Thaioil"
-        },
-        {
-          "src": "Ali Mitchell",
-          "rel": "works_at",
-          "dst": "Odyssey Ventures",
-          "evidence": "Managing Partner, Odyssey Ventures"
-        }
-      ]
-    },
-    {
-      "company_name": "The Letter Company",
-      "core_product": "Letterpress-1 is a coding agent, harness, and IDE purpose‑built for growth engineering that lets developers edit sites, run A/B tests and orchestrate LLM‑driven growth workflows via pull‑request interfaces.",
-      "tech_stack": [
-        "Claude",
-        "Codex",
-        "fine‑tuned LLMs",
-        "LLM inference infrastructure"
-      ],
-      "likely_bottleneck": "high inference latency and cost when orchestrating multiple large language models for real‑time growth tasks",
-      "value_prop_pitch": "You could wrap the LLM orchestration behind a Next.js edge runtime to cache prompts and serve responses instantly, slashing latency for your growth agents. Pair that with a vector‑based semantic search layer to retrieve relevant context on‑the‑fly, dramatically reducing the number of expensive model calls.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://letter.dev",
-      "source_url": "https://www.ycombinator.com/launches/WbJ-letterpress-1-the-world-s-first-coding-agent-harness-and-ide-for-growth-engineering",
-      "discovered_at": "2026-11-03T13:52:06+00:00",
-      "source": "yc",
-      "score": 37,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://letter.dev",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://letter.dev/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://letter.dev/pricing"
-          }
-        ],
-        "pages_crawled": [
-          "https://letter.dev/",
-          "https://letter.dev/team",
-          "https://letter.dev/about",
-          "https://letter.dev/contact"
-        ],
-        "enriched_at": "2026-11-03T13:53:53+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WbJ-letterpress-1-the-world-s-first-coding-agent-harness-and-ide-for-growth-engineering",
+          "source": "web",
+          "url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [
         {
-          "name": "Mathew Pregasen",
-          "role": "Founder",
-          "org": "The Letter Company",
-          "evidence": "Mathew Pregasen",
+          "name": "Uri Knorovich",
+          "role": "CEO & Co‑founder",
+          "org": "Nimble",
+          "evidence": "Nimble CEO and co‑founder Uri Knorovich (pictured above, middle) told TechCrunch",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Assaf Harel",
+          "role": "Partner",
+          "org": "Norwest",
+          "evidence": "Assaf Harel, partner at Norwest, said in a statement",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -1015,16 +745,82 @@
       ],
       "edges": [
         {
-          "src": "Mathew Pregasen",
+          "src": "Uri Knorovich",
           "rel": "founded",
-          "dst": "The Letter Company",
-          "evidence": "Mathew Pregasen"
+          "dst": "Nimble",
+          "evidence": "Nimble CEO and co‑founder Uri Knorovich"
+        },
+        {
+          "src": "Norwest",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "Series B round, led by Norwest"
+        },
+        {
+          "src": "Target Global",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "participation from returning investors Target Global"
+        },
+        {
+          "src": "Square Peg",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "participation from returning investors ... Square Peg"
+        },
+        {
+          "src": "Hetz Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "participation from returning investors ... Hetz Ventures"
+        },
+        {
+          "src": "Slow Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "participation from returning investors ... Slow Ventures"
+        },
+        {
+          "src": "R‑Squared Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "participation from returning investors ... R‑Squared Ventures"
+        },
+        {
+          "src": "J‑Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "participation from returning investors ... J‑Ventures"
+        },
+        {
+          "src": "InvestInData",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "participation from returning investors ... InvestInData"
+        },
+        {
+          "src": "Databricks",
+          "rel": "partner_of",
+          "dst": "Nimble",
+          "evidence": "partnered with Databricks"
+        },
+        {
+          "src": "Snowflake",
+          "rel": "partner_of",
+          "dst": "Nimble",
+          "evidence": "partnered with ... Snowflake"
+        },
+        {
+          "src": "Microsoft",
+          "rel": "partner_of",
+          "dst": "Nimble",
+          "evidence": "partnered with ... Microsoft"
         }
       ]
     },
     {
-      "company_name": "EggAI",
-      "core_product": "We use AI for both development and in our solutions. We are looking for engineers that are critical thinkers, understand the limitations of AI but also where it can have a positive impact.",
+      "company_name": "Bikky",
+      "core_product": "At Bikky, we unify POS, online ordering, payments, and loyalty data to help multi-unit restaurant brands understand their customers and make better business decisions.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1032,11 +828,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.greenhouse.com",
-      "source_url": "https://grnh.se/wr97lgu2teu",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
+      "website": "https://bikky.com",
+      "source_url": "https://bikky.com",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
       "source": "hiring",
-      "score": 26,
+      "score": 19,
       "gaps": [
         "funding stage",
         "location",
@@ -1045,38 +841,23 @@
         "founder",
         "people profiles",
         "investors",
-        "email"
+        "email",
+        "phone"
       ],
       "contact": {
-        "website": "https://www.greenhouse.com",
+        "website": "https://bikky.com",
         "emails": [],
-        "phones": [
-          {
-            "value": "+19177804130",
-            "kind": "main",
-            "source_url": "https://www.greenhouse.com/contact"
-          }
-        ],
+        "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/greenhouse-inc-"
+          "linkedin": "https://www.linkedin.com/company/bikky-inc"
         },
-        "contact_page": "https://www.greenhouse.com/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://www.greenhouse.com/pricing"
-          },
-          {
-            "label": "Sign up for MyGreenhouse",
-            "url": "https://my.greenhouse.io/users/sign_in"
-          }
-        ],
+        "contact_page": "",
+        "product_access": [],
         "pages_crawled": [
-          "https://www.greenhouse.com/",
-          "https://www.greenhouse.com/company",
-          "https://www.greenhouse.com/contact"
+          "https://bikky.com/",
+          "https://bikky.com/about-us"
         ],
-        "enriched_at": "2026-11-03T13:53:59+00:00",
+        "enriched_at": "2026-11-04T14:01:03+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1085,25 +866,23 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50351693",
+          "url": "https://news.ycombinator.com/item?id=50363693",
           "roles": [
-            "AI tech leads",
-            "Software",
-            "Platform engineers"
+            "Engineering Manager"
           ],
           "role_kinds": [
             "eng"
           ],
-          "posted_at": "2026-11-03T13:24:56Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "posted_at": "2026-11-04T10:40:38Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "AREO",
-      "core_product": "My name is Marius, and I am the CTO at AREO (https://goareo.com/)",
+      "company_name": "Lumen Labs",
+      "core_product": "Howdy! Lumen Labs is building the cognitive layer for physical AI. Nearly every major robotics effort today teaches machines by showing them thousands of hours of human teleoperation. We think that paradigm has a ceiling, and we’re working ",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1111,9 +890,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://goareo.com",
-      "source_url": "https://goareo.com/",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
+      "website": "https://lumenresearch.co",
+      "source_url": "https://lumenresearch.co",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
       "source": "hiring",
       "score": 29,
       "gaps": [
@@ -1127,25 +906,25 @@
         "phone"
       ],
       "contact": {
-        "website": "https://goareo.com",
+        "website": "https://lumenresearch.co",
         "emails": [
           {
-            "value": "hi@goareo.com",
+            "value": "hi@lumenresearch.co",
             "kind": "general",
-            "source_url": "https://goareo.com/"
+            "source_url": "https://lumenresearch.co/"
           }
         ],
         "phones": [],
         "socials": {},
-        "contact_page": "https://goareo.com/contact",
+        "contact_page": "https://lumenresearch.co/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://goareo.com/",
-          "https://goareo.com/about",
-          "https://goareo.com/contact",
-          "https://goareo.com/team"
+          "https://lumenresearch.co/",
+          "https://lumenresearch.co/about",
+          "https://lumenresearch.co/contact",
+          "https://lumenresearch.co/team"
         ],
-        "enriched_at": "2026-11-03T13:54:02+00:00",
+        "enriched_at": "2026-11-04T14:01:05+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1154,601 +933,26 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50351266",
+          "url": "https://news.ycombinator.com/item?id=50361229",
           "roles": [
-            "Remote (EU)",
-            "On-Site in Bremen",
-            "Germany"
-          ],
-          "role_kinds": [
-            "other"
-          ],
-          "posted_at": "2026-11-03T12:37:57Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Marker Learning",
-      "core_product": "We’re building the Marker Method, a digital assessment platform that helps clinicians understand how students learn. It brings together interactive assessments, automated scoring, and tools for interpreting results. Our norming study is und",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.markerlearning.com",
-      "source_url": "https://www.markerlearning.com",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 36,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.markerlearning.com",
-        "emails": [
-          {
-            "value": "careers@markerlearning.com",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50350981"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.markerlearning.com/",
-          "https://www.markerlearning.com/about/"
-        ],
-        "enriched_at": "2026-11-03T13:54:05+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50350981",
-          "roles": [
-            "Senior Full-Stack Engineer (Frontend-Leaning)"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-03T12:07:36Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Dr. Samuel O. Ortiz",
-          "role": "Chief Clinical Officer",
-          "org": "Marker",
-          "evidence": "Chief Clinical Officer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Dr. Erica M. LaForte",
-          "role": "Head of Test Development",
-          "org": "Marker",
-          "evidence": "Head of Test Development",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Lucile Ackley",
-          "role": "VP of Research & Development",
-          "org": "Marker",
-          "evidence": "VP of Research & Development",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Dr. Samuel O. Ortiz",
-          "rel": "works_at",
-          "dst": "Marker",
-          "evidence": "Chief Clinical Officer"
-        },
-        {
-          "src": "Dr. Erica M. LaForte",
-          "rel": "works_at",
-          "dst": "Marker",
-          "evidence": "Head of Test Development"
-        },
-        {
-          "src": "Lucile Ackley",
-          "rel": "works_at",
-          "dst": "Marker",
-          "evidence": "VP of Research & Development"
-        }
-      ]
-    },
-    {
-      "company_name": "Proofline",
-      "core_product": "We're hiring a hands-on Staff / Principal Engineer to help us build. You'll own core SaaS architecture, cloud integrations, developer tools, and product delivery, with a path toward engineering leadership.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://proofline.sh",
-      "source_url": "https://proofline.sh/careers/founding-staff-principal-engineer/",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 32,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://proofline.sh",
-        "emails": [
-          {
-            "value": "hello@proofline.sh",
-            "kind": "general",
-            "source_url": "https://proofline.sh/"
-          },
-          {
-            "value": "careers@proofline.sh",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50350810"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "github": "https://github.com/prooflinedev",
-          "twitter": "https://x.com/prooflinedev",
-          "linkedin": "https://www.linkedin.com/company/prooflinedev"
-        },
-        "contact_page": "https://proofline.sh/contact/",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://proofline.sh/pricing/"
-          },
-          {
-            "label": "Get started",
-            "url": "https://proofline.sh/orgs/plan"
-          },
-          {
-            "label": "Documentation",
-            "url": "https://proofline.sh/docs/"
-          }
-        ],
-        "pages_crawled": [
-          "https://proofline.sh/",
-          "https://proofline.sh/about/",
-          "https://proofline.sh/contact/"
-        ],
-        "enriched_at": "2026-11-03T13:54:09+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50350810",
-          "roles": [
-            "Founding Staff",
-            "Principal Engineer"
-          ],
-          "role_kinds": [
-            "founding",
-            "eng"
-          ],
-          "posted_at": "2026-11-03T11:47:50Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Encube",
-      "core_product": "Encube is a platform where hardware teams look at their 3D designs and engineering drawings together and make better products faster. We're building AI that understands those drawings and 3D models, and can eventually create them. Evaluatio",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.getencube.com",
-      "source_url": "https://www.getencube.com/ml-engineer-oct-2026",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 32,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.getencube.com",
-        "emails": [
-          {
-            "value": "sales@getencube.com",
-            "kind": "sales",
-            "source_url": "https://www.getencube.com/contact"
-          },
-          {
-            "value": "support@getencube.com",
-            "kind": "support",
-            "source_url": "https://www.getencube.com/contact"
-          },
-          {
-            "value": "mailto:sales@getencube.com",
-            "kind": "person",
-            "source_url": "https://www.getencube.com/contact"
-          },
-          {
-            "value": "mailto:support@getencube.com",
-            "kind": "person",
-            "source_url": "https://www.getencube.com/contact"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/getencube"
-        },
-        "contact_page": "https://www.getencube.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.getencube.com/",
-          "https://www.getencube.com/contact"
-        ],
-        "enriched_at": "2026-11-03T13:54:23+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50349751",
-          "roles": [
-            "ML Engineer",
-            "ML Ops Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-03T09:14:44Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Perry",
-      "core_product": "Perry is the legal OS for private capital. We build AI agents that turn a fund's legal documents into operational intelligence: reviewing term sheets and SPAs against the fund's own playbook, tracking rights and obligations across portfolio",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://useperry.com",
-      "source_url": "https://useperry.com/career/",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 16,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://useperry.com",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://useperry.com/",
-          "https://useperry.com/about/"
-        ],
-        "enriched_at": "2026-11-03T13:54:26+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50349660",
-          "roles": [
-            "Founding Commercial Hire",
-            "Founding Account Executive (US)",
-            "Product Designer",
-            "Legal Engineer"
-          ],
-          "role_kinds": [
-            "founding",
-            "design",
-            "eng"
-          ],
-          "posted_at": "2026-11-03T08:58:46Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Modash.io",
-      "core_product": "Modash helps brands find, manage, and pay creators - and helps creators earn a living.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.modash.io",
-      "source_url": "https://modash.io",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 32,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.modash.io",
-        "emails": [
-          {
-            "value": "hello@modash.io",
-            "kind": "general",
-            "source_url": "https://www.modash.io/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/modash"
-        },
-        "contact_page": "https://www.modash.io/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://www.modash.io/pricing"
-          },
-          {
-            "label": "Try for free Try for free",
-            "url": "https://marketer.modash.io/register/marketer"
-          },
-          {
-            "label": "Try for free Try for free",
-            "url": "https://marketer.modash.io/register/marketer?_ga=2.114067970.460136390.1782717416-193852104.1764239601"
-          }
-        ],
-        "pages_crawled": [
-          "https://www.modash.io/",
-          "https://www.modash.io/about",
-          "https://www.modash.io/team",
-          "https://www.modash.io/contact"
-        ],
-        "enriched_at": "2026-11-03T13:54:33+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50349251",
-          "roles": [
-            "Senior Product Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-03T07:52:08Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Opsfleet",
-      "core_product": "Fully remote cloud & AI services company (founded 2015, 70+ engineers, AWS Premier, Google Cloud & Snowflake Partner) with a growing GenAI practice and several active client projects.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.linkedin.com/jobs/view/4478769287/",
-      "source_url": "https://www.linkedin.com/jobs/view/4478769287/",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 16,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [
-          {
-            "value": "hiring@opsfleet.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50349129"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-03T13:54:36+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50349129",
-          "roles": [
-            "AI Engineer (Agentic / GenAI)"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-03T07:31:55Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Blockrotate",
-      "core_product": "Blockrotate (https://blockrotate.com) builds low-latency copy-trading and execution infrastructure for Polymarket and prediction markets.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://blockrotate.com",
-      "source_url": "https://blockrotate.com",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 19,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://blockrotate.com",
-        "emails": [
-          {
-            "value": "jobs@blockrotate.com",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50349000"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://blockrotate.com/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://blockrotate.com/pricing"
-          }
-        ],
-        "pages_crawled": [
-          "https://blockrotate.com/",
-          "https://blockrotate.com/about",
-          "https://blockrotate.com/contact",
-          "https://blockrotate.com/team"
-        ],
-        "enriched_at": "2026-11-03T13:54:39+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50349000",
-          "roles": [
-            "Senior Systems",
-            "Rust Engineer"
+            "Robotics",
+            "Hardware Engineer",
+            "Simulation Engineer"
           ],
           "role_kinds": [
             "other",
             "eng"
           ],
-          "posted_at": "2026-11-03T07:11:28Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "posted_at": "2026-11-04T03:34:11Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "Odoo",
-      "core_product": "Odoo builds open-source business apps used by millions. We're hiring software developers to work on our Python/PostgreSQL backend, fast JS framework, mobile apps, website builder, and more.",
+      "company_name": "Sphinx Defense",
+      "core_product": "Sphinx Defense builds software to solve complex national security problems for America and its allies. Founded by engineers and technologists with deep experience across commercial and defense technology, we're building a vehicle-agnostic c",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1756,93 +960,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.odoo.com",
-      "source_url": "https://www.odoo.com/r/4zN",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
+      "website": "https://sphinxdefense.com",
+      "source_url": "https://www.sphinxdefense.com",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
       "source": "hiring",
-      "score": 23,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email"
-      ],
-      "contact": {
-        "website": "https://www.odoo.com",
-        "emails": [],
-        "phones": [
-          {
-            "value": "+16506913277",
-            "kind": "main",
-            "source_url": "https://www.odoo.com/"
-          }
-        ],
-        "socials": {
-          "github": "https://github.com/odoo",
-          "twitter": "https://x.com/Odoo",
-          "linkedin": "https://www.linkedin.com/company/odoo"
-        },
-        "contact_page": "",
-        "product_access": [
-          {
-            "label": "Try it free",
-            "url": "https://www.odoo.com/trial"
-          },
-          {
-            "label": "Documentation",
-            "url": "https://www.odoo.com/page/docs"
-          },
-          {
-            "label": "Pricing",
-            "url": "https://www.odoo.com/pricing"
-          }
-        ],
-        "pages_crawled": [
-          "https://www.odoo.com/",
-          "https://www.odoo.com/page/about-us"
-        ],
-        "enriched_at": "2026-11-03T13:54:44+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50348803",
-          "roles": [
-            "Software Developer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-03T06:39:23Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Aloe",
-      "core_product": "Aloe is the AI lab for justified belief. We work on research and products that bring epistemic intelligence to AI – compound systems that know why they believe what they do, and what would cause that belief to change. Aloe learns how humans",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://aloe.inc",
-      "source_url": "https://aloe.inc/careers",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
-      "source": "hiring",
-      "score": 32,
+      "score": 29,
       "gaps": [
         "funding stage",
         "location",
@@ -1854,28 +976,25 @@
         "phone"
       ],
       "contact": {
-        "website": "https://aloe.inc",
+        "website": "https://sphinxdefense.com",
         "emails": [
           {
-            "value": "hello@aloe.inc",
+            "value": "info@sphinxdefense.com",
             "kind": "general",
-            "source_url": "https://aloe.inc/"
+            "source_url": "https://sphinxdefense.com/"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/AloeInc",
-          "linkedin": "https://www.linkedin.com/company/aloeinc"
+          "linkedin": "https://www.linkedin.com/company/sphinx-defense"
         },
-        "contact_page": "https://aloe.inc/contact",
+        "contact_page": "",
         "product_access": [],
         "pages_crawled": [
-          "https://aloe.inc/",
-          "https://aloe.inc/about",
-          "https://aloe.inc/contact",
-          "https://aloe.inc/team"
+          "https://sphinxdefense.com/",
+          "https://sphinxdefense.com/who-we-are/"
         ],
-        "enriched_at": "2026-11-03T13:54:48+00:00",
+        "enriched_at": "2026-11-04T14:01:10+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1884,25 +1003,23 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50348566",
+          "url": "https://news.ycombinator.com/item?id=50359595",
           "roles": [
-            "AI Research",
-            "AI Engineering roles"
+            "Software Engineering"
           ],
           "role_kinds": [
-            "customer",
             "eng"
           ],
-          "posted_at": "2026-11-03T05:53:42Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "posted_at": "2026-11-03T23:22:14Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "VALIS",
-      "core_product": "I'm Caleb, co-founder/CTO. VALIS builds data products for scrap metal recyclers. Our product images, weighs, and classifies scrap metal, and our platform turns that into actionable quality analytics to improve physical ops at plants across ",
+      "company_name": "Cocient",
+      "core_product": "Cocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's ",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1910,9 +1027,244 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://jobs.workable.com",
-      "source_url": "https://apply.workable.com/valis-insights-1/j/9D0C64C055",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
+      "website": "https://work.cocient.com/opportunities",
+      "source_url": "https://work.cocient.com/opportunities",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 16,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://work.cocient.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-04T14:01:11+00:00",
+        "status": "crawl_failed",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50357754",
+          "roles": [
+            "Software Engineers",
+            "Data Scientists",
+            "experts in finance",
+            "medicine",
+            "law",
+            "science",
+            "engineering"
+          ],
+          "role_kinds": [
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-11-03T20:30:44Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Radar Labs",
+      "core_product": "- Our main languages are Rust and TypeScript, we also use mobile and offline pipeline languages (Python, Scala, and Terraform).",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "Manhattan, USA",
+      "website": "https://radar.com",
+      "source_url": "https://radar.com",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 30,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://radar.com",
+        "emails": [
+          {
+            "value": "tim@radar.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50357486"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/radarlabs",
+          "twitter": "https://x.com/radarlabs",
+          "github": "https://github.com/radarlabs"
+        },
+        "contact_page": "https://radar.com/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://radar.com/pricing"
+          },
+          {
+            "label": "Documentation",
+            "url": "https://docs.radar.com/"
+          }
+        ],
+        "pages_crawled": [
+          "https://radar.com/",
+          "https://radar.com/contact",
+          "https://radar.com/about"
+        ],
+        "enriched_at": "2026-11-04T14:01:16+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50357486",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-03T20:09:59Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Coby Berman",
+          "role": "",
+          "org": "Radar Labs",
+          "evidence": "schema.org Person markup",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://radar.com/"
+        },
+        {
+          "name": "Nick Patrick",
+          "role": "",
+          "org": "Radar Labs",
+          "evidence": "schema.org Person markup",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://radar.com/"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Thankly",
+      "core_product": "Thankly builds branded shopping apps that run inside AI assistants, including ChatGPT, Claude and Gemini. Shoppers ask for what they need in conversation, the app recommends products from the brand's own catalog, and they can check out with",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://thankly.ai",
+      "source_url": "https://thankly.ai/careers/founding-engineer",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://thankly.ai",
+        "emails": [
+          {
+            "value": "hello@thankly.ai",
+            "kind": "general",
+            "source_url": "https://thankly.ai/"
+          },
+          {
+            "value": "harsh@thankly.ai",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50357360"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://thankly.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://thankly.ai/",
+          "https://thankly.ai/about/",
+          "https://thankly.ai/contact"
+        ],
+        "enriched_at": "2026-11-04T14:01:20+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50357360",
+          "roles": [
+            "Founding Engineer",
+            "Founding Engineer (RL Environments)",
+            "Founding Product Designer"
+          ],
+          "role_kinds": [
+            "founding"
+          ],
+          "posted_at": "2026-11-03T20:01:15Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Tether",
+      "core_product": "We're looking for a Product Engineering Lead to help build and scale Keet, a fully peer-to-peer messaging and video calling app.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://tether.recruitee.com",
+      "source_url": "https://tether.recruitee.com/o/product-engineering-lead-keet-100-remote-worldwide-12",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
       "source": "hiring",
       "score": 19,
       "gaps": [
@@ -1927,19 +1279,22 @@
         "phone"
       ],
       "contact": {
-        "website": "https://jobs.workable.com",
+        "website": "https://tether.recruitee.com",
         "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "https://jobs.workable.com/contact",
+        "socials": {
+          "twitter": "https://x.com/Tether",
+          "linkedin": "https://www.linkedin.com/company/tether"
+        },
+        "contact_page": "",
         "product_access": [],
         "pages_crawled": [
-          "https://jobs.workable.com/",
-          "https://jobs.workable.com/contact",
-          "https://jobs.workable.com/about",
-          "https://jobs.workable.com/team"
+          "https://tether.recruitee.com/",
+          "https://tether.recruitee.com/",
+          "https://tether.recruitee.com/",
+          "https://tether.recruitee.com/"
         ],
-        "enriched_at": "2026-11-03T13:54:52+00:00",
+        "enriched_at": "2026-11-04T14:01:29+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1948,25 +1303,25 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50348145",
+          "url": "https://news.ycombinator.com/item?id=50355834",
           "roles": [
-            "Software Engineer",
-            "new product line"
+            "Product Engineering Lead",
+            "Keet"
           ],
           "role_kinds": [
             "eng",
             "other"
           ],
-          "posted_at": "2026-11-03T04:39:27Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "posted_at": "2026-11-03T18:15:08Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "KSC Trading",
-      "core_product": "KSC Trading is a proprietary algorithmic trading firm founded in 2020. The company creates software to engage in automated trading in sports and prediction markets. The focus has been on statistical arbitrage and liquidity provision. We are",
+      "company_name": "Exponent",
+      "core_product": "Exponent is a financial platform for franchise and multi-location restaurant operators: charge cards, loans, and an AI-powered Accountant that pulls in an operator's POS, bank, payroll and processor data, reconciles it, and automates the mo",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1974,39 +1329,56 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50347792",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
+      "website": "https://www.exponent.com",
+      "source_url": "https://news.ycombinator.com/item?id=50354142",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
       "source": "hiring",
-      "score": 10,
+      "score": 33,
       "gaps": [
         "funding stage",
-        "website",
         "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
-        "investors",
-        "email",
-        "phone"
+        "investors"
       ],
       "contact": {
-        "website": "",
+        "website": "https://www.exponent.com",
         "emails": [
           {
-            "value": "hiring@ksctrading.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50347792"
+            "value": "info@exponent.com",
+            "kind": "general",
+            "source_url": "https://www.exponent.com/contact-us"
+          },
+          {
+            "value": "careers@exponentfi.com",
+            "kind": "other",
+            "source_url": "https://news.ycombinator.com/item?id=50354142"
           }
         ],
-        "phones": [],
+        "phones": [
+          {
+            "value": "+18886563976",
+            "kind": "main",
+            "source_url": "https://www.exponent.com/contact-us"
+          },
+          {
+            "value": "+16503269400",
+            "kind": "main",
+            "source_url": "https://www.exponent.com/contact-us"
+          }
+        ],
         "socials": {},
-        "contact_page": "",
+        "contact_page": "https://www.exponent.com/contact-us",
         "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-03T13:54:56+00:00",
-        "status": "no_website",
+        "pages_crawled": [
+          "https://www.exponent.com/",
+          "https://www.exponent.com/company/leadership",
+          "https://www.exponent.com/contact-us"
+        ],
+        "enriched_at": "2026-11-04T14:01:35+00:00",
+        "status": "ok",
         "attempts": 0,
         "last_attempt": ""
       },
@@ -2014,23 +1386,24 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50347792",
+          "url": "https://news.ycombinator.com/item?id=50354142",
           "roles": [
-            "Remote"
+            "Lead Engineer",
+            "AI Accounting"
           ],
           "role_kinds": [
-            "other"
+            "eng"
           ],
-          "posted_at": "2026-11-03T03:45:03Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "posted_at": "2026-11-03T16:32:52Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "Flow Traders",
-      "core_product": "Flow Traders is a leading proprietary trading firm with an entrepreneurial and innovative Tech culture at the heart of its business. We are looking for Research Engineers in our Hong Kong office. Join us build and scale the research framewo",
+      "company_name": "ThreatMark",
+      "core_product": "ThreatMark protects >60M end users from finacial fraud and saves > $1.2M every day in losses.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -2038,9 +1411,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.flowtraders.com",
-      "source_url": "https://www.flowtraders.com/careers/job-description/7431246",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
+      "website": "https://www.threatmark.com",
+      "source_url": "https://www.threatmark.com/careers/",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
       "source": "hiring",
       "score": 22,
       "gaps": [
@@ -2055,22 +1428,32 @@
         "phone"
       ],
       "contact": {
-        "website": "https://www.flowtraders.com",
-        "emails": [],
+        "website": "https://www.threatmark.com",
+        "emails": [
+          {
+            "value": "career@threatmark.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50353951"
+          }
+        ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/flow-traders",
-          "twitter": "https://x.com/FlowTraders"
+          "linkedin": "https://www.linkedin.com/company/threatmark"
         },
-        "contact_page": "https://www.flowtraders.com/digital-assets/contact/",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.flowtraders.com/",
-          "https://www.flowtraders.com/about/",
-          "https://www.flowtraders.com/digital-assets/contact/",
-          "https://www.flowtraders.com/about/leadership/"
+        "contact_page": "https://www.threatmark.com/contact-us",
+        "product_access": [
+          {
+            "label": "Try scamflag",
+            "url": "https://www.threatmark.com/scamflag?hsLang=en"
+          }
         ],
-        "enriched_at": "2026-11-03T13:55:01+00:00",
+        "pages_crawled": [
+          "https://www.threatmark.com/",
+          "https://www.threatmark.com/contact-us",
+          "https://www.threatmark.com/about-us",
+          "https://www.threatmark.com/contact-us"
+        ],
+        "enriched_at": "2026-11-04T14:01:42+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -2079,23 +1462,191 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50347596",
+          "url": "https://news.ycombinator.com/item?id=50353951",
           "roles": [
-            "Research Engineer"
+            "Security",
+            "Machine Learning"
           ],
           "role_kinds": [
-            "customer"
+            "other",
+            "eng"
           ],
-          "posted_at": "2026-11-03T03:18:22Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "posted_at": "2026-11-03T16:19:36Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "Reddit",
-      "core_product": "Reddit's Developer Platform team (my team) is hiring! Come work with us on interesting scale and infrastructure problems, developer experience, and coming up with creative ways to let 3p devs modify Reddit. It's a fun team with a lot of aut",
+      "company_name": "Special",
+      "core_product": "Ex-DOGE team transforming critical American industries with AI. Backed by a16z, Human Capital, Brian Armstrong, Shyam Sankar, and Antonio Gracias.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.specialolympics.org",
+      "source_url": "https://news.ycombinator.com/item?id=50353641",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://www.specialolympics.org",
+        "emails": [
+          {
+            "value": "media@specialolympics.org",
+            "kind": "press",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          },
+          {
+            "value": "aogrady@speciaolympics.org",
+            "kind": "person",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          },
+          {
+            "value": "awahab@specialolympics.org",
+            "kind": "person",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          },
+          {
+            "value": "awilliams@specialolympics.org",
+            "kind": "person",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          },
+          {
+            "value": "bschatsiek@specialolympics.org",
+            "kind": "person",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+12026283630",
+            "kind": "main",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          },
+          {
+            "value": "+18007008585",
+            "kind": "main",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          },
+          {
+            "value": "+12028240200",
+            "kind": "main",
+            "source_url": "https://www.specialolympics.org/about/contact"
+          }
+        ],
+        "socials": {
+          "twitter": "https://x.com/SpecialOlympics",
+          "linkedin": "https://www.linkedin.com/company/special-olympics"
+        },
+        "contact_page": "https://www.specialolympics.org/about/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.specialolympics.org/",
+          "https://www.specialolympics.org/about",
+          "https://www.specialolympics.org/about/contact",
+          "https://www.specialolympics.org/about/leadership"
+        ],
+        "enriched_at": "2026-11-04T14:01:52+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50353641",
+          "roles": [
+            "Forward Deployed Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-03T16:00:04Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "DigiKey",
+      "core_product": "How do you help an electrical engineer find the right part among millions of highly technical, nearly identical components?",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://digikey.wd5.myworkdayjobs.com",
+      "source_url": "https://digikey.wd5.myworkdayjobs.com/en-US/Digi-Key/details/Search-Experience-Manager_R6052-1",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 16,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://digikey.wd5.myworkdayjobs.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://community.workday.com/invalid-url",
+          "https://community.workday.com/invalid-url",
+          "https://community.workday.com/invalid-url"
+        ],
+        "enriched_at": "2026-11-04T14:01:57+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50353464",
+          "roles": [
+            "Search Experience Manager"
+          ],
+          "role_kinds": [
+            "other"
+          ],
+          "posted_at": "2026-11-03T15:48:23Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "ControlPlane",
+      "core_product": "ControlPlane is looking to grow our OpenBao group with consultant and Go developer positions!",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -2104,8 +1655,8 @@
       "funding_amount": "",
       "hq": "",
       "website": "https://www.greenhouse.com",
-      "source_url": "https://job-boards.greenhouse.io/reddit/jobs/8180636",
-      "discovered_at": "2026-11-03T13:53:00+00:00",
+      "source_url": "https://job-boards.eu.greenhouse.io/controlplane/jobs/5012527101",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
       "source": "hiring",
       "score": 26,
       "gaps": [
@@ -2120,13 +1671,7 @@
       ],
       "contact": {
         "website": "https://www.greenhouse.com",
-        "emails": [
-          {
-            "value": "andrew.gunsch@reddit.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50347217"
-          }
-        ],
+        "emails": [],
         "phones": [
           {
             "value": "+19177804130",
@@ -2150,10 +1695,10 @@
         ],
         "pages_crawled": [
           "https://www.greenhouse.com/",
-          "https://www.greenhouse.com/company",
-          "https://www.greenhouse.com/contact"
+          "https://www.greenhouse.com/contact",
+          "https://www.greenhouse.com/company"
         ],
-        "enriched_at": "2026-11-03T13:55:07+00:00",
+        "enriched_at": "2026-11-04T14:02:03+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -2162,17 +1707,248 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50347217",
+          "url": "https://news.ycombinator.com/item?id=50353340",
           "roles": [
-            "Senior",
-            "Staff Full-stack Engineers"
+            "OpenBao Consultant",
+            "Developer"
           ],
           "role_kinds": [
             "other",
             "eng"
           ],
-          "posted_at": "2026-11-03T02:27:38Z",
-          "seen_at": "2026-11-03T13:53:00+00:00"
+          "posted_at": "2026-11-03T15:38:15Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Clad",
+      "core_product": "Clad is an AI-native platform for utility construction. We help contractors bill accurately, track their work, and automate their operations.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.all-clad.com",
+      "source_url": "https://news.ycombinator.com/item?id=50353098",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.all-clad.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/allclad"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.all-clad.com/",
+          "https://www.all-clad.com/about-us"
+        ],
+        "enriched_at": "2026-11-04T14:02:14+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50353098",
+          "roles": [
+            "Software Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-03T15:19:35Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "SEEKING FREELANCER",
+      "core_product": "We're looking for an experienced devops freelancer to help manage and enhance our GCP + Terraform + GitLab based stack in our SOC2 / PCI environment. Candidates must be willing to undergo a background check.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.freelancer.com",
+      "source_url": "https://news.ycombinator.com/item?id=50352957",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://www.freelancer.com",
+        "emails": [
+          {
+            "value": "press@freelancer.com",
+            "kind": "press",
+            "source_url": "https://www.freelancer.com/about"
+          },
+          {
+            "value": "support@freelancer.com",
+            "kind": "support",
+            "source_url": "https://www.freelancer.com/about"
+          },
+          {
+            "value": "hn@getregistered.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50352957"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+14157023294",
+            "kind": "main",
+            "source_url": "https://www.freelancer.com/about"
+          }
+        ],
+        "socials": {
+          "twitter": "https://x.com/freelancer",
+          "linkedin": "https://www.linkedin.com/company/freelancer-com"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Sign Up",
+            "url": "https://www.freelancer.com/signup"
+          },
+          {
+            "label": "Get started now",
+            "url": "https://www.freelancer.com/post-project"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.freelancer.com/",
+          "https://www.freelancer.com/about"
+        ],
+        "enriched_at": "2026-11-04T14:02:23+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50352957",
+          "roles": [
+            "Devops Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-03T15:08:09Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "TheraPlug",
+      "core_product": "I’m Marcelus Brice, founder of TheraPlug (https://theraplug.health). We’re building a behavioral health platform focused on making it easier for patients to find appropriate therapists and access care through insurance, starting in Detroit.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.theraplug.health",
+      "source_url": "https://theraplug.health",
+      "discovered_at": "2026-11-04T14:00:21+00:00",
+      "source": "hiring",
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.theraplug.health",
+        "emails": [
+          {
+            "value": "providers@theraplug.health",
+            "kind": "person",
+            "source_url": "https://www.theraplug.health/contact"
+          },
+          {
+            "value": "marcelus@theraplug.health",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50352937"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/theraplug-inc",
+          "twitter": "https://x.com/TheraPlug"
+        },
+        "contact_page": "https://www.theraplug.health/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.theraplug.health/",
+          "https://www.theraplug.health/team",
+          "https://www.theraplug.health/about",
+          "https://www.theraplug.health/contact"
+        ],
+        "enriched_at": "2026-11-04T14:02:27+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50352937",
+          "roles": [
+            "Founding CTO",
+            "Technical Lead"
+          ],
+          "role_kinds": [
+            "founding",
+            "other"
+          ],
+          "posted_at": "2026-11-03T15:06:02Z",
+          "seen_at": "2026-11-04T14:00:21+00:00"
         }
       ],
       "people": [],

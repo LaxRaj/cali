@@ -33,6 +33,14 @@
       "score": 93
     },
     {
+      "id": "nimble",
+      "label": "Nimble",
+      "type": "startup",
+      "degree": 12,
+      "website": "https://www.nimbleway.com",
+      "score": 78
+    },
+    {
       "id": "chariot claims",
       "label": "Chariot Claims",
       "type": "startup",
@@ -47,6 +55,14 @@
       "degree": 10,
       "website": "https://www.zeroentropy.dev",
       "score": 88
+    },
+    {
+      "id": "jawbuddy",
+      "label": "JawBuddy",
+      "type": "startup",
+      "degree": 10,
+      "website": "https://www.jawbuddy.com",
+      "score": 85
     },
     {
       "id": "tako",
@@ -97,12 +113,20 @@
       "score": 60
     },
     {
+      "id": "tallia",
+      "label": "Tallia",
+      "type": "startup",
+      "degree": 8,
+      "website": "",
+      "score": 64
+    },
+    {
       "id": "exa",
       "label": "Exa",
       "type": "startup",
       "degree": 8,
       "website": "https://exa.ai",
-      "score": 91
+      "score": 76
     },
     {
       "id": "quiver ai",
@@ -515,6 +539,14 @@
       "degree": 3,
       "website": "https://lens.roleomassager.com",
       "score": 69
+    },
+    {
+      "id": "crediflow ai",
+      "label": "Crediflow AI",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://www.crediflow.ai",
+      "score": 60
     },
     {
       "id": "eric magliarditi",
@@ -1042,6 +1074,14 @@
       }
     },
     {
+      "id": "peter fenton",
+      "label": "Peter Fenton",
+      "type": "person",
+      "degree": 2,
+      "role": "Board member",
+      "links": {}
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -1102,6 +1142,12 @@
       "degree": 2
     },
     {
+      "id": "databricks",
+      "label": "Databricks",
+      "type": "org",
+      "degree": 2
+    },
+    {
       "id": "daba",
       "label": "Daba",
       "type": "org",
@@ -1146,6 +1192,12 @@
     {
       "id": "odyssey ventures",
       "label": "Odyssey Ventures",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "benchmark",
+      "label": "Benchmark",
       "type": "org",
       "degree": 2
     },
@@ -2593,14 +2645,6 @@
       }
     },
     {
-      "id": "peter fenton",
-      "label": "Peter Fenton",
-      "type": "person",
-      "degree": 1,
-      "role": "Investor",
-      "links": {}
-    },
-    {
       "id": "tal broda",
       "label": "Tal Broda",
       "type": "person",
@@ -2833,16 +2877,6 @@
       "degree": 1,
       "role": "Partner (non‑equity)",
       "links": {}
-    },
-    {
-      "id": "will bryk",
-      "label": "Will Bryk",
-      "type": "person",
-      "degree": 1,
-      "role": "CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/william-bryk"
-      }
     },
     {
       "id": "ben zhou",
@@ -3223,6 +3257,158 @@
       "type": "person",
       "degree": 1,
       "role": "VP of Research & Development",
+      "links": {}
+    },
+    {
+      "id": "jack mander",
+      "label": "Jack Mander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {}
+    },
+    {
+      "id": "alexander bartlam",
+      "label": "Alexander Bartlam",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {}
+    },
+    {
+      "id": "outward vc",
+      "label": "Outward VC",
+      "type": "person",
+      "degree": 1,
+      "role": "Investor",
+      "links": {}
+    },
+    {
+      "id": "institute of chartered accountants in england and wales (icaew)",
+      "label": "Institute of Chartered Accountants in England and Wales (ICAEW)",
+      "type": "person",
+      "degree": 1,
+      "role": "Investor",
+      "links": {}
+    },
+    {
+      "id": "paul forster",
+      "label": "Paul Forster",
+      "type": "person",
+      "degree": 1,
+      "role": "Angel Investor",
+      "links": {}
+    },
+    {
+      "id": "angus miln",
+      "label": "Angus Miln",
+      "type": "person",
+      "degree": 1,
+      "role": "Angel Investor",
+      "links": {}
+    },
+    {
+      "id": "leon rauch",
+      "label": "Leon Rauch",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/leon-rauch-bb2687195"
+      }
+    },
+    {
+      "id": "moritz scherer",
+      "label": "Moritz Scherer",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder, physiotherapist",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/moritz-scherer-081384223"
+      }
+    },
+    {
+      "id": "benjamín cádiz de gracia",
+      "label": "Benjamín Cádiz de Gracia",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/benjamin-cadiz-de-gracia"
+      }
+    },
+    {
+      "id": "dr. siegfried marquardt",
+      "label": "Dr. Siegfried Marquardt",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "dr. guido sigron",
+      "label": "Dr. Guido Sigron",
+      "type": "person",
+      "degree": 1,
+      "role": "investor",
+      "links": {}
+    },
+    {
+      "id": "christophe barriolade",
+      "label": "Christophe Barriolade",
+      "type": "person",
+      "degree": 1,
+      "role": "business angel",
+      "links": {}
+    },
+    {
+      "id": "aldrich huang",
+      "label": "Aldrich Huang",
+      "type": "person",
+      "degree": 1,
+      "role": "business angel",
+      "links": {}
+    },
+    {
+      "id": "jens kosche",
+      "label": "Jens Kosche",
+      "type": "person",
+      "degree": 1,
+      "role": "business angel",
+      "links": {}
+    },
+    {
+      "id": "marc scheidegger",
+      "label": "Marc Scheidegger",
+      "type": "person",
+      "degree": 1,
+      "role": "business angel",
+      "links": {}
+    },
+    {
+      "id": "drey kenfack",
+      "label": "Drey Kenfack",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO & Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dreykenfack"
+      }
+    },
+    {
+      "id": "will bryk",
+      "label": "Will Bryk",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
+      "id": "uri knorovich",
+      "label": "Uri Knorovich",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO & Co‑founder",
       "links": {}
     },
     {
@@ -3652,12 +3838,6 @@
       "degree": 1
     },
     {
-      "id": "databricks",
-      "label": "Databricks",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "new science ventures",
       "label": "New Science Ventures",
       "type": "org",
@@ -3906,12 +4086,6 @@
     {
       "id": "business development bank of canada’s industrial innovation venture fund",
       "label": "Business Development Bank of Canada’s Industrial Innovation Venture Fund",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "benchmark",
-      "label": "Benchmark",
       "type": "org",
       "degree": 1
     },
@@ -4264,6 +4438,96 @@
       "degree": 1
     },
     {
+      "id": "portfolio ventures",
+      "label": "Portfolio Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "expedite capital",
+      "label": "Expedite Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "halbzeit",
+      "label": "HALBZEIT",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "npif ii – pxn equity finance",
+      "label": "NPIF II – PXN Equity Finance",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "haatch",
+      "label": "Haatch",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "norwest",
+      "label": "Norwest",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "target global",
+      "label": "Target Global",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "square peg",
+      "label": "Square Peg",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "hetz ventures",
+      "label": "Hetz Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "slow ventures",
+      "label": "Slow Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "r‑squared ventures",
+      "label": "R‑Squared Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "j‑ventures",
+      "label": "J‑Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "investindata",
+      "label": "InvestInData",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "snowflake",
+      "label": "Snowflake",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "microsoft",
+      "label": "Microsoft",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "maali",
       "label": "Maali",
       "type": "startup",
@@ -4573,6 +4837,126 @@
       "type": "startup",
       "degree": 0,
       "website": "https://ksctrading.com",
+      "score": 32
+    },
+    {
+      "id": "bikky",
+      "label": "Bikky",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://bikky.com",
+      "score": 19
+    },
+    {
+      "id": "lumen labs",
+      "label": "Lumen Labs",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://lumenresearch.co",
+      "score": 29
+    },
+    {
+      "id": "sphinx defense",
+      "label": "Sphinx Defense",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://sphinxdefense.com",
+      "score": 29
+    },
+    {
+      "id": "cocient",
+      "label": "Cocient",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://work.cocient.com/opportunities",
+      "score": 16
+    },
+    {
+      "id": "radar labs",
+      "label": "Radar Labs",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://radar.com",
+      "score": 30
+    },
+    {
+      "id": "thankly",
+      "label": "Thankly",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://thankly.ai",
+      "score": 29
+    },
+    {
+      "id": "tether",
+      "label": "Tether",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://tether.recruitee.com",
+      "score": 19
+    },
+    {
+      "id": "exponent",
+      "label": "Exponent",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.exponent.com",
+      "score": 33
+    },
+    {
+      "id": "threatmark",
+      "label": "ThreatMark",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.threatmark.com",
+      "score": 22
+    },
+    {
+      "id": "special",
+      "label": "Special",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.specialolympics.org",
+      "score": 36
+    },
+    {
+      "id": "digikey",
+      "label": "DigiKey",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://digikey.wd5.myworkdayjobs.com",
+      "score": 16
+    },
+    {
+      "id": "controlplane",
+      "label": "ControlPlane",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.greenhouse.com",
+      "score": 26
+    },
+    {
+      "id": "clad",
+      "label": "Clad",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.all-clad.com",
+      "score": 19
+    },
+    {
+      "id": "seeking freelancer",
+      "label": "SEEKING FREELANCER",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.freelancer.com",
+      "score": 33
+    },
+    {
+      "id": "theraplug",
+      "label": "TheraPlug",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.theraplug.health",
       "score": 32
     },
     {
@@ -5169,6 +5553,48 @@
       "type": "person",
       "degree": 0,
       "role": "President and CEO, Massage U, Inc.",
+      "links": {}
+    },
+    {
+      "id": "christian wolf",
+      "label": "Christian Wolf",
+      "type": "person",
+      "degree": 0,
+      "role": "CMO & Co-Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/christian-wolf-08227519b"
+      }
+    },
+    {
+      "id": "luisa wasilewski",
+      "label": "Luisa Wasilewski",
+      "type": "person",
+      "degree": 0,
+      "role": "Pool Captain at HALBZEIT",
+      "links": {}
+    },
+    {
+      "id": "assaf harel",
+      "label": "Assaf Harel",
+      "type": "person",
+      "degree": 0,
+      "role": "Partner",
+      "links": {}
+    },
+    {
+      "id": "coby berman",
+      "label": "Coby Berman",
+      "type": "person",
+      "degree": 0,
+      "role": "",
+      "links": {}
+    },
+    {
+      "id": "nick patrick",
+      "label": "Nick Patrick",
+      "type": "person",
+      "degree": 0,
+      "role": "",
       "links": {}
     }
   ],
@@ -8840,34 +9266,6 @@
       ]
     },
     {
-      "source": "benchmark",
-      "target": "exa",
-      "rel": "invested_in",
-      "evidence": "The round was led by Benchmark at a $700m valuation",
-      "sources": [
-        {
-          "source_url": "https://exa.ai/blog/announcing-series-b",
-          "run_id": "20261028T122235Z",
-          "first_seen": "2026-10-28T12:26:24+00:00",
-          "last_seen": "2026-10-28T12:26:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lightspeed",
-      "target": "exa",
-      "rel": "invested_in",
-      "evidence": "with participation from Lightspeed",
-      "sources": [
-        {
-          "source_url": "https://exa.ai/blog/announcing-series-b",
-          "run_id": "20261028T122235Z",
-          "first_seen": "2026-10-28T12:26:24+00:00",
-          "last_seen": "2026-10-28T12:26:24+00:00"
-        }
-      ]
-    },
-    {
       "source": "peter fenton",
       "target": "exa",
       "rel": "backed_by",
@@ -9904,26 +10302,6 @@
       ]
     },
     {
-      "source": "will bryk",
-      "target": "exa",
-      "rel": "founded",
-      "evidence": "“Soon, AI will search the web more than humans,” said Exa CEO, Will Bryk.",
-      "sources": [
-        {
-          "source_url": "https://exa.ai/blog/announcing-series-b",
-          "run_id": "20261028T122235Z",
-          "first_seen": "2026-10-28T12:26:24+00:00",
-          "last_seen": "2026-10-28T12:26:24+00:00"
-        },
-        {
-          "source_url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
-          "run_id": "20261101T125409Z",
-          "first_seen": "2026-11-01T12:57:45+00:00",
-          "last_seen": "2026-11-01T12:57:45+00:00"
-        }
-      ]
-    },
-    {
       "source": "nventures",
       "target": "exa",
       "rel": "invested_in",
@@ -10940,6 +11318,548 @@
           "run_id": "20261103T135117Z",
           "first_seen": "2026-11-03T13:55:07+00:00",
           "last_seen": "2026-11-03T13:55:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jack mander",
+      "target": "tallia",
+      "rel": "founded",
+      "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alexander bartlam",
+      "target": "tallia",
+      "rel": "cofounded",
+      "evidence": "Founded in 2025 by school friends Jack Mander and Alexander Bartlam",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "outward vc",
+      "target": "tallia",
+      "rel": "invested_in",
+      "evidence": "The round was co‑led by Outward VC",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "institute of chartered accountants in england and wales (icaew)",
+      "target": "tallia",
+      "rel": "invested_in",
+      "evidence": "The round was co‑led by ... ICAEW",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "portfolio ventures",
+      "target": "tallia",
+      "rel": "invested_in",
+      "evidence": "with participation from Portfolio Ventures",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "expedite capital",
+      "target": "tallia",
+      "rel": "invested_in",
+      "evidence": "with participation from ... Expedite Capital",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "paul forster",
+      "target": "tallia",
+      "rel": "invested_in",
+      "evidence": "with participation from ... Paul Forster",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "angus miln",
+      "target": "tallia",
+      "rel": "invested_in",
+      "evidence": "with participation from ... Angus Miln",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "leon rauch",
+      "target": "jawbuddy",
+      "rel": "founded",
+      "evidence": "Founded in 2025 by Leon Rauch, Moritz Scherer and Benjamín Cádiz de Gracia...",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "moritz scherer",
+      "target": "jawbuddy",
+      "rel": "founded",
+      "evidence": "Founded in 2025 by Leon Rauch, Moritz Scherer and Benjamín Cádiz de Gracia...",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "benjamín cádiz de gracia",
+      "target": "jawbuddy",
+      "rel": "founded",
+      "evidence": "Founded in 2025 by Leon Rauch, Moritz Scherer and Benjamín Cádiz de Gracia...",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "halbzeit",
+      "target": "jawbuddy",
+      "rel": "invested_in",
+      "evidence": "pre‑Seed round led by healthcare platform HALBZEIT.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. siegfried marquardt",
+      "target": "jawbuddy",
+      "rel": "invested_in",
+      "evidence": "The round was also backed by Dr. Siegfried Marquardt...",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. guido sigron",
+      "target": "jawbuddy",
+      "rel": "invested_in",
+      "evidence": "The round was also backed by ... Dr. Guido Sigron.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "christophe barriolade",
+      "target": "jawbuddy",
+      "rel": "invested_in",
+      "evidence": "business angels Christophe Barriolade ... also participated.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "aldrich huang",
+      "target": "jawbuddy",
+      "rel": "invested_in",
+      "evidence": "business angels ... Aldrich Huang ... also participated.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jens kosche",
+      "target": "jawbuddy",
+      "rel": "invested_in",
+      "evidence": "business angels ... Jens Kosche ... also participated.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "marc scheidegger",
+      "target": "jawbuddy",
+      "rel": "invested_in",
+      "evidence": "business angels ... Marc Scheidegger also participated.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "drey kenfack",
+      "target": "crediflow ai",
+      "rel": "founded",
+      "evidence": "Crediflow AI was founded in 2024 by Drey Kenfack",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "npif ii – pxn equity finance",
+      "target": "crediflow ai",
+      "rel": "invested_in",
+      "evidence": "The funding was led by NPIF II – PXN Equity Finance",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "haatch",
+      "target": "crediflow ai",
+      "rel": "invested_in",
+      "evidence": "The round also saw participation from early-stage venture firm Haatch",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "will bryk",
+      "target": "exa",
+      "rel": "founded",
+      "evidence": "founder Will Bryk calls \"stage two\" of the company's development",
+      "sources": [
+        {
+          "source_url": "https://exa.ai/blog/announcing-series-b",
+          "run_id": "20261028T122235Z",
+          "first_seen": "2026-10-28T12:26:24+00:00",
+          "last_seen": "2026-10-28T12:26:24+00:00"
+        },
+        {
+          "source_url": "https://www.silicon.co.uk/press-release/exa-raises-22mm-to-build-the-search-engine-for-ai",
+          "run_id": "20261101T125409Z",
+          "first_seen": "2026-11-01T12:57:45+00:00",
+          "last_seen": "2026-11-01T12:57:45+00:00"
+        },
+        {
+          "source_url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "benchmark",
+      "target": "exa",
+      "rel": "invested_in",
+      "evidence": "Series B funding round led by Benchmark",
+      "sources": [
+        {
+          "source_url": "https://exa.ai/blog/announcing-series-b",
+          "run_id": "20261028T122235Z",
+          "first_seen": "2026-10-28T12:26:24+00:00",
+          "last_seen": "2026-10-28T12:26:24+00:00"
+        },
+        {
+          "source_url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lightspeed",
+      "target": "exa",
+      "rel": "invested_in",
+      "evidence": "participation from Lightspeed",
+      "sources": [
+        {
+          "source_url": "https://exa.ai/blog/announcing-series-b",
+          "run_id": "20261028T122235Z",
+          "first_seen": "2026-10-28T12:26:24+00:00",
+          "last_seen": "2026-10-28T12:26:24+00:00"
+        },
+        {
+          "source_url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "peter fenton",
+      "target": "benchmark",
+      "rel": "works_at",
+      "evidence": "Peter Fenton from Benchmark",
+      "sources": [
+        {
+          "source_url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "uri knorovich",
+      "target": "nimble",
+      "rel": "founded",
+      "evidence": "Nimble CEO and co‑founder Uri Knorovich",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "norwest",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "Series B round, led by Norwest",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "target global",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "participation from returning investors Target Global",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "square peg",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "participation from returning investors ... Square Peg",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hetz ventures",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "participation from returning investors ... Hetz Ventures",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "slow ventures",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "participation from returning investors ... Slow Ventures",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "r‑squared ventures",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "participation from returning investors ... R‑Squared Ventures",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "j‑ventures",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "participation from returning investors ... J‑Ventures",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "investindata",
+      "target": "nimble",
+      "rel": "invested_in",
+      "evidence": "participation from returning investors ... InvestInData",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "databricks",
+      "target": "nimble",
+      "rel": "partner_of",
+      "evidence": "partnered with Databricks",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "snowflake",
+      "target": "nimble",
+      "rel": "partner_of",
+      "evidence": "partnered with ... Snowflake",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
+        }
+      ]
+    },
+    {
+      "source": "microsoft",
+      "target": "nimble",
+      "rel": "partner_of",
+      "evidence": "partnered with ... Microsoft",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+          "run_id": "20261104T135833Z",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-04T14:02:27+00:00"
         }
       ]
     }

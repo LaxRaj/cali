@@ -1,0 +1,727 @@
+{
+  "run_id": "20261104T135833Z",
+  "started_at": "2026-11-04T13:58:33+00:00",
+  "duration_s": 249.5,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 255,
+    "selected": 11,
+    "crawled": 9,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5
+  },
+  "tokens": 19385,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 114,
+    "hn": 34,
+    "rss": 65,
+    "web": 24,
+    "edgar": 6
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building Next.js vector search API",
+      "seed funding announced for retrieval-augmented generation web app startup founders interview",
+      "early-stage company raises capital for data-heavy web app search engine startup investors",
+      "founder announces launch of RAG-powered knowledge base startup series A funding November 2026"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search API",
+      "developer tooling",
+      "next.js search"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 37,
+        "accepted": 30,
+        "score_sum": 2357,
+        "yield": 0.811,
+        "avg_score": 78.6
+      },
+      "launch_hn": {
+        "crawled": 3,
+        "accepted": 3,
+        "score_sum": 144,
+        "yield": 1.0,
+        "avg_score": 48.0
+      },
+      "web": {
+        "crawled": 16,
+        "accepted": 15,
+        "score_sum": 1197,
+        "yield": 0.938,
+        "avg_score": 79.8
+      },
+      "yc": {
+        "crawled": 16,
+        "accepted": 16,
+        "score_sum": 832,
+        "yield": 1.0,
+        "avg_score": 52.0
+      },
+      "hiring": {
+        "crawled": 210,
+        "accepted": 210,
+        "score_sum": 5188,
+        "yield": 1.0,
+        "avg_score": 24.7
+      },
+      "edgar": {
+        "crawled": 22,
+        "accepted": 2,
+        "score_sum": 147,
+        "yield": 0.091,
+        "avg_score": 73.5
+      },
+      "hn": {
+        "crawled": 2,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 3,
+      "web": 3,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 115,
+    "fallbacks": 0,
+    "avg_latency_ms": 59.0,
+    "jev_input_tokens": 54466,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-04T13:58:33+00:00",
+      "offset_s": 0.0,
+      "duration_s": 9.63,
+      "status": "ok",
+      "counts": {
+        "candidates": 255,
+        "src_hn": 32,
+        "src_launch_hn": 2,
+        "src_rss": 65,
+        "src_yc": 12,
+        "src_web": 24,
+        "src_edgar": 6,
+        "src_hiring": 114
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-04T13:58:42+00:00",
+      "offset_s": 9.63,
+      "duration_s": 6.5,
+      "status": "ok",
+      "counts": {
+        "in": 255,
+        "selected": 11,
+        "hiring_lane": 15
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 3, 'web': 3, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-04T13:58:49+00:00",
+      "offset_s": 16.13,
+      "duration_s": 32.35,
+      "status": "ok",
+      "counts": {
+        "requested": 11,
+        "crawled": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-04T13:59:21+00:00",
+      "offset_s": 48.48,
+      "duration_s": 59.69,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-04T14:00:21+00:00",
+      "offset_s": 108.18,
+      "duration_s": 125.66,
+      "status": "ok",
+      "counts": {
+        "startups": 20,
+        "websites": 19,
+        "emails": 18,
+        "phones": 7
+      },
+      "notes": [
+        "no website found",
+        "structured data: 4 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "crawl failed",
+        "structured data: 2 people"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-04T14:02:27+00:00",
+      "offset_s": 233.83,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 37
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-04T14:02:27+00:00",
+      "offset_s": 233.83,
+      "duration_s": 7.8,
+      "status": "ok",
+      "counts": {
+        "startups": 20,
+        "people": 24,
+        "edges": 37
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.46,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 114,
+      "seconds": 0.98,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 34,
+      "seconds": 2.07,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 65,
+      "seconds": 3.68,
+      "error": ""
+    },
+    "web": {
+      "candidates": 24,
+      "seconds": 8.42,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 6,
+      "seconds": 9.63,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14468,
+    "completion_tokens": 4917,
+    "total_tokens": 19385,
+    "calls": 7,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 11898,
+        "completion_tokens": 4840,
+        "total_tokens": 16738,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 2570,
+        "completion_tokens": 77,
+        "total_tokens": 2647,
+        "calls": 2
+      }
+    }
+  },
+  "quality": {
+    "candidates": 255,
+    "crawled": 9,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5,
+    "sources": {
+      "rss": 3,
+      "web": 2
+    },
+    "people": 24,
+    "edges": 37,
+    "dropped_ungrounded": 3,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 18,
+    "with_website": 19,
+    "with_email": 10,
+    "with_phone": 4,
+    "people_linked": 5,
+    "avg_score": 37.5,
+    "issues": {
+      "warn: empty tech_stack": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "ycombinator.com/launches/Whg-twentyfour26-building-fully-autonomous-factories-in-america",
+      "ycombinator.com/launches/WhR-chempilot-building-an-autonomous-lab-to-discover-the-next-generation-of-defense-materials",
+      "siliconangle.com/2026/09/22/web-scraping-startup-firecrawl-closes-75m-investment",
+      "getbema.app"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Tallia",
+      "url": "https://www.eu-startups.com/2026/11/london-based-tallia-raises-e4-million-to-bring-ai-powered-research-and-review-to-tax-firms/",
+      "source": "rss",
+      "people": 8,
+      "edges": 8,
+      "score": 64,
+      "gaps": [
+        "website",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "JawBuddy",
+      "url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
+      "source": "rss",
+      "people": 10,
+      "edges": 10,
+      "score": 85,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://www.jawbuddy.com",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Crediflow AI",
+      "url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+      "source": "rss",
+      "people": 1,
+      "edges": 3,
+      "score": 60,
+      "gaps": [
+        "funding stage",
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.crediflow.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Exa",
+      "url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
+      "source": "web",
+      "people": 2,
+      "edges": 4,
+      "score": 76,
+      "gaps": [
+        "funding stage",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://exa.ai",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Nimble",
+      "url": "https://techcrunch.com/2026/02/24/nimble-way-raises-47m-to-give-ai-agents-better-cleaner-data/",
+      "source": "web",
+      "people": 2,
+      "edges": 12,
+      "score": 78,
+      "gaps": [
+        "funding stage",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://www.nimbleway.com",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Bikky",
+      "url": "https://bikky.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://bikky.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Lumen Labs",
+      "url": "https://lumenresearch.co",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://lumenresearch.co",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Sphinx Defense",
+      "url": "https://www.sphinxdefense.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://sphinxdefense.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Cocient",
+      "url": "https://work.cocient.com/opportunities",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 16,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://work.cocient.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Radar Labs",
+      "url": "https://radar.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 30,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://radar.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Thankly",
+      "url": "https://thankly.ai/careers/founding-engineer",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://thankly.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Tether",
+      "url": "https://tether.recruitee.com/o/product-engineering-lead-keet-100-remote-worldwide-12",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://tether.recruitee.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Exponent",
+      "url": "https://news.ycombinator.com/item?id=50354142",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.exponent.com",
+      "emails": 1,
+      "phones": 2
+    },
+    {
+      "company": "ThreatMark",
+      "url": "https://www.threatmark.com/careers/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.threatmark.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Special",
+      "url": "https://news.ycombinator.com/item?id=50353641",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.specialolympics.org",
+      "emails": 5,
+      "phones": 3
+    },
+    {
+      "company": "DigiKey",
+      "url": "https://digikey.wd5.myworkdayjobs.com/en-US/Digi-Key/details/Search-Experience-Manager_R6052-1",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 16,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://digikey.wd5.myworkdayjobs.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "ControlPlane",
+      "url": "https://job-boards.eu.greenhouse.io/controlplane/jobs/5012527101",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 26,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email"
+      ],
+      "website": "https://www.greenhouse.com",
+      "emails": 0,
+      "phones": 1
+    },
+    {
+      "company": "Clad",
+      "url": "https://news.ycombinator.com/item?id=50353098",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.all-clad.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "SEEKING FREELANCER",
+      "url": "https://news.ycombinator.com/item?id=50352957",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.freelancer.com",
+      "emails": 2,
+      "phones": 1
+    },
+    {
+      "company": "TheraPlug",
+      "url": "https://theraplug.health",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.theraplug.health",
+      "emails": 1,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2001507/000200150726000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2161554/000216155426000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    }
+  ],
+  "errors": []
+}
