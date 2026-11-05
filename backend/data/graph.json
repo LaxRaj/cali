@@ -877,6 +877,14 @@
       "score": 60
     },
     {
+      "id": "albert",
+      "label": "ALBERT",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://albert.com",
+      "score": 49
+    },
+    {
       "id": "eric",
       "label": "Eric",
       "type": "person",
@@ -3516,6 +3524,24 @@
       "links": {}
     },
     {
+      "id": "yinon ravid",
+      "label": "Yinon Ravid",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/yinonravid"
+      }
+    },
+    {
+      "id": "andrzej baraniak",
+      "label": "Andrzej Baraniak",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -5022,14 +5048,6 @@
       "score": 19
     },
     {
-      "id": "albert",
-      "label": "ALBERT",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
-    },
-    {
       "id": "furtim modus",
       "label": "Furtim Modus",
       "type": "startup",
@@ -5070,14 +5088,6 @@
       "score": 29
     },
     {
-      "id": "cocient",
-      "label": "Cocient",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://work.cocient.com/opportunities",
-      "score": 16
-    },
-    {
       "id": "radar labs",
       "label": "Radar Labs",
       "type": "startup",
@@ -5102,14 +5112,6 @@
       "score": 19
     },
     {
-      "id": "exponent",
-      "label": "Exponent",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
-    },
-    {
       "id": "threatmark",
       "label": "ThreatMark",
       "type": "startup",
@@ -5118,20 +5120,36 @@
       "score": 22
     },
     {
-      "id": "special",
-      "label": "Special",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
-    },
-    {
       "id": "digikey",
       "label": "DigiKey",
       "type": "startup",
       "degree": 0,
       "website": "https://digikey.wd5.myworkdayjobs.com",
       "score": 16
+    },
+    {
+      "id": "cocient",
+      "label": "Cocient",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://work.cocient.com/opportunities",
+      "score": 16
+    },
+    {
+      "id": "exponent",
+      "label": "Exponent",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.exponent.com",
+      "score": 33
+    },
+    {
+      "id": "special",
+      "label": "Special",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 10
     },
     {
       "id": "kevin hartz",
@@ -12252,6 +12270,34 @@
           "run_id": "20261105T141727Z",
           "first_seen": "2026-11-05T14:20:43+00:00",
           "last_seen": "2026-11-05T14:20:43+00:00"
+        }
+      ]
+    },
+    {
+      "source": "yinon ravid",
+      "target": "albert",
+      "rel": "founded",
+      "evidence": "Yinon Ravid and Andrzej Baraniak, both working in financial services, were convinced everybody should be able to access a real expert.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50373706",
+          "run_id": "backfill-2026-11-05",
+          "first_seen": "2026-11-05T16:23:26+00:00",
+          "last_seen": "2026-11-05T16:23:26+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andrzej baraniak",
+      "target": "albert",
+      "rel": "founded",
+      "evidence": "Yinon Ravid and Andrzej Baraniak, both working in financial services, were convinced everybody should be able to access a real expert.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50373706",
+          "run_id": "backfill-2026-11-05",
+          "first_seen": "2026-11-05T16:23:26+00:00",
+          "last_seen": "2026-11-05T16:23:26+00:00"
         }
       ]
     }

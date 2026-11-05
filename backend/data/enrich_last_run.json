@@ -1,7 +1,29 @@
 {
-  "started_at": "2026-11-04T16:09:08+00:00",
+  "started_at": "2026-11-05T16:23:26+00:00",
   "skipped": "",
   "startups": [
+    {
+      "company": "ALBERT",
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://albert.com",
+      "status": "ok",
+      "emails": 2,
+      "phones": 0,
+      "people": 2,
+      "edges": 2,
+      "notes": [
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +2 people, +2 edges"
+      ]
+    },
     {
       "company": "Cocient",
       "score": 16,
@@ -27,24 +49,53 @@
       ]
     },
     {
-      "company": "Tallia",
-      "score": 73,
+      "company": "Exponent",
+      "score": 33,
       "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
         "people profiles",
-        "email",
-        "phone"
+        "investors"
       ],
-      "website": "https://www.tallia.com",
+      "website": "https://www.exponent.com",
       "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 2,
-      "edges": 8,
+      "emails": 1,
+      "phones": 2,
+      "people": 0,
+      "edges": 0,
       "notes": [
         "team llm: 0 people proposed, 0 grounded",
         "team page: +0 people, +0 edges"
       ]
+    },
+    {
+      "company": "Special",
+      "score": 10,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "no website found"
+      ]
     }
   ],
-  "tokens": 1482
+  "tokens": 2832
 }
