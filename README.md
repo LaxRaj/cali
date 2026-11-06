@@ -42,6 +42,24 @@ Health alerts (no run in 26 h, or two days ending on the Groq quota) open one `c
 again when the scout is healthy. Every Monday a `cali-digest` issue lists new strong leads, who to contact next,
 watchlist hits, replies and scout health.
 
+## Online dashboard (free)
+
+The dashboard is hosted on Vercel's free Hobby plan as project `cali`, with root directory `frontend`. Vercel is
+connected to this GitHub repo, so every push to `main` redeploys it, including the scout's daily data commits.
+`frontend/vercel.json` skips builds for commits that touch neither `frontend/` nor `backend/data/`.
+
+The site is password-protected with HTTP Basic auth (`frontend/proxy.ts`). The user is `cali` unless you set
+`CALI_DASHBOARD_USER`. To set or change the password (it never goes in the repo):
+
+```bash
+cd frontend
+vercel env rm CALI_DASHBOARD_PASSWORD production   # only when changing it
+vercel env add CALI_DASHBOARD_PASSWORD production
+vercel deploy --prod                               # or push any commit to main
+```
+
+Without the variable (local `npm run dev`) the gate is off.
+
 ## Outreach (local only, opt-in)
 
 ```bash
