@@ -194,6 +194,8 @@ class RunReport:
     with_phone: int = 0
     people_linked: int = 0  # people with at least one public profile link
     avg_score: float = 0.0
+    qualified: int = 0  # accepted leads with a known stage, a named leader and a published way to reach them
+    avg_qualified_score: float = 0.0  # the headline: average score of the leads worth pursuing
     issues: dict[str, int] = field(default_factory=dict)
     failures: list[str] = field(default_factory=list)
     passed: bool = False

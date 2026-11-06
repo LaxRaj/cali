@@ -36,13 +36,13 @@ from scraper import Page, scrape_urls, search_results
 from signals import hiring_extraction, make_signal, merge_signals, parse_roles
 
 MAX_PEOPLE_SEARCHES = 12  # public-search lookups for founders' profile links, per run
-BACKFILL_LIMIT = 3  # older stored startups re-enriched per run
+BACKFILL_LIMIT = 1  # older stored startups re-enriched per scout run; the backlog drains in enrich_run.py
 AVG_EXTRACTION_TOKENS = 4500  # for the 'tokens saved' estimate when a page is gated
 MAX_GITHUB_LOOKUPS = 30  # public profile API calls per run
 TOKEN_BUDGET = int(os.environ.get("CALI_TOKEN_BUDGET", "20000"))  # Groq tokens per run; 0 = unlimited
 TEAM_RESERVE = 2500  # left for the team-page pass (~1.5k per call)
 MAX_TEAM_LLM = 3
-LANE_MAX = 15  # hiring-post leads per run: built without the LLM, so they only cost crawl time  # About/Team page extraction calls (Groq tokens), per run
+LANE_MAX = 8  # hiring-post leads per run: built without the LLM and rarely qualified (no stage/founder), so keep the lane small  # About/Team page extraction calls (Groq tokens), per run
 
 
 def enrichment_enabled() -> bool:
@@ -189,6 +189,7 @@ async def enrich_all(accepted, log) -> list[EnrichResult]:
 
 
 signals_by_company: dict[str, list[dict]] = {}  # company(lower) -> signals seen this run
+hiring_roles: dict[str, list[str]] = {}  # company(lower) -> open roles from its hiring post
 post_text: dict[str, tuple[str, str]] = {}  # company(lower) -> (hiring post text, its URL): emails the post itself publishes
 
 
@@ -260,10 +261,14 @@ async def run(data_dir: Path) -> RunReport:
                 signals_by_company.setdefault(c.company.lower(), []).append(make_signal(
                     "hiring", "hn_who_is_hiring", f"https://news.ycombinator.com/item?id={c.meta['item_id']}",
                     parse_roles(c.meta["roles"]), c.published_at))
+                hiring_roles[c.company.lower()] = parse_roles(c.meta["roles"])
                 post_text[c.company.lower()] = (c.meta["text"], f"https://news.ycombinator.com/item?id={c.meta['item_id']}")
                 if log:
                     log.accept(c.company, c.url, "hiring", 0, 0)
                     log.candidate(c.url, "hiring", c.title, c.snippet, c.triage, "accepted")
+            for ex, source, _ in accepted:
+                if source in ("yc", "launch_hn") and not ex.startup.funding_stage:
+                    ex.startup.funding_stage = "YC"  # Launch HN and YC launches are YC companies by definition
             for ex, source, _ in accepted:  # launch / funding recency as signals too
                 if source != "hiring":
                     s_ = ex.startup
@@ -286,7 +291,13 @@ async def run(data_dir: Path) -> RunReport:
         else:
             results = [EnrichResult(ex, Contact(status="disabled"), []) for ex, _, _ in accepted]
 
-        ratings = [rate(r.extraction.startup, r.extraction.people, r.extraction.edges, r.contact) for r in results]
+        for res in results:  # emails the hiring post itself publishes, with the post as source (before rating, so they count)
+            key = res.extraction.startup.company_name.lower()
+            if key in post_text:
+                have = {e.value for e in res.contact.emails}
+                res.contact.emails += [e for e in post_emails(*post_text[key]) if e.value not in have]
+        ratings = [rate(r.extraction.startup, r.extraction.people, r.extraction.edges, r.contact,
+                        hiring_roles=hiring_roles.get(r.extraction.startup.company_name.lower())) for r in results]
         for a, r, rt in zip(log.accepted, results, ratings):
             a.update(score=rt.score, gaps=rt.gaps, website=r.contact.website,
                      emails=len(r.contact.emails), phones=len(r.contact.phones))
@@ -304,6 +315,9 @@ async def run(data_dir: Path) -> RunReport:
             1 for r in results for p in r.extraction.people if p.linkedin or p.twitter or p.github
         )
         report.avg_score = round(sum(rt.score for rt in ratings) / len(ratings), 1) if ratings else 0.0
+        good = [rt.score for rt in ratings if rt.qualified]
+        report.qualified = len(good)
+        report.avg_qualified_score = round(sum(good) / len(good), 1) if good else 0.0
 
         with log.stage("gates") as st:
             evaluate_run(report)
@@ -326,9 +340,6 @@ async def run(data_dir: Path) -> RunReport:
                 for (ex, source, _), res, rt in zip(accepted, results, ratings):
                     s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
                     key = s.company_name.lower()
-                    if key in post_text:  # emails the hiring post itself publishes, with the post as source
-                        have = {e.value for e in res.contact.emails}
-                        res.contact.emails += [e for e in post_emails(*post_text[key]) if e.value not in have]
                     try:
                         before = json.loads(stored_signals.get(key) or "[]")
                     except ValueError:
@@ -338,7 +349,7 @@ async def run(data_dir: Path) -> RunReport:
                         s, db_dir=data_dir,
                         extras={
                             "score": rt.score,
-                            "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
+                            "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps, "axes": rt.axes, "qualified": rt.qualified}),
                             "contact_json": res.contact.model_dump_json(),
                             "last_seen": now,
                             "signals_json": json.dumps(sigs),

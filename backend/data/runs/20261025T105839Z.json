@@ -1,0 +1,725 @@
+{
+  "run_id": "20261025T105839Z",
+  "started_at": "2026-10-25T10:58:39+00:00",
+  "duration_s": 207.1,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 263,
+    "selected": 7,
+    "crawled": 5,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5
+  },
+  "tokens": 17077,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 41,
+    "edgar": 5,
+    "rss": 55,
+    "web": 30
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round October 2026",
+      "Series A round for developer tooling startup building Next.js vector search API",
+      "seed funding announced for retrieval-augmented generation web app startup founder interview",
+      "early-stage company raises capital for data-heavy web app search engine technology investor name",
+      "founder announces launch of RAG-powered knowledge base startup backed by venture firm"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search",
+      "developer tooling",
+      "next.js AI"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 6,
+        "accepted": 2,
+        "score_sum": 100,
+        "yield": 0.333,
+        "avg_score": 50.0
+      },
+      "web": {
+        "crawled": 19,
+        "accepted": 17,
+        "score_sum": 1371,
+        "yield": 0.895,
+        "avg_score": 80.6
+      },
+      "launch_hn": {
+        "crawled": 5,
+        "accepted": 5,
+        "score_sum": 332,
+        "yield": 1.0,
+        "avg_score": 66.4
+      },
+      "yc": {
+        "crawled": 14,
+        "accepted": 14,
+        "score_sum": 730,
+        "yield": 1.0,
+        "avg_score": 52.1
+      },
+      "rss": {
+        "crawled": 20,
+        "accepted": 17,
+        "score_sum": 1301,
+        "yield": 0.85,
+        "avg_score": 76.5
+      },
+      "edgar": {
+        "crawled": 14,
+        "accepted": 1,
+        "score_sum": 66,
+        "yield": 0.071,
+        "avg_score": 66.0
+      },
+      "hiring": {
+        "crawled": 65,
+        "accepted": 62,
+        "score_sum": 1573,
+        "yield": 0.954,
+        "avg_score": 25.4
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 3,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 97,
+    "fallbacks": 0,
+    "avg_latency_ms": 83.8,
+    "jev_input_tokens": 46191,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-25T10:58:39+00:00",
+      "offset_s": 0.0,
+      "duration_s": 11.25,
+      "status": "ok",
+      "counts": {
+        "candidates": 263,
+        "src_hn": 37,
+        "src_launch_hn": 4,
+        "src_rss": 55,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 5,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-25T10:58:51+00:00",
+      "offset_s": 11.25,
+      "duration_s": 7.72,
+      "status": "ok",
+      "counts": {
+        "in": 263,
+        "selected": 7,
+        "hiring_lane": 15
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 3, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-25T10:58:58+00:00",
+      "offset_s": 18.96,
+      "duration_s": 7.03,
+      "status": "ok",
+      "counts": {
+        "requested": 7,
+        "crawled": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-25T10:59:05+00:00",
+      "offset_s": 26.0,
+      "duration_s": 38.32,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-10-25T10:59:44+00:00",
+      "offset_s": 64.31,
+      "duration_s": 131.63,
+      "status": "ok",
+      "counts": {
+        "startups": 20,
+        "websites": 19,
+        "emails": 16,
+        "phones": 7
+      },
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "no website found"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-25T11:01:55+00:00",
+      "offset_s": 195.94,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 36
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-10-25T11:01:55+00:00",
+      "offset_s": 195.94,
+      "duration_s": 5.35,
+      "status": "ok",
+      "counts": {
+        "startups": 20,
+        "people": 6,
+        "edges": 14
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-10-25T11:02:01+00:00",
+      "offset_s": 201.29,
+      "duration_s": 3.44,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 0
+      },
+      "notes": [
+        "Indiana Microelectronics LLC: no_website, score 10"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.52,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.2,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 41,
+      "seconds": 1.81,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 5,
+      "seconds": 4.79,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 55,
+      "seconds": 5.34,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 11.24,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 13158,
+    "completion_tokens": 3919,
+    "total_tokens": 17077,
+    "calls": 8,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 9178,
+        "completion_tokens": 3816,
+        "total_tokens": 12994,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 3980,
+        "completion_tokens": 103,
+        "total_tokens": 4083,
+        "calls": 3
+      }
+    }
+  },
+  "quality": {
+    "candidates": 263,
+    "crawled": 5,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5,
+    "sources": {
+      "rss": 2,
+      "web": 1,
+      "yc": 2
+    },
+    "people": 6,
+    "edges": 14,
+    "dropped_ungrounded": 7,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 19,
+    "with_website": 19,
+    "with_email": 11,
+    "with_phone": 5,
+    "people_linked": 3,
+    "avg_score": 36.0,
+    "issues": {
+      "warn: empty tech_stack": 4
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Bird&Be",
+      "url": "https://betakit.com/birdbe-raises-13-million-usd-series-a-for-fertility-support-platform/",
+      "source": "rss",
+      "people": 2,
+      "edges": 4,
+      "score": 83,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://birdandbe.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Bia Health",
+      "url": "https://betakit.com/bia-health-raises-2-15-million-for-ai-to-reduce-unnecessary-medical-interventions/",
+      "source": "rss",
+      "people": 1,
+      "edges": 4,
+      "score": 87,
+      "gaps": [
+        "tech stack"
+      ],
+      "website": "https://bia-health.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Joinable Labs",
+      "url": "https://theaiinsider.tech/2025/08/07/joinable-labs-launches-to-accelerate-the-time-to-intelligence-of-private-ai-with-2m-seed-round-and-first-product-rag-in-a-box/",
+      "source": "web",
+      "people": 1,
+      "edges": 2,
+      "score": 63,
+      "gaps": [
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.joinable.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Odin Robotics",
+      "url": "https://www.ycombinator.com/launches/WJg-odin-robotics-robot-arms-that-do-repetitive-manual-work-in-existing-factories",
+      "source": "yc",
+      "people": 1,
+      "edges": 2,
+      "score": 46,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://odin-robotics.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Agent Relay",
+      "url": "https://www.ycombinator.com/launches/WI4-agent-relay-let-your-teams-coding-agents-message-each-other",
+      "source": "yc",
+      "people": 2,
+      "edges": 5,
+      "score": 57,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://agentrelay.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Treat Health",
+      "url": "https://treat.health/en/careers/full-stack-engineer/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://treat.health",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "NeuralFrame",
+      "url": "https://wellfound.com/jobs/4829721-senior-backend-software-engineer-medical-data-pipeline",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://neuralframe.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "exLabora AI",
+      "url": "https://exlabora.com/open-roles.html",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://exlabora.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "GovStar",
+      "url": "https://govstar.us",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.govstar.us",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Sendery",
+      "url": "https://sendery.co",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://sendery.co",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Typify.dev",
+      "url": "https://typify.dev",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 22,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://typify.dev",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Indiana Microelectronics LLC",
+      "url": "https://news.ycombinator.com/item?id=50062997",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 10,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "HiO",
+      "url": "https://www.linkedin.com/jobs/view/4468585742/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://hiogolf.com",
+      "emails": 2,
+      "phones": 1
+    },
+    {
+      "company": "StartupHakk",
+      "url": "https://startuphakk.com/jobs",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://startuphakk.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "General Intelligence Holdings",
+      "url": "https://www.generalintelligenceholdings.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.generalintelligenceholdings.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Chronograph",
+      "url": "https://grnh.se/1pm4u2ys7us",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 26,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email"
+      ],
+      "website": "https://www.greenhouse.com",
+      "emails": 0,
+      "phones": 1
+    },
+    {
+      "company": "Propel Labs",
+      "url": "https://propellabs.ai",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.propellabs.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "SKIES",
+      "url": "https://skieslearn.com/ndbi/jobs/developer",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 26,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://skieslearn.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "OneChronos",
+      "url": "https://news.ycombinator.com/item?id=50012248",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.onechronos.com",
+      "emails": 5,
+      "phones": 3
+    },
+    {
+      "company": "Ojin",
+      "url": "https://ojin.ai",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 19,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://ojin.ai",
+      "emails": 0,
+      "phones": 0
+    }
+  ],
+  "rejections": [],
+  "errors": []
+}

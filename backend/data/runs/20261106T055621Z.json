@@ -1,0 +1,574 @@
+{
+  "run_id": "20261106T055621Z",
+  "started_at": "2026-11-06T05:56:21+00:00",
+  "duration_s": 226.0,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 261,
+    "selected": 12,
+    "crawled": 11,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5
+  },
+  "tokens": 20372,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 33,
+    "edgar": 5,
+    "web": 24,
+    "rss": 67
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "seed round launch AI\u2011powered semantic search platform founded by ex\u2011Google engineer",
+      "Series A funding for developer tooling startup building vector\u2011search API for Next.js apps",
+      "pre\u2011seed funding announcement for RAG\u2011based knowledge\u2011base startup targeting SaaS developers",
+      "launch of data\u2011heavy web app startup using hybrid search and retrieval, backed by Andreessen Horowitz",
+      "early\u2011stage startup raises bridge round for open\u2011source search infrastructure, investors include Sequoia and First Round"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search",
+      "developer tooling",
+      "search infrastructure"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 39,
+        "accepted": 31,
+        "score_sum": 2459,
+        "yield": 0.795,
+        "avg_score": 79.3
+      },
+      "web": {
+        "crawled": 16,
+        "accepted": 15,
+        "score_sum": 1175,
+        "yield": 0.938,
+        "avg_score": 78.3
+      },
+      "yc": {
+        "crawled": 14,
+        "accepted": 14,
+        "score_sum": 728,
+        "yield": 1.0,
+        "avg_score": 52.0
+      },
+      "hiring": {
+        "crawled": 210,
+        "accepted": 210,
+        "score_sum": 5166,
+        "yield": 1.0,
+        "avg_score": 24.6
+      },
+      "edgar": {
+        "crawled": 22,
+        "accepted": 2,
+        "score_sum": 147,
+        "yield": 0.091,
+        "avg_score": 73.5
+      },
+      "hn": {
+        "crawled": 2,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      },
+      "launch_hn": {
+        "crawled": 3,
+        "accepted": 3,
+        "score_sum": 130,
+        "yield": 1.0,
+        "avg_score": 43.3
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 3,
+      "web": 3,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 118,
+    "fallbacks": 0,
+    "avg_latency_ms": 55.1,
+    "jev_input_tokens": 56057,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-06T05:56:21+00:00",
+      "offset_s": 0.0,
+      "duration_s": 25.64,
+      "status": "ok",
+      "counts": {
+        "candidates": 261,
+        "src_hn": 29,
+        "src_launch_hn": 4,
+        "src_rss": 67,
+        "src_yc": 12,
+        "src_web": 24,
+        "src_edgar": 5,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-06T05:56:47+00:00",
+      "offset_s": 25.64,
+      "duration_s": 6.19,
+      "status": "ok",
+      "counts": {
+        "in": 261,
+        "selected": 12,
+        "hiring_lane": 8
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 3, 'web': 3, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-06T05:56:53+00:00",
+      "offset_s": 31.83,
+      "duration_s": 28.06,
+      "status": "ok",
+      "counts": {
+        "requested": 12,
+        "crawled": 11
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-06T05:57:21+00:00",
+      "offset_s": 59.89,
+      "duration_s": 60.37,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-06T05:58:21+00:00",
+      "offset_s": 120.26,
+      "duration_s": 89.29,
+      "status": "ok",
+      "counts": {
+        "startups": 13,
+        "websites": 12,
+        "emails": 9,
+        "phones": 3
+      },
+      "notes": [
+        "no website found",
+        "structured data: 2 people",
+        "team llm: 12 people proposed, 10 grounded",
+        "team page: +10 people, +10 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-06T05:59:50+00:00",
+      "offset_s": 209.55,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 45
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-06T05:59:50+00:00",
+      "offset_s": 209.55,
+      "duration_s": 8.34,
+      "status": "ok",
+      "counts": {
+        "startups": 13,
+        "people": 20,
+        "edges": 24
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.37,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 0.87,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 33,
+      "seconds": 1.74,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 5,
+      "seconds": 8.46,
+      "error": ""
+    },
+    "web": {
+      "candidates": 24,
+      "seconds": 11.36,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 67,
+      "seconds": 24.91,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14945,
+    "completion_tokens": 5427,
+    "total_tokens": 20372,
+    "calls": 8,
+    "by_purpose": {
+      "plan": {
+        "prompt_tokens": 340,
+        "completion_tokens": 152,
+        "total_tokens": 492,
+        "calls": 1
+      },
+      "extract": {
+        "prompt_tokens": 12158,
+        "completion_tokens": 3823,
+        "total_tokens": 15981,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 2447,
+        "completion_tokens": 1452,
+        "total_tokens": 3899,
+        "calls": 2
+      }
+    }
+  },
+  "quality": {
+    "candidates": 261,
+    "crawled": 11,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5,
+    "sources": {
+      "rss": 3,
+      "launch_hn": 1,
+      "edgar": 1
+    },
+    "people": 20,
+    "edges": 24,
+    "dropped_ungrounded": 18,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 12,
+    "with_website": 12,
+    "with_email": 6,
+    "with_phone": 2,
+    "people_linked": 5,
+    "avg_score": 45.4,
+    "qualified": 1,
+    "avg_qualified_score": 66.0,
+    "issues": {
+      "warn: empty tech_stack": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "sec.gov/Archives/edgar/data/2163480/000216348026000001",
+      "ycombinator.com/launches/WpY-hesper-ai-ai-agents-that-work-every-insurance-claim-end-to-end",
+      "getcoai.com/news/ai-search-startup-genspark-secures-100m-to-challenge-google",
+      "a16z.com/announcement/investing-in-exa",
+      "ycombinator.com/launches/Wwy-evardi-agents-that-engineer-the-grid-edge",
+      "postraid.com"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Siggy",
+      "url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
+      "source": "rss",
+      "people": 1,
+      "edges": 7,
+      "score": 54,
+      "gaps": [
+        "website",
+        "founder",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Rivet",
+      "url": "https://news.ycombinator.com/item?id=50381687",
+      "source": "launch_hn",
+      "people": 2,
+      "edges": 2,
+      "score": 61,
+      "gaps": [
+        "funding amount",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://rivet.dev",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "42AI",
+      "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+      "source": "rss",
+      "people": 0,
+      "edges": 0,
+      "score": 66,
+      "gaps": [
+        "location",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://42ai.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "V\u00c6RIDION",
+      "url": "https://www.eu-startups.com/2026/11/germanys-vaeridion-raises-e124-million-to-bring-electric-regional-flights-closer-to-reality/",
+      "source": "rss",
+      "people": 1,
+      "edges": 5,
+      "score": 77,
+      "gaps": [
+        "tech stack",
+        "founder"
+      ],
+      "website": "https://vaeridion.com",
+      "emails": 5,
+      "phones": 2
+    },
+    {
+      "company": "QuantufAi, Inc",
+      "url": "https://www.sec.gov/Archives/edgar/data/2162154/000216215426000002/",
+      "source": "edgar",
+      "people": 6,
+      "edges": 0,
+      "score": 61,
+      "gaps": [
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.quantufai.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Zefr",
+      "url": "https://zefr.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://zefr.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Odette Technologies",
+      "url": "https://odettetechnologies.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://odettetechnologies.com",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Piramidal",
+      "url": "https://grnh.se/uwaqx1xc9us",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email"
+      ],
+      "website": "https://www.greenhouse.com",
+      "emails": 0,
+      "phones": 1
+    },
+    {
+      "company": "Sortrace",
+      "url": "https://sortrace.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 35,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://sortrace.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Nirvana Robotics",
+      "url": "https://app.niuro.io/source/H4yYHesP?ref=ps_EBRp88zU7jcdRZm8VJc8s6Wt_yVsmnoS1d4y2CMGR1k&utm_source=hacker-news&utm_medium=job-board&utm_campaign=mechanical-engineer-newyork-onsite&utm_content=hn-whoishiring-202611",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://app.niuro.io",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "ChainSecurity",
+      "url": "https://chainsecurity.com/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.chainsecurity.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "N26 SE",
+      "url": "https://www.n26.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 37,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://n26.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "ALBERT",
+      "url": "https://news.ycombinator.com/item?id=50373706",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 37,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://albert.com",
+      "emails": 3,
+      "phones": 0
+    }
+  ],
+  "rejections": [],
+  "errors": []
+}

@@ -1,34 +1,41 @@
 {
-  "generated_at": "2026-10-21T04:52:41+00:00",
-  "candidates": 306,
-  "crawled": 8,
-  "extracted": 2,
-  "relevant": 2,
-  "valid": 2,
+  "generated_at": "2026-11-06T14:08:04+00:00",
+  "candidates": 261,
+  "crawled": 10,
+  "extracted": 6,
+  "relevant": 4,
+  "valid": 3,
   "sources": {
-    "rss": 2
+    "edgar": 1,
+    "rss": 1,
+    "yc": 1
   },
-  "people": 6,
-  "edges": 11,
-  "dropped_ungrounded": 0,
-  "gated": 0,
-  "quota_exhausted": true,
-  "enriched": 0,
-  "with_website": 0,
-  "with_email": 0,
-  "with_phone": 0,
+  "people": 8,
+  "edges": 7,
+  "dropped_ungrounded": 7,
+  "gated": 1,
+  "quota_exhausted": false,
+  "enriched": 11,
+  "with_website": 11,
+  "with_email": 6,
+  "with_phone": 1,
   "people_linked": 6,
-  "avg_score": 73.5,
+  "avg_score": 42.8,
+  "qualified": 2,
+  "avg_qualified_score": 74.0,
   "issues": {
-    "warn: empty tech_stack": 1,
-    "extraction error": 1
+    "not a relevant startup page": 2,
+    "missing core_product": 1,
+    "warn: empty tech_stack": 2,
+    "missing likely_bottleneck": 1
   },
-  "failures": [
-    "only 2 valid startups (< 3)",
-    "only 1 discovery sources produced valid startups (< 2)"
+  "failures": [],
+  "passed": true,
+  "deferred_urls": [
+    "ycombinator.com/launches/Wsz-openlake-fast-inference-for-self-improving-models",
+    "postraid.com",
+    "franklymail.com"
   ],
-  "passed": false,
-  "deferred_urls": [],
   "skipped": "",
-  "validity_rate": 1.0
+  "validity_rate": 0.75
 }

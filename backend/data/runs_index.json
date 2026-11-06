@@ -288,6 +288,474 @@
         "only 2 valid startups (< 3)",
         "only 1 discovery sources produced valid startups (< 2)"
       ]
+    },
+    {
+      "run_id": "20261023T111503Z",
+      "started_at": "2026-10-23T11:15:03+00:00",
+      "duration_s": 231.4,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 295,
+        "selected": 9,
+        "crawled": 7,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 18409,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 69,
+        "edgar": 3,
+        "web": 30,
+        "rss": 61
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261023T224039Z",
+      "started_at": "2026-10-23T22:40:39+00:00",
+      "duration_s": 222.2,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 260,
+        "selected": 9,
+        "crawled": 6,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 21172,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 44,
+        "rss": 55,
+        "edgar": 5,
+        "web": 24
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261024T015344Z",
+      "started_at": "2026-10-24T01:53:44+00:00",
+      "duration_s": 230.6,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 266,
+        "selected": 9,
+        "crawled": 7,
+        "extracted": 7,
+        "relevant": 6,
+        "valid": 6
+      },
+      "tokens": 20714,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 44,
+        "rss": 55,
+        "edgar": 5,
+        "web": 30
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261024T103347Z",
+      "started_at": "2026-10-24T10:33:47+00:00",
+      "duration_s": 223.5,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 257,
+        "selected": 8,
+        "crawled": 7,
+        "extracted": 6,
+        "relevant": 6,
+        "valid": 6
+      },
+      "tokens": 19559,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 41,
+        "edgar": 5,
+        "rss": 55,
+        "web": 24
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261025T105839Z",
+      "started_at": "2026-10-25T10:58:39+00:00",
+      "duration_s": 207.1,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 263,
+        "selected": 7,
+        "crawled": 5,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 17077,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 41,
+        "edgar": 5,
+        "rss": 55,
+        "web": 30
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261026T123004Z",
+      "started_at": "2026-10-26T12:30:04+00:00",
+      "duration_s": 205.7,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 269,
+        "selected": 10,
+        "crawled": 7,
+        "extracted": 5,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 18008,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "rss": 60,
+        "web": 30,
+        "hn": 38,
+        "hiring": 120,
+        "edgar": 9
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261027T114853Z",
+      "started_at": "2026-10-27T11:48:53+00:00",
+      "duration_s": 223.7,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 265,
+        "selected": 10,
+        "crawled": 7,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 18573,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 39,
+        "rss": 59,
+        "web": 30,
+        "edgar": 5
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261028T122235Z",
+      "started_at": "2026-10-28T12:22:35+00:00",
+      "duration_s": 239.0,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 256,
+        "selected": 11,
+        "crawled": 10,
+        "extracted": 7,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 19593,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 37,
+        "rss": 61,
+        "edgar": 2,
+        "web": 24
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261029T123216Z",
+      "started_at": "2026-10-29T12:32:16+00:00",
+      "duration_s": 199.3,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 256,
+        "selected": 8,
+        "crawled": 7,
+        "extracted": 7,
+        "relevant": 3,
+        "valid": 3
+      },
+      "tokens": 14600,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 36,
+        "rss": 63,
+        "edgar": 1,
+        "web": 24
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261030T122343Z",
+      "started_at": "2026-10-30T12:23:43+00:00",
+      "duration_s": 233.6,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 268,
+        "selected": 12,
+        "crawled": 9,
+        "extracted": 5,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 18840,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 35,
+        "web": 30,
+        "rss": 64,
+        "edgar": 7
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261031T115349Z",
+      "started_at": "2026-10-31T11:53:49+00:00",
+      "duration_s": 232.8,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 273,
+        "selected": 9,
+        "crawled": 8,
+        "extracted": 6,
+        "relevant": 6,
+        "valid": 6
+      },
+      "tokens": 18305,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 38,
+        "rss": 65,
+        "edgar": 8,
+        "web": 30
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261101T125409Z",
+      "started_at": "2026-11-01T12:54:09+00:00",
+      "duration_s": 233.6,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 258,
+        "selected": 8,
+        "crawled": 7,
+        "extracted": 6,
+        "relevant": 3,
+        "valid": 3
+      },
+      "tokens": 17407,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 36,
+        "rss": 64,
+        "edgar": 8,
+        "web": 18
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261102T150455Z",
+      "started_at": "2026-11-02T15:04:55+00:00",
+      "duration_s": 200.4,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 273,
+        "selected": 11,
+        "crawled": 9,
+        "extracted": 4,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 18537,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 32,
+        "rss": 68,
+        "web": 30,
+        "edgar": 11
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261103T135117Z",
+      "started_at": "2026-11-03T13:51:17+00:00",
+      "duration_s": 245.1,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 239,
+        "selected": 12,
+        "crawled": 11,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 20518,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 94,
+        "hn": 31,
+        "rss": 69,
+        "edgar": 3,
+        "web": 30
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261104T135833Z",
+      "started_at": "2026-11-04T13:58:33+00:00",
+      "duration_s": 249.5,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 255,
+        "selected": 11,
+        "crawled": 9,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 19385,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 114,
+        "hn": 34,
+        "rss": 65,
+        "web": 24,
+        "edgar": 6
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261105T141727Z",
+      "started_at": "2026-11-05T14:17:27+00:00",
+      "duration_s": 211.9,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 257,
+        "selected": 9,
+        "crawled": 7,
+        "extracted": 5,
+        "relevant": 4,
+        "valid": 4
+      },
+      "tokens": 18773,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 117,
+        "hn": 34,
+        "web": 25,
+        "edgar": 3,
+        "rss": 66
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261106T055621Z",
+      "started_at": "2026-11-06T05:56:21+00:00",
+      "duration_s": 226.0,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 261,
+        "selected": 12,
+        "crawled": 11,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 20372,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 33,
+        "edgar": 5,
+        "web": 24,
+        "rss": 67
+      },
+      "failures": []
+    },
+    {
+      "run_id": "20261106T140452Z",
+      "started_at": "2026-11-06T14:04:52+00:00",
+      "duration_s": 202.6,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 261,
+        "selected": 12,
+        "crawled": 10,
+        "extracted": 6,
+        "relevant": 4,
+        "valid": 3
+      },
+      "tokens": 18805,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "hiring": 120,
+        "hn": 34,
+        "rss": 58,
+        "web": 30,
+        "edgar": 7
+      },
+      "failures": []
     }
   ]
 }
