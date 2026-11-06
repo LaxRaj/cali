@@ -1,10 +1,136 @@
 {
-  "started_at": "2026-11-05T16:23:26+00:00",
+  "started_at": "2026-11-06T06:02:29+00:00",
   "skipped": "",
   "startups": [
     {
-      "company": "ALBERT",
+      "company": "V\u00c6RIDION",
+      "score": 72,
+      "gaps": [
+        "tech stack",
+        "founder",
+        "people profiles"
+      ],
+      "website": "https://vaeridion.com",
+      "status": "ok",
+      "emails": 5,
+      "phones": 2,
+      "people": 0,
+      "edges": 5,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Rivet",
+      "score": 61,
+      "gaps": [
+        "funding amount",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://rivet.dev",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 2,
+      "edges": 2,
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "QuantufAi, Inc",
+      "score": 65,
+      "gaps": [
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.quantufai.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 6,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "Siggy",
       "score": 49,
+      "gaps": [
+        "website",
+        "founder",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 5,
+      "notes": [
+        "no website found"
+      ]
+    },
+    {
+      "company": "Odette Technologies",
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://odettetechnologies.com",
+      "status": "ok",
+      "emails": 2,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "N26 SE",
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://n26.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "ALBERT",
+      "score": 51,
       "gaps": [
         "funding stage",
         "location",
@@ -21,15 +147,37 @@
       "edges": 2,
       "notes": [
         "team llm: 2 people proposed, 2 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Sortrace",
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://sortrace.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 2,
+      "edges": 2,
+      "notes": [
+        "team llm: 2 people proposed, 2 grounded",
         "team page: +2 people, +2 edges"
       ]
     },
     {
-      "company": "Cocient",
-      "score": 16,
+      "company": "ChainSecurity",
+      "score": 28,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
         "tech stack",
         "founder",
@@ -38,18 +186,19 @@
         "email",
         "phone"
       ],
-      "website": "https://work.cocient.com",
-      "status": "crawl_failed",
+      "website": "https://www.chainsecurity.com",
+      "status": "ok",
       "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
-        "crawl failed"
+        "team llm: 30 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
       ]
     },
     {
-      "company": "Exponent",
+      "company": "Piramidal",
       "score": 33,
       "gaps": [
         "funding stage",
@@ -58,44 +207,20 @@
         "tech stack",
         "founder",
         "people profiles",
-        "investors"
+        "investors",
+        "email"
       ],
-      "website": "https://www.exponent.com",
+      "website": "https://www.greenhouse.com",
       "status": "ok",
-      "emails": 1,
-      "phones": 2,
+      "emails": 0,
+      "phones": 1,
       "people": 0,
       "edges": 0,
       "notes": [
         "team llm: 0 people proposed, 0 grounded",
         "team page: +0 people, +0 edges"
       ]
-    },
-    {
-      "company": "Special",
-      "score": 10,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "",
-      "status": "no_website",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "no website found"
-      ]
     }
   ],
-  "tokens": 2832
+  "tokens": 12075
 }
