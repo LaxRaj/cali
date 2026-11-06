@@ -76,9 +76,19 @@ def search_urls(query: str = QUERY, n: int = TOP_N, attempts: int = 3) -> list[s
 
 
 async def scrape_urls(urls: list[str], max_tokens: int = MAX_TOKENS) -> list[Page]:
-    """Crawl URLs and return clean Markdown, each capped at max_tokens."""
+    """Crawl URLs and return clean Markdown, each capped at max_tokens. robots.txt is respected and login-gated
+    hosts (LinkedIn, ...) are never fetched (CLAUDE.md enrichment policy)."""
+    from enrich import host_of, is_crawlable_host
+
+    skipped = [u for u in urls if not is_crawlable_host(host_of(u))]
+    for u in skipped:
+        print(f"scrape skipped (no-crawl host) {u}", file=sys.stderr)
+    urls = [u for u in urls if u not in skipped]
+    if not urls:
+        return []
     config = CrawlerRunConfig(
         cache_mode=CacheMode.BYPASS,
+        check_robots_txt=True,
         markdown_generator=DefaultMarkdownGenerator(
             content_filter=PruningContentFilter(threshold=0.45, threshold_type="dynamic")
         ),
