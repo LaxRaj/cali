@@ -6,8 +6,8 @@ import { StageTimeline } from "@/components/charts/stage-timeline";
 import { Led } from "@/components/ui/led";
 import { Panel } from "@/components/ui/panel";
 import { Stat } from "@/components/ui/stat";
-import { readIndex, readRun } from "@/lib/data";
-import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
+import { readIndex, readProfiles, readRun } from "@/lib/data";
+import { fmtDateTime, fmtDuration, fmtTokens, humanize } from "@/lib/format";
 import { dailyBudget, dailyTokens, dayKey, runState } from "@/lib/metrics";
 
 export function generateStaticParams() {
@@ -28,6 +28,13 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
     ...Object.values(run.source_health).map((s) => s.candidates),
     1,
   );
+  const slugByName = new Map(readProfiles().map((p) => [p.company_name.trim().toLowerCase(), p.slug]));
+  const slugOf = (name: string) => slugByName.get(name.trim().toLowerCase());
+  const q = run.quality ?? {};
+  const issues = Object.entries(q.issues ?? {}).sort((a, b) => b[1] - a[1]);
+  const byKey = Object.entries(run.usage.by_key ?? {});
+  const byModel = Object.entries(run.usage.by_model ?? {});
+  const hits = run.usage.quota_hits ?? [];
 
   return (
     <div className="space-y-6">
@@ -41,7 +48,7 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
           state={state === "passed" ? "ok" : state === "quota" ? "warn" : "fail"}
           label={state}
         />
-        <h1 className="font-display text-4xl">
+        <h1 className="break-all font-display text-3xl sm:text-4xl">
           Run {run.run_id}
         </h1>
         <span className="text-xs text-zinc-600 dark:text-zinc-400">
@@ -124,6 +131,117 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
         </Panel>
       </div>
 
+      <div className="grid gap-6 lg:grid-cols-2">
+        <Panel
+          title="What changed"
+          tone="emerald"
+          right={<span>{run.diff ? `${run.diff.added.length} new · ${run.diff.updated.length} updated` : "not recorded"}</span>}
+        >
+          {!run.diff ? (
+            <p className="text-xs text-zinc-600 dark:text-zinc-400">
+              Runs recorded before 2026-11-06 did not log a diff
+              {state !== "passed" ? "; and a run that did not pass stores nothing" : ""}.
+            </p>
+          ) : run.diff.added.length + run.diff.updated.length === 0 ? (
+            <p className="text-xs text-zinc-600 dark:text-zinc-400">nothing stored by this run</p>
+          ) : (
+            <ul className="space-y-0.5 text-xs">
+              {run.diff.added.map((a) => (
+                <li key={`a-${a.company}`}>
+                  <span className="font-semibold text-emerald-700 dark:text-emerald-300">+ new</span>{" "}
+                  {slugOf(a.company) ? (
+                    <Link href={`/startups/${slugOf(a.company)}`} className="underline underline-offset-2">
+                      {a.company}
+                    </Link>
+                  ) : (
+                    a.company
+                  )}{" "}
+                  <span className="text-zinc-600 dark:text-zinc-400">score {a.score} · {a.source}</span>
+                </li>
+              ))}
+              {run.diff.updated.map((u) => (
+                <li key={`u-${u.company}`}>
+                  <span className="font-semibold text-sky-700 dark:text-sky-300">~ updated</span>{" "}
+                  {slugOf(u.company) ? (
+                    <Link href={`/startups/${slugOf(u.company)}`} className="underline underline-offset-2">
+                      {u.company}
+                    </Link>
+                  ) : (
+                    u.company
+                  )}{" "}
+                  <span className="text-zinc-600 dark:text-zinc-400">
+                    score {u.score_before} → {u.score}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </Panel>
+        <Panel title="Quality" tone="violet" right={<span>validity {Math.round((q.validity_rate ?? 0) * 100)}%</span>}>
+          <dl className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs">
+            {(
+              [
+                ["qualified leads", q.qualified],
+                ["avg qualified score", q.avg_qualified_score],
+                ["avg score", q.avg_score],
+                ["ungrounded people/links dropped", q.dropped_ungrounded],
+                ["pages gated", q.gated],
+                ["with website / email", q.with_website === undefined ? undefined : `${q.with_website} / ${q.with_email ?? 0}`],
+                ["people linked to a profile", q.people_linked],
+                ["deferred (token budget)", q.deferred_urls?.length],
+              ] as const
+            )
+              .filter(([, v]) => v !== undefined)
+              .map(([k, v]) => (
+                <div key={k} className="contents">
+                  <dt className="text-zinc-600 dark:text-zinc-400">{k}</dt>
+                  <dd className="text-right tabular-nums">{v}</dd>
+                </div>
+              ))}
+          </dl>
+          {issues.length > 0 && (
+            <p className="mt-2 text-xs text-zinc-600 dark:text-zinc-400">
+              issues: {issues.map(([k, n]) => `${humanize(k)} ×${n}`).join(" · ")}
+            </p>
+          )}
+        </Panel>
+      </div>
+
+      {(byKey.length > 0 || byModel.length > 0 || hits.length > 0) && (
+        <Panel title="Token use by key and model" tone="amber" right={<span>key slots, never the keys</span>}>
+          <div className="grid gap-4 text-xs sm:grid-cols-2">
+            <ul className="space-y-0.5">
+              {byKey.map(([k, u]) => (
+                <li key={k} className="flex justify-between gap-3">
+                  <span>{k}</span>
+                  <span className="tabular-nums">
+                    {fmtTokens(u.total_tokens ?? 0)} · {u.calls ?? 0} calls
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <ul className="space-y-0.5">
+              {byModel.map(([m, u]) => (
+                <li key={m} className="flex justify-between gap-3">
+                  <span className="truncate">{m}</span>
+                  <span className="tabular-nums">{fmtTokens(u.total_tokens ?? 0)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {hits.length > 0 && (
+            <ul className="mt-2 space-y-0.5 text-xs text-amber-800 dark:text-amber-300">
+              {hits.map((h, i) => (
+                <li key={i}>
+                  {h.key} hit the daily limit on {h.model || "a model"}
+                  {h.limit ? `: used ${fmtTokens(h.used ?? 0)} of ${fmtTokens(h.limit)}` : ""} · resets 00:00 UTC
+                </li>
+              ))}
+            </ul>
+          )}
+        </Panel>
+      )}
+
       {run.feedback?.source_stats &&
         Object.keys(run.feedback.source_stats).length > 0 && (
           <Panel
@@ -181,8 +299,14 @@ export default async function RunPage({ params }: PageProps<"/runs/[id]">) {
               >
                 <div className="flex flex-wrap justify-between gap-2">
                   <span>
-                    <span className="font-semibold">{a.company}</span>{" "}
-                    <span className="text-zinc-500">via {a.source}</span>
+                    {slugOf(a.company) ? (
+                      <Link href={`/startups/${slugOf(a.company)}`} className="font-semibold underline underline-offset-2">
+                        {a.company}
+                      </Link>
+                    ) : (
+                      <span className="font-semibold">{a.company}</span>
+                    )}{" "}
+                    <span className="text-zinc-600 dark:text-zinc-400">via {a.source}</span>
                   </span>
                   <span className="text-xs text-zinc-600 dark:text-zinc-400">
                     {a.score !== undefined && (

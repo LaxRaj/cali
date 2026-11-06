@@ -1,17 +1,21 @@
 import Link from "next/link";
 import type { Contact, Profile } from "@/lib/data";
-import { fmtDate } from "@/lib/format";
+import { fmtDate, humanize, normalizeStage, UNKNOWN_STAGE } from "@/lib/format";
 import { CopyPitchButton } from "./copy-pitch-button";
 import { EmailDraft } from "./email-draft";
+import { Axes, ProductAccess, Signals, SimilarStrip, Timeline } from "./startups/insights";
 import { PersonLinks } from "./startups/links";
 import { ScoreBadge } from "./startups/score-badge";
 import { TONES } from "./ui/tone";
 
-const STAGE_TONE = {
+const STAGE_TONE: Record<string, "sky" | "emerald" | "violet" | "rose" | "amber"> = {
   "pre-seed": "sky",
   seed: "emerald",
-  "series a": "violet",
-} as const;
+  "Series A": "violet",
+  "Series B": "rose",
+  "Series C+": "rose",
+  YC: "amber",
+};
 
 /** Max points per score part; mirrors backend/rating.py. */
 const PART_MAX: Record<string, number> = {
@@ -29,10 +33,8 @@ export function StartupCard({
   p: Profile;
   full?: boolean;
 }) {
-  const stageKey = (
-    p.funding_stage ?? ""
-  ).toLowerCase() as keyof typeof STAGE_TONE;
-  const tone = TONES[STAGE_TONE[stageKey] ?? "amber"];
+  const stage = normalizeStage(p.funding_stage);
+  const tone = TONES[STAGE_TONE[stage] ?? "amber"];
   const contact = p.contact ?? {};
   const meta = [p.hq, p.funding_amount].filter(Boolean).join(" · ");
 
@@ -78,11 +80,24 @@ export function StartupCard({
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1">
           <ScoreBadge score={p.score} />
-          {p.funding_stage && (
+          {stage !== UNKNOWN_STAGE && (
             <span
               className={`border border-zinc-900/25 px-2 py-0.5 text-[11px] font-semibold uppercase ${tone.panel} ${tone.border}`}
             >
-              {p.funding_stage}
+              {stage}
+            </span>
+          )}
+          {p.qualified && (
+            <span
+              title="known stage, a named leader and a published way to reach them"
+              className="border border-emerald-700 px-1.5 text-[10px] font-semibold uppercase text-emerald-800 dark:border-emerald-400 dark:text-emerald-300"
+            >
+              qualified
+            </span>
+          )}
+          {(p.watch?.length ?? 0) > 0 && (
+            <span title={p.watch?.join(", ")} className="text-[10px] uppercase text-violet-700 dark:text-violet-300">
+              ★ watching
             </span>
           )}
         </div>
@@ -137,7 +152,7 @@ export function StartupCard({
                   <li key={i}>
                     {h.src}{" "}
                     <span className="font-semibold text-violet-700 dark:text-violet-300">
-                      {h.rel.replace("_", " ")}
+                      {humanize(h.rel)}
                     </span>{" "}
                     {h.dst}
                     <blockquote className="text-zinc-500">
@@ -151,6 +166,16 @@ export function StartupCard({
         )}
 
         {full && p.email_draft && <EmailDraft draft={p.email_draft} outreach={p.outreach} />}
+
+        {full && (
+          <>
+            <ProductAccess contact={contact} />
+            <Signals signals={p.signals} />
+            <Axes axes={p.axes} />
+            <Timeline events={p.timeline} />
+            <SimilarStrip similar={p.similar} />
+          </>
+        )}
 
         {p.why_now && p.why_now.length > 0 && (
           <ul aria-label="Why now" className="space-y-0.5 text-xs">
@@ -221,7 +246,7 @@ export function StartupCard({
                 <li key={i}>
                   {e.src}{" "}
                   <span className="font-semibold text-violet-700 dark:text-violet-300">
-                    {e.rel.replace("_", " ")}
+                    {humanize(e.rel)}
                   </span>{" "}
                   {e.dst}
                   <blockquote className="text-xs text-zinc-500">

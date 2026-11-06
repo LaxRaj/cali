@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Profile } from "@/lib/data";
-import { RetroButton } from "@/components/ui/retro-button";
+import { RetroButton, retroClass } from "@/components/ui/retro-button";
 
 type Draft = NonNullable<Profile["email_draft"]>;
 
@@ -21,6 +21,8 @@ export function EmailDraft({
   outreach?: Profile["outreach"];
 }) {
   const [copied, setCopied] = useState(false);
+  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  useEffect(() => () => clearTimeout(timer.current), []);
 
   async function copy() {
     try {
@@ -28,7 +30,8 @@ export function EmailDraft({
         `Subject: ${draft.subject}\n\n${draft.body}`,
       );
       setCopied(true);
-      setTimeout(() => setCopied(false), 1800);
+      clearTimeout(timer.current);
+      timer.current = setTimeout(() => setCopied(false), 1800);
     } catch {
       setCopied(false);
     }
@@ -51,6 +54,12 @@ export function EmailDraft({
           {outreach.map((o) => `${o.kind}: ${o.status}`).join(" · ")}
         </p>
       )}
+      {draft.needs_human && (
+        <p className="mt-2 border-l-4 border-amber-500 pl-2 font-semibold text-amber-800 dark:text-amber-300">
+          Needs a human: {draft.needs_human_reason || "nothing specific to say"}. The agent never sends this one
+          unattended; rewrite it before sending.
+        </p>
+      )}
       <p className="mt-2 font-semibold">{draft.subject}</p>
       <pre className="mt-1 whitespace-pre-wrap font-sans">{draft.body}</pre>
       {draft.to_source_url && (
@@ -65,10 +74,7 @@ export function EmailDraft({
       )}
       <div className="mt-2 flex gap-2">
         {draft.mailto && (
-          <a
-            href={draft.mailto}
-            className="border-2 border-zinc-900 px-2 py-0.5 font-semibold hover:bg-emerald-100 dark:border-emerald-400/60 dark:hover:bg-emerald-950"
-          >
+          <a href={draft.mailto} className={retroClass("emerald")}>
             Open in mail
           </a>
         )}

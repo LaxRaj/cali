@@ -1,0 +1,273 @@
+{
+  "run_id": "20261026T060000Z",
+  "started_at": "2026-10-26T06:00:00+00:00",
+  "duration_s": 198.7,
+  "passed": false,
+  "status": "failed",
+  "failures": [
+    "only 1 valid startups (< 3)",
+    "only 1 discovery sources produced valid startups (< 2)"
+  ],
+  "tokens": 95519,
+  "token_budget": 200000,
+  "funnel": {
+    "candidates": 115,
+    "selected": 10,
+    "crawled": 9,
+    "extracted": 8,
+    "relevant": 6,
+    "valid": 1
+  },
+  "sources": {
+    "hn": 51,
+    "rss": 5,
+    "yc": 54,
+    "web": 30,
+    "hiring": 5,
+    "edgar": 31
+  },
+  "feedback": {
+    "source_stats": {
+      "hn": {
+        "crawled": 13,
+        "accepted": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      },
+      "rss": {
+        "crawled": 28,
+        "accepted": 7,
+        "yield": 0.25,
+        "avg_score": 71.3
+      },
+      "yc": {
+        "crawled": 28,
+        "accepted": 13,
+        "yield": 0.464,
+        "avg_score": 48.3
+      },
+      "web": {
+        "crawled": 5,
+        "accepted": 1,
+        "yield": 0.2,
+        "avg_score": 66.7
+      },
+      "hiring": {
+        "crawled": 4,
+        "accepted": 2,
+        "yield": 0.5,
+        "avg_score": 51.7
+      },
+      "edgar": {
+        "crawled": 15,
+        "accepted": 2,
+        "yield": 0.133,
+        "avg_score": 52.8
+      },
+      "launch_hn": {
+        "crawled": 19,
+        "accepted": 3,
+        "yield": 0.158,
+        "avg_score": 82.2
+      }
+    },
+    "caps": {
+      "hn": 2,
+      "rss": 3,
+      "yc": 5,
+      "web": 3,
+      "hiring": 5,
+      "edgar": 2,
+      "launch_hn": 2
+    }
+  },
+  "decisions": {
+    "provider": "local",
+    "calls": 125,
+    "fallbacks": 0,
+    "avg_latency_ms": 64.3,
+    "jev_input_tokens": 0,
+    "gated_pages": 1,
+    "tokens_saved_est": 4500
+  },
+  "plan": {
+    "web_queries": [
+      "seed round semantic search startup",
+      "Series A RAG platform launch"
+    ],
+    "hn_keywords": [
+      "RAG",
+      "vector search",
+      "developer tools"
+    ]
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-10-26T06:00:00+00:00",
+      "offset_s": 0.0,
+      "duration_s": 40.4,
+      "status": "ok",
+      "counts": {
+        "candidates": 115
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-10-26T06:00:40+00:00",
+      "offset_s": 40.4,
+      "duration_s": 4.61,
+      "status": "ok",
+      "counts": {
+        "in": 115,
+        "selected": 10
+      },
+      "notes": []
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-10-26T06:00:45+00:00",
+      "offset_s": 45.01,
+      "duration_s": 42.16,
+      "status": "ok",
+      "counts": {
+        "requested": 10,
+        "crawled": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-10-26T06:01:27+00:00",
+      "offset_s": 87.17,
+      "duration_s": 69.7,
+      "status": "ok",
+      "counts": {
+        "extracted": 8,
+        "relevant": 6,
+        "valid": 1
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-10-26T06:02:36+00:00",
+      "offset_s": 156.87,
+      "duration_s": 41.66,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "websites": 1,
+        "emails": 0,
+        "phones": 0
+      },
+      "notes": []
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-10-26T06:03:18+00:00",
+      "offset_s": 198.53,
+      "duration_s": 0.12,
+      "status": "ok",
+      "counts": {
+        "passed": 0
+      },
+      "notes": [
+        "only 1 valid startups (< 3)"
+      ]
+    }
+  ],
+  "source_health": {
+    "hn": {
+      "candidates": 51,
+      "seconds": 1.7,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 5,
+      "seconds": 6.02,
+      "error": ""
+    },
+    "yc": {
+      "candidates": 54,
+      "seconds": 1.46,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 7.26,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 5,
+      "seconds": 6.52,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 31,
+      "seconds": 7.25,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 85967,
+    "completion_tokens": 9551,
+    "total_tokens": 95519,
+    "calls": 12
+  },
+  "quality": {
+    "candidates": 115,
+    "crawled": 9,
+    "extracted": 8,
+    "relevant": 6,
+    "valid": 1,
+    "passed": false,
+    "failures": [
+      "only 1 valid startups (< 3)",
+      "only 1 discovery sources produced valid startups (< 2)"
+    ],
+    "validity_rate": 0.167,
+    "dropped_ungrounded": 5,
+    "enriched": 1,
+    "with_website": 1,
+    "with_email": 0,
+    "with_phone": 0,
+    "people_linked": 1,
+    "avg_score": 63.9
+  },
+  "accepted": [
+    {
+      "company": "Vectorly",
+      "url": "https://example.com/vectorly",
+      "source": "web",
+      "people": 1,
+      "edges": 3,
+      "score": 81,
+      "gaps": [
+        "phone",
+        "people profiles"
+      ],
+      "website": "https://vectorly.example",
+      "emails": 0,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://example.com/junk0",
+      "source": "web",
+      "reasons": [
+        "missing core_product"
+      ]
+    },
+    {
+      "url": "https://example.com/junk1",
+      "source": "edgar",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": []
+}

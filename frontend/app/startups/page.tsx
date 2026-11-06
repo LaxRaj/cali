@@ -9,7 +9,7 @@ export default function StartupsPage() {
   const profiles = readProfiles();
   return (
     <div className="space-y-6">
-      <h1 className="font-display text-6xl">
+      <h1 className="font-display text-4xl sm:text-6xl">
         Startups
       </h1>
       {profiles.length === 0 ? (

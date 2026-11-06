@@ -175,7 +175,8 @@ def main() -> None:
         now = datetime.now(timezone.utc)
         mark("Vectorly", "contacted", "emailed team@; no reply yet", tmp, now=now - timedelta(days=9))  # -> follow_up
         mark("Lumen Index", "replied", "asked for a call next week", tmp, now=now - timedelta(days=2))
-        mark("Fernwood", "passed", "healthcare, not our focus", tmp, now=now - timedelta(days=5))
+        mark("Fernwood", "passed", "healthcare, not our focus", tmp, now=now - timedelta(days=5), reason="not_relevant")
+        (tmp / "watchlist.json").write_text(json.dumps({"companies": ["Lumen Index"], "keywords": ["vector search"]}))
         export_all(tmp)
         shutil.copy(tmp / "profiles.json", OUT / "profiles.json")
         shutil.copy(tmp / "graph.json", OUT / "graph.json")
@@ -184,6 +185,20 @@ def main() -> None:
     profiles = json.loads((OUT / "profiles.json").read_text())
     (OUT / "daily_brief.json").write_text(json.dumps({"generated_at": profiles[0]["discovered_at"], "findings": profiles[:4]}, indent=2))
     (OUT / "meta.json").write_text(json.dumps({"demo": True, "note": "Fictional demo data. Not real startups."}))
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    # what `outreach.py summary` and the enrich job write, so every dashboard panel has something to show
+    (OUT / "outreach_summary.json").write_text(json.dumps({
+        "generated_at": stamp, "queued": 6, "statuses": {"sent": 3, "replied": 1, "skipped": 2}, "sent": 4, "replied": 1,
+        "reply_rate": 0.25, "bounce_rate": 0.0, "reply_intents": {"interested": 1}, "paused": False, "send_enabled": False,
+        "by_day": {stamp[:10]: {"sent": 2, "bounced": 0, "replied": 1, "complaint": 0}},
+        "skip_reasons": {"score N < N": 2},
+    }, indent=2))
+    (OUT / "enrich_last_run.json").write_text(json.dumps({
+        "started_at": stamp, "skipped": "", "tokens": 3100,
+        "startups": [{"company": p["company_name"], "status": "ok" if i else "crawl_failed", "score": p["score"],
+                      "emails": len(p["contact"].get("emails", [])), "website": p.get("website", "")}
+                     for i, p in enumerate(profiles[:3])],
+    }, indent=2))
     print(f"demo data written to {OUT}")
 
 

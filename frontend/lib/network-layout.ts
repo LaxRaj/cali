@@ -2,6 +2,63 @@ import type { Graph, GraphNode } from "./data";
 
 export type Placed = GraphNode & { x: number; y: number };
 
+export type SubgraphOptions = {
+  /** Node id to centre on: only nodes within `hops` links of it are kept. */
+  focus?: string | null;
+  hops?: number;
+  /** Node types to keep (default: all). The focus node is always kept. */
+  types?: GraphNode["type"][];
+  /** Only links of this relation (and the nodes they touch). */
+  rel?: string | null;
+  /** At most this many nodes, highest degree first (the focus first). */
+  limit?: number;
+};
+
+/**
+ * The part of a large graph worth drawing: a focused ego network, or the best-connected nodes after filters.
+ * Never silently drops data: returns `total` so callers can say "N of M shown". Pure, deterministic.
+ */
+export function subgraph(graph: Graph, o: SubgraphOptions = {}): Graph & { total: number } {
+  const limit = o.limit ?? 60;
+  const types = new Set(o.types?.length ? o.types : ["startup", "person", "org"]);
+  const edges = o.rel ? graph.edges.filter((e) => e.rel === o.rel) : graph.edges;
+  const byId = new Map(graph.nodes.map((n) => [n.id, n]));
+  let ids: string[];
+  if (o.focus && byId.has(o.focus)) {
+    const dist = new Map<string, number>([[o.focus, 0]]);
+    let frontier = [o.focus];
+    for (let h = 1; h <= (o.hops ?? 1) && frontier.length; h++) {
+      const next: string[] = [];
+      for (const id of frontier)
+        for (const e of edges) {
+          const other = e.source === id ? e.target : e.target === id ? e.source : null;
+          if (other && !dist.has(other) && byId.has(other)) {
+            dist.set(other, h);
+            next.push(other);
+          }
+        }
+      frontier = next;
+    }
+    ids = [...dist.keys()]
+      .filter((id) => id === o.focus || types.has(byId.get(id)!.type))
+      .sort((a, b) => dist.get(a)! - dist.get(b)! || byId.get(b)!.degree - byId.get(a)!.degree || a.localeCompare(b));
+  } else {
+    const touched = o.rel ? new Set(edges.flatMap((e) => [e.source, e.target])) : null;
+    ids = graph.nodes
+      .filter((n) => types.has(n.type) && (!touched || touched.has(n.id)))
+      .sort((a, b) => b.degree - a.degree || a.id.localeCompare(b.id))
+      .map((n) => n.id);
+  }
+  const total = ids.length;
+  const keep = new Set(ids.slice(0, limit));
+  return {
+    nodes: graph.nodes.filter((n) => keep.has(n.id)),
+    edges: edges.filter((e) => keep.has(e.source) && keep.has(e.target)),
+    investors: graph.investors,
+    total,
+  };
+}
+
 /**
  * Deterministic static layout (no physics): startups on an inner ring; every other node on an outer
  * ring, ordered by the average angle of the startups it connects to so related nodes sit close together.

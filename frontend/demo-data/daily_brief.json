@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T18:00:52+00:00",
+  "generated_at": "2026-10-28T22:59:58+00:00",
   "findings": [
     {
       "company_name": "Corvid",
@@ -16,7 +16,7 @@
       "hq": "Berlin, Germany",
       "website": "https://corvid.example",
       "source_url": "https://example.com/corvid",
-      "discovered_at": "2026-10-11T18:00:52+00:00",
+      "discovered_at": "2026-10-28T22:59:58+00:00",
       "score": 95,
       "slug": "corvid",
       "score_parts": {
@@ -27,6 +27,8 @@
         "contact": 20
       },
       "gaps": [],
+      "axes": {},
+      "qualified": false,
       "contact": {
         "website": "https://corvid.example",
         "emails": [
@@ -48,13 +50,18 @@
           "twitter": "https://x.com/corvid"
         },
         "contact_page": "https://corvid.example/contact",
+        "product_access": [],
         "pages_crawled": [
           "https://corvid.example/",
           "https://corvid.example/about"
         ],
-        "enriched_at": "2026-10-11T18:00:52+00:00",
-        "status": "ok"
+        "enriched_at": "2026-10-28T22:59:58+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
       },
+      "signals": [],
       "people": [
         {
           "name": "Ana Lopes",
@@ -119,11 +126,70 @@
         "reasons": [
           "lead score 95",
           "found 9 day(s) ago (warm)",
-          "fresh, strong fit and a published way to reach them"
+          "fresh, strong fit and a company-published address"
         ],
-        "next_step": "Email/call hello@corvid.example with the pitch",
-        "provider": "policy"
-      }
+        "next_step": "Email hello@corvid.example with the pitch",
+        "provider": "policy",
+        "score": 95
+      },
+      "trackbacks": [],
+      "similar": [
+        {
+          "company_name": "Basalt",
+          "slug": "basalt",
+          "similarity": 0.518
+        },
+        {
+          "company_name": "Vectorly",
+          "slug": "vectorly",
+          "similarity": 0.428
+        },
+        {
+          "company_name": "Quillbase",
+          "slug": "quillbase",
+          "similarity": 0.413
+        },
+        {
+          "company_name": "Lumen Index",
+          "slug": "lumen-index",
+          "similarity": 0.399
+        },
+        {
+          "company_name": "Gridline",
+          "slug": "gridline",
+          "similarity": 0.394
+        }
+      ],
+      "timeline": [
+        {
+          "at": "2026-10-28T22:59:58+00:00",
+          "kind": "discovered",
+          "items": [],
+          "source_urls": [],
+          "count": 0
+        }
+      ],
+      "watch": [],
+      "why_now": [
+        {
+          "signal": "early_stage",
+          "text": "Newly found at seed stage",
+          "source_url": "https://example.com/corvid"
+        }
+      ],
+      "warm_path": null,
+      "email_draft": {
+        "intent": "build_for",
+        "intent_reason": "a concrete bottleneck on a stack you can work with",
+        "to": "hello@corvid.example",
+        "to_source_url": "https://corvid.example/contact",
+        "subject": "Corvid: a thought on graph queries over big repos",
+        "body": "Hi Ana,\n\nI came across Corvid: Developer knowledge graph for codebases.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: graph queries over big repos.\n\nYour graph layer is the bottleneck as data grows.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+        "mailto": "mailto:hello%40corvid.example?subject=Corvid%3A%20a%20thought%20on%20graph%20queries%20over%20big%20repos&body=Hi%20Ana%2C%0A%0AI%20came%20across%20Corvid%3A%20Developer%20knowledge%20graph%20for%20codebases.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20seed%20stage%29.%0AOne%20thing%20I%20noticed%3A%20graph%20queries%20over%20big%20repos.%0A%0AYour%20graph%20layer%20is%20the%20bottleneck%20as%20data%20grows.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+        "needs_human": false,
+        "needs_human_reason": ""
+      },
+      "outreach": []
     },
     {
       "company_name": "Lumen Index",
@@ -141,7 +207,7 @@
       "hq": "Berlin, Germany",
       "website": "https://lumenindex.example",
       "source_url": "https://example.com/lumenindex",
-      "discovered_at": "2026-10-19T18:00:52+00:00",
+      "discovered_at": "2026-11-05T22:59:58+00:00",
       "score": 92,
       "slug": "lumen-index",
       "score_parts": {
@@ -154,6 +220,8 @@
       "gaps": [
         "funding amount"
       ],
+      "axes": {},
+      "qualified": false,
       "contact": {
         "website": "https://lumenindex.example",
         "emails": [
@@ -175,13 +243,18 @@
           "twitter": "https://x.com/lumenindex"
         },
         "contact_page": "https://lumenindex.example/contact",
+        "product_access": [],
         "pages_crawled": [
           "https://lumenindex.example/",
           "https://lumenindex.example/about"
         ],
-        "enriched_at": "2026-10-19T18:00:52+00:00",
-        "status": "ok"
+        "enriched_at": "2026-11-05T22:59:58+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
       },
+      "signals": [],
       "people": [
         {
           "name": "Maya Okafor",
@@ -236,18 +309,81 @@
         "company": "Lumen Index",
         "status": "replied",
         "note": "asked for a call next week",
-        "updated": "2026-10-18T18:00:55+00:00"
+        "reason": "",
+        "intent": "",
+        "updated": "2026-11-04T23:00:02+00:00"
       },
       "decision": {
         "action": "watch",
         "urgency": "cold",
         "priority": 38.1,
         "reasons": [
-          "you replied on 2026-10-18"
+          "you replied on 2026-11-04"
         ],
         "next_step": "Continue the conversation",
-        "provider": "policy"
-      }
+        "provider": "policy",
+        "score": 92
+      },
+      "trackbacks": [],
+      "similar": [
+        {
+          "company_name": "Fernwood",
+          "slug": "fernwood",
+          "similarity": 0.438
+        },
+        {
+          "company_name": "Quillbase",
+          "slug": "quillbase",
+          "similarity": 0.421
+        },
+        {
+          "company_name": "Paperplane AI",
+          "slug": "paperplane-ai",
+          "similarity": 0.404
+        },
+        {
+          "company_name": "Corvid",
+          "slug": "corvid",
+          "similarity": 0.399
+        },
+        {
+          "company_name": "Gridline",
+          "slug": "gridline",
+          "similarity": 0.396
+        }
+      ],
+      "timeline": [
+        {
+          "at": "2026-11-05T22:59:58+00:00",
+          "kind": "discovered",
+          "items": [],
+          "source_urls": [],
+          "count": 0
+        }
+      ],
+      "watch": [
+        "company"
+      ],
+      "why_now": [
+        {
+          "signal": "early_stage",
+          "text": "Newly found at seed stage",
+          "source_url": "https://example.com/lumenindex"
+        }
+      ],
+      "warm_path": null,
+      "email_draft": {
+        "intent": "build_for",
+        "intent_reason": "a concrete bottleneck on a stack you can work with",
+        "to": "hello@lumenindex.example",
+        "to_source_url": "https://lumenindex.example/contact",
+        "subject": "Lumen Index: a thought on keyword search misses clauses",
+        "body": "Hi Maya,\n\nI came across Lumen Index: Semantic search for legal contracts.\nSaw the recent news (newly found at seed stage).\nOne thing I noticed: keyword search misses clauses.\n\nYour keyword layer is the bottleneck as data grows.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+        "mailto": "mailto:hello%40lumenindex.example?subject=Lumen%20Index%3A%20a%20thought%20on%20keyword%20search%20misses%20clauses&body=Hi%20Maya%2C%0A%0AI%20came%20across%20Lumen%20Index%3A%20Semantic%20search%20for%20legal%20contracts.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20seed%20stage%29.%0AOne%20thing%20I%20noticed%3A%20keyword%20search%20misses%20clauses.%0A%0AYour%20keyword%20layer%20is%20the%20bottleneck%20as%20data%20grows.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+        "needs_human": false,
+        "needs_human_reason": ""
+      },
+      "outreach": []
     },
     {
       "company_name": "Vectorly",
@@ -265,19 +401,21 @@
       "hq": "Austin, USA",
       "website": "https://vectorly.example",
       "source_url": "https://example.com/vectorly",
-      "discovered_at": "2026-10-17T18:00:52+00:00",
-      "score": 86,
+      "discovered_at": "2026-11-03T22:59:58+00:00",
+      "score": 87,
       "slug": "vectorly",
       "score_parts": {
         "fit": 25,
         "identity": 15,
         "people": 15,
         "connections": 15,
-        "contact": 16
+        "contact": 17
       },
       "gaps": [
         "phone"
       ],
+      "axes": {},
+      "qualified": false,
       "contact": {
         "website": "https://vectorly.example",
         "emails": [
@@ -293,13 +431,18 @@
           "twitter": "https://x.com/vectorly"
         },
         "contact_page": "https://vectorly.example/contact",
+        "product_access": [],
         "pages_crawled": [
           "https://vectorly.example/",
           "https://vectorly.example/about"
         ],
-        "enriched_at": "2026-10-17T18:00:52+00:00",
-        "status": "ok"
+        "enriched_at": "2026-11-03T22:59:58+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
       },
+      "signals": [],
       "people": [
         {
           "name": "Priya Raman",
@@ -343,18 +486,69 @@
         "company": "Vectorly",
         "status": "contacted",
         "note": "emailed team@; no reply yet",
-        "updated": "2026-10-11T18:00:55+00:00"
+        "reason": "",
+        "intent": "",
+        "updated": "2026-10-28T23:00:02+00:00"
       },
       "decision": {
         "action": "follow_up",
         "urgency": "warm",
-        "priority": 91.6,
+        "priority": 92.2,
         "reasons": [
-          "you contacted on 2026-10-11"
+          "you contacted on 2026-10-28"
         ],
         "next_step": "Follow up: no reply recorded in over a week",
-        "provider": "policy"
-      }
+        "provider": "policy",
+        "score": 87
+      },
+      "trackbacks": [],
+      "similar": [
+        {
+          "company_name": "Basalt",
+          "slug": "basalt",
+          "similarity": 0.511
+        },
+        {
+          "company_name": "Corvid",
+          "slug": "corvid",
+          "similarity": 0.428
+        },
+        {
+          "company_name": "Gridline",
+          "slug": "gridline",
+          "similarity": 0.37
+        }
+      ],
+      "timeline": [
+        {
+          "at": "2026-11-03T22:59:58+00:00",
+          "kind": "discovered",
+          "items": [],
+          "source_urls": [],
+          "count": 0
+        }
+      ],
+      "watch": [],
+      "why_now": [
+        {
+          "signal": "early_stage",
+          "text": "Newly found at series a stage",
+          "source_url": "https://example.com/vectorly"
+        }
+      ],
+      "warm_path": null,
+      "email_draft": {
+        "intent": "build_for",
+        "intent_reason": "a concrete bottleneck on a stack you can work with",
+        "to": "hello@vectorly.example",
+        "to_source_url": "https://vectorly.example/contact",
+        "subject": "Vectorly: a thought on multi-tenant index latency",
+        "body": "Hi Priya,\n\nI came across Vectorly: Managed vector database for agents.\nSaw the recent news (newly found at series a stage).\nOne thing I noticed: multi-tenant index latency.\n\nYour multi-tenant layer is the bottleneck as data grows.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+        "mailto": "mailto:hello%40vectorly.example?subject=Vectorly%3A%20a%20thought%20on%20multi-tenant%20index%20latency&body=Hi%20Priya%2C%0A%0AI%20came%20across%20Vectorly%3A%20Managed%20vector%20database%20for%20agents.%0ASaw%20the%20recent%20news%20%28newly%20found%20at%20series%20a%20stage%29.%0AOne%20thing%20I%20noticed%3A%20multi-tenant%20index%20latency.%0A%0AYour%20multi-tenant%20layer%20is%20the%20bottleneck%20as%20data%20grows.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+        "needs_human": false,
+        "needs_human_reason": ""
+      },
+      "outreach": []
     },
     {
       "company_name": "Gridline",
@@ -372,20 +566,22 @@
       "hq": "Austin, USA",
       "website": "https://gridline.example",
       "source_url": "https://example.com/gridline",
-      "discovered_at": "2026-10-01T18:00:52+00:00",
-      "score": 83,
+      "discovered_at": "2026-10-18T22:59:58+00:00",
+      "score": 84,
       "slug": "gridline",
       "score_parts": {
         "fit": 20,
         "identity": 12,
         "people": 20,
         "connections": 15,
-        "contact": 16
+        "contact": 17
       },
       "gaps": [
         "funding amount",
         "phone"
       ],
+      "axes": {},
+      "qualified": false,
       "contact": {
         "website": "https://gridline.example",
         "emails": [
@@ -401,13 +597,18 @@
           "twitter": "https://x.com/gridline"
         },
         "contact_page": "https://gridline.example/contact",
+        "product_access": [],
         "pages_crawled": [
           "https://gridline.example/",
           "https://gridline.example/about"
         ],
-        "enriched_at": "2026-10-01T18:00:52+00:00",
-        "status": "ok"
+        "enriched_at": "2026-10-18T22:59:58+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
       },
+      "signals": [],
       "people": [
         {
           "name": "Marco Ruiz",
@@ -462,15 +663,68 @@
       "decision": {
         "action": "contact_now",
         "urgency": "warm",
-        "priority": 74.8,
+        "priority": 75.4,
         "reasons": [
-          "lead score 83",
+          "lead score 84",
           "found 19 day(s) ago (warm)",
-          "fresh, strong fit and a published way to reach them"
+          "fresh, strong fit and a company-published address"
         ],
-        "next_step": "Email/call hello@gridline.example with the pitch",
-        "provider": "policy"
-      }
+        "next_step": "Email hello@gridline.example with the pitch",
+        "provider": "policy",
+        "score": 84
+      },
+      "trackbacks": [],
+      "similar": [
+        {
+          "company_name": "Pocket Atlas",
+          "slug": "pocket-atlas",
+          "similarity": 0.588
+        },
+        {
+          "company_name": "Tidepool Labs",
+          "slug": "tidepool-labs",
+          "similarity": 0.417
+        },
+        {
+          "company_name": "Lumen Index",
+          "slug": "lumen-index",
+          "similarity": 0.396
+        },
+        {
+          "company_name": "Corvid",
+          "slug": "corvid",
+          "similarity": 0.394
+        },
+        {
+          "company_name": "Vectorly",
+          "slug": "vectorly",
+          "similarity": 0.37
+        }
+      ],
+      "timeline": [
+        {
+          "at": "2026-10-18T22:59:58+00:00",
+          "kind": "discovered",
+          "items": [],
+          "source_urls": [],
+          "count": 0
+        }
+      ],
+      "watch": [],
+      "why_now": [],
+      "warm_path": null,
+      "email_draft": {
+        "intent": "build_for",
+        "intent_reason": "a concrete bottleneck on a stack you can work with",
+        "to": "hello@gridline.example",
+        "to_source_url": "https://gridline.example/contact",
+        "subject": "Gridline: a thought on map search latency",
+        "body": "Hi Marco,\n\nI came across Gridline: Geospatial search for logistics.\nOne thing I noticed: map search latency.\n\nYour map layer is the bottleneck as data grows.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+        "mailto": "mailto:hello%40gridline.example?subject=Gridline%3A%20a%20thought%20on%20map%20search%20latency&body=Hi%20Marco%2C%0A%0AI%20came%20across%20Gridline%3A%20Geospatial%20search%20for%20logistics.%0AOne%20thing%20I%20noticed%3A%20map%20search%20latency.%0A%0AYour%20map%20layer%20is%20the%20bottleneck%20as%20data%20grows.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+        "needs_human": false,
+        "needs_human_reason": ""
+      },
+      "outreach": []
     }
   ]
 }
