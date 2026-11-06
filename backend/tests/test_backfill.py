@@ -84,6 +84,21 @@ def test_needs_enrichment_caps_attempts_and_applies_cooldown():
     assert not needs_enrichment(_row("ok"), now)
 
 
+def test_unqualified_leads_with_a_fixable_gap_get_bounded_retries():
+    import json
+    from datetime import datetime, timezone
+
+    now = datetime(2026, 10, 23, tzinfo=timezone.utc)
+
+    def row(sj, attempts=0, last=""):
+        return {"contact_json": json.dumps({"status": "ok", "attempts": attempts, "last_attempt": last}), "score_json": json.dumps(sj)}
+
+    assert needs_enrichment(row({"qualified": False, "gaps": ["founder"]}), now)
+    assert not needs_enrichment(row({"qualified": True, "gaps": []}), now)
+    assert not needs_enrichment(row({"qualified": False, "gaps": ["phone"]}), now)  # nothing we can fix by crawling again
+    assert not needs_enrichment(row({"qualified": False, "gaps": ["email"]}, attempts=3, last="2026-01-01T00:00:00+00:00"), now)
+
+
 async def test_backfill_counts_failed_attempts_and_prefers_fresh_rows(tmp_path):
     d = tmp_path / "db"
     upsert_profile(prof("Old", "https://techcrunch.com/old", discovered_at="2026-10-01"), db_dir=d)

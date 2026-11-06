@@ -55,12 +55,21 @@ def attempts_of(row: dict) -> int:
     return int((_contact_state(row) or {}).get("attempts") or 0)
 
 
+def _unfinished(row: dict) -> bool:
+    """Crawled fine but still can't be pursued for a fixable reason (no named leader, or no way in): worth another pass."""
+    try:
+        sj = json.loads(row.get("score_json") or "{}")
+    except ValueError:
+        return False
+    return sj.get("qualified") is False and bool({"founder", "email"} & set(sj.get("gaps", [])))
+
+
 def needs_enrichment(row: dict, now: datetime | None = None) -> bool:
-    """Never enriched, or the last attempt found no website/crawl; bounded by MAX_ATTEMPTS and a growing cooldown."""
+    """Never enriched, last attempt found no website/crawl, or left unqualified by a fixable gap; bounded by MAX_ATTEMPTS and a growing cooldown."""
     state = _contact_state(row)
     if state is None:
         return True
-    if state.get("status") not in ("", "no_website", "crawl_failed"):
+    if state.get("status") not in ("", "no_website", "crawl_failed") and not _unfinished(row):
         return False
     attempts = int(state.get("attempts") or 0)
     if attempts >= MAX_ATTEMPTS:
@@ -102,6 +111,7 @@ async def backfill(
         wanted = {_norm(o) for o in only}
         rows = [r for r in rows if _norm(r["company_name"]) in wanted]
     rows = sorted(rows, key=lambda r: r.get("discovered_at", ""), reverse=True)
+    rows = sorted(rows, key=lambda r: -int(r.get("score") or 0))  # closest to qualifying first
     rows = sorted(rows, key=attempts_of)[:limit]  # stable: fresh startups before ones that already failed, newest first within each
     people_rows, edge_rows = _rows(PEOPLE, data_dir), _rows(EDGES, data_dir)
     search_budget, team_budget = [6], [limit]
@@ -124,14 +134,15 @@ async def backfill(
             )
         except Exception as e:
             res = EnrichResult(ex, Contact(status="crawl_failed"), [f"error: {e}"])
-        if res.contact.status != "ok":  # count the failure so the queue moves on after MAX_ATTEMPTS
+        s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
+        roles = [r for sg in _prev_signals(rows, s.company_name) if sg.get("type") == "hiring" for r in sg.get("roles", [])]
+        rt = rate(s, people, edges, res.contact, hiring_roles=roles or None)
+        if res.contact.status != "ok" or not rt.qualified:  # count the miss so the queue moves on after MAX_ATTEMPTS
             res.contact.attempts = attempts_of(row) + 1
             res.contact.last_attempt = stamp
-        s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
-        rt = rate(s, people, edges, res.contact)
         upsert_profile(
             s, db_dir=data_dir,
-            extras={"score": rt.score, "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps}),
+            extras={"score": rt.score, "score_json": json.dumps({"parts": rt.parts, "gaps": rt.gaps, "axes": rt.axes, "qualified": rt.qualified}),
                     "contact_json": res.contact.model_dump_json(),
                     "signals_json": json.dumps(merge_signals(_prev_signals(rows, s.company_name), res.signals))},
         )

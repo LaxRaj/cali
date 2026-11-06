@@ -72,6 +72,8 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
                 "score": r.get("score", 0),
                 "score_parts": breakdown.get("parts", {}),
                 "gaps": breakdown.get("gaps", []),
+                "axes": breakdown.get("axes", {}),
+                "qualified": breakdown.get("qualified", False),
                 "contact": contact,
                 "signals": _loads_list(r.get("signals_json")),
                 "people": [
