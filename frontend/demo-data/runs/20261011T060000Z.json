@@ -1,89 +1,91 @@
 {
   "run_id": "20261011T060000Z",
   "started_at": "2026-10-11T06:00:00+00:00",
-  "duration_s": 267.0,
+  "duration_s": 236.6,
   "passed": true,
+  "status": "passed",
   "failures": [],
-  "tokens": 71856,
+  "tokens": 114623,
+  "token_budget": 200000,
   "funnel": {
-    "candidates": 114,
-    "selected": 9,
-    "crawled": 7,
-    "extracted": 6,
-    "relevant": 3,
-    "valid": 3
+    "candidates": 100,
+    "selected": 10,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 6,
+    "valid": 6
   },
   "sources": {
-    "hn": 42,
-    "rss": 51,
-    "yc": 29,
-    "web": 4,
-    "hiring": 51,
-    "edgar": 19
+    "hn": 28,
+    "rss": 54,
+    "yc": 49,
+    "web": 52,
+    "hiring": 16,
+    "edgar": 34
   },
   "feedback": {
     "source_stats": {
       "hn": {
-        "crawled": 18,
+        "crawled": 21,
         "accepted": 2,
-        "yield": 0.111,
-        "avg_score": 80.3
+        "yield": 0.095,
+        "avg_score": 67.4
       },
       "rss": {
+        "crawled": 8,
+        "accepted": 1,
+        "yield": 0.125,
+        "avg_score": 47.8
+      },
+      "yc": {
+        "crawled": 20,
+        "accepted": 7,
+        "yield": 0.35,
+        "avg_score": 67.9
+      },
+      "web": {
+        "crawled": 20,
+        "accepted": 1,
+        "yield": 0.05,
+        "avg_score": 65.0
+      },
+      "hiring": {
         "crawled": 4,
         "accepted": 1,
         "yield": 0.25,
-        "avg_score": 75.0
-      },
-      "yc": {
-        "crawled": 23,
-        "accepted": 6,
-        "yield": 0.261,
-        "avg_score": 77.4
-      },
-      "web": {
-        "crawled": 17,
-        "accepted": 1,
-        "yield": 0.059,
-        "avg_score": 41.7
-      },
-      "hiring": {
-        "crawled": 20,
-        "accepted": 8,
-        "yield": 0.4,
-        "avg_score": 49.8
+        "avg_score": 70.7
       },
       "edgar": {
-        "crawled": 25,
-        "accepted": 11,
-        "yield": 0.44,
-        "avg_score": 75.2
+        "crawled": 18,
+        "accepted": 8,
+        "yield": 0.444,
+        "avg_score": 65.0
       },
       "launch_hn": {
-        "crawled": 25,
-        "accepted": 3,
-        "yield": 0.12,
-        "avg_score": 63.4
+        "crawled": 28,
+        "accepted": 12,
+        "yield": 0.429,
+        "avg_score": 74.9
       }
     },
     "caps": {
       "hn": 2,
-      "rss": 3,
-      "yc": 3,
+      "rss": 2,
+      "yc": 4,
       "web": 2,
-      "hiring": 4,
+      "hiring": 3,
       "edgar": 4,
-      "launch_hn": 2
+      "launch_hn": 4
     }
   },
   "decisions": {
     "provider": "local",
-    "calls": 123,
+    "calls": 110,
     "fallbacks": 0,
-    "avg_latency_ms": 59.0,
+    "avg_latency_ms": 90.3,
     "jev_input_tokens": 0,
-    "gated_pages": 3,
-    "tokens_saved_est": 13500
+    "gated_pages": 0,
+    "tokens_saved_est": 0
   },
   "plan": {
     "web_queries": [
@@ -101,69 +103,69 @@
       "name": "discover",
       "started_at": "2026-10-11T06:00:00+00:00",
       "offset_s": 0.0,
-      "duration_s": 50.75,
+      "duration_s": 50.25,
       "status": "ok",
       "counts": {
-        "candidates": 114
+        "candidates": 100
       },
       "notes": []
     },
     {
       "name": "triage",
       "started_at": "2026-10-11T06:00:50+00:00",
-      "offset_s": 50.75,
-      "duration_s": 6.01,
+      "offset_s": 50.25,
+      "duration_s": 6.02,
       "status": "ok",
       "counts": {
-        "in": 114,
-        "selected": 9
+        "in": 100,
+        "selected": 10
       },
       "notes": []
     },
     {
       "name": "crawl",
       "started_at": "2026-10-11T06:00:56+00:00",
-      "offset_s": 56.76,
-      "duration_s": 45.17,
+      "offset_s": 56.27,
+      "duration_s": 46.95,
       "status": "ok",
       "counts": {
-        "requested": 9,
-        "crawled": 7
+        "requested": 10,
+        "crawled": 8
       },
       "notes": []
     },
     {
       "name": "extract",
-      "started_at": "2026-10-11T06:01:41+00:00",
-      "offset_s": 101.93,
-      "duration_s": 116.32,
+      "started_at": "2026-10-11T06:01:43+00:00",
+      "offset_s": 103.22,
+      "duration_s": 72.27,
       "status": "ok",
       "counts": {
-        "extracted": 6,
-        "relevant": 3,
-        "valid": 3
+        "extracted": 8,
+        "relevant": 6,
+        "valid": 6
       },
       "notes": []
     },
     {
       "name": "enrich",
-      "started_at": "2026-10-11T06:03:38+00:00",
-      "offset_s": 218.25,
-      "duration_s": 37.8,
+      "started_at": "2026-10-11T06:02:55+00:00",
+      "offset_s": 175.49,
+      "duration_s": 51.77,
       "status": "ok",
       "counts": {
-        "startups": 3,
-        "websites": 3,
-        "emails": 2,
-        "phones": 1
+        "startups": 6,
+        "websites": 6,
+        "emails": 5,
+        "phones": 3
       },
       "notes": []
     },
     {
       "name": "gates",
-      "started_at": "2026-10-11T06:04:16+00:00",
-      "offset_s": 256.05,
-      "duration_s": 0.09,
+      "started_at": "2026-10-11T06:03:47+00:00",
+      "offset_s": 227.26,
+      "duration_s": 0.12,
       "status": "ok",
       "counts": {
         "passed": 1
@@ -172,85 +174,115 @@
     },
     {
       "name": "store",
-      "started_at": "2026-10-11T06:04:16+00:00",
-      "offset_s": 256.14,
-      "duration_s": 10.85,
+      "started_at": "2026-10-11T06:03:47+00:00",
+      "offset_s": 227.38,
+      "duration_s": 9.22,
       "status": "ok",
       "counts": {
-        "startups": 3
+        "startups": 6
       },
       "notes": []
     }
   ],
   "source_health": {
     "hn": {
-      "candidates": 42,
-      "seconds": 5.24,
+      "candidates": 28,
+      "seconds": 2.84,
       "error": ""
     },
     "rss": {
-      "candidates": 51,
-      "seconds": 6.68,
+      "candidates": 54,
+      "seconds": 3.07,
       "error": ""
     },
     "yc": {
-      "candidates": 29,
-      "seconds": 5.0,
+      "candidates": 49,
+      "seconds": 7.13,
       "error": ""
     },
     "web": {
-      "candidates": 4,
-      "seconds": 6.04,
+      "candidates": 52,
+      "seconds": 4.96,
       "error": ""
     },
     "hiring": {
-      "candidates": 51,
-      "seconds": 7.6,
+      "candidates": 16,
+      "seconds": 5.41,
       "error": ""
     },
     "edgar": {
-      "candidates": 19,
-      "seconds": 5.08,
+      "candidates": 34,
+      "seconds": 7.03,
       "error": ""
     }
   },
   "usage": {
-    "prompt_tokens": 64670,
-    "completion_tokens": 7185,
-    "total_tokens": 71856,
-    "calls": 11
+    "prompt_tokens": 103160,
+    "completion_tokens": 11462,
+    "total_tokens": 114623,
+    "calls": 12
   },
   "quality": {
-    "candidates": 114,
-    "crawled": 7,
-    "extracted": 6,
-    "relevant": 3,
-    "valid": 3,
+    "candidates": 100,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 6,
+    "valid": 6,
     "passed": true,
     "failures": [],
     "validity_rate": 1.0,
-    "dropped_ungrounded": 6,
-    "enriched": 3,
-    "with_website": 3,
-    "with_email": 2,
-    "with_phone": 1,
-    "people_linked": 3,
-    "avg_score": 73.6
+    "dropped_ungrounded": 1,
+    "enriched": 6,
+    "with_website": 6,
+    "with_email": 5,
+    "with_phone": 3,
+    "people_linked": 6,
+    "avg_score": 66.1
   },
   "accepted": [
     {
-      "company": "Hearth",
-      "url": "https://example.com/hearth",
-      "source": "yc",
+      "company": "Pocket Atlas",
+      "url": "https://example.com/pocket atlas",
+      "source": "web",
       "people": 1,
-      "edges": 2,
-      "score": 88,
+      "edges": 1,
+      "score": 54,
+      "gaps": [
+        "phone",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://pocketatlas.example",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Vectorly",
+      "url": "https://example.com/vectorly",
+      "source": "web",
+      "people": 1,
+      "edges": 3,
+      "score": 80,
       "gaps": [
         "email"
       ],
-      "website": "https://hearth.example",
-      "emails": 1,
-      "phones": 1
+      "website": "https://vectorly.example",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Paperplane AI",
+      "url": "https://example.com/paperplane ai",
+      "source": "hn",
+      "people": 2,
+      "edges": 3,
+      "score": 78,
+      "gaps": [
+        "people profiles"
+      ],
+      "website": "https://paperplaneai.example",
+      "emails": 0,
+      "phones": 0
     },
     {
       "company": "Gridline",
@@ -258,34 +290,50 @@
       "source": "rss",
       "people": 2,
       "edges": 3,
-      "score": 65,
+      "score": 46,
       "gaps": [
-        "email",
-        "people profiles"
-      ],
-      "website": "https://gridline.example",
-      "emails": 0,
-      "phones": 1
-    },
-    {
-      "company": "Tidepool Labs",
-      "url": "https://example.com/tidepool labs",
-      "source": "yc",
-      "people": 1,
-      "edges": 2,
-      "score": 90,
-      "gaps": [
+        "phone",
         "investors"
       ],
-      "website": "https://tidepoollabs.example",
-      "emails": 1,
-      "phones": 1
+      "website": "https://gridline.example",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Nimbus Notes",
+      "url": "https://example.com/nimbus notes",
+      "source": "hn",
+      "people": 1,
+      "edges": 2,
+      "score": 93,
+      "gaps": [
+        "investors",
+        "people profiles"
+      ],
+      "website": "https://nimbusnotes.example",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Lumen Index",
+      "url": "https://example.com/lumen index",
+      "source": "rss",
+      "people": 2,
+      "edges": 3,
+      "score": 92,
+      "gaps": [
+        "people profiles",
+        "location"
+      ],
+      "website": "https://lumenindex.example",
+      "emails": 2,
+      "phones": 0
     }
   ],
   "rejections": [
     {
       "url": "https://example.com/junk0",
-      "source": "web",
+      "source": "hiring",
       "reasons": [
         "not a relevant startup page"
       ]
@@ -294,14 +342,7 @@
       "url": "https://example.com/junk1",
       "source": "edgar",
       "reasons": [
-        "not a relevant startup page"
-      ]
-    },
-    {
-      "url": "https://example.com/junk2",
-      "source": "web",
-      "reasons": [
-        "not a relevant startup page"
+        "missing core_product"
       ]
     }
   ],

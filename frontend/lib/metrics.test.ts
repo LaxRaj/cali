@@ -9,9 +9,12 @@ import {
   historyStartsAtRecordCutoff,
   latestFindings,
   latestRun,
+  actionCounts,
+  outreachFunnel,
   passRate,
   runState,
   runsOnDay,
+  sortedRuns,
   topFindings,
 } from "./metrics";
 
@@ -287,5 +290,71 @@ describe("historyStartsAtRecordCutoff", () => {
   });
   it("does not depend on array order", () => {
     expect(historyStartsAtRecordCutoff([...TODAY].reverse())).toBe(true);
+  });
+});
+
+describe("dailyTotals: tokens per valid startup", () => {
+  it("divides the day's tokens by the day's valid startups", () => {
+    const runs = [
+      run("20261020T080000Z", 45_700, { funnel: { ...funnel, valid: 7 } }),
+      run("20261020T110000Z", 20_800, { funnel: { ...funnel, valid: 2 } }),
+    ];
+    const [d] = dailyTotals(runs);
+    expect(d.valid).toBe(9);
+    expect(d.tokensPerValid).toBe(Math.round(66_500 / 9));
+  });
+  it("is null (not Infinity or NaN) on a day with nothing valid", () => {
+    const [d] = dailyTotals([run("20261020T080000Z", 3000, { funnel: { ...funnel, valid: 0 } })]);
+    expect(d.valid).toBe(0);
+    expect(d.tokensPerValid).toBeNull();
+  });
+});
+
+describe("sortedRuns", () => {
+  it("orders by run_id without mutating", () => {
+    const rev = [...TODAY].reverse();
+    expect(sortedRuns(rev).map((r) => r.run_id)).toEqual(TODAY.map((r) => r.run_id).sort());
+    expect(rev[0].run_id).toBe(TODAY.at(-1)!.run_id);
+  });
+});
+
+describe("outreachFunnel", () => {
+  const p = (slug: string, action: string, to = "hi@x.io") =>
+    ({ slug, decision: { action }, email_draft: { to } }) as unknown as Profile;
+  it("counts later statuses toward earlier steps and rates only outreach steps", () => {
+    const f = outreachFunnel(
+      [p("a", "contact_now"), p("b", "contact_now", ""), p("c", "watch")],
+      {
+        a: { status: "contacted" },
+        b: { status: "replied" },
+        c: { status: "meeting" },
+        d: { status: "won" },
+        e: { status: "passed" },
+      },
+    );
+    expect(f.steps.map((s) => [s.stage, s.count])).toEqual([
+      ["ready to send", 1],
+      ["contacted", 4],
+      ["replied", 3],
+      ["meeting", 2],
+      ["won", 1],
+    ]);
+    expect(f.steps.map((s) => s.conversion)).toEqual([null, null, 75, 67, 50]);
+    expect(f.passed).toBe(1);
+  });
+  it("has no NaN when nothing was contacted", () => {
+    const f = outreachFunnel([], {});
+    expect(f.steps.every((s) => s.count === 0 && s.conversion === null)).toBe(true);
+  });
+});
+
+describe("actionCounts", () => {
+  it("counts only profiles that have a decision, so counts match the queue list", () => {
+    const ps = [
+      { decision: { action: "contact_now" } },
+      { decision: { action: "review" } },
+      {},
+    ] as unknown as Profile[];
+    expect(actionCounts(ps)).toEqual({ contact_now: 1, review: 1 });
   });
 });

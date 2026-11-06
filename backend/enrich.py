@@ -28,7 +28,10 @@ EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9\-]+(?:\.[A-Za-z0-9\-]+)*\.
 OBFUSCATED_RE = re.compile(
     r"([A-Za-z0-9._%+\-]+)\s*[\[\(\{]\s*at\s*[\]\)\}]\s*([A-Za-z0-9\-]+(?:\s*[\[\(\{]\s*dot\s*[\]\)\}]\s*[A-Za-z0-9\-]+)+)", re.I
 )
-JUNK_EMAIL_DOMAINS = {"example.com", "domain.com", "email.com", "yourdomain.com", "sentry.io", "wixpress.com", "godaddy.com"}
+JUNK_EMAIL_DOMAINS = {
+    "example.com", "domain.com", "email.com", "yourdomain.com", "sentry.io", "wixpress.com", "godaddy.com",
+    "yourcompany.com", "company.com", "mycompany.com", "yoursite.com", "mysite.com", "website.com", "test.com", "sample.com",
+}
 JUNK_EMAIL_SUFFIX = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".css", ".js", ".woff", ".woff2")
 JUNK_LOCALS = {"noreply", "no-reply", "donotreply", "do-not-reply", "mailer-daemon", "postmaster", "abuse", "webmaster"}
 KIND_BY_LOCAL = {
@@ -49,7 +52,22 @@ NOT_COMPANY_HOSTS = {
     "sifted.eu", "betakit.com", "e27.co", "techfundingnews.com", "bloomberg.com", "reuters.com", "forbes.com",
     "venturebeat.com", "theverge.com", "wired.com", "t.co", "bit.ly", "pitchbook.com", "tracxn.com", "angel.co",
     "wellfound.com", "notion.so", "docs.google.com", "calendly.com", "typeform.com", "forms.gle",
+    # more news / startup media: an article about a startup is never its own site
+    "ventureburn.com", "fortune.com", "yahoo.com", "thesaasnews.com", "techinasia.com", "siliconangle.com",
+    "geekwire.com", "axios.com", "cnbc.com", "businessinsider.com", "inc.com", "fastcompany.com", "techround.co.uk",
+    "uktech.news", "startupdaily.net", "vccircle.com", "inc42.com", "yourstory.com", "entrackr.com",
+    "alleywatch.com", "builtin.com", "theinformation.com", "semafor.com", "ft.com", "wsj.com", "nytimes.com", "arstechnica.com",
+    # job boards / applicant-tracking systems: a careers-page host is never the company's site
+    "myworkdayjobs.com", "workday.com", "recruitee.com", "workable.com", "greenhouse.io", "greenhouse.com", "devitjobs.com", "grnh.se", "lever.co",
+    "ashbyhq.com", "smartrecruiters.com", "bamboohr.com", "breezy.hr", "jobvite.com", "icims.com", "teamtailor.com",
+    "personio.de", "personio.com", "join.com", "welcometothejungle.com", "otta.com", "indeed.com", "glassdoor.com",
+    "workatastartup.com", "ziprecruiter.com", "pinpointhq.com",
 }
+# Hosts we never fetch at all: login-gated or forbidden by policy (see the CLAUDE.md enrichment policy).
+NO_CRAWL_HOSTS = {"linkedin.com", "facebook.com", "instagram.com", "x.com", "twitter.com", "glassdoor.com", "indeed.com", "tiktok.com"}
+DOMAIN_PREFIXES = ("", "get", "try", "use", "join", "with", "hey", "go", "the", "hello", "meet")
+NAME_SUFFIXES = ("ai", "hq", "app", "labs", "io", "dev", "tech", "inc")  # "QuiverAI" lives at quiver.ai
+_LIGATURES = str.maketrans({"Æ": "AE", "æ": "ae", "Ø": "O", "ø": "o", "ß": "ss", "Œ": "OE", "œ": "oe", "Ð": "D", "ð": "d", "Þ": "Th", "þ": "th", "Ł": "L", "ł": "l"})
 TEAM_PATH = re.compile(r"/(contact|contact-us|about|about-us|team|company|people|leadership|founders|who-we-are)/?$", re.I)
 PERSON_HOSTS = {"linkedin.com": "linkedin", "twitter.com": "twitter", "x.com": "twitter", "github.com": "github"}
 TWITTER_RESERVED = {"share", "intent", "home", "i", "search", "hashtag", "login", "signup", "explore", "settings", "tos", "privacy"}
@@ -61,7 +79,8 @@ MAX_EMAILS, MAX_PHONES, MAX_PAGES = 5, 3, 5
 
 
 def fold(text: str) -> str:
-    """Lowercase ASCII-folded text."""
+    """Lowercase ASCII-folded text ("VÆRIDION" -> "vaeridion", "Øresund" -> "oresund")."""
+    text = (text or "").translate(_LIGATURES)
     return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower()
 
 
@@ -83,6 +102,53 @@ def origin_of(url: str) -> str:
 
 def is_company_host(host: str) -> bool:
     return bool(host) and not any(host == h or host.endswith("." + h) for h in NOT_COMPANY_HOSTS)
+
+
+def is_crawlable_host(host: str) -> bool:
+    """False for login-gated / policy-forbidden hosts (LinkedIn and friends): we never fetch those pages."""
+    return bool(host) and not any(host == h or host.endswith("." + h) for h in NO_CRAWL_HOSTS)
+
+
+def company_tokens(name: str) -> list[str]:
+    return [t for t in re.findall(r"[a-z0-9]+", fold(name)) if t not in {"the", "inc", "labs", "ai", "co", "hq", "llc", "ltd", "gmbh"}]
+
+
+def host_matches_company(host: str, company: str) -> bool:
+    """Does the registrable domain plausibly belong to this company? Yes: "acme.io", "getacme.com", "acme-search.dev"
+    for "Acme Search". No: "all-clad.com" for "Clad", "ventureburn.com" for "Keenable"."""
+    if not host or not company:
+        return False
+    label = base_domain(host).split(".")[0].replace("-", "")
+    toks = company_tokens(company)
+    if not toks:
+        return False
+    joined = "".join(toks)
+    if label == joined:
+        return True
+    stems = [joined[: -len(sfx)] for sfx in NAME_SUFFIXES if joined.endswith(sfx) and len(joined) - len(sfx) >= 3]
+    if label in stems:
+        return True
+    if any(len(t) >= 3 and label.startswith(p + t) for t in toks + stems for p in DOMAIN_PREFIXES):
+        return True
+    return _abbreviates(label, joined)
+
+
+def _abbreviates(label: str, name: str) -> bool:
+    """'lmnr' for 'laminar', 'prbe' for 'probe': same first letter, >= 3 chars, an in-order subset of the name's letters."""
+    if len(label) < 3 or not name or label[0] != name[0] or len(label) >= len(name):
+        return False
+    it = iter(name)
+    return all(ch in it for ch in label)
+
+
+def email_on_company_domain(addr: str, website: str = "", company: str = "") -> bool:
+    """A company-published address must live on the company's own domain (not a publisher's or a DPO service's)."""
+    if "@" not in addr:
+        return False
+    dom = addr.rsplit("@", 1)[1].lower()
+    if website and base_domain(dom) == base_domain(host_of(website if "//" in website else f"https://{website}")):
+        return True
+    return host_matches_company(dom, company)
 
 
 def company_token(name: str) -> str:
@@ -278,14 +344,15 @@ def resolve_website(company: str, llm_website: str, source_url: str, source: str
     if token:
         for url in re.findall(r"\]\((https?://[^)\s]+)\)|(?<![\w/])(https?://[^\s)\]>]+)", markdown):
             u = url[0] or url[1]
-            if ok(u) and token in host_of(u).replace("-", ""):
+            if ok(u) and host_matches_company(host_of(u), company):
                 return origin_of(u)
-    if source in ("hn", "web", "hiring") and ok(source_url):  # the page we crawled is the product's own site
+    # the page we crawled is the product's own site, but only when its domain looks like the company's
+    if source in ("hn", "web", "hiring") and ok(source_url) and host_matches_company(host_of(source_url), company):
         return origin_of(source_url)
     if search_fn and token:
         try:
             for r in search_fn(f'"{company}" official website'):
-                if ok(r.get("href", "")) and token in host_of(r["href"]).replace("-", ""):
+                if ok(r.get("href", "")) and host_matches_company(host_of(r["href"]), company):
                     return origin_of(r["href"])
         except Exception:
             pass
@@ -318,7 +385,8 @@ def build_contact(origin: str, pages: list[PageFacts], company: str = "") -> Con
         if re.search(r"/contact", urlparse(pg.url).path, re.I) and not contact_page:
             contact_page = pg.url
         for addr, kind in pg.emails:
-            emails.setdefault(addr, ContactItem(value=addr, kind=kind, source_url=pg.url))
+            if email_on_company_domain(addr, origin, company):  # not a publisher's, DPO service's or template address
+                emails.setdefault(addr, ContactItem(value=addr, kind=kind, source_url=pg.url))
         for raw in pg.phones:
             e164 = _norm_phone(raw)
             if e164:
@@ -338,7 +406,8 @@ def build_contact(origin: str, pages: list[PageFacts], company: str = "") -> Con
                 continue
             if isinstance(o.get("email"), str) and _valid_email(o["email"].replace("mailto:", "")):
                 a = o["email"].replace("mailto:", "").strip().lower()
-                emails.setdefault(a, ContactItem(value=a, kind=classify_email(a), source_url=pg.url))
+                if email_on_company_domain(a, origin, company):
+                    emails.setdefault(a, ContactItem(value=a, kind=classify_email(a), source_url=pg.url))
             if isinstance(o.get("telephone"), str) and (e := _norm_phone(o["telephone"])):
                 phones.setdefault(e, ContactItem(value=e, kind="main", source_url=pg.url))
             for sa in o.get("sameAs", []) if isinstance(o.get("sameAs"), list) else []:
@@ -373,11 +442,14 @@ def product_access(pages: list[PageFacts], origin: str, limit: int = 4) -> list[
     return list(out.values())[:limit]
 
 
-def post_emails(text: str, source_url: str) -> list[ContactItem]:
-    """Addresses a hiring post itself publishes (the company chose to put them there)."""
+def post_emails(text: str, source_url: str, website: str = "", company: str = "") -> list[ContactItem]:
+    """Addresses a hiring post itself publishes (the company chose to put them there). With website/company given,
+    only addresses on the company's own domain are kept."""
     out: dict[str, ContactItem] = {}
     for a in re.findall(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+", text or ""):
         a = a.lower().strip(".")
+        if (website or company) and not email_on_company_domain(a, website, company):
+            continue
         if _valid_email(a):
             out.setdefault(a, ContactItem(value=a, kind=classify_email(a), source_url=source_url))
     return list(out.values())
@@ -508,6 +580,9 @@ async def fetch_pages(urls: list[str]) -> list[Fetched]:
     """Crawl pages politely (robots.txt respected). Failures are skipped."""
     from crawl4ai import AsyncWebCrawler, CacheMode, CrawlerRunConfig
 
+    urls = [u for u in urls if is_crawlable_host(host_of(u))]  # never LinkedIn / login-gated pages
+    if not urls:
+        return []
     cfg = CrawlerRunConfig(cache_mode=CacheMode.BYPASS, check_robots_txt=True, page_timeout=20000)
     async with AsyncWebCrawler() as crawler:
         results = await crawler.arun_many(urls, config=cfg)
@@ -574,6 +649,9 @@ async def enrich_startup(
         )
 
     contact = build_contact(website, facts, s.company_name)
+    from techstack import detect
+
+    contact.site_tech = detect([f.html for f in fetched])  # from the pages already crawled: no extra requests
     updates = {"website": website}
     if not s.hq and (hq := jsonld_hq(facts)):
         updates["hq"] = hq

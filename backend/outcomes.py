@@ -14,6 +14,7 @@ from memory import DB_DIR
 
 STATUSES = ("contacted", "replied", "meeting", "won", "passed")
 REASONS = ("wrong_stage", "wrong_stack", "no_contact", "too_big", "not_relevant", "other")  # why a lead was passed
+INTENTS = ("interested", "not_now", "referral", "question", "unsubscribe", "complaint", "bounce", "other")
 FILE = "outcomes.json"
 
 
@@ -24,11 +25,15 @@ def load_outcomes(data_dir: Path = DB_DIR) -> dict[str, dict]:
         return {}
 
 
-def mark(company: str, status: str, note: str = "", data_dir: Path = DB_DIR, now: datetime | None = None, *, reason: str = "") -> dict:
+def mark(company: str, status: str, note: str = "", data_dir: Path = DB_DIR, now: datetime | None = None, *, reason: str = "",
+         intent: str = "") -> dict:
+    """`intent` is how their reply reads (gmail_sync.classify_reply): interested / not_now / referral / unsubscribe / ..."""
     if status not in STATUSES:
         raise ValueError(f"status must be one of {STATUSES}")
     if reason and (status != "passed" or reason not in REASONS):
         raise ValueError(f"reason applies only to 'passed' and must be one of {REASONS}")
+    if intent and intent not in INTENTS:
+        raise ValueError(f"intent must be one of {INTENTS}")
     data = load_outcomes(data_dir)
     key = company.strip().lower()
     data[key] = {
@@ -36,6 +41,7 @@ def mark(company: str, status: str, note: str = "", data_dir: Path = DB_DIR, now
         "status": status,
         "note": note,
         "reason": reason,
+        "intent": intent,
         "updated": (now or datetime.now(timezone.utc)).isoformat(timespec="seconds"),
     }
     Path(data_dir).mkdir(parents=True, exist_ok=True)

@@ -52,19 +52,27 @@ def merge_signals(old: list[dict], new: list[dict]) -> list[dict]:
 
 
 def parse_roles(field_text: str) -> list[str]:
-    """'Senior Backend Engineer, Product Designer' / 'ML Eng & Founding Eng' -> separate role titles."""
+    """'Senior Backend Engineer, Product Designer' / 'ML Eng & Founding Eng' -> separate role titles.
+    Links and bare URLs in the field ("[https://acme.io](https://acme.io)") are dropped, never split into 'roles'."""
+    text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", field_text or "")
+    text = re.sub(r"https?://\S+|www\.\S+", " ", text)
     flat, depth = [], 0
-    for ch in field_text:  # separators inside (...) belong to one title: "Data Platform (NYC, Hybrid)"
+    for ch in text:  # separators inside (...) belong to one title: "Data Platform (NYC, Hybrid)"
         depth += (ch == "(") - (ch == ")")
         flat.append("\0" if ch in ",;/&+" and depth <= 0 else ch)
     parts = re.split(r"\0|\band\b", "".join(flat))
-    return [r.strip(" .") for r in parts if 3 <= len(r.strip(" .")) <= 70]
+    return clean_roles([r.strip(" .") for r in parts])
+
+
+def clean_roles(roles: list[str]) -> list[str]:
+    """Drop fragments that are not role titles (URL pieces, bare domains, brackets) -- also used on stored signals."""
+    return [r for r in roles if 3 <= len(r) <= 70 and not re.search(r"https?:|[\[\]]|^\W|\.(com|io|ai|dev|co|us|org|net)\b", r)]
 
 
 def hiring_extraction(company: str, roles_text: str, text: str, website: str = "") -> Extraction:
     """A thin profile built straight from a job post: the post says who they are and who they want; no LLM."""
     paras = [p.strip() for p in re.split(r"\n+", text)
-             if len(p.strip()) > 60 and "|" not in p[:80] and not re.match(r"(hi|hello|hey)\b", p.strip(), re.I)]
+             if len(re.sub(r"https?://\S+", "", p).strip()) > 60 and "|" not in p[:80] and not re.match(r"(hi|hello|hey)\b", p.strip(), re.I)]
     product = re.sub(r"\s+", " ", re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", paras[0] if paras else roles_text))[:240]
     sp = StartupProfile(
         company_name=company, core_product=product, likely_bottleneck="", value_prop_pitch="",

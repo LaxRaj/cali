@@ -79,3 +79,4 @@ class Contact(BaseModel):
     status: str = ""  # ok | no_website | crawl_failed | disabled
     attempts: int = 0  # failed enrichment attempts by the backlog stage (capped by backfill.MAX_ATTEMPTS)
     last_attempt: str = ""  # ISO timestamp of the last backlog attempt
+    site_tech: list[dict[str, str]] = Field(default_factory=list)  # {"name","category"} fingerprinted on its own site

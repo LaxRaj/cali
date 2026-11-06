@@ -49,6 +49,8 @@ jobs:
         run: uv run pytest -q
 
       - name: Enrich backlog (first-party contacts and profile links only)
+        id: enrich
+        continue-on-error: true # still commit what was enriched; the job is failed below
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_API_KEY_2: ${{ secrets.GROQ_API_KEY_2 }}
@@ -71,3 +73,7 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+
+      - name: Fail the job if enrichment failed outright
+        if: steps.enrich.outcome == 'failure'
+        run: exit 1

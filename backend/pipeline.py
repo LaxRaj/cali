@@ -27,8 +27,12 @@ from train_decider import train
 from export import export_all
 from extractor import extract, extract_people
 from ledger import observations_for, record as record_observations
-from memory import DB_DIR, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
-from memory import DB_DIR, TABLE, _rows, mark_seen, seen_urls, upsert_edges, upsert_people, upsert_profile
+from entities import canonical_key
+from insights import load_watchlist, watch_hits
+from enrich import host_matches_company, host_of, is_company_host
+from memory import (
+    DB_DIR, TABLE, _rows, mark_seen, seen_urls, update_profile_columns, upsert_edges, upsert_people, upsert_profile,
+)
 from models import Contact
 from quality import RunReport, check_extraction, evaluate_run, tidy
 from rating import rate
@@ -41,8 +45,32 @@ AVG_EXTRACTION_TOKENS = 4500  # for the 'tokens saved' estimate when a page is g
 MAX_GITHUB_LOOKUPS = 30  # public profile API calls per run
 TOKEN_BUDGET = int(os.environ.get("CALI_TOKEN_BUDGET", "20000"))  # Groq tokens per run; 0 = unlimited
 TEAM_RESERVE = 2500  # left for the team-page pass (~1.5k per call)
-MAX_TEAM_LLM = 3
-LANE_MAX = 8  # hiring-post leads per run: built without the LLM and rarely qualified (no stage/founder), so keep the lane small  # About/Team page extraction calls (Groq tokens), per run
+MAX_TEAM_LLM = 3  # About/Team page extraction calls (Groq tokens), per run
+LANE_MAX = 8  # hiring-post leads per run: built without the LLM and rarely qualified (no stage/founder), so keep the lane small
+
+
+def hn_item_url(item_id: str) -> str:
+    return f"https://news.ycombinator.com/item?id={item_id}"
+
+
+def lane_website(company: str, url: str) -> str:
+    """The post's link is the company's site only if it is on a company-looking domain (not LinkedIn, Workday, ...)."""
+    if not url.startswith("http"):
+        return ""
+    host = host_of(url)
+    return url if is_company_host(host) and host_matches_company(host, company) else ""
+
+
+def lane_valid(ex) -> list[str]:
+    """Light validation for LLM-free hiring profiles: a real name and a product description."""
+    from quality import is_placeholder
+
+    issues = []
+    if is_placeholder(ex.startup.company_name) or len(ex.startup.company_name) < 2:
+        issues.append("missing company_name")
+    if is_placeholder(ex.startup.core_product) or len(ex.startup.core_product) < 30:
+        issues.append("missing core_product")
+    return issues
 
 
 def enrichment_enabled() -> bool:
@@ -193,6 +221,28 @@ hiring_roles: dict[str, list[str]] = {}  # company(lower) -> open roles from its
 post_text: dict[str, tuple[str, str]] = {}  # company(lower) -> (hiring post text, its URL): emails the post itself publishes
 
 
+def refresh_known_hiring(known: list[Candidate], stored_keys: dict[str, str], data_dir: Path) -> int:
+    """Merge a fresh hiring signal into companies we already store (signals only) and mark their posts seen."""
+    if not known:
+        return 0
+    rows = {r["company_name"]: r for r in _rows(TABLE, data_dir)}
+    n = 0
+    for c in known:
+        name = stored_keys[canonical_key(c.company)]
+        try:
+            before = json.loads((rows.get(name) or {}).get("signals_json") or "[]")
+        except ValueError:
+            before = []
+        sig = make_signal("hiring", "hn_who_is_hiring", hn_item_url(c.meta["item_id"]), parse_roles(c.meta["roles"]), c.published_at)
+        try:
+            update_profile_columns(name, {"signals_json": json.dumps(merge_signals(before, [sig]))}, data_dir)
+            n += 1
+        except Exception as e:  # never fatal: the signal is a nice-to-have
+            print(f"hiring refresh failed for {name}: {e}", file=sys.stderr)
+    mark_seen([normalize_url(c.url) for c in known], db_dir=data_dir)
+    return n
+
+
 async def run(data_dir: Path) -> RunReport:
     if llm.quota_blocked(data_dir):  # every Groq key is spent until 00:00 UTC: crawling now would be wasted work
         print("Groq daily quota is spent (data/quota.json); skipping this run. CALI_IGNORE_QUOTA=1 overrides.")
@@ -208,6 +258,7 @@ async def run(data_dir: Path) -> RunReport:
     os.environ["CALI_DATA_DIR"] = str(data_dir)  # caches (extractions, plan) live beside the data
     signals_by_company.clear()
     post_text.clear()
+    hiring_roles.clear()
     log = telemetry.RunLog()
     llm.reset_usage()
     report = RunReport()
@@ -224,10 +275,16 @@ async def run(data_dir: Path) -> RunReport:
             decider = get_provider()
             reset_stats(decider.name)
             seen = seen_urls(data_dir)
-            lane = [c for c in heuristic_filter([c for c in cands if c.source == "hiring"], seen) if c.meta][:LANE_MAX]
+            stored_keys = {canonical_key(r["company_name"]): r["company_name"] for r in _rows(TABLE, data_dir)}
+            hiring_cands = [c for c in heuristic_filter([c for c in cands if c.source == "hiring"], seen) if c.meta]
+            # a company we already store only gets its fresh open roles merged in: no re-enrichment, so its contact
+            # record (and the MAX_ATTEMPTS counter in it) survives, and no duplicate training rows
+            known = [c for c in hiring_cands if canonical_key(c.company) in stored_keys]
+            lane = [c for c in hiring_cands if canonical_key(c.company) not in stored_keys][:LANE_MAX]
+            refreshed = refresh_known_hiring(known, stored_keys, data_dir)
             chosen = select([c for c in cands if c.source != "hiring"], seen, caps=caps, decider=decider)
             by_url = {normalize_url(c.url): c for c in chosen}
-            st["counts"] = {"in": len(cands), "selected": len(chosen), "hiring_lane": len(lane)}
+            st["counts"] = {"in": len(cands), "selected": len(chosen), "hiring_lane": len(lane), "hiring_refreshed": refreshed}
             st["notes"] = [f"crawl caps by source: {caps}", f"decider: {decider.name}"]
 
         with log.stage("crawl") as st:
@@ -253,19 +310,26 @@ async def run(data_dir: Path) -> RunReport:
             accepted = process(pages, by_url, report)
             now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
             for c in lane:  # hiring posts: the post is the source of truth, no extraction tokens
-                ex = hiring_extraction(c.company, c.meta["roles"], c.meta["text"], c.meta.get("website", ""))
-                ex.startup.source_url, ex.startup.discovered_at = c.url, now_iso
-                if c.meta.get("website", "").startswith("http") and "ycombinator.com" not in c.meta["website"]:
-                    ex.startup.website = c.meta["website"]
+                post_url = hn_item_url(c.meta["item_id"])
+                website = lane_website(c.company, c.meta.get("website", ""))
+                ex = hiring_extraction(c.company, c.meta["roles"], c.meta["text"], website)
+                # the HN post is the source (never a LinkedIn/ATS job link: backfill re-reads the source page)
+                ex.startup.source_url, ex.startup.discovered_at = post_url, now_iso
+                issues = lane_valid(ex)
+                if issues:
+                    if log:
+                        log.rejection(c.url, "hiring", issues)
+                        log.candidate(c.url, "hiring", c.title, c.snippet, c.triage, "rejected", lane=True)
+                    continue
                 accepted.append((ex, "hiring", c.meta["text"]))
                 signals_by_company.setdefault(c.company.lower(), []).append(make_signal(
-                    "hiring", "hn_who_is_hiring", f"https://news.ycombinator.com/item?id={c.meta['item_id']}",
-                    parse_roles(c.meta["roles"]), c.published_at))
+                    "hiring", "hn_who_is_hiring", post_url, parse_roles(c.meta["roles"]), c.published_at))
                 hiring_roles[c.company.lower()] = parse_roles(c.meta["roles"])
-                post_text[c.company.lower()] = (c.meta["text"], f"https://news.ycombinator.com/item?id={c.meta['item_id']}")
+                post_text[c.company.lower()] = (c.meta["text"], post_url)
                 if log:
                     log.accept(c.company, c.url, "hiring", 0, 0)
-                    log.candidate(c.url, "hiring", c.title, c.snippet, c.triage, "accepted")
+                    # lane=True: accepted without LLM validation, so the decider must not learn from it
+                    log.candidate(c.url, "hiring", c.title, c.snippet, c.triage, "accepted", lane=True)
             for ex, source, _ in accepted:
                 if source in ("yc", "launch_hn") and not ex.startup.funding_stage:
                     ex.startup.funding_stage = "YC"  # Launch HN and YC launches are YC companies by definition
@@ -295,7 +359,9 @@ async def run(data_dir: Path) -> RunReport:
             key = res.extraction.startup.company_name.lower()
             if key in post_text:
                 have = {e.value for e in res.contact.emails}
-                res.contact.emails += [e for e in post_emails(*post_text[key]) if e.value not in have]
+                company = res.extraction.startup.company_name
+                res.contact.emails += [e for e in post_emails(*post_text[key], website=res.contact.website, company=company)
+                                       if e.value not in have]
         ratings = [rate(r.extraction.startup, r.extraction.people, r.extraction.edges, r.contact,
                         hiring_roles=hiring_roles.get(r.extraction.startup.company_name.lower())) for r in results]
         for a, r, rt in zip(log.accepted, results, ratings):
@@ -336,10 +402,18 @@ async def run(data_dir: Path) -> RunReport:
         if report.passed:
             with log.stage("store") as st:
                 findings = []
-                stored_signals = {r["company_name"].lower(): r.get("signals_json") for r in _rows(TABLE, data_dir)}
+                stored = _rows(TABLE, data_dir)
+                stored_signals = {r["company_name"].lower(): r.get("signals_json") for r in stored}
+                prev_scores = {canonical_key(r["company_name"]): int(r.get("score") or 0) for r in stored}
+                diff: dict[str, list] = {"added": [], "updated": []}
                 for (ex, source, _), res, rt in zip(accepted, results, ratings):
                     s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
                     key = s.company_name.lower()
+                    ck = canonical_key(s.company_name)
+                    if ck in prev_scores:
+                        diff["updated"].append({"company": s.company_name, "score": rt.score, "score_before": prev_scores[ck], "source": source})
+                    else:
+                        diff["added"].append({"company": s.company_name, "score": rt.score, "source": source})
                     try:
                         before = json.loads(stored_signals.get(key) or "[]")
                     except ValueError:
@@ -365,9 +439,13 @@ async def run(data_dir: Path) -> RunReport:
                             "people": [p.model_dump() for p in people], "edges": [e.model_dump() for e in edges],
                         }
                     )
-                mark_seen([u for u in (normalize_url(c.url) for c in chosen) if u not in report.deferred_urls], db_dir=data_dir)
+                mark_seen([u for u in (normalize_url(c.url) for c in [*chosen, *lane]) if u not in report.deferred_urls], db_dir=data_dir)
+                log.diff = diff
+                watch = load_watchlist(data_dir)
+                watched = [{"company": f["company_name"], "why": h} for f in findings if (h := watch_hits(f, watch))]
                 (data_dir / "daily_brief.json").write_text(
-                    json.dumps({"generated_at": now, "findings": findings}, indent=2, ensure_ascii=False)
+                    json.dumps({"generated_at": now, "findings": findings, "diff": diff, "watchlist_hits": watched},
+                               indent=2, ensure_ascii=False)
                 )
                 export_all(data_dir)
                 st["counts"] = {"startups": len(findings), "people": report.people, "edges": report.edges}
@@ -402,7 +480,7 @@ async def run(data_dir: Path) -> RunReport:
             log.error(f"decider training skipped: {e}")
         if report.quota_exhausted:
             llm.mark_quota_exhausted(data_dir)
-        log.usage = {**llm.USAGE, "by_purpose": {k: dict(v) for k, v in llm.USAGE_BY.items()}}
+        log.usage = llm.usage_report()  # totals + per purpose / model / key slot + any daily-limit 429s
         log.quality = report.to_dict()
         log.passed, log.failures = report.passed, report.failures
         log.quota_exhausted, log.token_budget = report.quota_exhausted, llm.token_budget()

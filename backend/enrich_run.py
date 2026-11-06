@@ -47,8 +47,20 @@ async def run(data_dir: Path, limit: int = DEFAULT_LIMIT, *, backfill_fn=backfil
         github_fn=lambda people: enrich_people_github(people, budget=gh_budget),
     )
     out["tokens"] = llm.USAGE["total_tokens"]
+    out["usage"] = llm.usage_report()
+    out["finished_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    spent = {h["key"] for h in llm.QUOTA_HITS}
+    if spent and len(spent) >= max(1, len(llm.api_keys())):  # every key hit its daily limit (e.g. on team pages)
+        llm.mark_quota_exhausted(data_dir)  # so the next scout skips instead of crawling for nothing
+        out["quota_exhausted"] = True
     (data_dir / LAST_RUN).write_text(json.dumps(out, indent=2))
     return out
+
+
+def total_failure(res: dict) -> bool:
+    """Every attempted startup errored or failed to crawl: something is broken (network, crawler), not just dead sites."""
+    s = res.get("startups") or []
+    return len(s) >= 3 and all(x.get("status") in ("crawl_failed", "") or any(str(n).startswith("error") for n in x.get("notes", [])) for x in s)
 
 
 if __name__ == "__main__":
@@ -60,3 +72,6 @@ if __name__ == "__main__":
     res = asyncio.run(run(args.data_dir, args.limit))
     print(json.dumps({k: v for k, v in res.items() if k != "startups"} | {"enriched": len(res["startups"])}, indent=2))
     print(f"tokens used: {res.get('tokens', 0)}", file=sys.stderr)
+    if total_failure(res):  # make the workflow red so a broken crawler is noticed (results are still committed)
+        print(f"ENRICH FAILED: all {len(res['startups'])} attempts errored or could not be crawled", file=sys.stderr)
+        sys.exit(1)

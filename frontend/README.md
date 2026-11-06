@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# cali dashboard
 
-## Getting Started
-
-First, run the development server:
+A static Next.js (App Router) dashboard over the scout's committed JSON (`../backend/data`, or `demo-data/` with
+`CALI_DEMO=1`). It has no API or database: pages are rebuilt from the files on every build.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm ci
+npm run dev        # real data (prints a warning when the checkout is behind origin/main)
+npm run dev:demo   # fictional data with every panel populated
+npm run verify     # next typegen, tsc, eslint, vitest, check:data, next build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Route | What it shows |
+|---|---|
+| `/` | Health header. Stats: tokens on the newest run's UTC day, pass rate (quota runs excluded). Funnel, run calendar (quota = amber), token burn, sources, decision engine, action queue, outreach funnel, watchlist, enrichment backlog, most connected. |
+| `/queue` | Every lead's next action: contact now, review, follow up, enrich, watch, skip. URL filters, intent-aware drafted email, CSV, keyboard triage (`?`). |
+| `/startups` | Explorer: normalised stage chips, tech, qualified / email / connection toggles, search across every field, CSV, keyboard (`?`). |
+| `/startups/[slug]` | Full card: contacts with their source pages, email draft, try-it links, site tech, signals, qualification, change timeline, similar companies, evidence trackbacks. |
+| `/runs`, `/runs/[id]` | By-day tokens, including tokens per valid startup. Filterable run log with CSV/JSON export. Per-run diff, quality, tokens per key and model, quota hits, stages, rejections. |
+| `/network` | Find or focus on a node (1–2 hops), filter by node and link type, "N of M shown", investors that back several startups. |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Every number comes from a pure function in `lib/metrics.ts`. `npm run check:data` recomputes the same numbers from
+the raw files independently. See `.claude/skills/dashboard-logic-check` for the definitions these tests encode.

@@ -92,8 +92,10 @@ def test_profiles_carry_a_decision_and_your_outcome(tmp_path):
     from outcomes import mark
 
     d = tmp_path / "db3"
-    contact = _json.dumps({"emails": [{"value": "hi@a.io", "kind": "general", "source_url": "u"}], "phones": [], "socials": {}})
     for name in ("Fresh", "Told"):
+        # a sourced address on the company's own domain (contact_now requires one)
+        contact = _json.dumps({"website": f"https://{name.lower()}.com", "phones": [], "socials": {},
+                               "emails": [{"value": f"hi@{name.lower()}.com", "kind": "general", "source_url": f"https://{name.lower()}.com/contact"}]})
         upsert_profile(prof(name), db_dir=d, extras={"score": 85, "score_json": _json.dumps({"parts": {}, "gaps": []}), "contact_json": contact})
     mark("Told", "passed", "not a fit", d)
 

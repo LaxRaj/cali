@@ -44,6 +44,7 @@ class RunLog:
         self.quota_exhausted = False  # a Groq daily token limit ended or blocked this run: not a quality failure
         self.token_budget = 0  # tokens/day across all configured Groq keys (0 = unknown)
         self.failures: list[str] = []
+        self.diff: dict = {}  # what this run changed in the store: {"added": [...], "updated": [...]}
         self._token = _current.set(self)
 
     # --- recording -------------------------------------------------------------------------
@@ -80,9 +81,13 @@ class RunLog:
     def rejection(self, url: str, source: str, reasons: list[str]) -> None:
         self.rejections.append({"url": url, "source": source, "reasons": reasons})
 
-    def candidate(self, url: str, source: str, title: str, snippet: str, triage: float, outcome: str, score: int | None = None, gate_p: float | None = None) -> None:
-        self.candidate_log.append({"url": url, "source": source, "title": title, "snippet": snippet[:160],
-                                   "triage": triage, "outcome": outcome, "score": score, "gate_p": gate_p})
+    def candidate(self, url: str, source: str, title: str, snippet: str, triage: float, outcome: str, score: int | None = None,
+                  gate_p: float | None = None, lane: bool = False) -> None:
+        row = {"url": url, "source": source, "title": title, "snippet": snippet[:160],
+               "triage": triage, "outcome": outcome, "score": score, "gate_p": gate_p}
+        if lane:
+            row["lane"] = True  # hiring-lane row: not LLM-validated, so it is not a training label
+        self.candidate_log.append(row)
 
     def accept(self, company: str, url: str, source: str, people: int, edges: int) -> None:
         self.accepted.append({"company": company, "url": url, "source": source, "people": people, "edges": edges})
@@ -122,6 +127,7 @@ class RunLog:
             "accepted": self.accepted,
             "rejections": self.rejections,
             "errors": self.errors,
+            "diff": self.diff,
         }
 
     def write(self, data_dir: Path) -> None:

@@ -19,8 +19,11 @@ import {
   latestRun,
   passRate,
   runState,
+  actionCounts,
 } from "../lib/metrics";
 import { RECORDS_START } from "../lib/constants";
+import { normalizeStage } from "../lib/format";
+import { subgraph } from "../lib/network-layout";
 import type { RunSummary } from "../lib/data";
 
 const demo = process.env.CALI_DEMO === "1";
@@ -138,6 +141,38 @@ check(
 );
 const future = profiles.filter((p) => new Date(p.discovered_at).getTime() > Date.now() + 5 * 60_000);
 check(future.length === 0, "no startup was discovered in the future", future.map((p) => p.slug).join(", "));
+
+// 5b. stages fold into the canonical set (raw re-implementation, independent of lib/format.normalizeStage)
+const rawStages = (profiles as { funding_stage?: string }[]).map((p) =>
+  (p.funding_stage ?? "").replace(/[‐-—]/g, "-").trim().toLowerCase(),
+);
+const odd = [...new Set(rawStages.filter((s) => s && !/seed|series|yc|y ?combinator|angel|bridge|growth|ipo|public/.test(s)))];
+check(odd.length === 0, "every funding stage maps to a known stage chip", `shown as written: ${odd.join(", ")}`, "warn");
+const variants = new Set(profiles.map((p) => (p as { funding_stage?: string }).funding_stage).filter(Boolean)).size;
+const chips = new Set(profiles.map((p) => normalizeStage((p as { funding_stage?: string }).funding_stage))).size;
+check(chips <= variants + 1, "stage chips never outnumber the raw stage spellings", `${chips} chips from ${variants} spellings`);
+
+// 5c. queue counts equal the queue list (only profiles with a decision are listed)
+const decided = (profiles as { decision?: { action: string } }[]).filter((p) => p.decision);
+const counted = Object.values(actionCounts(profiles as never)).reduce((t, n) => t + n, 0);
+check(counted === decided.length, "queue counts add up to the listed leads", `${counted} counted vs ${decided.length} listed`);
+
+// 5d. contact_now leads carry a sourced address (the agent may only send those)
+const sendable = (profiles as { decision?: { action: string }; email_draft?: { to: string; to_source_url: string } }[]).filter(
+  (p) => p.decision?.action === "contact_now",
+);
+const unsourced = sendable.filter((p) => p.email_draft?.to && !p.email_draft.to_source_url).length;
+check(unsourced === 0, "every contact_now draft address has a source page", `${unsourced} without a source`);
+
+// 5e. graph: every edge endpoint is a node; the network page says "N of M" so nothing is hidden silently
+const graph = readJson<{ nodes: { id: string }[]; edges: { source: string; target: string }[] }>("graph.json");
+if (graph) {
+  const ids = new Set(graph.nodes.map((n) => n.id));
+  const dangling = graph.edges.filter((e) => !ids.has(e.source) || !ids.has(e.target)).length;
+  check(dangling === 0, "every graph edge connects two known nodes", `${dangling} dangling edges`);
+  const shown = subgraph(graph as never, {}).total;
+  check(shown === graph.nodes.length, "the network page's total equals all nodes (unfiltered)", `${shown} vs ${graph.nodes.length}`);
+}
 
 // 7. numbers are sane
 const budget = dailyBudget(runs, dayKey(latest.started_at));

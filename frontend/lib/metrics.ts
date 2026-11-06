@@ -52,6 +52,10 @@ export type DayTotal = {
   passed: number;
   failed: number;
   quota: number;
+  /** Valid startups found that day (sum of funnel.valid over its runs). */
+  valid: number;
+  /** tokens ÷ valid, rounded; null when nothing valid was found (no divide-by-zero). */
+  tokensPerValid: number | null;
 };
 
 /** One entry per UTC day that has runs, oldest first. */
@@ -60,14 +64,18 @@ export function dailyTotals(runs: RunSummary[]): DayTotal[] {
   return days.map((day) => {
     const of = runsOnDay(runs, day);
     const count = (s: RunStatus) => of.filter((r) => runState(r) === s).length;
+    const tokens = dailyTokens(runs, day);
+    const valid = of.reduce((t, r) => t + (r.funnel?.valid ?? 0), 0);
     return {
       day,
-      tokens: dailyTokens(runs, day),
+      tokens,
       budget: dailyBudget(runs, day),
       runs: of.length,
       passed: count("passed"),
       failed: count("failed"),
       quota: count("quota"),
+      valid,
+      tokensPerValid: valid ? Math.round(tokens / valid) : null,
     };
   });
 }
@@ -107,6 +115,60 @@ export function topFindings(profiles: Profile[], n: number): Profile[] {
   return [...profiles]
     .sort((a, b) => (b.score ?? 0) - (a.score ?? 0))
     .slice(0, n);
+}
+
+/** Runs sorted by run_id (oldest first), whatever order the index file has. */
+export function sortedRuns(runs: RunSummary[]): RunSummary[] {
+  return [...runs].sort((a, b) => a.run_id.localeCompare(b.run_id));
+}
+
+export type FunnelStep = {
+  stage: string;
+  count: number;
+  /** Share of the previous step, whole percent; null for the first step or when the previous is 0. */
+  conversion: number | null;
+};
+
+/**
+ * Outreach funnel from what you recorded (backend/outcomes.py, mirrored by the outreach agent):
+ * ready to send (contact_now with an address) -> contacted -> replied -> meeting -> won. Each later status counts
+ * toward every earlier step (a meeting was also a reply and a contact). `passed` leads are counted separately.
+ */
+export function outreachFunnel(
+  profiles: Profile[],
+  outcomes: Record<string, { status: string }>,
+): { steps: FunnelStep[]; passed: number } {
+  const order = ["contacted", "replied", "meeting", "won"];
+  const rank = (s: string) => order.indexOf(s);
+  const statuses = Object.values(outcomes).map((o) => o.status);
+  const atLeast = (s: string) => statuses.filter((x) => rank(x) >= rank(s)).length;
+  const ready = profiles.filter(
+    (p) => p.decision?.action === "contact_now" && p.email_draft?.to,
+  ).length;
+  const counts: [string, number][] = [
+    ["ready to send", ready],
+    ["contacted", atLeast("contacted")],
+    ["replied", atLeast("replied")],
+    ["meeting", atLeast("meeting")],
+    ["won", atLeast("won")],
+  ];
+  const steps = counts.map(([stage, count], i) => {
+    const prev = i > 0 ? counts[i - 1][1] : 0;
+    // "ready" is a pool, not the step before contacted: only rate the outreach steps against each other
+    const conversion = i >= 2 && prev > 0 ? Math.round((count / prev) * 100) : null;
+    return { stage, count, conversion };
+  });
+  return { steps, passed: statuses.filter((s) => s === "passed").length };
+}
+
+/** Counts per decision action, over exactly the profiles the queue lists (those with a decision). */
+export function actionCounts(profiles: Profile[]): Record<string, number> {
+  const c: Record<string, number> = {};
+  for (const p of profiles) {
+    if (!p.decision) continue;
+    c[p.decision.action] = (c[p.decision.action] ?? 0) + 1;
+  }
+  return c;
 }
 
 /** True when the oldest indexed run is the first one ever recorded, so earlier executions have no record. */

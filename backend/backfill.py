@@ -14,7 +14,7 @@ from pathlib import Path
 
 import ats
 import llm
-from enrich import EnrichResult, enrich_startup, fetch_pages, host_of, is_company_host
+from enrich import EnrichResult, enrich_startup, fetch_pages, host_of, is_company_host, is_crawlable_host
 from export import export_all
 from extractor import extract_people
 from ledger import observations_for, record as record_observations
@@ -121,8 +121,8 @@ async def backfill(
         ex = _extraction_from_rows(row, people_rows, edge_rows)
         src_url = ex.startup.source_url
         # The source page is the best place to find the company's own link (and grounds the people we keep).
-        try:
-            pages = await scrape_fn([src_url]) if src_url else []
+        try:  # never re-crawl a LinkedIn / login-gated source page (policy), whatever scrape_fn is
+            pages = await scrape_fn([src_url]) if src_url and is_crawlable_host(host_of(src_url)) else []
         except Exception:
             pages = []
         md = pages[0].markdown if pages else ""

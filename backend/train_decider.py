@@ -18,8 +18,9 @@ from sklearn.model_selection import cross_val_predict
 
 from decide.decisions import STARTUP
 from decide.local import MODEL_FILE, LocalProvider
-from decide.training import labelled, load_decisions
+from decide.training import labelled, load_decisions, outcome_labels
 from memory import DB_DIR
+from outcomes import load_outcomes
 
 MIN_LABELS = 10
 
@@ -50,19 +51,31 @@ def evaluate(data_dir: Path) -> dict:
     return out
 
 
-def train(data_dir: Path) -> dict | None:
-    """Fit the logistic head for the 'startup' question and save it next to the data."""
-    pairs = labelled(load_decisions(data_dir))
+def _fit(local: LocalProvider, pairs: list[tuple[str, int]]) -> dict | None:
     y = np.array([label for _, label in pairs])
     if len(pairs) < MIN_LABELS or len(set(y)) < 2:
         return None
-    local = LocalProvider(model_path="/nonexistent")
     X = np.array([local.embedding(s) for s, _ in pairs])
-    clf = LogisticRegression(C=2.0, class_weight="balanced", max_iter=1000).fit(X, y)
-    model = {
-        "trained_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "heads": {"startup": {"w": clf.coef_[0].tolist(), "b": float(clf.intercept_[0]), "n": len(pairs), "positives": int(y.sum())}},
-    }
+    clf = LogisticRegression(C=2.0, class_weight="balanced", max_iter=1000).fit(X, y)  # balanced: classes are skewed
+    return {"w": clf.coef_[0].tolist(), "b": float(clf.intercept_[0]), "n": len(pairs), "positives": int(y.sum())}
+
+
+def train(data_dir: Path) -> dict | None:
+    """Fit the logistic heads and save them next to the data:
+    'startup' (page triage, from pipeline accept/reject) and 'lead' (worth pursuing, from your recorded outcomes)."""
+    local = LocalProvider(model_path="/nonexistent")
+    heads = {}
+    if head := _fit(local, labelled(load_decisions(data_dir))):
+        heads["startup"] = head
+    try:
+        profiles = json.loads((Path(data_dir) / "profiles.json").read_text())
+    except (OSError, ValueError):
+        profiles = []
+    if head := _fit(local, outcome_labels(profiles, load_outcomes(data_dir))):
+        heads["lead"] = head
+    if not heads:
+        return None
+    model = {"trained_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "heads": heads}
     (Path(data_dir) / MODEL_FILE).write_text(json.dumps(model))
     return model
 
@@ -76,4 +89,4 @@ if __name__ == "__main__":
         print(json.dumps(evaluate(a.data_dir), indent=2))
     else:
         m = train(a.data_dir)
-        print("trained:", json.dumps({k: v for k, v in m["heads"]["startup"].items() if k != "w"}) if m else f"need >= {MIN_LABELS} labelled rows of both classes")
+        print("trained:", json.dumps({h: {k: v for k, v in d.items() if k != "w"} for h, d in m["heads"].items()}) if m else f"need >= {MIN_LABELS} labelled rows of both classes")

@@ -1,5 +1,48 @@
 import { describe, expect, it } from "vitest";
-import { asciiBar, fmtDate, fmtDateTime, fmtDuration, fmtTokens } from "./format";
+import {
+  asciiBar,
+  fmtDate,
+  fmtDateTime,
+  fmtDuration,
+  fmtTokens,
+  humanize,
+  normalizeStage,
+  toCsv,
+} from "./format";
+
+describe("humanize", () => {
+  it("replaces every underscore", () => {
+    expect(humanize("previously_at_x")).toBe("previously at x");
+    expect(humanize("")).toBe("");
+  });
+});
+
+describe("normalizeStage (mirrors backend/entities.normalize_stage)", () => {
+  it.each([
+    ["pre‑Seed", "pre-seed"],
+    ["Pre-seed", "pre-seed"],
+    ["pre-Seed", "pre-seed"],
+    ["seed-plus", "seed"],
+    ["Seed", "seed"],
+    ["Series A2", "Series A"],
+    ["Series B", "Series B"],
+    ["Series D", "Series C+"],
+    ["YC", "YC"],
+    ["", "unknown"],
+    [undefined, "unknown"],
+    ["Grant-funded", "Grant-funded"],
+  ])("%s -> %s", (raw, want) => {
+    expect(normalizeStage(raw)).toBe(want);
+  });
+});
+
+describe("toCsv", () => {
+  it("quotes every cell and escapes quotes", () => {
+    expect(toCsv(["a", "b"], [['x "y"', 3], [null, true]])).toBe(
+      '"a","b"\r\n"x ""y""","3"\r\n"","true"',
+    );
+  });
+});
 
 describe("fmtTokens", () => {
   it("prints small counts as-is", () => {

@@ -7,17 +7,17 @@ from pathlib import Path
 
 from decide.policy import decide_lead
 from entities import canonical_key
-from draft import build_draft
+from draft import build_draft, load_sender
+from insights import load_watchlist, similar_companies, timeline, watch_hits
 from investors import investor_clusters
 from ledger import TABLE as LEDGER
+from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows
 from outcomes import load_outcomes
 from outreach import load_outbox
 from paths import find_path, load_known
 from whynow import why_now
 
 PERSON_FIELDS = ("name", "role", "org", "evidence", "linkedin", "twitter", "github", "homepage", "link_source")
-
-from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows
 
 
 def slugify(name: str) -> str:
@@ -44,11 +44,30 @@ def _trackbacks(db_dir) -> dict[str, list[dict]]:
     for r in sorted(_rows(LEDGER, db_dir), key=lambda r: r["last_seen"], reverse=True):
         by.setdefault(r["company"], []).append({f: r[f] for f in TRACKBACK_FIELDS})
     return by
+
+
 def _loads_list(raw) -> list:
     try:
         return json.loads(raw) if raw else []
     except ValueError:
         return []
+
+
+def lead_scorer(db_dir):
+    """p(worth pursuing) from the learned 'lead' head, or None until there are enough recorded outcomes to train it
+    (so the embedder is not even loaded when there is nothing to blend in)."""
+    try:
+        heads = json.loads((Path(db_dir) / "decider_model.json").read_text()).get("heads", {})
+    except (OSError, ValueError):
+        return None
+    if "lead" not in heads:
+        return None
+    from decide.decisions import LEAD
+    from decide.local import LocalProvider
+    from decide.training import lead_state
+
+    provider = LocalProvider(data_dir=Path(db_dir))
+    return lambda p: provider.decide(lead_state(p), [LEAD])["lead"].noul if lead_state(p) else None
 
 
 def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
@@ -58,8 +77,11 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     outbox = load_outbox(db_dir)
     known = load_known(db_dir)
     trackbacks = _trackbacks(db_dir)
+    rows = _rows(TABLE, db_dir)
+    similar = similar_companies(rows, slugify)
+    watch = load_watchlist(db_dir)
     out = []
-    for r in _rows(TABLE, db_dir):
+    for r in rows:
         name = r["company_name"]
         k = _key(name)
         row = {f: r[f] for f in r if f not in ("vector", "contact_json", "score_json", "signals_json")}
@@ -88,14 +110,19 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
                 ],
             }
         )
+    sender = load_sender(db_dir)
+    lead_p = lead_scorer(db_dir)
     for p in out:
         outcome = outcomes.get(p["company_name"].strip().lower())
         p["outcome"] = outcome or None
-        p["decision"] = decide_lead(p, outcome, now)
+        p["decision"] = decide_lead(p, outcome, now, lead_p=lead_p(p) if lead_p else None)
         p["trackbacks"] = trackbacks.get(canonical_key(p["company_name"]), [])
+        p["similar"] = similar.get(p["company_name"], [])
+        p["timeline"] = timeline(p["trackbacks"], p["signals"], p.get("discovered_at", ""))
+        p["watch"] = watch_hits(p, watch)
         p["why_now"] = why_now(p, now)
         p["warm_path"] = find_path(edges, known, p["company_name"])
-        p["email_draft"] = build_draft(p, p["warm_path"])
+        p["email_draft"] = build_draft(p, p["warm_path"], sender=sender)
         p["outreach"] = [
             {f: i[f] for f in ("kind", "status", "to", "updated")}
             for i in outbox.values()

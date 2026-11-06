@@ -30,7 +30,7 @@ export function Funnel({ funnel }: { funnel: FunnelData }) {
             </span>
             <span className="w-8 text-right tabular-nums">{v}</span>
             <span className="text-xs text-zinc-500">
-              {prev ? `${prev ? Math.round((v / prev) * 100) : 0}%` : ""}
+              {prev ? `${Math.round((v / prev) * 100)}%` : ""}
             </span>
           </li>
         );

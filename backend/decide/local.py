@@ -8,6 +8,7 @@ examples it has seen. Everything runs in milliseconds, offline, at zero cost.
 
 import json
 import math
+import os
 from pathlib import Path
 
 import numpy as np
@@ -31,10 +32,12 @@ def _softmax(xs: list[float]) -> list[float]:
 class LocalProvider:
     name = "local"
 
-    def __init__(self, model_path: Path | None = None):
+    def __init__(self, model_path: Path | None = None, data_dir: Path | None = None):
         self._proto: dict[str, np.ndarray] = {}
         self._heads: dict[str, dict] = {}
-        path = model_path or (DB_DIR / MODEL_FILE)
+        # the model lives beside the data being scored (pipeline --data-dir sets CALI_DATA_DIR), not the repo default
+        base = data_dir or Path(os.environ.get("CALI_DATA_DIR") or DB_DIR)
+        path = model_path or (Path(base) / MODEL_FILE)
         try:
             self._heads = json.loads(Path(path).read_text()).get("heads", {})
         except (OSError, ValueError):

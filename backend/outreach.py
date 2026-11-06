@@ -1,17 +1,24 @@
-"""Outreach outbox: scout-informed drafts queued for YOUR review. Nothing here ever sends an email.
+"""Outreach outbox: scout-informed emails, drafted for review or (opt-in) sent autonomously behind safeguards.
 
-Flow: `queue` (from data/profiles.json + decisions) -> `push` (Gmail Drafts, you press send) -> `sync` (replies,
-bounces, opt-outs flow back into outcomes.py). Stored in data/outbox.json and data/suppressed.json.
+Flow: `queue` (from data/profiles.json + decisions) -> `push` (Gmail Drafts, you press send) or `run` (one vetted
+send per tick, only with CALI_OUTREACH_SEND=1) -> `sync` (replies, bounces, opt-outs flow back into outcomes.py).
+Stored in data/outbox.json, data/suppressed.json and data/outreach_state.json (all local, gitignored).
 
+    uv run python outreach.py init            # who is writing (data/me.json)
+    uv run python outreach.py doctor          # check setup: sender, Gmail token, DNS (SPF/DMARC), switches, window
     uv run python outreach.py queue
-    uv run python outreach.py push        # needs the optional Gmail setup (see gmail_sync.py)
+    uv run python outreach.py push            # needs the optional Gmail setup (see gmail_sync.py)
+    uv run python outreach.py run [--dry-run]
     uv run python outreach.py sync
-    uv run python outreach.py list
+    uv run python outreach.py summary         # writes data/outreach_summary.json for the dashboard (no addresses)
+    uv run python outreach.py list | status | pause | resume
     uv run python outreach.py sent CedarDB    # you sent it by hand
     uv run python outreach.py suppress example.com
 
-Guardrails (enforced here): only a company-published, sourced address; daily cap; one contact per domain per
-cooldown; one follow-up then stop; suppression list; CALI_OUTREACH=0 disables everything.
+Guardrails (enforced here, see CLAUDE.md): sending needs CALI_OUTREACH_SEND=1; only a company-published, sourced
+address on the company's own domain; warm-up ramp; Tue-Thu 09:00-16:00 window; random 4-15 min gaps; one send per
+tick; plain-text lint + quality gate; opt-out line + List-Unsubscribe; one follow-up then stop; suppression list;
+per-domain cooldown; circuit breaker (bounces / complaints / send errors) until `resume`; CALI_OUTREACH=0 kill switch.
 """
 
 import argparse
@@ -23,13 +30,15 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+from decide.policy import SEND_MIN_SCORE, found_on_publisher
 from draft import OPT_OUT
 from outcomes import mark as mark_outcome
 from outcomes import load_outcomes
 
 DB_DIR = Path(__file__).parent / "data"
-OUTBOX, SUPPRESSED, STATE = "outbox.json", "suppressed.json", "outreach_state.json"
-STATUSES = ("queued", "drafted", "sending", "sent", "replied", "bounced", "opted_out", "complaint", "skipped")
+OUTBOX, SUPPRESSED, STATE, SUMMARY = "outbox.json", "suppressed.json", "outreach_state.json", "outreach_summary.json"
+STATUSES = ("queued", "drafted", "sending", "sent", "replied", "bounced", "opted_out", "complaint", "skipped", "error")
+STUCK_SENDING_MINUTES = 60  # a 'sending' item this old means a crash mid-send: we cannot know if Gmail took it
 DAILY_CAP = int(os.environ.get("CALI_OUTREACH_DAILY_CAP", "15"))
 DOMAIN_COOLDOWN_DAYS = 30
 FOLLOW_UP_DAYS = 7
@@ -37,7 +46,6 @@ FOLLOW_UP_DAYS = 7
 RAMP_START, RAMP_STEP = 3, 2  # sends allowed on day 0, then +RAMP_STEP per day, up to DAILY_CAP
 SEND_WEEKDAYS, SEND_HOURS = (1, 2, 3), (9, 16)  # Tue-Thu, 09:00-15:59 local
 GAP_MINUTES = (4, 15)
-SEND_MIN_SCORE = 70
 MAX_WORDS = 120
 BREAKER_WINDOW, BREAKER_MAX_BOUNCES = 20, 2
 SPAM_PHRASES = re.compile(
@@ -101,9 +109,14 @@ def _host(url: str) -> str:
 
 
 def _found_on_publisher(profile: dict) -> bool:
-    """The "website" is the same host the lead was discovered on (a news site, SEC, HN): the address isn't the company's."""
-    site, found = _host(profile.get("website", "")), _host(profile.get("source_url", ""))
-    return bool(site) and site == found
+    """The "website" is the host the lead was discovered on (a news site, SEC, HN): the address isn't the company's."""
+    return found_on_publisher(profile)
+
+
+def _draft_hash(to: str, subject: str, body: str, score: int) -> str:
+    import hashlib
+
+    return hashlib.sha1(f"{to}\n{subject}\n{body}\n{score}".encode()).hexdigest()[:12]
 
 
 def item_key(company: str, kind: str) -> str:
@@ -142,10 +155,10 @@ def queue_from_profiles(
     suppressed = load_suppressed(data_dir)
     today = now.date().isoformat()
     queued_today = sum(1 for i in outbox.values() if i["queued"][:10] == today)
-    recent_domains = {
+    recent_domains = {  # a draft we skipped (never sent) does not use up the company's cooldown
         domain_of(i["to"])
         for i in outbox.values()
-        if now - datetime.fromisoformat(i["queued"]) < timedelta(days=DOMAIN_COOLDOWN_DAYS)
+        if i["status"] not in ("skipped",) and now - datetime.fromisoformat(i["queued"]) < timedelta(days=DOMAIN_COOLDOWN_DAYS)
     }
     added: list[dict] = []
     ranked = sorted(profiles, key=lambda p: (p.get("decision") or {}).get("priority", 0), reverse=True)
@@ -160,8 +173,13 @@ def queue_from_profiles(
         kind = "follow_up" if action == "follow_up" else "first"
         key = item_key(company, kind)
         first = outbox.get(item_key(company, "first"))
+        score = int((p.get("decision") or {}).get("score", p.get("score")) or 0)
         if key in outbox:
-            continue  # already queued/sent: one first email, one follow-up, then stop
+            prev = outbox[key]
+            # a skipped draft gets another look once the lead or its draft changed (a re-score, a new bottleneck, ...);
+            # anything that reached Gmail is final: one first email, one follow-up, then stop
+            if prev["status"] != "skipped" or prev.get("draft_hash") == _draft_hash(to, draft.get("subject", ""), draft.get("body", ""), score):
+                continue
         if kind == "follow_up":
             if not first or first["status"] != "sent":
                 continue
@@ -189,9 +207,11 @@ def queue_from_profiles(
             "reply_to_message_id": first.get("gmail_message_id", "") if kind == "follow_up" else "",
             "gmail_message_id": "",
             "sent_at": "",
-            "score": int(p.get("score") or 0),
+            "score": score,  # signal-adjusted, the same number policy.contact_now compared to SEND_MIN_SCORE
             "specific": bool(p.get("likely_bottleneck", "").strip() or p.get("tech_stack")),
+            "needs_human": bool(draft.get("needs_human")),
             "priority": (p.get("decision") or {}).get("priority", 0),
+            "draft_hash": _draft_hash(to, draft["subject"], draft["body"], score),
         }
         recent_domains.add(domain_of(to))
         queued_today += 1
@@ -213,7 +233,9 @@ def set_status(company: str, kind: str, status: str, data_dir: Path = DB_DIR, no
     save_outbox(outbox, data_dir)
     outcome = {"sent": "contacted", "replied": "replied", "opted_out": "passed", "bounced": "passed", "complaint": "passed"}.get(status)
     if outcome and (load_outcomes(data_dir).get(company.strip().lower()) or {}).get("status") not in ("meeting", "won"):
-        mark_outcome(company, outcome, note=f"outreach {status}", data_dir=data_dir, now=now)
+        intent = extra.get("reply_intent", "") or {"opted_out": "unsubscribe", "complaint": "complaint", "bounced": "bounce"}.get(status, "")
+        mark_outcome(company, outcome, note=f"outreach {status}", data_dir=data_dir, now=now, intent=intent,
+                     reason="no_contact" if status == "bounced" else "other" if outcome == "passed" else "")
     if status in ("opted_out", "bounced", "complaint"):
         suppress(item["to"], data_dir)
     if status == "complaint":
@@ -229,9 +251,11 @@ def save_state(state: dict, data_dir: Path = DB_DIR) -> None:
     _write(Path(data_dir) / STATE, state)
 
 
-def set_paused(paused: bool, reason: str = "", data_dir: Path = DB_DIR) -> dict:
+def set_paused(paused: bool, reason: str = "", data_dir: Path = DB_DIR, now: datetime | None = None) -> dict:
     state = load_state(data_dir)
     state.update(paused=paused, reason=reason if paused else "")
+    if not paused:  # the human looked at what tripped the breaker: only newer events count from here on
+        state["resumed_at"] = (now or datetime.now().astimezone()).isoformat(timespec="seconds")
     save_state(state, data_dir)
     return state
 
@@ -255,10 +279,42 @@ def in_send_window(now: datetime) -> bool:
     return now.weekday() in SEND_WEEKDAYS and SEND_HOURS[0] <= now.hour < SEND_HOURS[1]
 
 
+def _ts(iso: str) -> datetime:
+    """Timestamps here mix local (send window) and UTC offsets: compare them as instants, never as strings."""
+    t = datetime.fromisoformat(iso)
+    return t if t.tzinfo else t.replace(tzinfo=timezone.utc)
+
+
+def breaker_reason(outbox: dict, since: str = "") -> str:
+    """The circuit breaker, in one place: why sending must stop ('' = fine). Any complaint or unresolved send error in
+    the recent window, or too many bounces, pauses until a human runs `outreach.py resume`. Only events after the last
+    resume (`since`) count, so a resume is not undone by the very events it acknowledged."""
+    recent = sorted((i for i in outbox.values() if i.get("sent_at") or i["status"] == "error"),
+                    key=lambda i: i.get("sent_at") or i["updated"])[-BREAKER_WINDOW:]
+    recent = [i for i in recent if not since or _ts(i["updated"]) > _ts(since)]
+    if c := next((i for i in recent if i["status"] == "complaint"), None):
+        return f"complaint from {c['to']}"
+    if e := next((i for i in recent if i["status"] == "error"), None):
+        return f"send to {e['to']} has an unknown result ({e.get('error', 'error')}); check Gmail Sent, then fix the item"
+    bounces = sum(1 for i in recent if i["status"] == "bounced")
+    if bounces > BREAKER_MAX_BOUNCES:
+        return f"more than {BREAKER_MAX_BOUNCES} of the last {BREAKER_WINDOW} sends bounced"
+    return ""
+
+
 def breaker_tripped(outbox: dict) -> bool:
-    """Too many of the most recent sends bounced: stop before the sending reputation suffers."""
-    sent = sorted((i for i in outbox.values() if i.get("sent_at")), key=lambda i: i["sent_at"])[-BREAKER_WINDOW:]
-    return sum(1 for i in sent if i["status"] == "bounced") > BREAKER_MAX_BOUNCES
+    return bool(breaker_reason(outbox))
+
+
+def recover_stuck(data_dir: Path, now: datetime) -> list[dict]:
+    """Items left in 'sending' by a crash: we cannot know whether Gmail accepted them, so never resend blindly; mark
+    them 'error' (which trips the breaker) so a human checks Gmail Sent first."""
+    stuck = []
+    for i in load_outbox(data_dir).values():
+        if i["status"] == "sending":
+            if _ts(now.isoformat()) - _ts(i["updated"]) >= timedelta(minutes=STUCK_SENDING_MINUTES):
+                stuck.append(set_status(i["company"], i["kind"], "error", data_dir, now, error="stuck in 'sending' (crash mid-send?)"))
+    return stuck
 
 
 def lint(item: dict) -> list[str]:
@@ -272,7 +328,7 @@ def lint(item: dict) -> list[str]:
         problems.append("ALL CAPS word")
     if (item["subject"] + body).count("!") > 1:
         problems.append("too many exclamation marks")
-    if len(re.findall(r"https?://|www\.", body)) > 1:
+    if len(re.findall(r"https?://\S+|(?<![/\w.])www\.\S+", body)) > 1:  # "https://www.x" is one link, not two
         problems.append("more than one link")
     if re.search(r"\[[^\]]+\]", body):
         problems.append("unfilled [placeholder] (a human must complete this draft)")
@@ -290,7 +346,25 @@ def gate(item: dict) -> list[str]:
         problems.append(f"score {item.get('score', 0)} < {SEND_MIN_SCORE}")
     if not item.get("specific"):
         problems.append("nothing specific to say (no bottleneck or stack)")
+    if item.get("needs_human"):
+        problems.append("draft needs a human (nothing concrete to mention)")
     return problems
+
+
+def with_local_decisions(profiles: list[dict], data_dir: Path, now: datetime | None = None) -> list[dict]:
+    """Re-decide leads that have a local outcome (contacted / replied / passed): follow-ups become due here, on the
+    machine that sent the email, without waiting for outcomes.json to be committed and the CI export to run."""
+    from decide.policy import decide_lead
+
+    outcomes = load_outcomes(data_dir)
+    out = []
+    for p in profiles:
+        o = outcomes.get(p["company_name"].strip().lower())
+        if o and o != p.get("outcome"):
+            lead_p = (p.get("decision") or {}).get("lead_p")
+            p = {**p, "outcome": o, "decision": decide_lead(p, o, (now or datetime.now(timezone.utc)), lead_p=lead_p)}
+        out.append(p)
+    return out
 
 
 def run(
@@ -319,15 +393,17 @@ def run(
 
     if svc is not None:
         gmail_sync.sync(data_dir, svc=svc)
+    if not dry_run:
+        recover_stuck(data_dir, now)
     outbox = load_outbox(data_dir)
-    if breaker_tripped(outbox):
-        set_paused(True, f"more than {BREAKER_MAX_BOUNCES} of the last {BREAKER_WINDOW} sends bounced", data_dir)
+    if (why := breaker_reason(outbox, load_state(data_dir).get("resumed_at", ""))) and not load_state(data_dir)["paused"]:
+        set_paused(True, why, data_dir)
     state = load_state(data_dir)
     if state["paused"]:
         return f"paused: {state['reason']} (fix it, then: outreach.py resume)"
 
     sender = load_sender(data_dir)
-    queue_from_profiles(_read(data_dir / "profiles.json", []), data_dir, now, sender=sender)
+    queue_from_profiles(with_local_decisions(_read(data_dir / "profiles.json", []), data_dir, now), data_dir, now, sender=sender)
     if not sending and not dry_run:
         return gmail_sync.push(data_dir, svc=svc) + " (CALI_OUTREACH_SEND!=1: drafts only)"
 
@@ -354,6 +430,7 @@ def run(
         try:
             sent = gmail_sync.send_item(svc, item)
         except Exception as e:  # unknown whether Gmail accepted it: stop and let a human check
+            # left in 'sending' (never re-sent); recover_stuck turns it into 'error' an hour later for `resolve`
             set_paused(True, f"send to {item['to']} failed ({type(e).__name__}); check Gmail Sent, then fix the item", data_dir)
             return f"send failed, paused: {e}"
         set_status(item["company"], item["kind"], "sent", data_dir, now, gmail_message_id=sent["id"], gmail_thread_id=sent["threadId"])
@@ -376,6 +453,130 @@ def status_line(data_dir: Path = DB_DIR, now: datetime | None = None) -> str:
     )
 
 
+def init_sender(data_dir: Path, name: str, email: str = "", bio: str = "", links: str = "") -> dict:
+    """Write data/me.json (gitignored): who signs the emails. Never asks for passwords or tokens."""
+    me = {"name": name.strip(), "email": email.strip(), "bio": bio.strip(), "links": links.strip()}
+    if not me["name"]:
+        raise ValueError("a sender name is required: every email is signed")
+    _write(Path(data_dir) / "me.json", me)
+    return me
+
+
+def doh_txt(name: str) -> list[str]:
+    """TXT records via Cloudflare's free DNS-over-HTTPS JSON API (no extra dependency, no account)."""
+    import httpx
+
+    r = httpx.get("https://cloudflare-dns.com/dns-query", params={"name": name, "type": "TXT"},
+                  headers={"accept": "application/dns-json"}, timeout=10)
+    r.raise_for_status()
+    return [a.get("data", "").strip('"').replace('" "', "") for a in r.json().get("Answer", []) if a.get("type") == 16]
+
+
+MANAGED_MAIL = {"gmail.com", "googlemail.com"}  # Google signs and aligns these itself
+
+
+def dns_checks(domain: str, resolver=doh_txt) -> list[tuple[str, bool, str]]:
+    """SPF and DMARC for the sending domain (DKIM selectors are provider-specific, so it is only advised)."""
+    if domain in MANAGED_MAIL:
+        return [("dns", True, f"{domain}: SPF/DKIM/DMARC managed by Google")]
+    out = []
+    try:
+        spf = [t for t in resolver(domain) if t.lower().startswith("v=spf1")]
+        out.append(("spf", bool(spf), spf[0] if spf else f"no SPF record on {domain}: receivers may junk your mail"))
+    except Exception as e:
+        out.append(("spf", False, f"lookup failed: {e}"))
+    try:
+        dmarc = [t for t in resolver(f"_dmarc.{domain}") if t.lower().startswith("v=dmarc1")]
+        out.append(("dmarc", bool(dmarc), dmarc[0] if dmarc else f"no DMARC record at _dmarc.{domain}"))
+    except Exception as e:
+        out.append(("dmarc", False, f"lookup failed: {e}"))
+    out.append(("dkim", True, "check that your mail provider signs with DKIM (Google Workspace: Admin > Gmail > Authenticate email)"))
+    return out
+
+
+def doctor(data_dir: Path = DB_DIR, now: datetime | None = None, resolver=doh_txt, config_dir: Path | None = None) -> list[tuple[str, bool, str]]:
+    """Everything the agent needs before it may send, as (check, ok, detail). Read-only; never sends."""
+    from draft import load_sender
+
+    now = now or datetime.now().astimezone()
+    config_dir = config_dir or Path.home() / ".config" / "cali"
+    sender = load_sender(data_dir)
+    me = _read(Path(data_dir) / "me.json", {})
+    email = os.environ.get("CALI_SENDER_EMAIL") or me.get("email", "")
+    outbox, state = load_outbox(data_dir), load_state(data_dir)
+    checks = [
+        ("kill switch", enabled(), "CALI_OUTREACH is on" if enabled() else "CALI_OUTREACH=0: everything is off"),
+        ("sending", True, "CALI_OUTREACH_SEND=1: autonomous sending ON" if send_enabled() else "drafts only (set CALI_OUTREACH_SEND=1 to send)"),
+        ("sender", bool(sender["name"]), sender["name"] or "no sender name: run `outreach.py init`"),
+        ("gmail client", (config_dir / "gmail_client.json").exists(), str(config_dir / "gmail_client.json")),
+        ("gmail token", (config_dir / "gmail_token.json").exists(), "authorised" if (config_dir / "gmail_token.json").exists() else "first `run --dry-run` opens the consent screen"),
+        ("breaker", not state["paused"], f"PAUSED: {state['reason']}" if state["paused"] else "not tripped"),
+        ("window", True, f"{'open' if in_send_window(now) else 'closed'} now (Tue-Thu {SEND_HOURS[0]:02d}:00-{SEND_HOURS[1]:02d}:00 local)"),
+        ("ramp", True, f"{sent_today(outbox, now)}/{ramp_cap(outbox, now)} sent today"),
+        ("suppressed", True, f"{len(load_suppressed(data_dir))} address(es)/domain(s)"),
+    ]
+    if email and "@" in email:
+        checks += dns_checks(domain_of(email), resolver)
+    else:
+        checks.append(("dns", False, "add your sending address to me.json (`init --email`) to check SPF/DMARC"))
+    return checks
+
+
+def summary(data_dir: Path = DB_DIR, now: datetime | None = None) -> dict:
+    """Aggregate, address-free outreach numbers for the dashboard (funnel, reply intents, deliverability)."""
+    now = now or datetime.now(timezone.utc)
+    outbox = load_outbox(data_dir)
+    counts: dict[str, int] = {}
+    intents: dict[str, int] = {}
+    by_day: dict[str, dict[str, int]] = {}
+    for i in outbox.values():
+        counts[i["status"]] = counts.get(i["status"], 0) + 1
+        if i.get("reply_intent"):
+            intents[i["reply_intent"]] = intents.get(i["reply_intent"], 0) + 1
+        if i.get("sent_at"):
+            d = by_day.setdefault(i["sent_at"][:10], {"sent": 0, "bounced": 0, "replied": 0, "complaint": 0})
+            d["sent"] += 1
+            if i["status"] in d:
+                d[i["status"]] += 1
+    sent = sum(1 for i in outbox.values() if i.get("sent_at"))
+    replied = counts.get("replied", 0) + counts.get("opted_out", 0)
+    out = {
+        "generated_at": now.isoformat(timespec="seconds"),
+        "queued": len(outbox),
+        "statuses": counts,
+        "sent": sent,
+        "replied": replied,
+        "reply_rate": round(replied / sent, 3) if sent else 0.0,
+        "bounce_rate": round(counts.get("bounced", 0) / sent, 3) if sent else 0.0,
+        "reply_intents": intents,
+        "by_day": dict(sorted(by_day.items())),
+        "paused": load_state(data_dir)["paused"],
+        "send_enabled": send_enabled(),
+        "skip_reasons": _top_skip_reasons(outbox),
+    }
+    _write(Path(data_dir) / SUMMARY, out)
+    return out
+
+
+def _top_skip_reasons(outbox: dict, n: int = 5) -> dict[str, int]:
+    c: dict[str, int] = {}
+    for i in outbox.values():
+        for r in filter(None, (i.get("skip_reason") or "").split("; ")):
+            r = re.sub(r"\d+", "N", r)
+            c[r] = c.get(r, 0) + 1
+    return dict(sorted(c.items(), key=lambda kv: -kv[1])[:n])
+
+
+def resolve(company: str, kind: str, outcome: str, data_dir: Path = DB_DIR) -> dict:
+    """After checking Gmail Sent for an 'error' item: it went out (sent) or it did not (skipped)."""
+    if outcome not in ("sent", "skipped"):
+        raise ValueError("resolve as 'sent' or 'skipped'")
+    item = load_outbox(data_dir)[item_key(company, kind)]
+    if item["status"] not in ("error", "sending"):
+        raise ValueError(f"{company} is '{item['status']}', not an unresolved send")
+    return set_status(company, kind, outcome, data_dir, skip_reason="resolved by you" if outcome == "skipped" else "")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--data-dir", type=Path, default=DB_DIR)
@@ -393,12 +594,41 @@ def main() -> None:
     s.add_argument("--kind", default="first", choices=("first", "follow_up"))
     x = sub.add_parser("suppress")
     x.add_argument("entry")
+    i = sub.add_parser("init")
+    i.add_argument("--name", default="")
+    i.add_argument("--email", default="", help="your sending address (used only for the SPF/DMARC check)")
+    i.add_argument("--bio", default="")
+    i.add_argument("--links", default="")
+    sub.add_parser("doctor")
+    sub.add_parser("summary")
+    rv = sub.add_parser("resolve", help="after checking Gmail Sent for an item that errored mid-send")
+    rv.add_argument("company")
+    rv.add_argument("outcome", choices=("sent", "skipped"))
+    rv.add_argument("--kind", default="first", choices=("first", "follow_up"))
     a = ap.parse_args()
+
+    if a.cmd == "init":
+        name = a.name or input("Your name (signs every email): ")
+        email = a.email or input("Your sending address (optional, for DNS checks): ")
+        bio = a.bio or input("One-line bio (optional): ")
+        links = a.links or input("A link, e.g. your site or GitHub (optional): ")
+        print(json.dumps(init_sender(a.data_dir, name, email, bio, links), indent=2))
+        return
+    if a.cmd == "doctor":
+        for check, ok, detail in doctor(a.data_dir):
+            print(f"{'ok ' if ok else 'FIX'}  {check:<13} {detail}")
+        return
+    if a.cmd == "summary":
+        print(json.dumps(summary(a.data_dir), indent=2))
+        return
+    if a.cmd == "resolve":
+        print(json.dumps(resolve(a.company, a.kind, a.outcome, a.data_dir), indent=2))
+        return
 
     if a.cmd == "queue":
         from draft import load_sender
 
-        profiles = _read(a.data_dir / "profiles.json", [])
+        profiles = with_local_decisions(_read(a.data_dir / "profiles.json", []), a.data_dir)
         added = queue_from_profiles(profiles, a.data_dir, sender=load_sender(a.data_dir))
         print(f"queued {len(added)}" + ("" if enabled() else " (CALI_OUTREACH=0: disabled)"))
         for i in added:
@@ -412,7 +642,14 @@ def main() -> None:
     elif a.cmd == "pause":
         set_paused(True, a.reason, a.data_dir)
     elif a.cmd == "resume":
+        unresolved = [i for i in load_outbox(a.data_dir).values() if i["status"] == "error"]
+        if unresolved:
+            for i in unresolved:
+                print(f"unresolved send: {i['company']} -> {i['to']} ({i.get('error', '')}); "
+                      f"check Gmail Sent, then: outreach.py resolve \"{i['company']}\" sent|skipped")
+            raise SystemExit(1)
         set_paused(False, data_dir=a.data_dir)
+        print(status_line(a.data_dir))
     elif a.cmd == "status":
         print(status_line(a.data_dir))
     elif a.cmd == "sent":

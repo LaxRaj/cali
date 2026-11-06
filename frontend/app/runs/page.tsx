@@ -1,33 +1,22 @@
-import Link from "next/link";
 import { Empty } from "@/components/ascii/art";
-import { AsciiBar } from "@/components/charts/ascii-bar";
 import { Sparkline } from "@/components/charts/sparkline";
 import { DayRollupTable } from "@/components/runs/day-rollup-table";
-import { RunStateBadge } from "@/components/runs/run-state-badge";
+import { RunLog } from "@/components/runs/run-log";
 import { Panel } from "@/components/ui/panel";
 import { readIndex } from "@/lib/data";
-import { fmtDateTime, fmtDuration, fmtTokens } from "@/lib/format";
+import { fmtDateTime } from "@/lib/format";
 import { RECORDS_START } from "@/lib/constants";
-import {
-  dailyBudget,
-  dailyTotals,
-  dayKey,
-  historyStartsAtRecordCutoff,
-  runState,
-} from "@/lib/metrics";
+import { dailyTotals, historyStartsAtRecordCutoff, sortedRuns } from "@/lib/metrics";
 
 export const metadata = { title: "Runs — cali" };
 
 export default function RunsPage() {
-  const runs = readIndex();
-  const desc = [...runs].reverse();
+  const runs = sortedRuns(readIndex());
   const days = dailyTotals(runs);
 
   return (
     <div className="space-y-6">
-      <h1 className="font-display text-6xl">
-        Process monitor
-      </h1>
+      <h1 className="font-display text-4xl sm:text-6xl">Process monitor</h1>
       {runs.length === 0 ? (
         <Panel title="Runs" tone="amber">
           <Empty art="floppy" title="No runs recorded">
@@ -78,56 +67,7 @@ export default function RunsPage() {
                 executions were not logged.
               </p>
             )}
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[40rem] text-left">
-                <thead>
-                  <tr className="border-b-2 border-zinc-900/25 text-[11px] uppercase tracking-widest dark:border-violet-400/60">
-                    <th className="py-1 pr-3">Status</th>
-                    <th className="pr-3">Started (UTC)</th>
-                    <th className="pr-3">Funnel (found → valid)</th>
-                    <th className="pr-3">Tokens</th>
-                    <th className="pr-3 text-right">Time</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {desc.map((r) => (
-                    <tr
-                      key={r.run_id}
-                      className="border-b border-zinc-900/20 dark:border-violet-400/20"
-                    >
-                      <td className="py-1.5 pr-3">
-                        <RunStateBadge state={runState(r)} />
-                      </td>
-                      <td className="pr-3">
-                        <Link
-                          href={`/runs/${r.run_id}`}
-                          className="underline underline-offset-2 hover:no-underline focus-visible:outline-2 focus-visible:outline-emerald-500"
-                        >
-                          {fmtDateTime(r.started_at)}
-                        </Link>
-                      </td>
-                      <td className="pr-3 tabular-nums">
-                        {r.funnel.candidates} → {r.funnel.selected} →{" "}
-                        {r.funnel.crawled} → {r.funnel.valid}
-                      </td>
-                      <td className="pr-3">
-                        <AsciiBar
-                          label=""
-                          value={r.tokens}
-                          max={dailyBudget(runs, dayKey(r.started_at))}
-                          width={10}
-                          display={fmtTokens(r.tokens)}
-                          className="text-amber-700 dark:text-amber-300"
-                        />
-                      </td>
-                      <td className="pr-3 text-right tabular-nums">
-                        {fmtDuration(r.duration_s)}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <RunLog runs={runs} />
           </Panel>
         </>
       )}

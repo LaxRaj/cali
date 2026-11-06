@@ -201,8 +201,11 @@ def test_registry_defaults_to_local_and_jev_is_opt_in(monkeypatch):
 
 
 def lead(**kw):
-    base = {"score": 80, "gaps": [], "discovered_at": (NOW - timedelta(days=2)).isoformat(),
-            "contact": {"emails": [{"value": "hi@acme.io"}], "phones": [], "contact_page": "https://acme.io/contact"},
+    # every stored address carries its source page (CLAUDE.md), and contact_now needs one on the company's own domain
+    base = {"company_name": "Acme", "website": "https://acme.io", "source_url": "https://news.ycombinator.com/item?id=1",
+            "score": 80, "gaps": [], "discovered_at": (NOW - timedelta(days=2)).isoformat(),
+            "contact": {"emails": [{"value": "hi@acme.io", "kind": "general", "source_url": "https://acme.io/contact"}],
+                        "phones": [], "contact_page": "https://acme.io/contact"},
             "people": [{"name": "Jane Roe", "role": "CEO", "linkedin": "https://linkedin.com/in/jane-roe"}]}
     base.update(kw)
     return base
@@ -220,7 +223,13 @@ def test_staleness_and_reachability_change_the_decision():
     no_contact = decide_lead(lead(score=50, contact={}, people=[]), now=NOW)
     assert no_contact["action"] == "enrich_more"
     social_only = decide_lead(lead(score=60, contact={}), now=NOW)
-    assert social_only["action"] == "contact_now" and "LinkedIn" in social_only["next_step"]
+    # spec change (2026-11-06): outreach is email-only (CLAUDE.md), so a profile link is never offered as the channel
+    assert social_only["action"] != "contact_now" and "LinkedIn" not in social_only["next_step"]
+    review = decide_lead(lead(score=60), now=NOW)  # reachable but below the unattended-send bar
+    assert review["action"] == "review" and "hi@acme.io" in review["next_step"]
+    publisher = decide_lead(lead(website="https://news.ycombinator.com",
+                                 contact={"emails": [{"value": "hn@ycombinator.com", "kind": "general", "source_url": "https://news.ycombinator.com/"}]}), now=NOW)
+    assert publisher["action"] != "contact_now"
     assert decide_lead(lead(score=20), now=NOW)["action"] == "skip"
 
 

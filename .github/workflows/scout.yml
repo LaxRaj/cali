@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write # health alerts + the Monday digest go to GitHub issues (free, the workflow's own token)
 
 concurrency:
   group: scout
@@ -62,6 +63,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: uv run python pipeline.py
 
+      - name: Repair stored data (idempotent; compacts the lance tables on Mondays)
+        if: always() && steps.scout.conclusion != 'skipped'
+        continue-on-error: true
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then uv run python repair.py; else uv run python repair.py --no-compact; fi
+
       - name: Commit results to main
         if: always() && steps.scout.conclusion != 'skipped'
         working-directory: .
@@ -75,6 +82,36 @@ jobs:
             git commit -m "chore: daily scout $(date -u +%F)"
             git pull --rebase origin main
             git push origin HEAD:main
+          fi
+
+      - name: Redeploy the dashboard (optional; only if the DEPLOY_HOOK_URL secret is set)
+        if: always() && steps.scout.conclusion != 'skipped'
+        env:
+          DEPLOY_HOOK_URL: ${{ secrets.DEPLOY_HOOK_URL }}
+        run: |
+          if [ -n "$DEPLOY_HOOK_URL" ]; then curl -fsS -X POST "$DEPLOY_HOOK_URL" > /dev/null && echo "deploy hook triggered"; else echo "no DEPLOY_HOOK_URL secret: skipping"; fi
+
+      - name: Health alerts and Monday digest (GitHub issues)
+        if: always() && steps.scout.conclusion != 'skipped'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CALI_DASHBOARD_URL: ${{ vars.CALI_DASHBOARD_URL }}
+        run: |
+          uv run python digest.py alerts --out /tmp/alerts.md > /dev/null
+          open=$(gh issue list --label cali-alert --state open --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -s /tmp/alerts.md ]; then
+            gh label create cali-alert --color d93f0b --description "Scout health alert" 2>/dev/null || true
+            if [ -n "$open" ]; then gh issue comment "$open" --body-file /tmp/alerts.md
+            else gh issue create --title "Cali scout needs attention" --label cali-alert --body-file /tmp/alerts.md; fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Healthy again: $(date -u +%F)."
+          fi
+          title="Cali weekly digest $(date -u +%F)"
+          if [ "$(date -u +%u)" = "1" ] && [ -z "$(gh issue list --label cali-digest --state all --search "$title in:title" --json number --jq '.[0].number' 2>/dev/null)" ]; then
+            uv run python digest.py weekly --out /tmp/digest.md > /dev/null
+            gh label create cali-digest --color 0e8a16 --description "Weekly lead digest" 2>/dev/null || true
+            gh issue create --title "$title" --label cali-digest --body-file /tmp/digest.md
           fi
 
       - name: Fail the job if the scout failed its quality gates

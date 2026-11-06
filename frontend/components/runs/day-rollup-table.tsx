@@ -14,6 +14,9 @@ export function DayRollupTable({ days }: { days: DayTotal[] }) {
             <th className="pr-3">Runs</th>
             <th className="pr-3">Result</th>
             <th className="pr-3 text-right">Tokens</th>
+            <th className="pr-3 text-right" title="tokens ÷ valid startups found that day">
+              Per valid
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -38,6 +41,18 @@ export function DayRollupTable({ days }: { days: DayTotal[] }) {
                 <span className="text-xs text-zinc-600 dark:text-zinc-400">
                   {Math.round((d.tokens / d.budget) * 100)}%
                 </span>
+              </td>
+              <td className="pr-3 text-right tabular-nums">
+                {d.tokensPerValid === null ? (
+                  <span className="text-zinc-500">—</span>
+                ) : (
+                  <>
+                    {fmtTokens(d.tokensPerValid)}{" "}
+                    <span className="text-xs text-zinc-600 dark:text-zinc-400">
+                      ×{d.valid}
+                    </span>
+                  </>
+                )}
               </td>
             </tr>
           ))}

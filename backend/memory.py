@@ -6,6 +6,7 @@ from pathlib import Path
 import lancedb
 from sentence_transformers import SentenceTransformer
 
+from entities import canonical_key, normalize_stage
 from models import Edge, Person, StartupProfile
 
 DB_DIR = Path(__file__).parent / "data"  # tables -> data/<name>.lance
@@ -75,26 +76,45 @@ def _rows(table: str, db_dir) -> list[dict]:
     return db.open_table(table).to_arrow().to_pylist()
 
 
-def _first_discovered(company: str, db_dir) -> str:
-    """Earliest discovered_at already stored for this exact company name ("" if new). ISO strings sort chronologically."""
-    return next((r.get("discovered_at", "") for r in _rows(TABLE, db_dir) if r["company_name"] == company), "")
+def find_profile_row(company: str, db_dir: str | Path = DB_DIR, rows: list[dict] | None = None) -> dict | None:
+    """The stored row for this company: exact name first, else the same canonical name ("Acme, Inc." == "Acme")."""
+    rows = _rows(TABLE, db_dir) if rows is None else rows
+    exact = next((r for r in rows if r["company_name"] == company), None)
+    if exact:
+        return exact
+    key = canonical_key(company)
+    return next((r for r in rows if canonical_key(r["company_name"]) == key), None) if key else None
 
 
 def upsert_profile(profile: StartupProfile, db_dir: str | Path = DB_DIR, extras: dict | None = None) -> None:
-    """Insert the profile, or replace the existing row with the same company_name.
+    """Insert the profile, or replace the existing row for the same company (matched by canonical name).
 
     `extras` are additional flat columns (score, score_json, contact_json) kept beside the profile fields.
     """
-    first = _first_discovered(profile.company_name, db_dir)
-    if first and (not profile.discovered_at or first < profile.discovered_at):
-        profile = profile.model_copy(update={"discovered_at": first})  # re-finding a company must not reset when we found it
+    prev = find_profile_row(profile.company_name, db_dir)
+    upd = {"funding_stage": normalize_stage(profile.funding_stage)}
+    if prev:
+        upd["company_name"] = prev["company_name"]  # keep the stored spelling so the merge key matches
+        first = prev.get("discovered_at", "")
+        if first and (not profile.discovered_at or first < profile.discovered_at):
+            upd["discovered_at"] = first  # re-finding a company must not reset when we found it
+    profile = profile.model_copy(update=upd)
     row = {**profile.model_dump(), **(extras or {}), "vector": embed(profile_text(profile))}
     # a partial update (e.g. a backfill without signals) must not drop columns other stages wrote earlier
-    prev = next((r for r in _rows(TABLE, db_dir) if r["company_name"] == profile.company_name), None)
     for k, v in (prev or {}).items():
         if k not in row and k != "vector":
             row[k] = v
     _upsert(TABLE, "company_name", [row], db_dir)
+
+
+def update_profile_columns(company: str, values: dict, db_dir: str | Path = DB_DIR) -> None:
+    """Set a few flat columns on one stored startup row, leaving everything else (contact attempts, ...) untouched."""
+    db = connect(db_dir)
+    if TABLE not in db.list_tables().tables or not values:
+        return
+    tbl = db.open_table(TABLE)
+    _ensure_columns(tbl, values)
+    tbl.update(where="company_name = '" + company.replace("'", "''") + "'", values=values)
 
 
 def upsert_people(people: list[Person], db_dir: str | Path = DB_DIR) -> None:

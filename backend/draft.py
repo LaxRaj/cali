@@ -67,7 +67,9 @@ def _signal(profile: dict) -> str:
 
 
 def _intent_lines(intent: str, profile: dict) -> list[str]:
-    bottleneck = _clean(profile.get("likely_bottleneck", ""))
+    bottleneck = _clean(_short(profile.get("likely_bottleneck", ""), 120)).rstrip(".")
+    if bottleneck[:2].istitle():  # "Scaling X" reads mid-sentence as "scaling X"; leave acronyms ("GPU ...") alone
+        bottleneck = bottleneck[0].lower() + bottleneck[1:]
     stack = ", ".join((profile.get("tech_stack") or [])[:3])
     pitch = _first_sentence(profile.get("value_prop_pitch", ""))  # one sentence: short cold emails read as human
     if intent == "work_for":
@@ -86,14 +88,24 @@ def _intent_lines(intent: str, profile: dict) -> list[str]:
     return lines + ["", "Open to a quick call to see if there is a fit?"]
 
 
+# Every angle is built only from facts the scout found (role, bottleneck, stack): no "[fill this in]" placeholders, so a
+# draft can pass outreach.lint unattended. Nothing here claims experience the sender did not state in me.json.
 ANGLES = {
-    "eng": "I'd like to use {product} and send you one concrete thing I'd build or fix: [after trying it: one specific observation].",
-    "founding": "I'd like to use {product} and send you one concrete thing I'd build or fix: [after trying it: one specific observation].",
-    "product": "I talk to users for a living: [after trying it: what customers seem to need that {product} could say or do better].",
-    "customer": "I can bring you customer conversations: [one insight about who is struggling with the problem {product} solves].",
-    "sales": "I can bring you customer conversations: [one insight about who is struggling with the problem {product} solves].",
-    "design": "I'd like to use {product} and share one specific UX improvement: [after trying it: what stood out].",
+    "eng": "I'd like to help on the engineering side{focus}.",
+    "founding": "I'd like to be one of the first engineers helping {product} ship{focus}.",
+    "product": "I'd like to help {product} turn what users say into what ships next{focus}.",
+    "customer": "I'd like to help {product} reach more of the teams it is built for.",
+    "sales": "I'd like to help {product} reach more of the teams it is built for.",
+    "design": "I'd like to help with design and UX on {product}{focus}.",
 }
+
+
+def _focus(profile: dict) -> str:
+    bottleneck = _clean(profile.get("likely_bottleneck", ""))
+    if bottleneck:
+        return f", starting with {bottleneck[0].lower() + bottleneck[1:]}" if len(bottleneck) <= 90 else ""
+    stack = ", ".join((profile.get("tech_stack") or [])[:2])
+    return f" on {stack}" if stack else ""
 
 
 def signal_hook(profile: dict) -> tuple[str, str]:
@@ -103,20 +115,34 @@ def signal_hook(profile: dict) -> tuple[str, str]:
         return "", ""
     s = sigs[0]
     product = profile.get("company_name", "your product")
-    roles = ", ".join(s.get("roles", [])[:2])
+    from signals import clean_roles
+
+    roles = ", ".join(clean_roles(s.get("roles", []))[:2])
     hook = {
         "hiring": f"I saw you're hiring ({roles})" if roles else "I saw you're hiring",
         "seeking_freelancer": "I saw you're looking for outside help",
         "funding": "Congrats on the new funding", "launch": "Congrats on the launch",
     }.get(s["type"], "")
     kinds = s.get("role_kinds") or ["eng"]
-    angle = ANGLES.get(kinds[0], ANGLES["eng"]).format(product=product)
+    # a role-based angle only makes sense for a hiring / outside-help signal; for funding or a launch the intent lines
+    # below already make the ask (two "I'd like to..." lines read as a template)
+    angle = ANGLES.get(kinds[0], ANGLES["eng"]).format(product=product, focus=_focus(profile)) if s["type"] in ("hiring", "seeking_freelancer") else ""
     return (hook + (f" ({s['url']})" if s.get("url") else "") + "." if hook else ""), angle
 
 
-def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | None = None) -> dict:
+def _short(text: str, limit: int = 140) -> str:
+    """Keep cold emails short: cut at a word boundary."""
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) <= limit:
+        return text
+    head = text[:limit]
+    cut = max(head.rfind(", "), head.rfind("; "), head.rfind(" - "), head.rfind(" — "))
+    return (head[:cut] if cut >= limit // 2 else head.rsplit(" ", 1)[0]).rstrip(",;:- ")  # end on a clause, not mid-phrase
+
+
+def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | None = None, data_dir: Path | None = None) -> dict:
     company = profile["company_name"]
-    sender = sender if sender is not None else load_sender()
+    sender = sender if sender is not None else load_sender(data_dir or DB_DIR)
     intent, reason = pick_intent(profile)
     leader = next((p for p in profile.get("people", []) if LEADER.search(p.get("role") or "")), None)
     greeting = f"Hi {leader['name'].split()[0]}," if leader else f"Hi {company} team,"
@@ -126,9 +152,10 @@ def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | Non
         lines += [f"{warm_path['summary']}.", ""]
     hook, angle = signal_hook(profile)
     if hook:
-        lines += [hook, angle, ""]
-    lines.append(f"I came across {company}: {_first_sentence(profile.get('core_product', ''))}".rstrip(".") + ".")
-    if signal := _signal(profile):
+        lines += [hook, *([angle] if angle else []), ""]
+    product = _short(_first_sentence(re.sub(r"\[([^\]]*)\]\([^)]*\)|https?://\S+", r"\1", profile.get("core_product", ""))).strip())
+    lines.append(f"I came across {company}: {product}".rstrip(".") + "." if len(product) > 15 else f"I came across {company}.")
+    if not hook and (signal := _signal(profile)):  # the hook already cites the news
         lines.append(signal)
     lines += _intent_lines(intent, profile)
     lines += ["", OPT_OUT]
@@ -136,12 +163,15 @@ def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | Non
         lines += ["", sender["name"], *[x for x in (sender["bio"], sender["links"]) if x]]
     body = "\n".join(lines)
 
-    emails = profile.get("contact", {}).get("emails", [])
+    from decide.policy import sendable_emails
+
+    emails = sendable_emails(profile)  # company-domain, sourced, never a publisher's page
     sig_urls = {sg.get("url") for sg in profile.get("signals") or []}
     # an address published in the very post we are replying to beats a generic or unrelated inbox
     chosen = next((e for e in emails if e.get("source_url") in sig_urls), None) or pick_email(emails)
     to = chosen["value"] if chosen else ""
     subject = f"{company}: a thought on {_first_sentence(profile.get('likely_bottleneck', '')).rstrip('.')[:60] or 'your stack'}"
+    specific = bool(profile.get("likely_bottleneck", "").strip() or profile.get("tech_stack") or hook)
     return {
         "intent": intent,
         "intent_reason": reason,
@@ -150,4 +180,7 @@ def build_draft(profile: dict, warm_path: dict | None = None, sender: dict | Non
         "subject": subject,
         "body": body,
         "mailto": f"mailto:{quote(to)}?subject={quote(subject)}&body={quote(body)}" if to else "",
+        # nothing concrete to say: the queue shows it, but it is never sent without a human rewriting it
+        "needs_human": not specific,
+        "needs_human_reason": "" if specific else "no bottleneck, stack or signal to mention",
     }

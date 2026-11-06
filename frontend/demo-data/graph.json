@@ -22,7 +22,7 @@
       "type": "startup",
       "degree": 4,
       "website": "https://vectorly.example",
-      "score": 86
+      "score": 87
     },
     {
       "id": "gridline",
@@ -30,7 +30,7 @@
       "type": "startup",
       "degree": 4,
       "website": "https://gridline.example",
-      "score": 83
+      "score": 84
     },
     {
       "id": "northwind ventures",
@@ -44,7 +44,7 @@
       "type": "startup",
       "degree": 3,
       "website": "https://paperplaneai.example",
-      "score": 82
+      "score": 83
     },
     {
       "id": "fernwood",
@@ -52,7 +52,7 @@
       "type": "startup",
       "degree": 3,
       "website": "https://fernwood.example",
-      "score": 63
+      "score": 64
     },
     {
       "id": "basalt",
@@ -68,7 +68,7 @@
       "type": "startup",
       "degree": 3,
       "website": "https://nimbusnotes.example",
-      "score": 77
+      "score": 78
     },
     {
       "id": "harbor capital",
@@ -295,193 +295,286 @@
       "source": "maya okafor",
       "target": "lumen index",
       "rel": "cofounded",
-      "evidence": "Maya Okafor co-founded Lumen Index"
+      "evidence": "Maya Okafor co-founded Lumen Index",
+      "sources": []
     },
     {
       "source": "theo brandt",
       "target": "lumen index",
       "rel": "cofounded",
-      "evidence": "Theo Brandt co-founded Lumen Index"
+      "evidence": "Theo Brandt co-founded Lumen Index",
+      "sources": []
     },
     {
       "source": "northwind ventures",
       "target": "lumen index",
       "rel": "invested_in",
-      "evidence": "Northwind Ventures led the seed round"
+      "evidence": "Northwind Ventures led the seed round",
+      "sources": []
     },
     {
       "source": "lumen index",
       "target": "vectorly",
       "rel": "competitor_of",
-      "evidence": "Lumen Index competes with Vectorly"
+      "evidence": "Lumen Index competes with Vectorly",
+      "sources": []
     },
     {
       "source": "priya raman",
       "target": "vectorly",
       "rel": "founded",
-      "evidence": "Priya Raman co-founded Vectorly"
+      "evidence": "Priya Raman co-founded Vectorly",
+      "sources": []
     },
     {
       "source": "harbor capital",
       "target": "vectorly",
       "rel": "invested_in",
-      "evidence": "Harbor Capital led the Series A round"
+      "evidence": "Harbor Capital led the Series A round",
+      "sources": []
     },
     {
       "source": "northwind ventures",
       "target": "vectorly",
       "rel": "invested_in",
-      "evidence": "Northwind Ventures led the Series A round"
+      "evidence": "Northwind Ventures led the Series A round",
+      "sources": []
     },
     {
       "source": "sam idris",
       "target": "paperplane ai",
       "rel": "cofounded",
-      "evidence": "Sam Idris co-founded Paperplane AI"
+      "evidence": "Sam Idris co-founded Paperplane AI",
+      "sources": []
     },
     {
       "source": "lena fischer",
       "target": "paperplane ai",
       "rel": "cofounded",
-      "evidence": "Lena Fischer co-founded Paperplane AI"
+      "evidence": "Lena Fischer co-founded Paperplane AI",
+      "sources": []
     },
     {
       "source": "open seed fund",
       "target": "paperplane ai",
       "rel": "invested_in",
-      "evidence": "Open Seed Fund led the pre-seed round"
+      "evidence": "Open Seed Fund led the pre-seed round",
+      "sources": []
     },
     {
       "source": "jon abara",
       "target": "tidepool labs",
       "rel": "founded",
-      "evidence": "Jon Abara co-founded Tidepool Labs"
+      "evidence": "Jon Abara co-founded Tidepool Labs",
+      "sources": []
     },
     {
       "source": "harbor capital",
       "target": "tidepool labs",
       "rel": "invested_in",
-      "evidence": "Harbor Capital led the seed round"
+      "evidence": "Harbor Capital led the seed round",
+      "sources": []
     },
     {
       "source": "ana lopes",
       "target": "corvid",
       "rel": "cofounded",
-      "evidence": "Ana Lopes co-founded Corvid"
+      "evidence": "Ana Lopes co-founded Corvid",
+      "sources": []
     },
     {
       "source": "kai winter",
       "target": "corvid",
       "rel": "cofounded",
-      "evidence": "Kai Winter co-founded Corvid"
+      "evidence": "Kai Winter co-founded Corvid",
+      "sources": []
     },
     {
       "source": "open seed fund",
       "target": "corvid",
       "rel": "invested_in",
-      "evidence": "Open Seed Fund led the seed round"
+      "evidence": "Open Seed Fund led the seed round",
+      "sources": []
     },
     {
       "source": "northwind ventures",
       "target": "corvid",
       "rel": "invested_in",
-      "evidence": "Northwind Ventures led the seed round"
+      "evidence": "Northwind Ventures led the seed round",
+      "sources": []
     },
     {
       "source": "corvid",
       "target": "fernwood",
       "rel": "competitor_of",
-      "evidence": "Corvid competes with Fernwood"
+      "evidence": "Corvid competes with Fernwood",
+      "sources": []
     },
     {
       "source": "dr. nia hassan",
       "target": "fernwood",
       "rel": "founded",
-      "evidence": "Dr. Nia Hassan co-founded Fernwood"
+      "evidence": "Dr. Nia Hassan co-founded Fernwood",
+      "sources": []
     },
     {
       "source": "meridian bio partners",
       "target": "fernwood",
       "rel": "invested_in",
-      "evidence": "Meridian Bio Partners led the Series A round"
+      "evidence": "Meridian Bio Partners led the Series A round",
+      "sources": []
     },
     {
       "source": "omar beck",
       "target": "quillbase",
       "rel": "founded",
-      "evidence": "Omar Beck co-founded Quillbase"
+      "evidence": "Omar Beck co-founded Quillbase",
+      "sources": []
     },
     {
       "source": "iris moreau",
       "target": "basalt",
       "rel": "cofounded",
-      "evidence": "Iris Moreau co-founded Basalt"
+      "evidence": "Iris Moreau co-founded Basalt",
+      "sources": []
     },
     {
       "source": "dev patel",
       "target": "basalt",
       "rel": "cofounded",
-      "evidence": "Dev Patel co-founded Basalt"
+      "evidence": "Dev Patel co-founded Basalt",
+      "sources": []
     },
     {
       "source": "harbor capital",
       "target": "basalt",
       "rel": "invested_in",
-      "evidence": "Harbor Capital led the seed round"
+      "evidence": "Harbor Capital led the seed round",
+      "sources": []
     },
     {
       "source": "zoe tanaka",
       "target": "nimbus notes",
       "rel": "founded",
-      "evidence": "Zoe Tanaka co-founded Nimbus Notes"
+      "evidence": "Zoe Tanaka co-founded Nimbus Notes",
+      "sources": []
     },
     {
       "source": "open seed fund",
       "target": "nimbus notes",
       "rel": "invested_in",
-      "evidence": "Open Seed Fund led the pre-seed round"
+      "evidence": "Open Seed Fund led the pre-seed round",
+      "sources": []
     },
     {
       "source": "nimbus notes",
       "target": "gridline",
       "rel": "competitor_of",
-      "evidence": "Nimbus Notes competes with Gridline"
+      "evidence": "Nimbus Notes competes with Gridline",
+      "sources": []
     },
     {
       "source": "marco ruiz",
       "target": "gridline",
       "rel": "cofounded",
-      "evidence": "Marco Ruiz co-founded Gridline"
+      "evidence": "Marco Ruiz co-founded Gridline",
+      "sources": []
     },
     {
       "source": "ines duarte",
       "target": "gridline",
       "rel": "cofounded",
-      "evidence": "Ines Duarte co-founded Gridline"
+      "evidence": "Ines Duarte co-founded Gridline",
+      "sources": []
     },
     {
       "source": "meridian bio partners",
       "target": "gridline",
       "rel": "invested_in",
-      "evidence": "Meridian Bio Partners led the seed round"
+      "evidence": "Meridian Bio Partners led the seed round",
+      "sources": []
     },
     {
       "source": "bea nowak",
       "target": "hearth",
       "rel": "founded",
-      "evidence": "Bea Nowak co-founded Hearth"
+      "evidence": "Bea Nowak co-founded Hearth",
+      "sources": []
     },
     {
       "source": "northwind ventures",
       "target": "hearth",
       "rel": "invested_in",
-      "evidence": "Northwind Ventures led the seed round"
+      "evidence": "Northwind Ventures led the seed round",
+      "sources": []
     },
     {
       "source": "ravi menon",
       "target": "pocket atlas",
       "rel": "founded",
-      "evidence": "Ravi Menon co-founded Pocket Atlas"
+      "evidence": "Ravi Menon co-founded Pocket Atlas",
+      "sources": []
+    }
+  ],
+  "investors": [
+    {
+      "investor": "Northwind Ventures",
+      "companies": [
+        "Corvid",
+        "Hearth",
+        "Lumen Index",
+        "Vectorly"
+      ],
+      "count": 4,
+      "co_investors": [
+        {
+          "name": "Harbor Capital",
+          "shared": 1
+        },
+        {
+          "name": "Open Seed Fund",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Harbor Capital",
+      "companies": [
+        "Basalt",
+        "Tidepool Labs",
+        "Vectorly"
+      ],
+      "count": 3,
+      "co_investors": [
+        {
+          "name": "Northwind Ventures",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Open Seed Fund",
+      "companies": [
+        "Corvid",
+        "Nimbus Notes",
+        "Paperplane AI"
+      ],
+      "count": 3,
+      "co_investors": [
+        {
+          "name": "Northwind Ventures",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Meridian Bio Partners",
+      "companies": [
+        "Fernwood",
+        "Gridline"
+      ],
+      "count": 2,
+      "co_investors": []
     }
   ]
 }

@@ -20,7 +20,7 @@ export default function QueuePage() {
         </p>
       )}
       <div>
-        <h1 className="font-display text-6xl">
+        <h1 className="font-display text-4xl sm:text-6xl">
           Action queue
         </h1>
         <p className="mt-1 text-xs text-zinc-600 dark:text-zinc-400">
@@ -29,8 +29,9 @@ export default function QueuePage() {
             uv run python outcomes.py mark &lt;company&gt;
             contacted|replied|passed
           </code>
-          . To draft outreach for the &ldquo;Contact now&rdquo; leads, run{" "}
-          <code>uv run python outreach.py queue</code>.
+          . &ldquo;Contact now&rdquo; leads (score 70+, a company-published address on their own domain) are the ones
+          the outreach agent may send; &ldquo;Review&rdquo; leads are good but need you first. Set up once with{" "}
+          <code>outreach.py init</code> and <code>outreach.py doctor</code>, then <code>outreach.py queue</code>.
         </p>
       </div>
       {profiles.length === 0 ? (

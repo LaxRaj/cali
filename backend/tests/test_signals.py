@@ -1,3 +1,4 @@
+import re
 from datetime import datetime, timedelta, timezone
 
 import ats
@@ -60,7 +61,10 @@ def test_why_now_and_draft_cite_the_signal_and_never_claim_to_have_used_the_prod
     prof = {"company_name": "Acme", "core_product": "Vector search for legal teams.", "signals": [sig], "people": [], "contact": {"emails": []}}
     assert why_now(prof, NOW)[0]["text"].startswith("Hiring") and why_now(prof, NOW)[0]["source_url"].endswith("/acme")
     body = build_draft(prof)["body"]
-    assert "I saw you're hiring (Backend Engineer)" in body and "[after trying it:" in body  # human fills the observation
+    assert "I saw you're hiring (Backend Engineer)" in body
+    # spec change (2026-11-06): no "[after trying it: ...]" placeholder, which outreach.lint always rejected, so no draft
+    # could ever be sent; the angle is built from scouted facts, and it still never claims the sender used the product
+    assert "[" not in body and not re.search(r"\bI (tried|used|tested|played with)\b", body)
 
 
 def test_ats_detect_and_parse():
