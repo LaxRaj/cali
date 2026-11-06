@@ -1,631 +1,46 @@
 {
-  "generated_at": "2026-11-06T05:59:50+00:00",
+  "generated_at": "2026-11-06T14:08:04+00:00",
   "findings": [
     {
-      "company_name": "Siggy",
-      "core_product": "An AI‑powered mental health platform that collects patient histories, provides daily check‑ins and a clinician‑visible “Siggy Score” to improve care between appointments.",
+      "company_name": "Multikor.ai, Inc.",
+      "core_product": "Enterprise AI platform that lets teams build and govern AI agents for specific workflows such as healthcare and dental operations.",
       "tech_stack": [
-        "AI",
-        "video conferencing",
-        "wearable data integration"
-      ],
-      "likely_bottleneck": "Scaling the AI conversation and semantic search pipeline to handle real‑time patient check‑ins while maintaining low latency and HIPAA compliance.",
-      "value_prop_pitch": "We can refactor your AI chat backend with Next.js API routes and integrate vector semantic search to instantly retrieve relevant patient history, cutting latency dramatically. This will also simplify scaling your clinician dashboard while keeping HIPAA compliance.",
-      "is_relevant": true,
-      "funding_stage": "pre-seed",
-      "funding_amount": "$6 million",
-      "hq": "New York",
-      "website": "",
-      "source_url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
-      "discovered_at": "2026-11-06T05:57:21+00:00",
-      "source": "rss",
-      "score": 54,
-      "gaps": [
-        "website",
-        "founder",
-        "people profiles",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-06T05:58:25+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://news.crunchbase.com/venture/nurx-journey-clinical-founders-raise-mental-health-startup-siggy/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Thu, 05 Nov 2026 16:00:40 +0000",
-          "seen_at": "2026-11-06T05:58:21+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Immad Akhund",
-          "role": "Investor",
-          "org": "Mercury Technologies",
-          "evidence": "Mercury co‑founder Immad Akhund... invested personally",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Jonathan Sabbagh",
-          "rel": "founded",
-          "dst": "Siggy",
-          "evidence": "Jonathan Sabbagh co‑founded... Siggy"
-        },
-        {
-          "src": "Edvard Engesæth",
-          "rel": "cofounded",
-          "dst": "Siggy",
-          "evidence": "Edvard Engesæth co‑founded... Siggy"
-        },
-        {
-          "src": "Village Global",
-          "rel": "backed_by",
-          "dst": "Siggy",
-          "evidence": "Village Global led the financing for New York‑based Siggy"
-        },
-        {
-          "src": "Immad Akhund",
-          "rel": "invested_in",
-          "dst": "Siggy",
-          "evidence": "Mercury co‑founder Immad Akhund... invested personally"
-        },
-        {
-          "src": "Toyin Ajayi",
-          "rel": "invested_in",
-          "dst": "Siggy",
-          "evidence": "Cityblock Health co‑founder Toyin Ajayi... through Coalition Operators"
-        },
-        {
-          "src": "Jonathan Sabbagh",
-          "rel": "previously_at",
-          "dst": "Journey Clinical",
-          "evidence": "Jonathan Sabbagh co‑founded Journey Clinical"
-        },
-        {
-          "src": "Edvard Engesæth",
-          "rel": "previously_at",
-          "dst": "Nurx",
-          "evidence": "Edvard Engesæth co‑founded Nurx"
-        }
-      ]
-    },
-    {
-      "company_name": "Rivet",
-      "core_product": "A fast, high‑density, and scalable orchestrator for agentic workloads using the actor model backed by S3.",
-      "tech_stack": [
-        "Rust",
-        "TypeScript",
-        "SQLite",
-        "S3",
-        "SSD",
+        "Python",
         "AWS",
-        "GCP"
+        "NVIDIA GPUs",
+        "REST APIs",
+        "Web UI"
       ],
-      "likely_bottleneck": "Coordinating massive numbers of lightweight actors while keeping state consistent and storage latency low.",
-      "value_prop_pitch": "You could expose each actor’s state through a Next.js API layer that caches semantic embeddings, letting you query across millions of actors instantly. Then a vector‑based semantic search service would surface the right actor context without hitting the underlying SQLite/S3 storage for every request.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "San Francisco, US",
-      "website": "https://rivet.dev",
-      "source_url": "https://news.ycombinator.com/item?id=50381687",
-      "discovered_at": "2026-11-06T05:57:21+00:00",
-      "source": "launch_hn",
-      "score": 61,
-      "gaps": [
-        "funding amount",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://rivet.dev",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "github": "https://github.com/rivet-dev",
-          "twitter": "https://x.com/rivet_dev",
-          "linkedin": "https://www.linkedin.com/company/72072261"
-        },
-        "contact_page": "",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://rivet.dev/pricing/"
-          },
-          {
-            "label": "Start Building",
-            "url": "https://rivet.dev/docs/"
-          }
-        ],
-        "pages_crawled": [
-          "https://rivet.dev/",
-          "https://rivet.dev/about",
-          "https://rivet.dev/talk-to-an-engineer/",
-          "https://rivet.dev/team"
-        ],
-        "enriched_at": "2026-11-06T05:58:30+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "launch_hn",
-          "url": "https://news.ycombinator.com/item?id=50381687",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-05T17:17:42Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Nicholas Kissel",
-          "role": "Co-founder & CEO",
-          "org": "Rivet",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/nicholaskissel",
-          "twitter": "https://x.com/NicholasKissel",
-          "github": "https://github.com/nicholaskissel",
-          "homepage": "https://nicholaskissel.com",
-          "link_source": "https://rivet.dev/"
-        },
-        {
-          "name": "Nathan Flurry",
-          "role": "Co-founder & CTO",
-          "org": "Rivet",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/nathanflurry",
-          "twitter": "https://x.com/NathanFlurry",
-          "github": "https://github.com/nathanflurry",
-          "homepage": "",
-          "link_source": "https://rivet.dev/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Nathan Flurry",
-          "rel": "founded",
-          "dst": "Rivet",
-          "evidence": "Hey HN, this is Nathan and Nicholas from Rivet"
-        },
-        {
-          "src": "Nicholas Kissel",
-          "rel": "founded",
-          "dst": "Rivet",
-          "evidence": "Hey HN, this is Nathan and Nicholas from Rivet"
-        }
-      ]
-    },
-    {
-      "company_name": "42AI",
-      "core_product": "A transformer‑based behavioral world model that predicts individual human decisions for applications like financial trading.",
-      "tech_stack": [
-        "transformer‑based model",
-        "language model"
-      ],
-      "likely_bottleneck": "real‑time inference latency and scaling the model across millions of customer interactions",
-      "value_prop_pitch": "I can wrap your predictive engine in a Next.js front‑end that streams results instantly to traders, while a vector semantic search layer indexes each user’s behavioral profile for sub‑millisecond lookups. This removes latency bottlenecks and lets you scale to millions of concurrent predictions without rebuilding your core model.",
+      "likely_bottleneck": "building a scalable, low‑latency governance layer that records every AI action while keeping costs down",
+      "value_prop_pitch": "You could wrap your governance APIs in a Next.js front‑end that streams real‑time audit logs to the UI, eliminating custom UI work. Then add a vector‑based semantic search over the logs so engineers can instantly find any action history and debug bottlenecks.",
       "is_relevant": true,
       "funding_stage": "seed",
-      "funding_amount": "$62.5M",
-      "hq": "",
-      "website": "https://42ai.com",
-      "source_url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-      "discovered_at": "2026-11-06T05:57:21+00:00",
-      "source": "rss",
-      "score": 66,
-      "gaps": [
-        "location",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://42ai.com",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://42ai.com/contact-us",
-        "product_access": [],
-        "pages_crawled": [
-          "https://42ai.com/",
-          "https://42ai.com/about-us",
-          "https://42ai.com/contact-us"
-        ],
-        "enriched_at": "2026-11-06T05:58:40+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Mon, 02 Nov 2026 16:30:00 +0000",
-          "seen_at": "2026-11-06T05:58:21+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Amir Gal-Or",
-          "role": "Co‑founder; Chairman",
-          "org": "42AI",
-          "evidence": "Co‑founder; Chairman",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Prof. Roi Reichart",
-          "role": "Head of Cognitive AI",
-          "org": "42AI",
-          "evidence": "Head of Cognitive AI",
-          "linkedin": "https://www.linkedin.com/in/roi-reichart-ba2a8a7",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Prof. Eyal Fruchter",
-          "role": "Head of Behavioral Research",
-          "org": "42AI",
-          "evidence": "Head of Behavioral Research",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Idan Zinner",
-          "role": "Senior Data Scientist",
-          "org": "42AI",
-          "evidence": "Senior Data Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Dr. Ben Yellin",
-          "role": "Senior Data Scientist",
-          "org": "42AI",
-          "evidence": "Senior Data Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Ehud Malul",
-          "role": "Senior Data Scientist",
-          "org": "42AI",
-          "evidence": "Senior Data Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Dr. Viktor Cikojevic",
-          "role": "Senior Data Scientist",
-          "org": "42AI",
-          "evidence": "Senior Data Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Gidon Krendel",
-          "role": "Senior Data Scientist",
-          "org": "42AI",
-          "evidence": "Senior Data Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Dr. Mateusz Denys",
-          "role": "Senior Data Scientist",
-          "org": "42AI",
-          "evidence": "Senior Data Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Eran Spiegelmann",
-          "role": "Data Scientist",
-          "org": "42AI",
-          "evidence": "Data Scientist",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Amir Gal-Or",
-          "rel": "cofounded",
-          "dst": "42AI",
-          "evidence": "Co‑founder; Chairman"
-        },
-        {
-          "src": "Prof. Roi Reichart",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Head of Cognitive AI"
-        },
-        {
-          "src": "Prof. Eyal Fruchter",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Head of Behavioral Research"
-        },
-        {
-          "src": "Idan Zinner",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Senior Data Scientist"
-        },
-        {
-          "src": "Dr. Ben Yellin",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Senior Data Scientist"
-        },
-        {
-          "src": "Ehud Malul",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Senior Data Scientist"
-        },
-        {
-          "src": "Dr. Viktor Cikojevic",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Senior Data Scientist"
-        },
-        {
-          "src": "Gidon Krendel",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Senior Data Scientist"
-        },
-        {
-          "src": "Dr. Mateusz Denys",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Senior Data Scientist"
-        },
-        {
-          "src": "Eran Spiegelmann",
-          "rel": "works_at",
-          "dst": "42AI",
-          "evidence": "Data Scientist"
-        }
-      ]
-    },
-    {
-      "company_name": "VÆRIDION",
-      "core_product": "Fully electric regional aircraft called the Microliner for short‑distance flights",
-      "tech_stack": [],
-      "likely_bottleneck": "certification and large‑scale battery‑propulsion integration for the electric aircraft",
-      "value_prop_pitch": "We can build a Next.js dashboard that lets your engineering team instantly query all certification documents with semantic search, cutting research time from days to minutes. Our vector‑based search layer will keep the data up‑to‑date as you iterate on battery and propulsion designs, ensuring every stakeholder has the latest compliance info at their fingertips.",
-      "is_relevant": true,
-      "funding_stage": "Series A2",
-      "funding_amount": "€30 million",
-      "hq": "Munich, Germany",
-      "website": "https://vaeridion.com",
-      "source_url": "https://www.eu-startups.com/2026/11/germanys-vaeridion-raises-e124-million-to-bring-electric-regional-flights-closer-to-reality/",
-      "discovered_at": "2026-11-06T05:57:21+00:00",
-      "source": "rss",
-      "score": 77,
-      "gaps": [
-        "tech stack",
-        "founder"
-      ],
-      "contact": {
-        "website": "https://vaeridion.com",
-        "emails": [
-          {
-            "value": "sales@vaeridion.com",
-            "kind": "sales",
-            "source_url": "https://vaeridion.com/contact/"
-          },
-          {
-            "value": "pr@vaeridion.com",
-            "kind": "press",
-            "source_url": "https://vaeridion.com/contact/"
-          },
-          {
-            "value": "fly@vaeridion.com",
-            "kind": "person",
-            "source_url": "https://vaeridion.com/"
-          },
-          {
-            "value": "procurement@vaeridion.com",
-            "kind": "person",
-            "source_url": "https://vaeridion.com/contact/"
-          },
-          {
-            "value": "careers@vaeridion.com",
-            "kind": "other",
-            "source_url": "https://vaeridion.com/contact/"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+4989250003660",
-            "kind": "main",
-            "source_url": "https://vaeridion.com/"
-          },
-          {
-            "value": "+498925003660",
-            "kind": "main",
-            "source_url": "https://vaeridion.com/"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/vaeridion"
-        },
-        "contact_page": "https://vaeridion.com/contact/",
-        "product_access": [],
-        "pages_crawled": [
-          "https://vaeridion.com/",
-          "https://vaeridion.com/contact/",
-          "https://vaeridion.com/about/"
-        ],
-        "enriched_at": "2026-11-06T05:59:04+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://www.eu-startups.com/2026/11/germanys-vaeridion-raises-e124-million-to-bring-electric-regional-flights-closer-to-reality/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Thu, 05 Nov 2026 12:10:04 +0000",
-          "seen_at": "2026-11-06T05:58:21+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Alexander Rittweger",
-          "role": "investor",
-          "org": "",
-          "evidence": "PAYBACK founder and DeepTech investor Alexander Rittweger also joined the round.",
-          "linkedin": "https://www.linkedin.com/in/arittweger",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://vaeridion.com/about/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Ivor van Dartel",
-          "rel": "founded",
-          "dst": "VÆRIDION",
-          "evidence": "Ivor van Dartel , founder and CEO of VÆRIDION"
-        },
-        {
-          "src": "SHIFT Invest",
-          "rel": "invested_in",
-          "dst": "VÆRIDION",
-          "evidence": "The investment round was co-led by Dutch investors SHIFT Invest"
-        },
-        {
-          "src": "Invest-NL",
-          "rel": "invested_in",
-          "dst": "VÆRIDION",
-          "evidence": "The investment round was co-led by Dutch investors … Invest-NL"
-        },
-        {
-          "src": "Vsquared Ventures",
-          "rel": "invested_in",
-          "dst": "VÆRIDION",
-          "evidence": "participation from existing backers … Vsquared Ventures"
-        },
-        {
-          "src": "Alexander Rittweger",
-          "rel": "invested_in",
-          "dst": "VÆRIDION",
-          "evidence": "PAYBACK founder and DeepTech investor Alexander Rittweger also joined the round"
-        }
-      ]
-    },
-    {
-      "company_name": "QuantufAi, Inc",
-      "core_product": "A natural‑language quantum computing platform that compiles plain‑language requests into runnable OpenQASM circuits and runs them on any integrated quantum hardware with policy‑enforced receipts.",
-      "tech_stack": [],
-      "likely_bottleneck": "Orchestrating and routing jobs across multiple heterogeneous quantum backends while maintaining low latency and consistent verification.",
-      "value_prop_pitch": "We can rebuild your front‑end with Next.js to give you a fast, SEO‑friendly UI that scales as you add more quantum providers. Coupled with a vector‑based semantic search layer, you’ll let users find the right circuit templates instantly, cutting down on support tickets.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$398K",
-      "hq": "Sugar Land, Texas",
-      "website": "https://www.quantufai.com",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/2162154/000216215426000002/",
-      "discovered_at": "2026-11-06T05:57:21+00:00",
+      "funding_amount": "$138K",
+      "hq": "Charlestown, Massachusetts",
+      "website": "https://multikor.ai",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2100580/000210058026000001/",
+      "discovered_at": "2026-11-06T14:06:15+00:00",
       "source": "edgar",
-      "score": 61,
+      "score": 64,
       "gaps": [
-        "tech stack",
         "investors",
         "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.quantufai.com",
+        "website": "https://multikor.ai",
         "emails": [],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/quantufai",
-          "linkedin": "https://www.linkedin.com/company/quantufai-inc"
+          "linkedin": "https://www.linkedin.com/company/multikor-ai"
         },
         "contact_page": "",
-        "product_access": [
-          {
-            "label": "Try Q-LLM",
-            "url": "https://www.quantufai.com/demo"
-          },
-          {
-            "label": "Pricing",
-            "url": "https://www.quantufai.com/pricing"
-          },
-          {
-            "label": "Docs",
-            "url": "https://www.quantufai.com/docs"
-          }
-        ],
+        "product_access": [],
         "pages_crawled": [
-          "https://www.quantufai.com/"
+          "https://multikor.ai/",
+          "https://multikor.ai/company"
         ],
-        "enriched_at": "2026-11-06T05:59:07+00:00",
+        "enriched_at": "2026-11-06T14:07:12+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -634,30 +49,30 @@
         {
           "type": "funding",
           "source": "edgar",
-          "url": "https://www.sec.gov/Archives/edgar/data/2162154/000216215426000002/",
+          "url": "https://www.sec.gov/Archives/edgar/data/2100580/000210058026000001/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "2026-11-05T16:15:33-05:00",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "posted_at": "2026-11-06T08:01:22-05:00",
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [
         {
-          "name": "Thomas DeSouza",
-          "role": "Executive Officer, Director, Promoter, CEO",
-          "org": "QuantufAi, Inc",
-          "evidence": "Thomas DeSouza — Executive Officer, Director, Promoter",
-          "linkedin": "https://www.linkedin.com/in/thomasdesouza",
+          "name": "Suresh Nelakantam",
+          "role": "President, Executive Officer, Director",
+          "org": "Multikor.ai, Inc.",
+          "evidence": "Signed by Suresh Nelakantam, President.",
+          "linkedin": "https://www.linkedin.com/in/sureshnelakantam",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": "search"
         },
         {
-          "name": "Raji Khabbaz",
-          "role": "Executive Officer",
-          "org": "QuantufAi, Inc",
-          "evidence": "Raji Khabbaz — Executive Officer",
+          "name": "J. Benson",
+          "role": "Director",
+          "org": "Multikor.ai, Inc.",
+          "evidence": "J. Benson — Director",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -665,10 +80,10 @@
           "link_source": ""
         },
         {
-          "name": "Max Bruckner",
-          "role": "Executive Officer",
-          "org": "QuantufAi, Inc",
-          "evidence": "Max Bruckner — Executive Officer",
+          "name": "Leigh Turner",
+          "role": "Director",
+          "org": "Multikor.ai, Inc.",
+          "evidence": "Leigh Turner — Director",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -676,39 +91,299 @@
           "link_source": ""
         },
         {
-          "name": "Carl Kennedy",
-          "role": "Executive Officer",
-          "org": "QuantufAi, Inc",
-          "evidence": "Carl Kennedy — Executive Officer",
-          "linkedin": "",
+          "name": "Kimberly Boydston",
+          "role": "Co-Founder and Chief Architect",
+          "org": "Multikor.ai, Inc.",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/kimberly-boydston",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://multikor.ai/"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Symx.ai",
+      "core_product": "A full‑stack industrial AI platform that combines edge hardware boxes with AI analytics to monitor and optimize heavy‑industry equipment.",
+      "tech_stack": [
+        "Python",
+        "TensorFlow",
+        "AWS",
+        "Edge computing",
+        "IoT"
+      ],
+      "likely_bottleneck": "scaling real‑time data ingestion and inference across thousands of distributed edge devices",
+      "value_prop_pitch": "We can wrap your edge data APIs with a Next.js front‑end that streams vector‑embedded sensor readings to a semantic search layer, letting you query equipment health instantly. This eliminates latency bottlenecks and gives engineers a unified, searchable view of all telemetry without rebuilding your backend.",
+      "is_relevant": true,
+      "funding_stage": "Series A",
+      "funding_amount": "$6 million USD",
+      "hq": "Sudbury, Ontario",
+      "website": "https://symx.ai",
+      "source_url": "https://betakit.com/symx-ai-spent-years-unlocking-mining-data-now-its-building-an-operating-system-for-heavy-industry/",
+      "discovered_at": "2026-11-06T14:06:15+00:00",
+      "source": "rss",
+      "score": 73,
+      "gaps": [
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://symx.ai",
+        "emails": [
+          {
+            "value": "info@symx.ai",
+            "kind": "general",
+            "source_url": "https://symx.ai/team/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/symxai",
+          "twitter": "https://x.com/symxai"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://symx.ai/",
+          "https://symx.ai/team/"
+        ],
+        "enriched_at": "2026-11-06T14:07:26+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://betakit.com/symx-ai-spent-years-unlocking-mining-data-now-its-building-an-operating-system-for-heavy-industry/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Mon, 26 Oct 2026 10:01:00 +0000",
+          "seen_at": "2026-11-06T14:07:10+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Ash Agarwal",
+          "role": "Chief Executive Officer",
+          "org": "SYMX.AI",
+          "evidence": "Ash serves as the President and CEO of SYMX.AI, a premier Industrial IoT company",
+          "linkedin": "https://www.linkedin.com/in/ashutoshmagus",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Ryan Glasser",
-          "role": "Executive Officer",
-          "org": "QuantufAi, Inc",
-          "evidence": "Ryan Glasser — Executive Officer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Alexius Paul",
-          "role": "Signer (by POA)",
-          "org": "QuantufAi, Inc",
-          "evidence": "Signed by Alexius Paul, By POA from Thomas J. DeSouza, CEO",
-          "linkedin": "",
+          "name": "Saikat Prabhakar",
+          "role": "Head of Software Engineering and Product Development",
+          "org": "SYMX.AI",
+          "evidence": "Head of Software Engineering and Product Development",
+          "linkedin": "https://www.linkedin.com/in/saikat-prabhakar-b634bb14",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
         }
       ],
+      "edges": [
+        {
+          "src": "Ash Agarwal",
+          "rel": "works_at",
+          "dst": "SYMX.AI",
+          "evidence": "Ash serves as the President and CEO of SYMX.AI"
+        },
+        {
+          "src": "Saikat Prabhakar",
+          "rel": "works_at",
+          "dst": "SYMX.AI",
+          "evidence": "Head of Software Engineering and Product Development"
+        }
+      ]
+    },
+    {
+      "company_name": "Hesper AI",
+      "core_product": "AI agents that perform end‑to‑end insurance claim workup, reading documents, verifying data, contacting parties and providing decisions with evidence.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the orchestration of many AI agents while keeping latency low.",
+      "value_prop_pitch": "You should offload the agent orchestration to a Next.js front‑end backed by a vector semantic search layer to instantly retrieve relevant documents and reduce latency. This will let you scale claim processing without building custom pipelines for each data source.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://gethesperai.com",
+      "source_url": "https://www.ycombinator.com/launches/WpY-hesper-ai-ai-agents-that-work-every-insurance-claim-end-to-end",
+      "discovered_at": "2026-11-06T14:06:15+00:00",
+      "source": "yc",
+      "score": 75,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://gethesperai.com",
+        "emails": [
+          {
+            "value": "support@gethesperai.com",
+            "kind": "support",
+            "source_url": "https://gethesperai.com/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/HesperAIDotCom",
+          "linkedin": "https://www.linkedin.com/company/hesperai"
+        },
+        "contact_page": "https://gethesperai.com/contact/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://gethesperai.com/",
+          "https://gethesperai.com/about/",
+          "https://gethesperai.com/contact/"
+        ],
+        "enriched_at": "2026-11-06T14:07:31+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/WpY-hesper-ai-ai-agents-that-work-every-insurance-claim-end-to-end",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-06T14:07:10+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Pankaj Dhariwal",
+          "role": "Co‑founder",
+          "org": "Hesper AI",
+          "evidence": "We’re Pankaj and Nitish, co‑founders of Hesper AI",
+          "linkedin": "https://www.linkedin.com/in/pankaj-dhariwal",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Nitish Badu",
+          "role": "COO and Co-founder",
+          "org": "Hesper AI",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/nitish-badu-529b28165",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://gethesperai.com/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Pankaj Dhariwal",
+          "rel": "founded",
+          "dst": "Hesper AI",
+          "evidence": "We’re Pankaj and Nitish, co‑founders of Hesper AI"
+        },
+        {
+          "src": "Nitish Badu",
+          "rel": "founded",
+          "dst": "Hesper AI",
+          "evidence": "We’re Pankaj and Nitish, co‑founders of Hesper AI"
+        },
+        {
+          "src": "Pankaj Dhariwal",
+          "rel": "previously_at",
+          "dst": "Nanonets",
+          "evidence": "Pankaj was an engineering manager at Nanonets (YC W17)"
+        },
+        {
+          "src": "Nitish Badu",
+          "rel": "previously_at",
+          "dst": "Nanonets",
+          "evidence": "Nitish drove $4M+ ARR at Nanonets"
+        },
+        {
+          "src": "Nitish Badu",
+          "rel": "previously_at",
+          "dst": "Super.AI",
+          "evidence": "Nitish drove $4M+ ARR at Nanonets and 5x pipeline growth at Super.AI"
+        }
+      ]
+    },
+    {
+      "company_name": "iCallidus",
+      "core_product": "Tech used: AI, Azure, Firmware, Support, Microsoft Intune, Security, VPN, Incident Management",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://devitjobs.com",
+      "source_url": "https://devitjobs.com/jobs/iCallidus-Azure-Intune-Engineer",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
+      "source": "hiring",
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://devitjobs.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://devitjobs.com/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://devitjobs.com/pricing"
+          }
+        ],
+        "pages_crawled": [
+          "https://devitjobs.com/",
+          "https://devitjobs.com/about",
+          "https://devitjobs.com/contact"
+        ],
+        "enriched_at": "2026-11-06T14:07:35+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": ""
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50389352",
+          "roles": [
+            "Azure Intune Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-06T07:45:00Z",
+          "seen_at": "2026-11-06T14:07:10+00:00"
+        }
+      ],
+      "people": [],
       "edges": []
     },
     {
@@ -723,7 +398,7 @@
       "hq": "Los Angeles, US",
       "website": "https://zefr.com",
       "source_url": "https://zefr.com",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
       "source": "hiring",
       "score": 32,
       "gaps": [
@@ -748,12 +423,12 @@
         "product_access": [],
         "pages_crawled": [
           "https://zefr.com/",
-          "https://zefr.com/about",
           "https://zefr.com/about/company",
-          "https://zefr.com/about/leadership",
-          "https://zefr.com/contact-us"
+          "https://zefr.com/about",
+          "https://zefr.com/contact-us",
+          "https://zefr.com/about/leadership"
         ],
-        "enriched_at": "2026-11-06T05:59:14+00:00",
+        "enriched_at": "2026-11-06T14:07:43+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -771,7 +446,7 @@
             "other"
           ],
           "posted_at": "2026-11-06T01:07:33Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [],
@@ -789,7 +464,7 @@
       "hq": "",
       "website": "https://odettetechnologies.com",
       "source_url": "https://odettetechnologies.com",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
       "source": "hiring",
       "score": 38,
       "gaps": [
@@ -828,7 +503,7 @@
           "https://odettetechnologies.com/contact",
           "https://odettetechnologies.com/team"
         ],
-        "enriched_at": "2026-11-06T05:59:17+00:00",
+        "enriched_at": "2026-11-06T14:07:45+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -849,7 +524,7 @@
             "product"
           ],
           "posted_at": "2026-11-05T21:57:35Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [],
@@ -867,7 +542,7 @@
       "hq": "",
       "website": "https://www.greenhouse.com",
       "source_url": "https://grnh.se/uwaqx1xc9us",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
       "source": "hiring",
       "score": 33,
       "gaps": [
@@ -909,7 +584,7 @@
           "https://www.greenhouse.com/company",
           "https://www.greenhouse.com/contact"
         ],
-        "enriched_at": "2026-11-06T05:59:23+00:00",
+        "enriched_at": "2026-11-06T14:07:48+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -926,7 +601,7 @@
             "eng"
           ],
           "posted_at": "2026-11-05T21:34:32Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [],
@@ -944,7 +619,7 @@
       "hq": "",
       "website": "https://sortrace.com",
       "source_url": "https://sortrace.com",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
       "source": "hiring",
       "score": 35,
       "gaps": [
@@ -974,10 +649,10 @@
         "product_access": [],
         "pages_crawled": [
           "https://sortrace.com/",
-          "https://sortrace.com/contact",
-          "https://sortrace.com/company"
+          "https://sortrace.com/company",
+          "https://sortrace.com/contact"
         ],
-        "enriched_at": "2026-11-06T05:59:27+00:00",
+        "enriched_at": "2026-11-06T14:07:53+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -995,7 +670,7 @@
             "eng"
           ],
           "posted_at": "2026-11-05T20:25:23Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [],
@@ -1013,7 +688,7 @@
       "hq": "",
       "website": "https://app.niuro.io",
       "source_url": "https://app.niuro.io/source/H4yYHesP?ref=ps_EBRp88zU7jcdRZm8VJc8s6Wt_yVsmnoS1d4y2CMGR1k&utm_source=hacker-news&utm_medium=job-board&utm_campaign=mechanical-engineer-newyork-onsite&utm_content=hn-whoishiring-202611",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
       "source": "hiring",
       "score": 25,
       "gaps": [
@@ -1037,10 +712,10 @@
         "pages_crawled": [
           "https://app.niuro.io/",
           "https://app.niuro.io/about",
-          "https://app.niuro.io/contact",
-          "https://app.niuro.io/team"
+          "https://app.niuro.io/team",
+          "https://app.niuro.io/contact"
         ],
-        "enriched_at": "2026-11-06T05:59:30+00:00",
+        "enriched_at": "2026-11-06T14:07:56+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1059,7 +734,7 @@
             "eng"
           ],
           "posted_at": "2026-11-05T20:23:44Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [],
@@ -1077,7 +752,7 @@
       "hq": "Zürich, CH",
       "website": "https://www.chainsecurity.com",
       "source_url": "https://chainsecurity.com/",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
       "source": "hiring",
       "score": 34,
       "gaps": [
@@ -1109,7 +784,7 @@
           "https://www.chainsecurity.com/",
           "https://www.chainsecurity.com/about/"
         ],
-        "enriched_at": "2026-11-06T05:59:35+00:00",
+        "enriched_at": "2026-11-06T14:08:01+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1126,7 +801,7 @@
             "eng"
           ],
           "posted_at": "2026-11-05T15:35:47Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [],
@@ -1144,7 +819,7 @@
       "hq": "",
       "website": "https://n26.com",
       "source_url": "https://www.n26.com",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
+      "discovered_at": "2026-11-06T14:07:10+00:00",
       "source": "hiring",
       "score": 37,
       "gaps": [
@@ -1176,7 +851,7 @@
           "https://n26.com/en-eu",
           "https://n26.com/en-eu/team"
         ],
-        "enriched_at": "2026-11-06T05:59:41+00:00",
+        "enriched_at": "2026-11-06T14:08:04+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": ""
@@ -1195,90 +870,7 @@
             "eng"
           ],
           "posted_at": "2026-11-05T09:20:08Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "ALBERT",
-      "core_product": "Consumer fintech, 20M+ users, profitable 4+ years, 3.6-year average tenure. People stay because the work is good and the people are sharp.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://albert.com",
-      "source_url": "https://news.ycombinator.com/item?id=50373706",
-      "discovered_at": "2026-11-06T05:58:21+00:00",
-      "source": "hiring",
-      "score": 37,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://albert.com",
-        "emails": [
-          {
-            "value": "press@albert.com",
-            "kind": "press",
-            "source_url": "https://albert.com/"
-          },
-          {
-            "value": "support@albert.com",
-            "kind": "support",
-            "source_url": "https://albert.com/"
-          },
-          {
-            "value": "recruiting@albert.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50373706"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/albertapp"
-        },
-        "contact_page": "",
-        "product_access": [
-          {
-            "label": "Sign up",
-            "url": "https://albert.com/signup"
-          }
-        ],
-        "pages_crawled": [
-          "https://albert.com/",
-          "https://albert.com/about"
-        ],
-        "enriched_at": "2026-11-06T05:59:50+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50373706",
-          "roles": [
-            "REMOTE",
-            "ALMOST ANYWHERE"
-          ],
-          "role_kinds": [
-            "other"
-          ],
-          "posted_at": "2026-11-05T01:06:23Z",
-          "seen_at": "2026-11-06T05:58:21+00:00"
+          "seen_at": "2026-11-06T14:07:10+00:00"
         }
       ],
       "people": [],
