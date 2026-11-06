@@ -649,6 +649,9 @@ async def enrich_startup(
         )
 
     contact = build_contact(website, facts, s.company_name)
+    from techstack import detect
+
+    contact.site_tech = detect([f.html for f in fetched])  # from the pages already crawled: no extra requests
     updates = {"website": website}
     if not s.hq and (hq := jsonld_hq(facts)):
         updates["hq"] = hq

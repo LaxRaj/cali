@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 from datetime import datetime, timedelta, timezone
 from functools import lru_cache
 from pathlib import Path
@@ -18,18 +19,44 @@ SIMPLE_MODEL = os.environ.get("GROQ_MODEL_SIMPLE", "")  # optional cheaper model
 
 USAGE = {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "calls": 0}
 USAGE_BY: dict[str, dict[str, int]] = {}  # the same counters per call site (plan / triage / extract / team)
+USAGE_BY_MODEL: dict[str, dict[str, int]] = {}  # ... per Groq model
+USAGE_BY_KEY: dict[str, dict[str, int]] = {}  # ... per API key slot ("key1", "key2": never the key itself)
+QUOTA_HITS: list[dict] = []  # daily-limit 429s seen this run: which key/model, and Groq's own used/limit numbers
 
 
 def reset_usage() -> None:
     for k in USAGE:
         USAGE[k] = 0
     USAGE_BY.clear()
+    USAGE_BY_MODEL.clear()
+    USAGE_BY_KEY.clear()
+    QUOTA_HITS.clear()
 
 
-def record_usage(completion, purpose: str = "") -> None:
+def _limit_numbers(error: Exception) -> dict:
+    """Groq's TPD message says 'Limit 200000, Used 198484, Requested 2100': keep those numbers."""
+    m = re.search(r"Limit\s*(\d+).*?Used\s*(\d+)(?:.*?Requested\s*(\d+))?", str(error), re.S)
+    return {"limit": int(m.group(1)), "used": int(m.group(2)), **({"requested": int(m.group(3))} if m.group(3) else {})} if m else {}
+
+
+def record_quota_hit(error: Exception, key: str, model: str = "") -> None:
+    QUOTA_HITS.append({"key": key, "model": model, "at": datetime.now(timezone.utc).isoformat(timespec="seconds"), **_limit_numbers(error)})
+
+
+def usage_report() -> dict:
+    return {**USAGE, "by_purpose": {k: dict(v) for k, v in USAGE_BY.items()},
+            "by_model": {k: dict(v) for k, v in USAGE_BY_MODEL.items()},
+            "by_key": {k: dict(v) for k, v in USAGE_BY_KEY.items()}, "quota_hits": list(QUOTA_HITS)}
+
+
+def record_usage(completion, purpose: str = "", model: str = "", key: str = "") -> None:
     """Accumulate Groq token usage (tolerates fakes without a usage field)."""
     usage = getattr(completion, "usage", None)
     buckets = [USAGE] + ([USAGE_BY.setdefault(purpose, dict.fromkeys(USAGE, 0))] if purpose else [])
+    if model:
+        buckets.append(USAGE_BY_MODEL.setdefault(model, dict.fromkeys(USAGE, 0)))
+    if key:
+        buckets.append(USAGE_BY_KEY.setdefault(key, dict.fromkeys(USAGE, 0)))
     for b in buckets:
         b["calls"] += 1
         for k in ("prompt_tokens", "completion_tokens", "total_tokens"):
@@ -83,6 +110,7 @@ class MultiKeyGroq:
                 last = e
                 if not quota_exhausted(e):
                     raise
+                record_quota_hit(e, f"key{i + 1}", kwargs.get("model", ""))
                 self.active = i + 1 if i + 1 < len(self.clients) else i  # this key is spent for the day
         raise last  # pragma: no cover
 
@@ -136,10 +164,12 @@ def complete(client, messages: list[dict], models: list[str] | None = None, purp
                 model=model, temperature=0, response_format={"type": "json_object"}, messages=messages,
                 **reasoning_kwargs(model),
             )
-            record_usage(completion, purpose)
+            record_usage(completion, purpose, model=model, key=f"key{getattr(client, 'active', 0) + 1}")
             return completion
         except Exception as e:
             last = e
+            if quota_exhausted(e) and not isinstance(client, MultiKeyGroq):  # (MultiKeyGroq records its own per key)
+                record_quota_hit(e, "key1", model)
             if not (quota_exhausted(e) and i < len(chain) - 1):
                 raise
     raise last  # pragma: no cover

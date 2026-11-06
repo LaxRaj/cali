@@ -28,6 +28,7 @@ from export import export_all
 from extractor import extract, extract_people
 from ledger import observations_for, record as record_observations
 from entities import canonical_key
+from insights import load_watchlist, watch_hits
 from enrich import host_matches_company, host_of, is_company_host
 from memory import (
     DB_DIR, TABLE, _rows, mark_seen, seen_urls, update_profile_columns, upsert_edges, upsert_people, upsert_profile,
@@ -401,10 +402,18 @@ async def run(data_dir: Path) -> RunReport:
         if report.passed:
             with log.stage("store") as st:
                 findings = []
-                stored_signals = {r["company_name"].lower(): r.get("signals_json") for r in _rows(TABLE, data_dir)}
+                stored = _rows(TABLE, data_dir)
+                stored_signals = {r["company_name"].lower(): r.get("signals_json") for r in stored}
+                prev_scores = {canonical_key(r["company_name"]): int(r.get("score") or 0) for r in stored}
+                diff: dict[str, list] = {"added": [], "updated": []}
                 for (ex, source, _), res, rt in zip(accepted, results, ratings):
                     s, people, edges = res.extraction.startup, res.extraction.people, res.extraction.edges
                     key = s.company_name.lower()
+                    ck = canonical_key(s.company_name)
+                    if ck in prev_scores:
+                        diff["updated"].append({"company": s.company_name, "score": rt.score, "score_before": prev_scores[ck], "source": source})
+                    else:
+                        diff["added"].append({"company": s.company_name, "score": rt.score, "source": source})
                     try:
                         before = json.loads(stored_signals.get(key) or "[]")
                     except ValueError:
@@ -431,8 +440,12 @@ async def run(data_dir: Path) -> RunReport:
                         }
                     )
                 mark_seen([u for u in (normalize_url(c.url) for c in [*chosen, *lane]) if u not in report.deferred_urls], db_dir=data_dir)
+                log.diff = diff
+                watch = load_watchlist(data_dir)
+                watched = [{"company": f["company_name"], "why": h} for f in findings if (h := watch_hits(f, watch))]
                 (data_dir / "daily_brief.json").write_text(
-                    json.dumps({"generated_at": now, "findings": findings}, indent=2, ensure_ascii=False)
+                    json.dumps({"generated_at": now, "findings": findings, "diff": diff, "watchlist_hits": watched},
+                               indent=2, ensure_ascii=False)
                 )
                 export_all(data_dir)
                 st["counts"] = {"startups": len(findings), "people": report.people, "edges": report.edges}
@@ -467,7 +480,7 @@ async def run(data_dir: Path) -> RunReport:
             log.error(f"decider training skipped: {e}")
         if report.quota_exhausted:
             llm.mark_quota_exhausted(data_dir)
-        log.usage = {**llm.USAGE, "by_purpose": {k: dict(v) for k, v in llm.USAGE_BY.items()}}
+        log.usage = llm.usage_report()  # totals + per purpose / model / key slot + any daily-limit 429s
         log.quality = report.to_dict()
         log.passed, log.failures = report.passed, report.failures
         log.quota_exhausted, log.token_budget = report.quota_exhausted, llm.token_budget()

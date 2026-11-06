@@ -8,6 +8,7 @@ from pathlib import Path
 from decide.policy import decide_lead
 from entities import canonical_key
 from draft import build_draft, load_sender
+from insights import load_watchlist, similar_companies, timeline, watch_hits
 from investors import investor_clusters
 from ledger import TABLE as LEDGER
 from memory import DB_DIR, EDGES, PEOPLE, TABLE, _rows
@@ -76,8 +77,11 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
     outbox = load_outbox(db_dir)
     known = load_known(db_dir)
     trackbacks = _trackbacks(db_dir)
+    rows = _rows(TABLE, db_dir)
+    similar = similar_companies(rows, slugify)
+    watch = load_watchlist(db_dir)
     out = []
-    for r in _rows(TABLE, db_dir):
+    for r in rows:
         name = r["company_name"]
         k = _key(name)
         row = {f: r[f] for f in r if f not in ("vector", "contact_json", "score_json", "signals_json")}
@@ -113,6 +117,9 @@ def build_profiles(db_dir, now: datetime | None = None) -> list[dict]:
         p["outcome"] = outcome or None
         p["decision"] = decide_lead(p, outcome, now, lead_p=lead_p(p) if lead_p else None)
         p["trackbacks"] = trackbacks.get(canonical_key(p["company_name"]), [])
+        p["similar"] = similar.get(p["company_name"], [])
+        p["timeline"] = timeline(p["trackbacks"], p["signals"], p.get("discovered_at", ""))
+        p["watch"] = watch_hits(p, watch)
         p["why_now"] = why_now(p, now)
         p["warm_path"] = find_path(edges, known, p["company_name"])
         p["email_draft"] = build_draft(p, p["warm_path"], sender=sender)

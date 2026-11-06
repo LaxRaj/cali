@@ -44,6 +44,7 @@ class RunLog:
         self.quota_exhausted = False  # a Groq daily token limit ended or blocked this run: not a quality failure
         self.token_budget = 0  # tokens/day across all configured Groq keys (0 = unknown)
         self.failures: list[str] = []
+        self.diff: dict = {}  # what this run changed in the store: {"added": [...], "updated": [...]}
         self._token = _current.set(self)
 
     # --- recording -------------------------------------------------------------------------
@@ -126,6 +127,7 @@ class RunLog:
             "accepted": self.accepted,
             "rejections": self.rejections,
             "errors": self.errors,
+            "diff": self.diff,
         }
 
     def write(self, data_dir: Path) -> None:
