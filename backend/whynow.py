@@ -3,6 +3,8 @@
 from datetime import datetime, timezone
 from urllib.parse import urlparse
 
+from signals import clean_roles
+
 FRESH_DAYS = 14
 EARLY_STAGES = ("pre-seed", "preseed", "seed", "series a")
 
@@ -40,7 +42,7 @@ def why_now(profile: dict, now: datetime | None = None) -> list[dict]:
     for sig in profile.get("signals") or []:
         a = _age_days(sig.get("posted_at") or sig.get("seen_at", ""), now)
         when = f" ({a}d ago)" if a is not None else ""
-        roles = ", ".join(sig.get("roles", [])[:3])
+        roles = ", ".join(clean_roles(sig.get("roles", []))[:3])
         text = {
             "hiring": f"Hiring{when}: {roles}" if roles else f"Hiring{when}",
             "seeking_freelancer": f"Looking for freelancers{when}",

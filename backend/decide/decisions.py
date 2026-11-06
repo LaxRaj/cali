@@ -30,6 +30,13 @@ STARTUP_FALSE = " || ".join([
 STARTUP = noul("startup", "Is this about one specific early-stage startup (a launch, funding round, product or founders)?",
                STARTUP_TRUE, STARTUP_FALSE)
 
+# Is this lead worth pursuing? Zero-shot prototypes are weak; the 'lead' head learned from recorded outcomes
+# (decide/training.outcome_labels) carries it, and export only asks once that head exists.
+LEAD = noul("lead", "Is this an early-stage startup whose engineering problem we could plausibly help with?",
+            " || ".join(["early-stage startup building developer tools or infrastructure with a hard technical problem",
+                         "seed-stage team scaling its backend, data pipeline or search"]),
+            " || ".join(["large established company", "consumer app with no engineering bottleneck"]))
+
 # Prior (logit shift) per discovery source: where startups are announced vs where hobby projects live.
 SOURCE_PRIOR = {"launch_hn": 1.5, "yc": 1.0, "edgar": 0.0, "rss": 0.3, "hiring": 0.3, "hn": -0.2, "web": -0.3}
 GATE_MIN = 0.30  # skip extraction below this page-level probability (recall-biased: extraction re-checks)

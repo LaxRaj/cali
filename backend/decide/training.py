@@ -30,8 +30,14 @@ def labelled(rows: list[dict]) -> list[tuple[str, int]]:
     (the gate is the model's own guess, and errors say nothing about the page)."""
     from decide.decisions import candidate_state
 
+    latest: dict[str, dict] = {}
+    for r in rows:  # one label per page: the most recent judgement wins (re-crawls must not multiply a label)
+        if r.get("lane") or r.get("source") == "hiring":
+            continue  # hiring posts are accepted without LLM validation: not evidence about what a startup page looks like
+        latest.pop(r.get("url") or id(r), None)
+        latest[r.get("url") or id(r)] = r
     out = []
-    for r in rows:
+    for r in latest.values():
         if r.get("outcome") == "accepted":
             label = 1
         elif r.get("outcome") == "rejected":
@@ -40,4 +46,34 @@ def labelled(rows: list[dict]) -> list[tuple[str, int]]:
             continue
         if r.get("title"):
             out.append((candidate_state(r["title"], r.get("snippet", ""), r.get("source", "")), label))
+    return out
+
+
+POSITIVE_OUTCOMES = {"replied", "meeting", "won"}
+UNINFORMATIVE_REASONS = {"no_contact", "other"}  # 'passed' for these says nothing about whether the lead was a fit
+
+
+def lead_state(profile: dict) -> str:
+    """What the 'lead' head reads: the company as we understood it, not how reachable it was."""
+    stack = ", ".join((profile.get("tech_stack") or [])[:5])
+    return ". ".join(x for x in (
+        profile.get("core_product", ""), profile.get("likely_bottleneck", ""),
+        f"Stage: {profile['funding_stage']}" if profile.get("funding_stage") else "", f"Stack: {stack}" if stack else "",
+    ) if x)
+
+
+def outcome_labels(profiles: list[dict], outcomes: dict[str, dict]) -> list[tuple[str, int]]:
+    """Real-world results as labels for the 'lead' head: replied / meeting / won = 1, passed (for a fit reason) = 0.
+    'contacted' alone is not a label yet (no answer either way)."""
+    by_key = {p["company_name"].strip().lower(): p for p in profiles}
+    out = []
+    for key, o in outcomes.items():
+        p = by_key.get(key)
+        status = o.get("status")
+        if not p or not lead_state(p):
+            continue
+        if status in POSITIVE_OUTCOMES and o.get("intent") not in ("unsubscribe", "complaint"):
+            out.append((lead_state(p), 1))
+        elif status == "passed" and o.get("reason") not in UNINFORMATIVE_REASONS:
+            out.append((lead_state(p), 0))
     return out
