@@ -2,6 +2,19 @@
 
 Found while fixing the token and run-state logic. Ordered by priority. Each item lists the problem, a proposal, a rough effort and how to tell it is done. All stay within the zero-cost rule and static-JSON data model.
 
+## Status (2026-11-06, branch `worktree-beast`)
+
+| # | Request | Status |
+|---|---|---|
+| 1 | Redeploy after every scout commit | **Done:** `scout.yml` POSTs `DEPLOY_HOOK_URL` when that secret is set. |
+| 2 | Per-key and per-model quota view | **Done:** runs record tokens per key slot and per model, plus Groq's used/limit from each daily-limit 429. Shown on `/runs/[id]`. |
+| 3 | Tokens per valid startup | **Done:** by-day table column (`dailyTotals().tokensPerValid`), with tests. |
+| 4 | Run diff | **Done:** runs record added/updated (with the score before), shown on `/runs/[id]`. Older runs say "not recorded". |
+| 5 | Stale / quota alerts | **Done:** one `cali-alert` GitHub issue, opened or commented on, and closed when healthy. A Monday `cali-digest` issue too. |
+| 6 | Run-log filters and export | **Done:** filter by state and day, CSV/JSON export. Queue and startups also export CSV. |
+| 7 | Outcomes funnel on the overview | **Done:** ready, contacted, replied, meeting, won, with conversions, plus reply/bounce rates from `outreach_summary.json`. |
+| 8 | Component gallery | Not done. Instead, the demo data now puts every component in a non-empty state (`npm run dev:demo`). |
+
 ## P1
 
 ### 1. Redeploy after every scout commit
