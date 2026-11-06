@@ -34,6 +34,17 @@ describe("RunCalendar", () => {
     expect(ok.className).toContain("bg-emerald");
     expect(bad.className).toContain("bg-rose");
   });
+  it("shows a quota stop amber with a glyph, never as a red failure", () => {
+    render(<RunCalendar runs={[run("20261021T060000Z", false, { status: "quota" })]} />);
+    const [q] = screen.getAllByRole("link");
+    expect(q.className).toContain("bg-amber");
+    expect(q.className).not.toContain("bg-rose");
+    expect(screen.getByText("Oct 21: quota")).toBeInTheDocument();
+  });
+  it("derives quota for old runs without a status (no work, few tokens)", () => {
+    render(<RunCalendar runs={[run("20261021T060000Z", false, { failures: ["only 0 valid startups (< 3)"], tokens: 0 })]} />);
+    expect(screen.getAllByRole("link")[0].getAttribute("data-state")).toBe("quota");
+  });
   it("tells screen readers the date and outcome", () => {
     render(<RunCalendar runs={[run("20261020T060000Z", true)]} />);
     expect(screen.getByText("Oct 20: passed")).toBeInTheDocument();

@@ -4,11 +4,18 @@ import type { DayTotal } from "@/lib/metrics";
 import { DayRollupTable } from "./day-rollup-table";
 
 const days: DayTotal[] = [
-  { day: "2026-10-19", tokens: 90_000, budget: 400_000, runs: 1, passed: 1, failed: 0, quota: 0 },
-  { day: "2026-10-20", tokens: 275_414, budget: 200_000, runs: 9, passed: 5, failed: 1, quota: 3 },
+  { day: "2026-10-19", tokens: 90_000, budget: 400_000, runs: 1, passed: 1, failed: 0, quota: 0, valid: 0, tokensPerValid: null },
+  { day: "2026-10-20", tokens: 275_414, budget: 200_000, runs: 9, passed: 5, failed: 1, quota: 3, valid: 30, tokensPerValid: 9180 },
 ];
 
 describe("DayRollupTable", () => {
+  it("shows tokens per valid startup, and a dash on a day with none", () => {
+    render(<DayRollupTable days={days} />);
+    const [, newest, oldest] = screen.getAllByRole("row");
+    expect(newest).toHaveTextContent("9.2k ×30");
+    expect(within(oldest).getByText("—")).toBeInTheDocument();
+    expect(oldest).not.toHaveTextContent("NaN");
+  });
   it("lists the newest day first", () => {
     render(<DayRollupTable days={days} />);
     const rows = screen.getAllByRole("row").slice(1);

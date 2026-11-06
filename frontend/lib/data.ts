@@ -14,19 +14,35 @@ export type Person = {
 };
 
 export type Decision = {
-  action: "contact_now" | "enrich_more" | "watch" | "skip" | "follow_up";
+  /** review = a good lead a human should look at first (below the unattended-send bar, or no company address). */
+  action: "contact_now" | "review" | "enrich_more" | "watch" | "skip" | "follow_up";
   urgency: "hot" | "warm" | "cold";
   priority: number;
   reasons: string[];
   next_step: string;
   provider: string;
+  /** Signal-adjusted score the outreach quality gate compares to 70. */
+  score?: number;
+  /** p(worth pursuing) from the head learned on your own outcomes, once it exists. */
+  lead_p?: number;
 };
 export type Outcome = {
   company: string;
   status: string;
   note: string;
+  reason?: string;
+  /** How their reply reads: interested | not_now | referral | question | unsubscribe | complaint | bounce | other */
+  intent?: string;
   updated: string;
 };
+export type TimelineEvent = {
+  at: string;
+  kind: "discovered" | "learned" | "hiring" | "funding" | "launch" | "seeking_freelancer";
+  items: string[];
+  source_urls: string[];
+  count: number;
+};
+export type Similar = { company_name: string; slug: string; similarity: number };
 
 export type ContactItem = { value: string; kind: string; source_url: string };
 export type Contact = {
@@ -37,7 +53,13 @@ export type Contact = {
   contact_page?: string;
   /** Links on the company's own pages to try or read the product ("use it first"). */
   product_access?: { label: string; url: string }[];
+  /** Website technology fingerprinted on the company's own pages (not the product's stack). */
+  site_tech?: { name: string; category: string }[];
   status?: string;
+  pages_crawled?: string[];
+  enriched_at?: string;
+  attempts?: number;
+  last_attempt?: string;
 };
 export type Trackback = {
   entity_type: "startup" | "person" | "edge" | "contact";
@@ -73,6 +95,13 @@ export type Profile = {
   score?: number;
   score_parts?: Record<string, number>;
   gaps?: string[];
+  axes?: Record<string, number>;
+  /** Known stage, a named leader and a published way in: worth pursuing now. */
+  qualified?: boolean;
+  similar?: Similar[];
+  timeline?: TimelineEvent[];
+  /** Why this matches data/watchlist.json ("company", "keyword: vector search"); empty when it does not. */
+  watch?: string[];
   trackbacks?: Trackback[];
   last_seen?: string;
   warm_path?: { via: string; summary: string; hops: Edge[] } | null;
@@ -85,6 +114,9 @@ export type Profile = {
     subject: string;
     body: string;
     mailto: string;
+    /** Nothing concrete to say: never sent unattended; a human should rewrite it. */
+    needs_human?: boolean;
+    needs_human_reason?: string;
   };
   why_now?:{ signal: string; text: string; source_url: string }[];
   /** Hiring / launch / funding signals the scout recorded (backend/signals.py). */
@@ -174,6 +206,60 @@ export type Stage = {
   notes: string[];
 };
 
+export type TokenUsage = {
+  prompt_tokens?: number;
+  completion_tokens?: number;
+  total_tokens?: number;
+  calls?: number;
+};
+
+/** backend/quality.RunReport.to_dict(); every field optional because older runs lack some. */
+export type RunQuality = {
+  candidates?: number;
+  crawled?: number;
+  extracted?: number;
+  relevant?: number;
+  valid?: number;
+  validity_rate?: number;
+  qualified?: number;
+  avg_score?: number;
+  avg_qualified_score?: number;
+  dropped_ungrounded?: number;
+  gated?: number;
+  enriched?: number;
+  with_website?: number;
+  with_email?: number;
+  with_phone?: number;
+  people?: number;
+  people_linked?: number;
+  issues?: Record<string, number>;
+  deferred_urls?: string[];
+};
+
+export type OutreachSummary = {
+  generated_at: string;
+  queued: number;
+  statuses: Record<string, number>;
+  sent: number;
+  replied: number;
+  reply_rate: number;
+  bounce_rate: number;
+  reply_intents: Record<string, number>;
+  by_day: Record<string, { sent: number; bounced: number; replied: number; complaint: number }>;
+  paused: boolean;
+  send_enabled: boolean;
+  skip_reasons: Record<string, number>;
+};
+
+export type EnrichLastRun = {
+  started_at: string;
+  finished_at?: string;
+  skipped: string;
+  tokens?: number;
+  quota_exhausted?: boolean;
+  startups: { company: string; status: string; score: number; emails: number; website: string }[];
+};
+
 export type RunDetail = RunSummary & {
   plan: { web_queries?: string[]; hn_keywords?: string[] };
   stages: Stage[];
@@ -181,13 +267,18 @@ export type RunDetail = RunSummary & {
     string,
     { candidates: number; seconds: number; error: string }
   >;
-  usage: {
-    prompt_tokens?: number;
-    completion_tokens?: number;
-    total_tokens?: number;
-    calls?: number;
+  usage: TokenUsage & {
+    by_purpose?: Record<string, TokenUsage>;
+    by_model?: Record<string, TokenUsage>;
+    by_key?: Record<string, TokenUsage>;
+    quota_hits?: { key: string; model: string; at: string; limit?: number; used?: number }[];
   };
-  quality: Record<string, unknown>;
+  quality: RunQuality;
+  /** What the run changed in the store (absent on runs recorded before 2026-11-06). */
+  diff?: {
+    added: { company: string; score: number; source: string }[];
+    updated: { company: string; score: number; score_before: number; source: string }[];
+  };
   decisions?: {
     provider: string;
     calls: number;
@@ -220,22 +311,36 @@ export type RunDetail = RunSummary & {
   errors: string[];
 };
 
-export { TOKEN_BUDGET } from "./constants";
-
 // The backend workflow commits these files; the frontend reads them at build time (no API, no DB).
 const DATA_DIR =
   process.env.CALI_DEMO === "1"
     ? path.join(process.cwd(), "demo-data")
     : path.join(process.cwd(), "..", "backend", "data");
 
+/** Files that exist but could not be parsed: shown as a banner, never silently treated as "no data". */
+const CORRUPT = new Map<string, string>();
+
 function readJson<T>(...parts: string[]): T | null {
+  const file = path.join(DATA_DIR, ...parts);
+  let raw: string;
   try {
-    return JSON.parse(
-      fs.readFileSync(path.join(DATA_DIR, ...parts), "utf-8"),
-    ) as T;
+    raw = fs.readFileSync(file, "utf-8");
   } catch {
+    return null; // missing: a normal state (e.g. before the first run, or a local-only file)
+  }
+  try {
+    CORRUPT.delete(parts.join("/"));
+    return JSON.parse(raw) as T;
+  } catch (e) {
+    CORRUPT.set(parts.join("/"), e instanceof Error ? e.message : String(e));
     return null;
   }
+}
+
+export function readDataHealth(): { file: string; error: string }[] {
+  // the core files every page relies on; read them so a corrupt one is reported wherever the banner renders
+  for (const f of ["runs_index.json", "profiles.json", "graph.json"]) readJson(f);
+  return [...CORRUPT.entries()].map(([file, error]) => ({ file, error }));
 }
 
 export const readMeta = () => readJson<{ demo?: boolean }>("meta.json");
@@ -250,5 +355,12 @@ export const readOutreachState = () =>
   readJson<{ paused: boolean; reason: string; last_sent: string }>(
     "outreach_state.json",
   );
-export const readGraph =(): Graph =>
+export const readGraph = (): Graph =>
   readJson<Graph>("graph.json") ?? { nodes: [], edges: [] };
+/** Written by `outreach.py summary` on the sending machine (address-free); absent until outreach runs. */
+export const readOutreachSummary = () =>
+  readJson<OutreachSummary>("outreach_summary.json");
+export const readOutcomes = (): Record<string, Outcome> =>
+  readJson<Record<string, Outcome>>("outcomes.json") ?? {};
+export const readEnrichLastRun = () =>
+  readJson<EnrichLastRun>("enrich_last_run.json");
