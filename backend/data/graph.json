@@ -948,7 +948,7 @@
       "type": "startup",
       "degree": 2,
       "website": "https://sortrace.com",
-      "score": 35
+      "score": 49
     },
     {
       "id": "eric",
@@ -3761,24 +3761,6 @@
       "links": {}
     },
     {
-      "id": "rahel surshi",
-      "label": "Rahel Surshi",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-Founder & CEO",
-      "links": {}
-    },
-    {
-      "id": "tomas kjellstrand",
-      "label": "Tomas Kjellstrand",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-Founder & CTO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/tomas-kjellstrand-51057863"
-      }
-    },
-    {
       "id": "ash agarwal",
       "label": "Ash Agarwal",
       "type": "person",
@@ -3796,6 +3778,26 @@
       "role": "Head of Software Engineering and Product Development",
       "links": {
         "linkedin": "https://www.linkedin.com/in/saikat-prabhakar-b634bb14"
+      }
+    },
+    {
+      "id": "rahel surshi",
+      "label": "Rahel Surshi",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/rahelsurshi"
+      }
+    },
+    {
+      "id": "tomas kjellstrand",
+      "label": "Tomas Kjellstrand",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder & CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/tomas-kjellstrand-51057863"
       }
     },
     {
@@ -5463,28 +5465,28 @@
       "score": 64
     },
     {
-      "id": "icallidus",
-      "label": "iCallidus",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://devitjobs.com",
-      "score": 25
-    },
-    {
-      "id": "zefr",
-      "label": "Zefr",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://zefr.com",
-      "score": 32
-    },
-    {
       "id": "odette technologies",
       "label": "Odette Technologies",
       "type": "startup",
       "degree": 0,
       "website": "https://odettetechnologies.com",
       "score": 38
+    },
+    {
+      "id": "n26 se",
+      "label": "N26 SE",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://n26.com",
+      "score": 25
+    },
+    {
+      "id": "chainsecurity",
+      "label": "ChainSecurity",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.chainsecurity.com",
+      "score": 28
     },
     {
       "id": "piramidal",
@@ -5495,28 +5497,28 @@
       "score": 33
     },
     {
+      "id": "zefr",
+      "label": "Zefr",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://zefr.com",
+      "score": 32
+    },
+    {
+      "id": "icallidus",
+      "label": "iCallidus",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://devitjobs.com",
+      "score": 25
+    },
+    {
       "id": "nirvana robotics",
       "label": "Nirvana Robotics",
       "type": "startup",
       "degree": 0,
       "website": "https://app.niuro.io",
       "score": 25
-    },
-    {
-      "id": "chainsecurity",
-      "label": "ChainSecurity",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.chainsecurity.com",
-      "score": 34
-    },
-    {
-      "id": "n26 se",
-      "label": "N26 SE",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://n26.com",
-      "score": 37
     },
     {
       "id": "kevin hartz",
@@ -13091,34 +13093,6 @@
       ]
     },
     {
-      "source": "rahel surshi",
-      "target": "sortrace",
-      "rel": "founded",
-      "evidence": "Co-Founder & CEO",
-      "sources": [
-        {
-          "source_url": "https://sortrace.com",
-          "run_id": "backfill-2026-11-06",
-          "first_seen": "2026-11-06T06:02:29+00:00",
-          "last_seen": "2026-11-06T06:02:29+00:00"
-        }
-      ]
-    },
-    {
-      "source": "tomas kjellstrand",
-      "target": "sortrace",
-      "rel": "founded",
-      "evidence": "Co-Founder & CTO",
-      "sources": [
-        {
-          "source_url": "https://sortrace.com",
-          "run_id": "backfill-2026-11-06",
-          "first_seen": "2026-11-06T06:02:29+00:00",
-          "last_seen": "2026-11-06T06:02:29+00:00"
-        }
-      ]
-    },
-    {
       "source": "ash agarwal",
       "target": "symx.ai",
       "rel": "works_at",
@@ -13213,6 +13187,34 @@
           "run_id": "20261106T140452Z",
           "first_seen": "2026-11-06T14:08:04+00:00",
           "last_seen": "2026-11-06T14:08:04+00:00"
+        }
+      ]
+    },
+    {
+      "source": "rahel surshi",
+      "target": "sortrace",
+      "rel": "founded",
+      "evidence": "Co-Founder & CEO",
+      "sources": [
+        {
+          "source_url": "https://sortrace.com",
+          "run_id": "backfill-2026-11-06",
+          "first_seen": "2026-11-06T06:02:29+00:00",
+          "last_seen": "2026-11-06T15:50:47+00:00"
+        }
+      ]
+    },
+    {
+      "source": "tomas kjellstrand",
+      "target": "sortrace",
+      "rel": "founded",
+      "evidence": "Co-Founder & CTO",
+      "sources": [
+        {
+          "source_url": "https://sortrace.com",
+          "run_id": "backfill-2026-11-06",
+          "first_seen": "2026-11-06T06:02:29+00:00",
+          "last_seen": "2026-11-06T15:50:47+00:00"
         }
       ]
     }
