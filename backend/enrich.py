@@ -50,6 +50,9 @@ NOT_COMPANY_HOSTS = {
     "venturebeat.com", "theverge.com", "wired.com", "t.co", "bit.ly", "pitchbook.com", "tracxn.com", "angel.co",
     "wellfound.com", "notion.so", "docs.google.com", "calendly.com", "typeform.com", "forms.gle",
 }
+TEAM_ONLY = re.compile(r"/(team|people|leadership|founders|who-we-are)/?$", re.I)
+CONTACT_ONLY = re.compile(r"/contact(-us)?/?$", re.I)
+LEADERSHIP = re.compile(r"leadership|our team|meet the team|founders?\b|chief executive|\bCEO\b", re.I)
 TEAM_PATH = re.compile(r"/(contact|contact-us|about|about-us|team|company|people|leadership|founders|who-we-are)/?$", re.I)
 PERSON_HOSTS = {"linkedin.com": "linkedin", "twitter.com": "twitter", "x.com": "twitter", "github.com": "github"}
 TWITTER_RESERVED = {"share", "intent", "home", "i", "search", "hashtag", "login", "signup", "explore", "settings", "tos", "privacy"}
@@ -481,8 +484,23 @@ def apply_person_links(people: list[Person], pages: list[PageFacts], company: st
 
 
 def team_markdown(pages: list[tuple[str, str]], limit: int = 9000) -> str:
-    """Concatenate the About/Team page markdown (url, markdown) for a people-extraction pass."""
-    parts = [md for url, md in pages if TEAM_PATH.search(urlparse(url).path) and md]
+    """About/Team page markdown (url, markdown) for a people-extraction pass.
+
+    Team and leadership pages come first, then about; contact pages are left out (their emails are parsed
+    separately and their forms would use up the window the extractor reads). Same-site nav links are reduced
+    to their text, and a long page starts at its first leadership heading, so names are not cut off."""
+    def rank(url: str) -> int:
+        path = urlparse(url).path
+        return 0 if TEAM_ONLY.search(path) else 1
+
+    chosen = [(u, md) for u, md in pages if md and TEAM_PATH.search(urlparse(u).path) and not CONTACT_ONLY.search(urlparse(u).path)]
+    parts = []
+    for url, md in sorted(chosen, key=lambda p: rank(p[0])):
+        host = re.escape(host_of(url))
+        md = re.sub(rf"\[([^\]]*)\]\(https?://(?:www\.)?{host}[^)]*\)", r"\1", md)
+        if len(md) > limit and (m := LEADERSHIP.search(md)) and m.start() > 300:
+            md = md[max(0, m.start() - 200):]
+        parts.append(md)
     return "\n\n".join(parts)[:limit]
 
 

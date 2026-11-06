@@ -19,6 +19,7 @@ import llm
 from backfill import backfill
 from enrich_github import enrich_people_github
 from memory import DB_DIR
+from rescore import rescore
 from scraper import search_results
 
 DEFAULT_LIMIT = 10  # each startup may cost one team-page LLM call (~1.5k Groq tokens)
@@ -33,6 +34,7 @@ def search_fn(query: str) -> list[dict]:
 
 async def run(data_dir: Path, limit: int = DEFAULT_LIMIT, *, backfill_fn=backfill) -> dict:
     out = {"started_at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "skipped": "", "startups": []}
+    out["rescore"] = rescore(data_dir)  # local and free: keeps every stored score in step with the current rubric
     if os.environ.get("CALI_ENRICH", "1") == "0":
         out["skipped"] = "CALI_ENRICH=0"
     elif llm.quota_blocked(data_dir):
