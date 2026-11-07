@@ -1,0 +1,667 @@
+{
+  "run_id": "20261107T124044Z",
+  "started_at": "2026-11-07T12:40:44+00:00",
+  "duration_s": 210.9,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 271,
+    "selected": 11,
+    "crawled": 9,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5
+  },
+  "tokens": 18994,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 35,
+    "web": 30,
+    "edgar": 11,
+    "rss": 63
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "seed round launch AI\u2011powered semantic search platform founded by ex\u2011Google engineer",
+      "Series A funding for developer tooling startup building vector\u2011search API for Next.js apps",
+      "pre\u2011seed funding announcement for RAG\u2011based knowledge\u2011base startup targeting SaaS developers",
+      "launch of data\u2011heavy web app startup using hybrid search and retrieval, backed by Andreessen Horowitz",
+      "early\u2011stage startup raises bridge round for open\u2011source search infrastructure, investors include Sequoia and First Round"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search",
+      "developer tooling",
+      "search infrastructure"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 41,
+        "accepted": 32,
+        "score_sum": 2473,
+        "yield": 0.78,
+        "avg_score": 77.3
+      },
+      "web": {
+        "crawled": 13,
+        "accepted": 10,
+        "score_sum": 772,
+        "yield": 0.769,
+        "avg_score": 77.2
+      },
+      "yc": {
+        "crawled": 11,
+        "accepted": 11,
+        "score_sum": 621,
+        "yield": 1.0,
+        "avg_score": 56.5
+      },
+      "hiring": {
+        "crawled": 196,
+        "accepted": 196,
+        "score_sum": 4976,
+        "yield": 1.0,
+        "avg_score": 25.4
+      },
+      "edgar": {
+        "crawled": 22,
+        "accepted": 4,
+        "score_sum": 272,
+        "yield": 0.182,
+        "avg_score": 68.0
+      },
+      "hn": {
+        "crawled": 2,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 191,
+        "yield": 1.0,
+        "avg_score": 47.8
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 3,
+      "web": 3,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 114,
+    "fallbacks": 0,
+    "avg_latency_ms": 87.3,
+    "jev_input_tokens": 54319,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-07T12:40:44+00:00",
+      "offset_s": 0.0,
+      "duration_s": 41.95,
+      "status": "ok",
+      "counts": {
+        "candidates": 271,
+        "src_hn": 31,
+        "src_launch_hn": 4,
+        "src_rss": 63,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 11,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-07T12:41:26+00:00",
+      "offset_s": 41.95,
+      "duration_s": 10.51,
+      "status": "ok",
+      "counts": {
+        "in": 271,
+        "selected": 11,
+        "hiring_lane": 8,
+        "hiring_refreshed": 44
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 3, 'web': 3, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-07T12:41:37+00:00",
+      "offset_s": 52.46,
+      "duration_s": 11.22,
+      "status": "ok",
+      "counts": {
+        "requested": 11,
+        "crawled": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-07T12:41:48+00:00",
+      "offset_s": 63.68,
+      "duration_s": 57.55,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-07T12:42:45+00:00",
+      "offset_s": 121.24,
+      "duration_s": 83.55,
+      "status": "ok",
+      "counts": {
+        "startups": 13,
+        "websites": 13,
+        "emails": 13,
+        "phones": 2
+      },
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "structured data: 2 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "structured data: 3 people"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-07T12:44:09+00:00",
+      "offset_s": 204.79,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 51
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-07T12:44:09+00:00",
+      "offset_s": 204.79,
+      "duration_s": 4.78,
+      "status": "ok",
+      "counts": {
+        "startups": 13,
+        "people": 14,
+        "edges": 15
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.51,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 0.95,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 35,
+      "seconds": 3.92,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 4.5,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 11,
+      "seconds": 7.29,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 63,
+      "seconds": 41.95,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14619,
+    "completion_tokens": 4375,
+    "total_tokens": 18994,
+    "calls": 8,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 11210,
+        "completion_tokens": 4275,
+        "total_tokens": 15485,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 3409,
+        "completion_tokens": 100,
+        "total_tokens": 3509,
+        "calls": 3
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 14619,
+        "completion_tokens": 4375,
+        "total_tokens": 18994,
+        "calls": 8
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 14619,
+        "completion_tokens": 4375,
+        "total_tokens": 18994,
+        "calls": 8
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 271,
+    "crawled": 9,
+    "extracted": 5,
+    "relevant": 5,
+    "valid": 5,
+    "sources": {
+      "rss": 3,
+      "web": 1,
+      "yc": 1
+    },
+    "people": 14,
+    "edges": 15,
+    "dropped_ungrounded": 13,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 13,
+    "with_website": 13,
+    "with_email": 11,
+    "with_phone": 2,
+    "people_linked": 7,
+    "avg_score": 51.4,
+    "qualified": 4,
+    "avg_qualified_score": 77.8,
+    "issues": {
+      "warn: empty tech_stack": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "mercurynews.com/2026/05/20/andreessen-ai-search-startup-exa",
+      "ycombinator.com/launches/Wwy-evardi-agents-that-engineer-the-grid-edge",
+      "postraid.com",
+      "startupsunion.com/genspark-raises-100-million-to-take-on-google-search-with-ai"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Bioliberty",
+      "url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
+      "source": "rss",
+      "people": 0,
+      "edges": 0,
+      "score": 57,
+      "gaps": [
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.bioliberty.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Alethio Therapeutics",
+      "url": "https://www.eu-startups.com/2026/11/oxford-spin-out-alethio-therapeutics-raises-e80-46-million-series-a-to-advance-targeted-blood-cancer-therapies/",
+      "source": "rss",
+      "people": 6,
+      "edges": 6,
+      "score": 92,
+      "gaps": [
+        "tech stack"
+      ],
+      "website": "https://alethiotherapeutics.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Vensum Power",
+      "url": "https://www.eu-startups.com/2026/11/helsinkis-vensum-power-secures-e9-million-to-scale-its-software-defined-power-conversion-platform/",
+      "source": "rss",
+      "people": 2,
+      "edges": 6,
+      "score": 91,
+      "gaps": [
+        "phone"
+      ],
+      "website": "https://www.vensum.com",
+      "emails": 4,
+      "phones": 0
+    },
+    {
+      "company": "Genspark",
+      "url": "https://getcoai.com/news/ai-search-startup-genspark-secures-100m-to-challenge-google/",
+      "source": "web",
+      "people": 1,
+      "edges": 1,
+      "score": 61,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.genspark.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Cyclon",
+      "url": "https://www.ycombinator.com/launches/WkD-cyclon-the-ai-phone-to-replace-your-iphone",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 67,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://cyclon.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Prior Labs",
+      "url": "https://priorlabs.ai",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://priorlabs.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "BuildQ",
+      "url": "https://buildq.ai/careers/founding-engineer",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.buildq.ai",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "IMC Trading",
+      "url": "https://www.imc.com/eu/careers/jobs/4567047101",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.imc.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Avoca",
+      "url": "https://www.avoca.ai/careers#open-roles",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.avoca.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Antithesis",
+      "url": "https://antithesis.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://antithesis.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Splash Tech",
+      "url": "https://splash.tech/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://splash.tech",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Mechanize",
+      "url": "https://www.mechanize.work/apply/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.mechanize.work",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Telescope Partners",
+      "url": "https://news.ycombinator.com/item?id=50346665",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.telescopepartners.com",
+      "emails": 1,
+      "phones": 1
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2163077/000216307726000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2163967/000216396726000002/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Bioliberty",
+        "score": 57,
+        "source": "rss"
+      },
+      {
+        "company": "Alethio Therapeutics",
+        "score": 92,
+        "source": "rss"
+      },
+      {
+        "company": "Vensum Power",
+        "score": 91,
+        "source": "rss"
+      },
+      {
+        "company": "Cyclon",
+        "score": 67,
+        "source": "yc"
+      },
+      {
+        "company": "Prior Labs",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "BuildQ",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "IMC Trading",
+        "score": 25,
+        "source": "hiring"
+      },
+      {
+        "company": "Avoca",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Antithesis",
+        "score": 41,
+        "source": "hiring"
+      },
+      {
+        "company": "Splash Tech",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "Mechanize",
+        "score": 49,
+        "source": "hiring"
+      },
+      {
+        "company": "Telescope Partners",
+        "score": 41,
+        "source": "hiring"
+      }
+    ],
+    "updated": [
+      {
+        "company": "Genspark",
+        "score": 61,
+        "score_before": 73,
+        "source": "web"
+      }
+    ]
+  }
+}

@@ -1,41 +1,39 @@
 {
-  "generated_at": "2026-11-06T14:08:04+00:00",
-  "candidates": 261,
-  "crawled": 10,
-  "extracted": 6,
-  "relevant": 4,
-  "valid": 3,
+  "generated_at": "2026-11-07T12:44:09+00:00",
+  "candidates": 271,
+  "crawled": 9,
+  "extracted": 5,
+  "relevant": 5,
+  "valid": 5,
   "sources": {
-    "edgar": 1,
-    "rss": 1,
+    "rss": 3,
+    "web": 1,
     "yc": 1
   },
-  "people": 8,
-  "edges": 7,
-  "dropped_ungrounded": 7,
-  "gated": 1,
+  "people": 14,
+  "edges": 15,
+  "dropped_ungrounded": 13,
+  "gated": 0,
   "quota_exhausted": false,
-  "enriched": 11,
-  "with_website": 11,
-  "with_email": 6,
-  "with_phone": 1,
-  "people_linked": 6,
-  "avg_score": 42.8,
-  "qualified": 2,
-  "avg_qualified_score": 74.0,
+  "enriched": 13,
+  "with_website": 13,
+  "with_email": 11,
+  "with_phone": 2,
+  "people_linked": 7,
+  "avg_score": 51.4,
+  "qualified": 4,
+  "avg_qualified_score": 77.8,
   "issues": {
-    "not a relevant startup page": 2,
-    "missing core_product": 1,
-    "warn: empty tech_stack": 2,
-    "missing likely_bottleneck": 1
+    "warn: empty tech_stack": 2
   },
   "failures": [],
   "passed": true,
   "deferred_urls": [
-    "ycombinator.com/launches/Wsz-openlake-fast-inference-for-self-improving-models",
+    "mercurynews.com/2026/05/20/andreessen-ai-search-startup-exa",
+    "ycombinator.com/launches/Wwy-evardi-agents-that-engineer-the-grid-edge",
     "postraid.com",
-    "franklymail.com"
+    "startupsunion.com/genspark-raises-100-million-to-take-on-google-search-with-ai"
   ],
   "skipped": "",
-  "validity_rate": 0.75
+  "validity_rate": 1.0
 }

@@ -1,78 +1,182 @@
 {
-  "generated_at": "2026-11-06T14:08:04+00:00",
+  "generated_at": "2026-11-07T12:44:09+00:00",
   "findings": [
     {
-      "company_name": "Multikor.ai, Inc.",
-      "core_product": "Enterprise AI platform that lets teams build and govern AI agents for specific workflows such as healthcare and dental operations.",
+      "company_name": "Bioliberty",
+      "core_product": "An AI‑powered soft‑robotic rehabilitation system comprising a portable control hub, an air‑actuated wearable glove, and a clinician dashboard that automates therapy data and notes.",
       "tech_stack": [
-        "Python",
-        "AWS",
-        "NVIDIA GPUs",
-        "REST APIs",
-        "Web UI"
+        "AI",
+        "cloud",
+        "embedded robotics",
+        "air‑actuated soft robotics"
       ],
-      "likely_bottleneck": "building a scalable, low‑latency governance layer that records every AI action while keeping costs down",
-      "value_prop_pitch": "You could wrap your governance APIs in a Next.js front‑end that streams real‑time audit logs to the UI, eliminating custom UI work. Then add a vector‑based semantic search over the logs so engineers can instantly find any action history and debug bottlenecks.",
+      "likely_bottleneck": "Scaling real‑time data pipelines and AI inference for home‑based rehabilitation sessions.",
+      "value_prop_pitch": "I can help you build a Next.js front‑end that streams sensor data instantly to a vector‑based semantic store, letting therapists query patient progress with natural language. This will eliminate latency bottlenecks and let your AI generate clinical notes on‑the‑fly.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$138K",
-      "hq": "Charlestown, Massachusetts",
-      "website": "https://multikor.ai",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/2100580/000210058026000001/",
-      "discovered_at": "2026-11-06T14:06:15+00:00",
-      "source": "edgar",
-      "score": 64,
+      "funding_stage": "Series A extension",
+      "funding_amount": "€2.95 million",
+      "hq": "Edinburgh, UK and Boston, USA",
+      "website": "https://www.bioliberty.com",
+      "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
+      "discovered_at": "2026-11-07T12:41:48+00:00",
+      "source": "rss",
+      "score": 57,
       "gaps": [
+        "founder",
+        "people profiles",
         "investors",
-        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://multikor.ai",
-        "emails": [],
+        "website": "https://www.bioliberty.com",
+        "emails": [
+          {
+            "value": "info@bioliberty.com",
+            "kind": "general",
+            "source_url": "https://www.bioliberty.com/contact"
+          }
+        ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/multikor-ai"
+          "linkedin": "https://www.linkedin.com/company/bioliberty"
         },
-        "contact_page": "",
+        "contact_page": "https://www.bioliberty.com/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://multikor.ai/",
-          "https://multikor.ai/company"
+          "https://www.bioliberty.com/",
+          "https://www.bioliberty.com/contact",
+          "https://www.bioliberty.com/contact"
         ],
-        "enriched_at": "2026-11-06T14:07:12+00:00",
+        "enriched_at": "2026-11-07T12:42:48+00:00",
         "status": "ok",
         "attempts": 0,
-        "last_attempt": ""
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "HubSpot",
+            "category": "marketing"
+          }
+        ]
       },
       "signals": [
         {
           "type": "funding",
-          "source": "edgar",
-          "url": "https://www.sec.gov/Archives/edgar/data/2100580/000210058026000001/",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "2026-11-06T08:01:22-05:00",
-          "seen_at": "2026-11-06T14:07:10+00:00"
+          "posted_at": "Fri, 06 Nov 2026 09:13:13 +0000",
+          "seen_at": "2026-11-07T12:42:45+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Alethio Therapeutics",
+      "core_product": "A biotech company developing targeted monoclonal antibody therapies (e.g., ATX-011) for myeloproliferative neoplasms such as essential thrombocythaemia.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling pre‑clinical and clinical manufacturing pipelines for biologics while integrating complex discovery data.",
+      "value_prop_pitch": "We can build a Next.js dashboard that lets your scientists query experimental results with semantic vector search, cutting data‑retrieval time from days to seconds. This will free up your R&D team to focus on assay design and patient outcomes rather than hunting through spreadsheets.",
+      "is_relevant": true,
+      "funding_stage": "Series A",
+      "funding_amount": "€80.46 million",
+      "hq": "Abingdon-on-Thames, United Kingdom",
+      "website": "https://alethiotherapeutics.com",
+      "source_url": "https://www.eu-startups.com/2026/11/oxford-spin-out-alethio-therapeutics-raises-e80-46-million-series-a-to-advance-targeted-blood-cancer-therapies/",
+      "discovered_at": "2026-11-07T12:41:48+00:00",
+      "source": "rss",
+      "score": 92,
+      "gaps": [
+        "tech stack"
+      ],
+      "contact": {
+        "website": "https://alethiotherapeutics.com",
+        "emails": [
+          {
+            "value": "hello@alethiotx.com",
+            "kind": "general",
+            "source_url": "https://alethiotherapeutics.com/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+441865538329",
+            "kind": "main",
+            "source_url": "https://alethiotherapeutics.com/"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/alethiotx"
+        },
+        "contact_page": "https://alethiotherapeutics.com/contact-us/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://alethiotherapeutics.com/",
+          "https://alethiotherapeutics.com/contact-us/",
+          "https://alethiotherapeutics.com/about/"
+        ],
+        "enriched_at": "2026-11-07T12:43:03+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "WordPress",
+            "category": "cms"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://www.eu-startups.com/2026/11/oxford-spin-out-alethio-therapeutics-raises-e80-46-million-series-a-to-advance-targeted-blood-cancer-therapies/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Fri, 06 Nov 2026 08:17:05 +0000",
+          "seen_at": "2026-11-07T12:42:45+00:00"
         }
       ],
       "people": [
         {
-          "name": "Suresh Nelakantam",
-          "role": "President, Executive Officer, Director",
-          "org": "Multikor.ai, Inc.",
-          "evidence": "Signed by Suresh Nelakantam, President.",
-          "linkedin": "https://www.linkedin.com/in/sureshnelakantam",
+          "name": "Adam Mead",
+          "role": "Co‑founder",
+          "org": "Alethio Therapeutics",
+          "evidence": "Alethio was founded in 2021 as a spin‑out from the University of Oxford by Professors Adam Mead and Beth Psaila",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Beth Psaila",
+          "role": "Co‑founder",
+          "org": "Alethio Therapeutics",
+          "evidence": "Alethio was founded in 2021 as a spin‑out from the University of Oxford by Professors Adam Mead and Beth Psaila",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Rohit Batta",
+          "role": "Chief Executive Officer",
+          "org": "Alethio Therapeutics",
+          "evidence": "Dr. Rohit Batta , Chief Executive Officer of Alethio Therapeutics",
+          "linkedin": "https://www.linkedin.com/in/rohit-batta-17a10476",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": "search"
         },
         {
-          "name": "J. Benson",
-          "role": "Director",
-          "org": "Multikor.ai, Inc.",
-          "evidence": "J. Benson — Director",
+          "name": "Graziano Seghezzi",
+          "role": "Managing Partner, Sofinnova Partners",
+          "org": "Sofinnova Partners",
+          "evidence": "Graziano Seghezzi, Managing Partner at Sofinnova Partners, and Maxwell DeNies of RA Capital have joined Alethio’s Board of Directors",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -80,10 +184,10 @@
           "link_source": ""
         },
         {
-          "name": "Leigh Turner",
-          "role": "Director",
-          "org": "Multikor.ai, Inc.",
-          "evidence": "Leigh Turner — Director",
+          "name": "Maxwell DeNies",
+          "role": "Partner, RA Capital",
+          "org": "RA Capital",
+          "evidence": "Maxwell DeNies of RA Capital have joined Alethio’s Board of Directors",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -91,98 +195,276 @@
           "link_source": ""
         },
         {
-          "name": "Kimberly Boydston",
-          "role": "Co-Founder and Chief Architect",
-          "org": "Multikor.ai, Inc.",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/kimberly-boydston",
+          "name": "Sally Dewhurst",
+          "role": "Principal, Oxford Science Enterprises",
+          "org": "Oxford Science Enterprises",
+          "evidence": "Sally Dewhurst , Principal at Oxford Science Enterprises",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://multikor.ai/"
+          "link_source": ""
         }
       ],
-      "edges": []
+      "edges": [
+        {
+          "src": "Adam Mead",
+          "rel": "founded",
+          "dst": "Alethio Therapeutics",
+          "evidence": "Alethio was founded in 2021 as a spin‑out from the University of Oxford by Professors Adam Mead and Beth Psaila"
+        },
+        {
+          "src": "Beth Psaila",
+          "rel": "cofounded",
+          "dst": "Alethio Therapeutics",
+          "evidence": "Alethio was founded in 2021 as a spin‑out from the University of Oxford by Professors Adam Mead and Beth Psaila"
+        },
+        {
+          "src": "Rohit Batta",
+          "rel": "works_at",
+          "dst": "Alethio Therapeutics",
+          "evidence": "Dr. Rohit Batta , Chief Executive Officer of Alethio Therapeutics"
+        },
+        {
+          "src": "Graziano Seghezzi",
+          "rel": "invested_in",
+          "dst": "Alethio Therapeutics",
+          "evidence": "The round was co‑led by new investors Sofinnova Partners and RA Capital, alongside founding investor Oxford Science Enterprises"
+        },
+        {
+          "src": "Maxwell DeNies",
+          "rel": "invested_in",
+          "dst": "Alethio Therapeutics",
+          "evidence": "The round was co‑led by new investors Sofinnova Partners and RA Capital, alongside founding investor Oxford Science Enterprises"
+        },
+        {
+          "src": "Sally Dewhurst",
+          "rel": "backed_by",
+          "dst": "Alethio Therapeutics",
+          "evidence": "Sally Dewhurst , Principal at Oxford Science Enterprises"
+        }
+      ]
     },
     {
-      "company_name": "Symx.ai",
-      "core_product": "A full‑stack industrial AI platform that combines edge hardware boxes with AI analytics to monitor and optimize heavy‑industry equipment.",
+      "company_name": "Vensum Power",
+      "core_product": "A Software-Defined Power Conversion (SDPC) platform that delivers near‑lossless power conversion for AI data centres, EV charging, energy storage and other high‑load applications.",
       "tech_stack": [
-        "Python",
-        "TensorFlow",
-        "AWS",
-        "Edge computing",
-        "IoT"
+        "embedded firmware",
+        "digital control",
+        "soft‑switching"
       ],
-      "likely_bottleneck": "scaling real‑time data ingestion and inference across thousands of distributed edge devices",
-      "value_prop_pitch": "We can wrap your edge data APIs with a Next.js front‑end that streams vector‑embedded sensor readings to a semantic search layer, letting you query equipment health instantly. This eliminates latency bottlenecks and gives engineers a unified, searchable view of all telemetry without rebuilding your backend.",
+      "likely_bottleneck": "scaling manufacturing and industrial‑scale delivery of its converters",
+      "value_prop_pitch": "We can build a Next.js dashboard that surfaces real‑time production metrics and uses vector semantic search to instantly surface failure patterns across your manufacturing data. This will let your engineers diagnose and resolve scaling issues faster, keeping your SDPC line moving.",
       "is_relevant": true,
       "funding_stage": "Series A",
-      "funding_amount": "$6 million USD",
-      "hq": "Sudbury, Ontario",
-      "website": "https://symx.ai",
-      "source_url": "https://betakit.com/symx-ai-spent-years-unlocking-mining-data-now-its-building-an-operating-system-for-heavy-industry/",
-      "discovered_at": "2026-11-06T14:06:15+00:00",
+      "funding_amount": "€9 million",
+      "hq": "Helsinki",
+      "website": "https://www.vensum.com",
+      "source_url": "https://www.eu-startups.com/2026/11/helsinkis-vensum-power-secures-e9-million-to-scale-its-software-defined-power-conversion-platform/",
+      "discovered_at": "2026-11-07T12:41:48+00:00",
       "source": "rss",
-      "score": 73,
+      "score": 91,
       "gaps": [
-        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://symx.ai",
+        "website": "https://www.vensum.com",
         "emails": [
           {
-            "value": "info@symx.ai",
-            "kind": "general",
-            "source_url": "https://symx.ai/team/"
+            "value": "aleksi.uski@vensum.com",
+            "kind": "person",
+            "source_url": "https://www.vensum.com/contact-us/"
+          },
+          {
+            "value": "osku@vensum.com",
+            "kind": "person",
+            "source_url": "https://www.vensum.com/contact-us/"
+          },
+          {
+            "value": "peter@vensum.com",
+            "kind": "person",
+            "source_url": "https://www.vensum.com/contact-us/"
+          },
+          {
+            "value": "tero.lehtonen@vensum.com",
+            "kind": "person",
+            "source_url": "https://www.vensum.com/contact-us/"
           }
         ],
         "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/symxai",
-          "twitter": "https://x.com/symxai"
-        },
-        "contact_page": "",
+        "socials": {},
+        "contact_page": "https://www.vensum.com/contact-us/",
         "product_access": [],
         "pages_crawled": [
-          "https://symx.ai/",
-          "https://symx.ai/team/"
+          "https://www.vensum.com/",
+          "https://www.vensum.com/about-us/",
+          "https://www.vensum.com/contact-us/"
         ],
-        "enriched_at": "2026-11-06T14:07:26+00:00",
+        "enriched_at": "2026-11-07T12:43:19+00:00",
         "status": "ok",
         "attempts": 0,
-        "last_attempt": ""
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "WordPress",
+            "category": "cms"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          }
+        ]
       },
       "signals": [
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://betakit.com/symx-ai-spent-years-unlocking-mining-data-now-its-building-an-operating-system-for-heavy-industry/",
+          "url": "https://www.eu-startups.com/2026/11/helsinkis-vensum-power-secures-e9-million-to-scale-its-software-defined-power-conversion-platform/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Mon, 26 Oct 2026 10:01:00 +0000",
-          "seen_at": "2026-11-06T14:07:10+00:00"
+          "posted_at": "Fri, 06 Nov 2026 07:49:11 +0000",
+          "seen_at": "2026-11-07T12:42:45+00:00"
         }
       ],
       "people": [
         {
-          "name": "Ash Agarwal",
-          "role": "Chief Executive Officer",
-          "org": "SYMX.AI",
-          "evidence": "Ash serves as the President and CEO of SYMX.AI, a premier Industrial IoT company",
-          "linkedin": "https://www.linkedin.com/in/ashutoshmagus",
+          "name": "Peter Nisula",
+          "role": "CEO",
+          "org": "Vensum Power",
+          "evidence": "said Peter Nisula , CEO of Vensum Power",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Saikat Prabhakar",
-          "role": "Head of Software Engineering and Product Development",
-          "org": "SYMX.AI",
-          "evidence": "Head of Software Engineering and Product Development",
-          "linkedin": "https://www.linkedin.com/in/saikat-prabhakar-b634bb14",
+          "name": "Prashant Chiranjive Jain",
+          "role": "Managing Director of L&T Vyoma and Head of L&T Electronic Products & Systems",
+          "org": "Larsen & Toubro",
+          "evidence": "said Prashant Chiranjive Jain , Managing Director of L&T Vyoma and Head of L&T Electronic Products & Systems",
+          "linkedin": "https://www.linkedin.com/in/prashantchiranjivejain",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Lifeline Ventures",
+          "rel": "invested_in",
+          "dst": "Vensum Power",
+          "evidence": "co-led by existing backer Lifeline Ventures alongside two new investors, Larsen & Toubro Group and Eviny Ventures"
+        },
+        {
+          "src": "Larsen & Toubro Group",
+          "rel": "invested_in",
+          "dst": "Vensum Power",
+          "evidence": "co-led by existing backer Lifeline Ventures alongside two new investors, Larsen & Toubro Group and Eviny Ventures"
+        },
+        {
+          "src": "Eviny Ventures",
+          "rel": "invested_in",
+          "dst": "Vensum Power",
+          "evidence": "co-led by existing backer Lifeline Ventures alongside two new investors, Larsen & Toubro Group and Eviny Ventures"
+        },
+        {
+          "src": "Grid.vc",
+          "rel": "invested_in",
+          "dst": "Vensum Power",
+          "evidence": "continued participation from investors Grid.vc and Harjavalta Ventures"
+        },
+        {
+          "src": "Harjavalta Ventures",
+          "rel": "invested_in",
+          "dst": "Vensum Power",
+          "evidence": "continued participation from investors Grid.vc and Harjavalta Ventures"
+        },
+        {
+          "src": "Peter Nisula",
+          "rel": "works_at",
+          "dst": "Vensum Power",
+          "evidence": "said Peter Nisula , CEO of Vensum Power"
+        }
+      ]
+    },
+    {
+      "company_name": "Genspark",
+      "core_product": "An AI-powered multi‑model search engine that generates single, citation‑backed answers instead of traditional link lists.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the inference of multiple AI models in real‑time while keeping latency low.",
+      "value_prop_pitch": "We can wrap your multi‑model backend with a Next.js front‑end that streams results instantly, letting you serve answers as they’re generated. By adding a vector‑based semantic search layer, you’ll reduce the number of model calls needed and cut latency dramatically.",
+      "is_relevant": true,
+      "funding_stage": "Series A",
+      "funding_amount": "$100 million",
+      "hq": "Palo Alto",
+      "website": "https://www.genspark.ai",
+      "source_url": "https://getcoai.com/news/ai-search-startup-genspark-secures-100m-to-challenge-google/",
+      "discovered_at": "2026-11-07T12:41:48+00:00",
+      "source": "web",
+      "score": 61,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.genspark.ai",
+        "emails": [
+          {
+            "value": "press@genspark.ai",
+            "kind": "press",
+            "source_url": "https://www.genspark.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/genspark_ai",
+          "linkedin": "https://www.linkedin.com/company/gensparkai"
+        },
+        "contact_page": "https://www.genspark.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.genspark.ai/",
+          "https://www.genspark.ai/about",
+          "https://www.genspark.ai/contact",
+          "https://www.genspark.ai/team"
+        ],
+        "enriched_at": "2026-11-07T12:43:31+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Nuxt",
+            "category": "framework"
+          },
+          {
+            "name": "Vue",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "web",
+          "url": "https://getcoai.com/news/ai-search-startup-genspark-secures-100m-to-challenge-google/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-07T12:42:45+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Eric Jing",
+          "role": "CEO",
+          "org": "Genspark",
+          "evidence": "Genspark, a Palo Alto-based startup led by former Baidu executive Eric Jing",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
@@ -191,138 +473,125 @@
       ],
       "edges": [
         {
-          "src": "Ash Agarwal",
-          "rel": "works_at",
-          "dst": "SYMX.AI",
-          "evidence": "Ash serves as the President and CEO of SYMX.AI"
-        },
-        {
-          "src": "Saikat Prabhakar",
-          "rel": "works_at",
-          "dst": "SYMX.AI",
-          "evidence": "Head of Software Engineering and Product Development"
+          "src": "Eric Jing",
+          "rel": "founded",
+          "dst": "Genspark",
+          "evidence": "Genspark, a Palo Alto-based startup led by former Baidu executive Eric Jing"
         }
       ]
     },
     {
-      "company_name": "Hesper AI",
-      "core_product": "AI agents that perform end‑to‑end insurance claim workup, reading documents, verifying data, contacting parties and providing decisions with evidence.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the orchestration of many AI agents while keeping latency low.",
-      "value_prop_pitch": "You should offload the agent orchestration to a Next.js front‑end backed by a vector semantic search layer to instantly retrieve relevant documents and reduce latency. This will let you scale claim processing without building custom pipelines for each data source.",
+      "company_name": "Cyclon",
+      "core_product": "An AI-powered smartphone that integrates AI into the OS to automate tasks across apps and can generate custom apps on‑device.",
+      "tech_stack": [
+        "Android",
+        "AI/ML models",
+        "sandboxed code execution",
+        "hardware design"
+      ],
+      "likely_bottleneck": "Running sophisticated AI inference and code generation reliably on limited mobile hardware",
+      "value_prop_pitch": "You could offload the heavy AI inference to a scalable Next.js edge layer and cache results with vector semantic search, dramatically reducing on‑device compute load. This would let Cyclon deliver instant, context‑aware actions while keeping the phone responsive and battery‑friendly.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://gethesperai.com",
-      "source_url": "https://www.ycombinator.com/launches/WpY-hesper-ai-ai-agents-that-work-every-insurance-claim-end-to-end",
-      "discovered_at": "2026-11-06T14:06:15+00:00",
+      "website": "https://cyclon.ai",
+      "source_url": "https://www.ycombinator.com/launches/WkD-cyclon-the-ai-phone-to-replace-your-iphone",
+      "discovered_at": "2026-11-07T12:41:48+00:00",
       "source": "yc",
-      "score": 75,
+      "score": 67,
       "gaps": [
         "location",
         "funding amount",
-        "tech stack",
         "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://gethesperai.com",
+        "website": "https://cyclon.ai",
         "emails": [
           {
-            "value": "support@gethesperai.com",
-            "kind": "support",
-            "source_url": "https://gethesperai.com/"
+            "value": "contact@cyclon.ai",
+            "kind": "general",
+            "source_url": "https://cyclon.ai/"
           }
         ],
         "phones": [],
-        "socials": {
-          "twitter": "https://x.com/HesperAIDotCom",
-          "linkedin": "https://www.linkedin.com/company/hesperai"
-        },
-        "contact_page": "https://gethesperai.com/contact/",
+        "socials": {},
+        "contact_page": "https://cyclon.ai/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://gethesperai.com/",
-          "https://gethesperai.com/about/",
-          "https://gethesperai.com/contact/"
+          "https://cyclon.ai/",
+          "https://cyclon.ai/contact",
+          "https://cyclon.ai/about"
         ],
-        "enriched_at": "2026-11-06T14:07:31+00:00",
+        "enriched_at": "2026-11-07T12:43:36+00:00",
         "status": "ok",
         "attempts": 0,
-        "last_attempt": ""
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
       },
       "signals": [
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/WpY-hesper-ai-ai-agents-that-work-every-insurance-claim-end-to-end",
+          "url": "https://www.ycombinator.com/launches/WkD-cyclon-the-ai-phone-to-replace-your-iphone",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-06T14:07:10+00:00"
+          "seen_at": "2026-11-07T12:42:45+00:00"
         }
       ],
       "people": [
         {
-          "name": "Pankaj Dhariwal",
-          "role": "Co‑founder",
-          "org": "Hesper AI",
-          "evidence": "We’re Pankaj and Nitish, co‑founders of Hesper AI",
-          "linkedin": "https://www.linkedin.com/in/pankaj-dhariwal",
+          "name": "Adam Zinebi",
+          "role": "Founder",
+          "org": "Cyclon",
+          "evidence": "Hey everyone 👋 We’re Adam and Thomas, the founders of Cyclon.",
+          "linkedin": "https://www.linkedin.com/in/adam-zinebi-454a99222",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://cyclon.ai/about"
         },
         {
-          "name": "Nitish Badu",
-          "role": "COO and Co-founder",
-          "org": "Hesper AI",
+          "name": "Thomas Kiefer",
+          "role": "Founder",
+          "org": "Cyclon",
           "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/nitish-badu-529b28165",
+          "linkedin": "https://www.linkedin.com/in/th0maskiefer",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://gethesperai.com/"
+          "link_source": "https://cyclon.ai/"
         }
       ],
       "edges": [
         {
-          "src": "Pankaj Dhariwal",
+          "src": "Adam Zinebi",
           "rel": "founded",
-          "dst": "Hesper AI",
-          "evidence": "We’re Pankaj and Nitish, co‑founders of Hesper AI"
+          "dst": "Cyclon",
+          "evidence": "Hey everyone 👋 We’re Adam and Thomas, the founders of Cyclon."
         },
         {
-          "src": "Nitish Badu",
+          "src": "Thomas Kiefer",
           "rel": "founded",
-          "dst": "Hesper AI",
-          "evidence": "We’re Pankaj and Nitish, co‑founders of Hesper AI"
-        },
-        {
-          "src": "Pankaj Dhariwal",
-          "rel": "previously_at",
-          "dst": "Nanonets",
-          "evidence": "Pankaj was an engineering manager at Nanonets (YC W17)"
-        },
-        {
-          "src": "Nitish Badu",
-          "rel": "previously_at",
-          "dst": "Nanonets",
-          "evidence": "Nitish drove $4M+ ARR at Nanonets"
-        },
-        {
-          "src": "Nitish Badu",
-          "rel": "previously_at",
-          "dst": "Super.AI",
-          "evidence": "Nitish drove $4M+ ARR at Nanonets and 5x pipeline growth at Super.AI"
+          "dst": "Cyclon",
+          "evidence": "Hey everyone 👋 We’re Adam and Thomas, the founders of Cyclon."
         }
       ]
     },
     {
-      "company_name": "iCallidus",
-      "core_product": "Tech used: AI, Azure, Firmware, Support, Microsoft Intune, Security, VPN, Incident Management",
+      "company_name": "Prior Labs",
+      "core_product": "We build foundation models for tables. TabPFN takes your whole dataset as context and predicts in one forward pass - no training, no tuning - after pre-training only on synthetic data from causal priors. TabPFN v2 was a Nature cover; the op",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -330,141 +599,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://devitjobs.com",
-      "source_url": "https://devitjobs.com/jobs/iCallidus-Azure-Intune-Engineer",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
-      "source": "hiring",
-      "score": 25,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://devitjobs.com",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://devitjobs.com/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://devitjobs.com/pricing"
-          }
-        ],
-        "pages_crawled": [
-          "https://devitjobs.com/",
-          "https://devitjobs.com/about",
-          "https://devitjobs.com/contact"
-        ],
-        "enriched_at": "2026-11-06T14:07:35+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50389352",
-          "roles": [
-            "Azure Intune Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-06T07:45:00Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Zefr",
-      "core_product": "Zefr is the leading global technology company enabling responsible marketing in walled garden social environments. Zefr’s solutions empower brands to manage their content adjacency on scaled platforms such as YouTube, Meta, TikTok, and Snap",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "Los Angeles, US",
-      "website": "https://zefr.com",
-      "source_url": "https://zefr.com",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
-      "source": "hiring",
-      "score": 32,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://zefr.com",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/ZEFRinc",
-          "linkedin": "https://www.linkedin.com/company/zefr"
-        },
-        "contact_page": "https://zefr.com/contact-us",
-        "product_access": [],
-        "pages_crawled": [
-          "https://zefr.com/",
-          "https://zefr.com/about/company",
-          "https://zefr.com/about",
-          "https://zefr.com/contact-us",
-          "https://zefr.com/about/leadership"
-        ],
-        "enriched_at": "2026-11-06T14:07:43+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50386884",
-          "roles": [
-            "Los Angeles",
-            "CA (Marina del Rey)"
-          ],
-          "role_kinds": [
-            "other"
-          ],
-          "posted_at": "2026-11-06T01:07:33Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Odette Technologies",
-      "core_product": "We're building an AI-powered situational awareness platform for intelligence and information operations teams, helping analysts and decision-makers make sense of overwhelming open and closed source data. Small, operator-founded team.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://odettetechnologies.com",
-      "source_url": "https://odettetechnologies.com",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
+      "website": "https://priorlabs.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50398420",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
       "source": "hiring",
       "score": 38,
       "gaps": [
@@ -478,138 +615,90 @@
         "phone"
       ],
       "contact": {
-        "website": "https://odettetechnologies.com",
+        "website": "https://priorlabs.ai",
         "emails": [
           {
-            "value": "info@odettetechnologies.com",
-            "kind": "general",
-            "source_url": "https://odettetechnologies.com/"
-          },
-          {
-            "value": "careers@odettetechnologies.com",
-            "kind": "other",
-            "source_url": "https://odettetechnologies.com/"
+            "value": "sales@priorlabs.ai",
+            "kind": "sales",
+            "source_url": "https://priorlabs.ai/contact"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/odette-technologies"
+          "linkedin": "https://www.linkedin.com/company/prior-labs",
+          "twitter": "https://x.com/prior_labs",
+          "github": "https://github.com/PriorLabs"
         },
-        "contact_page": "https://odettetechnologies.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://odettetechnologies.com/",
-          "https://odettetechnologies.com/about",
-          "https://odettetechnologies.com/contact",
-          "https://odettetechnologies.com/team"
-        ],
-        "enriched_at": "2026-11-06T14:07:45+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50385049",
-          "roles": [
-            "Senior Integration Engineer",
-            "Data",
-            "ML Engineer",
-            "Product Lead"
-          ],
-          "role_kinds": [
-            "eng",
-            "product"
-          ],
-          "posted_at": "2026-11-05T21:57:35Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Piramidal",
-      "core_product": "We’ve built the first-of-its-kind foundation model for brainwave data. Our goal is Intelligence Amplification (IA) by means of creating neural decoders that enable interactions with the language of neurons. Powered by our SOTA foundation mo",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.greenhouse.com",
-      "source_url": "https://grnh.se/uwaqx1xc9us",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
-      "source": "hiring",
-      "score": 33,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email"
-      ],
-      "contact": {
-        "website": "https://www.greenhouse.com",
-        "emails": [],
-        "phones": [
-          {
-            "value": "+19177804130",
-            "kind": "main",
-            "source_url": "https://www.greenhouse.com/contact"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/greenhouse-inc-"
-        },
-        "contact_page": "https://www.greenhouse.com/contact",
+        "contact_page": "https://priorlabs.ai/contact",
         "product_access": [
           {
-            "label": "Pricing",
-            "url": "https://www.greenhouse.com/pricing"
+            "label": "Pricing Start for free",
+            "url": "https://priorlabs.ai/pricing"
           },
           {
-            "label": "Sign up for MyGreenhouse",
-            "url": "https://my.greenhouse.io/users/sign_in"
+            "label": "Docs Docs",
+            "url": "https://docs.priorlabs.ai/"
+          },
+          {
+            "label": "Try TabPFN Try TabPFN",
+            "url": "https://platform.priorlabs.ai/playground?tour=paid"
+          },
+          {
+            "label": "Try TabPFN Try TabPFN",
+            "url": "https://ux.priorlabs.ai/playground"
           }
         ],
         "pages_crawled": [
-          "https://www.greenhouse.com/",
-          "https://www.greenhouse.com/company",
-          "https://www.greenhouse.com/contact"
+          "https://priorlabs.ai/",
+          "https://priorlabs.ai/about",
+          "https://priorlabs.ai/contact"
         ],
-        "enriched_at": "2026-11-06T14:07:48+00:00",
+        "enriched_at": "2026-11-07T12:43:41+00:00",
         "status": "ok",
         "attempts": 0,
-        "last_attempt": ""
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Webflow",
+            "category": "cms"
+          },
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Cloudflare",
+            "category": "hosting"
+          }
+        ]
       },
       "signals": [
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50384764",
+          "url": "https://news.ycombinator.com/item?id=50398420",
           "roles": [
-            "Senior Backend Engineer"
+            "Berlin",
+            "Freiburg",
+            "NYC"
           ],
           "role_kinds": [
-            "eng"
+            "other"
           ],
-          "posted_at": "2026-11-05T21:34:32Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
+          "posted_at": "2026-11-06T20:57:01Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "Sortrace",
-      "core_product": "Sortrace is a small cleantech AI company in Sweden. Cameras on waste collection trucks and trained vision models flag material in the wrong fraction when bins are emptied. Customers use our platform to review deviations, images, and insight",
+      "company_name": "BuildQ",
+      "core_product": "We're looking for a Founding Engineer to join 2 of us on the engineering team. You'll ship to production on your first day, and you'll help shape what the future of BuildQ looks like.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -617,11 +706,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://sortrace.com",
-      "source_url": "https://sortrace.com",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
+      "website": "https://www.buildq.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50396245",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
       "source": "hiring",
-      "score": 35,
+      "score": 34,
       "gaps": [
         "funding stage",
         "location",
@@ -633,52 +722,82 @@
         "phone"
       ],
       "contact": {
-        "website": "https://sortrace.com",
+        "website": "https://www.buildq.ai",
         "emails": [
           {
-            "value": "jobs@sortrace.com",
+            "value": "hello@buildq.ai",
+            "kind": "general",
+            "source_url": "https://www.buildq.ai/"
+          },
+          {
+            "value": "careers@buildq.ai",
             "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50384008"
+            "source_url": "https://news.ycombinator.com/item?id=50396245"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/sortrace"
+          "linkedin": "https://www.linkedin.com/company/buildq"
         },
-        "contact_page": "https://sortrace.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://sortrace.com/",
-          "https://sortrace.com/company",
-          "https://sortrace.com/contact"
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Get Started",
+            "url": "https://www.buildq.ai/demo"
+          }
         ],
-        "enriched_at": "2026-11-06T14:07:53+00:00",
+        "pages_crawled": [
+          "https://www.buildq.ai/",
+          "https://www.buildq.ai/company"
+        ],
+        "enriched_at": "2026-11-07T12:43:45+00:00",
         "status": "ok",
         "attempts": 0,
-        "last_attempt": ""
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "HubSpot",
+            "category": "marketing"
+          },
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
       },
       "signals": [
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50384008",
+          "url": "https://news.ycombinator.com/item?id=50396245",
           "roles": [
-            "Computer Vision Engineer",
-            "Junior Frontend Engineer"
+            "Founding Engineer"
           ],
           "role_kinds": [
-            "eng"
+            "founding"
           ],
-          "posted_at": "2026-11-05T20:25:23Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
+          "posted_at": "2026-11-06T18:26:22Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "Nirvana Robotics",
-      "core_product": "Nirvana Robotics builds humanoid robots with robotic arms that work in industrial environments. Their hardware team in NYC is growing, and each of these roles owns a subsystem end to end on physical robots. I'm a recruiter at Niuro, Nirvana",
+      "company_name": "IMC Trading",
+      "core_product": "IMC is a research-driven trading firm and has been a market maker since 1989. Our researchers, traders and engineers work as one team on systems we build ourselves, trading across global markets.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -686,9 +805,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://app.niuro.io",
-      "source_url": "https://app.niuro.io/source/H4yYHesP?ref=ps_EBRp88zU7jcdRZm8VJc8s6Wt_yVsmnoS1d4y2CMGR1k&utm_source=hacker-news&utm_medium=job-board&utm_campaign=mechanical-engineer-newyork-onsite&utm_content=hn-whoishiring-202611",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
+      "website": "https://www.imc.com",
+      "source_url": "https://news.ycombinator.com/item?id=50352150",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
       "source": "hiring",
       "score": 25,
       "gaps": [
@@ -703,113 +822,54 @@
         "phone"
       ],
       "contact": {
-        "website": "https://app.niuro.io",
+        "website": "https://www.imc.com",
         "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "https://app.niuro.io/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://app.niuro.io/",
-          "https://app.niuro.io/about",
-          "https://app.niuro.io/team",
-          "https://app.niuro.io/contact"
-        ],
-        "enriched_at": "2026-11-06T14:07:56+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": ""
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50383984",
-          "roles": [
-            "Mechanical Engineer",
-            "Electrical Engineer",
-            "Robotic Controls Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-05T20:23:44Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "ChainSecurity",
-      "core_product": "ChainSecurity is a young and innovative cybersecurity company that operates in the blockchain and cryptocurrency space. Our mission is to make the blockchain space secure and trustworthy for people, companies, and governments alike. We are ",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "Zürich, CH",
-      "website": "https://www.chainsecurity.com",
-      "source_url": "https://chainsecurity.com/",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
-      "source": "hiring",
-      "score": 34,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.chainsecurity.com",
-        "emails": [
-          {
-            "value": "jobs@chainsecurity.com",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50380439"
-          }
-        ],
-        "phones": [],
         "socials": {
-          "twitter": "https://x.com/chain_security",
-          "linkedin": "https://www.linkedin.com/company/chainsecurity"
+          "linkedin": "https://www.linkedin.com/company/imc-trading"
         },
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [
-          "https://www.chainsecurity.com/",
-          "https://www.chainsecurity.com/about/"
+          "https://www.imc.com/us/",
+          "https://www.imc.com/us/who-we-are"
         ],
-        "enriched_at": "2026-11-06T14:08:01+00:00",
+        "enriched_at": "2026-11-07T12:43:51+00:00",
         "status": "ok",
         "attempts": 0,
-        "last_attempt": ""
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
       },
       "signals": [
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50380439",
+          "url": "https://news.ycombinator.com/item?id=50352150",
           "roles": [
-            "Blockchain Security Engineer"
+            "Machine Learning Engineer"
           ],
           "role_kinds": [
             "eng"
           ],
-          "posted_at": "2026-11-05T15:35:47Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
+          "posted_at": "2026-11-03T14:06:02Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "N26 SE",
-      "core_product": "N26 has reimagined banking for today’s digital world. Technology and design empower everything we do and it’s how we are building the global banking platform the world loves to use.",
+      "company_name": "Avoca",
+      "core_product": "Avoca is transforming how home service companies engage with their customers. Our AI-powered conversational agents handle every high-value inbound call, from booking jobs, qualifying leads, and driving higher revenue, all at a speed and con",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -817,11 +877,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://n26.com",
-      "source_url": "https://www.n26.com",
-      "discovered_at": "2026-11-06T14:07:10+00:00",
+      "website": "https://www.avoca.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50352134",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
       "source": "hiring",
-      "score": 37,
+      "score": 38,
       "gaps": [
         "funding stage",
         "location",
@@ -833,48 +893,515 @@
         "phone"
       ],
       "contact": {
-        "website": "https://n26.com",
+        "website": "https://www.avoca.ai",
         "emails": [
           {
-            "value": "dmitrii.sergeev@n26.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50377000"
+            "value": "hello@avoca.ai",
+            "kind": "general",
+            "source_url": "https://www.avoca.ai/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/n26"
+          "linkedin": "https://www.linkedin.com/company/avoca-ai",
+          "twitter": "https://x.com/getavoca"
         },
-        "contact_page": "",
+        "contact_page": "https://www.avoca.ai/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://n26.com/en-eu",
-          "https://n26.com/en-eu/team"
+          "https://www.avoca.ai/",
+          "https://www.avoca.ai/contact",
+          "https://www.avoca.ai/careers",
+          "https://app.avoca.ai/signin?redirectedFrom=%2Fteam"
         ],
-        "enriched_at": "2026-11-06T14:08:04+00:00",
+        "enriched_at": "2026-11-07T12:43:56+00:00",
         "status": "ok",
         "attempts": 0,
-        "last_attempt": ""
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Vercel",
+            "category": "hosting"
+          },
+          {
+            "name": "Calendly",
+            "category": "scheduling"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
       },
       "signals": [
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50377000",
+          "url": "https://news.ycombinator.com/item?id=50352134",
           "roles": [
-            "Sr. SREs(networking)",
-            "Data Platform EMs"
+            "Full-Stack Engineers",
+            "FDEs"
           ],
           "role_kinds": [
-            "other",
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-11-03T14:05:06Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Antithesis",
+      "core_product": "We create an expert system that verifies software and becomes an essential part of agentic workflows. https://antithesis.com",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://antithesis.com",
+      "source_url": "https://news.ycombinator.com/item?id=50351981",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
+      "source": "hiring",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://antithesis.com",
+        "emails": [
+          {
+            "value": "vlad.korobov@antithesis.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50351981"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/antithesishq",
+          "linkedin": "https://www.linkedin.com/company/antithesis-operations",
+          "twitter": "https://x.com/antithesishq"
+        },
+        "contact_page": "https://antithesis.com/company/contact/?topic=contact-sales",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://antithesis.com/docs/introduction/welcome/"
+          },
+          {
+            "label": "Get started",
+            "url": "https://github.com/antithesishq/hands-on-tutorial-1"
+          }
+        ],
+        "pages_crawled": [
+          "https://antithesis.com/",
+          "https://antithesis.com/company/about/",
+          "https://antithesis.com/company/contact/?topic=contact-sales",
+          "https://antithesis.com/company/contact/?topic=contact-sales/",
+          "https://antithesis.com/company/contact/"
+        ],
+        "enriched_at": "2026-11-07T12:43:59+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Astro",
+            "category": "framework"
+          },
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50351981",
+          "roles": [
+            "Washington",
+            "London"
+          ],
+          "role_kinds": [
+            "other"
+          ],
+          "posted_at": "2026-11-03T13:53:02Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Splash Tech",
+      "core_product": "We're a small UK-based free-to-play gaming company with a distributed team, growing fast after recent success and scaling our backend platform. We’re looking for a DevOps engineer with 5+ years of experience.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://splash.tech",
+      "source_url": "https://news.ycombinator.com/item?id=50348022",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
+      "source": "hiring",
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://splash.tech",
+        "emails": [
+          {
+            "value": "sales@splash.tech",
+            "kind": "sales",
+            "source_url": "https://splash.tech/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/splash-technology-uk",
+          "twitter": "https://x.com/splashtech"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://splash.tech/"
+        ],
+        "enriched_at": "2026-11-07T12:44:03+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50348022",
+          "roles": [
+            "DevOps Mid",
+            "Senior",
+            "Frontend"
+          ],
+          "role_kinds": [
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-11-03T04:21:11Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Mechanize",
+      "core_product": "We build environments that frontier AI labs use to train their models to do real-world software engineering. We have more demand than we can keep up with, so we're hiring fast.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.mechanize.work",
+      "source_url": "https://news.ycombinator.com/item?id=50346820",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
+      "source": "hiring",
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.mechanize.work",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/mechanize-work",
+          "twitter": "https://x.com/MechanizeWork",
+          "github": "https://github.com/mechanize-work"
+        },
+        "contact_page": "https://www.mechanize.work/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.mechanize.work/",
+          "https://www.mechanize.work/about",
+          "https://www.mechanize.work/team",
+          "https://www.mechanize.work/contact"
+        ],
+        "enriched_at": "2026-11-07T12:44:05+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50346820",
+          "roles": [
+            "San Francisco",
+            "CA (Onsite)"
+          ],
+          "role_kinds": [
+            "other"
+          ],
+          "posted_at": "2026-11-03T01:30:05Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Ege Erdil",
+          "role": "Co-founder",
+          "org": "Mechanize",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/ege-erdil-0a4b0314b",
+          "twitter": "https://x.com/EgeErdil2",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.mechanize.work/"
+        },
+        {
+          "name": "Tamay Besiroglu",
+          "role": "Co-founder",
+          "org": "Mechanize",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/tamay-besiroglu",
+          "twitter": "https://x.com/tamaybes",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.mechanize.work/"
+        },
+        {
+          "name": "Matthew Barnett",
+          "role": "Co-founder",
+          "org": "Mechanize",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/matthew-barnett-4aa7b81a7",
+          "twitter": "https://x.com/MatthewJBar",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.mechanize.work/"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Telescope Partners",
+      "core_product": "Telescope is an early stage growth VC firm with a focus on enterprise software companies. We're a small, efficient team based in SF. We're active investors, working closely with entrepreneurs to help their companies grow. Our tech team is o",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.telescopepartners.com",
+      "source_url": "https://news.ycombinator.com/item?id=50346665",
+      "discovered_at": "2026-11-07T12:42:45+00:00",
+      "source": "hiring",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://www.telescopepartners.com",
+        "emails": [
+          {
+            "value": "contact@telescopepartners.com",
+            "kind": "general",
+            "source_url": "https://www.telescopepartners.com/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+16505500885",
+            "kind": "main",
+            "source_url": "https://www.telescopepartners.com/"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/telescope-partners"
+        },
+        "contact_page": "https://www.telescopepartners.com/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.telescopepartners.com/",
+          "https://www.telescopepartners.com/team",
+          "https://www.telescopepartners.com/contact"
+        ],
+        "enriched_at": "2026-11-07T12:44:09+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Webflow",
+            "category": "cms"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50346665",
+          "roles": [
+            "Software Engineer",
+            "Data Scientist"
+          ],
+          "role_kinds": [
             "eng"
           ],
-          "posted_at": "2026-11-05T09:20:08Z",
-          "seen_at": "2026-11-06T14:07:10+00:00"
+          "posted_at": "2026-11-03T01:08:34Z",
+          "seen_at": "2026-11-07T12:42:45+00:00"
         }
       ],
       "people": [],
       "edges": []
     }
-  ]
+  ],
+  "diff": {
+    "added": [
+      {
+        "company": "Bioliberty",
+        "score": 57,
+        "source": "rss"
+      },
+      {
+        "company": "Alethio Therapeutics",
+        "score": 92,
+        "source": "rss"
+      },
+      {
+        "company": "Vensum Power",
+        "score": 91,
+        "source": "rss"
+      },
+      {
+        "company": "Cyclon",
+        "score": 67,
+        "source": "yc"
+      },
+      {
+        "company": "Prior Labs",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "BuildQ",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "IMC Trading",
+        "score": 25,
+        "source": "hiring"
+      },
+      {
+        "company": "Avoca",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Antithesis",
+        "score": 41,
+        "source": "hiring"
+      },
+      {
+        "company": "Splash Tech",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "Mechanize",
+        "score": 49,
+        "source": "hiring"
+      },
+      {
+        "company": "Telescope Partners",
+        "score": 41,
+        "source": "hiring"
+      }
+    ],
+    "updated": [
+      {
+        "company": "Genspark",
+        "score": 61,
+        "score_before": 73,
+        "source": "web"
+      }
+    ]
+  },
+  "watchlist_hits": []
 }
