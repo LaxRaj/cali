@@ -113,14 +113,6 @@
       "score": 69
     },
     {
-      "id": "axel",
-      "label": "Axel",
-      "type": "startup",
-      "degree": 8,
-      "website": "https://helloaxel.com",
-      "score": 71
-    },
-    {
       "id": "exa",
       "label": "Exa",
       "type": "startup",
@@ -137,18 +129,18 @@
       "score": 74
     },
     {
+      "id": "axel",
+      "label": "Axel",
+      "type": "startup",
+      "degree": 8,
+      "website": "https://helloaxel.com",
+      "score": 71
+    },
+    {
       "id": "quiver ai",
       "label": "Quiver AI",
       "type": "org",
       "degree": 8
-    },
-    {
-      "id": "serenedb",
-      "label": "SereneDB",
-      "type": "startup",
-      "degree": 7,
-      "website": "https://serenedb.com",
-      "score": 74
     },
     {
       "id": "molagri",
@@ -191,6 +183,14 @@
       "score": 80
     },
     {
+      "id": "serenedb",
+      "label": "SereneDB",
+      "type": "startup",
+      "degree": 7,
+      "website": "https://serenedb.com",
+      "score": 79
+    },
+    {
       "id": "y combinator",
       "label": "Y Combinator",
       "type": "org",
@@ -229,14 +229,6 @@
       "score": 88
     },
     {
-      "id": "miracly.ai",
-      "label": "Miracly.ai",
-      "type": "startup",
-      "degree": 6,
-      "website": "https://www.miracly.ai",
-      "score": 72
-    },
-    {
       "id": "querio",
       "label": "Querio",
       "type": "startup",
@@ -269,6 +261,14 @@
       "score": 88
     },
     {
+      "id": "vensum power",
+      "label": "Vensum Power",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.vensum.com",
+      "score": 81
+    },
+    {
       "id": "onix",
       "label": "Onix",
       "type": "startup",
@@ -277,12 +277,20 @@
       "score": 79
     },
     {
-      "id": "vensum power",
-      "label": "Vensum Power",
+      "id": "ares intelligence",
+      "label": "Ares Intelligence",
       "type": "startup",
       "degree": 6,
-      "website": "https://www.vensum.com",
-      "score": 81
+      "website": "https://aresintelligence.ai",
+      "score": 85
+    },
+    {
+      "id": "miracly.ai",
+      "label": "Miracly.ai",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.miracly.ai",
+      "score": 87
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -355,20 +363,20 @@
       "score": 91
     },
     {
-      "id": "ares intelligence",
-      "label": "Ares Intelligence",
-      "type": "startup",
-      "degree": 5,
-      "website": "https://aresintelligence.ai",
-      "score": 76
-    },
-    {
       "id": "bloomsco",
       "label": "Bloomsco",
       "type": "startup",
       "degree": 5,
       "website": "https://bloomsco.com",
       "score": 88
+    },
+    {
+      "id": "væridion",
+      "label": "VÆRIDION",
+      "type": "startup",
+      "degree": 5,
+      "website": "https://vaeridion.com",
+      "score": 72
     },
     {
       "id": "marble cognition",
@@ -384,14 +392,6 @@
       "type": "startup",
       "degree": 5,
       "website": "https://www.kabilio.es",
-      "score": 72
-    },
-    {
-      "id": "væridion",
-      "label": "VÆRIDION",
-      "type": "startup",
-      "degree": 5,
-      "website": "https://vaeridion.com",
       "score": 72
     },
     {
@@ -411,28 +411,12 @@
       "score": 56
     },
     {
-      "id": "patabid",
-      "label": "PataBid",
-      "type": "startup",
-      "degree": 4,
-      "website": "https://www.patabid.com",
-      "score": 72
-    },
-    {
       "id": "doris labs",
       "label": "Doris Labs",
       "type": "startup",
       "degree": 4,
       "website": "https://dorislabs.com",
       "score": 80
-    },
-    {
-      "id": "keenable",
-      "label": "Keenable",
-      "type": "startup",
-      "degree": 4,
-      "website": "",
-      "score": 71
     },
     {
       "id": "bird&be",
@@ -475,6 +459,22 @@
       "score": 95
     },
     {
+      "id": "patabid",
+      "label": "PataBid",
+      "type": "startup",
+      "degree": 4,
+      "website": "https://www.patabid.com",
+      "score": 72
+    },
+    {
+      "id": "keenable",
+      "label": "Keenable",
+      "type": "startup",
+      "degree": 4,
+      "website": "https://keenable.ai",
+      "score": 91
+    },
+    {
       "id": "miles pines",
       "label": "Miles Pines",
       "type": "person",
@@ -503,18 +503,20 @@
       }
     },
     {
+      "id": "eric magliarditi",
+      "label": "Eric Magliarditi",
+      "type": "person",
+      "degree": 4,
+      "role": "Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ericmagliarditi/"
+      }
+    },
+    {
       "id": "andreessen horowitz",
       "label": "Andreessen Horowitz",
       "type": "org",
       "degree": 4
-    },
-    {
-      "id": "consus",
-      "label": "Consus",
-      "type": "startup",
-      "degree": 3,
-      "website": "https://consus.io",
-      "score": 72
     },
     {
       "id": "coherence quantum",
@@ -613,14 +615,12 @@
       "score": 61
     },
     {
-      "id": "eric magliarditi",
-      "label": "Eric Magliarditi",
-      "type": "person",
+      "id": "consus",
+      "label": "Consus",
+      "type": "startup",
       "degree": 3,
-      "role": "Founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/ericmagliarditi/"
-      }
+      "website": "https://consus.io",
+      "score": 67
     },
     {
       "id": "vishnu",
@@ -705,16 +705,6 @@
       }
     },
     {
-      "id": "andrey styskin",
-      "label": "Andrey Styskin",
-      "type": "person",
-      "degree": 3,
-      "role": "Founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/andrey-styskin"
-      }
-    },
-    {
       "id": "alan ma",
       "label": "Alan Ma",
       "type": "person",
@@ -753,6 +743,17 @@
       }
     },
     {
+      "id": "andrey styskin",
+      "label": "Andrey Styskin",
+      "type": "person",
+      "degree": 3,
+      "role": "Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/andrey-styskin",
+        "twitter": "https://x.com/styskin"
+      }
+    },
+    {
       "id": "amazon",
       "label": "Amazon",
       "type": "org",
@@ -771,14 +772,20 @@
       "degree": 3
     },
     {
-      "id": "miracly",
-      "label": "Miracly",
+      "id": "marker",
+      "label": "Marker",
       "type": "org",
       "degree": 3
     },
     {
-      "id": "marker",
-      "label": "Marker",
+      "id": "creandum",
+      "label": "Creandum",
+      "type": "org",
+      "degree": 3
+    },
+    {
+      "id": "miracly",
+      "label": "Miracly",
       "type": "org",
       "degree": 3
     },
@@ -983,22 +990,6 @@
       "links": {}
     },
     {
-      "id": "alexander malandin",
-      "label": "Alexander Malandin",
-      "type": "person",
-      "degree": 2,
-      "role": "CEO",
-      "links": {}
-    },
-    {
-      "id": "andrey abramov",
-      "label": "Andrey Abramov",
-      "type": "person",
-      "degree": 2,
-      "role": "CTO",
-      "links": {}
-    },
-    {
       "id": "aditya jain",
       "label": "Aditya Jain",
       "type": "person",
@@ -1102,16 +1093,6 @@
       }
     },
     {
-      "id": "matthias petri",
-      "label": "Matthias Petri",
-      "type": "person",
-      "degree": 2,
-      "role": "Founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/matthias-petri-6b7899394"
-      }
-    },
-    {
       "id": "will washburn",
       "label": "Will Washburn",
       "type": "person",
@@ -1212,6 +1193,34 @@
       "degree": 2,
       "role": "CEO",
       "links": {}
+    },
+    {
+      "id": "alexander malandin",
+      "label": "Alexander Malandin",
+      "type": "person",
+      "degree": 2,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/malandin"
+      }
+    },
+    {
+      "id": "andrey abramov",
+      "label": "Andrey Abramov",
+      "type": "person",
+      "degree": 2,
+      "role": "CTO",
+      "links": {}
+    },
+    {
+      "id": "matthias petri",
+      "label": "Matthias Petri",
+      "type": "person",
+      "degree": 2,
+      "role": "Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matthias-petri-6b7899394"
+      }
     },
     {
       "id": "spacex",
@@ -1318,12 +1327,6 @@
     {
       "id": "real ventures",
       "label": "Real Ventures",
-      "type": "org",
-      "degree": 2
-    },
-    {
-      "id": "creandum",
-      "label": "Creandum",
       "type": "org",
       "degree": 2
     },
@@ -1647,14 +1650,6 @@
       "type": "person",
       "degree": 1,
       "role": "Investor",
-      "links": {}
-    },
-    {
-      "id": "valerii mironov",
-      "label": "Valerii Mironov",
-      "type": "person",
-      "degree": 1,
-      "role": "Software Engineer",
       "links": {}
     },
     {
@@ -2423,30 +2418,6 @@
       }
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "stefan lindeberg",
       "label": "Stefan Lindeberg",
       "type": "person",
@@ -2945,24 +2916,6 @@
       }
     },
     {
-      "id": "matt falconer",
-      "label": "Matt Falconer",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/matthewfalconer"
-      }
-    },
-    {
-      "id": "alfie ranstead",
-      "label": "Alfie Ranstead",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder",
-      "links": {}
-    },
-    {
       "id": "hugh mcguire",
       "label": "Hugh McGuire",
       "type": "person",
@@ -3082,24 +3035,6 @@
       "role": "Co‑founder",
       "links": {
         "linkedin": "https://fr.linkedin.com/in/robinmandel/en"
-      }
-    },
-    {
-      "id": "felix rösner",
-      "label": "Felix Rösner",
-      "type": "person",
-      "degree": 1,
-      "role": "Founder",
-      "links": {}
-    },
-    {
-      "id": "christophe schmit",
-      "label": "Christophe Schmit",
-      "type": "person",
-      "degree": 1,
-      "role": "Founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/christophe-schmit-6256b6200"
       }
     },
     {
@@ -3604,24 +3539,6 @@
       }
     },
     {
-      "id": "david bennahum",
-      "label": "David Bennahum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/dbennahum"
-      }
-    },
-    {
-      "id": "nicholas nadeau",
-      "label": "Nicholas Nadeau",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder & CTO",
-      "links": {}
-    },
-    {
       "id": "alpha edison",
       "label": "Alpha Edison",
       "type": "person",
@@ -3909,6 +3826,96 @@
       }
     },
     {
+      "id": "david bennahum",
+      "label": "David Bennahum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dbennahum"
+      }
+    },
+    {
+      "id": "nicholas nadeau",
+      "label": "Nicholas Nadeau",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/engnadeau"
+      }
+    },
+    {
+      "id": "felix rösner",
+      "label": "Felix Rösner",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
+      "id": "christophe schmit",
+      "label": "Christophe Schmit",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/christophe-schmit-6256b6200"
+      }
+    },
+    {
+      "id": "matt falconer",
+      "label": "Matt Falconer",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matthewfalconer"
+      }
+    },
+    {
+      "id": "alfie ranstead",
+      "label": "Alfie Ranstead",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/alfieranstead"
+      }
+    },
+    {
+      "id": "valerii mironov",
+      "label": "Valerii Mironov",
+      "type": "person",
+      "degree": 1,
+      "role": "Software Engineer",
+      "links": {}
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -3941,12 +3948,6 @@
     {
       "id": "liquid2",
       "label": "Liquid2",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "castelion",
-      "label": "Castelion",
       "type": "org",
       "degree": 1
     },
@@ -4055,12 +4056,6 @@
     {
       "id": "figma ventures",
       "label": "Figma Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "ycombinator",
-      "label": "YCombinator",
       "type": "org",
       "degree": 1
     },
@@ -4263,30 +4258,6 @@
       "degree": 1
     },
     {
-      "id": "graphite ventures",
-      "label": "Graphite Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "sprout fund",
-      "label": "Sprout Fund",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "bluesky equities",
-      "label": "Bluesky Equities",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "inverted ventures",
-      "label": "Inverted Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "speedinvest",
       "label": "Speedinvest",
       "type": "org",
@@ -4371,18 +4342,6 @@
       "degree": 1
     },
     {
-      "id": "beenext ventures",
-      "label": "Beenext Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lotus",
-      "label": "Lotus",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "boost capital",
       "label": "Boost Capital",
       "type": "org",
@@ -4403,30 +4362,6 @@
     {
       "id": "gutter capital",
       "label": "Gutter Capital",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "accel",
-      "label": "Accel",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "conviction partners",
-      "label": "Conviction Partners",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "yandex",
-      "label": "Yandex",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "amazon alexa",
-      "label": "Amazon Alexa",
       "type": "org",
       "degree": 1
     },
@@ -4707,12 +4642,6 @@
       "degree": 1
     },
     {
-      "id": "lakestar",
-      "label": "Lakestar",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "bdc capital’s seed venture fund",
       "label": "BDC Capital’s Seed Venture Fund",
       "type": "org",
@@ -4853,12 +4782,6 @@
     {
       "id": "membo",
       "label": "Membo",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "heartcore",
-      "label": "Heartcore",
       "type": "org",
       "degree": 1
     },
@@ -5019,36 +4942,6 @@
       "degree": 1
     },
     {
-      "id": "jose ojeda",
-      "label": "Jose Ojeda",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "álex valls",
-      "label": "Álex Valls",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "picus capital",
-      "label": "Picus Capital",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "visionaries",
-      "label": "Visionaries",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "cdti",
-      "label": "CDTI",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "journey clinical",
       "label": "Journey Clinical",
       "type": "org",
@@ -5123,6 +5016,126 @@
     {
       "id": "harjavalta ventures",
       "label": "Harjavalta Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "heartcore",
+      "label": "Heartcore",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lakestar",
+      "label": "Lakestar",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "jose ojeda",
+      "label": "Jose Ojeda",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "álex valls",
+      "label": "Álex Valls",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "picus capital",
+      "label": "Picus Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "visionaries",
+      "label": "Visionaries",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "cdti",
+      "label": "CDTI",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "beenext ventures",
+      "label": "Beenext Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "graphite ventures",
+      "label": "Graphite Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "sprout fund",
+      "label": "Sprout Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "bluesky equities",
+      "label": "Bluesky Equities",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "inverted ventures",
+      "label": "Inverted Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "castelion",
+      "label": "Castelion",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "consus industries, inc.",
+      "label": "Consus Industries, Inc.",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "accel",
+      "label": "Accel",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "conviction partners",
+      "label": "Conviction Partners",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "yandex",
+      "label": "Yandex",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "amazon alexa",
+      "label": "Amazon Alexa",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "ycombinator",
+      "label": "YCombinator",
       "type": "org",
       "degree": 1
     },
@@ -6127,14 +6140,6 @@
       "links": {}
     },
     {
-      "id": "stephen grabowski",
-      "label": "Stephen Grabowski",
-      "type": "person",
-      "degree": 0,
-      "role": "",
-      "links": {}
-    },
-    {
       "id": "rachel holt",
       "label": "Rachel Holt",
       "type": "person",
@@ -6492,6 +6497,44 @@
         "linkedin": "https://www.linkedin.com/in/matthew-barnett-4aa7b81a7",
         "twitter": "https://x.com/MatthewJBar"
       }
+    },
+    {
+      "id": "nate redmond",
+      "label": "Nate Redmond",
+      "type": "person",
+      "degree": 0,
+      "role": "",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/nateredmond"
+      }
+    },
+    {
+      "id": "nick grouf",
+      "label": "Nick Grouf",
+      "type": "person",
+      "degree": 0,
+      "role": "",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ngrouf"
+      }
+    },
+    {
+      "id": "stephen grabowski",
+      "label": "Stephen Grabowski",
+      "type": "person",
+      "degree": 0,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/stgrabowski"
+      }
+    },
+    {
+      "id": "stephen mayone-paquin",
+      "label": "Stephen Mayone-Paquin",
+      "type": "person",
+      "degree": 0,
+      "role": "Operations",
+      "links": {}
     }
   ],
   "edges": [
@@ -6612,34 +6655,6 @@
       "target": "spacex",
       "rel": "previously_at",
       "evidence": "I launched national security payloads at SpaceX",
-      "sources": []
-    },
-    {
-      "source": "eric magliarditi",
-      "target": "consus",
-      "rel": "founded",
-      "evidence": "Founder & CEO\n## Eric Magliarditi",
-      "sources": []
-    },
-    {
-      "source": "eric magliarditi",
-      "target": "spacex",
-      "rel": "previously_at",
-      "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion.",
-      "sources": []
-    },
-    {
-      "source": "eric magliarditi",
-      "target": "castelion",
-      "rel": "previously_at",
-      "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion.",
-      "sources": []
-    },
-    {
-      "source": "y combinator",
-      "target": "consus",
-      "rel": "backed_by",
-      "evidence": "Backed by Y Combinator",
       "sources": []
     },
     {
@@ -6764,34 +6779,6 @@
     {
       "source": "alexander malandin",
       "target": "serenedb",
-      "rel": "founded",
-      "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov",
-      "sources": []
-    },
-    {
-      "source": "andrey abramov",
-      "target": "serenedb",
-      "rel": "founded",
-      "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov",
-      "sources": []
-    },
-    {
-      "source": "entourage",
-      "target": "serenedb",
-      "rel": "invested_in",
-      "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF).",
-      "sources": []
-    },
-    {
-      "source": "high-tech gruenderfonds (htgf)",
-      "target": "serenedb",
-      "rel": "invested_in",
-      "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF).",
-      "sources": []
-    },
-    {
-      "source": "alexander malandin",
-      "target": "serenedb",
       "rel": "works_at",
       "evidence": "CEO\nAlexander Malandin",
       "sources": []
@@ -6801,13 +6788,6 @@
       "target": "serenedb",
       "rel": "works_at",
       "evidence": "CTO\nAndrey Abramov",
-      "sources": []
-    },
-    {
-      "source": "valerii mironov",
-      "target": "serenedb",
-      "rel": "works_at",
-      "evidence": "Software Engineer\nValerii Mironov",
       "sources": []
     },
     {
@@ -7476,13 +7456,6 @@
       "sources": []
     },
     {
-      "source": "axel",
-      "target": "ycombinator",
-      "rel": "backed_by",
-      "evidence": "Backed by YCombinator",
-      "sources": []
-    },
-    {
       "source": "robin choy",
       "target": "adside.ai",
       "rel": "founded",
@@ -8085,62 +8058,6 @@
       ]
     },
     {
-      "source": "graphite ventures",
-      "target": "patabid",
-      "rel": "invested_in",
-      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
-      "sources": [
-        {
-          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
-          "run_id": "20261023T224039Z",
-          "first_seen": "2026-10-23T22:44:14+00:00",
-          "last_seen": "2026-10-23T22:44:14+00:00"
-        }
-      ]
-    },
-    {
-      "source": "sprout fund",
-      "target": "patabid",
-      "rel": "invested_in",
-      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
-      "sources": [
-        {
-          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
-          "run_id": "20261023T224039Z",
-          "first_seen": "2026-10-23T22:44:14+00:00",
-          "last_seen": "2026-10-23T22:44:14+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bluesky equities",
-      "target": "patabid",
-      "rel": "invested_in",
-      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
-      "sources": [
-        {
-          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
-          "run_id": "20261023T224039Z",
-          "first_seen": "2026-10-23T22:44:14+00:00",
-          "last_seen": "2026-10-23T22:44:14+00:00"
-        }
-      ]
-    },
-    {
-      "source": "inverted ventures",
-      "target": "patabid",
-      "rel": "invested_in",
-      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
-      "sources": [
-        {
-          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
-          "run_id": "20261023T224039Z",
-          "first_seen": "2026-10-23T22:44:14+00:00",
-          "last_seen": "2026-10-23T22:44:14+00:00"
-        }
-      ]
-    },
-    {
       "source": "antonio mallia",
       "target": "seltz",
       "rel": "founded",
@@ -8737,132 +8654,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "20261024T015344Z",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-10-24T01:57:30+00:00"
-        }
-      ]
-    },
-    {
       "source": "boost capital",
       "target": "relace",
       "rel": "invested_in",
@@ -9066,104 +8857,6 @@
       "sources": [
         {
           "source_url": "https://dabafinance.com/en/news/zeroentropy-seed-funding-ai-retrieval-tools-ghita-houir-alami",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "andrey styskin",
-      "target": "keenable",
-      "rel": "founded",
-      "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "matthias petri",
-      "target": "keenable",
-      "rel": "founded",
-      "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "accel",
-      "target": "keenable",
-      "rel": "invested_in",
-      "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining.",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "conviction partners",
-      "target": "keenable",
-      "rel": "invested_in",
-      "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining.",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "andrey styskin",
-      "target": "yandex",
-      "rel": "previously_at",
-      "evidence": "Styskin ran searches at Yandex and Amazon.",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "andrey styskin",
-      "target": "amazon",
-      "rel": "previously_at",
-      "evidence": "Styskin ran searches at Yandex and Amazon.",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "20261024T103347Z",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-10-24T10:37:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "matthias petri",
-      "target": "amazon alexa",
-      "rel": "previously_at",
-      "evidence": "Petri built search systems at Amazon Alexa.",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
           "run_id": "20261024T103347Z",
           "first_seen": "2026-10-24T10:37:24+00:00",
           "last_seen": "2026-10-24T10:37:24+00:00"
@@ -10785,76 +10478,6 @@
       ]
     },
     {
-      "source": "matt falconer",
-      "target": "ares intelligence",
-      "rel": "founded",
-      "evidence": "Founded in 2026 by Matt Falconer and 21-year‑old Alfie Ranstead, Ares Intelligence was built...",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "backfill-2026-10-30",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T14:59:32+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alfie ranstead",
-      "target": "ares intelligence",
-      "rel": "cofounded",
-      "evidence": "Founded in 2026 by Matt Falconer and 21-year‑old Alfie Ranstead, Ares Intelligence was built...",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "backfill-2026-10-30",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T14:59:32+00:00"
-        }
-      ]
-    },
-    {
-      "source": "creandum",
-      "target": "ares intelligence",
-      "rel": "invested_in",
-      "evidence": "The round was backed by Creandum and Lakestar... said Richard Keuntje , Vice President, Creandum.",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "backfill-2026-10-30",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T14:59:32+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lakestar",
-      "target": "ares intelligence",
-      "rel": "invested_in",
-      "evidence": "The round was backed by Creandum and Lakestar... said Enrico Mellis , Venture Partner, Lakestar.",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "backfill-2026-10-30",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T14:59:32+00:00"
-        }
-      ]
-    },
-    {
-      "source": "creandum",
-      "target": "ares intelligence",
-      "rel": "backed_by",
-      "evidence": "Backed by the investors behind Europe's defining technology companies.\n[Stockholm-based venture fund ...](https://www.creandum.com)",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
-          "run_id": "backfill-2026-10-30",
-          "first_seen": "2026-10-30T14:59:32+00:00",
-          "last_seen": "2026-10-30T14:59:32+00:00"
-        }
-      ]
-    },
-    {
       "source": "hugh mcguire",
       "target": "bloomsco",
       "rel": "founded",
@@ -11462,76 +11085,6 @@
       "sources": [
         {
           "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "felix rösner",
-      "target": "marble cognition",
-      "rel": "founded",
-      "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "christophe schmit",
-      "target": "marble cognition",
-      "rel": "founded",
-      "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "heartcore",
-      "target": "marble cognition",
-      "rel": "invested_in",
-      "evidence": "the round was co-led by Heartcore and Seedcamp",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "seedcamp",
-      "target": "marble cognition",
-      "rel": "invested_in",
-      "evidence": "the round was co-led by Heartcore and Seedcamp",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "reshma sohoni",
-      "target": "marble cognition",
-      "rel": "backed_by",
-      "evidence": "Reshma Sohoni, General Partner at Seedcamp, said, “Seedcamp has a long tradition of backing founders who change how we work...",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
           "run_id": "20261102T150455Z",
           "first_seen": "2026-11-02T15:08:02+00:00",
           "last_seen": "2026-11-02T15:08:02+00:00"
@@ -12809,160 +12362,6 @@
       ]
     },
     {
-      "source": "jose ojeda",
-      "target": "kabilio",
-      "rel": "founded",
-      "evidence": "Founded in 2025 by Jose Ojeda and Álex Valls",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "álex valls",
-      "target": "kabilio",
-      "rel": "founded",
-      "evidence": "Founded in 2025 by Jose Ojeda and Álex Valls",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "picus capital",
-      "target": "kabilio",
-      "rel": "invested_in",
-      "evidence": "The round was led by Picus Capital and Visionaries",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "visionaries",
-      "target": "kabilio",
-      "rel": "invested_in",
-      "evidence": "The round was led by Picus Capital and Visionaries",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "cdti",
-      "target": "kabilio",
-      "rel": "invested_in",
-      "evidence": "CDTI, Spain’s public agency for technological innovation, also participated",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "david bennahum",
-      "target": "onix",
-      "rel": "founded",
-      "evidence": "Onix was co‑founded by David Bennahum",
-      "sources": [
-        {
-          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "nicholas nadeau",
-      "target": "onix",
-      "rel": "cofounded",
-      "evidence": "Onix was co‑founded by ... Dr. Nicholas Nadeau",
-      "sources": [
-        {
-          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alpha edison",
-      "target": "onix",
-      "rel": "invested_in",
-      "evidence": "$5 million USD ... in pre‑seed funding led by Alpha Edison",
-      "sources": [
-        {
-          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "garage capital",
-      "target": "onix",
-      "rel": "invested_in",
-      "evidence": "participation from Garage Capital",
-      "sources": [
-        {
-          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "jeremy zimmer",
-      "target": "onix",
-      "rel": "invested_in",
-      "evidence": "strategic investors including Jeremy Zimmer",
-      "sources": [
-        {
-          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
-      "source": "js cournoyer",
-      "target": "onix",
-      "rel": "invested_in",
-      "evidence": "strategic investors ... JS Cournoyer",
-      "sources": [
-        {
-          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
-          "run_id": "20261105T141727Z",
-          "first_seen": "2026-11-05T14:20:43+00:00",
-          "last_seen": "2026-11-05T14:20:43+00:00"
-        }
-      ]
-    },
-    {
       "source": "jonathan sabbagh",
       "target": "journey clinical",
       "rel": "previously_at",
@@ -13659,6 +13058,748 @@
           "run_id": "20261107T124044Z",
           "first_seen": "2026-11-07T12:44:09+00:00",
           "last_seen": "2026-11-07T12:44:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "david bennahum",
+      "target": "onix",
+      "rel": "founded",
+      "evidence": "Onix was co‑founded by David Bennahum",
+      "sources": [
+        {
+          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nicholas nadeau",
+      "target": "onix",
+      "rel": "cofounded",
+      "evidence": "Onix was co‑founded by ... Dr. Nicholas Nadeau",
+      "sources": [
+        {
+          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alpha edison",
+      "target": "onix",
+      "rel": "invested_in",
+      "evidence": "$5 million USD ... in pre‑seed funding led by Alpha Edison",
+      "sources": [
+        {
+          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "garage capital",
+      "target": "onix",
+      "rel": "invested_in",
+      "evidence": "participation from Garage Capital",
+      "sources": [
+        {
+          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jeremy zimmer",
+      "target": "onix",
+      "rel": "invested_in",
+      "evidence": "strategic investors including Jeremy Zimmer",
+      "sources": [
+        {
+          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "js cournoyer",
+      "target": "onix",
+      "rel": "invested_in",
+      "evidence": "strategic investors ... JS Cournoyer",
+      "sources": [
+        {
+          "source_url": "https://www.prnewswire.com/news-releases/onix-expands-its-trusted-ai-platform-with-5-million-usd-pre-seed-round-302873369.html",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "felix rösner",
+      "target": "marble cognition",
+      "rel": "founded",
+      "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "christophe schmit",
+      "target": "marble cognition",
+      "rel": "founded",
+      "evidence": "Marble Cognition was founded in late 2025 by Felix Rösner and Christophe Schmit",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "heartcore",
+      "target": "marble cognition",
+      "rel": "invested_in",
+      "evidence": "the round was co-led by Heartcore and Seedcamp",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "seedcamp",
+      "target": "marble cognition",
+      "rel": "invested_in",
+      "evidence": "the round was co-led by Heartcore and Seedcamp",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "reshma sohoni",
+      "target": "marble cognition",
+      "rel": "backed_by",
+      "evidence": "Reshma Sohoni, General Partner at Seedcamp, said, “Seedcamp has a long tradition of backing founders who change how we work...",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/munichs-marble-cognition-raises-e3-35-million-to-build-ai-coworkers-that-learn-business-processes-before-automating-them/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "matt falconer",
+      "target": "ares intelligence",
+      "rel": "founded",
+      "evidence": "Founded in 2026 by Matt Falconer and 21-year‑old Alfie Ranstead, Ares Intelligence was built...",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alfie ranstead",
+      "target": "ares intelligence",
+      "rel": "cofounded",
+      "evidence": "Founded in 2026 by Matt Falconer and 21-year‑old Alfie Ranstead, Ares Intelligence was built...",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "creandum",
+      "target": "ares intelligence",
+      "rel": "invested_in",
+      "evidence": "The round was backed by Creandum and Lakestar... said Richard Keuntje , Vice President, Creandum.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lakestar",
+      "target": "ares intelligence",
+      "rel": "invested_in",
+      "evidence": "The round was backed by Creandum and Lakestar... said Enrico Mellis , Venture Partner, Lakestar.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "creandum",
+      "target": "ares intelligence",
+      "rel": "backed_by",
+      "evidence": "Backed by the investors behind Europe's defining technology companies.\n[Stockholm-based venture fund ...](https://www.creandum.com)",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-30T14:59:32+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ares intelligence",
+      "target": "creandum",
+      "rel": "backed_by",
+      "evidence": "Backed by the investors behind Europe's defining technology companies.\n[Stockholm-based venture fund ...](https://www.creandum.com)",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/exclusive-londons-ares-intelligence-raises-e2-6-million-to-turn-employee-insights-into-ai-adoption-plans/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alexander malandin",
+      "target": "serenedb",
+      "rel": "founded",
+      "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov",
+      "sources": [
+        {
+          "source_url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andrey abramov",
+      "target": "serenedb",
+      "rel": "founded",
+      "evidence": "Founded by CEO Alexander Malandin and CTO Andrey Abramov",
+      "sources": [
+        {
+          "source_url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "entourage",
+      "target": "serenedb",
+      "rel": "invested_in",
+      "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF).",
+      "sources": [
+        {
+          "source_url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "high-tech gruenderfonds (htgf)",
+      "target": "serenedb",
+      "rel": "invested_in",
+      "evidence": "This round was led by venture funds Entourage and High-Tech Gruenderfonds (HTGF).",
+      "sources": [
+        {
+          "source_url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "valerii mironov",
+      "target": "serenedb",
+      "rel": "works_at",
+      "evidence": "Software Engineer\nValerii Mironov",
+      "sources": [
+        {
+          "source_url": "https://www.thesaasnews.com/news/serenedb-raises-2-1m-pre-seed/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jose ojeda",
+      "target": "kabilio",
+      "rel": "founded",
+      "evidence": "Founded in 2025 by Jose Ojeda and Álex Valls",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "álex valls",
+      "target": "kabilio",
+      "rel": "founded",
+      "evidence": "Founded in 2025 by Jose Ojeda and Álex Valls",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "picus capital",
+      "target": "kabilio",
+      "rel": "invested_in",
+      "evidence": "The round was led by Picus Capital and Visionaries",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "visionaries",
+      "target": "kabilio",
+      "rel": "invested_in",
+      "evidence": "The round was led by Picus Capital and Visionaries",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "cdti",
+      "target": "kabilio",
+      "rel": "invested_in",
+      "evidence": "CDTI, Spain’s public agency for technological innovation, also participated",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/barcelonas-kabilio-raises-e10-million-to-deploy-its-ai-accounting-agent-as-client-base-nears-500-firms/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-05T14:20:43+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "graphite ventures",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sprout fund",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bluesky equities",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "inverted ventures",
+      "target": "patabid",
+      "rel": "invested_in",
+      "evidence": "the round was led by Graphite Ventures with additional participation from Sprout Fund, Bluesky Equities, Inverted Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/patabid-raises-2-million-to-expand-ai-construction-estimator/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-23T22:44:14+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "eric magliarditi",
+      "target": "consus",
+      "rel": "founded",
+      "evidence": "Hey Hacker News! I'm Eric, the founder of Consus.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50073471",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "eric magliarditi",
+      "target": "spacex",
+      "rel": "previously_at",
+      "evidence": "I launched national security payloads at SpaceX",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50073471",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "eric magliarditi",
+      "target": "castelion",
+      "rel": "previously_at",
+      "evidence": "Before starting Consus, Eric worked on national security missions at SpaceX and supported hypersonic missile development at Castelion.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50073471",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "y combinator",
+      "target": "consus",
+      "rel": "backed_by",
+      "evidence": "Backed by Y Combinator",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50073471",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "eric magliarditi",
+      "target": "consus industries, inc.",
+      "rel": "founded",
+      "evidence": "Founder & CEO\n## Eric Magliarditi",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50073471",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andrey styskin",
+      "target": "keenable",
+      "rel": "founded",
+      "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "matthias petri",
+      "target": "keenable",
+      "rel": "founded",
+      "evidence": "Andrey Styskin and Matthias Petri founded the company in 2025.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "accel",
+      "target": "keenable",
+      "rel": "invested_in",
+      "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "conviction partners",
+      "target": "keenable",
+      "rel": "invested_in",
+      "evidence": "Accel led the round with Conviction Partners and angels from Amazon, Google, and Databricks also joining.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andrey styskin",
+      "target": "yandex",
+      "rel": "previously_at",
+      "evidence": "Styskin ran searches at Yandex and Amazon.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andrey styskin",
+      "target": "amazon",
+      "rel": "previously_at",
+      "evidence": "Styskin ran searches at Yandex and Amazon.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "matthias petri",
+      "target": "amazon alexa",
+      "rel": "previously_at",
+      "evidence": "Petri built search systems at Amazon Alexa.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        }
+      ]
+    },
+    {
+      "source": "axel",
+      "target": "ycombinator",
+      "rel": "backed_by",
+      "evidence": "Backed by YCombinator",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/WAo-axel-ai-travel-agent-that-saves-you-money-on-flights-and-hotels",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-11-07T14:51:23+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
         }
       ]
     }
