@@ -1,90 +1,7 @@
 {
-  "started_at": "2026-11-07T14:51:23+00:00",
+  "started_at": "2026-11-08T14:57:39+00:00",
   "skipped": "",
   "startups": [
-    {
-      "company": "Onix",
-      "score": 79,
-      "gaps": [
-        "email",
-        "phone"
-      ],
-      "website": "https://onix.life",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 4,
-      "edges": 6,
-      "notes": [
-        "structured data: 4 people"
-      ]
-    },
-    {
-      "company": "Marble Cognition",
-      "score": 76,
-      "gaps": [
-        "tech stack",
-        "email",
-        "phone"
-      ],
-      "website": "https://marblecognition.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 2,
-      "edges": 5,
-      "notes": []
-    },
-    {
-      "company": "Ares Intelligence",
-      "score": 85,
-      "gaps": [
-        "tech stack",
-        "phone"
-      ],
-      "website": "https://aresintelligence.ai",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 2,
-      "edges": 6,
-      "notes": [
-        "structured data: 2 people",
-        "team llm: 2 people proposed, 2 grounded",
-        "team page: +0 people, +2 edges"
-      ]
-    },
-    {
-      "company": "SereneDB",
-      "score": 79,
-      "gaps": [
-        "email",
-        "phone"
-      ],
-      "website": "https://serenedb.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 3,
-      "edges": 5,
-      "notes": []
-    },
-    {
-      "company": "Kabilio",
-      "score": 72,
-      "gaps": [
-        "tech stack",
-        "founder",
-        "people profiles"
-      ],
-      "website": "https://www.kabilio.es",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 0,
-      "edges": 5,
-      "notes": []
-    },
     {
       "company": "Miracly.ai",
       "score": 87,
@@ -104,113 +21,207 @@
       ]
     },
     {
-      "company": "PataBid",
-      "score": 72,
+      "company": "Atlis Health, LLC",
+      "score": 70,
       "gaps": [
-        "tech stack",
         "founder",
-        "people profiles"
-      ],
-      "website": "https://www.patabid.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 0,
-      "edges": 4,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Consus",
-      "score": 67,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "email"
-      ],
-      "website": "https://consus.io",
-      "status": "ok",
-      "emails": 0,
-      "phones": 1,
-      "people": 1,
-      "edges": 5,
-      "notes": [
-        "team llm: 1 people proposed, 1 grounded",
-        "team page: +0 people, +1 edges"
-      ]
-    },
-    {
-      "company": "Keenable",
-      "score": 91,
-      "gaps": [
-        "tech stack",
+        "people profiles",
+        "investors",
         "phone"
       ],
-      "website": "https://keenable.ai",
+      "website": "https://www.atlis.health",
       "status": "ok",
       "emails": 1,
       "phones": 0,
-      "people": 2,
-      "edges": 7,
+      "people": 3,
+      "edges": 3,
       "notes": [
-        "structured data: 2 people",
         "team llm: 0 people proposed, 0 grounded",
         "team page: +0 people, +0 edges"
       ]
     },
     {
-      "company": "Axel",
-      "score": 71,
+      "company": "Roleo",
+      "score": 74,
       "gaps": [
-        "funding amount",
+        "location",
+        "tech stack",
         "email",
         "phone"
       ],
-      "website": "https://helloaxel.com",
+      "website": "https://lens.roleomassager.com",
       "status": "ok",
       "emails": 0,
       "phones": 0,
       "people": 2,
-      "edges": 1,
+      "edges": 5,
+      "notes": [
+        "structured data: 1 people"
+      ]
+    },
+    {
+      "company": "Talky Labs",
+      "score": 53,
+      "gaps": [
+        "location",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "email"
+      ],
+      "website": "https://usetalky.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 3,
+      "people": 0,
+      "edges": 9,
+      "notes": []
+    },
+    {
+      "company": "Bleu Robotics",
+      "score": 69,
+      "gaps": [
+        "tech stack",
+        "founder",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://bleu-robotics.com",
+      "status": "ok",
+      "emails": 2,
+      "phones": 0,
+      "people": 0,
+      "edges": 7,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Asakana",
+      "score": 71,
+      "gaps": [
+        "funding amount",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.asakana.co",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 3,
+      "edges": 3,
       "notes": [
         "structured data: 2 people"
       ]
+    },
+    {
+      "company": "Joinable Labs",
+      "score": 69,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "https://www.joinable.ai",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 1,
+      "edges": 2,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "ParadeDB",
+      "score": 64,
+      "gaps": [
+        "funding amount",
+        "founder",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://www.paradedb.com",
+      "status": "ok",
+      "emails": 4,
+      "phones": 0,
+      "people": 0,
+      "edges": 1,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Crediflow AI",
+      "score": 61,
+      "gaps": [
+        "funding stage",
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.crediflow.ai",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 1,
+      "edges": 3,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Deeptune",
+      "score": 67,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "https://deeptune.us.auth0.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 1,
+      "edges": 5,
+      "notes": []
     }
   ],
-  "tokens": 6823,
+  "tokens": 6872,
   "usage": {
-    "prompt_tokens": 5813,
-    "completion_tokens": 1010,
-    "total_tokens": 6823,
-    "calls": 5,
+    "prompt_tokens": 6290,
+    "completion_tokens": 582,
+    "total_tokens": 6872,
+    "calls": 6,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 5813,
-        "completion_tokens": 1010,
-        "total_tokens": 6823,
-        "calls": 5
+        "prompt_tokens": 6290,
+        "completion_tokens": 582,
+        "total_tokens": 6872,
+        "calls": 6
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 5813,
-        "completion_tokens": 1010,
-        "total_tokens": 6823,
-        "calls": 5
+        "prompt_tokens": 6290,
+        "completion_tokens": 582,
+        "total_tokens": 6872,
+        "calls": 6
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 5813,
-        "completion_tokens": 1010,
-        "total_tokens": 6823,
-        "calls": 5
+        "prompt_tokens": 6290,
+        "completion_tokens": 582,
+        "total_tokens": 6872,
+        "calls": 6
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-07T14:52:34+00:00"
+  "finished_at": "2026-11-08T14:58:52+00:00"
 }

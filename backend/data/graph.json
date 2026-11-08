@@ -110,7 +110,7 @@
       "type": "startup",
       "degree": 9,
       "website": "https://usetalky.com",
-      "score": 69
+      "score": 53
     },
     {
       "id": "exa",
@@ -167,14 +167,6 @@
       "score": 94
     },
     {
-      "id": "bleu robotics",
-      "label": "Bleu Robotics",
-      "type": "startup",
-      "degree": 7,
-      "website": "https://bleu-robotics.com",
-      "score": 69
-    },
-    {
       "id": "gallium defense",
       "label": "Gallium Defense",
       "type": "startup",
@@ -197,6 +189,14 @@
       "degree": 7,
       "website": "https://serenedb.com",
       "score": 79
+    },
+    {
+      "id": "bleu robotics",
+      "label": "Bleu Robotics",
+      "type": "startup",
+      "degree": 7,
+      "website": "https://bleu-robotics.com",
+      "score": 69
     },
     {
       "id": "y combinator",
@@ -306,7 +306,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 72
+      "score": 87
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -329,14 +329,6 @@
       "degree": 5,
       "website": "https://cedardb.com",
       "score": 72
-    },
-    {
-      "id": "deeptune",
-      "label": "Deeptune",
-      "type": "startup",
-      "degree": 5,
-      "website": "",
-      "score": 61
     },
     {
       "id": "gushwork",
@@ -409,6 +401,14 @@
       "degree": 5,
       "website": "https://www.kabilio.es",
       "score": 72
+    },
+    {
+      "id": "deeptune",
+      "label": "Deeptune",
+      "type": "startup",
+      "degree": 5,
+      "website": "https://deeptune.us.auth0.com",
+      "score": 67
     },
     {
       "id": "guillaume miara",
@@ -551,14 +551,6 @@
       "score": 84
     },
     {
-      "id": "atlis health, llc",
-      "label": "Atlis Health, LLC",
-      "type": "startup",
-      "degree": 3,
-      "website": "https://www.atlis.health",
-      "score": 70
-    },
-    {
       "id": "jooba",
       "label": "Jooba",
       "type": "startup",
@@ -615,12 +607,28 @@
       "score": 67
     },
     {
+      "id": "consus",
+      "label": "Consus",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://consus.io",
+      "score": 72
+    },
+    {
+      "id": "atlis health, llc",
+      "label": "Atlis Health, LLC",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://www.atlis.health",
+      "score": 70
+    },
+    {
       "id": "roleo",
       "label": "Roleo",
       "type": "startup",
       "degree": 3,
       "website": "https://lens.roleomassager.com",
-      "score": 69
+      "score": 74
     },
     {
       "id": "crediflow ai",
@@ -629,14 +637,6 @@
       "degree": 3,
       "website": "https://www.crediflow.ai",
       "score": 61
-    },
-    {
-      "id": "consus",
-      "label": "Consus",
-      "type": "startup",
-      "degree": 3,
-      "website": "https://consus.io",
-      "score": 72
     },
     {
       "id": "vishnu",
@@ -741,14 +741,6 @@
       }
     },
     {
-      "id": "vahur hansen",
-      "label": "Vahur Hansen",
-      "type": "person",
-      "degree": 3,
-      "role": "Co‑founder of Roleo",
-      "links": {}
-    },
-    {
       "id": "nitish badu",
       "label": "Nitish Badu",
       "type": "person",
@@ -770,14 +762,28 @@
       }
     },
     {
-      "id": "amazon",
-      "label": "Amazon",
-      "type": "org",
-      "degree": 3
+      "id": "vahur hansen",
+      "label": "Vahur Hansen",
+      "type": "person",
+      "degree": 3,
+      "role": "Co‑founder of Roleo",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/vahur-hansen-5372a498"
+      }
     },
     {
       "id": "yudai matsuoka",
       "label": "Yudai Matsuoka",
+      "type": "person",
+      "degree": 3,
+      "role": "Co-Founder & President",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/yudai-matsuoka"
+      }
+    },
+    {
+      "id": "amazon",
+      "label": "Amazon",
       "type": "org",
       "degree": 3
     },
@@ -876,14 +882,6 @@
       "score": 57
     },
     {
-      "id": "asakana",
-      "label": "Asakana",
-      "type": "startup",
-      "degree": 2,
-      "website": "https://www.asakana.co",
-      "score": 66
-    },
-    {
       "id": "voygr",
       "label": "VOYGR",
       "type": "startup",
@@ -922,14 +920,6 @@
       "degree": 2,
       "website": "https://www.rozvelt.com",
       "score": 79
-    },
-    {
-      "id": "joinable labs",
-      "label": "Joinable Labs",
-      "type": "startup",
-      "degree": 2,
-      "website": "https://www.joinable.ai",
-      "score": 64
     },
     {
       "id": "odin robotics",
@@ -1004,6 +994,22 @@
       "score": 81
     },
     {
+      "id": "asakana",
+      "label": "Asakana",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://www.asakana.co",
+      "score": 71
+    },
+    {
+      "id": "joinable labs",
+      "label": "Joinable Labs",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://www.joinable.ai",
+      "score": 69
+    },
+    {
       "id": "eric",
       "label": "Eric",
       "type": "person",
@@ -1019,16 +1025,6 @@
       "role": "cofounder",
       "links": {
         "linkedin": "https://www.linkedin.com/in/aditya-jain27"
-      }
-    },
-    {
-      "id": "benjamin solis-cohen",
-      "label": "Benjamin Solis-Cohen",
-      "type": "person",
-      "degree": 2,
-      "role": "cofounder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/bsoliscohen"
       }
     },
     {
@@ -1245,6 +1241,16 @@
       }
     },
     {
+      "id": "benjamin solis-cohen",
+      "label": "Benjamin Solis-Cohen",
+      "type": "person",
+      "degree": 2,
+      "role": "cofounder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/bsoliscohen"
+      }
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -1421,14 +1427,6 @@
       "score": 57
     },
     {
-      "id": "paradedb",
-      "label": "ParadeDB",
-      "type": "startup",
-      "degree": 1,
-      "website": "https://www.paradedb.com",
-      "score": 64
-    },
-    {
       "id": "alter",
       "label": "Alter",
       "type": "startup",
@@ -1507,6 +1505,14 @@
       "degree": 1,
       "website": "https://evardi.ai",
       "score": 57
+    },
+    {
+      "id": "paradedb",
+      "label": "ParadeDB",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://www.paradedb.com",
+      "score": 64
     },
     {
       "id": "alex rosenberg",
@@ -1947,30 +1953,6 @@
       "links": {}
     },
     {
-      "id": "brian schroeder",
-      "label": "Brian Schroeder",
-      "type": "person",
-      "degree": 1,
-      "role": "Executive Officer",
-      "links": {}
-    },
-    {
-      "id": "jamie scarcelli",
-      "label": "Jamie Scarcelli",
-      "type": "person",
-      "degree": 1,
-      "role": "Executive Officer",
-      "links": {}
-    },
-    {
-      "id": "brendan haffey",
-      "label": "Brendan Haffey",
-      "type": "person",
-      "degree": 1,
-      "role": "Executive Officer",
-      "links": {}
-    },
-    {
       "id": "aly moursy",
       "label": "Aly Moursy",
       "type": "person",
@@ -2193,16 +2175,6 @@
       "role": "Co‑founder",
       "links": {
         "linkedin": "https://www.linkedin.com/in/devon/"
-      }
-    },
-    {
-      "id": "tim lupo",
-      "label": "Tim Lupo",
-      "type": "person",
-      "degree": 1,
-      "role": "cofounder and CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/timlup"
       }
     },
     {
@@ -2618,14 +2590,6 @@
       "links": {
         "linkedin": "https://www.linkedin.com/in/anne-sophie-paquet-7039a2b0"
       }
-    },
-    {
-      "id": "brian shin",
-      "label": "Brian Shin",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-Founder",
-      "links": {}
     },
     {
       "id": "samriddhi singh",
@@ -3505,16 +3469,6 @@
       "links": {}
     },
     {
-      "id": "drey kenfack",
-      "label": "Drey Kenfack",
-      "type": "person",
-      "degree": 1,
-      "role": "CEO & Founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/dreykenfack"
-      }
-    },
-    {
       "id": "will bryk",
       "label": "Will Bryk",
       "type": "person",
@@ -3930,30 +3884,6 @@
       "links": {}
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "paul ziadé",
       "label": "Paul Ziadé",
       "type": "person",
@@ -3980,6 +3910,84 @@
       "degree": 1,
       "role": "Founder",
       "links": {}
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "brian schroeder",
+      "label": "Brian Schroeder",
+      "type": "person",
+      "degree": 1,
+      "role": "Executive Officer",
+      "links": {}
+    },
+    {
+      "id": "jamie scarcelli",
+      "label": "Jamie Scarcelli",
+      "type": "person",
+      "degree": 1,
+      "role": "Executive Officer",
+      "links": {}
+    },
+    {
+      "id": "brendan haffey",
+      "label": "Brendan Haffey",
+      "type": "person",
+      "degree": 1,
+      "role": "Executive Officer",
+      "links": {}
+    },
+    {
+      "id": "brian shin",
+      "label": "Brian Shin",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/bshin"
+      }
+    },
+    {
+      "id": "drey kenfack",
+      "label": "Drey Kenfack",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO & Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dreykenfack"
+      }
+    },
+    {
+      "id": "tim lupo",
+      "label": "Tim Lupo",
+      "type": "person",
+      "degree": 1,
+      "role": "cofounder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/timlup"
+      }
     },
     {
       "id": "endgrate",
@@ -4086,12 +4094,6 @@
     {
       "id": "mitsubishi corporation",
       "label": "Mitsubishi Corporation",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "google",
-      "label": "Google",
       "type": "org",
       "degree": 1
     },
@@ -4282,12 +4284,6 @@
       "degree": 1
     },
     {
-      "id": "776",
-      "label": "776",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "atlantic",
       "label": "Atlantic",
       "type": "org",
@@ -4452,12 +4448,6 @@
     {
       "id": "desjardins",
       "label": "Desjardins",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "accomplice blockchain",
-      "label": "Accomplice Blockchain",
       "type": "org",
       "degree": 1
     },
@@ -4648,48 +4638,6 @@
       "degree": 1
     },
     {
-      "id": "benoît berkoukchi",
-      "label": "Benoît Berkoukchi",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "contrarian ventures",
-      "label": "Contrarian Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "ovni capital",
-      "label": "OVNI Capital",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "kvanted",
-      "label": "Kvanted",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "wepa ventures",
-      "label": "WEPA Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "motier ventures",
-      "label": "Motier Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "charlie songhurst",
-      "label": "Charlie Songhurst",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "sv angel",
       "label": "SV Angel",
       "type": "org",
@@ -4716,42 +4664,6 @@
     {
       "id": "telegraph ventures",
       "label": "Telegraph Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "jorge beamonte",
-      "label": "Jorge Beamonte",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "maximilian letón",
-      "label": "Maximilian Letón",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "helloworld",
-      "label": "HelloWorld",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "silence vc",
-      "label": "Silence VC",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "motive force",
-      "label": "Motive Force",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "aera capital",
-      "label": "Aera Capital",
       "type": "org",
       "degree": 1
     },
@@ -4816,18 +4728,6 @@
       "degree": 1
     },
     {
-      "id": "practica capital",
-      "label": "Practica Capital",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "inventure",
-      "label": "Inventure",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "janer gorohhov",
       "label": "Janer Gorohhov",
       "type": "org",
@@ -4836,18 +4736,6 @@
     {
       "id": "veriff",
       "label": "Veriff",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "wise",
-      "label": "Wise",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "membo",
-      "label": "Membo",
       "type": "org",
       "degree": 1
     },
@@ -4908,18 +4796,6 @@
     {
       "id": "halbzeit",
       "label": "HALBZEIT",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "npif ii – pxn equity finance",
-      "label": "NPIF II – PXN Equity Finance",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "haatch",
-      "label": "Haatch",
       "type": "org",
       "degree": 1
     },
@@ -5122,18 +4998,6 @@
       "degree": 1
     },
     {
-      "id": "beenext ventures",
-      "label": "Beenext Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lotus",
-      "label": "Lotus",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "graphite ventures",
       "label": "Graphite Ventures",
       "type": "org",
@@ -5262,6 +5126,150 @@
     {
       "id": "framework ventures",
       "label": "Framework Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "beenext ventures",
+      "label": "Beenext Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "practica capital",
+      "label": "Practica Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "inventure",
+      "label": "Inventure",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "wise",
+      "label": "Wise",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "membo",
+      "label": "Membo",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "jorge beamonte",
+      "label": "Jorge Beamonte",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "maximilian letón",
+      "label": "Maximilian Letón",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "helloworld",
+      "label": "HelloWorld",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "silence vc",
+      "label": "Silence VC",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "motive force",
+      "label": "Motive Force",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "aera capital",
+      "label": "Aera Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "benoît berkoukchi",
+      "label": "Benoît Berkoukchi",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "contrarian ventures",
+      "label": "Contrarian Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "ovni capital",
+      "label": "OVNI Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "kvanted",
+      "label": "Kvanted",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "wepa ventures",
+      "label": "WEPA Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "motier ventures",
+      "label": "Motier Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "charlie songhurst",
+      "label": "Charlie Songhurst",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "google",
+      "label": "Google",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "accomplice blockchain",
+      "label": "Accomplice Blockchain",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "npif ii – pxn equity finance",
+      "label": "NPIF II – PXN Equity Finance",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "haatch",
+      "label": "Haatch",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "776",
+      "label": "776",
       "type": "org",
       "degree": 1
     },
@@ -6502,14 +6510,6 @@
       }
     },
     {
-      "id": "paul kleiman",
-      "label": "Paul Kleiman",
-      "type": "person",
-      "degree": 0,
-      "role": "President and CEO, Massage U, Inc.",
-      "links": {}
-    },
-    {
       "id": "christian wolf",
       "label": "Christian Wolf",
       "type": "person",
@@ -6757,6 +6757,24 @@
       "degree": 0,
       "role": "",
       "links": {}
+    },
+    {
+      "id": "paul kleiman",
+      "label": "Paul Kleiman",
+      "type": "person",
+      "degree": 0,
+      "role": "President and CEO, Massage U, Inc.",
+      "links": {}
+    },
+    {
+      "id": "ben solis-cohen",
+      "label": "Ben Solis-Cohen",
+      "type": "person",
+      "degree": 0,
+      "role": "Co-Founder & CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/bsoliscohen"
+      }
     }
   ],
   "edges": [
@@ -7252,20 +7270,6 @@
     },
     {
       "source": "yudai matsuoka",
-      "target": "asakana",
-      "rel": "cofounded",
-      "evidence": "We're Yudai and Ben.",
-      "sources": []
-    },
-    {
-      "source": "benjamin solis-cohen",
-      "target": "asakana",
-      "rel": "cofounded",
-      "evidence": "We're Yudai and Ben.",
-      "sources": []
-    },
-    {
-      "source": "yudai matsuoka",
       "target": "mitsubishi corporation",
       "rel": "previously_at",
       "evidence": "Yudai was a fisherman and a seafood distributor (Mitsubishi Corporation)",
@@ -7276,13 +7280,6 @@
       "target": "mckinsey",
       "rel": "previously_at",
       "evidence": "then at McKinsey transformed companies that still ran on it",
-      "sources": []
-    },
-    {
-      "source": "benjamin solis-cohen",
-      "target": "google",
-      "rel": "previously_at",
-      "evidence": "Ben spent 8 years at Google as a senior AI research engineer on Project Mariner and Gemini.",
       "sources": []
     },
     {
@@ -7461,27 +7458,6 @@
       "sources": []
     },
     {
-      "source": "brian schroeder",
-      "target": "atlis health, llc",
-      "rel": "works_at",
-      "evidence": "Brian Schroeder — Executive Officer",
-      "sources": []
-    },
-    {
-      "source": "jamie scarcelli",
-      "target": "atlis health, llc",
-      "rel": "works_at",
-      "evidence": "Jamie Scarcelli — Executive Officer",
-      "sources": []
-    },
-    {
-      "source": "brendan haffey",
-      "target": "atlis health, llc",
-      "rel": "works_at",
-      "evidence": "Brendan Haffey — Executive Officer",
-      "sources": []
-    },
-    {
       "source": "aly moursy",
       "target": "veeza ai",
       "rel": "founded",
@@ -7500,13 +7476,6 @@
       "target": "voygr",
       "rel": "founded",
       "evidence": "Vlad and Yarik, founders of VOYGR",
-      "sources": []
-    },
-    {
-      "source": "paradedb",
-      "target": "y combinator",
-      "rel": "backed_by",
-      "evidence": "ParadeDB (YC S23",
       "sources": []
     },
     {
@@ -7941,41 +7910,6 @@
       "target": "genspark",
       "rel": "invested_in",
       "evidence": "The funding is led by Singapore-based fund Lanchi Ventures",
-      "sources": []
-    },
-    {
-      "source": "tim lupo",
-      "target": "deeptune",
-      "rel": "founded",
-      "evidence": "cofounder and CEO Tim Lupo told Fortune",
-      "sources": []
-    },
-    {
-      "source": "andreessen horowitz",
-      "target": "deeptune",
-      "rel": "invested_in",
-      "evidence": "Andreessen Horowitz led the round",
-      "sources": []
-    },
-    {
-      "source": "776",
-      "target": "deeptune",
-      "rel": "invested_in",
-      "evidence": "joined by 776",
-      "sources": []
-    },
-    {
-      "source": "noam brown",
-      "target": "deeptune",
-      "rel": "invested_in",
-      "evidence": "angels including OpenAI researcher Noam Brown",
-      "sources": []
-    },
-    {
-      "source": "marco mascorro",
-      "target": "deeptune",
-      "rel": "invested_in",
-      "evidence": "Marco Mascorro, partner at Andreessen Horowitz, told Fortune",
       "sources": []
     },
     {
@@ -9205,34 +9139,6 @@
       "sources": [
         {
           "source_url": "https://betakit.com/bia-health-raises-2-15-million-for-ai-to-reduce-unnecessary-medical-interventions/",
-          "run_id": "20261025T105839Z",
-          "first_seen": "2026-10-25T11:01:55+00:00",
-          "last_seen": "2026-10-25T11:01:55+00:00"
-        }
-      ]
-    },
-    {
-      "source": "brian shin",
-      "target": "joinable labs",
-      "rel": "founded",
-      "evidence": "\"AI Builders need more than models — they need alignment and momentum,\" said Brian Shin, Co-Founder of Joinable Labs",
-      "sources": [
-        {
-          "source_url": "https://theaiinsider.tech/2025/08/07/joinable-labs-launches-to-accelerate-the-time-to-intelligence-of-private-ai-with-2m-seed-round-and-first-product-rag-in-a-box/",
-          "run_id": "20261025T105839Z",
-          "first_seen": "2026-10-25T11:01:55+00:00",
-          "last_seen": "2026-10-25T11:01:55+00:00"
-        }
-      ]
-    },
-    {
-      "source": "accomplice blockchain",
-      "target": "joinable labs",
-      "rel": "invested_in",
-      "evidence": "Joinable’s launch is supported by $2 million in seed funding from ... top-tier funds such as Accomplice Blockchain",
-      "sources": [
-        {
-          "source_url": "https://theaiinsider.tech/2025/08/07/joinable-labs-launches-to-accelerate-the-time-to-intelligence-of-private-ai-with-2m-seed-round-and-first-product-rag-in-a-box/",
           "run_id": "20261025T105839Z",
           "first_seen": "2026-10-25T11:01:55+00:00",
           "last_seen": "2026-10-25T11:01:55+00:00"
@@ -10518,104 +10424,6 @@
       ]
     },
     {
-      "source": "benoît berkoukchi",
-      "target": "bleu robotics",
-      "rel": "cofounded",
-      "evidence": "Benoît Berkoukchi , co‑founder of Bleu Robotics, says,",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-          "run_id": "20261030T122343Z",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "contrarian ventures",
-      "target": "bleu robotics",
-      "rel": "invested_in",
-      "evidence": "The round was co‑led by Contrarian Ventures and OVNI Capital",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-          "run_id": "20261030T122343Z",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "ovni capital",
-      "target": "bleu robotics",
-      "rel": "invested_in",
-      "evidence": "The round was co‑led by Contrarian Ventures and OVNI Capital",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-          "run_id": "20261030T122343Z",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "kvanted",
-      "target": "bleu robotics",
-      "rel": "invested_in",
-      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-          "run_id": "20261030T122343Z",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "wepa ventures",
-      "target": "bleu robotics",
-      "rel": "invested_in",
-      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-          "run_id": "20261030T122343Z",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "motier ventures",
-      "target": "bleu robotics",
-      "rel": "invested_in",
-      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-          "run_id": "20261030T122343Z",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "charlie songhurst",
-      "target": "bleu robotics",
-      "rel": "invested_in",
-      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
-          "run_id": "20261030T122343Z",
-          "first_seen": "2026-10-30T12:27:26+00:00",
-          "last_seen": "2026-10-30T12:27:26+00:00"
-        }
-      ]
-    },
-    {
       "source": "andy elder",
       "target": "dream",
       "rel": "cofounded",
@@ -10763,132 +10571,6 @@
       "sources": [
         {
           "source_url": "https://betakit.com/bloomsco-raises-1-million-pre-seed-from-bdc-telegraph-for-military-training-platform/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "jorge beamonte",
-      "target": "talky labs",
-      "rel": "founded",
-      "evidence": "Founded in 2025 by Jorge Beamonte; CEO, and Maximilian Letón",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "maximilian letón",
-      "target": "talky labs",
-      "rel": "cofounded",
-      "evidence": "Founded in 2025 by … Maximilian Letón (23); COO",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "helloworld",
-      "target": "talky labs",
-      "rel": "invested_in",
-      "evidence": "participation from venture capital firms HelloWorld",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "silence vc",
-      "target": "talky labs",
-      "rel": "invested_in",
-      "evidence": "participation from venture capital firms HelloWorld, Silence VC",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "motive force",
-      "target": "talky labs",
-      "rel": "invested_in",
-      "evidence": "participation from venture capital firms HelloWorld, Silence VC, Motive Force",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "aera capital",
-      "target": "talky labs",
-      "rel": "invested_in",
-      "evidence": "participation from venture capital firms HelloWorld, Silence VC, Motive Force, and Aera Capital",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "sebastián gunningham",
-      "target": "talky labs",
-      "rel": "invested_in",
-      "evidence": "angel investors Sebastián Gunningham; CEO of Remitly",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "paul golbaum",
-      "target": "talky labs",
-      "rel": "invested_in",
-      "evidence": "angel investors … Paul Golbaum; CEO of Lightbase and former CTO of Seedtag",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
-          "run_id": "20261031T115349Z",
-          "first_seen": "2026-10-31T11:57:24+00:00",
-          "last_seen": "2026-10-31T11:57:24+00:00"
-        }
-      ]
-    },
-    {
-      "source": "javier morenés",
-      "target": "talky labs",
-      "rel": "invested_in",
-      "evidence": "angel investors … Javier Morenés",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
           "run_id": "20261031T115349Z",
           "first_seen": "2026-10-31T11:57:24+00:00",
           "last_seen": "2026-10-31T11:57:24+00:00"
@@ -11230,80 +10912,10 @@
       ]
     },
     {
-      "source": "vahur hansen",
-      "target": "roleo",
-      "rel": "cofounded",
-      "evidence": "The company was founded by … Vahur Hansen, a former member of Wise’s early engineering team and co‑founder of startup Membo.",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "practica capital",
-      "target": "roleo",
-      "rel": "invested_in",
-      "evidence": "The round was led by the Baltic venture capital firm Practica Capital…",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "inventure",
-      "target": "roleo",
-      "rel": "invested_in",
-      "evidence": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure.",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
       "source": "janer gorohhov",
       "target": "veriff",
       "rel": "previously_at",
       "evidence": "Janer Gorohhov, co‑founder of identity verification unicorn Veriff.",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "vahur hansen",
-      "target": "wise",
-      "rel": "previously_at",
-      "evidence": "Vahur Hansen, a former member of Wise’s early engineering team.",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
-          "run_id": "20261102T150455Z",
-          "first_seen": "2026-11-02T15:08:02+00:00",
-          "last_seen": "2026-11-02T15:08:02+00:00"
-        }
-      ]
-    },
-    {
-      "source": "vahur hansen",
-      "target": "membo",
-      "rel": "previously_at",
-      "evidence": "Vahur Hansen … co‑founder of startup Membo.",
       "sources": [
         {
           "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
@@ -12119,48 +11731,6 @@
       "sources": [
         {
           "source_url": "https://www.eu-startups.com/2026/11/leipzig-based-jawbuddy-raises-e818k-to-help-people-reduce-jaw-pain-bruxism-and-tmj-related-tension/",
-          "run_id": "20261104T135833Z",
-          "first_seen": "2026-11-04T14:02:27+00:00",
-          "last_seen": "2026-11-04T14:02:27+00:00"
-        }
-      ]
-    },
-    {
-      "source": "drey kenfack",
-      "target": "crediflow ai",
-      "rel": "founded",
-      "evidence": "Crediflow AI was founded in 2024 by Drey Kenfack",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
-          "run_id": "20261104T135833Z",
-          "first_seen": "2026-11-04T14:02:27+00:00",
-          "last_seen": "2026-11-04T14:02:27+00:00"
-        }
-      ]
-    },
-    {
-      "source": "npif ii – pxn equity finance",
-      "target": "crediflow ai",
-      "rel": "invested_in",
-      "evidence": "The funding was led by NPIF II – PXN Equity Finance",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
-          "run_id": "20261104T135833Z",
-          "first_seen": "2026-11-04T14:02:27+00:00",
-          "last_seen": "2026-11-04T14:02:27+00:00"
-        }
-      ]
-    },
-    {
-      "source": "haatch",
-      "target": "crediflow ai",
-      "rel": "invested_in",
-      "evidence": "The round also saw participation from early-stage venture firm Haatch",
-      "sources": [
-        {
-          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
           "run_id": "20261104T135833Z",
           "first_seen": "2026-11-04T14:02:27+00:00",
           "last_seen": "2026-11-04T14:02:27+00:00"
@@ -13662,132 +13232,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        }
-      ]
-    },
-    {
       "source": "graphite ventures",
       "target": "patabid",
       "rel": "invested_in",
@@ -14246,6 +13690,664 @@
           "run_id": "backfill-2026-11-08",
           "first_seen": "2026-11-08T13:00:25+00:00",
           "last_seen": "2026-11-08T13:00:30+00:00"
+        }
+      ]
+    },
+    {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "brian schroeder",
+      "target": "atlis health, llc",
+      "rel": "works_at",
+      "evidence": "Brian Schroeder — Executive Officer",
+      "sources": [
+        {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2159248/000215924826000001/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jamie scarcelli",
+      "target": "atlis health, llc",
+      "rel": "works_at",
+      "evidence": "Jamie Scarcelli — Executive Officer",
+      "sources": [
+        {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2159248/000215924826000001/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "brendan haffey",
+      "target": "atlis health, llc",
+      "rel": "works_at",
+      "evidence": "Brendan Haffey — Executive Officer",
+      "sources": [
+        {
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2159248/000215924826000001/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vahur hansen",
+      "target": "roleo",
+      "rel": "cofounded",
+      "evidence": "The company was founded by … Vahur Hansen, a former member of Wise’s early engineering team and co‑founder of startup Membo.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "practica capital",
+      "target": "roleo",
+      "rel": "invested_in",
+      "evidence": "The round was led by the Baltic venture capital firm Practica Capital…",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "inventure",
+      "target": "roleo",
+      "rel": "invested_in",
+      "evidence": "The round was led by the Baltic venture capital firm Practica Capital and included participation from Nordic VC Inventure.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vahur hansen",
+      "target": "wise",
+      "rel": "previously_at",
+      "evidence": "Vahur Hansen, a former member of Wise’s early engineering team.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vahur hansen",
+      "target": "membo",
+      "rel": "previously_at",
+      "evidence": "Vahur Hansen … co‑founder of startup Membo.",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/looking-for-a-job-estonias-roleo-just-raised-e2-9-million-to-help-you-on-your-journey/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-02T15:08:02+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jorge beamonte",
+      "target": "talky labs",
+      "rel": "founded",
+      "evidence": "Founded in 2025 by Jorge Beamonte; CEO, and Maximilian Letón",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "maximilian letón",
+      "target": "talky labs",
+      "rel": "cofounded",
+      "evidence": "Founded in 2025 by … Maximilian Letón (23); COO",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "helloworld",
+      "target": "talky labs",
+      "rel": "invested_in",
+      "evidence": "participation from venture capital firms HelloWorld",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "silence vc",
+      "target": "talky labs",
+      "rel": "invested_in",
+      "evidence": "participation from venture capital firms HelloWorld, Silence VC",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "motive force",
+      "target": "talky labs",
+      "rel": "invested_in",
+      "evidence": "participation from venture capital firms HelloWorld, Silence VC, Motive Force",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "aera capital",
+      "target": "talky labs",
+      "rel": "invested_in",
+      "evidence": "participation from venture capital firms HelloWorld, Silence VC, Motive Force, and Aera Capital",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sebastián gunningham",
+      "target": "talky labs",
+      "rel": "invested_in",
+      "evidence": "angel investors Sebastián Gunningham; CEO of Remitly",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "paul golbaum",
+      "target": "talky labs",
+      "rel": "invested_in",
+      "evidence": "angel investors … Paul Golbaum; CEO of Lightbase and former CTO of Seedtag",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "javier morenés",
+      "target": "talky labs",
+      "rel": "invested_in",
+      "evidence": "angel investors … Javier Morenés",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/madrids-talky-raises-e1-5-million-to-teach-ai-the-unwritten-rules-of-accounting/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-31T11:57:24+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "benoît berkoukchi",
+      "target": "bleu robotics",
+      "rel": "cofounded",
+      "evidence": "Benoît Berkoukchi , co‑founder of Bleu Robotics, says,",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "contrarian ventures",
+      "target": "bleu robotics",
+      "rel": "invested_in",
+      "evidence": "The round was co‑led by Contrarian Ventures and OVNI Capital",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ovni capital",
+      "target": "bleu robotics",
+      "rel": "invested_in",
+      "evidence": "The round was co‑led by Contrarian Ventures and OVNI Capital",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "kvanted",
+      "target": "bleu robotics",
+      "rel": "invested_in",
+      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "wepa ventures",
+      "target": "bleu robotics",
+      "rel": "invested_in",
+      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "motier ventures",
+      "target": "bleu robotics",
+      "rel": "invested_in",
+      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "charlie songhurst",
+      "target": "bleu robotics",
+      "rel": "invested_in",
+      "evidence": "with participation from Kvanted, WEPA Ventures, Motier Ventures and Charlie Songhurst",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/10/french-startup-bleu-robotics-secures-e5-million-to-teach-humanoid-robots-new-tasks-with-fewer-demonstrations/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-30T12:27:26+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "yudai matsuoka",
+      "target": "asakana",
+      "rel": "cofounded",
+      "evidence": "We're Yudai and Ben.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "benjamin solis-cohen",
+      "target": "asakana",
+      "rel": "cofounded",
+      "evidence": "We're Yudai and Ben.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "benjamin solis-cohen",
+      "target": "google",
+      "rel": "previously_at",
+      "evidence": "Ben spent 8 years at Google as a senior AI research engineer on Project Mariner and Gemini.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/VrR-asakana-automating-sales-and-the-entire-back-office-for-food-distributors",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "brian shin",
+      "target": "joinable labs",
+      "rel": "founded",
+      "evidence": "\"AI Builders need more than models — they need alignment and momentum,\" said Brian Shin, Co-Founder of Joinable Labs",
+      "sources": [
+        {
+          "source_url": "https://theaiinsider.tech/2025/08/07/joinable-labs-launches-to-accelerate-the-time-to-intelligence-of-private-ai-with-2m-seed-round-and-first-product-rag-in-a-box/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-25T11:01:55+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "accomplice blockchain",
+      "target": "joinable labs",
+      "rel": "invested_in",
+      "evidence": "Joinable’s launch is supported by $2 million in seed funding from ... top-tier funds such as Accomplice Blockchain",
+      "sources": [
+        {
+          "source_url": "https://theaiinsider.tech/2025/08/07/joinable-labs-launches-to-accelerate-the-time-to-intelligence-of-private-ai-with-2m-seed-round-and-first-product-rag-in-a-box/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-10-25T11:01:55+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "paradedb",
+      "target": "y combinator",
+      "rel": "backed_by",
+      "evidence": "ParadeDB (YC S23",
+      "sources": [
+        {
+          "source_url": "https://paradedb.com",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "drey kenfack",
+      "target": "crediflow ai",
+      "rel": "founded",
+      "evidence": "Crediflow AI was founded in 2024 by Drey Kenfack",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "npif ii – pxn equity finance",
+      "target": "crediflow ai",
+      "rel": "invested_in",
+      "evidence": "The funding was led by NPIF II – PXN Equity Finance",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "haatch",
+      "target": "crediflow ai",
+      "rel": "invested_in",
+      "evidence": "The round also saw participation from early-stage venture firm Haatch",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/manchester-based-crediflow-ai-secures-e1-8-million-to-automate-commercial-loan-processing/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-04T14:02:27+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "tim lupo",
+      "target": "deeptune",
+      "rel": "founded",
+      "evidence": "cofounder and CEO Tim Lupo told Fortune",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andreessen horowitz",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "Andreessen Horowitz led the round",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "776",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "joined by 776",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "noam brown",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "angels including OpenAI researcher Noam Brown",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
+        }
+      ]
+    },
+    {
+      "source": "marco mascorro",
+      "target": "deeptune",
+      "rel": "invested_in",
+      "evidence": "Marco Mascorro, partner at Andreessen Horowitz, told Fortune",
+      "sources": [
+        {
+          "source_url": "https://fortune.com/2026/03/19/andreessen-horowitz-ai-startups-deeptune-series-a/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T14:57:39+00:00",
+          "last_seen": "2026-11-08T14:57:39+00:00"
         }
       ]
     }
