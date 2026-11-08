@@ -129,12 +129,20 @@
       "score": 74
     },
     {
+      "id": "north vector dynamics",
+      "label": "North Vector Dynamics",
+      "type": "startup",
+      "degree": 8,
+      "website": "https://www.northvectordynamics.com",
+      "score": 87
+    },
+    {
       "id": "axel",
       "label": "Axel",
       "type": "startup",
       "degree": 8,
       "website": "https://helloaxel.com",
-      "score": 71
+      "score": 76
     },
     {
       "id": "quiver ai",
@@ -285,12 +293,20 @@
       "score": 85
     },
     {
+      "id": "mecka ai",
+      "label": "Mecka AI",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.mecka.ai",
+      "score": 71
+    },
+    {
       "id": "miracly.ai",
       "label": "Miracly.ai",
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 87
+      "score": 72
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -620,7 +636,7 @@
       "type": "startup",
       "degree": 3,
       "website": "https://consus.io",
-      "score": 67
+      "score": 72
     },
     {
       "id": "vishnu",
@@ -768,6 +784,12 @@
     {
       "id": "mckinsey",
       "label": "McKinsey",
+      "type": "org",
+      "degree": 3
+    },
+    {
+      "id": "garage capital",
+      "label": "Garage Capital",
       "type": "org",
       "degree": 3
     },
@@ -1313,12 +1335,6 @@
       "degree": 2
     },
     {
-      "id": "garage capital",
-      "label": "Garage Capital",
-      "type": "org",
-      "degree": 2
-    },
-    {
       "id": "mcrock capital",
       "label": "McRock Capital",
       "type": "org",
@@ -1333,6 +1349,12 @@
     {
       "id": "sequoia",
       "label": "Sequoia",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "nvidia",
+      "label": "Nvidia",
       "type": "org",
       "degree": 2
     },
@@ -1469,6 +1491,22 @@
       "degree": 1,
       "website": "https://letter.dev",
       "score": 48
+    },
+    {
+      "id": "theseus robotics",
+      "label": "Theseus Robotics",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://theseus.bot",
+      "score": 70
+    },
+    {
+      "id": "evardi",
+      "label": "Evardi",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://evardi.ai",
+      "score": 57
     },
     {
       "id": "alex rosenberg",
@@ -3916,6 +3954,34 @@
       "links": {}
     },
     {
+      "id": "paul ziadé",
+      "label": "Paul Ziadé",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/paul-ziade"
+      }
+    },
+    {
+      "id": "samarth malhotra",
+      "label": "Samarth Malhotra",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sam-malhotra"
+      }
+    },
+    {
+      "id": "diva shah",
+      "label": "Diva Shah",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -4786,12 +4852,6 @@
       "degree": 1
     },
     {
-      "id": "nvidia",
-      "label": "Nvidia",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "bessemer venture partners",
       "label": "Bessemer Venture Partners",
       "type": "org",
@@ -5136,6 +5196,72 @@
     {
       "id": "ycombinator",
       "label": "YCombinator",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "tech horizons",
+      "label": "Tech Horizons",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "one9",
+      "label": "ONE9",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "ripple ventures",
+      "label": "Ripple Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "feld ventures",
+      "label": "Feld Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "conconi growth partners",
+      "label": "Conconi Growth Partners",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "nordspace’s venture arm",
+      "label": "NordSpace’s venture arm",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "sequoia capital",
+      "label": "Sequoia Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "microsoft ventures",
+      "label": "Microsoft Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "qualcomm ventures",
+      "label": "Qualcomm Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "kindred ventures",
+      "label": "Kindred Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "framework ventures",
+      "label": "Framework Ventures",
       "type": "org",
       "degree": 1
     },
@@ -5730,6 +5856,70 @@
       "degree": 0,
       "website": "https://www.odoo.com",
       "score": 29
+    },
+    {
+      "id": "hatch",
+      "label": "Hatch",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.hatch.co",
+      "score": 42
+    },
+    {
+      "id": "spade",
+      "label": "Spade",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://spade.com",
+      "score": 29
+    },
+    {
+      "id": "beacon ai",
+      "label": "Beacon AI",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://beaconai.co",
+      "score": 33
+    },
+    {
+      "id": "railway",
+      "label": "Railway",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://railway.com",
+      "score": 34
+    },
+    {
+      "id": "meta",
+      "label": "Meta",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.metacareers.com",
+      "score": 28
+    },
+    {
+      "id": "silkline",
+      "label": "Silkline",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://silkline.ai",
+      "score": 41
+    },
+    {
+      "id": "fusionauth",
+      "label": "FusionAuth",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://fusionauth.io",
+      "score": 32
+    },
+    {
+      "id": "vivral",
+      "label": "Vivral",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://vivral.app",
+      "score": 25
     },
     {
       "id": "kevin hartz",
@@ -6534,6 +6724,38 @@
       "type": "person",
       "degree": 0,
       "role": "Operations",
+      "links": {}
+    },
+    {
+      "id": "jianwen cao",
+      "label": "Jianwen Cao",
+      "type": "person",
+      "degree": 0,
+      "role": "CRO",
+      "links": {}
+    },
+    {
+      "id": "avi nair",
+      "label": "Avi Nair",
+      "type": "person",
+      "degree": 0,
+      "role": "",
+      "links": {}
+    },
+    {
+      "id": "matt cox",
+      "label": "Matt Cox",
+      "type": "person",
+      "degree": 0,
+      "role": "",
+      "links": {}
+    },
+    {
+      "id": "mark zuckerberg",
+      "label": "Mark Zuckerberg",
+      "type": "person",
+      "degree": 0,
+      "role": "",
       "links": {}
     }
   ],
@@ -13802,6 +14024,230 @@
           "last_seen": "2026-11-07T14:51:23+00:00"
         }
       ]
+    },
+    {
+      "source": "tech horizons",
+      "target": "north vector dynamics",
+      "rel": "invested_in",
+      "evidence": "led by Tech Horizons, a European outfit with a focus on investment in defence and security technology",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "one9",
+      "target": "north vector dynamics",
+      "rel": "invested_in",
+      "evidence": "Additional participation included firms like ONE9",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "garage capital",
+      "target": "north vector dynamics",
+      "rel": "invested_in",
+      "evidence": "Additional participation included firms like ... Garage Capital",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ripple ventures",
+      "target": "north vector dynamics",
+      "rel": "invested_in",
+      "evidence": "Additional participation included firms like ... Ripple Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "feld ventures",
+      "target": "north vector dynamics",
+      "rel": "invested_in",
+      "evidence": "Additional participation included firms like ... Feld Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "conconi growth partners",
+      "target": "north vector dynamics",
+      "rel": "invested_in",
+      "evidence": "Additional participation included firms like ... Conconi Growth Partners",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nordspace’s venture arm",
+      "target": "north vector dynamics",
+      "rel": "invested_in",
+      "evidence": "NordSpace’s venture arm also invested in NVD",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "paul ziadé",
+      "target": "north vector dynamics",
+      "rel": "founded",
+      "evidence": "Founded in 2022 and headquartered in Calgary, NVD builds air and missile defence technology",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "samarth malhotra",
+      "target": "theseus robotics",
+      "rel": "founded",
+      "evidence": "Samarth (CEO) previously scaled an ecommerce business to $3M in revenue",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/X2p-theseus-robotics-humanoids-for-the-retail-aisle",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "diva shah",
+      "target": "evardi",
+      "rel": "founded",
+      "evidence": "**Diva Shah**",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Wwy-evardi-agents-that-engineer-the-grid-edge",
+          "run_id": "20261108T125735Z",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sequoia capital",
+      "target": "mecka ai",
+      "rel": "invested_in",
+      "evidence": "Series B round led by Silicon Valley’s Sequoia Capital",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/mecka-ai-reveals-60-million-usd-series-b-round-backed-by-sequoia-nvidia/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:30+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nvidia",
+      "target": "mecka ai",
+      "rel": "invested_in",
+      "evidence": "new backers like chip giant Nvidia",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/mecka-ai-reveals-60-million-usd-series-b-round-backed-by-sequoia-nvidia/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:30+00:00"
+        }
+      ]
+    },
+    {
+      "source": "microsoft ventures",
+      "target": "mecka ai",
+      "rel": "invested_in",
+      "evidence": "the corporate venture capital arms of Microsoft",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/mecka-ai-reveals-60-million-usd-series-b-round-backed-by-sequoia-nvidia/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:30+00:00"
+        }
+      ]
+    },
+    {
+      "source": "qualcomm ventures",
+      "target": "mecka ai",
+      "rel": "invested_in",
+      "evidence": "the corporate venture capital arms of ... Qualcomm",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/mecka-ai-reveals-60-million-usd-series-b-round-backed-by-sequoia-nvidia/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:30+00:00"
+        }
+      ]
+    },
+    {
+      "source": "kindred ventures",
+      "target": "mecka ai",
+      "rel": "invested_in",
+      "evidence": "existing investors Kindred Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/mecka-ai-reveals-60-million-usd-series-b-round-backed-by-sequoia-nvidia/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:30+00:00"
+        }
+      ]
+    },
+    {
+      "source": "framework ventures",
+      "target": "mecka ai",
+      "rel": "invested_in",
+      "evidence": "existing investors ... Framework Ventures",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/mecka-ai-reveals-60-million-usd-series-b-round-backed-by-sequoia-nvidia/",
+          "run_id": "backfill-2026-11-08",
+          "first_seen": "2026-11-08T13:00:25+00:00",
+          "last_seen": "2026-11-08T13:00:30+00:00"
+        }
+      ]
     }
   ],
   "investors": [
@@ -13915,6 +14361,57 @@
       ]
     },
     {
+      "investor": "Garage Capital",
+      "companies": [
+        "Daedal Systems",
+        "North Vector Dynamics",
+        "Onix"
+      ],
+      "count": 3,
+      "co_investors": [
+        {
+          "name": "Alpha Edison",
+          "shared": 1
+        },
+        {
+          "name": "Conconi Growth Partners",
+          "shared": 1
+        },
+        {
+          "name": "Feld Ventures",
+          "shared": 1
+        },
+        {
+          "name": "JS Cournoyer",
+          "shared": 1
+        },
+        {
+          "name": "Jeremy Zimmer",
+          "shared": 1
+        },
+        {
+          "name": "NordSpace’s venture arm",
+          "shared": 1
+        },
+        {
+          "name": "OMERS Ventures",
+          "shared": 1
+        },
+        {
+          "name": "ONE9",
+          "shared": 1
+        },
+        {
+          "name": "Ripple Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Tech Horizons",
+          "shared": 1
+        }
+      ]
+    },
+    {
       "investor": "Anges Québec",
       "companies": [
         "Bia Health",
@@ -13986,32 +14483,6 @@
         },
         {
           "name": "United Ventures",
-          "shared": 1
-        }
-      ]
-    },
-    {
-      "investor": "Garage Capital",
-      "companies": [
-        "Daedal Systems",
-        "Onix"
-      ],
-      "count": 2,
-      "co_investors": [
-        {
-          "name": "Alpha Edison",
-          "shared": 1
-        },
-        {
-          "name": "JS Cournoyer",
-          "shared": 1
-        },
-        {
-          "name": "Jeremy Zimmer",
-          "shared": 1
-        },
-        {
-          "name": "OMERS Ventures",
           "shared": 1
         }
       ]
@@ -14110,6 +14581,48 @@
         },
         {
           "name": "Y Combinator",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Nvidia",
+      "companies": [
+        "Mecka AI",
+        "Trajectory"
+      ],
+      "count": 2,
+      "co_investors": [
+        {
+          "name": "Bain Capital Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Bessemer Venture Partners",
+          "shared": 1
+        },
+        {
+          "name": "Framework Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Kindred Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Microsoft Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Qualcomm Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Sequoia",
+          "shared": 1
+        },
+        {
+          "name": "Sequoia Capital",
           "shared": 1
         }
       ]

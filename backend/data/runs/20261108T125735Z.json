@@ -1,0 +1,667 @@
+{
+  "run_id": "20261108T125735Z",
+  "started_at": "2026-11-08T12:57:35+00:00",
+  "duration_s": 183.4,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 269,
+    "selected": 10,
+    "crawled": 8,
+    "extracted": 7,
+    "relevant": 4,
+    "valid": 4
+  },
+  "tokens": 18672,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 33,
+    "rss": 63,
+    "edgar": 11,
+    "web": 30
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "seed round launch AI\u2011powered semantic search platform founded by ex\u2011Google engineer",
+      "Series A funding for developer tooling startup building vector\u2011search API for Next.js apps",
+      "pre\u2011seed funding announcement for RAG\u2011based knowledge\u2011base startup targeting SaaS developers",
+      "launch of data\u2011heavy web app startup using hybrid search and retrieval, backed by Andreessen Horowitz",
+      "early\u2011stage startup raises bridge round for open\u2011source search infrastructure, investors include Sequoia and First Round"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search",
+      "developer tooling",
+      "search infrastructure"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 42,
+        "accepted": 33,
+        "score_sum": 2543,
+        "yield": 0.786,
+        "avg_score": 77.1
+      },
+      "web": {
+        "crawled": 13,
+        "accepted": 10,
+        "score_sum": 770,
+        "yield": 0.769,
+        "avg_score": 77.0
+      },
+      "yc": {
+        "crawled": 10,
+        "accepted": 10,
+        "score_sum": 585,
+        "yield": 1.0,
+        "avg_score": 58.5
+      },
+      "hiring": {
+        "crawled": 189,
+        "accepted": 189,
+        "score_sum": 4893,
+        "yield": 1.0,
+        "avg_score": 25.9
+      },
+      "edgar": {
+        "crawled": 24,
+        "accepted": 4,
+        "score_sum": 272,
+        "yield": 0.167,
+        "avg_score": 68.0
+      },
+      "hn": {
+        "crawled": 2,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 191,
+        "yield": 1.0,
+        "avg_score": 47.8
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 3,
+      "web": 3,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 107,
+    "fallbacks": 0,
+    "avg_latency_ms": 72.0,
+    "jev_input_tokens": 51240,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-08T12:57:35+00:00",
+      "offset_s": 0.0,
+      "duration_s": 7.41,
+      "status": "ok",
+      "counts": {
+        "candidates": 269,
+        "src_hn": 29,
+        "src_launch_hn": 4,
+        "src_rss": 63,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 11,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-08T12:57:43+00:00",
+      "offset_s": 7.41,
+      "duration_s": 7.19,
+      "status": "ok",
+      "counts": {
+        "in": 269,
+        "selected": 10,
+        "hiring_lane": 8,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 3, 'web': 3, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-08T12:57:50+00:00",
+      "offset_s": 14.6,
+      "duration_s": 25.83,
+      "status": "ok",
+      "counts": {
+        "requested": 10,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-08T12:58:16+00:00",
+      "offset_s": 40.42,
+      "duration_s": 61.8,
+      "status": "ok",
+      "counts": {
+        "extracted": 7,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-08T12:59:17+00:00",
+      "offset_s": 102.22,
+      "duration_s": 67.54,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "websites": 12,
+        "emails": 8,
+        "phones": 5
+      },
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 1 people proposed, 1 grounded",
+        "team page: +0 people, +1 edges",
+        "structured data: 2 people",
+        "structured data: 1 people"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-08T13:00:25+00:00",
+      "offset_s": 169.76,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 45
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-08T13:00:25+00:00",
+      "offset_s": 169.76,
+      "duration_s": 5.32,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "people": 7,
+        "edges": 16
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-11-08T13:00:30+00:00",
+      "offset_s": 175.08,
+      "duration_s": 6.4,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 2
+      },
+      "notes": [
+        "Mecka AI: ok, score 71"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.36,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.0,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 33,
+      "seconds": 1.68,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 63,
+      "seconds": 3.27,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 11,
+      "seconds": 6.95,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 7.41,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 15405,
+    "completion_tokens": 3267,
+    "total_tokens": 18672,
+    "calls": 10,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 13517,
+        "completion_tokens": 3070,
+        "total_tokens": 16587,
+        "calls": 7
+      },
+      "team": {
+        "prompt_tokens": 1888,
+        "completion_tokens": 197,
+        "total_tokens": 2085,
+        "calls": 3
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 15405,
+        "completion_tokens": 3267,
+        "total_tokens": 18672,
+        "calls": 10
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 15405,
+        "completion_tokens": 3267,
+        "total_tokens": 18672,
+        "calls": 10
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 269,
+    "crawled": 8,
+    "extracted": 7,
+    "relevant": 4,
+    "valid": 4,
+    "sources": {
+      "rss": 2,
+      "yc": 2
+    },
+    "people": 7,
+    "edges": 16,
+    "dropped_ungrounded": 3,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 12,
+    "with_website": 12,
+    "with_email": 7,
+    "with_phone": 4,
+    "people_linked": 2,
+    "avg_score": 45.8,
+    "qualified": 3,
+    "avg_qualified_score": 71.3,
+    "issues": {
+      "not a relevant startup page": 3,
+      "warn: empty tech_stack": 1
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "idlen.io/news/parallel-web-systems-100-million-2-billion-parag-agrawal-ai-agent-search-april-2026"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Mecka AI",
+      "url": "https://betakit.com/mecka-ai-reveals-60-million-usd-series-b-round-backed-by-sequoia-nvidia/",
+      "source": "rss",
+      "people": 0,
+      "edges": 6,
+      "score": 71,
+      "gaps": [
+        "founder",
+        "people profiles"
+      ],
+      "website": "https://www.mecka.ai",
+      "emails": 2,
+      "phones": 1
+    },
+    {
+      "company": "North Vector Dynamics",
+      "url": "https://betakit.com/north-vector-dynamics-raises-20-million-to-scale-counter-drone-capabilities/",
+      "source": "rss",
+      "people": 1,
+      "edges": 8,
+      "score": 87,
+      "gaps": [
+        "tech stack"
+      ],
+      "website": "https://www.northvectordynamics.com",
+      "emails": 2,
+      "phones": 1
+    },
+    {
+      "company": "Theseus Robotics",
+      "url": "https://www.ycombinator.com/launches/X2p-theseus-robotics-humanoids-for-the-retail-aisle",
+      "source": "yc",
+      "people": 4,
+      "edges": 1,
+      "score": 70,
+      "gaps": [
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://theseus.bot",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Evardi",
+      "url": "https://www.ycombinator.com/launches/Wwy-evardi-agents-that-engineer-the-grid-edge",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 57,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://evardi.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Hatch",
+      "url": "https://hatch.co",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 42,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.hatch.co",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Spade",
+      "url": "https://spade.com/careers/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://spade.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Beacon AI",
+      "url": "https://beaconai.co/careers",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://beaconai.co",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Railway",
+      "url": "https://railway.com/careers",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://railway.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Meta",
+      "url": "https://www.metacareers.com/profile/job_details/1407457964247914/?env=prod",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 28,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.metacareers.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Silkline",
+      "url": "https://silkline.ai",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://silkline.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "FusionAuth",
+      "url": "https://fusionauth.io/careers/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://fusionauth.io",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Vivral",
+      "url": "https://forms.gle/PrewX9oGEj7fCMR46",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email"
+      ],
+      "website": "https://vivral.app",
+      "emails": 0,
+      "phones": 2
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2162992/000216299226000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.aibusinessreview.org/2026/04/11/sequoia-1-billion-seed-round-google-ai-scientist/",
+      "source": "web",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://sifted.eu/articles/haido-emerges-from-stealth/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2162993/000216299326000001/",
+      "source": "edgar",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Mecka AI",
+        "score": 71,
+        "source": "rss"
+      },
+      {
+        "company": "North Vector Dynamics",
+        "score": 87,
+        "source": "rss"
+      },
+      {
+        "company": "Theseus Robotics",
+        "score": 70,
+        "source": "yc"
+      },
+      {
+        "company": "Evardi",
+        "score": 57,
+        "source": "yc"
+      },
+      {
+        "company": "Hatch",
+        "score": 42,
+        "source": "hiring"
+      },
+      {
+        "company": "Spade",
+        "score": 29,
+        "source": "hiring"
+      },
+      {
+        "company": "Beacon AI",
+        "score": 33,
+        "source": "hiring"
+      },
+      {
+        "company": "Railway",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "Meta",
+        "score": 28,
+        "source": "hiring"
+      },
+      {
+        "company": "Silkline",
+        "score": 41,
+        "source": "hiring"
+      },
+      {
+        "company": "FusionAuth",
+        "score": 32,
+        "source": "hiring"
+      },
+      {
+        "company": "Vivral",
+        "score": 25,
+        "source": "hiring"
+      }
+    ],
+    "updated": []
+  }
+}
