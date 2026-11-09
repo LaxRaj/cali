@@ -1,0 +1,651 @@
+{
+  "run_id": "20261109T153423Z",
+  "started_at": "2026-11-09T15:34:23+00:00",
+  "duration_s": 158.3,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 259,
+    "selected": 10,
+    "crawled": 8,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4
+  },
+  "tokens": 19988,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 34,
+    "rss": 62,
+    "edgar": 7,
+    "web": 24
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building Next.js vector search API",
+      "seed funding announced for retrieval-augmented generation web app startup founders interview",
+      "early-stage company raises capital for data-heavy web app search engine startup investors",
+      "founder interview startup enabling RAG for SaaS products recent funding November 2026"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG tooling",
+      "vector search API",
+      "Next.js developer tools",
+      "retrieval augmented generation"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 42,
+        "accepted": 33,
+        "score_sum": 2542,
+        "yield": 0.786,
+        "avg_score": 77.0
+      },
+      "web": {
+        "crawled": 13,
+        "accepted": 9,
+        "score_sum": 682,
+        "yield": 0.692,
+        "avg_score": 75.8
+      },
+      "edgar": {
+        "crawled": 24,
+        "accepted": 4,
+        "score_sum": 272,
+        "yield": 0.167,
+        "avg_score": 68.0
+      },
+      "hiring": {
+        "crawled": 182,
+        "accepted": 182,
+        "score_sum": 4774,
+        "yield": 1.0,
+        "avg_score": 26.2
+      },
+      "yc": {
+        "crawled": 11,
+        "accepted": 11,
+        "score_sum": 644,
+        "yield": 1.0,
+        "avg_score": 58.5
+      },
+      "hn": {
+        "crawled": 2,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 191,
+        "yield": 1.0,
+        "avg_score": 47.8
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 3,
+      "web": 2,
+      "yc": 3
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 97,
+    "fallbacks": 0,
+    "avg_latency_ms": 94.1,
+    "jev_input_tokens": 46110,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-09T15:34:23+00:00",
+      "offset_s": 0.0,
+      "duration_s": 19.14,
+      "status": "ok",
+      "counts": {
+        "candidates": 259,
+        "src_hn": 30,
+        "src_launch_hn": 4,
+        "src_rss": 62,
+        "src_yc": 12,
+        "src_web": 24,
+        "src_edgar": 7,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-09T15:34:42+00:00",
+      "offset_s": 19.14,
+      "duration_s": 8.55,
+      "status": "ok",
+      "counts": {
+        "in": 259,
+        "selected": 10,
+        "hiring_lane": 8,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 3, 'web': 2, 'yc': 3}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-09T15:34:51+00:00",
+      "offset_s": 27.69,
+      "duration_s": 13.74,
+      "status": "ok",
+      "counts": {
+        "requested": 10,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-09T15:35:04+00:00",
+      "offset_s": 41.43,
+      "duration_s": 60.21,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-09T15:36:05+00:00",
+      "offset_s": 101.64,
+      "duration_s": 51.75,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "websites": 12,
+        "emails": 10,
+        "phones": 6
+      },
+      "notes": [
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +1 people, +1 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "crawl failed"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-09T15:36:56+00:00",
+      "offset_s": 153.39,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 48
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-09T15:36:56+00:00",
+      "offset_s": 153.4,
+      "duration_s": 3.53,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "people": 12,
+        "edges": 16
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.44,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.12,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 34,
+      "seconds": 2.09,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 62,
+      "seconds": 4.09,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 7,
+      "seconds": 8.44,
+      "error": ""
+    },
+    "web": {
+      "candidates": 24,
+      "seconds": 18.55,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 15818,
+    "completion_tokens": 4170,
+    "total_tokens": 19988,
+    "calls": 8,
+    "by_purpose": {
+      "plan": {
+        "prompt_tokens": 340,
+        "completion_tokens": 172,
+        "total_tokens": 512,
+        "calls": 1
+      },
+      "extract": {
+        "prompt_tokens": 12816,
+        "completion_tokens": 3626,
+        "total_tokens": 16442,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 2662,
+        "completion_tokens": 372,
+        "total_tokens": 3034,
+        "calls": 2
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 15818,
+        "completion_tokens": 4170,
+        "total_tokens": 19988,
+        "calls": 8
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 15818,
+        "completion_tokens": 4170,
+        "total_tokens": 19988,
+        "calls": 8
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 259,
+    "crawled": 8,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4,
+    "sources": {
+      "rss": 2,
+      "web": 1,
+      "yc": 1
+    },
+    "people": 12,
+    "edges": 16,
+    "dropped_ungrounded": 13,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 11,
+    "with_website": 12,
+    "with_email": 7,
+    "with_phone": 4,
+    "people_linked": 12,
+    "avg_score": 48.3,
+    "qualified": 3,
+    "avg_qualified_score": 88.7,
+    "issues": {
+      "not a relevant startup page": 1,
+      "warn: empty tech_stack": 1
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "ycombinator.com/launches/WhS-trepo-the-agentic-grocery-shopper-that-knows-what-you-have-and-need",
+      "ycombinator.com/launches/X0A-organizely-a-new-ai-native-erp-for-american-manufacturers",
+      "recto.design"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Seva Money",
+      "url": "https://techfundingnews.com/seva-money-5m-seed-remittance-wallets-recipient-cards/",
+      "source": "rss",
+      "people": 5,
+      "edges": 5,
+      "score": 81,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "https://seva.money",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Marble Imaging",
+      "url": "https://techfundingnews.com/marble-imaging-6m-sovereign-satellite-imagery-spacex-launch/",
+      "source": "rss",
+      "people": 5,
+      "edges": 6,
+      "score": 95,
+      "gaps": [],
+      "website": "https://www.marble-imaging.de",
+      "emails": 3,
+      "phones": 3
+    },
+    {
+      "company": "Exa Labs Inc.",
+      "url": "https://siliconangle.com/2025/09/03/nvidia-backs-85m-round-ai-search-startup-exa/",
+      "source": "web",
+      "people": 1,
+      "edges": 2,
+      "score": 90,
+      "gaps": [
+        "phone"
+      ],
+      "website": "https://exa.ai",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Telamont",
+      "url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
+      "source": "yc",
+      "people": 1,
+      "edges": 4,
+      "score": 62,
+      "gaps": [
+        "funding amount",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.telamont.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Amodo Design",
+      "url": "https://amododesign.com/career/compute-infrastructure-lead/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://amododesign.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Seal",
+      "url": "https://seal.run",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 37,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://seal.run",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "AetherGrid",
+      "url": "https://www.aethergrid.co.ke",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://aethergrid.co.ke",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "OpenTrain AI",
+      "url": "https://app.opentrain.ai/api/out/cmu9linxg000o0bgm9xiw33b9?ch=news-ycombinator-com&sub=news-ycombinator-com-cmu9linxg-us-2026-11",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://app.opentrain.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Subimage",
+      "url": "https://subimage.io",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.subimage.io",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Eleshop",
+      "url": "https://www.eleshop.nl/vacatures.html",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.eleshop.nl",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Relevant Healthcare",
+      "url": "https://relevant.healthcare/jobs/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://relevant.healthcare",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Rootly",
+      "url": "https://rootly.com/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 23,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://rootly.com",
+      "emails": 0,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2164086/000137647426000697/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2162114/000216211426000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/srtd-biotech-31-5m-seed-selectively-expressed-rna-therapies/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Seva Money",
+        "score": 81,
+        "source": "rss"
+      },
+      {
+        "company": "Marble Imaging",
+        "score": 95,
+        "source": "rss"
+      },
+      {
+        "company": "Exa Labs Inc.",
+        "score": 90,
+        "source": "web"
+      },
+      {
+        "company": "Telamont",
+        "score": 62,
+        "source": "yc"
+      },
+      {
+        "company": "Amodo Design",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Seal",
+        "score": 37,
+        "source": "hiring"
+      },
+      {
+        "company": "AetherGrid",
+        "score": 41,
+        "source": "hiring"
+      },
+      {
+        "company": "OpenTrain AI",
+        "score": 25,
+        "source": "hiring"
+      },
+      {
+        "company": "Subimage",
+        "score": 29,
+        "source": "hiring"
+      },
+      {
+        "company": "Eleshop",
+        "score": 21,
+        "source": "hiring"
+      },
+      {
+        "company": "Relevant Healthcare",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Rootly",
+        "score": 23,
+        "source": "hiring"
+      }
+    ],
+    "updated": []
+  }
+}

@@ -1,35 +1,38 @@
 {
-  "generated_at": "2026-11-08T13:00:25+00:00",
-  "candidates": 269,
+  "generated_at": "2026-11-09T15:36:56+00:00",
+  "candidates": 259,
   "crawled": 8,
-  "extracted": 7,
+  "extracted": 5,
   "relevant": 4,
   "valid": 4,
   "sources": {
     "rss": 2,
-    "yc": 2
+    "web": 1,
+    "yc": 1
   },
-  "people": 7,
+  "people": 12,
   "edges": 16,
-  "dropped_ungrounded": 3,
+  "dropped_ungrounded": 13,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 12,
+  "enriched": 11,
   "with_website": 12,
   "with_email": 7,
   "with_phone": 4,
-  "people_linked": 2,
-  "avg_score": 45.8,
+  "people_linked": 12,
+  "avg_score": 48.3,
   "qualified": 3,
-  "avg_qualified_score": 71.3,
+  "avg_qualified_score": 88.7,
   "issues": {
-    "not a relevant startup page": 3,
+    "not a relevant startup page": 1,
     "warn: empty tech_stack": 1
   },
   "failures": [],
   "passed": true,
   "deferred_urls": [
-    "idlen.io/news/parallel-web-systems-100-million-2-billion-parag-agrawal-ai-agent-search-april-2026"
+    "ycombinator.com/launches/WhS-trepo-the-agentic-grocery-shopper-that-knows-what-you-have-and-need",
+    "ycombinator.com/launches/X0A-organizely-a-new-ai-native-erp-for-american-manufacturers",
+    "recto.design"
   ],
   "skipped": "",
   "validity_rate": 1.0
