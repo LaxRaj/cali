@@ -16581,6 +16581,651 @@
     "outreach": []
   },
   {
+    "company_name": "Miracly.ai",
+    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+    "tech_stack": [
+      "ChatGPT",
+      "Claude",
+      "Copilot",
+      "LLMs",
+      "vector embeddings"
+    ],
+    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$2M",
+    "hq": "Stockholm",
+    "website": "https://www.miracly.ai",
+    "score": 87,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "miracly-ai",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 17
+    },
+    "gaps": [
+      "people profiles",
+      "phone"
+    ],
+    "axes": {
+      "fit": 100,
+      "reach": 100,
+      "evidence": 82
+    },
+    "qualified": true,
+    "contact": {
+      "website": "https://www.miracly.ai",
+      "emails": [
+        {
+          "value": "hello@miracly.ai",
+          "kind": "general",
+          "source_url": "https://www.miracly.ai/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/miracly",
+        "twitter": "https://x.com/miraclyai"
+      },
+      "contact_page": "https://www.miracly.ai/contact",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://www.miracly.ai/pricing"
+        },
+        {
+          "label": "Get started",
+          "url": "https://www.miracly.ai/sign-up"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.miracly.ai/",
+        "https://www.miracly.ai/contact",
+        "https://www.miracly.ai/about"
+      ],
+      "enriched_at": "2026-11-09T18:38:45+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": "",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Plausible",
+          "category": "analytics"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [
+      {
+        "src": "Beenext Ventures",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Lotus",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Stefan Lindeberg",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Alex Bouaziz",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Thomas Ekman",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Hedda Båverud Olsson",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 79.6,
+      "reasons": [
+        "lead score 87",
+        "signal strength 1.4/10: funding",
+        "found 16 day(s) ago (warm)",
+        "fresh, strong fit and a company-published address"
+      ],
+      "next_step": "Email hello@miracly.ai with the pitch",
+      "provider": "policy",
+      "score": 91
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_stage",
+        "label": "funding_stage: pre-seed",
+        "value": "pre-seed",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_amount",
+        "label": "funding_amount: $2M",
+        "value": "$2M",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "hq",
+        "label": "hq: Stockholm",
+        "value": "Stockholm",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "website",
+        "label": "website: https://www.miracly.ai",
+        "value": "https://www.miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "core_product",
+        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "arvid lithander|miracly",
+        "field": "role",
+        "label": "Arvid Lithander · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "role",
+        "label": "Bjorn Bergstrom · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "shannon cullum|miracly",
+        "field": "role",
+        "label": "Shannon Cullum · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "beenext ventures|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Beenext Ventures invested in Miracly.ai",
+        "value": "Beenext Ventures invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "lotus|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Lotus invested in Miracly.ai",
+        "value": "Lotus invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Stefan Lindeberg invested in Miracly.ai",
+        "value": "Stefan Lindeberg invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alex bouaziz|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Alex Bouaziz invested in Miracly.ai",
+        "value": "Alex Bouaziz invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "thomas ekman|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Thomas Ekman invested in Miracly.ai",
+        "value": "Thomas Ekman invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Hedda Båverud Olsson invested in Miracly.ai",
+        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "arvid lithander|founded|miracly",
+        "field": "founded",
+        "label": "Arvid Lithander founded Miracly",
+        "value": "Arvid Lithander founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "bjorn bergstrom|founded|miracly",
+        "field": "founded",
+        "label": "Bjorn Bergstrom founded Miracly",
+        "value": "Bjorn Bergstrom founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "shannon cullum|founded|miracly",
+        "field": "founded",
+        "label": "Shannon Cullum founded Miracly",
+        "value": "Shannon Cullum founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "stefan lindeberg|miracly.ai",
+        "field": "role",
+        "label": "Stefan Lindeberg · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex bouaziz|miracly.ai",
+        "field": "role",
+        "label": "Alex Bouaziz · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "thomas ekman|miracly.ai",
+        "field": "role",
+        "label": "Thomas Ekman · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hedda båverud olsson|miracly.ai",
+        "field": "role",
+        "label": "Hedda Båverud Olsson · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Gushwork",
+        "slug": "gushwork",
+        "similarity": 0.701
+      },
+      {
+        "company_name": "Seltz",
+        "slug": "seltz",
+        "similarity": 0.62
+      },
+      {
+        "company_name": "Exa",
+        "slug": "exa",
+        "similarity": 0.606
+      },
+      {
+        "company_name": "Keenable",
+        "slug": "keenable",
+        "similarity": 0.574
+      },
+      {
+        "company_name": "ZeroEntropy",
+        "slug": "zeroentropy",
+        "similarity": 0.568
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "discovered",
+        "items": [
+          "Stage: pre-seed",
+          "Raised: $2M",
+          "HQ: Stockholm",
+          "Website: https://www.miracly.ai",
+          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
+          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/contact"
+        ],
+        "count": 19
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "learned",
+        "items": [
+          "Person: Investor",
+          "Published email: hello@miracly.ai",
+          "linkedin: https://www.linkedin.com/company/miracly",
+          "twitter: https://x.com/miraclyai"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/contact?__clerk_synced=true"
+        ],
+        "count": 4
+      },
+      {
+        "at": "2026-10-24T01:55:31+00:00",
+        "kind": "funding",
+        "items": [
+          "Funding"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "funding",
+        "text": "Raised money (16d ago)",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "hello@miracly.ai",
+      "to_source_url": "https://www.miracly.ai/contact",
+      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
+      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Gushwork",
     "core_product": "An AI‑powered platform that automatically generates search‑optimized content, builds backlinks, and tracks inbound leads to help businesses surface in traditional and AI‑driven search results.",
     "tech_stack": [],
@@ -20350,7 +20995,7 @@
       "priority": 69.8,
       "reasons": [
         "lead score 83",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Alex Rosenberg via https://tako.com/contact",
@@ -21890,7 +22535,7 @@
       "priority": 73.6,
       "reasons": [
         "lead score 81",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email team@respan.ai with the pitch",
@@ -28444,6 +29089,515 @@
     "outreach": []
   },
   {
+    "company_name": "Kairos Health",
+    "core_product": "Kairos Health provides an AI-powered front desk that automates patient outreach, call handling, and insurance verification for dental practices.",
+    "tech_stack": [
+      "AI",
+      "AWS"
+    ],
+    "likely_bottleneck": "search quality and retrieval over unstructured patient data for personalized outreach and scheduling",
+    "value_prop_pitch": "I can help Kairos Health boost its patient outreach by building a Next.js portal that leverages vector‑based semantic search to instantly retrieve the most relevant patient records and insurance details. This will improve call personalization and scheduling accuracy while letting your team focus on care rather than data plumbing.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+    "discovered_at": "2026-10-20T19:42:46+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://kairoshealthai.com",
+    "score": 76,
+    "last_seen": "",
+    "slug": "kairos-health",
+    "score_parts": {
+      "fit": 25,
+      "identity": 9,
+      "people": 20,
+      "connections": 5,
+      "contact": 17
+    },
+    "gaps": [
+      "location",
+      "funding amount",
+      "investors"
+    ],
+    "axes": {
+      "fit": 100,
+      "reach": 92,
+      "evidence": 62
+    },
+    "qualified": true,
+    "contact": {
+      "website": "https://kairoshealthai.com",
+      "emails": [
+        {
+          "value": "contact@kairoshealthai.com",
+          "kind": "general",
+          "source_url": "https://kairoshealthai.com/"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+12814656628",
+          "kind": "main",
+          "source_url": "https://kairoshealthai.com/"
+        }
+      ],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/kairoshealth"
+      },
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [
+        "https://kairoshealthai.com/",
+        "https://kairoshealthai.com/about"
+      ],
+      "enriched_at": "2026-11-09T18:39:36+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": "",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
+    },
+    "signals": [],
+    "people": [
+      {
+        "name": "Sanjana Kavula",
+        "role": "Co-founder · Head of Growth",
+        "org": "Kairos Health",
+        "evidence": "Sanjana Kavula Co-founder · Head of Growth",
+        "linkedin": "https://www.linkedin.com/in/sanjana-kavula-710384236/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Adhira Tippur",
+        "role": "Co-founder · Head of Operations",
+        "org": "Kairos Health",
+        "evidence": "Adhira Tippur Co-founder · Head of Operations",
+        "linkedin": "https://www.linkedin.com/in/adhira-tippur/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Tanush Chintala",
+        "role": "Co-founder · Head of Engineering",
+        "org": "Kairos Health",
+        "evidence": "Tanush Chintala Co-founder · Head of Engineering",
+        "linkedin": "https://www.linkedin.com/in/tanushc/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Aditya Jain",
+        "role": "Co-founder · Head of Product",
+        "org": "Kairos Health",
+        "evidence": "Aditya Jain Co-founder · Head of Product",
+        "linkedin": "https://www.linkedin.com/in/aditya-jain27/",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Adhira Tippur",
+        "rel": "works_at",
+        "dst": "Kairos Health",
+        "evidence": "Adhira Tippur grew up helping out at her mother's dental practices, which inspired the idea for Kairos Health."
+      },
+      {
+        "src": "Sanjana Kavula",
+        "rel": "works_at",
+        "dst": "Kairos Health",
+        "evidence": "Sanjana Kavula studied computational neuroscience at Rice University."
+      },
+      {
+        "src": "Aditya Jain",
+        "rel": "works_at",
+        "dst": "Kairos Health",
+        "evidence": "Aditya Jain studied computer science at Georgia Tech."
+      },
+      {
+        "src": "Tanush Chintala",
+        "rel": "works_at",
+        "dst": "Kairos Health",
+        "evidence": "Tanush Chintala studied computer science at Georgia Tech as a Stamps President’s Scholar."
+      },
+      {
+        "src": "Sanjana Kavula",
+        "rel": "cofounded",
+        "dst": "Kairos Health",
+        "evidence": "Sanjana Kavula Co-founder"
+      },
+      {
+        "src": "Adhira Tippur",
+        "rel": "cofounded",
+        "dst": "Kairos Health",
+        "evidence": "Adhira Tippur Co-founder"
+      },
+      {
+        "src": "Tanush Chintala",
+        "rel": "cofounded",
+        "dst": "Kairos Health",
+        "evidence": "Tanush Chintala Co-founder"
+      },
+      {
+        "src": "Aditya Jain",
+        "rel": "cofounded",
+        "dst": "Kairos Health",
+        "evidence": "Aditya Jain Co-founder"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 70.6,
+      "reasons": [
+        "lead score 76",
+        "found 19 day(s) ago (warm)",
+        "fresh, strong fit and a company-published address"
+      ],
+      "next_step": "Email contact@kairoshealthai.com with the pitch",
+      "provider": "policy",
+      "score": 76
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "kairos health",
+        "field": "website",
+        "label": "website: https://kairoshealthai.com",
+        "value": "https://kairoshealthai.com",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "kairos health",
+        "field": "core_product",
+        "label": "core_product: Kairos Health provides an AI-powered front desk that automates patient outreach, call handling, and insurance verification for dental practices.",
+        "value": "Kairos Health provides an AI-powered front desk that automates patient outreach, call handling, and insurance verification for dental practices.",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "kairos health",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: search quality and retrieval over unstructured patient data for personalized outreach and scheduling",
+        "value": "search quality and retrieval over unstructured patient data for personalized outreach and scheduling",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "sanjana kavula|kairos health",
+        "field": "role",
+        "label": "Sanjana Kavula · Co-founder · Head of Growth",
+        "value": "Co-founder · Head of Growth",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Sanjana Kavula Co-founder · Head of Growth",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "sanjana kavula|kairos health",
+        "field": "linkedin",
+        "label": "Sanjana Kavula · linkedin",
+        "value": "https://www.linkedin.com/in/sanjana-kavula-710384236/",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Sanjana Kavula Co-founder · Head of Growth",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "adhira tippur|kairos health",
+        "field": "role",
+        "label": "Adhira Tippur · Co-founder · Head of Operations",
+        "value": "Co-founder · Head of Operations",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Adhira Tippur Co-founder · Head of Operations",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "adhira tippur|kairos health",
+        "field": "linkedin",
+        "label": "Adhira Tippur · linkedin",
+        "value": "https://www.linkedin.com/in/adhira-tippur/",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Adhira Tippur Co-founder · Head of Operations",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "tanush chintala|kairos health",
+        "field": "role",
+        "label": "Tanush Chintala · Co-founder · Head of Engineering",
+        "value": "Co-founder · Head of Engineering",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Tanush Chintala Co-founder · Head of Engineering",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "tanush chintala|kairos health",
+        "field": "linkedin",
+        "label": "Tanush Chintala · linkedin",
+        "value": "https://www.linkedin.com/in/tanushc/",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Tanush Chintala Co-founder · Head of Engineering",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "aditya jain|kairos health",
+        "field": "role",
+        "label": "Aditya Jain · Co-founder · Head of Product",
+        "value": "Co-founder · Head of Product",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Aditya Jain Co-founder · Head of Product",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "aditya jain|kairos health",
+        "field": "linkedin",
+        "label": "Aditya Jain · linkedin",
+        "value": "https://www.linkedin.com/in/aditya-jain27/",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Aditya Jain Co-founder · Head of Product",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "sanjana kavula|cofounded|kairos health",
+        "field": "cofounded",
+        "label": "Sanjana Kavula cofounded Kairos Health",
+        "value": "Sanjana Kavula cofounded Kairos Health",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Sanjana Kavula Co-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "adhira tippur|cofounded|kairos health",
+        "field": "cofounded",
+        "label": "Adhira Tippur cofounded Kairos Health",
+        "value": "Adhira Tippur cofounded Kairos Health",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Adhira Tippur Co-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "tanush chintala|cofounded|kairos health",
+        "field": "cofounded",
+        "label": "Tanush Chintala cofounded Kairos Health",
+        "value": "Tanush Chintala cofounded Kairos Health",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Tanush Chintala Co-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "aditya jain|cofounded|kairos health",
+        "field": "cofounded",
+        "label": "Aditya Jain cofounded Kairos Health",
+        "value": "Aditya Jain cofounded Kairos Health",
+        "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+        "evidence": "Aditya Jain Co-founder",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "kairos health",
+        "field": "email",
+        "label": "email: contact@kairoshealthai.com",
+        "value": "contact@kairoshealthai.com",
+        "source_url": "https://kairoshealthai.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "kairos health",
+        "field": "phone",
+        "label": "phone: +12814656628",
+        "value": "+12814656628",
+        "source_url": "https://kairoshealthai.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "kairos health",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/kairoshealth",
+        "value": "https://www.linkedin.com/company/kairoshealth",
+        "source_url": "https://kairoshealthai.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Multikor.ai, Inc.",
+        "slug": "multikor-ai-inc",
+        "similarity": 0.627
+      },
+      {
+        "company_name": "Siggy",
+        "slug": "siggy",
+        "similarity": 0.598
+      },
+      {
+        "company_name": "Bioliberty",
+        "slug": "bioliberty",
+        "similarity": 0.546
+      },
+      {
+        "company_name": "Bia Health",
+        "slug": "bia-health",
+        "similarity": 0.524
+      },
+      {
+        "company_name": "Hesper AI",
+        "slug": "hesper-ai",
+        "similarity": 0.522
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-09T18:38:39+00:00",
+        "kind": "discovered",
+        "items": [
+          "Website: https://kairoshealthai.com",
+          "Product: Kairos Health provides an AI-powered front desk that automates patient outreach, call handling, and insurance verification for dent",
+          "Bottleneck: search quality and retrieval over unstructured patient data for personalized outreach and scheduling",
+          "Person: Co-founder · Head of Growth",
+          "Profile link: https://www.linkedin.com/in/sanjana-kavula-710384236/",
+          "Person: Co-founder · Head of Operations"
+        ],
+        "source_urls": [
+          "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
+          "https://kairoshealthai.com/",
+          "https://kairoshealthai.com"
+        ],
+        "count": 18
+      }
+    ],
+    "watch": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "contact@kairoshealthai.com",
+      "to_source_url": "https://kairoshealthai.com/",
+      "subject": "Kairos Health: a thought on search quality and retrieval over unstructured patient data ",
+      "body": "Hi Sanjana,\n\nI came across Kairos Health: Kairos Health provides an AI-powered front desk that automates patient outreach, call handling.\nOne thing I noticed: search quality and retrieval over unstructured patient data for personalized outreach and scheduling.\n\nI can help Kairos Health boost its patient outreach by building a Next.js portal that leverages vector‑based semantic search to instantly retrieve the most relevant patient records and insurance details.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:contact%40kairoshealthai.com?subject=Kairos%20Health%3A%20a%20thought%20on%20search%20quality%20and%20retrieval%20over%20unstructured%20patient%20data%20&body=Hi%20Sanjana%2C%0A%0AI%20came%20across%20Kairos%20Health%3A%20Kairos%20Health%20provides%20an%20AI-powered%20front%20desk%20that%20automates%20patient%20outreach%2C%20call%20handling.%0AOne%20thing%20I%20noticed%3A%20search%20quality%20and%20retrieval%20over%20unstructured%20patient%20data%20for%20personalized%20outreach%20and%20scheduling.%0A%0AI%20can%20help%20Kairos%20Health%20boost%20its%20patient%20outreach%20by%20building%20a%20Next.js%20portal%20that%20leverages%20vector%E2%80%91based%20semantic%20search%20to%20instantly%20retrieve%20the%20most%20relevant%20patient%20records%20and%20insurance%20details.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Hesper AI",
     "core_product": "AI agents that perform end‑to‑end insurance claim workup, reading documents, verifying data, contacting parties and providing decisions with evidence.",
     "tech_stack": [],
@@ -33210,652 +34364,6 @@
     "outreach": []
   },
   {
-    "company_name": "Miracly.ai",
-    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-    "tech_stack": [
-      "ChatGPT",
-      "Claude",
-      "Copilot",
-      "LLMs",
-      "vector embeddings"
-    ],
-    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
-    "is_relevant": true,
-    "funding_stage": "pre-seed",
-    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-    "discovered_at": "2026-10-24T01:54:29+00:00",
-    "funding_amount": "$2M",
-    "hq": "Stockholm",
-    "website": "https://www.miracly.ai",
-    "score": 72,
-    "last_seen": "2026-10-24T01:57:30+00:00",
-    "slug": "miracly-ai",
-    "score_parts": {
-      "fit": 25,
-      "identity": 15,
-      "people": 0,
-      "connections": 15,
-      "contact": 17
-    },
-    "gaps": [
-      "founder",
-      "people profiles",
-      "phone"
-    ],
-    "axes": {
-      "fit": 100,
-      "reach": 100,
-      "evidence": 55
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://www.miracly.ai",
-      "emails": [
-        {
-          "value": "hello@miracly.ai",
-          "kind": "general",
-          "source_url": "https://www.miracly.ai/contact"
-        }
-      ],
-      "phones": [],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/miracly",
-        "twitter": "https://x.com/miraclyai"
-      },
-      "contact_page": "https://www.miracly.ai/contact",
-      "product_access": [
-        {
-          "label": "Pricing",
-          "url": "https://www.miracly.ai/pricing"
-        },
-        {
-          "label": "Get started",
-          "url": "https://www.miracly.ai/sign-up"
-        }
-      ],
-      "pages_crawled": [
-        "https://www.miracly.ai/",
-        "https://www.miracly.ai/contact",
-        "https://www.miracly.ai/about"
-      ],
-      "enriched_at": "2026-11-08T14:57:45+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": [
-        {
-          "name": "Next.js",
-          "category": "framework"
-        },
-        {
-          "name": "Google Analytics",
-          "category": "analytics"
-        },
-        {
-          "name": "Plausible",
-          "category": "analytics"
-        },
-        {
-          "name": "React",
-          "category": "framework"
-        }
-      ]
-    },
-    "signals": [
-      {
-        "type": "funding",
-        "source": "web",
-        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "roles": [],
-        "role_kinds": [],
-        "posted_at": "",
-        "seen_at": "2026-10-24T01:55:31+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [
-      {
-        "src": "Beenext Ventures",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Lotus",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Stefan Lindeberg",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Alex Bouaziz",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Thomas Ekman",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Hedda Båverud Olsson",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "contact_now",
-      "urgency": "warm",
-      "priority": 70.6,
-      "reasons": [
-        "lead score 72",
-        "signal strength 1.4/10: funding",
-        "found 16 day(s) ago (warm)",
-        "fresh, strong fit and a company-published address"
-      ],
-      "next_step": "Email hello@miracly.ai with the pitch",
-      "provider": "policy",
-      "score": 76
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_stage",
-        "label": "funding_stage: pre-seed",
-        "value": "pre-seed",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_amount",
-        "label": "funding_amount: $2M",
-        "value": "$2M",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "hq",
-        "label": "hq: Stockholm",
-        "value": "Stockholm",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "website",
-        "label": "website: https://www.miracly.ai",
-        "value": "https://www.miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "core_product",
-        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "likely_bottleneck",
-        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "arvid lithander|miracly",
-        "field": "role",
-        "label": "Arvid Lithander · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "bjorn bergstrom|miracly",
-        "field": "role",
-        "label": "Bjorn Bergstrom · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "shannon cullum|miracly",
-        "field": "role",
-        "label": "Shannon Cullum · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "beenext ventures|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Beenext Ventures invested in Miracly.ai",
-        "value": "Beenext Ventures invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "lotus|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Lotus invested in Miracly.ai",
-        "value": "Lotus invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Stefan Lindeberg invested in Miracly.ai",
-        "value": "Stefan Lindeberg invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "alex bouaziz|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Alex Bouaziz invested in Miracly.ai",
-        "value": "Alex Bouaziz invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "thomas ekman|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Thomas Ekman invested in Miracly.ai",
-        "value": "Thomas Ekman invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Hedda Båverud Olsson invested in Miracly.ai",
-        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "arvid lithander|founded|miracly",
-        "field": "founded",
-        "label": "Arvid Lithander founded Miracly",
-        "value": "Arvid Lithander founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "bjorn bergstrom|founded|miracly",
-        "field": "founded",
-        "label": "Bjorn Bergstrom founded Miracly",
-        "value": "Bjorn Bergstrom founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "shannon cullum|founded|miracly",
-        "field": "founded",
-        "label": "Shannon Cullum founded Miracly",
-        "value": "Shannon Cullum founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 3,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-08",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-08T14:57:39+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "stefan lindeberg|miracly.ai",
-        "field": "role",
-        "label": "Stefan Lindeberg · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "alex bouaziz|miracly.ai",
-        "field": "role",
-        "label": "Alex Bouaziz · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "thomas ekman|miracly.ai",
-        "field": "role",
-        "label": "Thomas Ekman · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "hedda båverud olsson|miracly.ai",
-        "field": "role",
-        "label": "Hedda Båverud Olsson · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Gushwork",
-        "slug": "gushwork",
-        "similarity": 0.701
-      },
-      {
-        "company_name": "Seltz",
-        "slug": "seltz",
-        "similarity": 0.62
-      },
-      {
-        "company_name": "Exa",
-        "slug": "exa",
-        "similarity": 0.606
-      },
-      {
-        "company_name": "Keenable",
-        "slug": "keenable",
-        "similarity": 0.574
-      },
-      {
-        "company_name": "ZeroEntropy",
-        "slug": "zeroentropy",
-        "similarity": 0.568
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "discovered",
-        "items": [
-          "Stage: pre-seed",
-          "Raised: $2M",
-          "HQ: Stockholm",
-          "Website: https://www.miracly.ai",
-          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
-          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/contact"
-        ],
-        "count": 19
-      },
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "learned",
-        "items": [
-          "Person: Investor",
-          "Published email: hello@miracly.ai",
-          "linkedin: https://www.linkedin.com/company/miracly",
-          "twitter: https://x.com/miraclyai"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/contact?__clerk_synced=true"
-        ],
-        "count": 4
-      },
-      {
-        "at": "2026-10-24T01:55:31+00:00",
-        "kind": "funding",
-        "items": [
-          "Funding"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "funding",
-        "text": "Raised money (16d ago)",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "hello@miracly.ai",
-      "to_source_url": "https://www.miracly.ai/contact",
-      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
-      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "PataBid",
     "core_product": "AI‑powered construction estimating tool called Quantify",
     "tech_stack": [],
@@ -34579,7 +35087,7 @@
       "priority": 63.2,
       "reasons": [
         "lead score 72",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Eric via +12522047012",
@@ -35925,6 +36433,541 @@
       "to_source_url": "",
       "subject": "Asakana: a thought on Accurate semantic extraction and retrieval over messy, multi",
       "body": "Hi Benjamin,\n\nI came across Asakana: Automates sales and back‑office data entry for food distributors by extracting orders, returns, and other messages from texts, calls.\nOne thing I noticed: accurate semantic extraction and retrieval over messy, multilingual unstructured messages at scale.\n\nI can help Asakana boost its extraction accuracy and speed by building a Next.js front‑end that streams OCR‑processed documents into a vector‑based semantic search layer, letting you instantly match messy orders to catalog items.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "QuiverAI",
+    "core_product": "QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
+    "tech_stack": [
+      "SVG",
+      "large language models",
+      "multimodal AI",
+      "API",
+      "web UI"
+    ],
+    "likely_bottleneck": "search and retrieval of generated SVG assets at scale, affecting discoverability and latency",
+    "value_prop_pitch": "I can build a fast, scalable Next.js front‑end that lets designers instantly search and retrieve generated SVG assets using vector‑based semantic embeddings, ensuring relevant results even across millions of designs. Coupled with a lightweight retrieval service, this will eliminate latency and improve the discoverability of your visual code outputs.",
+    "is_relevant": true,
+    "funding_stage": "seed",
+    "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+    "discovered_at": "2026-10-20T19:42:46+00:00",
+    "funding_amount": "$8.3M",
+    "hq": "",
+    "website": "https://quiver.ai",
+    "score": 71,
+    "last_seen": "",
+    "slug": "quiverai",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 0,
+      "contact": 14
+    },
+    "gaps": [
+      "location",
+      "investors",
+      "phone"
+    ],
+    "axes": {
+      "fit": 100,
+      "reach": 100,
+      "evidence": 58
+    },
+    "qualified": true,
+    "contact": {
+      "website": "https://quiver.ai",
+      "emails": [
+        {
+          "value": "support@quiver.ai",
+          "kind": "support",
+          "source_url": "https://quiver.ai/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "twitter": "https://x.com/quiverai",
+        "github": "https://github.com/quiverai",
+        "linkedin": "https://www.linkedin.com/company/quiver-ai"
+      },
+      "contact_page": "https://quiver.ai/contact",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://quiver.ai/pricing"
+        },
+        {
+          "label": "Get started",
+          "url": "https://quiver.ai/start"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://docs.quiver.ai"
+        },
+        {
+          "label": "Get started",
+          "url": "https://quiver.ai/start?anonId=anon_9cda8665-6361-4c42-963e-2662e49dcdd5&sessionId=sess_9c6a6b4a-5d87-44f5-984f-1a768e3cf4cf"
+        }
+      ],
+      "pages_crawled": [
+        "https://quiver.ai/",
+        "https://quiver.ai/about",
+        "https://quiver.ai/contact"
+      ],
+      "enriched_at": "2026-11-09T18:39:21+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": "",
+      "site_tech": [
+        {
+          "name": "Astro",
+          "category": "framework"
+        },
+        {
+          "name": "PostHog",
+          "category": "analytics"
+        }
+      ]
+    },
+    "signals": [],
+    "people": [
+      {
+        "name": "Andrew Pouliot",
+        "role": "Formerly Figma",
+        "org": "QuiverAI",
+        "evidence": "Andrew Pouliot\nFormerly Figma",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Sabrina Hahn",
+        "role": "Angel Investor",
+        "org": "QuiverAI",
+        "evidence": "Sabrina Hahn\nAngel Investor",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "review",
+      "urgency": "warm",
+      "priority": 57.6,
+      "reasons": [
+        "lead score 71",
+        "found 19 day(s) ago (warm)",
+        "good fit; no company address to email"
+      ],
+      "next_step": "Reach Andrew Pouliot via https://quiver.ai/contact",
+      "provider": "policy",
+      "score": 71
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "quiverai",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "quiverai",
+        "field": "funding_amount",
+        "label": "funding_amount: $8.3M",
+        "value": "$8.3M",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "quiverai",
+        "field": "website",
+        "label": "website: https://quiver.ai",
+        "value": "https://quiver.ai",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "quiverai",
+        "field": "core_product",
+        "label": "core_product: QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
+        "value": "QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "quiverai",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: search and retrieval of generated SVG assets at scale, affecting discoverability and latency",
+        "value": "search and retrieval of generated SVG assets at scale, affecting discoverability and latency",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "linda tong|webflow",
+        "field": "role",
+        "label": "Linda Tong · CEO",
+        "value": "CEO",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Linda Tong\nCEO, Webflow",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "linda tong|webflow",
+        "field": "linkedin",
+        "label": "Linda Tong · linkedin",
+        "value": "https://www.linkedin.com/in/lktong",
+        "source_url": "search",
+        "evidence": "Linda Tong\nCEO, Webflow",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "amjad masad|replit",
+        "field": "role",
+        "label": "Amjad Masad · CEO",
+        "value": "CEO",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Amjad Masad\nCEO, Replit",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "adrian mato|github",
+        "field": "role",
+        "label": "Adrian Mato · Design Director",
+        "value": "Design Director",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Adrian Mato\nDesign Director, GitHub",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "andrew pouliot|quiverai",
+        "field": "role",
+        "label": "Andrew Pouliot · Formerly Figma",
+        "value": "Formerly Figma",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Andrew Pouliot\nFormerly Figma",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "sabrina hahn|quiverai",
+        "field": "role",
+        "label": "Sabrina Hahn · Angel Investor",
+        "value": "Angel Investor",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Sabrina Hahn\nAngel Investor",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "michele catasta|replit",
+        "field": "role",
+        "label": "Michele Catasta · Head of AI",
+        "value": "Head of AI",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Michele Catasta\nHead of AI, Replit",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "eric zakariasson|cursor",
+        "field": "role",
+        "label": "Eric Zakariasson · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Eric Zakariasson\nCursor",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "didac lee|galdana ventures",
+        "field": "role",
+        "label": "Didac Lee · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Didac Lee\nGaldana Ventures",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "jiaqiang ye zu|theker",
+        "field": "role",
+        "label": "Jiaqiang Ye Zu · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Jiaqiang Ye Zu\nTheker",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "carla gomez|theker",
+        "field": "role",
+        "label": "Carla Gomez · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Carla Gomez\nTheker",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "juanjo mostazo|k fund",
+        "field": "role",
+        "label": "Juanjo Mostazo · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Juanjo Mostazo\nK Fund",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "guli moreno|capchase",
+        "field": "role",
+        "label": "Guli Moreno · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Guli Moreno\nCapchase",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "guillermo flor|the vc corner",
+        "field": "role",
+        "label": "Guillermo Flor · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Guillermo Flor\nThe VC Corner",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "ruben dominquez|the vc corner",
+        "field": "role",
+        "label": "Ruben Dominquez · ",
+        "value": "",
+        "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
+        "evidence": "Ruben Dominquez\nThe VC Corner",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "quiverai",
+        "field": "email",
+        "label": "email: support@quiver.ai",
+        "value": "support@quiver.ai",
+        "source_url": "https://quiver.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "quiverai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/quiverai",
+        "value": "https://x.com/quiverai",
+        "source_url": "https://quiver.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "quiverai",
+        "field": "github",
+        "label": "github: https://github.com/quiverai",
+        "value": "https://github.com/quiverai",
+        "source_url": "https://quiver.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "quiverai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/quiver-ai",
+        "value": "https://www.linkedin.com/company/quiver-ai",
+        "source_url": "https://quiver.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Adside.ai",
+        "slug": "adside-ai",
+        "similarity": 0.489
+      },
+      {
+        "company_name": "Agent37",
+        "slug": "agent37",
+        "similarity": 0.483
+      },
+      {
+        "company_name": "Mechanize",
+        "slug": "mechanize",
+        "similarity": 0.482
+      },
+      {
+        "company_name": "Mecka AI",
+        "slug": "mecka-ai",
+        "similarity": 0.48
+      },
+      {
+        "company_name": "ZeroEntropy",
+        "slug": "zeroentropy",
+        "similarity": 0.477
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-09T18:38:39+00:00",
+        "kind": "discovered",
+        "items": [
+          "Stage: seed",
+          "Raised: $8.3M",
+          "Website: https://quiver.ai",
+          "Product: QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
+          "Bottleneck: search and retrieval of generated SVG assets at scale, affecting discoverability and latency",
+          "Person: CEO"
+        ],
+        "source_urls": [
+          "https://quiver.ai/blog/announcing-our-seed-round",
+          "search",
+          "https://quiver.ai/contact"
+        ],
+        "count": 23
+      }
+    ],
+    "watch": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "",
+      "to_source_url": "",
+      "subject": "QuiverAI: a thought on search and retrieval of generated SVG assets at scale, affec",
+      "body": "Hi QuiverAI team,\n\nI came across QuiverAI: QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.\nOne thing I noticed: search and retrieval of generated SVG assets at scale, affecting discoverability and latency.\n\nI can build a fast, scalable Next.js front‑end that lets designers instantly search and retrieve generated SVG assets using vector‑based semantic embeddings, ensuring relevant results even across millions of designs.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -44640,7 +45683,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (3d ago)",
+        "text": "Launched (4d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50381687"
       }
     ],
@@ -45086,10 +46129,16 @@
         "https://withrelace.com/contact",
         "https://withrelace.com/team"
       ],
-      "enriched_at": "2026-10-24T01:56:26+00:00",
+      "enriched_at": "2026-11-09T18:38:57+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": ""
+      "attempts": 1,
+      "last_attempt": "2026-11-09T18:38:39+00:00",
+      "site_tech": [
+        {
+          "name": "Vercel",
+          "category": "hosting"
+        }
+      ]
     },
     "signals": [
       {
@@ -45142,29 +46191,15 @@
       {
         "entity_type": "startup",
         "entity_key": "relace",
-        "field": "funding_stage",
-        "label": "funding_stage: Pre-seed",
-        "value": "Pre-seed",
-        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "relace",
         "field": "funding_amount",
         "label": "funding_amount: $1.6M",
         "value": "$1.6M",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45175,10 +46210,10 @@
         "value": "London",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45189,10 +46224,10 @@
         "value": "https://withrelace.com",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45203,10 +46238,10 @@
         "value": "An AI‑powered software platform that helps financial institutions identify relevant regulations, assess obligations, and flag compliance gaps.",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45217,10 +46252,10 @@
         "value": "Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple jurisdictions.",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45231,10 +46266,10 @@
         "value": "Boost Capital invested_in Relace",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "The funding round was led by Boost Capital.",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -45245,10 +46280,10 @@
         "value": "Ascension invested_in Relace",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "Additional participants included Ascension",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -45259,10 +46294,10 @@
         "value": "Koro Capital invested_in Relace",
         "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
         "evidence": "Additional participants included ... Koro Capital",
-        "run_id": "20261024T015344Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -45273,11 +46308,39 @@
         "value": "https://www.linkedin.com/company/undereview",
         "source_url": "https://withrelace.com/contact",
         "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "funding_stage",
+        "label": "funding_stage: pre-seed",
+        "value": "pre-seed",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "relace",
+        "field": "funding_stage",
+        "label": "funding_stage: Pre-seed",
+        "value": "Pre-seed",
+        "source_url": "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
+        "evidence": "",
         "run_id": "20261024T015344Z",
         "first_seen": "2026-10-24T01:57:30+00:00",
         "last_seen": "2026-10-24T01:57:30+00:00",
         "seen_count": 1,
-        "confidence": 1.0
+        "confidence": 0.4
       }
     ],
     "similar": [
@@ -45312,18 +46375,29 @@
         "at": "2026-10-24T01:57:30+00:00",
         "kind": "discovered",
         "items": [
-          "Stage: Pre-seed",
           "Raised: $1.6M",
           "HQ: London",
           "Website: https://withrelace.com",
           "Product: An AI‑powered software platform that helps financial institutions identify relevant regulations, assess obligations, and flag compl",
-          "Bottleneck: Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple juris"
+          "Bottleneck: Scaling the ingestion and real‑time semantic analysis of massive, constantly changing regulatory documents across multiple juris",
+          "Invested in: Boost Capital invested_in Relace"
         ],
         "source_urls": [
           "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/",
           "https://withrelace.com/contact"
         ],
         "count": 10
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "learned",
+        "items": [
+          "Stage: Pre-seed"
+        ],
+        "source_urls": [
+          "https://www.thesaasnews.com/news/relace-raises-1-6m-pre-seed/"
+        ],
+        "count": 1
       },
       {
         "at": "2026-10-24T01:55:31+00:00",
@@ -45881,13 +46955,13 @@
       "product_access": [],
       "pages_crawled": [
         "https://www.telamont.com/",
-        "https://www.telamont.com/contact",
-        "https://www.telamont.com/about"
+        "https://www.telamont.com/about",
+        "https://www.telamont.com/contact"
       ],
-      "enriched_at": "2026-11-09T15:36:25+00:00",
+      "enriched_at": "2026-11-09T18:39:03+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-09T18:38:39+00:00",
       "site_tech": [
         {
           "name": "Webflow",
@@ -45951,10 +47025,10 @@
         "value": "YC",
         "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45965,10 +47039,10 @@
         "value": "Québec, CA",
         "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45979,10 +47053,10 @@
         "value": "https://www.telamont.com",
         "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -45993,10 +47067,10 @@
         "value": "AI-powered tool that detects errors and omissions across construction drawings, specs, and contracts before they become disputes.",
         "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -46007,10 +47081,10 @@
         "value": "Scaling document ingestion and AI analysis across massive sets of construction files.",
         "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -46021,24 +47095,10 @@
         "value": "Charles Goulet founded Telamont",
         "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
         "evidence": "Hey YC! I'm Charles, and my co-founder William and I are building Telamont.",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "charles goulet|previously_at|1password",
-        "field": "previously_at",
-        "label": "Charles Goulet previously at 1Password",
-        "value": "Charles Goulet previously_at 1Password",
-        "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
-        "evidence": "I was a software engineer at 1Password before starting Telamont.",
-        "run_id": "20261109T153423Z",
-        "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -46049,10 +47109,10 @@
         "value": "info@telamont.com",
         "source_url": "https://www.telamont.com/contact",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -46063,10 +47123,10 @@
         "value": "+14189050520",
         "source_url": "https://www.telamont.com/",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -46077,10 +47137,10 @@
         "value": "https://www.linkedin.com/company/telamont",
         "source_url": "https://www.telamont.com/contact",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -46091,6 +47151,20 @@
         "value": "https://x.com/Telamontai",
         "source_url": "https://www.telamont.com/contact",
         "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T15:36:56+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "charles goulet|previously_at|1password",
+        "field": "previously_at",
+        "label": "Charles Goulet previously at 1Password",
+        "value": "Charles Goulet previously_at 1Password",
+        "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents",
+        "evidence": "I was a software engineer at 1Password before starting Telamont.",
         "run_id": "20261109T153423Z",
         "first_seen": "2026-11-09T15:36:56+00:00",
         "last_seen": "2026-11-09T15:36:56+00:00",
@@ -46142,7 +47216,18 @@
           "https://www.telamont.com/contact",
           "https://www.telamont.com/"
         ],
-        "count": 11
+        "count": 10
+      },
+      {
+        "at": "2026-11-09T15:36:56+00:00",
+        "kind": "learned",
+        "items": [
+          "Previously at: Charles Goulet previously_at 1Password"
+        ],
+        "source_urls": [
+          "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents"
+        ],
+        "count": 1
       },
       {
         "at": "2026-11-09T15:36:05+00:00",
@@ -46555,10 +47640,10 @@
         "https://www.bioliberty.com/contact",
         "https://www.bioliberty.com/contact"
       ],
-      "enriched_at": "2026-11-07T12:42:48+00:00",
+      "enriched_at": "2026-11-09T18:39:10+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-09T18:38:39+00:00",
       "site_tech": [
         {
           "name": "HubSpot",
@@ -46598,29 +47683,15 @@
       {
         "entity_type": "startup",
         "entity_key": "bioliberty",
-        "field": "funding_stage",
-        "label": "funding_stage: Series A extension",
-        "value": "Series A extension",
-        "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
-        "evidence": "",
-        "run_id": "20261107T124044Z",
-        "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "bioliberty",
         "field": "funding_amount",
         "label": "funding_amount: €2.95 million",
         "value": "€2.95 million",
         "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -46631,10 +47702,10 @@
         "value": "Edinburgh, UK and Boston, USA",
         "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -46645,10 +47716,10 @@
         "value": "https://www.bioliberty.com",
         "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -46659,10 +47730,10 @@
         "value": "An AI‑powered soft‑robotic rehabilitation system comprising a portable control hub, an air‑actuated wearable glove, and a clinician dashboard that automates therapy data and notes.",
         "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -46673,10 +47744,10 @@
         "value": "Scaling real‑time data pipelines and AI inference for home‑based rehabilitation sessions.",
         "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -46687,10 +47758,10 @@
         "value": "info@bioliberty.com",
         "source_url": "https://www.bioliberty.com/contact",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -46701,11 +47772,39 @@
         "value": "https://www.linkedin.com/company/bioliberty",
         "source_url": "https://www.bioliberty.com/contact",
         "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-07T12:44:09+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "bioliberty",
+        "field": "funding_stage",
+        "label": "funding_stage: Series A",
+        "value": "Series A",
+        "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "bioliberty",
+        "field": "funding_stage",
+        "label": "funding_stage: Series A extension",
+        "value": "Series A extension",
+        "source_url": "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
+        "evidence": "",
         "run_id": "20261107T124044Z",
         "first_seen": "2026-11-07T12:44:09+00:00",
         "last_seen": "2026-11-07T12:44:09+00:00",
         "seen_count": 1,
-        "confidence": 1.0
+        "confidence": 0.4
       }
     ],
     "similar": [
@@ -46740,18 +47839,29 @@
         "at": "2026-11-07T12:44:09+00:00",
         "kind": "discovered",
         "items": [
-          "Stage: Series A extension",
           "Raised: €2.95 million",
           "HQ: Edinburgh, UK and Boston, USA",
           "Website: https://www.bioliberty.com",
           "Product: An AI‑powered soft‑robotic rehabilitation system comprising a portable control hub, an air‑actuated wearable glove, and a clinician",
-          "Bottleneck: Scaling real‑time data pipelines and AI inference for home‑based rehabilitation sessions."
+          "Bottleneck: Scaling real‑time data pipelines and AI inference for home‑based rehabilitation sessions.",
+          "Published email: info@bioliberty.com"
         ],
         "source_urls": [
           "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/",
           "https://www.bioliberty.com/contact"
         ],
         "count": 8
+      },
+      {
+        "at": "2026-11-07T12:44:09+00:00",
+        "kind": "learned",
+        "items": [
+          "Stage: Series A extension"
+        ],
+        "source_urls": [
+          "https://www.eu-startups.com/2026/11/bioliberty-raises-e2-95-million-to-bring-its-ai-powered-rehabilitation-technology-into-the-home/"
+        ],
+        "count": 1
       },
       {
         "at": "2026-11-06T09:13:13+00:00",
@@ -47249,7 +48359,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (6d ago)",
+        "text": "Launched (7d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50339913"
       },
       {
@@ -47464,14 +48574,32 @@
         "linkedin": "https://www.linkedin.com/company/joobadotcom"
       },
       "contact_page": "https://www.jooba.com/contact",
+      "product_access": [
+        {
+          "label": "Get started",
+          "url": "https://www.jooba.com/demo"
+        }
+      ],
       "pages_crawled": [
         "https://www.jooba.com/",
+        "https://www.jooba.com/about",
         "https://www.jooba.com/team",
-        "https://www.jooba.com/contact",
-        "https://www.jooba.com/about"
+        "https://www.jooba.com/contact"
       ],
-      "enriched_at": "2026-10-21T04:41:37+00:00",
-      "status": "ok"
+      "enriched_at": "2026-11-09T18:39:16+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-09T18:38:39+00:00",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
     },
     "signals": [],
     "people": [],
@@ -47509,7 +48637,134 @@
       "provider": "policy",
       "score": 57
     },
-    "trackbacks": [],
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "jooba",
+        "field": "funding_stage",
+        "label": "funding_stage: seed",
+        "value": "seed",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "jooba",
+        "field": "funding_amount",
+        "label": "funding_amount: $4M",
+        "value": "$4M",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "jooba",
+        "field": "website",
+        "label": "website: https://www.jooba.com",
+        "value": "https://www.jooba.com",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "jooba",
+        "field": "core_product",
+        "label": "core_product: AI recruiting platform that uses custom AI agents and human reviewers to help rapidly growing companies hire faster.",
+        "value": "AI recruiting platform that uses custom AI agents and human reviewers to help rapidly growing companies hire faster.",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "jooba",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: search and semantic matching of candidate resumes to job requirements",
+        "value": "search and semantic matching of candidate resumes to job requirements",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "a16z speedrun|invested_in|jooba",
+        "field": "invested_in",
+        "label": "a16z speedrun invested in Jooba",
+        "value": "a16z speedrun invested_in Jooba",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures.",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "scribble ventures|invested_in|jooba",
+        "field": "invested_in",
+        "label": "Scribble Ventures invested in Jooba",
+        "value": "Scribble Ventures invested_in Jooba",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures.",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "genius ventures|invested_in|jooba",
+        "field": "invested_in",
+        "label": "Genius Ventures invested in Jooba",
+        "value": "Genius Ventures invested_in Jooba",
+        "source_url": "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+        "evidence": "Jooba secured $4 million in seed funding from a16z speedrun, Scribble Ventures, and Genius Ventures.",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "jooba",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/joobadotcom",
+        "value": "https://www.linkedin.com/company/joobadotcom",
+        "source_url": "https://www.jooba.com/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
     "similar": [
       {
         "company_name": "Roleo",
@@ -47539,11 +48794,21 @@
     ],
     "timeline": [
       {
-        "at": "2026-10-20T20:36:22+00:00",
+        "at": "2026-11-09T18:38:39+00:00",
         "kind": "discovered",
-        "items": [],
-        "source_urls": [],
-        "count": 0
+        "items": [
+          "Stage: seed",
+          "Raised: $4M",
+          "Website: https://www.jooba.com",
+          "Product: AI recruiting platform that uses custom AI agents and human reviewers to help rapidly growing companies hire faster.",
+          "Bottleneck: search and semantic matching of candidate resumes to job requirements",
+          "Invested in: a16z speedrun invested_in Jooba"
+        ],
+        "source_urls": [
+          "https://techfundingnews.com/pitch-deck-ai-recruiting-startup-jooba-raises-4m-seed-from-a16z-speedrun-scribble-ventures-and-genius-ventures/",
+          "https://www.jooba.com/contact"
+        ],
+        "count": 9
       }
     ],
     "watch": [],
@@ -47666,7 +48931,7 @@
       "priority": 49.2,
       "reasons": [
         "lead score 57",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Marc via https://obsessiondb.com/contact",
@@ -47813,7 +49078,7 @@
       "priority": 59.2,
       "reasons": [
         "lead score 57",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email founders@prbe.ai yourself",
@@ -48174,326 +49439,6 @@
       "subject": "GatherHQ: a thought on Scaling the interview collection and real‑time query infrast",
       "body": "Hi Mayank,\n\nCongrats on the launch (https://www.ycombinator.com/launches/WI6-gatherhq-an-api-for-how-buyers-think-built-for-agents-and-teams).\n\nI came across GatherHQ: An API that interviews real buyers, builds living market models, and lets AI agents query buyer insights.\nI'd like to build something with you.\nOne place we could start: scaling the interview collection and real‑time query infrastructure as the number of buyers and enterprise customers.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "QuiverAI",
-    "core_product": "QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.",
-    "tech_stack": [
-      "SVG",
-      "large language models",
-      "multimodal AI",
-      "API",
-      "web UI"
-    ],
-    "likely_bottleneck": "search and retrieval of generated SVG assets at scale, affecting discoverability and latency",
-    "value_prop_pitch": "I can build a fast, scalable Next.js front‑end that lets designers instantly search and retrieve generated SVG assets using vector‑based semantic embeddings, ensuring relevant results even across millions of designs. Coupled with a lightweight retrieval service, this will eliminate latency and improve the discoverability of your visual code outputs.",
-    "is_relevant": true,
-    "funding_stage": "seed",
-    "source_url": "https://quiver.ai/blog/announcing-our-seed-round",
-    "discovered_at": "2026-10-20T19:42:46+00:00",
-    "funding_amount": "$8.3M",
-    "hq": "",
-    "website": "https://quiver.ai",
-    "score": 56,
-    "last_seen": "",
-    "slug": "quiverai",
-    "score_parts": {
-      "fit": 25,
-      "identity": 12,
-      "people": 5,
-      "connections": 0,
-      "contact": 14
-    },
-    "gaps": [
-      "location",
-      "founder",
-      "people profiles",
-      "investors",
-      "phone"
-    ],
-    "axes": {
-      "fit": 100,
-      "reach": 100,
-      "evidence": 31
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://quiver.ai",
-      "emails": [
-        {
-          "value": "support@quiver.ai",
-          "kind": "support",
-          "source_url": "https://quiver.ai/contact"
-        }
-      ],
-      "phones": [],
-      "socials": {
-        "twitter": "https://x.com/quiverai",
-        "github": "https://github.com/quiverai",
-        "linkedin": "https://www.linkedin.com/company/quiver-ai"
-      },
-      "contact_page": "https://quiver.ai/contact",
-      "pages_crawled": [
-        "https://quiver.ai/",
-        "https://quiver.ai/about",
-        "https://quiver.ai/contact"
-      ],
-      "enriched_at": "2026-10-20T19:49:38+00:00",
-      "status": "ok"
-    },
-    "signals": [],
-    "people": [
-      {
-        "name": "Andrew Pouliot",
-        "role": "Formerly Figma",
-        "org": "QuiverAI",
-        "evidence": "Andrew Pouliot\nFormerly Figma",
-        "linkedin": "",
-        "twitter": "",
-        "github": "",
-        "homepage": "",
-        "link_source": ""
-      },
-      {
-        "name": "Sabrina Hahn",
-        "role": "Angel Investor",
-        "org": "QuiverAI",
-        "evidence": "Sabrina Hahn\nAngel Investor",
-        "linkedin": "",
-        "twitter": "",
-        "github": "",
-        "homepage": "",
-        "link_source": ""
-      }
-    ],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "review",
-      "urgency": "warm",
-      "priority": 48.6,
-      "reasons": [
-        "lead score 56",
-        "found 19 day(s) ago (warm)",
-        "good fit; no company address to email"
-      ],
-      "next_step": "Reach Andrew Pouliot via https://quiver.ai/contact",
-      "provider": "policy",
-      "score": 56
-    },
-    "trackbacks": [],
-    "similar": [
-      {
-        "company_name": "Adside.ai",
-        "slug": "adside-ai",
-        "similarity": 0.489
-      },
-      {
-        "company_name": "Agent37",
-        "slug": "agent37",
-        "similarity": 0.483
-      },
-      {
-        "company_name": "Mechanize",
-        "slug": "mechanize",
-        "similarity": 0.482
-      },
-      {
-        "company_name": "Mecka AI",
-        "slug": "mecka-ai",
-        "similarity": 0.48
-      },
-      {
-        "company_name": "ZeroEntropy",
-        "slug": "zeroentropy",
-        "similarity": 0.477
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-10-20T19:42:46+00:00",
-        "kind": "discovered",
-        "items": [],
-        "source_urls": [],
-        "count": 0
-      }
-    ],
-    "watch": [],
-    "why_now": [],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "",
-      "to_source_url": "",
-      "subject": "QuiverAI: a thought on search and retrieval of generated SVG assets at scale, affec",
-      "body": "Hi QuiverAI team,\n\nI came across QuiverAI: QuiverAI builds AI models for vector graphics (SVG) with tools for design, editing, an API and UI for visual code generation.\nOne thing I noticed: search and retrieval of generated SVG assets at scale, affecting discoverability and latency.\n\nI can build a fast, scalable Next.js front‑end that lets designers instantly search and retrieve generated SVG assets using vector‑based semantic embeddings, ensuring relevant results even across millions of designs.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Kairos Health",
-    "core_product": "Kairos Health provides an AI-powered front desk that automates patient outreach, call handling, and insurance verification for dental practices.",
-    "tech_stack": [
-      "AI",
-      "AWS"
-    ],
-    "likely_bottleneck": "search quality and retrieval over unstructured patient data for personalized outreach and scheduling",
-    "value_prop_pitch": "I can help Kairos Health boost its patient outreach by building a Next.js portal that leverages vector‑based semantic search to instantly retrieve the most relevant patient records and insurance details. This will improve call personalization and scheduling accuracy while letting your team focus on care rather than data plumbing.",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://www.ycombinator.com/launches/W5m-kairos-health-ai-front-desk-for-dental-practices",
-    "discovered_at": "2026-10-20T19:42:46+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "https://kairoshealthai.com",
-    "score": 56,
-    "last_seen": "",
-    "slug": "kairos-health",
-    "score_parts": {
-      "fit": 25,
-      "identity": 9,
-      "people": 0,
-      "connections": 5,
-      "contact": 17
-    },
-    "gaps": [
-      "location",
-      "funding amount",
-      "founder",
-      "people profiles",
-      "investors"
-    ],
-    "axes": {
-      "fit": 100,
-      "reach": 92,
-      "evidence": 25
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://kairoshealthai.com",
-      "emails": [
-        {
-          "value": "contact@kairoshealthai.com",
-          "kind": "general",
-          "source_url": "https://kairoshealthai.com/"
-        }
-      ],
-      "phones": [
-        {
-          "value": "+12814656628",
-          "kind": "main",
-          "source_url": "https://kairoshealthai.com/"
-        }
-      ],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/kairoshealth"
-      },
-      "contact_page": "",
-      "pages_crawled": [
-        "https://kairoshealthai.com/",
-        "https://kairoshealthai.com/about"
-      ],
-      "enriched_at": "2026-10-20T19:50:35+00:00",
-      "status": "ok"
-    },
-    "signals": [],
-    "people": [],
-    "edges": [
-      {
-        "src": "Adhira Tippur",
-        "rel": "works_at",
-        "dst": "Kairos Health",
-        "evidence": "Adhira Tippur grew up helping out at her mother's dental practices, which inspired the idea for Kairos Health."
-      },
-      {
-        "src": "Sanjana Kavula",
-        "rel": "works_at",
-        "dst": "Kairos Health",
-        "evidence": "Sanjana Kavula studied computational neuroscience at Rice University."
-      },
-      {
-        "src": "Aditya Jain",
-        "rel": "works_at",
-        "dst": "Kairos Health",
-        "evidence": "Aditya Jain studied computer science at Georgia Tech."
-      },
-      {
-        "src": "Tanush Chintala",
-        "rel": "works_at",
-        "dst": "Kairos Health",
-        "evidence": "Tanush Chintala studied computer science at Georgia Tech as a Stamps President’s Scholar."
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "review",
-      "urgency": "warm",
-      "priority": 58.6,
-      "reasons": [
-        "lead score 56",
-        "found 19 day(s) ago (warm)",
-        "good fit, below the 70 bar for unattended sending"
-      ],
-      "next_step": "Review the draft, then email contact@kairoshealthai.com yourself",
-      "provider": "policy",
-      "score": 56
-    },
-    "trackbacks": [],
-    "similar": [
-      {
-        "company_name": "Multikor.ai, Inc.",
-        "slug": "multikor-ai-inc",
-        "similarity": 0.627
-      },
-      {
-        "company_name": "Siggy",
-        "slug": "siggy",
-        "similarity": 0.598
-      },
-      {
-        "company_name": "Bioliberty",
-        "slug": "bioliberty",
-        "similarity": 0.546
-      },
-      {
-        "company_name": "Bia Health",
-        "slug": "bia-health",
-        "similarity": 0.524
-      },
-      {
-        "company_name": "Hesper AI",
-        "slug": "hesper-ai",
-        "similarity": 0.522
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-10-20T19:42:46+00:00",
-        "kind": "discovered",
-        "items": [],
-        "source_urls": [],
-        "count": 0
-      }
-    ],
-    "watch": [],
-    "why_now": [],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "contact@kairoshealthai.com",
-      "to_source_url": "https://kairoshealthai.com/",
-      "subject": "Kairos Health: a thought on search quality and retrieval over unstructured patient data ",
-      "body": "Hi Kairos Health team,\n\nI came across Kairos Health: Kairos Health provides an AI-powered front desk that automates patient outreach, call handling.\nOne thing I noticed: search quality and retrieval over unstructured patient data for personalized outreach and scheduling.\n\nI can help Kairos Health boost its patient outreach by building a Next.js portal that leverages vector‑based semantic search to instantly retrieve the most relevant patient records and insurance details.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:contact%40kairoshealthai.com?subject=Kairos%20Health%3A%20a%20thought%20on%20search%20quality%20and%20retrieval%20over%20unstructured%20patient%20data%20&body=Hi%20Kairos%20Health%20team%2C%0A%0AI%20came%20across%20Kairos%20Health%3A%20Kairos%20Health%20provides%20an%20AI-powered%20front%20desk%20that%20automates%20patient%20outreach%2C%20call%20handling.%0AOne%20thing%20I%20noticed%3A%20search%20quality%20and%20retrieval%20over%20unstructured%20patient%20data%20for%20personalized%20outreach%20and%20scheduling.%0A%0AI%20can%20help%20Kairos%20Health%20boost%20its%20patient%20outreach%20by%20building%20a%20Next.js%20portal%20that%20leverages%20vector%E2%80%91based%20semantic%20search%20to%20instantly%20retrieve%20the%20most%20relevant%20patient%20records%20and%20insurance%20details.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -50089,10 +51034,28 @@
         "https://www.vector.co/",
         "https://www.vector.co/company"
       ],
-      "enriched_at": "2026-11-02T15:06:46+00:00",
+      "enriched_at": "2026-11-09T18:39:42+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": ""
+      "attempts": 1,
+      "last_attempt": "2026-11-09T18:38:39+00:00",
+      "site_tech": [
+        {
+          "name": "Astro",
+          "category": "framework"
+        },
+        {
+          "name": "HubSpot",
+          "category": "marketing"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Vercel",
+          "category": "hosting"
+        }
+      ]
     },
     "signals": [
       {
@@ -50131,10 +51094,10 @@
         "value": "Series A",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50145,10 +51108,10 @@
         "value": "$10M",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50159,10 +51122,10 @@
         "value": "Boston",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50173,10 +51136,10 @@
         "value": "https://www.vector.co",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50187,10 +51150,10 @@
         "value": "A contact-level advertising platform that uses AI to let B2B marketers target named buyers with intent signals and query campaign performance via natural‑language interfaces.",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50201,10 +51164,10 @@
         "value": "real‑time processing of high‑volume intent signals and seamless integration with large language models",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50215,10 +51178,10 @@
         "value": "support@vector.co",
         "source_url": "https://www.vector.co/",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50229,10 +51192,10 @@
         "value": "https://www.linkedin.com/company/getvector",
         "source_url": "https://www.vector.co",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-02T15:08:02+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -50376,10 +51339,10 @@
         "https://www.mechanize.work/team",
         "https://www.mechanize.work/contact"
       ],
-      "enriched_at": "2026-11-07T12:44:05+00:00",
+      "enriched_at": "2026-11-09T18:39:48+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-09T18:38:39+00:00",
       "site_tech": [
         {
           "name": "PostHog",
@@ -50467,10 +51430,10 @@
         "value": "https://www.mechanize.work",
         "source_url": "https://news.ycombinator.com/item?id=50346820",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50481,10 +51444,10 @@
         "value": "We build environments that frontier AI labs use to train their models to do real-world software engineering. We have more demand than we can keep up with, so we're hiring fast.",
         "source_url": "https://news.ycombinator.com/item?id=50346820",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -50495,10 +51458,10 @@
         "value": "Co-founder",
         "source_url": "https://news.ycombinator.com/item?id=50346820",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50509,10 +51472,10 @@
         "value": "https://www.linkedin.com/in/ege-erdil-0a4b0314b",
         "source_url": "https://www.mechanize.work/",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50523,10 +51486,10 @@
         "value": "https://x.com/EgeErdil2",
         "source_url": "https://www.mechanize.work/",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50537,10 +51500,10 @@
         "value": "Co-founder",
         "source_url": "https://news.ycombinator.com/item?id=50346820",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50551,10 +51514,10 @@
         "value": "https://www.linkedin.com/in/tamay-besiroglu",
         "source_url": "https://www.mechanize.work/",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50565,10 +51528,10 @@
         "value": "https://x.com/tamaybes",
         "source_url": "https://www.mechanize.work/",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50579,10 +51542,10 @@
         "value": "Co-founder",
         "source_url": "https://news.ycombinator.com/item?id=50346820",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50593,10 +51556,10 @@
         "value": "https://www.linkedin.com/in/matthew-barnett-4aa7b81a7",
         "source_url": "https://www.mechanize.work/",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50607,10 +51570,10 @@
         "value": "https://x.com/MatthewJBar",
         "source_url": "https://www.mechanize.work/",
         "evidence": "schema.org Person markup",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50621,10 +51584,10 @@
         "value": "https://www.linkedin.com/company/mechanize-work",
         "source_url": "https://www.mechanize.work/contact",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50635,10 +51598,10 @@
         "value": "https://x.com/MechanizeWork",
         "source_url": "https://www.mechanize.work/contact",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -50649,10 +51612,10 @@
         "value": "https://github.com/mechanize-work",
         "source_url": "https://www.mechanize.work/contact",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-09",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -51747,152 +52710,6 @@
       "to_source_url": "",
       "subject": "The Letter Company: a thought on high inference latency and cost when orchestrating multiple ",
       "body": "Hi Mathew,\n\nCongrats on the launch (https://www.ycombinator.com/launches/WbJ-letterpress-1-the-world-s-first-coding-agent-harness-and-ide-for-growth-engineering).\n\nI came across The Letter Company: Letterpress-1 is a coding agent, harness, and IDE purpose‑built for growth engineering that lets developers edit sites.\nOne thing I noticed: high inference latency and cost when orchestrating multiple large language models for real‑time growth tasks.\n\nYou could wrap the LLM orchestration behind a Next.js edge runtime to cache prompts and serve responses instantly, slashing latency for your growth agents.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Agent37",
-    "core_product": "Low-cost sandboxes for running AI agents.",
-    "tech_stack": [
-      "gVisor",
-      "Hetzner",
-      "OVH"
-    ],
-    "likely_bottleneck": "Efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.",
-    "value_prop_pitch": "I can build a Next.js dashboard that indexes all sandbox execution logs with a vector store, enabling instant semantic search across agents’ outputs and configurations. This lets your users quickly find relevant sandbox runs and debug issues without manually sifting through raw logs, improving developer productivity.",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50059096",
-    "discovered_at": "2026-10-20T19:42:46+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "https://www.agent37.com",
-    "score": 48,
-    "last_seen": "",
-    "slug": "agent37",
-    "score_parts": {
-      "fit": 15,
-      "identity": 9,
-      "people": 10,
-      "connections": 10,
-      "contact": 4
-    },
-    "gaps": [
-      "funding stage",
-      "location",
-      "funding amount",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 33,
-      "evidence": 53
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://www.agent37.com",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "https://www.agent37.com/contact",
-      "pages_crawled": [
-        "https://www.agent37.com/",
-        "https://www.agent37.com/about",
-        "https://www.agent37.com/contact",
-        "https://www.agent37.com/team"
-      ],
-      "enriched_at": "2026-10-20T19:50:26+00:00",
-      "status": "ok"
-    },
-    "signals": [],
-    "people": [
-      {
-        "name": "Vishnu",
-        "role": "Founder",
-        "org": "Agent37",
-        "evidence": "Hey HN, I’m Vishnu from Agent37",
-        "linkedin": "",
-        "twitter": "",
-        "github": "",
-        "homepage": "",
-        "link_source": ""
-      }
-    ],
-    "edges": [
-      {
-        "src": "Vishnu",
-        "rel": "works_at",
-        "dst": "Agent37",
-        "evidence": "Hey HN, I’m Vishnu from Agent37"
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 43.8,
-      "reasons": [
-        "lead score 48",
-        "found 19 day(s) ago (warm)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 48
-    },
-    "trackbacks": [],
-    "similar": [
-      {
-        "company_name": "AetherGrid",
-        "slug": "aethergrid",
-        "similarity": 0.628
-      },
-      {
-        "company_name": "Keenable",
-        "slug": "keenable",
-        "similarity": 0.604
-      },
-      {
-        "company_name": "Simantic",
-        "slug": "simantic",
-        "similarity": 0.596
-      },
-      {
-        "company_name": "Probe",
-        "slug": "probe",
-        "similarity": 0.596
-      },
-      {
-        "company_name": "Propel Labs",
-        "slug": "propel-labs",
-        "similarity": 0.581
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-10-20T19:42:46+00:00",
-        "kind": "discovered",
-        "items": [],
-        "source_urls": [],
-        "count": 0
-      }
-    ],
-    "watch": [],
-    "why_now": [],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Agent37: a thought on Efficiently searching and retrieving relevant sandbox execut",
-      "body": "Hi Vishnu,\n\nI came across Agent37: Low-cost sandboxes for running AI agents.\nI'm looking to join a team like yours and work with gVisor, Hetzner, OVH.\nOne thing I'd want to help with: efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -54208,7 +55025,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (4d ago)",
+        "text": "Launched (5d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50368804"
       }
     ],
@@ -54443,7 +55260,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (5d ago): Security, Machine Learning",
+        "text": "Hiring (6d ago): Security, Machine Learning",
         "source_url": "https://news.ycombinator.com/item?id=50353951"
       }
     ],
@@ -55538,7 +56355,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (32d ago): Senior Software Engineer – Kubernetes, Distributed Systems",
+        "text": "Hiring (33d ago): Senior Software Engineer – Kubernetes, Distributed Systems",
         "source_url": "https://news.ycombinator.com/item?id=49996914"
       }
     ],
@@ -56087,7 +56904,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (27d ago): AI Engineer Apprentice",
+        "text": "Hiring (28d ago): AI Engineer Apprentice",
         "source_url": "https://news.ycombinator.com/item?id=50059584"
       }
     ],
@@ -58162,7 +58979,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (5d ago): Lead Engineer, AI Accounting",
+        "text": "Hiring (6d ago): Lead Engineer, AI Accounting",
         "source_url": "https://news.ycombinator.com/item?id=50354142"
       }
     ],
@@ -62289,7 +63106,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (2d ago): Founding Engineer",
+        "text": "Hiring (3d ago): Founding Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50396245"
       }
     ],
@@ -65054,7 +65871,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (10d ago)",
+        "text": "Launched (11d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50291116"
       }
     ],
@@ -67173,6 +67990,235 @@
     "outreach": []
   },
   {
+    "company_name": "Agent37",
+    "core_product": "Low-cost sandboxes for running AI agents.",
+    "tech_stack": [
+      "gVisor",
+      "Hetzner",
+      "OVH"
+    ],
+    "likely_bottleneck": "Efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.",
+    "value_prop_pitch": "I can build a Next.js dashboard that indexes all sandbox execution logs with a vector store, enabling instant semantic search across agents’ outputs and configurations. This lets your users quickly find relevant sandbox runs and debug issues without manually sifting through raw logs, improving developer productivity.",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50059096",
+    "discovered_at": "2026-10-20T19:42:46+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.agent37.com",
+    "score": 28,
+    "last_seen": "",
+    "slug": "agent37",
+    "score_parts": {
+      "fit": 15,
+      "identity": 9,
+      "people": 0,
+      "connections": 0,
+      "contact": 4
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 33,
+      "evidence": 16
+    },
+    "qualified": false,
+    "contact": {
+      "website": "https://www.agent37.com",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "https://www.agent37.com/contact",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://www.agent37.com/"
+        },
+        {
+          "label": "Docs",
+          "url": "https://www.agent37.com/docs"
+        },
+        {
+          "label": "Start Free",
+          "url": "https://www.agent37.com/dashboard/cloud"
+        },
+        {
+          "label": "Pricing",
+          "url": "https://www.agent37.com/pricing"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.agent37.com/",
+        "https://www.agent37.com/contact",
+        "https://www.agent37.com/team"
+      ],
+      "enriched_at": "2026-11-09T18:39:53+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-09T18:38:39+00:00",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
+    },
+    "signals": [],
+    "people": [
+      {
+        "name": "Vishnu",
+        "role": "Founder",
+        "org": "Agent37",
+        "evidence": "Hey HN, I’m Vishnu from Agent37",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Vishnu",
+        "rel": "works_at",
+        "dst": "Agent37",
+        "evidence": "Hey HN, I’m Vishnu from Agent37"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "skip",
+      "urgency": "cold",
+      "priority": 6.4,
+      "reasons": [
+        "lead score 28",
+        "found 19 day(s) ago (warm)",
+        "weak fit or too little data"
+      ],
+      "next_step": "Skip unless it resurfaces",
+      "provider": "policy",
+      "score": 28
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "agent37",
+        "field": "website",
+        "label": "website: https://www.agent37.com",
+        "value": "https://www.agent37.com",
+        "source_url": "https://news.ycombinator.com/item?id=50059096",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "agent37",
+        "field": "core_product",
+        "label": "core_product: Low-cost sandboxes for running AI agents.",
+        "value": "Low-cost sandboxes for running AI agents.",
+        "source_url": "https://news.ycombinator.com/item?id=50059096",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "agent37",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.",
+        "value": "Efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.",
+        "source_url": "https://news.ycombinator.com/item?id=50059096",
+        "evidence": "",
+        "run_id": "backfill-2026-11-09",
+        "first_seen": "2026-11-09T18:38:39+00:00",
+        "last_seen": "2026-11-09T18:38:39+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "AetherGrid",
+        "slug": "aethergrid",
+        "similarity": 0.628
+      },
+      {
+        "company_name": "Keenable",
+        "slug": "keenable",
+        "similarity": 0.604
+      },
+      {
+        "company_name": "Simantic",
+        "slug": "simantic",
+        "similarity": 0.596
+      },
+      {
+        "company_name": "Probe",
+        "slug": "probe",
+        "similarity": 0.596
+      },
+      {
+        "company_name": "Propel Labs",
+        "slug": "propel-labs",
+        "similarity": 0.581
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-09T18:38:39+00:00",
+        "kind": "discovered",
+        "items": [
+          "Website: https://www.agent37.com",
+          "Product: Low-cost sandboxes for running AI agents.",
+          "Bottleneck: Efficiently searching and retrieving relevant sandbox execution logs and configurations for developers."
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50059096"
+        ],
+        "count": 3
+      }
+    ],
+    "watch": [],
+    "why_now": [],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Agent37: a thought on Efficiently searching and retrieving relevant sandbox execut",
+      "body": "Hi Vishnu,\n\nI came across Agent37: Low-cost sandboxes for running AI agents.\nI'm looking to join a team like yours and work with gVisor, Hetzner, OVH.\nOne thing I'd want to help with: efficiently searching and retrieving relevant sandbox execution logs and configurations for developers.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Marker Learning",
     "core_product": "We’re building the Marker Method, a digital assessment platform that helps clinicians understand how students learn. It brings together interactive assessments, automated scoring, and tools for interpreting results. Our norming study is und",
     "tech_stack": [],
@@ -68971,7 +70017,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (25d ago)",
+        "text": "Hiring (26d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50091446"
       }
     ],
@@ -71122,7 +72168,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (5d ago): Product Engineering Lead, Keet",
+        "text": "Hiring (6d ago): Product Engineering Lead, Keet",
         "source_url": "https://news.ycombinator.com/item?id=50355834"
       }
     ],
@@ -71473,7 +72519,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (5d ago): Forward Deployed Engineer",
+        "text": "Hiring (6d ago): Forward Deployed Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50353641"
       }
     ],
@@ -71664,7 +72710,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (5d ago): Search Experience Manager",
+        "text": "Hiring (6d ago): Search Experience Manager",
         "source_url": "https://news.ycombinator.com/item?id=50353464"
       }
     ],
@@ -71888,7 +72934,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (5d ago): OpenBao Consultant, Developer",
+        "text": "Hiring (6d ago): OpenBao Consultant, Developer",
         "source_url": "https://news.ycombinator.com/item?id=50353340"
       }
     ],
