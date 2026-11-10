@@ -1,0 +1,672 @@
+{
+  "run_id": "20261110T143246Z",
+  "started_at": "2026-11-10T14:32:46+00:00",
+  "duration_s": 181.1,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 253,
+    "selected": 10,
+    "crawled": 10,
+    "extracted": 8,
+    "relevant": 5,
+    "valid": 5
+  },
+  "tokens": 18314,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "rss": 59,
+    "hn": 32,
+    "edgar": 6,
+    "web": 24
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building Next.js vector search API",
+      "seed funding announced for retrieval-augmented generation web app startup founders interview",
+      "early-stage company raises capital for data-heavy web app search engine startup investors",
+      "founder interview startup enabling RAG for SaaS products recent funding November 2026"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG tooling",
+      "vector search API",
+      "Next.js developer tools",
+      "retrieval augmented generation"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 42,
+        "accepted": 32,
+        "score_sum": 2489,
+        "yield": 0.762,
+        "avg_score": 77.8
+      },
+      "yc": {
+        "crawled": 12,
+        "accepted": 12,
+        "score_sum": 706,
+        "yield": 1.0,
+        "avg_score": 58.8
+      },
+      "web": {
+        "crawled": 13,
+        "accepted": 9,
+        "score_sum": 684,
+        "yield": 0.692,
+        "avg_score": 76.0
+      },
+      "hiring": {
+        "crawled": 175,
+        "accepted": 175,
+        "score_sum": 4643,
+        "yield": 1.0,
+        "avg_score": 26.5
+      },
+      "edgar": {
+        "crawled": 24,
+        "accepted": 3,
+        "score_sum": 202,
+        "yield": 0.125,
+        "avg_score": 67.3
+      },
+      "hn": {
+        "crawled": 2,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 191,
+        "yield": 1.0,
+        "avg_score": 47.8
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 3,
+      "web": 2,
+      "yc": 3
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 96,
+    "fallbacks": 0,
+    "avg_latency_ms": 64.3,
+    "jev_input_tokens": 45952,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-10T14:32:46+00:00",
+      "offset_s": 0.0,
+      "duration_s": 12.22,
+      "status": "ok",
+      "counts": {
+        "candidates": 253,
+        "src_hn": 28,
+        "src_launch_hn": 4,
+        "src_rss": 59,
+        "src_yc": 12,
+        "src_web": 24,
+        "src_edgar": 6,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-10T14:32:58+00:00",
+      "offset_s": 12.22,
+      "duration_s": 5.64,
+      "status": "ok",
+      "counts": {
+        "in": 253,
+        "selected": 10,
+        "hiring_lane": 8,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 3, 'web': 2, 'yc': 3}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-10T14:33:04+00:00",
+      "offset_s": 17.86,
+      "duration_s": 27.7,
+      "status": "ok",
+      "counts": {
+        "requested": 10,
+        "crawled": 10
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-10T14:33:31+00:00",
+      "offset_s": 45.56,
+      "duration_s": 53.45,
+      "status": "ok",
+      "counts": {
+        "extracted": 8,
+        "relevant": 5,
+        "valid": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-10T14:34:25+00:00",
+      "offset_s": 99.02,
+      "duration_s": 72.61,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "websites": 12,
+        "emails": 12,
+        "phones": 1
+      },
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-10T14:35:37+00:00",
+      "offset_s": 171.63,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 47
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-10T14:35:37+00:00",
+      "offset_s": 171.63,
+      "duration_s": 2.74,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "people": 11,
+        "edges": 11
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-11-10T14:35:40+00:00",
+      "offset_s": 174.36,
+      "duration_s": 4.46,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 1
+      },
+      "notes": [
+        "V3DEO Inc.: ok, score 53"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.35,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.29,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 59,
+      "seconds": 2.55,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 32,
+      "seconds": 2.68,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 6,
+      "seconds": 7.0,
+      "error": ""
+    },
+    "web": {
+      "candidates": 24,
+      "seconds": 12.22,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14652,
+    "completion_tokens": 3662,
+    "total_tokens": 18314,
+    "calls": 9,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 11610,
+        "completion_tokens": 3579,
+        "total_tokens": 15189,
+        "calls": 6
+      },
+      "team": {
+        "prompt_tokens": 3042,
+        "completion_tokens": 83,
+        "total_tokens": 3125,
+        "calls": 3
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 14652,
+        "completion_tokens": 3662,
+        "total_tokens": 18314,
+        "calls": 9
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 14652,
+        "completion_tokens": 3662,
+        "total_tokens": 18314,
+        "calls": 9
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 253,
+    "crawled": 10,
+    "extracted": 8,
+    "relevant": 5,
+    "valid": 5,
+    "sources": {
+      "edgar": 2,
+      "yc": 3
+    },
+    "people": 11,
+    "edges": 11,
+    "dropped_ungrounded": 0,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 12,
+    "with_website": 12,
+    "with_email": 10,
+    "with_phone": 1,
+    "people_linked": 4,
+    "avg_score": 47.5,
+    "qualified": 4,
+    "avg_qualified_score": 65.5,
+    "issues": {
+      "not a relevant startup page": 3,
+      "warn: empty tech_stack": 3
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "startupintros.com/orgs/exa",
+      "thrum.team"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "V3DEO Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2163244/000204180626000021/",
+      "source": "edgar",
+      "people": 1,
+      "edges": 0,
+      "score": 53,
+      "gaps": [
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.v3deo.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "American AI Logistics, Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2068742/000206874226000001/",
+      "source": "edgar",
+      "people": 6,
+      "edges": 1,
+      "score": 52,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://americanailogistics.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Ordo Labs",
+      "url": "https://www.ycombinator.com/launches/X75-ordo-labs-the-ai-native-os-for-regulated-labs",
+      "source": "yc",
+      "people": 3,
+      "edges": 6,
+      "score": 60,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://ordolabs.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Boxes.dev",
+      "url": "https://www.ycombinator.com/launches/Wp5-boxes-dev-move-your-ai-coding-to-the-cloud",
+      "source": "yc",
+      "people": 2,
+      "edges": 4,
+      "score": 77,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://boxes.dev",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Nodus Compute",
+      "url": "https://www.ycombinator.com/launches/Wr8-nodus-compute-get-more-ai-from-the-gpus-that-already-exist",
+      "source": "yc",
+      "people": 2,
+      "edges": 8,
+      "score": 73,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.nodus-compute.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Polymath",
+      "url": "https://polymathmade.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://polymathmade.com",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Stealth Health-Tech Startup",
+      "url": "https://forms.gle/N9U7zkz2zaUUtunV7",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 31,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://stealthhealth.io",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Collabify",
+      "url": "https://forms.gle/yJAabKvLKtJmfz21A",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.collabify.cc",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Sunsave",
+      "url": "https://sunsave.notion.site/Sunsave-Product-Engineer-410e7b62a21d8141b04deaa4656a1b17",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.sunsave.energy",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Nivelo",
+      "url": "https://nivelo.io/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://nivelo.io",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Datadog",
+      "url": "https://dtdg.co/hnwhoshiring",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://bitly.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Curiosity",
+      "url": "https://curiosity.ai",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://curiosity.ai",
+      "emails": 2,
+      "phones": 1
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://sifted.eu/articles/sumary-seed-fundraise/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/sumary-25m-seed-ai-accounting-firms/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/tripica-12-4m-tilt-energy-billing-software/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "http://livekit.io/",
+      "source": "hiring",
+      "reasons": [
+        "missing core_product"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "V3DEO Inc.",
+        "score": 53,
+        "source": "edgar"
+      },
+      {
+        "company": "American AI Logistics, Inc.",
+        "score": 52,
+        "source": "edgar"
+      },
+      {
+        "company": "Ordo Labs",
+        "score": 60,
+        "source": "yc"
+      },
+      {
+        "company": "Boxes.dev",
+        "score": 77,
+        "source": "yc"
+      },
+      {
+        "company": "Nodus Compute",
+        "score": 73,
+        "source": "yc"
+      },
+      {
+        "company": "Polymath",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Stealth Health-Tech Startup",
+        "score": 31,
+        "source": "hiring"
+      },
+      {
+        "company": "Collabify",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Sunsave",
+        "score": 41,
+        "source": "hiring"
+      },
+      {
+        "company": "Nivelo",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Datadog",
+        "score": 25,
+        "source": "hiring"
+      },
+      {
+        "company": "Curiosity",
+        "score": 44,
+        "source": "hiring"
+      }
+    ],
+    "updated": []
+  }
+}

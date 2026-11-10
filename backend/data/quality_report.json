@@ -1,38 +1,36 @@
 {
-  "generated_at": "2026-11-09T15:36:56+00:00",
-  "candidates": 259,
-  "crawled": 8,
-  "extracted": 5,
-  "relevant": 4,
-  "valid": 4,
+  "generated_at": "2026-11-10T14:35:37+00:00",
+  "candidates": 253,
+  "crawled": 10,
+  "extracted": 8,
+  "relevant": 5,
+  "valid": 5,
   "sources": {
-    "rss": 2,
-    "web": 1,
-    "yc": 1
+    "edgar": 2,
+    "yc": 3
   },
-  "people": 12,
-  "edges": 16,
-  "dropped_ungrounded": 13,
+  "people": 11,
+  "edges": 11,
+  "dropped_ungrounded": 0,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 11,
+  "enriched": 12,
   "with_website": 12,
-  "with_email": 7,
-  "with_phone": 4,
-  "people_linked": 12,
-  "avg_score": 48.3,
-  "qualified": 3,
-  "avg_qualified_score": 88.7,
+  "with_email": 10,
+  "with_phone": 1,
+  "people_linked": 4,
+  "avg_score": 47.5,
+  "qualified": 4,
+  "avg_qualified_score": 65.5,
   "issues": {
-    "not a relevant startup page": 1,
-    "warn: empty tech_stack": 1
+    "not a relevant startup page": 3,
+    "warn: empty tech_stack": 3
   },
   "failures": [],
   "passed": true,
   "deferred_urls": [
-    "ycombinator.com/launches/WhS-trepo-the-agentic-grocery-shopper-that-knows-what-you-have-and-need",
-    "ycombinator.com/launches/X0A-organizely-a-new-ai-native-erp-for-american-manufacturers",
-    "recto.design"
+    "startupintros.com/orgs/exa",
+    "thrum.team"
   ],
   "skipped": "",
   "validity_rate": 1.0
