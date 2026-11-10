@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-11-09T18:38:39+00:00",
+  "started_at": "2026-11-10T16:21:03+00:00",
   "skipped": "",
   "startups": [
     {
@@ -21,94 +21,10 @@
       ]
     },
     {
-      "company": "Relace",
-      "score": 60,
-      "gaps": [
-        "tech stack",
-        "founder",
-        "people profiles",
-        "email",
-        "phone"
-      ],
-      "website": "https://withrelace.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 3,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Telamont",
-      "score": 57,
-      "gaps": [
-        "funding amount",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://www.telamont.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 0,
-      "edges": 1,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Bioliberty",
-      "score": 57,
-      "gaps": [
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://www.bioliberty.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Jooba",
-      "score": 57,
-      "gaps": [
-        "location",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "email",
-        "phone"
-      ],
-      "website": "https://www.jooba.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 3,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
       "company": "QuiverAI",
-      "score": 71,
+      "score": 86,
       "gaps": [
         "location",
-        "investors",
         "phone"
       ],
       "website": "https://quiver.ai",
@@ -116,87 +32,179 @@
       "emails": 1,
       "phones": 0,
       "people": 14,
-      "edges": 0,
+      "edges": 14,
       "notes": [
         "team llm: 14 people proposed, 14 grounded",
-        "team page: +12 people, +0 edges"
+        "team page: +12 people, +14 edges"
       ]
     },
     {
-      "company": "Kairos Health",
-      "score": 76,
+      "company": "Elman",
+      "score": 51,
       "gaps": [
-        "location",
         "funding amount",
-        "investors"
-      ],
-      "website": "https://kairoshealthai.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 4,
-      "edges": 4,
-      "notes": [
-        "team llm: 4 people proposed, 4 grounded",
-        "team page: +4 people, +4 edges"
-      ]
-    },
-    {
-      "company": "Vector",
-      "score": 50,
-      "gaps": [
         "founder",
         "people profiles",
         "investors",
         "phone"
       ],
-      "website": "https://www.vector.co",
+      "website": "https://elman.ai",
       "status": "ok",
       "emails": 1,
+      "phones": 0,
+      "people": 2,
+      "edges": 2,
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 2 people proposed, 0 grounded",
+        "team page: +0 people, +2 edges"
+      ]
+    },
+    {
+      "company": "Intuitivo",
+      "score": 45,
+      "gaps": [
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://intuitivo.pt",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "Curiosity",
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://curiosity.ai",
+      "status": "ok",
+      "emails": 1,
+      "phones": 1,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Radar Labs",
+      "score": 42,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://radar.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 2,
+      "edges": 2,
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +0 people, +4 edges"
+      ]
+    },
+    {
+      "company": "Hatch",
+      "score": 57,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.hatch.co",
+      "status": "ok",
+      "emails": 1,
+      "phones": 1,
+      "people": 2,
+      "edges": 2,
+      "notes": [
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +2 people, +4 edges"
+      ]
+    },
+    {
+      "company": "Sunsave",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.sunsave.energy",
+      "status": "ok",
+      "emails": 2,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
-        "team llm: 2 people proposed, 2 grounded",
-        "team page: +2 people, +2 edges"
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
       ]
     },
     {
-      "company": "Mechanize",
-      "score": 49,
+      "company": "AetherGrid",
+      "score": 56,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
-        "investors",
-        "email",
-        "phone"
+        "investors"
       ],
-      "website": "https://www.mechanize.work",
+      "website": "https://aethergrid.co.ke",
       "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 3,
-      "edges": 0,
+      "emails": 1,
+      "phones": 1,
+      "people": 1,
+      "edges": 1,
       "notes": [
-        "structured data: 3 people"
+        "team llm: 1 people proposed, 1 grounded",
+        "team page: +1 people, +1 edges"
       ]
     },
     {
-      "company": "Agent37",
-      "score": 28,
+      "company": "Silkline",
+      "score": 29,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
+        "tech stack",
         "founder",
         "people profiles",
         "investors",
         "email",
         "phone"
       ],
-      "website": "https://www.agent37.com",
+      "website": "https://silkline.ai",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -208,37 +216,37 @@
       ]
     }
   ],
-  "tokens": 12594,
+  "tokens": 13787,
   "usage": {
-    "prompt_tokens": 10387,
-    "completion_tokens": 2207,
-    "total_tokens": 12594,
+    "prompt_tokens": 11069,
+    "completion_tokens": 2718,
+    "total_tokens": 13787,
     "calls": 9,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 10387,
-        "completion_tokens": 2207,
-        "total_tokens": 12594,
+        "prompt_tokens": 11069,
+        "completion_tokens": 2718,
+        "total_tokens": 13787,
         "calls": 9
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 10387,
-        "completion_tokens": 2207,
-        "total_tokens": 12594,
+        "prompt_tokens": 11069,
+        "completion_tokens": 2718,
+        "total_tokens": 13787,
         "calls": 9
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 10387,
-        "completion_tokens": 2207,
-        "total_tokens": 12594,
+        "prompt_tokens": 11069,
+        "completion_tokens": 2718,
+        "total_tokens": 13787,
         "calls": 9
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-09T18:39:56+00:00"
+  "finished_at": "2026-11-10T16:22:26+00:00"
 }
