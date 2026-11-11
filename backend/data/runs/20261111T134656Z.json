@@ -1,0 +1,659 @@
+{
+  "run_id": "20261111T134656Z",
+  "started_at": "2026-11-11T13:46:56+00:00",
+  "duration_s": 167.8,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 257,
+    "selected": 10,
+    "crawled": 8,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4
+  },
+  "tokens": 19063,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "rss": 56,
+    "hn": 34,
+    "edgar": 5,
+    "web": 30
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building Next.js vector search API",
+      "seed funding announced for retrieval-augmented generation web app startup founders interview",
+      "early-stage company raises capital for data-heavy web app search engine startup investors",
+      "founder interview startup enabling RAG for SaaS products recent funding November 2026"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG tooling",
+      "vector search API",
+      "Next.js developer tools",
+      "retrieval augmented generation"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 42,
+        "accepted": 30,
+        "score_sum": 2311,
+        "yield": 0.714,
+        "avg_score": 77.0
+      },
+      "yc": {
+        "crawled": 13,
+        "accepted": 13,
+        "score_sum": 810,
+        "yield": 1.0,
+        "avg_score": 62.3
+      },
+      "hiring": {
+        "crawled": 168,
+        "accepted": 167,
+        "score_sum": 4554,
+        "yield": 0.994,
+        "avg_score": 27.3
+      },
+      "edgar": {
+        "crawled": 24,
+        "accepted": 5,
+        "score_sum": 307,
+        "yield": 0.208,
+        "avg_score": 61.4
+      },
+      "hn": {
+        "crawled": 2,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 191,
+        "yield": 1.0,
+        "avg_score": 47.8
+      },
+      "web": {
+        "crawled": 12,
+        "accepted": 8,
+        "score_sum": 598,
+        "yield": 0.667,
+        "avg_score": 74.8
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 2,
+      "yc": 3
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 101,
+    "fallbacks": 0,
+    "avg_latency_ms": 61.8,
+    "jev_input_tokens": 47982,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-11T13:46:56+00:00",
+      "offset_s": 0.0,
+      "duration_s": 9.91,
+      "status": "ok",
+      "counts": {
+        "candidates": 257,
+        "src_hn": 30,
+        "src_launch_hn": 4,
+        "src_rss": 56,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 5,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-11T13:47:06+00:00",
+      "offset_s": 9.91,
+      "duration_s": 6.0,
+      "status": "ok",
+      "counts": {
+        "in": 257,
+        "selected": 10,
+        "hiring_lane": 8,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 2, 'yc': 3}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-11T13:47:12+00:00",
+      "offset_s": 15.9,
+      "duration_s": 27.19,
+      "status": "ok",
+      "counts": {
+        "requested": 10,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-11T13:47:39+00:00",
+      "offset_s": 43.1,
+      "duration_s": 58.27,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-11T13:48:37+00:00",
+      "offset_s": 101.37,
+      "duration_s": 61.1,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "websites": 11,
+        "emails": 8,
+        "phones": 2
+      },
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "no website found",
+        "crawl failed"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-11T13:49:39+00:00",
+      "offset_s": 162.47,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 46
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-11T13:49:39+00:00",
+      "offset_s": 162.47,
+      "duration_s": 3.09,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "people": 17,
+        "edges": 22
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.32,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.1,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 56,
+      "seconds": 2.33,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 34,
+      "seconds": 2.35,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 5,
+      "seconds": 7.08,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 9.9,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 15151,
+    "completion_tokens": 3912,
+    "total_tokens": 19063,
+    "calls": 8,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 11104,
+        "completion_tokens": 3814,
+        "total_tokens": 14918,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 4047,
+        "completion_tokens": 98,
+        "total_tokens": 4145,
+        "calls": 3
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 15151,
+        "completion_tokens": 3912,
+        "total_tokens": 19063,
+        "calls": 8
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 15151,
+        "completion_tokens": 3912,
+        "total_tokens": 19063,
+        "calls": 8
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 257,
+    "crawled": 8,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4,
+    "sources": {
+      "rss": 1,
+      "web": 2,
+      "yc": 1
+    },
+    "people": 17,
+    "edges": 22,
+    "dropped_ungrounded": 9,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 10,
+    "with_website": 11,
+    "with_email": 8,
+    "with_phone": 1,
+    "people_linked": 7,
+    "avg_score": 46.2,
+    "qualified": 4,
+    "avg_qualified_score": 80.5,
+    "issues": {
+      "not a relevant startup page": 1,
+      "warn: empty tech_stack": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "ycombinator.com/launches/XKY-meet-perfectly-the-world-s-first-autonomous-recruiting-team",
+      "ycombinator.com/launches/XG9-petrichor-a-wet-lab-for-frontier-ai-labs",
+      "usecommune.com"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "PuppyGraph",
+      "url": "https://techfundingnews.com/puppygraph-raises-10m-so-ai-agents-can-query-3000-tables-without-a-graph-database/",
+      "source": "rss",
+      "people": 5,
+      "edges": 8,
+      "score": 97,
+      "gaps": [
+        "phone"
+      ],
+      "website": "https://www.puppygraph.com",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Keenable",
+      "url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-search-startup-keenable-raises-26m/",
+      "source": "web",
+      "people": 3,
+      "edges": 6,
+      "score": 88,
+      "gaps": [
+        "location",
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://keenable.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Linkup",
+      "url": "https://finance.yahoo.com/news/linkup-raises-10m-seed-round-155000128.html?fr=sycsrp_catchall",
+      "source": "web",
+      "people": 9,
+      "edges": 7,
+      "score": 92,
+      "gaps": [
+        "phone"
+      ],
+      "website": "https://www.linkup.so",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "NxtCure Labs",
+      "url": "https://www.ycombinator.com/launches/XF9-nxtcure-labs-the-full-stack-ai-cro-oncology",
+      "source": "yc",
+      "people": 1,
+      "edges": 1,
+      "score": 45,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://nxtcure.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "RAIDS AI",
+      "url": "https://www.linkedin.com/jobs/view/4483409995/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.raidsai.ai",
+      "emails": 3,
+      "phones": 0
+    },
+    {
+      "company": "Nevral Forensics Intelligence",
+      "url": "https://news.ycombinator.com/item?id=50449027",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://nevralforensics.com",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Odin",
+      "url": "https://job-boards.greenhouse.io/odinlabs/jobs/4451905009",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://odinflashtool.org",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "SerpApi",
+      "url": "https://serpapi.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://serpapi.com",
+      "emails": 1,
+      "phones": 2
+    },
+    {
+      "company": "CreativeLens",
+      "url": "https://news.ycombinator.com/item?id=50342626",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "REVNODE",
+      "url": "https://www.revnode.com/docs/capability_statement.pdf",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 30,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.revnode.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Hestus",
+      "url": "https://www.hestus.co/careers",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.hestus.co",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "ArtCraft",
+      "url": "https://getartcraft.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://getartcraft.com",
+      "emails": 0,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2158174/000215817426000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2084385/000208438526000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://sifted.eu/articles/defence-mistt-fundraise-next-gps-data-autonomous-systems-world-models/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "PuppyGraph",
+        "score": 97,
+        "source": "rss"
+      },
+      {
+        "company": "Linkup",
+        "score": 92,
+        "source": "web"
+      },
+      {
+        "company": "NxtCure Labs",
+        "score": 45,
+        "source": "yc"
+      },
+      {
+        "company": "RAIDS AI",
+        "score": 41,
+        "source": "hiring"
+      },
+      {
+        "company": "Nevral Forensics Intelligence",
+        "score": 33,
+        "source": "hiring"
+      },
+      {
+        "company": "Odin",
+        "score": 25,
+        "source": "hiring"
+      },
+      {
+        "company": "SerpApi",
+        "score": 33,
+        "source": "hiring"
+      },
+      {
+        "company": "CreativeLens",
+        "score": 21,
+        "source": "hiring"
+      },
+      {
+        "company": "REVNODE",
+        "score": 30,
+        "source": "hiring"
+      },
+      {
+        "company": "Hestus",
+        "score": 29,
+        "source": "hiring"
+      },
+      {
+        "company": "ArtCraft",
+        "score": 21,
+        "source": "hiring"
+      }
+    ],
+    "updated": [
+      {
+        "company": "Keenable",
+        "score": 88,
+        "score_before": 91,
+        "source": "web"
+      }
+    ]
+  }
+}
