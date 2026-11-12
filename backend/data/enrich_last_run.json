@@ -1,12 +1,11 @@
 {
-  "started_at": "2026-11-10T16:21:03+00:00",
+  "started_at": "2026-11-12T16:44:50+00:00",
   "skipped": "",
   "startups": [
     {
       "company": "Miracly.ai",
-      "score": 87,
+      "score": 92,
       "gaps": [
-        "people profiles",
         "phone"
       ],
       "website": "https://www.miracly.ai",
@@ -31,56 +30,15 @@
       "status": "ok",
       "emails": 1,
       "phones": 0,
-      "people": 14,
+      "people": 11,
       "edges": 14,
       "notes": [
         "team llm: 14 people proposed, 14 grounded",
-        "team page: +12 people, +14 edges"
+        "team page: +12 people, +0 edges"
       ]
     },
     {
-      "company": "Elman",
-      "score": 51,
-      "gaps": [
-        "funding amount",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://elman.ai",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 2,
-      "edges": 2,
-      "notes": [
-        "structured data: 2 people",
-        "team llm: 2 people proposed, 0 grounded",
-        "team page: +0 people, +2 edges"
-      ]
-    },
-    {
-      "company": "Intuitivo",
-      "score": 45,
-      "gaps": [
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://intuitivo.pt",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Curiosity",
+      "company": "eventfirst",
       "score": 44,
       "gaps": [
         "funding stage",
@@ -90,7 +48,27 @@
         "people profiles",
         "investors"
       ],
-      "website": "https://curiosity.ai",
+      "website": "https://www.eventfirst.com",
+      "status": "ok",
+      "emails": 2,
+      "phones": 1,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "Data Micro Technologies",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://datamicrotn.com",
       "status": "ok",
       "emails": 1,
       "phones": 1,
@@ -102,55 +80,32 @@
       ]
     },
     {
-      "company": "Radar Labs",
-      "score": 42,
+      "company": "Mondrio",
+      "score": 41,
       "gaps": [
-        "funding stage",
-        "funding amount",
+        "website",
         "tech stack",
+        "founder",
         "people profiles",
-        "investors",
         "email",
         "phone"
       ],
-      "website": "https://radar.com",
-      "status": "ok",
+      "website": "",
+      "status": "no_website",
       "emails": 0,
       "phones": 0,
-      "people": 2,
-      "edges": 2,
+      "people": 0,
+      "edges": 1,
       "notes": [
-        "structured data: 2 people",
-        "team llm: 2 people proposed, 2 grounded",
-        "team page: +0 people, +4 edges"
+        "no website found"
       ]
     },
     {
-      "company": "Hatch",
-      "score": 57,
+      "company": "RAIDS AI",
+      "score": 38,
       "gaps": [
         "funding stage",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://www.hatch.co",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 2,
-      "edges": 2,
-      "notes": [
-        "team llm: 2 people proposed, 2 grounded",
-        "team page: +2 people, +4 edges"
-      ]
-    },
-    {
-      "company": "Sunsave",
-      "score": 41,
-      "gaps": [
-        "funding stage",
+        "location",
         "funding amount",
         "tech stack",
         "founder",
@@ -158,7 +113,7 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.sunsave.energy",
+      "website": "https://www.raidsai.ai",
       "status": "ok",
       "emails": 2,
       "phones": 0,
@@ -170,28 +125,71 @@
       ]
     },
     {
-      "company": "AetherGrid",
-      "score": 56,
+      "company": "Antithesis",
+      "score": 64,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
-        "investors"
+        "email",
+        "phone"
       ],
-      "website": "https://aethergrid.co.ke",
+      "website": "https://antithesis.com",
       "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 1,
-      "edges": 1,
+      "emails": 0,
+      "phones": 0,
+      "people": 13,
+      "edges": 15,
       "notes": [
-        "team llm: 1 people proposed, 1 grounded",
-        "team page: +1 people, +1 edges"
+        "team llm: 15 people proposed, 15 grounded",
+        "team page: +15 people, +17 edges"
       ]
     },
     {
-      "company": "Silkline",
+      "company": "Telescope Partners",
+      "score": 61,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.telescopepartners.com",
+      "status": "ok",
+      "emails": 1,
+      "phones": 1,
+      "people": 13,
+      "edges": 13,
+      "notes": [
+        "team llm: 13 people proposed, 13 grounded",
+        "team page: +13 people, +13 edges"
+      ]
+    },
+    {
+      "company": "Kino AI",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://kino.ai",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "ThreatMark",
       "score": 29,
       "gaps": [
         "funding stage",
@@ -204,7 +202,7 @@
         "email",
         "phone"
       ],
-      "website": "https://silkline.ai",
+      "website": "https://www.threatmark.com",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -216,37 +214,37 @@
       ]
     }
   ],
-  "tokens": 13787,
+  "tokens": 13392,
   "usage": {
-    "prompt_tokens": 11069,
-    "completion_tokens": 2718,
-    "total_tokens": 13787,
-    "calls": 9,
+    "prompt_tokens": 8644,
+    "completion_tokens": 4748,
+    "total_tokens": 13392,
+    "calls": 7,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 11069,
-        "completion_tokens": 2718,
-        "total_tokens": 13787,
-        "calls": 9
+        "prompt_tokens": 8644,
+        "completion_tokens": 4748,
+        "total_tokens": 13392,
+        "calls": 7
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 11069,
-        "completion_tokens": 2718,
-        "total_tokens": 13787,
-        "calls": 9
+        "prompt_tokens": 8644,
+        "completion_tokens": 4748,
+        "total_tokens": 13392,
+        "calls": 7
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 11069,
-        "completion_tokens": 2718,
-        "total_tokens": 13787,
-        "calls": 9
+        "prompt_tokens": 8644,
+        "completion_tokens": 4748,
+        "total_tokens": 13392,
+        "calls": 7
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-10T16:22:26+00:00"
+  "finished_at": "2026-11-12T16:46:15+00:00"
 }
