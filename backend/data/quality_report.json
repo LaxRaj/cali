@@ -1,38 +1,37 @@
 {
-  "generated_at": "2026-11-11T13:49:39+00:00",
-  "candidates": 257,
+  "generated_at": "2026-11-12T14:53:38+00:00",
+  "candidates": 243,
   "crawled": 8,
-  "extracted": 5,
-  "relevant": 4,
-  "valid": 4,
+  "extracted": 7,
+  "relevant": 6,
+  "valid": 6,
   "sources": {
-    "rss": 1,
-    "web": 2,
-    "yc": 1
+    "launch_hn": 1,
+    "rss": 2,
+    "edgar": 1,
+    "yc": 2
   },
-  "people": 17,
-  "edges": 22,
-  "dropped_ungrounded": 9,
+  "people": 9,
+  "edges": 10,
+  "dropped_ungrounded": 6,
   "gated": 0,
   "quota_exhausted": false,
-  "enriched": 10,
+  "enriched": 11,
   "with_website": 11,
-  "with_email": 8,
-  "with_phone": 1,
-  "people_linked": 7,
-  "avg_score": 46.2,
-  "qualified": 4,
-  "avg_qualified_score": 80.5,
+  "with_email": 10,
+  "with_phone": 3,
+  "people_linked": 9,
+  "avg_score": 45.4,
+  "qualified": 5,
+  "avg_qualified_score": 69.4,
   "issues": {
-    "not a relevant startup page": 1,
-    "warn: empty tech_stack": 2
+    "warn: empty tech_stack": 2,
+    "not a relevant startup page": 1
   },
   "failures": [],
   "passed": true,
   "deferred_urls": [
-    "ycombinator.com/launches/XKY-meet-perfectly-the-world-s-first-autonomous-recruiting-team",
-    "ycombinator.com/launches/XG9-petrichor-a-wet-lab-for-frontier-ai-labs",
-    "usecommune.com"
+    "startupintros.com/orgs/exa"
   ],
   "skipped": "",
   "validity_rate": 1.0

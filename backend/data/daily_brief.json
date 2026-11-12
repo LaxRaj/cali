@@ -1,72 +1,68 @@
 {
-  "generated_at": "2026-11-11T13:49:39+00:00",
+  "generated_at": "2026-11-12T14:53:38+00:00",
   "findings": [
     {
-      "company_name": "PuppyGraph",
-      "core_product": "A distributed graph query engine that lets AI agents query enterprise tables directly as a unified graph without moving the data.",
+      "company_name": "Pomerado",
+      "core_product": "A self‑serve platform that turns any website into a deterministic, self‑healing API (MCP) for AI agents in minutes.",
       "tech_stack": [
-        "Apache Iceberg",
-        "Databricks",
-        "Snowflake",
-        "ClickHouse",
-        "DuckDB",
-        "PostgreSQL"
+        "Playwright",
+        "Node.js",
+        "Guardian model",
+        "MIT‑licensed open‑source library"
       ],
-      "likely_bottleneck": "scaling low‑latency multi‑hop graph queries across petabyte‑scale data sources",
-      "value_prop_pitch": "We can wrap your query engine in a Next.js front‑end that caches semantic embeddings of schema metadata, letting agents retrieve relevant graph paths instantly. Coupled with vector semantic search, this cuts latency for multi‑hop traversals and reduces the load on your distributed engine.",
+      "likely_bottleneck": "Scaling the generation and maintenance of deterministic APIs across diverse legacy sites while keeping the system reliable and low‑latency.",
+      "value_prop_pitch": "You could wrap Pomerado's API generation UI in a Next.js front‑end that caches vector‑based semantic representations of each site’s workflow, dramatically cutting repeat request latency. Then a lightweight semantic search layer would instantly match new agent queries to the most relevant existing MCP, reducing the need for costly re‑training of the Guardian model.",
       "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "$10M",
-      "hq": "Santa Clara, California",
-      "website": "https://www.puppygraph.com",
-      "source_url": "https://techfundingnews.com/puppygraph-raises-10m-so-ai-agents-can-query-3000-tables-without-a-graph-database/",
-      "discovered_at": "2026-11-11T13:47:39+00:00",
-      "source": "rss",
-      "score": 97,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://pomerado.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50455811",
+      "discovered_at": "2026-11-12T14:51:21+00:00",
+      "source": "launch_hn",
+      "score": 70,
       "gaps": [
-        "phone"
+        "location",
+        "funding amount",
+        "investors"
       ],
       "contact": {
-        "website": "https://www.puppygraph.com",
+        "website": "https://pomerado.ai",
         "emails": [
           {
-            "value": "contact@puppygraph.com",
-            "kind": "general",
-            "source_url": "https://www.puppygraph.com/contact"
-          },
-          {
-            "value": "support@puppygraph.com",
-            "kind": "support",
-            "source_url": "https://www.puppygraph.com/contact"
+            "value": "founders@pomerado.ai",
+            "kind": "person",
+            "source_url": "https://pomerado.ai/"
           }
         ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/puppygraph",
-          "github": "https://github.com/puppygraph",
-          "twitter": "https://x.com/puppyquery"
-        },
-        "contact_page": "https://www.puppygraph.com/contact",
+        "phones": [
+          {
+            "value": "+14155550142",
+            "kind": "main",
+            "source_url": "https://pomerado.ai/"
+          }
+        ],
+        "socials": {},
+        "contact_page": "",
         "product_access": [
           {
             "label": "Pricing",
-            "url": "https://www.puppygraph.com/pricing"
+            "url": "https://pomerado.ai/"
           },
           {
-            "label": "Docs",
-            "url": "https://docs.puppygraph.com/"
+            "label": "Sign up",
+            "url": "https://app.pomerado.ai/auth/sign-in?screen=sign-up&returnTo=%2Fhome"
           },
           {
-            "label": "Demo Videos",
-            "url": "https://www.puppygraph.com/demo-videos"
+            "label": "Sign up",
+            "url": "https://app.pomerado.ai/auth/sign-in?screen=sign-up&returnTo=%2Fupgrade%3Finterval%3Dmonthly%26checkout%3D1"
           }
         ],
         "pages_crawled": [
-          "https://www.puppygraph.com/",
-          "https://www.puppygraph.com/contact",
-          "https://www.puppygraph.com/about"
+          "https://pomerado.ai/",
+          "https://pomerado.ai/about"
         ],
-        "enriched_at": "2026-11-11T13:48:41+00:00",
+        "enriched_at": "2026-11-12T14:52:30+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -76,16 +72,192 @@
             "category": "framework"
           },
           {
-            "name": "HubSpot",
-            "category": "marketing"
-          },
-          {
-            "name": "Google Analytics",
+            "name": "PostHog",
             "category": "analytics"
           },
           {
             "name": "React",
             "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/WSd-pomerado-the-faster-cheaper-and-more-reliable-alternative-to-browser-use",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-10-26T12:31:30+00:00"
+        },
+        {
+          "type": "launch",
+          "source": "launch_hn",
+          "url": "https://news.ycombinator.com/item?id=50455811",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-11T17:11:56Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Akshay Manglik",
+          "role": "Co-founder, CEO",
+          "org": "Pomerado",
+          "evidence": "Akshay Manglik\nCo-founder, CEO",
+          "linkedin": "https://www.linkedin.com/in/akshay-manglik/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Alan Ma",
+          "role": "Co-founder, CTO",
+          "org": "Pomerado",
+          "evidence": "Alan Ma\nCo-founder, CTO",
+          "linkedin": "https://www.linkedin.com/in/ajma867/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Alan Ma",
+          "rel": "founded",
+          "dst": "Pomerado",
+          "evidence": "Hi HN, we’re Alan and Akshay from Pomerado"
+        },
+        {
+          "src": "Akshay Manglik",
+          "rel": "founded",
+          "dst": "Pomerado",
+          "evidence": "Hi HN, we’re Alan and Akshay from Pomerado"
+        }
+      ]
+    },
+    {
+      "company_name": "Mondrio",
+      "core_product": "AI agents that automate B2B pricing and quoting",
+      "tech_stack": [],
+      "likely_bottleneck": "scaling real‑time AI inference and maintaining low‑latency data pipelines for pricing decisions",
+      "value_prop_pitch": "You could offload the heavy lifting of your pricing UI to a Next.js front‑end that caches semantic search results for instant quote generation. Pair that with a vector‑based semantic search layer to instantly retrieve relevant pricing patterns and reduce inference latency.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$3.75M",
+      "hq": "San Francisco and Amsterdam",
+      "website": "",
+      "source_url": "https://techfundingnews.com/mondrio-3-75m-seed-ai-pricing-agents/",
+      "discovered_at": "2026-11-12T14:51:21+00:00",
+      "source": "rss",
+      "score": 41,
+      "gaps": [
+        "website",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-12T14:52:45+00:00",
+        "status": "no_website",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://techfundingnews.com/mondrio-3-75m-seed-ai-pricing-agents/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Thu, 12 Nov 2026 12:00:00 +0000",
+          "seen_at": "2026-11-12T14:52:27+00:00"
+        }
+      ],
+      "people": [],
+      "edges": [
+        {
+          "src": "Heartcore",
+          "rel": "invested_in",
+          "dst": "Mondrio",
+          "evidence": "raised $3.75 million, l..."
+        }
+      ]
+    },
+    {
+      "company_name": "SE3",
+      "core_product": "A platform‑agnostic software layer that enables autonomous drones and ground vehicles to perceive, reason and act in GPS‑denied environments using computer‑vision and AI.",
+      "tech_stack": [
+        "computer vision",
+        "AI",
+        "edge computing",
+        "C++",
+        "Python"
+      ],
+      "likely_bottleneck": "Scaling edge AI processing and unified data aggregation across heterogeneous autonomous fleets.",
+      "value_prop_pitch": "I can build a Next.js dashboard that indexes all sensor data with vector semantic search, letting operators query fleet status in real time without heavy backend queries. This removes the bottleneck of fragmented edge data aggregation and speeds up decision‑making.",
+      "is_relevant": true,
+      "funding_stage": "Series A",
+      "funding_amount": "$30M",
+      "hq": "Munich, Germany",
+      "website": "https://se3.ai",
+      "source_url": "https://techfundingnews.com/accel-leads-30m-series-a-in-se3-the-munich-startup-teaching-drones-to-work-without-gps/",
+      "discovered_at": "2026-11-12T14:51:21+00:00",
+      "source": "rss",
+      "score": 82,
+      "gaps": [
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://se3.ai",
+        "emails": [
+          {
+            "value": "contact@se3.ai",
+            "kind": "general",
+            "source_url": "https://se3.ai/"
+          },
+          {
+            "value": "press@se3.ai",
+            "kind": "press",
+            "source_url": "https://se3.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/se3-labs",
+          "twitter": "https://x.com/se3_ai"
+        },
+        "contact_page": "https://se3.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://se3.ai/",
+          "https://se3.ai/about",
+          "https://se3.ai/team",
+          "https://se3.ai/contact"
+        ],
+        "enriched_at": "2026-11-12T14:52:47+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Vercel",
+            "category": "hosting"
           }
         ]
       },
@@ -93,232 +265,159 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://techfundingnews.com/puppygraph-raises-10m-so-ai-agents-can-query-3000-tables-without-a-graph-database/",
+          "url": "https://techfundingnews.com/accel-leads-30m-series-a-in-se3-the-munich-startup-teaching-drones-to-work-without-gps/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Tue, 10 Nov 2026 14:00:00 +0000",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "posted_at": "Thu, 12 Nov 2026 10:15:00 +0000",
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
       "people": [
         {
-          "name": "Weimo Liu",
-          "role": "cofounder and CEO",
-          "org": "PuppyGraph",
-          "evidence": "PuppyGraph was co-founded by Weimo Liu, Danfeng Xu and Lei Huang",
-          "linkedin": "https://www.linkedin.com/in/weimoliu",
+          "name": "Lukas Köstler",
+          "role": "Co‑founder & CEO",
+          "org": "SE3",
+          "evidence": "\"Working in defence means our technology has to deliver under pressure in the field...\" said Lukas Köstler, co‑founder and CEO of SE3",
+          "linkedin": "https://de.linkedin.com/in/lukaskoestler/de",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://techfundingnews.com/puppygraph-raises-10m-so-ai-agents-can-query-3000-tables-without-a-graph-database/"
+          "link_source": "https://techfundingnews.com/accel-leads-30m-series-a-in-se3-the-munich-startup-teaching-drones-to-work-without-gps/"
         },
         {
-          "name": "Danfeng Xu",
-          "role": "cofounder",
-          "org": "PuppyGraph",
-          "evidence": "PuppyGraph was co-founded by Weimo Liu, Danfeng Xu and Lei Huang",
-          "linkedin": "https://www.linkedin.com/in/xudanfeng",
+          "name": "Simon Klenk",
+          "role": "Co‑founder",
+          "org": "SE3",
+          "evidence": "SE3 was founded by Köstler, Simon Klenk, and Professor Daniel Cremers",
+          "linkedin": "https://de.linkedin.com/in/simon-klenk-327225170",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://techfundingnews.com/puppygraph-raises-10m-so-ai-agents-can-query-3000-tables-without-a-graph-database/"
+          "link_source": "https://techfundingnews.com/accel-leads-30m-series-a-in-se3-the-munich-startup-teaching-drones-to-work-without-gps/"
         },
         {
-          "name": "Lei Huang",
-          "role": "cofounder",
-          "org": "PuppyGraph",
-          "evidence": "PuppyGraph was co-founded by Weimo Liu, Danfeng Xu and Lei Huang",
-          "linkedin": "https://www.linkedin.com/in/donehl",
+          "name": "Daniel Cremers",
+          "role": "Co‑founder & Chief Science Officer",
+          "org": "SE3",
+          "evidence": "SE3 was founded by Köstler, Simon Klenk, and Professor Daniel Cremers",
+          "linkedin": "https://www.linkedin.com/in/daniel-cremers",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://techfundingnews.com/puppygraph-raises-10m-so-ai-agents-can-query-3000-tables-without-a-graph-database/"
-        },
-        {
-          "name": "Particle Future",
-          "role": "investor",
-          "org": "",
-          "evidence": "raised a $10M Series A led by Particle Future and defy.vc",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
+          "link_source": "https://techfundingnews.com/accel-leads-30m-series-a-in-se3-the-munich-startup-teaching-drones-to-work-without-gps/"
         }
       ],
       "edges": [
         {
-          "src": "Weimo Liu",
+          "src": "Lukas Köstler",
           "rel": "founded",
-          "dst": "PuppyGraph",
-          "evidence": "PuppyGraph was co-founded by Weimo Liu, Danfeng Xu and Lei Huang"
+          "dst": "SE3",
+          "evidence": "SE3 was founded by Köstler, Simon Klenk, and Professor Daniel Cremers"
         },
         {
-          "src": "Danfeng Xu",
+          "src": "Simon Klenk",
           "rel": "founded",
-          "dst": "PuppyGraph",
-          "evidence": "PuppyGraph was co-founded by Weimo Liu, Danfeng Xu and Lei Huang"
+          "dst": "SE3",
+          "evidence": "SE3 was founded by Köstler, Simon Klenk, and Professor Daniel Cremers"
         },
         {
-          "src": "Lei Huang",
+          "src": "Daniel Cremers",
           "rel": "founded",
-          "dst": "PuppyGraph",
-          "evidence": "PuppyGraph was co-founded..."
-        },
-        {
-          "src": "Particle Future",
-          "rel": "invested_in",
-          "dst": "PuppyGraph",
-          "evidence": "raised a $10M Series A led by Particle Future and defy.vc"
-        },
-        {
-          "src": "defy.vc",
-          "rel": "invested_in",
-          "dst": "PuppyGraph",
-          "evidence": "raised a $10M Series A led by Particle Future and defy.vc"
-        },
-        {
-          "src": "Weimo Liu",
-          "rel": "previously_at",
-          "dst": "Google F1 team",
-          "evidence": "Liu previously worked on Google’s F1 team"
-        },
-        {
-          "src": "Weimo Liu",
-          "rel": "previously_at",
-          "dst": "TigerGraph",
-          "evidence": "Liu previously worked on... at TigerGraph"
-        },
-        {
-          "src": "Danfeng Xu",
-          "rel": "previously_at",
-          "dst": "LinkedIn",
-          "evidence": "Xu spent nine years on LinkedIn’s infrastructure team"
+          "dst": "SE3",
+          "evidence": "SE3 was founded by Köstler, Simon Klenk, and Professor Daniel Cremers"
         }
       ]
     },
     {
-      "company_name": "Keenable",
-      "core_product": "A web-scale search infrastructure and API designed for AI agents to retrieve and ground information from over 100 billion documents.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling low‑latency retrieval across a massive, constantly changing web index while keeping compute costs under control.",
-      "value_prop_pitch": "We can wrap your retrieval layer in a Next.js front‑end that streams results instantly to your agents, eliminating latency spikes. Then we add a vector‑semantic search overlay so you can prune the index to the most relevant chunks before hitting your backend, slashing compute spend.",
+      "company_name": "CipherSonic Labs Inc.",
+      "core_product": "Quantum‑secure encrypted AI cloud platform that lets enterprises run AI workloads on sensitive data without any plaintext exposure.",
+      "tech_stack": [
+        "GPU",
+        "FPGA",
+        "TEE",
+        "AI models"
+      ],
+      "likely_bottleneck": "optimizing real‑time inference performance while keeping data fully encrypted in hardware enclaves",
+      "value_prop_pitch": "I can refactor your inference pipeline with Next.js to serve a low‑latency front‑end that streams encrypted results instantly. Then I’ll add a vector‑semantic search layer so you can query encrypted embeddings without ever decrypting the data.",
       "is_relevant": true,
       "funding_stage": "seed",
-      "funding_amount": "$26 million",
-      "hq": "",
-      "website": "https://keenable.ai",
-      "source_url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-search-startup-keenable-raises-26m/",
-      "discovered_at": "2026-11-11T13:47:39+00:00",
-      "source": "web",
-      "score": 88,
+      "funding_amount": "$540K",
+      "hq": "Cambridge, Massachusetts",
+      "website": "https://ciphersoniclabs.io",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2164264/000216426426000001/",
+      "discovered_at": "2026-11-12T14:51:21+00:00",
+      "source": "edgar",
+      "score": 77,
       "gaps": [
-        "location",
-        "tech stack",
+        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://keenable.ai",
+        "website": "https://ciphersoniclabs.io",
         "emails": [
           {
-            "value": "support@keenable.ai",
-            "kind": "support",
-            "source_url": "https://keenable.ai/contact"
+            "value": "info@ciphersonic.ai",
+            "kind": "general",
+            "source_url": "https://ciphersoniclabs.io/"
+          },
+          {
+            "value": "info@ciphersoniclabs.io",
+            "kind": "general",
+            "source_url": "https://ciphersoniclabs.io/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/keenableai",
-          "twitter": "https://x.com/KeenableAI"
+          "linkedin": "https://www.linkedin.com/company/ciphersonic-labs-inc",
+          "twitter": "https://x.com/ciphersonicai"
         },
-        "contact_page": "https://keenable.ai/contact",
-        "product_access": [
-          {
-            "label": "docs.keenable.ai",
-            "url": "https://docs.keenable.ai"
-          },
-          {
-            "label": "Docs",
-            "url": "https://app.keenable.ai/docs"
-          },
-          {
-            "label": "Try now",
-            "url": "https://app.keenable.ai/signup"
-          },
-          {
-            "label": "Try Keenable SELECT",
-            "url": "https://app.keenable.ai/select/start"
-          }
-        ],
+        "contact_page": "https://ciphersoniclabs.io/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://keenable.ai/",
-          "https://keenable.ai/about",
-          "https://keenable.ai/contact",
-          "https://keenable.ai/team"
+          "https://ciphersoniclabs.io/",
+          "https://ciphersoniclabs.io/about",
+          "https://ciphersoniclabs.io/contact"
         ],
-        "enriched_at": "2026-11-11T13:48:47+00:00",
+        "enriched_at": "2026-11-12T14:52:49+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
-          {
-            "name": "Framer",
-            "category": "cms"
-          },
-          {
-            "name": "HubSpot",
-            "category": "marketing"
-          },
           {
             "name": "Google Analytics",
             "category": "analytics"
-          },
-          {
-            "name": "Supabase",
-            "category": "backend"
           }
         ]
       },
       "signals": [
         {
           "type": "funding",
-          "source": "web",
-          "url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-search-startup-keenable-raises-26m/",
+          "source": "edgar",
+          "url": "https://www.sec.gov/Archives/edgar/data/2164264/000216426426000001/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "posted_at": "2026-11-12T09:47:12-05:00",
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
       "people": [
         {
-          "name": "Andrey Styskin",
-          "role": "Co‑founder",
-          "org": "Keenable",
-          "evidence": "Founded by former Yandex search chief Andrey Styskin",
-          "linkedin": "https://www.linkedin.com/in/andrey-styskin",
-          "twitter": "https://x.com/styskin",
+          "name": "Rashmi Agrawal",
+          "role": "CTO, Executive Officer, Director",
+          "org": "CipherSonic Labs Inc.",
+          "evidence": "Signed by Rashmi Agrawal, Director, CTO.",
+          "linkedin": "https://www.linkedin.com/in/rashmi-agrawal-9a0601133/",
+          "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
         },
         {
-          "name": "Matthias Petri",
-          "role": "Co‑founder",
-          "org": "Keenable",
-          "evidence": "Founded by former Yandex search chief Andrey Styskin and AI scientist Matthias Petri",
-          "linkedin": "https://www.linkedin.com/in/matthias-petri-6b7899394",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Zhenya Loginov",
-          "role": "Partner",
-          "org": "Accel",
-          "evidence": "Accel partner Zhenya Loginov, who led the investment",
-          "linkedin": "",
+          "name": "Ajay Joshi",
+          "role": "Executive Officer, Director",
+          "org": "CipherSonic Labs Inc.",
+          "evidence": "Ajay Joshi — Executive Officer, Director",
+          "linkedin": "https://www.linkedin.com/in/ajay-joshi-8614284/",
           "twitter": "",
           "github": "",
           "homepage": "",
@@ -327,321 +426,63 @@
       ],
       "edges": [
         {
-          "src": "Andrey Styskin",
+          "src": "Ajay Joshi",
           "rel": "founded",
-          "dst": "Keenable",
-          "evidence": "Founded by former Yandex search chief Andrey Styskin"
+          "dst": "CipherSonic AI",
+          "evidence": "CEO & Co-Founder\n### Ajay Joshi"
         },
         {
-          "src": "Matthias Petri",
+          "src": "Rashmi Agrawal",
           "rel": "cofounded",
-          "dst": "Keenable",
-          "evidence": "Founded by ... AI scientist Matthias Petri"
-        },
-        {
-          "src": "Accel",
-          "rel": "invested_in",
-          "dst": "Keenable",
-          "evidence": "seed round was led by Accel"
-        },
-        {
-          "src": "Conviction Partners",
-          "rel": "invested_in",
-          "dst": "Keenable",
-          "evidence": "with participation from Conviction Partners"
-        },
-        {
-          "src": "Andrey Styskin",
-          "rel": "previously_at",
-          "dst": "Yandex",
-          "evidence": "Styskin previously ran Yandex’s search, AI and cloud division"
-        },
-        {
-          "src": "Andrey Styskin",
-          "rel": "previously_at",
-          "dst": "Amazon",
-          "evidence": "Styskin said his time building systems for AI applications, including work linked to Alexa at Amazon"
+          "dst": "CipherSonic AI",
+          "evidence": "CTO & Co-Founder\n### Rashmi Agrawal"
         }
       ]
     },
     {
-      "company_name": "Linkup",
-      "core_product": "A web‑search API that provides AI systems with real‑time, structured web data via a granular vector‑based index.",
-      "tech_stack": [
-        "vector search",
-        "web crawling",
-        "REST API"
-      ],
-      "likely_bottleneck": "Scaling the real‑time indexing pipeline and vector‑search infrastructure to handle massive, constantly updating web data.",
-      "value_prop_pitch": "I can help you ship a Next.js front‑end that lazily loads search results while you focus on scaling your back‑end. Pair it with a vector‑semantic search layer and you’ll cut latency and cost as you grow your index.",
+      "company_name": "Sintropix",
+      "core_product": "An AI-native ERP that handles accounting, consolidates financials across borders, and files taxes automatically.",
+      "tech_stack": [],
+      "likely_bottleneck": "Integrating and reconciling financial data from multiple entities and jurisdictions in real time.",
+      "value_prop_pitch": "You could streamline that multi‑entity data pipeline with a Next.js front‑end that pulls normalized records via a vector‑semantic search layer, giving founders instant, context‑aware insights. This would cut down the manual reconciliation effort and let your AI‑native ERP focus on higher‑value financial analysis.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$10M",
-      "hq": "San Francisco, CA",
-      "website": "https://www.linkup.so",
-      "source_url": "https://finance.yahoo.com/news/linkup-raises-10m-seed-round-155000128.html?fr=sycsrp_catchall",
-      "discovered_at": "2026-11-11T13:47:39+00:00",
-      "source": "web",
-      "score": 92,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "San Francisco, US",
+      "website": "https://sintropix.com",
+      "source_url": "https://www.ycombinator.com/launches/WdU-sintropix-the-ai-native-erp-that-closes-your-books-and-files-your-taxes",
+      "discovered_at": "2026-11-12T14:51:21+00:00",
+      "source": "yc",
+      "score": 59,
       "gaps": [
+        "funding amount",
+        "tech stack",
+        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://www.linkup.so",
+        "website": "https://sintropix.com",
         "emails": [
           {
-            "value": "contact@linkup.so",
-            "kind": "general",
-            "source_url": "https://www.linkup.so/contact"
+            "value": "support@sintropix.com",
+            "kind": "support",
+            "source_url": "https://sintropix.com/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/linkup-platform",
-          "twitter": "https://x.com/Linkup_platform"
+          "linkedin": "https://www.linkedin.com/company/sintropix",
+          "github": "https://github.com/sintropix"
         },
-        "contact_page": "https://www.linkup.so/contact",
-        "product_access": [
-          {
-            "label": "Try it →",
-            "url": "https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v1"
-          },
-          {
-            "label": "Documentation",
-            "url": "https://docs.linkup.so"
-          },
-          {
-            "label": "Pricing",
-            "url": "https://www.linkup.so/pricing"
-          },
-          {
-            "label": "Get Started",
-            "url": "https://app.linkup.so"
-          }
-        ],
-        "pages_crawled": [
-          "https://www.linkup.so/",
-          "https://www.linkup.so/about",
-          "https://www.linkup.so/contact"
-        ],
-        "enriched_at": "2026-11-11T13:48:53+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Next.js",
-            "category": "framework"
-          },
-          {
-            "name": "Vercel",
-            "category": "hosting"
-          },
-          {
-            "name": "Cal.com",
-            "category": "scheduling"
-          },
-          {
-            "name": "React",
-            "category": "framework"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "web",
-          "url": "https://finance.yahoo.com/news/linkup-raises-10m-seed-round-155000128.html?fr=sycsrp_catchall",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-11T13:48:37+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Philippe Mizrahi",
-          "role": "CEO",
-          "org": "Linkup",
-          "evidence": "CEO Philippe Mizrahi (ex-Lyft, Amundsen)",
-          "linkedin": "https://www.linkedin.com/in/philippe-mizrahi",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Denis Charrier",
-          "role": "CTO",
-          "org": "Linkup",
-          "evidence": "CTO Denis Charrier , a seasoned entrepreneur",
-          "linkedin": "https://www.linkedin.com/in/denis-charrier",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Boris Toledano",
-          "role": "COO",
-          "org": "Linkup",
-          "evidence": "COO Boris Toledano (ex-McKinsey)",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Darian Shirazi",
-          "role": "Managing Partner",
-          "org": "Gradient",
-          "evidence": "Darian Shirazi, Managing Partner at Gradient",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Olivier Pomel",
-          "role": "Angel Investor",
-          "org": "",
-          "evidence": "Olivier Pomel (Datadog)",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Arthur Mensch",
-          "role": "Angel Investor",
-          "org": "",
-          "evidence": "Arthur Mensch (Mistral)",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Alex Bouaziz",
-          "role": "Angel Investor",
-          "org": "",
-          "evidence": "Alex Bouaziz",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Shuo Wang",
-          "role": "Angel Investor",
-          "org": "",
-          "evidence": "Shuo Wang (Deel)",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Florian Douetteau",
-          "role": "Angel Investor",
-          "org": "",
-          "evidence": "Florian Douetteau (Dataiku)",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Philippe Mizrahi",
-          "rel": "founded",
-          "dst": "Linkup",
-          "evidence": "CEO Philippe Mizrahi (ex-Lyft, Amundsen)"
-        },
-        {
-          "src": "Boris Toledano",
-          "rel": "cofounded",
-          "dst": "Linkup",
-          "evidence": "COO Boris Toledano (ex-McKinsey)"
-        },
-        {
-          "src": "Denis Charrier",
-          "rel": "cofounded",
-          "dst": "Linkup",
-          "evidence": "CTO Denis Charrier , a seasoned entrepreneur"
-        },
-        {
-          "src": "Gradient",
-          "rel": "invested_in",
-          "dst": "Linkup",
-          "evidence": "$10 million seed round led by Gradient"
-        },
-        {
-          "src": "Elaia",
-          "rel": "invested_in",
-          "dst": "Linkup",
-          "evidence": "participation from Elaia"
-        },
-        {
-          "src": "Seedcamp",
-          "rel": "invested_in",
-          "dst": "Linkup",
-          "evidence": "existing investors Seedcamp"
-        },
-        {
-          "src": "Olivier Pomel",
-          "rel": "invested_in",
-          "dst": "Linkup",
-          "evidence": "angel investors including Olivier Pomel (Datadog)"
-        }
-      ]
-    },
-    {
-      "company_name": "NxtCure Labs",
-      "core_product": "Digital twin platform that simulates oncology model organisms and trial protocols to accelerate cancer drug development and FDA approval.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling high‑performance simulation workloads and managing the massive biomedical data needed for accurate digital twins.",
-      "value_prop_pitch": "I can build a Next.js front‑end that lets your scientists query and visualize simulation results instantly using vector semantic search, cutting down data‑retrieval latency. This will let your team focus on model refinement instead of wrestling with slow, custom data pipelines.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://nxtcure.com",
-      "source_url": "https://www.ycombinator.com/launches/XF9-nxtcure-labs-the-full-stack-ai-cro-oncology",
-      "discovered_at": "2026-11-11T13:47:39+00:00",
-      "source": "yc",
-      "score": 45,
-      "gaps": [
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://nxtcure.com",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://nxtcure.com/contact",
+        "contact_page": "",
         "product_access": [],
         "pages_crawled": [
-          "https://nxtcure.com/",
-          "https://nxtcure.com/team",
-          "https://nxtcure.com/about",
-          "https://nxtcure.com/contact"
+          "https://sintropix.com/",
+          "https://sintropix.com/team",
+          "https://sintropix.com/es",
+          "https://sintropix.com/es"
         ],
-        "enriched_at": "2026-11-11T13:49:00+00:00",
+        "enriched_at": "2026-11-12T14:52:53+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -660,204 +501,144 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XF9-nxtcure-labs-the-full-stack-ai-cro-oncology",
+          "url": "https://www.ycombinator.com/launches/WdU-sintropix-the-ai-native-erp-that-closes-your-books-and-files-your-taxes",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
       "people": [
         {
-          "name": "Alessandro Hammond",
-          "role": "Founder",
-          "org": "NxtCure Labs",
-          "evidence": "Alessandro Hammond ... founded NxtCure Labs to get the next generation of cancer drugs to patients faster",
-          "linkedin": "",
+          "name": "Alfonso Márquez de la Plata",
+          "role": "cofounder",
+          "org": "Sintropix",
+          "evidence": "Hey everyone, we’re Alfonso and Borja - cofounders of Sintropix",
+          "linkedin": "https://www.linkedin.com/in/alfonsompm",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "search"
         }
       ],
       "edges": [
         {
-          "src": "Alessandro Hammond",
+          "src": "Alfonso Márquez de la Plata",
           "rel": "founded",
-          "dst": "NxtCure Labs",
-          "evidence": "Alessandro Hammond ... founded NxtCure Labs to get the next generation of cancer drugs to patients faster"
+          "dst": "Sintropix",
+          "evidence": "Hey everyone, we’re Alfonso and Borja - cofounders of Sintropix"
         }
       ]
     },
     {
-      "company_name": "RAIDS AI",
-      "core_product": "RAIDS AI is a Cyprus-based AI runtime monitoring and assurance company.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
+      "company_name": "UXDuck",
+      "core_product": "AI-native software that simulates and orchestrates fleets of custom drones with a browser‑based simulator and a desktop app for real‑world vehicle control.",
+      "tech_stack": [
+        "Web",
+        "JavaScript",
+        "MAVLink"
+      ],
+      "likely_bottleneck": "handling high‑frequency telemetry and real‑time simulation scaling across many concurrent drone instances",
+      "value_prop_pitch": "You could replace the current telemetry pipeline with a Next.js front‑end that streams data through a vector‑semantic search layer, instantly surfacing relevant flight logs and anomalies. This would let your engineers debug and configure drones faster while keeping the simulation responsive at scale.",
       "is_relevant": true,
-      "funding_stage": "",
+      "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.raidsai.ai",
-      "source_url": "https://news.ycombinator.com/item?id=50451710",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
-      "source": "hiring",
-      "score": 41,
+      "website": "https://uxduck.com",
+      "source_url": "https://www.ycombinator.com/launches/X9D-uxduck-the-ai-native-software-for-the-next-billion-drones",
+      "discovered_at": "2026-11-12T14:51:21+00:00",
+      "source": "yc",
+      "score": 59,
       "gaps": [
-        "funding stage",
         "location",
         "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
         "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://www.raidsai.ai",
+        "website": "https://uxduck.com",
         "emails": [
           {
-            "value": "info@raidsai.ai",
-            "kind": "general",
-            "source_url": "https://www.raidsai.ai/"
-          },
-          {
-            "value": "support@raidsai.ai",
+            "value": "support@uxduck.com",
             "kind": "support",
-            "source_url": "https://www.raidsai.ai/"
-          },
-          {
-            "value": "rita@raidsai.ai",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50451710"
+            "source_url": "https://uxduck.com/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/raids-ai"
+          "twitter": "https://x.com/uxduck",
+          "linkedin": "https://www.linkedin.com/company/uxduck"
         },
-        "contact_page": "https://www.raidsai.ai/contact",
+        "contact_page": "",
         "product_access": [
           {
             "label": "Pricing",
-            "url": "https://www.raidsai.ai/pricing"
+            "url": "https://uxduck.com/pricing"
+          },
+          {
+            "label": "Docs",
+            "url": "https://uxduck.com/docs"
+          },
+          {
+            "label": "Try in browser",
+            "url": "https://app.uxduck.com/?from=site-home-header&start=quick"
+          },
+          {
+            "label": "Try in browser",
+            "url": "https://app.uxduck.com/?from=site-home&start=quick"
           }
         ],
         "pages_crawled": [
-          "https://www.raidsai.ai/",
-          "https://www.raidsai.ai/contact"
+          "https://uxduck.com/",
+          "https://uxduck.com/about"
         ],
-        "enriched_at": "2026-11-11T13:49:09+00:00",
+        "enriched_at": "2026-11-12T14:53:01+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Webflow",
-            "category": "cms"
-          },
-          {
-            "name": "HubSpot",
-            "category": "marketing"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
+            "name": "Cloudflare",
+            "category": "hosting"
           }
         ]
       },
       "signals": [
         {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50451710",
-          "roles": [
-            "Senior Technical Project Manager (Full Stack)"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-11T10:17:04Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/X9D-uxduck-the-ai-native-software-for-the-next-billion-drones",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Nevral Forensics Intelligence",
-      "core_product": "NFI is a digital forensics platform for laboratories that keep evidence on their own premises, under their own law. I am the founder. We are building, from first principles, a lawful device-access capability for locked devices, delivered to",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://nevralforensics.com",
-      "source_url": "https://news.ycombinator.com/item?id=50449027",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
-      "source": "hiring",
-      "score": 33,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://nevralforensics.com",
-        "emails": [
-          {
-            "value": "licensing@nevralforensics.com",
-            "kind": "person",
-            "source_url": "https://nevralforensics.com/"
-          },
-          {
-            "value": "info@nevrallab.com",
-            "kind": "general",
-            "source_url": "https://news.ycombinator.com/item?id=50449027"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://nevralforensics.com/"
-        ],
-        "enriched_at": "2026-11-11T13:49:15+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
+      "people": [
         {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50449027",
-          "roles": [
-            "Research Partner Program"
-          ],
-          "role_kinds": [
-            "customer"
-          ],
-          "posted_at": "2026-11-11T02:13:04Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "name": "Ben Butterworth",
+          "role": "Founder",
+          "org": "UXDuck",
+          "evidence": "**Ben Butterworth**",
+          "linkedin": "https://www.linkedin.com/in/bbutterworth",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
         }
       ],
-      "people": [],
-      "edges": []
+      "edges": [
+        {
+          "src": "Ben Butterworth",
+          "rel": "founded",
+          "dst": "UXDuck",
+          "evidence": "**Ben Butterworth**"
+        }
+      ]
     },
     {
-      "company_name": "Odin",
-      "core_product": "We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundation powering workforce visibility, security, and operations across critical-infrastructure construction projec",
+      "company_name": "Native",
+      "core_product": "We’re building an open-source workstation for teams that run on agents. Docs, projects and messaging live in one place that people and their agents share, on context the team owns. It runs locally or in the cloud, and on our benchmark it’s ",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -865,11 +646,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://odinflashtool.org",
-      "source_url": "https://news.ycombinator.com/item?id=50447035",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
+      "website": "https://www.withnative.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50466168",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
       "source": "hiring",
-      "score": 25,
+      "score": 29,
       "gaps": [
         "funding stage",
         "location",
@@ -882,126 +663,28 @@
         "phone"
       ],
       "contact": {
-        "website": "https://odinflashtool.org",
+        "website": "https://www.withnative.ai",
         "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "https://odinflashtool.org/contact",
+        "socials": {
+          "github": "https://github.com/withnative"
+        },
+        "contact_page": "https://www.withnative.ai/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://odinflashtool.org/",
-          "https://odinflashtool.org/contact",
-          "https://odinflashtool.org/about"
+          "https://www.withnative.ai/",
+          "https://www.withnative.ai/about",
+          "https://www.withnative.ai/team",
+          "https://www.withnative.ai/contact"
         ],
-        "enriched_at": "2026-11-11T13:49:19+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50447035",
-          "roles": [
-            "Senior Cloud Infra Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-10T22:14:01Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "SerpApi",
-      "core_product": "SerpApi is the leading API to scrape and parse search engine results. We provide 100+ APIs to Google, Google Maps, Google Images, Bing, Baidu, and more.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://serpapi.com",
-      "source_url": "https://news.ycombinator.com/item?id=50342697",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
-      "source": "hiring",
-      "score": 33,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "contact": {
-        "website": "https://serpapi.com",
-        "emails": [
-          {
-            "value": "contact@serpapi.com",
-            "kind": "general",
-            "source_url": "https://serpapi.com/"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+15126668245",
-            "kind": "main",
-            "source_url": "https://serpapi.com/"
-          },
-          {
-            "value": "+13027196615",
-            "kind": "main",
-            "source_url": "https://serpapi.com/"
-          }
-        ],
-        "socials": {
-          "github": "https://github.com/serpapi",
-          "twitter": "https://x.com/serpapi",
-          "linkedin": "https://www.linkedin.com/company/serpapi"
-        },
-        "contact_page": "",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://serpapi.com/pricing"
-          },
-          {
-            "label": "Get started",
-            "url": "https://serpapi.com/users/sign_up?plan=starter_v4"
-          },
-          {
-            "label": "Get started",
-            "url": "https://serpapi.com/users/sign_up?plan=developer_v4"
-          },
-          {
-            "label": "Get started",
-            "url": "https://serpapi.com/users/sign_up?plan=production_v4"
-          }
-        ],
-        "pages_crawled": [
-          "https://serpapi.com/",
-          "https://serpapi.com/team"
-        ],
-        "enriched_at": "2026-11-11T13:49:26+00:00",
+        "enriched_at": "2026-11-12T14:53:06+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Intercom",
-            "category": "support"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
+            "name": "Astro",
+            "category": "framework"
           }
         ]
       },
@@ -1009,19 +692,23 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50342697",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-02T19:53:24Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "url": "https://news.ycombinator.com/item?id=50466168",
+          "roles": [
+            "Founding Builder-in-Residence"
+          ],
+          "role_kinds": [
+            "founding"
+          ],
+          "posted_at": "2026-11-12T12:23:34Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "CreativeLens",
-      "core_product": "CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance, legal/compliance risk, performance concerns, and consistency across channels. We integrate with Figma, ",
+      "company_name": "Landlord",
+      "core_product": "Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) so our customers can focus on what's really important at a high level.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1030,8 +717,8 @@
       "funding_amount": "",
       "hq": "",
       "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50342626",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
+      "source_url": "https://news.ycombinator.com/item?id=50461075",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
       "source": "hiring",
       "score": 21,
       "gaps": [
@@ -1049,9 +736,9 @@
         "website": "",
         "emails": [
           {
-            "value": "careers@creativelens.ai",
+            "value": "careers@uselandlord.com",
             "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50342626"
+            "source_url": "https://news.ycombinator.com/item?id=50461075"
           }
         ],
         "phones": [],
@@ -1059,7 +746,7 @@
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [],
-        "enriched_at": "2026-11-11T13:49:30+00:00",
+        "enriched_at": "2026-11-12T14:53:10+00:00",
         "status": "no_website",
         "attempts": 0,
         "last_attempt": "",
@@ -1069,25 +756,23 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50342626",
+          "url": "https://news.ycombinator.com/item?id=50461075",
           "roles": [
-            "Founding Growth",
-            "Sales Lead"
+            "AI Engineer"
           ],
           "role_kinds": [
-            "founding",
-            "sales"
+            "eng"
           ],
-          "posted_at": "2026-11-02T19:48:39Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "posted_at": "2026-11-12T00:21:54Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "REVNODE",
-      "core_product": "We build custom software solutions for all industries, for companies of all sizes. AI, embedded, sass, all of it. Business has been around for 11 years. Everything up to this point has been direct referral or through agencies. You'll be bui",
+      "company_name": "Foji",
+      "core_product": "We automate the revenue cycle for dental practices: insurance eligibility and benefits, claim tracking, payment posting, and bank reconciliation. That means Playwright automation against insurance portals, AI agents that read benefits and r",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1095,11 +780,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.revnode.com/docs/capability_statement.pdf",
-      "source_url": "https://news.ycombinator.com/item?id=50342365",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
+      "website": "https://www.foji.io",
+      "source_url": "https://news.ycombinator.com/item?id=50460895",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
       "source": "hiring",
-      "score": 30,
+      "score": 38,
       "gaps": [
         "funding stage",
         "location",
@@ -1111,100 +796,54 @@
         "phone"
       ],
       "contact": {
-        "website": "https://www.revnode.com",
+        "website": "https://www.foji.io",
         "emails": [
           {
-            "value": "sales@revnode.com",
-            "kind": "sales",
-            "source_url": "https://news.ycombinator.com/item?id=50342365"
+            "value": "info@foji.io",
+            "kind": "general",
+            "source_url": "https://www.foji.io/"
+          },
+          {
+            "value": "support@foji.io",
+            "kind": "support",
+            "source_url": "https://www.foji.io/contact"
           }
         ],
         "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-11T13:49:33+00:00",
-        "status": "crawl_failed",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50342365",
-          "roles": [
-            "Founding Sales (Founding AE)"
-          ],
-          "role_kinds": [
-            "founding"
-          ],
-          "posted_at": "2026-11-02T19:32:53Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Hestus",
-      "core_product": "We're building AI-powered CAD tools to transform hardware development — think next-gen design workflows powered by custom ML models. We're a fast-moving startup, working with bleeding-edge tech at the intersection of mechanical engineering ",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.hestus.co",
-      "source_url": "https://news.ycombinator.com/item?id=50342280",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
-      "source": "hiring",
-      "score": 29,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.hestus.co",
-        "emails": [],
-        "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/hestus-inc"
+          "linkedin": "https://www.linkedin.com/company/fojisoft"
         },
-        "contact_page": "https://www.hestus.co/contact",
+        "contact_page": "https://www.foji.io/contact",
         "product_access": [
           {
-            "label": "Try it for free",
-            "url": "https://www.hestus.co/download"
-          },
-          {
-            "label": "Sign up for the alpha release",
-            "url": "https://www.hestus.co/solidworks"
+            "label": "Pricing",
+            "url": "https://www.foji.io/pricing"
           }
         ],
         "pages_crawled": [
-          "https://www.hestus.co/",
-          "https://www.hestus.co/contact",
-          "https://www.hestus.co/team"
+          "https://www.foji.io/",
+          "https://www.foji.io/contact"
         ],
-        "enriched_at": "2026-11-11T13:49:36+00:00",
+        "enriched_at": "2026-11-12T14:53:12+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
+            "name": "Webflow",
+            "category": "cms"
+          },
+          {
+            "name": "HubSpot",
+            "category": "marketing"
+          },
+          {
             "name": "Google Analytics",
             "category": "analytics"
+          },
+          {
+            "name": "Cloudflare",
+            "category": "hosting"
           }
         ]
       },
@@ -1212,23 +851,23 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50342280",
+          "url": "https://news.ycombinator.com/item?id=50460895",
           "roles": [
-            "Machine Learning Engineer (Python, ML)"
+            "Full Stack Engineer (TypeScript/React/Node)"
           ],
           "role_kinds": [
             "eng"
           ],
-          "posted_at": "2026-11-02T19:27:24Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "posted_at": "2026-11-12T00:03:47Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "ArtCraft",
-      "core_product": "Those fucking rent-seeking hyperscalers took the internet away from you, and we’re going to give it back to you and to everyone.",
+      "company_name": "Kroo",
+      "core_product": "Kroo is building the AI context layer for construction, an industry that badly needs solutions to solve their day-to-day headaches on the job-site. We’ve built a platform that our 50+ enterprise customers use to operate and maintain a data ",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -1236,11 +875,11 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://getartcraft.com",
-      "source_url": "https://news.ycombinator.com/item?id=50342041",
-      "discovered_at": "2026-11-11T13:48:37+00:00",
+      "website": "https://www.getkroo.com",
+      "source_url": "https://news.ycombinator.com/item?id=50460238",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
       "source": "hiring",
-      "score": 21,
+      "score": 34,
       "gaps": [
         "funding stage",
         "location",
@@ -1249,29 +888,33 @@
         "founder",
         "people profiles",
         "investors",
-        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://getartcraft.com",
-        "emails": [],
+        "website": "https://www.getkroo.com",
+        "emails": [
+          {
+            "value": "team@getkroo.com",
+            "kind": "general",
+            "source_url": "https://www.getkroo.com/"
+          }
+        ],
         "phones": [],
-        "socials": {},
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/kroo-construction"
+        },
         "contact_page": "",
         "product_access": [
           {
-            "label": "Pricing",
-            "url": "https://getartcraft.com/pricing"
-          },
-          {
-            "label": "Launch App",
-            "url": "https://app.getartcraft.com/"
+            "label": "Get started today",
+            "url": "https://www.getkroo.com/get-started-today"
           }
         ],
         "pages_crawled": [
-          "https://getartcraft.com/"
+          "https://www.getkroo.com/",
+          "https://www.getkroo.com/about"
         ],
-        "enriched_at": "2026-11-11T13:49:38+00:00",
+        "enriched_at": "2026-11-12T14:53:18+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -1279,6 +922,14 @@
           {
             "name": "Next.js",
             "category": "framework"
+          },
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
           },
           {
             "name": "React",
@@ -1290,15 +941,329 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50342041",
+          "url": "https://news.ycombinator.com/item?id=50460238",
           "roles": [
-            "Senior Engineers"
+            "Backend Software Engineer"
           ],
           "role_kinds": [
             "eng"
           ],
-          "posted_at": "2026-11-02T19:14:22Z",
-          "seen_at": "2026-11-11T13:48:37+00:00"
+          "posted_at": "2026-11-11T23:07:17Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Hemant Singh",
+      "core_product": "I'm a software engineer focused on backend development, primarily working with Java, Spring Boot, and Python. I enjoy building backend systems, REST APIs, and distributed applications, with an interest in system design and Agentic AI.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "",
+      "source_url": "https://news.ycombinator.com/item?id=50454490",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
+      "source": "hiring",
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-12T14:53:21+00:00",
+        "status": "no_website",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50454490",
+          "roles": [
+            "Software Engineer",
+            "Backend Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-11T15:21:10Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Evaboot",
+      "core_product": "Evaboot turns LinkedIn Sales Navigator searches into clean, verified prospecting lists. Demo: https://www.youtube.com/watch?v=khYgyDlo2Iw",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://evaboot.com",
+      "source_url": "https://news.ycombinator.com/item?id=50341833",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
+      "source": "hiring",
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://evaboot.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/evaboot-labs",
+          "twitter": "https://x.com/Evaboot_"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://evaboot.com/pricing"
+          },
+          {
+            "label": "Get Started",
+            "url": "https://dash.evaboot.com/accounts/signup/"
+          },
+          {
+            "label": "Try Teams",
+            "url": "https://evaboot.com/feature-team"
+          }
+        ],
+        "pages_crawled": [
+          "https://evaboot.com/"
+        ],
+        "enriched_at": "2026-11-12T14:53:26+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Astro",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50341833",
+          "roles": [
+            "Agentic Python Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-02T19:00:38Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "eventfirst",
+      "core_product": "We are looking for a senior engineer with at least ten years of full stack experience, a strong focus on product and UX, and some experience building an AI chat based product.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "Berlin, DE",
+      "website": "https://www.eventfirst.com",
+      "source_url": "https://news.ycombinator.com/item?id=50341824",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
+      "source": "hiring",
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://www.eventfirst.com",
+        "emails": [
+          {
+            "value": "info@eventfirst.com",
+            "kind": "general",
+            "source_url": "https://www.eventfirst.com/en-us"
+          },
+          {
+            "value": "partner@eventfirst.com",
+            "kind": "person",
+            "source_url": "https://www.eventfirst.com/en-us"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+4915888279054",
+            "kind": "main",
+            "source_url": "https://www.eventfirst.com/en-us"
+          }
+        ],
+        "socials": {},
+        "contact_page": "https://www.eventfirst.com/de-de/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.eventfirst.com/en-us",
+          "https://www.eventfirst.com/de-de/about",
+          "https://www.eventfirst.com/de-de/contact",
+          "https://www.eventfirst.com/de-de/team"
+        ],
+        "enriched_at": "2026-11-12T14:53:31+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50341824",
+          "roles": [
+            "Senior Full-Stack Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-02T19:00:07Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Data Micro Technologies",
+      "core_product": "Data Micro Technologies provides specialized systems engineering, operational technology (OT), and infrastructure consulting.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://datamicrotn.com",
+      "source_url": "https://news.ycombinator.com/item?id=50341800",
+      "discovered_at": "2026-11-12T14:52:27+00:00",
+      "source": "hiring",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://datamicrotn.com",
+        "emails": [
+          {
+            "value": "travis@datamicrotn.com",
+            "kind": "person",
+            "source_url": "https://datamicrotn.com/"
+          },
+          {
+            "value": "chase@datamicrotn.com",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50341800"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+19043888068",
+            "kind": "main",
+            "source_url": "https://datamicrotn.com/"
+          }
+        ],
+        "socials": {},
+        "contact_page": "https://datamicrotn.com/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://datamicrotn.com/",
+          "https://datamicrotn.com/about",
+          "https://datamicrotn.com/team",
+          "https://datamicrotn.com/contact"
+        ],
+        "enriched_at": "2026-11-12T14:53:37+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "WordPress",
+            "category": "cms"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50341800",
+          "roles": [
+            "Multiple Roles (OT, Networking, Security)"
+          ],
+          "role_kinds": [
+            "other"
+          ],
+          "posted_at": "2026-11-02T18:58:56Z",
+          "seen_at": "2026-11-12T14:52:27+00:00"
         }
       ],
       "people": [],
@@ -1308,76 +1273,79 @@
   "diff": {
     "added": [
       {
-        "company": "PuppyGraph",
-        "score": 97,
+        "company": "Mondrio",
+        "score": 41,
         "source": "rss"
       },
       {
-        "company": "Linkup",
-        "score": 92,
-        "source": "web"
+        "company": "SE3",
+        "score": 82,
+        "source": "rss"
       },
       {
-        "company": "NxtCure Labs",
-        "score": 45,
+        "company": "CipherSonic Labs Inc.",
+        "score": 77,
+        "source": "edgar"
+      },
+      {
+        "company": "Sintropix",
+        "score": 59,
         "source": "yc"
       },
       {
-        "company": "RAIDS AI",
-        "score": 41,
-        "source": "hiring"
+        "company": "UXDuck",
+        "score": 59,
+        "source": "yc"
       },
       {
-        "company": "Nevral Forensics Intelligence",
-        "score": 33,
-        "source": "hiring"
-      },
-      {
-        "company": "Odin",
-        "score": 25,
-        "source": "hiring"
-      },
-      {
-        "company": "SerpApi",
-        "score": 33,
-        "source": "hiring"
-      },
-      {
-        "company": "CreativeLens",
-        "score": 21,
-        "source": "hiring"
-      },
-      {
-        "company": "REVNODE",
-        "score": 30,
-        "source": "hiring"
-      },
-      {
-        "company": "Hestus",
+        "company": "Native",
         "score": 29,
         "source": "hiring"
       },
       {
-        "company": "ArtCraft",
+        "company": "Landlord",
         "score": 21,
+        "source": "hiring"
+      },
+      {
+        "company": "Foji",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Kroo",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "Hemant Singh",
+        "score": 15,
+        "source": "hiring"
+      },
+      {
+        "company": "Evaboot",
+        "score": 25,
+        "source": "hiring"
+      },
+      {
+        "company": "eventfirst",
+        "score": 44,
+        "source": "hiring"
+      },
+      {
+        "company": "Data Micro Technologies",
+        "score": 41,
         "source": "hiring"
       }
     ],
     "updated": [
       {
-        "company": "Keenable",
-        "score": 88,
-        "score_before": 91,
-        "source": "web"
+        "company": "Pomerado",
+        "score": 70,
+        "score_before": 80,
+        "source": "launch_hn"
       }
     ]
   },
-  "watchlist_hits": [
-    {
-      "company": "Linkup",
-      "why": [
-        "keyword: vector search"
-      ]
-    }
-  ]
+  "watchlist_hits": []
 }

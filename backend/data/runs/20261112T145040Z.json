@@ -1,0 +1,679 @@
+{
+  "run_id": "20261112T145040Z",
+  "started_at": "2026-11-12T14:50:40+00:00",
+  "duration_s": 182.1,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 243,
+    "selected": 8,
+    "crawled": 8,
+    "extracted": 7,
+    "relevant": 6,
+    "valid": 6
+  },
+  "tokens": 19261,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 34,
+    "rss": 61,
+    "edgar": 4,
+    "web": 12
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building Next.js vector search API",
+      "seed funding announced for retrieval-augmented generation web app startup founders interview",
+      "early-stage company raises capital for data-heavy web app search engine startup investors",
+      "founder interview startup enabling RAG for SaaS products recent funding November 2026"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG tooling",
+      "vector search API",
+      "Next.js developer tools",
+      "retrieval augmented generation"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 41,
+        "accepted": 30,
+        "score_sum": 2320,
+        "yield": 0.732,
+        "avg_score": 77.3
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 191,
+        "yield": 1.0,
+        "avg_score": 47.8
+      },
+      "hiring": {
+        "crawled": 161,
+        "accepted": 160,
+        "score_sum": 4392,
+        "yield": 0.994,
+        "avg_score": 27.4
+      },
+      "edgar": {
+        "crawled": 25,
+        "accepted": 5,
+        "score_sum": 307,
+        "yield": 0.2,
+        "avg_score": 61.4
+      },
+      "web": {
+        "crawled": 14,
+        "accepted": 10,
+        "score_sum": 778,
+        "yield": 0.714,
+        "avg_score": 77.8
+      },
+      "yc": {
+        "crawled": 12,
+        "accepted": 12,
+        "score_sum": 737,
+        "yield": 1.0,
+        "avg_score": 61.4
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 2,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 91,
+    "fallbacks": 0,
+    "avg_latency_ms": 78.3,
+    "jev_input_tokens": 43505,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-12T14:50:40+00:00",
+      "offset_s": 0.0,
+      "duration_s": 22.11,
+      "status": "ok",
+      "counts": {
+        "candidates": 243,
+        "src_hn": 30,
+        "src_launch_hn": 4,
+        "src_rss": 61,
+        "src_yc": 12,
+        "src_web": 12,
+        "src_edgar": 4,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-12T14:51:03+00:00",
+      "offset_s": 22.11,
+      "duration_s": 6.49,
+      "status": "ok",
+      "counts": {
+        "in": 243,
+        "selected": 8,
+        "hiring_lane": 8,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 2, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-12T14:51:09+00:00",
+      "offset_s": 28.61,
+      "duration_s": 11.87,
+      "status": "ok",
+      "counts": {
+        "requested": 8,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-12T14:51:21+00:00",
+      "offset_s": 40.47,
+      "duration_s": 65.91,
+      "status": "ok",
+      "counts": {
+        "extracted": 7,
+        "relevant": 6,
+        "valid": 6
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-12T14:52:27+00:00",
+      "offset_s": 106.39,
+      "duration_s": 70.69,
+      "status": "ok",
+      "counts": {
+        "startups": 14,
+        "websites": 11,
+        "emails": 13,
+        "phones": 3
+      },
+      "notes": [
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +2 people, +2 edges",
+        "no website found",
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +0 people, +2 edges",
+        "no website found",
+        "no website found"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-12T14:53:38+00:00",
+      "offset_s": 177.08,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 45
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-12T14:53:38+00:00",
+      "offset_s": 177.08,
+      "duration_s": 2.89,
+      "status": "ok",
+      "counts": {
+        "startups": 14,
+        "people": 9,
+        "edges": 10
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.39,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 0.98,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 34,
+      "seconds": 1.73,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 61,
+      "seconds": 2.69,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 4,
+      "seconds": 8.97,
+      "error": ""
+    },
+    "web": {
+      "candidates": 12,
+      "seconds": 22.11,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14931,
+    "completion_tokens": 4330,
+    "total_tokens": 19261,
+    "calls": 9,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 12870,
+        "completion_tokens": 3788,
+        "total_tokens": 16658,
+        "calls": 7
+      },
+      "team": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 542,
+        "total_tokens": 2603,
+        "calls": 2
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 14931,
+        "completion_tokens": 4330,
+        "total_tokens": 19261,
+        "calls": 9
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 14931,
+        "completion_tokens": 4330,
+        "total_tokens": 19261,
+        "calls": 9
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 243,
+    "crawled": 8,
+    "extracted": 7,
+    "relevant": 6,
+    "valid": 6,
+    "sources": {
+      "launch_hn": 1,
+      "rss": 2,
+      "edgar": 1,
+      "yc": 2
+    },
+    "people": 9,
+    "edges": 10,
+    "dropped_ungrounded": 6,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 11,
+    "with_website": 11,
+    "with_email": 10,
+    "with_phone": 3,
+    "people_linked": 9,
+    "avg_score": 45.4,
+    "qualified": 5,
+    "avg_qualified_score": 69.4,
+    "issues": {
+      "warn: empty tech_stack": 2,
+      "not a relevant startup page": 1
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "startupintros.com/orgs/exa"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Pomerado",
+      "url": "https://news.ycombinator.com/item?id=50455811",
+      "source": "launch_hn",
+      "people": 2,
+      "edges": 2,
+      "score": 70,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors"
+      ],
+      "website": "https://pomerado.ai",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Mondrio",
+      "url": "https://techfundingnews.com/mondrio-3-75m-seed-ai-pricing-agents/",
+      "source": "rss",
+      "people": 0,
+      "edges": 1,
+      "score": 41,
+      "gaps": [
+        "website",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "SE3",
+      "url": "https://techfundingnews.com/accel-leads-30m-series-a-in-se3-the-munich-startup-teaching-drones-to-work-without-gps/",
+      "source": "rss",
+      "people": 3,
+      "edges": 3,
+      "score": 82,
+      "gaps": [
+        "investors",
+        "phone"
+      ],
+      "website": "https://se3.ai",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "CipherSonic Labs Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2164264/000216426426000001/",
+      "source": "edgar",
+      "people": 2,
+      "edges": 0,
+      "score": 77,
+      "gaps": [
+        "investors",
+        "phone"
+      ],
+      "website": "https://ciphersoniclabs.io",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Sintropix",
+      "url": "https://www.ycombinator.com/launches/WdU-sintropix-the-ai-native-erp-that-closes-your-books-and-files-your-taxes",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 59,
+      "gaps": [
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://sintropix.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "UXDuck",
+      "url": "https://www.ycombinator.com/launches/X9D-uxduck-the-ai-native-software-for-the-next-billion-drones",
+      "source": "yc",
+      "people": 1,
+      "edges": 1,
+      "score": 59,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://uxduck.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Native",
+      "url": "https://withnative.ai",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.withnative.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Landlord",
+      "url": "https://www.youtube.com/watch?v=XMg5FCX0k2M",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Foji",
+      "url": "https://foji.io",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.foji.io",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Kroo",
+      "url": "https://app.loxo.co/job/MTA5OTQtOXlxejM5ZG9lY3Y2MjF0NQ==",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.getkroo.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Hemant Singh",
+      "url": "https://simply-cinema-frontend.vercel.app/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Evaboot",
+      "url": "https://www.youtube.com/watch?v=khYgyDlo2Iw",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://evaboot.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "eventfirst",
+      "url": "https://eventfirst.jobs.personio.com/job/2870690?_pc=3355738",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.eventfirst.com",
+      "emails": 2,
+      "phones": 1
+    },
+    {
+      "company": "Data Micro Technologies",
+      "url": "https://news.ycombinator.com/item?id=50341800",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://datamicrotn.com",
+      "emails": 2,
+      "phones": 1
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2164567/000216456726000001/",
+      "source": "edgar",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Mondrio",
+        "score": 41,
+        "source": "rss"
+      },
+      {
+        "company": "SE3",
+        "score": 82,
+        "source": "rss"
+      },
+      {
+        "company": "CipherSonic Labs Inc.",
+        "score": 77,
+        "source": "edgar"
+      },
+      {
+        "company": "Sintropix",
+        "score": 59,
+        "source": "yc"
+      },
+      {
+        "company": "UXDuck",
+        "score": 59,
+        "source": "yc"
+      },
+      {
+        "company": "Native",
+        "score": 29,
+        "source": "hiring"
+      },
+      {
+        "company": "Landlord",
+        "score": 21,
+        "source": "hiring"
+      },
+      {
+        "company": "Foji",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "Kroo",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "Hemant Singh",
+        "score": 15,
+        "source": "hiring"
+      },
+      {
+        "company": "Evaboot",
+        "score": 25,
+        "source": "hiring"
+      },
+      {
+        "company": "eventfirst",
+        "score": 44,
+        "source": "hiring"
+      },
+      {
+        "company": "Data Micro Technologies",
+        "score": 41,
+        "source": "hiring"
+      }
+    ],
+    "updated": [
+      {
+        "company": "Pomerado",
+        "score": 70,
+        "score_before": 80,
+        "source": "launch_hn"
+      }
+    ]
+  }
+}
