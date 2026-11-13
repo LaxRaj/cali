@@ -912,6 +912,32 @@
         "web": 12
       },
       "failures": []
+    },
+    {
+      "run_id": "20261113T141102Z",
+      "started_at": "2026-11-13T14:11:02+00:00",
+      "duration_s": 184.6,
+      "passed": true,
+      "status": "passed",
+      "funnel": {
+        "candidates": 254,
+        "selected": 8,
+        "crawled": 6,
+        "extracted": 5,
+        "relevant": 5,
+        "valid": 5
+      },
+      "tokens": 19525,
+      "token_budget": 400000,
+      "sources": {
+        "yc": 12,
+        "rss": 60,
+        "hiring": 120,
+        "web": 24,
+        "hn": 34,
+        "edgar": 4
+      },
+      "failures": []
     }
   ]
 }
