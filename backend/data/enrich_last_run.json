@@ -1,11 +1,12 @@
 {
-  "started_at": "2026-11-12T16:44:50+00:00",
+  "started_at": "2026-11-13T16:03:54+00:00",
   "skipped": "",
   "startups": [
     {
       "company": "Miracly.ai",
-      "score": 92,
+      "score": 87,
       "gaps": [
+        "people profiles",
         "phone"
       ],
       "website": "https://www.miracly.ai",
@@ -20,73 +21,10 @@
       ]
     },
     {
-      "company": "QuiverAI",
-      "score": 86,
+      "company": "Qvyon Technologies",
+      "score": 67,
       "gaps": [
-        "location",
-        "phone"
-      ],
-      "website": "https://quiver.ai",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 11,
-      "edges": 14,
-      "notes": [
-        "team llm: 14 people proposed, 14 grounded",
-        "team page: +12 people, +0 edges"
-      ]
-    },
-    {
-      "company": "eventfirst",
-      "score": 44,
-      "gaps": [
-        "funding stage",
-        "funding amount",
         "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://www.eventfirst.com",
-      "status": "ok",
-      "emails": 2,
-      "phones": 1,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Data Micro Technologies",
-      "score": 41,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://datamicrotn.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Mondrio",
-      "score": 41,
-      "gaps": [
-        "website",
-        "tech stack",
-        "founder",
-        "people profiles",
         "email",
         "phone"
       ],
@@ -94,15 +32,35 @@
       "status": "no_website",
       "emails": 0,
       "phones": 0,
-      "people": 0,
-      "edges": 1,
+      "people": 1,
+      "edges": 3,
       "notes": [
         "no website found"
       ]
     },
     {
-      "company": "RAIDS AI",
-      "score": 38,
+      "company": "Parallel",
+      "score": 53,
+      "gaps": [
+        "website",
+        "location",
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 1,
+      "edges": 2,
+      "notes": [
+        "no website found"
+      ]
+    },
+    {
+      "company": "TheraPlug",
+      "score": 41,
       "gaps": [
         "funding stage",
         "location",
@@ -113,9 +71,9 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.raidsai.ai",
+      "website": "https://www.theraplug.health",
       "status": "ok",
-      "emails": 2,
+      "emails": 1,
       "phones": 0,
       "people": 0,
       "edges": 0,
@@ -125,71 +83,55 @@
       ]
     },
     {
-      "company": "Antithesis",
-      "score": 64,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "email",
-        "phone"
-      ],
-      "website": "https://antithesis.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 13,
-      "edges": 15,
-      "notes": [
-        "team llm: 15 people proposed, 15 grounded",
-        "team page: +15 people, +17 edges"
-      ]
-    },
-    {
-      "company": "Telescope Partners",
-      "score": 61,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://www.telescopepartners.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 13,
-      "edges": 13,
-      "notes": [
-        "team llm: 13 people proposed, 13 grounded",
-        "team page: +13 people, +13 edges"
-      ]
-    },
-    {
-      "company": "Kino AI",
+      "company": "Encube",
       "score": 41,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
+        "tech stack",
         "founder",
         "people profiles",
         "investors",
         "phone"
       ],
-      "website": "https://kino.ai",
+      "website": "https://www.getencube.com",
+      "status": "ok",
+      "emails": 4,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "KSC Trading",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://ksctrading.com",
       "status": "ok",
       "emails": 1,
       "phones": 0,
       "people": 0,
       "edges": 0,
-      "notes": []
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
     },
     {
-      "company": "ThreatMark",
+      "company": "Buoyant",
       "score": 29,
       "gaps": [
         "funding stage",
@@ -202,7 +144,7 @@
         "email",
         "phone"
       ],
-      "website": "https://www.threatmark.com",
+      "website": "https://www.buoyant.io",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -212,39 +154,109 @@
         "team llm: 0 people proposed, 0 grounded",
         "team page: +0 people, +0 edges"
       ]
+    },
+    {
+      "company": "Typify.dev",
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://typify.dev",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "StartupHakk",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://startuphakk.com",
+      "status": "ok",
+      "emails": 1,
+      "phones": 1,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Propel Labs",
+      "score": 53,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.propellabs.ai",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 1,
+      "edges": 1,
+      "notes": [
+        "team llm: 1 people proposed, 1 grounded",
+        "team page: +1 people, +1 edges"
+      ]
     }
   ],
-  "tokens": 13392,
+  "tokens": 9346,
   "usage": {
-    "prompt_tokens": 8644,
-    "completion_tokens": 4748,
-    "total_tokens": 13392,
-    "calls": 7,
+    "prompt_tokens": 8537,
+    "completion_tokens": 809,
+    "total_tokens": 9346,
+    "calls": 8,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 8644,
-        "completion_tokens": 4748,
-        "total_tokens": 13392,
-        "calls": 7
+        "prompt_tokens": 8537,
+        "completion_tokens": 809,
+        "total_tokens": 9346,
+        "calls": 8
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 8644,
-        "completion_tokens": 4748,
-        "total_tokens": 13392,
-        "calls": 7
+        "prompt_tokens": 8537,
+        "completion_tokens": 809,
+        "total_tokens": 9346,
+        "calls": 8
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 8644,
-        "completion_tokens": 4748,
-        "total_tokens": 13392,
-        "calls": 7
+        "prompt_tokens": 8537,
+        "completion_tokens": 809,
+        "total_tokens": 9346,
+        "calls": 8
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-12T16:46:15+00:00"
+  "finished_at": "2026-11-13T16:05:01+00:00"
 }
