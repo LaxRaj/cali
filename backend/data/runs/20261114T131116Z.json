@@ -1,0 +1,678 @@
+{
+  "run_id": "20261114T131116Z",
+  "started_at": "2026-11-14T13:11:16+00:00",
+  "duration_s": 183.3,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 230,
+    "selected": 8,
+    "crawled": 6,
+    "extracted": 6,
+    "relevant": 4,
+    "valid": 4
+  },
+  "tokens": 17863,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 32,
+    "rss": 61,
+    "edgar": 5,
+    "web": 0
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre\u2011seed startup launches AI\u2011powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building vector search API for Next.js apps",
+      "seed funding announced for retrieval\u2011augmented generation startup targeting data\u2011heavy web applications",
+      "founder interview with RAG startup enabling real\u2011time web data retrieval November 2026",
+      "venture capital invests in early\u2011stage search\u2011engine infrastructure startup for freelancers"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search API",
+      "developer tooling",
+      "AI retrieval"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 39,
+        "accepted": 28,
+        "score_sum": 2133,
+        "yield": 0.718,
+        "avg_score": 76.2
+      },
+      "web": {
+        "crawled": 14,
+        "accepted": 11,
+        "score_sum": 847,
+        "yield": 0.786,
+        "avg_score": 77.0
+      },
+      "yc": {
+        "crawled": 14,
+        "accepted": 14,
+        "score_sum": 884,
+        "yield": 1.0,
+        "avg_score": 63.1
+      },
+      "hiring": {
+        "crawled": 147,
+        "accepted": 146,
+        "score_sum": 4142,
+        "yield": 0.993,
+        "avg_score": 28.4
+      },
+      "edgar": {
+        "crawled": 25,
+        "accepted": 5,
+        "score_sum": 307,
+        "yield": 0.2,
+        "avg_score": 61.4
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 231,
+        "yield": 1.0,
+        "avg_score": 57.8
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 3,
+      "rss": 3,
+      "yc": 3
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 85,
+    "fallbacks": 0,
+    "avg_latency_ms": 56.5,
+    "jev_input_tokens": 40353,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-14T13:11:16+00:00",
+      "offset_s": 0.0,
+      "duration_s": 24.57,
+      "status": "ok",
+      "counts": {
+        "candidates": 230,
+        "src_hn": 29,
+        "src_launch_hn": 3,
+        "src_rss": 61,
+        "src_yc": 12,
+        "src_edgar": 5,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-14T13:11:41+00:00",
+      "offset_s": 24.57,
+      "duration_s": 4.49,
+      "status": "ok",
+      "counts": {
+        "in": 230,
+        "selected": 8,
+        "hiring_lane": 8,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 3, 'rss': 3, 'yc': 3}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-14T13:11:45+00:00",
+      "offset_s": 29.07,
+      "duration_s": 26.7,
+      "status": "ok",
+      "counts": {
+        "requested": 8,
+        "crawled": 6
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-14T13:12:12+00:00",
+      "offset_s": 55.77,
+      "duration_s": 57.2,
+      "status": "ok",
+      "counts": {
+        "extracted": 6,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-14T13:13:09+00:00",
+      "offset_s": 112.97,
+      "duration_s": 58.31,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "websites": 5,
+        "emails": 12,
+        "phones": 0
+      },
+      "notes": [
+        "no website found",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "no website found",
+        "no website found",
+        "no website found",
+        "no website found",
+        "no website found",
+        "no website found",
+        "team llm: 0 people proposed, 0 grounded"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-14T13:14:07+00:00",
+      "offset_s": 171.28,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 38
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-14T13:14:07+00:00",
+      "offset_s": 171.28,
+      "duration_s": 4.01,
+      "status": "ok",
+      "counts": {
+        "startups": 12,
+        "people": 6,
+        "edges": 9
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-11-14T13:14:11+00:00",
+      "offset_s": 175.29,
+      "duration_s": 5.57,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 0
+      },
+      "notes": [
+        "Palomma: no_website, score 66"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.39,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.07,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 32,
+      "seconds": 1.78,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 61,
+      "seconds": 4.24,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 5,
+      "seconds": 6.6,
+      "error": ""
+    },
+    "web": {
+      "candidates": 0,
+      "seconds": 24.57,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14627,
+    "completion_tokens": 3236,
+    "total_tokens": 17863,
+    "calls": 8,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 12354,
+        "completion_tokens": 3164,
+        "total_tokens": 15518,
+        "calls": 6
+      },
+      "team": {
+        "prompt_tokens": 2273,
+        "completion_tokens": 72,
+        "total_tokens": 2345,
+        "calls": 2
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 14627,
+        "completion_tokens": 3236,
+        "total_tokens": 17863,
+        "calls": 8
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 14627,
+        "completion_tokens": 3236,
+        "total_tokens": 17863,
+        "calls": 8
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 230,
+    "crawled": 6,
+    "extracted": 6,
+    "relevant": 4,
+    "valid": 4,
+    "sources": {
+      "rss": 1,
+      "yc": 3
+    },
+    "people": 6,
+    "edges": 9,
+    "dropped_ungrounded": 9,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 5,
+    "with_website": 5,
+    "with_email": 7,
+    "with_phone": 0,
+    "people_linked": 3,
+    "avg_score": 38.1,
+    "qualified": 3,
+    "avg_qualified_score": 67.0,
+    "issues": {
+      "warn: empty tech_stack": 1,
+      "not a relevant startup page": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Palomma",
+      "url": "https://news.crunchbase.com/fintech/nubank-alum-colombia-startup-palomma-ai-rental-services/",
+      "source": "rss",
+      "people": 3,
+      "edges": 4,
+      "score": 66,
+      "gaps": [
+        "website",
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "antimattr",
+      "url": "https://www.ycombinator.com/launches/XSv-antimattr-voice-first-hardware-interface-for-human-agent-interaction",
+      "source": "yc",
+      "people": 2,
+      "edges": 3,
+      "score": 74,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://www.antimattr.one",
+      "emails": 3,
+      "phones": 0
+    },
+    {
+      "company": "Tire Swing",
+      "url": "https://www.ycombinator.com/launches/XTS-tire-swing-the-ai-platform-for-affordable-housing",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 64,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.gettireswing.com",
+      "emails": 4,
+      "phones": 0
+    },
+    {
+      "company": "Vexo",
+      "url": "https://www.ycombinator.com/launches/XTy-vexo-an-always-listening-ai-bracelet-that-remembers-and-acts",
+      "source": "yc",
+      "people": 3,
+      "edges": 7,
+      "score": 63,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.vexoai.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Common Prefix",
+      "url": "https://github.com/commonprefix",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Joulent",
+      "url": "https://www.linkedin.com/jobs/view/4488617935/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Confidential Healthcare AI Startup",
+      "url": "https://news.ycombinator.com/item?id=50484305",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Paradromics",
+      "url": "https://archive.ph/C6CRb",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 27,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Memorang",
+      "url": "https://news.ycombinator.com/item?id=50340985",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "VIVA Finance",
+      "url": "https://news.ycombinator.com/item?id=50340983",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 27,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Jump",
+      "url": "https://jumpscientific.com/careers",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://jumpscientific.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Ledgebrook",
+      "url": "https://www.ledgebrook.com/careers",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.ledgebrook.com",
+      "emails": 4,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1927878/000192787826000006/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2160820/000216082026000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://sifted.eu/articles/exclusive-orakl-oncology-fundraise/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/luminal-25m-series-a-ai-inference-compiler-cloud/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Palomma",
+        "score": 66,
+        "source": "rss"
+      },
+      {
+        "company": "antimattr",
+        "score": 74,
+        "source": "yc"
+      },
+      {
+        "company": "Tire Swing",
+        "score": 64,
+        "source": "yc"
+      },
+      {
+        "company": "Vexo",
+        "score": 63,
+        "source": "yc"
+      },
+      {
+        "company": "Common Prefix",
+        "score": 15,
+        "source": "hiring"
+      },
+      {
+        "company": "Joulent",
+        "score": 15,
+        "source": "hiring"
+      },
+      {
+        "company": "Confidential Healthcare AI Startup",
+        "score": 15,
+        "source": "hiring"
+      },
+      {
+        "company": "Paradromics",
+        "score": 27,
+        "source": "hiring"
+      },
+      {
+        "company": "Memorang",
+        "score": 21,
+        "source": "hiring"
+      },
+      {
+        "company": "VIVA Finance",
+        "score": 27,
+        "source": "hiring"
+      },
+      {
+        "company": "Jump",
+        "score": 29,
+        "source": "hiring"
+      },
+      {
+        "company": "Ledgebrook",
+        "score": 41,
+        "source": "hiring"
+      }
+    ],
+    "updated": []
+  }
+}
