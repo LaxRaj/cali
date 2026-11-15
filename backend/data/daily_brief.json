@@ -1,24 +1,186 @@
 {
-  "generated_at": "2026-11-14T13:14:07+00:00",
+  "generated_at": "2026-11-15T13:42:29+00:00",
   "findings": [
     {
-      "company_name": "Palomma",
-      "core_product": "AI‑powered leasing and rent‑payment platform that offers subscription software for property managers plus financial services for tenants and landlords",
+      "company_name": "Kindo",
+      "core_product": "An AI agent management platform that provides a centralized control centre for discovering, governing, auditing, and cost‑controlling enterprise AI agents.",
       "tech_stack": [],
-      "likely_bottleneck": "scaling the AI‑driven leasing conversation and payment processing pipeline while keeping latency low",
-      "value_prop_pitch": "We can refactor your AI chat layer with Next.js API routes and server‑side rendering to serve responses under 30 ms, while a vector‑based semantic search index will let you retrieve tenant histories instantly. This combo will cut your latency bottleneck and let the AI agents handle far more concurrent conversations without adding engineers.",
+      "likely_bottleneck": "Scaling real‑time governance and observability across heterogeneous AI agents while maintaining low latency and security in hybrid cloud/on‑prem environments.",
+      "value_prop_pitch": "I can build a Next.js dashboard that surfaces agent activity with instant, vector‑semantic search across logs and policies, letting your ops team pinpoint issues in seconds. This will cut down on latency and engineering overhead while giving you a unified, searchable view of every agent’s actions and data accesses.",
       "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "$10M",
-      "hq": "Medellín, Colombia",
-      "website": "",
-      "source_url": "https://news.crunchbase.com/fintech/nubank-alum-colombia-startup-palomma-ai-rental-services/",
-      "discovered_at": "2026-11-14T13:12:12+00:00",
+      "funding_stage": "",
+      "funding_amount": "$30M",
+      "hq": "Venice, US",
+      "website": "https://www.kindo.ai",
+      "source_url": "https://techfundingnews.com/kindo-raises-30m-after-800-revenue-growth-can-one-control-center-tame-enterprise-ai-agents/",
+      "discovered_at": "2026-11-15T13:41:04+00:00",
       "source": "rss",
-      "score": 66,
+      "score": 54,
+      "gaps": [
+        "funding stage",
+        "tech stack",
+        "founder",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.kindo.ai",
+        "emails": [
+          {
+            "value": "info@kindo.ai",
+            "kind": "general",
+            "source_url": "https://www.kindo.ai/"
+          },
+          {
+            "value": "sales@kindo.ai",
+            "kind": "sales",
+            "source_url": "https://www.kindo.ai/contact"
+          },
+          {
+            "value": "press@kindo.ai",
+            "kind": "press",
+            "source_url": "https://www.kindo.ai/contact"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/kindo-ai",
+          "twitter": "https://x.com/kindoai"
+        },
+        "contact_page": "https://www.kindo.ai/contact",
+        "product_access": [
+          {
+            "label": "Documentation",
+            "url": "https://docs.kindo.ai/"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.kindo.ai/",
+          "https://www.kindo.ai/company",
+          "https://www.kindo.ai/contact"
+        ],
+        "enriched_at": "2026-11-15T13:41:32+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Webflow",
+            "category": "cms"
+          },
+          {
+            "name": "HubSpot",
+            "category": "marketing"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Ashby",
+            "category": "hiring"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://techfundingnews.com/kindo-raises-30m-after-800-revenue-growth-can-one-control-center-tame-enterprise-ai-agents/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Thu, 12 Nov 2026 14:00:00 +0000",
+          "seen_at": "2026-11-15T13:41:28+00:00"
+        },
+        {
+          "type": "hiring",
+          "source": "ashby",
+          "url": "https://jobs.ashbyhq.com/kindo",
+          "roles": [
+            "Senior / Staff Software Engineer, AI"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-06-03T19:18:17.244+00:00",
+          "seen_at": "2026-11-15T13:41:40+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Charlie Hulcher",
+          "role": "",
+          "org": "Kindo",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/charliehulcher",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.kindo.ai/"
+        },
+        {
+          "name": "Tony Wong",
+          "role": "",
+          "org": "Kindo",
+          "evidence": "schema.org Person markup",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.kindo.ai/"
+        },
+        {
+          "name": "Bryan Vann",
+          "role": "",
+          "org": "Kindo",
+          "evidence": "schema.org Person markup",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.kindo.ai/"
+        },
+        {
+          "name": "Ron Williams",
+          "role": "",
+          "org": "Kindo",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/ronwilliams",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.kindo.ai/"
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Mnemonic Labs",
+      "core_product": "A foundation model for quantitative trading that learns directly from market activity",
+      "tech_stack": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "CUDA",
+        "AWS"
+      ],
+      "likely_bottleneck": "scaling the data ingestion and preprocessing pipeline for massive market datasets",
+      "value_prop_pitch": "You could replace the custom data pipeline with a Next.js front‑end that streams market data into a vector store, letting you query and enrich raw ticks on the fly. This lets your engineers focus on model research while the semantic search layer handles fast, scalable retrieval of relevant market contexts.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "",
+      "source_url": "https://www.ycombinator.com/launches/XRK-mnemonic-labs-openai-for-financial-markets",
+      "discovered_at": "2026-11-15T13:41:04+00:00",
+      "source": "yc",
+      "score": 48,
       "gaps": [
         "website",
-        "tech stack",
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
         "email",
         "phone"
       ],
@@ -30,7 +192,7 @@
         "contact_page": "",
         "product_access": [],
         "pages_crawled": [],
-        "enriched_at": "2026-11-14T13:13:12+00:00",
+        "enriched_at": "2026-11-15T13:41:46+00:00",
         "status": "no_website",
         "attempts": 0,
         "last_attempt": "",
@@ -38,352 +200,103 @@
       },
       "signals": [
         {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://news.crunchbase.com/fintech/nubank-alum-colombia-startup-palomma-ai-rental-services/",
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/XRK-mnemonic-labs-openai-for-financial-markets",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Wed, 11 Nov 2026 13:00:04 +0000",
-          "seen_at": "2026-11-14T13:13:09+00:00"
+          "posted_at": "",
+          "seen_at": "2026-11-15T13:41:28+00:00"
         }
       ],
       "people": [
         {
-          "name": "Cipriano Echavarría",
-          "role": "Co‑founder & CEO",
-          "org": "Palomma",
-          "evidence": "Echavarría’s Medellín‑based startup, Palomma, has raised $10 million in Series A funding",
-          "linkedin": "https://www.crunchbase.com/person/cipriano-echavarria-c612",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://news.crunchbase.com/fintech/nubank-alum-colombia-startup-palomma-ai-rental-services/"
-        },
-        {
-          "name": "Felipe Monsalve",
+          "name": "Videh Seksaria",
           "role": "Co‑founder",
-          "org": "Palomma",
-          "evidence": "After nearly two years at Nubank, Echavarría went on to found Palomma with Felipe Monsalve",
-          "linkedin": "https://www.crunchbase.com/person/felipe-monsalve-08f3",
+          "org": "Mnemonic Labs",
+          "evidence": "We’re Mnemonic Labs - a neolab training a foundation model for quant trading that learns directly from market activity",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://news.crunchbase.com/fintech/nubank-alum-colombia-startup-palomma-ai-rental-services/"
-        },
-        {
-          "name": "Nicolás Gómez del Campo",
-          "role": "Co‑founder",
-          "org": "Palomma",
-          "evidence": "Echavarría went on to found Palomma with Felipe Monsalve and Nicolás Gómez del Campo",
-          "linkedin": "https://www.crunchbase.com/person/nicol%C3%A1s-g%C3%B3mez-del-campo",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://news.crunchbase.com/fintech/nubank-alum-colombia-startup-palomma-ai-rental-services/"
+          "link_source": ""
         }
       ],
       "edges": [
         {
-          "src": "Cometa",
-          "rel": "invested_in",
-          "dst": "Palomma",
-          "evidence": "Palomma ... has raised $10 million in Series A funding led by Mexican venture firm Cometa"
+          "src": "Videb Seksaria",
+          "rel": "founded",
+          "dst": "Mnemonic Labs",
+          "evidence": "We’re Mnemonic Labs - a neolab training a foundation model for quant trading"
         },
         {
-          "src": "Volpe Capital",
-          "rel": "invested_in",
-          "dst": "Palomma",
-          "evidence": "Participants include Volpe Capital"
-        },
-        {
-          "src": "Y Combinator",
-          "rel": "backed_by",
-          "dst": "Palomma",
-          "evidence": "existing investors Y Combinator"
-        },
-        {
-          "src": "Felipe Monsalve",
+          "src": "Kalki Seksaria",
           "rel": "cofounded",
-          "dst": "Palomma",
-          "evidence": "Echavarría went on to found Palomma with Felipe Monsalve"
+          "dst": "Mnemonic Labs",
+          "evidence": "We met 28 years ago shortly after Videh was born (we’re brothers!)"
+        },
+        {
+          "src": "Kalki Seksaria",
+          "rel": "previously_at",
+          "dst": "Tower Research",
+          "evidence": "Kalki made $20M in annual PnL at 22 at Tower Research"
+        },
+        {
+          "src": "Videh Seksaria",
+          "rel": "previously_at",
+          "dst": "Citadel",
+          "evidence": "Videh was the youngest quant at Citadel at 19"
         }
       ]
     },
     {
-      "company_name": "antimattr",
-      "core_product": "A voice‑first hardware interface consisting of noise‑isolating earbuds and a control ring for interacting with AI agents.",
-      "tech_stack": [
-        "embedded C",
-        "DSP",
-        "AI models"
-      ],
-      "likely_bottleneck": "optimizing real‑time noise‑cancellation algorithms on limited embedded hardware",
-      "value_prop_pitch": "I can help you build a cloud‑backed control panel with Next.js that lets you quickly iterate on noise‑cancellation algorithms and push updates to devices over the air. Coupled with a vector‑based semantic search of your audio logs, you’ll instantly surface the worst‑case noise scenarios and fix them without costly hardware revisions.",
+      "company_name": "Perit",
+      "core_product": "Expert‑led datasets and reinforcement‑learning environments that provide AI labs with high‑quality multimodal data and real‑world evaluation benchmarks.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the end‑to‑end data collection, annotation, and RL‑environment pipeline to handle millions of hours of multimodal content while keeping quality and latency low.",
+      "value_prop_pitch": "You could replace a lot of the custom data‑pipeline glue with a unified Next.js front‑end that streams annotation tasks and serves vector‑based semantic search over collected assets, dramatically reducing latency and engineering overhead. This lets your experts focus on labeling while the platform handles routing, caching, and retrieval at scale.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.antimattr.one",
-      "source_url": "https://www.ycombinator.com/launches/XSv-antimattr-voice-first-hardware-interface-for-human-agent-interaction",
-      "discovered_at": "2026-11-14T13:12:12+00:00",
+      "website": "https://perit.ai",
+      "source_url": "https://www.ycombinator.com/launches/XT2-perit-expert-led-datasets-for-frontier-labs",
+      "discovered_at": "2026-11-15T13:41:04+00:00",
       "source": "yc",
-      "score": 74,
+      "score": 65,
       "gaps": [
         "location",
         "funding amount",
-        "people profiles",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.antimattr.one",
-        "emails": [
-          {
-            "value": "team@antimattr.one",
-            "kind": "general",
-            "source_url": "https://www.antimattr.one/contact"
-          },
-          {
-            "value": "support@antimattr.one",
-            "kind": "support",
-            "source_url": "https://www.antimattr.one/contact"
-          },
-          {
-            "value": "future@antimattr.one",
-            "kind": "person",
-            "source_url": "https://www.antimattr.one/contact"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/antimattr",
-          "twitter": "https://x.com/antimattr_one"
-        },
-        "contact_page": "https://www.antimattr.one/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.antimattr.one/",
-          "https://www.antimattr.one/team",
-          "https://www.antimattr.one/contact",
-          "https://www.antimattr.one/about"
-        ],
-        "enriched_at": "2026-11-14T13:13:15+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Framer",
-            "category": "cms"
-          },
-          {
-            "name": "PostHog",
-            "category": "analytics"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XSv-antimattr-voice-first-hardware-interface-for-human-agent-interaction",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Sridipto Ghosh",
-          "role": "Founder",
-          "org": "antimattr",
-          "evidence": "**Sridipto Ghosh**",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Sridipto Ghosh",
-          "rel": "founded",
-          "dst": "antimattr",
-          "evidence": "**Sridipto Ghosh**"
-        },
-        {
-          "src": "Y Combinator",
-          "rel": "backed_by",
-          "dst": "antimattr",
-          "evidence": "we're now part of Y Combinator's Fall 2026 batch."
-        }
-      ]
-    },
-    {
-      "company_name": "Tire Swing",
-      "core_product": "An AI platform that automates leasing, resident outreach, eligibility reviews and compliance for affordable‑housing operators.",
-      "tech_stack": [
-        "AI",
-        "cloud",
-        "web"
-      ],
-      "likely_bottleneck": "scaling the AI‑driven document ingestion and semantic matching pipeline as property portfolios grow",
-      "value_prop_pitch": "I can refactor your ingestion pipeline with Next.js API routes to handle high‑throughput uploads while leveraging vector semantic search to instantly match documents to eligibility rules. This will cut latency, reduce server costs, and let your AI focus on accuracy rather than data plumbing.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.gettireswing.com",
-      "source_url": "https://www.ycombinator.com/launches/XTS-tire-swing-the-ai-platform-for-affordable-housing",
-      "discovered_at": "2026-11-14T13:12:12+00:00",
-      "source": "yc",
-      "score": 64,
-      "gaps": [
-        "location",
-        "funding amount",
-        "people profiles",
+        "tech stack",
         "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://www.gettireswing.com",
+        "website": "https://perit.ai",
         "emails": [
           {
-            "value": "support@gettireswing.com",
+            "value": "support@perit.ai",
             "kind": "support",
-            "source_url": "https://www.gettireswing.com/contact"
-          },
-          {
-            "value": "founders@gettireswing.com",
-            "kind": "person",
-            "source_url": "https://www.gettireswing.com/contact"
-          },
-          {
-            "value": "lucas@gettireswing.com",
-            "kind": "person",
-            "source_url": "https://www.gettireswing.com/"
-          },
-          {
-            "value": "security@gettireswing.com",
-            "kind": "other",
-            "source_url": "https://www.gettireswing.com/contact"
+            "source_url": "https://perit.ai/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/tire-swing"
+          "linkedin": "https://www.linkedin.com/company/perit-ai"
         },
-        "contact_page": "https://www.gettireswing.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.gettireswing.com/",
-          "https://www.gettireswing.com/contact"
-        ],
-        "enriched_at": "2026-11-14T13:13:24+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
+        "contact_page": "https://perit.ai/contact",
+        "product_access": [
           {
-            "name": "Astro",
-            "category": "framework"
-          },
-          {
-            "name": "PostHog",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XTS-tire-swing-the-ai-platform-for-affordable-housing",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Paul Witten",
-          "role": "Co‑founder",
-          "org": "Tire Swing",
-          "evidence": "Hey everyone! We’re Paul and Lucas, co‑founders of Tire Swing.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Paul Witten",
-          "rel": "founded",
-          "dst": "Tire Swing",
-          "evidence": "Hey everyone! We’re Paul and Lucas, co‑founders of Tire Swing."
-        }
-      ]
-    },
-    {
-      "company_name": "Vexo",
-      "core_product": "An always‑listening AI bracelet that records conversations, summarizes them and can act on requests such as drafting emails or planning trips.",
-      "tech_stack": [
-        "embedded C",
-        "Python",
-        "TensorFlow",
-        "Bluetooth Low Energy",
-        "React Native",
-        "Node.js"
-      ],
-      "likely_bottleneck": "scalable, low‑latency speech‑to‑text transcription while preserving on‑device privacy",
-      "value_prop_pitch": "You could offload the transcription pipeline to a serverless Next.js API that streams audio to a vector‑based semantic search index, dramatically cutting latency and cost. Then you can surface relevant snippets instantly in the app without sacrificing privacy because only encrypted embeddings are stored.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.vexoai.com",
-      "source_url": "https://www.ycombinator.com/launches/XTy-vexo-an-always-listening-ai-bracelet-that-remembers-and-acts",
-      "discovered_at": "2026-11-14T13:12:12+00:00",
-      "source": "yc",
-      "score": 63,
-      "gaps": [
-        "location",
-        "funding amount",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.vexoai.com",
-        "emails": [
-          {
-            "value": "support@vexoai.com",
-            "kind": "support",
-            "source_url": "https://www.vexoai.com/"
+            "label": "Pricing",
+            "url": "https://perit.ai/pricing"
           }
         ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/tryvexoai",
-          "linkedin": "https://www.linkedin.com/company/tryvexoai"
-        },
-        "contact_page": "https://www.vexoai.com/contact",
-        "product_access": [],
         "pages_crawled": [
-          "https://www.vexoai.com/",
-          "https://www.vexoai.com/about",
-          "https://www.vexoai.com/contact",
-          "https://www.vexoai.com/team"
+          "https://perit.ai/",
+          "https://perit.ai/about",
+          "https://perit.ai/contact"
         ],
-        "enriched_at": "2026-11-14T13:13:33+00:00",
+        "enriched_at": "2026-11-15T13:41:50+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -402,21 +315,32 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XTy-vexo-an-always-listening-ai-bracelet-that-remembers-and-acts",
+          "url": "https://www.ycombinator.com/launches/XT2-perit-expert-led-datasets-for-frontier-labs",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-14T13:13:09+00:00"
+          "seen_at": "2026-11-15T13:41:28+00:00"
         }
       ],
       "people": [
         {
-          "name": "Farqaleet Kiani",
-          "role": "Co‑founder",
-          "org": "Vexo",
-          "evidence": "Farqaleet built hardware and firmware for Tesla's energy products and Optimus",
-          "linkedin": "",
-          "twitter": "",
+          "name": "Kshitij Dixit",
+          "role": "Founder",
+          "org": "Perit",
+          "evidence": "Perit was founded by @Kshitij Dixit ... both IIT Kharagpur alumni and second-time YC founders.",
+          "linkedin": "https://www.linkedin.com/in/kshitijdixit",
+          "twitter": "https://x.com/kshitij_dixit",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Poorva Dixit",
+          "role": "Co‑founder & CTO",
+          "org": "Perit",
+          "evidence": "Poorva is the cofounder and CTO. She has previously trained models at Google, built scalable systems at Atlassian, and built map‑quality systems at Uber.",
+          "linkedin": "https://www.linkedin.com/in/poorvadixit",
+          "twitter": "https://x.com/PoorvaDixit3",
           "github": "",
           "homepage": "",
           "link_source": ""
@@ -424,22 +348,22 @@
       ],
       "edges": [
         {
-          "src": "Farqaleet Kiani",
+          "src": "Kshitij Dixit",
           "rel": "founded",
-          "dst": "Vexo",
-          "evidence": "Hey everyone! We're Haris, Farqaleet, and Vikram, the founders of Vexo"
+          "dst": "Perit",
+          "evidence": "Perit was founded by @Kshitij Dixit ..."
         },
         {
-          "src": "Farqaleet Kiani",
-          "rel": "previously_at",
-          "dst": "Tesla",
-          "evidence": "Farqaleet built hardware and firmware for Tesla's energy products and Optimus"
+          "src": "Poorva Dixit",
+          "rel": "cofounded",
+          "dst": "Perit",
+          "evidence": "Poorva is the cofounder and CTO."
         }
       ]
     },
     {
-      "company_name": "Common Prefix",
-      "core_product": "We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with decades in hedge funds, TradFi, and Web3. We lead Axelar, the network that moves assets and messages between bl",
+      "company_name": "Early-stage Startup",
+      "core_product": "We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -447,193 +371,13 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50488627",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
+      "website": "https://www.earlystaged.com",
+      "source_url": "https://news.ycombinator.com/item?id=50500910",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
       "source": "hiring",
-      "score": 15,
+      "score": 34,
       "gaps": [
         "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-14T13:13:45+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50488627",
-          "roles": [
-            "Senior Software Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-13T19:37:57Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Joulent",
-      "core_product": "We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company brain: one place to find what Joulent knows and has decided, with a fleet of agents that put that knowledge ",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50487782",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
-      "source": "hiring",
-      "score": 15,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-14T13:13:48+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50487782",
-          "roles": [
-            "AI Engineer",
-            "Company Brain"
-          ],
-          "role_kinds": [
-            "eng",
-            "other"
-          ],
-          "posted_at": "2026-11-13T18:34:24Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Confidential Healthcare AI Startup",
-      "core_product": "I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management (RCM) platform for dental practices.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50484305",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
-      "source": "hiring",
-      "score": 15,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-14T13:13:51+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50484305",
-          "roles": [
-            "Senior Full Stack Engineer (Frontend-Leaning)"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-13T14:47:49Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Paradromics",
-      "core_product": "Paradromics is building a high bandwidth brain-machine interface for clinical use. The implant we built is restoring function to patients by streaming out neural data from specific brain regions in real time, which we convert to e.g. speech",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50341026",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
-      "source": "hiring",
-      "score": 27,
-      "gaps": [
-        "funding stage",
-        "website",
         "location",
         "funding amount",
         "tech stack",
@@ -643,221 +387,25 @@
         "phone"
       ],
       "contact": {
-        "website": "",
+        "website": "https://www.earlystaged.com",
         "emails": [
           {
-            "value": "ehuber@paradromics.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50341026"
+            "value": "info@earlystaged.com",
+            "kind": "general",
+            "source_url": "https://www.earlystaged.com/"
           }
         ],
         "phones": [],
         "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-14T13:13:54+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50341026",
-          "roles": [
-            "Embedded Software Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-02T18:12:46Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Memorang",
-      "core_product": "Memorang is an \"AI stack for education\" that helps organizations build, launch, and monetize AI-powered learning and assessment products. Think Vercel plus Shopify for EdTech. We currently operate on an enterprise model, serving as the AI t",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50340985",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
-      "source": "hiring",
-      "score": 21,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [
-          {
-            "value": "careers@memorang.com",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50340985"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-14T13:13:56+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340985",
-          "roles": [
-            "Product Engineers",
-            "Design Engineers",
-            "Technical Project Manager",
-            "Sales Engineer"
-          ],
-          "role_kinds": [
-            "eng",
-            "design",
-            "other",
-            "sales"
-          ],
-          "posted_at": "2026-11-02T18:10:07Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "VIVA Finance",
-      "core_product": "VIVA is a Fintech Startup based in Atlanta, GA with the mission to build a more inclusive financial system. VIVA offers unsecured personal loans to customers who have traditionally been excluded and taken advantage of by the legacy financia",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50340983",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
-      "source": "hiring",
-      "score": 27,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [
-          {
-            "value": "alexa@viva-finance.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50340983"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-14T13:13:59+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340983",
-          "roles": [
-            "Atlanta",
-            "GA (In Person)"
-          ],
-          "role_kinds": [
-            "other"
-          ],
-          "posted_at": "2026-11-02T18:10:03Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Jump",
-      "core_product": "Machine shops lose jobs because quoting is slow. A part comes in, someone has to read the drawing, figure out how to make it, and price it, and that can take hours. Many shops also can't put customer drawings in the cloud (ITAR, export cont",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://jumpscientific.com",
-      "source_url": "https://news.ycombinator.com/item?id=50340958",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
-      "source": "hiring",
-      "score": 29,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://jumpscientific.com",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/jump-scientific",
-          "twitter": "https://x.com/jumpscientific"
-        },
-        "contact_page": "https://jumpscientific.com/contact/?topic=Solutions",
+        "contact_page": "https://www.earlystaged.com/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://jumpscientific.com/",
-          "https://jumpscientific.com/contact/?topic=Solutions",
-          "https://jumpscientific.com/contact/",
-          "https://jumpscientific.com/company/"
+          "https://www.earlystaged.com/",
+          "https://www.earlystaged.com/about",
+          "https://www.earlystaged.com/team",
+          "https://www.earlystaged.com/contact"
         ],
-        "enriched_at": "2026-11-14T13:14:03+00:00",
+        "enriched_at": "2026-11-15T13:41:56+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -867,25 +415,24 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340958",
+          "url": "https://news.ycombinator.com/item?id=50500910",
           "roles": [
-            "Founding Engineers (Software/AI, Manufacturing)",
-            "all roles"
+            "Software Engineer",
+            "Data Analyst"
           ],
           "role_kinds": [
-            "founding",
-            "other"
+            "eng"
           ],
-          "posted_at": "2026-11-02T18:08:36Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
+          "posted_at": "2026-11-14T21:17:20Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "Ledgebrook",
-      "core_product": "We value clear ownership, direct communication, and giving people room to get things done without micromanagement. Employees share in the company's success through ownership.",
+      "company_name": "Mozilla",
+      "core_product": "Mozilla's New Products group is a small team building new things on top of browser engine technology. We're hiring a hands-on, senior IC to run experiments inside browser engine internals and find out which ideas actually hold up.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -893,9 +440,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.ledgebrook.com",
-      "source_url": "https://news.ycombinator.com/item?id=50340892",
-      "discovered_at": "2026-11-14T13:13:09+00:00",
+      "website": "https://www.mozilla.org",
+      "source_url": "https://news.ycombinator.com/item?id=50340840",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
       "source": "hiring",
       "score": 41,
       "gaps": [
@@ -909,41 +456,192 @@
         "phone"
       ],
       "contact": {
-        "website": "https://www.ledgebrook.com",
+        "website": "https://www.mozilla.org",
         "emails": [
           {
-            "value": "info@ledgebrook.com",
-            "kind": "general",
-            "source_url": "https://www.ledgebrook.com/contact"
-          },
-          {
-            "value": "press@ledgebrook.com",
-            "kind": "press",
-            "source_url": "https://www.ledgebrook.com/contact"
-          },
-          {
-            "value": "hiring@ledgebrook.com",
+            "value": "trademark-permissions@mozilla.com",
             "kind": "person",
-            "source_url": "https://www.ledgebrook.com/contact"
-          },
-          {
-            "value": "uw@ledgebrook.com",
-            "kind": "person",
-            "source_url": "https://www.ledgebrook.com/contact"
+            "source_url": "https://www.mozilla.org/en-US/contact/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/ledgebrook-insurance"
+          "linkedin": "https://www.linkedin.com/company/mozilla-corporation"
         },
-        "contact_page": "https://www.ledgebrook.com/contact",
+        "contact_page": "https://www.mozilla.org/en-US/contact/",
         "product_access": [],
         "pages_crawled": [
-          "https://www.ledgebrook.com/",
-          "https://www.ledgebrook.com/contact",
-          "https://www.ledgebrook.com/about"
+          "https://www.mozilla.org/",
+          "https://www.mozilla.org/en-US/about/",
+          "https://www.mozilla.org/en-US/contact/",
+          "https://www.mozilla.org/en-US/about/leadership/"
         ],
-        "enriched_at": "2026-11-14T13:14:07+00:00",
+        "enriched_at": "2026-11-15T13:42:02+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50340840",
+          "roles": [
+            "Sr. Staff Software Engineer",
+            "Browser (New Products)"
+          ],
+          "role_kinds": [
+            "eng",
+            "other"
+          ],
+          "posted_at": "2026-11-02T18:01:01Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Postscript",
+      "core_product": "Postscript is an agentic retention marketing platform (SMS, RCS, Email) used by 20,000+ Shopify brands. We’re Series C and pacing toward profitability.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://app.postscript.io",
+      "source_url": "https://news.ycombinator.com/item?id=50340820",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "source": "hiring",
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://app.postscript.io",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://app.postscript.io/",
+          "https://app.postscript.io/login?next=/contact",
+          "https://app.postscript.io/login?next=/about",
+          "https://app.postscript.io/login?next=/team"
+        ],
+        "enriched_at": "2026-11-15T13:42:10+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "React",
+            "category": "framework"
+          },
+          {
+            "name": "HubSpot",
+            "category": "marketing"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Amplitude",
+            "category": "analytics"
+          },
+          {
+            "name": "Hotjar",
+            "category": "analytics"
+          },
+          {
+            "name": "Stripe",
+            "category": "payments"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50340820",
+          "roles": [
+            "Senior Software Engineer",
+            "Full Stack"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-02T18:00:14Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Distru",
+      "core_product": "Distru is the #1 ERP in the cannabis industry. $3.5B in annual GMV flows through our platform, and most of the top cannabis brands and distributors in the US run their entire operation on us to stay compliant.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "Oakland, US",
+      "website": "https://www.distru.com",
+      "source_url": "https://news.ycombinator.com/item?id=50340600",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "source": "hiring",
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://www.distru.com",
+        "emails": [
+          {
+            "value": "hello@distru.com",
+            "kind": "general",
+            "source_url": "https://www.distru.com/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+15108714169",
+            "kind": "main",
+            "source_url": "https://www.distru.com/"
+          }
+        ],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/distru"
+        },
+        "contact_page": "https://www.distru.com/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://www.distru.com/",
+          "https://www.distru.com/about",
+          "https://www.distru.com/team",
+          "https://www.distru.com/contact"
+        ],
+        "enriched_at": "2026-11-15T13:42:15+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -953,16 +651,20 @@
             "category": "cms"
           },
           {
-            "name": "Google Analytics",
+            "name": "HubSpot",
+            "category": "marketing"
+          },
+          {
+            "name": "Intercom",
+            "category": "support"
+          },
+          {
+            "name": "PostHog",
             "category": "analytics"
           },
           {
-            "name": "Supabase",
-            "category": "backend"
-          },
-          {
-            "name": "Cloudflare",
-            "category": "hosting"
+            "name": "Google Analytics",
+            "category": "analytics"
           }
         ]
       },
@@ -970,84 +672,399 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340892",
+          "url": "https://news.ycombinator.com/item?id=50340600",
           "roles": [
-            "Engineering",
-            "Product",
-            "Data"
+            "AI Product Engineer"
           ],
           "role_kinds": [
-            "eng",
-            "product"
+            "eng"
           ],
-          "posted_at": "2026-11-02T18:04:53Z",
-          "seen_at": "2026-11-14T13:13:09+00:00"
+          "posted_at": "2026-11-02T17:46:45Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
         }
       ],
       "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Helmsted",
+      "core_product": "Helmsted is the AI-native operating system for wealth advisors of complex households: planning, tax and estate analysis, meetings and the client portal, run by agents that do the work. Small team, live with pilot firms, shipping daily.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://helmsted.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50340551",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "source": "hiring",
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://helmsted.ai",
+        "emails": [
+          {
+            "value": "hello@helmsted.ai",
+            "kind": "general",
+            "source_url": "https://helmsted.ai/"
+          },
+          {
+            "value": "careers@helmsted.ai",
+            "kind": "other",
+            "source_url": "https://news.ycombinator.com/item?id=50340551"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/helmsted"
+        },
+        "contact_page": "https://helmsted.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://helmsted.ai/",
+          "https://helmsted.ai/about",
+          "https://helmsted.ai/team",
+          "https://helmsted.ai/contact"
+        ],
+        "enriched_at": "2026-11-15T13:42:18+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50340551",
+          "roles": [
+            "Founding AI Engineer"
+          ],
+          "role_kinds": [
+            "founding"
+          ],
+          "posted_at": "2026-11-02T17:43:25Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "AI x Healthcare Startup",
+      "core_product": "We're looking for a backend-leaning fullstack dev. You will be one of the first engineers outside of the founding team. Here is a bit more about us: We're a seed stage AI startup backed by top tier investors. We're on a mission to ensure ev",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "",
+      "source_url": "https://news.ycombinator.com/item?id=50340480",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "source": "hiring",
+      "score": 10,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-15T13:42:22+00:00",
+        "status": "no_website",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50340480",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-02T17:39:52Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Mesmer",
+      "core_product": "Mesmer builds software factories for engineering teams. Keeping a team at the state of the art with agents is a full-time job, so we do it for our customers: we're always finding the biggest bottleneck in how their team ships and fixing it ",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "",
+      "source_url": "https://news.ycombinator.com/item?id=50340449",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "source": "hiring",
+      "score": 27,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "",
+        "emails": [
+          {
+            "value": "hiring@mesmer.co",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50340449"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-15T13:42:26+00:00",
+        "status": "no_website",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50340449",
+          "roles": [
+            "Founding Engineer"
+          ],
+          "role_kinds": [
+            "founding"
+          ],
+          "posted_at": "2026-11-02T17:38:15Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Thunder Compute",
+      "core_product": "We run a GPU cloud on systems software we built from scratch in C++. We're hiring for our systems engineering team; designing the distributed system behind what is essentially a hypervisor for GPUs.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.thundercompute.com",
+      "source_url": "https://news.ycombinator.com/item?id=50340438",
+      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "source": "hiring",
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.thundercompute.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/ThunderCompute",
+          "linkedin": "https://www.linkedin.com/company/102863366",
+          "github": "https://github.com/Thunder-Compute"
+        },
+        "contact_page": "https://www.thundercompute.com/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://www.thundercompute.com/pricing"
+          },
+          {
+            "label": "Docs",
+            "url": "https://www.thundercompute.com/docs"
+          },
+          {
+            "label": "Get started",
+            "url": "https://console.thundercompute.com/signup"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.thundercompute.com/",
+          "https://www.thundercompute.com/contact"
+        ],
+        "enriched_at": "2026-11-15T13:42:29+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "Webflow",
+            "category": "cms"
+          },
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Cloudflare",
+            "category": "hosting"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50340438",
+          "roles": [
+            "Systems Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-02T17:37:25Z",
+          "seen_at": "2026-11-15T13:41:28+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Brian Model",
+          "role": "Co-Founder and CTO",
+          "org": "Thunder Compute",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/brian-model",
+          "twitter": "https://x.com/brain_model",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.thundercompute.com/"
+        },
+        {
+          "name": "Carl Peterson",
+          "role": "Co-Founder and CEO",
+          "org": "Thunder Compute",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/cpeterson42",
+          "twitter": "https://x.com/carlpeterson",
+          "github": "https://github.com/cpeterson42",
+          "homepage": "https://www.thundercompute.com",
+          "link_source": "https://www.thundercompute.com/"
+        }
+      ],
       "edges": []
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Palomma",
-        "score": 66,
+        "company": "Kindo",
+        "score": 54,
         "source": "rss"
       },
       {
-        "company": "antimattr",
-        "score": 74,
+        "company": "Mnemonic Labs",
+        "score": 48,
         "source": "yc"
       },
       {
-        "company": "Tire Swing",
-        "score": 64,
+        "company": "Perit",
+        "score": 65,
         "source": "yc"
       },
       {
-        "company": "Vexo",
-        "score": 63,
-        "source": "yc"
-      },
-      {
-        "company": "Common Prefix",
-        "score": 15,
+        "company": "Early-stage Startup",
+        "score": 34,
         "source": "hiring"
       },
       {
-        "company": "Joulent",
-        "score": 15,
+        "company": "Mozilla",
+        "score": 41,
         "source": "hiring"
       },
       {
-        "company": "Confidential Healthcare AI Startup",
-        "score": 15,
-        "source": "hiring"
-      },
-      {
-        "company": "Paradromics",
-        "score": 27,
-        "source": "hiring"
-      },
-      {
-        "company": "Memorang",
+        "company": "Postscript",
         "score": 21,
         "source": "hiring"
       },
       {
-        "company": "VIVA Finance",
+        "company": "Distru",
+        "score": 44,
+        "source": "hiring"
+      },
+      {
+        "company": "Helmsted",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "AI x Healthcare Startup",
+        "score": 10,
+        "source": "hiring"
+      },
+      {
+        "company": "Mesmer",
         "score": 27,
         "source": "hiring"
       },
       {
-        "company": "Jump",
-        "score": 29,
-        "source": "hiring"
-      },
-      {
-        "company": "Ledgebrook",
-        "score": 41,
+        "company": "Thunder Compute",
+        "score": 49,
         "source": "hiring"
       }
     ],

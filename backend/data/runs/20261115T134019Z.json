@@ -1,0 +1,639 @@
+{
+  "run_id": "20261115T134019Z",
+  "started_at": "2026-11-15T13:40:19+00:00",
+  "duration_s": 144.1,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 257,
+    "selected": 5,
+    "crawled": 5,
+    "extracted": 4,
+    "relevant": 3,
+    "valid": 3
+  },
+  "tokens": 14975,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 34,
+    "rss": 61,
+    "web": 30,
+    "edgar": 0
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre\u2011seed startup launches AI\u2011powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building vector search API for Next.js apps",
+      "seed funding announced for retrieval\u2011augmented generation startup targeting data\u2011heavy web applications",
+      "founder interview with RAG startup enabling real\u2011time web data retrieval November 2026",
+      "venture capital invests in early\u2011stage search\u2011engine infrastructure startup for freelancers"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search API",
+      "developer tooling",
+      "AI retrieval"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 39,
+        "accepted": 28,
+        "score_sum": 2134,
+        "yield": 0.718,
+        "avg_score": 76.2
+      },
+      "web": {
+        "crawled": 13,
+        "accepted": 10,
+        "score_sum": 756,
+        "yield": 0.769,
+        "avg_score": 75.6
+      },
+      "hiring": {
+        "crawled": 140,
+        "accepted": 139,
+        "score_sum": 3963,
+        "yield": 0.993,
+        "avg_score": 28.5
+      },
+      "edgar": {
+        "crawled": 25,
+        "accepted": 5,
+        "score_sum": 307,
+        "yield": 0.2,
+        "avg_score": 61.4
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 231,
+        "yield": 1.0,
+        "avg_score": 57.8
+      },
+      "yc": {
+        "crawled": 16,
+        "accepted": 16,
+        "score_sum": 1026,
+        "yield": 1.0,
+        "avg_score": 64.1
+      }
+    },
+    "caps": {
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 2,
+      "yc": 3
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 95,
+    "fallbacks": 0,
+    "avg_latency_ms": 80.6,
+    "jev_input_tokens": 45384,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-15T13:40:19+00:00",
+      "offset_s": 0.0,
+      "duration_s": 20.12,
+      "status": "ok",
+      "counts": {
+        "candidates": 257,
+        "src_hn": 31,
+        "src_launch_hn": 3,
+        "src_rss": 61,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-15T13:40:39+00:00",
+      "offset_s": 20.12,
+      "duration_s": 7.28,
+      "status": "ok",
+      "counts": {
+        "in": 257,
+        "selected": 5,
+        "hiring_lane": 8,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 2, 'yc': 3}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-15T13:40:46+00:00",
+      "offset_s": 27.41,
+      "duration_s": 17.76,
+      "status": "ok",
+      "counts": {
+        "requested": 5,
+        "crawled": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-15T13:41:04+00:00",
+      "offset_s": 45.16,
+      "duration_s": 23.67,
+      "status": "ok",
+      "counts": {
+        "extracted": 4,
+        "relevant": 3,
+        "valid": 3
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-15T13:41:28+00:00",
+      "offset_s": 68.84,
+      "duration_s": 61.24,
+      "status": "ok",
+      "counts": {
+        "startups": 11,
+        "websites": 8,
+        "emails": 8,
+        "phones": 1
+      },
+      "notes": [
+        "structured data: 4 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "1 open roles (ashby)",
+        "no website found",
+        "structured data: 2 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-15T13:42:29+00:00",
+      "offset_s": 130.08,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 39
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-15T13:42:29+00:00",
+      "offset_s": 130.08,
+      "duration_s": 3.88,
+      "status": "ok",
+      "counts": {
+        "startups": 11,
+        "people": 9,
+        "edges": 6
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-11-15T13:42:33+00:00",
+      "offset_s": 133.96,
+      "duration_s": 7.23,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 3
+      },
+      "notes": [
+        "Kindo: ok, score 54"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.42,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 0.97,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 34,
+      "seconds": 2.03,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 61,
+      "seconds": 2.8,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 10.39,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 0,
+      "seconds": 20.12,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 12552,
+    "completion_tokens": 2423,
+    "total_tokens": 14975,
+    "calls": 8,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 8348,
+        "completion_tokens": 2277,
+        "total_tokens": 10625,
+        "calls": 4
+      },
+      "team": {
+        "prompt_tokens": 4204,
+        "completion_tokens": 146,
+        "total_tokens": 4350,
+        "calls": 4
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 12552,
+        "completion_tokens": 2423,
+        "total_tokens": 14975,
+        "calls": 8
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 12552,
+        "completion_tokens": 2423,
+        "total_tokens": 14975,
+        "calls": 8
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 257,
+    "crawled": 5,
+    "extracted": 4,
+    "relevant": 3,
+    "valid": 3,
+    "sources": {
+      "rss": 1,
+      "yc": 2
+    },
+    "people": 9,
+    "edges": 6,
+    "dropped_ungrounded": 13,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 8,
+    "with_website": 8,
+    "with_email": 7,
+    "with_phone": 1,
+    "people_linked": 6,
+    "avg_score": 39.2,
+    "qualified": 1,
+    "avg_qualified_score": 65.0,
+    "issues": {
+      "warn: empty tech_stack": 2,
+      "not a relevant startup page": 1,
+      "extraction error": 1
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Kindo",
+      "url": "https://techfundingnews.com/kindo-raises-30m-after-800-revenue-growth-can-one-control-center-tame-enterprise-ai-agents/",
+      "source": "rss",
+      "people": 0,
+      "edges": 0,
+      "score": 54,
+      "gaps": [
+        "funding stage",
+        "tech stack",
+        "founder",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.kindo.ai",
+      "emails": 3,
+      "phones": 0
+    },
+    {
+      "company": "Mnemonic Labs",
+      "url": "https://www.ycombinator.com/launches/XRK-mnemonic-labs-openai-for-financial-markets",
+      "source": "yc",
+      "people": 1,
+      "edges": 4,
+      "score": 48,
+      "gaps": [
+        "website",
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Perit",
+      "url": "https://www.ycombinator.com/launches/XT2-perit-expert-led-datasets-for-frontier-labs",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 65,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "website": "https://perit.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Early-stage Startup",
+      "url": "https://news.ycombinator.com/item?id=50500910",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.earlystaged.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Mozilla",
+      "url": "https://job-boards.greenhouse.io/mozilla/jobs/8265116",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.mozilla.org",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Postscript",
+      "url": "https://news.ycombinator.com/item?id=50340820",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://app.postscript.io",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Distru",
+      "url": "https://www.distru.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.distru.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Helmsted",
+      "url": "https://helmsted.ai/careers",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://helmsted.ai",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "AI x Healthcare Startup",
+      "url": "https://wgwx7h7be0p.typeform.com/to/LV0t8OjI",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 10,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Mesmer",
+      "url": "https://news.ycombinator.com/item?id=50340449",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 27,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Thunder Compute",
+      "url": "https://www.thundercompute.com",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.thundercompute.com",
+      "emails": 0,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://sifted.eu/articles/nvidia-bet-hiverge-plural-raise/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://www.ycombinator.com/launches/XRJ-nines-autonomous-robots-for-ai-data-centers",
+      "source": "yc",
+      "reasons": [
+        "extraction error"
+      ]
+    }
+  ],
+  "errors": [
+    "extract failed https://www.ycombinator.com/launches/XRJ-nines-autonomous-robots-for-ai-data-centers: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m5bf9z41exwbn31jnvk60sb3` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6076, Requested 1957. Please try again in 247.5ms. Need more tokens? Upgrade to Dev Tier"
+  ],
+  "diff": {
+    "added": [
+      {
+        "company": "Kindo",
+        "score": 54,
+        "source": "rss"
+      },
+      {
+        "company": "Mnemonic Labs",
+        "score": 48,
+        "source": "yc"
+      },
+      {
+        "company": "Perit",
+        "score": 65,
+        "source": "yc"
+      },
+      {
+        "company": "Early-stage Startup",
+        "score": 34,
+        "source": "hiring"
+      },
+      {
+        "company": "Mozilla",
+        "score": 41,
+        "source": "hiring"
+      },
+      {
+        "company": "Postscript",
+        "score": 21,
+        "source": "hiring"
+      },
+      {
+        "company": "Distru",
+        "score": 44,
+        "source": "hiring"
+      },
+      {
+        "company": "Helmsted",
+        "score": 38,
+        "source": "hiring"
+      },
+      {
+        "company": "AI x Healthcare Startup",
+        "score": 10,
+        "source": "hiring"
+      },
+      {
+        "company": "Mesmer",
+        "score": 27,
+        "source": "hiring"
+      },
+      {
+        "company": "Thunder Compute",
+        "score": 49,
+        "source": "hiring"
+      }
+    ],
+    "updated": []
+  }
+}
