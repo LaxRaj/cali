@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-11-14T14:57:02+00:00",
+  "started_at": "2026-11-15T15:34:03+00:00",
   "skipped": "",
   "startups": [
     {
@@ -20,62 +20,62 @@
       ]
     },
     {
-      "company": "Ledgebrook",
-      "score": 41,
+      "company": "Thunder Compute",
+      "score": 49,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
-        "founder",
-        "people profiles",
         "investors",
+        "email",
         "phone"
       ],
-      "website": "https://www.ledgebrook.com",
+      "website": "https://www.thundercompute.com",
       "status": "ok",
-      "emails": 4,
+      "emails": 0,
       "phones": 0,
-      "people": 0,
+      "people": 2,
       "edges": 0,
       "notes": [
+        "structured data: 2 people",
         "team llm: 0 people proposed, 0 grounded",
         "team page: +0 people, +0 edges"
       ]
     },
     {
-      "company": "Treat Health",
-      "score": 40,
+      "company": "Mnemonic Labs",
+      "score": 54,
       "gaps": [
-        "funding stage",
+        "location",
         "funding amount",
-        "tech stack",
-        "founder",
         "people profiles",
         "investors",
+        "email",
         "phone"
       ],
-      "website": "https://treat.health",
-      "status": "ok",
-      "emails": 1,
+      "website": "https://mnemoniclabs.com",
+      "status": "crawl_failed",
+      "emails": 0,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
+      "people": 1,
+      "edges": 3,
+      "notes": [
+        "crawl failed"
+      ]
     },
     {
-      "company": "SadServers",
-      "score": 38,
+      "company": "Distru",
+      "score": 44,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
         "investors"
       ],
-      "website": "https://sadservers.com",
+      "website": "https://www.distru.com",
       "status": "ok",
       "emails": 1,
       "phones": 1,
@@ -87,8 +87,8 @@
       ]
     },
     {
-      "company": "Fredrin",
-      "score": 38,
+      "company": "Mozilla",
+      "score": 41,
       "gaps": [
         "funding stage",
         "location",
@@ -99,7 +99,7 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.fredrin.com",
+      "website": "https://www.mozilla.org",
       "status": "ok",
       "emails": 1,
       "phones": 0,
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "company": "Foji",
+      "company": "Helmsted",
       "score": 38,
       "gaps": [
         "funding stage",
@@ -123,19 +123,36 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.foji.io",
+      "website": "https://helmsted.ai",
       "status": "ok",
-      "emails": 2,
+      "emails": 1,
       "phones": 0,
       "people": 0,
       "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
+      "notes": []
     },
     {
-      "company": "Polymath",
+      "company": "Relevant Healthcare",
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://relevant.healthcare",
+      "status": "ok",
+      "emails": 1,
+      "phones": 1,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "Prior Labs",
       "score": 38,
       "gaps": [
         "funding stage",
@@ -147,7 +164,7 @@
         "investors",
         "phone"
       ],
-      "website": "https://polymathmade.com",
+      "website": "https://priorlabs.ai",
       "status": "ok",
       "emails": 1,
       "phones": 0,
@@ -159,7 +176,7 @@
       ]
     },
     {
-      "company": "Collabify",
+      "company": "Avoca",
       "score": 38,
       "gaps": [
         "funding stage",
@@ -171,7 +188,7 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.collabify.cc",
+      "website": "https://www.avoca.ai",
       "status": "ok",
       "emails": 1,
       "phones": 0,
@@ -183,7 +200,7 @@
       ]
     },
     {
-      "company": "Nivelo",
+      "company": "Exponent",
       "score": 38,
       "gaps": [
         "funding stage",
@@ -192,76 +209,51 @@
         "tech stack",
         "founder",
         "people profiles",
-        "investors",
-        "phone"
+        "investors"
       ],
-      "website": "https://nivelo.io",
+      "website": "https://www.exponent.com",
       "status": "ok",
-      "emails": 2,
-      "phones": 0,
+      "emails": 1,
+      "phones": 2,
       "people": 0,
       "edges": 0,
       "notes": [
         "team llm: 0 people proposed, 0 grounded",
         "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Amodo Design",
-      "score": 43,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://amododesign.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 58,
-      "edges": 0,
-      "notes": [
-        "team llm: 58 people proposed, 58 grounded",
-        "team page: +58 people, +0 edges"
       ]
     }
   ],
-  "tokens": 12415,
+  "tokens": 8823,
   "usage": {
-    "prompt_tokens": 9959,
-    "completion_tokens": 2456,
-    "total_tokens": 12415,
-    "calls": 9,
+    "prompt_tokens": 8241,
+    "completion_tokens": 582,
+    "total_tokens": 8823,
+    "calls": 7,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 9959,
-        "completion_tokens": 2456,
-        "total_tokens": 12415,
-        "calls": 9
+        "prompt_tokens": 8241,
+        "completion_tokens": 582,
+        "total_tokens": 8823,
+        "calls": 7
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 9959,
-        "completion_tokens": 2456,
-        "total_tokens": 12415,
-        "calls": 9
+        "prompt_tokens": 8241,
+        "completion_tokens": 582,
+        "total_tokens": 8823,
+        "calls": 7
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 9959,
-        "completion_tokens": 2456,
-        "total_tokens": 12415,
-        "calls": 9
+        "prompt_tokens": 8241,
+        "completion_tokens": 582,
+        "total_tokens": 8823,
+        "calls": 7
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-14T14:58:13+00:00"
+  "finished_at": "2026-11-15T15:35:06+00:00"
 }
