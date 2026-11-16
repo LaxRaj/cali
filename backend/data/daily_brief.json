@@ -1,84 +1,66 @@
 {
-  "generated_at": "2026-11-15T13:42:29+00:00",
+  "generated_at": "2026-11-16T15:13:23+00:00",
   "findings": [
     {
-      "company_name": "Kindo",
-      "core_product": "An AI agent management platform that provides a centralized control centre for discovering, governing, auditing, and cost‑controlling enterprise AI agents.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling real‑time governance and observability across heterogeneous AI agents while maintaining low latency and security in hybrid cloud/on‑prem environments.",
-      "value_prop_pitch": "I can build a Next.js dashboard that surfaces agent activity with instant, vector‑semantic search across logs and policies, letting your ops team pinpoint issues in seconds. This will cut down on latency and engineering overhead while giving you a unified, searchable view of every agent’s actions and data accesses.",
+      "company_name": "Daisytuner",
+      "core_product": "An open‑source compiler that transforms framework code into native code for multiple GPUs and emerging AI chips, using AI agents to auto‑tune performance.",
+      "tech_stack": [
+        "LLVM",
+        "C++",
+        "Python",
+        "GPU drivers",
+        "AI agents"
+      ],
+      "likely_bottleneck": "Scaling and validating compiler optimizations across a rapidly expanding set of heterogeneous hardware platforms.",
+      "value_prop_pitch": "We can build a Next.js dashboard that lets you query and visualize optimization results with vector semantic search, instantly surfacing the best compiler passes for any new chip. This will cut the manual benchmarking loop dramatically and keep your performance database up‑to‑date with minimal engineering effort.",
       "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "$30M",
-      "hq": "Venice, US",
-      "website": "https://www.kindo.ai",
-      "source_url": "https://techfundingnews.com/kindo-raises-30m-after-800-revenue-growth-can-one-control-center-tame-enterprise-ai-agents/",
-      "discovered_at": "2026-11-15T13:41:04+00:00",
+      "funding_stage": "seed",
+      "funding_amount": "€6 million",
+      "hq": "Darmstadt, Germany",
+      "website": "https://daisytuner.com",
+      "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+      "discovered_at": "2026-11-16T15:11:58+00:00",
       "source": "rss",
-      "score": 54,
+      "score": 79,
       "gaps": [
-        "funding stage",
-        "tech stack",
-        "founder",
-        "investors",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.kindo.ai",
-        "emails": [
-          {
-            "value": "info@kindo.ai",
-            "kind": "general",
-            "source_url": "https://www.kindo.ai/"
-          },
-          {
-            "value": "sales@kindo.ai",
-            "kind": "sales",
-            "source_url": "https://www.kindo.ai/contact"
-          },
-          {
-            "value": "press@kindo.ai",
-            "kind": "press",
-            "source_url": "https://www.kindo.ai/contact"
-          }
-        ],
+        "website": "https://daisytuner.com",
+        "emails": [],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/kindo-ai",
-          "twitter": "https://x.com/kindoai"
+          "github": "https://github.com/daisytuner",
+          "linkedin": "https://www.linkedin.com/company/daisytuner"
         },
-        "contact_page": "https://www.kindo.ai/contact",
+        "contact_page": "",
         "product_access": [
           {
-            "label": "Documentation",
-            "url": "https://docs.kindo.ai/"
+            "label": "Docs",
+            "url": "https://docs.daisytuner.com/"
+          },
+          {
+            "label": "Get started",
+            "url": "https://app.daisytuner.com"
           }
         ],
         "pages_crawled": [
-          "https://www.kindo.ai/",
-          "https://www.kindo.ai/company",
-          "https://www.kindo.ai/contact"
+          "https://daisytuner.com/",
+          "https://daisytuner.com/about"
         ],
-        "enriched_at": "2026-11-15T13:41:32+00:00",
+        "enriched_at": "2026-11-16T15:12:43+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Webflow",
-            "category": "cms"
-          },
-          {
-            "name": "HubSpot",
-            "category": "marketing"
+            "name": "Astro",
+            "category": "framework"
           },
           {
             "name": "Google Analytics",
             "category": "analytics"
-          },
-          {
-            "name": "Ashby",
-            "category": "hiring"
           }
         ]
       },
@@ -86,97 +68,296 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://techfundingnews.com/kindo-raises-30m-after-800-revenue-growth-can-one-control-center-tame-enterprise-ai-agents/",
+          "url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Thu, 12 Nov 2026 14:00:00 +0000",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        },
-        {
-          "type": "hiring",
-          "source": "ashby",
-          "url": "https://jobs.ashbyhq.com/kindo",
-          "roles": [
-            "Senior / Staff Software Engineer, AI"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-06-03T19:18:17.244+00:00",
-          "seen_at": "2026-11-15T13:41:40+00:00"
+          "posted_at": "Mon, 16 Nov 2026 07:00:00 +0000",
+          "seen_at": "2026-11-16T15:12:41+00:00"
         }
       ],
       "people": [
         {
-          "name": "Charlie Hulcher",
-          "role": "",
-          "org": "Kindo",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/charliehulcher",
+          "name": "Lukas Trümper",
+          "role": "Founder & CEO",
+          "org": "Daisytuner",
+          "evidence": "He founded Daisytuner in Germany in 2024",
+          "linkedin": "https://www.linkedin.com/in/lukas-truemper/",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://www.kindo.ai/"
+          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
         },
         {
-          "name": "Tony Wong",
-          "role": "",
-          "org": "Kindo",
-          "evidence": "schema.org Person markup",
+          "name": "Adrian Schmitz",
+          "role": "Co‑founder",
+          "org": "Daisytuner",
+          "evidence": "co‑found the company with Adrian Schmitz",
+          "linkedin": "https://www.linkedin.com/in/adrian-schmitz-b70336336/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
+        },
+        {
+          "name": "Sébastien Lefebvre",
+          "role": "Partner at Elaia",
+          "org": "Elaia",
+          "evidence": "partner at Elaia",
+          "linkedin": "https://www.linkedin.com/in/sebastienl/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
+        },
+        {
+          "name": "Alexi Malikotsinas",
+          "role": "General Partner at LEA Ventures",
+          "org": "LEA Ventures",
+          "evidence": "general partner at LEA Ventures",
+          "linkedin": "https://www.linkedin.com/in/malikotsinas/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Lukas Trümper",
+          "rel": "founded",
+          "dst": "Daisytuner",
+          "evidence": "He founded Daisytuner in Germany in 2024"
+        },
+        {
+          "src": "Adrian Schmitz",
+          "rel": "cofounded",
+          "dst": "Daisytuner",
+          "evidence": "co‑found the company with Adrian Schmitz"
+        },
+        {
+          "src": "Elaia",
+          "rel": "invested_in",
+          "dst": "Daisytuner",
+          "evidence": "seed funding, led by Elaia"
+        },
+        {
+          "src": "LEA Ventures",
+          "rel": "invested_in",
+          "dst": "Daisytuner",
+          "evidence": "seed funding, led by ... LEA Ventures"
+        },
+        {
+          "src": "Amadeus APEX Technology Fund",
+          "rel": "invested_in",
+          "dst": "Daisytuner",
+          "evidence": "participation from Amadeus APEX Technology Fund"
+        },
+        {
+          "src": "Seedcamp",
+          "rel": "invested_in",
+          "dst": "Daisytuner",
+          "evidence": "participation from ... Seedcamp"
+        },
+        {
+          "src": "Sébastien Lefebvre",
+          "rel": "backed_by",
+          "dst": "Daisytuner",
+          "evidence": "we’re proud to back them,"
+        },
+        {
+          "src": "Alexi Malikotsinas",
+          "rel": "backed_by",
+          "dst": "Daisytuner",
+          "evidence": "we’re proud to back them,"
+        }
+      ]
+    },
+    {
+      "company_name": "Bharat Semi",
+      "core_product": "AI‑enabled programmable image sensors that combine capture, processing, and AI on a single chip.",
+      "tech_stack": [],
+      "likely_bottleneck": "scaling the engineering team and accelerating chip design verification across distributed locations",
+      "value_prop_pitch": "You can streamline your internal documentation and design knowledge base by building a Next.js portal powered by vector semantic search, letting engineers instantly find relevant specs, test results, and code snippets. This reduces time spent hunting information, accelerating your sensor development cycles.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$24M",
+      "hq": "New Delhi, India",
+      "website": "https://bharatsemi.ai",
+      "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "discovered_at": "2026-11-16T15:11:58+00:00",
+      "source": "rss",
+      "score": 55,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://bharatsemi.ai",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/paramcapital",
+          "twitter": "https://x.com/BharatSemi_"
+        },
+        "contact_page": "https://bharatsemi.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://bharatsemi.ai/",
+          "https://bharatsemi.ai/contact"
+        ],
+        "enriched_at": "2026-11-16T15:12:46+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Framer",
+            "category": "cms"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Sun, 15 Nov 2026 23:30:00 +0000",
+          "seen_at": "2026-11-16T15:12:41+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Vrinda Kapoor",
+          "role": "Co‑founder",
+          "org": "Bharat Semi",
+          "evidence": "\"Our aim here is to move from sensors to sense‑making solutions,\" Kapoor told TechCrunch.",
           "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": "https://www.kindo.ai/"
-        },
-        {
-          "name": "Bryan Vann",
-          "role": "",
-          "org": "Kindo",
-          "evidence": "schema.org Person markup",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.kindo.ai/"
-        },
-        {
-          "name": "Ron Williams",
-          "role": "",
-          "org": "Kindo",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/ronwilliams",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.kindo.ai/"
+          "link_source": ""
         }
       ],
       "edges": []
     },
     {
-      "company_name": "Mnemonic Labs",
-      "core_product": "A foundation model for quantitative trading that learns directly from market activity",
-      "tech_stack": [
-        "Python",
-        "PyTorch",
-        "TensorFlow",
-        "CUDA",
-        "AWS"
+      "company_name": "Potentiam Biosciences, Inc.",
+      "core_product": "AI‑powered platform that discovers and develops novel therapeutic targets by rapidly identifying critical genetic insights.",
+      "tech_stack": [],
+      "likely_bottleneck": "scaling and querying massive genomic‑AI datasets in real‑time for target validation",
+      "value_prop_pitch": "You could replace the custom data‑exploration UI with a Next.js front‑end that instantly surfaces relevant gene‑target information using vector semantic search, cutting down latency from minutes to seconds. This would let your scientists focus on hypothesis generation instead of wrestling with slow, brittle data pipelines.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$250K",
+      "hq": "Irving, Texas",
+      "website": "https://potentiambio.ai",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2164266/000216426626000002/",
+      "discovered_at": "2026-11-16T15:11:58+00:00",
+      "source": "edgar",
+      "score": 70,
+      "gaps": [
+        "tech stack",
+        "investors",
+        "phone"
       ],
-      "likely_bottleneck": "scaling the data ingestion and preprocessing pipeline for massive market datasets",
-      "value_prop_pitch": "You could replace the custom data pipeline with a Next.js front‑end that streams market data into a vector store, letting you query and enrich raw ticks on the fly. This lets your engineers focus on model research while the semantic search layer handles fast, scalable retrieval of relevant market contexts.",
+      "contact": {
+        "website": "https://potentiambio.ai",
+        "emails": [
+          {
+            "value": "info@potentiambio.ai",
+            "kind": "general",
+            "source_url": "https://potentiambio.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://potentiambio.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://potentiambio.ai/",
+          "https://potentiambio.ai/about",
+          "https://potentiambio.ai/team",
+          "https://potentiambio.ai/contact"
+        ],
+        "enriched_at": "2026-11-16T15:12:53+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "edgar",
+          "url": "https://www.sec.gov/Archives/edgar/data/2164266/000216426626000002/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-16T08:47:47-05:00",
+          "seen_at": "2026-11-16T15:12:41+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Bruce Beutler",
+          "role": "President, Executive Officer, Director",
+          "org": "Potentiam Biosciences, Inc.",
+          "evidence": "Signed by Bruce A. Beutler, President.",
+          "linkedin": "https://www.linkedin.com/in/bruce-beutler-1146198",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Peppi Prasit",
+          "role": "Executive Officer",
+          "org": "Potentiam Biosciences, Inc.",
+          "evidence": "Peppi Prasit — Executive Officer",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Xinzhu Wang",
+          "role": "Executive Officer",
+          "org": "Potentiam Biosciences, Inc.",
+          "evidence": "Xinzhu Wang — Executive Officer",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Isoquant",
+      "core_product": "A self‑optimizing inference cloud that delivers up to 4× faster open‑model inference by continuously tuning the entire inference stack for each customer workload.",
+      "tech_stack": [
+        "GPU",
+        "CUDA",
+        "Python"
+      ],
+      "likely_bottleneck": "Scaling the continuous optimization pipeline and quickly identifying performance regressions across diverse hardware and model workloads.",
+      "value_prop_pitch": "I can build a Next.js dashboard that surfaces real‑time performance metrics and lets you query inference logs with vector semantic search, so you instantly spot bottlenecks in your optimization pipeline. This lets your auto‑research agents focus on kernel tweaks instead of hunting for latency issues.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "",
-      "source_url": "https://www.ycombinator.com/launches/XRK-mnemonic-labs-openai-for-financial-markets",
-      "discovered_at": "2026-11-15T13:41:04+00:00",
+      "website": "https://isoquant.ai",
+      "source_url": "https://www.ycombinator.com/launches/Xcn-isoquant-self-optimizing-inference-cloud-for-4x-faster-open-models",
+      "discovered_at": "2026-11-16T15:11:58+00:00",
       "source": "yc",
-      "score": 48,
+      "score": 62,
       "gaps": [
-        "website",
         "location",
         "funding amount",
         "people profiles",
@@ -185,118 +366,33 @@
         "phone"
       ],
       "contact": {
-        "website": "",
+        "website": "https://isoquant.ai",
         "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-15T13:41:46+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XRK-mnemonic-labs-openai-for-financial-markets",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Videh Seksaria",
-          "role": "Co‑founder",
-          "org": "Mnemonic Labs",
-          "evidence": "We’re Mnemonic Labs - a neolab training a foundation model for quant trading that learns directly from market activity",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Videb Seksaria",
-          "rel": "founded",
-          "dst": "Mnemonic Labs",
-          "evidence": "We’re Mnemonic Labs - a neolab training a foundation model for quant trading"
-        },
-        {
-          "src": "Kalki Seksaria",
-          "rel": "cofounded",
-          "dst": "Mnemonic Labs",
-          "evidence": "We met 28 years ago shortly after Videh was born (we’re brothers!)"
-        },
-        {
-          "src": "Kalki Seksaria",
-          "rel": "previously_at",
-          "dst": "Tower Research",
-          "evidence": "Kalki made $20M in annual PnL at 22 at Tower Research"
-        },
-        {
-          "src": "Videh Seksaria",
-          "rel": "previously_at",
-          "dst": "Citadel",
-          "evidence": "Videh was the youngest quant at Citadel at 19"
-        }
-      ]
-    },
-    {
-      "company_name": "Perit",
-      "core_product": "Expert‑led datasets and reinforcement‑learning environments that provide AI labs with high‑quality multimodal data and real‑world evaluation benchmarks.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the end‑to‑end data collection, annotation, and RL‑environment pipeline to handle millions of hours of multimodal content while keeping quality and latency low.",
-      "value_prop_pitch": "You could replace a lot of the custom data‑pipeline glue with a unified Next.js front‑end that streams annotation tasks and serves vector‑based semantic search over collected assets, dramatically reducing latency and engineering overhead. This lets your experts focus on labeling while the platform handles routing, caching, and retrieval at scale.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://perit.ai",
-      "source_url": "https://www.ycombinator.com/launches/XT2-perit-expert-led-datasets-for-frontier-labs",
-      "discovered_at": "2026-11-15T13:41:04+00:00",
-      "source": "yc",
-      "score": 65,
-      "gaps": [
-        "location",
-        "funding amount",
-        "tech stack",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://perit.ai",
-        "emails": [
-          {
-            "value": "support@perit.ai",
-            "kind": "support",
-            "source_url": "https://perit.ai/"
-          }
-        ],
-        "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/perit-ai"
+          "linkedin": "https://www.linkedin.com/company/isoquant-ai",
+          "twitter": "https://x.com/isoquant_labs"
         },
-        "contact_page": "https://perit.ai/contact",
+        "contact_page": "https://isoquant.ai/contact",
         "product_access": [
           {
-            "label": "Pricing",
-            "url": "https://perit.ai/pricing"
+            "label": "Docs",
+            "url": "https://isoquant.ai/docs"
+          },
+          {
+            "label": "Start building",
+            "url": "https://console.isoquant.ai/auth/login?iq_attribution=%7B%22version%22%3A1%2C%22first_seen_at%22%3A%222026-11-16T15%3A12%3A56.133Z%22%2C%22referrer%22%3A%22direct%22%2C%22device%22%3A%22desktop%22%7D"
+          },
+          {
+            "label": "Start building",
+            "url": "https://console.isoquant.ai/auth/login?iq_attribution=%7B%22version%22%3A1%2C%22first_seen_at%22%3A%222026-11-16T15%3A12%3A56.958Z%22%2C%22referrer%22%3A%22direct%22%2C%22device%22%3A%22desktop%22%7D"
           }
         ],
         "pages_crawled": [
-          "https://perit.ai/",
-          "https://perit.ai/about",
-          "https://perit.ai/contact"
+          "https://isoquant.ai/",
+          "https://isoquant.ai/contact"
         ],
-        "enriched_at": "2026-11-15T13:41:50+00:00",
+        "enriched_at": "2026-11-16T15:12:57+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -304,6 +400,10 @@
           {
             "name": "Next.js",
             "category": "framework"
+          },
+          {
+            "name": "Cal.com",
+            "category": "scheduling"
           },
           {
             "name": "React",
@@ -315,32 +415,21 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XT2-perit-expert-led-datasets-for-frontier-labs",
+          "url": "https://www.ycombinator.com/launches/Xcn-isoquant-self-optimizing-inference-cloud-for-4x-faster-open-models",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-15T13:41:28+00:00"
+          "seen_at": "2026-11-16T15:12:41+00:00"
         }
       ],
       "people": [
         {
-          "name": "Kshitij Dixit",
-          "role": "Founder",
-          "org": "Perit",
-          "evidence": "Perit was founded by @Kshitij Dixit ... both IIT Kharagpur alumni and second-time YC founders.",
-          "linkedin": "https://www.linkedin.com/in/kshitijdixit",
-          "twitter": "https://x.com/kshitij_dixit",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Poorva Dixit",
-          "role": "Co‑founder & CTO",
-          "org": "Perit",
-          "evidence": "Poorva is the cofounder and CTO. She has previously trained models at Google, built scalable systems at Atlassian, and built map‑quality systems at Uber.",
-          "linkedin": "https://www.linkedin.com/in/poorvadixit",
-          "twitter": "https://x.com/PoorvaDixit3",
+          "name": "Aniket Deshpande",
+          "role": "CEO",
+          "org": "Isoquant",
+          "evidence": "Aniket (CEO) was previously at Meta Superintelligence Labs and Instagram, where he worked on post‑training, inference, and agent‑orchestration.",
+          "linkedin": "",
+          "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
@@ -348,22 +437,28 @@
       ],
       "edges": [
         {
-          "src": "Kshitij Dixit",
+          "src": "Aniket Deshpande",
           "rel": "founded",
-          "dst": "Perit",
-          "evidence": "Perit was founded by @Kshitij Dixit ..."
+          "dst": "Isoquant",
+          "evidence": "Aniket and Mugdhaa have been best friends for almost 10 years and co‑founded Isoquant in 2026."
         },
         {
-          "src": "Poorva Dixit",
-          "rel": "cofounded",
-          "dst": "Perit",
-          "evidence": "Poorva is the cofounder and CTO."
+          "src": "Aniket Deshpande",
+          "rel": "previously_at",
+          "dst": "Meta Superintelligence Labs",
+          "evidence": "Aniket (CEO) was previously at Meta Superintelligence Labs and Instagram, where he worked on post‑training, inference, and agent‑orchestration."
+        },
+        {
+          "src": "Aniket Deshpande",
+          "rel": "previously_at",
+          "dst": "Instagram",
+          "evidence": "Aniket (CEO) was previously at Meta Superintelligence Labs and Instagram, where he worked on post‑training, inference, and agent‑orchestration."
         }
       ]
     },
     {
-      "company_name": "Early-stage Startup",
-      "core_product": "We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
+      "company_name": "New Product",
+      "core_product": "Looking for a full-stack, senior or staff engineer (6+ years of experience) that is currently working for a company within the Bay Area and is looking to moonlight, be overemployed, or add hourly compensation. I’d be responsible for product",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -371,9 +466,84 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.earlystaged.com",
-      "source_url": "https://news.ycombinator.com/item?id=50500910",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "website": "https://producthype.co",
+      "source_url": "https://news.ycombinator.com/item?id=50508598",
+      "discovered_at": "2026-11-16T15:12:41+00:00",
+      "source": "hiring",
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://producthype.co",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://producthype.co/contact/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://producthype.co/",
+          "https://producthype.co/about/",
+          "https://producthype.co/contact/"
+        ],
+        "enriched_at": "2026-11-16T15:13:09+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "WordPress",
+            "category": "cms"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Hotjar",
+            "category": "analytics"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50508598",
+          "roles": [
+            "Full Stack Engineer (mostly backend + API)"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-15T17:11:47Z",
+          "seen_at": "2026-11-16T15:12:41+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Voluntas",
+      "core_product": "Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "http://voluntas-international.org",
+      "source_url": "https://news.ycombinator.com/item?id=50340434",
+      "discovered_at": "2026-11-16T15:12:41+00:00",
       "source": "hiring",
       "score": 34,
       "gaps": [
@@ -387,124 +557,61 @@
         "phone"
       ],
       "contact": {
-        "website": "https://www.earlystaged.com",
+        "website": "http://voluntas-international.org",
         "emails": [
           {
-            "value": "info@earlystaged.com",
+            "value": "info@voluntas.org",
             "kind": "general",
-            "source_url": "https://www.earlystaged.com/"
+            "source_url": "http://voluntas-international.org/"
+          },
+          {
+            "value": "jobs@voluntas.io",
+            "kind": "other",
+            "source_url": "https://news.ycombinator.com/item?id=50340434"
           }
         ],
         "phones": [],
         "socials": {},
-        "contact_page": "https://www.earlystaged.com/contact",
+        "contact_page": "http://voluntas-international.org/contact/",
         "product_access": [],
         "pages_crawled": [
-          "https://www.earlystaged.com/",
-          "https://www.earlystaged.com/about",
-          "https://www.earlystaged.com/team",
-          "https://www.earlystaged.com/contact"
+          "http://voluntas-international.org/",
+          "http://voluntas-international.org/about/",
+          "http://voluntas-international.org/contact/",
+          "http://voluntas-international.org/contact/"
         ],
-        "enriched_at": "2026-11-15T13:41:56+00:00",
+        "enriched_at": "2026-11-16T15:13:16+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50500910",
-          "roles": [
-            "Software Engineer",
-            "Data Analyst"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-14T21:17:20Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Mozilla",
-      "core_product": "Mozilla's New Products group is a small team building new things on top of browser engine technology. We're hiring a hands-on, senior IC to run experiments inside browser engine internals and find out which ideas actually hold up.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.mozilla.org",
-      "source_url": "https://news.ycombinator.com/item?id=50340840",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
-      "source": "hiring",
-      "score": 41,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.mozilla.org",
-        "emails": [
+        "site_tech": [
           {
-            "value": "trademark-permissions@mozilla.com",
-            "kind": "person",
-            "source_url": "https://www.mozilla.org/en-US/contact/"
+            "name": "WordPress",
+            "category": "cms"
           }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/mozilla-corporation"
-        },
-        "contact_page": "https://www.mozilla.org/en-US/contact/",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.mozilla.org/",
-          "https://www.mozilla.org/en-US/about/",
-          "https://www.mozilla.org/en-US/contact/",
-          "https://www.mozilla.org/en-US/about/leadership/"
-        ],
-        "enriched_at": "2026-11-15T13:42:02+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
+        ]
       },
       "signals": [
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340840",
+          "url": "https://news.ycombinator.com/item?id=50340434",
           "roles": [
-            "Sr. Staff Software Engineer",
-            "Browser (New Products)"
+            "Remote"
           ],
           "role_kinds": [
-            "eng",
             "other"
           ],
-          "posted_at": "2026-11-02T18:01:01Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
+          "posted_at": "2026-11-02T17:37:08Z",
+          "seen_at": "2026-11-16T15:12:41+00:00"
         }
       ],
       "people": [],
       "edges": []
     },
     {
-      "company_name": "Postscript",
-      "core_product": "Postscript is an agentic retention marketing platform (SMS, RCS, Email) used by 20,000+ Shopify brands. We’re Series C and pacing toward profitability.",
+      "company_name": "Paramark",
+      "core_product": "Paramark helps Marketing teams optimize spend across all of their channels and programs. There are proven scientific ways to do this, but they are poorly understood and practiced by only a tiny fraction of teams. Our product ingests data fr",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -512,193 +619,9 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://app.postscript.io",
-      "source_url": "https://news.ycombinator.com/item?id=50340820",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
-      "source": "hiring",
-      "score": 21,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://app.postscript.io",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://app.postscript.io/",
-          "https://app.postscript.io/login?next=/contact",
-          "https://app.postscript.io/login?next=/about",
-          "https://app.postscript.io/login?next=/team"
-        ],
-        "enriched_at": "2026-11-15T13:42:10+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "React",
-            "category": "framework"
-          },
-          {
-            "name": "HubSpot",
-            "category": "marketing"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          },
-          {
-            "name": "Amplitude",
-            "category": "analytics"
-          },
-          {
-            "name": "Hotjar",
-            "category": "analytics"
-          },
-          {
-            "name": "Stripe",
-            "category": "payments"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340820",
-          "roles": [
-            "Senior Software Engineer",
-            "Full Stack"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-02T18:00:14Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Distru",
-      "core_product": "Distru is the #1 ERP in the cannabis industry. $3.5B in annual GMV flows through our platform, and most of the top cannabis brands and distributors in the US run their entire operation on us to stay compliant.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "Oakland, US",
-      "website": "https://www.distru.com",
-      "source_url": "https://news.ycombinator.com/item?id=50340600",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
-      "source": "hiring",
-      "score": 44,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "contact": {
-        "website": "https://www.distru.com",
-        "emails": [
-          {
-            "value": "hello@distru.com",
-            "kind": "general",
-            "source_url": "https://www.distru.com/"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+15108714169",
-            "kind": "main",
-            "source_url": "https://www.distru.com/"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/distru"
-        },
-        "contact_page": "https://www.distru.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.distru.com/",
-          "https://www.distru.com/about",
-          "https://www.distru.com/team",
-          "https://www.distru.com/contact"
-        ],
-        "enriched_at": "2026-11-15T13:42:15+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Webflow",
-            "category": "cms"
-          },
-          {
-            "name": "HubSpot",
-            "category": "marketing"
-          },
-          {
-            "name": "Intercom",
-            "category": "support"
-          },
-          {
-            "name": "PostHog",
-            "category": "analytics"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340600",
-          "roles": [
-            "AI Product Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-02T17:46:45Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Helmsted",
-      "core_product": "Helmsted is the AI-native operating system for wealth advisors of complex households: planning, tax and estate analysis, meetings and the client portal, run by agents that do the work. Small team, live with pilot firms, shipping daily.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://helmsted.ai",
-      "source_url": "https://news.ycombinator.com/item?id=50340551",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
+      "website": "https://paramark.com",
+      "source_url": "https://news.ycombinator.com/item?id=50340419",
+      "discovered_at": "2026-11-16T15:12:41+00:00",
       "source": "hiring",
       "score": 38,
       "gaps": [
@@ -712,259 +635,35 @@
         "phone"
       ],
       "contact": {
-        "website": "https://helmsted.ai",
+        "website": "https://paramark.com",
         "emails": [
           {
-            "value": "hello@helmsted.ai",
+            "value": "hello@paramark.com",
             "kind": "general",
-            "source_url": "https://helmsted.ai/"
-          },
-          {
-            "value": "careers@helmsted.ai",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50340551"
+            "source_url": "https://paramark.com/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/helmsted"
+          "github": "https://github.com/paramark-inc",
+          "linkedin": "https://www.linkedin.com/company/paramark-hq"
         },
-        "contact_page": "https://helmsted.ai/contact",
+        "contact_page": "https://paramark.com/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://helmsted.ai/",
-          "https://helmsted.ai/about",
-          "https://helmsted.ai/team",
-          "https://helmsted.ai/contact"
+          "https://paramark.com/",
+          "https://paramark.com/about",
+          "https://paramark.com/about",
+          "https://paramark.com/contact"
         ],
-        "enriched_at": "2026-11-15T13:42:18+00:00",
+        "enriched_at": "2026-11-16T15:13:19+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Next.js",
-            "category": "framework"
-          },
-          {
-            "name": "React",
-            "category": "framework"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340551",
-          "roles": [
-            "Founding AI Engineer"
-          ],
-          "role_kinds": [
-            "founding"
-          ],
-          "posted_at": "2026-11-02T17:43:25Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "AI x Healthcare Startup",
-      "core_product": "We're looking for a backend-leaning fullstack dev. You will be one of the first engineers outside of the founding team. Here is a bit more about us: We're a seed stage AI startup backed by top tier investors. We're on a mission to ensure ev",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50340480",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
-      "source": "hiring",
-      "score": 10,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-15T13:42:22+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340480",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-02T17:39:52Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Mesmer",
-      "core_product": "Mesmer builds software factories for engineering teams. Keeping a team at the state of the art with agents is a full-time job, so we do it for our customers: we're always finding the biggest bottleneck in how their team ships and fixing it ",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50340449",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
-      "source": "hiring",
-      "score": 27,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [
-          {
-            "value": "hiring@mesmer.co",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50340449"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-15T13:42:26+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340449",
-          "roles": [
-            "Founding Engineer"
-          ],
-          "role_kinds": [
-            "founding"
-          ],
-          "posted_at": "2026-11-02T17:38:15Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Thunder Compute",
-      "core_product": "We run a GPU cloud on systems software we built from scratch in C++. We're hiring for our systems engineering team; designing the distributed system behind what is essentially a hypervisor for GPUs.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.thundercompute.com",
-      "source_url": "https://news.ycombinator.com/item?id=50340438",
-      "discovered_at": "2026-11-15T13:41:28+00:00",
-      "source": "hiring",
-      "score": 49,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.thundercompute.com",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/ThunderCompute",
-          "linkedin": "https://www.linkedin.com/company/102863366",
-          "github": "https://github.com/Thunder-Compute"
-        },
-        "contact_page": "https://www.thundercompute.com/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://www.thundercompute.com/pricing"
-          },
-          {
-            "label": "Docs",
-            "url": "https://www.thundercompute.com/docs"
-          },
-          {
-            "label": "Get started",
-            "url": "https://console.thundercompute.com/signup"
-          }
-        ],
-        "pages_crawled": [
-          "https://www.thundercompute.com/",
-          "https://www.thundercompute.com/contact"
-        ],
-        "enriched_at": "2026-11-15T13:42:29+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Next.js",
-            "category": "framework"
-          },
-          {
-            "name": "Webflow",
+            "name": "Framer",
             "category": "cms"
-          },
-          {
-            "name": "PostHog",
-            "category": "analytics"
-          },
-          {
-            "name": "Cloudflare",
-            "category": "hosting"
-          },
-          {
-            "name": "React",
-            "category": "framework"
           }
         ]
       },
@@ -972,99 +671,120 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340438",
+          "url": "https://news.ycombinator.com/item?id=50340419",
           "roles": [
-            "Systems Engineer"
+            "Software Engineer (L4)"
           ],
           "role_kinds": [
             "eng"
           ],
-          "posted_at": "2026-11-02T17:37:25Z",
-          "seen_at": "2026-11-15T13:41:28+00:00"
+          "posted_at": "2026-11-02T17:36:23Z",
+          "seen_at": "2026-11-16T15:12:41+00:00"
         }
       ],
-      "people": [
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "JPMorganChase",
+      "core_product": "At JPMorganChase, your work helps shape the future of global finance. Join a team that serves millions of customers, businesses and communities.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "",
+      "source_url": "https://news.ycombinator.com/item?id=50340287",
+      "discovered_at": "2026-11-16T15:12:41+00:00",
+      "source": "hiring",
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-16T15:13:23+00:00",
+        "status": "no_website",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
         {
-          "name": "Brian Model",
-          "role": "Co-Founder and CTO",
-          "org": "Thunder Compute",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/brian-model",
-          "twitter": "https://x.com/brain_model",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.thundercompute.com/"
-        },
-        {
-          "name": "Carl Peterson",
-          "role": "Co-Founder and CEO",
-          "org": "Thunder Compute",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/cpeterson42",
-          "twitter": "https://x.com/carlpeterson",
-          "github": "https://github.com/cpeterson42",
-          "homepage": "https://www.thundercompute.com",
-          "link_source": "https://www.thundercompute.com/"
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50340287",
+          "roles": [
+            "Lead Software Engineer"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-02T17:26:48Z",
+          "seen_at": "2026-11-16T15:12:41+00:00"
         }
       ],
+      "people": [],
       "edges": []
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Kindo",
-        "score": 54,
+        "company": "Daisytuner",
+        "score": 79,
         "source": "rss"
       },
       {
-        "company": "Mnemonic Labs",
-        "score": 48,
+        "company": "Bharat Semi",
+        "score": 55,
+        "source": "rss"
+      },
+      {
+        "company": "Potentiam Biosciences, Inc.",
+        "score": 70,
+        "source": "edgar"
+      },
+      {
+        "company": "Isoquant",
+        "score": 62,
         "source": "yc"
       },
       {
-        "company": "Perit",
-        "score": 65,
-        "source": "yc"
+        "company": "New Product",
+        "score": 25,
+        "source": "hiring"
       },
       {
-        "company": "Early-stage Startup",
+        "company": "Voluntas",
         "score": 34,
         "source": "hiring"
       },
       {
-        "company": "Mozilla",
-        "score": 41,
-        "source": "hiring"
-      },
-      {
-        "company": "Postscript",
-        "score": 21,
-        "source": "hiring"
-      },
-      {
-        "company": "Distru",
-        "score": 44,
-        "source": "hiring"
-      },
-      {
-        "company": "Helmsted",
+        "company": "Paramark",
         "score": 38,
         "source": "hiring"
       },
       {
-        "company": "AI x Healthcare Startup",
-        "score": 10,
-        "source": "hiring"
-      },
-      {
-        "company": "Mesmer",
-        "score": 27,
-        "source": "hiring"
-      },
-      {
-        "company": "Thunder Compute",
-        "score": 49,
+        "company": "JPMorganChase",
+        "score": 15,
         "source": "hiring"
       }
     ],
