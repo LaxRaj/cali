@@ -1,11 +1,12 @@
 {
-  "started_at": "2026-11-15T15:34:03+00:00",
+  "started_at": "2026-11-16T18:17:32+00:00",
   "skipped": "",
   "startups": [
     {
       "company": "Miracly.ai",
-      "score": 92,
+      "score": 87,
       "gaps": [
+        "people profiles",
         "phone"
       ],
       "website": "https://www.miracly.ai",
@@ -20,75 +21,145 @@
       ]
     },
     {
-      "company": "Thunder Compute",
-      "score": 49,
+      "company": "Paramark",
+      "score": 58,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
+        "people profiles",
         "investors",
-        "email",
         "phone"
       ],
-      "website": "https://www.thundercompute.com",
+      "website": "https://paramark.com",
       "status": "ok",
-      "emails": 0,
+      "emails": 1,
       "phones": 0,
-      "people": 2,
+      "people": 4,
+      "edges": 4,
+      "notes": [
+        "team llm: 4 people proposed, 4 grounded",
+        "team page: +4 people, +4 edges"
+      ]
+    },
+    {
+      "company": "Proofline",
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://proofline.sh",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 0,
       "edges": 0,
       "notes": [
-        "structured data: 2 people",
         "team llm: 0 people proposed, 0 grounded",
         "team page: +0 people, +0 edges"
       ]
     },
     {
-      "company": "Mnemonic Labs",
-      "score": 54,
+      "company": "Modash.io",
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.modash.io",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Aloe",
+      "score": 38,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://aloe.inc",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Lamin",
+      "score": 73,
       "gaps": [
         "location",
         "funding amount",
-        "people profiles",
-        "investors",
         "email",
         "phone"
       ],
-      "website": "https://mnemoniclabs.com",
-      "status": "crawl_failed",
+      "website": "https://lamin.ai",
+      "status": "ok",
       "emails": 0,
+      "phones": 0,
+      "people": 9,
+      "edges": 9,
+      "notes": [
+        "team llm: 9 people proposed, 9 grounded",
+        "team page: +8 people, +14 edges"
+      ]
+    },
+    {
+      "company": "Seal",
+      "score": 52,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://seal.run",
+      "status": "ok",
+      "emails": 1,
       "phones": 0,
       "people": 1,
-      "edges": 3,
+      "edges": 1,
       "notes": [
-        "crawl failed"
+        "team llm: 1 people proposed, 1 grounded",
+        "team page: +1 people, +1 edges"
       ]
     },
     {
-      "company": "Distru",
-      "score": 44,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://www.distru.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Mozilla",
-      "score": 41,
+      "company": "Furtim Modus",
+      "score": 37,
       "gaps": [
         "funding stage",
         "location",
@@ -99,7 +170,7 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.mozilla.org",
+      "website": "https://www.furtimmodus.com",
       "status": "ok",
       "emails": 1,
       "phones": 0,
@@ -111,8 +182,8 @@
       ]
     },
     {
-      "company": "Helmsted",
-      "score": 38,
+      "company": "Thankly",
+      "score": 34,
       "gaps": [
         "funding stage",
         "location",
@@ -123,48 +194,7 @@
         "investors",
         "phone"
       ],
-      "website": "https://helmsted.ai",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Relevant Healthcare",
-      "score": 38,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://relevant.healthcare",
-      "status": "ok",
-      "emails": 1,
-      "phones": 1,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Prior Labs",
-      "score": 38,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://priorlabs.ai",
+      "website": "https://thankly.ai",
       "status": "ok",
       "emails": 1,
       "phones": 0,
@@ -176,8 +206,8 @@
       ]
     },
     {
-      "company": "Avoca",
-      "score": 38,
+      "company": "General Intelligence Holdings",
+      "score": 37,
       "gaps": [
         "funding stage",
         "location",
@@ -188,33 +218,10 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.avoca.ai",
+      "website": "https://www.generalintelligenceholdings.com",
       "status": "ok",
       "emails": 1,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Exponent",
-      "score": 38,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://www.exponent.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 2,
       "people": 0,
       "edges": 0,
       "notes": [
@@ -223,37 +230,37 @@
       ]
     }
   ],
-  "tokens": 8823,
+  "tokens": 13518,
   "usage": {
-    "prompt_tokens": 8241,
-    "completion_tokens": 582,
-    "total_tokens": 8823,
-    "calls": 7,
+    "prompt_tokens": 10481,
+    "completion_tokens": 3037,
+    "total_tokens": 13518,
+    "calls": 10,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 8241,
-        "completion_tokens": 582,
-        "total_tokens": 8823,
-        "calls": 7
+        "prompt_tokens": 10481,
+        "completion_tokens": 3037,
+        "total_tokens": 13518,
+        "calls": 10
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 8241,
-        "completion_tokens": 582,
-        "total_tokens": 8823,
-        "calls": 7
+        "prompt_tokens": 10481,
+        "completion_tokens": 3037,
+        "total_tokens": 13518,
+        "calls": 10
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 8241,
-        "completion_tokens": 582,
-        "total_tokens": 8823,
-        "calls": 7
+        "prompt_tokens": 10481,
+        "completion_tokens": 3037,
+        "total_tokens": 13518,
+        "calls": 10
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-15T15:35:06+00:00"
+  "finished_at": "2026-11-16T18:19:04+00:00"
 }
