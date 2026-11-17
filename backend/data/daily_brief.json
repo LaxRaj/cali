@@ -1,398 +1,50 @@
 {
-  "generated_at": "2026-11-16T15:13:23+00:00",
+  "generated_at": "2026-11-17T15:42:33+00:00",
   "findings": [
     {
-      "company_name": "Daisytuner",
-      "core_product": "An open‑source compiler that transforms framework code into native code for multiple GPUs and emerging AI chips, using AI agents to auto‑tune performance.",
-      "tech_stack": [
-        "LLVM",
-        "C++",
-        "Python",
-        "GPU drivers",
-        "AI agents"
-      ],
-      "likely_bottleneck": "Scaling and validating compiler optimizations across a rapidly expanding set of heterogeneous hardware platforms.",
-      "value_prop_pitch": "We can build a Next.js dashboard that lets you query and visualize optimization results with vector semantic search, instantly surfacing the best compiler passes for any new chip. This will cut the manual benchmarking loop dramatically and keep your performance database up‑to‑date with minimal engineering effort.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "€6 million",
-      "hq": "Darmstadt, Germany",
-      "website": "https://daisytuner.com",
-      "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-      "discovered_at": "2026-11-16T15:11:58+00:00",
-      "source": "rss",
-      "score": 79,
-      "gaps": [
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://daisytuner.com",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "github": "https://github.com/daisytuner",
-          "linkedin": "https://www.linkedin.com/company/daisytuner"
-        },
-        "contact_page": "",
-        "product_access": [
-          {
-            "label": "Docs",
-            "url": "https://docs.daisytuner.com/"
-          },
-          {
-            "label": "Get started",
-            "url": "https://app.daisytuner.com"
-          }
-        ],
-        "pages_crawled": [
-          "https://daisytuner.com/",
-          "https://daisytuner.com/about"
-        ],
-        "enriched_at": "2026-11-16T15:12:43+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Astro",
-            "category": "framework"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Mon, 16 Nov 2026 07:00:00 +0000",
-          "seen_at": "2026-11-16T15:12:41+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Lukas Trümper",
-          "role": "Founder & CEO",
-          "org": "Daisytuner",
-          "evidence": "He founded Daisytuner in Germany in 2024",
-          "linkedin": "https://www.linkedin.com/in/lukas-truemper/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
-        },
-        {
-          "name": "Adrian Schmitz",
-          "role": "Co‑founder",
-          "org": "Daisytuner",
-          "evidence": "co‑found the company with Adrian Schmitz",
-          "linkedin": "https://www.linkedin.com/in/adrian-schmitz-b70336336/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
-        },
-        {
-          "name": "Sébastien Lefebvre",
-          "role": "Partner at Elaia",
-          "org": "Elaia",
-          "evidence": "partner at Elaia",
-          "linkedin": "https://www.linkedin.com/in/sebastienl/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
-        },
-        {
-          "name": "Alexi Malikotsinas",
-          "role": "General Partner at LEA Ventures",
-          "org": "LEA Ventures",
-          "evidence": "general partner at LEA Ventures",
-          "linkedin": "https://www.linkedin.com/in/malikotsinas/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Lukas Trümper",
-          "rel": "founded",
-          "dst": "Daisytuner",
-          "evidence": "He founded Daisytuner in Germany in 2024"
-        },
-        {
-          "src": "Adrian Schmitz",
-          "rel": "cofounded",
-          "dst": "Daisytuner",
-          "evidence": "co‑found the company with Adrian Schmitz"
-        },
-        {
-          "src": "Elaia",
-          "rel": "invested_in",
-          "dst": "Daisytuner",
-          "evidence": "seed funding, led by Elaia"
-        },
-        {
-          "src": "LEA Ventures",
-          "rel": "invested_in",
-          "dst": "Daisytuner",
-          "evidence": "seed funding, led by ... LEA Ventures"
-        },
-        {
-          "src": "Amadeus APEX Technology Fund",
-          "rel": "invested_in",
-          "dst": "Daisytuner",
-          "evidence": "participation from Amadeus APEX Technology Fund"
-        },
-        {
-          "src": "Seedcamp",
-          "rel": "invested_in",
-          "dst": "Daisytuner",
-          "evidence": "participation from ... Seedcamp"
-        },
-        {
-          "src": "Sébastien Lefebvre",
-          "rel": "backed_by",
-          "dst": "Daisytuner",
-          "evidence": "we’re proud to back them,"
-        },
-        {
-          "src": "Alexi Malikotsinas",
-          "rel": "backed_by",
-          "dst": "Daisytuner",
-          "evidence": "we’re proud to back them,"
-        }
-      ]
-    },
-    {
-      "company_name": "Bharat Semi",
-      "core_product": "AI‑enabled programmable image sensors that combine capture, processing, and AI on a single chip.",
+      "company_name": "Axonnic",
+      "core_product": "A forearm sleeve that reads muscle activity via EMG to decode finger movements and estimate fingertip force for training dextrous robots.",
       "tech_stack": [],
-      "likely_bottleneck": "scaling the engineering team and accelerating chip design verification across distributed locations",
-      "value_prop_pitch": "You can streamline your internal documentation and design knowledge base by building a Next.js portal powered by vector semantic search, letting engineers instantly find relevant specs, test results, and code snippets. This reduces time spent hunting information, accelerating your sensor development cycles.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$24M",
-      "hq": "New Delhi, India",
-      "website": "https://bharatsemi.ai",
-      "source_url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-      "discovered_at": "2026-11-16T15:11:58+00:00",
-      "source": "rss",
-      "score": 55,
-      "gaps": [
-        "tech stack",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://bharatsemi.ai",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/paramcapital",
-          "twitter": "https://x.com/BharatSemi_"
-        },
-        "contact_page": "https://bharatsemi.ai/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://bharatsemi.ai/",
-          "https://bharatsemi.ai/contact"
-        ],
-        "enriched_at": "2026-11-16T15:12:46+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Framer",
-            "category": "cms"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Sun, 15 Nov 2026 23:30:00 +0000",
-          "seen_at": "2026-11-16T15:12:41+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Vrinda Kapoor",
-          "role": "Co‑founder",
-          "org": "Bharat Semi",
-          "evidence": "\"Our aim here is to move from sensors to sense‑making solutions,\" Kapoor told TechCrunch.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": []
-    },
-    {
-      "company_name": "Potentiam Biosciences, Inc.",
-      "core_product": "AI‑powered platform that discovers and develops novel therapeutic targets by rapidly identifying critical genetic insights.",
-      "tech_stack": [],
-      "likely_bottleneck": "scaling and querying massive genomic‑AI datasets in real‑time for target validation",
-      "value_prop_pitch": "You could replace the custom data‑exploration UI with a Next.js front‑end that instantly surfaces relevant gene‑target information using vector semantic search, cutting down latency from minutes to seconds. This would let your scientists focus on hypothesis generation instead of wrestling with slow, brittle data pipelines.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$250K",
-      "hq": "Irving, Texas",
-      "website": "https://potentiambio.ai",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/2164266/000216426626000002/",
-      "discovered_at": "2026-11-16T15:11:58+00:00",
-      "source": "edgar",
-      "score": 70,
-      "gaps": [
-        "tech stack",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://potentiambio.ai",
-        "emails": [
-          {
-            "value": "info@potentiambio.ai",
-            "kind": "general",
-            "source_url": "https://potentiambio.ai/"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://potentiambio.ai/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://potentiambio.ai/",
-          "https://potentiambio.ai/about",
-          "https://potentiambio.ai/team",
-          "https://potentiambio.ai/contact"
-        ],
-        "enriched_at": "2026-11-16T15:12:53+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "edgar",
-          "url": "https://www.sec.gov/Archives/edgar/data/2164266/000216426626000002/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-16T08:47:47-05:00",
-          "seen_at": "2026-11-16T15:12:41+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Bruce Beutler",
-          "role": "President, Executive Officer, Director",
-          "org": "Potentiam Biosciences, Inc.",
-          "evidence": "Signed by Bruce A. Beutler, President.",
-          "linkedin": "https://www.linkedin.com/in/bruce-beutler-1146198",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Peppi Prasit",
-          "role": "Executive Officer",
-          "org": "Potentiam Biosciences, Inc.",
-          "evidence": "Peppi Prasit — Executive Officer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Xinzhu Wang",
-          "role": "Executive Officer",
-          "org": "Potentiam Biosciences, Inc.",
-          "evidence": "Xinzhu Wang — Executive Officer",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": []
-    },
-    {
-      "company_name": "Isoquant",
-      "core_product": "A self‑optimizing inference cloud that delivers up to 4× faster open‑model inference by continuously tuning the entire inference stack for each customer workload.",
-      "tech_stack": [
-        "GPU",
-        "CUDA",
-        "Python"
-      ],
-      "likely_bottleneck": "Scaling the continuous optimization pipeline and quickly identifying performance regressions across diverse hardware and model workloads.",
-      "value_prop_pitch": "I can build a Next.js dashboard that surfaces real‑time performance metrics and lets you query inference logs with vector semantic search, so you instantly spot bottlenecks in your optimization pipeline. This lets your auto‑research agents focus on kernel tweaks instead of hunting for latency issues.",
+      "likely_bottleneck": "Inconsistent and noisy EMG data collection due to wireless interference and off‑the‑shelf hardware limits reliable model training.",
+      "value_prop_pitch": "You could replace the flaky hardware pipeline with a Next.js dashboard that streams cleaned EMG data in real time, letting engineers focus on model iteration. Coupled with vector semantic search you can instantly retrieve similar motion patterns to accelerate calibration and reduce data‑collection cycles.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://isoquant.ai",
-      "source_url": "https://www.ycombinator.com/launches/Xcn-isoquant-self-optimizing-inference-cloud-for-4x-faster-open-models",
-      "discovered_at": "2026-11-16T15:11:58+00:00",
-      "source": "yc",
-      "score": 62,
+      "website": "https://www.axonnic.com",
+      "source_url": "https://news.ycombinator.com/item?id=50522776",
+      "discovered_at": "2026-11-17T15:41:28+00:00",
+      "source": "launch_hn",
+      "score": 44,
       "gaps": [
         "location",
         "funding amount",
+        "tech stack",
+        "founder",
         "people profiles",
         "investors",
-        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://isoquant.ai",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/isoquant-ai",
-          "twitter": "https://x.com/isoquant_labs"
-        },
-        "contact_page": "https://isoquant.ai/contact",
-        "product_access": [
+        "website": "https://www.axonnic.com",
+        "emails": [
           {
-            "label": "Docs",
-            "url": "https://isoquant.ai/docs"
-          },
-          {
-            "label": "Start building",
-            "url": "https://console.isoquant.ai/auth/login?iq_attribution=%7B%22version%22%3A1%2C%22first_seen_at%22%3A%222026-11-16T15%3A12%3A56.133Z%22%2C%22referrer%22%3A%22direct%22%2C%22device%22%3A%22desktop%22%7D"
-          },
-          {
-            "label": "Start building",
-            "url": "https://console.isoquant.ai/auth/login?iq_attribution=%7B%22version%22%3A1%2C%22first_seen_at%22%3A%222026-11-16T15%3A12%3A56.958Z%22%2C%22referrer%22%3A%22direct%22%2C%22device%22%3A%22desktop%22%7D"
+            "value": "info@axonnic.com",
+            "kind": "general",
+            "source_url": "https://www.axonnic.com/"
           }
         ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://www.axonnic.com/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://isoquant.ai/",
-          "https://isoquant.ai/contact"
+          "https://www.axonnic.com/",
+          "https://www.axonnic.com/team",
+          "https://www.axonnic.com/contact",
+          "https://www.axonnic.com/about"
         ],
-        "enriched_at": "2026-11-16T15:12:57+00:00",
+        "enriched_at": "2026-11-17T15:42:01+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -400,10 +52,6 @@
           {
             "name": "Next.js",
             "category": "framework"
-          },
-          {
-            "name": "Cal.com",
-            "category": "scheduling"
           },
           {
             "name": "React",
@@ -414,20 +62,210 @@
       "signals": [
         {
           "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Xcn-isoquant-self-optimizing-inference-cloud-for-4x-faster-open-models",
+          "source": "launch_hn",
+          "url": "https://news.ycombinator.com/item?id=50522776",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-16T15:12:41+00:00"
+          "posted_at": "2026-11-16T20:29:48Z",
+          "seen_at": "2026-11-17T15:41:58+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Asynchronics",
+      "core_product": "A digital twin marketplace for spacecraft components that lets engineers simulate, test, and validate hardware virtually before the physical unit arrives.",
+      "tech_stack": [
+        "Rust"
+      ],
+      "likely_bottleneck": "optimizing real‑time simulation performance and scaling across processor cores",
+      "value_prop_pitch": "You could wrap the Rust simulation engine in a Next.js front‑end that streams vector‑embedded telemetry for instant semantic queries, eliminating the need to wait for batch results. Then a semantic search layer would let engineers instantly find similar failure scenarios across all twins, cutting debugging time dramatically.",
+      "is_relevant": true,
+      "funding_stage": "seed",
+      "funding_amount": "$3.1M",
+      "hq": "Warsaw, Poland",
+      "website": "https://asynchronics.com",
+      "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+      "discovered_at": "2026-11-17T15:41:28+00:00",
+      "source": "rss",
+      "score": 79,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://asynchronics.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/asynchronics"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://asynchronics.com/",
+          "https://asynchronics.com/team/"
+        ],
+        "enriched_at": "2026-11-17T15:42:11+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "SvelteKit",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Tue, 17 Nov 2026 08:00:00 +0000",
+          "seen_at": "2026-11-17T15:41:58+00:00"
         }
       ],
       "people": [
         {
-          "name": "Aniket Deshpande",
-          "role": "CEO",
-          "org": "Isoquant",
-          "evidence": "Aniket (CEO) was previously at Meta Superintelligence Labs and Instagram, where he worked on post‑training, inference, and agent‑orchestration.",
+          "name": "Adam Chikha",
+          "role": "Co‑founder & CEO",
+          "org": "Asynchronics",
+          "evidence": "He is now co‑founder and CEO of Asynchronics, a Warsaw‑based startup that just closed a $3.1M seed round.",
+          "linkedin": "https://www.linkedin.com/in/adam-chikha/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/"
+        },
+        {
+          "name": "Serge Barral",
+          "role": "Co‑founder",
+          "org": "Asynchronics",
+          "evidence": "Chikha and co‑founder Serge Barral, who has a PhD in aerospace engineering, started the company in 2023.",
+          "linkedin": "https://www.linkedin.com/in/serge-barral-9a2805218/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/"
+        },
+        {
+          "name": "Sandra Szwabe",
+          "role": "Business Development & Marketing",
+          "org": "Asynchronics",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/sandra-szwabe-8551151b2",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://asynchronics.com/team/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Adam Chikha",
+          "rel": "founded",
+          "dst": "Asynchronics",
+          "evidence": "He is now co‑founder and CEO of Asynchronics"
+        },
+        {
+          "src": "Serge Barral",
+          "rel": "cofounded",
+          "dst": "Asynchronics",
+          "evidence": "Chikha and co‑founder Serge Barral ... started the company in 2023"
+        },
+        {
+          "src": "b2venture",
+          "rel": "invested_in",
+          "dst": "Asynchronics",
+          "evidence": "b2venture led the round"
+        },
+        {
+          "src": "Movens Capital",
+          "rel": "invested_in",
+          "dst": "Asynchronics",
+          "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating"
+        },
+        {
+          "src": "Heartfelt",
+          "rel": "invested_in",
+          "dst": "Asynchronics",
+          "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating"
+        },
+        {
+          "src": "Hard2beat",
+          "rel": "invested_in",
+          "dst": "Asynchronics",
+          "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating"
+        },
+        {
+          "src": "Andreas Goeldi",
+          "rel": "works_at",
+          "dst": "b2venture",
+          "evidence": "partner at b2venture"
+        }
+      ]
+    },
+    {
+      "company_name": "Repovive",
+      "core_product": "AI labs formalization data and reinforcement learning environments in Lean for model training and evaluation to enable formal verification of chips and critical software",
+      "tech_stack": [
+        "Lean",
+        "AI models"
+      ],
+      "likely_bottleneck": "building a scalable web interface for delivering formal verification tasks and enabling fast discovery of relevant proof environments",
+      "value_prop_pitch": "I can build a Next.js front‑end that lets you query and browse formal verification tasks instantly, while a vector‑based semantic search layer lets engineers find the right proof environment in milliseconds. This will eliminate the need to manually curate datasets and let your AI labs focus on model training.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://research.repovive.com",
+      "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
+      "discovered_at": "2026-11-17T15:41:28+00:00",
+      "source": "yc",
+      "score": 44,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://research.repovive.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-17T15:42:15+00:00",
+        "status": "crawl_failed",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-17T15:41:58+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Amir Mostafavi",
+          "role": "co‑founder",
+          "org": "Repovive",
+          "evidence": "Hey YC! We’re Shayan and Amir, co‑founders of Repovive.",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -437,232 +275,155 @@
       ],
       "edges": [
         {
-          "src": "Aniket Deshpande",
-          "rel": "founded",
-          "dst": "Isoquant",
-          "evidence": "Aniket and Mugdhaa have been best friends for almost 10 years and co‑founded Isoquant in 2026."
-        },
-        {
-          "src": "Aniket Deshpande",
-          "rel": "previously_at",
-          "dst": "Meta Superintelligence Labs",
-          "evidence": "Aniket (CEO) was previously at Meta Superintelligence Labs and Instagram, where he worked on post‑training, inference, and agent‑orchestration."
-        },
-        {
-          "src": "Aniket Deshpande",
-          "rel": "previously_at",
-          "dst": "Instagram",
-          "evidence": "Aniket (CEO) was previously at Meta Superintelligence Labs and Instagram, where he worked on post‑training, inference, and agent‑orchestration."
+          "src": "Amir Mostafavi",
+          "rel": "cofounded",
+          "dst": "Repovive",
+          "evidence": "Hey YC! We’re Shayan and Amir, co‑founders of Repovive."
         }
       ]
     },
     {
-      "company_name": "New Product",
-      "core_product": "Looking for a full-stack, senior or staff engineer (6+ years of experience) that is currently working for a company within the Bay Area and is looking to moonlight, be overemployed, or add hourly compensation. I’d be responsible for product",
+      "company_name": "Duke",
+      "core_product": "An AI‑powered platform that equips ecommerce merchants with voice agents and agent‑ready integrations to enable personalized, multilingual shopping experiences.",
       "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
+      "likely_bottleneck": "Scaling the real‑time voice agent infrastructure and maintaining up‑to‑date product context across many merchants.",
+      "value_prop_pitch": "I can help you build a highly performant Next.js front‑end that streams voice interactions with low latency, while a vector‑based semantic search layer instantly retrieves the right product context for each conversation. This combo will let your agents scale to thousands of merchants without sacrificing personalization or speed.",
       "is_relevant": true,
-      "funding_stage": "",
+      "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://producthype.co",
-      "source_url": "https://news.ycombinator.com/item?id=50508598",
-      "discovered_at": "2026-11-16T15:12:41+00:00",
-      "source": "hiring",
-      "score": 25,
+      "website": "https://dukesell.com",
+      "source_url": "https://www.ycombinator.com/launches/XeF-duke-powering-merchants-for-agentic-commerce",
+      "discovered_at": "2026-11-17T15:41:28+00:00",
+      "source": "yc",
+      "score": 58,
       "gaps": [
-        "funding stage",
         "location",
         "funding amount",
         "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://producthype.co",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://producthype.co/contact/",
-        "product_access": [],
-        "pages_crawled": [
-          "https://producthype.co/",
-          "https://producthype.co/about/",
-          "https://producthype.co/contact/"
-        ],
-        "enriched_at": "2026-11-16T15:13:09+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "WordPress",
-            "category": "cms"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          },
-          {
-            "name": "Hotjar",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50508598",
-          "roles": [
-            "Full Stack Engineer (mostly backend + API)"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-15T17:11:47Z",
-          "seen_at": "2026-11-16T15:12:41+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Voluntas",
-      "core_product": "Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "http://voluntas-international.org",
-      "source_url": "https://news.ycombinator.com/item?id=50340434",
-      "discovered_at": "2026-11-16T15:12:41+00:00",
-      "source": "hiring",
-      "score": 34,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
         "people profiles",
         "investors",
         "phone"
       ],
       "contact": {
-        "website": "http://voluntas-international.org",
+        "website": "https://dukesell.com",
         "emails": [
           {
-            "value": "info@voluntas.org",
+            "value": "hello@dukesell.com",
             "kind": "general",
-            "source_url": "http://voluntas-international.org/"
-          },
-          {
-            "value": "jobs@voluntas.io",
-            "kind": "other",
-            "source_url": "https://news.ycombinator.com/item?id=50340434"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "http://voluntas-international.org/contact/",
-        "product_access": [],
-        "pages_crawled": [
-          "http://voluntas-international.org/",
-          "http://voluntas-international.org/about/",
-          "http://voluntas-international.org/contact/",
-          "http://voluntas-international.org/contact/"
-        ],
-        "enriched_at": "2026-11-16T15:13:16+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "WordPress",
-            "category": "cms"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340434",
-          "roles": [
-            "Remote"
-          ],
-          "role_kinds": [
-            "other"
-          ],
-          "posted_at": "2026-11-02T17:37:08Z",
-          "seen_at": "2026-11-16T15:12:41+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Paramark",
-      "core_product": "Paramark helps Marketing teams optimize spend across all of their channels and programs. There are proven scientific ways to do this, but they are poorly understood and practiced by only a tiny fraction of teams. Our product ingests data fr",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://paramark.com",
-      "source_url": "https://news.ycombinator.com/item?id=50340419",
-      "discovered_at": "2026-11-16T15:12:41+00:00",
-      "source": "hiring",
-      "score": 38,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://paramark.com",
-        "emails": [
-          {
-            "value": "hello@paramark.com",
-            "kind": "general",
-            "source_url": "https://paramark.com/"
+            "source_url": "https://dukesell.com/"
           }
         ],
         "phones": [],
         "socials": {
-          "github": "https://github.com/paramark-inc",
-          "linkedin": "https://www.linkedin.com/company/paramark-hq"
+          "twitter": "https://x.com/DukesellAI",
+          "linkedin": "https://www.linkedin.com/company/duke-sell-ai"
         },
-        "contact_page": "https://paramark.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://paramark.com/",
-          "https://paramark.com/about",
-          "https://paramark.com/about",
-          "https://paramark.com/contact"
+        "contact_page": "https://dukesell.com/contact",
+        "product_access": [
+          {
+            "label": "Start free",
+            "url": "https://app.dukesell.com/start"
+          }
         ],
-        "enriched_at": "2026-11-16T15:13:19+00:00",
+        "pages_crawled": [
+          "https://dukesell.com/",
+          "https://dukesell.com/team",
+          "https://dukesell.com/contact",
+          "https://dukesell.com/about"
+        ],
+        "enriched_at": "2026-11-17T15:42:19+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Framer",
+            "name": "Cloudflare",
+            "category": "hosting"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/XeF-duke-powering-merchants-for-agentic-commerce",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-17T15:41:58+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Felix Manford",
+          "role": "Founder",
+          "org": "Duke",
+          "evidence": "Felix Manford",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Felix Manford",
+          "rel": "founded",
+          "dst": "Duke",
+          "evidence": "Felix Manford"
+        }
+      ]
+    },
+    {
+      "company_name": "outGoing",
+      "core_product": "Started in Lisbon's local events scene and now work across festivals, sports and cultural events of every kind. We've raised our first round and are launching new products soon, so this is an early hire with real ownership.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://outgoing.website",
+      "source_url": "https://news.ycombinator.com/item?id=50518905",
+      "discovered_at": "2026-11-17T15:41:58+00:00",
+      "source": "hiring",
+      "score": 45,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://outgoing.website",
+        "emails": [
+          {
+            "value": "hello@outgoing.website",
+            "kind": "general",
+            "source_url": "https://outgoing.website/"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://outgoing.website/",
+          "https://outgoing.website/about"
+        ],
+        "enriched_at": "2026-11-17T15:42:26+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Squarespace",
             "category": "cms"
           }
         ]
@@ -671,120 +432,69 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340419",
+          "url": "https://news.ycombinator.com/item?id=50518905",
           "roles": [
-            "Software Engineer (L4)"
+            "Software Engineer"
           ],
           "role_kinds": [
             "eng"
           ],
-          "posted_at": "2026-11-02T17:36:23Z",
-          "seen_at": "2026-11-16T15:12:41+00:00"
+          "posted_at": "2026-11-16T15:49:35Z",
+          "seen_at": "2026-11-17T15:41:58+00:00"
         }
       ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "JPMorganChase",
-      "core_product": "At JPMorganChase, your work helps shape the future of global finance. Join a team that serves millions of customers, businesses and communities.",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50340287",
-      "discovered_at": "2026-11-16T15:12:41+00:00",
-      "source": "hiring",
-      "score": 15,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-16T15:13:23+00:00",
-        "status": "no_website",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
+      "people": [
         {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340287",
-          "roles": [
-            "Lead Software Engineer"
-          ],
-          "role_kinds": [
-            "eng"
-          ],
-          "posted_at": "2026-11-02T17:26:48Z",
-          "seen_at": "2026-11-16T15:12:41+00:00"
+          "name": "Brett Gui Xin",
+          "role": "founder",
+          "org": "Outgoing",
+          "evidence": "Outgoing is Brett Gui Xin and Del Hoyle",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Del Hoyle",
+          "role": "founder",
+          "org": "Outgoing",
+          "evidence": "Outgoing is Brett Gui Xin and Del Hoyle",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
         }
       ],
-      "people": [],
       "edges": []
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Daisytuner",
+        "company": "Axonnic",
+        "score": 44,
+        "source": "launch_hn"
+      },
+      {
+        "company": "Asynchronics",
         "score": 79,
         "source": "rss"
       },
       {
-        "company": "Bharat Semi",
-        "score": 55,
-        "source": "rss"
-      },
-      {
-        "company": "Potentiam Biosciences, Inc.",
-        "score": 70,
-        "source": "edgar"
-      },
-      {
-        "company": "Isoquant",
-        "score": 62,
+        "company": "Repovive",
+        "score": 44,
         "source": "yc"
       },
       {
-        "company": "New Product",
-        "score": 25,
-        "source": "hiring"
+        "company": "Duke",
+        "score": 58,
+        "source": "yc"
       },
       {
-        "company": "Voluntas",
-        "score": 34,
-        "source": "hiring"
-      },
-      {
-        "company": "Paramark",
-        "score": 38,
-        "source": "hiring"
-      },
-      {
-        "company": "JPMorganChase",
-        "score": 15,
+        "company": "outGoing",
+        "score": 45,
         "source": "hiring"
       }
     ],

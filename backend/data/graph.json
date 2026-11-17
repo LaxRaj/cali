@@ -373,12 +373,20 @@
       "score": 92
     },
     {
+      "id": "asynchronics",
+      "label": "Asynchronics",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://asynchronics.com",
+      "score": 79
+    },
+    {
       "id": "miracly.ai",
       "label": "Miracly.ai",
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 87
+      "score": 72
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -1829,6 +1837,12 @@
       "degree": 2
     },
     {
+      "id": "b2venture",
+      "label": "b2venture",
+      "type": "org",
+      "degree": 2
+    },
+    {
       "id": "probe",
       "label": "Probe",
       "type": "startup",
@@ -2045,12 +2059,28 @@
       "score": 62
     },
     {
+      "id": "repovive",
+      "label": "Repovive",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://research.repovive.com",
+      "score": 44
+    },
+    {
+      "id": "duke",
+      "label": "Duke",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://dukesell.com",
+      "score": 58
+    },
+    {
       "id": "seal",
       "label": "Seal",
       "type": "startup",
       "degree": 1,
       "website": "https://seal.run",
-      "score": 52
+      "score": 42
     },
     {
       "id": "alex rosenberg",
@@ -5335,6 +5365,42 @@
       "links": {}
     },
     {
+      "id": "amir mostafavi",
+      "label": "Amir Mostafavi",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {}
+    },
+    {
+      "id": "felix manford",
+      "label": "Felix Manford",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
+      "id": "adam chikha",
+      "label": "Adam Chikha",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/adam-chikha/"
+      }
+    },
+    {
+      "id": "serge barral",
+      "label": "Serge Barral",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/serge-barral-9a2805218/"
+      }
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -6781,6 +6847,30 @@
       "degree": 1
     },
     {
+      "id": "andreas goeldi",
+      "label": "Andreas Goeldi",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "movens capital",
+      "label": "Movens Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "heartfelt",
+      "label": "Heartfelt",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "hard2beat",
+      "label": "Hard2beat",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "quantufai, inc",
       "label": "QuantufAi, Inc",
       "type": "startup",
@@ -7883,6 +7973,22 @@
       "degree": 0,
       "website": "https://www.generalintelligenceholdings.com",
       "score": 37
+    },
+    {
+      "id": "axonnic",
+      "label": "Axonnic",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.axonnic.com",
+      "score": 44
+    },
+    {
+      "id": "outgoing",
+      "label": "outGoing",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://outgoing.website",
+      "score": 45
     },
     {
       "id": "kevin hartz",
@@ -9656,6 +9762,32 @@
       "degree": 0,
       "role": "Executive Officer",
       "links": {}
+    },
+    {
+      "id": "brett gui xin",
+      "label": "Brett Gui Xin",
+      "type": "person",
+      "degree": 0,
+      "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "del hoyle",
+      "label": "Del Hoyle",
+      "type": "person",
+      "degree": 0,
+      "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "sandra szwabe",
+      "label": "Sandra Szwabe",
+      "type": "person",
+      "degree": 0,
+      "role": "Business Development & Marketing",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sandra-szwabe-8551151b2"
+      }
     }
   ],
   "edges": [
@@ -19650,6 +19782,132 @@
           "run_id": "backfill-2026-11-16",
           "first_seen": "2026-11-16T18:17:32+00:00",
           "last_seen": "2026-11-16T18:17:32+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andreas goeldi",
+      "target": "b2venture",
+      "rel": "works_at",
+      "evidence": "partner at b2venture",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "20261117T154103Z",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:33+00:00"
+        }
+      ]
+    },
+    {
+      "source": "amir mostafavi",
+      "target": "repovive",
+      "rel": "cofounded",
+      "evidence": "Hey YC! We’re Shayan and Amir, co‑founders of Repovive.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
+          "run_id": "20261117T154103Z",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:33+00:00"
+        }
+      ]
+    },
+    {
+      "source": "felix manford",
+      "target": "duke",
+      "rel": "founded",
+      "evidence": "Felix Manford",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/XeF-duke-powering-merchants-for-agentic-commerce",
+          "run_id": "20261117T154103Z",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:33+00:00"
+        }
+      ]
+    },
+    {
+      "source": "adam chikha",
+      "target": "asynchronics",
+      "rel": "founded",
+      "evidence": "He is now co‑founder and CEO of Asynchronics",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-17",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:34+00:00"
+        }
+      ]
+    },
+    {
+      "source": "serge barral",
+      "target": "asynchronics",
+      "rel": "cofounded",
+      "evidence": "Chikha and co‑founder Serge Barral ... started the company in 2023",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-17",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:34+00:00"
+        }
+      ]
+    },
+    {
+      "source": "b2venture",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "b2venture led the round",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-17",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:34+00:00"
+        }
+      ]
+    },
+    {
+      "source": "movens capital",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-17",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:34+00:00"
+        }
+      ]
+    },
+    {
+      "source": "heartfelt",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-17",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:34+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hard2beat",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-17",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-17T15:42:34+00:00"
         }
       ]
     }
