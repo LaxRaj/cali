@@ -19952,6 +19952,701 @@
     "outreach": []
   },
   {
+    "company_name": "Miracly.ai",
+    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+    "tech_stack": [
+      "ChatGPT",
+      "Claude",
+      "Copilot",
+      "LLMs",
+      "vector embeddings"
+    ],
+    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$2M",
+    "hq": "Stockholm",
+    "website": "https://www.miracly.ai",
+    "score": 87,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "miracly-ai",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 17
+    },
+    "gaps": [
+      "people profiles",
+      "phone"
+    ],
+    "axes": {
+      "fit": 100,
+      "reach": 100,
+      "evidence": 82
+    },
+    "qualified": true,
+    "contact": {
+      "website": "https://www.miracly.ai",
+      "emails": [
+        {
+          "value": "hello@miracly.ai",
+          "kind": "general",
+          "source_url": "https://www.miracly.ai/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/miracly",
+        "twitter": "https://x.com/miraclyai"
+      },
+      "contact_page": "https://www.miracly.ai/contact",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://www.miracly.ai/pricing"
+        },
+        {
+          "label": "Get started",
+          "url": "https://www.miracly.ai/sign-up"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.miracly.ai/",
+        "https://www.miracly.ai/contact",
+        "https://www.miracly.ai/about"
+      ],
+      "enriched_at": "2026-11-17T17:32:45+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": "",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Plausible",
+          "category": "analytics"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [
+      {
+        "src": "Beenext Ventures",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Lotus",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Stefan Lindeberg",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Alex Bouaziz",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Thomas Ekman",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Hedda Båverud Olsson",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 64.6,
+      "reasons": [
+        "lead score 87",
+        "signal strength 1.4/10: funding",
+        "found 24 day(s) ago (cold)",
+        "good fit but the news is old"
+      ],
+      "next_step": "Revisit when there is fresh news",
+      "provider": "policy",
+      "score": 91
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_stage",
+        "label": "funding_stage: pre-seed",
+        "value": "pre-seed",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_amount",
+        "label": "funding_amount: $2M",
+        "value": "$2M",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "hq",
+        "label": "hq: Stockholm",
+        "value": "Stockholm",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "website",
+        "label": "website: https://www.miracly.ai",
+        "value": "https://www.miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "core_product",
+        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "arvid lithander|miracly",
+        "field": "role",
+        "label": "Arvid Lithander · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "role",
+        "label": "Bjorn Bergstrom · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "shannon cullum|miracly",
+        "field": "role",
+        "label": "Shannon Cullum · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "beenext ventures|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Beenext Ventures invested in Miracly.ai",
+        "value": "Beenext Ventures invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "lotus|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Lotus invested in Miracly.ai",
+        "value": "Lotus invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Stefan Lindeberg invested in Miracly.ai",
+        "value": "Stefan Lindeberg invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alex bouaziz|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Alex Bouaziz invested in Miracly.ai",
+        "value": "Alex Bouaziz invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "thomas ekman|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Thomas Ekman invested in Miracly.ai",
+        "value": "Thomas Ekman invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Hedda Båverud Olsson invested in Miracly.ai",
+        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "arvid lithander|founded|miracly",
+        "field": "founded",
+        "label": "Arvid Lithander founded Miracly",
+        "value": "Arvid Lithander founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "bjorn bergstrom|founded|miracly",
+        "field": "founded",
+        "label": "Bjorn Bergstrom founded Miracly",
+        "value": "Bjorn Bergstrom founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "shannon cullum|founded|miracly",
+        "field": "founded",
+        "label": "Shannon Cullum founded Miracly",
+        "value": "Shannon Cullum founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 11,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 9,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 10,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 10,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/about",
+        "evidence": "",
+        "run_id": "backfill-2026-11-16",
+        "first_seen": "2026-11-16T18:17:32+00:00",
+        "last_seen": "2026-11-16T18:17:32+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "linkedin",
+        "label": "Bjorn Bergstrom · linkedin",
+        "value": "https://www.linkedin.com/in/bergstrombjorn",
+        "source_url": "search",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-15",
+        "first_seen": "2026-11-12T16:44:50+00:00",
+        "last_seen": "2026-11-15T15:34:03+00:00",
+        "seen_count": 3,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "stefan lindeberg|miracly.ai",
+        "field": "role",
+        "label": "Stefan Lindeberg · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex bouaziz|miracly.ai",
+        "field": "role",
+        "label": "Alex Bouaziz · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "thomas ekman|miracly.ai",
+        "field": "role",
+        "label": "Thomas Ekman · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hedda båverud olsson|miracly.ai",
+        "field": "role",
+        "label": "Hedda Båverud Olsson · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Gushwork",
+        "slug": "gushwork",
+        "similarity": 0.701
+      },
+      {
+        "company_name": "Seltz",
+        "slug": "seltz",
+        "similarity": 0.62
+      },
+      {
+        "company_name": "Exa",
+        "slug": "exa",
+        "similarity": 0.606
+      },
+      {
+        "company_name": "Linkup",
+        "slug": "linkup",
+        "similarity": 0.589
+      },
+      {
+        "company_name": "ZeroEntropy",
+        "slug": "zeroentropy",
+        "similarity": 0.568
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-16T18:17:32+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: hello@miracly.ai"
+        ],
+        "source_urls": [
+          "https://www.miracly.ai/about"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-11-12T16:44:50+00:00",
+        "kind": "learned",
+        "items": [
+          "Profile link: https://www.linkedin.com/in/bergstrombjorn"
+        ],
+        "source_urls": [
+          "search"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "discovered",
+        "items": [
+          "Stage: pre-seed",
+          "Raised: $2M",
+          "HQ: Stockholm",
+          "Website: https://www.miracly.ai",
+          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
+          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/contact"
+        ],
+        "count": 19
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "learned",
+        "items": [
+          "Person: Investor",
+          "Published email: hello@miracly.ai",
+          "linkedin: https://www.linkedin.com/company/miracly",
+          "twitter: https://x.com/miraclyai"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/contact?__clerk_synced=true"
+        ],
+        "count": 4
+      },
+      {
+        "at": "2026-10-24T01:55:31+00:00",
+        "kind": "funding",
+        "items": [
+          "Funding"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "funding",
+        "text": "Raised money (24d ago)",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "hello@miracly.ai",
+      "to_source_url": "https://www.miracly.ai/contact",
+      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
+      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Gushwork",
     "core_product": "An AI‑powered platform that automatically generates search‑optimized content, builds backlinks, and tracks inbound leads to help businesses surface in traditional and AI‑driven search results.",
     "tech_stack": [],
@@ -25456,7 +26151,7 @@
       "priority": 54.8,
       "reasons": [
         "lead score 83",
-        "found 27 day(s) ago (cold)",
+        "found 28 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -27505,7 +28200,7 @@
       "priority": 58.6,
       "reasons": [
         "lead score 81",
-        "found 27 day(s) ago (cold)",
+        "found 28 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -29238,7 +29933,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (5d ago)",
+        "text": "Launched (6d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50455811"
       }
     ],
@@ -42867,694 +43562,6 @@
     "outreach": []
   },
   {
-    "company_name": "Miracly.ai",
-    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-    "tech_stack": [
-      "ChatGPT",
-      "Claude",
-      "Copilot",
-      "LLMs",
-      "vector embeddings"
-    ],
-    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
-    "is_relevant": true,
-    "funding_stage": "pre-seed",
-    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-    "discovered_at": "2026-10-24T01:54:29+00:00",
-    "funding_amount": "$2M",
-    "hq": "Stockholm",
-    "website": "https://www.miracly.ai",
-    "score": 72,
-    "last_seen": "2026-10-24T01:57:30+00:00",
-    "slug": "miracly-ai",
-    "score_parts": {
-      "fit": 25,
-      "identity": 15,
-      "people": 0,
-      "connections": 15,
-      "contact": 17
-    },
-    "gaps": [
-      "founder",
-      "people profiles",
-      "phone"
-    ],
-    "axes": {
-      "fit": 100,
-      "reach": 100,
-      "evidence": 55
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://www.miracly.ai",
-      "emails": [
-        {
-          "value": "hello@miracly.ai",
-          "kind": "general",
-          "source_url": "https://www.miracly.ai/about"
-        }
-      ],
-      "phones": [],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/miracly",
-        "twitter": "https://x.com/miraclyai"
-      },
-      "contact_page": "https://www.miracly.ai/contact",
-      "product_access": [
-        {
-          "label": "Pricing",
-          "url": "https://www.miracly.ai/pricing"
-        },
-        {
-          "label": "Get started",
-          "url": "https://www.miracly.ai/sign-up"
-        }
-      ],
-      "pages_crawled": [
-        "https://www.miracly.ai/",
-        "https://www.miracly.ai/about",
-        "https://www.miracly.ai/contact"
-      ],
-      "enriched_at": "2026-11-16T18:17:39+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": [
-        {
-          "name": "Next.js",
-          "category": "framework"
-        },
-        {
-          "name": "Google Analytics",
-          "category": "analytics"
-        },
-        {
-          "name": "Plausible",
-          "category": "analytics"
-        },
-        {
-          "name": "React",
-          "category": "framework"
-        }
-      ]
-    },
-    "signals": [
-      {
-        "type": "funding",
-        "source": "web",
-        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "roles": [],
-        "role_kinds": [],
-        "posted_at": "",
-        "seen_at": "2026-10-24T01:55:31+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [
-      {
-        "src": "Beenext Ventures",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Lotus",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Stefan Lindeberg",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Alex Bouaziz",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Thomas Ekman",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Hedda Båverud Olsson",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 55.6,
-      "reasons": [
-        "lead score 72",
-        "signal strength 1.4/10: funding",
-        "found 24 day(s) ago (cold)",
-        "good fit but the news is old"
-      ],
-      "next_step": "Revisit when there is fresh news",
-      "provider": "policy",
-      "score": 76
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_stage",
-        "label": "funding_stage: pre-seed",
-        "value": "pre-seed",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_amount",
-        "label": "funding_amount: $2M",
-        "value": "$2M",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "hq",
-        "label": "hq: Stockholm",
-        "value": "Stockholm",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "website",
-        "label": "website: https://www.miracly.ai",
-        "value": "https://www.miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "core_product",
-        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "likely_bottleneck",
-        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "arvid lithander|miracly",
-        "field": "role",
-        "label": "Arvid Lithander · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "bjorn bergstrom|miracly",
-        "field": "role",
-        "label": "Bjorn Bergstrom · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "shannon cullum|miracly",
-        "field": "role",
-        "label": "Shannon Cullum · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "beenext ventures|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Beenext Ventures invested in Miracly.ai",
-        "value": "Beenext Ventures invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "lotus|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Lotus invested in Miracly.ai",
-        "value": "Lotus invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Stefan Lindeberg invested in Miracly.ai",
-        "value": "Stefan Lindeberg invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "alex bouaziz|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Alex Bouaziz invested in Miracly.ai",
-        "value": "Alex Bouaziz invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "thomas ekman|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Thomas Ekman invested in Miracly.ai",
-        "value": "Thomas Ekman invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Hedda Båverud Olsson invested in Miracly.ai",
-        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "arvid lithander|founded|miracly",
-        "field": "founded",
-        "label": "Arvid Lithander founded Miracly",
-        "value": "Arvid Lithander founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "bjorn bergstrom|founded|miracly",
-        "field": "founded",
-        "label": "Bjorn Bergstrom founded Miracly",
-        "value": "Bjorn Bergstrom founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "shannon cullum|founded|miracly",
-        "field": "founded",
-        "label": "Shannon Cullum founded Miracly",
-        "value": "Shannon Cullum founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 10,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 9,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 9,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/about",
-        "evidence": "",
-        "run_id": "backfill-2026-11-16",
-        "first_seen": "2026-11-16T18:17:32+00:00",
-        "last_seen": "2026-11-16T18:17:32+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "bjorn bergstrom|miracly",
-        "field": "linkedin",
-        "label": "Bjorn Bergstrom · linkedin",
-        "value": "https://www.linkedin.com/in/bergstrombjorn",
-        "source_url": "search",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-15",
-        "first_seen": "2026-11-12T16:44:50+00:00",
-        "last_seen": "2026-11-15T15:34:03+00:00",
-        "seen_count": 3,
-        "confidence": 0.6
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-15",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-15T15:34:03+00:00",
-        "seen_count": 8,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "stefan lindeberg|miracly.ai",
-        "field": "role",
-        "label": "Stefan Lindeberg · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "alex bouaziz|miracly.ai",
-        "field": "role",
-        "label": "Alex Bouaziz · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "thomas ekman|miracly.ai",
-        "field": "role",
-        "label": "Thomas Ekman · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "hedda båverud olsson|miracly.ai",
-        "field": "role",
-        "label": "Hedda Båverud Olsson · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Gushwork",
-        "slug": "gushwork",
-        "similarity": 0.701
-      },
-      {
-        "company_name": "Seltz",
-        "slug": "seltz",
-        "similarity": 0.62
-      },
-      {
-        "company_name": "Exa",
-        "slug": "exa",
-        "similarity": 0.606
-      },
-      {
-        "company_name": "Linkup",
-        "slug": "linkup",
-        "similarity": 0.589
-      },
-      {
-        "company_name": "ZeroEntropy",
-        "slug": "zeroentropy",
-        "similarity": 0.568
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-07T14:51:23+00:00",
-        "kind": "learned",
-        "items": [
-          "Profile link: https://www.linkedin.com/in/bergstrombjorn",
-          "Published email: hello@miracly.ai"
-        ],
-        "source_urls": [
-          "search",
-          "https://www.miracly.ai/contact"
-        ],
-        "count": 2
-      },
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "discovered",
-        "items": [
-          "Stage: pre-seed",
-          "Raised: $2M",
-          "HQ: Stockholm",
-          "Website: https://www.miracly.ai",
-          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
-          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/contact",
-          "https://www.miracly.ai/about"
-        ],
-        "count": 19
-      },
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "learned",
-        "items": [
-          "Person: Investor",
-          "Published email: hello@miracly.ai",
-          "linkedin: https://www.linkedin.com/company/miracly",
-          "twitter: https://x.com/miraclyai"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/contact?__clerk_synced=true"
-        ],
-        "count": 4
-      },
-      {
-        "at": "2026-10-24T01:55:31+00:00",
-        "kind": "funding",
-        "items": [
-          "Funding"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "funding",
-        "text": "Raised money (24d ago)",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "hello@miracly.ai",
-      "to_source_url": "https://www.miracly.ai/about",
-      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
-      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "PataBid",
     "core_product": "AI‑powered construction estimating tool called Quantify",
     "tech_stack": [],
@@ -44278,7 +44285,7 @@
       "priority": 48.2,
       "reasons": [
         "lead score 72",
-        "found 27 day(s) ago (cold)",
+        "found 28 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -59833,7 +59840,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (11d ago)",
+        "text": "Launched (12d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50381687"
       }
     ],
@@ -64651,7 +64658,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (14d ago)",
+        "text": "Launched (15d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50339913"
       },
       {
@@ -65223,7 +65230,7 @@
       "priority": 34.2,
       "reasons": [
         "lead score 57",
-        "found 27 day(s) ago (cold)",
+        "found 28 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -65370,7 +65377,7 @@
       "priority": 44.2,
       "reasons": [
         "lead score 57",
-        "found 27 day(s) ago (cold)",
+        "found 28 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -72689,7 +72696,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (0d ago): Software Engineer",
+        "text": "Hiring (1d ago): Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50518905"
       }
     ],
@@ -73316,14 +73323,14 @@
       "product_access": [],
       "pages_crawled": [
         "https://www.axonnic.com/",
+        "https://www.axonnic.com/about",
         "https://www.axonnic.com/team",
-        "https://www.axonnic.com/contact",
-        "https://www.axonnic.com/about"
+        "https://www.axonnic.com/contact"
       ],
-      "enriched_at": "2026-11-17T15:42:01+00:00",
+      "enriched_at": "2026-11-17T17:32:58+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
       "site_tech": [
         {
           "name": "Next.js",
@@ -73372,10 +73379,10 @@
         "value": "YC",
         "source_url": "https://news.ycombinator.com/item?id=50522776",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73386,10 +73393,10 @@
         "value": "https://www.axonnic.com",
         "source_url": "https://news.ycombinator.com/item?id=50522776",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73400,10 +73407,10 @@
         "value": "A forearm sleeve that reads muscle activity via EMG to decode finger movements and estimate fingertip force for training dextrous robots.",
         "source_url": "https://news.ycombinator.com/item?id=50522776",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73414,10 +73421,10 @@
         "value": "Inconsistent and noisy EMG data collection due to wireless interference and off‑the‑shelf hardware limits reliable model training.",
         "source_url": "https://news.ycombinator.com/item?id=50522776",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73428,10 +73435,10 @@
         "value": "info@axonnic.com",
         "source_url": "https://www.axonnic.com/",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -73566,10 +73573,10 @@
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-11-17T15:42:15+00:00",
+      "enriched_at": "2026-11-17T17:33:02+00:00",
       "status": "crawl_failed",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
       "site_tech": []
     },
     "signals": [
@@ -73628,10 +73635,10 @@
         "value": "YC",
         "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73642,10 +73649,10 @@
         "value": "https://research.repovive.com",
         "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73656,10 +73663,10 @@
         "value": "AI labs formalization data and reinforcement learning environments in Lean for model training and evaluation to enable formal verification of chips and critical software",
         "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73670,10 +73677,10 @@
         "value": "building a scalable web interface for delivering formal verification tasks and enabling fast discovery of relevant proof environments",
         "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
         "evidence": "",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -73684,10 +73691,10 @@
         "value": "co‑founder",
         "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
         "evidence": "Hey YC! We’re Shayan and Amir, co‑founders of Repovive.",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -73698,10 +73705,10 @@
         "value": "Amir Mostafavi cofounded Repovive",
         "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
         "evidence": "Hey YC! We’re Shayan and Amir, co‑founders of Repovive.",
-        "run_id": "20261117T154103Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-17T15:42:33+00:00",
-        "last_seen": "2026-11-17T15:42:33+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -78408,7 +78415,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (7d ago): Product Engineer (Mid-Level / Senior)",
+        "text": "Hiring (8d ago): Product Engineer (Mid-Level / Senior)",
         "source_url": "https://news.ycombinator.com/item?id=50427924"
       }
     ],
@@ -78706,7 +78713,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (12d ago)",
+        "text": "Launched (13d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50368804"
       }
     ],
@@ -79870,7 +79877,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (35d ago): AI Engineer Apprentice",
+        "text": "Hiring (36d ago): AI Engineer Apprentice",
         "source_url": "https://news.ycombinator.com/item?id=50059584"
       }
     ],
@@ -82107,7 +82114,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (7d ago): Senior Full-Stack Engineer (backend-heavy)",
+        "text": "Hiring (8d ago): Senior Full-Stack Engineer (backend-heavy)",
         "source_url": "https://news.ycombinator.com/item?id=50428062"
       }
     ],
@@ -83735,7 +83742,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (13d ago): Lead Engineer, AI Accounting",
+        "text": "Hiring (14d ago): Lead Engineer, AI Accounting",
         "source_url": "https://news.ycombinator.com/item?id=50354142"
       }
     ],
@@ -85134,247 +85141,6 @@
     "outreach": []
   },
   {
-    "company_name": "GovStar",
-    "core_product": "GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://govstar.us",
-    "discovered_at": "2026-10-23T11:16:48+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "https://www.govstar.us",
-    "score": 37,
-    "last_seen": "2026-11-02T15:08:02+00:00",
-    "slug": "govstar",
-    "score_parts": {
-      "fit": 15,
-      "identity": 6,
-      "people": 0,
-      "connections": 0,
-      "contact": 16
-    },
-    "gaps": [
-      "funding stage",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 100,
-      "evidence": 11
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://www.govstar.us",
-      "emails": [
-        {
-          "value": "nicholas.hanson@govstar.us",
-          "kind": "person",
-          "source_url": "https://news.ycombinator.com/item?id=50090302"
-        }
-      ],
-      "phones": [],
-      "socials": {},
-      "contact_page": "https://www.govstar.us/contact",
-      "product_access": [],
-      "pages_crawled": [
-        "https://www.govstar.us/",
-        "https://www.govstar.us/contact",
-        "https://www.govstar.us/about",
-        "https://www.govstar.us/team"
-      ],
-      "enriched_at": "2026-11-02T15:07:08+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": ""
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50346358",
-        "roles": [
-          "[https:",
-          "govstar.us](https://govstar.us)"
-        ],
-        "role_kinds": [
-          "other"
-        ],
-        "posted_at": "2026-11-03T00:33:17Z",
-        "seen_at": "2026-11-07T12:41:27+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 41.2,
-      "reasons": [
-        "lead score 37",
-        "signal strength 5.1/10: hiring",
-        "found 25 day(s) ago (cold)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 52
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "govstar",
-        "field": "website",
-        "label": "website: https://www.govstar.us",
-        "value": "https://www.govstar.us",
-        "source_url": "https://govstar.us",
-        "evidence": "",
-        "run_id": "20261102T150455Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 12,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "govstar",
-        "field": "core_product",
-        "label": "core_product: GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
-        "value": "GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
-        "source_url": "https://govstar.us",
-        "evidence": "",
-        "run_id": "20261102T150455Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 13,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "govstar",
-        "field": "email",
-        "label": "email: nicholas.hanson@govstar.us",
-        "value": "nicholas.hanson@govstar.us",
-        "source_url": "https://news.ycombinator.com/item?id=50090302",
-        "evidence": "",
-        "run_id": "20261102T150455Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 13,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "govstar",
-        "field": "website",
-        "label": "website: https://govstar.us",
-        "value": "https://govstar.us",
-        "source_url": "https://govstar.us",
-        "evidence": "",
-        "run_id": "20261028T122235Z",
-        "first_seen": "2026-10-28T12:26:24+00:00",
-        "last_seen": "2026-10-28T12:26:24+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Mechanize",
-        "slug": "mechanize",
-        "similarity": 0.584
-      },
-      {
-        "company_name": "Multikor.ai, Inc.",
-        "slug": "multikor-ai-inc",
-        "similarity": 0.571
-      },
-      {
-        "company_name": "Hemant Singh",
-        "slug": "hemant-singh",
-        "similarity": 0.557
-      },
-      {
-        "company_name": "Symx.ai",
-        "slug": "symx-ai",
-        "similarity": 0.546
-      },
-      {
-        "company_name": "Bloomsco",
-        "slug": "bloomsco",
-        "similarity": 0.518
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-03T00:33:17+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: [https:, govstar.us](https://govstar.us)"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50346358"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-10-28T12:26:24+00:00",
-        "kind": "learned",
-        "items": [
-          "Website: https://govstar.us"
-        ],
-        "source_urls": [
-          "https://govstar.us"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-10-23T11:18:40+00:00",
-        "kind": "discovered",
-        "items": [
-          "Website: https://www.govstar.us",
-          "Product: GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national s",
-          "Published email: nicholas.hanson@govstar.us"
-        ],
-        "source_urls": [
-          "https://govstar.us",
-          "https://news.ycombinator.com/item?id=50090302"
-        ],
-        "count": 3
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hiring",
-        "text": "Hiring (14d ago)",
-        "source_url": "https://news.ycombinator.com/item?id=50346358"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_with",
-      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
-      "to": "nicholas.hanson@govstar.us",
-      "to_source_url": "https://news.ycombinator.com/item?id=50090302",
-      "subject": "GovStar: a thought on your stack",
-      "body": "Hi GovStar team,\n\nI saw you're hiring (https://news.ycombinator.com/item?id=50346358).\nI'd like to help on the engineering side.\n\nI came across GovStar: GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S.\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:nicholas.hanson%40govstar.us?subject=GovStar%3A%20a%20thought%20on%20your%20stack&body=Hi%20GovStar%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28https%3A//news.ycombinator.com/item%3Fid%3D50346358%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20GovStar%3A%20GovStar%20is%20hiring%20a%20Senior%20Full%20Stack%20Python%20Developer%20to%20build%20secure%2C%20production-grade%20AI%20applications%20supporting%20U.S.%0AI%27d%20like%20to%20build%20something%20with%20you.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "General Intelligence Holdings",
     "core_product": "I'm Chris, founder of GIH. We're building an AI operating platform for established service businesses, starting with UK accountancy. Our model is to acquire businesses and deploy the software into their daily workflows, measuring its effect",
     "tech_stack": [],
@@ -85686,14 +85452,30 @@
         {
           "label": "Docs (opens in a new tab)",
           "url": "https://docs.alterauth.com"
+        },
+        {
+          "label": "Start free",
+          "url": "https://portal.alterauth.com/sign-up"
         }
       ],
       "pages_crawled": [
         "https://alterauth.com/",
         "https://alterauth.com/company/"
       ],
-      "enriched_at": "2026-10-23T11:17:17+00:00",
-      "status": "ok"
+      "enriched_at": "2026-11-17T17:33:08+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
+      "site_tech": [
+        {
+          "name": "Astro",
+          "category": "framework"
+        },
+        {
+          "name": "PostHog",
+          "category": "analytics"
+        }
+      ]
     },
     "signals": [
       {
@@ -85739,10 +85521,10 @@
         "value": "https://alterauth.com",
         "source_url": "https://news.ycombinator.com/item?id=50176908",
         "evidence": "",
-        "run_id": "20261023T111503Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -85753,10 +85535,10 @@
         "value": "Access control proxy for multi‑user agents that manages downstream credentials, enforces fine‑grained runtime policies and records compliance‑grade audit logs.",
         "source_url": "https://news.ycombinator.com/item?id=50176908",
         "evidence": "",
-        "run_id": "20261023T111503Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -85767,25 +85549,11 @@
         "value": "Scaling fine‑grained policy enforcement and audit‑log storage across hundreds of integrated providers.",
         "source_url": "https://news.ycombinator.com/item?id=50176908",
         "evidence": "",
-        "run_id": "20261023T111503Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "srikar dandamuraju|alter labs",
-        "field": "role",
-        "label": "Srikar Dandamuraju · Co-Founder & CEO",
-        "value": "Co-Founder & CEO",
-        "source_url": "https://news.ycombinator.com/item?id=50176908",
-        "evidence": "Co-Founder & CEO",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
       },
       {
         "entity_type": "edge",
@@ -85795,6 +85563,90 @@
         "value": "Srikar Dandamuraju founded Alter",
         "source_url": "https://news.ycombinator.com/item?id=50176908",
         "evidence": "Hi HN! We’re Srikar and Kevan, founders of Alter – https://alterauth.com/.",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "alter",
+        "field": "email",
+        "label": "email: founders@alterauth.com",
+        "value": "founders@alterauth.com",
+        "source_url": "https://alterauth.com/company/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "alter",
+        "field": "email",
+        "label": "email: security@alterauth.com",
+        "value": "security@alterauth.com",
+        "source_url": "https://alterauth.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "alter",
+        "field": "github",
+        "label": "github: https://github.com/AlterAIDev",
+        "value": "https://github.com/AlterAIDev",
+        "source_url": "https://alterauth.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "alter",
+        "field": "twitter",
+        "label": "twitter: https://x.com/alter_ai_labs",
+        "value": "https://x.com/alter_ai_labs",
+        "source_url": "https://alterauth.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "alter",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/alterai-dev",
+        "value": "https://www.linkedin.com/company/alterai-dev",
+        "source_url": "https://alterauth.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "srikar dandamuraju|alter labs",
+        "field": "role",
+        "label": "Srikar Dandamuraju · Co-Founder & CEO",
+        "value": "Co-Founder & CEO",
+        "source_url": "https://news.ycombinator.com/item?id=50176908",
+        "evidence": "Co-Founder & CEO",
         "run_id": "20261023T111503Z",
         "first_seen": "2026-10-23T11:18:40+00:00",
         "last_seen": "2026-10-23T11:18:40+00:00",
@@ -85842,76 +85694,6 @@
         "last_seen": "2026-10-23T11:18:40+00:00",
         "seen_count": 1,
         "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "alter",
-        "field": "email",
-        "label": "email: founders@alterauth.com",
-        "value": "founders@alterauth.com",
-        "source_url": "https://alterauth.com/company/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "alter",
-        "field": "email",
-        "label": "email: security@alterauth.com",
-        "value": "security@alterauth.com",
-        "source_url": "https://alterauth.com/",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "alter",
-        "field": "github",
-        "label": "github: https://github.com/AlterAIDev",
-        "value": "https://github.com/AlterAIDev",
-        "source_url": "https://alterauth.com",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "alter",
-        "field": "twitter",
-        "label": "twitter: https://x.com/alter_ai_labs",
-        "value": "https://x.com/alter_ai_labs",
-        "source_url": "https://alterauth.com",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "alter",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/alterai-dev",
-        "value": "https://www.linkedin.com/company/alterai-dev",
-        "source_url": "https://alterauth.com",
-        "evidence": "",
-        "run_id": "20261023T111503Z",
-        "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-10-23T11:18:40+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
       }
     ],
     "similar": [
@@ -85949,16 +85731,30 @@
           "Website: https://alterauth.com",
           "Product: Access control proxy for multi‑user agents that manages downstream credentials, enforces fine‑grained runtime policies and records ",
           "Bottleneck: Scaling fine‑grained policy enforcement and audit‑log storage across hundreds of integrated providers.",
-          "Person: Co-Founder & CEO",
           "Founded: Srikar Dandamuraju founded Alter",
-          "Previously at: Srikar Dandamuraju previously_at Goldman Sachs"
+          "Published email: founders@alterauth.com",
+          "Published email: security@alterauth.com"
         ],
         "source_urls": [
           "https://news.ycombinator.com/item?id=50176908",
           "https://alterauth.com/company/",
           "https://alterauth.com/"
         ],
-        "count": 13
+        "count": 9
+      },
+      {
+        "at": "2026-10-23T11:18:40+00:00",
+        "kind": "learned",
+        "items": [
+          "Person: Co-Founder & CEO",
+          "Previously at: Srikar Dandamuraju previously_at Goldman Sachs",
+          "Founded: Srikar Dandamuraju founded Alter Labs",
+          "Founded: Kevan Dodhia founded Alter Labs"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50176908"
+        ],
+        "count": 4
       },
       {
         "at": "2026-10-21T06:42:12+00:00",
@@ -86058,10 +85854,24 @@
         "https://www.hio.com/about-us",
         "https://www.hio.com/contact-us"
       ],
-      "enriched_at": "2026-11-02T15:07:23+00:00",
+      "enriched_at": "2026-11-17T17:33:12+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": ""
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
+      "site_tech": [
+        {
+          "name": "HubSpot",
+          "category": "marketing"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Cloudflare",
+          "category": "hosting"
+        }
+      ]
     },
     "signals": [
       {
@@ -86104,10 +85914,10 @@
         "value": "Buford, US",
         "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 4,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 5,
         "confidence": 0.4
       },
       {
@@ -86118,10 +85928,10 @@
         "value": "https://www.hio.com",
         "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 4,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 5,
         "confidence": 0.4
       },
       {
@@ -86132,10 +85942,10 @@
         "value": "HiO is an AI business partner for small business owners. It works across their customer conversations on Instagram, WhatsApp, SMS and email, spots opportunities and flags what needs the owner’s attention. We’ve raised a $16M seed round and ",
         "source_url": "https://www.linkedin.com/jobs/view/4468585742/",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-23T11:18:40+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 14,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 15,
         "confidence": 0.4
       },
       {
@@ -86146,10 +85956,10 @@
         "value": "+18008222257",
         "source_url": "https://www.hio.com/",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 4,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 5,
         "confidence": 1.0
       },
       {
@@ -86160,10 +85970,10 @@
         "value": "+18666495058",
         "source_url": "https://www.hio.com/",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 4,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 5,
         "confidence": 1.0
       },
       {
@@ -86174,10 +85984,10 @@
         "value": "https://x.com/AmericanHIO",
         "source_url": "https://www.hio.com/contact-us",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 4,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 5,
         "confidence": 1.0
       },
       {
@@ -86188,10 +85998,10 @@
         "value": "https://www.linkedin.com/company/american-hole-'n-one",
         "source_url": "https://www.hio.com/contact-us",
         "evidence": "",
-        "run_id": "20261102T150455Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-02T15:08:02+00:00",
-        "seen_count": 4,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 5,
         "confidence": 1.0
       },
       {
@@ -86680,33 +86490,33 @@
           "url": "https://studio.reducto.ai/"
         },
         {
-          "label": "Docs",
-          "url": "https://docs.reducto.ai/overview"
+          "label": "Try for free",
+          "url": "https://studio.reducto.ai"
         }
       ],
       "pages_crawled": [
         "https://reducto.ai/",
         "https://reducto.ai/contact",
         "https://reducto.ai/contact?source=contact_sales_nav",
-        "https://reducto.ai/contact?source=request_demo_home",
-        "https://reducto.ai/contact?source=contact_sales_home"
+        "https://reducto.ai/contact?source=contact_sales_home",
+        "https://reducto.ai/contact?source=request_demo_home"
       ],
-      "enriched_at": "2026-11-13T14:13:46+00:00",
+      "enriched_at": "2026-11-17T17:33:17+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
       "site_tech": [
         {
-          "name": "Next.js",
+          "name": "Astro",
+          "category": "framework"
+        },
+        {
+          "name": "React",
           "category": "framework"
         },
         {
           "name": "Google Analytics",
           "category": "analytics"
-        },
-        {
-          "name": "React",
-          "category": "framework"
         }
       ]
     },
@@ -86751,10 +86561,10 @@
         "value": "https://reducto.ai",
         "source_url": "https://news.ycombinator.com/item?id=50341662",
         "evidence": "",
-        "run_id": "20261113T141102Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-13T14:14:03+00:00",
-        "last_seen": "2026-11-13T14:14:03+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -86765,10 +86575,10 @@
         "value": "Reducto is the agentic document platform for leading AI teams who need enterprise performance at scale. Most of the world's important information is locked in documents: PDFs, spreadsheets, scanned forms, financial filings. We build the inf",
         "source_url": "https://news.ycombinator.com/item?id=50341662",
         "evidence": "",
-        "run_id": "20261113T141102Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-13T14:14:03+00:00",
-        "last_seen": "2026-11-13T14:14:03+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -86779,10 +86589,10 @@
         "value": "support@reducto.ai",
         "source_url": "https://reducto.ai/",
         "evidence": "",
-        "run_id": "20261113T141102Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-13T14:14:03+00:00",
-        "last_seen": "2026-11-13T14:14:03+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -86793,10 +86603,10 @@
         "value": "https://x.com/reductoai",
         "source_url": "https://reducto.ai/contact",
         "evidence": "",
-        "run_id": "20261113T141102Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-13T14:14:03+00:00",
-        "last_seen": "2026-11-13T14:14:03+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -86807,10 +86617,10 @@
         "value": "https://www.linkedin.com/company/reducto-ai",
         "source_url": "https://reducto.ai/contact",
         "evidence": "",
-        "run_id": "20261113T141102Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-13T14:14:03+00:00",
-        "last_seen": "2026-11-13T14:14:03+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -86821,10 +86631,10 @@
         "value": "https://github.com/reductoai",
         "source_url": "https://reducto.ai/contact",
         "evidence": "",
-        "run_id": "20261113T141102Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-13T14:14:03+00:00",
-        "last_seen": "2026-11-13T14:14:03+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -86991,11 +86801,20 @@
         "https://www.freelancer.com/",
         "https://www.freelancer.com/about"
       ],
-      "enriched_at": "2026-11-04T14:02:23+00:00",
+      "enriched_at": "2026-11-17T17:33:22+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
+      "site_tech": [
+        {
+          "name": "Angular",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        }
+      ]
     },
     "signals": [
       {
@@ -87038,10 +86857,10 @@
         "value": "https://www.freelancer.com",
         "source_url": "https://news.ycombinator.com/item?id=50352957",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -87052,10 +86871,10 @@
         "value": "We're looking for an experienced devops freelancer to help manage and enhance our GCP + Terraform + GitLab based stack in our SOC2 / PCI environment. Candidates must be willing to undergo a background check.",
         "source_url": "https://news.ycombinator.com/item?id=50352957",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -87066,10 +86885,10 @@
         "value": "press@freelancer.com",
         "source_url": "https://www.freelancer.com/about",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -87080,24 +86899,10 @@
         "value": "support@freelancer.com",
         "source_url": "https://www.freelancer.com/about",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "seeking freelancer",
-        "field": "email",
-        "label": "email: hn@getregistered.com",
-        "value": "hn@getregistered.com",
-        "source_url": "https://news.ycombinator.com/item?id=50352957",
-        "evidence": "",
-        "run_id": "20261104T135833Z",
-        "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -87108,10 +86913,10 @@
         "value": "+14157023294",
         "source_url": "https://www.freelancer.com/about",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -87122,10 +86927,10 @@
         "value": "https://x.com/freelancer",
         "source_url": "https://www.freelancer.com",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-17",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -87135,6 +86940,20 @@
         "label": "linkedin: https://www.linkedin.com/company/freelancer-com",
         "value": "https://www.linkedin.com/company/freelancer-com",
         "source_url": "https://www.freelancer.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-04T14:02:27+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "seeking freelancer",
+        "field": "email",
+        "label": "email: hn@getregistered.com",
+        "value": "hn@getregistered.com",
+        "source_url": "https://news.ycombinator.com/item?id=50352957",
         "evidence": "",
         "run_id": "20261104T135833Z",
         "first_seen": "2026-11-04T14:02:27+00:00",
@@ -87179,15 +86998,26 @@
           "Product: We're looking for an experienced devops freelancer to help manage and enhance our GCP + Terraform + GitLab based stack in our SOC2 ",
           "Published email: press@freelancer.com",
           "Published email: support@freelancer.com",
-          "Published email: hn@getregistered.com",
-          "Published phone: +14157023294"
+          "Published phone: +14157023294",
+          "twitter: https://x.com/freelancer"
         ],
         "source_urls": [
           "https://news.ycombinator.com/item?id=50352957",
           "https://www.freelancer.com/about",
           "https://www.freelancer.com"
         ],
-        "count": 8
+        "count": 7
+      },
+      {
+        "at": "2026-11-04T14:02:27+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: hn@getregistered.com"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50352957"
+        ],
+        "count": 1
       },
       {
         "at": "2026-11-03T15:08:09+00:00",
@@ -87223,474 +87053,6 @@
       "subject": "SEEKING FREELANCER: a thought on your stack",
       "body": "Hi SEEKING FREELANCER team,\n\nI saw you're hiring (Devops Engineer) (https://news.ycombinator.com/item?id=50352957).\nI'd like to help on the engineering side.\n\nI came across SEEKING FREELANCER: We're looking for an experienced devops freelancer to help manage and enhance our GCP + Terraform + GitLab based stack in our SOC2 / PCI.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Voluntas",
-    "core_product": "Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50340434",
-    "discovered_at": "2026-11-16T15:12:41+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "http://voluntas-international.org",
-    "score": 34,
-    "last_seen": "2026-11-16T15:13:23+00:00",
-    "slug": "voluntas",
-    "score_parts": {
-      "fit": 15,
-      "identity": 6,
-      "people": 0,
-      "connections": 0,
-      "contact": 13
-    },
-    "gaps": [
-      "funding stage",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 100,
-      "evidence": 11
-    },
-    "qualified": false,
-    "contact": {
-      "website": "http://voluntas-international.org",
-      "emails": [
-        {
-          "value": "info@voluntas.org",
-          "kind": "general",
-          "source_url": "http://voluntas-international.org/"
-        },
-        {
-          "value": "jobs@voluntas.io",
-          "kind": "other",
-          "source_url": "https://news.ycombinator.com/item?id=50340434"
-        }
-      ],
-      "phones": [],
-      "socials": {},
-      "contact_page": "http://voluntas-international.org/contact/",
-      "product_access": [],
-      "pages_crawled": [
-        "http://voluntas-international.org/",
-        "http://voluntas-international.org/about/",
-        "http://voluntas-international.org/contact/",
-        "http://voluntas-international.org/contact/"
-      ],
-      "enriched_at": "2026-11-16T15:13:16+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": [
-        {
-          "name": "WordPress",
-          "category": "cms"
-        }
-      ]
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50340434",
-        "roles": [
-          "Remote"
-        ],
-        "role_kinds": [
-          "other"
-        ],
-        "posted_at": "2026-11-02T17:37:08Z",
-        "seen_at": "2026-11-16T15:12:41+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 69.4,
-      "reasons": [
-        "lead score 34",
-        "signal strength 5.1/10: hiring",
-        "found 1 day(s) ago (hot)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 49
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "voluntas",
-        "field": "website",
-        "label": "website: http://voluntas-international.org",
-        "value": "http://voluntas-international.org",
-        "source_url": "https://news.ycombinator.com/item?id=50340434",
-        "evidence": "",
-        "run_id": "20261116T151113Z",
-        "first_seen": "2026-11-16T15:13:23+00:00",
-        "last_seen": "2026-11-16T15:13:23+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "voluntas",
-        "field": "core_product",
-        "label": "core_product: Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
-        "value": "Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
-        "source_url": "https://news.ycombinator.com/item?id=50340434",
-        "evidence": "",
-        "run_id": "20261116T151113Z",
-        "first_seen": "2026-11-16T15:13:23+00:00",
-        "last_seen": "2026-11-16T15:13:23+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "voluntas",
-        "field": "email",
-        "label": "email: info@voluntas.org",
-        "value": "info@voluntas.org",
-        "source_url": "http://voluntas-international.org/",
-        "evidence": "",
-        "run_id": "20261116T151113Z",
-        "first_seen": "2026-11-16T15:13:23+00:00",
-        "last_seen": "2026-11-16T15:13:23+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "voluntas",
-        "field": "email",
-        "label": "email: jobs@voluntas.io",
-        "value": "jobs@voluntas.io",
-        "source_url": "https://news.ycombinator.com/item?id=50340434",
-        "evidence": "",
-        "run_id": "20261116T151113Z",
-        "first_seen": "2026-11-16T15:13:23+00:00",
-        "last_seen": "2026-11-16T15:13:23+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "VALIS",
-        "slug": "valis",
-        "similarity": 0.457
-      },
-      {
-        "company_name": "OneChronos",
-        "slug": "onechronos",
-        "similarity": 0.386
-      },
-      {
-        "company_name": "Respan",
-        "slug": "respan",
-        "similarity": 0.382
-      },
-      {
-        "company_name": "Flow Traders",
-        "slug": "flow-traders",
-        "similarity": 0.369
-      },
-      {
-        "company_name": "AI x Healthcare Startup",
-        "slug": "ai-x-healthcare-startup",
-        "similarity": 0.366
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-16T15:13:23+00:00",
-        "kind": "discovered",
-        "items": [
-          "Website: http://voluntas-international.org",
-          "Product: Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, lookin",
-          "Published email: info@voluntas.org",
-          "Published email: jobs@voluntas.io"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50340434",
-          "http://voluntas-international.org/"
-        ],
-        "count": 4
-      },
-      {
-        "at": "2026-11-02T17:37:08+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: Remote"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50340434"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 1d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50340434"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (14d ago): Remote",
-        "source_url": "https://news.ycombinator.com/item?id=50340434"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "jobs@voluntas.io",
-      "to_source_url": "https://news.ycombinator.com/item?id=50340434",
-      "subject": "Voluntas: a thought on your stack",
-      "body": "Hi Voluntas team,\n\nI saw you're hiring (Remote) (https://news.ycombinator.com/item?id=50340434).\nI'd like to help on the engineering side.\n\nI came across Voluntas: Voluntas is a trading firm written 100% in Rust.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:jobs%40voluntas.io?subject=Voluntas%3A%20a%20thought%20on%20your%20stack&body=Hi%20Voluntas%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Remote%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50340434%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Voluntas%3A%20Voluntas%20is%20a%20trading%20firm%20written%20100%25%20in%20Rust.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Early-stage Startup",
-    "core_product": "We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50500910",
-    "discovered_at": "2026-11-15T13:41:28+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "https://www.earlystaged.com",
-    "score": 34,
-    "last_seen": "2026-11-15T13:42:29+00:00",
-    "slug": "early-stage-startup",
-    "score_parts": {
-      "fit": 15,
-      "identity": 6,
-      "people": 0,
-      "connections": 0,
-      "contact": 13
-    },
-    "gaps": [
-      "funding stage",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 100,
-      "evidence": 11
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://www.earlystaged.com",
-      "emails": [
-        {
-          "value": "info@earlystaged.com",
-          "kind": "general",
-          "source_url": "https://www.earlystaged.com/"
-        }
-      ],
-      "phones": [],
-      "socials": {},
-      "contact_page": "https://www.earlystaged.com/contact",
-      "product_access": [],
-      "pages_crawled": [
-        "https://www.earlystaged.com/",
-        "https://www.earlystaged.com/about",
-        "https://www.earlystaged.com/team",
-        "https://www.earlystaged.com/contact"
-      ],
-      "enriched_at": "2026-11-15T13:41:56+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50500910",
-        "roles": [
-          "Software Engineer",
-          "Data Analyst"
-        ],
-        "role_kinds": [
-          "eng"
-        ],
-        "posted_at": "2026-11-14T21:17:20Z",
-        "seen_at": "2026-11-15T13:41:28+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 72.4,
-      "reasons": [
-        "lead score 34",
-        "signal strength 6.6/10: hiring",
-        "found 2 day(s) ago (hot)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 54
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "early-stage startup",
-        "field": "website",
-        "label": "website: https://www.earlystaged.com",
-        "value": "https://www.earlystaged.com",
-        "source_url": "https://news.ycombinator.com/item?id=50500910",
-        "evidence": "",
-        "run_id": "20261115T134019Z",
-        "first_seen": "2026-11-15T13:42:29+00:00",
-        "last_seen": "2026-11-15T13:42:29+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "early-stage startup",
-        "field": "core_product",
-        "label": "core_product: We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
-        "value": "We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
-        "source_url": "https://news.ycombinator.com/item?id=50500910",
-        "evidence": "",
-        "run_id": "20261115T134019Z",
-        "first_seen": "2026-11-15T13:42:29+00:00",
-        "last_seen": "2026-11-15T13:42:29+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "early-stage startup",
-        "field": "email",
-        "label": "email: info@earlystaged.com",
-        "value": "info@earlystaged.com",
-        "source_url": "https://www.earlystaged.com/",
-        "evidence": "",
-        "run_id": "20261115T134019Z",
-        "first_seen": "2026-11-15T13:42:29+00:00",
-        "last_seen": "2026-11-15T13:42:29+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "SentiLink",
-        "slug": "sentilink",
-        "similarity": 0.726
-      },
-      {
-        "company_name": "Proofline",
-        "slug": "proofline",
-        "similarity": 0.592
-      },
-      {
-        "company_name": "Typify.dev",
-        "slug": "typify-dev",
-        "similarity": 0.59
-      },
-      {
-        "company_name": "Meta",
-        "slug": "meta",
-        "similarity": 0.562
-      },
-      {
-        "company_name": "Joulent",
-        "slug": "joulent",
-        "similarity": 0.548
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-15T13:42:29+00:00",
-        "kind": "discovered",
-        "items": [
-          "Website: https://www.earlystaged.com",
-          "Product: We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
-          "Published email: info@earlystaged.com"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50500910",
-          "https://www.earlystaged.com/"
-        ],
-        "count": 3
-      },
-      {
-        "at": "2026-11-14T21:17:20+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: Software Engineer, Data Analyst"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50500910"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 2d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50500910"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (2d ago): Software Engineer, Data Analyst",
-        "source_url": "https://news.ycombinator.com/item?id=50500910"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "info@earlystaged.com",
-      "to_source_url": "https://www.earlystaged.com/",
-      "subject": "Early-stage Startup: a thought on your stack",
-      "body": "Hi Early-stage Startup team,\n\nI saw you're hiring (Software Engineer, Data Analyst) (https://news.ycombinator.com/item?id=50500910).\nI'd like to help on the engineering side.\n\nI came across Early-stage Startup: We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:info%40earlystaged.com?subject=Early-stage%20Startup%3A%20a%20thought%20on%20your%20stack&body=Hi%20Early-stage%20Startup%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Software%20Engineer%2C%20Data%20Analyst%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50500910%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Early-stage%20Startup%3A%20We%E2%80%99re%20hiring%20for%20two%20roles%3A%20a%20strong%20generalist%20Software%20Engineer%20and%20a%20Data%20Analyst.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -92092,7 +91454,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (18d ago)",
+        "text": "Launched (19d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50291116"
       }
     ],
@@ -94571,7 +93933,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (13d ago): Security, Machine Learning",
+        "text": "Hiring (14d ago): Security, Machine Learning",
         "source_url": "https://news.ycombinator.com/item?id=50353951"
       }
     ],
@@ -97518,7 +96880,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (1d ago): Full Stack Engineer (mostly backend + API)",
+        "text": "Hiring (2d ago): Full Stack Engineer (mostly backend + API)",
         "source_url": "https://news.ycombinator.com/item?id=50508598"
       }
     ],
@@ -97530,6 +96892,247 @@
       "to_source_url": "",
       "subject": "New Product: a thought on your stack",
       "body": "Hi New Product team,\n\nI saw you're hiring (Full Stack Engineer (mostly backend + API)) (https://news.ycombinator.com/item?id=50508598).\nI'd like to help on the engineering side.\n\nI came across New Product: Looking for a full-stack, senior or staff engineer (6+ years of experience) that is currently working for a company within the Bay Area and.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Voluntas",
+    "core_product": "Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50340434",
+    "discovered_at": "2026-11-16T15:12:41+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "http://voluntas-international.org",
+    "score": 25,
+    "last_seen": "2026-11-16T15:13:23+00:00",
+    "slug": "voluntas",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 4
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 33,
+      "evidence": 11
+    },
+    "qualified": false,
+    "contact": {
+      "website": "http://voluntas-international.org",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "http://voluntas-international.org/contact",
+      "product_access": [],
+      "pages_crawled": [
+        "http://voluntas-international.org/",
+        "http://voluntas-international.org/about",
+        "http://voluntas-international.org/contact",
+        "http://voluntas-international.org/team"
+      ],
+      "enriched_at": "2026-11-17T17:33:25+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
+      "site_tech": []
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50340434",
+        "roles": [
+          "Remote"
+        ],
+        "role_kinds": [
+          "other"
+        ],
+        "posted_at": "2026-11-02T17:37:08Z",
+        "seen_at": "2026-11-16T15:12:41+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 54.0,
+      "reasons": [
+        "lead score 25",
+        "signal strength 5.1/10: hiring",
+        "found 1 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy",
+      "score": 40
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "voluntas",
+        "field": "website",
+        "label": "website: http://voluntas-international.org",
+        "value": "http://voluntas-international.org",
+        "source_url": "https://news.ycombinator.com/item?id=50340434",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-16T15:13:23+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "voluntas",
+        "field": "core_product",
+        "label": "core_product: Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
+        "value": "Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, looking to expand our systems more broadly.",
+        "source_url": "https://news.ycombinator.com/item?id=50340434",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-16T15:13:23+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "voluntas",
+        "field": "email",
+        "label": "email: info@voluntas.org",
+        "value": "info@voluntas.org",
+        "source_url": "http://voluntas-international.org/",
+        "evidence": "",
+        "run_id": "20261116T151113Z",
+        "first_seen": "2026-11-16T15:13:23+00:00",
+        "last_seen": "2026-11-16T15:13:23+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "voluntas",
+        "field": "email",
+        "label": "email: jobs@voluntas.io",
+        "value": "jobs@voluntas.io",
+        "source_url": "https://news.ycombinator.com/item?id=50340434",
+        "evidence": "",
+        "run_id": "20261116T151113Z",
+        "first_seen": "2026-11-16T15:13:23+00:00",
+        "last_seen": "2026-11-16T15:13:23+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "VALIS",
+        "slug": "valis",
+        "similarity": 0.457
+      },
+      {
+        "company_name": "OneChronos",
+        "slug": "onechronos",
+        "similarity": 0.386
+      },
+      {
+        "company_name": "Respan",
+        "slug": "respan",
+        "similarity": 0.382
+      },
+      {
+        "company_name": "Flow Traders",
+        "slug": "flow-traders",
+        "similarity": 0.369
+      },
+      {
+        "company_name": "AI x Healthcare Startup",
+        "slug": "ai-x-healthcare-startup",
+        "similarity": 0.366
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-16T15:13:23+00:00",
+        "kind": "discovered",
+        "items": [
+          "Website: http://voluntas-international.org",
+          "Product: Voluntas is a trading firm written 100% in Rust. We run systematic strategies, currently specializing in prediction markets, lookin"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50340434"
+        ],
+        "count": 2
+      },
+      {
+        "at": "2026-11-16T15:13:23+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: info@voluntas.org",
+          "Published email: jobs@voluntas.io"
+        ],
+        "source_urls": [
+          "http://voluntas-international.org/",
+          "https://news.ycombinator.com/item?id=50340434"
+        ],
+        "count": 2
+      },
+      {
+        "at": "2026-11-02T17:37:08+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: Remote"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50340434"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 1d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50340434"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (14d ago): Remote",
+        "source_url": "https://news.ycombinator.com/item?id=50340434"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Voluntas: a thought on your stack",
+      "body": "Hi Voluntas team,\n\nI saw you're hiring (Remote) (https://news.ycombinator.com/item?id=50340434).\nI'd like to help on the engineering side.\n\nI came across Voluntas: Voluntas is a trading firm written 100% in Rust.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -99737,7 +99340,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (33d ago)",
+        "text": "Hiring (34d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50091446"
       }
     ],
@@ -100008,6 +99611,261 @@
       "to_source_url": "",
       "subject": "Ojin: a thought on your stack",
       "body": "Hi Ojin team,\n\nI saw you're hiring (Lead Platform Engineer) (https://news.ycombinator.com/item?id=50004401).\nI'd like to help on the engineering side.\n\nI came across Ojin: We build AI agents that look and sound human - real face, real voice, real-time conversation.\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "GovStar",
+    "core_product": "GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://govstar.us",
+    "discovered_at": "2026-10-23T11:16:48+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.govstar.us",
+    "score": 25,
+    "last_seen": "2026-11-02T15:08:02+00:00",
+    "slug": "govstar",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 4
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 33,
+      "evidence": 11
+    },
+    "qualified": false,
+    "contact": {
+      "website": "https://www.govstar.us",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "https://www.govstar.us/contact",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.govstar.us/",
+        "https://www.govstar.us/about",
+        "https://www.govstar.us/team",
+        "https://www.govstar.us/contact"
+      ],
+      "enriched_at": "2026-11-17T17:33:05+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
+      "site_tech": [
+        {
+          "name": "Webflow",
+          "category": "cms"
+        },
+        {
+          "name": "Cloudflare",
+          "category": "hosting"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50346358",
+        "roles": [
+          "[https:",
+          "govstar.us](https://govstar.us)"
+        ],
+        "role_kinds": [
+          "other"
+        ],
+        "posted_at": "2026-11-03T00:33:17Z",
+        "seen_at": "2026-11-07T12:41:27+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 24.0,
+      "reasons": [
+        "lead score 25",
+        "signal strength 5.1/10: hiring",
+        "found 25 day(s) ago (cold)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy",
+      "score": 40
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "govstar",
+        "field": "website",
+        "label": "website: https://www.govstar.us",
+        "value": "https://www.govstar.us",
+        "source_url": "https://govstar.us",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 13,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "govstar",
+        "field": "core_product",
+        "label": "core_product: GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
+        "value": "GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.",
+        "source_url": "https://govstar.us",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 14,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "govstar",
+        "field": "email",
+        "label": "email: nicholas.hanson@govstar.us",
+        "value": "nicholas.hanson@govstar.us",
+        "source_url": "https://news.ycombinator.com/item?id=50090302",
+        "evidence": "",
+        "run_id": "20261102T150455Z",
+        "first_seen": "2026-10-23T11:18:40+00:00",
+        "last_seen": "2026-11-02T15:08:02+00:00",
+        "seen_count": 13,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "govstar",
+        "field": "website",
+        "label": "website: https://govstar.us",
+        "value": "https://govstar.us",
+        "source_url": "https://govstar.us",
+        "evidence": "",
+        "run_id": "20261028T122235Z",
+        "first_seen": "2026-10-28T12:26:24+00:00",
+        "last_seen": "2026-10-28T12:26:24+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Mechanize",
+        "slug": "mechanize",
+        "similarity": 0.584
+      },
+      {
+        "company_name": "Multikor.ai, Inc.",
+        "slug": "multikor-ai-inc",
+        "similarity": 0.571
+      },
+      {
+        "company_name": "Hemant Singh",
+        "slug": "hemant-singh",
+        "similarity": 0.557
+      },
+      {
+        "company_name": "Symx.ai",
+        "slug": "symx-ai",
+        "similarity": 0.546
+      },
+      {
+        "company_name": "Bloomsco",
+        "slug": "bloomsco",
+        "similarity": 0.518
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-03T00:33:17+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: [https:, govstar.us](https://govstar.us)"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50346358"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-10-28T12:26:24+00:00",
+        "kind": "learned",
+        "items": [
+          "Website: https://govstar.us"
+        ],
+        "source_urls": [
+          "https://govstar.us"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-10-23T11:18:40+00:00",
+        "kind": "discovered",
+        "items": [
+          "Website: https://www.govstar.us",
+          "Product: GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national s"
+        ],
+        "source_urls": [
+          "https://govstar.us"
+        ],
+        "count": 2
+      },
+      {
+        "at": "2026-10-23T11:18:40+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: nicholas.hanson@govstar.us"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50090302"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hiring",
+        "text": "Hiring (14d ago)",
+        "source_url": "https://news.ycombinator.com/item?id=50346358"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "",
+      "to_source_url": "",
+      "subject": "GovStar: a thought on your stack",
+      "body": "Hi GovStar team,\n\nI saw you're hiring (https://news.ycombinator.com/item?id=50346358).\nI'd like to help on the engineering side.\n\nI came across GovStar: GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S.\nI'd like to build something with you.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -100514,6 +100372,227 @@
       "to_source_url": "",
       "subject": "Postscript: a thought on your stack",
       "body": "Hi Postscript team,\n\nI saw you're hiring (Senior Software Engineer, Full Stack) (https://news.ycombinator.com/item?id=50340820).\nI'd like to help on the engineering side.\n\nI came across Postscript: Postscript is an agentic retention marketing platform (SMS, RCS, Email) used by 20,000+ Shopify brands.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Early-stage Startup",
+    "core_product": "We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50500910",
+    "discovered_at": "2026-11-15T13:41:28+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.earlystaged.com",
+    "score": 21,
+    "last_seen": "2026-11-15T13:42:29+00:00",
+    "slug": "early-stage-startup",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 0
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 0,
+      "evidence": 11
+    },
+    "qualified": false,
+    "contact": {
+      "website": "",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [],
+      "enriched_at": "2026-11-17T17:33:28+00:00",
+      "status": "no_website",
+      "attempts": 1,
+      "last_attempt": "2026-11-17T17:32:38+00:00",
+      "site_tech": []
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50500910",
+        "roles": [
+          "Software Engineer",
+          "Data Analyst"
+        ],
+        "role_kinds": [
+          "eng"
+        ],
+        "posted_at": "2026-11-14T21:17:20Z",
+        "seen_at": "2026-11-15T13:41:28+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 54.6,
+      "reasons": [
+        "lead score 21",
+        "signal strength 6.6/10: hiring",
+        "found 2 day(s) ago (hot)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy",
+      "score": 41
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "early-stage startup",
+        "field": "website",
+        "label": "website: https://www.earlystaged.com",
+        "value": "https://www.earlystaged.com",
+        "source_url": "https://news.ycombinator.com/item?id=50500910",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-15T13:42:29+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "early-stage startup",
+        "field": "core_product",
+        "label": "core_product: We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
+        "value": "We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.",
+        "source_url": "https://news.ycombinator.com/item?id=50500910",
+        "evidence": "",
+        "run_id": "backfill-2026-11-17",
+        "first_seen": "2026-11-15T13:42:29+00:00",
+        "last_seen": "2026-11-17T17:32:38+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "early-stage startup",
+        "field": "email",
+        "label": "email: info@earlystaged.com",
+        "value": "info@earlystaged.com",
+        "source_url": "https://www.earlystaged.com/",
+        "evidence": "",
+        "run_id": "20261115T134019Z",
+        "first_seen": "2026-11-15T13:42:29+00:00",
+        "last_seen": "2026-11-15T13:42:29+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "SentiLink",
+        "slug": "sentilink",
+        "similarity": 0.726
+      },
+      {
+        "company_name": "Proofline",
+        "slug": "proofline",
+        "similarity": 0.592
+      },
+      {
+        "company_name": "Typify.dev",
+        "slug": "typify-dev",
+        "similarity": 0.59
+      },
+      {
+        "company_name": "Meta",
+        "slug": "meta",
+        "similarity": 0.562
+      },
+      {
+        "company_name": "Joulent",
+        "slug": "joulent",
+        "similarity": 0.548
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-15T13:42:29+00:00",
+        "kind": "discovered",
+        "items": [
+          "Website: https://www.earlystaged.com",
+          "Product: We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst."
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50500910"
+        ],
+        "count": 2
+      },
+      {
+        "at": "2026-11-15T13:42:29+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: info@earlystaged.com"
+        ],
+        "source_urls": [
+          "https://www.earlystaged.com/"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-11-14T21:17:20+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: Software Engineer, Data Analyst"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50500910"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 2d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50500910"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (2d ago): Software Engineer, Data Analyst",
+        "source_url": "https://news.ycombinator.com/item?id=50500910"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Early-stage Startup: a thought on your stack",
+      "body": "Hi Early-stage Startup team,\n\nI saw you're hiring (Software Engineer, Data Analyst) (https://news.ycombinator.com/item?id=50500910).\nI'd like to help on the engineering side.\n\nI came across Early-stage Startup: We’re hiring for two roles: a strong generalist Software Engineer and a Data Analyst.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -102642,18 +102721,18 @@
     "edges": [],
     "outcome": null,
     "decision": {
-      "action": "watch",
+      "action": "skip",
       "urgency": "cold",
-      "priority": 51.0,
+      "priority": 9.2,
       "reasons": [
         "lead score 15",
-        "signal strength 6.6/10: hiring",
+        "signal strength 4.0/10: hiring",
         "found 1 day(s) ago (hot)",
-        "not enough signal yet"
+        "weak fit or too little data"
       ],
-      "next_step": "Wait for more data",
+      "next_step": "Skip unless it resurfaces",
       "provider": "policy",
-      "score": 35
+      "score": 27
     },
     "trackbacks": [
       {
@@ -102731,7 +102810,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (14d ago): Lead Software Engineer",
+        "text": "Hiring (15d ago): Lead Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50340287"
       }
     ],
@@ -105002,7 +105081,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (13d ago): Forward Deployed Engineer",
+        "text": "Hiring (14d ago): Forward Deployed Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50353641"
       }
     ],
@@ -105193,7 +105272,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (13d ago): Search Experience Manager",
+        "text": "Hiring (14d ago): Search Experience Manager",
         "source_url": "https://news.ycombinator.com/item?id=50353464"
       }
     ],

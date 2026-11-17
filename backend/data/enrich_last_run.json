@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-11-16T18:17:32+00:00",
+  "started_at": "2026-11-17T17:32:38+00:00",
   "skipped": "",
   "startups": [
     {
@@ -21,33 +21,9 @@
       ]
     },
     {
-      "company": "Paramark",
-      "score": 58,
+      "company": "Axonnic",
+      "score": 44,
       "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://paramark.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 4,
-      "edges": 4,
-      "notes": [
-        "team llm: 4 people proposed, 4 grounded",
-        "team page: +4 people, +4 edges"
-      ]
-    },
-    {
-      "company": "Proofline",
-      "score": 38,
-      "gaps": [
-        "funding stage",
         "location",
         "funding amount",
         "tech stack",
@@ -56,109 +32,59 @@
         "investors",
         "phone"
       ],
-      "website": "https://proofline.sh",
+      "website": "https://www.axonnic.com",
       "status": "ok",
       "emails": 1,
       "phones": 0,
       "people": 0,
       "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
+      "notes": []
     },
     {
-      "company": "Modash.io",
-      "score": 38,
+      "company": "Repovive",
+      "score": 44,
       "gaps": [
-        "funding stage",
         "location",
         "funding amount",
-        "tech stack",
-        "founder",
         "people profiles",
         "investors",
-        "phone"
-      ],
-      "website": "https://www.modash.io",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Aloe",
-      "score": 38,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://aloe.inc",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Lamin",
-      "score": 73,
-      "gaps": [
-        "location",
-        "funding amount",
         "email",
         "phone"
       ],
-      "website": "https://lamin.ai",
-      "status": "ok",
+      "website": "https://research.repovive.com",
+      "status": "crawl_failed",
       "emails": 0,
-      "phones": 0,
-      "people": 9,
-      "edges": 9,
-      "notes": [
-        "team llm: 9 people proposed, 9 grounded",
-        "team page: +8 people, +14 edges"
-      ]
-    },
-    {
-      "company": "Seal",
-      "score": 52,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://seal.run",
-      "status": "ok",
-      "emails": 1,
       "phones": 0,
       "people": 1,
       "edges": 1,
       "notes": [
-        "team llm: 1 people proposed, 1 grounded",
-        "team page: +1 people, +1 edges"
+        "crawl failed"
       ]
     },
     {
-      "company": "Furtim Modus",
+      "company": "GovStar",
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.govstar.us",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "Alter",
       "score": 37,
       "gaps": [
         "funding stage",
@@ -170,7 +96,54 @@
         "investors",
         "phone"
       ],
-      "website": "https://www.furtimmodus.com",
+      "website": "https://alterauth.com",
+      "status": "ok",
+      "emails": 2,
+      "phones": 0,
+      "people": 0,
+      "edges": 1,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "HiO",
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email"
+      ],
+      "website": "https://www.hio.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 2,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Reducto",
+      "score": 35,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://reducto.ai",
       "status": "ok",
       "emails": 1,
       "phones": 0,
@@ -182,8 +155,8 @@
       ]
     },
     {
-      "company": "Thankly",
-      "score": 34,
+      "company": "SEEKING FREELANCER",
+      "score": 35,
       "gaps": [
         "funding stage",
         "location",
@@ -191,13 +164,12 @@
         "tech stack",
         "founder",
         "people profiles",
-        "investors",
-        "phone"
+        "investors"
       ],
-      "website": "https://thankly.ai",
+      "website": "https://www.freelancer.com",
       "status": "ok",
-      "emails": 1,
-      "phones": 0,
+      "emails": 2,
+      "phones": 1,
       "people": 0,
       "edges": 0,
       "notes": [
@@ -206,8 +178,8 @@
       ]
     },
     {
-      "company": "General Intelligence Holdings",
-      "score": 37,
+      "company": "Voluntas",
+      "score": 25,
       "gaps": [
         "funding stage",
         "location",
@@ -216,51 +188,73 @@
         "founder",
         "people profiles",
         "investors",
+        "email",
         "phone"
       ],
-      "website": "https://www.generalintelligenceholdings.com",
+      "website": "http://voluntas-international.org",
       "status": "ok",
-      "emails": 1,
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "Early-stage Startup",
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "no website found"
       ]
     }
   ],
-  "tokens": 13518,
+  "tokens": 7830,
   "usage": {
-    "prompt_tokens": 10481,
-    "completion_tokens": 3037,
-    "total_tokens": 13518,
-    "calls": 10,
+    "prompt_tokens": 7256,
+    "completion_tokens": 574,
+    "total_tokens": 7830,
+    "calls": 5,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 10481,
-        "completion_tokens": 3037,
-        "total_tokens": 13518,
-        "calls": 10
+        "prompt_tokens": 7256,
+        "completion_tokens": 574,
+        "total_tokens": 7830,
+        "calls": 5
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 10481,
-        "completion_tokens": 3037,
-        "total_tokens": 13518,
-        "calls": 10
+        "prompt_tokens": 7256,
+        "completion_tokens": 574,
+        "total_tokens": 7830,
+        "calls": 5
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 10481,
-        "completion_tokens": 3037,
-        "total_tokens": 13518,
-        "calls": 10
+        "prompt_tokens": 7256,
+        "completion_tokens": 574,
+        "total_tokens": 7830,
+        "calls": 5
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-16T18:19:04+00:00"
+  "finished_at": "2026-11-17T17:33:28+00:00"
 }
