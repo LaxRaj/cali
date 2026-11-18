@@ -394,7 +394,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 72
+      "score": 92
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -846,7 +846,15 @@
       "type": "startup",
       "degree": 3,
       "website": "https://useperry.com",
-      "score": 36
+      "score": 56
+    },
+    {
+      "id": "buildq",
+      "label": "BuildQ",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://www.buildq.ai",
+      "score": 54
     },
     {
       "id": "vishnu",
@@ -1304,6 +1312,14 @@
       "degree": 2,
       "website": "https://starsling.dev",
       "score": 83
+    },
+    {
+      "id": "sphinx defense",
+      "label": "Sphinx Defense",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://sphinxdefense.com",
+      "score": 49
     },
     {
       "id": "eric",
@@ -5465,30 +5481,6 @@
       }
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "amir mostafavi",
       "label": "Amir Mostafavi",
       "type": "person",
@@ -5596,6 +5588,76 @@
       "role": "Founder",
       "links": {
         "linkedin": "https://www.linkedin.com/in/ravimishra"
+      }
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/bergstrombjorn"
+      }
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "maryssa barron",
+      "label": "Maryssa Barron",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder & CEO",
+      "links": {}
+    },
+    {
+      "id": "dylan goss",
+      "label": "Dylan Goss",
+      "type": "person",
+      "degree": 1,
+      "role": "CTO",
+      "links": {}
+    },
+    {
+      "id": "harshan jeyakumar",
+      "label": "Harshan Jeyakumar",
+      "type": "person",
+      "degree": 1,
+      "role": "Head of Capital Markets",
+      "links": {}
+    },
+    {
+      "id": "hunter price",
+      "label": "Hunter Price",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder & CEO",
+      "links": {
+        "homepage": "https://sphinxdefense.com/leadership/hunter-price/"
+      }
+    },
+    {
+      "id": "sebastien diebler",
+      "label": "Sebastien Diebler",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder & VP of Engineering",
+      "links": {
+        "homepage": "https://sphinxdefense.com/leadership/sebatien-diebler/"
       }
     },
     {
@@ -7051,18 +7113,6 @@
       "degree": 1
     },
     {
-      "id": "beenext ventures",
-      "label": "Beenext Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lotus",
-      "label": "Lotus",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "quantonation",
       "label": "Quantonation",
       "type": "org",
@@ -7083,6 +7133,18 @@
     {
       "id": "antler",
       "label": "Antler",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "beenext ventures",
+      "label": "Beenext Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
       "type": "org",
       "degree": 1
     },
@@ -7135,28 +7197,12 @@
       "score": 25
     },
     {
-      "id": "buildq",
-      "label": "BuildQ",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.buildq.ai",
-      "score": 34
-    },
-    {
       "id": "imc trading",
       "label": "IMC Trading",
       "type": "startup",
       "degree": 0,
       "website": "https://www.imc.com",
       "score": 25
-    },
-    {
-      "id": "splash tech",
-      "label": "Splash Tech",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://splash.tech",
-      "score": 34
     },
     {
       "id": "maali",
@@ -7271,22 +7317,6 @@
       "score": 25
     },
     {
-      "id": "lumen labs",
-      "label": "Lumen Labs",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://lumenresearch.co",
-      "score": 34
-    },
-    {
-      "id": "sphinx defense",
-      "label": "Sphinx Defense",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://sphinxdefense.com",
-      "score": 34
-    },
-    {
       "id": "cocient",
       "label": "Cocient",
       "type": "startup",
@@ -7341,14 +7371,6 @@
       "degree": 0,
       "website": "",
       "score": 15
-    },
-    {
-      "id": "areo",
-      "label": "AREO",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://goareo.com",
-      "score": 34
     },
     {
       "id": "marker learning",
@@ -7429,14 +7451,6 @@
       "degree": 0,
       "website": "https://beaconai.co",
       "score": 33
-    },
-    {
-      "id": "railway",
-      "label": "Railway",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://railway.com",
-      "score": 34
     },
     {
       "id": "meta",
@@ -7669,14 +7683,6 @@
       "degree": 0,
       "website": "",
       "score": 21
-    },
-    {
-      "id": "kroo",
-      "label": "Kroo",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.getkroo.com",
-      "score": 34
     },
     {
       "id": "hemant singh",
@@ -8213,6 +8219,46 @@
       "degree": 0,
       "website": "https://www.runelabs.io",
       "score": 38
+    },
+    {
+      "id": "kroo",
+      "label": "Kroo",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.getkroo.com",
+      "score": 34
+    },
+    {
+      "id": "railway",
+      "label": "Railway",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://railway.com",
+      "score": 44
+    },
+    {
+      "id": "splash tech",
+      "label": "Splash Tech",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://splash.tech",
+      "score": 34
+    },
+    {
+      "id": "lumen labs",
+      "label": "Lumen Labs",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://lumenresearch.co",
+      "score": 34
+    },
+    {
+      "id": "areo",
+      "label": "AREO",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://goareo.com",
+      "score": 34
     },
     {
       "id": "kevin hartz",
@@ -10066,6 +10112,430 @@
       "degree": 0,
       "role": "Authorized Attorney (signatory)",
       "links": {}
+    },
+    {
+      "id": "sarah krasnik bedell",
+      "label": "Sarah Krasnik Bedell",
+      "type": "person",
+      "degree": 0,
+      "role": "Founding Growth Marketer",
+      "links": {
+        "twitter": "https://x.com/sarahkb125",
+        "github": "https://github.com/sarahkb125"
+      }
+    },
+    {
+      "id": "alex pentland",
+      "label": "Alex Pentland",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "github": "https://github.com/pentlander",
+        "homepage": "https://www.pentlander.com"
+      }
+    },
+    {
+      "id": "jake runzer",
+      "label": "Jake Runzer",
+      "type": "person",
+      "degree": 0,
+      "role": "Product Engineer",
+      "links": {
+        "twitter": "https://twitter.com/jakerunzer",
+        "github": "https://github.com/coffee-cup",
+        "homepage": "https://jakerunzer.com"
+      }
+    },
+    {
+      "id": "francesco costa",
+      "label": "Francesco Costa",
+      "type": "person",
+      "degree": 0,
+      "role": "Product Engineer",
+      "links": {}
+    },
+    {
+      "id": "charith amarasinghe",
+      "label": "Charith Amarasinghe",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "github": "https://github.com/char8"
+      }
+    },
+    {
+      "id": "five",
+      "label": "Five",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "github": "https://github.com/trif0lium"
+      }
+    },
+    {
+      "id": "sam aybar",
+      "label": "Sam Aybar",
+      "type": "person",
+      "degree": 0,
+      "role": "Customer Success Engineer",
+      "links": {
+        "github": "https://github.com/samaybar"
+      }
+    },
+    {
+      "id": "ian kollmar",
+      "label": "Ian Kollmar",
+      "type": "person",
+      "degree": 0,
+      "role": "Talent Lead",
+      "links": {
+        "twitter": "https://twitter.com/igk"
+      }
+    },
+    {
+      "id": "paulo cabral",
+      "label": "Paulo Cabral",
+      "type": "person",
+      "degree": 0,
+      "role": "Product Engineer",
+      "links": {
+        "github": "https://github.com/paulocsanz",
+        "homepage": "https://cabral.sanz.com.br/"
+      }
+    },
+    {
+      "id": "lawrence gripper",
+      "label": "Lawrence Gripper",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "twitter": "https://x.com/lawrencegripper",
+        "github": "https://github.com/lawrencegripper",
+        "homepage": "http://blog.gripdev.xyz"
+      }
+    },
+    {
+      "id": "chandrika khanduri",
+      "label": "Chandrika Khanduri",
+      "type": "person",
+      "degree": 0,
+      "role": "Support Engineer",
+      "links": {
+        "github": "https://github.com/chandrika-khanduri"
+      }
+    },
+    {
+      "id": "mark imbriaco",
+      "label": "Mark Imbriaco",
+      "type": "person",
+      "degree": 0,
+      "role": "Head of Engineering",
+      "links": {
+        "twitter": "https://x.com/markimbriaco",
+        "github": "https://github.com/imbriaco"
+      }
+    },
+    {
+      "id": "ed ganiukov",
+      "label": "Ed Ganiukov",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "twitter": "https://twitter.com/edgnkv",
+        "github": "https://github.com/edganiukov",
+        "homepage": "https://gnkv.io"
+      }
+    },
+    {
+      "id": "rahul parmar",
+      "label": "Rahul Parmar",
+      "type": "person",
+      "degree": 0,
+      "role": "GTM",
+      "links": {
+        "twitter": "http://x.com/parmstar",
+        "github": "https://github.com/rahulparmar"
+      }
+    },
+    {
+      "id": "patrick mooney",
+      "label": "Patrick Mooney",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "twitter": "https://x.com/pfmooney",
+        "github": "https://github.com/pfmooney"
+      }
+    },
+    {
+      "id": "des conlon",
+      "label": "Des Conlon",
+      "type": "person",
+      "degree": 0,
+      "role": "Solutions Engineer",
+      "links": {
+        "github": "https://github.com/dizzydes"
+      }
+    },
+    {
+      "id": "bradon jones",
+      "label": "Bradon Jones",
+      "type": "person",
+      "degree": 0,
+      "role": "Recruiter",
+      "links": {}
+    },
+    {
+      "id": "nicolas theck",
+      "label": "Nicolas Theck",
+      "type": "person",
+      "degree": 0,
+      "role": "Support Engineer",
+      "links": {
+        "twitter": "https://twitter.com/itsRems",
+        "github": "https://github.com/itsRems",
+        "homepage": "https://itsrems.com"
+      }
+    },
+    {
+      "id": "lucas jacques",
+      "label": "Lucas Jacques",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "github": "https://github.com/lucas-jacques",
+        "homepage": "https://lucasjacques.com"
+      }
+    },
+    {
+      "id": "miguel filipe",
+      "label": "Miguel Filipe",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "linkedin": "https://pt.linkedin.com/in/miguelmfilipe",
+        "twitter": "https://x.com/m3thos",
+        "github": "https://github.com/msf"
+      }
+    },
+    {
+      "id": "david echo",
+      "label": "David Echo",
+      "type": "person",
+      "degree": 0,
+      "role": "Solutions Engineer",
+      "links": {
+        "twitter": "https://twitter.com/echohack",
+        "github": "https://github.com/echohack",
+        "homepage": "https://twitch.tv/echohack"
+      }
+    },
+    {
+      "id": "sherry taylor",
+      "label": "Sherry Taylor",
+      "type": "person",
+      "degree": 0,
+      "role": "Operations Manager",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sherryltaylor",
+        "github": "https://github.com/seakitteh"
+      }
+    },
+    {
+      "id": "nick duff",
+      "label": "Nick Duff",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "github": "https://github.com/nickduffman"
+      }
+    },
+    {
+      "id": "cody de arkland",
+      "label": "Cody De Arkland",
+      "type": "person",
+      "degree": 0,
+      "role": "GM, Agentic Experience",
+      "links": {
+        "twitter": "https://x.com/codydearkland",
+        "github": "https://github.com/codyde",
+        "homepage": "https://codyde.io"
+      }
+    },
+    {
+      "id": "christian ohrgaard",
+      "label": "Christian Ohrgaard",
+      "type": "person",
+      "degree": 0,
+      "role": "Head of Operations",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ohrgaard",
+        "github": "https://github.com/ohrgaard"
+      }
+    },
+    {
+      "id": "danielle washington",
+      "label": "Danielle Washington",
+      "type": "person",
+      "degree": 0,
+      "role": "Growth Marketer (Content)",
+      "links": {
+        "github": "https://www.github.com/DanielleWashington"
+      }
+    },
+    {
+      "id": "victor ramirez",
+      "label": "Victor Ramirez",
+      "type": "person",
+      "degree": 0,
+      "role": "Product Engineer",
+      "links": {
+        "twitter": "https://x.com/vrzgc",
+        "github": "https://github.com/futurepastori",
+        "homepage": "https://pastori.sh"
+      }
+    },
+    {
+      "id": "miguel casqueira",
+      "label": "Miguel Casqueira",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "github": "https://github.com/20k-ultra",
+        "homepage": "https://xgho.st"
+      }
+    },
+    {
+      "id": "arnav gupta",
+      "label": "Arnav Gupta",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "linkedin": "https://linkedin.com/in/arnavgupta",
+        "twitter": "https://x.com/championswimmer",
+        "github": "https://github.com/championswimmer",
+        "homepage": "http://championswimmer.in"
+      }
+    },
+    {
+      "id": "jessica cameron",
+      "label": "Jessica Cameron",
+      "type": "person",
+      "degree": 0,
+      "role": "Operations Manager",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jessica-d-cameron/",
+        "github": "https://github.com/jcamer8"
+      }
+    },
+    {
+      "id": "faraz patankar",
+      "label": "Faraz Patankar",
+      "type": "person",
+      "degree": 0,
+      "role": "Product Engineer",
+      "links": {
+        "twitter": "https://twitter.com/FarazPatankar",
+        "github": "https://github.com/FarazPatankar",
+        "homepage": "https://farazpatankar.com/"
+      }
+    },
+    {
+      "id": "noah dunnagan",
+      "label": "Noah Dunnagan",
+      "type": "person",
+      "degree": 0,
+      "role": "Customer Success Engineer",
+      "links": {
+        "twitter": "https://x.com/itsnoahd",
+        "github": "https://github.com/noahdunnagan",
+        "homepage": "https://nd.mt"
+      }
+    },
+    {
+      "id": "genny dee",
+      "label": "Genny Dee",
+      "type": "person",
+      "degree": 0,
+      "role": "Head of Brand",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/genny-dee-9267421",
+        "twitter": "https://x.com/gennyxdavila"
+      }
+    },
+    {
+      "id": "jitachi garcia",
+      "label": "Jitachi Garcia",
+      "type": "person",
+      "degree": 0,
+      "role": "Designer",
+      "links": {
+        "twitter": "https://twitter.com/jitachi",
+        "github": "https://github.com/jitachi"
+      }
+    },
+    {
+      "id": "luca casonato",
+      "label": "Luca Casonato",
+      "type": "person",
+      "degree": 0,
+      "role": "Product Engineer",
+      "links": {
+        "github": "https://github.com/lucacasonato"
+      }
+    },
+    {
+      "id": "david banys",
+      "label": "David Banys",
+      "type": "person",
+      "degree": 0,
+      "role": "Marketer",
+      "links": {
+        "twitter": "https://twitter.com/dbanys",
+        "github": "https://github.com/dbanys"
+      }
+    },
+    {
+      "id": "andrei blinov",
+      "label": "Andrei Blinov",
+      "type": "person",
+      "degree": 0,
+      "role": "Infrastructure Engineer",
+      "links": {
+        "twitter": "https://twitter.com/ndrblinov",
+        "github": "https://github.com/ndrblinov"
+      }
+    },
+    {
+      "id": "dan “augie” augustine",
+      "label": "Dan “Augie” Augustine",
+      "type": "person",
+      "degree": 0,
+      "role": "Senior Director, Space Command & Control",
+      "links": {
+        "homepage": "https://sphinxdefense.com/leadership/dan-augustine/"
+      }
+    },
+    {
+      "id": "andréa viza",
+      "label": "Andréa Viza",
+      "type": "person",
+      "degree": 0,
+      "role": "Director of Operations",
+      "links": {
+        "homepage": "https://sphinxdefense.com/leadership/andrea-viza/"
+      }
     }
   ],
   "edges": [
@@ -20036,132 +20506,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-17T17:32:38+00:00"
-        }
-      ]
-    },
-    {
       "source": "amir mostafavi",
       "target": "repovive",
       "rel": "cofounded",
@@ -20470,6 +20814,132 @@
       ]
     },
     {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
       "source": "shashwat patel",
       "target": "perry",
       "rel": "founded",
@@ -20480,6 +20950,12 @@
           "run_id": "backfill-2026-11-18",
           "first_seen": "2026-11-18T15:24:47+00:00",
           "last_seen": "2026-11-18T15:24:47+00:00"
+        },
+        {
+          "source_url": "https://useperry.com/career/",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
         }
       ]
     },
@@ -20494,6 +20970,12 @@
           "run_id": "backfill-2026-11-18",
           "first_seen": "2026-11-18T15:24:47+00:00",
           "last_seen": "2026-11-18T15:24:47+00:00"
+        },
+        {
+          "source_url": "https://useperry.com/career/",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
         }
       ]
     },
@@ -20508,6 +20990,82 @@
           "run_id": "backfill-2026-11-18",
           "first_seen": "2026-11-18T15:24:47+00:00",
           "last_seen": "2026-11-18T15:24:47+00:00"
+        },
+        {
+          "source_url": "https://useperry.com/career/",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "maryssa barron",
+      "target": "buildq",
+      "rel": "founded",
+      "evidence": "Maryssa founded BuildQ to bring modern software, AI, and project expertise to the execution challenges",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50396245",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dylan goss",
+      "target": "buildq",
+      "rel": "works_at",
+      "evidence": "Dylan leads the development of the BuildQ AI platform",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50396245",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "harshan jeyakumar",
+      "target": "buildq",
+      "rel": "works_at",
+      "evidence": "Harshan brings more than 20 years of project finance experience to BuildQ",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50396245",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hunter price",
+      "target": "sphinx defense",
+      "rel": "founded",
+      "evidence": "Hunter Price Co-Founder & CEO",
+      "sources": [
+        {
+          "source_url": "https://www.sphinxdefense.com",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sebastien diebler",
+      "target": "sphinx defense",
+      "rel": "founded",
+      "evidence": "Sebastien Diebler Co-Founder & VP of Engineering",
+      "sources": [
+        {
+          "source_url": "https://www.sphinxdefense.com",
+          "run_id": "backfill-2026-11-18",
+          "first_seen": "2026-11-18T17:08:37+00:00",
+          "last_seen": "2026-11-18T17:08:37+00:00"
         }
       ]
     }
