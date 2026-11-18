@@ -1,50 +1,38 @@
 {
-  "generated_at": "2026-11-17T15:42:33+00:00",
+  "generated_at": "2026-11-18T15:24:45+00:00",
   "findings": [
     {
-      "company_name": "Axonnic",
-      "core_product": "A forearm sleeve that reads muscle activity via EMG to decode finger movements and estimate fingertip force for training dextrous robots.",
+      "company_name": "Perry AI",
+      "core_product": "An AI‑powered legal operating system that helps private capital funds and law firms manage complex legal workflows, transaction data and compliance requirements.",
       "tech_stack": [],
-      "likely_bottleneck": "Inconsistent and noisy EMG data collection due to wireless interference and off‑the‑shelf hardware limits reliable model training.",
-      "value_prop_pitch": "You could replace the flaky hardware pipeline with a Next.js dashboard that streams cleaned EMG data in real time, letting engineers focus on model iteration. Coupled with vector semantic search you can instantly retrieve similar motion patterns to accelerate calibration and reduce data‑collection cycles.",
+      "likely_bottleneck": "Scaling AI inference and maintaining up‑to‑date semantic indexes of massive legal document corpora.",
+      "value_prop_pitch": "You could wrap the front‑end in Next.js to give your users instant, SEO‑friendly access to contract insights, while a vector‑based semantic search layer would let you retrieve relevant clauses in milliseconds. This combo would cut latency, lower infrastructure costs, and let your legal AI agents stay contextually aware across millions of documents.",
       "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.axonnic.com",
-      "source_url": "https://news.ycombinator.com/item?id=50522776",
-      "discovered_at": "2026-11-17T15:41:28+00:00",
-      "source": "launch_hn",
-      "score": 44,
+      "funding_stage": "seed",
+      "funding_amount": "$2.2M",
+      "hq": "London",
+      "website": "https://useperry.com",
+      "source_url": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/",
+      "discovered_at": "2026-11-18T15:22:53+00:00",
+      "source": "rss",
+      "score": 72,
       "gaps": [
-        "location",
-        "funding amount",
         "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.axonnic.com",
-        "emails": [
-          {
-            "value": "info@axonnic.com",
-            "kind": "general",
-            "source_url": "https://www.axonnic.com/"
-          }
-        ],
+        "website": "https://useperry.com",
+        "emails": [],
         "phones": [],
         "socials": {},
-        "contact_page": "https://www.axonnic.com/contact",
+        "contact_page": "",
         "product_access": [],
         "pages_crawled": [
-          "https://www.axonnic.com/",
-          "https://www.axonnic.com/team",
-          "https://www.axonnic.com/contact",
-          "https://www.axonnic.com/about"
+          "https://useperry.com/",
+          "https://useperry.com/about/"
         ],
-        "enriched_at": "2026-11-17T15:42:01+00:00",
+        "enriched_at": "2026-11-18T15:23:54+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -52,6 +40,735 @@
           {
             "name": "Next.js",
             "category": "framework"
+          },
+          {
+            "name": "Calendly",
+            "category": "scheduling"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Wed, 18 Nov 2026 07:30:00 +0000",
+          "seen_at": "2026-11-18T15:23:52+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Shashwat Patel",
+          "role": "CEO",
+          "org": "Perry AI",
+          "evidence": "Co‑founded by Shashwat Patel (CEO) and Vaneesa Agrawal (CPO)",
+          "linkedin": "https://www.linkedin.com/in/shashwatpatel/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/"
+        },
+        {
+          "name": "Vaneesa Agrawal",
+          "role": "CPO",
+          "org": "Perry AI",
+          "evidence": "Co‑founded by Shashwat Patel (CEO) and Vaneesa Agrawal (CPO)",
+          "linkedin": "https://www.linkedin.com/in/vaneesaagrawal/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/11/18/perry-ai-secures-22m-to-automate-legal-work-across-private-capital/"
+        },
+        {
+          "name": "Kelsey Chase",
+          "role": "Angel Investor",
+          "org": "",
+          "evidence": "US angel investors including Kelsey Chase",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Shashwat Patel",
+          "rel": "founded",
+          "dst": "Perry AI",
+          "evidence": "Co‑founded by Shashwat Patel (CEO) and Vaneesa Agrawal (CPO)"
+        },
+        {
+          "src": "Vaneesa Agrawal",
+          "rel": "cofounded",
+          "dst": "Perry AI",
+          "evidence": "Co‑founded by Shashwat Patel (CEO) and Vaneesa Agrawal (CPO)"
+        },
+        {
+          "src": "Haatch",
+          "rel": "invested_in",
+          "dst": "Perry AI",
+          "evidence": "seed funding round led by Haatch"
+        },
+        {
+          "src": "Antler",
+          "rel": "invested_in",
+          "dst": "Perry AI",
+          "evidence": "participation from Antler"
+        },
+        {
+          "src": "Kelsey Chase",
+          "rel": "invested_in",
+          "dst": "Perry AI",
+          "evidence": "US angel investors including Kelsey Chase"
+        }
+      ]
+    },
+    {
+      "company_name": "Qluster",
+      "core_product": "Scalable photonic quantum computers for industrial challenges",
+      "tech_stack": [
+        "photonic quantum computing",
+        "continuous-variable photonics"
+      ],
+      "likely_bottleneck": "Scaling the manufacturing and integration of high‑precision photonic components",
+      "value_prop_pitch": "We can build a Next.js dashboard that lets your engineers query component performance data with semantic search, cutting the time to identify yield issues. By indexing test results in a vector store, you’ll instantly surface the most relevant failure patterns and accelerate hardware scaling.",
+      "is_relevant": true,
+      "funding_stage": "pre‑seed",
+      "funding_amount": "€4.7M",
+      "hq": "Paris, France",
+      "website": "https://qluster.co",
+      "source_url": "https://tech.eu/2026/11/17/qluster-raises-eur47m-to-power-the-next-generation-of-quantum-computing/",
+      "discovered_at": "2026-11-18T15:22:53+00:00",
+      "source": "rss",
+      "score": 92,
+      "gaps": [
+        "phone"
+      ],
+      "contact": {
+        "website": "https://qluster.co",
+        "emails": [
+          {
+            "value": "contact@qluster.co",
+            "kind": "general",
+            "source_url": "https://qluster.co/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/qlustr"
+        },
+        "contact_page": "https://qluster.co/contact/",
+        "product_access": [],
+        "pages_crawled": [
+          "https://qluster.co/",
+          "https://qluster.co/contact/",
+          "https://qluster.co/about-us/"
+        ],
+        "enriched_at": "2026-11-18T15:23:59+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "WordPress",
+            "category": "cms"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "rss",
+          "url": "https://tech.eu/2026/11/17/qluster-raises-eur47m-to-power-the-next-generation-of-quantum-computing/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "Tue, 17 Nov 2026 11:10:43 +0000",
+          "seen_at": "2026-11-18T15:23:52+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "David Fainsin",
+          "role": "CEO",
+          "org": "Qluster",
+          "evidence": "founded by David Fainsin (CEO)",
+          "linkedin": "https://www.linkedin.com/in/david-fainsin/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/11/17/qluster-raises-eur47m-to-power-the-next-generation-of-quantum-computing/"
+        },
+        {
+          "name": "Ambroise Boyer",
+          "role": "CTO",
+          "org": "Qluster",
+          "evidence": "Ambroise Boyer (CTO)",
+          "linkedin": "https://www.linkedin.com/in/ambroise-boyer-phd-b8570a1b4/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/11/17/qluster-raises-eur47m-to-power-the-next-generation-of-quantum-computing/"
+        },
+        {
+          "name": "Clarisse Thibault",
+          "role": "COO",
+          "org": "Qluster",
+          "evidence": "Clarisse Thibault (COO)",
+          "linkedin": "https://www.linkedin.com/in/clarisse-thibault-a16230a8/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/11/17/qluster-raises-eur47m-to-power-the-next-generation-of-quantum-computing/"
+        },
+        {
+          "name": "Valentina Parigi",
+          "role": "CSO",
+          "org": "Qluster",
+          "evidence": "Valentina Parigi (CSO)",
+          "linkedin": "https://www.linkedin.com/in/valentina-parigi-63835234/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://tech.eu/2026/11/17/qluster-raises-eur47m-to-power-the-next-generation-of-quantum-computing/"
+        },
+        {
+          "name": "Quantum Launchpad",
+          "role": "Investor",
+          "org": "",
+          "evidence": "support from Quantum Launchpad",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "https://www.quantum-launchpad.com/en/",
+          "link_source": "https://tech.eu/2026/11/17/qluster-raises-eur47m-to-power-the-next-generation-of-quantum-computing/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "David Fainsin",
+          "rel": "founded",
+          "dst": "Qluster",
+          "evidence": "founded by David Fainsin (CEO)"
+        },
+        {
+          "src": "Ambroise Boyer",
+          "rel": "cofounded",
+          "dst": "Qluster",
+          "evidence": "Ambroise Boyer (CTO)"
+        },
+        {
+          "src": "Clarisse Thibault",
+          "rel": "cofounded",
+          "dst": "Qluster",
+          "evidence": "Clarisse Thibault (COO)"
+        },
+        {
+          "src": "Valentina Parigi",
+          "rel": "cofounded",
+          "dst": "Qluster",
+          "evidence": "Valentina Parigi (CSO)"
+        },
+        {
+          "src": "Quantonation",
+          "rel": "invested_in",
+          "dst": "Qluster",
+          "evidence": "has raised €4.7 million in a pre‑seed funding round led by Quantonation"
+        },
+        {
+          "src": "Quantum Launchpad",
+          "rel": "backed_by",
+          "dst": "Qluster",
+          "evidence": "support from Quantum Launchpad"
+        }
+      ]
+    },
+    {
+      "company_name": "StarSling",
+      "core_product": "Fast GitHub Actions runners with AI agents that automatically generate and ship PRs to continuously improve CI speed and cost.",
+      "tech_stack": [
+        "AWS",
+        "Zen 5 CPUs",
+        "NVMe Disk",
+        "GitHub Actions",
+        "AI agents"
+      ],
+      "likely_bottleneck": "Orchestrating large numbers of AI agents efficiently while keeping compute costs low",
+      "value_prop_pitch": "We can build a Next.js dashboard that lets you monitor and control agent workloads in real time, reducing orchestration overhead. By adding a vector‑semantic search layer over your CI logs, agents can quickly find the most impactful optimizations without redundant runs.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "San Francisco, US",
+      "website": "https://starsling.dev",
+      "source_url": "https://news.ycombinator.com/item?id=50536468",
+      "discovered_at": "2026-11-18T15:22:53+00:00",
+      "source": "launch_hn",
+      "score": 83,
+      "gaps": [
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://starsling.dev",
+        "emails": [
+          {
+            "value": "founders@starsling.dev",
+            "kind": "person",
+            "source_url": "https://starsling.dev/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/starsling-demo-org",
+          "twitter": "https://x.com/starslingdev",
+          "linkedin": "https://www.linkedin.com/company/starslingdev"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://starsling.dev/pricing"
+          },
+          {
+            "label": "Get Started",
+            "url": "https://runners.starsling.dev/login"
+          },
+          {
+            "label": "Docs",
+            "url": "https://docs.starsling.dev"
+          },
+          {
+            "label": "docs llms.txt",
+            "url": "https://docs.starsling.dev/llms.txt"
+          }
+        ],
+        "pages_crawled": [
+          "https://starsling.dev/",
+          "https://starsling.dev/about"
+        ],
+        "enriched_at": "2026-11-18T15:24:00+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "launch_hn",
+          "url": "https://news.ycombinator.com/item?id=50536468",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-17T19:01:43Z",
+          "seen_at": "2026-11-18T15:23:52+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Yonas Beshawred",
+          "role": "Co-founder & CEO",
+          "org": "StarSling",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/yonas-beshawred",
+          "twitter": "https://x.com/yonasbe",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://starsling.dev/"
+        },
+        {
+          "name": "Daniel Worku",
+          "role": "Co-founder & CTO",
+          "org": "StarSling",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/worku",
+          "twitter": "https://x.com/dbworku",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://starsling.dev/"
+        },
+        {
+          "name": "Ali Kayes",
+          "role": "Founding Software Engineer",
+          "org": "StarSling",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/alikayes",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://starsling.dev/about"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Yonas Beshawred",
+          "rel": "founded",
+          "dst": "StarSling",
+          "evidence": "We’re Yonas and Daniel and we’re building StarSling"
+        },
+        {
+          "src": "Daniel Worku",
+          "rel": "cofounded",
+          "dst": "StarSling",
+          "evidence": "We’re Yonas and Daniel and we’re building StarSling"
+        },
+        {
+          "src": "Yonas Beshawred",
+          "rel": "previously_at",
+          "dst": "StackShare",
+          "evidence": "I previously founded StackShare, which grew to over 1.5M developers"
+        },
+        {
+          "src": "Daniel Worku",
+          "rel": "previously_at",
+          "dst": "Netflix",
+          "evidence": "Daniel helped build Netflix's internal developer portal"
+        }
+      ]
+    },
+    {
+      "company_name": "SalesPatriot, Inc.",
+      "core_product": "AI-driven operational platform that automates quoting, sourcing, and procurement workflows for distributors and OEMs.",
+      "tech_stack": [],
+      "likely_bottleneck": "Integrating and normalizing data from disparate ERP, CRM, and marketplace systems in real time.",
+      "value_prop_pitch": "We can build a Next.js front‑end that surfaces your supply‑chain data through a unified, searchable UI, cutting down the time engineers spend stitching together disparate APIs. By adding a vector‑based semantic search layer, you’ll let users retrieve the exact contract, price, or inventory record they need with a single query, eliminating the manual data‑mapping bottleneck.",
+      "is_relevant": true,
+      "funding_stage": "Series A",
+      "funding_amount": "$20.00M",
+      "hq": "Wilmington, DELAWARE",
+      "website": "https://salespatriot.com",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2165599/000216559926000001/",
+      "discovered_at": "2026-11-18T15:22:53+00:00",
+      "source": "edgar",
+      "score": 77,
+      "gaps": [
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://salespatriot.com",
+        "emails": [
+          {
+            "value": "founders@salespatriot.com",
+            "kind": "person",
+            "source_url": "https://salespatriot.com/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/salespatriot"
+        },
+        "contact_page": "https://salespatriot.com/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://salespatriot.com/",
+          "https://salespatriot.com/about",
+          "https://salespatriot.com/team",
+          "https://salespatriot.com/contact"
+        ],
+        "enriched_at": "2026-11-18T15:24:13+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Framer",
+            "category": "cms"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "edgar",
+          "url": "https://www.sec.gov/Archives/edgar/data/2165599/000216559926000001/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-18T10:01:10-05:00",
+          "seen_at": "2026-11-18T15:23:52+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Nelson Ray",
+          "role": "Executive Officer, Director",
+          "org": "SalesPatriot, Inc.",
+          "evidence": "Nelson Ray — Executive Officer, Director",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ben Rhodes-Kropf",
+          "role": "Director",
+          "org": "SalesPatriot, Inc.",
+          "evidence": "Ben Rhodes-Kropf — Director",
+          "linkedin": "https://www.linkedin.com/in/ben-rhodes-kropf-26b617217",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Maciej Szymczyk",
+          "role": "Director",
+          "org": "SalesPatriot, Inc.",
+          "evidence": "Maciej Szymczyk — Director",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "John Cowgill",
+          "role": "Director",
+          "org": "SalesPatriot, Inc.",
+          "evidence": "John Cowgill — Director",
+          "linkedin": "https://www.linkedin.com/in/jcowgill",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Tytus Cytowski",
+          "role": "Authorized Attorney (signatory)",
+          "org": "SalesPatriot, Inc.",
+          "evidence": "Signed by Tytus Cytowski, Authorized Attorney",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Contour",
+      "core_product": "AI operating system (Cortex) that automates permitting and compliance workflows for infrastructure projects",
+      "tech_stack": [],
+      "likely_bottleneck": "building a unified AI layer that can ingest heterogeneous regulatory documents and provide accurate, real‑time permit drafting across many consulting firms",
+      "value_prop_pitch": "You could replace the custom data‑pipeline with a Next.js front‑end backed by a vector‑semantic search layer to instantly surface relevant regulations and past permit drafts. This would let your engineers focus on judgment while the AI retrieves exact precedent in milliseconds, eliminating the manual document‑matching bottleneck.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "San Francisco, US",
+      "website": "https://contourholdings.ai",
+      "source_url": "https://www.ycombinator.com/launches/Xeo-contour-ai-native-permitting-for-america-s-buildout",
+      "discovered_at": "2026-11-18T15:22:53+00:00",
+      "source": "yc",
+      "score": 76,
+      "gaps": [
+        "funding amount",
+        "tech stack",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://contourholdings.ai",
+        "emails": [
+          {
+            "value": "info@contourholdings.ai",
+            "kind": "general",
+            "source_url": "https://contourholdings.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/contourholdings"
+        },
+        "contact_page": "https://contourholdings.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://contourholdings.ai/",
+          "https://contourholdings.ai/about",
+          "https://contourholdings.ai/team",
+          "https://contourholdings.ai/contact"
+        ],
+        "enriched_at": "2026-11-18T15:24:25+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/Xeo-contour-ai-native-permitting-for-america-s-buildout",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-18T15:23:52+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Louix Simpson",
+          "role": "co‑founder",
+          "org": "Contour",
+          "evidence": "Louix Simpson",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Oliver Miller",
+          "role": "co‑founder",
+          "org": "Contour",
+          "evidence": "Oliver Miller",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Aarush Agrawal",
+          "role": "co‑founder",
+          "org": "Contour",
+          "evidence": "Aarush Agrawal",
+          "linkedin": "https://www.linkedin.com/in/aarush-agrawal",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Zack Lubar",
+          "role": "co‑founder",
+          "org": "Contour",
+          "evidence": "Zack Lubar",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Louix Simpson",
+          "rel": "cofounded",
+          "dst": "Contour",
+          "evidence": "Louix Simpson ... co‑founders"
+        },
+        {
+          "src": "Oliver Miller",
+          "rel": "cofounded",
+          "dst": "Contour",
+          "evidence": "Oliver Miller ... co‑founders"
+        },
+        {
+          "src": "Aarush Agrawal",
+          "rel": "cofounded",
+          "dst": "Contour",
+          "evidence": "Aarush Agrawal ... co‑founders"
+        },
+        {
+          "src": "Zack Lubar",
+          "rel": "cofounded",
+          "dst": "Contour",
+          "evidence": "Zack Lubar ... co‑founders"
+        }
+      ]
+    },
+    {
+      "company_name": "Ample",
+      "core_product": "A one‑stop cloud platform that lets AI agents deploy complex web apps with compute, database, storage, CDN, domain and email in seconds.",
+      "tech_stack": [
+        "PostgreSQL",
+        "Kubernetes",
+        "Docker",
+        "Node.js"
+      ],
+      "likely_bottleneck": "automating reliable scaling and provisioning of multi‑service infrastructure for thousands of short‑lived deployments",
+      "value_prop_pitch": "Hey Ample team, you could let your agents spin up Next.js front‑ends on a shared serverless layer and instantly index their content with a vector‑semantic search layer, cutting down on custom infra per app. That way you eliminate the scaling pain of per‑app compute and give every deployment instant, relevant search without extra ops work.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://ample.computer",
+      "source_url": "https://www.ycombinator.com/launches/XOz-ample-the-one-stop-cloud-for-agents-to-ship-complex-web-apps",
+      "discovered_at": "2026-11-18T15:22:53+00:00",
+      "source": "yc",
+      "score": 59,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://ample.computer",
+        "emails": [
+          {
+            "value": "legal@ample.computer",
+            "kind": "other",
+            "source_url": "https://ample.computer/contact"
+          },
+          {
+            "value": "privacy@ample.computer",
+            "kind": "other",
+            "source_url": "https://ample.computer/contact"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://ample.computer/contact",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://ample.computer/docs"
+          },
+          {
+            "label": "Pricing",
+            "url": "https://ample.computer/pricing"
+          },
+          {
+            "label": "Sign up",
+            "url": "https://ample.computer/signup"
+          }
+        ],
+        "pages_crawled": [
+          "https://ample.computer/",
+          "https://ample.computer/contact",
+          "https://ample.computer/about"
+        ],
+        "enriched_at": "2026-11-18T15:24:37+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
           },
           {
             "name": "React",
@@ -62,323 +779,39 @@
       "signals": [
         {
           "type": "launch",
-          "source": "launch_hn",
-          "url": "https://news.ycombinator.com/item?id=50522776",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-16T20:29:48Z",
-          "seen_at": "2026-11-17T15:41:58+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Asynchronics",
-      "core_product": "A digital twin marketplace for spacecraft components that lets engineers simulate, test, and validate hardware virtually before the physical unit arrives.",
-      "tech_stack": [
-        "Rust"
-      ],
-      "likely_bottleneck": "optimizing real‑time simulation performance and scaling across processor cores",
-      "value_prop_pitch": "You could wrap the Rust simulation engine in a Next.js front‑end that streams vector‑embedded telemetry for instant semantic queries, eliminating the need to wait for batch results. Then a semantic search layer would let engineers instantly find similar failure scenarios across all twins, cutting debugging time dramatically.",
-      "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "$3.1M",
-      "hq": "Warsaw, Poland",
-      "website": "https://asynchronics.com",
-      "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-      "discovered_at": "2026-11-17T15:41:28+00:00",
-      "source": "rss",
-      "score": 79,
-      "gaps": [
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://asynchronics.com",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/asynchronics"
-        },
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://asynchronics.com/",
-          "https://asynchronics.com/team/"
-        ],
-        "enriched_at": "2026-11-17T15:42:11+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "SvelteKit",
-            "category": "framework"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 17 Nov 2026 08:00:00 +0000",
-          "seen_at": "2026-11-17T15:41:58+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Adam Chikha",
-          "role": "Co‑founder & CEO",
-          "org": "Asynchronics",
-          "evidence": "He is now co‑founder and CEO of Asynchronics, a Warsaw‑based startup that just closed a $3.1M seed round.",
-          "linkedin": "https://www.linkedin.com/in/adam-chikha/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/"
-        },
-        {
-          "name": "Serge Barral",
-          "role": "Co‑founder",
-          "org": "Asynchronics",
-          "evidence": "Chikha and co‑founder Serge Barral, who has a PhD in aerospace engineering, started the company in 2023.",
-          "linkedin": "https://www.linkedin.com/in/serge-barral-9a2805218/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/"
-        },
-        {
-          "name": "Sandra Szwabe",
-          "role": "Business Development & Marketing",
-          "org": "Asynchronics",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/sandra-szwabe-8551151b2",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://asynchronics.com/team/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Adam Chikha",
-          "rel": "founded",
-          "dst": "Asynchronics",
-          "evidence": "He is now co‑founder and CEO of Asynchronics"
-        },
-        {
-          "src": "Serge Barral",
-          "rel": "cofounded",
-          "dst": "Asynchronics",
-          "evidence": "Chikha and co‑founder Serge Barral ... started the company in 2023"
-        },
-        {
-          "src": "b2venture",
-          "rel": "invested_in",
-          "dst": "Asynchronics",
-          "evidence": "b2venture led the round"
-        },
-        {
-          "src": "Movens Capital",
-          "rel": "invested_in",
-          "dst": "Asynchronics",
-          "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating"
-        },
-        {
-          "src": "Heartfelt",
-          "rel": "invested_in",
-          "dst": "Asynchronics",
-          "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating"
-        },
-        {
-          "src": "Hard2beat",
-          "rel": "invested_in",
-          "dst": "Asynchronics",
-          "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating"
-        },
-        {
-          "src": "Andreas Goeldi",
-          "rel": "works_at",
-          "dst": "b2venture",
-          "evidence": "partner at b2venture"
-        }
-      ]
-    },
-    {
-      "company_name": "Repovive",
-      "core_product": "AI labs formalization data and reinforcement learning environments in Lean for model training and evaluation to enable formal verification of chips and critical software",
-      "tech_stack": [
-        "Lean",
-        "AI models"
-      ],
-      "likely_bottleneck": "building a scalable web interface for delivering formal verification tasks and enabling fast discovery of relevant proof environments",
-      "value_prop_pitch": "I can build a Next.js front‑end that lets you query and browse formal verification tasks instantly, while a vector‑based semantic search layer lets engineers find the right proof environment in milliseconds. This will eliminate the need to manually curate datasets and let your AI labs focus on model training.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://research.repovive.com",
-      "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
-      "discovered_at": "2026-11-17T15:41:28+00:00",
-      "source": "yc",
-      "score": 44,
-      "gaps": [
-        "location",
-        "funding amount",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://research.repovive.com",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-17T15:42:15+00:00",
-        "status": "crawl_failed",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software",
+          "url": "https://www.ycombinator.com/launches/XOz-ample-the-one-stop-cloud-for-agents-to-ship-complex-web-apps",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-17T15:41:58+00:00"
+          "seen_at": "2026-11-18T15:23:52+00:00"
         }
       ],
       "people": [
         {
-          "name": "Amir Mostafavi",
-          "role": "co‑founder",
-          "org": "Repovive",
-          "evidence": "Hey YC! We’re Shayan and Amir, co‑founders of Repovive.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Amir Mostafavi",
-          "rel": "cofounded",
-          "dst": "Repovive",
-          "evidence": "Hey YC! We’re Shayan and Amir, co‑founders of Repovive."
-        }
-      ]
-    },
-    {
-      "company_name": "Duke",
-      "core_product": "An AI‑powered platform that equips ecommerce merchants with voice agents and agent‑ready integrations to enable personalized, multilingual shopping experiences.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the real‑time voice agent infrastructure and maintaining up‑to‑date product context across many merchants.",
-      "value_prop_pitch": "I can help you build a highly performant Next.js front‑end that streams voice interactions with low latency, while a vector‑based semantic search layer instantly retrieves the right product context for each conversation. This combo will let your agents scale to thousands of merchants without sacrificing personalization or speed.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://dukesell.com",
-      "source_url": "https://www.ycombinator.com/launches/XeF-duke-powering-merchants-for-agentic-commerce",
-      "discovered_at": "2026-11-17T15:41:28+00:00",
-      "source": "yc",
-      "score": 58,
-      "gaps": [
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://dukesell.com",
-        "emails": [
-          {
-            "value": "hello@dukesell.com",
-            "kind": "general",
-            "source_url": "https://dukesell.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/DukesellAI",
-          "linkedin": "https://www.linkedin.com/company/duke-sell-ai"
-        },
-        "contact_page": "https://dukesell.com/contact",
-        "product_access": [
-          {
-            "label": "Start free",
-            "url": "https://app.dukesell.com/start"
-          }
-        ],
-        "pages_crawled": [
-          "https://dukesell.com/",
-          "https://dukesell.com/team",
-          "https://dukesell.com/contact",
-          "https://dukesell.com/about"
-        ],
-        "enriched_at": "2026-11-17T15:42:19+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Cloudflare",
-            "category": "hosting"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XeF-duke-powering-merchants-for-agentic-commerce",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-17T15:41:58+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Felix Manford",
+          "name": "Ravi Mishra",
           "role": "Founder",
-          "org": "Duke",
-          "evidence": "Felix Manford",
-          "linkedin": "",
+          "org": "Ample",
+          "evidence": "Ravi Mishra ... founded and sold Athleague",
+          "linkedin": "https://www.linkedin.com/in/ravimishra",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "search"
         }
       ],
       "edges": [
         {
-          "src": "Felix Manford",
+          "src": "Ravi Mishra",
           "rel": "founded",
-          "dst": "Duke",
-          "evidence": "Felix Manford"
+          "dst": "Ample",
+          "evidence": "Ravi Mishra ... founded and sold Athleague"
         }
       ]
     },
     {
-      "company_name": "outGoing",
-      "core_product": "Started in Lisbon's local events scene and now work across festivals, sports and cultural events of every kind. We've raised our first round and are launching new products soon, so this is an early hire with real ownership.",
+      "company_name": "Rune Labs",
+      "core_product": "Rune Labs is a precision neurology startup focused on helping people with Parkinson's. We built StrivePD, an app to help them manage their disease. It's used by individuals, pharma companies running trials, and health systems.",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
@@ -386,45 +819,68 @@
       "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://outgoing.website",
-      "source_url": "https://news.ycombinator.com/item?id=50518905",
-      "discovered_at": "2026-11-17T15:41:58+00:00",
+      "website": "https://www.runelabs.io",
+      "source_url": "https://news.ycombinator.com/item?id=50340242",
+      "discovered_at": "2026-11-18T15:23:52+00:00",
       "source": "hiring",
-      "score": 45,
+      "score": 38,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
+        "founder",
         "people profiles",
         "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://outgoing.website",
+        "website": "https://www.runelabs.io",
         "emails": [
           {
-            "value": "hello@outgoing.website",
+            "value": "info@runelabs.io",
             "kind": "general",
-            "source_url": "https://outgoing.website/"
+            "source_url": "https://www.runelabs.io/contact"
+          },
+          {
+            "value": "jobs@runelabs.io",
+            "kind": "other",
+            "source_url": "https://www.runelabs.io/contact"
+          },
+          {
+            "value": "security@runelabs.io",
+            "kind": "other",
+            "source_url": "https://www.runelabs.io/contact"
           }
         ],
         "phones": [],
-        "socials": {},
-        "contact_page": "",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/rune-labs",
+          "twitter": "https://x.com/rune_labs"
+        },
+        "contact_page": "https://www.runelabs.io/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://outgoing.website/",
-          "https://outgoing.website/about"
+          "https://www.runelabs.io/",
+          "https://www.runelabs.io/about-us",
+          "https://www.runelabs.io/contact"
         ],
-        "enriched_at": "2026-11-17T15:42:26+00:00",
+        "enriched_at": "2026-11-18T15:24:45+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Squarespace",
+            "name": "Webflow",
             "category": "cms"
+          },
+          {
+            "name": "Segment",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
           }
         ]
       },
@@ -432,69 +888,56 @@
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50518905",
+          "url": "https://news.ycombinator.com/item?id=50340242",
           "roles": [
-            "Software Engineer"
+            "Remote (US, CA)"
           ],
           "role_kinds": [
-            "eng"
+            "other"
           ],
-          "posted_at": "2026-11-16T15:49:35Z",
-          "seen_at": "2026-11-17T15:41:58+00:00"
+          "posted_at": "2026-11-02T17:24:52Z",
+          "seen_at": "2026-11-18T15:23:52+00:00"
         }
       ],
-      "people": [
-        {
-          "name": "Brett Gui Xin",
-          "role": "founder",
-          "org": "Outgoing",
-          "evidence": "Outgoing is Brett Gui Xin and Del Hoyle",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Del Hoyle",
-          "role": "founder",
-          "org": "Outgoing",
-          "evidence": "Outgoing is Brett Gui Xin and Del Hoyle",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
+      "people": [],
       "edges": []
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Axonnic",
-        "score": 44,
-        "source": "launch_hn"
-      },
-      {
-        "company": "Asynchronics",
-        "score": 79,
+        "company": "Perry AI",
+        "score": 72,
         "source": "rss"
       },
       {
-        "company": "Repovive",
-        "score": 44,
+        "company": "Qluster",
+        "score": 92,
+        "source": "rss"
+      },
+      {
+        "company": "StarSling",
+        "score": 83,
+        "source": "launch_hn"
+      },
+      {
+        "company": "SalesPatriot, Inc.",
+        "score": 77,
+        "source": "edgar"
+      },
+      {
+        "company": "Contour",
+        "score": 76,
         "source": "yc"
       },
       {
-        "company": "Duke",
-        "score": 58,
+        "company": "Ample",
+        "score": 59,
         "source": "yc"
       },
       {
-        "company": "outGoing",
-        "score": 45,
+        "company": "Rune Labs",
+        "score": 38,
         "source": "hiring"
       }
     ],
