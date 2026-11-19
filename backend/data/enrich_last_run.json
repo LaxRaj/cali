@@ -1,11 +1,12 @@
 {
-  "started_at": "2026-11-18T17:08:37+00:00",
+  "started_at": "2026-11-19T17:15:54+00:00",
   "skipped": "",
   "startups": [
     {
       "company": "Miracly.ai",
-      "score": 92,
+      "score": 87,
       "gaps": [
+        "people profiles",
         "phone"
       ],
       "website": "https://www.miracly.ai",
@@ -20,7 +21,96 @@
       ]
     },
     {
-      "company": "Rune Labs",
+      "company": "Sendery",
+      "score": 34,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://sendery.co",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 1,
+      "edges": 0,
+      "notes": [
+        "team llm: 1 people proposed, 1 grounded",
+        "team page: +1 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Nevral Forensics Intelligence",
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://nevralforensics.com",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "SerpApi",
+      "score": 33,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://serpapi.com",
+      "status": "ok",
+      "emails": 1,
+      "phones": 2,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Beacon AI",
+      "score": 74,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://beaconai.co",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 6,
+      "edges": 6,
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 6 people proposed, 6 grounded",
+        "team page: +4 people, +6 edges"
+      ]
+    },
+    {
+      "company": "SentiLink",
       "score": 38,
       "gaps": [
         "funding stage",
@@ -30,148 +120,58 @@
         "founder",
         "people profiles",
         "investors",
-        "phone"
+        "email"
       ],
-      "website": "https://www.runelabs.io",
-      "status": "ok",
-      "emails": 3,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Perry",
-      "score": 56,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "email",
-        "phone"
-      ],
-      "website": "https://useperry.com",
+      "website": "https://www.sentilink.com",
       "status": "ok",
       "emails": 0,
-      "phones": 0,
-      "people": 2,
-      "edges": 3,
-      "notes": [
-        "team llm: 3 people proposed, 3 grounded",
-        "team page: +3 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Kroo",
-      "score": 34,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://www.getkroo.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Railway",
-      "score": 44,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "investors",
-        "phone"
-      ],
-      "website": "https://railway.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 37,
-      "edges": 0,
-      "notes": [
-        "team llm: 37 people proposed, 37 grounded",
-        "team page: +37 people, +0 edges"
-      ]
-    },
-    {
-      "company": "BuildQ",
-      "score": 54,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://www.buildq.ai",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 3,
-      "edges": 3,
+      "phones": 2,
+      "people": 1,
+      "edges": 1,
       "notes": [
         "team llm: 3 people proposed, 3 grounded",
         "team page: +3 people, +3 edges"
       ]
     },
     {
-      "company": "Splash Tech",
-      "score": 34,
+      "company": "SKIES",
+      "score": 47,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
-        "founder",
         "people profiles",
         "investors",
         "phone"
       ],
-      "website": "https://splash.tech",
+      "website": "https://skieslearn.com",
       "status": "ok",
       "emails": 1,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
+      "people": 5,
+      "edges": 5,
+      "notes": [
+        "team llm: 5 people proposed, 5 grounded",
+        "team page: +5 people, +7 edges"
+      ]
     },
     {
-      "company": "Lumen Labs",
-      "score": 34,
+      "company": "FusionAuth",
+      "score": 32,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
         "tech stack",
         "founder",
         "people profiles",
         "investors",
+        "email",
         "phone"
       ],
-      "website": "https://lumenresearch.co",
+      "website": "https://fusionauth.io",
       "status": "ok",
-      "emails": 1,
+      "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
@@ -181,31 +181,29 @@
       ]
     },
     {
-      "company": "Sphinx Defense",
-      "score": 49,
+      "company": "Simantic",
+      "score": 32,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
-        "tech stack",
+        "founder",
         "people profiles",
         "investors",
+        "email",
         "phone"
       ],
-      "website": "https://sphinxdefense.com",
+      "website": "https://simantic.com",
       "status": "ok",
-      "emails": 1,
+      "emails": 0,
       "phones": 0,
-      "people": 4,
-      "edges": 2,
-      "notes": [
-        "team llm: 4 people proposed, 4 grounded",
-        "team page: +4 people, +2 edges"
-      ]
+      "people": 0,
+      "edges": 0,
+      "notes": []
     },
     {
-      "company": "AREO",
-      "score": 34,
+      "company": "Stealth Health-Tech Startup",
+      "score": 31,
       "gaps": [
         "funding stage",
         "location",
@@ -216,7 +214,7 @@
         "investors",
         "phone"
       ],
-      "website": "https://goareo.com",
+      "website": "https://stealthhealth.io",
       "status": "ok",
       "emails": 1,
       "phones": 0,
@@ -225,37 +223,37 @@
       "notes": []
     }
   ],
-  "tokens": 12310,
+  "tokens": 11495,
   "usage": {
-    "prompt_tokens": 8777,
-    "completion_tokens": 3533,
-    "total_tokens": 12310,
-    "calls": 8,
+    "prompt_tokens": 8713,
+    "completion_tokens": 2782,
+    "total_tokens": 11495,
+    "calls": 7,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 8777,
-        "completion_tokens": 3533,
-        "total_tokens": 12310,
-        "calls": 8
+        "prompt_tokens": 8713,
+        "completion_tokens": 2782,
+        "total_tokens": 11495,
+        "calls": 7
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 8777,
-        "completion_tokens": 3533,
-        "total_tokens": 12310,
-        "calls": 8
+        "prompt_tokens": 8713,
+        "completion_tokens": 2782,
+        "total_tokens": 11495,
+        "calls": 7
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 8777,
-        "completion_tokens": 3533,
-        "total_tokens": 12310,
-        "calls": 8
+        "prompt_tokens": 8713,
+        "completion_tokens": 2782,
+        "total_tokens": 11495,
+        "calls": 7
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-18T17:09:48+00:00"
+  "finished_at": "2026-11-19T17:17:20+00:00"
 }
