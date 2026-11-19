@@ -269,6 +269,14 @@
       "score": 92
     },
     {
+      "id": "keenable",
+      "label": "Keenable",
+      "type": "startup",
+      "degree": 7,
+      "website": "https://keenable.ai",
+      "score": 91
+    },
+    {
       "id": "alethio therapeutics",
       "label": "Alethio Therapeutics",
       "type": "startup",
@@ -389,12 +397,20 @@
       "score": 92
     },
     {
+      "id": "tesorai",
+      "label": "Tesorai",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.tesorai.com",
+      "score": 97
+    },
+    {
       "id": "miracly.ai",
       "label": "Miracly.ai",
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 92
+      "score": 72
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -513,14 +529,6 @@
       "degree": 5,
       "website": "https://www.puppygraph.com",
       "score": 97
-    },
-    {
-      "id": "keenable",
-      "label": "Keenable",
-      "type": "startup",
-      "degree": 5,
-      "website": "https://keenable.ai",
-      "score": 88
     },
     {
       "id": "perry ai",
@@ -717,6 +725,12 @@
       }
     },
     {
+      "id": "amazon",
+      "label": "Amazon",
+      "type": "org",
+      "degree": 4
+    },
+    {
       "id": "elman bio ltd",
       "label": "Elman Bio Ltd",
       "type": "org",
@@ -857,6 +871,14 @@
       "score": 54
     },
     {
+      "id": "helios intelligence",
+      "label": "Helios Intelligence",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://www.heliosinc.ai",
+      "score": 73
+    },
+    {
       "id": "vishnu",
       "label": "Vishnu",
       "type": "person",
@@ -961,27 +983,6 @@
       }
     },
     {
-      "id": "andrey styskin",
-      "label": "Andrey Styskin",
-      "type": "person",
-      "degree": 3,
-      "role": "Co‑founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/andrey-styskin",
-        "twitter": "https://x.com/styskin"
-      }
-    },
-    {
-      "id": "matthias petri",
-      "label": "Matthias Petri",
-      "type": "person",
-      "degree": 3,
-      "role": "Co‑founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/matthias-petri-6b7899394"
-      }
-    },
-    {
       "id": "akshay manglik",
       "label": "Akshay Manglik",
       "type": "person",
@@ -1010,10 +1011,25 @@
       "links": {}
     },
     {
-      "id": "amazon",
-      "label": "Amazon",
-      "type": "org",
-      "degree": 3
+      "id": "andrey styskin",
+      "label": "Andrey Styskin",
+      "type": "person",
+      "degree": 3,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/andrey-styskin",
+        "twitter": "https://x.com/styskin"
+      }
+    },
+    {
+      "id": "matthias petri",
+      "label": "Matthias Petri",
+      "type": "person",
+      "degree": 3,
+      "role": "Chief Scientist",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matthias-petri-6b7899394"
+      }
     },
     {
       "id": "mckinsey",
@@ -1046,6 +1062,12 @@
       "degree": 3
     },
     {
+      "id": "google",
+      "label": "Google",
+      "type": "org",
+      "degree": 3
+    },
+    {
       "id": "haatch",
       "label": "Haatch",
       "type": "org",
@@ -1054,6 +1076,12 @@
     {
       "id": "miracly",
       "label": "Miracly",
+      "type": "org",
+      "degree": 3
+    },
+    {
+      "id": "verily",
+      "label": "Verily",
       "type": "org",
       "degree": 3
     },
@@ -1749,6 +1777,44 @@
       }
     },
     {
+      "id": "charlie kim",
+      "label": "Charlie Kim",
+      "type": "person",
+      "degree": 2,
+      "role": "co‑founder and chief scientific officer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/charlie-kim-8638743"
+      }
+    },
+    {
+      "id": "melissa miao",
+      "label": "Melissa Miao",
+      "type": "person",
+      "degree": 2,
+      "role": "co‑founder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/melissa-miao-975a79"
+      }
+    },
+    {
+      "id": "peter cimermancic",
+      "label": "Peter Cimermancic",
+      "type": "person",
+      "degree": 2,
+      "role": "co‑founder and chief technology officer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/peter-cimermancic-57791a11"
+      }
+    },
+    {
+      "id": "yousef badran",
+      "label": "Yousef Badran",
+      "type": "person",
+      "degree": 2,
+      "role": "Co‑founder",
+      "links": {}
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -1889,12 +1955,6 @@
     {
       "id": "lakestar",
       "label": "Lakestar",
-      "type": "org",
-      "degree": 2
-    },
-    {
-      "id": "google",
-      "label": "Google",
       "type": "org",
       "degree": 2
     },
@@ -2193,6 +2253,14 @@
       "degree": 1,
       "website": "https://ample.computer",
       "score": 59
+    },
+    {
+      "id": "rezora io",
+      "label": "Rezora IO",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://rezora.io",
+      "score": 69
     },
     {
       "id": "alex rosenberg",
@@ -5661,6 +5729,32 @@
       }
     },
     {
+      "id": "aidan richards",
+      "label": "Aidan Richards",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/aidanrichards526aba"
+      }
+    },
+    {
+      "id": "omar abudayyeh",
+      "label": "Omar Abudayyeh",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {}
+    },
+    {
+      "id": "jonathan gootenberg",
+      "label": "Jonathan Gootenberg",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -6951,12 +7045,6 @@
       "degree": 1
     },
     {
-      "id": "accel",
-      "label": "Accel",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "conviction partners",
       "label": "Conviction Partners",
       "type": "org",
@@ -7145,6 +7233,36 @@
     {
       "id": "lotus",
       "label": "Lotus",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "perplexity fund",
+      "label": "Perplexity Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "iqt",
+      "label": "IQT",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "south central ventures",
+      "label": "South Central Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "accel",
+      "label": "Accel",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "massachusetts general hospital",
+      "label": "Massachusetts General Hospital",
       "type": "org",
       "degree": 1
     },
@@ -8259,6 +8377,14 @@
       "degree": 0,
       "website": "https://goareo.com",
       "score": 34
+    },
+    {
+      "id": "maritime",
+      "label": "Maritime",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://maritime.sh",
+      "score": 51
     },
     {
       "id": "kevin hartz",
@@ -18532,46 +18658,6 @@
       ]
     },
     {
-      "source": "andrey styskin",
-      "target": "keenable",
-      "rel": "founded",
-      "evidence": "Founded by former Yandex search chief Andrey Styskin",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        },
-        {
-          "source_url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-search-startup-keenable-raises-26m/",
-          "run_id": "20261111T134656Z",
-          "first_seen": "2026-11-11T13:49:39+00:00",
-          "last_seen": "2026-11-11T13:49:39+00:00"
-        }
-      ]
-    },
-    {
-      "source": "accel",
-      "target": "keenable",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Accel",
-      "sources": [
-        {
-          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
-          "run_id": "backfill-2026-11-07",
-          "first_seen": "2026-10-24T10:37:24+00:00",
-          "last_seen": "2026-11-07T14:51:23+00:00"
-        },
-        {
-          "source_url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-search-startup-keenable-raises-26m/",
-          "run_id": "20261111T134656Z",
-          "first_seen": "2026-11-11T13:49:39+00:00",
-          "last_seen": "2026-11-11T13:49:39+00:00"
-        }
-      ]
-    },
-    {
       "source": "conviction partners",
       "target": "keenable",
       "rel": "invested_in",
@@ -21066,6 +21152,282 @@
           "run_id": "backfill-2026-11-18",
           "first_seen": "2026-11-18T17:08:37+00:00",
           "last_seen": "2026-11-18T17:08:37+00:00"
+        }
+      ]
+    },
+    {
+      "source": "charlie kim",
+      "target": "tesorai",
+      "rel": "founded",
+      "evidence": "Charlie Kim, co‑founder and chief scientific officer of Tesorai",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "melissa miao",
+      "target": "tesorai",
+      "rel": "founded",
+      "evidence": "Melissa Miao, co‑founder and CEO",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "peter cimermancic",
+      "target": "tesorai",
+      "rel": "founded",
+      "evidence": "Peter Cimermancic, co‑founder and chief technology officer",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "charlie kim",
+      "target": "verily",
+      "rel": "previously_at",
+      "evidence": "Miao, Cimermancic and Kim worked together at Verily",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "melissa miao",
+      "target": "verily",
+      "rel": "previously_at",
+      "evidence": "Miao, Cimermancic and Kim worked together at Verily",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "peter cimermancic",
+      "target": "verily",
+      "rel": "previously_at",
+      "evidence": "Miao, Cimermancic and Kim worked together at Verily",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "perplexity fund",
+      "target": "tesorai",
+      "rel": "invested_in",
+      "evidence": "Perplexity Fund ... are among eight investors",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "iqt",
+      "target": "tesorai",
+      "rel": "invested_in",
+      "evidence": "Perplexity Fund, IQT and South Central Ventures are among eight investors",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "south central ventures",
+      "target": "tesorai",
+      "rel": "invested_in",
+      "evidence": "South Central Ventures are among eight investors",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/tesorai-raises-5-3m-seed-backed-by-perplexity-fund-and-iqt-to-make-raw-lab-data-searchable/",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "andrey styskin",
+      "target": "keenable",
+      "rel": "founded",
+      "evidence": "CEO Andrey Styskin previously ran Yandex’s search division.",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        },
+        {
+          "source_url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-search-startup-keenable-raises-26m/",
+          "run_id": "20261111T134656Z",
+          "first_seen": "2026-11-11T13:49:39+00:00",
+          "last_seen": "2026-11-11T13:49:39+00:00"
+        },
+        {
+          "source_url": "https://www.kucoin.com/news/flash/keenable-emerges-from-stealth-with-26m-seed-round-to-build-ai-agent-search-infrastructure",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "accel",
+      "target": "keenable",
+      "rel": "invested_in",
+      "evidence": "The round, closed November 5, 2025, was led by Accel",
+      "sources": [
+        {
+          "source_url": "https://ventureburn.com/keenable-raises-26-million-for-ai-agent-search-index/",
+          "run_id": "backfill-2026-11-07",
+          "first_seen": "2026-10-24T10:37:24+00:00",
+          "last_seen": "2026-11-07T14:51:23+00:00"
+        },
+        {
+          "source_url": "https://superintelligencenews.com/ai-fields/large-language-models/ai-search-startup-keenable-raises-26m/",
+          "run_id": "20261111T134656Z",
+          "first_seen": "2026-11-11T13:49:39+00:00",
+          "last_seen": "2026-11-11T13:49:39+00:00"
+        },
+        {
+          "source_url": "https://www.kucoin.com/news/flash/keenable-emerges-from-stealth-with-26m-seed-round-to-build-ai-agent-search-infrastructure",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "google",
+      "target": "keenable",
+      "rel": "invested_in",
+      "evidence": "Angel investors from Google and Amazon also participated.",
+      "sources": [
+        {
+          "source_url": "https://www.kucoin.com/news/flash/keenable-emerges-from-stealth-with-26m-seed-round-to-build-ai-agent-search-infrastructure",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "amazon",
+      "target": "keenable",
+      "rel": "invested_in",
+      "evidence": "Angel investors from Google and Amazon also participated.",
+      "sources": [
+        {
+          "source_url": "https://www.kucoin.com/news/flash/keenable-emerges-from-stealth-with-26m-seed-round-to-build-ai-agent-search-infrastructure",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "aidan richards",
+      "target": "rezora io",
+      "rel": "founded",
+      "evidence": "Hey everyone, we're Aidan and Yevgeniy, Founders of Rezora IO",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xi8-rezora-io-the-self-improving-ai-receptionist-actually-built-for-nontechnical-users",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "omar abudayyeh",
+      "target": "helios intelligence",
+      "rel": "cofounded",
+      "evidence": "Hey everyone! Omar here, with my cofounders Jonathan Gootenberg and Yousef Badran.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jonathan gootenberg",
+      "target": "helios intelligence",
+      "rel": "cofounded",
+      "evidence": "Hey everyone! Omar here, with my cofounders Jonathan Gootenberg and Yousef Badran.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "yousef badran",
+      "target": "helios intelligence",
+      "rel": "cofounded",
+      "evidence": "Hey everyone! Omar here, with my cofounders Jonathan Gootenberg and Yousef Badran.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
+        }
+      ]
+    },
+    {
+      "source": "yousef badran",
+      "target": "massachusetts general hospital",
+      "rel": "previously_at",
+      "evidence": "Yousef, an internal medicine physician‑scientist and gastroenterologist at MGH",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home",
+          "run_id": "20261119T152701Z",
+          "first_seen": "2026-11-19T15:29:09+00:00",
+          "last_seen": "2026-11-19T15:29:09+00:00"
         }
       ]
     }
