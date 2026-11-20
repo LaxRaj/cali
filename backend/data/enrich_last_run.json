@@ -1,7 +1,25 @@
 {
-  "started_at": "2026-11-19T17:15:54+00:00",
+  "started_at": "2026-11-20T16:53:38+00:00",
   "skipped": "",
   "startups": [
+    {
+      "company": "Pedestal AI",
+      "score": 79,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "https://www.pedestal.ai",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 4,
+      "edges": 13,
+      "notes": [
+        "team llm: 7 people proposed, 7 grounded",
+        "team page: +6 people, +9 edges"
+      ]
+    },
     {
       "company": "Miracly.ai",
       "score": 87,
@@ -21,8 +39,8 @@
       ]
     },
     {
-      "company": "Sendery",
-      "score": 34,
+      "company": "Blockrotate",
+      "score": 25,
       "gaps": [
         "funding stage",
         "location",
@@ -31,87 +49,20 @@
         "founder",
         "people profiles",
         "investors",
+        "email",
         "phone"
       ],
-      "website": "https://sendery.co",
+      "website": "https://blockrotate.com",
       "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 1,
-      "edges": 0,
-      "notes": [
-        "team llm: 1 people proposed, 1 grounded",
-        "team page: +1 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Nevral Forensics Intelligence",
-      "score": 33,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://nevralforensics.com",
-      "status": "ok",
-      "emails": 1,
+      "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": []
     },
     {
-      "company": "SerpApi",
-      "score": 33,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://serpapi.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 2,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Beacon AI",
-      "score": 74,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "phone"
-      ],
-      "website": "https://beaconai.co",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 6,
-      "edges": 6,
-      "notes": [
-        "structured data: 2 people",
-        "team llm: 6 people proposed, 6 grounded",
-        "team page: +4 people, +6 edges"
-      ]
-    },
-    {
-      "company": "SentiLink",
-      "score": 38,
+      "company": "REVNODE",
+      "score": 25,
       "gaps": [
         "funding stage",
         "location",
@@ -122,45 +73,40 @@
         "investors",
         "email"
       ],
-      "website": "https://www.sentilink.com",
+      "website": "https://www.revnode.com",
       "status": "ok",
       "emails": 0,
-      "phones": 2,
-      "people": 1,
-      "edges": 1,
-      "notes": [
-        "team llm: 3 people proposed, 3 grounded",
-        "team page: +3 people, +3 edges"
-      ]
+      "phones": 1,
+      "people": 0,
+      "edges": 0,
+      "notes": []
     },
     {
-      "company": "SKIES",
-      "score": 47,
+      "company": "Maali",
+      "score": 30,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
-        "tech stack",
+        "founder",
         "people profiles",
         "investors",
         "phone"
       ],
-      "website": "https://skieslearn.com",
+      "website": "https://maali.app",
       "status": "ok",
       "emails": 1,
       "phones": 0,
-      "people": 5,
-      "edges": 5,
-      "notes": [
-        "team llm: 5 people proposed, 5 grounded",
-        "team page: +5 people, +7 edges"
-      ]
+      "people": 0,
+      "edges": 0,
+      "notes": []
     },
     {
-      "company": "FusionAuth",
-      "score": 32,
+      "company": "Jump",
+      "score": 29,
       "gaps": [
         "funding stage",
+        "location",
         "funding amount",
         "tech stack",
         "founder",
@@ -169,7 +115,7 @@
         "email",
         "phone"
       ],
-      "website": "https://fusionauth.io",
+      "website": "https://jumpscientific.com",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -181,29 +127,8 @@
       ]
     },
     {
-      "company": "Simantic",
-      "score": 32,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://simantic.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Stealth Health-Tech Startup",
-      "score": 31,
+      "company": "Native",
+      "score": 29,
       "gaps": [
         "funding stage",
         "location",
@@ -212,48 +137,125 @@
         "founder",
         "people profiles",
         "investors",
+        "email",
         "phone"
       ],
-      "website": "https://stealthhealth.io",
+      "website": "https://www.withnative.ai",
       "status": "ok",
-      "emails": 1,
+      "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
-      "notes": []
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Hestus",
+      "score": 49,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.hestus.co",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 2,
+      "edges": 2,
+      "notes": [
+        "team llm: 2 people proposed, 2 grounded",
+        "team page: +2 people, +2 edges"
+      ]
+    },
+    {
+      "company": "Subimage",
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.subimage.io",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Spade",
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://spade.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
     }
   ],
-  "tokens": 11495,
+  "tokens": 9674,
   "usage": {
-    "prompt_tokens": 8713,
-    "completion_tokens": 2782,
-    "total_tokens": 11495,
+    "prompt_tokens": 8061,
+    "completion_tokens": 1613,
+    "total_tokens": 9674,
     "calls": 7,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 8713,
-        "completion_tokens": 2782,
-        "total_tokens": 11495,
+        "prompt_tokens": 8061,
+        "completion_tokens": 1613,
+        "total_tokens": 9674,
         "calls": 7
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 8713,
-        "completion_tokens": 2782,
-        "total_tokens": 11495,
+        "prompt_tokens": 8061,
+        "completion_tokens": 1613,
+        "total_tokens": 9674,
         "calls": 7
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 8713,
-        "completion_tokens": 2782,
-        "total_tokens": 11495,
+        "prompt_tokens": 8061,
+        "completion_tokens": 1613,
+        "total_tokens": 9674,
         "calls": 7
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-19T17:17:20+00:00"
+  "finished_at": "2026-11-20T16:54:38+00:00"
 }

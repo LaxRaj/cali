@@ -285,6 +285,12 @@
       "score": 91
     },
     {
+      "id": "pedestal",
+      "label": "Pedestal",
+      "type": "org",
+      "degree": 7
+    },
+    {
       "id": "alethio therapeutics",
       "label": "Alethio Therapeutics",
       "type": "startup",
@@ -413,14 +419,6 @@
       "score": 97
     },
     {
-      "id": "pedestal ai",
-      "label": "Pedestal AI",
-      "type": "startup",
-      "degree": 6,
-      "website": "https://www.pedestal.ai",
-      "score": 74
-    },
-    {
       "id": "qdrant",
       "label": "Qdrant",
       "type": "startup",
@@ -429,12 +427,20 @@
       "score": 88
     },
     {
+      "id": "pedestal ai",
+      "label": "Pedestal AI",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.pedestal.ai",
+      "score": 79
+    },
+    {
       "id": "miracly.ai",
       "label": "Miracly.ai",
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 72
+      "score": 87
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -1380,6 +1386,14 @@
       "score": 49
     },
     {
+      "id": "hestus",
+      "label": "Hestus",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://www.hestus.co",
+      "score": 49
+    },
+    {
       "id": "eric",
       "label": "Eric",
       "type": "person",
@@ -1845,6 +1859,24 @@
       "links": {}
     },
     {
+      "id": "raj aggarwal",
+      "label": "Raj Aggarwal",
+      "type": "person",
+      "degree": 2,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/aggarwalraj"
+      }
+    },
+    {
+      "id": "converge vc",
+      "label": "Converge VC",
+      "type": "person",
+      "degree": 2,
+      "role": "Investor",
+      "links": {}
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -2039,6 +2071,18 @@
     {
       "id": "accel",
       "label": "Accel",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "eclipse",
+      "label": "Eclipse",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "rre",
+      "label": "RRE",
       "type": "org",
       "degree": 2
     },
@@ -5789,30 +5833,6 @@
       "links": {}
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "avi nair",
       "label": "Avi Nair",
       "type": "person",
@@ -5941,16 +5961,6 @@
       }
     },
     {
-      "id": "raj aggarwal",
-      "label": "Raj Aggarwal",
-      "type": "person",
-      "degree": 1,
-      "role": "CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/aggarwalraj"
-      }
-    },
-    {
       "id": "arman luthra",
       "label": "Arman Luthra",
       "type": "person",
@@ -5974,6 +5984,68 @@
       "role": "CEO",
       "links": {
         "linkedin": "https://www.linkedin.com/in/zayarni"
+      }
+    },
+    {
+      "id": "henry cipolla",
+      "label": "Henry Cipolla",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder & CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/henrycipolla"
+      }
+    },
+    {
+      "id": "timescale vc",
+      "label": "Timescale VC",
+      "type": "person",
+      "degree": 1,
+      "role": "Investor",
+      "links": {}
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "sohrab haghighat",
+      "label": "Sohrab Haghighat",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sohrabhaghighat/"
+      }
+    },
+    {
+      "id": "kevin chu",
+      "label": "Kevin Chu",
+      "type": "person",
+      "degree": 1,
+      "role": "CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/kevin-chu-11a4511/"
       }
     },
     {
@@ -7471,18 +7543,6 @@
       "degree": 1
     },
     {
-      "id": "beenext ventures",
-      "label": "Beenext Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lotus",
-      "label": "Lotus",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "prosus ventures",
       "label": "Prosus Ventures",
       "type": "org",
@@ -7525,20 +7585,14 @@
       "degree": 1
     },
     {
-      "id": "eclipse",
-      "label": "Eclipse",
+      "id": "avp",
+      "label": "AVP",
       "type": "org",
       "degree": 1
     },
     {
-      "id": "rre",
-      "label": "RRE",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "converge vc",
-      "label": "Converge VC",
+      "id": "bosch ventures",
+      "label": "Bosch Ventures",
       "type": "org",
       "degree": 1
     },
@@ -7555,14 +7609,20 @@
       "degree": 1
     },
     {
-      "id": "avp",
-      "label": "AVP",
+      "id": "vitalstage ventures",
+      "label": "VitalStage Ventures",
       "type": "org",
       "degree": 1
     },
     {
-      "id": "bosch ventures",
-      "label": "Bosch Ventures",
+      "id": "beenext ventures",
+      "label": "Beenext Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
       "type": "org",
       "degree": 1
     },
@@ -7621,14 +7681,6 @@
       "degree": 0,
       "website": "https://www.imc.com",
       "score": 25
-    },
-    {
-      "id": "maali",
-      "label": "Maali",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://maali.app",
-      "score": 30
     },
     {
       "id": "geoforge, inc.",
@@ -7783,14 +7835,6 @@
       "score": 21
     },
     {
-      "id": "blockrotate",
-      "label": "Blockrotate",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://blockrotate.com",
-      "score": 31
-    },
-    {
       "id": "valis",
       "label": "VALIS",
       "type": "startup",
@@ -7823,14 +7867,6 @@
       "score": 29
     },
     {
-      "id": "spade",
-      "label": "Spade",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://spade.com",
-      "score": 29
-    },
-    {
       "id": "meta",
       "label": "Meta",
       "type": "startup",
@@ -7853,14 +7889,6 @@
       "degree": 0,
       "website": "https://app.opentrain.ai",
       "score": 25
-    },
-    {
-      "id": "subimage",
-      "label": "Subimage",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.subimage.io",
-      "score": 29
     },
     {
       "id": "eleshop",
@@ -7983,22 +8011,6 @@
       "score": 21
     },
     {
-      "id": "revnode",
-      "label": "REVNODE",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.revnode.com/docs/capability_statement.pdf",
-      "score": 30
-    },
-    {
-      "id": "hestus",
-      "label": "Hestus",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.hestus.co",
-      "score": 29
-    },
-    {
       "id": "artcraft",
       "label": "ArtCraft",
       "type": "startup",
@@ -8013,14 +8025,6 @@
       "degree": 0,
       "website": "https://ciphersoniclabs.io",
       "score": 77
-    },
-    {
-      "id": "native",
-      "label": "Native",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.withnative.ai",
-      "score": 29
     },
     {
       "id": "landlord",
@@ -8221,14 +8225,6 @@
       "degree": 0,
       "website": "",
       "score": 27
-    },
-    {
-      "id": "jump",
-      "label": "Jump",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://jumpscientific.com",
-      "score": 29
     },
     {
       "id": "propel labs",
@@ -8677,6 +8673,62 @@
       "degree": 0,
       "website": "https://beaconai.co",
       "score": 54
+    },
+    {
+      "id": "blockrotate",
+      "label": "Blockrotate",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://blockrotate.com",
+      "score": 25
+    },
+    {
+      "id": "revnode",
+      "label": "REVNODE",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.revnode.com",
+      "score": 25
+    },
+    {
+      "id": "maali",
+      "label": "Maali",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://maali.app",
+      "score": 30
+    },
+    {
+      "id": "jump",
+      "label": "Jump",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://jumpscientific.com",
+      "score": 29
+    },
+    {
+      "id": "native",
+      "label": "Native",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.withnative.ai",
+      "score": 29
+    },
+    {
+      "id": "subimage",
+      "label": "Subimage",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.subimage.io",
+      "score": 29
+    },
+    {
+      "id": "spade",
+      "label": "Spade",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://spade.com",
+      "score": 29
     },
     {
       "id": "kevin hartz",
@@ -21600,132 +21652,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-19",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-19T17:15:54+00:00"
-        }
-      ]
-    },
-    {
       "source": "matt cox",
       "target": "beacon",
       "rel": "founded",
@@ -22048,90 +21974,6 @@
       ]
     },
     {
-      "source": "raj aggarwal",
-      "target": "pedestal ai",
-      "rel": "founded",
-      "evidence": "CEO Raj Aggarwal says contemporary AI systems are particularly useful for dealing with that data.",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "20261120T150301Z",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T15:05:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "eclipse",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "20261120T150301Z",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T15:05:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "rre",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "20261120T150301Z",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T15:05:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "converge vc",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "20261120T150301Z",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T15:05:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "timescale ventures",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "20261120T150301Z",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T15:05:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "vitalstage",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "20261120T150301Z",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T15:05:34+00:00"
-        }
-      ]
-    },
-    {
       "source": "arman luthra",
       "target": "tilion",
       "rel": "founded",
@@ -22204,6 +22046,342 @@
           "run_id": "20261120T150301Z",
           "first_seen": "2026-11-20T15:05:34+00:00",
           "last_seen": "2026-11-20T15:05:34+00:00"
+        }
+      ]
+    },
+    {
+      "source": "raj aggarwal",
+      "target": "pedestal ai",
+      "rel": "founded",
+      "evidence": "CEO Raj Aggarwal says contemporary AI systems are particularly useful for dealing with that data.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "eclipse",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "rre",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "converge vc",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "timescale ventures",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vitalstage",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "raj aggarwal",
+      "target": "pedestal",
+      "rel": "founded",
+      "evidence": "Raj Aggarwal (CEO) and Henry Cipolla (CTO) founded Pedestal.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "henry cipolla",
+      "target": "pedestal",
+      "rel": "founded",
+      "evidence": "Raj Aggarwal (CEO) and Henry Cipolla (CTO) founded Pedestal.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "eclipse",
+      "target": "pedestal",
+      "rel": "backed_by",
+      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "rre",
+      "target": "pedestal",
+      "rel": "backed_by",
+      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "converge vc",
+      "target": "pedestal",
+      "rel": "backed_by",
+      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "timescale vc",
+      "target": "pedestal",
+      "rel": "backed_by",
+      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vitalstage ventures",
+      "target": "pedestal",
+      "rel": "backed_by",
+      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sohrab haghighat",
+      "target": "hestus",
+      "rel": "founded",
+      "evidence": "Sohrab is a 2x YC founder and the CEO of Hestus.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50342280",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
+        }
+      ]
+    },
+    {
+      "source": "kevin chu",
+      "target": "hestus",
+      "rel": "works_at",
+      "evidence": "Kevin is the CTO at Hestus, leading engineering and product development.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50342280",
+          "run_id": "backfill-2026-11-20",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-20T16:53:38+00:00"
         }
       ]
     }
