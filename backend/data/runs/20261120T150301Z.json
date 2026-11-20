@@ -1,0 +1,487 @@
+{
+  "run_id": "20261120T150301Z",
+  "started_at": "2026-11-20T15:03:01+00:00",
+  "duration_s": 159.8,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 258,
+    "selected": 9,
+    "crawled": 8,
+    "extracted": 7,
+    "relevant": 7,
+    "valid": 7
+  },
+  "tokens": 19993,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "rss": 56,
+    "hiring": 120,
+    "web": 30,
+    "hn": 37,
+    "edgar": 3
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building vector search API for Next.js apps",
+      "seed funding announced for retrieval-augmented generation startup targeting data-heavy web applications",
+      "founder interview with startup creating RAG engine for SaaS dashboards November 2026",
+      "venture capital invests in early-stage search infrastructure startup using hybrid vector\u2011keyword retrieval"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG engine",
+      "vector retrieval",
+      "developer tooling",
+      "search infrastructure"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "edgar": {
+        "crawled": 23,
+        "accepted": 6,
+        "score_sum": 393,
+        "yield": 0.261,
+        "avg_score": 65.5
+      },
+      "rss": {
+        "crawled": 34,
+        "accepted": 21,
+        "score_sum": 1610,
+        "yield": 0.618,
+        "avg_score": 76.7
+      },
+      "yc": {
+        "crawled": 24,
+        "accepted": 24,
+        "score_sum": 1543,
+        "yield": 1.0,
+        "avg_score": 64.3
+      },
+      "hiring": {
+        "crawled": 86,
+        "accepted": 85,
+        "score_sum": 2706,
+        "yield": 0.988,
+        "avg_score": 31.8
+      },
+      "web": {
+        "crawled": 11,
+        "accepted": 7,
+        "score_sum": 557,
+        "yield": 0.636,
+        "avg_score": 79.6
+      },
+      "launch_hn": {
+        "crawled": 4,
+        "accepted": 4,
+        "score_sum": 248,
+        "yield": 1.0,
+        "avg_score": 62.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 2,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 108,
+    "fallbacks": 0,
+    "avg_latency_ms": 74.8,
+    "jev_input_tokens": 51427,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-20T15:03:01+00:00",
+      "offset_s": 0.0,
+      "duration_s": 9.93,
+      "status": "ok",
+      "counts": {
+        "candidates": 258,
+        "src_hn": 32,
+        "src_launch_hn": 5,
+        "src_rss": 56,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 3,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-20T15:03:11+00:00",
+      "offset_s": 9.93,
+      "duration_s": 7.52,
+      "status": "ok",
+      "counts": {
+        "in": 258,
+        "selected": 9,
+        "hiring_lane": 0,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 2, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-20T15:03:19+00:00",
+      "offset_s": 17.45,
+      "duration_s": 11.68,
+      "status": "ok",
+      "counts": {
+        "requested": 9,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-20T15:03:30+00:00",
+      "offset_s": 29.13,
+      "duration_s": 71.76,
+      "status": "ok",
+      "counts": {
+        "extracted": 7,
+        "relevant": 7,
+        "valid": 7
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-20T15:04:42+00:00",
+      "offset_s": 100.9,
+      "duration_s": 52.52,
+      "status": "ok",
+      "counts": {
+        "startups": 7,
+        "websites": 7,
+        "emails": 6,
+        "phones": 1
+      },
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 2 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "structured data: 2 people"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-20T15:05:34+00:00",
+      "offset_s": 153.42,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 69
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-20T15:05:34+00:00",
+      "offset_s": 153.42,
+      "duration_s": 3.48,
+      "status": "ok",
+      "counts": {
+        "startups": 7,
+        "people": 11,
+        "edges": 22
+      },
+      "notes": []
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.4,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 56,
+      "seconds": 3.14,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 5.21,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 5.71,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 37,
+      "seconds": 9.81,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 3,
+      "seconds": 9.92,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14435,
+    "completion_tokens": 5558,
+    "total_tokens": 19993,
+    "calls": 9,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 11680,
+        "completion_tokens": 5249,
+        "total_tokens": 16929,
+        "calls": 7
+      },
+      "team": {
+        "prompt_tokens": 2755,
+        "completion_tokens": 309,
+        "total_tokens": 3064,
+        "calls": 2
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 14435,
+        "completion_tokens": 5558,
+        "total_tokens": 19993,
+        "calls": 9
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 14435,
+        "completion_tokens": 5558,
+        "total_tokens": 19993,
+        "calls": 9
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 258,
+    "crawled": 8,
+    "extracted": 7,
+    "relevant": 7,
+    "valid": 7,
+    "sources": {
+      "launch_hn": 1,
+      "rss": 2,
+      "edgar": 1,
+      "yc": 2,
+      "web": 1
+    },
+    "people": 11,
+    "edges": 22,
+    "dropped_ungrounded": 6,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 7,
+    "with_website": 7,
+    "with_email": 5,
+    "with_phone": 1,
+    "people_linked": 5,
+    "avg_score": 69.0,
+    "qualified": 6,
+    "avg_qualified_score": 68.2,
+    "issues": {
+      "warn: empty tech_stack": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "ventureburn.com/qdrant-raises-50m"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Onlook",
+      "url": "https://news.ycombinator.com/item?id=50562320",
+      "source": "launch_hn",
+      "people": 3,
+      "edges": 3,
+      "score": 62,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://www.onlook.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Humyn Labs",
+      "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "source": "rss",
+      "people": 2,
+      "edges": 10,
+      "score": 80,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "https://humynlabs.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Pedestal AI",
+      "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+      "source": "rss",
+      "people": 1,
+      "edges": 6,
+      "score": 74,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "https://www.pedestal.ai",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "General Inference Inc.",
+      "url": "https://www.sec.gov/Archives/edgar/data/2165091/000216509126000001/",
+      "source": "edgar",
+      "people": 3,
+      "edges": 0,
+      "score": 61,
+      "gaps": [
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://generalinference.xyz",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Tilion",
+      "url": "https://www.ycombinator.com/launches/Xi1-tilion-superfast-unblockable-browser-infrastructure-for-agents",
+      "source": "yc",
+      "people": 1,
+      "edges": 1,
+      "score": 57,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://tilion.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Augment Inc.",
+      "url": "https://www.ycombinator.com/launches/Xk8-vinny-the-ai-phone-line-for-restaurants",
+      "source": "yc",
+      "people": 1,
+      "edges": 1,
+      "score": 61,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://hirevinny.com",
+      "emails": 1,
+      "phones": 1
+    },
+    {
+      "company": "Qdrant",
+      "url": "https://qdrant.tech/blog/series-b-announcement/",
+      "source": "web",
+      "people": 3,
+      "edges": 3,
+      "score": 88,
+      "gaps": [
+        "phone"
+      ],
+      "website": "https://qdrant.tech",
+      "emails": 2,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1794240/000179424026000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Onlook",
+        "score": 62,
+        "source": "launch_hn"
+      },
+      {
+        "company": "Humyn Labs",
+        "score": 80,
+        "source": "rss"
+      },
+      {
+        "company": "Pedestal AI",
+        "score": 74,
+        "source": "rss"
+      },
+      {
+        "company": "General Inference Inc.",
+        "score": 61,
+        "source": "edgar"
+      },
+      {
+        "company": "Tilion",
+        "score": 57,
+        "source": "yc"
+      },
+      {
+        "company": "Augment Inc.",
+        "score": 61,
+        "source": "yc"
+      }
+    ],
+    "updated": [
+      {
+        "company": "Qdrant",
+        "score": 88,
+        "score_before": 87,
+        "source": "web"
+      }
+    ]
+  }
+}
