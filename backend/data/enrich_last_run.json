@@ -1,25 +1,7 @@
 {
-  "started_at": "2026-11-20T16:53:38+00:00",
+  "started_at": "2026-11-21T16:03:07+00:00",
   "skipped": "",
   "startups": [
-    {
-      "company": "Pedestal AI",
-      "score": 79,
-      "gaps": [
-        "email",
-        "phone"
-      ],
-      "website": "https://www.pedestal.ai",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 4,
-      "edges": 13,
-      "notes": [
-        "team llm: 7 people proposed, 7 grounded",
-        "team page: +6 people, +9 edges"
-      ]
-    },
     {
       "company": "Miracly.ai",
       "score": 87,
@@ -39,30 +21,8 @@
       ]
     },
     {
-      "company": "Blockrotate",
-      "score": 25,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://blockrotate.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "REVNODE",
-      "score": 25,
+      "company": "Odoo",
+      "score": 29,
       "gaps": [
         "funding stage",
         "location",
@@ -73,36 +33,19 @@
         "investors",
         "email"
       ],
-      "website": "https://www.revnode.com",
+      "website": "https://www.odoo.com",
       "status": "ok",
       "emails": 0,
       "phones": 1,
       "people": 0,
       "edges": 0,
-      "notes": []
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
     },
     {
-      "company": "Maali",
-      "score": 30,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://maali.app",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Jump",
+      "company": "NeuralFrame",
       "score": 29,
       "gaps": [
         "funding stage",
@@ -115,7 +58,7 @@
         "email",
         "phone"
       ],
-      "website": "https://jumpscientific.com",
+      "website": "https://neuralframe.com",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -127,10 +70,34 @@
       ]
     },
     {
-      "company": "Native",
-      "score": 29,
+      "company": "Meta",
+      "score": 28,
       "gaps": [
         "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.metacareers.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 1,
+      "edges": 0,
+      "notes": [
+        "structured data: 1 people"
+      ]
+    },
+    {
+      "company": "Stratirus",
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
         "location",
         "funding amount",
         "tech stack",
@@ -140,45 +107,22 @@
         "email",
         "phone"
       ],
-      "website": "https://www.withnative.ai",
-      "status": "ok",
+      "website": "",
+      "status": "no_website",
       "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "no website found"
       ]
     },
     {
-      "company": "Hestus",
-      "score": 49,
+      "company": "Mesmer",
+      "score": 15,
       "gaps": [
         "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://www.hestus.co",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 2,
-      "edges": 2,
-      "notes": [
-        "team llm: 2 people proposed, 2 grounded",
-        "team page: +2 people, +2 edges"
-      ]
-    },
-    {
-      "company": "Subimage",
-      "score": 29,
-      "gaps": [
-        "funding stage",
+        "website",
         "location",
         "funding amount",
         "tech stack",
@@ -188,20 +132,89 @@
         "email",
         "phone"
       ],
-      "website": "https://www.subimage.io",
-      "status": "ok",
+      "website": "",
+      "status": "no_website",
       "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "no website found"
       ]
     },
     {
-      "company": "Spade",
-      "score": 29,
+      "company": "Paradromics",
+      "score": 66,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "investors"
+      ],
+      "website": "https://paradromics.com",
+      "status": "ok",
+      "emails": 3,
+      "phones": 1,
+      "people": 5,
+      "edges": 5,
+      "notes": [
+        "team llm: 5 people proposed, 5 grounded",
+        "team page: +5 people, +5 edges"
+      ]
+    },
+    {
+      "company": "VIVA Finance",
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "no website found"
+      ]
+    },
+    {
+      "company": "Marker Learning",
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.markerlearning.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 3,
+      "edges": 0,
+      "notes": [
+        "team llm: 3 people proposed, 3 grounded",
+        "team page: +3 people, +0 edges"
+      ]
+    },
+    {
+      "company": "New Product",
+      "score": 25,
       "gaps": [
         "funding stage",
         "location",
@@ -213,7 +226,7 @@
         "email",
         "phone"
       ],
-      "website": "https://spade.com",
+      "website": "https://producthype.co",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -225,37 +238,37 @@
       ]
     }
   ],
-  "tokens": 9674,
+  "tokens": 9317,
   "usage": {
-    "prompt_tokens": 8061,
-    "completion_tokens": 1613,
-    "total_tokens": 9674,
-    "calls": 7,
+    "prompt_tokens": 7961,
+    "completion_tokens": 1356,
+    "total_tokens": 9317,
+    "calls": 6,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 8061,
-        "completion_tokens": 1613,
-        "total_tokens": 9674,
-        "calls": 7
+        "prompt_tokens": 7961,
+        "completion_tokens": 1356,
+        "total_tokens": 9317,
+        "calls": 6
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 8061,
-        "completion_tokens": 1613,
-        "total_tokens": 9674,
-        "calls": 7
+        "prompt_tokens": 7961,
+        "completion_tokens": 1356,
+        "total_tokens": 9317,
+        "calls": 6
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 8061,
-        "completion_tokens": 1613,
-        "total_tokens": 9674,
-        "calls": 7
+        "prompt_tokens": 7961,
+        "completion_tokens": 1356,
+        "total_tokens": 9317,
+        "calls": 6
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-20T16:54:38+00:00"
+  "finished_at": "2026-11-21T16:04:26+00:00"
 }

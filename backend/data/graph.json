@@ -456,7 +456,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 72
+      "score": 87
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -597,6 +597,14 @@
       "degree": 5,
       "website": "https://skieslearn.com",
       "score": 47
+    },
+    {
+      "id": "paradromics",
+      "label": "Paradromics",
+      "type": "startup",
+      "degree": 5,
+      "website": "https://paradromics.com",
+      "score": 66
     },
     {
       "id": "guillaume miara",
@@ -4131,30 +4139,6 @@
       "links": {}
     },
     {
-      "id": "dr. samuel o. ortiz",
-      "label": "Dr. Samuel O. Ortiz",
-      "type": "person",
-      "degree": 1,
-      "role": "Chief Clinical Officer",
-      "links": {}
-    },
-    {
-      "id": "dr. erica m. laforte",
-      "label": "Dr. Erica M. LaForte",
-      "type": "person",
-      "degree": 1,
-      "role": "Head of Test Development",
-      "links": {}
-    },
-    {
-      "id": "lucile ackley",
-      "label": "Lucile Ackley",
-      "type": "person",
-      "degree": 1,
-      "role": "VP of Research & Development",
-      "links": {}
-    },
-    {
       "id": "outward vc",
       "label": "Outward VC",
       "type": "person",
@@ -6043,30 +6027,6 @@
       "links": {}
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "sohrab haghighat",
       "label": "Sohrab Haghighat",
       "type": "person",
@@ -6159,6 +6119,106 @@
       "links": {
         "linkedin": "https://www.linkedin.com/in/chandlersupple"
       }
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "matt angle",
+      "label": "Matt Angle",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder and CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/matt-angle/"
+      }
+    },
+    {
+      "id": "yifan kong",
+      "label": "Yifan Kong",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief of Staff to the CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/yifan-kong-0168863b/"
+      }
+    },
+    {
+      "id": "james burrows",
+      "label": "James Burrows",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Operating Officer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jamesburrowstx/"
+      }
+    },
+    {
+      "id": "vikash gilja",
+      "label": "Vikash Gilja",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Scientific Officer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/vikash-gilja-5b57227"
+      }
+    },
+    {
+      "id": "stephen ryu",
+      "label": "Stephen Ryu",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Medical Officer",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/stephen-ryu-45895a9"
+      }
+    },
+    {
+      "id": "dr. samuel o. ortiz",
+      "label": "Dr. Samuel O. Ortiz",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Clinical Officer",
+      "links": {
+        "homepage": "https://www.markerlearning.com/why-dr-ortiz-joined-marker/"
+      }
+    },
+    {
+      "id": "dr. erica m. laforte",
+      "label": "Dr. Erica M. LaForte",
+      "type": "person",
+      "degree": 1,
+      "role": "Head of Test Development",
+      "links": {}
+    },
+    {
+      "id": "lucile ackley",
+      "label": "Lucile Ackley",
+      "type": "person",
+      "degree": 1,
+      "role": "VP of Research & Development",
+      "links": {}
     },
     {
       "id": "endgrate",
@@ -7721,18 +7781,6 @@
       "degree": 1
     },
     {
-      "id": "beenext ventures",
-      "label": "Beenext Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lotus",
-      "label": "Lotus",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "bdc capital – industrial innovation venture fund",
       "label": "BDC Capital – Industrial Innovation Venture Fund",
       "type": "org",
@@ -7777,6 +7825,18 @@
     {
       "id": "anthropic",
       "label": "Anthropic",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "beenext ventures",
+      "label": "Beenext Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
       "type": "org",
       "degree": 1
     },
@@ -7851,14 +7911,6 @@
       "degree": 0,
       "website": "",
       "score": 15
-    },
-    {
-      "id": "neuralframe",
-      "label": "NeuralFrame",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://neuralframe.com",
-      "score": 29
     },
     {
       "id": "exlabora ai",
@@ -7973,14 +8025,6 @@
       "score": 15
     },
     {
-      "id": "marker learning",
-      "label": "Marker Learning",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.markerlearning.com",
-      "score": 27
-    },
-    {
       "id": "opsfleet",
       "label": "Opsfleet",
       "type": "startup",
@@ -8003,22 +8047,6 @@
       "degree": 0,
       "website": "",
       "score": 15
-    },
-    {
-      "id": "odoo",
-      "label": "Odoo",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.odoo.com",
-      "score": 29
-    },
-    {
-      "id": "meta",
-      "label": "Meta",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.metacareers.com",
-      "score": 28
     },
     {
       "id": "vivral",
@@ -8349,28 +8377,12 @@
       "score": 15
     },
     {
-      "id": "paradromics",
-      "label": "Paradromics",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 27
-    },
-    {
       "id": "memorang",
       "label": "Memorang",
       "type": "startup",
       "degree": 0,
       "website": "",
       "score": 21
-    },
-    {
-      "id": "viva finance",
-      "label": "VIVA Finance",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 27
     },
     {
       "id": "propel labs",
@@ -8469,14 +8481,6 @@
       "score": 10
     },
     {
-      "id": "mesmer",
-      "label": "Mesmer",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 27
-    },
-    {
       "id": "kindo",
       "label": "Kindo",
       "type": "startup",
@@ -8563,14 +8567,6 @@
       "degree": 0,
       "website": "https://potentiambio.ai",
       "score": 70
-    },
-    {
-      "id": "new product",
-      "label": "New Product",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://producthype.co",
-      "score": 25
     },
     {
       "id": "jpmorganchase",
@@ -8877,20 +8873,76 @@
       "score": 29
     },
     {
-      "id": "stratirus",
-      "label": "Stratirus",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 27
-    },
-    {
       "id": "flow traders",
       "label": "Flow Traders",
       "type": "startup",
       "degree": 0,
       "website": "https://www.flowtraders.com",
       "score": 29
+    },
+    {
+      "id": "odoo",
+      "label": "Odoo",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.odoo.com",
+      "score": 29
+    },
+    {
+      "id": "neuralframe",
+      "label": "NeuralFrame",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://neuralframe.com",
+      "score": 29
+    },
+    {
+      "id": "meta",
+      "label": "Meta",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.metacareers.com",
+      "score": 28
+    },
+    {
+      "id": "stratirus",
+      "label": "Stratirus",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "mesmer",
+      "label": "Mesmer",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "viva finance",
+      "label": "VIVA Finance",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "marker learning",
+      "label": "Marker Learning",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.markerlearning.com",
+      "score": 36
+    },
+    {
+      "id": "new product",
+      "label": "New Product",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://producthype.co",
+      "score": 25
     },
     {
       "id": "kevin hartz",
@@ -9590,14 +9642,6 @@
       "type": "person",
       "degree": 0,
       "role": "CRO",
-      "links": {}
-    },
-    {
-      "id": "mark zuckerberg",
-      "label": "Mark Zuckerberg",
-      "type": "person",
-      "degree": 0,
-      "role": "",
       "links": {}
     },
     {
@@ -11180,6 +11224,14 @@
     {
       "id": "andrey vasnetsov",
       "label": "Andrey Vasnetsov",
+      "type": "person",
+      "degree": 0,
+      "role": "",
+      "links": {}
+    },
+    {
+      "id": "mark zuckerberg",
+      "label": "Mark Zuckerberg",
       "type": "person",
       "degree": 0,
       "role": "",
@@ -22394,132 +22446,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
       "source": "sohrab haghighat",
       "target": "hestus",
       "rel": "founded",
@@ -22824,6 +22750,202 @@
           "run_id": "20261121T142459Z",
           "first_seen": "2026-11-21T14:26:52+00:00",
           "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "matt angle",
+      "target": "paradromics",
+      "rel": "founded",
+      "evidence": "Matt Angle, PhD Founder and CEO",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50341026",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-11-21T16:03:07+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "yifan kong",
+      "target": "paradromics",
+      "rel": "works_at",
+      "evidence": "Yifan Kong, PhD Chief of Staff to the CEO",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50341026",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-11-21T16:03:07+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "james burrows",
+      "target": "paradromics",
+      "rel": "works_at",
+      "evidence": "James Burrows Chief Operating Officer",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50341026",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-11-21T16:03:07+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vikash gilja",
+      "target": "paradromics",
+      "rel": "works_at",
+      "evidence": "BCI veteran Vikash Gilja joins as CSO.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50341026",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-11-21T16:03:07+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stephen ryu",
+      "target": "paradromics",
+      "rel": "works_at",
+      "evidence": "Neurosurgeon Stephen Ryu, M.D. joins Paradromics as CMO.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50341026",
+          "run_id": "backfill-2026-11-21",
+          "first_seen": "2026-11-21T16:03:07+00:00",
+          "last_seen": "2026-11-21T16:03:07+00:00"
         }
       ]
     }
