@@ -113,6 +113,12 @@
       "score": 80
     },
     {
+      "id": "y combinator",
+      "label": "Y Combinator",
+      "type": "org",
+      "degree": 10
+    },
+    {
       "id": "tako",
       "label": "Tako",
       "type": "startup",
@@ -161,10 +167,12 @@
       "score": 73
     },
     {
-      "id": "y combinator",
-      "label": "Y Combinator",
-      "type": "org",
-      "degree": 9
+      "id": "mousecat",
+      "label": "Mousecat",
+      "type": "startup",
+      "degree": 9,
+      "website": "https://www.mousecat.ai",
+      "score": 75
     },
     {
       "id": "exa",
@@ -435,12 +443,20 @@
       "score": 79
     },
     {
+      "id": "dreamteam",
+      "label": "Dreamteam",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.dreamteam.ai",
+      "score": 92
+    },
+    {
       "id": "miracly.ai",
       "label": "Miracly.ai",
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 87
+      "score": 72
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -683,6 +699,14 @@
       "degree": 4,
       "website": "https://contourholdings.ai",
       "score": 76
+    },
+    {
+      "id": "rise automation",
+      "label": "Rise Automation",
+      "type": "startup",
+      "degree": 4,
+      "website": "https://www.riseautomation.ca",
+      "score": 71
     },
     {
       "id": "miles pines",
@@ -1074,6 +1098,12 @@
       "degree": 3
     },
     {
+      "id": "databricks",
+      "label": "Databricks",
+      "type": "org",
+      "degree": 3
+    },
+    {
       "id": "garage capital",
       "label": "Garage Capital",
       "type": "org",
@@ -1112,6 +1142,12 @@
     {
       "id": "verily",
       "label": "Verily",
+      "type": "org",
+      "degree": 3
+    },
+    {
+      "id": "accel",
+      "label": "Accel",
       "type": "org",
       "degree": 3
     },
@@ -1931,12 +1967,6 @@
       "degree": 2
     },
     {
-      "id": "databricks",
-      "label": "Databricks",
-      "type": "org",
-      "degree": 2
-    },
-    {
       "id": "daba",
       "label": "Daba",
       "type": "org",
@@ -2039,6 +2069,12 @@
       "degree": 2
     },
     {
+      "id": "aws",
+      "label": "AWS",
+      "type": "org",
+      "degree": 2
+    },
+    {
       "id": "radar",
       "label": "Radar",
       "type": "org",
@@ -2065,12 +2101,6 @@
     {
       "id": "b2venture",
       "label": "b2venture",
-      "type": "org",
-      "degree": 2
-    },
-    {
-      "id": "accel",
-      "label": "Accel",
       "type": "org",
       "degree": 2
     },
@@ -2373,6 +2403,14 @@
       "degree": 1,
       "website": "https://hirevinny.com",
       "score": 61
+    },
+    {
+      "id": "river",
+      "label": "River",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://meetriver.com",
+      "score": 66
     },
     {
       "id": "alex rosenberg",
@@ -6049,6 +6087,80 @@
       }
     },
     {
+      "id": "craig buntin",
+      "label": "Craig Buntin",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/craigbuntin"
+      }
+    },
+    {
+      "id": "cycle momentum",
+      "label": "Cycle Momentum",
+      "type": "person",
+      "degree": 1,
+      "role": "Investor",
+      "links": {}
+    },
+    {
+      "id": "anand venkatraman",
+      "label": "Anand Venkatraman",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CEO",
+      "links": {}
+    },
+    {
+      "id": "senthil kanthaswamy",
+      "label": "Senthil Kanthaswamy",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {}
+    },
+    {
+      "id": "ramesh parthasarathy",
+      "label": "Ramesh Parthasarathy",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/ramesh-parthasarathy-4a469617"
+      }
+    },
+    {
+      "id": "nicholas aldridge",
+      "label": "Nicholas Aldridge",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/nicholas-aldridge/"
+      }
+    },
+    {
+      "id": "joseph mcallister",
+      "label": "Joseph McAllister",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder & CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/joseph-mcallister/"
+      }
+    },
+    {
+      "id": "chandler supple",
+      "label": "Chandler Supple",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/chandlersupple"
+      }
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -7303,12 +7415,6 @@
       "degree": 1
     },
     {
-      "id": "aws",
-      "label": "AWS",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "uber",
       "label": "Uber",
       "type": "org",
@@ -7627,6 +7733,54 @@
       "degree": 1
     },
     {
+      "id": "bdc capital – industrial innovation venture fund",
+      "label": "BDC Capital – Industrial Innovation Venture Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "developer capital",
+      "label": "Developer Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "together fund",
+      "label": "Together Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "premji invest",
+      "label": "Premji Invest",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "oak hc/ft",
+      "label": "Oak HC/FT",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "stripe",
+      "label": "Stripe",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "plaid",
+      "label": "Plaid",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "anthropic",
+      "label": "Anthropic",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "quantufai, inc",
       "label": "QuantufAi, Inc",
       "type": "startup",
@@ -7841,14 +7995,6 @@
       "degree": 0,
       "website": "",
       "score": 15
-    },
-    {
-      "id": "flow traders",
-      "label": "Flow Traders",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.flowtraders.com",
-      "score": 29
     },
     {
       "id": "reddit",
@@ -8728,6 +8874,22 @@
       "type": "startup",
       "degree": 0,
       "website": "https://spade.com",
+      "score": 29
+    },
+    {
+      "id": "stratirus",
+      "label": "Stratirus",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 27
+    },
+    {
+      "id": "flow traders",
+      "label": "Flow Traders",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.flowtraders.com",
       "score": 29
     },
     {
@@ -22384,9 +22546,375 @@
           "last_seen": "2026-11-20T16:53:38+00:00"
         }
       ]
+    },
+    {
+      "source": "craig buntin",
+      "target": "rise automation",
+      "rel": "founded",
+      "evidence": "co‑founder and CEO of Rise",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/from-olympic-figure-skater-to-entrepreneur-sportlogiqs-craig-buntin-is-back-to-help-automate-homebuilding-with-rise/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bdc capital – industrial innovation venture fund",
+      "target": "rise automation",
+      "rel": "invested_in",
+      "evidence": "BDC Capital’s Industrial Innovation Venture Fund",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/from-olympic-figure-skater-to-entrepreneur-sportlogiqs-craig-buntin-is-back-to-help-automate-homebuilding-with-rise/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "developer capital",
+      "target": "rise automation",
+      "rel": "invested_in",
+      "evidence": "Developer Capital",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/from-olympic-figure-skater-to-entrepreneur-sportlogiqs-craig-buntin-is-back-to-help-automate-homebuilding-with-rise/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "cycle momentum",
+      "target": "rise automation",
+      "rel": "invested_in",
+      "evidence": "Cycle Momentum",
+      "sources": [
+        {
+          "source_url": "https://betakit.com/from-olympic-figure-skater-to-entrepreneur-sportlogiqs-craig-buntin-is-back-to-help-automate-homebuilding-with-rise/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anand venkatraman",
+      "target": "dreamteam",
+      "rel": "founded",
+      "evidence": "Dreamteam co‑founder and CEO Anand Venkatraman ... told TechCrunch",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "senthil kanthaswamy",
+      "target": "dreamteam",
+      "rel": "cofounded",
+      "evidence": "co‑founder ... Senthil Kanthaswamy",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ramesh parthasarathy",
+      "target": "dreamteam",
+      "rel": "cofounded",
+      "evidence": "Ramesh Parthasarathy ... previously worked on AI and platform engineering at Freshworks",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "together fund",
+      "target": "dreamteam",
+      "rel": "invested_in",
+      "evidence": "seed ... led by Together Fund",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "accel",
+      "target": "dreamteam",
+      "rel": "invested_in",
+      "evidence": "Series A rounds, led by ... Accel",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "premji invest",
+      "target": "dreamteam",
+      "rel": "invested_in",
+      "evidence": "participation from Premji Invest",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nicholas aldridge",
+      "target": "mousecat",
+      "rel": "founded",
+      "evidence": "Nicholas Aldridge",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "joseph mcallister",
+      "target": "mousecat",
+      "rel": "founded",
+      "evidence": "Joseph McAllister is the Co-Founder and CTO of MouseCat",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "y combinator",
+      "target": "mousecat",
+      "rel": "invested_in",
+      "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "oak hc/ft",
+      "target": "mousecat",
+      "rel": "invested_in",
+      "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stripe",
+      "target": "mousecat",
+      "rel": "invested_in",
+      "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "plaid",
+      "target": "mousecat",
+      "rel": "invested_in",
+      "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "databricks",
+      "target": "mousecat",
+      "rel": "invested_in",
+      "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "aws",
+      "target": "mousecat",
+      "rel": "invested_in",
+      "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anthropic",
+      "target": "mousecat",
+      "rel": "invested_in",
+      "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
+    },
+    {
+      "source": "chandler supple",
+      "target": "river",
+      "rel": "founded",
+      "evidence": "**Chandler Supple**",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xon-river-ai-that-works-everywhere-you-do",
+          "run_id": "20261121T142459Z",
+          "first_seen": "2026-11-21T14:26:52+00:00",
+          "last_seen": "2026-11-21T14:26:52+00:00"
+        }
+      ]
     }
   ],
   "investors": [
+    {
+      "investor": "Y Combinator",
+      "companies": [
+        "Exa",
+        "Laminar",
+        "Molagri",
+        "Mousecat",
+        "ParadeDB",
+        "ZeroEntropy"
+      ],
+      "count": 6,
+      "co_investors": [
+        {
+          "name": "22 Ventures",
+          "shared": 1
+        },
+        {
+          "name": "AWS",
+          "shared": 1
+        },
+        {
+          "name": "Anthropic",
+          "shared": 1
+        },
+        {
+          "name": "Benchmark",
+          "shared": 1
+        },
+        {
+          "name": "Convective Capital",
+          "shared": 1
+        },
+        {
+          "name": "Databricks",
+          "shared": 1
+        },
+        {
+          "name": "Initialized Capital",
+          "shared": 1
+        },
+        {
+          "name": "Lightspeed",
+          "shared": 1
+        },
+        {
+          "name": "Lightspeed Venture Partners",
+          "shared": 1
+        },
+        {
+          "name": "NVentures",
+          "shared": 1
+        },
+        {
+          "name": "Oak HC/FT",
+          "shared": 1
+        },
+        {
+          "name": "Paul Graham",
+          "shared": 1
+        },
+        {
+          "name": "Plaid",
+          "shared": 1
+        },
+        {
+          "name": "Robinhood Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Stripe",
+          "shared": 1
+        },
+        {
+          "name": "Superorganism",
+          "shared": 1
+        },
+        {
+          "name": "Transpose Platform",
+          "shared": 1
+        },
+        {
+          "name": "a16z Scout",
+          "shared": 1
+        }
+      ]
+    },
     {
       "investor": "Seedcamp",
       "companies": [
@@ -22441,67 +22969,6 @@
       ]
     },
     {
-      "investor": "Y Combinator",
-      "companies": [
-        "Exa",
-        "Laminar",
-        "Molagri",
-        "ParadeDB",
-        "ZeroEntropy"
-      ],
-      "count": 5,
-      "co_investors": [
-        {
-          "name": "22 Ventures",
-          "shared": 1
-        },
-        {
-          "name": "Benchmark",
-          "shared": 1
-        },
-        {
-          "name": "Convective Capital",
-          "shared": 1
-        },
-        {
-          "name": "Initialized Capital",
-          "shared": 1
-        },
-        {
-          "name": "Lightspeed",
-          "shared": 1
-        },
-        {
-          "name": "Lightspeed Venture Partners",
-          "shared": 1
-        },
-        {
-          "name": "NVentures",
-          "shared": 1
-        },
-        {
-          "name": "Paul Graham",
-          "shared": 1
-        },
-        {
-          "name": "Robinhood Ventures",
-          "shared": 1
-        },
-        {
-          "name": "Superorganism",
-          "shared": 1
-        },
-        {
-          "name": "Transpose Platform",
-          "shared": 1
-        },
-        {
-          "name": "a16z Scout",
-          "shared": 1
-        }
-      ]
-    },
-    {
       "investor": "Andreessen Horowitz",
       "companies": [
         "Deeptune",
@@ -22545,6 +23012,65 @@
         },
         {
           "name": "Zigg Capital",
+          "shared": 1
+        }
+      ]
+    },
+    {
+      "investor": "Accel",
+      "companies": [
+        "Dreamteam",
+        "Humyn Labs",
+        "Keenable"
+      ],
+      "count": 3,
+      "co_investors": [
+        {
+          "name": "Amazon",
+          "shared": 1
+        },
+        {
+          "name": "Bajaj Alts AI Opportunities Fund",
+          "shared": 1
+        },
+        {
+          "name": "Bajaj Finance’s Finserv Intelligence",
+          "shared": 1
+        },
+        {
+          "name": "BeeGlobal",
+          "shared": 1
+        },
+        {
+          "name": "Conviction Partners",
+          "shared": 1
+        },
+        {
+          "name": "Dallas Venture Capital",
+          "shared": 1
+        },
+        {
+          "name": "Google",
+          "shared": 1
+        },
+        {
+          "name": "Jump Trading",
+          "shared": 1
+        },
+        {
+          "name": "Lighthouse Canton",
+          "shared": 1
+        },
+        {
+          "name": "Premji Invest",
+          "shared": 1
+        },
+        {
+          "name": "Prosus Ventures",
+          "shared": 1
+        },
+        {
+          "name": "Together Fund",
           "shared": 1
         }
       ]
@@ -22619,56 +23145,6 @@
         },
         {
           "name": "NPIF II – PXN Equity Finance",
-          "shared": 1
-        }
-      ]
-    },
-    {
-      "investor": "Accel",
-      "companies": [
-        "Humyn Labs",
-        "Keenable"
-      ],
-      "count": 2,
-      "co_investors": [
-        {
-          "name": "Amazon",
-          "shared": 1
-        },
-        {
-          "name": "Bajaj Alts AI Opportunities Fund",
-          "shared": 1
-        },
-        {
-          "name": "Bajaj Finance’s Finserv Intelligence",
-          "shared": 1
-        },
-        {
-          "name": "BeeGlobal",
-          "shared": 1
-        },
-        {
-          "name": "Conviction Partners",
-          "shared": 1
-        },
-        {
-          "name": "Dallas Venture Capital",
-          "shared": 1
-        },
-        {
-          "name": "Google",
-          "shared": 1
-        },
-        {
-          "name": "Jump Trading",
-          "shared": 1
-        },
-        {
-          "name": "Lighthouse Canton",
-          "shared": 1
-        },
-        {
-          "name": "Prosus Ventures",
           "shared": 1
         }
       ]
