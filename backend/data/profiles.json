@@ -185,7 +185,7 @@
       "reasons": [
         "lead score 97",
         "signal strength 2.4/10: funding",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email info@tesorai.com with the pitch",
@@ -539,7 +539,7 @@
       {
         "company_name": "ObsessionDB",
         "slug": "obsessiondb",
-        "similarity": 0.588
+        "similarity": 0.587
       },
       {
         "company_name": "Seltz",
@@ -1667,7 +1667,7 @@
       "reasons": [
         "lead score 95",
         "signal strength 2.4/10: funding",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email contact@marble-imaging.de with the pitch",
@@ -4157,7 +4157,7 @@
       "reasons": [
         "lead score 92",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email gethelp@dreamteam.ai with the pitch",
@@ -4690,7 +4690,7 @@
       "reasons": [
         "lead score 92",
         "signal strength 2.4/10: funding",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email contact@qluster.co with the pitch",
@@ -5447,7 +5447,7 @@
       "reasons": [
         "lead score 92",
         "signal strength 2.4/10: funding",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email info@se3.us with the pitch",
@@ -9327,7 +9327,7 @@
       "reasons": [
         "lead score 92",
         "signal strength 2.4/10: funding",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email contact@gallium-defense.com with the pitch",
@@ -13424,7 +13424,7 @@
     "why_now": [
       {
         "signal": "funding",
-        "text": "Raised money (2d ago)",
+        "text": "Raised money (3d ago)",
         "source_url": "https://www.kucoin.com/news/flash/keenable-emerges-from-stealth-with-26m-seed-round-to-build-ai-agent-search-infrastructure"
       }
     ],
@@ -16396,7 +16396,7 @@
     "why_now": [
       {
         "signal": "funding",
-        "text": "Raised money (1d ago)",
+        "text": "Raised money (2d ago)",
         "source_url": "https://qdrant.tech/blog/series-b-announcement/"
       }
     ],
@@ -22105,6 +22105,702 @@
     "outreach": []
   },
   {
+    "company_name": "Miracly.ai",
+    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+    "tech_stack": [
+      "ChatGPT",
+      "Claude",
+      "Copilot",
+      "LLMs",
+      "vector embeddings"
+    ],
+    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$2M",
+    "hq": "Stockholm",
+    "website": "https://www.miracly.ai",
+    "score": 87,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "miracly-ai",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 17
+    },
+    "gaps": [
+      "people profiles",
+      "phone"
+    ],
+    "axes": {
+      "fit": 100,
+      "reach": 100,
+      "evidence": 82
+    },
+    "qualified": true,
+    "contact": {
+      "website": "https://www.miracly.ai",
+      "emails": [
+        {
+          "value": "hello@miracly.ai",
+          "kind": "general",
+          "source_url": "https://www.miracly.ai/about"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/miracly",
+        "twitter": "https://x.com/miraclyai"
+      },
+      "contact_page": "https://www.miracly.ai/contact",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://www.miracly.ai/pricing"
+        },
+        {
+          "label": "Get started",
+          "url": "https://www.miracly.ai/sign-up"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.miracly.ai/",
+        "https://www.miracly.ai/about",
+        "https://www.miracly.ai/contact"
+      ],
+      "enriched_at": "2026-11-22T16:09:14+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": "",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Plausible",
+          "category": "analytics"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [
+      {
+        "src": "Beenext Ventures",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Lotus",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Stefan Lindeberg",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Alex Bouaziz",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Thomas Ekman",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Hedda Båverud Olsson",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 64.6,
+      "reasons": [
+        "lead score 87",
+        "signal strength 1.4/10: funding",
+        "found 29 day(s) ago (cold)",
+        "good fit but the news is old"
+      ],
+      "next_step": "Revisit when there is fresh news",
+      "provider": "policy",
+      "score": 91
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_stage",
+        "label": "funding_stage: pre-seed",
+        "value": "pre-seed",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_amount",
+        "label": "funding_amount: $2M",
+        "value": "$2M",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "hq",
+        "label": "hq: Stockholm",
+        "value": "Stockholm",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "website",
+        "label": "website: https://www.miracly.ai",
+        "value": "https://www.miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "core_product",
+        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "arvid lithander|miracly",
+        "field": "role",
+        "label": "Arvid Lithander · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "role",
+        "label": "Bjorn Bergstrom · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "shannon cullum|miracly",
+        "field": "role",
+        "label": "Shannon Cullum · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "beenext ventures|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Beenext Ventures invested in Miracly.ai",
+        "value": "Beenext Ventures invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "lotus|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Lotus invested in Miracly.ai",
+        "value": "Lotus invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Stefan Lindeberg invested in Miracly.ai",
+        "value": "Stefan Lindeberg invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alex bouaziz|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Alex Bouaziz invested in Miracly.ai",
+        "value": "Alex Bouaziz invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "thomas ekman|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Thomas Ekman invested in Miracly.ai",
+        "value": "Thomas Ekman invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Hedda Båverud Olsson invested in Miracly.ai",
+        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "arvid lithander|founded|miracly",
+        "field": "founded",
+        "label": "Arvid Lithander founded Miracly",
+        "value": "Arvid Lithander founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "bjorn bergstrom|founded|miracly",
+        "field": "founded",
+        "label": "Bjorn Bergstrom founded Miracly",
+        "value": "Bjorn Bergstrom founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "shannon cullum|founded|miracly",
+        "field": "founded",
+        "label": "Shannon Cullum founded Miracly",
+        "value": "Shannon Cullum founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 16,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/about",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-16T18:17:32+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 3,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 15,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 15,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-21",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-21T16:03:07+00:00",
+        "seen_count": 12,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "linkedin",
+        "label": "Bjorn Bergstrom · linkedin",
+        "value": "https://www.linkedin.com/in/bergstrombjorn",
+        "source_url": "search",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-18",
+        "first_seen": "2026-11-12T16:44:50+00:00",
+        "last_seen": "2026-11-18T17:08:37+00:00",
+        "seen_count": 4,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "stefan lindeberg|miracly.ai",
+        "field": "role",
+        "label": "Stefan Lindeberg · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex bouaziz|miracly.ai",
+        "field": "role",
+        "label": "Alex Bouaziz · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "thomas ekman|miracly.ai",
+        "field": "role",
+        "label": "Thomas Ekman · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hedda båverud olsson|miracly.ai",
+        "field": "role",
+        "label": "Hedda Båverud Olsson · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Gushwork",
+        "slug": "gushwork",
+        "similarity": 0.701
+      },
+      {
+        "company_name": "Seltz",
+        "slug": "seltz",
+        "similarity": 0.62
+      },
+      {
+        "company_name": "Exa",
+        "slug": "exa",
+        "similarity": 0.606
+      },
+      {
+        "company_name": "Linkup",
+        "slug": "linkup",
+        "similarity": 0.589
+      },
+      {
+        "company_name": "ZeroEntropy",
+        "slug": "zeroentropy",
+        "similarity": 0.568
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-12T16:44:50+00:00",
+        "kind": "learned",
+        "items": [
+          "Profile link: https://www.linkedin.com/in/bergstrombjorn"
+        ],
+        "source_urls": [
+          "search"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-11-07T14:51:23+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: hello@miracly.ai"
+        ],
+        "source_urls": [
+          "https://www.miracly.ai/contact"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "discovered",
+        "items": [
+          "Stage: pre-seed",
+          "Raised: $2M",
+          "HQ: Stockholm",
+          "Website: https://www.miracly.ai",
+          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
+          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/about",
+          "https://www.miracly.ai/contact"
+        ],
+        "count": 19
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "learned",
+        "items": [
+          "Person: Investor",
+          "Published email: hello@miracly.ai",
+          "linkedin: https://www.linkedin.com/company/miracly",
+          "twitter: https://x.com/miraclyai"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/contact?__clerk_synced=true"
+        ],
+        "count": 4
+      },
+      {
+        "at": "2026-10-24T01:55:31+00:00",
+        "kind": "funding",
+        "items": [
+          "Funding"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "funding",
+        "text": "Raised money (29d ago)",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "hello@miracly.ai",
+      "to_source_url": "https://www.miracly.ai/about",
+      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
+      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
     "company_name": "Gushwork",
     "core_product": "An AI‑powered platform that automatically generates search‑optimized content, builds backlinks, and tracks inbound leads to help businesses surface in traditional and AI‑driven search results.",
     "tech_stack": [],
@@ -27245,7 +27941,7 @@
       "reasons": [
         "lead score 83",
         "signal strength 1.8/10: launch",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email founders@starsling.dev with the pitch",
@@ -27610,7 +28306,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 3d ago (hiring or launch)",
+        "text": "Posted on Hacker News 4d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50536468"
       },
       {
@@ -30430,7 +31126,7 @@
       "reasons": [
         "lead score 80",
         "signal strength 2.4/10: funding",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Manish Agarwal via https://humynlabs.ai/contact-us",
@@ -30977,7 +31673,7 @@
       "reasons": [
         "lead score 80",
         "signal strength 2.4/10: funding",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Will Bryk via https://exa.ai/contact",
@@ -31300,7 +31996,7 @@
     "why_now": [
       {
         "signal": "funding",
-        "text": "Raised money (12d ago)",
+        "text": "Raised money (13d ago)",
         "source_url": "https://siliconangle.com/2025/09/03/nvidia-backs-85m-round-ai-search-startup-exa/"
       }
     ],
@@ -33554,7 +34250,7 @@
       "reasons": [
         "lead score 79",
         "signal strength 2.4/10: funding",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: email, phone",
@@ -34163,7 +34859,7 @@
       "reasons": [
         "lead score 79",
         "signal strength 2.4/10: funding",
-        "found 4 day(s) ago (hot)",
+        "found 5 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: email, phone",
@@ -34769,7 +35465,7 @@
       "reasons": [
         "lead score 79",
         "signal strength 2.4/10: funding",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: email, phone",
@@ -38136,7 +38832,7 @@
       "reasons": [
         "lead score 77",
         "signal strength 2.4/10: funding",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email founders@salespatriot.com with the pitch",
@@ -38417,7 +39113,7 @@
     "why_now": [
       {
         "signal": "form_d",
-        "text": "Filed an SEC Form D 3d ago: money just came in",
+        "text": "Filed an SEC Form D 4d ago: money just came in",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2165599/000216559926000001/"
       },
       {
@@ -38427,7 +39123,7 @@
       },
       {
         "signal": "funding",
-        "text": "Raised money (3d ago)",
+        "text": "Raised money (4d ago)",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2165599/000216559926000001/"
       }
     ],
@@ -38564,7 +39260,7 @@
       "reasons": [
         "lead score 77",
         "signal strength 2.4/10: funding",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email info@ciphersonic.ai with the pitch",
@@ -38859,7 +39555,7 @@
     "why_now": [
       {
         "signal": "form_d",
-        "text": "Filed an SEC Form D 9d ago: money just came in",
+        "text": "Filed an SEC Form D 10d ago: money just came in",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2164264/000216426426000001/"
       },
       {
@@ -38869,7 +39565,7 @@
       },
       {
         "signal": "funding",
-        "text": "Raised money (9d ago)",
+        "text": "Raised money (10d ago)",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2164264/000216426426000001/"
       }
     ],
@@ -39028,7 +39724,7 @@
       "reasons": [
         "lead score 77",
         "signal strength 1.8/10: launch",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email hi@boxes.dev with the pitch",
@@ -39337,7 +40033,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (11d ago)",
+        "text": "Launched (12d ago)",
         "source_url": "https://www.ycombinator.com/launches/Wp5-boxes-dev-move-your-ai-coding-to-the-cloud"
       }
     ],
@@ -39915,7 +40611,7 @@
       "reasons": [
         "lead score 76",
         "signal strength 1.8/10: launch",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email info@contourholdings.ai with the pitch",
@@ -40210,7 +40906,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (3d ago)",
+        "text": "Launched (4d ago)",
         "source_url": "https://www.ycombinator.com/launches/Xeo-contour-ai-native-permitting-for-america-s-buildout"
       }
     ],
@@ -40347,7 +41043,7 @@
       "reasons": [
         "lead score 76",
         "signal strength 2.4/10: funding",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Ritu Soni via https://seva.money/contact-us/",
@@ -40861,7 +41557,7 @@
       "reasons": [
         "lead score 76",
         "signal strength 2.4/10: funding",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: tech stack, email, phone",
@@ -41827,7 +42523,7 @@
       "reasons": [
         "lead score 75",
         "signal strength 1.8/10: launch",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email hello@mousecat.ai with the pitch",
@@ -42149,7 +42845,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (0d ago)",
+        "text": "Launched (1d ago)",
         "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction"
       }
     ],
@@ -44511,7 +45207,7 @@
       "reasons": [
         "lead score 74",
         "signal strength 2.4/10: funding",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: location, tech stack, email",
@@ -45727,7 +46423,7 @@
       "reasons": [
         "lead score 73",
         "signal strength 1.8/10: launch",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email hello@heliosinc.ai with the pitch",
@@ -45980,7 +46676,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (2d ago)",
+        "text": "Launched (3d ago)",
         "source_url": "https://www.ycombinator.com/launches/X8k-helios-intelligence-the-highest-resolution-picture-of-your-health-1-000-biomarkers-from-a-drop-of-blood-at-home"
       }
     ],
@@ -46120,7 +46816,7 @@
       "reasons": [
         "lead score 73",
         "signal strength 1.8/10: launch",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email hello@nodus-compute.ai with the pitch",
@@ -46373,7 +47069,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (11d ago)",
+        "text": "Launched (12d ago)",
         "source_url": "https://www.ycombinator.com/launches/Wr8-nodus-compute-get-more-ai-from-the-gpus-that-already-exist"
       }
     ],
@@ -47811,7 +48507,7 @@
       "reasons": [
         "lead score 72",
         "signal strength 2.4/10: funding",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: tech stack, email, phone",
@@ -49481,702 +50177,6 @@
     "outreach": []
   },
   {
-    "company_name": "Miracly.ai",
-    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-    "tech_stack": [
-      "ChatGPT",
-      "Claude",
-      "Copilot",
-      "LLMs",
-      "vector embeddings"
-    ],
-    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
-    "is_relevant": true,
-    "funding_stage": "pre-seed",
-    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-    "discovered_at": "2026-10-24T01:54:29+00:00",
-    "funding_amount": "$2M",
-    "hq": "Stockholm",
-    "website": "https://www.miracly.ai",
-    "score": 72,
-    "last_seen": "2026-10-24T01:57:30+00:00",
-    "slug": "miracly-ai",
-    "score_parts": {
-      "fit": 25,
-      "identity": 15,
-      "people": 0,
-      "connections": 15,
-      "contact": 17
-    },
-    "gaps": [
-      "founder",
-      "people profiles",
-      "phone"
-    ],
-    "axes": {
-      "fit": 100,
-      "reach": 100,
-      "evidence": 55
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://www.miracly.ai",
-      "emails": [
-        {
-          "value": "hello@miracly.ai",
-          "kind": "general",
-          "source_url": "https://www.miracly.ai/contact"
-        }
-      ],
-      "phones": [],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/miracly",
-        "twitter": "https://x.com/miraclyai"
-      },
-      "contact_page": "https://www.miracly.ai/contact",
-      "product_access": [
-        {
-          "label": "Pricing",
-          "url": "https://www.miracly.ai/pricing"
-        },
-        {
-          "label": "Get started",
-          "url": "https://www.miracly.ai/sign-up"
-        }
-      ],
-      "pages_crawled": [
-        "https://www.miracly.ai/",
-        "https://www.miracly.ai/contact",
-        "https://www.miracly.ai/about"
-      ],
-      "enriched_at": "2026-11-21T16:03:15+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": [
-        {
-          "name": "Next.js",
-          "category": "framework"
-        },
-        {
-          "name": "Google Analytics",
-          "category": "analytics"
-        },
-        {
-          "name": "Plausible",
-          "category": "analytics"
-        },
-        {
-          "name": "React",
-          "category": "framework"
-        }
-      ]
-    },
-    "signals": [
-      {
-        "type": "funding",
-        "source": "web",
-        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "roles": [],
-        "role_kinds": [],
-        "posted_at": "",
-        "seen_at": "2026-10-24T01:55:31+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [
-      {
-        "src": "Beenext Ventures",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Lotus",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Stefan Lindeberg",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Alex Bouaziz",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Thomas Ekman",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Hedda Båverud Olsson",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 55.6,
-      "reasons": [
-        "lead score 72",
-        "signal strength 1.4/10: funding",
-        "found 29 day(s) ago (cold)",
-        "good fit but the news is old"
-      ],
-      "next_step": "Revisit when there is fresh news",
-      "provider": "policy",
-      "score": 76
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_stage",
-        "label": "funding_stage: pre-seed",
-        "value": "pre-seed",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_amount",
-        "label": "funding_amount: $2M",
-        "value": "$2M",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "hq",
-        "label": "hq: Stockholm",
-        "value": "Stockholm",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "website",
-        "label": "website: https://www.miracly.ai",
-        "value": "https://www.miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "core_product",
-        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "likely_bottleneck",
-        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "arvid lithander|miracly",
-        "field": "role",
-        "label": "Arvid Lithander · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "bjorn bergstrom|miracly",
-        "field": "role",
-        "label": "Bjorn Bergstrom · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "shannon cullum|miracly",
-        "field": "role",
-        "label": "Shannon Cullum · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "beenext ventures|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Beenext Ventures invested in Miracly.ai",
-        "value": "Beenext Ventures invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "lotus|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Lotus invested in Miracly.ai",
-        "value": "Lotus invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Stefan Lindeberg invested in Miracly.ai",
-        "value": "Stefan Lindeberg invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "alex bouaziz|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Alex Bouaziz invested in Miracly.ai",
-        "value": "Alex Bouaziz invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "thomas ekman|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Thomas Ekman invested in Miracly.ai",
-        "value": "Thomas Ekman invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Hedda Båverud Olsson invested in Miracly.ai",
-        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "arvid lithander|founded|miracly",
-        "field": "founded",
-        "label": "Arvid Lithander founded Miracly",
-        "value": "Arvid Lithander founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "bjorn bergstrom|founded|miracly",
-        "field": "founded",
-        "label": "Bjorn Bergstrom founded Miracly",
-        "value": "Bjorn Bergstrom founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "shannon cullum|founded|miracly",
-        "field": "founded",
-        "label": "Shannon Cullum founded Miracly",
-        "value": "Shannon Cullum founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 15,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 12,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 14,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 14,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/about",
-        "evidence": "",
-        "run_id": "backfill-2026-11-19",
-        "first_seen": "2026-11-16T18:17:32+00:00",
-        "last_seen": "2026-11-19T17:15:54+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "bjorn bergstrom|miracly",
-        "field": "linkedin",
-        "label": "Bjorn Bergstrom · linkedin",
-        "value": "https://www.linkedin.com/in/bergstrombjorn",
-        "source_url": "search",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-18",
-        "first_seen": "2026-11-12T16:44:50+00:00",
-        "last_seen": "2026-11-18T17:08:37+00:00",
-        "seen_count": 4,
-        "confidence": 0.6
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "stefan lindeberg|miracly.ai",
-        "field": "role",
-        "label": "Stefan Lindeberg · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "alex bouaziz|miracly.ai",
-        "field": "role",
-        "label": "Alex Bouaziz · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "thomas ekman|miracly.ai",
-        "field": "role",
-        "label": "Thomas Ekman · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "hedda båverud olsson|miracly.ai",
-        "field": "role",
-        "label": "Hedda Båverud Olsson · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Gushwork",
-        "slug": "gushwork",
-        "similarity": 0.701
-      },
-      {
-        "company_name": "Seltz",
-        "slug": "seltz",
-        "similarity": 0.62
-      },
-      {
-        "company_name": "Exa",
-        "slug": "exa",
-        "similarity": 0.606
-      },
-      {
-        "company_name": "Linkup",
-        "slug": "linkup",
-        "similarity": 0.589
-      },
-      {
-        "company_name": "ZeroEntropy",
-        "slug": "zeroentropy",
-        "similarity": 0.568
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-16T18:17:32+00:00",
-        "kind": "learned",
-        "items": [
-          "Published email: hello@miracly.ai"
-        ],
-        "source_urls": [
-          "https://www.miracly.ai/about"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-11-12T16:44:50+00:00",
-        "kind": "learned",
-        "items": [
-          "Profile link: https://www.linkedin.com/in/bergstrombjorn"
-        ],
-        "source_urls": [
-          "search"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "discovered",
-        "items": [
-          "Stage: pre-seed",
-          "Raised: $2M",
-          "HQ: Stockholm",
-          "Website: https://www.miracly.ai",
-          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
-          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/contact"
-        ],
-        "count": 19
-      },
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "learned",
-        "items": [
-          "Person: Investor",
-          "Published email: hello@miracly.ai",
-          "linkedin: https://www.linkedin.com/company/miracly",
-          "twitter: https://x.com/miraclyai"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/contact?__clerk_synced=true"
-        ],
-        "count": 4
-      },
-      {
-        "at": "2026-10-24T01:55:31+00:00",
-        "kind": "funding",
-        "items": [
-          "Funding"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "funding",
-        "text": "Raised money (29d ago)",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "hello@miracly.ai",
-      "to_source_url": "https://www.miracly.ai/contact",
-      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
-      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "PataBid",
     "core_product": "AI‑powered construction estimating tool called Quantify",
     "tech_stack": [],
@@ -51511,7 +51511,7 @@
       "reasons": [
         "lead score 71",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Craig Buntin via https://www.riseautomation.ca/contact/",
@@ -52906,7 +52906,7 @@
       "reasons": [
         "lead score 70",
         "signal strength 2.4/10: funding",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email info@potentiambio.ai with the pitch",
@@ -53131,7 +53131,7 @@
     "why_now": [
       {
         "signal": "form_d",
-        "text": "Filed an SEC Form D 5d ago: money just came in",
+        "text": "Filed an SEC Form D 6d ago: money just came in",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2164266/000216426626000002/"
       },
       {
@@ -54431,7 +54431,7 @@
       "reasons": [
         "lead score 69",
         "signal strength 1.8/10: launch",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email info@rezora.io with the pitch",
@@ -54656,7 +54656,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (2d ago)",
+        "text": "Launched (3d ago)",
         "source_url": "https://www.ycombinator.com/launches/Xi8-rezora-io-the-self-improving-ai-receptionist-actually-built-for-nontechnical-users"
       }
     ],
@@ -59239,7 +59239,7 @@
       "reasons": [
         "lead score 66",
         "signal strength 1.8/10: launch",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email partners@rivereditor.com with the pitch",
@@ -59534,7 +59534,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (0d ago)",
+        "text": "Launched (1d ago)",
         "source_url": "https://www.ycombinator.com/launches/Xon-river-ai-that-works-everywhere-you-do"
       }
     ],
@@ -62198,6 +62198,460 @@
       "subject": "OneChronos: a thought on your stack",
       "body": "Hi Stephen,\n\nI saw you're hiring (Engineering Manager, Data Platform (NYC, Hybrid) · Software Engineer) (https://news.ycombinator.com/item?id=50012248).\nI'd like to help on the engineering side.\n\nI came across OneChronos: We’re a Series B trading technology company reimagining how financial markets match buyers and sellers -- applying auction theory and.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:careers%40onechronos.com?subject=OneChronos%3A%20a%20thought%20on%20your%20stack&body=Hi%20Stephen%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Engineering%20Manager%2C%20Data%20Platform%20%28NYC%2C%20Hybrid%29%20%C2%B7%20Software%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50012248%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20OneChronos%3A%20We%E2%80%99re%20a%20Series%20B%20trading%20technology%20company%20reimagining%20how%20financial%20markets%20match%20buyers%20and%20sellers%20--%20applying%20auction%20theory%20and.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Archer",
+    "core_product": "An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
+    "tech_stack": [],
+    "likely_bottleneck": "Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
+    "value_prop_pitch": "We can refactor your candidate matching service with Next.js for a fast, SEO‑friendly UI and integrate a vector semantic search layer to instantly surface the most relevant profiles. This will cut latency, reduce engineering load, and let your team focus on building higher‑value recruiting features.",
+    "is_relevant": true,
+    "funding_stage": "Series A",
+    "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+    "discovered_at": "2026-11-22T14:17:56+00:00",
+    "funding_amount": "€9.1 million",
+    "hq": "London, UK and New York, USA",
+    "website": "https://hackajob.com",
+    "score": 65,
+    "last_seen": "2026-11-22T14:19:20+00:00",
+    "slug": "archer",
+    "score_parts": {
+      "fit": 25,
+      "identity": 12,
+      "people": 20,
+      "connections": 0,
+      "contact": 8
+    },
+    "gaps": [
+      "tech stack",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "axes": {
+      "fit": 100,
+      "reach": 50,
+      "evidence": 58
+    },
+    "qualified": true,
+    "contact": {
+      "website": "https://hackajob.com",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/meet-archer",
+        "twitter": "https://x.com/meet_archer_hq"
+      },
+      "contact_page": "https://hackajob.com/contact-us",
+      "product_access": [
+        {
+          "label": "Get started",
+          "url": "https://hackajob.com/talent/sign-up"
+        },
+        {
+          "label": "Start free on up to 3 roles",
+          "url": "https://hackajob.com/employer/get-started"
+        }
+      ],
+      "pages_crawled": [
+        "https://hackajob.com/",
+        "https://hackajob.com/about-us",
+        "https://hackajob.com/contact-us"
+      ],
+      "enriched_at": "2026-11-22T16:09:34+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": "",
+      "site_tech": [
+        {
+          "name": "Astro",
+          "category": "framework"
+        },
+        {
+          "name": "PostHog",
+          "category": "analytics"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "rss",
+        "url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "Fri, 20 Nov 2026 12:41:53 +0000",
+        "seen_at": "2026-11-22T14:18:37+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "review",
+      "urgency": "warm",
+      "priority": 73.2,
+      "reasons": [
+        "lead score 65",
+        "signal strength 2.4/10: funding",
+        "found 0 day(s) ago (hot)",
+        "good fit; no company address to email"
+      ],
+      "next_step": "Reach a founder via https://hackajob.com/contact-us",
+      "provider": "policy",
+      "score": 72
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "archer",
+        "field": "funding_stage",
+        "label": "funding_stage: Series A",
+        "value": "Series A",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "archer",
+        "field": "funding_amount",
+        "label": "funding_amount: €9.1 million",
+        "value": "€9.1 million",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "archer",
+        "field": "hq",
+        "label": "hq: London, UK and New York, USA",
+        "value": "London, UK and New York, USA",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "archer",
+        "field": "website",
+        "label": "website: https://hackajob.com",
+        "value": "https://hackajob.com",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "archer",
+        "field": "core_product",
+        "label": "core_product: An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
+        "value": "An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "archer",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
+        "value": "Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "archer",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/meet-archer",
+        "value": "https://www.linkedin.com/company/meet-archer",
+        "source_url": "https://hackajob.com/contact-us",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "archer",
+        "field": "twitter",
+        "label": "twitter: https://x.com/meet_archer_hq",
+        "value": "https://x.com/meet_archer_hq",
+        "source_url": "https://hackajob.com/contact-us",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:20+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "mark chaffey|hackajob",
+        "field": "role",
+        "label": "Mark Chaffey · Co-Founder & CEO",
+        "value": "Co-Founder & CEO",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Mark Chaffey\nCo-Founder & CEO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "mark chaffey|hackajob",
+        "field": "linkedin",
+        "label": "Mark Chaffey · linkedin",
+        "value": "https://www.linkedin.com/in/mchaffey/",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Mark Chaffey\nCo-Founder & CEO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "vlad iacob|hackajob",
+        "field": "role",
+        "label": "Vlad Iacob · CTO",
+        "value": "CTO",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Vlad Iacob\nCTO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "vlad iacob|hackajob",
+        "field": "linkedin",
+        "label": "Vlad Iacob · linkedin",
+        "value": "https://www.linkedin.com/in/vlad-george-iacob-88a80459/",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Vlad Iacob\nCTO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "mark chaffey|founded|hackajob",
+        "field": "founded",
+        "label": "Mark Chaffey founded hackajob",
+        "value": "Mark Chaffey founded hackajob",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Mark Chaffey\nCo-Founder & CEO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "vlad iacob|works_at|hackajob",
+        "field": "works_at",
+        "label": "Vlad Iacob works at hackajob",
+        "value": "Vlad Iacob works_at hackajob",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Vlad Iacob\nCTO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "mark chaffey|archer from hackajob",
+        "field": "role",
+        "label": "Mark Chaffey · Co-Founder & CEO",
+        "value": "Co-Founder & CEO",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Mark Chaffey\nCo-Founder & CEO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:22+00:00",
+        "last_seen": "2026-11-22T14:19:22+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "mark chaffey|archer from hackajob",
+        "field": "linkedin",
+        "label": "Mark Chaffey · linkedin",
+        "value": "https://www.linkedin.com/in/mchaffey/",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Mark Chaffey\nCo-Founder & CEO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:22+00:00",
+        "last_seen": "2026-11-22T14:19:22+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "vlad iacob|archer from hackajob",
+        "field": "role",
+        "label": "Vlad Iacob · CTO",
+        "value": "CTO",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Vlad Iacob\nCTO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:22+00:00",
+        "last_seen": "2026-11-22T14:19:22+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "vlad iacob|archer from hackajob",
+        "field": "linkedin",
+        "label": "Vlad Iacob · linkedin",
+        "value": "https://www.linkedin.com/in/vlad-george-iacob-88a80459/",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Vlad Iacob\nCTO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:22+00:00",
+        "last_seen": "2026-11-22T14:19:22+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "mark chaffey|founded|archer from hackajob",
+        "field": "founded",
+        "label": "Mark Chaffey founded Archer from hackajob",
+        "value": "Mark Chaffey founded Archer from hackajob",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+        "evidence": "Co-Founder & CEO",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T14:19:22+00:00",
+        "last_seen": "2026-11-22T14:19:22+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Jooba",
+        "slug": "jooba",
+        "similarity": 0.821
+      },
+      {
+        "company_name": "Roleo",
+        "slug": "roleo",
+        "similarity": 0.726
+      },
+      {
+        "company_name": "Probe",
+        "slug": "probe",
+        "similarity": 0.636
+      },
+      {
+        "company_name": "Elm AI",
+        "slug": "elm-ai",
+        "similarity": 0.629
+      },
+      {
+        "company_name": "Kindo",
+        "slug": "kindo",
+        "similarity": 0.628
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-22T14:19:20+00:00",
+        "kind": "discovered",
+        "items": [
+          "Stage: Series A",
+          "Raised: €9.1 million",
+          "HQ: London, UK and New York, USA",
+          "Website: https://hackajob.com",
+          "Product: An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
+          "Bottleneck: Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low."
+        ],
+        "source_urls": [
+          "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+          "https://hackajob.com/contact-us"
+        ],
+        "count": 15
+      },
+      {
+        "at": "2026-11-20T12:41:53+00:00",
+        "kind": "funding",
+        "items": [
+          "Funding"
+        ],
+        "source_urls": [
+          "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "early_stage",
+        "text": "Newly found at series a stage",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
+      },
+      {
+        "signal": "funding",
+        "text": "Raised money",
+        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_with",
+      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Archer: a thought on Scaling AI inference and real‑time semantic search across mi",
+      "body": "Hi Archer team,\n\nCongrats on the new funding (https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/).\n\nI came across Archer: An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.\nI'd like to build something with you.\nOne place we could start: scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -66902,7 +67356,7 @@
       "reasons": [
         "lead score 62",
         "signal strength 1.8/10: launch",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email contact@onlook.com yourself",
@@ -67113,7 +67567,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 1d ago (hiring or launch)",
+        "text": "Posted on Hacker News 2d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50562320"
       },
       {
@@ -67263,7 +67717,7 @@
       "reasons": [
         "lead score 62",
         "signal strength 1.8/10: launch",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Aniket Deshpande via https://isoquant.ai/contact",
@@ -67473,7 +67927,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (5d ago)",
+        "text": "Launched (6d ago)",
         "source_url": "https://www.ycombinator.com/launches/Xcn-isoquant-self-optimizing-inference-cloud-for-4x-faster-open-models"
       }
     ],
@@ -67603,7 +68057,7 @@
       "reasons": [
         "lead score 61",
         "signal strength 2.4/10: funding",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@generalinference.xyz yourself",
@@ -67813,7 +68267,7 @@
     "why_now": [
       {
         "signal": "form_d",
-        "text": "Filed an SEC Form D 1d ago: money just came in",
+        "text": "Filed an SEC Form D 2d ago: money just came in",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2165091/000216509126000001/"
       },
       {
@@ -67965,7 +68419,7 @@
       "reasons": [
         "lead score 61",
         "signal strength 1.8/10: launch",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@hirevinny.com yourself",
@@ -68147,7 +68601,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (1d ago)",
+        "text": "Launched (2d ago)",
         "source_url": "https://www.ycombinator.com/launches/Xk8-vinny-the-ai-phone-line-for-restaurants"
       }
     ],
@@ -70164,7 +70618,7 @@
       "reasons": [
         "lead score 60",
         "signal strength 1.8/10: launch",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@ordolabs.ai yourself",
@@ -70361,7 +70815,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (11d ago)",
+        "text": "Launched (12d ago)",
         "source_url": "https://www.ycombinator.com/launches/X75-ordo-labs-the-ai-native-os-for-regulated-labs"
       }
     ],
@@ -71023,7 +71477,7 @@
       "reasons": [
         "lead score 59",
         "signal strength 1.8/10: launch",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email legal@ample.computer yourself",
@@ -71220,7 +71674,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (3d ago)",
+        "text": "Launched (4d ago)",
         "source_url": "https://www.ycombinator.com/launches/XOz-ample-the-one-stop-cloud-for-agents-to-ship-complex-web-apps"
       }
     ],
@@ -71350,7 +71804,7 @@
       "reasons": [
         "lead score 59",
         "signal strength 1.8/10: launch",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: funding amount, tech stack, investors",
@@ -71575,7 +72029,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (9d ago)",
+        "text": "Launched (10d ago)",
         "source_url": "https://www.ycombinator.com/launches/WdU-sintropix-the-ai-native-erp-that-closes-your-books-and-files-your-taxes"
       }
     ],
@@ -71720,7 +72174,7 @@
       "reasons": [
         "lead score 59",
         "signal strength 1.8/10: launch",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: location, funding amount, investors",
@@ -71931,7 +72385,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (9d ago)",
+        "text": "Launched (10d ago)",
         "source_url": "https://www.ycombinator.com/launches/X9D-uxduck-the-ai-native-software-for-the-next-billion-drones"
       }
     ],
@@ -72064,7 +72518,7 @@
       "reasons": [
         "lead score 58",
         "signal strength 1.8/10: launch",
-        "found 4 day(s) ago (hot)",
+        "found 5 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@dukesell.com yourself",
@@ -72261,7 +72715,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (4d ago)",
+        "text": "Launched (5d ago)",
         "source_url": "https://www.ycombinator.com/launches/XeF-duke-powering-merchants-for-agentic-commerce"
       }
     ],
@@ -72445,7 +72899,7 @@
       "reasons": [
         "lead score 58",
         "signal strength 4.0/10: hiring",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email hello@paramark.com with the pitch",
@@ -72678,7 +73132,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 5d ago (hiring or launch)",
+        "text": "Posted on Hacker News 6d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50340419"
       },
       {
@@ -73126,7 +73580,7 @@
       "reasons": [
         "lead score 57",
         "signal strength 1.8/10: launch",
-        "found 1 day(s) ago (hot)",
+        "found 2 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email team@tilion.dev yourself",
@@ -73294,7 +73748,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (1d ago)",
+        "text": "Launched (2d ago)",
         "source_url": "https://www.ycombinator.com/launches/Xi1-tilion-superfast-unblockable-browser-infrastructure-for-agents"
       }
     ],
@@ -73431,7 +73885,7 @@
       "reasons": [
         "lead score 57",
         "signal strength 1.8/10: launch",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email info@telamont.com yourself",
@@ -73667,7 +74121,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (12d ago)",
+        "text": "Launched (13d ago)",
         "source_url": "https://www.ycombinator.com/launches/Wzh-telamont-sentry-for-errors-in-construction-documents"
       }
     ],
@@ -75731,7 +76185,7 @@
       {
         "company_name": "Tesorai",
         "slug": "tesorai",
-        "similarity": 0.588
+        "similarity": 0.587
       }
     ],
     "timeline": [
@@ -76017,7 +76471,7 @@
       "reasons": [
         "lead score 56",
         "signal strength 8.6/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email wycliffe@aethergrid.co.ke with the pitch",
@@ -76199,7 +76653,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50423766"
       },
       {
@@ -76974,7 +77428,7 @@
       "reasons": [
         "lead score 55",
         "signal strength 2.4/10: funding",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Vrinda Kapoor via https://bharatsemi.ai/contact",
@@ -78004,6 +78458,464 @@
       "subject": "Mnemonic Labs: a thought on scaling the data ingestion and preprocessing pipeline for ma",
       "body": "Hi Videh,\n\nCongrats on the launch (https://www.ycombinator.com/launches/XRK-mnemonic-labs-openai-for-financial-markets).\n\nI came across Mnemonic Labs: A foundation model for quantitative trading that learns directly from market activity.\nOne thing I noticed: scaling the data ingestion and preprocessing pipeline for massive market datasets.\n\nYou could replace the custom data pipeline with a Next.js front‑end that streams market data into a vector store, letting you query and enrich raw ticks on the fly.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Datadog",
+    "core_product": "Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [1][2], distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences f",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50342996",
+    "discovered_at": "2026-11-10T14:34:25+00:00",
+    "funding_amount": "",
+    "hq": "New York, US",
+    "website": "https://www.datadoghq.com",
+    "score": 54,
+    "last_seen": "2026-11-10T14:35:37+00:00",
+    "slug": "datadog",
+    "score_parts": {
+      "fit": 15,
+      "identity": 9,
+      "people": 10,
+      "connections": 0,
+      "contact": 20
+    },
+    "gaps": [
+      "funding stage",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "investors"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 100,
+      "evidence": 35
+    },
+    "qualified": false,
+    "contact": {
+      "website": "https://www.datadoghq.com",
+      "emails": [
+        {
+          "value": "info@datadoghq.com",
+          "kind": "general",
+          "source_url": "https://www.datadoghq.com/"
+        }
+      ],
+      "phones": [
+        {
+          "value": "+18663294466",
+          "kind": "main",
+          "source_url": "https://www.datadoghq.com/"
+        }
+      ],
+      "socials": {
+        "twitter": "https://x.com/datadoghq",
+        "linkedin": "https://www.linkedin.com/company/datadog",
+        "github": "https://github.com/DataDog"
+      },
+      "contact_page": "https://www.datadoghq.com/about/contact/",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://www.datadoghq.com/pricing/"
+        },
+        {
+          "label": "Docs",
+          "url": "https://docs.datadoghq.com/"
+        },
+        {
+          "label": "GET STARTED FREE Free Trial",
+          "url": "https://www.datadoghq.com/"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.datadoghq.com/",
+        "https://www.datadoghq.com/about/contact/",
+        "https://www.datadoghq.com/about/leadership/"
+      ],
+      "enriched_at": "2026-11-22T16:09:49+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
+      "site_tech": [
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Cloudflare",
+          "category": "hosting"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50342996",
+        "roles": [
+          "Software Engineers"
+        ],
+        "role_kinds": [
+          "eng"
+        ],
+        "posted_at": "2026-11-02T20:12:46Z",
+        "seen_at": "2026-11-10T14:34:25+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Alexis Lê-Quôc",
+        "role": "",
+        "org": "Datadog",
+        "evidence": "schema.org Person markup",
+        "linkedin": "https://www.linkedin.com/in/alexislequoc",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://www.datadoghq.com/"
+      },
+      {
+        "name": "Olivier Pomel",
+        "role": "",
+        "org": "Datadog",
+        "evidence": "schema.org Person markup",
+        "linkedin": "https://www.linkedin.com/in/olivierpomel",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": "https://www.datadoghq.com/"
+      }
+    ],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "review",
+      "urgency": "warm",
+      "priority": 64.6,
+      "reasons": [
+        "lead score 54",
+        "signal strength 4.0/10: hiring",
+        "found 12 day(s) ago (warm)",
+        "good fit, below the 70 bar for unattended sending"
+      ],
+      "next_step": "Review the draft, then email info@datadoghq.com yourself",
+      "provider": "policy",
+      "score": 66
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "datadog",
+        "field": "core_product",
+        "label": "core_product: Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [1][2], distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences f",
+        "value": "Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [1][2], distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences f",
+        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-10T14:35:37+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "datadog",
+        "field": "hq",
+        "label": "hq: New York, US",
+        "value": "New York, US",
+        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "datadog",
+        "field": "website",
+        "label": "website: https://www.datadoghq.com",
+        "value": "https://www.datadoghq.com",
+        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alexis lê-quôc|datadog",
+        "field": "role",
+        "label": "Alexis Lê-Quôc · ",
+        "value": "",
+        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "evidence": "schema.org Person markup",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alexis lê-quôc|datadog",
+        "field": "linkedin",
+        "label": "Alexis Lê-Quôc · linkedin",
+        "value": "https://www.linkedin.com/in/alexislequoc",
+        "source_url": "https://www.datadoghq.com/",
+        "evidence": "schema.org Person markup",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "olivier pomel|datadog",
+        "field": "role",
+        "label": "Olivier Pomel · ",
+        "value": "",
+        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "evidence": "schema.org Person markup",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "olivier pomel|datadog",
+        "field": "linkedin",
+        "label": "Olivier Pomel · linkedin",
+        "value": "https://www.linkedin.com/in/olivierpomel",
+        "source_url": "https://www.datadoghq.com/",
+        "evidence": "schema.org Person markup",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "datadog",
+        "field": "email",
+        "label": "email: info@datadoghq.com",
+        "value": "info@datadoghq.com",
+        "source_url": "https://www.datadoghq.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "datadog",
+        "field": "phone",
+        "label": "phone: +18663294466",
+        "value": "+18663294466",
+        "source_url": "https://www.datadoghq.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "datadog",
+        "field": "twitter",
+        "label": "twitter: https://x.com/datadoghq",
+        "value": "https://x.com/datadoghq",
+        "source_url": "https://www.datadoghq.com/about/contact/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "datadog",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/datadog",
+        "value": "https://www.linkedin.com/company/datadog",
+        "source_url": "https://www.datadoghq.com/about/contact/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "datadog",
+        "field": "github",
+        "label": "github: https://github.com/DataDog",
+        "value": "https://github.com/DataDog",
+        "source_url": "https://www.datadoghq.com/about/contact/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-22T16:09:08+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "datadog",
+        "field": "website",
+        "label": "website: https://bitly.com",
+        "value": "https://bitly.com",
+        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "evidence": "",
+        "run_id": "20261110T143246Z",
+        "first_seen": "2026-11-10T14:35:37+00:00",
+        "last_seen": "2026-11-10T14:35:37+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "datadog",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/552285",
+        "value": "https://www.linkedin.com/company/552285",
+        "source_url": "https://bitly.com",
+        "evidence": "",
+        "run_id": "20261110T143246Z",
+        "first_seen": "2026-11-10T14:35:37+00:00",
+        "last_seen": "2026-11-10T14:35:37+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "datadog",
+        "field": "twitter",
+        "label": "twitter: https://x.com/bitly",
+        "value": "https://x.com/bitly",
+        "source_url": "https://bitly.com",
+        "evidence": "",
+        "run_id": "20261110T143246Z",
+        "first_seen": "2026-11-10T14:35:37+00:00",
+        "last_seen": "2026-11-10T14:35:37+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "ObsessionDB",
+        "slug": "obsessiondb",
+        "similarity": 0.452
+      },
+      {
+        "company_name": "Querio",
+        "slug": "querio",
+        "similarity": 0.444
+      },
+      {
+        "company_name": "Lamin",
+        "slug": "lamin",
+        "similarity": 0.421
+      },
+      {
+        "company_name": "Odette Technologies",
+        "slug": "odette-technologies",
+        "similarity": 0.403
+      },
+      {
+        "company_name": "GeoForge, Inc.",
+        "slug": "geoforge-inc",
+        "similarity": 0.4
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-10T14:35:37+00:00",
+        "kind": "discovered",
+        "items": [
+          "Product: Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [",
+          "HQ: New York, US",
+          "Website: https://www.datadoghq.com",
+          "Person: Alexis Lê-Quôc · ",
+          "Profile link: https://www.linkedin.com/in/alexislequoc",
+          "Person: Olivier Pomel · "
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50342996",
+          "https://www.datadoghq.com/",
+          "https://www.datadoghq.com/about/contact/"
+        ],
+        "count": 12
+      },
+      {
+        "at": "2026-11-10T14:35:37+00:00",
+        "kind": "learned",
+        "items": [
+          "Website: https://bitly.com",
+          "linkedin: https://www.linkedin.com/company/552285",
+          "twitter: https://x.com/bitly"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50342996",
+          "https://bitly.com"
+        ],
+        "count": 3
+      },
+      {
+        "at": "2026-11-02T20:12:46+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: Software Engineers"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50342996"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50342996"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (19d ago): Software Engineers",
+        "source_url": "https://news.ycombinator.com/item?id=50342996"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "info@datadoghq.com",
+      "to_source_url": "https://www.datadoghq.com/",
+      "subject": "Datadog: a thought on your stack",
+      "body": "Hi Datadog team,\n\nI saw you're hiring (Software Engineers) (https://news.ycombinator.com/item?id=50342996).\nI'd like to help on the engineering side.\n\nI came across Datadog: Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:info%40datadoghq.com?subject=Datadog%3A%20a%20thought%20on%20your%20stack&body=Hi%20Datadog%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Software%20Engineers%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50342996%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Datadog%3A%20Datadog%20is%20a%20monitoring%2C%20tracing%2C%20logs%20system%2C%20and%20more%2C%20for%20your%20infrastructure%20and%20services.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -79908,7 +80820,7 @@
       "reasons": [
         "lead score 53",
         "signal strength 2.4/10: funding",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@v3deo.com yourself",
@@ -80090,7 +81002,7 @@
     "why_now": [
       {
         "signal": "form_d",
-        "text": "Filed an SEC Form D 11d ago: money just came in",
+        "text": "Filed an SEC Form D 12d ago: money just came in",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2163244/000204180626000021/"
       },
       {
@@ -81141,7 +82053,7 @@
       "reasons": [
         "lead score 52",
         "signal strength 2.4/10: funding",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Tim Silk via https://americanailogistics.com/contact",
@@ -81392,7 +82304,7 @@
     "why_now": [
       {
         "signal": "form_d",
-        "text": "Filed an SEC Form D 11d ago: money just came in",
+        "text": "Filed an SEC Form D 12d ago: money just came in",
         "source_url": "https://www.sec.gov/Archives/edgar/data/2068742/000206874226000001/"
       },
       {
@@ -81530,7 +82442,7 @@
       "reasons": [
         "lead score 51",
         "signal strength 1.8/10: launch",
-        "found 2 day(s) ago (hot)",
+        "found 3 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email contact@maritime.sh yourself",
@@ -81699,7 +82611,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 2d ago (hiring or launch)",
+        "text": "Posted on Hacker News 3d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50549188"
       },
       {
@@ -82527,7 +83439,7 @@
       "reasons": [
         "lead score 50",
         "signal strength 1.4/10: funding",
-        "found 19 day(s) ago (warm)",
+        "found 20 day(s) ago (warm)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: founder, people profiles, investors",
@@ -82710,7 +83622,7 @@
     "why_now": [
       {
         "signal": "funding",
-        "text": "Raised money (19d ago)",
+        "text": "Raised money (20d ago)",
         "source_url": "https://www.prnewswire.com/news-releases/vector-raises-10m-series-a-to-build-the-ai-ad-platform-that-makes-marketers-better-not-obsolete-302770353.html"
       }
     ],
@@ -86041,374 +86953,6 @@
     "outreach": []
   },
   {
-    "company_name": "Archer",
-    "core_product": "An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
-    "tech_stack": [],
-    "likely_bottleneck": "Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
-    "value_prop_pitch": "We can refactor your candidate matching service with Next.js for a fast, SEO‑friendly UI and integrate a vector semantic search layer to instantly surface the most relevant profiles. This will cut latency, reduce engineering load, and let your team focus on building higher‑value recruiting features.",
-    "is_relevant": true,
-    "funding_stage": "Series A",
-    "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-    "discovered_at": "2026-11-22T14:17:56+00:00",
-    "funding_amount": "€9.1 million",
-    "hq": "London, UK and New York, USA",
-    "website": "https://hackajob.com",
-    "score": 45,
-    "last_seen": "2026-11-22T14:19:20+00:00",
-    "slug": "archer",
-    "score_parts": {
-      "fit": 25,
-      "identity": 12,
-      "people": 0,
-      "connections": 0,
-      "contact": 8
-    },
-    "gaps": [
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "axes": {
-      "fit": 100,
-      "reach": 50,
-      "evidence": 22
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://hackajob.com",
-      "emails": [],
-      "phones": [],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/meet-archer",
-        "twitter": "https://x.com/meet_archer_hq"
-      },
-      "contact_page": "https://hackajob.com/contact-us",
-      "product_access": [
-        {
-          "label": "Get started",
-          "url": "https://hackajob.com/talent/sign-up"
-        }
-      ],
-      "pages_crawled": [
-        "https://hackajob.com/",
-        "https://hackajob.com/about-us",
-        "https://hackajob.com/contact-us"
-      ],
-      "enriched_at": "2026-11-22T14:19:28+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": [
-        {
-          "name": "Astro",
-          "category": "framework"
-        },
-        {
-          "name": "PostHog",
-          "category": "analytics"
-        }
-      ]
-    },
-    "signals": [
-      {
-        "type": "funding",
-        "source": "rss",
-        "url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "roles": [],
-        "role_kinds": [],
-        "posted_at": "Fri, 20 Nov 2026 12:41:53 +0000",
-        "seen_at": "2026-11-22T14:18:37+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 61.2,
-      "reasons": [
-        "lead score 45",
-        "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 52
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "archer",
-        "field": "funding_stage",
-        "label": "funding_stage: Series A",
-        "value": "Series A",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "archer",
-        "field": "funding_amount",
-        "label": "funding_amount: €9.1 million",
-        "value": "€9.1 million",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "archer",
-        "field": "hq",
-        "label": "hq: London, UK and New York, USA",
-        "value": "London, UK and New York, USA",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "archer",
-        "field": "website",
-        "label": "website: https://hackajob.com",
-        "value": "https://hackajob.com",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "archer",
-        "field": "core_product",
-        "label": "core_product: An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
-        "value": "An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "archer",
-        "field": "likely_bottleneck",
-        "label": "likely_bottleneck: Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
-        "value": "Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "archer",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/meet-archer",
-        "value": "https://www.linkedin.com/company/meet-archer",
-        "source_url": "https://hackajob.com/contact-us",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "archer",
-        "field": "twitter",
-        "label": "twitter: https://x.com/meet_archer_hq",
-        "value": "https://x.com/meet_archer_hq",
-        "source_url": "https://hackajob.com/contact-us",
-        "evidence": "",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:20+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 2,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "mark chaffey|archer from hackajob",
-        "field": "role",
-        "label": "Mark Chaffey · Co-Founder & CEO",
-        "value": "Co-Founder & CEO",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "Mark Chaffey\nCo-Founder & CEO",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:22+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "mark chaffey|archer from hackajob",
-        "field": "linkedin",
-        "label": "Mark Chaffey · linkedin",
-        "value": "https://www.linkedin.com/in/mchaffey/",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "Mark Chaffey\nCo-Founder & CEO",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:22+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "vlad iacob|archer from hackajob",
-        "field": "role",
-        "label": "Vlad Iacob · CTO",
-        "value": "CTO",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "Vlad Iacob\nCTO",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:22+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "vlad iacob|archer from hackajob",
-        "field": "linkedin",
-        "label": "Vlad Iacob · linkedin",
-        "value": "https://www.linkedin.com/in/vlad-george-iacob-88a80459/",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "Vlad Iacob\nCTO",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:22+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "mark chaffey|founded|archer from hackajob",
-        "field": "founded",
-        "label": "Mark Chaffey founded Archer from hackajob",
-        "value": "Mark Chaffey founded Archer from hackajob",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-        "evidence": "Co-Founder & CEO",
-        "run_id": "backfill-2026-11-22",
-        "first_seen": "2026-11-22T14:19:22+00:00",
-        "last_seen": "2026-11-22T14:19:22+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Jooba",
-        "slug": "jooba",
-        "similarity": 0.821
-      },
-      {
-        "company_name": "Roleo",
-        "slug": "roleo",
-        "similarity": 0.726
-      },
-      {
-        "company_name": "Probe",
-        "slug": "probe",
-        "similarity": 0.636
-      },
-      {
-        "company_name": "Elm AI",
-        "slug": "elm-ai",
-        "similarity": 0.629
-      },
-      {
-        "company_name": "Kindo",
-        "slug": "kindo",
-        "similarity": 0.628
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-22T14:19:20+00:00",
-        "kind": "discovered",
-        "items": [
-          "Stage: Series A",
-          "Raised: €9.1 million",
-          "HQ: London, UK and New York, USA",
-          "Website: https://hackajob.com",
-          "Product: An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
-          "Bottleneck: Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low."
-        ],
-        "source_urls": [
-          "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-          "https://hackajob.com/contact-us"
-        ],
-        "count": 13
-      },
-      {
-        "at": "2026-11-20T12:41:53+00:00",
-        "kind": "funding",
-        "items": [
-          "Funding"
-        ],
-        "source_urls": [
-          "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "early_stage",
-        "text": "Newly found at series a stage",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
-      },
-      {
-        "signal": "funding",
-        "text": "Raised money",
-        "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_with",
-      "intent_reason": "no hiring signal or clear bottleneck, so propose a partnership",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Archer: a thought on Scaling AI inference and real‑time semantic search across mi",
-      "body": "Hi Archer team,\n\nCongrats on the new funding (https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/).\n\nI came across Archer: An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.\nI'd like to build something with you.\nOne place we could start: scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "outGoing",
     "core_product": "Started in Lisbon's local events scene and now work across festivals, sports and cultural events of every kind. We've raised our first round and are launching new products soon, so this is an early hire with real ownership.",
     "tech_stack": [],
@@ -86522,7 +87066,7 @@
       "reasons": [
         "lead score 45",
         "signal strength 6.6/10: hiring",
-        "found 4 day(s) ago (hot)",
+        "found 5 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@outgoing.website yourself",
@@ -86660,12 +87204,12 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 4d ago (hiring or launch)",
+        "text": "Posted on Hacker News 5d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50518905"
       },
       {
         "signal": "hiring",
-        "text": "Hiring (5d ago): Software Engineer",
+        "text": "Hiring (6d ago): Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50518905"
       }
     ],
@@ -87332,7 +87876,7 @@
       "reasons": [
         "lead score 44",
         "signal strength 1.8/10: launch",
-        "found 4 day(s) ago (hot)",
+        "found 5 day(s) ago (hot)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -87471,7 +88015,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 4d ago (hiring or launch)",
+        "text": "Posted on Hacker News 5d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50522776"
       },
       {
@@ -87588,7 +88132,7 @@
       "reasons": [
         "lead score 44",
         "signal strength 1.8/10: launch",
-        "found 4 day(s) ago (hot)",
+        "found 5 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: location, funding amount, people profiles",
@@ -87741,7 +88285,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (4d ago)",
+        "text": "Launched (5d ago)",
         "source_url": "https://www.ycombinator.com/launches/XVi-repovive-enabling-ai-to-formally-verify-chips-and-critical-software"
       }
     ],
@@ -88138,7 +88682,7 @@
       "reasons": [
         "lead score 44",
         "signal strength 4.0/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email info@eventfirst.com yourself",
@@ -88292,7 +88836,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50341824"
       },
       {
@@ -88415,7 +88959,7 @@
       "reasons": [
         "lead score 44",
         "signal strength 4.0/10: hiring",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@curiosity.ai yourself",
@@ -88609,7 +89153,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50342797"
       },
       {
@@ -91606,7 +92150,7 @@
       "reasons": [
         "lead score 43",
         "signal strength 6.6/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email info@amododesign.com yourself",
@@ -92544,12 +93088,12 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50426542"
       },
       {
         "signal": "hiring",
-        "text": "Hiring (12d ago): Compute Infrastructure Lead",
+        "text": "Hiring (13d ago): Compute Infrastructure Lead",
         "source_url": "https://news.ycombinator.com/item?id=50426542"
       }
     ],
@@ -92671,7 +93215,7 @@
       "reasons": [
         "lead score 42",
         "signal strength 8.6/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email contact@seal.run yourself",
@@ -92825,7 +93369,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50424162"
       },
       {
@@ -93917,7 +94461,7 @@
       "reasons": [
         "lead score 41",
         "signal strength 3.1/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -94066,7 +94610,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50341800"
       },
       {
@@ -94168,7 +94712,7 @@
       "reasons": [
         "lead score 41",
         "signal strength 2.4/10: funding",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: website, tech stack, founder",
@@ -94461,7 +95005,7 @@
       "reasons": [
         "lead score 41",
         "signal strength 6.6/10: hiring",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email contact@sunsave.energy yourself",
@@ -94619,7 +95163,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50427924"
       },
       {
@@ -95202,7 +95746,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (18d ago): Founding CTO, Technical Lead",
+        "text": "Hiring (19d ago): Founding CTO, Technical Lead",
         "source_url": "https://news.ycombinator.com/item?id=50352937"
       }
     ],
@@ -96311,7 +96855,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (37d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)",
+        "text": "Hiring (38d ago): Full-stack Engineer (Elixir, Phoenix LiveView, React)",
         "source_url": "https://news.ycombinator.com/item?id=50104234"
       }
     ],
@@ -96443,7 +96987,7 @@
       "reasons": [
         "lead score 38",
         "signal strength 3.1/10: hiring",
-        "found 3 day(s) ago (hot)",
+        "found 4 day(s) ago (hot)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -96596,7 +97140,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 3d ago (hiring or launch)",
+        "text": "Posted on Hacker News 4d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50340242"
       },
       {
@@ -97617,7 +98161,7 @@
       "reasons": [
         "lead score 38",
         "signal strength 6.6/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email info@foji.io yourself",
@@ -97757,7 +98301,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50460895"
       },
       {
@@ -98182,7 +98726,7 @@
       "reasons": [
         "lead score 38",
         "signal strength 8.6/10: hiring",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email hello@polymathmade.com yourself",
@@ -98332,7 +98876,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50432950"
       },
       {
@@ -98458,7 +99002,7 @@
       "reasons": [
         "lead score 38",
         "signal strength 6.6/10: hiring",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email office@collabify.cc yourself",
@@ -98598,7 +99142,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50428062"
       },
       {
@@ -98724,7 +99268,7 @@
       "reasons": [
         "lead score 38",
         "signal strength 4.0/10: hiring",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -98879,7 +99423,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50343014"
       },
       {
@@ -99005,7 +99549,7 @@
       "reasons": [
         "lead score 38",
         "signal strength 4.0/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -99129,7 +99673,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50343258"
       },
       {
@@ -103842,7 +104386,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (18d ago): Devops Engineer",
+        "text": "Hiring (19d ago): Devops Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50352957"
       }
     ],
@@ -103971,7 +104515,7 @@
       "reasons": [
         "lead score 34",
         "signal strength 6.6/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -104096,7 +104640,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50460238"
       },
       {
@@ -106713,7 +107257,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (23d ago)",
+        "text": "Launched (24d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50291116"
       }
     ],
@@ -106821,7 +107365,7 @@
       "reasons": [
         "lead score 31",
         "signal strength 6.6/10: hiring",
-        "found 11 day(s) ago (warm)",
+        "found 12 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -106930,7 +107474,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50429861"
       },
       {
@@ -107520,7 +108064,7 @@
       "reasons": [
         "lead score 29",
         "signal strength 8.6/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach a founder via https://www.withnative.ai/contact",
@@ -107629,7 +108173,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50466168"
       },
       {
@@ -107756,7 +108300,7 @@
       "reasons": [
         "lead score 29",
         "signal strength 5.2/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -107865,7 +108409,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50343546"
       },
       {
@@ -110483,7 +111027,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (16d ago): Blockchain Security Engineer",
+        "text": "Hiring (17d ago): Blockchain Security Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50380439"
       }
     ],
@@ -110585,7 +111129,7 @@
       "reasons": [
         "lead score 25",
         "signal strength 3.1/10: hiring",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "weak fit or too little data"
       ],
       "next_step": "Skip unless it resurfaces",
@@ -110719,7 +111263,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 5d ago (hiring or launch)",
+        "text": "Posted on Hacker News 6d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50340434"
       },
       {
@@ -110838,7 +111382,7 @@
       "reasons": [
         "lead score 25",
         "signal strength 6.6/10: hiring",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -110931,7 +111475,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 5d ago (hiring or launch)",
+        "text": "Posted on Hacker News 6d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50508598"
       },
       {
@@ -111020,10 +111564,10 @@
       "pages_crawled": [
         "https://evaboot.com/"
       ],
-      "enriched_at": "2026-11-12T14:53:26+00:00",
+      "enriched_at": "2026-11-22T16:09:39+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
       "site_tech": [
         {
           "name": "Astro",
@@ -111056,7 +111600,7 @@
       "reasons": [
         "lead score 25",
         "signal strength 4.0/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -111072,10 +111616,10 @@
         "value": "https://evaboot.com",
         "source_url": "https://news.ycombinator.com/item?id=50341833",
         "evidence": "",
-        "run_id": "20261112T145040Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-12T14:53:38+00:00",
-        "last_seen": "2026-11-12T14:53:38+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -111086,10 +111630,10 @@
         "value": "Evaboot turns LinkedIn Sales Navigator searches into clean, verified prospecting lists. Demo: https://www.youtube.com/watch?v=khYgyDlo2Iw",
         "source_url": "https://news.ycombinator.com/item?id=50341833",
         "evidence": "",
-        "run_id": "20261112T145040Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-12T14:53:38+00:00",
-        "last_seen": "2026-11-12T14:53:38+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -111100,10 +111644,10 @@
         "value": "https://github.com/evaboot-labs",
         "source_url": "https://evaboot.com",
         "evidence": "",
-        "run_id": "20261112T145040Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-12T14:53:38+00:00",
-        "last_seen": "2026-11-12T14:53:38+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -111114,10 +111658,10 @@
         "value": "https://x.com/Evaboot_",
         "source_url": "https://evaboot.com",
         "evidence": "",
-        "run_id": "20261112T145040Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-12T14:53:38+00:00",
-        "last_seen": "2026-11-12T14:53:38+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -111180,7 +111724,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50341833"
       },
       {
@@ -111197,205 +111741,6 @@
       "to_source_url": "",
       "subject": "Evaboot: a thought on your stack",
       "body": "Hi Evaboot team,\n\nI saw you're hiring (Agentic Python Engineer) (https://news.ycombinator.com/item?id=50341833).\nI'd like to help on the engineering side.\n\nI came across Evaboot: Evaboot turns LinkedIn Sales Navigator searches into clean, verified prospecting lists.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Odin",
-    "core_product": "We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundation powering workforce visibility, security, and operations across critical-infrastructure construction projec",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50447035",
-    "discovered_at": "2026-11-11T13:48:37+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "https://odinflashtool.org",
-    "score": 25,
-    "last_seen": "2026-11-11T13:49:39+00:00",
-    "slug": "odin",
-    "score_parts": {
-      "fit": 15,
-      "identity": 6,
-      "people": 0,
-      "connections": 0,
-      "contact": 4
-    },
-    "gaps": [
-      "funding stage",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 33,
-      "evidence": 11
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://odinflashtool.org",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "https://odinflashtool.org/contact",
-      "product_access": [],
-      "pages_crawled": [
-        "https://odinflashtool.org/",
-        "https://odinflashtool.org/contact",
-        "https://odinflashtool.org/about"
-      ],
-      "enriched_at": "2026-11-11T13:49:19+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50447035",
-        "roles": [
-          "Senior Cloud Infra Engineer"
-        ],
-        "role_kinds": [
-          "eng"
-        ],
-        "posted_at": "2026-11-10T22:14:01Z",
-        "seen_at": "2026-11-11T13:48:37+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 42.0,
-      "reasons": [
-        "lead score 25",
-        "signal strength 6.6/10: hiring",
-        "found 11 day(s) ago (warm)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 45
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "odin",
-        "field": "website",
-        "label": "website: https://odinflashtool.org",
-        "value": "https://odinflashtool.org",
-        "source_url": "https://news.ycombinator.com/item?id=50447035",
-        "evidence": "",
-        "run_id": "20261111T134656Z",
-        "first_seen": "2026-11-11T13:49:39+00:00",
-        "last_seen": "2026-11-11T13:49:39+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "odin",
-        "field": "core_product",
-        "label": "core_product: We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundation powering workforce visibility, security, and operations across critical-infrastructure construction projec",
-        "value": "We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundation powering workforce visibility, security, and operations across critical-infrastructure construction projec",
-        "source_url": "https://news.ycombinator.com/item?id=50447035",
-        "evidence": "",
-        "run_id": "20261111T134656Z",
-        "first_seen": "2026-11-11T13:49:39+00:00",
-        "last_seen": "2026-11-11T13:49:39+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Proofline",
-        "slug": "proofline",
-        "similarity": 0.645
-      },
-      {
-        "company_name": "SEEKING FREELANCER",
-        "slug": "seeking-freelancer",
-        "similarity": 0.569
-      },
-      {
-        "company_name": "Splash Tech",
-        "slug": "splash-tech",
-        "similarity": 0.539
-      },
-      {
-        "company_name": "SentiLink",
-        "slug": "sentilink",
-        "similarity": 0.535
-      },
-      {
-        "company_name": "New Product",
-        "slug": "new-product",
-        "similarity": 0.52
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-11T13:49:39+00:00",
-        "kind": "discovered",
-        "items": [
-          "Website: https://odinflashtool.org",
-          "Product: We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundati"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50447035"
-        ],
-        "count": 2
-      },
-      {
-        "at": "2026-11-10T22:14:01+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: Senior Cloud Infra Engineer"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50447035"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50447035"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (11d ago): Senior Cloud Infra Engineer",
-        "source_url": "https://news.ycombinator.com/item?id=50447035"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Odin: a thought on your stack",
-      "body": "Hi Odin team,\n\nI saw you're hiring (Senior Cloud Infra Engineer) (https://news.ycombinator.com/item?id=50447035).\nI'd like to help on the engineering side.\n\nI came across Odin: We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -111661,21 +112006,21 @@
     "outreach": []
   },
   {
-    "company_name": "Datadog",
-    "core_product": "Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [1][2], distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences f",
+    "company_name": "Odin",
+    "core_product": "We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundation powering workforce visibility, security, and operations across critical-infrastructure construction projec",
     "tech_stack": [],
     "likely_bottleneck": "",
     "value_prop_pitch": "",
     "is_relevant": true,
     "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50342996",
-    "discovered_at": "2026-11-10T14:34:25+00:00",
+    "source_url": "https://news.ycombinator.com/item?id=50447035",
+    "discovered_at": "2026-11-11T13:48:37+00:00",
     "funding_amount": "",
     "hq": "",
-    "website": "https://bitly.com",
+    "website": "https://odinflashtool.org",
     "score": 25,
-    "last_seen": "2026-11-10T14:35:37+00:00",
-    "slug": "datadog",
+    "last_seen": "2026-11-11T13:49:39+00:00",
+    "slug": "odin",
     "score_parts": {
       "fit": 15,
       "identity": 6,
@@ -111696,60 +112041,41 @@
     ],
     "axes": {
       "fit": 60,
-      "reach": 17,
+      "reach": 33,
       "evidence": 11
     },
     "qualified": false,
     "contact": {
-      "website": "https://bitly.com",
+      "website": "https://odinflashtool.org",
       "emails": [],
       "phones": [],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/552285",
-        "twitter": "https://x.com/bitly"
-      },
-      "contact_page": "",
-      "product_access": [
-        {
-          "label": "Sign up Free",
-          "url": "https://bitly.com/pages/pricing/"
-        },
-        {
-          "label": "Get started for free",
-          "url": "https://bitly.com/a/sign_up?hook=exit"
-        }
-      ],
+      "socials": {},
+      "contact_page": "https://odinflashtool.org/contact",
+      "product_access": [],
       "pages_crawled": [
-        "https://bitly.com/pages/landing/branded-short-domains-powered-by-bitly/?bsd=dtdg.co"
+        "https://odinflashtool.org/",
+        "https://odinflashtool.org/about",
+        "https://odinflashtool.org/contact"
       ],
-      "enriched_at": "2026-11-10T14:35:34+00:00",
+      "enriched_at": "2026-11-22T16:09:42+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": [
-        {
-          "name": "WordPress",
-          "category": "cms"
-        },
-        {
-          "name": "Google Analytics",
-          "category": "analytics"
-        }
-      ]
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
+      "site_tech": []
     },
     "signals": [
       {
         "type": "hiring",
         "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50342996",
+        "url": "https://news.ycombinator.com/item?id=50447035",
         "roles": [
-          "Software Engineers"
+          "Senior Cloud Infra Engineer"
         ],
         "role_kinds": [
           "eng"
         ],
-        "posted_at": "2026-11-02T20:12:46Z",
-        "seen_at": "2026-11-10T14:34:25+00:00"
+        "posted_at": "2026-11-10T22:14:01Z",
+        "seen_at": "2026-11-11T13:48:37+00:00"
       }
     ],
     "people": [],
@@ -111758,126 +112084,95 @@
     "decision": {
       "action": "watch",
       "urgency": "cold",
-      "priority": 37.2,
+      "priority": 42.0,
       "reasons": [
         "lead score 25",
-        "signal strength 4.0/10: hiring",
+        "signal strength 6.6/10: hiring",
         "found 11 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
       "provider": "policy",
-      "score": 37
+      "score": 45
     },
     "trackbacks": [
       {
         "entity_type": "startup",
-        "entity_key": "datadog",
+        "entity_key": "odin",
         "field": "website",
-        "label": "website: https://bitly.com",
-        "value": "https://bitly.com",
-        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "label": "website: https://odinflashtool.org",
+        "value": "https://odinflashtool.org",
+        "source_url": "https://news.ycombinator.com/item?id=50447035",
         "evidence": "",
-        "run_id": "20261110T143246Z",
-        "first_seen": "2026-11-10T14:35:37+00:00",
-        "last_seen": "2026-11-10T14:35:37+00:00",
-        "seen_count": 1,
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-11T13:49:39+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
         "entity_type": "startup",
-        "entity_key": "datadog",
+        "entity_key": "odin",
         "field": "core_product",
-        "label": "core_product: Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [1][2], distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences f",
-        "value": "Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [1][2], distributed tracing tools, cutting edge visualizations, and more. We love shipping great experiences f",
-        "source_url": "https://news.ycombinator.com/item?id=50342996",
+        "label": "core_product: We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundation powering workforce visibility, security, and operations across critical-infrastructure construction projec",
+        "value": "We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundation powering workforce visibility, security, and operations across critical-infrastructure construction projec",
+        "source_url": "https://news.ycombinator.com/item?id=50447035",
         "evidence": "",
-        "run_id": "20261110T143246Z",
-        "first_seen": "2026-11-10T14:35:37+00:00",
-        "last_seen": "2026-11-10T14:35:37+00:00",
-        "seen_count": 1,
+        "run_id": "backfill-2026-11-22",
+        "first_seen": "2026-11-11T13:49:39+00:00",
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "datadog",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/552285",
-        "value": "https://www.linkedin.com/company/552285",
-        "source_url": "https://bitly.com",
-        "evidence": "",
-        "run_id": "20261110T143246Z",
-        "first_seen": "2026-11-10T14:35:37+00:00",
-        "last_seen": "2026-11-10T14:35:37+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "datadog",
-        "field": "twitter",
-        "label": "twitter: https://x.com/bitly",
-        "value": "https://x.com/bitly",
-        "source_url": "https://bitly.com",
-        "evidence": "",
-        "run_id": "20261110T143246Z",
-        "first_seen": "2026-11-10T14:35:37+00:00",
-        "last_seen": "2026-11-10T14:35:37+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
       }
     ],
     "similar": [
       {
-        "company_name": "ObsessionDB",
-        "slug": "obsessiondb",
-        "similarity": 0.452
+        "company_name": "Proofline",
+        "slug": "proofline",
+        "similarity": 0.645
       },
       {
-        "company_name": "Querio",
-        "slug": "querio",
-        "similarity": 0.444
+        "company_name": "SEEKING FREELANCER",
+        "slug": "seeking-freelancer",
+        "similarity": 0.569
       },
       {
-        "company_name": "Lamin",
-        "slug": "lamin",
-        "similarity": 0.421
+        "company_name": "Splash Tech",
+        "slug": "splash-tech",
+        "similarity": 0.539
       },
       {
-        "company_name": "Odette Technologies",
-        "slug": "odette-technologies",
-        "similarity": 0.403
+        "company_name": "SentiLink",
+        "slug": "sentilink",
+        "similarity": 0.535
       },
       {
-        "company_name": "GeoForge, Inc.",
-        "slug": "geoforge-inc",
-        "similarity": 0.4
+        "company_name": "New Product",
+        "slug": "new-product",
+        "similarity": 0.52
       }
     ],
     "timeline": [
       {
-        "at": "2026-11-10T14:35:37+00:00",
+        "at": "2026-11-11T13:49:39+00:00",
         "kind": "discovered",
         "items": [
-          "Website: https://bitly.com",
-          "Product: Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services. We build our own tsdb, event store [",
-          "linkedin: https://www.linkedin.com/company/552285",
-          "twitter: https://x.com/bitly"
+          "Website: https://odinflashtool.org",
+          "Product: We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team. You’ll build and run the cloud foundati"
         ],
         "source_urls": [
-          "https://news.ycombinator.com/item?id=50342996",
-          "https://bitly.com"
+          "https://news.ycombinator.com/item?id=50447035"
         ],
-        "count": 4
+        "count": 2
       },
       {
-        "at": "2026-11-02T20:12:46+00:00",
+        "at": "2026-11-10T22:14:01+00:00",
         "kind": "hiring",
         "items": [
-          "Hiring: Software Engineers"
+          "Hiring: Senior Cloud Infra Engineer"
         ],
         "source_urls": [
-          "https://news.ycombinator.com/item?id=50342996"
+          "https://news.ycombinator.com/item?id=50447035"
         ],
         "count": 1
       }
@@ -111887,12 +112182,12 @@
       {
         "signal": "hn",
         "text": "Posted on Hacker News 11d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50342996"
+        "source_url": "https://news.ycombinator.com/item?id=50447035"
       },
       {
         "signal": "hiring",
-        "text": "Hiring (19d ago): Software Engineers",
-        "source_url": "https://news.ycombinator.com/item?id=50342996"
+        "text": "Hiring (11d ago): Senior Cloud Infra Engineer",
+        "source_url": "https://news.ycombinator.com/item?id=50447035"
       }
     ],
     "warm_path": null,
@@ -111901,8 +112196,8 @@
       "intent_reason": "found on a Hacker News hiring/launch post",
       "to": "",
       "to_source_url": "",
-      "subject": "Datadog: a thought on your stack",
-      "body": "Hi Datadog team,\n\nI saw you're hiring (Software Engineers) (https://news.ycombinator.com/item?id=50342996).\nI'd like to help on the engineering side.\n\nI came across Datadog: Datadog is a monitoring, tracing, logs system, and more, for your infrastructure and services.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "subject": "Odin: a thought on your stack",
+      "body": "Hi Odin team,\n\nI saw you're hiring (Senior Cloud Infra Engineer) (https://news.ycombinator.com/item?id=50447035).\nI'd like to help on the engineering side.\n\nI came across Odin: We’re hiring a Senior Cloud Infrastructure Engineer to help establish Odin’s platform team.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -111962,10 +112257,10 @@
         "https://app.opentrain.ai/team",
         "https://app.opentrain.ai/contact"
       ],
-      "enriched_at": "2026-11-09T15:36:47+00:00",
+      "enriched_at": "2026-11-22T16:09:53+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
       "site_tech": [
         {
           "name": "Next.js",
@@ -112002,7 +112297,7 @@
       "reasons": [
         "lead score 25",
         "signal strength 5.1/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -112018,10 +112313,10 @@
         "value": "https://app.opentrain.ai",
         "source_url": "https://news.ycombinator.com/item?id=50420399",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -112032,10 +112327,10 @@
         "value": "OpenTrain AI connects experienced professionals with paid, part-time AI training work. We are the hiring company and are actively filling this role.",
         "source_url": "https://news.ycombinator.com/item?id=50420399",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       }
     ],
@@ -112095,7 +112390,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50420399"
       },
       {
@@ -112178,10 +112473,10 @@
       "pages_crawled": [
         "https://vivral.app/"
       ],
-      "enriched_at": "2026-11-08T13:00:25+00:00",
+      "enriched_at": "2026-11-22T16:09:57+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
       "site_tech": []
     },
     "signals": [
@@ -112228,10 +112523,10 @@
         "value": "https://vivral.app",
         "source_url": "https://news.ycombinator.com/item?id=50344410",
         "evidence": "",
-        "run_id": "20261108T125735Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-08T13:00:25+00:00",
-        "last_seen": "2026-11-08T13:00:25+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -112242,10 +112537,10 @@
         "value": "Vivral is an AI health assistant that helps people understand their health. We run frontier-grade medical AI on ordinary computers instead of the cloud, so health support can reach remote, underserved communities. Already tested by research",
         "source_url": "https://news.ycombinator.com/item?id=50344410",
         "evidence": "",
-        "run_id": "20261108T125735Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-08T13:00:25+00:00",
-        "last_seen": "2026-11-08T13:00:25+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -112256,10 +112551,10 @@
         "value": "+16562104070",
         "source_url": "https://vivral.app/",
         "evidence": "",
-        "run_id": "20261108T125735Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-08T13:00:25+00:00",
-        "last_seen": "2026-11-08T13:00:25+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       },
       {
@@ -112270,10 +112565,10 @@
         "value": "+905324008302",
         "source_url": "https://vivral.app/",
         "evidence": "",
-        "run_id": "20261108T125735Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-08T13:00:25+00:00",
-        "last_seen": "2026-11-08T13:00:25+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -112412,10 +112707,10 @@
         "https://www.imc.com/us/",
         "https://www.imc.com/us/who-we-are"
       ],
-      "enriched_at": "2026-11-07T12:43:51+00:00",
+      "enriched_at": "2026-11-22T16:10:04+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
       "site_tech": [
         {
           "name": "Next.js",
@@ -112468,10 +112763,10 @@
         "value": "https://www.imc.com",
         "source_url": "https://news.ycombinator.com/item?id=50352150",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -112482,10 +112777,10 @@
         "value": "IMC is a research-driven trading firm and has been a market maker since 1989. Our researchers, traders and engineers work as one team on systems we build ourselves, trading across global markets.",
         "source_url": "https://news.ycombinator.com/item?id=50352150",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -112496,10 +112791,10 @@
         "value": "https://www.linkedin.com/company/imc-trading",
         "source_url": "https://www.imc.com",
         "evidence": "",
-        "run_id": "20261107T124044Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-07T12:44:09+00:00",
-        "last_seen": "2026-11-07T12:44:09+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -112869,10 +113164,24 @@
         "https://bikky.com/",
         "https://bikky.com/about-us"
       ],
-      "enriched_at": "2026-11-05T14:20:02+00:00",
+      "enriched_at": "2026-11-22T16:10:09+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": ""
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
+      "site_tech": [
+        {
+          "name": "Webflow",
+          "category": "cms"
+        },
+        {
+          "name": "HubSpot",
+          "category": "marketing"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        }
+      ]
     },
     "signals": [
       {
@@ -112915,10 +113224,10 @@
         "value": "https://bikky.com",
         "source_url": "https://bikky.com",
         "evidence": "",
-        "run_id": "20261105T141727Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-05T14:20:43+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -112929,10 +113238,10 @@
         "value": "At Bikky, we unify POS, online ordering, payments, and loyalty data to help multi-unit restaurant brands understand their customers and make better business decisions.",
         "source_url": "https://bikky.com",
         "evidence": "",
-        "run_id": "20261105T141727Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-05T14:20:43+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 3,
         "confidence": 0.4
       },
       {
@@ -112943,10 +113252,10 @@
         "value": "https://www.linkedin.com/company/bikky-inc",
         "source_url": "https://bikky.com",
         "evidence": "",
-        "run_id": "20261105T141727Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-05T14:20:43+00:00",
-        "seen_count": 2,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 3,
         "confidence": 1.0
       }
     ],
@@ -113073,10 +113382,20 @@
         "https://www.all-clad.com/",
         "https://www.all-clad.com/about-us"
       ],
-      "enriched_at": "2026-11-04T14:02:14+00:00",
+      "enriched_at": "2026-11-22T16:10:14+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": ""
+      "attempts": 1,
+      "last_attempt": "2026-11-22T16:09:08+00:00",
+      "site_tech": [
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Hotjar",
+          "category": "analytics"
+        }
+      ]
     },
     "signals": [
       {
@@ -113119,10 +113438,10 @@
         "value": "https://www.all-clad.com",
         "source_url": "https://news.ycombinator.com/item?id=50353098",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -113133,10 +113452,10 @@
         "value": "Clad is an AI-native platform for utility construction. We help contractors bill accurately, track their work, and automate their operations.",
         "source_url": "https://news.ycombinator.com/item?id=50353098",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -113147,10 +113466,10 @@
         "value": "https://x.com/allclad",
         "source_url": "https://www.all-clad.com",
         "evidence": "",
-        "run_id": "20261104T135833Z",
+        "run_id": "backfill-2026-11-22",
         "first_seen": "2026-11-04T14:02:27+00:00",
-        "last_seen": "2026-11-04T14:02:27+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-22T16:09:08+00:00",
+        "seen_count": 2,
         "confidence": 1.0
       }
     ],
@@ -113212,7 +113531,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (18d ago): Software Engineer",
+        "text": "Hiring (19d ago): Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50353098"
       }
     ],
@@ -114279,7 +114598,7 @@
       "reasons": [
         "lead score 23",
         "signal strength 3.1/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "weak fit or too little data"
       ],
       "next_step": "Skip unless it resurfaces",
@@ -114433,7 +114752,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50343048"
       },
       {
@@ -115630,7 +115949,7 @@
       "reasons": [
         "lead score 21",
         "signal strength 6.6/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -115723,7 +116042,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50461075"
       },
       {
@@ -116238,7 +116557,7 @@
       "reasons": [
         "lead score 21",
         "signal strength 4.0/10: hiring",
-        "found 12 day(s) ago (warm)",
+        "found 13 day(s) ago (warm)",
         "weak fit or too little data"
       ],
       "next_step": "Skip unless it resurfaces",
@@ -116321,7 +116640,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50343534"
       },
       {
@@ -117169,7 +117488,7 @@
       "reasons": [
         "lead score 15",
         "signal strength 4.0/10: hiring",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "weak fit or too little data"
       ],
       "next_step": "Skip unless it resurfaces",
@@ -117246,7 +117565,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "text": "Posted on Hacker News 1d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50340134"
       },
       {
@@ -117349,7 +117668,7 @@
       "reasons": [
         "lead score 15",
         "signal strength 4.0/10: hiring",
-        "found 5 day(s) ago (hot)",
+        "found 6 day(s) ago (hot)",
         "weak fit or too little data"
       ],
       "next_step": "Skip unless it resurfaces",
@@ -117427,7 +117746,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 5d ago (hiring or launch)",
+        "text": "Posted on Hacker News 6d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50340287"
       },
       {
@@ -118183,7 +118502,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (8d ago): Senior Full Stack Engineer (Frontend-Leaning)",
+        "text": "Hiring (9d ago): Senior Full Stack Engineer (Frontend-Leaning)",
         "source_url": "https://news.ycombinator.com/item?id=50484305"
       }
     ],
@@ -118847,7 +119166,7 @@
       "reasons": [
         "lead score 15",
         "signal strength 6.6/10: hiring",
-        "found 9 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -118925,12 +119244,12 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 9d ago (hiring or launch)",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50454490"
       },
       {
         "signal": "hiring",
-        "text": "Hiring (10d ago): Software Engineer, Backend Engineer",
+        "text": "Hiring (11d ago): Software Engineer, Backend Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50454490"
       }
     ],
@@ -120106,7 +120425,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (18d ago): Forward Deployed Engineer",
+        "text": "Hiring (19d ago): Forward Deployed Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50353641"
       }
     ],
@@ -120297,7 +120616,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (18d ago): Search Experience Manager",
+        "text": "Hiring (19d ago): Search Experience Manager",
         "source_url": "https://news.ycombinator.com/item?id=50353464"
       }
     ],
@@ -120521,7 +120840,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (18d ago): OpenBao Consultant, Developer",
+        "text": "Hiring (19d ago): OpenBao Consultant, Developer",
         "source_url": "https://news.ycombinator.com/item?id=50353340"
       }
     ],

@@ -456,7 +456,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 72
+      "score": 87
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -1937,6 +1937,16 @@
       "links": {}
     },
     {
+      "id": "mark chaffey",
+      "label": "Mark Chaffey",
+      "type": "person",
+      "degree": 2,
+      "role": "Co-Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/mchaffey/"
+      }
+    },
+    {
       "id": "spacex",
       "label": "SpaceX",
       "type": "org",
@@ -2137,6 +2147,12 @@
     {
       "id": "rre",
       "label": "RRE",
+      "type": "org",
+      "degree": 2
+    },
+    {
+      "id": "hackajob",
+      "label": "hackajob",
       "type": "org",
       "degree": 2
     },
@@ -6145,30 +6161,6 @@
       }
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "matt angle",
       "label": "Matt Angle",
       "type": "person",
@@ -6253,14 +6245,38 @@
       "links": {}
     },
     {
-      "id": "mark chaffey",
-      "label": "Mark Chaffey",
+      "id": "vlad iacob",
+      "label": "Vlad Iacob",
       "type": "person",
       "degree": 1,
-      "role": "Co-Founder & CEO",
+      "role": "CTO",
       "links": {
-        "linkedin": "https://www.linkedin.com/in/mchaffey/"
+        "linkedin": "https://www.linkedin.com/in/vlad-george-iacob-88a80459/"
       }
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
     },
     {
       "id": "endgrate",
@@ -7871,18 +7887,6 @@
       "degree": 1
     },
     {
-      "id": "beenext ventures",
-      "label": "Beenext Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lotus",
-      "label": "Lotus",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "samaipata",
       "label": "Samaipata",
       "type": "org",
@@ -7915,6 +7919,18 @@
     {
       "id": "archer from hackajob",
       "label": "Archer from hackajob",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "beenext ventures",
+      "label": "Beenext Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
       "type": "org",
       "degree": 1
     },
@@ -7964,14 +7980,6 @@
       "type": "startup",
       "degree": 0,
       "website": "https://n26.com",
-      "score": 25
-    },
-    {
-      "id": "imc trading",
-      "label": "IMC Trading",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.imc.com",
       "score": 25
     },
     {
@@ -8039,14 +8047,6 @@
       "score": 15
     },
     {
-      "id": "bikky",
-      "label": "Bikky",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://bikky.com",
-      "score": 25
-    },
-    {
       "id": "cocient",
       "label": "Cocient",
       "type": "startup",
@@ -8087,14 +8087,6 @@
       "score": 15
     },
     {
-      "id": "clad",
-      "label": "Clad",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.all-clad.com",
-      "score": 25
-    },
-    {
       "id": "eggai",
       "label": "EggAI",
       "type": "startup",
@@ -8125,22 +8117,6 @@
       "degree": 0,
       "website": "",
       "score": 15
-    },
-    {
-      "id": "vivral",
-      "label": "Vivral",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://vivral.app",
-      "score": 25
-    },
-    {
-      "id": "opentrain ai",
-      "label": "OpenTrain AI",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://app.opentrain.ai",
-      "score": 25
     },
     {
       "id": "eleshop",
@@ -8181,14 +8157,6 @@
       "degree": 0,
       "website": "https://www.mechanize.work",
       "score": 49
-    },
-    {
-      "id": "datadog",
-      "label": "Datadog",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://bitly.com",
-      "score": 25
     },
     {
       "id": "v3deo inc.",
@@ -8247,14 +8215,6 @@
       "score": 29
     },
     {
-      "id": "odin",
-      "label": "Odin",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://odinflashtool.org",
-      "score": 25
-    },
-    {
       "id": "creativelens",
       "label": "CreativeLens",
       "type": "startup",
@@ -8293,14 +8253,6 @@
       "degree": 0,
       "website": "",
       "score": 15
-    },
-    {
-      "id": "evaboot",
-      "label": "Evaboot",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://evaboot.com",
-      "score": 25
     },
     {
       "id": "eventfirst",
@@ -9036,7 +8988,71 @@
       "type": "startup",
       "degree": 0,
       "website": "https://hackajob.com",
-      "score": 45
+      "score": 65
+    },
+    {
+      "id": "evaboot",
+      "label": "Evaboot",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://evaboot.com",
+      "score": 25
+    },
+    {
+      "id": "odin",
+      "label": "Odin",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://odinflashtool.org",
+      "score": 25
+    },
+    {
+      "id": "datadog",
+      "label": "Datadog",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.datadoghq.com",
+      "score": 54
+    },
+    {
+      "id": "opentrain ai",
+      "label": "OpenTrain AI",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://app.opentrain.ai",
+      "score": 25
+    },
+    {
+      "id": "vivral",
+      "label": "Vivral",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://vivral.app",
+      "score": 25
+    },
+    {
+      "id": "imc trading",
+      "label": "IMC Trading",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.imc.com",
+      "score": 25
+    },
+    {
+      "id": "bikky",
+      "label": "Bikky",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://bikky.com",
+      "score": 25
+    },
+    {
+      "id": "clad",
+      "label": "Clad",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.all-clad.com",
+      "score": 25
     },
     {
       "id": "kevin hartz",
@@ -11340,13 +11356,13 @@
       "links": {}
     },
     {
-      "id": "vlad iacob",
-      "label": "Vlad Iacob",
+      "id": "alexis lê-quôc",
+      "label": "Alexis Lê-Quôc",
       "type": "person",
       "degree": 0,
-      "role": "CTO",
+      "role": "",
       "links": {
-        "linkedin": "https://www.linkedin.com/in/vlad-george-iacob-88a80459/"
+        "linkedin": "https://www.linkedin.com/in/alexislequoc"
       }
     }
   ],
@@ -22866,132 +22882,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-21",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-21T16:03:07+00:00"
-        }
-      ]
-    },
-    {
       "source": "matt angle",
       "target": "paradromics",
       "rel": "founded",
@@ -23170,6 +23060,160 @@
           "run_id": "backfill-2026-11-22",
           "first_seen": "2026-11-22T14:19:22+00:00",
           "last_seen": "2026-11-22T14:19:22+00:00"
+        }
+      ]
+    },
+    {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "mark chaffey",
+      "target": "hackajob",
+      "rel": "founded",
+      "evidence": "Mark Chaffey\nCo-Founder & CEO",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-11-22T16:09:08+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vlad iacob",
+      "target": "hackajob",
+      "rel": "works_at",
+      "evidence": "Vlad Iacob\nCTO",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-11-22T16:09:08+00:00",
+          "last_seen": "2026-11-22T16:09:08+00:00"
         }
       ]
     }
