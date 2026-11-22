@@ -1,49 +1,61 @@
 {
-  "generated_at": "2026-11-21T14:26:52+00:00",
+  "generated_at": "2026-11-22T14:19:20+00:00",
   "findings": [
     {
-      "company_name": "Rise Automation",
-      "core_product": "An AI‑powered software coordination layer that helps custom millwork, cabinetry, and precast concrete factories deploy robots to automate parts of the homebuilding process.",
+      "company_name": "Archer",
+      "core_product": "An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
       "tech_stack": [],
-      "likely_bottleneck": "Scaling the AI‑driven coordination layer to reliably orchestrate heterogeneous robot fleets across diverse shop floor layouts.",
-      "value_prop_pitch": "Hey Craig, you can eliminate the orchestration bottleneck by building a Next.js front‑end that surfaces real‑time robot status and uses vector semantic search to instantly match new job orders with the optimal robot configuration. This gives your factories sub‑second scheduling decisions while keeping the UI fast and developer‑friendly.",
+      "likely_bottleneck": "Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
+      "value_prop_pitch": "We can refactor your candidate matching service with Next.js for a fast, SEO‑friendly UI and integrate a vector semantic search layer to instantly surface the most relevant profiles. This will cut latency, reduce engineering load, and let your team focus on building higher‑value recruiting features.",
       "is_relevant": true,
-      "funding_stage": "pre‑seed",
-      "funding_amount": "CAD $2.4 M",
-      "hq": "Montréal, Canada",
-      "website": "https://www.riseautomation.ca",
-      "source_url": "https://betakit.com/from-olympic-figure-skater-to-entrepreneur-sportlogiqs-craig-buntin-is-back-to-help-automate-homebuilding-with-rise/",
-      "discovered_at": "2026-11-21T14:25:31+00:00",
+      "funding_stage": "Series A",
+      "funding_amount": "€9.1 million",
+      "hq": "London, UK and New York, USA",
+      "website": "https://hackajob.com",
+      "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+      "discovered_at": "2026-11-22T14:17:56+00:00",
       "source": "rss",
-      "score": 76,
+      "score": 45,
       "gaps": [
         "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
         "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.riseautomation.ca",
+        "website": "https://hackajob.com",
         "emails": [],
         "phones": [],
-        "socials": {},
-        "contact_page": "https://www.riseautomation.ca/contact/",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.riseautomation.ca/",
-          "https://www.riseautomation.ca/contact/"
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/meet-archer",
+          "twitter": "https://x.com/meet_archer_hq"
+        },
+        "contact_page": "https://hackajob.com/contact-us",
+        "product_access": [
+          {
+            "label": "Get started",
+            "url": "https://hackajob.com/talent/sign-up"
+          }
         ],
-        "enriched_at": "2026-11-21T14:26:17+00:00",
+        "pages_crawled": [
+          "https://hackajob.com/",
+          "https://hackajob.com/about-us",
+          "https://hackajob.com/contact-us"
+        ],
+        "enriched_at": "2026-11-22T14:18:41+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Next.js",
+            "name": "Astro",
             "category": "framework"
           },
           {
-            "name": "React",
-            "category": "framework"
+            "name": "PostHog",
+            "category": "analytics"
           }
         ]
       },
@@ -51,121 +63,69 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://betakit.com/from-olympic-figure-skater-to-entrepreneur-sportlogiqs-craig-buntin-is-back-to-help-automate-homebuilding-with-rise/",
+          "url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Wed, 18 Nov 2026 11:00:00 +0000",
-          "seen_at": "2026-11-21T14:26:15+00:00"
+          "posted_at": "Fri, 20 Nov 2026 12:41:53 +0000",
+          "seen_at": "2026-11-22T14:18:37+00:00"
         }
       ],
-      "people": [
-        {
-          "name": "Craig Buntin",
-          "role": "Co‑founder & CEO",
-          "org": "Rise Automation",
-          "evidence": "co‑founder and CEO of Rise",
-          "linkedin": "https://www.linkedin.com/in/craigbuntin",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        },
-        {
-          "name": "Cycle Momentum",
-          "role": "Investor",
-          "org": "",
-          "evidence": "Cycle Momentum",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Craig Buntin",
-          "rel": "founded",
-          "dst": "Rise Automation",
-          "evidence": "co‑founder and CEO of Rise"
-        },
-        {
-          "src": "BDC Capital – Industrial Innovation Venture Fund",
-          "rel": "invested_in",
-          "dst": "Rise Automation",
-          "evidence": "BDC Capital’s Industrial Innovation Venture Fund"
-        },
-        {
-          "src": "Developer Capital",
-          "rel": "invested_in",
-          "dst": "Rise Automation",
-          "evidence": "Developer Capital"
-        },
-        {
-          "src": "Cycle Momentum",
-          "rel": "invested_in",
-          "dst": "Rise Automation",
-          "evidence": "Cycle Momentum"
-        }
-      ]
+      "people": [],
+      "edges": []
     },
     {
-      "company_name": "Dreamteam",
-      "core_product": "An AI‑native CRM that automatically captures context from emails, meetings and other interactions and provides AI agents for follow‑ups, forecasting and workflow automation.",
+      "company_name": "Wilco",
+      "core_product": "AI voice and messaging agents that call, message and follow up with healthcare patients via phone and WhatsApp throughout their care journey",
       "tech_stack": [],
-      "likely_bottleneck": "Scaling the AI‑driven data ingestion and real‑time semantic search across heterogeneous customer communication sources.",
-      "value_prop_pitch": "We can build a Next.js front‑end that streams vector‑based semantic search results directly from your AI pipeline, giving sales reps instant, context‑rich insights without latency. Coupled with server‑less functions for on‑the‑fly embedding, this eliminates the scaling choke point in your data‑capture layer.",
+      "likely_bottleneck": "Integrating and scaling AI agents with diverse clinic management software while maintaining low latency and high reliability",
+      "value_prop_pitch": "I can help you reduce integration latency by building a Next.js front‑end that talks to your AI backend via a vector‑semantic search layer, instantly matching patient intents to the right workflow. This will let your engineers focus on core clinical logic while we handle scalable routing and UI.",
       "is_relevant": true,
-      "funding_stage": "seed/Series A",
-      "funding_amount": "$53M",
-      "hq": "San Francisco",
-      "website": "https://www.dreamteam.ai",
-      "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
-      "discovered_at": "2026-11-21T14:25:31+00:00",
+      "funding_stage": "seed",
+      "funding_amount": "€2.5 million",
+      "hq": "",
+      "website": "https://wilcoworld.net",
+      "source_url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+      "discovered_at": "2026-11-22T14:17:56+00:00",
       "source": "rss",
-      "score": 92,
+      "score": 79,
       "gaps": [
+        "location",
         "tech stack",
+        "people profiles",
         "phone"
       ],
       "contact": {
-        "website": "https://www.dreamteam.ai",
+        "website": "https://wilcoworld.net",
         "emails": [
           {
-            "value": "gethelp@dreamteam.ai",
+            "value": "hq@wilcoworld.net",
             "kind": "person",
-            "source_url": "https://www.dreamteam.ai/contact"
+            "source_url": "https://wilcoworld.net/contact/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/dreamteamcrm",
-          "twitter": "https://x.com/DreamteamAICRM"
+          "twitter": "https://x.com/wilco"
         },
-        "contact_page": "https://www.dreamteam.ai/contact",
+        "contact_page": "https://wilcoworld.net/contact/",
         "product_access": [
           {
-            "label": "Pricing",
-            "url": "https://www.dreamteam.ai/pricing"
+            "label": "sign up for the mailing list",
+            "url": "https://solidsoundfestival.com/"
           }
         ],
         "pages_crawled": [
-          "https://www.dreamteam.ai/",
-          "https://www.dreamteam.ai/about",
-          "https://www.dreamteam.ai/contact"
+          "https://wilcoworld.net/",
+          "https://wilcoworld.net/contact/"
         ],
-        "enriched_at": "2026-11-21T14:26:27+00:00",
+        "enriched_at": "2026-11-22T14:19:01+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Webflow",
+            "name": "WordPress",
             "category": "cms"
-          },
-          {
-            "name": "HubSpot",
-            "category": "marketing"
           },
           {
             "name": "Google Analytics",
@@ -181,126 +141,103 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+          "url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Mon, 16 Nov 2026 12:30:00 +0000",
-          "seen_at": "2026-11-21T14:26:15+00:00"
+          "posted_at": "Fri, 20 Nov 2026 09:56:25 +0000",
+          "seen_at": "2026-11-22T14:18:37+00:00"
         }
       ],
       "people": [
         {
-          "name": "Anand Venkatraman",
-          "role": "Co‑founder & CEO",
-          "org": "Dreamteam",
-          "evidence": "Dreamteam co‑founder and CEO Anand Venkatraman ... told TechCrunch",
+          "name": "Francisco Hernández Parga",
+          "role": "Founder and CEO",
+          "org": "Wilco",
+          "evidence": "Francisco Hernández Parga , founder and CEO of Wilco, told Forbes España",
           "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
-        },
-        {
-          "name": "Senthil Kanthaswamy",
-          "role": "Co‑founder",
-          "org": "Dreamteam",
-          "evidence": "co‑founder ... Senthil Kanthaswamy (pictured above, center)",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Ramesh Parthasarathy",
-          "role": "Co‑founder",
-          "org": "Dreamteam",
-          "evidence": "Ramesh Parthasarathy (pictured above, left) ... previously worked on AI and platform engineering at Freshworks",
-          "linkedin": "https://www.linkedin.com/in/ramesh-parthasarathy-4a469617",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.dreamteam.ai/about"
         }
       ],
       "edges": [
         {
-          "src": "Anand Venkatraman",
+          "src": "Francisco Hernández Parga",
           "rel": "founded",
-          "dst": "Dreamteam",
-          "evidence": "Dreamteam co‑founder and CEO Anand Venkatraman ... told TechCrunch"
+          "dst": "Wilco",
+          "evidence": "Francisco Hernández Parga , founder and CEO of Wilco"
         },
         {
-          "src": "Senthil Kanthaswamy",
-          "rel": "cofounded",
-          "dst": "Dreamteam",
-          "evidence": "co‑founder ... Senthil Kanthaswamy"
-        },
-        {
-          "src": "Ramesh Parthasarathy",
-          "rel": "cofounded",
-          "dst": "Dreamteam",
-          "evidence": "Ramesh Parthasarathy ... previously worked on AI and platform engineering at Freshworks"
-        },
-        {
-          "src": "Together Fund",
+          "src": "Samaipata",
           "rel": "invested_in",
-          "dst": "Dreamteam",
-          "evidence": "seed ... led by Together Fund"
+          "dst": "Wilco",
+          "evidence": "The round was led by Samaipata, the European venture capital fund"
         },
         {
-          "src": "Accel",
+          "src": "ABAC Nest Ventures",
           "rel": "invested_in",
-          "dst": "Dreamteam",
-          "evidence": "Series A rounds, led by ... Accel"
-        },
-        {
-          "src": "Premji Invest",
-          "rel": "invested_in",
-          "dst": "Dreamteam",
-          "evidence": "participation from Premji Invest"
+          "dst": "Wilco",
+          "evidence": "ABAC Nest Ventures, the venture arm of Abac Capital, joined the round"
         }
       ]
     },
     {
-      "company_name": "Mousecat",
-      "core_product": "Morphy, a fraud prediction model that outperforms existing solutions like Jev and Clef by 7‑15% on proprietary transaction data.",
-      "tech_stack": [],
-      "likely_bottleneck": "building and curating high‑quality, labeled fraud datasets for model training and evaluation",
-      "value_prop_pitch": "You could accelerate dataset creation by building a Next.js portal that lets analysts tag transactions and instantly query similar cases with vector semantic search. This would let your team surface edge cases faster and keep the model improving without costly manual data pipelines.",
+      "company_name": "Hyper Elements",
+      "core_product": "A conversational AI tool that tests, diagnoses, and fixes email rendering issues across Outlook, Gmail, Yahoo, and Apple Mail using local preview models.",
+      "tech_stack": [
+        "React",
+        "MJML",
+        "Node.js",
+        "local AI models"
+      ],
+      "likely_bottleneck": "Generating accurate, high‑fidelity email previews for many clients on the user’s machine can become CPU‑intensive and hard to scale as template complexity grows.",
+      "value_prop_pitch": "You could offload the preview generation to a Next.js serverless layer that caches rendered results and serves them instantly, eliminating the heavy client‑side compute. Then, a vector‑based semantic search over the rendered DOM would let Claude pinpoint layout issues instantly, reducing the fix‑loop latency dramatically.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://www.mousecat.ai",
-      "source_url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
-      "discovered_at": "2026-11-21T14:25:31+00:00",
+      "website": "https://unlayer.com",
+      "source_url": "https://www.ycombinator.com/launches/Xjw-hyper-elements-free-email-testing-for-agents",
+      "discovered_at": "2026-11-22T14:17:56+00:00",
       "source": "yc",
-      "score": 75,
+      "score": 52,
       "gaps": [
         "location",
         "funding amount",
-        "tech stack",
+        "people profiles",
+        "investors",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.mousecat.ai",
-        "emails": [
+        "website": "https://unlayer.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/unlayer"
+        },
+        "contact_page": "https://unlayer.com/contact",
+        "product_access": [
           {
-            "value": "hello@mousecat.ai",
-            "kind": "general",
-            "source_url": "https://www.mousecat.ai/"
+            "label": "Pricing",
+            "url": "https://unlayer.com/pricing"
+          },
+          {
+            "label": "Get Started",
+            "url": "https://accounts.unlayer.com/signup/console"
+          },
+          {
+            "label": "Documentation",
+            "url": "https://docs.unlayer.com/"
           }
         ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
         "pages_crawled": [
-          "https://www.mousecat.ai/",
-          "https://www.mousecat.ai/company/about"
+          "https://unlayer.com/",
+          "https://unlayer.com/about",
+          "https://unlayer.com/contact"
         ],
-        "enriched_at": "2026-11-21T14:26:37+00:00",
+        "enriched_at": "2026-11-22T14:19:08+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -310,12 +247,16 @@
             "category": "framework"
           },
           {
-            "name": "Google Analytics",
-            "category": "analytics"
+            "name": "HubSpot",
+            "category": "marketing"
           },
           {
-            "name": "Vercel",
-            "category": "hosting"
+            "name": "Intercom",
+            "category": "support"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
           },
           {
             "name": "React",
@@ -327,321 +268,155 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Xpo-morphy-a-system-one-model-that-outperforms-jev-clef-etc-on-fraud-prediction",
+          "url": "https://www.ycombinator.com/launches/Xjw-hyper-elements-free-email-testing-for-agents",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-21T14:26:15+00:00"
+          "seen_at": "2026-11-22T14:18:37+00:00"
         }
       ],
       "people": [
         {
-          "name": "Nicholas Aldridge",
+          "name": "Adeel Raza",
           "role": "Founder",
-          "org": "Mousecat",
-          "evidence": "Nicholas Aldridge",
-          "linkedin": "https://www.linkedin.com/in/nicholas-aldridge/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Joseph McAllister",
-          "role": "Co-Founder & CTO",
-          "org": "MouseCat",
-          "evidence": "Joseph McAllister is the Co-Founder and CTO of MouseCat",
-          "linkedin": "https://www.linkedin.com/in/joseph-mcallister/",
+          "org": "Hyper Elements",
+          "evidence": "Hey YC! We're building Hyper Elements, and today we’re turning one of email development’s oldest headaches into a conversation.",
+          "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
           "link_source": ""
         }
       ],
-      "edges": [
-        {
-          "src": "Nicholas Aldridge",
-          "rel": "founded",
-          "dst": "Mousecat",
-          "evidence": "Nicholas Aldridge"
-        },
-        {
-          "src": "Joseph McAllister",
-          "rel": "founded",
-          "dst": "MouseCat",
-          "evidence": "Joseph McAllister is the Co-Founder and CTO of MouseCat"
-        },
-        {
-          "src": "Y Combinator",
-          "rel": "invested_in",
-          "dst": "MouseCat",
-          "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic"
-        },
-        {
-          "src": "Oak HC/FT",
-          "rel": "invested_in",
-          "dst": "MouseCat",
-          "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic"
-        },
-        {
-          "src": "Stripe",
-          "rel": "invested_in",
-          "dst": "MouseCat",
-          "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic"
-        },
-        {
-          "src": "Plaid",
-          "rel": "invested_in",
-          "dst": "MouseCat",
-          "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic"
-        },
-        {
-          "src": "Databricks",
-          "rel": "invested_in",
-          "dst": "MouseCat",
-          "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic"
-        },
-        {
-          "src": "AWS",
-          "rel": "invested_in",
-          "dst": "MouseCat",
-          "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic"
-        },
-        {
-          "src": "Anthropic",
-          "rel": "invested_in",
-          "dst": "MouseCat",
-          "evidence": "raised over $10M in seed funding from Y Combinator, Oak HC/FT, and executives from Stripe, Plaid, Databricks, AWS, and Anthropic"
-        }
-      ]
+      "edges": []
     },
     {
-      "company_name": "River",
-      "core_product": "An AI assistant that works across desktop apps, browser, files, and phone to automate tasks like expense reporting and presentation updates.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling real‑time AI interactions across heterogeneous devices and maintaining low‑latency context retrieval.",
-      "value_prop_pitch": "You could wrap River's UI in a Next.js front‑end to serve a unified, server‑side rendered experience that caches user context efficiently. Then add a vector‑based semantic search layer so the AI can retrieve relevant documents instantly, eliminating latency spikes as you scale across devices.",
+      "company_name": "Resin Technologies",
+      "core_product": "AI‑enabled electronics design and manufacturing service that delivers custom printed circuit boards quickly from a spec or sketch.",
+      "tech_stack": [
+        "AI design software"
+      ],
+      "likely_bottleneck": "scaling the AI‑driven PCB design pipeline to handle increasingly complex boards without slowing turnaround time",
+      "value_prop_pitch": "I can build a Next.js front‑end that lets your engineers query design documents with vector semantic search, cutting down time spent hunting errors. This will streamline your AI tooling workflow and let you scale faster.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://meetriver.com",
-      "source_url": "https://www.ycombinator.com/launches/Xon-river-ai-that-works-everywhere-you-do",
-      "discovered_at": "2026-11-21T14:25:31+00:00",
+      "website": "https://resintechnologies.com",
+      "source_url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
+      "discovered_at": "2026-11-22T14:17:56+00:00",
       "source": "yc",
-      "score": 66,
+      "score": 67,
       "gaps": [
         "location",
         "funding amount",
-        "tech stack",
-        "investors"
-      ],
-      "contact": {
-        "website": "https://meetriver.com",
-        "emails": [
-          {
-            "value": "partners@rivereditor.com",
-            "kind": "sales",
-            "source_url": "https://meetriver.com/contact"
-          },
-          {
-            "value": "sales@rivereditor.com",
-            "kind": "sales",
-            "source_url": "https://meetriver.com/contact"
-          },
-          {
-            "value": "press@rivereditor.com",
-            "kind": "press",
-            "source_url": "https://meetriver.com/contact"
-          },
-          {
-            "value": "support@meetriver.com",
-            "kind": "support",
-            "source_url": "https://meetriver.com/contact"
-          },
-          {
-            "value": "chandler@rivereditor.com",
-            "kind": "person",
-            "source_url": "https://meetriver.com/contact"
-          }
-        ],
-        "phones": [
-          {
-            "value": "+19132042050",
-            "kind": "main",
-            "source_url": "https://meetriver.com/"
-          }
-        ],
-        "socials": {
-          "twitter": "https://x.com/riverworkspace",
-          "linkedin": "https://www.linkedin.com/company/rivereditor",
-          "github": "https://github.com/river-labs-inc"
-        },
-        "contact_page": "https://meetriver.com/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://meetriver.com/pricing"
-          }
-        ],
-        "pages_crawled": [
-          "https://meetriver.com/",
-          "https://meetriver.com/contact",
-          "https://meetriver.com/about"
-        ],
-        "enriched_at": "2026-11-21T14:26:44+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Next.js",
-            "category": "framework"
-          },
-          {
-            "name": "React",
-            "category": "framework"
-          },
-          {
-            "name": "PostHog",
-            "category": "analytics"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          },
-          {
-            "name": "Stripe",
-            "category": "payments"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Xon-river-ai-that-works-everywhere-you-do",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-21T14:26:15+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Chandler Supple",
-          "role": "Founder",
-          "org": "River",
-          "evidence": "**Chandler Supple**",
-          "linkedin": "https://www.linkedin.com/in/chandlersupple",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "search"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Chandler Supple",
-          "rel": "founded",
-          "dst": "River",
-          "evidence": "**Chandler Supple**"
-        }
-      ]
-    },
-    {
-      "company_name": "Stratirus",
-      "core_product": "Our optional take-home is a broken Ubuntu server: a service that won't stay up, a nightly report that hasn't gone out in days, and a disk that keeps filling. Fix it, write a script that heals a fresh box, and build a small read-only MCP too",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "",
-      "source_url": "https://news.ycombinator.com/item?id=50340134",
-      "discovered_at": "2026-11-21T14:26:15+00:00",
-      "source": "hiring",
-      "score": 27,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
         "people profiles",
         "investors",
         "phone"
       ],
       "contact": {
-        "website": "",
+        "website": "https://resintechnologies.com",
         "emails": [
           {
-            "value": "hiring@stratirus.com",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50340134"
+            "value": "hello@resintechnologies.com",
+            "kind": "general",
+            "source_url": "https://resintechnologies.com/"
           }
         ],
         "phones": [],
         "socials": {},
-        "contact_page": "",
+        "contact_page": "https://resintechnologies.com/contact",
         "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-21T14:26:52+00:00",
-        "status": "no_website",
+        "pages_crawled": [
+          "https://resintechnologies.com/",
+          "https://resintechnologies.com/about",
+          "https://resintechnologies.com/contact",
+          "https://resintechnologies.com/team"
+        ],
+        "enriched_at": "2026-11-22T14:19:14+00:00",
+        "status": "ok",
         "attempts": 0,
         "last_attempt": "",
-        "site_tech": []
+        "site_tech": [
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          }
+        ]
       },
       "signals": [
         {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50340134",
-          "roles": [
-            "AI Developer",
-            "Linux Admin (junior to mid)"
-          ],
-          "role_kinds": [
-            "eng",
-            "other"
-          ],
-          "posted_at": "2026-11-02T17:19:04Z",
-          "seen_at": "2026-11-21T14:26:15+00:00"
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-22T14:18:37+00:00"
         }
       ],
-      "people": [],
-      "edges": []
+      "people": [
+        {
+          "name": "Anmol Jawandha",
+          "role": "CEO",
+          "org": "Resin Technologies",
+          "evidence": "Hey everyone! We're Anmol and Koosha, the founders of Resin Technologies.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Anmol Jawandha",
+          "rel": "founded",
+          "dst": "Resin Technologies",
+          "evidence": "Hey everyone! We're Anmol and Koosha, the founders of Resin Technologies."
+        },
+        {
+          "src": "Anmol Jawandha",
+          "rel": "previously_at",
+          "dst": "LassieAI",
+          "evidence": "was the first engineer at LassieAI"
+        },
+        {
+          "src": "Anmol Jawandha",
+          "rel": "previously_at",
+          "dst": "Borealis AI",
+          "evidence": "built ML systems at Borealis AI"
+        },
+        {
+          "src": "Anmol Jawandha",
+          "rel": "previously_at",
+          "dst": "UBC",
+          "evidence": "worked on robotics research at UBC"
+        }
+      ]
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Rise Automation",
-        "score": 76,
+        "company": "Archer",
+        "score": 45,
         "source": "rss"
       },
       {
-        "company": "Dreamteam",
-        "score": 92,
+        "company": "Wilco",
+        "score": 79,
         "source": "rss"
       },
       {
-        "company": "Mousecat",
-        "score": 75,
+        "company": "Hyper Elements",
+        "score": 52,
         "source": "yc"
       },
       {
-        "company": "River",
-        "score": 66,
+        "company": "Resin Technologies",
+        "score": 67,
         "source": "yc"
-      },
-      {
-        "company": "Stratirus",
-        "score": 27,
-        "source": "hiring"
       }
     ],
     "updated": []

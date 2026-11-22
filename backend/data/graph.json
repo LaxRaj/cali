@@ -456,7 +456,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 87
+      "score": 72
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -793,6 +793,14 @@
       }
     },
     {
+      "id": "anmol jawandha",
+      "label": "Anmol Jawandha",
+      "type": "person",
+      "degree": 4,
+      "role": "CEO",
+      "links": {}
+    },
+    {
       "id": "amazon",
       "label": "Amazon",
       "type": "org",
@@ -945,6 +953,14 @@
       "degree": 3,
       "website": "https://www.heliosinc.ai",
       "score": 73
+    },
+    {
+      "id": "wilco",
+      "label": "Wilco",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://wilcoworld.net",
+      "score": 79
     },
     {
       "id": "vishnu",
@@ -2419,6 +2435,14 @@
       "degree": 1,
       "website": "https://meetriver.com",
       "score": 66
+    },
+    {
+      "id": "resin technologies",
+      "label": "Resin Technologies",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://resintechnologies.com",
+      "score": 67
     },
     {
       "id": "alex rosenberg",
@@ -6221,6 +6245,24 @@
       "links": {}
     },
     {
+      "id": "francisco hernández parga",
+      "label": "Francisco Hernández Parga",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder and CEO",
+      "links": {}
+    },
+    {
+      "id": "mark chaffey",
+      "label": "Mark Chaffey",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/mchaffey/"
+      }
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -7841,6 +7883,42 @@
       "degree": 1
     },
     {
+      "id": "samaipata",
+      "label": "Samaipata",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "abac nest ventures",
+      "label": "ABAC Nest Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lassieai",
+      "label": "LassieAI",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "borealis ai",
+      "label": "Borealis AI",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "ubc",
+      "label": "UBC",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "archer from hackajob",
+      "label": "Archer from hackajob",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "quantufai, inc",
       "label": "QuantufAi, Inc",
       "type": "startup",
@@ -8929,20 +9007,36 @@
       "score": 15
     },
     {
-      "id": "marker learning",
-      "label": "Marker Learning",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.markerlearning.com",
-      "score": 36
-    },
-    {
       "id": "new product",
       "label": "New Product",
       "type": "startup",
       "degree": 0,
       "website": "https://producthype.co",
       "score": 25
+    },
+    {
+      "id": "hyper elements",
+      "label": "Hyper Elements",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://unlayer.com",
+      "score": 52
+    },
+    {
+      "id": "marker learning",
+      "label": "Marker Learning",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.markerlearning.com",
+      "score": 21
+    },
+    {
+      "id": "archer",
+      "label": "Archer",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://hackajob.com",
+      "score": 45
     },
     {
       "id": "kevin hartz",
@@ -11236,6 +11330,24 @@
       "degree": 0,
       "role": "",
       "links": {}
+    },
+    {
+      "id": "adeel raza",
+      "label": "Adeel Raza",
+      "type": "person",
+      "degree": 0,
+      "role": "Founder",
+      "links": {}
+    },
+    {
+      "id": "vlad iacob",
+      "label": "Vlad Iacob",
+      "type": "person",
+      "degree": 0,
+      "role": "CTO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/vlad-george-iacob-88a80459/"
+      }
     }
   ],
   "edges": [
@@ -22946,6 +23058,118 @@
           "run_id": "backfill-2026-11-21",
           "first_seen": "2026-11-21T16:03:07+00:00",
           "last_seen": "2026-11-21T16:03:07+00:00"
+        }
+      ]
+    },
+    {
+      "source": "francisco hernández parga",
+      "target": "wilco",
+      "rel": "founded",
+      "evidence": "Francisco Hernández Parga , founder and CEO of Wilco",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+          "run_id": "20261122T141716Z",
+          "first_seen": "2026-11-22T14:19:20+00:00",
+          "last_seen": "2026-11-22T14:19:20+00:00"
+        }
+      ]
+    },
+    {
+      "source": "samaipata",
+      "target": "wilco",
+      "rel": "invested_in",
+      "evidence": "The round was led by Samaipata, the European venture capital fund",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+          "run_id": "20261122T141716Z",
+          "first_seen": "2026-11-22T14:19:20+00:00",
+          "last_seen": "2026-11-22T14:19:20+00:00"
+        }
+      ]
+    },
+    {
+      "source": "abac nest ventures",
+      "target": "wilco",
+      "rel": "invested_in",
+      "evidence": "ABAC Nest Ventures, the venture arm of Abac Capital, joined the round",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+          "run_id": "20261122T141716Z",
+          "first_seen": "2026-11-22T14:19:20+00:00",
+          "last_seen": "2026-11-22T14:19:20+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anmol jawandha",
+      "target": "resin technologies",
+      "rel": "founded",
+      "evidence": "Hey everyone! We're Anmol and Koosha, the founders of Resin Technologies.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
+          "run_id": "20261122T141716Z",
+          "first_seen": "2026-11-22T14:19:20+00:00",
+          "last_seen": "2026-11-22T14:19:20+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anmol jawandha",
+      "target": "lassieai",
+      "rel": "previously_at",
+      "evidence": "was the first engineer at LassieAI",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
+          "run_id": "20261122T141716Z",
+          "first_seen": "2026-11-22T14:19:20+00:00",
+          "last_seen": "2026-11-22T14:19:20+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anmol jawandha",
+      "target": "borealis ai",
+      "rel": "previously_at",
+      "evidence": "built ML systems at Borealis AI",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
+          "run_id": "20261122T141716Z",
+          "first_seen": "2026-11-22T14:19:20+00:00",
+          "last_seen": "2026-11-22T14:19:20+00:00"
+        }
+      ]
+    },
+    {
+      "source": "anmol jawandha",
+      "target": "ubc",
+      "rel": "previously_at",
+      "evidence": "worked on robotics research at UBC",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
+          "run_id": "20261122T141716Z",
+          "first_seen": "2026-11-22T14:19:20+00:00",
+          "last_seen": "2026-11-22T14:19:20+00:00"
+        }
+      ]
+    },
+    {
+      "source": "mark chaffey",
+      "target": "archer from hackajob",
+      "rel": "founded",
+      "evidence": "Co-Founder & CEO",
+      "sources": [
+        {
+          "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+          "run_id": "backfill-2026-11-22",
+          "first_seen": "2026-11-22T14:19:22+00:00",
+          "last_seen": "2026-11-22T14:19:22+00:00"
         }
       ]
     }
