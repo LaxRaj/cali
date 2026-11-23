@@ -1,138 +1,59 @@
 {
-  "generated_at": "2026-11-22T14:19:20+00:00",
+  "generated_at": "2026-11-23T17:42:14+00:00",
   "findings": [
     {
-      "company_name": "Archer",
-      "core_product": "An AI recruiting agent platform that matches candidates and employers, acting as an agent for both sides of the hiring process.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling AI inference and real‑time semantic search across millions of profiles while keeping latency low.",
-      "value_prop_pitch": "We can refactor your candidate matching service with Next.js for a fast, SEO‑friendly UI and integrate a vector semantic search layer to instantly surface the most relevant profiles. This will cut latency, reduce engineering load, and let your team focus on building higher‑value recruiting features.",
-      "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "€9.1 million",
-      "hq": "London, UK and New York, USA",
-      "website": "https://hackajob.com",
-      "source_url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-      "discovered_at": "2026-11-22T14:17:56+00:00",
-      "source": "rss",
-      "score": 45,
-      "gaps": [
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
+      "company_name": "coprod",
+      "core_product": "Modular hardware components and a real‑time EtherCAT control platform that standardises robotics integration.",
+      "tech_stack": [
+        "EtherCAT",
+        "C++",
+        "Python"
       ],
-      "contact": {
-        "website": "https://hackajob.com",
-        "emails": [],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/meet-archer",
-          "twitter": "https://x.com/meet_archer_hq"
-        },
-        "contact_page": "https://hackajob.com/contact-us",
-        "product_access": [
-          {
-            "label": "Get started",
-            "url": "https://hackajob.com/talent/sign-up"
-          }
-        ],
-        "pages_crawled": [
-          "https://hackajob.com/",
-          "https://hackajob.com/about-us",
-          "https://hackajob.com/contact-us"
-        ],
-        "enriched_at": "2026-11-22T14:18:41+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Astro",
-            "category": "framework"
-          },
-          {
-            "name": "PostHog",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Fri, 20 Nov 2026 12:41:53 +0000",
-          "seen_at": "2026-11-22T14:18:37+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Wilco",
-      "core_product": "AI voice and messaging agents that call, message and follow up with healthcare patients via phone and WhatsApp throughout their care journey",
-      "tech_stack": [],
-      "likely_bottleneck": "Integrating and scaling AI agents with diverse clinic management software while maintaining low latency and high reliability",
-      "value_prop_pitch": "I can help you reduce integration latency by building a Next.js front‑end that talks to your AI backend via a vector‑semantic search layer, instantly matching patient intents to the right workflow. This will let your engineers focus on core clinical logic while we handle scalable routing and UI.",
+      "likely_bottleneck": "Scaling hardware manufacturing and supply‑chain integration while maintaining real‑time performance.",
+      "value_prop_pitch": "I can build a Next.js dashboard that lets your engineers visualise component compatibility and generate semantic search queries over your datasheets, cutting integration time dramatically. Coupled with vector semantic search, you’ll instantly find the exact driver or firmware version you need, eliminating weeks of manual debugging.",
       "is_relevant": true,
-      "funding_stage": "seed",
-      "funding_amount": "€2.5 million",
-      "hq": "",
-      "website": "https://wilcoworld.net",
-      "source_url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
-      "discovered_at": "2026-11-22T14:17:56+00:00",
+      "funding_stage": "pre-Seed",
+      "funding_amount": "€5.45 million",
+      "hq": "Switzerland",
+      "website": "https://coprod.co",
+      "source_url": "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
+      "discovered_at": "2026-11-23T17:40:26+00:00",
       "source": "rss",
-      "score": 79,
+      "score": 87,
       "gaps": [
-        "location",
-        "tech stack",
         "people profiles",
         "phone"
       ],
       "contact": {
-        "website": "https://wilcoworld.net",
+        "website": "https://coprod.co",
         "emails": [
           {
-            "value": "hq@wilcoworld.net",
-            "kind": "person",
-            "source_url": "https://wilcoworld.net/contact/"
+            "value": "contact@coprod.ch",
+            "kind": "general",
+            "source_url": "https://coprod.co/"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/wilco"
+          "twitter": "https://x.com/coprod_Inc",
+          "linkedin": "https://www.linkedin.com/company/coprod-inc",
+          "github": "https://github.com/coprod-Inc"
         },
-        "contact_page": "https://wilcoworld.net/contact/",
-        "product_access": [
-          {
-            "label": "sign up for the mailing list",
-            "url": "https://solidsoundfestival.com/"
-          }
-        ],
+        "contact_page": "https://coprod.co/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://wilcoworld.net/",
-          "https://wilcoworld.net/contact/"
+          "https://coprod.co/",
+          "https://coprod.co/about",
+          "https://coprod.co/contact",
+          "https://coprod.co/team"
         ],
-        "enriched_at": "2026-11-22T14:19:01+00:00",
+        "enriched_at": "2026-11-23T17:41:22+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "WordPress",
-            "category": "cms"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          },
-          {
-            "name": "Cloudflare",
+            "name": "Vercel",
             "category": "hosting"
           }
         ]
@@ -141,19 +62,41 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+          "url": "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Fri, 20 Nov 2026 09:56:25 +0000",
-          "seen_at": "2026-11-22T14:18:37+00:00"
+          "posted_at": "Mon, 23 Nov 2026 09:01:18 +0000",
+          "seen_at": "2026-11-23T17:41:20+00:00"
         }
       ],
       "people": [
         {
-          "name": "Francisco Hernández Parga",
-          "role": "Founder and CEO",
-          "org": "Wilco",
-          "evidence": "Francisco Hernández Parga , founder and CEO of Wilco, told Forbes España",
+          "name": "Loïc Delineau",
+          "role": "CEO & Co‑founder",
+          "org": "coprod",
+          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Vincent Nguyen",
+          "role": "Co‑founder",
+          "org": "coprod",
+          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Matthias Schuller",
+          "role": "Co‑founder",
+          "org": "coprod",
+          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -163,43 +106,171 @@
       ],
       "edges": [
         {
-          "src": "Francisco Hernández Parga",
+          "src": "Loïc Delineau",
           "rel": "founded",
-          "dst": "Wilco",
-          "evidence": "Francisco Hernández Parga , founder and CEO of Wilco"
+          "dst": "coprod",
+          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller"
         },
         {
-          "src": "Samaipata",
-          "rel": "invested_in",
-          "dst": "Wilco",
-          "evidence": "The round was led by Samaipata, the European venture capital fund"
+          "src": "Vincent Nguyen",
+          "rel": "cofounded",
+          "dst": "coprod",
+          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller"
         },
         {
-          "src": "ABAC Nest Ventures",
+          "src": "Matthias Schuller",
+          "rel": "cofounded",
+          "dst": "coprod",
+          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller"
+        },
+        {
+          "src": "Founderful",
           "rel": "invested_in",
-          "dst": "Wilco",
-          "evidence": "ABAC Nest Ventures, the venture arm of Abac Capital, joined the round"
+          "dst": "coprod",
+          "evidence": "The round was co‑led by Founderful and PROTOTYPE"
+        },
+        {
+          "src": "PROTOTYPE",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "The round was co‑led by Founderful and PROTOTYPE"
+        },
+        {
+          "src": "General Catalyst",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "additional backing from General Catalyst"
+        },
+        {
+          "src": "Pace Ventures",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "additional backing from ... Pace Ventures"
+        },
+        {
+          "src": "Tiny Supercomputer Investment Company",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "additional backing from ... Tiny Supercomputer Investment Company"
+        },
+        {
+          "src": "Kima Ventures",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "additional backing from ... Kima Ventures"
+        },
+        {
+          "src": "SDAC",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "additional backing from ... SDAC"
+        },
+        {
+          "src": "Unruly Capital",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "additional backing from ... Unruly Capital"
+        },
+        {
+          "src": "Venturekick",
+          "rel": "invested_in",
+          "dst": "coprod",
+          "evidence": "additional backing from ... Venturekick"
         }
       ]
     },
     {
-      "company_name": "Hyper Elements",
-      "core_product": "A conversational AI tool that tests, diagnoses, and fixes email rendering issues across Outlook, Gmail, Yahoo, and Apple Mail using local preview models.",
+      "company_name": "Antinuous",
+      "core_product": "A platform that provides agents, high‑performance compute clusters, and simulation software to run research experiments 100× faster and 1,000× cheaper.",
       "tech_stack": [
-        "React",
-        "MJML",
-        "Node.js",
-        "local AI models"
+        "GPU clusters",
+        "CPU clusters",
+        "agent orchestration"
       ],
-      "likely_bottleneck": "Generating accurate, high‑fidelity email previews for many clients on the user’s machine can become CPU‑intensive and hard to scale as template complexity grows.",
-      "value_prop_pitch": "You could offload the preview generation to a Next.js serverless layer that caches rendered results and serves them instantly, eliminating the heavy client‑side compute. Then, a vector‑based semantic search over the rendered DOM would let Claude pinpoint layout issues instantly, reducing the fix‑loop latency dramatically.",
+      "likely_bottleneck": "efficiently orchestrating thousands of parallel agent swarms across distributed compute resources",
+      "value_prop_pitch": "You could replace the custom orchestration layer with a Next.js front‑end that dynamically schedules agent tasks via a vector‑semantic search index, letting you match workloads to the right compute nodes instantly. This would cut latency and simplify scaling, letting the team focus on research logic instead of low‑level scheduling.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://unlayer.com",
-      "source_url": "https://www.ycombinator.com/launches/Xjw-hyper-elements-free-email-testing-for-agents",
-      "discovered_at": "2026-11-22T14:17:56+00:00",
+      "website": "https://www.antinuous.com/",
+      "source_url": "https://www.ycombinator.com/launches/XiA-antinuous-100x-more-experiments-1-000x-cheaper",
+      "discovered_at": "2026-11-23T17:40:26+00:00",
+      "source": "yc",
+      "score": 44,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.antinuous.com",
+        "emails": [],
+        "phones": [],
+        "socials": {},
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [],
+        "enriched_at": "2026-11-23T17:41:35+00:00",
+        "status": "crawl_failed",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/XiA-antinuous-100x-more-experiments-1-000x-cheaper",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-23T17:41:20+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Ricardo Nunez",
+          "role": "Founder",
+          "org": "Antinuous",
+          "evidence": "Ricardo Nunez",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Ricardo Nunez",
+          "rel": "founded",
+          "dst": "Antinuous",
+          "evidence": "Ricardo Nunez"
+        }
+      ]
+    },
+    {
+      "company_name": "Antropi Robotics",
+      "core_product": "Autonomous factories that make precision CNC parts from CAD files at software speed.",
+      "tech_stack": [
+        "CNC",
+        "Robotics",
+        "CAD",
+        "Simulation"
+      ],
+      "likely_bottleneck": "Scaling the automation and real‑time inspection feedback loop across multiple factories.",
+      "value_prop_pitch": "You can streamline your Factory OS UI with Next.js to deliver fast, responsive dashboards for engineers reviewing toolpaths. Adding a vector semantic search layer lets you instantly retrieve similar past part inspections, reducing manual analysis time.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://www.antropi.world",
+      "source_url": "https://www.ycombinator.com/launches/XyK-antropi-robotics-cnc-parts-in-days-from-autonomous-factories",
+      "discovered_at": "2026-11-23T17:40:26+00:00",
       "source": "yc",
       "score": 52,
       "gaps": [
@@ -211,33 +282,22 @@
         "phone"
       ],
       "contact": {
-        "website": "https://unlayer.com",
+        "website": "https://www.antropi.world",
         "emails": [],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/unlayer"
+          "twitter": "https://x.com/antropirobotics",
+          "linkedin": "https://www.linkedin.com/company/antropi-robotics"
         },
-        "contact_page": "https://unlayer.com/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://unlayer.com/pricing"
-          },
-          {
-            "label": "Get Started",
-            "url": "https://accounts.unlayer.com/signup/console"
-          },
-          {
-            "label": "Documentation",
-            "url": "https://docs.unlayer.com/"
-          }
-        ],
+        "contact_page": "https://www.antropi.world/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://unlayer.com/",
-          "https://unlayer.com/about",
-          "https://unlayer.com/contact"
+          "https://www.antropi.world/",
+          "https://www.antropi.world/about",
+          "https://www.antropi.world/contact",
+          "https://www.antropi.world/team"
         ],
-        "enriched_at": "2026-11-22T14:19:08+00:00",
+        "enriched_at": "2026-11-23T17:41:39+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -245,18 +305,6 @@
           {
             "name": "Next.js",
             "category": "framework"
-          },
-          {
-            "name": "HubSpot",
-            "category": "marketing"
-          },
-          {
-            "name": "Intercom",
-            "category": "support"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
           },
           {
             "name": "React",
@@ -268,99 +316,19 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Xjw-hyper-elements-free-email-testing-for-agents",
+          "url": "https://www.ycombinator.com/launches/XyK-antropi-robotics-cnc-parts-in-days-from-autonomous-factories",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-22T14:18:37+00:00"
+          "seen_at": "2026-11-23T17:41:20+00:00"
         }
       ],
       "people": [
         {
-          "name": "Adeel Raza",
-          "role": "Founder",
-          "org": "Hyper Elements",
-          "evidence": "Hey YC! We're building Hyper Elements, and today we’re turning one of email development’s oldest headaches into a conversation.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": []
-    },
-    {
-      "company_name": "Resin Technologies",
-      "core_product": "AI‑enabled electronics design and manufacturing service that delivers custom printed circuit boards quickly from a spec or sketch.",
-      "tech_stack": [
-        "AI design software"
-      ],
-      "likely_bottleneck": "scaling the AI‑driven PCB design pipeline to handle increasingly complex boards without slowing turnaround time",
-      "value_prop_pitch": "I can build a Next.js front‑end that lets your engineers query design documents with vector semantic search, cutting down time spent hunting errors. This will streamline your AI tooling workflow and let you scale faster.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://resintechnologies.com",
-      "source_url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
-      "discovered_at": "2026-11-22T14:17:56+00:00",
-      "source": "yc",
-      "score": 67,
-      "gaps": [
-        "location",
-        "funding amount",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://resintechnologies.com",
-        "emails": [
-          {
-            "value": "hello@resintechnologies.com",
-            "kind": "general",
-            "source_url": "https://resintechnologies.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {},
-        "contact_page": "https://resintechnologies.com/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://resintechnologies.com/",
-          "https://resintechnologies.com/about",
-          "https://resintechnologies.com/contact",
-          "https://resintechnologies.com/team"
-        ],
-        "enriched_at": "2026-11-22T14:19:14+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "PostHog",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Xkb-resin-technologies-ai-enabled-electronics-firm",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-22T14:18:37+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Anmol Jawandha",
-          "role": "CEO",
-          "org": "Resin Technologies",
-          "evidence": "Hey everyone! We're Anmol and Koosha, the founders of Resin Technologies.",
+          "name": "Shubh Agarwal",
+          "role": "cofounder",
+          "org": "Antropi Robotics",
+          "evidence": "Hey YC, we’re Naman and Shubh, the founders of Antropi Robotics.",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -370,53 +338,361 @@
       ],
       "edges": [
         {
-          "src": "Anmol Jawandha",
+          "src": "Shubh Agarwal",
           "rel": "founded",
-          "dst": "Resin Technologies",
-          "evidence": "Hey everyone! We're Anmol and Koosha, the founders of Resin Technologies."
-        },
-        {
-          "src": "Anmol Jawandha",
-          "rel": "previously_at",
-          "dst": "LassieAI",
-          "evidence": "was the first engineer at LassieAI"
-        },
-        {
-          "src": "Anmol Jawandha",
-          "rel": "previously_at",
-          "dst": "Borealis AI",
-          "evidence": "built ML systems at Borealis AI"
-        },
-        {
-          "src": "Anmol Jawandha",
-          "rel": "previously_at",
-          "dst": "UBC",
-          "evidence": "worked on robotics research at UBC"
+          "dst": "Antropi Robotics",
+          "evidence": "Hey YC, we’re Naman and Shubh, the founders of Antropi Robotics."
         }
       ]
+    },
+    {
+      "company_name": "humans&",
+      "core_product": "humans& is a human-centric frontier AI lab. Our view is that AI should help people work together, so it has to understand people and the relationships between them, not just tasks.",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://humansand.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50339975",
+      "discovered_at": "2026-11-23T17:41:20+00:00",
+      "source": "hiring",
+      "score": 56,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors"
+      ],
+      "contact": {
+        "website": "https://humansand.ai",
+        "emails": [
+          {
+            "value": "info@humansand.ai",
+            "kind": "general",
+            "source_url": "https://humansand.ai/"
+          }
+        ],
+        "phones": [
+          {
+            "value": "+12522277013",
+            "kind": "main",
+            "source_url": "https://humansand.ai/"
+          }
+        ],
+        "socials": {
+          "twitter": "https://x.com/humansand"
+        },
+        "contact_page": "https://humansand.ai/contact",
+        "product_access": [],
+        "pages_crawled": [
+          "https://humansand.ai/",
+          "https://humansand.ai/about",
+          "https://humansand.ai/contact",
+          "https://humansand.ai/team"
+        ],
+        "enriched_at": "2026-11-23T17:41:50+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Ashby",
+            "category": "hiring"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50339975",
+          "roles": [
+            "Product Engineer (Member of Technical Staff)"
+          ],
+          "role_kinds": [
+            "eng"
+          ],
+          "posted_at": "2026-11-02T17:08:46Z",
+          "seen_at": "2026-11-23T17:41:20+00:00"
+        },
+        {
+          "type": "hiring",
+          "source": "ashby",
+          "url": "https://jobs.ashbyhq.com/humans-and",
+          "roles": [
+            "Member of Technical Staff",
+            "Product Engineer (Member of Technical Staff)"
+          ],
+          "role_kinds": [
+            "other",
+            "eng"
+          ],
+          "posted_at": "2026-02-10T21:38:12.620+00:00",
+          "seen_at": "2026-11-23T17:42:14+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Alexis Ross",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ani Nrusimha",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Charlie George",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Diyi Yang",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ekin Oflazer",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Eric Zelikman",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Georges Harik",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Jim S. Zeng",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Joey Hong",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Maarten Bosma",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Manya Bansal",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Niloofar Mireshghallah",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Noah D. Goodman",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Parth Chadha",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Ray Ramadorai",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Saurabh Shah",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Shaohua Zhou",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Varuna Jayasiri",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Weisi Duan",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Yuan Lu",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Yuchen He",
+          "role": "founder",
+          "org": "humans &",
+          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": []
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Archer",
-        "score": 45,
+        "company": "coprod",
+        "score": 87,
         "source": "rss"
       },
       {
-        "company": "Wilco",
-        "score": 79,
-        "source": "rss"
+        "company": "Antinuous",
+        "score": 44,
+        "source": "yc"
       },
       {
-        "company": "Hyper Elements",
+        "company": "Antropi Robotics",
         "score": 52,
         "source": "yc"
       },
       {
-        "company": "Resin Technologies",
-        "score": 67,
-        "source": "yc"
+        "company": "humans&",
+        "score": 56,
+        "source": "hiring"
       }
     ],
     "updated": []
