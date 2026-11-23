@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-11-22T16:09:08+00:00",
+  "started_at": "2026-11-23T20:02:38+00:00",
   "skipped": "",
   "startups": [
     {
@@ -22,9 +22,11 @@
     },
     {
       "company": "Archer",
-      "score": 65,
+      "score": 45,
       "gaps": [
         "tech stack",
+        "founder",
+        "people profiles",
         "investors",
         "email",
         "phone"
@@ -33,53 +35,6 @@
       "status": "ok",
       "emails": 0,
       "phones": 0,
-      "people": 2,
-      "edges": 2,
-      "notes": [
-        "team llm: 2 people proposed, 2 grounded",
-        "team page: +2 people, +2 edges"
-      ]
-    },
-    {
-      "company": "Evaboot",
-      "score": 25,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://evaboot.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Odin",
-      "score": 25,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://odinflashtool.org",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
@@ -88,29 +43,29 @@
       ]
     },
     {
-      "company": "Datadog",
-      "score": 54,
+      "company": "humans&",
+      "score": 61,
       "gaps": [
         "funding stage",
+        "location",
         "funding amount",
         "tech stack",
-        "founder",
         "investors"
       ],
-      "website": "https://www.datadoghq.com",
+      "website": "https://humansand.ai",
       "status": "ok",
       "emails": 1,
       "phones": 1,
-      "people": 2,
+      "people": 35,
       "edges": 0,
       "notes": [
-        "structured data: 2 people",
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "team llm: 51 people proposed, 50 grounded",
+        "team page: +50 people, +0 edges",
+        "2 open roles (ashby)"
       ]
     },
     {
-      "company": "OpenTrain AI",
+      "company": "exLabora AI",
       "score": 25,
       "gaps": [
         "funding stage",
@@ -123,7 +78,7 @@
         "email",
         "phone"
       ],
-      "website": "https://app.opentrain.ai",
+      "website": "https://exlabora.com",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -135,7 +90,7 @@
       ]
     },
     {
-      "company": "Vivral",
+      "company": "Ojin",
       "score": 25,
       "gaps": [
         "funding stage",
@@ -145,21 +100,72 @@
         "founder",
         "people profiles",
         "investors",
-        "email"
+        "email",
+        "phone"
       ],
-      "website": "https://vivral.app",
+      "website": "https://ojin.ai",
       "status": "ok",
       "emails": 0,
-      "phones": 2,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Rootly",
+      "score": 23,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://rootly.com",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Postscript",
+      "score": 21,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://app.postscript.io",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": []
     },
     {
-      "company": "IMC Trading",
-      "score": 25,
+      "company": "Memorang",
+      "score": 15,
       "gaps": [
         "funding stage",
+        "website",
         "location",
         "funding amount",
         "tech stack",
@@ -169,20 +175,19 @@
         "email",
         "phone"
       ],
-      "website": "https://www.imc.com",
-      "status": "ok",
+      "website": "",
+      "status": "no_website",
       "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "no website found"
       ]
     },
     {
-      "company": "Bikky",
-      "score": 25,
+      "company": "Genentech",
+      "score": 21,
       "gaps": [
         "funding stage",
         "location",
@@ -194,74 +199,69 @@
         "email",
         "phone"
       ],
-      "website": "https://bikky.com",
+      "website": "https://go.gene.com",
       "status": "ok",
       "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
-      "notes": [
-        "team llm: 3 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
+      "notes": []
     },
     {
-      "company": "Clad",
-      "score": 25,
+      "company": "Zed Industries",
+      "score": 46,
       "gaps": [
         "funding stage",
         "location",
         "funding amount",
         "tech stack",
-        "founder",
-        "people profiles",
         "investors",
         "email",
         "phone"
       ],
-      "website": "https://www.all-clad.com",
+      "website": "https://zed.dev",
       "status": "ok",
       "emails": 0,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
+      "people": 6,
+      "edges": 6,
       "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "team llm: 6 people proposed, 6 grounded",
+        "team page: +6 people, +9 edges"
       ]
     }
   ],
-  "tokens": 11100,
+  "tokens": 12547,
   "usage": {
-    "prompt_tokens": 9707,
-    "completion_tokens": 1393,
-    "total_tokens": 11100,
-    "calls": 8,
+    "prompt_tokens": 8183,
+    "completion_tokens": 4364,
+    "total_tokens": 12547,
+    "calls": 7,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 9707,
-        "completion_tokens": 1393,
-        "total_tokens": 11100,
-        "calls": 8
+        "prompt_tokens": 8183,
+        "completion_tokens": 4364,
+        "total_tokens": 12547,
+        "calls": 7
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 9707,
-        "completion_tokens": 1393,
-        "total_tokens": 11100,
-        "calls": 8
+        "prompt_tokens": 8183,
+        "completion_tokens": 4364,
+        "total_tokens": 12547,
+        "calls": 7
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 9707,
-        "completion_tokens": 1393,
-        "total_tokens": 11100,
-        "calls": 8
+        "prompt_tokens": 8183,
+        "completion_tokens": 4364,
+        "total_tokens": 12547,
+        "calls": 7
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-22T16:10:15+00:00"
+  "finished_at": "2026-11-23T20:04:13+00:00"
 }
