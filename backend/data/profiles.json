@@ -16981,7 +16981,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (403d ago): Senior Full-Stack Engineer, Full Stack Engineer, Lead AI / ML Staff Engineer",
+        "text": "Hiring (404d ago): Senior Full-Stack Engineer, Full Stack Engineer, Lead AI / ML Staff Engineer",
         "source_url": "https://jobs.ashbyhq.com/dreamhq"
       }
     ],
@@ -19677,7 +19677,7 @@
       "reasons": [
         "lead score 87",
         "signal strength 2.4/10: funding",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fresh, strong fit and a company-published address"
       ],
       "next_step": "Email contact@coprod.ch with the pitch",
@@ -22236,6 +22236,701 @@
       "subject": "OSCP: a thought on Scaling the silicon‑photonic chip manufacturing process to m",
       "body": "Hi Kazem,\n\nCongrats on the new funding (https://betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/).\n\nI came across OSCP: Chip‑based photonic gyroscopes and inertial measurement units (IMUs) that provide high‑accuracy navigation without GPS.\nI'd like to build something with you.\nOne place we could start: scaling the silicon‑photonic chip manufacturing process to meet demand while maintaining precision and yield.\n\nOpen to a quick call to see if there is a fit?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:info%40oscp.com?subject=OSCP%3A%20a%20thought%20on%20Scaling%20the%20silicon%E2%80%91photonic%20chip%20manufacturing%20process%20to%20m&body=Hi%20Kazem%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//betakit.com/oscp-closes-6-million-usd-series-a-round-to-power-navigation-without-gps/%29.%0A%0AI%20came%20across%20OSCP%3A%20Chip%E2%80%91based%20photonic%20gyroscopes%20and%20inertial%20measurement%20units%20%28IMUs%29%20that%20provide%20high%E2%80%91accuracy%20navigation%20without%20GPS.%0AI%27d%20like%20to%20build%20something%20with%20you.%0AOne%20place%20we%20could%20start%3A%20scaling%20the%20silicon%E2%80%91photonic%20chip%20manufacturing%20process%20to%20meet%20demand%20while%20maintaining%20precision%20and%20yield.%0A%0AOpen%20to%20a%20quick%20call%20to%20see%20if%20there%20is%20a%20fit%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Miracly.ai",
+    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+    "tech_stack": [
+      "ChatGPT",
+      "Claude",
+      "Copilot",
+      "LLMs",
+      "vector embeddings"
+    ],
+    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
+    "is_relevant": true,
+    "funding_stage": "pre-seed",
+    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+    "discovered_at": "2026-10-24T01:54:29+00:00",
+    "funding_amount": "$2M",
+    "hq": "Stockholm",
+    "website": "https://www.miracly.ai",
+    "score": 87,
+    "last_seen": "2026-10-24T01:57:30+00:00",
+    "slug": "miracly-ai",
+    "score_parts": {
+      "fit": 25,
+      "identity": 15,
+      "people": 15,
+      "connections": 15,
+      "contact": 17
+    },
+    "gaps": [
+      "people profiles",
+      "phone"
+    ],
+    "axes": {
+      "fit": 100,
+      "reach": 100,
+      "evidence": 82
+    },
+    "qualified": true,
+    "contact": {
+      "website": "https://www.miracly.ai",
+      "emails": [
+        {
+          "value": "hello@miracly.ai",
+          "kind": "general",
+          "source_url": "https://www.miracly.ai/contact"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/miracly",
+        "twitter": "https://x.com/miraclyai"
+      },
+      "contact_page": "https://www.miracly.ai/contact",
+      "product_access": [
+        {
+          "label": "Pricing",
+          "url": "https://www.miracly.ai/pricing"
+        },
+        {
+          "label": "Get started",
+          "url": "https://www.miracly.ai/sign-up"
+        }
+      ],
+      "pages_crawled": [
+        "https://www.miracly.ai/",
+        "https://www.miracly.ai/contact",
+        "https://www.miracly.ai/about"
+      ],
+      "enriched_at": "2026-11-24T19:28:34+00:00",
+      "status": "ok",
+      "attempts": 0,
+      "last_attempt": "",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Plausible",
+          "category": "analytics"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "funding",
+        "source": "web",
+        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "roles": [],
+        "role_kinds": [],
+        "posted_at": "",
+        "seen_at": "2026-10-24T01:55:31+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [
+      {
+        "src": "Beenext Ventures",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Lotus",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
+      },
+      {
+        "src": "Stefan Lindeberg",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Alex Bouaziz",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Thomas Ekman",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      },
+      {
+        "src": "Hedda Båverud Olsson",
+        "rel": "invested_in",
+        "dst": "Miracly.ai",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 63.4,
+      "reasons": [
+        "lead score 87",
+        "signal strength 0.7/10: funding",
+        "found 31 day(s) ago (cold)",
+        "good fit but the news is old"
+      ],
+      "next_step": "Revisit when there is fresh news",
+      "provider": "policy",
+      "score": 89
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_stage",
+        "label": "funding_stage: pre-seed",
+        "value": "pre-seed",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "funding_amount",
+        "label": "funding_amount: $2M",
+        "value": "$2M",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "hq",
+        "label": "hq: Stockholm",
+        "value": "Stockholm",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "website",
+        "label": "website: https://www.miracly.ai",
+        "value": "https://www.miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "core_product",
+        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "miracly.ai",
+        "field": "likely_bottleneck",
+        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "arvid lithander|miracly",
+        "field": "role",
+        "label": "Arvid Lithander · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "role",
+        "label": "Bjorn Bergstrom · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "shannon cullum|miracly",
+        "field": "role",
+        "label": "Shannon Cullum · Co-founder",
+        "value": "Co-founder",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "beenext ventures|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Beenext Ventures invested in Miracly.ai",
+        "value": "Beenext Ventures invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "lotus|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Lotus invested in Miracly.ai",
+        "value": "Lotus invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Stefan Lindeberg invested in Miracly.ai",
+        "value": "Stefan Lindeberg invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "alex bouaziz|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Alex Bouaziz invested in Miracly.ai",
+        "value": "Alex Bouaziz invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "thomas ekman|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Thomas Ekman invested in Miracly.ai",
+        "value": "Thomas Ekman invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
+        "field": "invested_in",
+        "label": "Hedda Båverud Olsson invested in Miracly.ai",
+        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "arvid lithander|founded|miracly",
+        "field": "founded",
+        "label": "Arvid Lithander founded Miracly",
+        "value": "Arvid Lithander founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Arvid Lithander\nCo-founder",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "bjorn bergstrom|founded|miracly",
+        "field": "founded",
+        "label": "Bjorn Bergstrom founded Miracly",
+        "value": "Bjorn Bergstrom founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "shannon cullum|founded|miracly",
+        "field": "founded",
+        "label": "Shannon Cullum founded Miracly",
+        "value": "Shannon Cullum founded Miracly",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Shannon Cullum\nCo-founder",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 18,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 13,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 17,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-07T14:51:23+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 17,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/about",
+        "evidence": "",
+        "run_id": "backfill-2026-11-23",
+        "first_seen": "2026-11-16T18:17:32+00:00",
+        "last_seen": "2026-11-23T20:02:38+00:00",
+        "seen_count": 4,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "bjorn bergstrom|miracly",
+        "field": "linkedin",
+        "label": "Bjorn Bergstrom · linkedin",
+        "value": "https://www.linkedin.com/in/bergstrombjorn",
+        "source_url": "search",
+        "evidence": "Bjorn Bergstrom\nCo-founder",
+        "run_id": "backfill-2026-11-18",
+        "first_seen": "2026-11-12T16:44:50+00:00",
+        "last_seen": "2026-11-18T17:08:37+00:00",
+        "seen_count": 4,
+        "confidence": 0.6
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "stefan lindeberg|miracly.ai",
+        "field": "role",
+        "label": "Stefan Lindeberg · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "alex bouaziz|miracly.ai",
+        "field": "role",
+        "label": "Alex Bouaziz · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "thomas ekman|miracly.ai",
+        "field": "role",
+        "label": "Thomas Ekman · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "hedda båverud olsson|miracly.ai",
+        "field": "role",
+        "label": "Hedda Båverud Olsson · Investor",
+        "value": "Investor",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "email",
+        "label": "email: hello@miracly.ai",
+        "value": "hello@miracly.ai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/miracly",
+        "value": "https://www.linkedin.com/company/miracly",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "miracly.ai",
+        "field": "twitter",
+        "label": "twitter: https://x.com/miraclyai",
+        "value": "https://x.com/miraclyai",
+        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
+        "evidence": "",
+        "run_id": "20261024T015344Z",
+        "first_seen": "2026-10-24T01:57:30+00:00",
+        "last_seen": "2026-10-24T01:57:30+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Gushwork",
+        "slug": "gushwork",
+        "similarity": 0.701
+      },
+      {
+        "company_name": "Seltz",
+        "slug": "seltz",
+        "similarity": 0.62
+      },
+      {
+        "company_name": "Linkup",
+        "slug": "linkup",
+        "similarity": 0.589
+      },
+      {
+        "company_name": "Exa",
+        "slug": "exa",
+        "similarity": 0.579
+      },
+      {
+        "company_name": "ZeroEntropy",
+        "slug": "zeroentropy",
+        "similarity": 0.568
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-16T18:17:32+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: hello@miracly.ai"
+        ],
+        "source_urls": [
+          "https://www.miracly.ai/about"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-11-12T16:44:50+00:00",
+        "kind": "learned",
+        "items": [
+          "Profile link: https://www.linkedin.com/in/bergstrombjorn"
+        ],
+        "source_urls": [
+          "search"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "discovered",
+        "items": [
+          "Stage: pre-seed",
+          "Raised: $2M",
+          "HQ: Stockholm",
+          "Website: https://www.miracly.ai",
+          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
+          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/contact"
+        ],
+        "count": 19
+      },
+      {
+        "at": "2026-10-24T01:57:30+00:00",
+        "kind": "learned",
+        "items": [
+          "Person: Investor",
+          "Published email: hello@miracly.ai",
+          "linkedin: https://www.linkedin.com/company/miracly",
+          "twitter: https://x.com/miraclyai"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "https://www.miracly.ai/contact?__clerk_synced=true"
+        ],
+        "count": 4
+      },
+      {
+        "at": "2026-10-24T01:55:31+00:00",
+        "kind": "funding",
+        "items": [
+          "Funding"
+        ],
+        "source_urls": [
+          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "funding",
+        "text": "Raised money (31d ago)",
+        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "build_for",
+      "intent_reason": "a concrete bottleneck on a stack you can work with",
+      "to": "hello@miracly.ai",
+      "to_source_url": "https://www.miracly.ai/contact",
+      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
+      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -28266,7 +28961,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (6d ago)",
+        "text": "Launched (7d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50536468"
       }
     ],
@@ -28800,7 +29495,7 @@
       "priority": 54.8,
       "reasons": [
         "lead score 83",
-        "found 34 day(s) ago (cold)",
+        "found 35 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -32052,7 +32747,7 @@
       "priority": 58.6,
       "reasons": [
         "lead score 81",
-        "found 34 day(s) ago (cold)",
+        "found 35 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -51335,703 +52030,6 @@
     "outreach": []
   },
   {
-    "company_name": "Miracly.ai",
-    "core_product": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-    "tech_stack": [
-      "ChatGPT",
-      "Claude",
-      "Copilot",
-      "LLMs",
-      "vector embeddings"
-    ],
-    "likely_bottleneck": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-    "value_prop_pitch": "You could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service. This lets you focus on the AI content generation while we take care of the scaling and relevance tuning of the semantic index.",
-    "is_relevant": true,
-    "funding_stage": "pre-seed",
-    "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-    "discovered_at": "2026-10-24T01:54:29+00:00",
-    "funding_amount": "$2M",
-    "hq": "Stockholm",
-    "website": "https://www.miracly.ai",
-    "score": 72,
-    "last_seen": "2026-10-24T01:57:30+00:00",
-    "slug": "miracly-ai",
-    "score_parts": {
-      "fit": 25,
-      "identity": 15,
-      "people": 0,
-      "connections": 15,
-      "contact": 17
-    },
-    "gaps": [
-      "founder",
-      "people profiles",
-      "phone"
-    ],
-    "axes": {
-      "fit": 100,
-      "reach": 100,
-      "evidence": 55
-    },
-    "qualified": false,
-    "contact": {
-      "website": "https://www.miracly.ai",
-      "emails": [
-        {
-          "value": "hello@miracly.ai",
-          "kind": "general",
-          "source_url": "https://www.miracly.ai/about"
-        }
-      ],
-      "phones": [],
-      "socials": {
-        "linkedin": "https://www.linkedin.com/company/miracly",
-        "twitter": "https://x.com/miraclyai"
-      },
-      "contact_page": "https://www.miracly.ai/contact",
-      "product_access": [
-        {
-          "label": "Pricing",
-          "url": "https://www.miracly.ai/pricing"
-        },
-        {
-          "label": "Get started",
-          "url": "https://www.miracly.ai/sign-up"
-        }
-      ],
-      "pages_crawled": [
-        "https://www.miracly.ai/",
-        "https://www.miracly.ai/about",
-        "https://www.miracly.ai/contact"
-      ],
-      "enriched_at": "2026-11-23T20:02:45+00:00",
-      "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": [
-        {
-          "name": "Next.js",
-          "category": "framework"
-        },
-        {
-          "name": "Google Analytics",
-          "category": "analytics"
-        },
-        {
-          "name": "Plausible",
-          "category": "analytics"
-        },
-        {
-          "name": "React",
-          "category": "framework"
-        }
-      ]
-    },
-    "signals": [
-      {
-        "type": "funding",
-        "source": "web",
-        "url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "roles": [],
-        "role_kinds": [],
-        "posted_at": "",
-        "seen_at": "2026-10-24T01:55:31+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [
-      {
-        "src": "Beenext Ventures",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Lotus",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus"
-      },
-      {
-        "src": "Stefan Lindeberg",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Alex Bouaziz",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Thomas Ekman",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      },
-      {
-        "src": "Hedda Båverud Olsson",
-        "rel": "invested_in",
-        "dst": "Miracly.ai",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson"
-      }
-    ],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 54.4,
-      "reasons": [
-        "lead score 72",
-        "signal strength 0.7/10: funding",
-        "found 31 day(s) ago (cold)",
-        "good fit but the news is old"
-      ],
-      "next_step": "Revisit when there is fresh news",
-      "provider": "policy",
-      "score": 74
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_stage",
-        "label": "funding_stage: pre-seed",
-        "value": "pre-seed",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "funding_amount",
-        "label": "funding_amount: $2M",
-        "value": "$2M",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "hq",
-        "label": "hq: Stockholm",
-        "value": "Stockholm",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "website",
-        "label": "website: https://www.miracly.ai",
-        "value": "https://www.miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "core_product",
-        "label": "core_product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "value": "An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve that visibility.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "startup",
-        "entity_key": "miracly.ai",
-        "field": "likely_bottleneck",
-        "label": "likely_bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "value": "Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "arvid lithander|miracly",
-        "field": "role",
-        "label": "Arvid Lithander · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "bjorn bergstrom|miracly",
-        "field": "role",
-        "label": "Bjorn Bergstrom · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "shannon cullum|miracly",
-        "field": "role",
-        "label": "Shannon Cullum · Co-founder",
-        "value": "Co-founder",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "beenext ventures|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Beenext Ventures invested in Miracly.ai",
-        "value": "Beenext Ventures invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "lotus|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Lotus invested in Miracly.ai",
-        "value": "Lotus invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "stefan lindeberg|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Stefan Lindeberg invested in Miracly.ai",
-        "value": "Stefan Lindeberg invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "alex bouaziz|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Alex Bouaziz invested in Miracly.ai",
-        "value": "Alex Bouaziz invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "thomas ekman|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Thomas Ekman invested in Miracly.ai",
-        "value": "Thomas Ekman invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "hedda båverud olsson|invested_in|miracly.ai",
-        "field": "invested_in",
-        "label": "Hedda Båverud Olsson invested in Miracly.ai",
-        "value": "Hedda Båverud Olsson invested_in Miracly.ai",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "arvid lithander|founded|miracly",
-        "field": "founded",
-        "label": "Arvid Lithander founded Miracly",
-        "value": "Arvid Lithander founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Arvid Lithander\nCo-founder",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "bjorn bergstrom|founded|miracly",
-        "field": "founded",
-        "label": "Bjorn Bergstrom founded Miracly",
-        "value": "Bjorn Bergstrom founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "edge",
-        "entity_key": "shannon cullum|founded|miracly",
-        "field": "founded",
-        "label": "Shannon Cullum founded Miracly",
-        "value": "Shannon Cullum founded Miracly",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Shannon Cullum\nCo-founder",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 17,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/about",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-11-16T18:17:32+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 4,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 16,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-23",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-23T20:02:38+00:00",
-        "seen_count": 16,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact",
-        "evidence": "",
-        "run_id": "backfill-2026-11-21",
-        "first_seen": "2026-11-07T14:51:23+00:00",
-        "last_seen": "2026-11-21T16:03:07+00:00",
-        "seen_count": 12,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "bjorn bergstrom|miracly",
-        "field": "linkedin",
-        "label": "Bjorn Bergstrom · linkedin",
-        "value": "https://www.linkedin.com/in/bergstrombjorn",
-        "source_url": "search",
-        "evidence": "Bjorn Bergstrom\nCo-founder",
-        "run_id": "backfill-2026-11-18",
-        "first_seen": "2026-11-12T16:44:50+00:00",
-        "last_seen": "2026-11-18T17:08:37+00:00",
-        "seen_count": 4,
-        "confidence": 0.6
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "stefan lindeberg|miracly.ai",
-        "field": "role",
-        "label": "Stefan Lindeberg · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "alex bouaziz|miracly.ai",
-        "field": "role",
-        "label": "Alex Bouaziz · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "thomas ekman|miracly.ai",
-        "field": "role",
-        "label": "Thomas Ekman · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "person",
-        "entity_key": "hedda båverud olsson|miracly.ai",
-        "field": "role",
-        "label": "Hedda Båverud Olsson · Investor",
-        "value": "Investor",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-        "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "email",
-        "label": "email: hello@miracly.ai",
-        "value": "hello@miracly.ai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "linkedin",
-        "label": "linkedin: https://www.linkedin.com/company/miracly",
-        "value": "https://www.linkedin.com/company/miracly",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "miracly.ai",
-        "field": "twitter",
-        "label": "twitter: https://x.com/miraclyai",
-        "value": "https://x.com/miraclyai",
-        "source_url": "https://www.miracly.ai/contact?__clerk_synced=true",
-        "evidence": "",
-        "run_id": "20261024T015344Z",
-        "first_seen": "2026-10-24T01:57:30+00:00",
-        "last_seen": "2026-10-24T01:57:30+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Gushwork",
-        "slug": "gushwork",
-        "similarity": 0.701
-      },
-      {
-        "company_name": "Seltz",
-        "slug": "seltz",
-        "similarity": 0.62
-      },
-      {
-        "company_name": "Linkup",
-        "slug": "linkup",
-        "similarity": 0.589
-      },
-      {
-        "company_name": "Exa",
-        "slug": "exa",
-        "similarity": 0.579
-      },
-      {
-        "company_name": "ZeroEntropy",
-        "slug": "zeroentropy",
-        "similarity": 0.568
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-12T16:44:50+00:00",
-        "kind": "learned",
-        "items": [
-          "Profile link: https://www.linkedin.com/in/bergstrombjorn"
-        ],
-        "source_urls": [
-          "search"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-11-07T14:51:23+00:00",
-        "kind": "learned",
-        "items": [
-          "Published email: hello@miracly.ai"
-        ],
-        "source_urls": [
-          "https://www.miracly.ai/contact"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "discovered",
-        "items": [
-          "Stage: pre-seed",
-          "Raised: $2M",
-          "HQ: Stockholm",
-          "Website: https://www.miracly.ai",
-          "Product: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to i",
-          "Bottleneck: Scaling and maintaining low‑latency vector semantic search across rapidly growing content collections."
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/about",
-          "https://www.miracly.ai/contact"
-        ],
-        "count": 19
-      },
-      {
-        "at": "2026-10-24T01:57:30+00:00",
-        "kind": "learned",
-        "items": [
-          "Person: Investor",
-          "Published email: hello@miracly.ai",
-          "linkedin: https://www.linkedin.com/company/miracly",
-          "twitter: https://x.com/miraclyai"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "https://www.miracly.ai/contact?__clerk_synced=true"
-        ],
-        "count": 4
-      },
-      {
-        "at": "2026-10-24T01:55:31+00:00",
-        "kind": "funding",
-        "items": [
-          "Funding"
-        ],
-        "source_urls": [
-          "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "funding",
-        "text": "Raised money (31d ago)",
-        "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "build_for",
-      "intent_reason": "a concrete bottleneck on a stack you can work with",
-      "to": "hello@miracly.ai",
-      "to_source_url": "https://www.miracly.ai/about",
-      "subject": "Miracly.ai: a thought on Scaling and maintaining low‑latency vector semantic search a",
-      "body": "Hi Miracly.ai team,\n\nCongrats on the new funding (https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform).\n\nI came across Miracly.ai: An AI search visibility and marketing platform that shows companies how they appear in AI search results and generates content to improve.\nOne thing I noticed: scaling and maintaining low‑latency vector semantic search across rapidly growing content collections.\n\nYou could dramatically cut down on latency and engineering overhead by building the front‑end with Next.js and handling the similarity queries with a managed vector search service.\n\nWould a short trial project to tackle this be useful?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:hello%40miracly.ai?subject=Miracly.ai%3A%20a%20thought%20on%20Scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20a&body=Hi%20Miracly.ai%20team%2C%0A%0ACongrats%20on%20the%20new%20funding%20%28https%3A//www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform%29.%0A%0AI%20came%20across%20Miracly.ai%3A%20An%20AI%20search%20visibility%20and%20marketing%20platform%20that%20shows%20companies%20how%20they%20appear%20in%20AI%20search%20results%20and%20generates%20content%20to%20improve.%0AOne%20thing%20I%20noticed%3A%20scaling%20and%20maintaining%20low%E2%80%91latency%20vector%20semantic%20search%20across%20rapidly%20growing%20content%20collections.%0A%0AYou%20could%20dramatically%20cut%20down%20on%20latency%20and%20engineering%20overhead%20by%20building%20the%20front%E2%80%91end%20with%20Next.js%20and%20handling%20the%20similarity%20queries%20with%20a%20managed%20vector%20search%20service.%0A%0AWould%20a%20short%20trial%20project%20to%20tackle%20this%20be%20useful%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "PataBid",
     "core_product": "AI‑powered construction estimating tool called Quantify",
     "tech_stack": [],
@@ -52755,7 +52753,7 @@
       "priority": 48.2,
       "reasons": [
         "lead score 72",
-        "found 34 day(s) ago (cold)",
+        "found 35 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -62034,7 +62032,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Embedded Software Engineer",
+        "text": "Hiring (22d ago): Embedded Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50341026"
       }
     ],
@@ -66066,7 +66064,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): London (UK), Toronto (CA) (In-Person)",
+        "text": "Hiring (22d ago): London (UK), Toronto (CA) (In-Person)",
         "source_url": "https://news.ycombinator.com/item?id=50341284"
       }
     ],
@@ -71973,7 +71971,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (18d ago)",
+        "text": "Launched (19d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50381687"
       }
     ],
@@ -74995,7 +74993,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Software Engineer (L4)",
+        "text": "Hiring (22d ago): Software Engineer (L4)",
         "source_url": "https://news.ycombinator.com/item?id=50340419"
       }
     ],
@@ -75008,6 +75006,757 @@
       "subject": "Paramark: a thought on your stack",
       "body": "Hi Pranav,\n\nI saw you're hiring (Software Engineer (L4)) (https://news.ycombinator.com/item?id=50340419).\nI'd like to help on the engineering side.\n\nI came across Paramark: Paramark helps Marketing teams optimize spend across all of their channels and programs.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "mailto:hello%40paramark.com?subject=Paramark%3A%20a%20thought%20on%20your%20stack&body=Hi%20Pranav%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Software%20Engineer%20%28L4%29%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50340419%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Paramark%3A%20Paramark%20helps%20Marketing%20teams%20optimize%20spend%20across%20all%20of%20their%20channels%20and%20programs.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Joulent",
+    "core_product": "We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company brain: one place to find what Joulent knows and has decided, with a fleet of agents that put that knowledge ",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50487782",
+    "discovered_at": "2026-11-14T13:13:09+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.joulent.com",
+    "score": 58,
+    "last_seen": "2026-11-14T13:14:07+00:00",
+    "slug": "joulent",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 15,
+      "connections": 5,
+      "contact": 17
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "people profiles",
+      "investors",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 100,
+      "evidence": 47
+    },
+    "qualified": false,
+    "contact": {
+      "website": "https://www.joulent.com",
+      "emails": [
+        {
+          "value": "info@joulent.com",
+          "kind": "general",
+          "source_url": "https://www.joulent.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/joulentofficial"
+      },
+      "contact_page": "https://www.joulent.com/contact",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.joulent.com/",
+        "https://www.joulent.com/about-us",
+        "https://www.joulent.com/contact"
+      ],
+      "enriched_at": "2026-11-24T19:29:29+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
+      "site_tech": [
+        {
+          "name": "Webflow",
+          "category": "cms"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Cloudflare",
+          "category": "hosting"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50487782",
+        "roles": [
+          "AI Engineer",
+          "Company Brain"
+        ],
+        "role_kinds": [
+          "eng",
+          "other"
+        ],
+        "posted_at": "2026-11-13T18:34:24Z",
+        "seen_at": "2026-11-14T13:13:09+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Chris James",
+        "role": "Founder and Chief Executive Officer",
+        "org": "Joulent",
+        "evidence": "Chris James Founder and Chief Executive Officer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Corey Grindal",
+        "role": "Co-President and Chief Operating Officer",
+        "org": "Joulent",
+        "evidence": "Corey Grindal Co-President and Chief Operating Officer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Michael Wortley",
+        "role": "Co-President and Chief Financial Officer",
+        "org": "Joulent",
+        "evidence": "Michael Wortley Co-President and Chief Financial Officer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Brian Boland",
+        "role": "Chief Investment Officer, Executive Vice President and Head of Strategy",
+        "org": "Joulent",
+        "evidence": "Brian Boland Chief Investment Officer, Executive Vice President and Head of Strategy",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Jeff van Heel",
+        "role": "Chief Infrastructure Officer",
+        "org": "Joulent",
+        "evidence": "Jeff van Heel Chief Infrastructure Officer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Adam Taylor",
+        "role": "Chief Development Officer",
+        "org": "Joulent",
+        "evidence": "Adam Taylor Chief Development Officer",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Brett Kerr",
+        "role": "Chief of External Affairs",
+        "org": "Joulent",
+        "evidence": "Brett Kerr Chief of External Affairs",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Chris Wissel-Tyson",
+        "role": "Head/SVP of Growth and Strategy",
+        "org": "Joulent",
+        "evidence": "Chris Wissel-Tyson Head/SVP of Growth and Strategy",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Jake Appleton",
+        "role": "Head of Talent and Strategic Initiatives",
+        "org": "Joulent",
+        "evidence": "Jake Appleton Head of Talent and Strategic Initiatives",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Akshat Patel",
+        "role": "Head of Energy Software & Optimization",
+        "org": "Joulent",
+        "evidence": "Akshat Patel Head of Energy Software & Optimization",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Jeff Starzec",
+        "role": "General Counsel",
+        "org": "Joulent",
+        "evidence": "Jeff Starzec General Counsel",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Chris James",
+        "rel": "founded",
+        "dst": "Joulent",
+        "evidence": "Chris James Founder and Chief Executive Officer"
+      },
+      {
+        "src": "Corey Grindal",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Corey Grindal Co-President and Chief Operating Officer"
+      },
+      {
+        "src": "Michael Wortley",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Michael Wortley Co-President and Chief Financial Officer"
+      },
+      {
+        "src": "Brian Boland",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Brian Boland Chief Investment Officer, Executive Vice President and Head of Strategy"
+      },
+      {
+        "src": "Jeff van Heel",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Jeff van Heel Chief Infrastructure Officer"
+      },
+      {
+        "src": "Adam Taylor",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Adam Taylor Chief Development Officer"
+      },
+      {
+        "src": "Brett Kerr",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Brett Kerr Chief of External Affairs"
+      },
+      {
+        "src": "Chris Wissel-Tyson",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Chris Wissel-Tyson Head/SVP of Growth and Strategy"
+      },
+      {
+        "src": "Jake Appleton",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Jake Appleton Head of Talent and Strategic Initiatives"
+      },
+      {
+        "src": "Akshat Patel",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Akshat Patel Head of Energy Software & Optimization"
+      },
+      {
+        "src": "Jeff Starzec",
+        "rel": "works_at",
+        "dst": "Joulent",
+        "evidence": "Jeff Starzec General Counsel"
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "contact_now",
+      "urgency": "warm",
+      "priority": 71.8,
+      "reasons": [
+        "lead score 58",
+        "signal strength 6.6/10: hiring",
+        "found 10 day(s) ago (warm)",
+        "fresh, strong fit and a company-published address"
+      ],
+      "next_step": "Email info@joulent.com with the pitch",
+      "provider": "policy",
+      "score": 78
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "joulent",
+        "field": "core_product",
+        "label": "core_product: We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company brain: one place to find what Joulent knows and has decided, with a fleet of agents that put that knowledge ",
+        "value": "We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company brain: one place to find what Joulent knows and has decided, with a fleet of agents that put that knowledge ",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-14T13:14:07+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "joulent",
+        "field": "website",
+        "label": "website: https://www.joulent.com",
+        "value": "https://www.joulent.com",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "chris james|joulent",
+        "field": "role",
+        "label": "Chris James · Founder and Chief Executive Officer",
+        "value": "Founder and Chief Executive Officer",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Chris James Founder and Chief Executive Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "corey grindal|joulent",
+        "field": "role",
+        "label": "Corey Grindal · Co-President and Chief Operating Officer",
+        "value": "Co-President and Chief Operating Officer",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Corey Grindal Co-President and Chief Operating Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "michael wortley|joulent",
+        "field": "role",
+        "label": "Michael Wortley · Co-President and Chief Financial Officer",
+        "value": "Co-President and Chief Financial Officer",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Michael Wortley Co-President and Chief Financial Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "brian boland|joulent",
+        "field": "role",
+        "label": "Brian Boland · Chief Investment Officer, Executive Vice President and Head of Strategy",
+        "value": "Chief Investment Officer, Executive Vice President and Head of Strategy",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Brian Boland Chief Investment Officer, Executive Vice President and Head of Strategy",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "jeff van heel|joulent",
+        "field": "role",
+        "label": "Jeff van Heel · Chief Infrastructure Officer",
+        "value": "Chief Infrastructure Officer",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Jeff van Heel Chief Infrastructure Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "adam taylor|joulent",
+        "field": "role",
+        "label": "Adam Taylor · Chief Development Officer",
+        "value": "Chief Development Officer",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Adam Taylor Chief Development Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "brett kerr|joulent",
+        "field": "role",
+        "label": "Brett Kerr · Chief of External Affairs",
+        "value": "Chief of External Affairs",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Brett Kerr Chief of External Affairs",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "chris wissel-tyson|joulent",
+        "field": "role",
+        "label": "Chris Wissel-Tyson · Head/SVP of Growth and Strategy",
+        "value": "Head/SVP of Growth and Strategy",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Chris Wissel-Tyson Head/SVP of Growth and Strategy",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "jake appleton|joulent",
+        "field": "role",
+        "label": "Jake Appleton · Head of Talent and Strategic Initiatives",
+        "value": "Head of Talent and Strategic Initiatives",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Jake Appleton Head of Talent and Strategic Initiatives",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "akshat patel|joulent",
+        "field": "role",
+        "label": "Akshat Patel · Head of Energy Software & Optimization",
+        "value": "Head of Energy Software & Optimization",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Akshat Patel Head of Energy Software & Optimization",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "jeff starzec|joulent",
+        "field": "role",
+        "label": "Jeff Starzec · General Counsel",
+        "value": "General Counsel",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Jeff Starzec General Counsel",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "chris james|founded|joulent",
+        "field": "founded",
+        "label": "Chris James founded Joulent",
+        "value": "Chris James founded Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Chris James Founder and Chief Executive Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "corey grindal|works_at|joulent",
+        "field": "works_at",
+        "label": "Corey Grindal works at Joulent",
+        "value": "Corey Grindal works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Corey Grindal Co-President and Chief Operating Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "michael wortley|works_at|joulent",
+        "field": "works_at",
+        "label": "Michael Wortley works at Joulent",
+        "value": "Michael Wortley works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Michael Wortley Co-President and Chief Financial Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "brian boland|works_at|joulent",
+        "field": "works_at",
+        "label": "Brian Boland works at Joulent",
+        "value": "Brian Boland works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Brian Boland Chief Investment Officer, Executive Vice President and Head of Strategy",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "jeff van heel|works_at|joulent",
+        "field": "works_at",
+        "label": "Jeff van Heel works at Joulent",
+        "value": "Jeff van Heel works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Jeff van Heel Chief Infrastructure Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "adam taylor|works_at|joulent",
+        "field": "works_at",
+        "label": "Adam Taylor works at Joulent",
+        "value": "Adam Taylor works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Adam Taylor Chief Development Officer",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "brett kerr|works_at|joulent",
+        "field": "works_at",
+        "label": "Brett Kerr works at Joulent",
+        "value": "Brett Kerr works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Brett Kerr Chief of External Affairs",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "chris wissel-tyson|works_at|joulent",
+        "field": "works_at",
+        "label": "Chris Wissel-Tyson works at Joulent",
+        "value": "Chris Wissel-Tyson works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Chris Wissel-Tyson Head/SVP of Growth and Strategy",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "jake appleton|works_at|joulent",
+        "field": "works_at",
+        "label": "Jake Appleton works at Joulent",
+        "value": "Jake Appleton works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Jake Appleton Head of Talent and Strategic Initiatives",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "akshat patel|works_at|joulent",
+        "field": "works_at",
+        "label": "Akshat Patel works at Joulent",
+        "value": "Akshat Patel works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Akshat Patel Head of Energy Software & Optimization",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "jeff starzec|works_at|joulent",
+        "field": "works_at",
+        "label": "Jeff Starzec works at Joulent",
+        "value": "Jeff Starzec works_at Joulent",
+        "source_url": "https://news.ycombinator.com/item?id=50487782",
+        "evidence": "Jeff Starzec General Counsel",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "joulent",
+        "field": "email",
+        "label": "email: info@joulent.com",
+        "value": "info@joulent.com",
+        "source_url": "https://www.joulent.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "joulent",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/joulentofficial",
+        "value": "https://www.linkedin.com/company/joulentofficial",
+        "source_url": "https://www.joulent.com/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Propel Labs",
+        "slug": "propel-labs",
+        "similarity": 0.69
+      },
+      {
+        "company_name": "Elm AI",
+        "slug": "elm-ai",
+        "similarity": 0.69
+      },
+      {
+        "company_name": "EggAI",
+        "slug": "eggai",
+        "similarity": 0.656
+      },
+      {
+        "company_name": "Roleo",
+        "slug": "roleo",
+        "similarity": 0.634
+      },
+      {
+        "company_name": "Seal",
+        "slug": "seal",
+        "similarity": 0.628
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-14T13:14:07+00:00",
+        "kind": "discovered",
+        "items": [
+          "Product: We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company",
+          "Website: https://www.joulent.com",
+          "Person: Founder and Chief Executive Officer",
+          "Person: Co-President and Chief Operating Officer",
+          "Person: Co-President and Chief Financial Officer",
+          "Person: Chief Investment Officer, Executive Vice President and Head of Strategy"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50487782",
+          "https://www.joulent.com/",
+          "https://www.joulent.com/contact"
+        ],
+        "count": 26
+      },
+      {
+        "at": "2026-11-13T18:34:24+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: AI Engineer, Company Brain"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50487782"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50487782"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (11d ago): AI Engineer, Company Brain",
+        "source_url": "https://news.ycombinator.com/item?id=50487782"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "info@joulent.com",
+      "to_source_url": "https://www.joulent.com/",
+      "subject": "Joulent: a thought on your stack",
+      "body": "Hi Chris,\n\nI saw you're hiring (AI Engineer, Company Brain) (https://news.ycombinator.com/item?id=50487782).\nI'd like to help on the engineering side.\n\nI came across Joulent: We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:info%40joulent.com?subject=Joulent%3A%20a%20thought%20on%20your%20stack&body=Hi%20Chris%2C%0A%0AI%20saw%20you%27re%20hiring%20%28AI%20Engineer%2C%20Company%20Brain%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50487782%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Joulent%3A%20We%27re%20hiring%20an%20AI%20Engineer%2C%20Company%20Brain%2C%20to%20build%20agents%20that%20put%20engineering%20knowledge%20to%20work.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -78296,7 +79045,7 @@
       "priority": 34.2,
       "reasons": [
         "lead score 57",
-        "found 34 day(s) ago (cold)",
+        "found 35 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -78443,7 +79192,7 @@
       "priority": 44.2,
       "reasons": [
         "lead score 57",
-        "found 34 day(s) ago (cold)",
+        "found 35 day(s) ago (cold)",
         "good fit but the news is old"
       ],
       "next_step": "Revisit when there is fresh news",
@@ -80270,7 +81019,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (173d ago): Senior / Staff Software Engineer, AI",
+        "text": "Hiring (174d ago): Senior / Staff Software Engineer, AI",
         "source_url": "https://jobs.ashbyhq.com/kindo"
       }
     ],
@@ -81520,7 +82269,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (17d ago): Founding Engineer",
+        "text": "Hiring (18d ago): Founding Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50396245"
       }
     ],
@@ -83390,7 +84139,7 @@
       "reasons": [
         "lead score 52",
         "signal strength 1.8/10: launch",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "good fit; no company address to email"
       ],
       "next_step": "Reach Shubh Agarwal via https://www.antropi.world/contact",
@@ -83572,7 +84321,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (0d ago)",
+        "text": "Launched (1d ago)",
         "source_url": "https://www.ycombinator.com/launches/XyK-antropi-robotics-cnc-parts-in-days-from-autonomous-factories"
       }
     ],
@@ -84604,7 +85353,7 @@
       },
       {
         "signal": "launch",
-        "text": "Launched (5d ago)",
+        "text": "Launched (6d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50549188"
       }
     ],
@@ -86027,7 +86776,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Systems Engineer",
+        "text": "Hiring (22d ago): Systems Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50340438"
       }
     ],
@@ -86040,6 +86789,356 @@
       "subject": "Thunder Compute: a thought on your stack",
       "body": "Hi Brian,\n\nI saw you're hiring (Systems Engineer) (https://news.ycombinator.com/item?id=50340438).\nI'd like to help on the engineering side.\n\nI came across Thunder Compute: We run a GPU cloud on systems software we built from scratch in C++.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Common Prefix",
+    "core_product": "We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with decades in hedge funds, TradFi, and Web3. We lead Axelar, the network that moves assets and messages between bl",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50488627",
+    "discovered_at": "2026-11-14T13:13:09+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.commonprefix.com",
+    "score": 49,
+    "last_seen": "2026-11-14T13:14:07+00:00",
+    "slug": "common-prefix",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 15,
+      "connections": 0,
+      "contact": 13
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "people profiles",
+      "investors",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 92,
+      "evidence": 38
+    },
+    "qualified": false,
+    "contact": {
+      "website": "https://www.commonprefix.com",
+      "emails": [
+        {
+          "value": "hello@commonprefix.com",
+          "kind": "general",
+          "source_url": "https://www.commonprefix.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "twitter": "https://x.com/CommonPrefix",
+        "github": "https://github.com/commonprefix"
+      },
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.commonprefix.com/",
+        "https://www.commonprefix.com/team"
+      ],
+      "enriched_at": "2026-11-24T19:29:15+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
+      "site_tech": [
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50488627",
+        "roles": [
+          "Senior Software Engineer"
+        ],
+        "role_kinds": [
+          "eng"
+        ],
+        "posted_at": "2026-11-13T19:37:57Z",
+        "seen_at": "2026-11-14T13:13:09+00:00"
+      }
+    ],
+    "people": [
+      {
+        "name": "Dr. Dionysis Zindros",
+        "role": "CEO & Co-Founder",
+        "org": "Common Prefix",
+        "evidence": "Dionysis is a co‑founder and researcher at Common Prefix focusing on consensus, light clients, bridges, interoperability, and fast bootstrapping.",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      },
+      {
+        "name": "Nikolaos Kamarinakis",
+        "role": "CTO & Co-Founder",
+        "org": "Common Prefix",
+        "evidence": "Nikolas is the CTO of Common Prefix, specializing in blockchain interoperability.",
+        "linkedin": "",
+        "twitter": "",
+        "github": "",
+        "homepage": "",
+        "link_source": ""
+      }
+    ],
+    "edges": [
+      {
+        "src": "Dr. Dionysis Zindros",
+        "rel": "founded",
+        "dst": "Common Prefix",
+        "evidence": "Dionysis is a co‑founder and researcher at Common Prefix focusing on consensus, light clients, bridges, interoperability, and fast bootstrapping."
+      },
+      {
+        "src": "Nikolaos Kamarinakis",
+        "rel": "founded",
+        "dst": "Common Prefix",
+        "evidence": "Nikolas is the CTO of Common Prefix, specializing in blockchain interoperability."
+      }
+    ],
+    "outcome": null,
+    "decision": {
+      "action": "review",
+      "urgency": "warm",
+      "priority": 66.4,
+      "reasons": [
+        "lead score 49",
+        "signal strength 6.6/10: hiring",
+        "found 10 day(s) ago (warm)",
+        "good fit, below the 70 bar for unattended sending"
+      ],
+      "next_step": "Review the draft, then email hello@commonprefix.com yourself",
+      "provider": "policy",
+      "score": 69
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "common prefix",
+        "field": "core_product",
+        "label": "core_product: We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with decades in hedge funds, TradFi, and Web3. We lead Axelar, the network that moves assets and messages between bl",
+        "value": "We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with decades in hedge funds, TradFi, and Web3. We lead Axelar, the network that moves assets and messages between bl",
+        "source_url": "https://news.ycombinator.com/item?id=50488627",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-14T13:14:07+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "common prefix",
+        "field": "website",
+        "label": "website: https://www.commonprefix.com",
+        "value": "https://www.commonprefix.com",
+        "source_url": "https://news.ycombinator.com/item?id=50488627",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "dr. dionysis zindros|common prefix",
+        "field": "role",
+        "label": "Dr. Dionysis Zindros · CEO & Co-Founder",
+        "value": "CEO & Co-Founder",
+        "source_url": "https://news.ycombinator.com/item?id=50488627",
+        "evidence": "Dionysis is a co‑founder and researcher at Common Prefix focusing on consensus, light clients, bridges, interoperability, and fast bootstrapping.",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "person",
+        "entity_key": "nikolaos kamarinakis|common prefix",
+        "field": "role",
+        "label": "Nikolaos Kamarinakis · CTO & Co-Founder",
+        "value": "CTO & Co-Founder",
+        "source_url": "https://news.ycombinator.com/item?id=50488627",
+        "evidence": "Nikolas is the CTO of Common Prefix, specializing in blockchain interoperability.",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "dr. dionysis zindros|founded|common prefix",
+        "field": "founded",
+        "label": "Dr. Dionysis Zindros founded Common Prefix",
+        "value": "Dr. Dionysis Zindros founded Common Prefix",
+        "source_url": "https://news.ycombinator.com/item?id=50488627",
+        "evidence": "Dionysis is a co‑founder and researcher at Common Prefix focusing on consensus, light clients, bridges, interoperability, and fast bootstrapping.",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "edge",
+        "entity_key": "nikolaos kamarinakis|founded|common prefix",
+        "field": "founded",
+        "label": "Nikolaos Kamarinakis founded Common Prefix",
+        "value": "Nikolaos Kamarinakis founded Common Prefix",
+        "source_url": "https://news.ycombinator.com/item?id=50488627",
+        "evidence": "Nikolas is the CTO of Common Prefix, specializing in blockchain interoperability.",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "common prefix",
+        "field": "email",
+        "label": "email: hello@commonprefix.com",
+        "value": "hello@commonprefix.com",
+        "source_url": "https://www.commonprefix.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "common prefix",
+        "field": "twitter",
+        "label": "twitter: https://x.com/CommonPrefix",
+        "value": "https://x.com/CommonPrefix",
+        "source_url": "https://www.commonprefix.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "common prefix",
+        "field": "github",
+        "label": "github: https://github.com/commonprefix",
+        "value": "https://github.com/commonprefix",
+        "source_url": "https://www.commonprefix.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "OneChronos",
+        "slug": "onechronos",
+        "similarity": 0.542
+      },
+      {
+        "company_name": "General Intelligence Holdings",
+        "slug": "general-intelligence-holdings",
+        "similarity": 0.512
+      },
+      {
+        "company_name": "SentiLink",
+        "slug": "sentilink",
+        "similarity": 0.506
+      },
+      {
+        "company_name": "Flow Traders",
+        "slug": "flow-traders",
+        "similarity": 0.506
+      },
+      {
+        "company_name": "SadServers",
+        "slug": "sadservers",
+        "similarity": 0.502
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-14T13:14:07+00:00",
+        "kind": "discovered",
+        "items": [
+          "Product: We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with de",
+          "Website: https://www.commonprefix.com",
+          "Person: CEO & Co-Founder",
+          "Person: CTO & Co-Founder",
+          "Founded: Dr. Dionysis Zindros founded Common Prefix",
+          "Founded: Nikolaos Kamarinakis founded Common Prefix"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50488627",
+          "https://www.commonprefix.com/",
+          "https://www.commonprefix.com"
+        ],
+        "count": 9
+      },
+      {
+        "at": "2026-11-13T19:37:57+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: Senior Software Engineer"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50488627"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50488627"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (10d ago): Senior Software Engineer",
+        "source_url": "https://news.ycombinator.com/item?id=50488627"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "hello@commonprefix.com",
+      "to_source_url": "https://www.commonprefix.com/",
+      "subject": "Common Prefix: a thought on your stack",
+      "body": "Hi Dr.,\n\nI saw you're hiring (Senior Software Engineer) (https://news.ycombinator.com/item?id=50488627).\nI'd like to help on the engineering side.\n\nI came across Common Prefix: We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:hello%40commonprefix.com?subject=Common%20Prefix%3A%20a%20thought%20on%20your%20stack&body=Hi%20Dr.%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Senior%20Software%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50488627%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Common%20Prefix%3A%20We%27re%20a%20mix%20of%20scientists%20%28professors%2C%20PhDs%2C%20and%20postdocs%20from%20Stanford%2C%20Imperial%2C%20ETH%20Z%C3%BCrich.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -86379,7 +87478,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Machine Learning Engineer (Python, ML)",
+        "text": "Hiring (22d ago): Machine Learning Engineer (Python, ML)",
         "source_url": "https://news.ycombinator.com/item?id=50342280"
       }
     ],
@@ -89200,7 +90299,7 @@
       "reasons": [
         "lead score 46",
         "signal strength 4.0/10: hiring",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "good fit, below the 70 bar for unattended sending"
       ],
       "next_step": "Review the draft, then email info@humansand.ai yourself",
@@ -89856,7 +90955,7 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 0d ago (hiring or launch)",
+        "text": "Posted on Hacker News 1d ago (hiring or launch)",
         "source_url": "https://news.ycombinator.com/item?id=50339975"
       },
       {
@@ -90507,7 +91606,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): North America, South America, Europe REMOTE",
+        "text": "Hiring (22d ago): North America, South America, Europe REMOTE",
         "source_url": "https://news.ycombinator.com/item?id=50341570"
       }
     ],
@@ -91919,7 +93018,7 @@
       "reasons": [
         "lead score 44",
         "signal strength 1.8/10: launch",
-        "found 0 day(s) ago (hot)",
+        "found 1 day(s) ago (hot)",
         "fit looks decent but no contact route found"
       ],
       "next_step": "Find a contact: location, funding amount, people profiles",
@@ -92072,7 +93171,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (0d ago)",
+        "text": "Launched (1d ago)",
         "source_url": "https://www.ycombinator.com/launches/XiA-antinuous-100x-more-experiments-1-000x-cheaper"
       }
     ],
@@ -92860,7 +93959,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): AI Product Engineer",
+        "text": "Hiring (22d ago): AI Product Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50340600"
       }
     ],
@@ -93148,7 +94247,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Senior Full-Stack Engineer",
+        "text": "Hiring (22d ago): Senior Full-Stack Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50341824"
       }
     ],
@@ -98320,7 +99419,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Sr. Staff Software Engineer, Browser (New Products)",
+        "text": "Hiring (22d ago): Sr. Staff Software Engineer, Browser (New Products)",
         "source_url": "https://news.ycombinator.com/item?id=50340840"
       }
     ],
@@ -98636,7 +99735,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Engineering, Product, Data",
+        "text": "Hiring (22d ago): Engineering, Product, Data",
         "source_url": "https://news.ycombinator.com/item?id=50340892"
       }
     ],
@@ -98907,7 +100006,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Multiple Roles (OT, Networking, Security)",
+        "text": "Hiring (22d ago): Multiple Roles (OT, Networking, Security)",
         "source_url": "https://news.ycombinator.com/item?id=50341800"
       }
     ],
@@ -99758,7 +100857,7 @@
     "why_now": [
       {
         "signal": "launch",
-        "text": "Launched (19d ago)",
+        "text": "Launched (20d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50368804"
       }
     ],
@@ -100917,7 +102016,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (42d ago): AI Engineer Apprentice",
+        "text": "Hiring (43d ago): AI Engineer Apprentice",
         "source_url": "https://news.ycombinator.com/item?id=50059584"
       }
     ],
@@ -101442,7 +102541,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Remote (US, CA)",
+        "text": "Hiring (22d ago): Remote (US, CA)",
         "source_url": "https://news.ycombinator.com/item?id=50340242"
       }
     ],
@@ -101715,7 +102814,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Founding AI Engineer",
+        "text": "Hiring (22d ago): Founding AI Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50340551"
       }
     ],
@@ -102042,7 +103141,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Software Engineer",
+        "text": "Hiring (22d ago): Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50341345"
       }
     ],
@@ -102324,7 +103423,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): GTM Engineer",
+        "text": "Hiring (22d ago): GTM Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50341328"
       }
     ],
@@ -108046,7 +109145,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (42d ago): Growth Marketing Manager",
+        "text": "Hiring (43d ago): Growth Marketing Manager",
         "source_url": "https://news.ycombinator.com/item?id=50061040"
       }
     ],
@@ -108348,7 +109447,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Multiple Engineering Roles",
+        "text": "Hiring (22d ago): Multiple Engineering Roles",
         "source_url": "https://news.ycombinator.com/item?id=50341662"
       }
     ],
@@ -108691,6 +109790,260 @@
       "subject": "SEEKING FREELANCER: a thought on your stack",
       "body": "Hi SEEKING FREELANCER team,\n\nI saw you're hiring (Devops Engineer) (https://news.ycombinator.com/item?id=50352957).\nI'd like to help on the engineering side.\n\nI came across SEEKING FREELANCER: We're looking for an experienced devops freelancer to help manage and enhance our GCP + Terraform + GitLab based stack in our SOC2 / PCI.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Elm AI",
+    "core_product": "We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what needs building, and then build it.",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50481529",
+    "discovered_at": "2026-11-13T14:12:23+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://www.elm-ai.com",
+    "score": 34,
+    "last_seen": "2026-11-13T14:14:03+00:00",
+    "slug": "elm-ai",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 13
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 92,
+      "evidence": 11
+    },
+    "qualified": false,
+    "contact": {
+      "website": "https://www.elm-ai.com",
+      "emails": [
+        {
+          "value": "info@elm-ai.com",
+          "kind": "general",
+          "source_url": "https://www.elm-ai.com/"
+        }
+      ],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/elm-ai"
+      },
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [
+        "https://www.elm-ai.com/",
+        "https://www.elm-ai.com/about"
+      ],
+      "enriched_at": "2026-11-24T19:29:44+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
+      "site_tech": [
+        {
+          "name": "Next.js",
+          "category": "framework"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "analytics"
+        },
+        {
+          "name": "Cal.com",
+          "category": "scheduling"
+        },
+        {
+          "name": "React",
+          "category": "framework"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50481529",
+        "roles": [
+          "Forward-Deployed Product Engineer"
+        ],
+        "role_kinds": [
+          "eng"
+        ],
+        "posted_at": "2026-11-13T10:43:35Z",
+        "seen_at": "2026-11-13T14:12:23+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 57.4,
+      "reasons": [
+        "lead score 34",
+        "signal strength 6.6/10: hiring",
+        "found 11 day(s) ago (warm)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy",
+      "score": 54
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "elm ai",
+        "field": "core_product",
+        "label": "core_product: We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what needs building, and then build it.",
+        "value": "We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what needs building, and then build it.",
+        "source_url": "https://news.ycombinator.com/item?id=50481529",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-13T14:14:03+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "elm ai",
+        "field": "website",
+        "label": "website: https://www.elm-ai.com",
+        "value": "https://www.elm-ai.com",
+        "source_url": "https://news.ycombinator.com/item?id=50481529",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "elm ai",
+        "field": "email",
+        "label": "email: info@elm-ai.com",
+        "value": "info@elm-ai.com",
+        "source_url": "https://www.elm-ai.com/",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "elm ai",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/elm-ai",
+        "value": "https://www.linkedin.com/company/elm-ai",
+        "source_url": "https://www.elm-ai.com",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Joulent",
+        "slug": "joulent",
+        "similarity": 0.69
+      },
+      {
+        "company_name": "Faraday",
+        "slug": "faraday",
+        "similarity": 0.683
+      },
+      {
+        "company_name": "Jooba",
+        "slug": "jooba",
+        "similarity": 0.679
+      },
+      {
+        "company_name": "Propel Labs",
+        "slug": "propel-labs",
+        "similarity": 0.667
+      },
+      {
+        "company_name": "Aerium",
+        "slug": "aerium",
+        "similarity": 0.658
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-13T14:14:03+00:00",
+        "kind": "discovered",
+        "items": [
+          "Product: We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what n",
+          "Website: https://www.elm-ai.com",
+          "Published email: info@elm-ai.com",
+          "linkedin: https://www.linkedin.com/company/elm-ai"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50481529",
+          "https://www.elm-ai.com/",
+          "https://www.elm-ai.com"
+        ],
+        "count": 4
+      },
+      {
+        "at": "2026-11-13T10:43:35+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: Forward-Deployed Product Engineer"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50481529"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 11d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50481529"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (11d ago): Forward-Deployed Product Engineer",
+        "source_url": "https://news.ycombinator.com/item?id=50481529"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "info@elm-ai.com",
+      "to_source_url": "https://www.elm-ai.com/",
+      "subject": "Elm AI: a thought on your stack",
+      "body": "Hi Elm AI team,\n\nI saw you're hiring (Forward-Deployed Product Engineer) (https://news.ycombinator.com/item?id=50481529).\nI'd like to help on the engineering side.\n\nI came across Elm AI: We build AI agents that help companies work with their suppliers.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "mailto:info%40elm-ai.com?subject=Elm%20AI%3A%20a%20thought%20on%20your%20stack&body=Hi%20Elm%20AI%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Forward-Deployed%20Product%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50481529%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Elm%20AI%3A%20We%20build%20AI%20agents%20that%20help%20companies%20work%20with%20their%20suppliers.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
       "needs_human": false,
       "needs_human_reason": ""
     },
@@ -111938,16 +113291,16 @@
     "decision": {
       "action": "watch",
       "urgency": "cold",
-      "priority": 55.6,
+      "priority": 50.8,
       "reasons": [
         "lead score 31",
-        "signal strength 6.6/10: hiring",
+        "signal strength 4.0/10: hiring",
         "found 14 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
       "provider": "policy",
-      "score": 51
+      "score": 43
     },
     "trackbacks": [
       {
@@ -112056,7 +113409,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (14d ago): Senior Backend, Infrastructure Engineer",
+        "text": "Hiring (15d ago): Senior Backend, Infrastructure Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50429861"
       }
     ],
@@ -112532,7 +113885,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Founding Engineers (Software/AI, Manufacturing), all roles",
+        "text": "Hiring (22d ago): Founding Engineers (Software/AI, Manufacturing), all roles",
         "source_url": "https://news.ycombinator.com/item?id=50340958"
       }
     ],
@@ -112767,6 +114120,256 @@
       "to_source_url": "",
       "subject": "Native: a thought on your stack",
       "body": "Hi Native team,\n\nI saw you're hiring (Founding Builder-in-Residence) (https://news.ycombinator.com/item?id=50466168).\nI'd like to be one of the first engineers helping Native ship.\n\nI came across Native: We’re building an open-source workstation for teams that run on agents.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "CreativeLens",
+    "core_product": "CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance, legal/compliance risk, performance concerns, and consistency across channels. We integrate with Figma, ",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50342626",
+    "discovered_at": "2026-11-11T13:48:37+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "https://creativelens.ai",
+    "score": 29,
+    "last_seen": "2026-11-11T13:49:39+00:00",
+    "slug": "creativelens",
+    "score_parts": {
+      "fit": 15,
+      "identity": 6,
+      "people": 0,
+      "connections": 0,
+      "contact": 8
+    },
+    "gaps": [
+      "funding stage",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 50,
+      "evidence": 11
+    },
+    "qualified": false,
+    "contact": {
+      "website": "https://creativelens.ai",
+      "emails": [],
+      "phones": [],
+      "socials": {
+        "linkedin": "https://www.linkedin.com/company/creativelensai"
+      },
+      "contact_page": "https://creativelens.ai/contact",
+      "product_access": [],
+      "pages_crawled": [
+        "https://creativelens.ai/",
+        "https://creativelens.ai/about",
+        "https://creativelens.ai/team",
+        "https://creativelens.ai/contact"
+      ],
+      "enriched_at": "2026-11-24T19:29:00+00:00",
+      "status": "ok",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
+      "site_tech": [
+        {
+          "name": "Calendly",
+          "category": "scheduling"
+        }
+      ]
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50342626",
+        "roles": [
+          "Founding Growth",
+          "Sales Lead"
+        ],
+        "role_kinds": [
+          "founding",
+          "sales"
+        ],
+        "posted_at": "2026-11-02T19:48:39Z",
+        "seen_at": "2026-11-11T13:48:37+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 42.0,
+      "reasons": [
+        "lead score 29",
+        "signal strength 5.2/10: hiring",
+        "found 13 day(s) ago (warm)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy",
+      "score": 45
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "creativelens",
+        "field": "core_product",
+        "label": "core_product: CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance, legal/compliance risk, performance concerns, and consistency across channels. We integrate with Figma, ",
+        "value": "CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance, legal/compliance risk, performance concerns, and consistency across channels. We integrate with Figma, ",
+        "source_url": "https://news.ycombinator.com/item?id=50342626",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-11T13:49:39+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "startup",
+        "entity_key": "creativelens",
+        "field": "website",
+        "label": "website: https://creativelens.ai",
+        "value": "https://creativelens.ai",
+        "source_url": "https://news.ycombinator.com/item?id=50342626",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "creativelens",
+        "field": "linkedin",
+        "label": "linkedin: https://www.linkedin.com/company/creativelensai",
+        "value": "https://www.linkedin.com/company/creativelensai",
+        "source_url": "https://creativelens.ai/contact",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-24T19:28:28+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "creativelens",
+        "field": "email",
+        "label": "email: careers@creativelens.ai",
+        "value": "careers@creativelens.ai",
+        "source_url": "https://news.ycombinator.com/item?id=50342626",
+        "evidence": "",
+        "run_id": "20261111T134656Z",
+        "first_seen": "2026-11-11T13:49:39+00:00",
+        "last_seen": "2026-11-11T13:49:39+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Thankly",
+        "slug": "thankly",
+        "similarity": 0.479
+      },
+      {
+        "company_name": "Postscript",
+        "slug": "postscript",
+        "similarity": 0.449
+      },
+      {
+        "company_name": "Miracly.ai",
+        "slug": "miracly-ai",
+        "similarity": 0.421
+      },
+      {
+        "company_name": "Duke",
+        "slug": "duke",
+        "similarity": 0.42
+      },
+      {
+        "company_name": "Pixel Systems",
+        "slug": "pixel-systems",
+        "similarity": 0.417
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-11T13:49:39+00:00",
+        "kind": "discovered",
+        "items": [
+          "Product: CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compli",
+          "Website: https://creativelens.ai",
+          "linkedin: https://www.linkedin.com/company/creativelensai"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50342626",
+          "https://creativelens.ai/contact"
+        ],
+        "count": 3
+      },
+      {
+        "at": "2026-11-11T13:49:39+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: careers@creativelens.ai"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50342626"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-11-02T19:48:39+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: Founding Growth, Sales Lead"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50342626"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 13d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50342626"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (21d ago): Founding Growth, Sales Lead",
+        "source_url": "https://news.ycombinator.com/item?id=50342626"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "",
+      "to_source_url": "",
+      "subject": "CreativeLens: a thought on your stack",
+      "body": "Hi CreativeLens team,\n\nI saw you're hiring (Founding Growth, Sales Lead) (https://news.ycombinator.com/item?id=50342626).\nI'd like to be one of the first engineers helping CreativeLens ship.\n\nI came across CreativeLens: CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -114262,7 +115865,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Software Developer, Software Developer (Python / JavaScript)",
+        "text": "Hiring (22d ago): Software Developer, Software Developer (Python / JavaScript)",
         "source_url": "https://news.ycombinator.com/item?id=50341895"
       }
     ],
@@ -114555,7 +116158,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (47d ago): Senior Software Engineer – Kubernetes, Distributed Systems",
+        "text": "Hiring (48d ago): Senior Software Engineer – Kubernetes, Distributed Systems",
         "source_url": "https://news.ycombinator.com/item?id=49996914"
       }
     ],
@@ -115825,7 +117428,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Remote",
+        "text": "Hiring (22d ago): Remote",
         "source_url": "https://news.ycombinator.com/item?id=50340434"
       }
     ],
@@ -116286,7 +117889,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Agentic Python Engineer",
+        "text": "Hiring (22d ago): Agentic Python Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50341833"
       }
     ],
@@ -118775,7 +120378,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (40d ago)",
+        "text": "Hiring (41d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50091446"
       }
     ],
@@ -119773,7 +121376,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Senior Software Engineer, Full Stack",
+        "text": "Hiring (22d ago): Senior Software Engineer, Full Stack",
         "source_url": "https://news.ycombinator.com/item?id=50340820"
       }
     ],
@@ -120001,410 +121604,6 @@
     "outreach": []
   },
   {
-    "company_name": "Landlord",
-    "core_product": "Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) so our customers can focus on what's really important at a high level.",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50461075",
-    "discovered_at": "2026-11-12T14:52:27+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "",
-    "score": 21,
-    "last_seen": "2026-11-12T14:53:38+00:00",
-    "slug": "landlord",
-    "score_parts": {
-      "fit": 15,
-      "identity": 0,
-      "people": 0,
-      "connections": 0,
-      "contact": 6
-    },
-    "gaps": [
-      "funding stage",
-      "website",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 50,
-      "evidence": 0
-    },
-    "qualified": false,
-    "contact": {
-      "website": "",
-      "emails": [
-        {
-          "value": "careers@uselandlord.com",
-          "kind": "other",
-          "source_url": "https://news.ycombinator.com/item?id=50461075"
-        }
-      ],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-12T14:53:10+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50461075",
-        "roles": [
-          "AI Engineer"
-        ],
-        "role_kinds": [
-          "eng"
-        ],
-        "posted_at": "2026-11-12T00:21:54Z",
-        "seen_at": "2026-11-12T14:52:27+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 49.6,
-      "reasons": [
-        "lead score 21",
-        "signal strength 6.6/10: hiring",
-        "found 12 day(s) ago (warm)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 41
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "landlord",
-        "field": "core_product",
-        "label": "core_product: Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) so our customers can focus on what's really important at a high level.",
-        "value": "Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) so our customers can focus on what's really important at a high level.",
-        "source_url": "https://news.ycombinator.com/item?id=50461075",
-        "evidence": "",
-        "run_id": "20261112T145040Z",
-        "first_seen": "2026-11-12T14:53:38+00:00",
-        "last_seen": "2026-11-12T14:53:38+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "landlord",
-        "field": "email",
-        "label": "email: careers@uselandlord.com",
-        "value": "careers@uselandlord.com",
-        "source_url": "https://news.ycombinator.com/item?id=50461075",
-        "evidence": "",
-        "run_id": "20261112T145040Z",
-        "first_seen": "2026-11-12T14:53:38+00:00",
-        "last_seen": "2026-11-12T14:53:38+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Dream",
-        "slug": "dream",
-        "similarity": 0.648
-      },
-      {
-        "company_name": "Tire Swing",
-        "slug": "tire-swing",
-        "similarity": 0.646
-      },
-      {
-        "company_name": "Joulent",
-        "slug": "joulent",
-        "similarity": 0.603
-      },
-      {
-        "company_name": "Elm AI",
-        "slug": "elm-ai",
-        "similarity": 0.603
-      },
-      {
-        "company_name": "EggAI",
-        "slug": "eggai",
-        "similarity": 0.58
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-12T14:53:38+00:00",
-        "kind": "discovered",
-        "items": [
-          "Product: Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) ",
-          "Published email: careers@uselandlord.com"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50461075"
-        ],
-        "count": 2
-      },
-      {
-        "at": "2026-11-12T00:21:54+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: AI Engineer"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50461075"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 12d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50461075"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (12d ago): AI Engineer",
-        "source_url": "https://news.ycombinator.com/item?id=50461075"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "careers@uselandlord.com",
-      "to_source_url": "https://news.ycombinator.com/item?id=50461075",
-      "subject": "Landlord: a thought on your stack",
-      "body": "Hi Landlord team,\n\nI saw you're hiring (AI Engineer) (https://news.ycombinator.com/item?id=50461075).\nI'd like to help on the engineering side.\n\nI came across Landlord: Landlord builds AIs that turn people from builders into architects.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:careers%40uselandlord.com?subject=Landlord%3A%20a%20thought%20on%20your%20stack&body=Hi%20Landlord%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28AI%20Engineer%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50461075%29.%0AI%27d%20like%20to%20help%20on%20the%20engineering%20side.%0A%0AI%20came%20across%20Landlord%3A%20Landlord%20builds%20AIs%20that%20turn%20people%20from%20builders%20into%20architects.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "CreativeLens",
-    "core_product": "CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance, legal/compliance risk, performance concerns, and consistency across channels. We integrate with Figma, ",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50342626",
-    "discovered_at": "2026-11-11T13:48:37+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "",
-    "score": 21,
-    "last_seen": "2026-11-11T13:49:39+00:00",
-    "slug": "creativelens",
-    "score_parts": {
-      "fit": 15,
-      "identity": 0,
-      "people": 0,
-      "connections": 0,
-      "contact": 6
-    },
-    "gaps": [
-      "funding stage",
-      "website",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 50,
-      "evidence": 0
-    },
-    "qualified": false,
-    "contact": {
-      "website": "",
-      "emails": [
-        {
-          "value": "careers@creativelens.ai",
-          "kind": "other",
-          "source_url": "https://news.ycombinator.com/item?id=50342626"
-        }
-      ],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-11T13:49:30+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50342626",
-        "roles": [
-          "Founding Growth",
-          "Sales Lead"
-        ],
-        "role_kinds": [
-          "founding",
-          "sales"
-        ],
-        "posted_at": "2026-11-02T19:48:39Z",
-        "seen_at": "2026-11-11T13:48:37+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 47.2,
-      "reasons": [
-        "lead score 21",
-        "signal strength 5.2/10: hiring",
-        "found 13 day(s) ago (warm)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 37
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "creativelens",
-        "field": "core_product",
-        "label": "core_product: CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance, legal/compliance risk, performance concerns, and consistency across channels. We integrate with Figma, ",
-        "value": "CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance, legal/compliance risk, performance concerns, and consistency across channels. We integrate with Figma, ",
-        "source_url": "https://news.ycombinator.com/item?id=50342626",
-        "evidence": "",
-        "run_id": "20261111T134656Z",
-        "first_seen": "2026-11-11T13:49:39+00:00",
-        "last_seen": "2026-11-11T13:49:39+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      },
-      {
-        "entity_type": "contact",
-        "entity_key": "creativelens",
-        "field": "email",
-        "label": "email: careers@creativelens.ai",
-        "value": "careers@creativelens.ai",
-        "source_url": "https://news.ycombinator.com/item?id=50342626",
-        "evidence": "",
-        "run_id": "20261111T134656Z",
-        "first_seen": "2026-11-11T13:49:39+00:00",
-        "last_seen": "2026-11-11T13:49:39+00:00",
-        "seen_count": 1,
-        "confidence": 1.0
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Thankly",
-        "slug": "thankly",
-        "similarity": 0.479
-      },
-      {
-        "company_name": "Postscript",
-        "slug": "postscript",
-        "similarity": 0.449
-      },
-      {
-        "company_name": "Miracly.ai",
-        "slug": "miracly-ai",
-        "similarity": 0.421
-      },
-      {
-        "company_name": "Duke",
-        "slug": "duke",
-        "similarity": 0.42
-      },
-      {
-        "company_name": "Pixel Systems",
-        "slug": "pixel-systems",
-        "similarity": 0.417
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-11T13:49:39+00:00",
-        "kind": "discovered",
-        "items": [
-          "Product: CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compli",
-          "Published email: careers@creativelens.ai"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50342626"
-        ],
-        "count": 2
-      },
-      {
-        "at": "2026-11-02T19:48:39+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: Founding Growth, Sales Lead"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50342626"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 13d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50342626"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (21d ago): Founding Growth, Sales Lead",
-        "source_url": "https://news.ycombinator.com/item?id=50342626"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "careers@creativelens.ai",
-      "to_source_url": "https://news.ycombinator.com/item?id=50342626",
-      "subject": "CreativeLens: a thought on your stack",
-      "body": "Hi CreativeLens team,\n\nI saw you're hiring (Founding Growth, Sales Lead) (https://news.ycombinator.com/item?id=50342626).\nI'd like to be one of the first engineers helping CreativeLens ship.\n\nI came across CreativeLens: CreativeLens (creativelens.ai) helps companies that produce marketing content review it before it goes live — checking brand compliance.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "mailto:careers%40creativelens.ai?subject=CreativeLens%3A%20a%20thought%20on%20your%20stack&body=Hi%20CreativeLens%20team%2C%0A%0AI%20saw%20you%27re%20hiring%20%28Founding%20Growth%2C%20Sales%20Lead%29%20%28https%3A//news.ycombinator.com/item%3Fid%3D50342626%29.%0AI%27d%20like%20to%20be%20one%20of%20the%20first%20engineers%20helping%20CreativeLens%20ship.%0A%0AI%20came%20across%20CreativeLens%3A%20CreativeLens%20%28creativelens.ai%29%20helps%20companies%20that%20produce%20marketing%20content%20review%20it%20before%20it%20goes%20live%20%E2%80%94%20checking%20brand%20compliance.%0AI%27m%20looking%20to%20join%20a%20team%20like%20yours.%0A%0AIs%20there%20a%20role%2C%20or%20a%20small%20project%2C%20where%20I%20could%20contribute%3F%0A%0AIf%20this%20isn%27t%20relevant%2C%20just%20reply%20%22no%22%20and%20I%20won%27t%20follow%20up.",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
     "company_name": "ArtCraft",
     "core_product": "Those fucking rent-seeking hyperscalers took the internet away from you, and we’re going to give it back to you and to everyone.",
     "tech_stack": [],
@@ -120463,10 +121662,10 @@
       "pages_crawled": [
         "https://getartcraft.com/"
       ],
-      "enriched_at": "2026-11-11T13:49:38+00:00",
+      "enriched_at": "2026-11-24T19:29:02+00:00",
       "status": "ok",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
       "site_tech": [
         {
           "name": "Next.js",
@@ -120519,10 +121718,10 @@
         "value": "https://getartcraft.com",
         "source_url": "https://news.ycombinator.com/item?id=50342041",
         "evidence": "",
-        "run_id": "20261111T134656Z",
+        "run_id": "backfill-2026-11-24",
         "first_seen": "2026-11-11T13:49:39+00:00",
-        "last_seen": "2026-11-11T13:49:39+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -120533,10 +121732,10 @@
         "value": "Those fucking rent-seeking hyperscalers took the internet away from you, and we’re going to give it back to you and to everyone.",
         "source_url": "https://news.ycombinator.com/item?id=50342041",
         "evidence": "",
-        "run_id": "20261111T134656Z",
+        "run_id": "backfill-2026-11-24",
         "first_seen": "2026-11-11T13:49:39+00:00",
-        "last_seen": "2026-11-11T13:49:39+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       }
     ],
@@ -120601,7 +121800,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Senior Engineers",
+        "text": "Hiring (22d ago): Senior Engineers",
         "source_url": "https://news.ycombinator.com/item?id=50342041"
       }
     ],
@@ -120667,10 +121866,10 @@
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-11-09T15:36:52+00:00",
+      "enriched_at": "2026-11-24T19:29:06+00:00",
       "status": "crawl_failed",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
       "site_tech": []
     },
     "signals": [
@@ -120714,10 +121913,10 @@
         "value": "https://www.eleshop.nl/vacatures.html",
         "source_url": "https://news.ycombinator.com/item?id=50343534",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-24",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       },
       {
@@ -120728,10 +121927,10 @@
         "value": "Eleshop is a supplier of test, measurement and soldering equipment run by engineers.",
         "source_url": "https://news.ycombinator.com/item?id=50343534",
         "evidence": "",
-        "run_id": "20261109T153423Z",
+        "run_id": "backfill-2026-11-24",
         "first_seen": "2026-11-09T15:36:56+00:00",
-        "last_seen": "2026-11-09T15:36:56+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       }
     ],
@@ -121706,7 +122905,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): AI Developer, Linux Admin (junior to mid)",
+        "text": "Hiring (22d ago): AI Developer, Linux Admin (junior to mid)",
         "source_url": "https://news.ycombinator.com/item?id=50340134"
       }
     ],
@@ -121773,10 +122972,10 @@
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-11-16T15:13:23+00:00",
+      "enriched_at": "2026-11-24T19:29:09+00:00",
       "status": "no_website",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
       "site_tech": []
     },
     "signals": [
@@ -121820,10 +123019,10 @@
         "value": "At JPMorganChase, your work helps shape the future of global finance. Join a team that serves millions of customers, businesses and communities.",
         "source_url": "https://news.ycombinator.com/item?id=50340287",
         "evidence": "",
-        "run_id": "20261116T151113Z",
+        "run_id": "backfill-2026-11-24",
         "first_seen": "2026-11-16T15:13:23+00:00",
-        "last_seen": "2026-11-16T15:13:23+00:00",
-        "seen_count": 1,
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       }
     ],
@@ -121887,7 +123086,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Lead Software Engineer",
+        "text": "Hiring (22d ago): Lead Software Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50340287"
       }
     ],
@@ -122093,7 +123292,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Founding Engineer",
+        "text": "Hiring (22d ago): Founding Engineer",
         "source_url": "https://news.ycombinator.com/item?id=50340449"
       }
     ],
@@ -122105,551 +123304,6 @@
       "to_source_url": "",
       "subject": "Mesmer: a thought on your stack",
       "body": "Hi Mesmer team,\n\nI saw you're hiring (Founding Engineer) (https://news.ycombinator.com/item?id=50340449).\nI'd like to be one of the first engineers helping Mesmer ship.\n\nI came across Mesmer: Mesmer builds software factories for engineering teams.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Common Prefix",
-    "core_product": "We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with decades in hedge funds, TradFi, and Web3. We lead Axelar, the network that moves assets and messages between bl",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50488627",
-    "discovered_at": "2026-11-14T13:13:09+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "",
-    "score": 15,
-    "last_seen": "2026-11-14T13:14:07+00:00",
-    "slug": "common-prefix",
-    "score_parts": {
-      "fit": 15,
-      "identity": 0,
-      "people": 0,
-      "connections": 0,
-      "contact": 0
-    },
-    "gaps": [
-      "funding stage",
-      "website",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 0,
-      "evidence": 0
-    },
-    "qualified": false,
-    "contact": {
-      "website": "",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-14T13:13:45+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50488627",
-        "roles": [
-          "Senior Software Engineer"
-        ],
-        "role_kinds": [
-          "eng"
-        ],
-        "posted_at": "2026-11-13T19:37:57Z",
-        "seen_at": "2026-11-14T13:13:09+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 36.0,
-      "reasons": [
-        "lead score 15",
-        "signal strength 6.6/10: hiring",
-        "found 10 day(s) ago (warm)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 35
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "common prefix",
-        "field": "core_product",
-        "label": "core_product: We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with decades in hedge funds, TradFi, and Web3. We lead Axelar, the network that moves assets and messages between bl",
-        "value": "We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with decades in hedge funds, TradFi, and Web3. We lead Axelar, the network that moves assets and messages between bl",
-        "source_url": "https://news.ycombinator.com/item?id=50488627",
-        "evidence": "",
-        "run_id": "20261114T131116Z",
-        "first_seen": "2026-11-14T13:14:07+00:00",
-        "last_seen": "2026-11-14T13:14:07+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "OneChronos",
-        "slug": "onechronos",
-        "similarity": 0.542
-      },
-      {
-        "company_name": "General Intelligence Holdings",
-        "slug": "general-intelligence-holdings",
-        "similarity": 0.512
-      },
-      {
-        "company_name": "SentiLink",
-        "slug": "sentilink",
-        "similarity": 0.506
-      },
-      {
-        "company_name": "Flow Traders",
-        "slug": "flow-traders",
-        "similarity": 0.506
-      },
-      {
-        "company_name": "SadServers",
-        "slug": "sadservers",
-        "similarity": 0.502
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-14T13:14:07+00:00",
-        "kind": "discovered",
-        "items": [
-          "Product: We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich, and Edinburgh) and engineers with de"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50488627"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-11-13T19:37:57+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: Senior Software Engineer"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50488627"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 10d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50488627"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (10d ago): Senior Software Engineer",
-        "source_url": "https://news.ycombinator.com/item?id=50488627"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Common Prefix: a thought on your stack",
-      "body": "Hi Common Prefix team,\n\nI saw you're hiring (Senior Software Engineer) (https://news.ycombinator.com/item?id=50488627).\nI'd like to help on the engineering side.\n\nI came across Common Prefix: We're a mix of scientists (professors, PhDs, and postdocs from Stanford, Imperial, ETH Zürich.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Joulent",
-    "core_product": "We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company brain: one place to find what Joulent knows and has decided, with a fleet of agents that put that knowledge ",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50487782",
-    "discovered_at": "2026-11-14T13:13:09+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "",
-    "score": 15,
-    "last_seen": "2026-11-14T13:14:07+00:00",
-    "slug": "joulent",
-    "score_parts": {
-      "fit": 15,
-      "identity": 0,
-      "people": 0,
-      "connections": 0,
-      "contact": 0
-    },
-    "gaps": [
-      "funding stage",
-      "website",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 0,
-      "evidence": 0
-    },
-    "qualified": false,
-    "contact": {
-      "website": "",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-14T13:13:48+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50487782",
-        "roles": [
-          "AI Engineer",
-          "Company Brain"
-        ],
-        "role_kinds": [
-          "eng",
-          "other"
-        ],
-        "posted_at": "2026-11-13T18:34:24Z",
-        "seen_at": "2026-11-14T13:13:09+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 36.0,
-      "reasons": [
-        "lead score 15",
-        "signal strength 6.6/10: hiring",
-        "found 10 day(s) ago (warm)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 35
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "joulent",
-        "field": "core_product",
-        "label": "core_product: We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company brain: one place to find what Joulent knows and has decided, with a fleet of agents that put that knowledge ",
-        "value": "We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company brain: one place to find what Joulent knows and has decided, with a fleet of agents that put that knowledge ",
-        "source_url": "https://news.ycombinator.com/item?id=50487782",
-        "evidence": "",
-        "run_id": "20261114T131116Z",
-        "first_seen": "2026-11-14T13:14:07+00:00",
-        "last_seen": "2026-11-14T13:14:07+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Propel Labs",
-        "slug": "propel-labs",
-        "similarity": 0.69
-      },
-      {
-        "company_name": "Elm AI",
-        "slug": "elm-ai",
-        "similarity": 0.69
-      },
-      {
-        "company_name": "EggAI",
-        "slug": "eggai",
-        "similarity": 0.656
-      },
-      {
-        "company_name": "Roleo",
-        "slug": "roleo",
-        "similarity": 0.634
-      },
-      {
-        "company_name": "Seal",
-        "slug": "seal",
-        "similarity": 0.628
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-14T13:14:07+00:00",
-        "kind": "discovered",
-        "items": [
-          "Product: We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work. Your first build is the company"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50487782"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-11-13T18:34:24+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: AI Engineer, Company Brain"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50487782"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 10d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50487782"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (10d ago): AI Engineer, Company Brain",
-        "source_url": "https://news.ycombinator.com/item?id=50487782"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Joulent: a thought on your stack",
-      "body": "Hi Joulent team,\n\nI saw you're hiring (AI Engineer, Company Brain) (https://news.ycombinator.com/item?id=50487782).\nI'd like to help on the engineering side.\n\nI came across Joulent: We're hiring an AI Engineer, Company Brain, to build agents that put engineering knowledge to work.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
-      "mailto": "",
-      "needs_human": false,
-      "needs_human_reason": ""
-    },
-    "outreach": []
-  },
-  {
-    "company_name": "Confidential Healthcare AI Startup",
-    "core_product": "I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management (RCM) platform for dental practices.",
-    "tech_stack": [],
-    "likely_bottleneck": "",
-    "value_prop_pitch": "",
-    "is_relevant": true,
-    "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50484305",
-    "discovered_at": "2026-11-14T13:13:09+00:00",
-    "funding_amount": "",
-    "hq": "",
-    "website": "",
-    "score": 15,
-    "last_seen": "2026-11-14T13:14:07+00:00",
-    "slug": "confidential-healthcare-ai-startup",
-    "score_parts": {
-      "fit": 15,
-      "identity": 0,
-      "people": 0,
-      "connections": 0,
-      "contact": 0
-    },
-    "gaps": [
-      "funding stage",
-      "website",
-      "location",
-      "funding amount",
-      "tech stack",
-      "founder",
-      "people profiles",
-      "investors",
-      "email",
-      "phone"
-    ],
-    "axes": {
-      "fit": 60,
-      "reach": 0,
-      "evidence": 0
-    },
-    "qualified": false,
-    "contact": {
-      "website": "",
-      "emails": [],
-      "phones": [],
-      "socials": {},
-      "contact_page": "",
-      "product_access": [],
-      "pages_crawled": [],
-      "enriched_at": "2026-11-14T13:13:51+00:00",
-      "status": "no_website",
-      "attempts": 0,
-      "last_attempt": "",
-      "site_tech": []
-    },
-    "signals": [
-      {
-        "type": "hiring",
-        "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50484305",
-        "roles": [
-          "Senior Full Stack Engineer (Frontend-Leaning)"
-        ],
-        "role_kinds": [
-          "eng"
-        ],
-        "posted_at": "2026-11-13T14:47:49Z",
-        "seen_at": "2026-11-14T13:13:09+00:00"
-      }
-    ],
-    "people": [],
-    "edges": [],
-    "outcome": null,
-    "decision": {
-      "action": "watch",
-      "urgency": "cold",
-      "priority": 36.0,
-      "reasons": [
-        "lead score 15",
-        "signal strength 6.6/10: hiring",
-        "found 10 day(s) ago (warm)",
-        "not enough signal yet"
-      ],
-      "next_step": "Wait for more data",
-      "provider": "policy",
-      "score": 35
-    },
-    "trackbacks": [
-      {
-        "entity_type": "startup",
-        "entity_key": "confidential healthcare ai startup",
-        "field": "core_product",
-        "label": "core_product: I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management (RCM) platform for dental practices.",
-        "value": "I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management (RCM) platform for dental practices.",
-        "source_url": "https://news.ycombinator.com/item?id=50484305",
-        "evidence": "",
-        "run_id": "20261114T131116Z",
-        "first_seen": "2026-11-14T13:14:07+00:00",
-        "last_seen": "2026-11-14T13:14:07+00:00",
-        "seen_count": 1,
-        "confidence": 0.4
-      }
-    ],
-    "similar": [
-      {
-        "company_name": "Foji",
-        "slug": "foji",
-        "similarity": 0.639
-      },
-      {
-        "company_name": "Jooba",
-        "slug": "jooba",
-        "similarity": 0.58
-      },
-      {
-        "company_name": "Stealth Health-Tech Startup",
-        "slug": "stealth-health-tech-startup",
-        "similarity": 0.565
-      },
-      {
-        "company_name": "Seal",
-        "slug": "seal",
-        "similarity": 0.561
-      },
-      {
-        "company_name": "Kairos Health",
-        "slug": "kairos-health",
-        "similarity": 0.549
-      }
-    ],
-    "timeline": [
-      {
-        "at": "2026-11-14T13:14:07+00:00",
-        "kind": "discovered",
-        "items": [
-          "Product: I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Manag"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50484305"
-        ],
-        "count": 1
-      },
-      {
-        "at": "2026-11-13T14:47:49+00:00",
-        "kind": "hiring",
-        "items": [
-          "Hiring: Senior Full Stack Engineer (Frontend-Leaning)"
-        ],
-        "source_urls": [
-          "https://news.ycombinator.com/item?id=50484305"
-        ],
-        "count": 1
-      }
-    ],
-    "watch": [],
-    "why_now": [
-      {
-        "signal": "hn",
-        "text": "Posted on Hacker News 10d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50484305"
-      },
-      {
-        "signal": "hiring",
-        "text": "Hiring (11d ago): Senior Full Stack Engineer (Frontend-Leaning)",
-        "source_url": "https://news.ycombinator.com/item?id=50484305"
-      }
-    ],
-    "warm_path": null,
-    "email_draft": {
-      "intent": "work_for",
-      "intent_reason": "found on a Hacker News hiring/launch post",
-      "to": "",
-      "to_source_url": "",
-      "subject": "Confidential Healthcare AI Startup: a thought on your stack",
-      "body": "Hi Confidential Healthcare AI Startup team,\n\nI saw you're hiring (Senior Full Stack Engineer (Frontend-Leaning)) (https://news.ycombinator.com/item?id=50484305).\nI'd like to help on the engineering side.\n\nI came across Confidential Healthcare AI Startup: I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -122840,7 +123494,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Atlanta, GA (In Person)",
+        "text": "Hiring (22d ago): Atlanta, GA (In Person)",
         "source_url": "https://news.ycombinator.com/item?id=50340983"
       }
     ],
@@ -123052,7 +123706,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Product Engineers, Design Engineers, Technical Project Manager",
+        "text": "Hiring (22d ago): Product Engineers, Design Engineers, Technical Project Manager",
         "source_url": "https://news.ycombinator.com/item?id=50340985"
       }
     ],
@@ -123071,21 +123725,21 @@
     "outreach": []
   },
   {
-    "company_name": "Elm AI",
-    "core_product": "We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what needs building, and then build it.",
+    "company_name": "Confidential Healthcare AI Startup",
+    "core_product": "I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management (RCM) platform for dental practices.",
     "tech_stack": [],
     "likely_bottleneck": "",
     "value_prop_pitch": "",
     "is_relevant": true,
     "funding_stage": "",
-    "source_url": "https://news.ycombinator.com/item?id=50481529",
-    "discovered_at": "2026-11-13T14:12:23+00:00",
+    "source_url": "https://news.ycombinator.com/item?id=50484305",
+    "discovered_at": "2026-11-14T13:13:09+00:00",
     "funding_amount": "",
     "hq": "",
     "website": "",
     "score": 15,
-    "last_seen": "2026-11-13T14:14:03+00:00",
-    "slug": "elm-ai",
+    "last_seen": "2026-11-14T13:14:07+00:00",
+    "slug": "confidential-healthcare-ai-startup",
     "score_parts": {
       "fit": 15,
       "identity": 0,
@@ -123119,25 +123773,25 @@
       "contact_page": "",
       "product_access": [],
       "pages_crawled": [],
-      "enriched_at": "2026-11-13T14:13:37+00:00",
+      "enriched_at": "2026-11-24T19:29:39+00:00",
       "status": "no_website",
-      "attempts": 0,
-      "last_attempt": "",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
       "site_tech": []
     },
     "signals": [
       {
         "type": "hiring",
         "source": "hn_who_is_hiring",
-        "url": "https://news.ycombinator.com/item?id=50481529",
+        "url": "https://news.ycombinator.com/item?id=50484305",
         "roles": [
-          "Forward-Deployed Product Engineer"
+          "Senior Full Stack Engineer (Frontend-Leaning)"
         ],
         "role_kinds": [
           "eng"
         ],
-        "posted_at": "2026-11-13T10:43:35Z",
-        "seen_at": "2026-11-13T14:12:23+00:00"
+        "posted_at": "2026-11-13T14:47:49Z",
+        "seen_at": "2026-11-14T13:13:09+00:00"
       }
     ],
     "people": [],
@@ -123150,7 +123804,7 @@
       "reasons": [
         "lead score 15",
         "signal strength 6.6/10: hiring",
-        "found 11 day(s) ago (warm)",
+        "found 10 day(s) ago (warm)",
         "not enough signal yet"
       ],
       "next_step": "Wait for more data",
@@ -123160,66 +123814,66 @@
     "trackbacks": [
       {
         "entity_type": "startup",
-        "entity_key": "elm ai",
+        "entity_key": "confidential healthcare ai startup",
         "field": "core_product",
-        "label": "core_product: We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what needs building, and then build it.",
-        "value": "We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what needs building, and then build it.",
-        "source_url": "https://news.ycombinator.com/item?id=50481529",
+        "label": "core_product: I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management (RCM) platform for dental practices.",
+        "value": "I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management (RCM) platform for dental practices.",
+        "source_url": "https://news.ycombinator.com/item?id=50484305",
         "evidence": "",
-        "run_id": "20261113T141102Z",
-        "first_seen": "2026-11-13T14:14:03+00:00",
-        "last_seen": "2026-11-13T14:14:03+00:00",
-        "seen_count": 1,
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-14T13:14:07+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
         "confidence": 0.4
       }
     ],
     "similar": [
       {
-        "company_name": "Joulent",
-        "slug": "joulent",
-        "similarity": 0.69
-      },
-      {
-        "company_name": "Faraday",
-        "slug": "faraday",
-        "similarity": 0.683
+        "company_name": "Foji",
+        "slug": "foji",
+        "similarity": 0.639
       },
       {
         "company_name": "Jooba",
         "slug": "jooba",
-        "similarity": 0.679
+        "similarity": 0.58
       },
       {
-        "company_name": "Propel Labs",
-        "slug": "propel-labs",
-        "similarity": 0.667
+        "company_name": "Stealth Health-Tech Startup",
+        "slug": "stealth-health-tech-startup",
+        "similarity": 0.565
       },
       {
-        "company_name": "Aerium",
-        "slug": "aerium",
-        "similarity": 0.658
+        "company_name": "Seal",
+        "slug": "seal",
+        "similarity": 0.561
+      },
+      {
+        "company_name": "Kairos Health",
+        "slug": "kairos-health",
+        "similarity": 0.549
       }
     ],
     "timeline": [
       {
-        "at": "2026-11-13T14:14:03+00:00",
+        "at": "2026-11-14T13:14:07+00:00",
         "kind": "discovered",
         "items": [
-          "Product: We build AI agents that help companies work with their suppliers. Looking for someone who will talk to customers, figure out what n"
+          "Product: I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Manag"
         ],
         "source_urls": [
-          "https://news.ycombinator.com/item?id=50481529"
+          "https://news.ycombinator.com/item?id=50484305"
         ],
         "count": 1
       },
       {
-        "at": "2026-11-13T10:43:35+00:00",
+        "at": "2026-11-13T14:47:49+00:00",
         "kind": "hiring",
         "items": [
-          "Hiring: Forward-Deployed Product Engineer"
+          "Hiring: Senior Full Stack Engineer (Frontend-Leaning)"
         ],
         "source_urls": [
-          "https://news.ycombinator.com/item?id=50481529"
+          "https://news.ycombinator.com/item?id=50484305"
         ],
         "count": 1
       }
@@ -123228,13 +123882,13 @@
     "why_now": [
       {
         "signal": "hn",
-        "text": "Posted on Hacker News 11d ago (hiring or launch)",
-        "source_url": "https://news.ycombinator.com/item?id=50481529"
+        "text": "Posted on Hacker News 10d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50484305"
       },
       {
         "signal": "hiring",
-        "text": "Hiring (11d ago): Forward-Deployed Product Engineer",
-        "source_url": "https://news.ycombinator.com/item?id=50481529"
+        "text": "Hiring (11d ago): Senior Full Stack Engineer (Frontend-Leaning)",
+        "source_url": "https://news.ycombinator.com/item?id=50484305"
       }
     ],
     "warm_path": null,
@@ -123243,8 +123897,8 @@
       "intent_reason": "found on a Hacker News hiring/launch post",
       "to": "",
       "to_source_url": "",
-      "subject": "Elm AI: a thought on your stack",
-      "body": "Hi Elm AI team,\n\nI saw you're hiring (Forward-Deployed Product Engineer) (https://news.ycombinator.com/item?id=50481529).\nI'd like to help on the engineering side.\n\nI came across Elm AI: We build AI agents that help companies work with their suppliers.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "subject": "Confidential Healthcare AI Startup: a thought on your stack",
+      "body": "Hi Confidential Healthcare AI Startup team,\n\nI saw you're hiring (Senior Full Stack Engineer (Frontend-Leaning)) (https://news.ycombinator.com/item?id=50484305).\nI'd like to help on the engineering side.\n\nI came across Confidential Healthcare AI Startup: I'm an independent recruiter sourcing for a venture-backed healthcare technology startup building an AI-powered Revenue Cycle Management.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -123415,7 +124069,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago): Madrid, Spain",
+        "text": "Hiring (22d ago): Madrid, Spain",
         "source_url": "https://news.ycombinator.com/item?id=50341371"
       }
     ],
@@ -123609,6 +124263,212 @@
       "to_source_url": "",
       "subject": "Hemant Singh: a thought on your stack",
       "body": "Hi Hemant Singh team,\n\nI saw you're hiring (Software Engineer, Backend Engineer) (https://news.ycombinator.com/item?id=50454490).\nI'd like to help on the engineering side.\n\nI came across Hemant Singh: I'm a software engineer focused on backend development, primarily working with Java, Spring Boot, and Python.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
+      "mailto": "",
+      "needs_human": false,
+      "needs_human_reason": ""
+    },
+    "outreach": []
+  },
+  {
+    "company_name": "Landlord",
+    "core_product": "Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) so our customers can focus on what's really important at a high level.",
+    "tech_stack": [],
+    "likely_bottleneck": "",
+    "value_prop_pitch": "",
+    "is_relevant": true,
+    "funding_stage": "",
+    "source_url": "https://news.ycombinator.com/item?id=50461075",
+    "discovered_at": "2026-11-12T14:52:27+00:00",
+    "funding_amount": "",
+    "hq": "",
+    "website": "",
+    "score": 15,
+    "last_seen": "2026-11-12T14:53:38+00:00",
+    "slug": "landlord",
+    "score_parts": {
+      "fit": 15,
+      "identity": 0,
+      "people": 0,
+      "connections": 0,
+      "contact": 0
+    },
+    "gaps": [
+      "funding stage",
+      "website",
+      "location",
+      "funding amount",
+      "tech stack",
+      "founder",
+      "people profiles",
+      "investors",
+      "email",
+      "phone"
+    ],
+    "axes": {
+      "fit": 60,
+      "reach": 0,
+      "evidence": 0
+    },
+    "qualified": false,
+    "contact": {
+      "website": "",
+      "emails": [],
+      "phones": [],
+      "socials": {},
+      "contact_page": "",
+      "product_access": [],
+      "pages_crawled": [],
+      "enriched_at": "2026-11-24T19:28:54+00:00",
+      "status": "no_website",
+      "attempts": 1,
+      "last_attempt": "2026-11-24T19:28:28+00:00",
+      "site_tech": []
+    },
+    "signals": [
+      {
+        "type": "hiring",
+        "source": "hn_who_is_hiring",
+        "url": "https://news.ycombinator.com/item?id=50461075",
+        "roles": [
+          "AI Engineer"
+        ],
+        "role_kinds": [
+          "eng"
+        ],
+        "posted_at": "2026-11-12T00:21:54Z",
+        "seen_at": "2026-11-12T14:52:27+00:00"
+      }
+    ],
+    "people": [],
+    "edges": [],
+    "outcome": null,
+    "decision": {
+      "action": "watch",
+      "urgency": "cold",
+      "priority": 36.0,
+      "reasons": [
+        "lead score 15",
+        "signal strength 6.6/10: hiring",
+        "found 12 day(s) ago (warm)",
+        "not enough signal yet"
+      ],
+      "next_step": "Wait for more data",
+      "provider": "policy",
+      "score": 35
+    },
+    "trackbacks": [
+      {
+        "entity_type": "startup",
+        "entity_key": "landlord",
+        "field": "core_product",
+        "label": "core_product: Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) so our customers can focus on what's really important at a high level.",
+        "value": "Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) so our customers can focus on what's really important at a high level.",
+        "source_url": "https://news.ycombinator.com/item?id=50461075",
+        "evidence": "",
+        "run_id": "backfill-2026-11-24",
+        "first_seen": "2026-11-12T14:53:38+00:00",
+        "last_seen": "2026-11-24T19:28:28+00:00",
+        "seen_count": 2,
+        "confidence": 0.4
+      },
+      {
+        "entity_type": "contact",
+        "entity_key": "landlord",
+        "field": "email",
+        "label": "email: careers@uselandlord.com",
+        "value": "careers@uselandlord.com",
+        "source_url": "https://news.ycombinator.com/item?id=50461075",
+        "evidence": "",
+        "run_id": "20261112T145040Z",
+        "first_seen": "2026-11-12T14:53:38+00:00",
+        "last_seen": "2026-11-12T14:53:38+00:00",
+        "seen_count": 1,
+        "confidence": 1.0
+      }
+    ],
+    "similar": [
+      {
+        "company_name": "Dream",
+        "slug": "dream",
+        "similarity": 0.648
+      },
+      {
+        "company_name": "Tire Swing",
+        "slug": "tire-swing",
+        "similarity": 0.646
+      },
+      {
+        "company_name": "Joulent",
+        "slug": "joulent",
+        "similarity": 0.603
+      },
+      {
+        "company_name": "Elm AI",
+        "slug": "elm-ai",
+        "similarity": 0.603
+      },
+      {
+        "company_name": "EggAI",
+        "slug": "eggai",
+        "similarity": 0.58
+      }
+    ],
+    "timeline": [
+      {
+        "at": "2026-11-12T14:53:38+00:00",
+        "kind": "discovered",
+        "items": [
+          "Product: Landlord builds AIs that turn people from builders into architects. This means our AIs hammer the nails (repetitive, boring tasks) "
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50461075"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-11-12T14:53:38+00:00",
+        "kind": "learned",
+        "items": [
+          "Published email: careers@uselandlord.com"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50461075"
+        ],
+        "count": 1
+      },
+      {
+        "at": "2026-11-12T00:21:54+00:00",
+        "kind": "hiring",
+        "items": [
+          "Hiring: AI Engineer"
+        ],
+        "source_urls": [
+          "https://news.ycombinator.com/item?id=50461075"
+        ],
+        "count": 1
+      }
+    ],
+    "watch": [],
+    "why_now": [
+      {
+        "signal": "hn",
+        "text": "Posted on Hacker News 12d ago (hiring or launch)",
+        "source_url": "https://news.ycombinator.com/item?id=50461075"
+      },
+      {
+        "signal": "hiring",
+        "text": "Hiring (12d ago): AI Engineer",
+        "source_url": "https://news.ycombinator.com/item?id=50461075"
+      }
+    ],
+    "warm_path": null,
+    "email_draft": {
+      "intent": "work_for",
+      "intent_reason": "found on a Hacker News hiring/launch post",
+      "to": "",
+      "to_source_url": "",
+      "subject": "Landlord: a thought on your stack",
+      "body": "Hi Landlord team,\n\nI saw you're hiring (AI Engineer) (https://news.ycombinator.com/item?id=50461075).\nI'd like to help on the engineering side.\n\nI came across Landlord: Landlord builds AIs that turn people from builders into architects.\nI'm looking to join a team like yours.\n\nIs there a role, or a small project, where I could contribute?\n\nIf this isn't relevant, just reply \"no\" and I won't follow up.",
       "mailto": "",
       "needs_human": false,
       "needs_human_reason": ""
@@ -124427,7 +125287,7 @@
     "why_now": [
       {
         "signal": "hiring",
-        "text": "Hiring (20d ago): Product Engineering Lead, Keet",
+        "text": "Hiring (21d ago): Product Engineering Lead, Keet",
         "source_url": "https://news.ycombinator.com/item?id=50355834"
       }
     ],
@@ -126429,7 +127289,7 @@
       },
       {
         "signal": "hiring",
-        "text": "Hiring (21d ago)",
+        "text": "Hiring (22d ago)",
         "source_url": "https://news.ycombinator.com/item?id=50340480"
       }
     ],

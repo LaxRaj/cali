@@ -89,6 +89,14 @@
       "score": 79
     },
     {
+      "id": "joulent",
+      "label": "Joulent",
+      "type": "startup",
+      "degree": 11,
+      "website": "https://www.joulent.com",
+      "score": 58
+    },
+    {
       "id": "42ai",
       "label": "42AI",
       "type": "startup",
@@ -480,7 +488,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 72
+      "score": 87
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -1483,6 +1491,14 @@
       "type": "startup",
       "degree": 2,
       "website": "https://www.hestus.co",
+      "score": 49
+    },
+    {
+      "id": "common prefix",
+      "label": "Common Prefix",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://www.commonprefix.com",
       "score": 49
     },
     {
@@ -6389,30 +6405,6 @@
       "links": {}
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "nathan sobo",
       "label": "Nathan Sobo",
       "type": "person",
@@ -6518,6 +6510,134 @@
       "type": "person",
       "degree": 1,
       "role": "Chief Executive and Co‑founder",
+      "links": {}
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "dr. dionysis zindros",
+      "label": "Dr. Dionysis Zindros",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO & Co-Founder",
+      "links": {}
+    },
+    {
+      "id": "nikolaos kamarinakis",
+      "label": "Nikolaos Kamarinakis",
+      "type": "person",
+      "degree": 1,
+      "role": "CTO & Co-Founder",
+      "links": {}
+    },
+    {
+      "id": "chris james",
+      "label": "Chris James",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder and Chief Executive Officer",
+      "links": {}
+    },
+    {
+      "id": "corey grindal",
+      "label": "Corey Grindal",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-President and Chief Operating Officer",
+      "links": {}
+    },
+    {
+      "id": "michael wortley",
+      "label": "Michael Wortley",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-President and Chief Financial Officer",
+      "links": {}
+    },
+    {
+      "id": "brian boland",
+      "label": "Brian Boland",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Investment Officer, Executive Vice President and Head of Strategy",
+      "links": {}
+    },
+    {
+      "id": "jeff van heel",
+      "label": "Jeff van Heel",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Infrastructure Officer",
+      "links": {}
+    },
+    {
+      "id": "adam taylor",
+      "label": "Adam Taylor",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief Development Officer",
+      "links": {}
+    },
+    {
+      "id": "brett kerr",
+      "label": "Brett Kerr",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief of External Affairs",
+      "links": {}
+    },
+    {
+      "id": "chris wissel-tyson",
+      "label": "Chris Wissel-Tyson",
+      "type": "person",
+      "degree": 1,
+      "role": "Head/SVP of Growth and Strategy",
+      "links": {}
+    },
+    {
+      "id": "jake appleton",
+      "label": "Jake Appleton",
+      "type": "person",
+      "degree": 1,
+      "role": "Head of Talent and Strategic Initiatives",
+      "links": {}
+    },
+    {
+      "id": "akshat patel",
+      "label": "Akshat Patel",
+      "type": "person",
+      "degree": 1,
+      "role": "Head of Energy Software & Optimization",
+      "links": {}
+    },
+    {
+      "id": "jeff starzec",
+      "label": "Jeff Starzec",
+      "type": "person",
+      "degree": 1,
+      "role": "General Counsel",
       "links": {}
     },
     {
@@ -8183,18 +8303,6 @@
       "degree": 1
     },
     {
-      "id": "beenext ventures",
-      "label": "Beenext Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "lotus",
-      "label": "Lotus",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "set ventures",
       "label": "SET Ventures",
       "type": "org",
@@ -8209,6 +8317,18 @@
     {
       "id": "investible",
       "label": "Investible",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "beenext ventures",
+      "label": "Beenext Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lotus",
+      "label": "Lotus",
       "type": "org",
       "degree": 1
     },
@@ -8381,14 +8501,6 @@
       "score": 15
     },
     {
-      "id": "eleshop",
-      "label": "Eleshop",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://www.eleshop.nl/vacatures.html",
-      "score": 21
-    },
-    {
       "id": "bioliberty",
       "label": "Bioliberty",
       "type": "startup",
@@ -8469,36 +8581,12 @@
       "score": 29
     },
     {
-      "id": "creativelens",
-      "label": "CreativeLens",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 21
-    },
-    {
-      "id": "artcraft",
-      "label": "ArtCraft",
-      "type": "startup",
-      "degree": 0,
-      "website": "https://getartcraft.com",
-      "score": 21
-    },
-    {
       "id": "ciphersonic labs inc.",
       "label": "CipherSonic Labs Inc.",
       "type": "startup",
       "degree": 0,
       "website": "https://ciphersoniclabs.io",
       "score": 77
-    },
-    {
-      "id": "landlord",
-      "label": "Landlord",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 21
     },
     {
       "id": "hemant singh",
@@ -8547,14 +8635,6 @@
       "degree": 0,
       "website": "https://www.threatmark.com",
       "score": 29
-    },
-    {
-      "id": "elm ai",
-      "label": "Elm AI",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
     },
     {
       "id": "spanish national cancer research centre",
@@ -8619,30 +8699,6 @@
       "degree": 0,
       "website": "https://startuphakk.com",
       "score": 41
-    },
-    {
-      "id": "common prefix",
-      "label": "Common Prefix",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
-    },
-    {
-      "id": "joulent",
-      "label": "Joulent",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
-    },
-    {
-      "id": "confidential healthcare ai startup",
-      "label": "Confidential Healthcare AI Startup",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
     },
     {
       "id": "propel labs",
@@ -8819,14 +8875,6 @@
       "degree": 0,
       "website": "https://potentiambio.ai",
       "score": 70
-    },
-    {
-      "id": "jpmorganchase",
-      "label": "JPMorganChase",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
     },
     {
       "id": "proofline",
@@ -9339,6 +9387,62 @@
       "degree": 0,
       "website": "https://humansand.ai",
       "score": 46
+    },
+    {
+      "id": "landlord",
+      "label": "Landlord",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "creativelens",
+      "label": "CreativeLens",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://creativelens.ai",
+      "score": 29
+    },
+    {
+      "id": "artcraft",
+      "label": "ArtCraft",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://getartcraft.com",
+      "score": 21
+    },
+    {
+      "id": "eleshop",
+      "label": "Eleshop",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.eleshop.nl/vacatures.html",
+      "score": 21
+    },
+    {
+      "id": "jpmorganchase",
+      "label": "JPMorganChase",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "confidential healthcare ai startup",
+      "label": "Confidential Healthcare AI Startup",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "elm ai",
+      "label": "Elm AI",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.elm-ai.com",
+      "score": 34
     },
     {
       "id": "kevin hartz",
@@ -23854,132 +23958,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo-founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-23",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-23T20:02:38+00:00"
-        }
-      ]
-    },
-    {
       "source": "nathan sobo",
       "target": "zed industries",
       "rel": "founded",
@@ -24288,6 +24266,314 @@
           "run_id": "20261124T171117Z",
           "first_seen": "2026-11-24T17:13:43+00:00",
           "last_seen": "2026-11-24T17:13:43+00:00"
+        }
+      ]
+    },
+    {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. dionysis zindros",
+      "target": "common prefix",
+      "rel": "founded",
+      "evidence": "Dionysis is a co‑founder and researcher at Common Prefix focusing on consensus, light clients, bridges, interoperability, and fast bootstrapping.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50488627",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "nikolaos kamarinakis",
+      "target": "common prefix",
+      "rel": "founded",
+      "evidence": "Nikolas is the CTO of Common Prefix, specializing in blockchain interoperability.",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50488627",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "chris james",
+      "target": "joulent",
+      "rel": "founded",
+      "evidence": "Chris James Founder and Chief Executive Officer",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "corey grindal",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Corey Grindal Co-President and Chief Operating Officer",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "michael wortley",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Michael Wortley Co-President and Chief Financial Officer",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "brian boland",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Brian Boland Chief Investment Officer, Executive Vice President and Head of Strategy",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jeff van heel",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Jeff van Heel Chief Infrastructure Officer",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "adam taylor",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Adam Taylor Chief Development Officer",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "brett kerr",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Brett Kerr Chief of External Affairs",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "chris wissel-tyson",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Chris Wissel-Tyson Head/SVP of Growth and Strategy",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jake appleton",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Jake Appleton Head of Talent and Strategic Initiatives",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "akshat patel",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Akshat Patel Head of Energy Software & Optimization",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jeff starzec",
+      "target": "joulent",
+      "rel": "works_at",
+      "evidence": "Jeff Starzec General Counsel",
+      "sources": [
+        {
+          "source_url": "https://news.ycombinator.com/item?id=50487782",
+          "run_id": "backfill-2026-11-24",
+          "first_seen": "2026-11-24T19:28:28+00:00",
+          "last_seen": "2026-11-24T19:28:28+00:00"
         }
       ]
     }
