@@ -1,0 +1,485 @@
+{
+  "run_id": "20261124T171117Z",
+  "started_at": "2026-11-24T17:11:17+00:00",
+  "duration_s": 156.9,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 262,
+    "selected": 11,
+    "crawled": 8,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4
+  },
+  "tokens": 18902,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 38,
+    "rss": 58,
+    "edgar": 4,
+    "web": 30
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building vector search API for Next.js apps",
+      "seed funding announced for retrieval-augmented generation startup targeting web app developers",
+      "founder interview with RAG startup enabling data-heavy SaaS search solutions November 2026",
+      "venture capital invests in early-stage search infrastructure startup building real-time vector indexes"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG tooling",
+      "vector API",
+      "developer search",
+      "next.js search"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "edgar": {
+        "crawled": 23,
+        "accepted": 6,
+        "score_sum": 390,
+        "yield": 0.261,
+        "avg_score": 65.0
+      },
+      "yc": {
+        "crawled": 27,
+        "accepted": 27,
+        "score_sum": 1686,
+        "yield": 1.0,
+        "avg_score": 62.4
+      },
+      "hiring": {
+        "crawled": 56,
+        "accepted": 55,
+        "score_sum": 1714,
+        "yield": 0.982,
+        "avg_score": 31.2
+      },
+      "rss": {
+        "crawled": 29,
+        "accepted": 20,
+        "score_sum": 1496,
+        "yield": 0.69,
+        "avg_score": 74.8
+      },
+      "web": {
+        "crawled": 9,
+        "accepted": 6,
+        "score_sum": 494,
+        "yield": 0.667,
+        "avg_score": 82.3
+      },
+      "launch_hn": {
+        "crawled": 5,
+        "accepted": 5,
+        "score_sum": 310,
+        "yield": 1.0,
+        "avg_score": 62.0
+      },
+      "hn": {
+        "crawled": 1,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 2,
+      "yc": 3
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 103,
+    "fallbacks": 0,
+    "avg_latency_ms": 91.3,
+    "jev_input_tokens": 49233,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-24T17:11:17+00:00",
+      "offset_s": 0.0,
+      "duration_s": 11.31,
+      "status": "ok",
+      "counts": {
+        "candidates": 262,
+        "src_hn": 34,
+        "src_launch_hn": 4,
+        "src_rss": 58,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 4,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-24T17:11:29+00:00",
+      "offset_s": 11.31,
+      "duration_s": 8.83,
+      "status": "ok",
+      "counts": {
+        "in": 262,
+        "selected": 11,
+        "hiring_lane": 1,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 2, 'yc': 3}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-24T17:11:37+00:00",
+      "offset_s": 20.14,
+      "duration_s": 12.7,
+      "status": "ok",
+      "counts": {
+        "requested": 11,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-24T17:11:50+00:00",
+      "offset_s": 32.84,
+      "duration_s": 61.64,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 4,
+        "valid": 4
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-24T17:12:52+00:00",
+      "offset_s": 94.47,
+      "duration_s": 50.9,
+      "status": "ok",
+      "counts": {
+        "startups": 5,
+        "websites": 5,
+        "emails": 6,
+        "phones": 3
+      },
+      "notes": [
+        "structured data: 2 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-24T17:13:43+00:00",
+      "offset_s": 145.38,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 66
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-24T17:13:43+00:00",
+      "offset_s": 145.38,
+      "duration_s": 2.06,
+      "status": "ok",
+      "counts": {
+        "startups": 5,
+        "people": 10,
+        "edges": 15
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-11-24T17:13:45+00:00",
+      "offset_s": 147.44,
+      "duration_s": 7.67,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 0
+      },
+      "notes": [
+        "Cologne, Germany: ok, score 32"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.42,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.06,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 38,
+      "seconds": 2.08,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 58,
+      "seconds": 3.5,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 4,
+      "seconds": 8.37,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 11.31,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 15775,
+    "completion_tokens": 3127,
+    "total_tokens": 18902,
+    "calls": 8,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 11733,
+        "completion_tokens": 3025,
+        "total_tokens": 14758,
+        "calls": 5
+      },
+      "team": {
+        "prompt_tokens": 4042,
+        "completion_tokens": 102,
+        "total_tokens": 4144,
+        "calls": 3
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 15775,
+        "completion_tokens": 3127,
+        "total_tokens": 18902,
+        "calls": 8
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 15775,
+        "completion_tokens": 3127,
+        "total_tokens": 18902,
+        "calls": 8
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 262,
+    "crawled": 8,
+    "extracted": 5,
+    "relevant": 4,
+    "valid": 4,
+    "sources": {
+      "rss": 1,
+      "web": 2,
+      "yc": 1
+    },
+    "people": 10,
+    "edges": 15,
+    "dropped_ungrounded": 0,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 5,
+    "with_website": 5,
+    "with_email": 4,
+    "with_phone": 1,
+    "people_linked": 2,
+    "avg_score": 66.4,
+    "qualified": 3,
+    "avg_qualified_score": 76.3,
+    "issues": {
+      "warn: empty tech_stack": 2,
+      "not a relevant startup page": 1
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [
+      "ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
+      "ycombinator.com/launches/Y37-altair-health-we-get-doctors-paid-on-autopilot",
+      "slashobserve.com"
+    ],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Good Heat",
+      "url": "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
+      "source": "rss",
+      "people": 3,
+      "edges": 5,
+      "score": 89,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://www.goodheat.energy",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Exa",
+      "url": "https://www.citi.com/ventures/perspectives/pressrelease/investing-in-exa-to-power-ai-search",
+      "source": "web",
+      "people": 4,
+      "edges": 3,
+      "score": 71,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://exa.ai",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Vestris",
+      "url": "https://www.ycombinator.com/launches/Xwk-vestris-the-fico-score-for-homes-order-yours-at-vestris-ai",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 57,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://score.vestris.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Qdrant Solutions GmbH",
+      "url": "https://siliconangle.com/2026/03/12/qdrant-raises-50m-bring-flexible-vector-search-production-ai-systems/",
+      "source": "web",
+      "people": 1,
+      "edges": 6,
+      "score": 83,
+      "gaps": [
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://qdrant.tech",
+      "emails": 2,
+      "phones": 0
+    },
+    {
+      "company": "Cologne, Germany",
+      "url": "https://www.umh.app/careers/product-engineer-f-m-d-70-100k-eur-cologne",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 32,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email"
+      ],
+      "website": "https://www.cologne-tourism.com",
+      "emails": 0,
+      "phones": 3
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2157865/000215786526000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2166702/000149315226053885/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/niro-intelligence-raises-1-65m-ai-coding-agents-ground-truth/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Good Heat",
+        "score": 89,
+        "source": "rss"
+      },
+      {
+        "company": "Vestris",
+        "score": 57,
+        "source": "yc"
+      },
+      {
+        "company": "Qdrant Solutions GmbH",
+        "score": 83,
+        "source": "web"
+      },
+      {
+        "company": "Cologne, Germany",
+        "score": 32,
+        "source": "hiring"
+      }
+    ],
+    "updated": [
+      {
+        "company": "Exa",
+        "score": 71,
+        "score_before": 90,
+        "source": "web"
+      }
+    ]
+  }
+}

@@ -1,60 +1,53 @@
 {
-  "generated_at": "2026-11-23T17:42:14+00:00",
+  "generated_at": "2026-11-24T17:13:43+00:00",
   "findings": [
     {
-      "company_name": "coprod",
-      "core_product": "Modular hardware components and a real‑time EtherCAT control platform that standardises robotics integration.",
-      "tech_stack": [
-        "EtherCAT",
-        "C++",
-        "Python"
-      ],
-      "likely_bottleneck": "Scaling hardware manufacturing and supply‑chain integration while maintaining real‑time performance.",
-      "value_prop_pitch": "I can build a Next.js dashboard that lets your engineers visualise component compatibility and generate semantic search queries over your datasheets, cutting integration time dramatically. Coupled with vector semantic search, you’ll instantly find the exact driver or firmware version you need, eliminating weeks of manual debugging.",
+      "company_name": "Good Heat",
+      "core_product": "Zero‑carbon industrial heat as a service using heat‑battery thermal storage systems.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the software platform that monitors, controls, and finances a distributed fleet of heat‑battery installations.",
+      "value_prop_pitch": "I can help you build a Next.js front‑end with a vector‑semantic search layer to instantly surface the right project data for each site, cutting down engineering time on custom dashboards. This will let your team focus on scaling installations instead of building bespoke query tools.",
       "is_relevant": true,
-      "funding_stage": "pre-Seed",
-      "funding_amount": "€5.45 million",
-      "hq": "Switzerland",
-      "website": "https://coprod.co",
-      "source_url": "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
-      "discovered_at": "2026-11-23T17:40:26+00:00",
+      "funding_stage": "Series A",
+      "funding_amount": "€2 million",
+      "hq": "Amsterdam",
+      "website": "https://www.goodheat.energy",
+      "source_url": "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
+      "discovered_at": "2026-11-24T17:11:50+00:00",
       "source": "rss",
-      "score": 87,
+      "score": 89,
       "gaps": [
-        "people profiles",
+        "tech stack",
         "phone"
       ],
       "contact": {
-        "website": "https://coprod.co",
+        "website": "https://www.goodheat.energy",
         "emails": [
           {
-            "value": "contact@coprod.ch",
+            "value": "info@goodheat.energy",
             "kind": "general",
-            "source_url": "https://coprod.co/"
+            "source_url": "https://www.goodheat.energy/"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/coprod_Inc",
-          "linkedin": "https://www.linkedin.com/company/coprod-inc",
-          "github": "https://github.com/coprod-Inc"
+          "linkedin": "https://www.linkedin.com/company/good-heat-energy"
         },
-        "contact_page": "https://coprod.co/contact",
+        "contact_page": "https://www.goodheat.energy/contact",
         "product_access": [],
         "pages_crawled": [
-          "https://coprod.co/",
-          "https://coprod.co/about",
-          "https://coprod.co/contact",
-          "https://coprod.co/team"
+          "https://www.goodheat.energy/",
+          "https://www.goodheat.energy/about",
+          "https://www.goodheat.energy/contact"
         ],
-        "enriched_at": "2026-11-23T17:41:22+00:00",
+        "enriched_at": "2026-11-24T17:12:54+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Vercel",
-            "category": "hosting"
+            "name": "Webflow",
+            "category": "cms"
           }
         ]
       },
@@ -62,41 +55,41 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
+          "url": "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Mon, 23 Nov 2026 09:01:18 +0000",
-          "seen_at": "2026-11-23T17:41:20+00:00"
+          "posted_at": "Tue, 24 Nov 2026 09:00:10 +0000",
+          "seen_at": "2026-11-24T17:12:52+00:00"
         }
       ],
       "people": [
         {
-          "name": "Loïc Delineau",
-          "role": "CEO & Co‑founder",
-          "org": "coprod",
-          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
-          "linkedin": "",
+          "name": "Bauke van Gent",
+          "role": "Founder and CEO",
+          "org": "Good Heat",
+          "evidence": "\"Industrial heat is an enormous market...\" said Bauke van Gent , Founder and CEO, Good Heat.",
+          "linkedin": "https://www.linkedin.com/in/baukevangent",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://www.goodheat.energy/about"
         },
         {
-          "name": "Vincent Nguyen",
+          "name": "Tom Geiser",
           "role": "Co‑founder",
-          "org": "coprod",
-          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
-          "linkedin": "",
+          "org": "Good Heat",
+          "evidence": "Founded in 2025 by Bauke van Gent and Tom Geiser, Good Heat is a developer and platform for clean industrial heat.",
+          "linkedin": "https://www.linkedin.com/in/tom-geiser-6a301710b",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://www.goodheat.energy/about"
         },
         {
-          "name": "Matthias Schuller",
-          "role": "Co‑founder",
-          "org": "coprod",
-          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller",
+          "name": "Anton Arts",
+          "role": "Managing Partner",
+          "org": "SET Ventures",
+          "evidence": "\"Industrial heat isn’t held back by technology...\" said Anton Arts , Managing Partner at SET Ventures.",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -106,198 +99,102 @@
       ],
       "edges": [
         {
-          "src": "Loïc Delineau",
+          "src": "Bauke van Gent",
           "rel": "founded",
-          "dst": "coprod",
-          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller"
+          "dst": "Good Heat",
+          "evidence": "\"Industrial heat is an enormous market...\" said Bauke van Gent , Founder and CEO, Good Heat."
         },
         {
-          "src": "Vincent Nguyen",
+          "src": "Tom Geiser",
           "rel": "cofounded",
-          "dst": "coprod",
-          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller"
+          "dst": "Good Heat",
+          "evidence": "Founded in 2025 by Bauke van Gent and Tom Geiser, Good Heat is a developer and platform for clean industrial heat."
         },
         {
-          "src": "Matthias Schuller",
-          "rel": "cofounded",
-          "dst": "coprod",
-          "evidence": "Founded in late 2024 by EPFL graduates Loïc Delineau, Vincent Nguyen, and Matthias Schuller"
-        },
-        {
-          "src": "Founderful",
+          "src": "SET Ventures",
           "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "The round was co‑led by Founderful and PROTOTYPE"
+          "dst": "Good Heat",
+          "evidence": "The round is led by SET Ventures, Europe’s leading energy VC, with participation from Shell Ventures and existing investor Investible."
         },
         {
-          "src": "PROTOTYPE",
+          "src": "Shell Ventures",
           "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "The round was co‑led by Founderful and PROTOTYPE"
+          "dst": "Good Heat",
+          "evidence": "The round is led by SET Ventures, Europe’s leading energy VC, with participation from Shell Ventures and existing investor Investible."
         },
         {
-          "src": "General Catalyst",
+          "src": "Investible",
           "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "additional backing from General Catalyst"
-        },
-        {
-          "src": "Pace Ventures",
-          "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "additional backing from ... Pace Ventures"
-        },
-        {
-          "src": "Tiny Supercomputer Investment Company",
-          "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "additional backing from ... Tiny Supercomputer Investment Company"
-        },
-        {
-          "src": "Kima Ventures",
-          "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "additional backing from ... Kima Ventures"
-        },
-        {
-          "src": "SDAC",
-          "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "additional backing from ... SDAC"
-        },
-        {
-          "src": "Unruly Capital",
-          "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "additional backing from ... Unruly Capital"
-        },
-        {
-          "src": "Venturekick",
-          "rel": "invested_in",
-          "dst": "coprod",
-          "evidence": "additional backing from ... Venturekick"
+          "dst": "Good Heat",
+          "evidence": "The round is led by SET Ventures, Europe’s leading energy VC, with participation from Shell Ventures and existing investor Investible."
         }
       ]
     },
     {
-      "company_name": "Antinuous",
-      "core_product": "A platform that provides agents, high‑performance compute clusters, and simulation software to run research experiments 100× faster and 1,000× cheaper.",
+      "company_name": "Exa",
+      "core_product": "An AI-native search engine and web retrieval API that delivers clean, structured, and verifiable data for LLMs and AI agents.",
       "tech_stack": [
-        "GPU clusters",
-        "CPU clusters",
-        "agent orchestration"
+        "embedding‑based indexing",
+        "REST API"
       ],
-      "likely_bottleneck": "efficiently orchestrating thousands of parallel agent swarms across distributed compute resources",
-      "value_prop_pitch": "You could replace the custom orchestration layer with a Next.js front‑end that dynamically schedules agent tasks via a vector‑semantic search index, letting you match workloads to the right compute nodes instantly. This would cut latency and simplify scaling, letting the team focus on research logic instead of low‑level scheduling.",
+      "likely_bottleneck": "scaling real‑time vector search and retrieval across constantly updating web data",
+      "value_prop_pitch": "You could offload the heavy lifting of real‑time vector retrieval to a Next.js front‑end that caches and pre‑fetches the most popular embeddings, dramatically reducing latency. Then layer a semantic search service on top to surface the most relevant, token‑dense results without overloading your backend.",
       "is_relevant": true,
-      "funding_stage": "YC",
+      "funding_stage": "",
       "funding_amount": "",
-      "hq": "",
-      "website": "https://www.antinuous.com/",
-      "source_url": "https://www.ycombinator.com/launches/XiA-antinuous-100x-more-experiments-1-000x-cheaper",
-      "discovered_at": "2026-11-23T17:40:26+00:00",
-      "source": "yc",
-      "score": 44,
+      "hq": "San Francisco, US",
+      "website": "https://exa.ai",
+      "source_url": "https://www.citi.com/ventures/perspectives/pressrelease/investing-in-exa-to-power-ai-search",
+      "discovered_at": "2026-11-24T17:11:50+00:00",
+      "source": "web",
+      "score": 71,
       "gaps": [
-        "location",
+        "funding stage",
         "funding amount",
         "people profiles",
-        "investors",
-        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://www.antinuous.com",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [],
-        "enriched_at": "2026-11-23T17:41:35+00:00",
-        "status": "crawl_failed",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XiA-antinuous-100x-more-experiments-1-000x-cheaper",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-23T17:41:20+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Ricardo Nunez",
-          "role": "Founder",
-          "org": "Antinuous",
-          "evidence": "Ricardo Nunez",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Ricardo Nunez",
-          "rel": "founded",
-          "dst": "Antinuous",
-          "evidence": "Ricardo Nunez"
-        }
-      ]
-    },
-    {
-      "company_name": "Antropi Robotics",
-      "core_product": "Autonomous factories that make precision CNC parts from CAD files at software speed.",
-      "tech_stack": [
-        "CNC",
-        "Robotics",
-        "CAD",
-        "Simulation"
-      ],
-      "likely_bottleneck": "Scaling the automation and real‑time inspection feedback loop across multiple factories.",
-      "value_prop_pitch": "You can streamline your Factory OS UI with Next.js to deliver fast, responsive dashboards for engineers reviewing toolpaths. Adding a vector semantic search layer lets you instantly retrieve similar past part inspections, reducing manual analysis time.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.antropi.world",
-      "source_url": "https://www.ycombinator.com/launches/XyK-antropi-robotics-cnc-parts-in-days-from-autonomous-factories",
-      "discovered_at": "2026-11-23T17:40:26+00:00",
-      "source": "yc",
-      "score": 52,
-      "gaps": [
-        "location",
-        "funding amount",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.antropi.world",
-        "emails": [],
+        "website": "https://exa.ai",
+        "emails": [
+          {
+            "value": "press@exa.ai",
+            "kind": "press",
+            "source_url": "https://exa.ai/contact"
+          },
+          {
+            "value": "support@exa.ai",
+            "kind": "support",
+            "source_url": "https://exa.ai/"
+          }
+        ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/antropirobotics",
-          "linkedin": "https://www.linkedin.com/company/antropi-robotics"
+          "twitter": "https://x.com/exaailabs",
+          "linkedin": "https://www.linkedin.com/company/exa-ai",
+          "github": "https://github.com/exa-labs"
         },
-        "contact_page": "https://www.antropi.world/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.antropi.world/",
-          "https://www.antropi.world/about",
-          "https://www.antropi.world/contact",
-          "https://www.antropi.world/team"
+        "contact_page": "https://exa.ai/contact",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://exa.ai/docs"
+          },
+          {
+            "label": "Pricing",
+            "url": "https://exa.ai/pricing"
+          },
+          {
+            "label": "Sign up API Dashboard",
+            "url": "https://dashboard.exa.ai/?exa_cta=nav_primary"
+          }
         ],
-        "enriched_at": "2026-11-23T17:41:39+00:00",
+        "pages_crawled": [
+          "https://exa.ai/",
+          "https://exa.ai/contact",
+          "https://exa.ai/about"
+        ],
+        "enriched_at": "2026-11-24T17:12:59+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -307,6 +204,14 @@
             "category": "framework"
           },
           {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Vercel",
+            "category": "hosting"
+          },
+          {
             "name": "React",
             "category": "framework"
           }
@@ -314,21 +219,63 @@
       },
       "signals": [
         {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/XyK-antropi-robotics-cnc-parts-in-days-from-autonomous-factories",
+          "type": "funding",
+          "source": "web",
+          "url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-23T17:41:20+00:00"
+          "seen_at": "2026-11-04T14:00:21+00:00"
+        },
+        {
+          "type": "launch",
+          "source": "web",
+          "url": "https://www.citi.com/ventures/perspectives/pressrelease/investing-in-exa-to-power-ai-search",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-24T17:12:52+00:00"
         }
       ],
       "people": [
         {
-          "name": "Shubh Agarwal",
-          "role": "cofounder",
-          "org": "Antropi Robotics",
-          "evidence": "Hey YC, we’re Naman and Shubh, the founders of Antropi Robotics.",
+          "name": "Will Bryk",
+          "role": "CEO",
+          "org": "Exa",
+          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa, have been friends since their days studying computer science at Harvard",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Jeff Wang",
+          "role": "Co‑founder",
+          "org": "Exa",
+          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa, have been friends since their days studying computer science at Harvard",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Nick Sands",
+          "role": "Director, Citi Ventures",
+          "org": "Citi Ventures",
+          "evidence": "Nick Sands Director , Citi Ventures",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Max R. Mailman",
+          "role": "Vice President, Citi Ventures",
+          "org": "Citi Ventures",
+          "evidence": "Max R. Mailman Vice President , Citi Ventures",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -338,364 +285,391 @@
       ],
       "edges": [
         {
-          "src": "Shubh Agarwal",
+          "src": "Will Bryk",
           "rel": "founded",
-          "dst": "Antropi Robotics",
-          "evidence": "Hey YC, we’re Naman and Shubh, the founders of Antropi Robotics."
+          "dst": "Exa",
+          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa"
+        },
+        {
+          "src": "Jeff Wang",
+          "rel": "cofounded",
+          "dst": "Exa",
+          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa"
+        },
+        {
+          "src": "Citi Ventures",
+          "rel": "invested_in",
+          "dst": "Exa",
+          "evidence": "Citi Ventures is investing in Exa"
         }
       ]
     },
     {
-      "company_name": "humans&",
-      "core_product": "humans& is a human-centric frontier AI lab. Our view is that AI should help people work together, so it has to understand people and the relationships between them, not just tasks.",
+      "company_name": "Vestris",
+      "core_product": "A property title risk score that analyzes title records and flags issues for homeowners and lenders.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling the ingestion and semantic analysis of millions of county title records while keeping search latency low.",
+      "value_prop_pitch": "You could serve the Vestris UI with Next.js to get fast, SEO‑friendly pages and incremental static regeneration for each property score. Then, index the title document embeddings in a vector database and use semantic search to instantly surface relevant risk factors for any query.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://score.vestris.ai",
+      "source_url": "https://www.ycombinator.com/launches/Xwk-vestris-the-fico-score-for-homes-order-yours-at-vestris-ai",
+      "discovered_at": "2026-11-24T17:11:50+00:00",
+      "source": "yc",
+      "score": 57,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://score.vestris.ai",
+        "emails": [
+          {
+            "value": "founders@vestris.ai",
+            "kind": "person",
+            "source_url": "https://score.vestris.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {},
+        "contact_page": "https://score.vestris.ai/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://score.vestris.ai/pricing"
+          }
+        ],
+        "pages_crawled": [
+          "https://score.vestris.ai/",
+          "https://score.vestris.ai/about",
+          "https://score.vestris.ai/team",
+          "https://score.vestris.ai/contact"
+        ],
+        "enriched_at": "2026-11-24T17:13:17+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Framer",
+            "category": "cms"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Clerk",
+            "category": "auth"
+          },
+          {
+            "name": "Cloudflare",
+            "category": "hosting"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/Xwk-vestris-the-fico-score-for-homes-order-yours-at-vestris-ai",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-24T17:12:52+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Aahil Valliani",
+          "role": "co‑founder",
+          "org": "Vestris",
+          "evidence": "Hey y'all, we're Aahil and Josh, co-founders of Vestris.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Aahil Valliani",
+          "rel": "founded",
+          "dst": "Vestris",
+          "evidence": "Hey y'all, we're Aahil and Josh, co-founders of Vestris."
+        }
+      ]
+    },
+    {
+      "company_name": "Qdrant Solutions GmbH",
+      "core_product": "A Rust‑based vector database that provides flexible, composable semantic search for production AI applications.",
+      "tech_stack": [
+        "Rust",
+        "Docker",
+        "Kubernetes",
+        "Qdrant Cloud"
+      ],
+      "likely_bottleneck": "Scaling low‑latency, high‑throughput vector searches across massive, dynamic multimodal datasets.",
+      "value_prop_pitch": "We can integrate Next.js with your vector search API to build a fast, SEO‑friendly UI that caches results client‑side, reducing load on your backend. Coupled with semantic search embeddings, this cuts latency and lets your engineers focus on core database performance.",
+      "is_relevant": true,
+      "funding_stage": "Series B",
+      "funding_amount": "$50M",
+      "hq": "Berlin, DE",
+      "website": "https://qdrant.tech",
+      "source_url": "https://siliconangle.com/2026/03/12/qdrant-raises-50m-bring-flexible-vector-search-production-ai-systems/",
+      "discovered_at": "2026-11-24T17:11:50+00:00",
+      "source": "web",
+      "score": 83,
+      "gaps": [
+        "people profiles",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://qdrant.tech",
+        "emails": [
+          {
+            "value": "info@qdrant.com",
+            "kind": "general",
+            "source_url": "https://qdrant.tech/"
+          },
+          {
+            "value": "support@qdrant.io",
+            "kind": "support",
+            "source_url": "https://qdrant.tech/contact-us/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/qdrant",
+          "twitter": "https://x.com/qdrant_engine"
+        },
+        "contact_page": "https://qdrant.tech/contact-us/",
+        "product_access": [
+          {
+            "label": "Documentation",
+            "url": "https://qdrant.tech/documentation/"
+          },
+          {
+            "label": "Pricing",
+            "url": "https://qdrant.tech/pricing/"
+          },
+          {
+            "label": "Start Free",
+            "url": "https://cloud.qdrant.io/signup"
+          },
+          {
+            "label": "Try Web UI",
+            "url": "https://qdrant.tech/documentation/web-ui/"
+          }
+        ],
+        "pages_crawled": [
+          "https://qdrant.tech/",
+          "https://qdrant.tech/about-us/",
+          "https://qdrant.tech/contact-us/"
+        ],
+        "enriched_at": "2026-11-24T17:13:29+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "web",
+          "url": "https://siliconangle.com/2026/03/12/qdrant-raises-50m-bring-flexible-vector-search-production-ai-systems/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-24T17:12:52+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "André Zayarni",
+          "role": "Chief Executive and Co‑founder",
+          "org": "Qdrant Solutions GmbH",
+          "evidence": "Chief Executive and co‑founder of Qdrant André Zayarni told SiliconANGLE in an interview.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Andrey Vasnetsov",
+          "role": "",
+          "org": "Qdrant Solutions GmbH",
+          "evidence": "schema.org Person markup",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://qdrant.tech/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "André Zayarni",
+          "rel": "founded",
+          "dst": "Qdrant Solutions GmbH",
+          "evidence": "Chief Executive and co‑founder of Qdrant André Zayarni told SiliconANGLE in an interview."
+        },
+        {
+          "src": "AVP",
+          "rel": "invested_in",
+          "dst": "Qdrant Solutions GmbH",
+          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
+        },
+        {
+          "src": "Bosch Ventures",
+          "rel": "invested_in",
+          "dst": "Qdrant Solutions GmbH",
+          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
+        },
+        {
+          "src": "Unusual Ventures",
+          "rel": "invested_in",
+          "dst": "Qdrant Solutions GmbH",
+          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
+        },
+        {
+          "src": "Spark Capital",
+          "rel": "invested_in",
+          "dst": "Qdrant Solutions GmbH",
+          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
+        },
+        {
+          "src": "42CAP",
+          "rel": "invested_in",
+          "dst": "Qdrant Solutions GmbH",
+          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
+        }
+      ]
+    },
+    {
+      "company_name": "Cologne, Germany",
+      "core_product": "8 years ago, Jeremy was absolutely frustrated with the status quo of data infrastructure in manufacturing. Companies paid millions per year for \"shitty 90s software\" and are still doing that today, when there is much better software out the",
       "tech_stack": [],
       "likely_bottleneck": "",
       "value_prop_pitch": "",
       "is_relevant": true,
       "funding_stage": "",
       "funding_amount": "",
-      "hq": "",
-      "website": "https://humansand.ai",
-      "source_url": "https://news.ycombinator.com/item?id=50339975",
-      "discovered_at": "2026-11-23T17:41:20+00:00",
+      "hq": "Cologne, DE",
+      "website": "https://www.cologne-tourism.com",
+      "source_url": "https://news.ycombinator.com/item?id=50339895",
+      "discovered_at": "2026-11-24T17:12:52+00:00",
       "source": "hiring",
-      "score": 56,
+      "score": 32,
       "gaps": [
         "funding stage",
-        "location",
         "funding amount",
         "tech stack",
+        "founder",
         "people profiles",
-        "investors"
+        "investors",
+        "email"
       ],
       "contact": {
-        "website": "https://humansand.ai",
-        "emails": [
-          {
-            "value": "info@humansand.ai",
-            "kind": "general",
-            "source_url": "https://humansand.ai/"
-          }
-        ],
+        "website": "https://www.cologne-tourism.com",
+        "emails": [],
         "phones": [
           {
-            "value": "+12522277013",
+            "value": "+49221346430",
             "kind": "main",
-            "source_url": "https://humansand.ai/"
+            "source_url": "https://www.cologne-tourism.com/"
+          },
+          {
+            "value": "+4922134643200",
+            "kind": "main",
+            "source_url": "https://www.cologne-tourism.com/service/about-us"
+          },
+          {
+            "value": "+4922134643300",
+            "kind": "main",
+            "source_url": "https://www.cologne-tourism.com/service/about-us"
           }
         ],
         "socials": {
-          "twitter": "https://x.com/humansand"
+          "linkedin": "https://www.linkedin.com/company/koelntourismus-gmbh"
         },
-        "contact_page": "https://humansand.ai/contact",
+        "contact_page": "",
         "product_access": [],
         "pages_crawled": [
-          "https://humansand.ai/",
-          "https://humansand.ai/about",
-          "https://humansand.ai/contact",
-          "https://humansand.ai/team"
+          "https://www.cologne-tourism.com/",
+          "https://www.cologne-tourism.com/service/about-us"
         ],
-        "enriched_at": "2026-11-23T17:41:50+00:00",
+        "enriched_at": "2026-11-24T17:13:42+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Ashby",
-            "category": "hiring"
-          }
-        ]
+        "site_tech": []
       },
       "signals": [
         {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50339975",
+          "url": "https://news.ycombinator.com/item?id=50339895",
           "roles": [
-            "Product Engineer (Member of Technical Staff)"
+            "UMH"
           ],
           "role_kinds": [
-            "eng"
+            "other"
           ],
-          "posted_at": "2026-11-02T17:08:46Z",
-          "seen_at": "2026-11-23T17:41:20+00:00"
-        },
-        {
-          "type": "hiring",
-          "source": "ashby",
-          "url": "https://jobs.ashbyhq.com/humans-and",
-          "roles": [
-            "Member of Technical Staff",
-            "Product Engineer (Member of Technical Staff)"
-          ],
-          "role_kinds": [
-            "other",
-            "eng"
-          ],
-          "posted_at": "2026-02-10T21:38:12.620+00:00",
-          "seen_at": "2026-11-23T17:42:14+00:00"
+          "posted_at": "2026-11-02T17:04:21Z",
+          "seen_at": "2026-11-24T17:12:52+00:00"
         }
       ],
-      "people": [
-        {
-          "name": "Alexis Ross",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Ani Nrusimha",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Charlie George",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Diyi Yang",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Ekin Oflazer",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Eric Zelikman",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Georges Harik",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Jim S. Zeng",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Joey Hong",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Maarten Bosma",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Manya Bansal",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Niloofar Mireshghallah",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Noah D. Goodman",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Parth Chadha",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Ray Ramadorai",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Saurabh Shah",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Shaohua Zhou",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Varuna Jayasiri",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Weisi Duan",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Yuan Lu",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Yuchen He",
-          "role": "founder",
-          "org": "humans &",
-          "evidence": "Alexis Ross & Ani Nrusimha & Charlie George & Diyi Yang & Ekin Oflazer & Eric Zelikman & Georges Harik & Jim S. Zeng & Joey Hong & Maarten Bosma & Manya Bansal & Niloofar Mireshghallah & Noah D. Goodman & Parth Chadha & Ray Ramadorai & Saurabh Shah & Shaohua Zhou & Varuna Jayasiri & Weisi Duan & Yuan Lu & Yuchen He & Ziang Li",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
+      "people": [],
       "edges": []
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "coprod",
-        "score": 87,
+        "company": "Good Heat",
+        "score": 89,
         "source": "rss"
       },
       {
-        "company": "Antinuous",
-        "score": 44,
+        "company": "Vestris",
+        "score": 57,
         "source": "yc"
       },
       {
-        "company": "Antropi Robotics",
-        "score": 52,
-        "source": "yc"
+        "company": "Qdrant Solutions GmbH",
+        "score": 83,
+        "source": "web"
       },
       {
-        "company": "humans&",
-        "score": 56,
+        "company": "Cologne, Germany",
+        "score": 32,
         "source": "hiring"
       }
     ],
-    "updated": []
+    "updated": [
+      {
+        "company": "Exa",
+        "score": 71,
+        "score_before": 90,
+        "source": "web"
+      }
+    ]
   },
-  "watchlist_hits": []
+  "watchlist_hits": [
+    {
+      "company": "Exa",
+      "why": [
+        "keyword: vector search"
+      ]
+    }
+  ]
 }
