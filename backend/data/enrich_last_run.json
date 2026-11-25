@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-11-24T19:28:28+00:00",
+  "started_at": "2026-11-25T18:36:25+00:00",
   "skipped": "",
   "startups": [
     {
@@ -21,32 +21,7 @@
       ]
     },
     {
-      "company": "Landlord",
-      "score": 15,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "",
-      "status": "no_website",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "no website found"
-      ]
-    },
-    {
-      "company": "CreativeLens",
+      "company": "Pond AI",
       "score": 29,
       "gaps": [
         "funding stage",
@@ -59,7 +34,104 @@
         "email",
         "phone"
       ],
-      "website": "https://creativelens.ai",
+      "website": "https://joinpond.ai",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Lightscale AI",
+      "score": 40,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://lightscale.ai",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Spanish National Cancer Research Centre",
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "no website found"
+      ]
+    },
+    {
+      "company": "Hemant Singh",
+      "score": 15,
+      "gaps": [
+        "funding stage",
+        "website",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "no website found"
+      ]
+    },
+    {
+      "company": "iCallidus",
+      "score": 29,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://icallidus.com",
       "status": "ok",
       "emails": 0,
       "phones": 0,
@@ -68,7 +140,51 @@
       "notes": []
     },
     {
-      "company": "ArtCraft",
+      "company": "Piramidal",
+      "score": 44,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://www.piramal.com",
+      "status": "ok",
+      "emails": 1,
+      "phones": 2,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Nirvana Robotics",
+      "score": 25,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.nrvna.ai",
+      "status": "ok",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": []
+    },
+    {
+      "company": "Tether",
       "score": 21,
       "gaps": [
         "funding stage",
@@ -81,29 +197,7 @@
         "email",
         "phone"
       ],
-      "website": "https://getartcraft.com",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Eleshop",
-      "score": 21,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://www.eleshop.nl",
+      "website": "https://tether.to",
       "status": "crawl_failed",
       "emails": 0,
       "phones": 0,
@@ -114,11 +208,10 @@
       ]
     },
     {
-      "company": "JPMorganChase",
-      "score": 15,
+      "company": "DigiKey",
+      "score": 21,
       "gaps": [
         "funding stage",
-        "website",
         "location",
         "funding amount",
         "tech stack",
@@ -128,143 +221,48 @@
         "email",
         "phone"
       ],
-      "website": "",
-      "status": "no_website",
+      "website": "https://www.digikey.com",
+      "status": "crawl_failed",
       "emails": 0,
       "phones": 0,
       "people": 0,
       "edges": 0,
       "notes": [
-        "no website found"
-      ]
-    },
-    {
-      "company": "Common Prefix",
-      "score": 49,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://www.commonprefix.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 2,
-      "edges": 2,
-      "notes": [
-        "team llm: 3 people proposed, 2 grounded",
-        "team page: +2 people, +2 edges"
-      ]
-    },
-    {
-      "company": "Joulent",
-      "score": 58,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://www.joulent.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 11,
-      "edges": 11,
-      "notes": [
-        "team llm: 11 people proposed, 11 grounded",
-        "team page: +11 people, +11 edges"
-      ]
-    },
-    {
-      "company": "Confidential Healthcare AI Startup",
-      "score": 15,
-      "gaps": [
-        "funding stage",
-        "website",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "",
-      "status": "no_website",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "no website found"
-      ]
-    },
-    {
-      "company": "Elm AI",
-      "score": 34,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://www.elm-ai.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
+        "crawl failed"
       ]
     }
   ],
-  "tokens": 6604,
+  "tokens": 4897,
   "usage": {
-    "prompt_tokens": 4901,
-    "completion_tokens": 1703,
-    "total_tokens": 6604,
+    "prompt_tokens": 4511,
+    "completion_tokens": 386,
+    "total_tokens": 4897,
     "calls": 4,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 4901,
-        "completion_tokens": 1703,
-        "total_tokens": 6604,
+        "prompt_tokens": 4511,
+        "completion_tokens": 386,
+        "total_tokens": 4897,
         "calls": 4
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 4901,
-        "completion_tokens": 1703,
-        "total_tokens": 6604,
+        "prompt_tokens": 4511,
+        "completion_tokens": 386,
+        "total_tokens": 4897,
         "calls": 4
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 4901,
-        "completion_tokens": 1703,
-        "total_tokens": 6604,
+        "prompt_tokens": 4511,
+        "completion_tokens": 386,
+        "total_tokens": 4897,
         "calls": 4
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-24T19:29:45+00:00"
+  "finished_at": "2026-11-25T18:37:43+00:00"
 }
