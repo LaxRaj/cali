@@ -488,7 +488,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 87
+      "score": 72
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -1003,6 +1003,14 @@
       "score": 79
     },
     {
+      "id": "weaviate",
+      "label": "Weaviate",
+      "type": "startup",
+      "degree": 3,
+      "website": "https://weaviate.io",
+      "score": 71
+    },
+    {
       "id": "vishnu",
       "label": "Vishnu",
       "type": "person",
@@ -1500,6 +1508,14 @@
       "degree": 2,
       "website": "https://www.commonprefix.com",
       "score": 49
+    },
+    {
+      "id": "light anchor",
+      "label": "Light Anchor",
+      "type": "startup",
+      "degree": 2,
+      "website": "https://lightanchor.ai",
+      "score": 70
     },
     {
       "id": "eric",
@@ -2569,6 +2585,14 @@
       "degree": 1,
       "website": "https://score.vestris.ai",
       "score": 57
+    },
+    {
+      "id": "altair health",
+      "label": "Altair Health",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://altair-health.com",
+      "score": 54
     },
     {
       "id": "alex rosenberg",
@@ -6641,6 +6665,50 @@
       "links": {}
     },
     {
+      "id": "chase kim",
+      "label": "Chase Kim",
+      "type": "person",
+      "degree": 1,
+      "role": "co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/chasingjohnn/"
+      }
+    },
+    {
+      "id": "sangha park",
+      "label": "Sangha Park",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-Founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sanghaha"
+      }
+    },
+    {
+      "id": "bob van luijt",
+      "label": "Bob van Luijt",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder and CEO",
+      "links": {}
+    },
+    {
+      "id": "etienne dilocker",
+      "label": "Etienne Dilocker",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder and CTO",
+      "links": {}
+    },
+    {
+      "id": "aouss sbai",
+      "label": "Aouss Sbai",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -8333,6 +8401,12 @@
       "degree": 1
     },
     {
+      "id": "ricoh innovation fund",
+      "label": "Ricoh Innovation Fund",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "quantufai, inc",
       "label": "QuantufAi, Inc",
       "type": "startup",
@@ -9443,6 +9517,30 @@
       "degree": 0,
       "website": "https://www.elm-ai.com",
       "score": 34
+    },
+    {
+      "id": "lightscale ai",
+      "label": "Lightscale AI",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://lightscale.ai",
+      "score": 40
+    },
+    {
+      "id": "pond ai",
+      "label": "Pond AI",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://joinpond.ai",
+      "score": 41
+    },
+    {
+      "id": "versine",
+      "label": "Versine",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://versine.com",
+      "score": 47
     },
     {
       "id": "kevin hartz",
@@ -12059,6 +12157,14 @@
       "type": "person",
       "degree": 0,
       "role": "Vice President, Citi Ventures",
+      "links": {}
+    },
+    {
+      "id": "eiji suzuki",
+      "label": "Eiji Suzuki",
+      "type": "person",
+      "degree": 0,
+      "role": "General Manager, Corporate Planning Center, Corporate Planning Division",
       "links": {}
     }
   ],
@@ -24574,6 +24680,90 @@
           "run_id": "backfill-2026-11-24",
           "first_seen": "2026-11-24T19:28:28+00:00",
           "last_seen": "2026-11-24T19:28:28+00:00"
+        }
+      ]
+    },
+    {
+      "source": "chase kim",
+      "target": "light anchor",
+      "rel": "founded",
+      "evidence": "We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
+          "run_id": "20261125T165702Z",
+          "first_seen": "2026-11-25T16:59:11+00:00",
+          "last_seen": "2026-11-25T16:59:11+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sangha park",
+      "target": "light anchor",
+      "rel": "founded",
+      "evidence": "We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
+          "run_id": "20261125T165702Z",
+          "first_seen": "2026-11-25T16:59:11+00:00",
+          "last_seen": "2026-11-25T16:59:11+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bob van luijt",
+      "target": "weaviate",
+      "rel": "founded",
+      "evidence": "Co-founder and CEO: Bob van Luijt",
+      "sources": [
+        {
+          "source_url": "https://www.ricoh.com/release/2026/0616_1",
+          "run_id": "20261125T165702Z",
+          "first_seen": "2026-11-25T16:59:11+00:00",
+          "last_seen": "2026-11-25T16:59:11+00:00"
+        }
+      ]
+    },
+    {
+      "source": "etienne dilocker",
+      "target": "weaviate",
+      "rel": "cofounded",
+      "evidence": "Co-founder and CTO: Etienne Dilocker",
+      "sources": [
+        {
+          "source_url": "https://www.ricoh.com/release/2026/0616_1",
+          "run_id": "20261125T165702Z",
+          "first_seen": "2026-11-25T16:59:11+00:00",
+          "last_seen": "2026-11-25T16:59:11+00:00"
+        }
+      ]
+    },
+    {
+      "source": "ricoh innovation fund",
+      "target": "weaviate",
+      "rel": "invested_in",
+      "evidence": "Ricoh has made an investment into Weaviate (Co‑founder and CEO: Bob van Luijt, Co‑founder and CTO: Etienne Dilocker)",
+      "sources": [
+        {
+          "source_url": "https://www.ricoh.com/release/2026/0616_1",
+          "run_id": "20261125T165702Z",
+          "first_seen": "2026-11-25T16:59:11+00:00",
+          "last_seen": "2026-11-25T16:59:11+00:00"
+        }
+      ]
+    },
+    {
+      "source": "aouss sbai",
+      "target": "altair health",
+      "rel": "founded",
+      "evidence": "We’re Aouss and Jad, the founders of Altair Health (YC F26).",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Y37-altair-health-we-get-doctors-paid-on-autopilot",
+          "run_id": "20261125T165702Z",
+          "first_seen": "2026-11-25T16:59:11+00:00",
+          "last_seen": "2026-11-25T16:59:11+00:00"
         }
       ]
     }

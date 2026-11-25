@@ -1,200 +1,54 @@
 {
-  "generated_at": "2026-11-24T17:13:43+00:00",
+  "generated_at": "2026-11-25T16:59:11+00:00",
   "findings": [
     {
-      "company_name": "Good Heat",
-      "core_product": "Zero‑carbon industrial heat as a service using heat‑battery thermal storage systems.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the software platform that monitors, controls, and finances a distributed fleet of heat‑battery installations.",
-      "value_prop_pitch": "I can help you build a Next.js front‑end with a vector‑semantic search layer to instantly surface the right project data for each site, cutting down engineering time on custom dashboards. This will let your team focus on scaling installations instead of building bespoke query tools.",
-      "is_relevant": true,
-      "funding_stage": "Series A",
-      "funding_amount": "€2 million",
-      "hq": "Amsterdam",
-      "website": "https://www.goodheat.energy",
-      "source_url": "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
-      "discovered_at": "2026-11-24T17:11:50+00:00",
-      "source": "rss",
-      "score": 89,
-      "gaps": [
-        "tech stack",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.goodheat.energy",
-        "emails": [
-          {
-            "value": "info@goodheat.energy",
-            "kind": "general",
-            "source_url": "https://www.goodheat.energy/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/good-heat-energy"
-        },
-        "contact_page": "https://www.goodheat.energy/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.goodheat.energy/",
-          "https://www.goodheat.energy/about",
-          "https://www.goodheat.energy/contact"
-        ],
-        "enriched_at": "2026-11-24T17:12:54+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Webflow",
-            "category": "cms"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "rss",
-          "url": "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "Tue, 24 Nov 2026 09:00:10 +0000",
-          "seen_at": "2026-11-24T17:12:52+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Bauke van Gent",
-          "role": "Founder and CEO",
-          "org": "Good Heat",
-          "evidence": "\"Industrial heat is an enormous market...\" said Bauke van Gent , Founder and CEO, Good Heat.",
-          "linkedin": "https://www.linkedin.com/in/baukevangent",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.goodheat.energy/about"
-        },
-        {
-          "name": "Tom Geiser",
-          "role": "Co‑founder",
-          "org": "Good Heat",
-          "evidence": "Founded in 2025 by Bauke van Gent and Tom Geiser, Good Heat is a developer and platform for clean industrial heat.",
-          "linkedin": "https://www.linkedin.com/in/tom-geiser-6a301710b",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.goodheat.energy/about"
-        },
-        {
-          "name": "Anton Arts",
-          "role": "Managing Partner",
-          "org": "SET Ventures",
-          "evidence": "\"Industrial heat isn’t held back by technology...\" said Anton Arts , Managing Partner at SET Ventures.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Bauke van Gent",
-          "rel": "founded",
-          "dst": "Good Heat",
-          "evidence": "\"Industrial heat is an enormous market...\" said Bauke van Gent , Founder and CEO, Good Heat."
-        },
-        {
-          "src": "Tom Geiser",
-          "rel": "cofounded",
-          "dst": "Good Heat",
-          "evidence": "Founded in 2025 by Bauke van Gent and Tom Geiser, Good Heat is a developer and platform for clean industrial heat."
-        },
-        {
-          "src": "SET Ventures",
-          "rel": "invested_in",
-          "dst": "Good Heat",
-          "evidence": "The round is led by SET Ventures, Europe’s leading energy VC, with participation from Shell Ventures and existing investor Investible."
-        },
-        {
-          "src": "Shell Ventures",
-          "rel": "invested_in",
-          "dst": "Good Heat",
-          "evidence": "The round is led by SET Ventures, Europe’s leading energy VC, with participation from Shell Ventures and existing investor Investible."
-        },
-        {
-          "src": "Investible",
-          "rel": "invested_in",
-          "dst": "Good Heat",
-          "evidence": "The round is led by SET Ventures, Europe’s leading energy VC, with participation from Shell Ventures and existing investor Investible."
-        }
-      ]
-    },
-    {
-      "company_name": "Exa",
-      "core_product": "An AI-native search engine and web retrieval API that delivers clean, structured, and verifiable data for LLMs and AI agents.",
+      "company_name": "Versine",
+      "core_product": "An AI‑powered money conversation platform (MCP) that lets users send and request money via voice or text using a self‑custodial USDC wallet on Base.",
       "tech_stack": [
-        "embedding‑based indexing",
-        "REST API"
+        "Base (OP Stack)",
+        "AWS Fargate",
+        "stablecoin USDC",
+        "vector search"
       ],
-      "likely_bottleneck": "scaling real‑time vector search and retrieval across constantly updating web data",
-      "value_prop_pitch": "You could offload the heavy lifting of real‑time vector retrieval to a Next.js front‑end that caches and pre‑fetches the most popular embeddings, dramatically reducing latency. Then layer a semantic search service on top to surface the most relevant, token‑dense results without overloading your backend.",
+      "likely_bottleneck": "Scaling real‑time permission management and compliance for high‑volume stablecoin transactions.",
+      "value_prop_pitch": "You can offload the permission management layer to a Next.js API that scales instantly with serverless functions, while a vector‑based semantic search indexes transaction intents for instant retrieval. This eliminates latency spikes and lets you focus on building the AI agent instead of plumbing the wallet.",
       "is_relevant": true,
-      "funding_stage": "",
+      "funding_stage": "YC",
       "funding_amount": "",
       "hq": "San Francisco, US",
-      "website": "https://exa.ai",
-      "source_url": "https://www.citi.com/ventures/perspectives/pressrelease/investing-in-exa-to-power-ai-search",
-      "discovered_at": "2026-11-24T17:11:50+00:00",
-      "source": "web",
-      "score": 71,
+      "website": "https://versine.com",
+      "source_url": "https://news.ycombinator.com/item?id=50634426",
+      "discovered_at": "2026-11-25T16:57:27+00:00",
+      "source": "launch_hn",
+      "score": 47,
       "gaps": [
-        "funding stage",
         "funding amount",
+        "founder",
         "people profiles",
+        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://exa.ai",
+        "website": "https://versine.com",
         "emails": [
           {
-            "value": "press@exa.ai",
-            "kind": "press",
-            "source_url": "https://exa.ai/contact"
-          },
-          {
-            "value": "support@exa.ai",
+            "value": "support@versine.com",
             "kind": "support",
-            "source_url": "https://exa.ai/"
+            "source_url": "https://versine.com/"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/exaailabs",
-          "linkedin": "https://www.linkedin.com/company/exa-ai",
-          "github": "https://github.com/exa-labs"
+          "twitter": "https://x.com/versineapp",
+          "linkedin": "https://www.linkedin.com/company/versinehq"
         },
-        "contact_page": "https://exa.ai/contact",
-        "product_access": [
-          {
-            "label": "Docs",
-            "url": "https://exa.ai/docs"
-          },
-          {
-            "label": "Pricing",
-            "url": "https://exa.ai/pricing"
-          },
-          {
-            "label": "Sign up API Dashboard",
-            "url": "https://dashboard.exa.ai/?exa_cta=nav_primary"
-          }
-        ],
+        "contact_page": "",
+        "product_access": [],
         "pages_crawled": [
-          "https://exa.ai/",
-          "https://exa.ai/contact",
-          "https://exa.ai/about"
+          "https://versine.com/",
+          "https://versine.com/about"
         ],
-        "enriched_at": "2026-11-24T17:12:59+00:00",
+        "enriched_at": "2026-11-25T16:58:23+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -204,8 +58,77 @@
             "category": "framework"
           },
           {
-            "name": "Google Analytics",
-            "category": "analytics"
+            "name": "React",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "launch_hn",
+          "url": "https://news.ycombinator.com/item?id=50634426",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-24T20:44:15Z",
+          "seen_at": "2026-11-25T16:58:20+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Light Anchor",
+      "core_product": "An AI-native platform that runs consumer brands end‑to‑end using AI agents for marketing, operations, logistics and inventory management.",
+      "tech_stack": [
+        "large language models",
+        "computer vision",
+        "cloud infrastructure"
+      ],
+      "likely_bottleneck": "Ensuring the reliability and scalability of AI agents across heterogeneous business software and real‑time decision making.",
+      "value_prop_pitch": "You could wrap the agent interfaces in a Next.js front‑end that caches decisions in a vector semantic store, letting you retrieve relevant past actions instantly. This would dramatically cut latency and improve consistency across brands as they scale.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://lightanchor.ai",
+      "source_url": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
+      "discovered_at": "2026-11-25T16:57:27+00:00",
+      "source": "yc",
+      "score": 70,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://lightanchor.ai",
+        "emails": [
+          {
+            "value": "founders@lightanchor.ai",
+            "kind": "person",
+            "source_url": "https://lightanchor.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/light-anchor"
+        },
+        "contact_page": "",
+        "product_access": [],
+        "pages_crawled": [
+          "https://lightanchor.ai/",
+          "https://lightanchor.ai/about"
+        ],
+        "enriched_at": "2026-11-25T16:58:42+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
           },
           {
             "name": "Vercel",
@@ -219,30 +142,155 @@
       },
       "signals": [
         {
-          "type": "funding",
-          "source": "web",
-          "url": "https://www.startuphub.ai/ai-news/startup-news/2025/exa-raises-85m-to-build-a-search-engine-for-ais",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-04T14:00:21+00:00"
-        },
-        {
           "type": "launch",
-          "source": "web",
-          "url": "https://www.citi.com/ventures/perspectives/pressrelease/investing-in-exa-to-power-ai-search",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-24T17:12:52+00:00"
+          "seen_at": "2026-11-25T16:58:20+00:00"
         }
       ],
       "people": [
         {
-          "name": "Will Bryk",
-          "role": "CEO",
-          "org": "Exa",
-          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa, have been friends since their days studying computer science at Harvard",
+          "name": "Chase Kim",
+          "role": "co‑founder",
+          "org": "Light Anchor",
+          "evidence": "Hey everyone 👋! We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor.",
+          "linkedin": "https://www.linkedin.com/in/chasingjohnn/",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g"
+        },
+        {
+          "name": "Sangha Park",
+          "role": "Co-Founder",
+          "org": "Light Anchor",
+          "evidence": "schema.org Person markup",
+          "linkedin": "https://www.linkedin.com/in/sanghaha",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://lightanchor.ai/"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Chase Kim",
+          "rel": "founded",
+          "dst": "Light Anchor",
+          "evidence": "We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor."
+        },
+        {
+          "src": "Sangha Park",
+          "rel": "founded",
+          "dst": "Light Anchor",
+          "evidence": "We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor."
+        }
+      ]
+    },
+    {
+      "company_name": "Weaviate",
+      "core_product": "An AI-native vector database for unstructured data that enables context‑aware retrieval and long‑term reasoning for AI agents.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling high‑dimensional vector search and maintaining low latency as data volume grows.",
+      "value_prop_pitch": "We can integrate Next.js with a semantic search layer built on your vector database to deliver instant, context‑rich results directly in the UI, eliminating the need for custom backend glue code. This will let your engineers focus on core product features while we handle the scaling and relevance challenges of vector search.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "Prinsengracht 769a, 1017JZ Amsterdam, the Netherlands",
+      "website": "https://weaviate.io",
+      "source_url": "https://www.ricoh.com/release/2026/0616_1",
+      "discovered_at": "2026-11-25T16:57:27+00:00",
+      "source": "web",
+      "score": 71,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://weaviate.io",
+        "emails": [
+          {
+            "value": "hello@weaviate.io",
+            "kind": "general",
+            "source_url": "https://weaviate.io/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/weaviate_io",
+          "linkedin": "https://www.linkedin.com/company/weaviate-io",
+          "github": "https://github.com/weaviate"
+        },
+        "contact_page": "https://weaviate.io/contact",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://weaviate.io/pricing"
+          },
+          {
+            "label": "Try now",
+            "url": "https://weaviate.io/go/console"
+          },
+          {
+            "label": "Documentation",
+            "url": "https://docs.weaviate.io/weaviate"
+          },
+          {
+            "label": "Start building",
+            "url": "https://docs.weaviate.io/weaviate/quickstart"
+          }
+        ],
+        "pages_crawled": [
+          "https://weaviate.io/",
+          "https://weaviate.io/contact",
+          "https://weaviate.io/company/about-us"
+        ],
+        "enriched_at": "2026-11-25T16:58:46+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "HubSpot",
+            "category": "marketing"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "Plausible",
+            "category": "analytics"
+          },
+          {
+            "name": "Hotjar",
+            "category": "analytics"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "web",
+          "url": "https://www.ricoh.com/release/2026/0616_1",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-25T16:58:20+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Bob van Luijt",
+          "role": "Co-founder and CEO",
+          "org": "Weaviate",
+          "evidence": "Co-founder and CEO: Bob van Luijt",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -250,10 +298,10 @@
           "link_source": ""
         },
         {
-          "name": "Jeff Wang",
-          "role": "Co‑founder",
-          "org": "Exa",
-          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa, have been friends since their days studying computer science at Harvard",
+          "name": "Etienne Dilocker",
+          "role": "Co-founder and CTO",
+          "org": "Weaviate",
+          "evidence": "Co-founder and CTO: Etienne Dilocker",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -261,21 +309,10 @@
           "link_source": ""
         },
         {
-          "name": "Nick Sands",
-          "role": "Director, Citi Ventures",
-          "org": "Citi Ventures",
-          "evidence": "Nick Sands Director , Citi Ventures",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Max R. Mailman",
-          "role": "Vice President, Citi Ventures",
-          "org": "Citi Ventures",
-          "evidence": "Max R. Mailman Vice President , Citi Ventures",
+          "name": "Eiji Suzuki",
+          "role": "General Manager, Corporate Planning Center, Corporate Planning Division",
+          "org": "Ricoh Company, Ltd.",
+          "evidence": "Eiji Suzuki, General Manager, Corporate Planning Center, Corporate Planning Division, Ricoh Company, Ltd.",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -285,40 +322,40 @@
       ],
       "edges": [
         {
-          "src": "Will Bryk",
+          "src": "Bob van Luijt",
           "rel": "founded",
-          "dst": "Exa",
-          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa"
+          "dst": "Weaviate",
+          "evidence": "Co-founder and CEO: Bob van Luijt"
         },
         {
-          "src": "Jeff Wang",
+          "src": "Etienne Dilocker",
           "rel": "cofounded",
-          "dst": "Exa",
-          "evidence": "Will Bryk, CEO, and Jeff Wang, co‑founders of Exa"
+          "dst": "Weaviate",
+          "evidence": "Co-founder and CTO: Etienne Dilocker"
         },
         {
-          "src": "Citi Ventures",
+          "src": "Ricoh Innovation Fund",
           "rel": "invested_in",
-          "dst": "Exa",
-          "evidence": "Citi Ventures is investing in Exa"
+          "dst": "Weaviate",
+          "evidence": "Ricoh has made an investment into Weaviate (Co‑founder and CEO: Bob van Luijt, Co‑founder and CTO: Etienne Dilocker)"
         }
       ]
     },
     {
-      "company_name": "Vestris",
-      "core_product": "A property title risk score that analyzes title records and flags issues for homeowners and lenders.",
+      "company_name": "Altair Health",
+      "core_product": "AI‑powered end‑to‑end medical billing automation that handles eligibility checks, coding, claims, payment posting and appeals for healthcare practices.",
       "tech_stack": [],
-      "likely_bottleneck": "Scaling the ingestion and semantic analysis of millions of county title records while keeping search latency low.",
-      "value_prop_pitch": "You could serve the Vestris UI with Next.js to get fast, SEO‑friendly pages and incremental static regeneration for each property score. Then, index the title document embeddings in a vector database and use semantic search to instantly surface relevant risk factors for any query.",
+      "likely_bottleneck": "Scaling the AI models and integrating with dozens of insurer APIs while maintaining real‑time claim processing speed.",
+      "value_prop_pitch": "I can build a Next.js front‑end that surfaces claim insights instantly, while a vector‑based semantic search layer lets your AI retrieve insurer policy nuances in milliseconds, eliminating the integration lag. This will let Altair scale to thousands of practices without the current bottleneck of custom API adapters and slow policy lookups.",
       "is_relevant": true,
       "funding_stage": "YC",
       "funding_amount": "",
       "hq": "",
-      "website": "https://score.vestris.ai",
-      "source_url": "https://www.ycombinator.com/launches/Xwk-vestris-the-fico-score-for-homes-order-yours-at-vestris-ai",
-      "discovered_at": "2026-11-24T17:11:50+00:00",
+      "website": "https://altair-health.com",
+      "source_url": "https://www.ycombinator.com/launches/Y37-altair-health-we-get-doctors-paid-on-autopilot",
+      "discovered_at": "2026-11-25T16:57:27+00:00",
       "source": "yc",
-      "score": 57,
+      "score": 54,
       "gaps": [
         "location",
         "funding amount",
@@ -328,45 +365,204 @@
         "phone"
       ],
       "contact": {
-        "website": "https://score.vestris.ai",
+        "website": "https://altair-health.com",
         "emails": [
           {
-            "value": "founders@vestris.ai",
-            "kind": "person",
-            "source_url": "https://score.vestris.ai/"
+            "value": "hello@altair-health.com",
+            "kind": "general",
+            "source_url": "https://altair-health.com/"
           }
         ],
         "phones": [],
-        "socials": {},
-        "contact_page": "https://score.vestris.ai/contact",
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/s7-lab"
+        },
+        "contact_page": "",
         "product_access": [
           {
-            "label": "Pricing",
-            "url": "https://score.vestris.ai/pricing"
+            "label": "Documentation",
+            "url": "https://altair-health.com/docs"
           }
         ],
         "pages_crawled": [
-          "https://score.vestris.ai/",
-          "https://score.vestris.ai/about",
-          "https://score.vestris.ai/team",
-          "https://score.vestris.ai/contact"
+          "https://altair-health.com/",
+          "https://altair-health.com/about"
         ],
-        "enriched_at": "2026-11-24T17:13:17+00:00",
+        "enriched_at": "2026-11-25T16:58:56+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Framer",
-            "category": "cms"
-          },
+            "name": "Cal.com",
+            "category": "scheduling"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/Y37-altair-health-we-get-doctors-paid-on-autopilot",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-25T16:58:20+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Aouss Sbai",
+          "role": "Founder",
+          "org": "Altair Health",
+          "evidence": "We’re Aouss and Jad, the founders of Altair Health (YC F26).",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Aouss Sbai",
+          "rel": "founded",
+          "dst": "Altair Health",
+          "evidence": "We’re Aouss and Jad, the founders of Altair Health (YC F26)."
+        }
+      ]
+    },
+    {
+      "company_name": "Lightscale AI",
+      "core_product": "AI‑powered platform that builds custom business software such as CRM, web shop, or applicant tracking with secure sign‑in, access control and GDPR‑ready data protection, hosted in Switzerland.",
+      "tech_stack": [
+        "AI",
+        "web",
+        "cloud"
+      ],
+      "likely_bottleneck": "scaling the AI‑driven code generation while maintaining low latency for multi‑tenant custom apps",
+      "value_prop_pitch": "I can integrate Next.js as a front‑end layer to serve each generated app with instant, cache‑friendly rendering, eliminating latency spikes as you scale. Coupled with a vector‑based semantic search layer, your AI can retrieve relevant code snippets instantly, keeping generation fast even under heavy load.",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "Zug, CH",
+      "website": "https://lightscale.ai",
+      "source_url": "https://lightscale.ai/",
+      "discovered_at": "2026-11-25T16:57:27+00:00",
+      "source": "hn",
+      "score": 40,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://lightscale.ai",
+        "emails": [
           {
-            "name": "Google Analytics",
-            "category": "analytics"
-          },
+            "value": "contact@lightscale.ai",
+            "kind": "general",
+            "source_url": "https://lightscale.ai/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/lightscale-ai"
+        },
+        "contact_page": "",
+        "product_access": [
           {
-            "name": "Clerk",
-            "category": "auth"
+            "label": "Pricing",
+            "url": "https://lightscale.ai/pricing/"
+          }
+        ],
+        "pages_crawled": [
+          "https://lightscale.ai/",
+          "https://lightscale.ai/company/"
+        ],
+        "enriched_at": "2026-11-25T16:59:06+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": []
+      },
+      "signals": [
+        {
+          "type": "launch",
+          "source": "hn",
+          "url": "https://lightscale.ai/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-25T07:36:21Z",
+          "seen_at": "2026-11-25T16:58:20+00:00"
+        }
+      ],
+      "people": [],
+      "edges": []
+    },
+    {
+      "company_name": "Pond AI",
+      "core_product": "Most non-tech businesses know exactly which workflows they want AI agents to handle, but have no one to build, connect and run them. Pond delivers custom AI agents to these businesses through a network of 7k AI builders, with Pond as the pl",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
+      "is_relevant": true,
+      "funding_stage": "",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://joinpond.ai",
+      "source_url": "https://news.ycombinator.com/item?id=50339881",
+      "discovered_at": "2026-11-25T16:58:20+00:00",
+      "source": "hiring",
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://joinpond.ai",
+        "emails": [
+          {
+            "value": "dylan@joinpond.ai",
+            "kind": "person",
+            "source_url": "https://news.ycombinator.com/item?id=50339881"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/JoinPond",
+          "linkedin": "https://www.linkedin.com/company/buildwithpond"
+        },
+        "contact_page": "https://joinpond.ai/contact",
+        "product_access": [
+          {
+            "label": "Start free",
+            "url": "https://joinpond.ai/try"
+          }
+        ],
+        "pages_crawled": [
+          "https://joinpond.ai/",
+          "https://joinpond.ai/about",
+          "https://joinpond.ai/contact",
+          "https://joinpond.ai/team"
+        ],
+        "enriched_at": "2026-11-25T16:59:11+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "React",
+            "category": "framework"
           },
           {
             "name": "Cloudflare",
@@ -376,256 +572,17 @@
       },
       "signals": [
         {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Xwk-vestris-the-fico-score-for-homes-order-yours-at-vestris-ai",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-24T17:12:52+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Aahil Valliani",
-          "role": "co‑founder",
-          "org": "Vestris",
-          "evidence": "Hey y'all, we're Aahil and Josh, co-founders of Vestris.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Aahil Valliani",
-          "rel": "founded",
-          "dst": "Vestris",
-          "evidence": "Hey y'all, we're Aahil and Josh, co-founders of Vestris."
-        }
-      ]
-    },
-    {
-      "company_name": "Qdrant Solutions GmbH",
-      "core_product": "A Rust‑based vector database that provides flexible, composable semantic search for production AI applications.",
-      "tech_stack": [
-        "Rust",
-        "Docker",
-        "Kubernetes",
-        "Qdrant Cloud"
-      ],
-      "likely_bottleneck": "Scaling low‑latency, high‑throughput vector searches across massive, dynamic multimodal datasets.",
-      "value_prop_pitch": "We can integrate Next.js with your vector search API to build a fast, SEO‑friendly UI that caches results client‑side, reducing load on your backend. Coupled with semantic search embeddings, this cuts latency and lets your engineers focus on core database performance.",
-      "is_relevant": true,
-      "funding_stage": "Series B",
-      "funding_amount": "$50M",
-      "hq": "Berlin, DE",
-      "website": "https://qdrant.tech",
-      "source_url": "https://siliconangle.com/2026/03/12/qdrant-raises-50m-bring-flexible-vector-search-production-ai-systems/",
-      "discovered_at": "2026-11-24T17:11:50+00:00",
-      "source": "web",
-      "score": 83,
-      "gaps": [
-        "people profiles",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://qdrant.tech",
-        "emails": [
-          {
-            "value": "info@qdrant.com",
-            "kind": "general",
-            "source_url": "https://qdrant.tech/"
-          },
-          {
-            "value": "support@qdrant.io",
-            "kind": "support",
-            "source_url": "https://qdrant.tech/contact-us/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/qdrant",
-          "twitter": "https://x.com/qdrant_engine"
-        },
-        "contact_page": "https://qdrant.tech/contact-us/",
-        "product_access": [
-          {
-            "label": "Documentation",
-            "url": "https://qdrant.tech/documentation/"
-          },
-          {
-            "label": "Pricing",
-            "url": "https://qdrant.tech/pricing/"
-          },
-          {
-            "label": "Start Free",
-            "url": "https://cloud.qdrant.io/signup"
-          },
-          {
-            "label": "Try Web UI",
-            "url": "https://qdrant.tech/documentation/web-ui/"
-          }
-        ],
-        "pages_crawled": [
-          "https://qdrant.tech/",
-          "https://qdrant.tech/about-us/",
-          "https://qdrant.tech/contact-us/"
-        ],
-        "enriched_at": "2026-11-24T17:13:29+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "funding",
-          "source": "web",
-          "url": "https://siliconangle.com/2026/03/12/qdrant-raises-50m-bring-flexible-vector-search-production-ai-systems/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-24T17:12:52+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "André Zayarni",
-          "role": "Chief Executive and Co‑founder",
-          "org": "Qdrant Solutions GmbH",
-          "evidence": "Chief Executive and co‑founder of Qdrant André Zayarni told SiliconANGLE in an interview.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Andrey Vasnetsov",
-          "role": "",
-          "org": "Qdrant Solutions GmbH",
-          "evidence": "schema.org Person markup",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://qdrant.tech/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "André Zayarni",
-          "rel": "founded",
-          "dst": "Qdrant Solutions GmbH",
-          "evidence": "Chief Executive and co‑founder of Qdrant André Zayarni told SiliconANGLE in an interview."
-        },
-        {
-          "src": "AVP",
-          "rel": "invested_in",
-          "dst": "Qdrant Solutions GmbH",
-          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
-        },
-        {
-          "src": "Bosch Ventures",
-          "rel": "invested_in",
-          "dst": "Qdrant Solutions GmbH",
-          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
-        },
-        {
-          "src": "Unusual Ventures",
-          "rel": "invested_in",
-          "dst": "Qdrant Solutions GmbH",
-          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
-        },
-        {
-          "src": "Spark Capital",
-          "rel": "invested_in",
-          "dst": "Qdrant Solutions GmbH",
-          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
-        },
-        {
-          "src": "42CAP",
-          "rel": "invested_in",
-          "dst": "Qdrant Solutions GmbH",
-          "evidence": "AVP led the Series B round, with participation from Bosch Ventures, Unusual Ventures, Spark Capital, and 42CAP."
-        }
-      ]
-    },
-    {
-      "company_name": "Cologne, Germany",
-      "core_product": "8 years ago, Jeremy was absolutely frustrated with the status quo of data infrastructure in manufacturing. Companies paid millions per year for \"shitty 90s software\" and are still doing that today, when there is much better software out the",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "Cologne, DE",
-      "website": "https://www.cologne-tourism.com",
-      "source_url": "https://news.ycombinator.com/item?id=50339895",
-      "discovered_at": "2026-11-24T17:12:52+00:00",
-      "source": "hiring",
-      "score": 32,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email"
-      ],
-      "contact": {
-        "website": "https://www.cologne-tourism.com",
-        "emails": [],
-        "phones": [
-          {
-            "value": "+49221346430",
-            "kind": "main",
-            "source_url": "https://www.cologne-tourism.com/"
-          },
-          {
-            "value": "+4922134643200",
-            "kind": "main",
-            "source_url": "https://www.cologne-tourism.com/service/about-us"
-          },
-          {
-            "value": "+4922134643300",
-            "kind": "main",
-            "source_url": "https://www.cologne-tourism.com/service/about-us"
-          }
-        ],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/koelntourismus-gmbh"
-        },
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.cologne-tourism.com/",
-          "https://www.cologne-tourism.com/service/about-us"
-        ],
-        "enriched_at": "2026-11-24T17:13:42+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
           "type": "hiring",
           "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50339895",
+          "url": "https://news.ycombinator.com/item?id=50339881",
           "roles": [
-            "UMH"
+            "San Francisco"
           ],
           "role_kinds": [
             "other"
           ],
-          "posted_at": "2026-11-02T17:04:21Z",
-          "seen_at": "2026-11-24T17:12:52+00:00"
+          "posted_at": "2026-11-02T17:03:38Z",
+          "seen_at": "2026-11-25T16:58:20+00:00"
         }
       ],
       "people": [],
@@ -635,38 +592,47 @@
   "diff": {
     "added": [
       {
-        "company": "Good Heat",
-        "score": 89,
-        "source": "rss"
+        "company": "Versine",
+        "score": 47,
+        "source": "launch_hn"
       },
       {
-        "company": "Vestris",
-        "score": 57,
+        "company": "Light Anchor",
+        "score": 70,
         "source": "yc"
       },
       {
-        "company": "Qdrant Solutions GmbH",
-        "score": 83,
+        "company": "Weaviate",
+        "score": 71,
         "source": "web"
       },
       {
-        "company": "Cologne, Germany",
-        "score": 32,
+        "company": "Altair Health",
+        "score": 54,
+        "source": "yc"
+      },
+      {
+        "company": "Lightscale AI",
+        "score": 40,
+        "source": "hn"
+      },
+      {
+        "company": "Pond AI",
+        "score": 41,
         "source": "hiring"
       }
     ],
-    "updated": [
-      {
-        "company": "Exa",
-        "score": 71,
-        "score_before": 90,
-        "source": "web"
-      }
-    ]
+    "updated": []
   },
   "watchlist_hits": [
     {
-      "company": "Exa",
+      "company": "Versine",
+      "why": [
+        "keyword: vector search"
+      ]
+    },
+    {
+      "company": "Weaviate",
       "why": [
         "keyword: vector search"
       ]

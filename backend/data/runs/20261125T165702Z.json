@@ -1,0 +1,527 @@
+{
+  "run_id": "20261125T165702Z",
+  "started_at": "2026-11-25T16:57:02+00:00",
+  "duration_s": 140.6,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 258,
+    "selected": 11,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 5,
+    "valid": 5
+  },
+  "tokens": 19668,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "rss": 51,
+    "hn": 39,
+    "web": 30,
+    "edgar": 6
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building vector search API for Next.js apps",
+      "seed funding announced for retrieval-augmented generation startup targeting web app developers",
+      "founder interview with RAG startup enabling data-heavy SaaS search solutions November 2026",
+      "venture capital invests in early-stage search infrastructure startup building real-time vector indexes"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG tooling",
+      "vector API",
+      "developer search",
+      "next.js search"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 28,
+        "accepted": 21,
+        "score_sum": 1585,
+        "yield": 0.75,
+        "avg_score": 75.5
+      },
+      "web": {
+        "crawled": 11,
+        "accepted": 8,
+        "score_sum": 648,
+        "yield": 0.727,
+        "avg_score": 81.0
+      },
+      "yc": {
+        "crawled": 25,
+        "accepted": 25,
+        "score_sum": 1533,
+        "yield": 1.0,
+        "avg_score": 61.3
+      },
+      "hiring": {
+        "crawled": 49,
+        "accepted": 49,
+        "score_sum": 1491,
+        "yield": 1.0,
+        "avg_score": 30.4
+      },
+      "edgar": {
+        "crawled": 23,
+        "accepted": 4,
+        "score_sum": 285,
+        "yield": 0.174,
+        "avg_score": 71.2
+      },
+      "launch_hn": {
+        "crawled": 5,
+        "accepted": 5,
+        "score_sum": 310,
+        "yield": 1.0,
+        "avg_score": 62.0
+      },
+      "hn": {
+        "crawled": 1,
+        "accepted": 0,
+        "score_sum": 0,
+        "yield": 0.0,
+        "avg_score": 0.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 2,
+      "yc": 2
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 106,
+    "fallbacks": 0,
+    "avg_latency_ms": 56.3,
+    "jev_input_tokens": 50888,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-25T16:57:02+00:00",
+      "offset_s": 0.0,
+      "duration_s": 7.63,
+      "status": "ok",
+      "counts": {
+        "candidates": 258,
+        "src_hn": 34,
+        "src_launch_hn": 5,
+        "src_rss": 51,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 6,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-25T16:57:10+00:00",
+      "offset_s": 7.63,
+      "duration_s": 5.43,
+      "status": "ok",
+      "counts": {
+        "in": 258,
+        "selected": 11,
+        "hiring_lane": 1,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 2, 'yc': 2}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-25T16:57:15+00:00",
+      "offset_s": 13.06,
+      "duration_s": 12.13,
+      "status": "ok",
+      "counts": {
+        "requested": 11,
+        "crawled": 8
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-25T16:57:27+00:00",
+      "offset_s": 25.18,
+      "duration_s": 52.65,
+      "status": "ok",
+      "counts": {
+        "extracted": 8,
+        "relevant": 5,
+        "valid": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-25T16:58:20+00:00",
+      "offset_s": 77.83,
+      "duration_s": 51.03,
+      "status": "ok",
+      "counts": {
+        "startups": 6,
+        "websites": 6,
+        "emails": 5,
+        "phones": 0
+      },
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "structured data: 2 people",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-25T16:59:11+00:00",
+      "offset_s": 128.86,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 53
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-25T16:59:11+00:00",
+      "offset_s": 128.86,
+      "duration_s": 2.63,
+      "status": "ok",
+      "counts": {
+        "startups": 6,
+        "people": 6,
+        "edges": 6
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-11-25T16:59:14+00:00",
+      "offset_s": 131.49,
+      "duration_s": 5.84,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 1
+      },
+      "notes": [
+        "Versine: ok, score 47"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.33,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 1.25,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 51,
+      "seconds": 2.34,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 39,
+      "seconds": 2.35,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 5.09,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 6,
+      "seconds": 7.62,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 16144,
+    "completion_tokens": 3524,
+    "total_tokens": 19668,
+    "calls": 10,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 11556,
+        "completion_tokens": 3300,
+        "total_tokens": 14856,
+        "calls": 6
+      },
+      "team": {
+        "prompt_tokens": 4588,
+        "completion_tokens": 224,
+        "total_tokens": 4812,
+        "calls": 4
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 16144,
+        "completion_tokens": 3524,
+        "total_tokens": 19668,
+        "calls": 10
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 16144,
+        "completion_tokens": 3524,
+        "total_tokens": 19668,
+        "calls": 10
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 258,
+    "crawled": 8,
+    "extracted": 8,
+    "relevant": 5,
+    "valid": 5,
+    "sources": {
+      "launch_hn": 1,
+      "yc": 2,
+      "web": 1,
+      "hn": 1
+    },
+    "people": 6,
+    "edges": 6,
+    "dropped_ungrounded": 0,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 6,
+    "with_website": 6,
+    "with_email": 6,
+    "with_phone": 0,
+    "people_linked": 2,
+    "avg_score": 53.8,
+    "qualified": 2,
+    "avg_qualified_score": 62.0,
+    "issues": {
+      "not a relevant startup page": 3,
+      "warn: empty tech_stack": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Versine",
+      "url": "https://news.ycombinator.com/item?id=50634426",
+      "source": "launch_hn",
+      "people": 3,
+      "edges": 8,
+      "score": 47,
+      "gaps": [
+        "funding amount",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://versine.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Light Anchor",
+      "url": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 70,
+      "gaps": [
+        "location",
+        "funding amount",
+        "investors",
+        "phone"
+      ],
+      "website": "https://lightanchor.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Weaviate",
+      "url": "https://www.ricoh.com/release/2026/0616_1",
+      "source": "web",
+      "people": 3,
+      "edges": 3,
+      "score": 71,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "phone"
+      ],
+      "website": "https://weaviate.io",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Altair Health",
+      "url": "https://www.ycombinator.com/launches/Y37-altair-health-we-get-doctors-paid-on-autopilot",
+      "source": "yc",
+      "people": 2,
+      "edges": 2,
+      "score": 54,
+      "gaps": [
+        "location",
+        "funding amount",
+        "tech stack",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://altair-health.com",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Lightscale AI",
+      "url": "https://lightscale.ai/",
+      "source": "hn",
+      "people": 0,
+      "edges": 0,
+      "score": 40,
+      "gaps": [
+        "funding stage",
+        "funding amount",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://lightscale.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Pond AI",
+      "url": "https://joinpond.ai",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 41,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://joinpond.ai",
+      "emails": 1,
+      "phones": 0
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2166443/000216644326000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2166831/000216683126000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/fault-line-raises-2-3m-clinical-ai-safety-benchmarks/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/ex-deepmind-researchers-sequent-raises-2-2m-to-prove-software-safe-with-ai-found-maths/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://slashobserve.com/",
+      "source": "hn",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Versine",
+        "score": 47,
+        "source": "launch_hn"
+      },
+      {
+        "company": "Light Anchor",
+        "score": 70,
+        "source": "yc"
+      },
+      {
+        "company": "Weaviate",
+        "score": 71,
+        "source": "web"
+      },
+      {
+        "company": "Altair Health",
+        "score": 54,
+        "source": "yc"
+      },
+      {
+        "company": "Lightscale AI",
+        "score": 40,
+        "source": "hn"
+      },
+      {
+        "company": "Pond AI",
+        "score": 41,
+        "source": "hiring"
+      }
+    ],
+    "updated": []
+  }
+}
