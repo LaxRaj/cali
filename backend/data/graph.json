@@ -81,20 +81,20 @@
       "score": 85
     },
     {
-      "id": "daisytuner",
-      "label": "Daisytuner",
-      "type": "startup",
-      "degree": 11,
-      "website": "https://daisytuner.com",
-      "score": 79
-    },
-    {
       "id": "joulent",
       "label": "Joulent",
       "type": "startup",
       "degree": 11,
       "website": "https://www.joulent.com",
       "score": 58
+    },
+    {
+      "id": "daisytuner",
+      "label": "Daisytuner",
+      "type": "startup",
+      "degree": 11,
+      "website": "https://daisytuner.com",
+      "score": 79
     },
     {
       "id": "42ai",
@@ -237,6 +237,14 @@
       "degree": 8,
       "website": "https://www.ailitrail.com",
       "score": 84
+    },
+    {
+      "id": "eggai",
+      "label": "EggAI",
+      "type": "startup",
+      "degree": 8,
+      "website": "https://egg-ai.com",
+      "score": 48
     },
     {
       "id": "quiver ai",
@@ -419,14 +427,6 @@
       "score": 92
     },
     {
-      "id": "asynchronics",
-      "label": "Asynchronics",
-      "type": "startup",
-      "degree": 6,
-      "website": "https://asynchronics.com",
-      "score": 79
-    },
-    {
       "id": "qluster",
       "label": "Qluster",
       "type": "startup",
@@ -449,14 +449,6 @@
       "degree": 6,
       "website": "https://qdrant.tech",
       "score": 88
-    },
-    {
-      "id": "pedestal ai",
-      "label": "Pedestal AI",
-      "type": "startup",
-      "degree": 6,
-      "website": "https://www.pedestal.ai",
-      "score": 79
     },
     {
       "id": "dreamteam",
@@ -488,7 +480,23 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 72
+      "score": 92
+    },
+    {
+      "id": "pedestal ai",
+      "label": "Pedestal AI",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://www.pedestal.ai",
+      "score": 79
+    },
+    {
+      "id": "asynchronics",
+      "label": "Asynchronics",
+      "type": "startup",
+      "degree": 6,
+      "website": "https://asynchronics.com",
+      "score": 79
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -1993,6 +2001,16 @@
       "links": {}
     },
     {
+      "id": "mark chaffey",
+      "label": "Mark Chaffey",
+      "type": "person",
+      "degree": 2,
+      "role": "Co-Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/mchaffey/"
+      }
+    },
+    {
       "id": "raj aggarwal",
       "label": "Raj Aggarwal",
       "type": "person",
@@ -2009,16 +2027,6 @@
       "degree": 2,
       "role": "Investor",
       "links": {}
-    },
-    {
-      "id": "mark chaffey",
-      "label": "Mark Chaffey",
-      "type": "person",
-      "degree": 2,
-      "role": "Co-Founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/mchaffey/"
-      }
     },
     {
       "id": "spacex",
@@ -5663,54 +5671,6 @@
       }
     },
     {
-      "id": "lukas trümper",
-      "label": "Lukas Trümper",
-      "type": "person",
-      "degree": 1,
-      "role": "Founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/lukas-truemper/"
-      }
-    },
-    {
-      "id": "adrian schmitz",
-      "label": "Adrian Schmitz",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/adrian-schmitz-b70336336/"
-      }
-    },
-    {
-      "id": "lukas truemper",
-      "label": "Lukas Truemper",
-      "type": "person",
-      "degree": 1,
-      "role": "Founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/lukas-truemper/"
-      }
-    },
-    {
-      "id": "sebastian daniel",
-      "label": "Sebastian Daniel",
-      "type": "person",
-      "degree": 1,
-      "role": "Chief of Staff",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/sebastian-daniel/"
-      }
-    },
-    {
-      "id": "dr. nora hagmeyer",
-      "label": "Dr. Nora Hagmeyer",
-      "type": "person",
-      "degree": 1,
-      "role": "Vice President of Software",
-      "links": {}
-    },
-    {
       "id": "pranav piyush",
       "label": "Pranav Piyush",
       "type": "person",
@@ -5851,26 +5811,6 @@
       "degree": 1,
       "role": "Founder",
       "links": {}
-    },
-    {
-      "id": "adam chikha",
-      "label": "Adam Chikha",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder & CEO",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/adam-chikha/"
-      }
-    },
-    {
-      "id": "serge barral",
-      "label": "Serge Barral",
-      "type": "person",
-      "degree": 1,
-      "role": "Co‑founder",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/serge-barral-9a2805218/"
-      }
     },
     {
       "id": "amir mostafavi",
@@ -6215,14 +6155,6 @@
       "links": {
         "linkedin": "https://www.linkedin.com/in/henrycipolla"
       }
-    },
-    {
-      "id": "timescale vc",
-      "label": "Timescale VC",
-      "type": "person",
-      "degree": 1,
-      "role": "Investor",
-      "links": {}
     },
     {
       "id": "sohrab haghighat",
@@ -6709,30 +6641,6 @@
       "links": {}
     },
     {
-      "id": "arvid lithander",
-      "label": "Arvid Lithander",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "bjorn bergstrom",
-      "label": "Bjorn Bergstrom",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
-      "id": "shannon cullum",
-      "label": "Shannon Cullum",
-      "type": "person",
-      "degree": 1,
-      "role": "Co-founder",
-      "links": {}
-    },
-    {
       "id": "dr ana koller",
       "label": "Dr Ana Koller",
       "type": "person",
@@ -6766,6 +6674,188 @@
       "type": "person",
       "degree": 1,
       "role": "founder",
+      "links": {}
+    },
+    {
+      "id": "arvid lithander",
+      "label": "Arvid Lithander",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "bjorn bergstrom",
+      "label": "Bjorn Bergstrom",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/bergstrombjorn"
+      }
+    },
+    {
+      "id": "shannon cullum",
+      "label": "Shannon Cullum",
+      "type": "person",
+      "degree": 1,
+      "role": "Co-founder",
+      "links": {}
+    },
+    {
+      "id": "dr. jürgen laartz",
+      "label": "Dr. Jürgen Laartz",
+      "type": "person",
+      "degree": 1,
+      "role": "Business Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/j%C3%BCrgen-laartz-15a5312/"
+      }
+    },
+    {
+      "id": "marcus purzer",
+      "label": "Marcus Purzer",
+      "type": "person",
+      "degree": 1,
+      "role": "Business Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/marcus-purzer-4116841/"
+      }
+    },
+    {
+      "id": "dr. jan heurich",
+      "label": "Dr. Jan Heurich",
+      "type": "person",
+      "degree": 1,
+      "role": "Business Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/jan-heurich-98975b49/"
+      }
+    },
+    {
+      "id": "robin prothmann",
+      "label": "Robin Prothmann",
+      "type": "person",
+      "degree": 1,
+      "role": "Business Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/prothmann/"
+      }
+    },
+    {
+      "id": "damian beresford",
+      "label": "Damian Beresford",
+      "type": "person",
+      "degree": 1,
+      "role": "Technology Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/dberesford/"
+      }
+    },
+    {
+      "id": "leo casarsa",
+      "label": "Leo Casarsa",
+      "type": "person",
+      "degree": 1,
+      "role": "Technology Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/leocasarsa/"
+      }
+    },
+    {
+      "id": "koji wakayama",
+      "label": "Koji Wakayama",
+      "type": "person",
+      "degree": 1,
+      "role": "Technology Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/kojiwakayama/"
+      }
+    },
+    {
+      "id": "kentaro wakayama",
+      "label": "Kentaro Wakayama",
+      "type": "person",
+      "degree": 1,
+      "role": "Technology Leadership",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/kentarowakayama/"
+      }
+    },
+    {
+      "id": "timescale vc",
+      "label": "Timescale VC",
+      "type": "person",
+      "degree": 1,
+      "role": "Investor",
+      "links": {}
+    },
+    {
+      "id": "adam chikha",
+      "label": "Adam Chikha",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/adam-chikha/"
+      }
+    },
+    {
+      "id": "serge barral",
+      "label": "Serge Barral",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/serge-barral-9a2805218/"
+      }
+    },
+    {
+      "id": "lukas trümper",
+      "label": "Lukas Trümper",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/lukas-truemper/"
+      }
+    },
+    {
+      "id": "adrian schmitz",
+      "label": "Adrian Schmitz",
+      "type": "person",
+      "degree": 1,
+      "role": "Co‑founder",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/adrian-schmitz-b70336336/"
+      }
+    },
+    {
+      "id": "lukas truemper",
+      "label": "Lukas Truemper",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder & CEO",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/lukas-truemper/"
+      }
+    },
+    {
+      "id": "sebastian daniel",
+      "label": "Sebastian Daniel",
+      "type": "person",
+      "degree": 1,
+      "role": "Chief of Staff",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sebastian-daniel/"
+      }
+    },
+    {
+      "id": "dr. nora hagmeyer",
+      "label": "Dr. Nora Hagmeyer",
+      "type": "person",
+      "degree": 1,
+      "role": "Vice President of Software",
       "links": {}
     },
     {
@@ -8149,38 +8239,8 @@
       "degree": 1
     },
     {
-      "id": "lea ventures",
-      "label": "LEA Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "amadeus apex technology fund",
-      "label": "Amadeus APEX Technology Fund",
-      "type": "org",
-      "degree": 1
-    },
-    {
       "id": "andreas goeldi",
       "label": "Andreas Goeldi",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "movens capital",
-      "label": "Movens Capital",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "heartfelt",
-      "label": "Heartfelt",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "hard2beat",
-      "label": "Hard2beat",
       "type": "org",
       "degree": 1
     },
@@ -8271,18 +8331,6 @@
     {
       "id": "jump trading",
       "label": "Jump Trading",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "timescale ventures",
-      "label": "Timescale Ventures",
-      "type": "org",
-      "degree": 1
-    },
-    {
-      "id": "vitalstage",
-      "label": "VitalStage",
       "type": "org",
       "degree": 1
     },
@@ -8455,6 +8503,18 @@
       "degree": 1
     },
     {
+      "id": "aenu",
+      "label": "AENU",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "first momentum ventures",
+      "label": "First Momentum Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "beenext ventures",
       "label": "Beenext Ventures",
       "type": "org",
@@ -8467,14 +8527,44 @@
       "degree": 1
     },
     {
-      "id": "aenu",
-      "label": "AENU",
+      "id": "timescale ventures",
+      "label": "Timescale Ventures",
       "type": "org",
       "degree": 1
     },
     {
-      "id": "first momentum ventures",
-      "label": "First Momentum Ventures",
+      "id": "vitalstage",
+      "label": "VitalStage",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "movens capital",
+      "label": "Movens Capital",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "heartfelt",
+      "label": "Heartfelt",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "hard2beat",
+      "label": "Hard2beat",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "lea ventures",
+      "label": "LEA Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "amadeus apex technology fund",
+      "label": "Amadeus APEX Technology Fund",
       "type": "org",
       "degree": 1
     },
@@ -8543,14 +8633,6 @@
       "score": 15
     },
     {
-      "id": "chronograph",
-      "label": "Chronograph",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
-    },
-    {
       "id": "cocient",
       "label": "Cocient",
       "type": "startup",
@@ -8567,44 +8649,12 @@
       "score": 15
     },
     {
-      "id": "controlplane",
-      "label": "ControlPlane",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
-    },
-    {
-      "id": "eggai",
-      "label": "EggAI",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
-    },
-    {
       "id": "opsfleet",
       "label": "Opsfleet",
       "type": "startup",
       "degree": 0,
       "website": "https://opsfleet.site",
       "score": 21
-    },
-    {
-      "id": "valis",
-      "label": "VALIS",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
-    },
-    {
-      "id": "reddit",
-      "label": "Reddit",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 15
     },
     {
       "id": "bioliberty",
@@ -8869,14 +8919,6 @@
       "degree": 0,
       "website": "https://amododesign.com",
       "score": 43
-    },
-    {
-      "id": "ai x healthcare startup",
-      "label": "AI x Healthcare Startup",
-      "type": "startup",
-      "degree": 0,
-      "website": "",
-      "score": 10
     },
     {
       "id": "kindo",
@@ -9621,6 +9663,46 @@
       "degree": 0,
       "website": "https://grittgene.com",
       "score": 72
+    },
+    {
+      "id": "controlplane",
+      "label": "ControlPlane",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "valis",
+      "label": "VALIS",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://valis-us.com",
+      "score": 31
+    },
+    {
+      "id": "reddit",
+      "label": "Reddit",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 15
+    },
+    {
+      "id": "chronograph",
+      "label": "Chronograph",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://www.chronograph.pe",
+      "score": 38
+    },
+    {
+      "id": "ai x healthcare startup",
+      "label": "AI x Healthcare Startup",
+      "type": "startup",
+      "degree": 0,
+      "website": "",
+      "score": 10
     },
     {
       "id": "kevin hartz",
@@ -11380,16 +11462,6 @@
       "links": {}
     },
     {
-      "id": "sandra szwabe",
-      "label": "Sandra Szwabe",
-      "type": "person",
-      "degree": 0,
-      "role": "Business Development & Marketing",
-      "links": {
-        "linkedin": "https://www.linkedin.com/in/sandra-szwabe-8551151b2"
-      }
-    },
-    {
       "id": "ali kayes",
       "label": "Ali Kayes",
       "type": "person",
@@ -12280,6 +12352,16 @@
       "degree": 0,
       "role": "Director",
       "links": {}
+    },
+    {
+      "id": "sandra szwabe",
+      "label": "Sandra Szwabe",
+      "type": "person",
+      "degree": 0,
+      "role": "Business Development & Marketing",
+      "links": {
+        "linkedin": "https://www.linkedin.com/in/sandra-szwabe-8551151b2"
+      }
     }
   ],
   "edges": [
@@ -21708,160 +21790,6 @@
       ]
     },
     {
-      "source": "lukas trümper",
-      "target": "daisytuner",
-      "rel": "founded",
-      "evidence": "He founded Daisytuner in Germany in 2024",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "adrian schmitz",
-      "target": "daisytuner",
-      "rel": "cofounded",
-      "evidence": "co‑found the company with Adrian Schmitz",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "elaia",
-      "target": "daisytuner",
-      "rel": "invested_in",
-      "evidence": "seed funding, led by Elaia",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lea ventures",
-      "target": "daisytuner",
-      "rel": "invested_in",
-      "evidence": "seed funding, led by ... LEA Ventures",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "amadeus apex technology fund",
-      "target": "daisytuner",
-      "rel": "invested_in",
-      "evidence": "participation from Amadeus APEX Technology Fund",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "seedcamp",
-      "target": "daisytuner",
-      "rel": "invested_in",
-      "evidence": "participation from ... Seedcamp",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "sébastien lefebvre",
-      "target": "daisytuner",
-      "rel": "backed_by",
-      "evidence": "we’re proud to back them,",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alexi malikotsinas",
-      "target": "daisytuner",
-      "rel": "backed_by",
-      "evidence": "we’re proud to back them,",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:23+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lukas truemper",
-      "target": "daisytuner",
-      "rel": "founded",
-      "evidence": "Founder & CEO",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:26+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "sebastian daniel",
-      "target": "daisytuner",
-      "rel": "works_at",
-      "evidence": "Chief of Staff",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:26+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
-      "source": "dr. nora hagmeyer",
-      "target": "daisytuner",
-      "rel": "works_at",
-      "evidence": "Vice President of Software",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
-          "run_id": "backfill-2026-11-16",
-          "first_seen": "2026-11-16T15:13:26+00:00",
-          "last_seen": "2026-11-16T15:13:26+00:00"
-        }
-      ]
-    },
-    {
       "source": "pranav piyush",
       "target": "paramark",
       "rel": "founded",
@@ -22082,90 +22010,6 @@
           "run_id": "20261117T154103Z",
           "first_seen": "2026-11-17T15:42:33+00:00",
           "last_seen": "2026-11-17T15:42:33+00:00"
-        }
-      ]
-    },
-    {
-      "source": "adam chikha",
-      "target": "asynchronics",
-      "rel": "founded",
-      "evidence": "He is now co‑founder and CEO of Asynchronics",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-11-17T15:42:33+00:00",
-          "last_seen": "2026-11-17T15:42:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "serge barral",
-      "target": "asynchronics",
-      "rel": "cofounded",
-      "evidence": "Chikha and co‑founder Serge Barral ... started the company in 2023",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-11-17T15:42:33+00:00",
-          "last_seen": "2026-11-17T15:42:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "b2venture",
-      "target": "asynchronics",
-      "rel": "invested_in",
-      "evidence": "b2venture led the round",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-11-17T15:42:33+00:00",
-          "last_seen": "2026-11-17T15:42:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "movens capital",
-      "target": "asynchronics",
-      "rel": "invested_in",
-      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-11-17T15:42:33+00:00",
-          "last_seen": "2026-11-17T15:42:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "heartfelt",
-      "target": "asynchronics",
-      "rel": "invested_in",
-      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-11-17T15:42:33+00:00",
-          "last_seen": "2026-11-17T15:42:34+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hard2beat",
-      "target": "asynchronics",
-      "rel": "invested_in",
-      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
-      "sources": [
-        {
-          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
-          "run_id": "backfill-2026-11-17",
-          "first_seen": "2026-11-17T15:42:33+00:00",
-          "last_seen": "2026-11-17T15:42:34+00:00"
         }
       ]
     },
@@ -23282,104 +23126,6 @@
       ]
     },
     {
-      "source": "raj aggarwal",
-      "target": "pedestal ai",
-      "rel": "founded",
-      "evidence": "CEO Raj Aggarwal says contemporary AI systems are particularly useful for dealing with that data.",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "eclipse",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "rre",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "converge vc",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "timescale ventures",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "vitalstage",
-      "target": "pedestal ai",
-      "rel": "invested_in",
-      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T15:05:34+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "raj aggarwal",
-      "target": "pedestal",
-      "rel": "founded",
-      "evidence": "Raj Aggarwal (CEO) and Henry Cipolla (CTO) founded Pedestal.",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T16:53:38+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
       "source": "henry cipolla",
       "target": "pedestal",
       "rel": "founded",
@@ -23409,34 +23155,6 @@
     },
     {
       "source": "rre",
-      "target": "pedestal",
-      "rel": "backed_by",
-      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T16:53:38+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "converge vc",
-      "target": "pedestal",
-      "rel": "backed_by",
-      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
-      "sources": [
-        {
-          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-          "run_id": "backfill-2026-11-20",
-          "first_seen": "2026-11-20T16:53:38+00:00",
-          "last_seen": "2026-11-20T16:53:38+00:00"
-        }
-      ]
-    },
-    {
-      "source": "timescale vc",
       "target": "pedestal",
       "rel": "backed_by",
       "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
@@ -24756,132 +24474,6 @@
       ]
     },
     {
-      "source": "beenext ventures",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "lotus",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "stefan lindeberg",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "alex bouaziz",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "thomas ekman",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "hedda båverud olsson",
-      "target": "miracly.ai",
-      "rel": "invested_in",
-      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "arvid lithander",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Arvid Lithander\nCo‑founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "bjorn bergstrom",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Bjorn Bergstrom\nCo‑founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
-      "source": "shannon cullum",
-      "target": "miracly",
-      "rel": "founded",
-      "evidence": "Shannon Cullum\nCo‑founder",
-      "sources": [
-        {
-          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
-          "run_id": "backfill-2026-11-25",
-          "first_seen": "2026-10-24T01:57:30+00:00",
-          "last_seen": "2026-11-25T18:36:25+00:00"
-        }
-      ]
-    },
-    {
       "source": "dr ana koller",
       "target": "starforge",
       "rel": "founded",
@@ -24962,6 +24554,608 @@
           "run_id": "backfill-2026-11-26",
           "first_seen": "2026-11-26T16:37:10+00:00",
           "last_seen": "2026-11-26T16:37:12+00:00"
+        }
+      ]
+    },
+    {
+      "source": "beenext ventures",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lotus",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "$2 million pre-seed round led by Beenext Ventures and Lotus",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "stefan lindeberg",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alex bouaziz",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "thomas ekman",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hedda båverud olsson",
+      "target": "miracly.ai",
+      "rel": "invested_in",
+      "evidence": "Existing investors include Stefan Lindeberg, Alex Bouaziz, Thomas Ekman and Hedda Båverud Olsson",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "arvid lithander",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Arvid Lithander\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "bjorn bergstrom",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Bjorn Bergstrom\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "shannon cullum",
+      "target": "miracly",
+      "rel": "founded",
+      "evidence": "Shannon Cullum\nCo-founder",
+      "sources": [
+        {
+          "source_url": "https://www.konsulteer.com/article/miracly-ai-launches-with-2m-pre-seed-to-build-ai-search-visibility-and-marketing-platform",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-10-24T01:57:30+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. jürgen laartz",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Dr. Jürgen Laartz ↗](https://www.linkedin.com/in/j%C3%BCrgen-laartz-15a5312/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "marcus purzer",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Marcus Purzer ↗](https://www.linkedin.com/in/marcus-purzer-4116841/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. jan heurich",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Dr. Jan Heurich ↗](https://www.linkedin.com/in/jan-heurich-98975b49/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "robin prothmann",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Robin Prothmann ↗](https://www.linkedin.com/in/prothmann/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "damian beresford",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Damian Beresford ↗](https://www.linkedin.com/in/dberesford/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "leo casarsa",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Leo Casarsa ↗](https://www.linkedin.com/in/leocasarsa/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "koji wakayama",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Koji Wakayama ↗](https://www.linkedin.com/in/kojiwakayama/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "kentaro wakayama",
+      "target": "eggai",
+      "rel": "works_at",
+      "evidence": "**[Kentaro Wakayama ↗](https://www.linkedin.com/in/kentarowakayama/)**",
+      "sources": [
+        {
+          "source_url": "https://grnh.se/wr97lgu2teu",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T18:19:18+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "raj aggarwal",
+      "target": "pedestal ai",
+      "rel": "founded",
+      "evidence": "CEO Raj Aggarwal says contemporary AI systems are particularly useful for dealing with that data.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "eclipse",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "rre",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "converge vc",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "timescale ventures",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "vitalstage",
+      "target": "pedestal ai",
+      "rel": "invested_in",
+      "evidence": "seed round was led by Eclipse, with participation from RRE, Converge VC, Timescale Ventures, and VitalStage",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T15:05:34+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "raj aggarwal",
+      "target": "pedestal",
+      "rel": "founded",
+      "evidence": "Raj Aggarwal (CEO) and Henry Cipolla (CTO) founded Pedestal.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "converge vc",
+      "target": "pedestal",
+      "rel": "backed_by",
+      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "timescale vc",
+      "target": "pedestal",
+      "rel": "backed_by",
+      "evidence": "Pedestal is based in Boston and is backed by Eclipse, RRE, Converge VC, Timescale VC and VitalStage Ventures.",
+      "sources": [
+        {
+          "source_url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-20T16:53:38+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "adam chikha",
+      "target": "asynchronics",
+      "rel": "founded",
+      "evidence": "He is now co‑founder and CEO of Asynchronics",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "serge barral",
+      "target": "asynchronics",
+      "rel": "cofounded",
+      "evidence": "Chikha and co‑founder Serge Barral ... started the company in 2023",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "b2venture",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "b2venture led the round",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "movens capital",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "heartfelt",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "hard2beat",
+      "target": "asynchronics",
+      "rel": "invested_in",
+      "evidence": "with Movens Capital, Heartfelt, and Hard2beat participating",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/asynchronics-raises-3-1m-spacecraft-digital-twins/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-17T15:42:33+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lukas trümper",
+      "target": "daisytuner",
+      "rel": "founded",
+      "evidence": "He founded Daisytuner in Germany in 2024",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "adrian schmitz",
+      "target": "daisytuner",
+      "rel": "cofounded",
+      "evidence": "co‑found the company with Adrian Schmitz",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "elaia",
+      "target": "daisytuner",
+      "rel": "invested_in",
+      "evidence": "seed funding, led by Elaia",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lea ventures",
+      "target": "daisytuner",
+      "rel": "invested_in",
+      "evidence": "seed funding, led by ... LEA Ventures",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "amadeus apex technology fund",
+      "target": "daisytuner",
+      "rel": "invested_in",
+      "evidence": "participation from Amadeus APEX Technology Fund",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "seedcamp",
+      "target": "daisytuner",
+      "rel": "invested_in",
+      "evidence": "participation from ... Seedcamp",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sébastien lefebvre",
+      "target": "daisytuner",
+      "rel": "backed_by",
+      "evidence": "we’re proud to back them,",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "alexi malikotsinas",
+      "target": "daisytuner",
+      "rel": "backed_by",
+      "evidence": "we’re proud to back them,",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:23+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "lukas truemper",
+      "target": "daisytuner",
+      "rel": "founded",
+      "evidence": "Founder & CEO",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:26+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sebastian daniel",
+      "target": "daisytuner",
+      "rel": "works_at",
+      "evidence": "Chief of Staff",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:26+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr. nora hagmeyer",
+      "target": "daisytuner",
+      "rel": "works_at",
+      "evidence": "Vice President of Software",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/daisytuner-6m-seed-ai-compiler-multi-chip/",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-16T15:13:26+00:00",
+          "last_seen": "2026-11-26T18:19:18+00:00"
         }
       ]
     }

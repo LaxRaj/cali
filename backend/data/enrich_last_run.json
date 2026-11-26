@@ -1,12 +1,11 @@
 {
-  "started_at": "2026-11-25T18:36:25+00:00",
+  "started_at": "2026-11-26T18:19:18+00:00",
   "skipped": "",
   "startups": [
     {
       "company": "Miracly.ai",
-      "score": 87,
+      "score": 92,
       "gaps": [
-        "people profiles",
         "phone"
       ],
       "website": "https://www.miracly.ai",
@@ -21,54 +20,7 @@
       ]
     },
     {
-      "company": "Pond AI",
-      "score": 29,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "website": "https://joinpond.ai",
-      "status": "ok",
-      "emails": 0,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Lightscale AI",
-      "score": 40,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "website": "https://lightscale.ai",
-      "status": "ok",
-      "emails": 1,
-      "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "team llm: 0 people proposed, 0 grounded",
-        "team page: +0 people, +0 edges"
-      ]
-    },
-    {
-      "company": "Spanish National Cancer Research Centre",
+      "company": "ControlPlane",
       "score": 15,
       "gaps": [
         "funding stage",
@@ -93,7 +45,54 @@
       ]
     },
     {
-      "company": "Hemant Singh",
+      "company": "EggAI",
+      "score": 48,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "investors",
+        "phone"
+      ],
+      "website": "https://egg-ai.com",
+      "status": "ok",
+      "emails": 2,
+      "phones": 0,
+      "people": 8,
+      "edges": 8,
+      "notes": [
+        "team llm: 8 people proposed, 8 grounded",
+        "team page: +8 people, +8 edges"
+      ]
+    },
+    {
+      "company": "VALIS",
+      "score": 31,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "website": "https://valis-us.com",
+      "status": "ok",
+      "emails": 1,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "company": "Reddit",
       "score": 15,
       "gaps": [
         "funding stage",
@@ -118,8 +117,8 @@
       ]
     },
     {
-      "company": "iCallidus",
-      "score": 29,
+      "company": "Chronograph",
+      "score": 38,
       "gaps": [
         "funding stage",
         "location",
@@ -128,32 +127,12 @@
         "founder",
         "people profiles",
         "investors",
-        "email",
         "phone"
       ],
-      "website": "https://icallidus.com",
+      "website": "https://www.chronograph.pe",
       "status": "ok",
-      "emails": 0,
+      "emails": 2,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": []
-    },
-    {
-      "company": "Piramidal",
-      "score": 44,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors"
-      ],
-      "website": "https://www.piramal.com",
-      "status": "ok",
-      "emails": 1,
-      "phones": 2,
       "people": 0,
       "edges": 0,
       "notes": [
@@ -162,10 +141,11 @@
       ]
     },
     {
-      "company": "Nirvana Robotics",
-      "score": 25,
+      "company": "AI x Healthcare Startup",
+      "score": 10,
       "gaps": [
         "funding stage",
+        "website",
         "location",
         "funding amount",
         "tech stack",
@@ -175,94 +155,95 @@
         "email",
         "phone"
       ],
-      "website": "https://www.nrvna.ai",
+      "website": "",
+      "status": "no_website",
+      "emails": 0,
+      "phones": 0,
+      "people": 0,
+      "edges": 0,
+      "notes": [
+        "no website found"
+      ]
+    },
+    {
+      "company": "Pedestal AI",
+      "score": 79,
+      "gaps": [
+        "email",
+        "phone"
+      ],
+      "website": "https://www.pedestal.ai",
       "status": "ok",
       "emails": 0,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
+      "people": 3,
+      "edges": 9,
       "notes": []
     },
     {
-      "company": "Tether",
-      "score": 21,
+      "company": "Asynchronics",
+      "score": 79,
       "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
         "email",
         "phone"
       ],
-      "website": "https://tether.to",
-      "status": "crawl_failed",
+      "website": "https://asynchronics.com",
+      "status": "ok",
       "emails": 0,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
+      "people": 3,
+      "edges": 6,
       "notes": [
-        "crawl failed"
+        "structured data: 3 people"
       ]
     },
     {
-      "company": "DigiKey",
-      "score": 21,
+      "company": "Daisytuner",
+      "score": 79,
       "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
         "email",
         "phone"
       ],
-      "website": "https://www.digikey.com",
-      "status": "crawl_failed",
+      "website": "https://daisytuner.com",
+      "status": "ok",
       "emails": 0,
       "phones": 0,
-      "people": 0,
-      "edges": 0,
-      "notes": [
-        "crawl failed"
-      ]
+      "people": 5,
+      "edges": 11,
+      "notes": []
     }
   ],
-  "tokens": 4897,
+  "tokens": 6456,
   "usage": {
-    "prompt_tokens": 4511,
-    "completion_tokens": 386,
-    "total_tokens": 4897,
+    "prompt_tokens": 5082,
+    "completion_tokens": 1374,
+    "total_tokens": 6456,
     "calls": 4,
     "by_purpose": {
       "team": {
-        "prompt_tokens": 4511,
-        "completion_tokens": 386,
-        "total_tokens": 4897,
+        "prompt_tokens": 5082,
+        "completion_tokens": 1374,
+        "total_tokens": 6456,
         "calls": 4
       }
     },
     "by_model": {
       "openai/gpt-oss-120b": {
-        "prompt_tokens": 4511,
-        "completion_tokens": 386,
-        "total_tokens": 4897,
+        "prompt_tokens": 5082,
+        "completion_tokens": 1374,
+        "total_tokens": 6456,
         "calls": 4
       }
     },
     "by_key": {
       "key1": {
-        "prompt_tokens": 4511,
-        "completion_tokens": 386,
-        "total_tokens": 4897,
+        "prompt_tokens": 5082,
+        "completion_tokens": 1374,
+        "total_tokens": 6456,
         "calls": 4
       }
     },
     "quota_hits": []
   },
-  "finished_at": "2026-11-25T18:37:43+00:00"
+  "finished_at": "2026-11-26T18:20:26+00:00"
 }
