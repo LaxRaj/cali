@@ -488,7 +488,7 @@
       "type": "startup",
       "degree": 6,
       "website": "https://www.miracly.ai",
-      "score": 87
+      "score": 72
     },
     {
       "id": "one silicon chip photonics (oscp)",
@@ -755,6 +755,14 @@
       "degree": 4,
       "website": "https://www.riseautomation.ca",
       "score": 71
+    },
+    {
+      "id": "starforge",
+      "label": "Starforge",
+      "type": "startup",
+      "degree": 4,
+      "website": "https://www.starforge.energy",
+      "score": 92
     },
     {
       "id": "miles pines",
@@ -2593,6 +2601,22 @@
       "degree": 1,
       "website": "https://altair-health.com",
       "score": 54
+    },
+    {
+      "id": "nutmeg",
+      "label": "Nutmeg",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://logical.io",
+      "score": 61
+    },
+    {
+      "id": "dynamite",
+      "label": "Dynamite",
+      "type": "startup",
+      "degree": 1,
+      "website": "https://www.usedynamite.com",
+      "score": 44
     },
     {
       "id": "alex rosenberg",
@@ -6709,6 +6733,42 @@
       "links": {}
     },
     {
+      "id": "dr ana koller",
+      "label": "Dr Ana Koller",
+      "type": "person",
+      "degree": 1,
+      "role": "CEO",
+      "links": {
+        "linkedin": "https://de.linkedin.com/in/anakoller"
+      }
+    },
+    {
+      "id": "jonathan janssen",
+      "label": "Jonathan Janssen",
+      "type": "person",
+      "degree": 1,
+      "role": "COO",
+      "links": {
+        "linkedin": "https://de.linkedin.com/in/jonathan-s-janssen"
+      }
+    },
+    {
+      "id": "sam karu",
+      "label": "Sam Karu",
+      "type": "person",
+      "degree": 1,
+      "role": "Founder",
+      "links": {}
+    },
+    {
+      "id": "samraaj bath",
+      "label": "Samraaj Bath",
+      "type": "person",
+      "degree": 1,
+      "role": "founder",
+      "links": {}
+    },
+    {
       "id": "endgrate",
       "label": "Endgrate",
       "type": "org",
@@ -8407,6 +8467,18 @@
       "degree": 1
     },
     {
+      "id": "aenu",
+      "label": "AENU",
+      "type": "org",
+      "degree": 1
+    },
+    {
+      "id": "first momentum ventures",
+      "label": "First Momentum Ventures",
+      "type": "org",
+      "degree": 1
+    },
+    {
       "id": "quantufai, inc",
       "label": "QuantufAi, Inc",
       "type": "startup",
@@ -9541,6 +9613,14 @@
       "degree": 0,
       "website": "",
       "score": 21
+    },
+    {
+      "id": "grittgene therapeutics inc.",
+      "label": "GrittGene Therapeutics Inc.",
+      "type": "startup",
+      "degree": 0,
+      "website": "https://grittgene.com",
+      "score": 72
     },
     {
       "id": "kevin hartz",
@@ -12165,6 +12245,40 @@
       "type": "person",
       "degree": 0,
       "role": "General Manager, Corporate Planning Center, Corporate Planning Division",
+      "links": {}
+    },
+    {
+      "id": "sebastian böhmer",
+      "label": "Sebastian Böhmer",
+      "type": "person",
+      "degree": 0,
+      "role": "Founding Partner",
+      "links": {
+        "linkedin": "https://de.linkedin.com/in/sebastianboehmer"
+      }
+    },
+    {
+      "id": "dr. ir. ana koller",
+      "label": "Dr. ir. Ana Koller",
+      "type": "person",
+      "degree": 0,
+      "role": "CEO and Co-Founder",
+      "links": {}
+    },
+    {
+      "id": "suren ambarchyan",
+      "label": "Suren Ambarchyan",
+      "type": "person",
+      "degree": 0,
+      "role": "President, Director",
+      "links": {}
+    },
+    {
+      "id": "liana avetisyan",
+      "label": "Liana Avetisyan",
+      "type": "person",
+      "degree": 0,
+      "role": "Director",
       "links": {}
     }
   ],
@@ -24764,6 +24878,90 @@
           "run_id": "backfill-2026-11-25",
           "first_seen": "2026-10-24T01:57:30+00:00",
           "last_seen": "2026-11-25T18:36:25+00:00"
+        }
+      ]
+    },
+    {
+      "source": "dr ana koller",
+      "target": "starforge",
+      "rel": "founded",
+      "evidence": "Starforge was founded by Dr Ana Koller ...",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
+          "run_id": "20261126T163601Z",
+          "first_seen": "2026-11-26T16:37:10+00:00",
+          "last_seen": "2026-11-26T16:37:10+00:00"
+        }
+      ]
+    },
+    {
+      "source": "jonathan janssen",
+      "target": "starforge",
+      "rel": "cofounded",
+      "evidence": "Jonathan Janssen ... is chief operating officer",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
+          "run_id": "20261126T163601Z",
+          "first_seen": "2026-11-26T16:37:10+00:00",
+          "last_seen": "2026-11-26T16:37:10+00:00"
+        }
+      ]
+    },
+    {
+      "source": "aenu",
+      "target": "starforge",
+      "rel": "invested_in",
+      "evidence": "AENU ... led the round",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
+          "run_id": "20261126T163601Z",
+          "first_seen": "2026-11-26T16:37:10+00:00",
+          "last_seen": "2026-11-26T16:37:10+00:00"
+        }
+      ]
+    },
+    {
+      "source": "first momentum ventures",
+      "target": "starforge",
+      "rel": "invested_in",
+      "evidence": "First Momentum Ventures led the round",
+      "sources": [
+        {
+          "source_url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
+          "run_id": "20261126T163601Z",
+          "first_seen": "2026-11-26T16:37:10+00:00",
+          "last_seen": "2026-11-26T16:37:10+00:00"
+        }
+      ]
+    },
+    {
+      "source": "sam karu",
+      "target": "nutmeg",
+      "rel": "founded",
+      "evidence": "Sam Karu",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Y8R-nutmeg-the-notetaker-purpose-built-for-meetings-with-screen-shares",
+          "run_id": "20261126T163601Z",
+          "first_seen": "2026-11-26T16:37:10+00:00",
+          "last_seen": "2026-11-26T16:37:10+00:00"
+        }
+      ]
+    },
+    {
+      "source": "samraaj bath",
+      "target": "dynamite",
+      "rel": "founded",
+      "evidence": "Hey, Samraaj here, founder of Dynamite.",
+      "sources": [
+        {
+          "source_url": "https://www.ycombinator.com/launches/Y0d-dynamite-personalize-your-website-for-every-visitor",
+          "run_id": "backfill-2026-11-26",
+          "first_seen": "2026-11-26T16:37:10+00:00",
+          "last_seen": "2026-11-26T16:37:12+00:00"
         }
       ]
     }

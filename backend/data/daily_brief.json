@@ -1,401 +1,313 @@
 {
-  "generated_at": "2026-11-25T16:59:11+00:00",
+  "generated_at": "2026-11-26T16:37:10+00:00",
   "findings": [
     {
-      "company_name": "Versine",
-      "core_product": "An AI‑powered money conversation platform (MCP) that lets users send and request money via voice or text using a self‑custodial USDC wallet on Base.",
+      "company_name": "Starforge",
+      "core_product": "A compact spherical tokamak fusion reactor that can be mass‑produced on production lines.",
       "tech_stack": [
-        "Base (OP Stack)",
-        "AWS Fargate",
-        "stablecoin USDC",
-        "vector search"
+        "high‑temperature superconducting magnets",
+        "modular manufacturing",
+        "tokamak control systems"
       ],
-      "likely_bottleneck": "Scaling real‑time permission management and compliance for high‑volume stablecoin transactions.",
-      "value_prop_pitch": "You can offload the permission management layer to a Next.js API that scales instantly with serverless functions, while a vector‑based semantic search indexes transaction intents for instant retrieval. This eliminates latency spikes and lets you focus on building the AI agent instead of plumbing the wallet.",
+      "likely_bottleneck": "Scaling the design, fabrication and integration of complex superconducting hardware for high‑volume manufacturing.",
+      "value_prop_pitch": "We can build a Next.js dashboard that lets your engineers visualize magnet performance data in real time, cutting down debugging cycles. Coupled with a vector semantic search over your design docs, you’ll retrieve exact engineering solutions instantly, accelerating the path to scalable production.",
       "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "San Francisco, US",
-      "website": "https://versine.com",
-      "source_url": "https://news.ycombinator.com/item?id=50634426",
-      "discovered_at": "2026-11-25T16:57:27+00:00",
-      "source": "launch_hn",
-      "score": 47,
+      "funding_stage": "pre-seed",
+      "funding_amount": "€6.6M",
+      "hq": "Munich, Germany",
+      "website": "https://www.starforge.energy",
+      "source_url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
+      "discovered_at": "2026-11-26T16:36:33+00:00",
+      "source": "rss",
+      "score": 92,
       "gaps": [
-        "funding amount",
-        "founder",
-        "people profiles",
-        "investors",
         "phone"
       ],
       "contact": {
-        "website": "https://versine.com",
+        "website": "https://www.starforge.energy",
         "emails": [
           {
-            "value": "support@versine.com",
-            "kind": "support",
-            "source_url": "https://versine.com/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/versineapp",
-          "linkedin": "https://www.linkedin.com/company/versinehq"
-        },
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://versine.com/",
-          "https://versine.com/about"
-        ],
-        "enriched_at": "2026-11-25T16:58:23+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Next.js",
-            "category": "framework"
-          },
-          {
-            "name": "React",
-            "category": "framework"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "launch_hn",
-          "url": "https://news.ycombinator.com/item?id=50634426",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-24T20:44:15Z",
-          "seen_at": "2026-11-25T16:58:20+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Light Anchor",
-      "core_product": "An AI-native platform that runs consumer brands end‑to‑end using AI agents for marketing, operations, logistics and inventory management.",
-      "tech_stack": [
-        "large language models",
-        "computer vision",
-        "cloud infrastructure"
-      ],
-      "likely_bottleneck": "Ensuring the reliability and scalability of AI agents across heterogeneous business software and real‑time decision making.",
-      "value_prop_pitch": "You could wrap the agent interfaces in a Next.js front‑end that caches decisions in a vector semantic store, letting you retrieve relevant past actions instantly. This would dramatically cut latency and improve consistency across brands as they scale.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://lightanchor.ai",
-      "source_url": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
-      "discovered_at": "2026-11-25T16:57:27+00:00",
-      "source": "yc",
-      "score": 70,
-      "gaps": [
-        "location",
-        "funding amount",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://lightanchor.ai",
-        "emails": [
-          {
-            "value": "founders@lightanchor.ai",
-            "kind": "person",
-            "source_url": "https://lightanchor.ai/"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/light-anchor"
-        },
-        "contact_page": "",
-        "product_access": [],
-        "pages_crawled": [
-          "https://lightanchor.ai/",
-          "https://lightanchor.ai/about"
-        ],
-        "enriched_at": "2026-11-25T16:58:42+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "Next.js",
-            "category": "framework"
-          },
-          {
-            "name": "Vercel",
-            "category": "hosting"
-          },
-          {
-            "name": "React",
-            "category": "framework"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-25T16:58:20+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Chase Kim",
-          "role": "co‑founder",
-          "org": "Light Anchor",
-          "evidence": "Hey everyone 👋! We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor.",
-          "linkedin": "https://www.linkedin.com/in/chasingjohnn/",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.ycombinator.com/launches/Y0U-light-anchor-the-ai-native-p-g"
-        },
-        {
-          "name": "Sangha Park",
-          "role": "Co-Founder",
-          "org": "Light Anchor",
-          "evidence": "schema.org Person markup",
-          "linkedin": "https://www.linkedin.com/in/sanghaha",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://lightanchor.ai/"
-        }
-      ],
-      "edges": [
-        {
-          "src": "Chase Kim",
-          "rel": "founded",
-          "dst": "Light Anchor",
-          "evidence": "We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor."
-        },
-        {
-          "src": "Sangha Park",
-          "rel": "founded",
-          "dst": "Light Anchor",
-          "evidence": "We're [Chase](https://www.linkedin.com/in/chasingjohnn/) and [Sangha](https://www.linkedin.com/in/sanghaha/), co‑founders of Light Anchor."
-        }
-      ]
-    },
-    {
-      "company_name": "Weaviate",
-      "core_product": "An AI-native vector database for unstructured data that enables context‑aware retrieval and long‑term reasoning for AI agents.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling high‑dimensional vector search and maintaining low latency as data volume grows.",
-      "value_prop_pitch": "We can integrate Next.js with a semantic search layer built on your vector database to deliver instant, context‑rich results directly in the UI, eliminating the need for custom backend glue code. This will let your engineers focus on core product features while we handle the scaling and relevance challenges of vector search.",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "Prinsengracht 769a, 1017JZ Amsterdam, the Netherlands",
-      "website": "https://weaviate.io",
-      "source_url": "https://www.ricoh.com/release/2026/0616_1",
-      "discovered_at": "2026-11-25T16:57:27+00:00",
-      "source": "web",
-      "score": 71,
-      "gaps": [
-        "funding stage",
-        "funding amount",
-        "tech stack",
-        "people profiles",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://weaviate.io",
-        "emails": [
-          {
-            "value": "hello@weaviate.io",
+            "value": "contact@starforge.energy",
             "kind": "general",
-            "source_url": "https://weaviate.io/"
+            "source_url": "https://www.starforge.energy/"
           }
         ],
         "phones": [],
         "socials": {
-          "twitter": "https://x.com/weaviate_io",
-          "linkedin": "https://www.linkedin.com/company/weaviate-io",
-          "github": "https://github.com/weaviate"
+          "linkedin": "https://www.linkedin.com/company/starforge-energy"
         },
-        "contact_page": "https://weaviate.io/contact",
-        "product_access": [
-          {
-            "label": "Pricing",
-            "url": "https://weaviate.io/pricing"
-          },
-          {
-            "label": "Try now",
-            "url": "https://weaviate.io/go/console"
-          },
-          {
-            "label": "Documentation",
-            "url": "https://docs.weaviate.io/weaviate"
-          },
-          {
-            "label": "Start building",
-            "url": "https://docs.weaviate.io/weaviate/quickstart"
-          }
-        ],
+        "contact_page": "https://www.starforge.energy/contact",
+        "product_access": [],
         "pages_crawled": [
-          "https://weaviate.io/",
-          "https://weaviate.io/contact",
-          "https://weaviate.io/company/about-us"
+          "https://www.starforge.energy/",
+          "https://www.starforge.energy/about",
+          "https://www.starforge.energy/contact",
+          "https://www.starforge.energy/team"
         ],
-        "enriched_at": "2026-11-25T16:58:46+00:00",
+        "enriched_at": "2026-11-26T16:36:43+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "HubSpot",
-            "category": "marketing"
+            "name": "Webflow",
+            "category": "cms"
           },
           {
             "name": "Google Analytics",
             "category": "analytics"
           },
           {
-            "name": "Plausible",
-            "category": "analytics"
-          },
-          {
-            "name": "Hotjar",
-            "category": "analytics"
+            "name": "Ashby",
+            "category": "hiring"
           }
         ]
       },
       "signals": [
         {
-          "type": "launch",
-          "source": "web",
-          "url": "https://www.ricoh.com/release/2026/0616_1",
+          "type": "funding",
+          "source": "rss",
+          "url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-25T16:58:20+00:00"
+          "posted_at": "Thu, 26 Nov 2026 11:07:16 +0000",
+          "seen_at": "2026-11-26T16:36:40+00:00"
         }
       ],
       "people": [
         {
-          "name": "Bob van Luijt",
-          "role": "Co-founder and CEO",
-          "org": "Weaviate",
-          "evidence": "Co-founder and CEO: Bob van Luijt",
-          "linkedin": "",
+          "name": "Dr Ana Koller",
+          "role": "CEO",
+          "org": "Starforge",
+          "evidence": "Starforge was founded by Dr Ana Koller ... who serves as CEO",
+          "linkedin": "https://de.linkedin.com/in/anakoller",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/"
         },
         {
-          "name": "Etienne Dilocker",
-          "role": "Co-founder and CTO",
-          "org": "Weaviate",
-          "evidence": "Co-founder and CTO: Etienne Dilocker",
-          "linkedin": "",
+          "name": "Sebastian Böhmer",
+          "role": "Founding Partner",
+          "org": "First Momentum Ventures",
+          "evidence": "added Sebastian Böhmer, founding partner at First Momentum Ventures",
+          "linkedin": "https://de.linkedin.com/in/sebastianboehmer",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/"
         },
         {
-          "name": "Eiji Suzuki",
-          "role": "General Manager, Corporate Planning Center, Corporate Planning Division",
-          "org": "Ricoh Company, Ltd.",
-          "evidence": "Eiji Suzuki, General Manager, Corporate Planning Center, Corporate Planning Division, Ricoh Company, Ltd.",
+          "name": "Dr. ir. Ana Koller",
+          "role": "CEO and Co-Founder",
+          "org": "Starforge",
+          "evidence": "schema.org Person markup",
           "linkedin": "",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
+          "link_source": "https://www.starforge.energy/"
+        },
+        {
+          "name": "Jonathan Janssen",
+          "role": "COO",
+          "org": "Starforge",
+          "evidence": "Jonathan Janssen ... is chief operating officer",
+          "linkedin": "https://de.linkedin.com/in/jonathan-s-janssen",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/"
         }
       ],
       "edges": [
         {
-          "src": "Bob van Luijt",
+          "src": "Dr Ana Koller",
           "rel": "founded",
-          "dst": "Weaviate",
-          "evidence": "Co-founder and CEO: Bob van Luijt"
+          "dst": "Starforge",
+          "evidence": "Starforge was founded by Dr Ana Koller ..."
         },
         {
-          "src": "Etienne Dilocker",
+          "src": "Jonathan Janssen",
           "rel": "cofounded",
-          "dst": "Weaviate",
-          "evidence": "Co-founder and CTO: Etienne Dilocker"
+          "dst": "Starforge",
+          "evidence": "Jonathan Janssen ... is chief operating officer"
         },
         {
-          "src": "Ricoh Innovation Fund",
+          "src": "AENU",
           "rel": "invested_in",
-          "dst": "Weaviate",
-          "evidence": "Ricoh has made an investment into Weaviate (Co‑founder and CEO: Bob van Luijt, Co‑founder and CTO: Etienne Dilocker)"
+          "dst": "Starforge",
+          "evidence": "AENU ... led the round"
+        },
+        {
+          "src": "First Momentum Ventures",
+          "rel": "invested_in",
+          "dst": "Starforge",
+          "evidence": "First Momentum Ventures led the round"
         }
       ]
     },
     {
-      "company_name": "Altair Health",
-      "core_product": "AI‑powered end‑to‑end medical billing automation that handles eligibility checks, coding, claims, payment posting and appeals for healthcare practices.",
-      "tech_stack": [],
-      "likely_bottleneck": "Scaling the AI models and integrating with dozens of insurer APIs while maintaining real‑time claim processing speed.",
-      "value_prop_pitch": "I can build a Next.js front‑end that surfaces claim insights instantly, while a vector‑based semantic search layer lets your AI retrieve insurer policy nuances in milliseconds, eliminating the integration lag. This will let Altair scale to thousands of practices without the current bottleneck of custom API adapters and slow policy lookups.",
+      "company_name": "GrittGene Therapeutics Inc.",
+      "core_product": "An AI‑driven platform that integrates transcriptomics, proteomics and epigenomics to decode and treat complex genetic and muscle‑related diseases.",
+      "tech_stack": [
+        "AI",
+        "transcriptomics",
+        "proteomics",
+        "epigenomics"
+      ],
+      "likely_bottleneck": "Scaling multi‑omics data pipelines and training large AI models efficiently.",
+      "value_prop_pitch": "You could offload your heavy multi‑omics processing to a Next.js front‑end that streams data to serverless functions, letting you focus on model iteration rather than infrastructure. Pair that with a vector‑based semantic search layer to instantly retrieve relevant biological insights and accelerate target discovery.",
       "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://altair-health.com",
-      "source_url": "https://www.ycombinator.com/launches/Y37-altair-health-we-get-doctors-paid-on-autopilot",
-      "discovered_at": "2026-11-25T16:57:27+00:00",
-      "source": "yc",
-      "score": 54,
+      "funding_stage": "seed",
+      "funding_amount": "$250K",
+      "hq": "Pasadena, CA",
+      "website": "https://grittgene.com",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2167176/000216717626000001/",
+      "discovered_at": "2026-11-26T16:36:33+00:00",
+      "source": "edgar",
+      "score": 72,
       "gaps": [
-        "location",
-        "funding amount",
-        "tech stack",
         "people profiles",
-        "investors",
-        "phone"
+        "investors"
       ],
       "contact": {
-        "website": "https://altair-health.com",
+        "website": "https://grittgene.com",
         "emails": [
           {
-            "value": "hello@altair-health.com",
+            "value": "info@grittgene.com",
             "kind": "general",
-            "source_url": "https://altair-health.com/"
+            "source_url": "https://grittgene.com/"
           }
         ],
-        "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/s7-lab"
-        },
-        "contact_page": "",
-        "product_access": [
+        "phones": [
           {
-            "label": "Documentation",
-            "url": "https://altair-health.com/docs"
+            "value": "+17475660001",
+            "kind": "main",
+            "source_url": "https://grittgene.com/"
           }
         ],
+        "socials": {},
+        "contact_page": "https://grittgene.com/contact-us/",
+        "product_access": [],
         "pages_crawled": [
-          "https://altair-health.com/",
-          "https://altair-health.com/about"
+          "https://grittgene.com/",
+          "https://grittgene.com/contact-us/"
         ],
-        "enriched_at": "2026-11-25T16:58:56+00:00",
+        "enriched_at": "2026-11-26T16:36:50+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Cal.com",
-            "category": "scheduling"
+            "name": "WordPress",
+            "category": "cms"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "edgar",
+          "url": "https://www.sec.gov/Archives/edgar/data/2167176/000216717626000001/",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "2026-11-25T16:28:07-05:00",
+          "seen_at": "2026-11-26T16:36:40+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Suren Ambarchyan",
+          "role": "President, Director",
+          "org": "GrittGene Therapeutics Inc.",
+          "evidence": "Signed by Suren Ambarchyan, President.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        },
+        {
+          "name": "Liana Avetisyan",
+          "role": "Director",
+          "org": "GrittGene Therapeutics Inc.",
+          "evidence": "Liana Avetisyan — Director",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": []
+    },
+    {
+      "company_name": "Nutmeg",
+      "core_product": "A Mac app that captures screen‑shared visuals during meetings and rebuilds charts, tables, and diagrams directly in your notes with real data and searchable context.",
+      "tech_stack": [
+        "macOS",
+        "Zoom API",
+        "Google Meet API",
+        "cloud AI models"
+      ],
+      "likely_bottleneck": "Real‑time extraction and reconstruction of visual content from screen shares on a local Mac environment.",
+      "value_prop_pitch": "I can integrate a Next.js front‑end with a vector‑based semantic search layer to instantly index and retrieve the visual elements you capture, eliminating latency in data lookup. This will let Nutmeg serve up exact chart data and context in milliseconds, keeping the note‑taking flow seamless.",
+      "is_relevant": true,
+      "funding_stage": "YC",
+      "funding_amount": "",
+      "hq": "",
+      "website": "https://logical.io",
+      "source_url": "https://www.ycombinator.com/launches/Y8R-nutmeg-the-notetaker-purpose-built-for-meetings-with-screen-shares",
+      "discovered_at": "2026-11-26T16:36:33+00:00",
+      "source": "yc",
+      "score": 61,
+      "gaps": [
+        "location",
+        "funding amount",
+        "people profiles",
+        "investors",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://logical.io",
+        "emails": [
+          {
+            "value": "hello@logical.io",
+            "kind": "general",
+            "source_url": "https://logical.io/"
+          }
+        ],
+        "phones": [],
+        "socials": {
+          "linkedin": "https://www.linkedin.com/company/trylogical",
+          "twitter": "https://x.com/trylogical"
+        },
+        "contact_page": "https://logical.io/contact",
+        "product_access": [
+          {
+            "label": "Docs",
+            "url": "https://docs.logical.io"
+          }
+        ],
+        "pages_crawled": [
+          "https://logical.io/",
+          "https://logical.io/about",
+          "https://logical.io/team",
+          "https://logical.io/contact"
+        ],
+        "enriched_at": "2026-11-26T16:37:01+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
           }
         ]
       },
@@ -403,19 +315,19 @@
         {
           "type": "launch",
           "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Y37-altair-health-we-get-doctors-paid-on-autopilot",
+          "url": "https://www.ycombinator.com/launches/Y8R-nutmeg-the-notetaker-purpose-built-for-meetings-with-screen-shares",
           "roles": [],
           "role_kinds": [],
           "posted_at": "",
-          "seen_at": "2026-11-25T16:58:20+00:00"
+          "seen_at": "2026-11-26T16:36:40+00:00"
         }
       ],
       "people": [
         {
-          "name": "Aouss Sbai",
+          "name": "Sam Karu",
           "role": "Founder",
-          "org": "Altair Health",
-          "evidence": "We’re Aouss and Jad, the founders of Altair Health (YC F26).",
+          "org": "Nutmeg",
+          "evidence": "Sam Karu",
           "linkedin": "",
           "twitter": "",
           "github": "",
@@ -425,217 +337,127 @@
       ],
       "edges": [
         {
-          "src": "Aouss Sbai",
+          "src": "Sam Karu",
           "rel": "founded",
-          "dst": "Altair Health",
-          "evidence": "We’re Aouss and Jad, the founders of Altair Health (YC F26)."
+          "dst": "Nutmeg",
+          "evidence": "Sam Karu"
         }
       ]
     },
     {
-      "company_name": "Lightscale AI",
-      "core_product": "AI‑powered platform that builds custom business software such as CRM, web shop, or applicant tracking with secure sign‑in, access control and GDPR‑ready data protection, hosted in Switzerland.",
+      "company_name": "Dynamite",
+      "core_product": "A real‑time personalization platform that adapts website copy, images, case studies and recommendations to each visitor in ~200 ms.",
       "tech_stack": [
-        "AI",
-        "web",
-        "cloud"
+        "JavaScript",
+        "AI"
       ],
-      "likely_bottleneck": "scaling the AI‑driven code generation while maintaining low latency for multi‑tenant custom apps",
-      "value_prop_pitch": "I can integrate Next.js as a front‑end layer to serve each generated app with instant, cache‑friendly rendering, eliminating latency spikes as you scale. Coupled with a vector‑based semantic search layer, your AI can retrieve relevant code snippets instantly, keeping generation fast even under heavy load.",
+      "likely_bottleneck": "Scaling low‑latency inference for per‑visitor personalization models as traffic grows.",
+      "value_prop_pitch": "You could move the personalization front‑end to a Next.js edge runtime to serve variant decisions in sub‑millisecond latency, and back it with a vector‑based semantic search index to instantly match visitor context to the most relevant content. This eliminates the heavy server‑side model calls and gives you a scalable, cache‑friendly architecture.",
       "is_relevant": true,
-      "funding_stage": "",
+      "funding_stage": "YC",
       "funding_amount": "",
-      "hq": "Zug, CH",
-      "website": "https://lightscale.ai",
-      "source_url": "https://lightscale.ai/",
-      "discovered_at": "2026-11-25T16:57:27+00:00",
-      "source": "hn",
-      "score": 40,
+      "hq": "",
+      "website": "https://www.usedynamite.com",
+      "source_url": "https://www.ycombinator.com/launches/Y0d-dynamite-personalize-your-website-for-every-visitor",
+      "discovered_at": "2026-11-26T16:36:33+00:00",
+      "source": "yc",
+      "score": 44,
       "gaps": [
-        "funding stage",
+        "location",
         "funding amount",
-        "founder",
         "people profiles",
         "investors",
+        "email",
         "phone"
       ],
       "contact": {
-        "website": "https://lightscale.ai",
-        "emails": [
-          {
-            "value": "contact@lightscale.ai",
-            "kind": "general",
-            "source_url": "https://lightscale.ai/"
-          }
-        ],
+        "website": "https://www.usedynamite.com",
+        "emails": [],
         "phones": [],
-        "socials": {
-          "linkedin": "https://www.linkedin.com/company/lightscale-ai"
-        },
+        "socials": {},
         "contact_page": "",
         "product_access": [
           {
             "label": "Pricing",
-            "url": "https://lightscale.ai/pricing/"
+            "url": "https://www.usedynamite.com/pricing"
           }
         ],
         "pages_crawled": [
-          "https://lightscale.ai/",
-          "https://lightscale.ai/company/"
+          "https://www.usedynamite.com/"
         ],
-        "enriched_at": "2026-11-25T16:59:06+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": []
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "hn",
-          "url": "https://lightscale.ai/",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "2026-11-25T07:36:21Z",
-          "seen_at": "2026-11-25T16:58:20+00:00"
-        }
-      ],
-      "people": [],
-      "edges": []
-    },
-    {
-      "company_name": "Pond AI",
-      "core_product": "Most non-tech businesses know exactly which workflows they want AI agents to handle, but have no one to build, connect and run them. Pond delivers custom AI agents to these businesses through a network of 7k AI builders, with Pond as the pl",
-      "tech_stack": [],
-      "likely_bottleneck": "",
-      "value_prop_pitch": "",
-      "is_relevant": true,
-      "funding_stage": "",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://joinpond.ai",
-      "source_url": "https://news.ycombinator.com/item?id=50339881",
-      "discovered_at": "2026-11-25T16:58:20+00:00",
-      "source": "hiring",
-      "score": 41,
-      "gaps": [
-        "funding stage",
-        "location",
-        "funding amount",
-        "tech stack",
-        "founder",
-        "people profiles",
-        "investors",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://joinpond.ai",
-        "emails": [
-          {
-            "value": "dylan@joinpond.ai",
-            "kind": "person",
-            "source_url": "https://news.ycombinator.com/item?id=50339881"
-          }
-        ],
-        "phones": [],
-        "socials": {
-          "twitter": "https://x.com/JoinPond",
-          "linkedin": "https://www.linkedin.com/company/buildwithpond"
-        },
-        "contact_page": "https://joinpond.ai/contact",
-        "product_access": [
-          {
-            "label": "Start free",
-            "url": "https://joinpond.ai/try"
-          }
-        ],
-        "pages_crawled": [
-          "https://joinpond.ai/",
-          "https://joinpond.ai/about",
-          "https://joinpond.ai/contact",
-          "https://joinpond.ai/team"
-        ],
-        "enriched_at": "2026-11-25T16:59:11+00:00",
+        "enriched_at": "2026-11-26T16:37:06+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "React",
-            "category": "framework"
+            "name": "PostHog",
+            "category": "analytics"
           },
           {
-            "name": "Cloudflare",
-            "category": "hosting"
+            "name": "Google Analytics",
+            "category": "analytics"
           }
         ]
       },
       "signals": [
         {
-          "type": "hiring",
-          "source": "hn_who_is_hiring",
-          "url": "https://news.ycombinator.com/item?id=50339881",
-          "roles": [
-            "San Francisco"
-          ],
-          "role_kinds": [
-            "other"
-          ],
-          "posted_at": "2026-11-02T17:03:38Z",
-          "seen_at": "2026-11-25T16:58:20+00:00"
+          "type": "launch",
+          "source": "yc",
+          "url": "https://www.ycombinator.com/launches/Y0d-dynamite-personalize-your-website-for-every-visitor",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-26T16:36:40+00:00"
         }
       ],
-      "people": [],
-      "edges": []
+      "people": [
+        {
+          "name": "Samraaj Bath",
+          "role": "founder",
+          "org": "Dynamite",
+          "evidence": "Hey, Samraaj here, founder of Dynamite.",
+          "linkedin": "",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": ""
+        }
+      ],
+      "edges": [
+        {
+          "src": "Samraaj Bath",
+          "rel": "founded",
+          "dst": "Dynamite",
+          "evidence": "Hey, Samraaj here, founder of Dynamite."
+        }
+      ]
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Versine",
-        "score": 47,
-        "source": "launch_hn"
+        "company": "Starforge",
+        "score": 92,
+        "source": "rss"
       },
       {
-        "company": "Light Anchor",
-        "score": 70,
+        "company": "GrittGene Therapeutics Inc.",
+        "score": 72,
+        "source": "edgar"
+      },
+      {
+        "company": "Nutmeg",
+        "score": 61,
         "source": "yc"
       },
       {
-        "company": "Weaviate",
-        "score": 71,
-        "source": "web"
-      },
-      {
-        "company": "Altair Health",
-        "score": 54,
+        "company": "Dynamite",
+        "score": 44,
         "source": "yc"
-      },
-      {
-        "company": "Lightscale AI",
-        "score": 40,
-        "source": "hn"
-      },
-      {
-        "company": "Pond AI",
-        "score": 41,
-        "source": "hiring"
       }
     ],
     "updated": []
   },
-  "watchlist_hits": [
-    {
-      "company": "Versine",
-      "why": [
-        "keyword: vector search"
-      ]
-    },
-    {
-      "company": "Weaviate",
-      "why": [
-        "keyword: vector search"
-      ]
-    }
-  ]
+  "watchlist_hits": []
 }
