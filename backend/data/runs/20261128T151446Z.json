@@ -1,0 +1,455 @@
+{
+  "run_id": "20261128T151446Z",
+  "started_at": "2026-11-28T15:14:46+00:00",
+  "duration_s": 123.2,
+  "passed": true,
+  "status": "passed",
+  "funnel": {
+    "candidates": 246,
+    "selected": 6,
+    "crawled": 5,
+    "extracted": 5,
+    "relevant": 3,
+    "valid": 3
+  },
+  "tokens": 18019,
+  "token_budget": 400000,
+  "sources": {
+    "yc": 12,
+    "hiring": 120,
+    "hn": 37,
+    "rss": 44,
+    "web": 30,
+    "edgar": 3
+  },
+  "failures": [],
+  "plan": {
+    "web_queries": [
+      "pre-seed startup launches AI-powered semantic search platform funding round November 2026",
+      "Series A round for developer tooling startup building Next.js vector search API",
+      "seed funding announced for retrieval-augmented generation web app startup founders interview",
+      "early-stage company raises capital for data-heavy web app search engine startup investors",
+      "founder announces launch of RAG-powered knowledge base startup series A funding November 2026"
+    ],
+    "hn_keywords": [
+      "semantic search",
+      "RAG startup",
+      "vector search API",
+      "developer tooling",
+      "next.js search"
+    ]
+  },
+  "feedback": {
+    "source_stats": {
+      "rss": {
+        "crawled": 28,
+        "accepted": 17,
+        "score_sum": 1308,
+        "yield": 0.607,
+        "avg_score": 76.9
+      },
+      "yc": {
+        "crawled": 25,
+        "accepted": 25,
+        "score_sum": 1515,
+        "yield": 1.0,
+        "avg_score": 60.6
+      },
+      "hiring": {
+        "crawled": 27,
+        "accepted": 27,
+        "score_sum": 841,
+        "yield": 1.0,
+        "avg_score": 31.1
+      },
+      "edgar": {
+        "crawled": 23,
+        "accepted": 4,
+        "score_sum": 280,
+        "yield": 0.174,
+        "avg_score": 70.0
+      },
+      "launch_hn": {
+        "crawled": 5,
+        "accepted": 5,
+        "score_sum": 287,
+        "yield": 1.0,
+        "avg_score": 57.4
+      },
+      "web": {
+        "crawled": 8,
+        "accepted": 5,
+        "score_sum": 399,
+        "yield": 0.625,
+        "avg_score": 79.8
+      },
+      "hn": {
+        "crawled": 4,
+        "accepted": 1,
+        "score_sum": 40,
+        "yield": 0.25,
+        "avg_score": 40.0
+      }
+    },
+    "caps": {
+      "edgar": 2,
+      "hiring": 2,
+      "hn": 2,
+      "launch_hn": 2,
+      "rss": 2,
+      "web": 2,
+      "yc": 3
+    }
+  },
+  "decisions": {
+    "provider": "jev",
+    "calls": 89,
+    "fallbacks": 0,
+    "avg_latency_ms": 67.5,
+    "jev_input_tokens": 42394,
+    "gated_pages": 0,
+    "tokens_saved_est": 0
+  },
+  "stages": [
+    {
+      "name": "discover",
+      "started_at": "2026-11-28T15:14:46+00:00",
+      "offset_s": 0.0,
+      "duration_s": 14.39,
+      "status": "ok",
+      "counts": {
+        "candidates": 246,
+        "src_hn": 34,
+        "src_launch_hn": 3,
+        "src_rss": 44,
+        "src_yc": 12,
+        "src_web": 30,
+        "src_edgar": 3,
+        "src_hiring": 120
+      },
+      "notes": []
+    },
+    {
+      "name": "triage",
+      "started_at": "2026-11-28T15:15:01+00:00",
+      "offset_s": 14.39,
+      "duration_s": 5.68,
+      "status": "ok",
+      "counts": {
+        "in": 246,
+        "selected": 6,
+        "hiring_lane": 1,
+        "hiring_refreshed": 0
+      },
+      "notes": [
+        "crawl caps by source: {'edgar': 2, 'hiring': 2, 'hn': 2, 'launch_hn': 2, 'rss': 2, 'web': 2, 'yc': 3}",
+        "decider: jev"
+      ]
+    },
+    {
+      "name": "crawl",
+      "started_at": "2026-11-28T15:15:06+00:00",
+      "offset_s": 20.07,
+      "duration_s": 9.55,
+      "status": "ok",
+      "counts": {
+        "requested": 6,
+        "crawled": 5
+      },
+      "notes": []
+    },
+    {
+      "name": "extract",
+      "started_at": "2026-11-28T15:15:16+00:00",
+      "offset_s": 29.62,
+      "duration_s": 32.76,
+      "status": "ok",
+      "counts": {
+        "extracted": 5,
+        "relevant": 3,
+        "valid": 3
+      },
+      "notes": []
+    },
+    {
+      "name": "enrich",
+      "started_at": "2026-11-28T15:15:49+00:00",
+      "offset_s": 62.38,
+      "duration_s": 46.63,
+      "status": "ok",
+      "counts": {
+        "startups": 4,
+        "websites": 4,
+        "emails": 3,
+        "phones": 1
+      },
+      "notes": [
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges",
+        "team llm: 0 people proposed, 0 grounded",
+        "team page: +0 people, +0 edges"
+      ]
+    },
+    {
+      "name": "gates",
+      "started_at": "2026-11-28T15:16:35+00:00",
+      "offset_s": 109.01,
+      "duration_s": 0.0,
+      "status": "ok",
+      "counts": {
+        "passed": 1,
+        "avg_score": 69
+      },
+      "notes": []
+    },
+    {
+      "name": "store",
+      "started_at": "2026-11-28T15:16:35+00:00",
+      "offset_s": 109.01,
+      "duration_s": 2.34,
+      "status": "ok",
+      "counts": {
+        "startups": 4,
+        "people": 5,
+        "edges": 19
+      },
+      "notes": []
+    },
+    {
+      "name": "backfill",
+      "started_at": "2026-11-28T15:16:38+00:00",
+      "offset_s": 111.35,
+      "duration_s": 8.82,
+      "status": "ok",
+      "counts": {
+        "startups": 1,
+        "emails": 0
+      },
+      "notes": [
+        "Nimble: ok, score 77"
+      ]
+    }
+  ],
+  "source_health": {
+    "yc": {
+      "candidates": 12,
+      "seconds": 0.38,
+      "error": ""
+    },
+    "hiring": {
+      "candidates": 120,
+      "seconds": 0.94,
+      "error": ""
+    },
+    "hn": {
+      "candidates": 37,
+      "seconds": 1.73,
+      "error": ""
+    },
+    "rss": {
+      "candidates": 44,
+      "seconds": 2.45,
+      "error": ""
+    },
+    "web": {
+      "candidates": 30,
+      "seconds": 7.8,
+      "error": ""
+    },
+    "edgar": {
+      "candidates": 3,
+      "seconds": 14.39,
+      "error": ""
+    }
+  },
+  "usage": {
+    "prompt_tokens": 14620,
+    "completion_tokens": 3399,
+    "total_tokens": 18019,
+    "calls": 8,
+    "by_purpose": {
+      "extract": {
+        "prompt_tokens": 9091,
+        "completion_tokens": 3272,
+        "total_tokens": 12363,
+        "calls": 4
+      },
+      "team": {
+        "prompt_tokens": 5529,
+        "completion_tokens": 127,
+        "total_tokens": 5656,
+        "calls": 4
+      }
+    },
+    "by_model": {
+      "openai/gpt-oss-120b": {
+        "prompt_tokens": 14620,
+        "completion_tokens": 3399,
+        "total_tokens": 18019,
+        "calls": 8
+      }
+    },
+    "by_key": {
+      "key1": {
+        "prompt_tokens": 14620,
+        "completion_tokens": 3399,
+        "total_tokens": 18019,
+        "calls": 8
+      }
+    },
+    "quota_hits": []
+  },
+  "quality": {
+    "candidates": 246,
+    "crawled": 5,
+    "extracted": 5,
+    "relevant": 3,
+    "valid": 3,
+    "sources": {
+      "rss": 1,
+      "web": 2
+    },
+    "people": 5,
+    "edges": 19,
+    "dropped_ungrounded": 3,
+    "gated": 0,
+    "quota_exhausted": false,
+    "enriched": 4,
+    "with_website": 4,
+    "with_email": 3,
+    "with_phone": 1,
+    "people_linked": 5,
+    "avg_score": 69.8,
+    "qualified": 2,
+    "avg_qualified_score": 88.0,
+    "issues": {
+      "not a relevant startup page": 2,
+      "warn: empty tech_stack": 2
+    },
+    "failures": [],
+    "passed": true,
+    "deferred_urls": [],
+    "skipped": "",
+    "validity_rate": 1.0
+  },
+  "accepted": [
+    {
+      "company": "Maple",
+      "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+      "source": "rss",
+      "people": 2,
+      "edges": 3,
+      "score": 85,
+      "gaps": [
+        "phone"
+      ],
+      "website": "https://maple.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "each::labs",
+      "url": "https://thenextweb.com/news/each-labs-seed-funding-ebrd-revo",
+      "source": "web",
+      "people": 2,
+      "edges": 6,
+      "score": 91,
+      "gaps": [
+        "tech stack",
+        "phone"
+      ],
+      "website": "https://www.eachlabs.ai",
+      "emails": 1,
+      "phones": 0
+    },
+    {
+      "company": "Nimble",
+      "url": "https://www.techtarget.com/searchdatamanagement/news/366639416/Web-data-curator-Nimble-secures-47M-to-fuel-growth",
+      "source": "web",
+      "people": 1,
+      "edges": 10,
+      "score": 67,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "website": "https://www.nimble.com",
+      "emails": 0,
+      "phones": 0
+    },
+    {
+      "company": "Better Stack",
+      "url": "https://betterstack.com/",
+      "source": "hiring",
+      "people": 0,
+      "edges": 0,
+      "score": 36,
+      "gaps": [
+        "funding stage",
+        "location",
+        "funding amount",
+        "tech stack",
+        "founder",
+        "people profiles",
+        "investors"
+      ],
+      "website": "https://betterstack.com",
+      "emails": 1,
+      "phones": 1
+    }
+  ],
+  "rejections": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2167271/000216727126000001/",
+      "source": "edgar",
+      "reasons": [
+        "no company website found"
+      ]
+    },
+    {
+      "url": "https://techfundingnews.com/portuguese-startup-lampsy-raises-e1-1m-for-an-ai-lamp-that-detects-epilepsy-seizures-during-sleep/",
+      "source": "rss",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/2166428/000216642826000002/",
+      "source": "edgar",
+      "reasons": [
+        "not a relevant startup page"
+      ]
+    }
+  ],
+  "errors": [],
+  "diff": {
+    "added": [
+      {
+        "company": "Maple",
+        "score": 85,
+        "source": "rss"
+      },
+      {
+        "company": "each::labs",
+        "score": 91,
+        "source": "web"
+      },
+      {
+        "company": "Better Stack",
+        "score": 36,
+        "source": "hiring"
+      }
+    ],
+    "updated": [
+      {
+        "company": "Nimble",
+        "score": 67,
+        "score_before": 79,
+        "source": "web"
+      }
+    ]
+  }
+}

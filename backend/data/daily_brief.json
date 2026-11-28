@@ -1,65 +1,62 @@
 {
-  "generated_at": "2026-11-26T16:37:10+00:00",
+  "generated_at": "2026-11-28T15:16:35+00:00",
   "findings": [
     {
-      "company_name": "Starforge",
-      "core_product": "A compact spherical tokamak fusion reactor that can be mass‑produced on production lines.",
+      "company_name": "Maple",
+      "core_product": "A privacy‑first AI chat and desktop assistant that runs user data inside encrypted trusted execution environments so the company never sees the raw data.",
       "tech_stack": [
-        "high‑temperature superconducting magnets",
-        "modular manufacturing",
-        "tokamak control systems"
+        "trusted execution environment (TEE)",
+        "open‑source LLMs (DeepSeek, Kimi, GLM, Inkling, Gemma, GPT‑OSS)",
+        "cloud infrastructure"
       ],
-      "likely_bottleneck": "Scaling the design, fabrication and integration of complex superconducting hardware for high‑volume manufacturing.",
-      "value_prop_pitch": "We can build a Next.js dashboard that lets your engineers visualize magnet performance data in real time, cutting down debugging cycles. Coupled with a vector semantic search over your design docs, you’ll retrieve exact engineering solutions instantly, accelerating the path to scalable production.",
+      "likely_bottleneck": "scaling secure, low‑latency inference inside TEEs while supporting multiple models",
+      "value_prop_pitch": "You could offload the heavy model serving to a Next.js edge layer that pre‑filters requests and caches vector embeddings, dramatically reducing the number of calls that need to hit the TEE. Then add a semantic search index so the AI only processes the most relevant context, cutting compute time and cost inside the secure enclave.",
       "is_relevant": true,
-      "funding_stage": "pre-seed",
-      "funding_amount": "€6.6M",
-      "hq": "Munich, Germany",
-      "website": "https://www.starforge.energy",
-      "source_url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
-      "discovered_at": "2026-11-26T16:36:33+00:00",
+      "funding_stage": "seed",
+      "funding_amount": "$5.3M",
+      "hq": "Austin and San Francisco",
+      "website": "https://maple.ai",
+      "source_url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
+      "discovered_at": "2026-11-28T15:15:16+00:00",
       "source": "rss",
-      "score": 92,
+      "score": 85,
       "gaps": [
         "phone"
       ],
       "contact": {
-        "website": "https://www.starforge.energy",
+        "website": "https://maple.ai",
         "emails": [
           {
-            "value": "contact@starforge.energy",
-            "kind": "general",
-            "source_url": "https://www.starforge.energy/"
+            "value": "support@maple.ai",
+            "kind": "support",
+            "source_url": "https://maple.ai/"
           }
         ],
         "phones": [],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/starforge-energy"
+          "twitter": "https://x.com/trymapleai",
+          "linkedin": "https://www.linkedin.com/company/trymapleai",
+          "github": "https://github.com/MaplePrivacyLabs"
         },
-        "contact_page": "https://www.starforge.energy/contact",
-        "product_access": [],
-        "pages_crawled": [
-          "https://www.starforge.energy/",
-          "https://www.starforge.energy/about",
-          "https://www.starforge.energy/contact",
-          "https://www.starforge.energy/team"
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://maple.ai/pricing"
+          }
         ],
-        "enriched_at": "2026-11-26T16:36:43+00:00",
+        "pages_crawled": [
+          "https://maple.ai/",
+          "https://maple.ai/about"
+        ],
+        "enriched_at": "2026-11-28T15:15:51+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "Webflow",
-            "category": "cms"
-          },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          },
-          {
-            "name": "Ashby",
-            "category": "hiring"
+            "name": "Astro",
+            "category": "framework"
           }
         ]
       },
@@ -67,134 +64,245 @@
         {
           "type": "funding",
           "source": "rss",
-          "url": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/",
+          "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "Thu, 26 Nov 2026 11:07:16 +0000",
-          "seen_at": "2026-11-26T16:36:40+00:00"
+          "posted_at": "Tue, 24 Nov 2026 21:19:52 +0000",
+          "seen_at": "2026-11-28T15:15:49+00:00"
         }
       ],
       "people": [
         {
-          "name": "Dr Ana Koller",
-          "role": "CEO",
-          "org": "Starforge",
-          "evidence": "Starforge was founded by Dr Ana Koller ... who serves as CEO",
-          "linkedin": "https://de.linkedin.com/in/anakoller",
-          "twitter": "",
+          "name": "Mark Suman",
+          "role": "CEO & Co‑founder",
+          "org": "Maple",
+          "evidence": "“We wanted to build something that was not only encrypted but also could be proven, and that people could go look at the open‑source code…\" explains Maple co‑founder and CEO Mark Suman",
+          "linkedin": "https://www.linkedin.com/in/marksuman/",
+          "twitter": "https://x.com/marksuman",
           "github": "",
           "homepage": "",
-          "link_source": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/"
+          "link_source": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
         },
         {
-          "name": "Sebastian Böhmer",
-          "role": "Founding Partner",
-          "org": "First Momentum Ventures",
-          "evidence": "added Sebastian Böhmer, founding partner at First Momentum Ventures",
-          "linkedin": "https://de.linkedin.com/in/sebastianboehmer",
-          "twitter": "",
-          "github": "",
+          "name": "Anthony Ronning",
+          "role": "CTO & Co‑founder",
+          "org": "Maple",
+          "evidence": "His co‑founder, Anthony Ronning (CTO), has a background in defense tech, security, and networking.",
+          "linkedin": "https://www.linkedin.com/in/anthonyronning/",
+          "twitter": "https://x.com/anthonyronning",
+          "github": "https://github.com/AnthonyRonning",
           "homepage": "",
-          "link_source": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/"
-        },
-        {
-          "name": "Dr. ir. Ana Koller",
-          "role": "CEO and Co-Founder",
-          "org": "Starforge",
-          "evidence": "schema.org Person markup",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://www.starforge.energy/"
-        },
-        {
-          "name": "Jonathan Janssen",
-          "role": "COO",
-          "org": "Starforge",
-          "evidence": "Jonathan Janssen ... is chief operating officer",
-          "linkedin": "https://de.linkedin.com/in/jonathan-s-janssen",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": "https://techfundingnews.com/munich-fusion-startup-starforge-raises-e6-6m-to-build-compact-reactors-on-production-lines/"
+          "link_source": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
         }
       ],
       "edges": [
         {
-          "src": "Dr Ana Koller",
-          "rel": "founded",
-          "dst": "Starforge",
-          "evidence": "Starforge was founded by Dr Ana Koller ..."
-        },
-        {
-          "src": "Jonathan Janssen",
+          "src": "Anthony Ronning",
           "rel": "cofounded",
-          "dst": "Starforge",
-          "evidence": "Jonathan Janssen ... is chief operating officer"
+          "dst": "Maple",
+          "evidence": "His co‑founder, Anthony Ronning (CTO)"
         },
         {
-          "src": "AENU",
+          "src": "Epic Ventures",
           "rel": "invested_in",
-          "dst": "Starforge",
-          "evidence": "AENU ... led the round"
+          "dst": "Maple",
+          "evidence": "The oversubscribed seed round was led by Epic Ventures"
         },
         {
-          "src": "First Momentum Ventures",
+          "src": "Draper Associates",
           "rel": "invested_in",
-          "dst": "Starforge",
-          "evidence": "First Momentum Ventures led the round"
+          "dst": "Maple",
+          "evidence": "participation from Draper Associates"
         }
       ]
     },
     {
-      "company_name": "GrittGene Therapeutics Inc.",
-      "core_product": "An AI‑driven platform that integrates transcriptomics, proteomics and epigenomics to decode and treat complex genetic and muscle‑related diseases.",
-      "tech_stack": [
-        "AI",
-        "transcriptomics",
-        "proteomics",
-        "epigenomics"
-      ],
-      "likely_bottleneck": "Scaling multi‑omics data pipelines and training large AI models efficiently.",
-      "value_prop_pitch": "You could offload your heavy multi‑omics processing to a Next.js front‑end that streams data to serverless functions, letting you focus on model iteration rather than infrastructure. Pair that with a vector‑based semantic search layer to instantly retrieve relevant biological insights and accelerate target discovery.",
+      "company_name": "each::labs",
+      "core_product": "A generative media platform offering an API that provides over 600 models for images, video, and audio, plus its own trained models.",
+      "tech_stack": [],
+      "likely_bottleneck": "Ensuring low‑latency, reliable inference at scale for multimodal generative models.",
+      "value_prop_pitch": "You can wrap your inference layer in a Next.js front‑end that caches embeddings and routes requests through a vector‑semantic search layer, eliminating the need for costly round‑trips to multiple model endpoints. This will push success rates to 100 % while shaving milliseconds off each request, letting you handle a million daily runs without over‑provisioning compute.",
       "is_relevant": true,
       "funding_stage": "seed",
-      "funding_amount": "$250K",
-      "hq": "Pasadena, CA",
-      "website": "https://grittgene.com",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/2167176/000216717626000001/",
-      "discovered_at": "2026-11-26T16:36:33+00:00",
-      "source": "edgar",
-      "score": 72,
+      "funding_amount": "$7M",
+      "hq": "San Francisco",
+      "website": "https://www.eachlabs.ai",
+      "source_url": "https://thenextweb.com/news/each-labs-seed-funding-ebrd-revo",
+      "discovered_at": "2026-11-28T15:15:16+00:00",
+      "source": "web",
+      "score": 91,
       "gaps": [
-        "people profiles",
-        "investors"
+        "tech stack",
+        "phone"
       ],
       "contact": {
-        "website": "https://grittgene.com",
+        "website": "https://www.eachlabs.ai",
         "emails": [
           {
-            "value": "info@grittgene.com",
-            "kind": "general",
-            "source_url": "https://grittgene.com/"
+            "value": "support@eachlabs.ai",
+            "kind": "support",
+            "source_url": "https://www.eachlabs.ai/contact"
           }
         ],
-        "phones": [
+        "phones": [],
+        "socials": {
+          "github": "https://github.com/eachlabs",
+          "twitter": "https://x.com/eachlabs",
+          "linkedin": "https://www.linkedin.com/company/eachlabs"
+        },
+        "contact_page": "https://www.eachlabs.ai/contact",
+        "product_access": [
           {
-            "value": "+17475660001",
-            "kind": "main",
-            "source_url": "https://grittgene.com/"
+            "label": "Pricing",
+            "url": "https://www.eachlabs.ai/pricing"
+          },
+          {
+            "label": "Docs",
+            "url": "https://docs.eachlabs.ai/introduction"
           }
         ],
-        "socials": {},
-        "contact_page": "https://grittgene.com/contact-us/",
-        "product_access": [],
         "pages_crawled": [
-          "https://grittgene.com/",
-          "https://grittgene.com/contact-us/"
+          "https://www.eachlabs.ai/",
+          "https://www.eachlabs.ai/contact"
         ],
-        "enriched_at": "2026-11-26T16:36:50+00:00",
+        "enriched_at": "2026-11-28T15:16:12+00:00",
+        "status": "ok",
+        "attempts": 0,
+        "last_attempt": "",
+        "site_tech": [
+          {
+            "name": "Next.js",
+            "category": "framework"
+          },
+          {
+            "name": "PostHog",
+            "category": "analytics"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "React",
+            "category": "framework"
+          }
+        ]
+      },
+      "signals": [
+        {
+          "type": "funding",
+          "source": "web",
+          "url": "https://thenextweb.com/news/each-labs-seed-funding-ebrd-revo",
+          "roles": [],
+          "role_kinds": [],
+          "posted_at": "",
+          "seen_at": "2026-11-28T15:15:49+00:00"
+        }
+      ],
+      "people": [
+        {
+          "name": "Eftal Yurtseven",
+          "role": "co-founder and CEO",
+          "org": "each::labs",
+          "evidence": "“Before generative media, if you couldn’t draw, you couldn’t show anyone what was in your head. Now you can, but only after fighting the tool for it,” said Eftal Yurtseven, co-founder and CEO of each::labs.",
+          "linkedin": "https://www.linkedin.com/in/eftalyurtseven",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        },
+        {
+          "name": "Canberk Sinangil",
+          "role": "co-founder",
+          "org": "each::labs",
+          "evidence": "each::labs co-founders Eftal Yurtseven and Canberk Sinangil",
+          "linkedin": "https://www.linkedin.com/in/canberksinangil",
+          "twitter": "",
+          "github": "",
+          "homepage": "",
+          "link_source": "search"
+        }
+      ],
+      "edges": [
+        {
+          "src": "Eftal Yurtseven",
+          "rel": "founded",
+          "dst": "each::labs",
+          "evidence": "each::labs co-founders Eftal Yurtseven and Canberk Sinangil"
+        },
+        {
+          "src": "Canberk Sinangil",
+          "rel": "founded",
+          "dst": "each::labs",
+          "evidence": "each::labs co-founders Eftal Yurtseven and Canberk Sinangil"
+        },
+        {
+          "src": "Revo Capital",
+          "rel": "invested_in",
+          "dst": "each::labs",
+          "evidence": "Revo Capital and the European Bank for Reconstruction and Development (EBRD) co-leading the investment"
+        },
+        {
+          "src": "European Bank for Reconstruction and Development (EBRD)",
+          "rel": "invested_in",
+          "dst": "each::labs",
+          "evidence": "Revo Capital and the European Bank for Reconstruction and Development (EBRD) co-leading the investment"
+        },
+        {
+          "src": "Eftal Yurtseven",
+          "rel": "previously_at",
+          "dst": "Getir",
+          "evidence": "Yurtseven ran the data platform team at grocery delivery firm Getir before starting the company"
+        },
+        {
+          "src": "Eftal Yurtseven",
+          "rel": "previously_at",
+          "dst": "Insider",
+          "evidence": "starting the company with a fellow ex-Insider engineer"
+        }
+      ]
+    },
+    {
+      "company_name": "Nimble",
+      "core_product": "An AI‑powered platform that instantly converts web data into curated data tables for enterprise AI applications.",
+      "tech_stack": [],
+      "likely_bottleneck": "Scaling high‑volume, reliable web data ingestion for enterprise customers.",
+      "value_prop_pitch": "We can wrap your ingestion UI in a fast, SEO‑friendly Next.js front‑end that lets you monitor and debug pipelines in real time. Then we’ll add a vector‑based semantic search layer so your agents can retrieve the right scraped records instantly, eliminating latency at scale.",
+      "is_relevant": true,
+      "funding_stage": "Series B",
+      "funding_amount": "$47M",
+      "hq": "New York",
+      "website": "https://www.nimble.com",
+      "source_url": "https://www.techtarget.com/searchdatamanagement/news/366639416/Web-data-curator-Nimble-secures-47M-to-fuel-growth",
+      "discovered_at": "2026-11-28T15:15:16+00:00",
+      "source": "web",
+      "score": 67,
+      "gaps": [
+        "tech stack",
+        "email",
+        "phone"
+      ],
+      "contact": {
+        "website": "https://www.nimble.com",
+        "emails": [],
+        "phones": [],
+        "socials": {
+          "twitter": "https://x.com/nimble",
+          "linkedin": "https://www.linkedin.com/company/nimblecrm"
+        },
+        "contact_page": "",
+        "product_access": [
+          {
+            "label": "Pricing",
+            "url": "https://www.nimble.com/pricing/"
+          }
+        ],
+        "pages_crawled": [
+          "https://www.nimble.com/",
+          "https://www.nimble.com/",
+          "https://www.nimble.com/team"
+        ],
+        "enriched_at": "2026-11-28T15:16:28+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
@@ -202,262 +310,230 @@
           {
             "name": "WordPress",
             "category": "cms"
+          },
+          {
+            "name": "Intercom",
+            "category": "support"
+          },
+          {
+            "name": "Mixpanel",
+            "category": "analytics"
           }
         ]
       },
       "signals": [
         {
           "type": "funding",
-          "source": "edgar",
-          "url": "https://www.sec.gov/Archives/edgar/data/2167176/000216717626000001/",
+          "source": "web",
+          "url": "https://www.techtarget.com/searchdatamanagement/news/366639416/Web-data-curator-Nimble-secures-47M-to-fuel-growth",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "2026-11-25T16:28:07-05:00",
-          "seen_at": "2026-11-26T16:36:40+00:00"
+          "posted_at": "",
+          "seen_at": "2026-11-28T15:15:49+00:00"
         }
       ],
       "people": [
         {
-          "name": "Suren Ambarchyan",
-          "role": "President, Director",
-          "org": "GrittGene Therapeutics Inc.",
-          "evidence": "Signed by Suren Ambarchyan, President.",
-          "linkedin": "",
+          "name": "Uriel Knorovich",
+          "role": "Co‑founder and CEO",
+          "org": "Nimble",
+          "evidence": "Nimble plans to use the new funding to fuel continued improvement and expansion of its web data ingestion platform, according to Uriel Knorovich, the vendor’s co‑founder and CEO.",
+          "linkedin": "https://www.linkedin.com/in/urik",
           "twitter": "",
           "github": "",
           "homepage": "",
-          "link_source": ""
-        },
-        {
-          "name": "Liana Avetisyan",
-          "role": "Director",
-          "org": "GrittGene Therapeutics Inc.",
-          "evidence": "Liana Avetisyan — Director",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
+          "link_source": "search"
         }
       ],
-      "edges": []
+      "edges": [
+        {
+          "src": "Uriel Knorovich",
+          "rel": "cofounded",
+          "dst": "Nimble",
+          "evidence": "Nimble plans to use the new funding to fuel continued improvement and expansion of its web data ingestion platform, according to Uriel Knorovich, the vendor’s co‑founder and CEO."
+        },
+        {
+          "src": "Norwest",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "Databricks Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "Target Global",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "Square Peg",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "Hetz Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "Slow Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "R‑Squared Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "J‑Ventures",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        },
+        {
+          "src": "InvestInData",
+          "rel": "invested_in",
+          "dst": "Nimble",
+          "evidence": "The Series B round... was led by Norwest and included investors Databricks Ventures, Target Global, Square Peg, Hetz Ventures, Slow Ventures, R‑Squared Ventures, J‑Ventures and InvestInData."
+        }
+      ]
     },
     {
-      "company_name": "Nutmeg",
-      "core_product": "A Mac app that captures screen‑shared visuals during meetings and rebuilds charts, tables, and diagrams directly in your notes with real data and searchable context.",
-      "tech_stack": [
-        "macOS",
-        "Zoom API",
-        "Google Meet API",
-        "cloud AI models"
-      ],
-      "likely_bottleneck": "Real‑time extraction and reconstruction of visual content from screen shares on a local Mac environment.",
-      "value_prop_pitch": "I can integrate a Next.js front‑end with a vector‑based semantic search layer to instantly index and retrieve the visual elements you capture, eliminating latency in data lookup. This will let Nutmeg serve up exact chart data and context in milliseconds, keeping the note‑taking flow seamless.",
+      "company_name": "Better Stack",
+      "core_product": "We are software builders at :heart: CEO is a software engineer, COO is a software engineer, and you guessed it, CTO is an engineer, too. We are engineers, making the tools we always wanted. If you love building amazing software, you're at t",
+      "tech_stack": [],
+      "likely_bottleneck": "",
+      "value_prop_pitch": "",
       "is_relevant": true,
-      "funding_stage": "YC",
+      "funding_stage": "",
       "funding_amount": "",
       "hq": "",
-      "website": "https://logical.io",
-      "source_url": "https://www.ycombinator.com/launches/Y8R-nutmeg-the-notetaker-purpose-built-for-meetings-with-screen-shares",
-      "discovered_at": "2026-11-26T16:36:33+00:00",
-      "source": "yc",
-      "score": 61,
+      "website": "https://betterstack.com",
+      "source_url": "https://news.ycombinator.com/item?id=50339853",
+      "discovered_at": "2026-11-28T15:15:49+00:00",
+      "source": "hiring",
+      "score": 36,
       "gaps": [
+        "funding stage",
         "location",
         "funding amount",
+        "tech stack",
+        "founder",
         "people profiles",
-        "investors",
-        "phone"
+        "investors"
       ],
       "contact": {
-        "website": "https://logical.io",
+        "website": "https://betterstack.com",
         "emails": [
           {
-            "value": "hello@logical.io",
+            "value": "hello@betterstack.com",
             "kind": "general",
-            "source_url": "https://logical.io/"
+            "source_url": "https://betterstack.com/"
           }
         ],
-        "phones": [],
+        "phones": [
+          {
+            "value": "+16289003830",
+            "kind": "main",
+            "source_url": "https://betterstack.com/"
+          }
+        ],
         "socials": {
-          "linkedin": "https://www.linkedin.com/company/trylogical",
-          "twitter": "https://x.com/trylogical"
+          "twitter": "https://x.com/betterstackhq",
+          "linkedin": "https://www.linkedin.com/company/betterstack",
+          "github": "https://github.com/BetterStackHQ"
         },
-        "contact_page": "https://logical.io/contact",
+        "contact_page": "https://betterstack.com/contact",
         "product_access": [
           {
-            "label": "Docs",
-            "url": "https://docs.logical.io"
-          }
-        ],
-        "pages_crawled": [
-          "https://logical.io/",
-          "https://logical.io/about",
-          "https://logical.io/team",
-          "https://logical.io/contact"
-        ],
-        "enriched_at": "2026-11-26T16:37:01+00:00",
-        "status": "ok",
-        "attempts": 0,
-        "last_attempt": "",
-        "site_tech": [
-          {
-            "name": "PostHog",
-            "category": "analytics"
+            "label": "Documentation",
+            "url": "https://betterstack.com/docs/"
           },
-          {
-            "name": "Google Analytics",
-            "category": "analytics"
-          }
-        ]
-      },
-      "signals": [
-        {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Y8R-nutmeg-the-notetaker-purpose-built-for-meetings-with-screen-shares",
-          "roles": [],
-          "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-26T16:36:40+00:00"
-        }
-      ],
-      "people": [
-        {
-          "name": "Sam Karu",
-          "role": "Founder",
-          "org": "Nutmeg",
-          "evidence": "Sam Karu",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Sam Karu",
-          "rel": "founded",
-          "dst": "Nutmeg",
-          "evidence": "Sam Karu"
-        }
-      ]
-    },
-    {
-      "company_name": "Dynamite",
-      "core_product": "A real‑time personalization platform that adapts website copy, images, case studies and recommendations to each visitor in ~200 ms.",
-      "tech_stack": [
-        "JavaScript",
-        "AI"
-      ],
-      "likely_bottleneck": "Scaling low‑latency inference for per‑visitor personalization models as traffic grows.",
-      "value_prop_pitch": "You could move the personalization front‑end to a Next.js edge runtime to serve variant decisions in sub‑millisecond latency, and back it with a vector‑based semantic search index to instantly match visitor context to the most relevant content. This eliminates the heavy server‑side model calls and gives you a scalable, cache‑friendly architecture.",
-      "is_relevant": true,
-      "funding_stage": "YC",
-      "funding_amount": "",
-      "hq": "",
-      "website": "https://www.usedynamite.com",
-      "source_url": "https://www.ycombinator.com/launches/Y0d-dynamite-personalize-your-website-for-every-visitor",
-      "discovered_at": "2026-11-26T16:36:33+00:00",
-      "source": "yc",
-      "score": 44,
-      "gaps": [
-        "location",
-        "funding amount",
-        "people profiles",
-        "investors",
-        "email",
-        "phone"
-      ],
-      "contact": {
-        "website": "https://www.usedynamite.com",
-        "emails": [],
-        "phones": [],
-        "socials": {},
-        "contact_page": "",
-        "product_access": [
           {
             "label": "Pricing",
-            "url": "https://www.usedynamite.com/pricing"
+            "url": "https://betterstack.com/pricing"
+          },
+          {
+            "label": "Sign up",
+            "url": "https://betterstack.com/users/sign-up"
           }
         ],
         "pages_crawled": [
-          "https://www.usedynamite.com/"
+          "https://betterstack.com/",
+          "https://betterstack.com/about",
+          "https://betterstack.com/team",
+          "https://betterstack.com/contact"
         ],
-        "enriched_at": "2026-11-26T16:37:06+00:00",
+        "enriched_at": "2026-11-28T15:16:35+00:00",
         "status": "ok",
         "attempts": 0,
         "last_attempt": "",
         "site_tech": [
           {
-            "name": "PostHog",
-            "category": "analytics"
+            "name": "HubSpot",
+            "category": "marketing"
           },
           {
             "name": "Google Analytics",
             "category": "analytics"
+          },
+          {
+            "name": "Calendly",
+            "category": "scheduling"
           }
         ]
       },
       "signals": [
         {
-          "type": "launch",
-          "source": "yc",
-          "url": "https://www.ycombinator.com/launches/Y0d-dynamite-personalize-your-website-for-every-visitor",
+          "type": "hiring",
+          "source": "hn_who_is_hiring",
+          "url": "https://news.ycombinator.com/item?id=50339853",
           "roles": [],
           "role_kinds": [],
-          "posted_at": "",
-          "seen_at": "2026-11-26T16:36:40+00:00"
+          "posted_at": "2026-11-02T17:02:08Z",
+          "seen_at": "2026-11-28T15:15:49+00:00"
         }
       ],
-      "people": [
-        {
-          "name": "Samraaj Bath",
-          "role": "founder",
-          "org": "Dynamite",
-          "evidence": "Hey, Samraaj here, founder of Dynamite.",
-          "linkedin": "",
-          "twitter": "",
-          "github": "",
-          "homepage": "",
-          "link_source": ""
-        }
-      ],
-      "edges": [
-        {
-          "src": "Samraaj Bath",
-          "rel": "founded",
-          "dst": "Dynamite",
-          "evidence": "Hey, Samraaj here, founder of Dynamite."
-        }
-      ]
+      "people": [],
+      "edges": []
     }
   ],
   "diff": {
     "added": [
       {
-        "company": "Starforge",
-        "score": 92,
+        "company": "Maple",
+        "score": 85,
         "source": "rss"
       },
       {
-        "company": "GrittGene Therapeutics Inc.",
-        "score": 72,
-        "source": "edgar"
+        "company": "each::labs",
+        "score": 91,
+        "source": "web"
       },
       {
-        "company": "Nutmeg",
-        "score": 61,
-        "source": "yc"
-      },
-      {
-        "company": "Dynamite",
-        "score": 44,
-        "source": "yc"
+        "company": "Better Stack",
+        "score": 36,
+        "source": "hiring"
       }
     ],
-    "updated": []
+    "updated": [
+      {
+        "company": "Nimble",
+        "score": 67,
+        "score_before": 79,
+        "source": "web"
+      }
+    ]
   },
   "watchlist_hits": []
 }
